@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TypingEase — Luyện gõ 10 ngón</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="keyboard.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <a class="brand" href="#">Typing<span>Ease</span></a>
+      <nav aria-label="Điều hướng chính">
+        <a class="active" href="#luyen-go">Luyện gõ</a>
+        <a href="#huong-dan">Hướng dẫn</a>
+        <a href="#bang-xep-hang">Thành tích</a>
+      </nav>
+      <div class="header-actions"><label class="language-select"><span class="sr-only">Ngôn ngữ</span><select id="language" aria-label="Chọn ngôn ngữ"><option value="vi">Tiếng Việt</option><option value="en">English</option><option value="zh">中文</option><option value="ja">日本語</option><option value="ru">Русский</option><option value="pt">Português</option><option value="pt-BR">Português (Brasil)</option><option value="ar">العربية (مصر)</option><option value="ms">Bahasa Melayu</option></select></label><button class="login" type="button">Đăng nhập <span>→</span></button></div>
+    </header>
+
+    <main>
+      <section class="hero" id="luyen-go">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> Luyện gõ mỗi ngày</p>
+          <h1>Gõ nhanh hơn.<br /><em>Thảnh thơi hơn.</em></h1>
+          <p class="intro">Cải thiện kỹ năng gõ 10 ngón với những bài tập ngắn, rõ ràng và hoàn toàn miễn phí.</p>
+          <div class="hero-actions">
+            <button class="primary-button start-button" type="button">Bắt đầu luyện gõ <span>→</span></button>
+            <button class="text-button" type="button" data-scroll="#huong-dan">Tìm hiểu cách luyện <span>↓</span></button>
+          </div>
+          <div class="trust-row">
+            <div class="avatars"><b>H</b><b>N</b><b>T</b><b>+</b></div>
+            <p><strong>12.000+</strong> người đang luyện tập hôm nay</p>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="circle c1"></div><div class="circle c2"></div><div class="circle c3"></div>
+          <div class="visual-card">
+            <div class="mini-top"><span>Bài học hôm nay</span><b>03 / 10</b></div>
+            <div class="progress"><i></i></div>
+            <p>Gõ đúng nhịp, từng phím một</p>
+            <div class="keys"><span>F</span><span>J</span><span>K</span><span>L</span></div>
+            <div class="spark">✦</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice" aria-labelledby="practice-title">
+        <div class="section-heading">
+          <div><p class="eyebrow"><i></i> Sẵn sàng chưa?</p><h2 id="practice-title">Luyện ngay bây giờ</h2></div>
+          <div class="mode-switch" role="group" aria-label="Chọn chế độ">
+            <button class="selected" type="button">Bài cơ bản</button><button type="button">Tự do</button>
+          </div>
+        </div>
+        <div class="lesson-path" aria-label="Lộ trình bài học">
+          <div class="path-title"><strong>Lộ trình 10 ngón</strong><span id="lesson-progress">Bài 1 / 30</span></div>
+          <div class="lesson-levels" id="lesson-levels"></div>
+        </div>
+        <div class="practice-grid">
+          <article class="typing-card">
+            <div class="stats">
+              <div><span>Tốc độ</span><strong id="wpm">0 <small>WPM</small></strong></div>
+              <div><span>Độ chính xác</span><strong id="accuracy">--<small>%</small></strong></div>
+              <div><span>Thời gian</span><strong id="timer">00:00</strong></div>
+              <button class="reset" id="reset" type="button" title="Làm lại">↻</button>
+            </div>
+            <div class="lesson-label"><span id="lesson-number">01</span> <span id="lesson-title">Hàng phím cơ sở</span></div>
+            <p class="prompt" id="prompt" aria-label="Đoạn văn cần gõ"></p>
+            <label class="typing-label" for="typing-input">Bắt đầu gõ tại đây</label>
+            <textarea id="typing-input" rows="2" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Nhấn vào đây và bắt đầu gõ..."></textarea>
+            <p class="feedback" id="feedback" aria-live="polite">Giữ các ngón tay ở hàng phím cơ sở nhé.</p>
+            <button class="next-lesson" id="next-lesson" type="button">Bài tiếp theo →</button>
+            <button class="retry-lesson" id="retry-lesson" type="button">↻ Làm lại bài này</button>
+            <section class="free-practice" id="free-practice" aria-label="Luyện gõ tự do">
+              <div class="free-intro"><strong>Luyện gõ tự do</strong><span>Chọn một đoạn văn của bạn hoặc tạo đề ngẫu nhiên.</span></div>
+              <textarea id="custom-text" rows="3" placeholder="Dán hoặc nhập đoạn văn bạn muốn luyện tại đây..."></textarea>
+              <div class="free-actions"><button class="use-text" id="use-text" type="button">Dùng đoạn văn này</button><button class="random-text" id="random-text" type="button">↻ Đoạn văn ngẫu nhiên</button></div>
+              <div class="free-stats"><span>Tốc độ <b id="free-wpm">0 WPM</b></span><span>Chính xác <b id="free-accuracy">--%</b></span><span>Thời gian <b id="free-timer">00:00</b></span></div>
+              <p class="free-sample" id="free-sample">Hãy chọn một đoạn văn để bắt đầu luyện gõ.</p>
+              <label class="typing-label" for="free-input">Gõ lại đoạn văn phía trên</label>
+              <textarea id="free-input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Bắt đầu gõ tại đây..."></textarea>
+              <p class="feedback" id="free-feedback" aria-live="polite">Bạn có thể dán nội dung riêng hoặc tạo đoạn ngẫu nhiên.</p>
+            </section>
+          </article>
+          <aside class="tip-card">
+            <div class="tip-icon">⌨</div>
+            <p class="tip-number">MẸO NHỎ</p>
+            <h3>Đừng nhìn bàn phím</h3>
+            <p>Đặt ngón trỏ lên phím F và J. Hai chấm nổi sẽ giúp bạn luôn tìm đúng vị trí.</p>
+            <div class="finger-guide"><span>Út</span><span>Áp út</span><span>Giữa</span><span>Trỏ</span></div>
+          </aside>
+        </div>
+        <section class="keyboard-lab" aria-labelledby="keyboard-title">
+          <div class="keyboard-copy">
+            <p class="eyebrow"><i></i> Quan sát vị trí tay</p>
+            <h3 id="keyboard-title">Bàn phím &amp; ngón tay</h3>
+            <p>Phím cần gõ sẽ sáng màu xanh. Màu tương ứng trên bàn tay cho biết bạn nên dùng ngón nào.</p>
+            <div class="finger-legend"><span class="pinky">Út</span><span class="ring">Áp út</span><span class="middle">Giữa</span><span class="index">Trỏ</span><span class="thumb">Cái</span></div>
+          </div>
+          <div class="keyboard-demo">
+            <div class="hand-row" aria-label="Minh hoạ hai bàn tay">
+              <div class="hand left-hand"><b data-finger="LP">Út</b><b data-finger="LR">Áp út</b><b data-finger="LM">Giữa</b><b data-finger="LI">Trỏ</b><b data-finger="LT">Cái</b><span>Bàn tay trái</span></div>
+              <div class="hand right-hand"><b data-finger="RT">Cái</b><b data-finger="RI">Trỏ</b><b data-finger="RM">Giữa</b><b data-finger="RR">Áp út</b><b data-finger="RP">Út</b><span>Bàn tay phải</span></div>
+            </div>
+            <div class="keyboard" id="keyboard" aria-label="Bàn phím chuẩn US"></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading"><div><p class="eyebrow"><i></i> Tiến bộ của bạn</p><h2 id="results-title">Thành tích bài học</h2><p>Điểm tốt nhất được lưu trên thiết bị này.</p></div><button class="clear-results" id="clear-results" type="button">Xoá lịch sử</button></div>
+        <div class="results-summary"><div><span>Đã hoàn thành</span><strong id="completed-count">0 / 30</strong></div><div><span>Tốc độ cao nhất (100%)</span><strong id="best-wpm">0 WPM</strong></div><div><span>Thời gian nhanh nhất (100%)</span><strong id="best-time">--:--</strong></div></div>
+        <div class="results-table-wrap"><table class="results-table"><thead><tr><th>Bài học</th><th>Tốc độ tốt nhất</th><th>Chính xác</th><th>Thời gian nhanh nhất</th></tr></thead><tbody id="results-body"></tbody></table></div>
+      </section>
+
+      <section class="benefits" id="huong-dan">
+        <div><p class="eyebrow"><i></i> Đơn giản mà hiệu quả</p><h2>Tiến bộ từng<br /><em>phím bấm.</em></h2></div>
+        <div class="benefit-list">
+          <article><span>01</span><div><h3>Học đúng tư thế</h3><p>Làm quen vị trí các ngón tay trước khi tăng tốc độ.</p></div></article>
+          <article><span>02</span><div><h3>Luyện tập có nhịp</h3><p>Các bài học ngắn giúp bạn duy trì sự tập trung.</p></div></article>
+          <article><span>03</span><div><h3>Theo dõi tiến bộ</h3><p>Biết tốc độ và độ chính xác của mình sau mỗi bài gõ.</p></div></article>
+        </div>
+      </section>
+    </main>
+    <footer><a class="brand" href="#">Typing<span>Ease</span></a><p>Gõ chậm một chút, rồi bạn sẽ đi rất xa.</p><span>© 2024 TypingEase</span></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
