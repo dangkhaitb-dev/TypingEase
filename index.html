@@ -3,7 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>TypingEase — Luyện gõ 10 ngón</title>
+    <title>Luyện gõ 10 ngón online miễn phí | TypingEase</title>
+    <meta name="description" content="Luyện gõ 10 ngón online miễn phí với TypingEase. Học vị trí ngón tay, luyện đánh máy, kiểm tra tốc độ WPM và cải thiện độ chính xác mỗi ngày." />
+    <link rel="canonical" href="https://typingease.site/" />
+    <meta name="robots" content="index, follow" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -25,7 +28,7 @@
       <section class="hero" id="luyen-go">
         <div class="hero-copy">
           <p class="eyebrow"><i></i> Luyện gõ mỗi ngày</p>
-          <h1>Gõ nhanh hơn.<br /><em>Thảnh thơi hơn.</em></h1>
+          <h1>Luyện gõ 10 ngón<br /><em>online miễn phí.</em></h1>
           <p class="intro">Cải thiện kỹ năng gõ 10 ngón với những bài tập ngắn, rõ ràng và hoàn toàn miễn phí.</p>
           <div class="hero-actions">
             <button class="primary-button start-button" type="button">Bắt đầu luyện gõ <span>→</span></button>
@@ -52,7 +55,7 @@
         <div class="section-heading">
           <div><p class="eyebrow"><i></i> Sẵn sàng chưa?</p><h2 id="practice-title">Luyện ngay bây giờ</h2></div>
           <div class="mode-switch" role="group" aria-label="Chọn chế độ">
-            <button class="selected" type="button">Bài cơ bản</button><button type="button">Tự do</button>
+            <button class="selected" type="button">Bài cơ bản</button><button type="button">Tự do</button><button type="button">Trò chơi</button>
           </div>
         </div>
         <div class="lesson-path" aria-label="Lộ trình bài học">
@@ -83,6 +86,13 @@
               <label class="typing-label" for="free-input">Gõ lại đoạn văn phía trên</label>
               <textarea id="free-input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Bắt đầu gõ tại đây..."></textarea>
               <p class="feedback" id="free-feedback" aria-live="polite">Bạn có thể dán nội dung riêng hoặc tạo đoạn ngẫu nhiên.</p>
+            </section>
+            <section class="game-practice" id="game-practice" aria-label="Trò chơi thi đấu">
+              <div class="game-top"><div><p class="game-kicker">THỬ THÁCH 30 GIÂY</p><h3>Đấu tốc độ</h3><p>Gõ càng đúng và nhanh, điểm thành tích càng cao.</p></div><div class="game-trophy">★</div></div>
+              <div class="game-scoreboard"><div><span>Thời gian</span><b id="game-time">30</b></div><div><span>Điểm</span><b id="game-score">0</b></div><div><span>Kỷ lục</span><b id="game-best">0</b></div></div>
+              <p class="game-sample" id="game-sample">Nhấn bắt đầu để nhận thử thách.</p>
+              <textarea id="game-input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõ tại đây khi thử thách bắt đầu..." disabled></textarea>
+              <div class="game-actions"><button class="game-start" id="game-start" type="button">Bắt đầu thử thách</button><p id="game-status">Mỗi lượt thi kéo dài 30 giây.</p></div>
             </section>
           </article>
           <aside class="tip-card">
@@ -125,7 +135,7 @@
         </div>
       </section>
     </main>
-    <footer><a class="brand" href="#">Typing<span>Ease</span></a><p>Gõ chậm một chút, rồi bạn sẽ đi rất xa.</p><span>© 2024 TypingEase</span></footer>
+    <footer><a class="brand" href="#">Typing<span>Ease</span></a><nav class="footer-links" aria-label="Tài nguyên TypingEase"><a href="./cach-go-10-ngon/">Cách gõ 10 ngón</a><a href="./kiem-tra-toc-do-go/">Kiểm tra tốc độ đánh máy</a><a href="./wpm-la-gi/">WPM là gì</a></nav><p>Gõ chậm một chút, rồi bạn sẽ đi rất xa.</p><span>© 2024 TypingEase</span></footer>
     <script src="script.js"></script>
   </body>
 </html>

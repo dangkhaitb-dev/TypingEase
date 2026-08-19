@@ -49,7 +49,7 @@ const translations = {
   la: {navPractice:'Exercitatio',navGuide:'Ductio',navResults:'Profectus',login:'Intra',dailyPractice:'Cotidie exerce',intro:'Artem digitis decem scribendi exerce per lectiones claras atque gratuitas.',start:'Incipe scribere',ready:'Paratusne es?',practiceNow:'Nunc exerce',basic:'Lectiones',free:'Liber scribendi',path:'Iter digitorum decem',speed:'Celeritas',accuracy:'Diligentia',time:'Tempus',startHere:'Hic scribe'}
 };
 const siteLanguages = {
-  vi:{nav:['Luyện gõ','Hướng dẫn','Thành tích'],login:'Đăng nhập',daily:'Luyện gõ mỗi ngày',hero:['Gõ nhanh hơn.','Thảnh thơi hơn.'],intro:'Cải thiện kỹ năng gõ 10 ngón với những bài tập rõ ràng và hoàn toàn miễn phí.',start:'Bắt đầu luyện gõ',learn:'Tìm hiểu cách luyện',ready:'Sẵn sàng chưa?',practice:'Luyện ngay bây giờ',basic:'Bài cơ bản',free:'Tự do',path:'Lộ trình 10 ngón',speed:'Tốc độ',accuracy:'Độ chính xác',time:'Thời gian',keyboard:'Bàn phím & ngón tay',results:'Thành tích bài học',benefits:'Tiến bộ từng phím bấm.'},
+  vi:{nav:['Luyện gõ','Hướng dẫn','Thành tích'],login:'Đăng nhập',daily:'Luyện gõ mỗi ngày',hero:['Luyện gõ 10 ngón','online miễn phí.'],intro:'Cải thiện kỹ năng gõ 10 ngón với những bài tập rõ ràng và hoàn toàn miễn phí.',start:'Bắt đầu luyện gõ',learn:'Tìm hiểu cách luyện',ready:'Sẵn sàng chưa?',practice:'Luyện ngay bây giờ',basic:'Bài cơ bản',free:'Tự do',path:'Lộ trình 10 ngón',speed:'Tốc độ',accuracy:'Độ chính xác',time:'Thời gian',keyboard:'Bàn phím & ngón tay',results:'Thành tích bài học',benefits:'Tiến bộ từng phím bấm.'},
   en:{nav:['Practice','Guide','Results'],login:'Sign in',daily:'Practice every day',hero:['Type faster.','Feel lighter.'],intro:'Improve touch typing with clear, focused exercises that are completely free.',start:'Start typing',learn:'Learn how it works',ready:'Ready to begin?',practice:'Practice now',basic:'Lessons',free:'Free type',path:'Touch-typing path',speed:'Speed',accuracy:'Accuracy',time:'Time',keyboard:'Keyboard & fingers',results:'Lesson records',benefits:'Progress with every key.'},
   zh:{nav:['练习打字','指南','成绩'],login:'登录',daily:'每天练习打字',hero:['打得更快。','更加轻松。'],intro:'通过清晰、专注且完全免费的练习，提高十指盲打能力。',start:'开始练习',learn:'了解练习方法',ready:'准备好了吗？',practice:'立即练习',basic:'基础课程',free:'自由练习',path:'十指打字路径',speed:'速度',accuracy:'准确率',time:'时间',keyboard:'键盘与手指',results:'课程成绩',benefits:'每一次按键都有进步。'},
   ja:{nav:['タイピング練習','ガイド','記録'],login:'ログイン',daily:'毎日タイピング練習',hero:['もっと速く。','もっと楽に。'],intro:'分かりやすく無料の練習で、タッチタイピングを上達させましょう。',start:'練習を始める',learn:'練習方法を見る',ready:'準備はいいですか？',practice:'今すぐ練習',basic:'基本レッスン',free:'自由入力',path:'10本指の学習',speed:'速度',accuracy:'正確性',time:'時間',keyboard:'キーボードと指',results:'レッスン記録',benefits:'一打ずつ上達。'},
@@ -114,6 +114,17 @@ function drawFree() {
 }
 function setFreeText(value) { freeText = value.trim(); resetFree(); freeSample.textContent = freeText || 'Hay nhap hoac tao doan van de bat dau.'; if (freeText) { drawFree(); freeInput.focus(); } }
 function tickFree() { const seconds = Math.floor((Date.now() - freeStartedAt) / 1000); document.querySelector('#free-timer').textContent = `${String(Math.floor(seconds / 60)).padStart(2,'0')}:${String(seconds % 60).padStart(2,'0')}`; }
+const gamePhrases = [
+  'quick fingers build steady typing habits every day', 'focus on accuracy and let your speed grow naturally',
+  'smooth rhythm makes every keyboard challenge more enjoyable', 'practice with care and celebrate each small improvement'
+];
+const gameSample = document.querySelector('#game-sample'), gameInput = document.querySelector('#game-input');
+let gameText = '', gameActive = false, gameSeconds = 30, gameCorrect = 0, gameInterval = null;
+function setGameText() { gameText = `${gamePhrases[Math.floor(Math.random() * gamePhrases.length)]} ${gamePhrases[Math.floor(Math.random() * gamePhrases.length)]}.`; gameInput.value = ''; renderGame(); }
+function renderGame() { const typed = gameInput.value; gameSample.innerHTML = [...gameText].map((char, index) => `<span class="${index < typed.length ? (typed[index] === char ? '' : 'wrong') : index === typed.length ? 'current' : ''}">${char === ' ' ? '&nbsp;' : escapeHtml(char)}</span>`).join(''); highlightGuide(gameText[typed.length]); }
+function updateGameScore() { document.querySelector('#game-score').textContent = gameCorrect * 10; }
+function finishGame() { clearInterval(gameInterval); gameActive = false; gameInput.disabled = true; const score = gameCorrect * 10, best = Math.max(Number(localStorage.getItem('typingease-game-best') || 0), score); localStorage.setItem('typingease-game-best', best); document.querySelector('#game-best').textContent = best; document.querySelector('#game-status').textContent = `Hoàn thành! Bạn đạt ${score} điểm.`; document.querySelector('#game-start').textContent = 'Chơi lại'; }
+function startGame() { clearInterval(gameInterval); gameActive = true; gameSeconds = 30; gameCorrect = 0; document.querySelector('#game-time').textContent = gameSeconds; updateGameScore(); document.querySelector('#game-status').textContent = 'Tập trung, gõ nhanh và chính xác!'; document.querySelector('#game-start').textContent = 'Đang thi đấu...'; gameInput.disabled = false; setGameText(); gameInput.focus(); gameInterval = setInterval(() => { gameSeconds -= 1; document.querySelector('#game-time').textContent = gameSeconds; if (gameSeconds <= 0) finishGame(); }, 1000); }
 
 function makeKeyboard() {
   const keyboard = document.querySelector('#keyboard');
@@ -150,13 +161,16 @@ function setLesson(index) { lessonIndex = index; document.querySelector('#lesson
 function tick() { const secs = Math.floor((Date.now() - startedAt) / 1000); timer.textContent = `${String(Math.floor(secs / 60)).padStart(2,'0')}:${String(secs % 60).padStart(2,'0')}`; }
 input.addEventListener('input', () => { if (!startedAt && input.value) { startedAt = Date.now(); interval = setInterval(tick, 1000); } draw(); });
 freeInput.addEventListener('input', () => { if (!freeText) return; if (!freeStartedAt && freeInput.value) { freeStartedAt = Date.now(); freeInterval = setInterval(tickFree, 1000); } drawFree(); });
+gameInput.addEventListener('input', () => { if (!gameActive) return; const typed = gameInput.value; if (typed.length >= gameText.length) { gameCorrect += [...typed].filter((char, index) => char === gameText[index]).length; updateGameScore(); setGameText(); } else renderGame(); });
+document.querySelector('#game-start').addEventListener('click', startGame);
+document.querySelector('#game-best').textContent = localStorage.getItem('typingease-game-best') || 0;
 document.querySelector('#use-text').addEventListener('click', () => setFreeText(customText.value));
 document.querySelector('#random-text').addEventListener('click', () => { const next = freeSamples[Math.floor(Math.random() * freeSamples.length)]; customText.value = next; setFreeText(next); });
 document.querySelector('#reset').addEventListener('click', () => reset(true));
 document.querySelector('#reset').addEventListener('click', () => document.querySelector('.typing-card').classList.remove('lesson-finished'));
 document.querySelectorAll('.start-button').forEach(b => b.addEventListener('click', () => { document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); setTimeout(() => input.focus(), 500); }));
 document.querySelectorAll('[data-scroll]').forEach(b => b.addEventListener('click', () => document.querySelector(b.dataset.scroll).scrollIntoView({behavior:'smooth'})));
-document.querySelectorAll('.mode-switch button').forEach((button, index) => button.addEventListener('click', () => { document.querySelector('.mode-switch .selected').classList.remove('selected'); button.classList.add('selected'); const card = document.querySelector('.typing-card'); card.classList.remove('lesson-finished'); card.classList.toggle('free-mode', index === 1); if (index === 0) input.focus(); else if (!freeText) { const sample = freeSamples[Math.floor(Math.random() * freeSamples.length)]; customText.value = sample; setFreeText(sample); } else freeInput.focus(); }));
+document.querySelectorAll('.mode-switch button').forEach((button, index) => button.addEventListener('click', () => { document.querySelector('.mode-switch .selected').classList.remove('selected'); button.classList.add('selected'); const card = document.querySelector('.typing-card'); card.classList.remove('lesson-finished'); card.classList.toggle('free-mode', index === 1); card.classList.toggle('game-mode', index === 2); if (index !== 2 && gameActive) finishGame(); if (index === 0) input.focus(); else if (index === 1 && !freeText) { const sample = freeSamples[Math.floor(Math.random() * freeSamples.length)]; customText.value = sample; setFreeText(sample); } else if (index === 1) freeInput.focus(); }));
 document.querySelector('#next-lesson').addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); setLesson(Math.min(lessonIndex + 1, lessons.length - 1)); });
 document.querySelector('#retry-lesson').addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); reset(true); });
 document.querySelector('#clear-results').addEventListener('click', () => { if (confirm('Bạn có muốn xoá toàn bộ lịch sử thành tích?')) { lessonRecords = {}; localStorage.removeItem(SCORE_STORAGE_KEY); renderRecords(); } });
@@ -199,7 +213,7 @@ function applyLanguage(code) {
   document.querySelector('#next-lesson').textContent = code === 'vi' ? 'Bài tiếp theo →' : 'Next lesson →'; document.querySelector('#retry-lesson').textContent = code === 'vi' ? '↻ Làm lại bài này' : '↻ Try this lesson again';
   document.querySelectorAll('.results-summary span').forEach((item, index) => { item.textContent = [extra.completed, extra.bestSpeed, extra.bestTime][index]; });
   document.querySelector('.benefits .eyebrow').innerHTML = `<i></i> ${extra.benefitTag}`; document.querySelector('footer p').textContent = extra.footer;
-  document.title = code === 'vi' ? 'TypingEase — Luyện gõ 10 ngón' : 'TypingEase — Touch typing practice';
+  document.title = code === 'vi' ? 'Luyện gõ 10 ngón online miễn phí | TypingEase' : 'TypingEase — Touch typing practice';
   if (code !== 'vi') {
     document.querySelector('.mini-top span').textContent = t.practice; document.querySelector('.visual-card p').textContent = t.benefits;
     document.querySelector('.trust-row p').innerHTML = `<strong>12,000+</strong> ${t.daily}`;
