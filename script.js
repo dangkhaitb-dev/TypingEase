@@ -60,10 +60,35 @@ const siteLanguages = {
   ms:{nav:['Latihan','Panduan','Pencapaian'],login:'Log masuk',daily:'Berlatih setiap hari',hero:['Taip lebih pantas.','Lebih selesa.'],intro:'Tingkatkan kemahiran menaip sentuh dengan latihan yang jelas dan percuma.',start:'Mula menaip',learn:'Cara berlatih',ready:'Sudah bersedia?',practice:'Berlatih sekarang',basic:'Pelajaran asas',free:'Latihan bebas',path:'Laluan menaip 10 jari',speed:'Kelajuan',accuracy:'Ketepatan',time:'Masa',keyboard:'Papan kekunci & jari',results:'Rekod pelajaran',benefits:'Maju pada setiap kekunci.'}
 };
 let activeLanguage = 'vi';
+const homeActionText = {
+  vi: { start:'Bắt đầu bài 1', speedTest:'Kiểm tra tốc độ 60 giây', continue:'Tiếp tục bài', trust:'Luyện gõ miễn phí, không cần đăng ký.', showAll:'Xem toàn bộ 30 bài', collapse:'Thu gọn' },
+  en: { start:'Start lesson 1', speedTest:'Take the 60-second speed test', continue:'Continue lesson', trust:'Free typing practice, no sign-up required.', showAll:'Show all 30 lessons', collapse:'Show less' },
+  zh: { start:'开始第 1 课', speedTest:'进行 60 秒速度测试', continue:'继续第', trust:'免费练习打字，无需注册。', showAll:'查看全部 30 课', collapse:'收起' },
+  ja: { start:'レッスン 1 を始める', speedTest:'60秒スピードテスト', continue:'レッスンを続ける', trust:'無料で練習できます。登録は不要です。', showAll:'全30レッスンを見る', collapse:'閉じる' },
+  ru: { start:'Начать урок 1', speedTest:'Тест скорости: 60 секунд', continue:'Продолжить урок', trust:'Бесплатная практика без регистрации.', showAll:'Показать все 30 уроков', collapse:'Свернуть' },
+  pt: { start:'Começar a lição 1', speedTest:'Teste de velocidade de 60 segundos', continue:'Continuar lição', trust:'Pratique grátis, sem cadastro.', showAll:'Ver todas as 30 lições', collapse:'Mostrar menos' },
+  'pt-BR': { start:'Começar a lição 1', speedTest:'Teste de velocidade de 60 segundos', continue:'Continuar lição', trust:'Pratique grátis, sem cadastro.', showAll:'Ver todas as 30 lições', collapse:'Mostrar menos' },
+  ar: { start:'ابدأ الدرس 1', speedTest:'اختبار سرعة لمدة 60 ثانية', continue:'تابع الدرس', trust:'تدرب مجاناً، دون تسجيل.', showAll:'عرض الدروس الثلاثين', collapse:'عرض أقل' },
+  ms: { start:'Mula pelajaran 1', speedTest:'Ujian kelajuan 60 saat', continue:'Sambung pelajaran', trust:'Latihan percuma, tanpa pendaftaran.', showAll:'Lihat semua 30 pelajaran', collapse:'Ringkaskan' }
+};
+function currentHomeActionText() { return homeActionText[activeLanguage] || homeActionText.en; }
+const localizedUi = {
+  vi: { errors:'Số lỗi', notYet:'Chưa có', next:'Bài tiếp theo →', retry:'↻ Làm lại bài này', perfect:'Hoàn thành xuất sắc! Bạn có thể sang bài tiếp theo hoặc luyện lại.', accuracy:'Bạn đã hoàn thành với độ chính xác {accuracy}%. Hãy luyện lại để cải thiện nhé.', exploreTag:'Tài nguyên TypingEase', exploreTitle:'Khám phá TypingEase', explore:[['Cách gõ 10 ngón','Hướng dẫn vị trí ngón tay, hàng phím cơ sở và cách luyện gõ đúng kỹ thuật cho người mới.','Xem hướng dẫn'],['Kiểm tra tốc độ đánh máy','Làm bài typing test 60 giây để kiểm tra WPM, độ chính xác và tốc độ gõ hiện tại của bạn.','Kiểm tra ngay'],['WPM là gì?','Tìm hiểu WPM, cách tính tốc độ đánh máy và vì sao WPM nên được xem cùng độ chính xác.','Tìm hiểu WPM']], game:{tab:'Trò chơi',kicker:'THỬ THÁCH 30 GIÂY',title:'Đấu tốc độ',description:'Gõ càng đúng và nhanh, điểm thành tích càng cao.',time:'Thời gian',score:'Điểm',best:'Kỷ lục',idle:'Nhấn bắt đầu để nhận thử thách.',placeholder:'Gõ tại đây khi thử thách bắt đầu...',start:'Bắt đầu thử thách',running:'Đang thi đấu...',status:'Mỗi lượt thi kéo dài 30 giây.',focus:'Tập trung, gõ nhanh và chính xác!',finish:'Hoàn thành! Bạn đạt {score} điểm.',replay:'Chơi lại'} },
+  en: { errors:'Errors', notYet:'Not yet', next:'Next lesson →', retry:'↻ Try this lesson again', perfect:'Excellent! Continue to the next lesson or practise again.', accuracy:'You finished with {accuracy}% accuracy. Practise again to improve.', exploreTag:'TypingEase resources', exploreTitle:'Explore TypingEase', explore:[['How to touch type','Learn finger placement, the home row, and proper touch-typing technique for beginners.','View guide'],['Check typing speed','Take a 60-second typing test to check your WPM, accuracy, and current typing speed.','Check now'],['What is WPM?','Learn what WPM means, how typing speed is calculated, and why accuracy matters too.','Learn about WPM']], game:{tab:'Game',kicker:'30-SECOND CHALLENGE',title:'Speed challenge',description:'Type accurately and quickly to earn a higher score.',time:'Time',score:'Score',best:'Best',idle:'Press start to receive a challenge.',placeholder:'Type here when the challenge starts...',start:'Start challenge',running:'Competing...',status:'Each round lasts 30 seconds.',focus:'Focus, type quickly, and stay accurate!',finish:'Complete! You scored {score} points.',replay:'Play again'} },
+  zh: { errors:'错误数', notYet:'暂无', next:'下一课 →', retry:'↻ 再练一次', perfect:'完成得很出色！继续下一课或再练一次。', accuracy:'你以 {accuracy}% 的准确率完成了练习。再练一次以继续提高。', exploreTag:'TypingEase 资源', exploreTitle:'探索 TypingEase', explore:[['十指打字方法','学习手指位置、基本键位和适合初学者的正确打字方法。','查看指南'],['测试打字速度','完成 60 秒打字测试，查看 WPM、准确率和当前打字速度。','立即测试'],['什么是 WPM？','了解 WPM、打字速度的计算方式，以及为什么准确率同样重要。','了解 WPM']], game:{tab:'游戏',kicker:'30 秒挑战',title:'速度挑战',description:'打得又快又准，获得更高分数。',time:'时间',score:'得分',best:'纪录',idle:'点击开始以获取挑战。',placeholder:'挑战开始后在这里输入...',start:'开始挑战',running:'挑战中...',status:'每轮持续 30 秒。',focus:'集中注意力，快速且准确地输入！',finish:'完成！你获得了 {score} 分。',replay:'再玩一次'} },
+  ja: { errors:'ミス', notYet:'まだありません', next:'次のレッスン →', retry:'↻ このレッスンをもう一度', perfect:'素晴らしい完了です！次のレッスンへ進むか、もう一度練習できます。', accuracy:'正確率 {accuracy}% で完了しました。もう一度練習して上達しましょう。', exploreTag:'TypingEase のリソース', exploreTitle:'TypingEase を見る', explore:[['10本指入力の方法','指の位置、ホームポジション、初心者向けの正しいタッチタイピングを学びます。','ガイドを見る'],['入力速度をチェック','60秒テストで WPM、正確性、現在の入力速度を確認できます。','今すぐチェック'],['WPM とは？','WPM の意味、入力速度の計算方法、正確性が重要な理由を学びます。','WPM を学ぶ']], game:{tab:'ゲーム',kicker:'30秒チャレンジ',title:'スピードチャレンジ',description:'正確かつ速く入力して高得点を目指しましょう。',time:'時間',score:'スコア',best:'ベスト',idle:'開始を押してチャレンジを受け取りましょう。',placeholder:'チャレンジ開始後にここへ入力...',start:'チャレンジを開始',running:'挑戦中...',status:'1ラウンドは30秒です。',focus:'集中して、速く正確に入力しましょう！',finish:'完了！{score} 点を獲得しました。',replay:'もう一度'} },
+  ru: { errors:'Ошибки', notYet:'Пока нет', next:'Следующий урок →', retry:'↻ Повторить этот урок', perfect:'Отлично! Перейдите к следующему уроку или потренируйтесь ещё раз.', accuracy:'Вы завершили урок с точностью {accuracy}%. Попробуйте ещё раз, чтобы улучшить результат.', exploreTag:'Ресурсы TypingEase', exploreTitle:'Откройте TypingEase', explore:[['Как печатать десятью пальцами','Изучите положение пальцев, домашний ряд и правильную технику для начинающих.','Открыть руководство'],['Проверить скорость печати','Пройдите 60-секундный тест, чтобы узнать WPM, точность и скорость печати.','Проверить сейчас'],['Что такое WPM?','Узнайте, что такое WPM, как рассчитывается скорость и почему важна точность.','Узнать о WPM']], game:{tab:'Игра',kicker:'30-СЕКУНДНЫЙ ВЫЗОВ',title:'Скоростной вызов',description:'Печатайте быстро и точно, чтобы набрать больше очков.',time:'Время',score:'Очки',best:'Рекорд',idle:'Нажмите «Начать», чтобы получить задание.',placeholder:'Печатайте здесь после начала задания...',start:'Начать вызов',running:'Идёт игра...',status:'Каждый раунд длится 30 секунд.',focus:'Сосредоточьтесь, печатайте быстро и точно!',finish:'Готово! Вы набрали {score} очков.',replay:'Играть снова'} },
+  pt: { errors:'Erros', notYet:'Ainda não', next:'Próxima lição →', retry:'↻ Tentar esta lição novamente', perfect:'Excelente! Continue para a próxima lição ou pratique novamente.', accuracy:'Você concluiu com {accuracy}% de precisão. Pratique novamente para melhorar.', exploreTag:'Recursos TypingEase', exploreTitle:'Conheça o TypingEase', explore:[['Como digitar com dez dedos','Aprenda a posição dos dedos, a fileira base e a técnica correta para iniciantes.','Ver guia'],['Verificar velocidade de digitação','Faça um teste de 60 segundos para verificar WPM, precisão e velocidade atual.','Verificar agora'],['O que é WPM?','Entenda WPM, como a velocidade é calculada e por que a precisão também importa.','Saber mais sobre WPM']], game:{tab:'Jogo',kicker:'DESAFIO DE 30 SEGUNDOS',title:'Desafio de velocidade',description:'Digite com rapidez e precisão para ganhar mais pontos.',time:'Tempo',score:'Pontuação',best:'Recorde',idle:'Pressione iniciar para receber um desafio.',placeholder:'Digite aqui quando o desafio começar...',start:'Iniciar desafio',running:'Em desafio...',status:'Cada rodada dura 30 segundos.',focus:'Concentre-se, digite rápido e com precisão!',finish:'Concluído! Você marcou {score} pontos.',replay:'Jogar novamente'} },
+  'pt-BR': { errors:'Erros', notYet:'Ainda não', next:'Próxima lição →', retry:'↻ Tentar esta lição novamente', perfect:'Excelente! Continue para a próxima lição ou pratique novamente.', accuracy:'Você concluiu com {accuracy}% de precisão. Pratique novamente para melhorar.', exploreTag:'Recursos TypingEase', exploreTitle:'Conheça o TypingEase', explore:[['Como digitar com dez dedos','Aprenda a posição dos dedos, a fileira base e a técnica correta para iniciantes.','Ver guia'],['Verificar velocidade de digitação','Faça um teste de 60 segundos para verificar WPM, precisão e velocidade atual.','Verificar agora'],['O que é WPM?','Entenda WPM, como a velocidade é calculada e por que a precisão também importa.','Saber mais sobre WPM']], game:{tab:'Jogo',kicker:'DESAFIO DE 30 SEGUNDOS',title:'Desafio de velocidade',description:'Digite com rapidez e precisão para ganhar mais pontos.',time:'Tempo',score:'Pontuação',best:'Recorde',idle:'Pressione iniciar para receber um desafio.',placeholder:'Digite aqui quando o desafio começar...',start:'Iniciar desafio',running:'Em desafio...',status:'Cada rodada dura 30 segundos.',focus:'Concentre-se, digite rápido e com precisão!',finish:'Concluído! Você marcou {score} pontos.',replay:'Jogar novamente'} },
+  ar: { errors:'الأخطاء', notYet:'ليس بعد', next:'الدرس التالي ←', retry:'↻ أعد هذا الدرس', perfect:'أحسنت! يمكنك متابعة الدرس التالي أو التدريب مجدداً.', accuracy:'أنهيت التمرين بدقة {accuracy}%. تدرب مجدداً للتحسن.', exploreTag:'موارد TypingEase', exploreTitle:'استكشف TypingEase', explore:[['كيفية الكتابة بعشرة أصابع','تعلّم مواضع الأصابع وصف الارتكاز وطريقة الكتابة الصحيحة للمبتدئين.','عرض الدليل'],['اختبر سرعة الكتابة','أجرِ اختباراً لمدة 60 ثانية لمعرفة WPM والدقة وسرعة كتابتك الحالية.','اختبر الآن'],['ما هو WPM؟','تعرّف على WPM وطريقة حساب السرعة وأهمية الدقة.','تعرّف على WPM']], game:{tab:'لعبة',kicker:'تحدي 30 ثانية',title:'تحدي السرعة',description:'اكتب بسرعة ودقة لتحصل على نقاط أكثر.',time:'الوقت',score:'النقاط',best:'أفضل نتيجة',idle:'اضغط ابدأ لتلقي التحدي.',placeholder:'اكتب هنا عند بدء التحدي...',start:'ابدأ التحدي',running:'قيد التحدي...',status:'تستمر كل جولة 30 ثانية.',focus:'ركّز واكتب بسرعة ودقة!',finish:'اكتمل! حصلت على {score} نقطة.',replay:'العب مجدداً'} },
+  ms: { errors:'Ralat', notYet:'Belum ada', next:'Pelajaran seterusnya →', retry:'↻ Cuba pelajaran ini lagi', perfect:'Cemerlang! Teruskan ke pelajaran seterusnya atau berlatih lagi.', accuracy:'Anda selesai dengan ketepatan {accuracy}%. Berlatih lagi untuk meningkat.', exploreTag:'Sumber TypingEase', exploreTitle:'Terokai TypingEase', explore:[['Cara menaip 10 jari','Pelajari kedudukan jari, baris asas dan teknik menaip yang betul untuk pemula.','Lihat panduan'],['Semak kelajuan menaip','Ambil ujian 60 saat untuk menyemak WPM, ketepatan dan kelajuan menaip semasa.','Semak sekarang'],['Apakah WPM?','Ketahui maksud WPM, cara kelajuan dikira dan sebab ketepatan juga penting.','Ketahui WPM']], game:{tab:'Permainan',kicker:'CABARAN 30 SAAT',title:'Cabaran kelajuan',description:'Taip dengan pantas dan tepat untuk memperoleh markah lebih tinggi.',time:'Masa',score:'Markah',best:'Rekod',idle:'Tekan mula untuk menerima cabaran.',placeholder:'Taip di sini apabila cabaran bermula...',start:'Mula cabaran',running:'Sedang mencabar...',status:'Setiap pusingan berlangsung 30 saat.',focus:'Fokus, taip pantas dan tepat!',finish:'Selesai! Anda memperoleh {score} mata.',replay:'Main lagi'} }
+};
+function currentLocalizedUi() { return localizedUi[activeLanguage] || localizedUi.en; }
+function formatUi(template, values) { return Object.entries(values).reduce((text, [key, value]) => text.replace(`{${key}}`, value), template); }
 function localizedLessonName(index) { return activeLanguage === 'vi' ? lessons[index][0] : `${siteLanguages[activeLanguage]?.basic || 'Lesson'} ${index + 1}`; }
 const rows = [['`','1','2','3','4','5','6','7','8','9','0','-','=','Back'],['Tab','q','w','e','r','t','y','u','i','o','p','[',']','\\'],['Caps','a','s','d','f','g','h','j','k','l',';','\'','Enter'],['Shift','z','x','c','v','b','n','m',',','.','/','Shift'],['Ctrl','Alt',' ' ,'Alt','Ctrl']];
 const fingerMap = {q:'LP',a:'LP',z:'LP',w:'LR',s:'LR',x:'LR',e:'LM',d:'LM',c:'LM',r:'LI',f:'LI',v:'LI',t:'LI',g:'LI',b:'LI',y:'RI',h:'RI',n:'RI',u:'RI',j:'RI',m:'RI',i:'RM',k:'RM',',':'RM',o:'RR',l:'RR','.':'RR',p:'RP',';':'RP','/':'RP',' ':'LT',enter:'RP'};
-let lessonIndex = 0, startedAt = null, interval = null;
+let lessonIndex = 0, startedAt = null, interval = null, lessonCompleted = false, lessonsExpanded = false;
 const prompt = document.querySelector('#prompt'), input = document.querySelector('#typing-input'), wpm = document.querySelector('#wpm'), accuracy = document.querySelector('#accuracy'), timer = document.querySelector('#timer'), feedback = document.querySelector('#feedback');
 const currentLesson = () => lessons[lessonIndex][1];
 const SCORE_STORAGE_KEY = 'goxanh-lesson-records-v2';
@@ -76,9 +101,10 @@ function renderRecords() {
   document.querySelector('#best-wpm').textContent = `${Math.max(0, ...perfectEntries.map(item => item.wpm || 0))} WPM`;
   const fastest = perfectEntries.map(item => item.time).filter(Number.isFinite);
   document.querySelector('#best-time').textContent = formatDuration(fastest.length ? Math.min(...fastest) : null);
-  document.querySelector('#results-body').innerHTML = lessons.map((lesson, index) => { const record = lessonRecords[index]; return `<tr><td>${String(index + 1).padStart(2,'0')} · ${lesson[0]}</td>${record ? `<td>${record.wpm} WPM</td><td>${record.accuracy}%</td><td>${formatDuration(record.time)}</td>` : '<td class="empty">Chưa có</td><td class="empty">--</td><td class="empty">--</td>'}</tr>`; }).join('');
+  document.querySelector('#results-body').innerHTML = lessons.map((lesson, index) => { const record = lessonRecords[index]; return `<tr><td>${String(index + 1).padStart(2,'0')} · ${lesson[0]}</td>${record ? `<td>${record.wpm} WPM</td><td>${record.accuracy}%</td><td>${formatDuration(record.time)}</td>` : `<td class="empty">${currentLocalizedUi().notYet}</td><td class="empty">--</td><td class="empty">--</td>`}</tr>`; }).join('');
   if (activeLanguage !== 'vi') document.querySelectorAll('#results-body tr').forEach((row, index) => { row.querySelector('td').textContent = `${String(index + 1).padStart(2,'0')} · ${localizedLessonName(index)}`; });
-  if (activeLanguage !== 'vi') document.querySelectorAll('#results-body .empty').forEach((cell, index) => { cell.textContent = index % 3 === 0 ? 'Not yet' : '--'; });
+  document.querySelectorAll('#results-body .empty').forEach((cell, index) => { cell.textContent = index % 3 === 0 ? currentLocalizedUi().notYet : '--'; });
+  updateContinueButton();
 }
 function saveLessonResult(correctCharacters, typedCharacters) {
   const seconds = Math.max(1, Math.floor((Date.now() - startedAt) / 1000));
@@ -109,10 +135,10 @@ function drawFree() {
   if (freeStartedAt) { const minutes = Math.max((Date.now() - freeStartedAt) / 60000, 1 / 60); document.querySelector('#free-wpm').textContent = `${Math.round(correct / 5 / minutes)} WPM`; }
   highlightGuide(freeText[typed.length]);
   if (typed === freeText && freeText) clearInterval(freeInterval);
-  document.querySelector('#free-feedback').textContent = typed === freeText && freeText ? 'Hoan thanh! Hay chon mot doan van moi de luyen tiep.' : percent === 100 ? 'Rat tot, hay giu nhip go deu.' : 'Co ky tu chua dung, hay go cham lai mot chut.';
+  document.querySelector('#free-feedback').textContent = activeLanguage === 'vi' ? (typed === freeText && freeText ? 'Hoan thanh! Hay chon mot doan van moi de luyen tiep.' : percent === 100 ? 'Rat tot, hay giu nhip go deu.' : 'Co ky tu chua dung, hay go cham lai mot chut.') : (siteLanguages[activeLanguage]?.practice || 'Practice');
   if (activeLanguage !== 'vi') document.querySelector('#free-feedback').textContent = siteLanguages[activeLanguage]?.practice || 'Practice';
 }
-function setFreeText(value) { freeText = value.trim(); resetFree(); freeSample.textContent = freeText || 'Hay nhap hoac tao doan van de bat dau.'; if (freeText) { drawFree(); freeInput.focus(); } }
+function setFreeText(value) { freeText = value.trim(); resetFree(); freeSample.textContent = freeText || (activeLanguage === 'vi' ? 'Hay nhap hoac tao doan van de bat dau.' : (siteLanguages[activeLanguage]?.practice || 'Practice')); if (freeText) { drawFree(); freeInput.focus(); } }
 function tickFree() { const seconds = Math.floor((Date.now() - freeStartedAt) / 1000); document.querySelector('#free-timer').textContent = `${String(Math.floor(seconds / 60)).padStart(2,'0')}:${String(seconds % 60).padStart(2,'0')}`; }
 const gamePhrases = [
   'quick fingers build steady typing habits every day', 'focus on accuracy and let your speed grow naturally',
@@ -123,8 +149,8 @@ let gameText = '', gameActive = false, gameSeconds = 30, gameCorrect = 0, gameIn
 function setGameText() { gameText = `${gamePhrases[Math.floor(Math.random() * gamePhrases.length)]} ${gamePhrases[Math.floor(Math.random() * gamePhrases.length)]}.`; gameInput.value = ''; renderGame(); }
 function renderGame() { const typed = gameInput.value; gameSample.innerHTML = [...gameText].map((char, index) => `<span class="${index < typed.length ? (typed[index] === char ? '' : 'wrong') : index === typed.length ? 'current' : ''}">${char === ' ' ? '&nbsp;' : escapeHtml(char)}</span>`).join(''); highlightGuide(gameText[typed.length]); }
 function updateGameScore() { document.querySelector('#game-score').textContent = gameCorrect * 10; }
-function finishGame() { clearInterval(gameInterval); gameActive = false; gameInput.disabled = true; const score = gameCorrect * 10, best = Math.max(Number(localStorage.getItem('typingease-game-best') || 0), score); localStorage.setItem('typingease-game-best', best); document.querySelector('#game-best').textContent = best; document.querySelector('#game-status').textContent = `Hoàn thành! Bạn đạt ${score} điểm.`; document.querySelector('#game-start').textContent = 'Chơi lại'; }
-function startGame() { clearInterval(gameInterval); gameActive = true; gameSeconds = 30; gameCorrect = 0; document.querySelector('#game-time').textContent = gameSeconds; updateGameScore(); document.querySelector('#game-status').textContent = 'Tập trung, gõ nhanh và chính xác!'; document.querySelector('#game-start').textContent = 'Đang thi đấu...'; gameInput.disabled = false; setGameText(); gameInput.focus(); gameInterval = setInterval(() => { gameSeconds -= 1; document.querySelector('#game-time').textContent = gameSeconds; if (gameSeconds <= 0) finishGame(); }, 1000); }
+function finishGame() { clearInterval(gameInterval); gameActive = false; gameInput.disabled = true; const score = gameCorrect * 10, best = Math.max(Number(localStorage.getItem('typingease-game-best') || 0), score), gameUi = currentLocalizedUi().game; localStorage.setItem('typingease-game-best', best); document.querySelector('#game-best').textContent = best; document.querySelector('#game-status').textContent = formatUi(gameUi.finish, {score}); document.querySelector('#game-start').textContent = gameUi.replay; }
+function startGame() { clearInterval(gameInterval); gameActive = true; gameSeconds = 30; gameCorrect = 0; const gameUi = currentLocalizedUi().game; document.querySelector('#game-time').textContent = gameSeconds; updateGameScore(); document.querySelector('#game-status').textContent = gameUi.focus; document.querySelector('#game-start').textContent = gameUi.running; gameInput.disabled = false; setGameText(); gameInput.focus(); gameInterval = setInterval(() => { gameSeconds -= 1; document.querySelector('#game-time').textContent = gameSeconds; if (gameSeconds <= 0) finishGame(); }, 1000); }
 
 function makeKeyboard() {
   const keyboard = document.querySelector('#keyboard');
@@ -134,7 +160,51 @@ function renderLevels() {
   document.querySelector('#lesson-levels').innerHTML = lessons.map((item, i) => `<button class="level ${i === lessonIndex ? 'active' : ''} ${i < lessonIndex ? 'complete' : ''}" type="button" data-level="${i}"><b>${String(i + 1).padStart(2,'0')}</b>${localizedLessonName(i)}</button>`).join('');
   document.querySelector('#lesson-title').textContent = localizedLessonName(lessonIndex);
   document.querySelector('#lesson-progress').textContent = activeLanguage === 'vi' ? `Bài ${lessonIndex + 1} / ${lessons.length}` : `${localizedLessonName(lessonIndex)} / ${lessons.length}`;
+  if (lessonIndex >= 6) lessonsExpanded = true;
+  const lessonPath = document.querySelector('.lesson-path'), toggleButton = document.querySelector('#toggle-lessons'), actionText = currentHomeActionText();
+  lessonPath.classList.toggle('is-expanded', lessonsExpanded);
+  toggleButton.setAttribute('aria-expanded', String(lessonsExpanded));
+  toggleButton.textContent = lessonsExpanded ? actionText.collapse : actionText.showAll;
   document.querySelectorAll('.level').forEach(button => button.addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); setLesson(Number(button.dataset.level)); }));
+}
+function updateContinueButton() {
+  const button = document.querySelector('#continue-lesson');
+  const completedLessons = Object.keys(lessonRecords).map(Number).filter(index => Number.isInteger(index) && index >= 0 && index < lessons.length);
+  if (!completedLessons.length) { button.hidden = true; return; }
+  const continueIndex = Math.min(Math.max(...completedLessons) + 1, lessons.length - 1);
+  button.dataset.lesson = String(continueIndex);
+  button.textContent = `${currentHomeActionText().continue} ${continueIndex + 1} →`;
+  button.hidden = false;
+}
+function updateLessonState() { document.querySelector('.typing-card').classList.toggle('is-last-lesson', lessonIndex === lessons.length - 1); }
+function updateLocalizedStaticUi() {
+  const ui = currentLocalizedUi(), gameUi = ui.game;
+  document.querySelectorAll('.mode-switch button')[2].textContent = gameUi.tab;
+  document.querySelectorAll('.lesson-result span').forEach((item, index) => { item.textContent = [siteLanguages[activeLanguage]?.speed || 'Speed', siteLanguages[activeLanguage]?.accuracy || 'Accuracy', ui.errors, siteLanguages[activeLanguage]?.time || 'Time'][index]; });
+  document.querySelector('#next-lesson').textContent = ui.next;
+  document.querySelector('#retry-lesson').textContent = ui.retry;
+  document.querySelector('#reset').title = ui.retry;
+  document.querySelector('.game-kicker').textContent = gameUi.kicker;
+  document.querySelector('.game-top h3').textContent = gameUi.title;
+  document.querySelector('.game-top p:not(.game-kicker)').textContent = gameUi.description;
+  document.querySelectorAll('.game-scoreboard span').forEach((item, index) => { item.textContent = [gameUi.time, gameUi.score, gameUi.best][index]; });
+  gameInput.placeholder = gameUi.placeholder;
+  if (gameActive) { document.querySelector('#game-start').textContent = gameUi.running; document.querySelector('#game-status').textContent = gameUi.focus; }
+  else if (gameText) { document.querySelector('#game-start').textContent = gameUi.replay; document.querySelector('#game-status').textContent = formatUi(gameUi.finish, {score: gameCorrect * 10}); }
+  else { document.querySelector('#game-sample').textContent = gameUi.idle; document.querySelector('#game-start').textContent = gameUi.start; document.querySelector('#game-status').textContent = gameUi.status; }
+  document.querySelector('.explore-heading .eyebrow').innerHTML = `<i></i> ${ui.exploreTag}`;
+  document.querySelector('#explore-title').textContent = ui.exploreTitle;
+  document.querySelectorAll('.explore-card').forEach((card, index) => { const [title, description, cta] = ui.explore[index]; card.querySelector('h3').textContent = title; card.querySelector('p').textContent = description; card.querySelector('span').childNodes[0].nodeValue = `${cta} `; });
+  document.querySelectorAll('.footer-links a').forEach((link, index) => { link.textContent = ui.explore[index][0]; });
+  document.querySelector('.footer-links').setAttribute('aria-label', ui.exploreTag);
+}
+function showLessonResult(correctCharacters, typedCharacters) {
+  const seconds = Math.max(1, Math.floor((Date.now() - startedAt) / 1000));
+  const minutes = Math.max(seconds / 60, 1 / 60), speed = Math.round(typedCharacters / 5 / minutes), resultAccuracy = Math.round(correctCharacters / typedCharacters * 100);
+  document.querySelector('#result-wpm').textContent = `${speed} WPM`;
+  document.querySelector('#result-accuracy').textContent = `${resultAccuracy}%`;
+  document.querySelector('#result-errors').textContent = String(Math.max(0, typedCharacters - correctCharacters));
+  document.querySelector('#result-time').textContent = formatDuration(seconds);
 }
 function highlightGuide(char) {
   const target = char === '\n' ? 'enter' : char?.toLowerCase() || '';
@@ -147,17 +217,25 @@ function draw() {
   prompt.innerHTML = [...lesson].map((char, index) => { const state = index < typed.length ? (typed[index] === char ? '' : 'wrong') : index === typed.length ? 'current' : ''; if (char === '\n' && lessonIndex >= 7) return `<br><span class="${state} enter-cue">↵ Enter</span><br>`; return `<span class="${state}">${char === ' ' ? '&nbsp;' : char}</span>`; }).join('');
   const correct = [...typed].filter((char, i) => char === lesson[i]).length, percent = typed.length ? Math.round(correct / typed.length * 100) : null;
   accuracy.innerHTML = `${percent ?? '--'}<small>%</small>`;
-  if (!typed.length) setTimeout(() => { feedback.textContent = 'Bắt đầu gõ để xem độ chính xác của bạn.'; }, 0);
+  if (!typed.length) setTimeout(() => { feedback.textContent = activeLanguage === 'vi' ? 'Bắt đầu gõ để xem độ chính xác của bạn.' : (siteLanguages[activeLanguage]?.practice || 'Practice'); }, 0);
   if (startedAt) { const minutes = Math.max((Date.now() - startedAt) / 60000, 1 / 60); wpm.innerHTML = `${Math.round(correct / 5 / minutes)} <small>WPM</small>`; }
   highlightGuide(lesson[typed.length]);
-  if (typed.length >= lesson.length) { clearInterval(interval); document.querySelector('.typing-card').classList.add('lesson-finished'); }
-  if (activeLanguage !== 'vi') setTimeout(() => { feedback.textContent = siteLanguages[activeLanguage]?.practice || 'Practice'; }, 0);
-  if (typed.length >= lesson.length) { saveLessonResult(correct, typed.length); setTimeout(() => { feedback.textContent = percent === 100 ? 'Hoàn thành xuất sắc! Bạn có thể sang bài tiếp theo hoặc luyện lại.' : `Bạn đã hoàn thành với độ chính xác ${percent}%. Hãy luyện lại để cải thiện nhé.`; }, 0); }
-  if (typed === lesson) { clearInterval(interval); feedback.textContent = lessonIndex < lessons.length - 1 ? 'Xuất sắc! Chọn bài tiếp theo để tiếp tục.' : 'Bạn đã hoàn thành toàn bộ lộ trình!'; }
-  else feedback.textContent = percent === 100 ? 'Rất tốt, cứ giữ nhịp này nhé!' : 'Có vài ký tự chưa đúng, hãy gõ chậm lại một chút.';
+  if (typed.length >= lesson.length && !lessonCompleted) {
+    lessonCompleted = true;
+    clearInterval(interval);
+    document.querySelector('.typing-card').classList.add('lesson-finished');
+    saveLessonResult(correct, typed.length);
+    showLessonResult(correct, typed.length);
+    const ui = currentLocalizedUi();
+    feedback.textContent = percent === 100 ? ui.perfect : formatUi(ui.accuracy, {accuracy: percent});
+  } else if (!lessonCompleted) {
+    if (activeLanguage !== 'vi') feedback.textContent = siteLanguages[activeLanguage]?.practice || 'Practice';
+    else feedback.textContent = percent === 100 ? 'Rất tốt, cứ giữ nhịp này nhé!' : 'Có vài ký tự chưa đúng, hãy gõ chậm lại một chút.';
+  }
 }
-function reset(focus = false) { clearInterval(interval); startedAt = null; input.value = ''; timer.textContent = '00:00'; wpm.innerHTML = '0 <small>WPM</small>'; feedback.textContent = 'Giữ các ngón tay ở hàng phím cơ sở nhé.'; draw(); if (focus) input.focus(); }
-function setLesson(index) { lessonIndex = index; document.querySelector('#lesson-number').textContent = String(index + 1).padStart(2,'0'); document.querySelector('#lesson-title').textContent = lessons[index][0]; document.querySelector('#lesson-progress').textContent = `Bài ${index + 1} / ${lessons.length}`; renderLevels(); reset(true); }
+function reset(focus = false) { clearInterval(interval); startedAt = null; lessonCompleted = false; input.value = ''; timer.textContent = '00:00'; wpm.innerHTML = '0 <small>WPM</small>'; feedback.textContent = activeLanguage === 'vi' ? 'Giữ các ngón tay ở hàng phím cơ sở nhé.' : (siteLanguages[activeLanguage]?.practice || 'Practice'); document.querySelector('.typing-card').classList.remove('lesson-finished'); draw(); if (focus) input.focus(); }
+function setLesson(index) { lessonIndex = index; document.querySelector('#lesson-number').textContent = String(index + 1).padStart(2,'0'); document.querySelector('#lesson-title').textContent = lessons[index][0]; document.querySelector('#lesson-progress').textContent = `Bài ${index + 1} / ${lessons.length}`; updateLessonState(); renderLevels(); reset(true); }
+function openLesson(index) { setLesson(index); document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); setTimeout(() => input.focus(), 500); }
 function tick() { const secs = Math.floor((Date.now() - startedAt) / 1000); timer.textContent = `${String(Math.floor(secs / 60)).padStart(2,'0')}:${String(secs % 60).padStart(2,'0')}`; }
 input.addEventListener('input', () => { if (!startedAt && input.value) { startedAt = Date.now(); interval = setInterval(tick, 1000); } draw(); });
 freeInput.addEventListener('input', () => { if (!freeText) return; if (!freeStartedAt && freeInput.value) { freeStartedAt = Date.now(); freeInterval = setInterval(tickFree, 1000); } drawFree(); });
@@ -167,26 +245,29 @@ document.querySelector('#game-best').textContent = localStorage.getItem('typinge
 document.querySelector('#use-text').addEventListener('click', () => setFreeText(customText.value));
 document.querySelector('#random-text').addEventListener('click', () => { const next = freeSamples[Math.floor(Math.random() * freeSamples.length)]; customText.value = next; setFreeText(next); });
 document.querySelector('#reset').addEventListener('click', () => reset(true));
-document.querySelector('#reset').addEventListener('click', () => document.querySelector('.typing-card').classList.remove('lesson-finished'));
-document.querySelectorAll('.start-button').forEach(b => b.addEventListener('click', () => { document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); setTimeout(() => input.focus(), 500); }));
+document.querySelector('.start-button').addEventListener('click', () => openLesson(0));
+document.querySelector('#continue-lesson').addEventListener('click', event => { const index = Number(event.currentTarget.dataset.lesson); if (Number.isInteger(index) && index >= 0 && index < lessons.length) openLesson(index); });
+document.querySelector('#toggle-lessons').addEventListener('click', () => { lessonsExpanded = !lessonsExpanded; renderLevels(); });
 document.querySelectorAll('[data-scroll]').forEach(b => b.addEventListener('click', () => document.querySelector(b.dataset.scroll).scrollIntoView({behavior:'smooth'})));
 document.querySelectorAll('.mode-switch button').forEach((button, index) => button.addEventListener('click', () => { document.querySelector('.mode-switch .selected').classList.remove('selected'); button.classList.add('selected'); const card = document.querySelector('.typing-card'); card.classList.remove('lesson-finished'); card.classList.toggle('free-mode', index === 1); card.classList.toggle('game-mode', index === 2); if (index !== 2 && gameActive) finishGame(); if (index === 0) input.focus(); else if (index === 1 && !freeText) { const sample = freeSamples[Math.floor(Math.random() * freeSamples.length)]; customText.value = sample; setFreeText(sample); } else if (index === 1) freeInput.focus(); }));
 document.querySelector('#next-lesson').addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); setLesson(Math.min(lessonIndex + 1, lessons.length - 1)); });
 document.querySelector('#retry-lesson').addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); reset(true); });
-document.querySelector('#clear-results').addEventListener('click', () => { if (confirm('Bạn có muốn xoá toàn bộ lịch sử thành tích?')) { lessonRecords = {}; localStorage.removeItem(SCORE_STORAGE_KEY); renderRecords(); } });
+document.querySelector('#clear-results').addEventListener('click', () => { const message = activeLanguage === 'vi' ? 'Bạn có muốn xoá toàn bộ lịch sử thành tích?' : (siteLanguages[activeLanguage]?.results || 'Results'); if (confirm(message)) { lessonRecords = {}; localStorage.removeItem(SCORE_STORAGE_KEY); renderRecords(); } });
 function applyLanguage(code) {
   const t = siteLanguages[code] || siteLanguages.vi;
   activeLanguage = code;
   document.documentElement.lang = code;
   document.documentElement.dir = code === 'ar' ? 'rtl' : 'ltr';
-  document.querySelectorAll('nav a').forEach((link, index) => { link.textContent = t.nav[index]; });
-  document.querySelector('.login').innerHTML = `${t.login} <span>→</span>`;
+  document.querySelectorAll('.topbar nav a').forEach((link, index) => { link.textContent = t.nav[index]; });
+  const loginButton = document.querySelector('.login');
+  if (loginButton) loginButton.innerHTML = `${t.login} <span>→</span>`;
   document.querySelector('h1').innerHTML = `${t.hero[0]}<br><em>${t.hero[1]}</em>`;
   document.querySelector('.intro').textContent = t.intro;
   const eyebrows = document.querySelectorAll('.eyebrow');
   eyebrows[0].innerHTML = `<i></i> ${t.daily}`; eyebrows[1].innerHTML = `<i></i> ${t.ready}`;
-  document.querySelector('.start-button').innerHTML = `${t.start} <span>→</span>`;
-  document.querySelector('.text-button').innerHTML = `${t.learn} <span>↓</span>`;
+  const homeActions = currentHomeActionText();
+  document.querySelector('.start-button').innerHTML = `${homeActions.start} <span>→</span>`;
+  document.querySelector('.secondary-button').innerHTML = `${homeActions.speedTest} <span>→</span>`;
   document.querySelector('#practice-title').textContent = t.practice;
   document.querySelectorAll('.mode-switch button')[0].textContent = t.basic;
   document.querySelectorAll('.mode-switch button')[1].textContent = t.free;
@@ -210,13 +291,11 @@ function applyLanguage(code) {
   document.querySelector('.keyboard-copy>p:not(.eyebrow)').textContent = extra.keyboardInfo;
   document.querySelector('.results-heading .eyebrow').innerHTML = `<i></i> ${code === 'vi' ? 'Tiến bộ của bạn' : 'Your progress'}`;
   document.querySelector('.results-heading p:not(.eyebrow)').textContent = extra.records; document.querySelector('#clear-results').textContent = extra.clear;
-  document.querySelector('#next-lesson').textContent = code === 'vi' ? 'Bài tiếp theo →' : 'Next lesson →'; document.querySelector('#retry-lesson').textContent = code === 'vi' ? '↻ Làm lại bài này' : '↻ Try this lesson again';
   document.querySelectorAll('.results-summary span').forEach((item, index) => { item.textContent = [extra.completed, extra.bestSpeed, extra.bestTime][index]; });
   document.querySelector('.benefits .eyebrow').innerHTML = `<i></i> ${extra.benefitTag}`; document.querySelector('footer p').textContent = extra.footer;
   document.title = code === 'vi' ? 'Luyện gõ 10 ngón online miễn phí | TypingEase' : 'TypingEase — Touch typing practice';
   if (code !== 'vi') {
     document.querySelector('.mini-top span').textContent = t.practice; document.querySelector('.visual-card p').textContent = t.benefits;
-    document.querySelector('.trust-row p').innerHTML = `<strong>12,000+</strong> ${t.daily}`;
     document.querySelector('.typing-card>.typing-label').textContent = t.start; input.placeholder = t.start;
     document.querySelector('#feedback').textContent = t.intro;
     document.querySelectorAll('.finger-legend span').forEach((item, index) => { item.textContent = [t.basic,t.free,t.practice,t.results,t.speed][index]; });
@@ -227,7 +306,6 @@ function applyLanguage(code) {
     document.querySelectorAll('.benefit-list p').forEach(item => { item.textContent = t.intro; });
   } else {
     document.querySelector('.mini-top span').textContent = 'Bài học hôm nay'; document.querySelector('.visual-card p').textContent = 'Gõ đúng nhịp, từng phím một';
-    document.querySelector('.trust-row p').innerHTML = '<strong>12.000+</strong> người đang luyện tập hôm nay';
     document.querySelector('.typing-card>.typing-label').textContent = 'Bắt đầu gõ tại đây'; input.placeholder = 'Nhấn vào đây và bắt đầu gõ...';
     document.querySelector('#feedback').textContent = 'Giữ các ngón tay ở hàng phím cơ sở nhé.';
     document.querySelectorAll('.finger-legend span').forEach((item, index) => { item.textContent = ['Út','Áp út','Giữa','Trỏ','Cái'][index]; });
@@ -237,6 +315,8 @@ function applyLanguage(code) {
     document.querySelectorAll('.benefit-list h3').forEach((item, index) => { item.textContent = ['Học đúng tư thế','Luyện tập có nhịp','Theo dõi tiến bộ'][index]; });
     document.querySelectorAll('.benefit-list p').forEach((item, index) => { item.textContent = ['Làm quen vị trí các ngón tay trước khi tăng tốc độ.','Các bài học ngắn giúp bạn duy trì sự tập trung.','Biết tốc độ và độ chính xác của mình sau mỗi bài gõ.'][index]; });
   }
+  document.querySelector('.trust-row p').textContent = homeActions.trust;
+  updateLocalizedStaticUi();
   renderLevels(); renderRecords();
   localStorage.setItem('typingease-language', code);
 }
@@ -244,4 +324,4 @@ document.querySelector('#language').addEventListener('change', event => applyLan
 const savedLanguage = localStorage.getItem('typingease-language') || 'vi';
 document.querySelector('#language').value = savedLanguage;
 applyLanguage(savedLanguage);
-makeKeyboard(); renderLevels(); renderRecords(); draw();
+updateLessonState(); makeKeyboard(); renderLevels(); renderRecords(); draw();

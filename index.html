@@ -25,7 +25,7 @@
         <a href="#huong-dan">Hướng dẫn</a>
         <a href="#bang-xep-hang">Thành tích</a>
       </nav>
-      <div class="header-actions"><label class="language-select"><span class="sr-only">Ngôn ngữ</span><select id="language" aria-label="Chọn ngôn ngữ"><option value="vi">Tiếng Việt</option><option value="en">English</option><option value="zh">中文</option><option value="ja">日本語</option><option value="ru">Русский</option><option value="pt">Português</option><option value="pt-BR">Português (Brasil)</option><option value="ar">العربية (مصر)</option><option value="ms">Bahasa Melayu</option></select></label><button class="login" type="button">Đăng nhập <span>→</span></button></div>
+      <div class="header-actions"><label class="language-select"><span class="sr-only">Ngôn ngữ</span><select id="language" aria-label="Chọn ngôn ngữ"><option value="vi">Tiếng Việt</option><option value="en">English</option><option value="zh">中文</option><option value="ja">日本語</option><option value="ru">Русский</option><option value="pt">Português</option><option value="pt-BR">Português (Brasil)</option><option value="ar">العربية (مصر)</option><option value="ms">Bahasa Melayu</option></select></label></div>
     </header>
 
     <main>
@@ -35,12 +35,12 @@
           <h1>Luyện gõ 10 ngón<br /><em>online miễn phí.</em></h1>
           <p class="intro">Cải thiện kỹ năng gõ 10 ngón với những bài tập ngắn, rõ ràng và hoàn toàn miễn phí.</p>
           <div class="hero-actions">
-            <button class="primary-button start-button" type="button">Bắt đầu luyện gõ <span>→</span></button>
-            <button class="text-button" type="button" data-scroll="#huong-dan">Tìm hiểu cách luyện <span>↓</span></button>
+            <button class="primary-button start-button" type="button">Bắt đầu bài 1 <span>→</span></button>
+            <a class="secondary-button" href="./kiem-tra-toc-do-go/">Kiểm tra tốc độ 60 giây <span>→</span></a>
+            <button class="continue-button" id="continue-lesson" type="button" hidden></button>
           </div>
           <div class="trust-row">
-            <div class="avatars"><b>H</b><b>N</b><b>T</b><b>+</b></div>
-            <p><strong>12.000+</strong> người đang luyện tập hôm nay</p>
+            <p>Luyện gõ miễn phí, không cần đăng ký.</p>
           </div>
         </div>
         <div class="hero-visual" aria-hidden="true">
@@ -65,6 +65,7 @@
         <div class="lesson-path" aria-label="Lộ trình bài học">
           <div class="path-title"><strong>Lộ trình 10 ngón</strong><span id="lesson-progress">Bài 1 / 30</span></div>
           <div class="lesson-levels" id="lesson-levels"></div>
+          <button class="toggle-lessons" id="toggle-lessons" type="button" aria-expanded="false" aria-controls="lesson-levels">Xem toàn bộ 30 bài</button>
         </div>
         <div class="practice-grid">
           <article class="typing-card">
@@ -79,6 +80,12 @@
             <label class="typing-label" for="typing-input">Bắt đầu gõ tại đây</label>
             <textarea id="typing-input" rows="2" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Nhấn vào đây và bắt đầu gõ..."></textarea>
             <p class="feedback" id="feedback" aria-live="polite">Giữ các ngón tay ở hàng phím cơ sở nhé.</p>
+            <div class="lesson-result" id="lesson-result" aria-live="polite">
+              <div><span>Tốc độ</span><strong id="result-wpm">0 WPM</strong></div>
+              <div><span>Chính xác</span><strong id="result-accuracy">--%</strong></div>
+              <div><span>Số lỗi</span><strong id="result-errors">0</strong></div>
+              <div><span>Thời gian</span><strong id="result-time">00:00</strong></div>
+            </div>
             <button class="next-lesson" id="next-lesson" type="button">Bài tiếp theo →</button>
             <button class="retry-lesson" id="retry-lesson" type="button">↻ Làm lại bài này</button>
             <section class="free-practice" id="free-practice" aria-label="Luyện gõ tự do">
@@ -136,6 +143,30 @@
           <article><span>01</span><div><h3>Học đúng tư thế</h3><p>Làm quen vị trí các ngón tay trước khi tăng tốc độ.</p></div></article>
           <article><span>02</span><div><h3>Luyện tập có nhịp</h3><p>Các bài học ngắn giúp bạn duy trì sự tập trung.</p></div></article>
           <article><span>03</span><div><h3>Theo dõi tiến bộ</h3><p>Biết tốc độ và độ chính xác của mình sau mỗi bài gõ.</p></div></article>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Tài nguyên TypingEase</p>
+          <h2 id="explore-title">Khám phá TypingEase</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" href="./cach-go-10-ngon/">
+            <h3>Cách gõ 10 ngón</h3>
+            <p>Hướng dẫn vị trí ngón tay, hàng phím cơ sở và cách luyện gõ đúng kỹ thuật cho người mới.</p>
+            <span>Xem hướng dẫn <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="./kiem-tra-toc-do-go/">
+            <h3>Kiểm tra tốc độ đánh máy</h3>
+            <p>Làm bài typing test 60 giây để kiểm tra WPM, độ chính xác và tốc độ gõ hiện tại của bạn.</p>
+            <span>Kiểm tra ngay <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="./wpm-la-gi/">
+            <h3>WPM là gì?</h3>
+            <p>Tìm hiểu WPM, cách tính tốc độ đánh máy và vì sao WPM nên được xem cùng độ chính xác.</p>
+            <span>Tìm hiểu WPM <b aria-hidden="true">→</b></span>
+          </a>
         </div>
       </section>
     </main>
