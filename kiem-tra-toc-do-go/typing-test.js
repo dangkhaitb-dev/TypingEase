@@ -18,6 +18,17 @@ const resultAccuracy = document.querySelector('#result-accuracy');
 const resultErrors = document.querySelector('#result-errors');
 const resultConsistency = document.querySelector('#result-consistency');
 const comparisonElement = document.querySelector('#result-comparison');
+const progressRangeButtons = [...document.querySelectorAll('[data-progress-range]')];
+const progressMetricButtons = [...document.querySelectorAll('[data-progress-metric]')];
+const progressEmpty = document.querySelector('#progress-empty');
+const progressChartWrap = document.querySelector('#progress-chart-wrap');
+const progressChart = document.querySelector('#progress-chart');
+const progressTrend = document.querySelector('#progress-trend');
+const progressSummaryText = document.querySelector('#progress-summary-text');
+const progressAverageWpm = document.querySelector('#progress-average-wpm');
+const progressBestWpm = document.querySelector('#progress-best-wpm');
+const progressAverageAccuracy = document.querySelector('#progress-average-accuracy');
+const progressTestCount = document.querySelector('#progress-test-count');
 let selectedDuration = 60;
 let startedAt = null;
 let timer = null;
@@ -25,6 +36,8 @@ let finished = false;
 let wpmSamples = [];
 let lastSampleSecond = 0;
 let testHistory = loadHistory();
+let progressRange = 7;
+let progressMetric = 'wpm';
 
 function loadHistory() {
   try {
@@ -38,6 +51,7 @@ function loadHistory() {
 function saveHistory(record) {
   testHistory = [...testHistory, record].slice(-15);
   try { localStorage.setItem(HISTORY_KEY, JSON.stringify(testHistory)); } catch { /* Storage can be unavailable in private browsing. */ }
+  renderProgress();
 }
 
 function renderPrompt() {
@@ -168,6 +182,102 @@ function resetTest(focus = true) {
   if (focus) input.focus();
 }
 
+function localDay(timestamp) {
+  const date = new Date(timestamp);
+  if (!Number.isFinite(date.getTime())) return null;
+  return new Date(date.getFullYear(), date.getMonth(), date.getDate());
+}
+
+function getProgressRecords() {
+  const today = localDay(Date.now());
+  const cutoff = new Date(today.getFullYear(), today.getMonth(), today.getDate() - (progressRange - 1)).getTime();
+  return testHistory.filter(record => Number.isFinite(record.timestamp) && record.timestamp >= cutoff && Number.isFinite(record.wpm));
+}
+
+function groupProgressByDay(records) {
+  const groups = new Map();
+  records.forEach(record => {
+    const day = localDay(record.timestamp);
+    if (!day) return;
+    const key = day.getTime();
+    const group = groups.get(key) || { day, wpm: [], accuracy: [], count: 0 };
+    group.wpm.push(record.wpm);
+    if (Number.isFinite(record.accuracy)) group.accuracy.push(record.accuracy);
+    group.count += 1;
+    groups.set(key, group);
+  });
+  return [...groups.values()].sort((a, b) => a.day - b.day).map(group => ({
+    ...group,
+    averageWpm: group.wpm.reduce((total, value) => total + value, 0) / group.wpm.length,
+    averageAccuracy: group.accuracy.length ? group.accuracy.reduce((total, value) => total + value, 0) / group.accuracy.length : null
+  }));
+}
+
+function formatProgressDate(date) { return date.toLocaleDateString('vi-VN', { day: '2-digit', month: '2-digit' }); }
+
+function renderProgressChart(groups) {
+  const values = groups.map(group => progressMetric === 'wpm' ? group.averageWpm : group.averageAccuracy).filter(Number.isFinite);
+  const width = 640, height = 220, left = 48, right = 18, top = 20, bottom = 38;
+  const minValue = progressMetric === 'accuracy' ? 0 : Math.max(0, Math.floor(Math.min(...values) - 10));
+  const maxValue = progressMetric === 'accuracy' ? 100 : Math.ceil(Math.max(...values) + 10);
+  const valueRange = Math.max(1, maxValue - minValue);
+  const chartWidth = width - left - right, chartHeight = height - top - bottom;
+  const x = index => groups.length === 1 ? left + chartWidth / 2 : left + index * chartWidth / (groups.length - 1);
+  const y = value => top + (maxValue - value) / valueRange * chartHeight;
+  const path = groups.map((group, index) => `${index ? 'L' : 'M'}${x(index).toFixed(1)},${y(progressMetric === 'wpm' ? group.averageWpm : group.averageAccuracy).toFixed(1)}`).join(' ');
+  const grid = [0, .5, 1].map(step => { const value = Math.round(maxValue - step * valueRange); const lineY = top + step * chartHeight; return `<line class="grid" x1="${left}" y1="${lineY}" x2="${width - right}" y2="${lineY}"/><text class="axis-label" x="8" y="${lineY + 4}">${value}${progressMetric === 'accuracy' ? '%' : ''}</text>`; }).join('');
+  const labels = groups.map((group, index) => (groups.length <= 6 || index === 0 || index === groups.length - 1 || index % Math.ceil(groups.length / 4) === 0) ? `<text class="axis-label" text-anchor="middle" x="${x(index)}" y="${height - 13}">${formatProgressDate(group.day)}</text>` : '').join('');
+  const points = groups.map((group, index) => { const value = progressMetric === 'wpm' ? group.averageWpm : group.averageAccuracy; return `<circle class="point" cx="${x(index)}" cy="${y(value)}" r="4"><title>${formatProgressDate(group.day)}: ${Math.round(value)}${progressMetric === 'accuracy' ? '%' : ' WPM'}</title></circle>`; }).join('');
+  progressChart.innerHTML = `${grid}<path class="line" d="${path}"/>${points}${labels}`;
+  progressChart.setAttribute('aria-label', `${progressMetric === 'wpm' ? 'WPM' : 'Accuracy'} theo thời gian`);
+}
+
+function renderProgress() {
+  const records = getProgressRecords();
+  const groups = groupProgressByDay(records);
+  const chartGroups = groups.filter(group => Number.isFinite(progressMetric === 'wpm' ? group.averageWpm : group.averageAccuracy));
+  progressEmpty.textContent = 'Chưa có đủ dữ liệu. Hãy hoàn thành vài bài kiểm tra để xem tiến bộ của bạn.';
+  const accuracyRecords = records.filter(record => Number.isFinite(record.accuracy));
+  const averageWpm = records.length ? Math.round(records.reduce((total, record) => total + record.wpm, 0) / records.length) : null;
+  const bestWpm = records.length ? Math.max(...records.map(record => record.wpm)) : null;
+  const averageAccuracy = accuracyRecords.length ? Math.round(accuracyRecords.reduce((total, record) => total + record.accuracy, 0) / accuracyRecords.length) : null;
+  progressAverageWpm.textContent = averageWpm ?? '--';
+  progressBestWpm.textContent = bestWpm ?? '--';
+  progressAverageAccuracy.textContent = `${averageAccuracy ?? '--'}%`;
+  progressTestCount.textContent = String(records.length);
+  progressRangeButtons.forEach(button => { const selected = Number(button.dataset.progressRange) === progressRange; button.classList.toggle('selected', selected); button.setAttribute('aria-pressed', String(selected)); });
+  progressMetricButtons.forEach(button => { const selected = button.dataset.progressMetric === progressMetric; button.classList.toggle('selected', selected); button.setAttribute('aria-pressed', String(selected)); });
+  if (!records.length) {
+    progressEmpty.hidden = false;
+    progressChartWrap.hidden = true;
+    progressTrend.textContent = '';
+    progressSummaryText.textContent = 'Chưa có dữ liệu tiến bộ.';
+    return;
+  }
+  if (!chartGroups.length) {
+    progressEmpty.hidden = false;
+    progressChartWrap.hidden = true;
+    progressTrend.textContent = 'Chưa có dữ liệu cho chỉ số này.';
+    progressSummaryText.textContent = 'Chưa có dữ liệu phù hợp để vẽ biểu đồ.';
+    return;
+  }
+  progressEmpty.hidden = true;
+  progressChartWrap.hidden = false;
+  renderProgressChart(chartGroups);
+  const measure = progressMetric === 'wpm' ? 'WPM' : '% Accuracy';
+  if (chartGroups.length < 2) {
+    progressTrend.className = 'progress-trend';
+    progressTrend.textContent = 'Chưa đủ dữ liệu để tính xu hướng.';
+  } else {
+    const first = progressMetric === 'wpm' ? chartGroups[0].averageWpm : chartGroups[0].averageAccuracy;
+    const last = progressMetric === 'wpm' ? chartGroups.at(-1).averageWpm : chartGroups.at(-1).averageAccuracy;
+    const change = Math.round(last - first);
+    progressTrend.className = `progress-trend ${change > 0 ? 'positive' : change < 0 ? 'negative' : ''}`;
+    progressTrend.textContent = change === 0 ? 'Không thay đổi so với đầu kỳ.' : `${change > 0 ? '+' : ''}${change} ${measure} so với đầu kỳ.`;
+  }
+  progressSummaryText.textContent = `${records.length} bài test trong ${progressRange} ngày. WPM trung bình ${averageWpm ?? '--'}, Accuracy trung bình ${averageAccuracy ?? '--'}%.`;
+}
+
 durationButtons.forEach(button => button.addEventListener('click', () => {
   if (startedAt && !finished) return;
   selectedDuration = Number(button.dataset.duration);
@@ -179,4 +289,7 @@ input.addEventListener('input', () => {
   updateMetrics();
 });
 restartButton.addEventListener('click', () => resetTest());
+progressRangeButtons.forEach(button => button.addEventListener('click', () => { progressRange = Number(button.dataset.progressRange); renderProgress(); }));
+progressMetricButtons.forEach(button => button.addEventListener('click', () => { progressMetric = button.dataset.progressMetric; renderProgress(); }));
 resetTest(false);
+renderProgress();

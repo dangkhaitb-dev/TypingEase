@@ -17,6 +17,7 @@
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="test.css" />
     <link rel="stylesheet" href="test-upgrade.css" />
+    <link rel="stylesheet" href="progress.css" />
   </head>
   <body>
     <header class="topbar test-header">
@@ -61,6 +62,17 @@
             <div class="result-details"><span>Độ chính xác <b id="result-accuracy">--%</b></span><span>Lỗi <b id="result-errors">0</b></span><span>Độ ổn định <b id="result-consistency">--%</b></span></div>
             <p class="result-comparison" id="result-comparison" hidden></p>
           </section>
+        </section>
+
+        <section class="progress-section" aria-labelledby="progress-title">
+          <div class="progress-heading"><div><p class="eyebrow"><i></i> Theo dõi luyện tập</p><h2 id="progress-title">Tiến bộ của bạn</h2></div><div class="progress-range" role="group" aria-label="Chọn khoảng thời gian"><button type="button" data-progress-range="7" aria-pressed="true" class="selected">7 ngày</button><button type="button" data-progress-range="30" aria-pressed="false">30 ngày</button></div></div>
+          <div class="progress-metric" role="group" aria-label="Chọn chỉ số biểu đồ"><button type="button" data-progress-metric="wpm" aria-pressed="true" class="selected">WPM</button><button type="button" data-progress-metric="accuracy" aria-pressed="false">Accuracy</button></div>
+          <p class="progress-note">Kết quả có thể bao gồm nhiều thời lượng kiểm tra khác nhau.</p>
+          <div class="progress-summary" aria-label="Tóm tắt tiến bộ"><div><span>WPM trung bình</span><strong id="progress-average-wpm">--</strong></div><div><span>WPM cao nhất</span><strong id="progress-best-wpm">--</strong></div><div><span>Accuracy trung bình</span><strong id="progress-average-accuracy">--%</strong></div><div><span>Số bài test</span><strong id="progress-test-count">0</strong></div></div>
+          <p class="progress-empty" id="progress-empty">Chưa có đủ dữ liệu. Hãy hoàn thành vài bài kiểm tra để xem tiến bộ của bạn.</p>
+          <div class="progress-chart-wrap" id="progress-chart-wrap" hidden><svg class="progress-chart" id="progress-chart" viewBox="0 0 640 220" role="img" aria-label="Biểu đồ tiến bộ"></svg></div>
+          <p class="progress-trend" id="progress-trend" aria-live="polite"></p>
+          <p class="sr-only" id="progress-summary-text" aria-live="polite"></p>
         </section>
 
         <section>
