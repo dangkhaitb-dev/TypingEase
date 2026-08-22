@@ -16,6 +16,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="../style.css" />
     <link rel="stylesheet" href="test.css" />
+    <link rel="stylesheet" href="test-upgrade.css" />
   </head>
   <body>
     <header class="topbar test-header">
@@ -37,16 +38,29 @@
 
         <section class="typing-test" aria-labelledby="test-title">
           <div class="test-heading"><h2 id="test-title">Test tốc độ gõ 60 giây</h2><p id="test-message" aria-live="polite">Sẵn sàng khi bạn muốn.</p></div>
+          <div class="duration-picker" role="group" aria-label="Chọn thời lượng bài test">
+            <button type="button" data-duration="15" aria-pressed="false">15 giây</button>
+            <button type="button" data-duration="30" aria-pressed="false">30 giây</button>
+            <button type="button" data-duration="60" aria-pressed="true" class="selected">60 giây</button>
+            <button type="button" data-duration="120" aria-pressed="false">120 giây</button>
+          </div>
           <div class="test-stats" aria-label="Kết quả hiện tại">
             <div><span>Thời gian</span><strong id="time-left">60<small>giây</small></strong></div>
             <div><span>WPM</span><strong id="wpm">0</strong></div>
             <div><span>Độ chính xác</span><strong id="accuracy">--<small>%</small></strong></div>
             <div><span>Lỗi</span><strong id="errors">0</strong></div>
+            <div><span>Độ ổn định</span><strong id="consistency">--<small>%</small></strong></div>
           </div>
           <p class="test-prompt" id="test-prompt" aria-label="Đoạn văn cần gõ"></p>
           <label for="typing-input">Bắt đầu gõ tại đây</label>
           <textarea id="typing-input" rows="4" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Nhấn vào đây và bắt đầu gõ..."></textarea>
           <div class="test-actions"><button class="primary-button" id="restart" type="button">Thử lại <span>↻</span></button><p>WPM được tính theo số ký tự đã nhập trong thời gian gõ.</p></div>
+          <section class="test-result" id="test-result" aria-live="polite" hidden>
+            <p>Kết quả của bạn</p>
+            <strong id="result-wpm">0 WPM</strong>
+            <div class="result-details"><span>Độ chính xác <b id="result-accuracy">--%</b></span><span>Lỗi <b id="result-errors">0</b></span><span>Độ ổn định <b id="result-consistency">--%</b></span></div>
+            <p class="result-comparison" id="result-comparison" hidden></p>
+          </section>
         </section>
 
         <section>
