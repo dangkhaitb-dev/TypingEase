@@ -85,16 +85,80 @@ const localizedUi = {
 };
 function currentLocalizedUi() { return localizedUi[activeLanguage] || localizedUi.en; }
 function formatUi(template, values) { return Object.entries(values).reduce((text, [key, value]) => text.replace(`{${key}}`, value), template); }
+const weakKeyUi = {
+  vi:{title:'Phím cần luyện thêm',empty:'Bạn chưa có phím yếu nổi bật trong bài này.',practice:'Luyện phím yếu',mode:'Luyện phím yếu',mistakes:'{count} lỗi'},
+  en:{title:'Keys to practise',empty:'You have no standout weak keys in this lesson.',practice:'Practise weak keys',mode:'Weak-key practice',mistakes:'{count} mistakes'},
+  zh:{title:'需要多练的按键',empty:'本课没有明显需要加强的按键。',practice:'练习薄弱按键',mode:'薄弱按键练习',mistakes:'{count} 个错误'},
+  ja:{title:'重点的練習キー',empty:'このレッスンでは目立った苦手なキーはありません。',practice:'苦手なキーを練習',mode:'苦手なキーの練習',mistakes:'{count} 回のミス'},
+  ru:{title:'Клавиши для практики',empty:'В этом уроке нет заметно слабых клавиш.',practice:'Тренировать слабые клавиши',mode:'Тренировка слабых клавиш',mistakes:'{count} ошибок'},
+  pt:{title:'Teclas para praticar',empty:'Não há teclas fracas em destaque nesta lição.',practice:'Praticar teclas fracas',mode:'Prática de teclas fracas',mistakes:'{count} erros'},
+  'pt-BR':{title:'Teclas para praticar',empty:'Não há teclas fracas em destaque nesta lição.',practice:'Praticar teclas fracas',mode:'Prática de teclas fracas',mistakes:'{count} erros'},
+  ar:{title:'مفاتيح تحتاج إلى تدريب',empty:'لا توجد مفاتيح ضعيفة بارزة في هذا الدرس.',practice:'تدرب على المفاتيح الضعيفة',mode:'تدريب المفاتيح الضعيفة',mistakes:'{count} أخطاء'},
+  ms:{title:'Kekunci untuk dilatih',empty:'Tiada kekunci lemah yang menonjol dalam pelajaran ini.',practice:'Latih kekunci lemah',mode:'Latihan kekunci lemah',mistakes:'{count} kesilapan'}
+};
+function currentWeakKeyUi() { return weakKeyUi[activeLanguage] || weakKeyUi.en; }
 function localizedLessonName(index) { return activeLanguage === 'vi' ? lessons[index][0] : `${siteLanguages[activeLanguage]?.basic || 'Lesson'} ${index + 1}`; }
 const rows = [['`','1','2','3','4','5','6','7','8','9','0','-','=','Back'],['Tab','q','w','e','r','t','y','u','i','o','p','[',']','\\'],['Caps','a','s','d','f','g','h','j','k','l',';','\'','Enter'],['Shift','z','x','c','v','b','n','m',',','.','/','Shift'],['Ctrl','Alt',' ' ,'Alt','Ctrl']];
 const fingerMap = {q:'LP',a:'LP',z:'LP',w:'LR',s:'LR',x:'LR',e:'LM',d:'LM',c:'LM',r:'LI',f:'LI',v:'LI',t:'LI',g:'LI',b:'LI',y:'RI',h:'RI',n:'RI',u:'RI',j:'RI',m:'RI',i:'RM',k:'RM',',':'RM',o:'RR',l:'RR','.':'RR',p:'RP',';':'RP','/':'RP',' ':'LT',enter:'RP'};
 let lessonIndex = 0, startedAt = null, interval = null, lessonCompleted = false, lessonsExpanded = false;
 const prompt = document.querySelector('#prompt'), input = document.querySelector('#typing-input'), wpm = document.querySelector('#wpm'), accuracy = document.querySelector('#accuracy'), timer = document.querySelector('#timer'), feedback = document.querySelector('#feedback');
-const currentLesson = () => lessons[lessonIndex][1];
+const currentLesson = () => weakPracticeActive ? weakPracticeText : lessons[lessonIndex][1];
 const SCORE_STORAGE_KEY = 'goxanh-lesson-records-v2';
+const WEAK_KEYS_STORAGE_KEY = 'typingease-weak-keys-v1';
 let lessonRecords = {};
 try { lessonRecords = JSON.parse(localStorage.getItem(SCORE_STORAGE_KEY)) || {}; } catch { lessonRecords = {}; }
+let weakKeyRecords = {};
+try { weakKeyRecords = JSON.parse(localStorage.getItem(WEAK_KEYS_STORAGE_KEY)) || {}; } catch { weakKeyRecords = {}; }
+if (!weakKeyRecords || Array.isArray(weakKeyRecords)) weakKeyRecords = {};
+let lessonWeakKeys = {}, recordedWeakKeyPositions = new Set(), observedInputLength = 0, weakPracticeActive = false, weakPracticeText = '';
 function formatDuration(seconds) { return seconds == null ? '--:--' : `${String(Math.floor(seconds / 60)).padStart(2,'0')}:${String(seconds % 60).padStart(2,'0')}`; }
+function normalizeWeakKey(character) { if (!character || character === '\n' || /\s/.test(character)) return ''; return character.toLocaleLowerCase(); }
+function getTopWeakKeys(source = weakKeyRecords) { return Object.entries(source).filter(([, count]) => Number.isFinite(count) && count > 0).sort(([keyA, countA], [keyB, countB]) => countB - countA || keyA.localeCompare(keyB)).slice(0, 3); }
+function trackWeakKeyErrors(value) {
+  if (value.length < observedInputLength) { observedInputLength = value.length; return; }
+  const lesson = currentLesson();
+  let changed = false;
+  for (let index = observedInputLength; index < value.length; index += 1) {
+    const targetKey = normalizeWeakKey(lesson[index]);
+    if (targetKey && value[index] !== lesson[index] && !recordedWeakKeyPositions.has(index)) {
+      recordedWeakKeyPositions.add(index);
+      lessonWeakKeys[targetKey] = (lessonWeakKeys[targetKey] || 0) + 1;
+      weakKeyRecords[targetKey] = (Number(weakKeyRecords[targetKey]) || 0) + 1;
+      changed = true;
+    }
+  }
+  observedInputLength = value.length;
+  if (changed) localStorage.setItem(WEAK_KEYS_STORAGE_KEY, JSON.stringify(weakKeyRecords));
+}
+function renderWeakKeys() {
+  const ui = currentWeakKeyUi(), topKeys = getTopWeakKeys(lessonWeakKeys), list = document.querySelector('#weak-keys-list'), empty = document.querySelector('#weak-keys-empty'), practiceButton = document.querySelector('#practice-weak-keys');
+  list.innerHTML = topKeys.map(([key, count]) => `<span class="weak-key"><b>${escapeHtml(key.toUpperCase())}</b><span>${formatUi(ui.mistakes, {count})}</span></span>`).join('');
+  empty.hidden = topKeys.length > 0;
+  practiceButton.hidden = topKeys.length === 0;
+}
+function buildWeakPractice(keys, source = weakKeyRecords) {
+  const wordPool = ['report','proper','prepare','repeat','practice','part','trap','treat','start','street','tree','rate','train','try','writer','water','power','type','typing','project','progress','perfect','prompt','print','paper','pattern','target','better','return','reply','rapid','create','track'];
+  const weakCounts = Object.fromEntries(keys.map(key => [key, Number(source[key]) || 1]));
+  const maximumCount = Math.max(...Object.values(weakCounts), 1);
+  const weightedKeys = keys.flatMap(key => Array(Math.max(1, Math.round(weakCounts[key] / maximumCount * 6))).fill(key));
+  const scoreWord = word => [...word].reduce((score, character) => score + (weakCounts[character] || 0), 0);
+  const matchingWords = wordPool.filter(word => scoreWord(word) > 0).sort((a, b) => scoreWord(b) - scoreWord(a) || a.length - b.length || a.localeCompare(b));
+  const countWeakCharacters = text => [...text].filter(character => weakCounts[character.toLowerCase()]).length;
+  const countTypedCharacters = text => [...text].filter(character => !/\s/.test(character)).length;
+  const pieces = [];
+  const add = value => { if (value && `${pieces.join(' ')} ${value}`.trim().length <= 80) pieces.push(value); };
+  const drill = weightedKeys.join(' ');
+  const combinations = weightedKeys.map((key, index) => `${key}${weightedKeys[(index + 1) % weightedKeys.length]}`).join(' ');
+  let wordIndex = 0;
+  add(drill);
+  while (pieces.join(' ').length < 58 && matchingWords.length) {
+    add(matchingWords[wordIndex % matchingWords.length]);
+    add(combinations);
+    wordIndex += 1;
+  }
+  while (pieces.join(' ').length < 58 || countWeakCharacters(pieces.join(' ')) / Math.max(1, countTypedCharacters(pieces.join(' '))) < 0.55) add(drill);
+  return pieces.join(' ').trim();
+}
 function renderRecords() {
   const entries = Object.values(lessonRecords), completed = entries.length, perfectEntries = entries.filter(item => item.accuracy === 100);
   document.querySelector('#completed-count').textContent = `${completed} / ${lessons.length}`;
@@ -158,8 +222,9 @@ function makeKeyboard() {
 }
 function renderLevels() {
   document.querySelector('#lesson-levels').innerHTML = lessons.map((item, i) => `<button class="level ${i === lessonIndex ? 'active' : ''} ${i < lessonIndex ? 'complete' : ''}" type="button" data-level="${i}"><b>${String(i + 1).padStart(2,'0')}</b>${localizedLessonName(i)}</button>`).join('');
-  document.querySelector('#lesson-title').textContent = localizedLessonName(lessonIndex);
-  document.querySelector('#lesson-progress').textContent = activeLanguage === 'vi' ? `Bài ${lessonIndex + 1} / ${lessons.length}` : `${localizedLessonName(lessonIndex)} / ${lessons.length}`;
+  const weakUi = currentWeakKeyUi();
+  document.querySelector('#lesson-title').textContent = weakPracticeActive ? weakUi.mode : localizedLessonName(lessonIndex);
+  document.querySelector('#lesson-progress').textContent = weakPracticeActive ? weakUi.mode : (activeLanguage === 'vi' ? `Bài ${lessonIndex + 1} / ${lessons.length}` : `${localizedLessonName(lessonIndex)} / ${lessons.length}`);
   if (lessonIndex >= 6) lessonsExpanded = true;
   const lessonPath = document.querySelector('.lesson-path'), toggleButton = document.querySelector('#toggle-lessons'), actionText = currentHomeActionText();
   lessonPath.classList.toggle('is-expanded', lessonsExpanded);
@@ -184,6 +249,10 @@ function updateLocalizedStaticUi() {
   document.querySelector('#next-lesson').textContent = ui.next;
   document.querySelector('#retry-lesson').textContent = ui.retry;
   document.querySelector('#reset').title = ui.retry;
+  const weakUi = currentWeakKeyUi();
+  document.querySelector('#weak-keys-title').textContent = weakUi.title;
+  document.querySelector('#weak-keys-empty').textContent = weakUi.empty;
+  document.querySelector('#practice-weak-keys').textContent = weakUi.practice;
   document.querySelector('.game-kicker').textContent = gameUi.kicker;
   document.querySelector('.game-top h3').textContent = gameUi.title;
   document.querySelector('.game-top p:not(.game-kicker)').textContent = gameUi.description;
@@ -197,6 +266,7 @@ function updateLocalizedStaticUi() {
   document.querySelectorAll('.explore-card').forEach((card, index) => { const [title, description, cta] = ui.explore[index]; card.querySelector('h3').textContent = title; card.querySelector('p').textContent = description; card.querySelector('span').childNodes[0].nodeValue = `${cta} `; });
   document.querySelectorAll('.footer-links a').forEach((link, index) => { link.textContent = ui.explore[index][0]; });
   document.querySelector('.footer-links').setAttribute('aria-label', ui.exploreTag);
+  renderWeakKeys();
 }
 function showLessonResult(correctCharacters, typedCharacters) {
   const seconds = Math.max(1, Math.floor((Date.now() - startedAt) / 1000));
@@ -224,8 +294,9 @@ function draw() {
     lessonCompleted = true;
     clearInterval(interval);
     document.querySelector('.typing-card').classList.add('lesson-finished');
-    saveLessonResult(correct, typed.length);
+    if (!weakPracticeActive) saveLessonResult(correct, typed.length);
     showLessonResult(correct, typed.length);
+    renderWeakKeys();
     const ui = currentLocalizedUi();
     feedback.textContent = percent === 100 ? ui.perfect : formatUi(ui.accuracy, {accuracy: percent});
   } else if (!lessonCompleted) {
@@ -233,11 +304,12 @@ function draw() {
     else feedback.textContent = percent === 100 ? 'Rất tốt, cứ giữ nhịp này nhé!' : 'Có vài ký tự chưa đúng, hãy gõ chậm lại một chút.';
   }
 }
-function reset(focus = false) { clearInterval(interval); startedAt = null; lessonCompleted = false; input.value = ''; timer.textContent = '00:00'; wpm.innerHTML = '0 <small>WPM</small>'; feedback.textContent = activeLanguage === 'vi' ? 'Giữ các ngón tay ở hàng phím cơ sở nhé.' : (siteLanguages[activeLanguage]?.practice || 'Practice'); document.querySelector('.typing-card').classList.remove('lesson-finished'); draw(); if (focus) input.focus(); }
-function setLesson(index) { lessonIndex = index; document.querySelector('#lesson-number').textContent = String(index + 1).padStart(2,'0'); document.querySelector('#lesson-title').textContent = lessons[index][0]; document.querySelector('#lesson-progress').textContent = `Bài ${index + 1} / ${lessons.length}`; updateLessonState(); renderLevels(); reset(true); }
+function reset(focus = false) { clearInterval(interval); startedAt = null; lessonCompleted = false; lessonWeakKeys = {}; recordedWeakKeyPositions = new Set(); observedInputLength = 0; input.value = ''; timer.textContent = '00:00'; wpm.innerHTML = '0 <small>WPM</small>'; feedback.textContent = activeLanguage === 'vi' ? 'Giữ các ngón tay ở hàng phím cơ sở nhé.' : (siteLanguages[activeLanguage]?.practice || 'Practice'); document.querySelector('.typing-card').classList.remove('lesson-finished'); renderWeakKeys(); draw(); if (focus) input.focus(); }
+function setLesson(index) { weakPracticeActive = false; weakPracticeText = ''; lessonIndex = index; document.querySelector('#lesson-number').textContent = String(index + 1).padStart(2,'0'); document.querySelector('#lesson-title').textContent = lessons[index][0]; document.querySelector('#lesson-progress').textContent = `Bài ${index + 1} / ${lessons.length}`; updateLessonState(); renderLevels(); reset(true); }
+function startWeakPractice() { const currentKeys = getTopWeakKeys(lessonWeakKeys), selectedKeys = currentKeys.length ? currentKeys : getTopWeakKeys(), keys = selectedKeys.map(([key]) => key); if (!keys.length) return; weakPracticeActive = true; weakPracticeText = buildWeakPractice(keys, currentKeys.length ? lessonWeakKeys : weakKeyRecords); document.querySelector('#lesson-number').textContent = '★'; document.querySelector('.typing-card').classList.remove('is-last-lesson'); renderLevels(); reset(true); document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); }
 function openLesson(index) { setLesson(index); document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); setTimeout(() => input.focus(), 500); }
 function tick() { const secs = Math.floor((Date.now() - startedAt) / 1000); timer.textContent = `${String(Math.floor(secs / 60)).padStart(2,'0')}:${String(secs % 60).padStart(2,'0')}`; }
-input.addEventListener('input', () => { if (!startedAt && input.value) { startedAt = Date.now(); interval = setInterval(tick, 1000); } draw(); });
+input.addEventListener('input', () => { if (!startedAt && input.value) { startedAt = Date.now(); interval = setInterval(tick, 1000); } if (!weakPracticeActive) trackWeakKeyErrors(input.value); draw(); });
 freeInput.addEventListener('input', () => { if (!freeText) return; if (!freeStartedAt && freeInput.value) { freeStartedAt = Date.now(); freeInterval = setInterval(tickFree, 1000); } drawFree(); });
 gameInput.addEventListener('input', () => { if (!gameActive) return; const typed = gameInput.value; if (typed.length >= gameText.length) { gameCorrect += [...typed].filter((char, index) => char === gameText[index]).length; updateGameScore(); setGameText(); } else renderGame(); });
 document.querySelector('#game-start').addEventListener('click', startGame);
@@ -252,6 +324,7 @@ document.querySelectorAll('[data-scroll]').forEach(b => b.addEventListener('clic
 document.querySelectorAll('.mode-switch button').forEach((button, index) => button.addEventListener('click', () => { document.querySelector('.mode-switch .selected').classList.remove('selected'); button.classList.add('selected'); const card = document.querySelector('.typing-card'); card.classList.remove('lesson-finished'); card.classList.toggle('free-mode', index === 1); card.classList.toggle('game-mode', index === 2); if (index !== 2 && gameActive) finishGame(); if (index === 0) input.focus(); else if (index === 1 && !freeText) { const sample = freeSamples[Math.floor(Math.random() * freeSamples.length)]; customText.value = sample; setFreeText(sample); } else if (index === 1) freeInput.focus(); }));
 document.querySelector('#next-lesson').addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); setLesson(Math.min(lessonIndex + 1, lessons.length - 1)); });
 document.querySelector('#retry-lesson').addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); reset(true); });
+document.querySelector('#practice-weak-keys').addEventListener('click', startWeakPractice);
 document.querySelector('#clear-results').addEventListener('click', () => { const message = activeLanguage === 'vi' ? 'Bạn có muốn xoá toàn bộ lịch sử thành tích?' : (siteLanguages[activeLanguage]?.results || 'Results'); if (confirm(message)) { lessonRecords = {}; localStorage.removeItem(SCORE_STORAGE_KEY); renderRecords(); } });
 function applyLanguage(code) {
   const t = siteLanguages[code] || siteLanguages.vi;
