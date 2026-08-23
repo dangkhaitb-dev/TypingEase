@@ -437,7 +437,7 @@ function applyLanguage(code) {
   renderLevels(); renderRecords();
   localStorage.setItem('typingease-language', code);
 }
-const homepageLocale = /^\/(en|ja)\/?$/.exec(location.pathname)?.[1] || '';
+const homepageLocale = /(?:^|\/)(en|ja)(?:\/|$)/.exec(location.pathname)?.[1] || '';
 const isEnglishHomepage = homepageLocale === 'en';
 const isLocalizedHomepage = Boolean(homepageLocale);
 document.querySelector('#language').addEventListener('change', event => {
