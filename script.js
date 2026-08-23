@@ -290,7 +290,7 @@ function updateLocalizedStaticUi() {
   document.querySelector('.explore-heading .eyebrow').innerHTML = `<i></i> ${ui.exploreTag}`;
   document.querySelector('#explore-title').textContent = ui.exploreTitle;
   document.querySelectorAll('.explore-card').forEach((card, index) => { const [title, description, cta] = ui.explore[index]; card.querySelector('h3').textContent = title; card.querySelector('p').textContent = description; card.querySelector('span').childNodes[0].nodeValue = `${cta} `; });
-  document.querySelectorAll('.footer-links a').forEach((link, index) => { link.textContent = ui.explore[index][0]; });
+  document.querySelectorAll('.footer-links a').forEach((link, index) => { if (ui.explore[index]) link.textContent = ui.explore[index][0]; });
   document.querySelector('.footer-links').setAttribute('aria-label', ui.exploreTag);
   renderWeakKeys();
   renderDailyGoal();
