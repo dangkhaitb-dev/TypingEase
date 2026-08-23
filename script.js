@@ -347,7 +347,8 @@ document.querySelector('#use-text').addEventListener('click', () => setFreeText(
 document.querySelector('#random-text').addEventListener('click', () => { const next = freeSamples[Math.floor(Math.random() * freeSamples.length)]; customText.value = next; setFreeText(next); });
 document.querySelector('#reset').addEventListener('click', () => reset(true));
 document.querySelector('.start-button').addEventListener('click', () => openLesson(0));
-document.querySelector('#lesson-levels').addEventListener('click', event => { const button = event.target.closest('.level[data-level]'); if (!button) return; const index = Number(button.dataset.level); if (Number.isInteger(index) && index >= 0 && index < lessons.length) openLesson(index); });
+const lessonLevels = document.querySelector('#lesson-levels');
+lessonLevels.addEventListener('click', event => { const button = event.target.closest('.level[data-level]'); if (!button || !lessonLevels.contains(button)) return; const index = Number(button.dataset.level); if (Number.isInteger(index) && index >= 0 && index < lessons.length) openLesson(index); });
 document.querySelector('#continue-lesson').addEventListener('click', event => { const index = Number(event.currentTarget.dataset.lesson); if (Number.isInteger(index) && index >= 0 && index < lessons.length) openLesson(index); });
 document.querySelector('#toggle-lessons').addEventListener('click', () => { lessonsExpanded = !lessonsExpanded; renderLevels(); });
 document.querySelectorAll('[data-scroll]').forEach(b => b.addEventListener('click', () => document.querySelector(b.dataset.scroll).scrollIntoView({behavior:'smooth'})));
