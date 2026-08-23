@@ -50,7 +50,7 @@ const translations = {
 };
 const siteLanguages = {
   vi:{nav:['Luyện gõ','Hướng dẫn','Thành tích'],login:'Đăng nhập',daily:'Luyện gõ mỗi ngày',hero:['Luyện gõ 10 ngón','online miễn phí.'],intro:'Cải thiện kỹ năng gõ 10 ngón với những bài tập rõ ràng và hoàn toàn miễn phí.',start:'Bắt đầu luyện gõ',learn:'Tìm hiểu cách luyện',ready:'Sẵn sàng chưa?',practice:'Luyện ngay bây giờ',basic:'Bài cơ bản',free:'Tự do',path:'Lộ trình 10 ngón',speed:'Tốc độ',accuracy:'Độ chính xác',time:'Thời gian',keyboard:'Bàn phím & ngón tay',results:'Thành tích bài học',benefits:'Tiến bộ từng phím bấm.'},
-  en:{nav:['Practice','Guide','Results'],login:'Sign in',daily:'Practice every day',hero:['Type faster.','Feel lighter.'],intro:'Improve touch typing with clear, focused exercises that are completely free.',start:'Start typing',learn:'Learn how it works',ready:'Ready to begin?',practice:'Practice now',basic:'Lessons',free:'Free type',path:'Touch-typing path',speed:'Speed',accuracy:'Accuracy',time:'Time',keyboard:'Keyboard & fingers',results:'Lesson records',benefits:'Progress with every key.'},
+  en:{nav:['Practice','Guides','Progress'],login:'Sign in',daily:'Practice every day',hero:['Type faster.','Feel lighter.'],intro:'Improve touch typing with clear, focused exercises that are completely free.',start:'Start typing',learn:'Learn how it works',ready:'Ready to begin?',practice:'Practice now',basic:'Lessons',free:'Free type',path:'Touch typing course',speed:'Speed',accuracy:'Accuracy',time:'Time',keyboard:'Keyboard & fingers',results:'Lesson records',benefits:'Progress with every key.'},
   zh:{nav:['练习打字','指南','成绩'],login:'登录',daily:'每天练习打字',hero:['打得更快。','更加轻松。'],intro:'通过清晰、专注且完全免费的练习，提高十指盲打能力。',start:'开始练习',learn:'了解练习方法',ready:'准备好了吗？',practice:'立即练习',basic:'基础课程',free:'自由练习',path:'十指打字路径',speed:'速度',accuracy:'准确率',time:'时间',keyboard:'键盘与手指',results:'课程成绩',benefits:'每一次按键都有进步。'},
   ja:{nav:['タイピング練習','ガイド','記録'],login:'ログイン',daily:'毎日タイピング練習',hero:['もっと速く。','もっと楽に。'],intro:'分かりやすく無料の練習で、タッチタイピングを上達させましょう。',start:'練習を始める',learn:'練習方法を見る',ready:'準備はいいですか？',practice:'今すぐ練習',basic:'基本レッスン',free:'自由入力',path:'10本指の学習',speed:'速度',accuracy:'正確性',time:'時間',keyboard:'キーボードと指',results:'レッスン記録',benefits:'一打ずつ上達。'},
   ru:{nav:['Практика','Руководство','Результаты'],login:'Войти',daily:'Практикуйтесь каждый день',hero:['Печатайте быстрее.','Чувствуйте лёгкость.'],intro:'Улучшайте слепой набор с понятными и полностью бесплатными упражнениями.',start:'Начать печатать',learn:'Как тренироваться',ready:'Готовы начать?',practice:'Практиковаться',basic:'Уроки',free:'Свободный набор',path:'Путь десятипальцевой печати',speed:'Скорость',accuracy:'Точность',time:'Время',keyboard:'Клавиатура и пальцы',results:'Рекорды уроков',benefits:'Прогресс с каждой клавишей.'},
@@ -242,6 +242,7 @@ function startGame() { clearInterval(gameInterval); gameActive = true; gameSecon
 
 function makeKeyboard() {
   const keyboard = document.querySelector('#keyboard');
+  keyboard.innerHTML = '';
   rows.forEach(row => { const line = document.createElement('div'); line.className = 'key-row'; row.forEach(label => { const key = document.createElement('span'); key.className = `key ${label.length > 1 ? 'wide' : ''} ${label === ' ' ? 'space' : ''} ${label === 'f' || label === 'j' ? 'home' : ''}`; key.dataset.key = label.toLowerCase(); key.textContent = label === ' ' ? 'Space' : label; line.append(key); }); keyboard.append(line); });
 }
 function renderLevels() {
@@ -249,9 +250,10 @@ function renderLevels() {
   const weakUi = currentWeakKeyUi();
   document.querySelector('#lesson-title').textContent = weakPracticeActive ? weakUi.mode : localizedLessonName(lessonIndex);
   document.querySelector('#lesson-progress').textContent = weakPracticeActive ? weakUi.mode : (activeLanguage === 'vi' ? `Bài ${lessonIndex + 1} / ${lessons.length}` : `${localizedLessonName(lessonIndex)} / ${lessons.length}`);
-  if (lessonIndex >= 6) lessonsExpanded = true;
+  if (lessonIndex >= 10) lessonsExpanded = true;
   const lessonPath = document.querySelector('.lesson-path'), toggleButton = document.querySelector('#toggle-lessons'), actionText = currentHomeActionText();
   lessonPath.classList.toggle('is-expanded', lessonsExpanded);
+  toggleButton.hidden = false;
   toggleButton.setAttribute('aria-expanded', String(lessonsExpanded));
   toggleButton.textContent = lessonsExpanded ? actionText.collapse : actionText.showAll;
   document.querySelectorAll('.level').forEach(button => button.addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); setLesson(Number(button.dataset.level)); }));
@@ -304,7 +306,9 @@ function showLessonResult(correctCharacters, typedCharacters) {
 function highlightGuide(char) {
   const target = char === '\n' ? 'enter' : char?.toLowerCase() || '';
   document.querySelectorAll('.active-key,.active-finger').forEach(el => el.classList.remove('active-key','active-finger'));
-  document.querySelectorAll(`.key[data-key="${target === ' ' ? ' ' : target}"]`).forEach(el => el.classList.add('active-key'));
+  const matchedKeys = [...document.querySelectorAll(`.key[data-key="${target === ' ' ? ' ' : target}"]`)];
+  const fallbackLabel = target === ' ' ? 'space' : target;
+  (matchedKeys.length ? matchedKeys : [...document.querySelectorAll('.key')].filter(key => key.textContent.trim().toLowerCase() === fallbackLabel)).forEach(el => el.classList.add('active-key'));
   const finger = fingerMap[target]; if (finger) document.querySelector(`[data-finger="${finger}"]`)?.classList.add('active-finger');
 }
 function draw() {
@@ -330,7 +334,7 @@ function draw() {
   }
 }
 function reset(focus = false) { clearInterval(interval); startedAt = null; lessonCompleted = false; lessonWeakKeys = {}; recordedWeakKeyPositions = new Set(); observedInputLength = 0; input.value = ''; timer.textContent = '00:00'; wpm.innerHTML = '0 <small>WPM</small>'; feedback.textContent = activeLanguage === 'vi' ? 'Giữ các ngón tay ở hàng phím cơ sở nhé.' : (siteLanguages[activeLanguage]?.practice || 'Practice'); document.querySelector('.typing-card').classList.remove('lesson-finished'); renderWeakKeys(); draw(); if (focus) input.focus(); }
-function setLesson(index) { weakPracticeActive = false; weakPracticeText = ''; lessonIndex = index; document.querySelector('#lesson-number').textContent = String(index + 1).padStart(2,'0'); document.querySelector('#lesson-title').textContent = lessons[index][0]; document.querySelector('#lesson-progress').textContent = `Bài ${index + 1} / ${lessons.length}`; updateLessonState(); renderLevels(); reset(true); }
+function setLesson(index) { weakPracticeActive = false; weakPracticeText = ''; lessonIndex = index; document.querySelector('#lesson-number').textContent = String(index + 1).padStart(2,'0'); document.querySelector('#lesson-title').textContent = localizedLessonName(index); document.querySelector('#lesson-progress').textContent = isEnglishHomepage ? `Lesson ${index + 1} / ${lessons.length}` : `Bài ${index + 1} / ${lessons.length}`; updateLessonState(); renderLevels(); reset(true); }
 function startWeakPractice() { const currentKeys = getTopWeakKeys(lessonWeakKeys), selectedKeys = currentKeys.length ? currentKeys : getTopWeakKeys(), keys = selectedKeys.map(([key]) => key); if (!keys.length) return; weakPracticeActive = true; weakPracticeText = buildWeakPractice(keys, currentKeys.length ? lessonWeakKeys : weakKeyRecords); document.querySelector('#lesson-number').textContent = '★'; document.querySelector('.typing-card').classList.remove('is-last-lesson'); renderLevels(); reset(true); document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); }
 function openLesson(index) { setLesson(index); document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); setTimeout(() => input.focus(), 500); }
 function tick() { const secs = Math.floor((Date.now() - startedAt) / 1000); timer.textContent = `${String(Math.floor(secs / 60)).padStart(2,'0')}:${String(secs % 60).padStart(2,'0')}`; }
@@ -360,8 +364,10 @@ function applyLanguage(code) {
   document.querySelectorAll('.topbar nav a').forEach((link, index) => { link.textContent = t.nav[index]; });
   const loginButton = document.querySelector('.login');
   if (loginButton) loginButton.innerHTML = `${t.login} <span>→</span>`;
-  document.querySelector('h1').innerHTML = `${t.hero[0]}<br><em>${t.hero[1]}</em>`;
-  document.querySelector('.intro').textContent = t.intro;
+  if (!isEnglishHomepage) {
+    document.querySelector('h1').innerHTML = `${t.hero[0]}<br><em>${t.hero[1]}</em>`;
+    document.querySelector('.intro').textContent = t.intro;
+  }
   const eyebrows = document.querySelectorAll('.eyebrow');
   eyebrows[0].innerHTML = `<i></i> ${t.daily}`; eyebrows[1].innerHTML = `<i></i> ${t.ready}`;
   const homeActions = currentHomeActionText();
@@ -392,7 +398,7 @@ function applyLanguage(code) {
   document.querySelector('.results-heading p:not(.eyebrow)').textContent = extra.records; document.querySelector('#clear-results').textContent = extra.clear;
   document.querySelectorAll('.results-summary span').forEach((item, index) => { item.textContent = [extra.completed, extra.bestSpeed, extra.bestTime][index]; });
   document.querySelector('.benefits .eyebrow').innerHTML = `<i></i> ${extra.benefitTag}`; document.querySelector('footer p').textContent = extra.footer;
-  document.title = code === 'vi' ? 'Luyện gõ 10 ngón online miễn phí | TypingEase' : 'TypingEase — Touch typing practice';
+  if (!isEnglishHomepage) document.title = code === 'vi' ? 'Luyện gõ 10 ngón online miễn phí | TypingEase' : 'TypingEase — Touch typing practice';
   if (code !== 'vi') {
     document.querySelector('.mini-top span').textContent = t.practice; document.querySelector('.visual-card p').textContent = t.benefits;
     document.querySelector('.typing-card>.typing-label').textContent = t.start; input.placeholder = t.start;
@@ -414,13 +420,28 @@ function applyLanguage(code) {
     document.querySelectorAll('.benefit-list h3').forEach((item, index) => { item.textContent = ['Học đúng tư thế','Luyện tập có nhịp','Theo dõi tiến bộ'][index]; });
     document.querySelectorAll('.benefit-list p').forEach((item, index) => { item.textContent = ['Làm quen vị trí các ngón tay trước khi tăng tốc độ.','Các bài học ngắn giúp bạn duy trì sự tập trung.','Biết tốc độ và độ chính xác của mình sau mỗi bài gõ.'][index]; });
   }
+  if (isEnglishHomepage) {
+    document.querySelector('#lesson-progress').textContent = `Lesson ${lessonIndex + 1} / ${lessons.length}`;
+    document.querySelector('.tip-card .tip-number').textContent = 'QUICK TIP';
+    document.querySelector('.tip-card h3').textContent = "Don't look at the keyboard";
+    document.querySelector('.tip-card>p:not(.tip-number)').textContent = 'Place your index fingers on F and J. Their raised bumps help you find the home row without looking down.';
+    document.querySelectorAll('.finger-legend span').forEach((item, index) => { item.textContent = ['Pinky','Ring','Middle','Index','Thumb'][index]; });
+    document.querySelectorAll('.finger-guide span').forEach((item, index) => { item.textContent = ['Pinky','Ring','Middle','Index'][index]; });
+    document.querySelectorAll('.hand b').forEach((item, index) => { item.textContent = ['Pinky','Ring','Middle','Index','Thumb','Thumb','Index','Middle','Ring','Pinky'][index]; });
+    document.querySelectorAll('.hand span').forEach((item, index) => { item.textContent = index === 0 ? 'Left hand' : 'Right hand'; });
+  }
   document.querySelector('.trust-row p').textContent = homeActions.trust;
   updateLocalizedStaticUi();
   renderLevels(); renderRecords();
   localStorage.setItem('typingease-language', code);
 }
-document.querySelector('#language').addEventListener('change', event => applyLanguage(event.target.value));
-const savedLanguage = localStorage.getItem('typingease-language') || 'vi';
+const isEnglishHomepage = document.documentElement.lang === 'en' && /^\/en\/?$/.test(location.pathname);
+document.querySelector('#language').addEventListener('change', event => {
+  if (isEnglishHomepage && event.target.value === 'vi') { location.href = '../'; return; }
+  if (!isEnglishHomepage && event.target.value === 'en') { location.href = './en/'; return; }
+  applyLanguage(event.target.value);
+});
+const savedLanguage = isEnglishHomepage ? 'en' : (localStorage.getItem('typingease-language') || 'vi');
 document.querySelector('#language').value = savedLanguage;
 applyLanguage(savedLanguage);
 updateLessonState(); makeKeyboard(); renderLevels(); renderRecords(); draw();
