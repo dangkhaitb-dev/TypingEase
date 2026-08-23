@@ -313,7 +313,7 @@ function highlightGuide(char) {
 }
 function draw() {
   const lesson = currentLesson(), typed = input.value;
-  prompt.innerHTML = [...lesson].map((char, index) => { const state = index < typed.length ? (typed[index] === char ? '' : 'wrong') : index === typed.length ? 'current' : ''; if (char === '\n' && lessonIndex >= 7) return `<br><span class="${state} enter-cue">↵ Enter</span><br>`; return `<span class="${state}">${char === ' ' ? '&nbsp;' : char}</span>`; }).join('');
+  prompt.innerHTML = [...lesson].map((char, index) => { const state = index < typed.length ? (typed[index] === char ? '' : 'wrong') : index === typed.length ? 'current' : ''; if (char === '\n') return `<br><span class="${state} enter-cue">↵ Enter</span><br>`; return `<span class="${state}">${char === ' ' ? '&nbsp;' : char}</span>`; }).join('');
   const correct = [...typed].filter((char, i) => char === lesson[i]).length, percent = typed.length ? Math.round(correct / typed.length * 100) : null;
   accuracy.innerHTML = `${percent ?? '--'}<small>%</small>`;
   if (!typed.length) setTimeout(() => { feedback.textContent = activeLanguage === 'vi' ? 'Bắt đầu gõ để xem độ chính xác của bạn.' : (siteLanguages[activeLanguage]?.practice || 'Practice'); }, 0);
