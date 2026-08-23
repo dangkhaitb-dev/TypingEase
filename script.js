@@ -62,7 +62,7 @@ const siteLanguages = {
 let activeLanguage = 'vi';
 const homeActionText = {
   vi: { start:'Bắt đầu bài 1', speedTest:'Kiểm tra tốc độ 60 giây', continue:'Tiếp tục bài', trust:'Luyện gõ miễn phí, không cần đăng ký.', showAll:'Xem toàn bộ 30 bài', collapse:'Thu gọn' },
-  en: { start:'Start lesson 1', speedTest:'Take the 60-second speed test', continue:'Continue lesson', trust:'Free typing practice, no sign-up required.', showAll:'Show all 30 lessons', collapse:'Show less' },
+  en: { start:'Start lesson 1', speedTest:'Take the 60-second speed test', continue:'Continue lesson', trust:'Free typing practice, no sign-up required.', showAll:'View all 30 lessons', collapse:'Collapse' },
   zh: { start:'开始第 1 课', speedTest:'进行 60 秒速度测试', continue:'继续第', trust:'免费练习打字，无需注册。', showAll:'查看全部 30 课', collapse:'收起' },
   ja: { start:'レッスン 1 を始める', speedTest:'60秒スピードテスト', continue:'レッスンを続ける', trust:'無料で練習できます。登録は不要です。', showAll:'全30レッスンを見る', collapse:'閉じる' },
   ru: { start:'Начать урок 1', speedTest:'Тест скорости: 60 секунд', continue:'Продолжить урок', trust:'Бесплатная практика без регистрации.', showAll:'Показать все 30 уроков', collapse:'Свернуть' },
@@ -246,7 +246,8 @@ function makeKeyboard() {
   rows.forEach(row => { const line = document.createElement('div'); line.className = 'key-row'; row.forEach(label => { const key = document.createElement('span'); key.className = `key ${label.length > 1 ? 'wide' : ''} ${label === ' ' ? 'space' : ''} ${label === 'f' || label === 'j' ? 'home' : ''}`; key.dataset.key = label.toLowerCase(); key.textContent = label === ' ' ? 'Space' : label; line.append(key); }); keyboard.append(line); });
 }
 function renderLevels() {
-  document.querySelector('#lesson-levels').innerHTML = lessons.map((item, i) => `<button class="level ${i === lessonIndex ? 'active' : ''} ${i < lessonIndex ? 'complete' : ''}" type="button" data-level="${i}"><b>${String(i + 1).padStart(2,'0')}</b>${localizedLessonName(i)}</button>`).join('');
+  const isCollapsed = !lessonsExpanded && lessonIndex < 10;
+  document.querySelector('#lesson-levels').innerHTML = lessons.map((item, i) => `<button class="level ${i === lessonIndex ? 'active' : ''} ${i < lessonIndex ? 'complete' : ''} ${isCollapsed && i >= 10 ? 'roadmap-hidden' : ''}" type="button" data-level="${i}"><b>${String(i + 1).padStart(2,'0')}</b>${localizedLessonName(i)}</button>`).join('');
   const weakUi = currentWeakKeyUi();
   document.querySelector('#lesson-title').textContent = weakPracticeActive ? weakUi.mode : localizedLessonName(lessonIndex);
   document.querySelector('#lesson-progress').textContent = weakPracticeActive ? weakUi.mode : (activeLanguage === 'vi' ? `Bài ${lessonIndex + 1} / ${lessons.length}` : `${localizedLessonName(lessonIndex)} / ${lessons.length}`);
@@ -256,7 +257,6 @@ function renderLevels() {
   toggleButton.hidden = false;
   toggleButton.setAttribute('aria-expanded', String(lessonsExpanded));
   toggleButton.textContent = lessonsExpanded ? actionText.collapse : actionText.showAll;
-  document.querySelectorAll('.level').forEach(button => button.addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); setLesson(Number(button.dataset.level)); }));
 }
 function updateContinueButton() {
   const button = document.querySelector('#continue-lesson');
@@ -336,7 +336,7 @@ function draw() {
 function reset(focus = false) { clearInterval(interval); startedAt = null; lessonCompleted = false; lessonWeakKeys = {}; recordedWeakKeyPositions = new Set(); observedInputLength = 0; input.value = ''; timer.textContent = '00:00'; wpm.innerHTML = '0 <small>WPM</small>'; feedback.textContent = activeLanguage === 'vi' ? 'Giữ các ngón tay ở hàng phím cơ sở nhé.' : (siteLanguages[activeLanguage]?.practice || 'Practice'); document.querySelector('.typing-card').classList.remove('lesson-finished'); renderWeakKeys(); draw(); if (focus) input.focus(); }
 function setLesson(index) { weakPracticeActive = false; weakPracticeText = ''; lessonIndex = index; document.querySelector('#lesson-number').textContent = String(index + 1).padStart(2,'0'); document.querySelector('#lesson-title').textContent = localizedLessonName(index); document.querySelector('#lesson-progress').textContent = isEnglishHomepage ? `Lesson ${index + 1} / ${lessons.length}` : `Bài ${index + 1} / ${lessons.length}`; updateLessonState(); renderLevels(); reset(true); }
 function startWeakPractice() { const currentKeys = getTopWeakKeys(lessonWeakKeys), selectedKeys = currentKeys.length ? currentKeys : getTopWeakKeys(), keys = selectedKeys.map(([key]) => key); if (!keys.length) return; weakPracticeActive = true; weakPracticeText = buildWeakPractice(keys, currentKeys.length ? lessonWeakKeys : weakKeyRecords); document.querySelector('#lesson-number').textContent = '★'; document.querySelector('.typing-card').classList.remove('is-last-lesson'); renderLevels(); reset(true); document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); }
-function openLesson(index) { setLesson(index); document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); setTimeout(() => input.focus(), 500); }
+function openLesson(index) { setLesson(index); document.querySelector('.typing-card').scrollIntoView({behavior:'smooth', block:'start'}); setTimeout(() => input.focus(), 500); }
 function tick() { const secs = Math.floor((Date.now() - startedAt) / 1000); timer.textContent = `${String(Math.floor(secs / 60)).padStart(2,'0')}:${String(secs % 60).padStart(2,'0')}`; }
 input.addEventListener('input', () => { if (!startedAt && input.value) { startedAt = Date.now(); interval = setInterval(tick, 1000); } if (startedAt || input.value) recordPracticeActivity(); if (!weakPracticeActive) trackWeakKeyErrors(input.value); draw(); });
 freeInput.addEventListener('input', () => { if (!freeText) return; if (!freeStartedAt && freeInput.value) { freeStartedAt = Date.now(); freeInterval = setInterval(tickFree, 1000); } if (freeStartedAt || freeInput.value) recordPracticeActivity(); drawFree(); });
@@ -347,6 +347,7 @@ document.querySelector('#use-text').addEventListener('click', () => setFreeText(
 document.querySelector('#random-text').addEventListener('click', () => { const next = freeSamples[Math.floor(Math.random() * freeSamples.length)]; customText.value = next; setFreeText(next); });
 document.querySelector('#reset').addEventListener('click', () => reset(true));
 document.querySelector('.start-button').addEventListener('click', () => openLesson(0));
+document.querySelector('#lesson-levels').addEventListener('click', event => { const button = event.target.closest('.level[data-level]'); if (!button) return; const index = Number(button.dataset.level); if (Number.isInteger(index) && index >= 0 && index < lessons.length) openLesson(index); });
 document.querySelector('#continue-lesson').addEventListener('click', event => { const index = Number(event.currentTarget.dataset.lesson); if (Number.isInteger(index) && index >= 0 && index < lessons.length) openLesson(index); });
 document.querySelector('#toggle-lessons').addEventListener('click', () => { lessonsExpanded = !lessonsExpanded; renderLevels(); });
 document.querySelectorAll('[data-scroll]').forEach(b => b.addEventListener('click', () => document.querySelector(b.dataset.scroll).scrollIntoView({behavior:'smooth'})));
