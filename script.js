@@ -366,7 +366,7 @@ function applyLanguage(code) {
   document.querySelectorAll('.topbar nav a').forEach((link, index) => { link.textContent = t.nav[index]; });
   const loginButton = document.querySelector('.login');
   if (loginButton) loginButton.innerHTML = `${t.login} <span>→</span>`;
-  if (!isEnglishHomepage) {
+  if (!isLocalizedHomepage) {
     document.querySelector('h1').innerHTML = `${t.hero[0]}<br><em>${t.hero[1]}</em>`;
     document.querySelector('.intro').textContent = t.intro;
   }
@@ -400,7 +400,7 @@ function applyLanguage(code) {
   document.querySelector('.results-heading p:not(.eyebrow)').textContent = extra.records; document.querySelector('#clear-results').textContent = extra.clear;
   document.querySelectorAll('.results-summary span').forEach((item, index) => { item.textContent = [extra.completed, extra.bestSpeed, extra.bestTime][index]; });
   document.querySelector('.benefits .eyebrow').innerHTML = `<i></i> ${extra.benefitTag}`; document.querySelector('footer p').textContent = extra.footer;
-  if (!isEnglishHomepage) document.title = code === 'vi' ? 'Luyện gõ 10 ngón online miễn phí | TypingEase' : 'TypingEase — Touch typing practice';
+  if (!isLocalizedHomepage) document.title = code === 'vi' ? 'Luyện gõ 10 ngón online miễn phí | TypingEase' : 'TypingEase — Touch typing practice';
   if (code !== 'vi') {
     document.querySelector('.mini-top span').textContent = t.practice; document.querySelector('.visual-card p').textContent = t.benefits;
     document.querySelector('.typing-card>.typing-label').textContent = t.start; input.placeholder = t.start;
@@ -437,13 +437,16 @@ function applyLanguage(code) {
   renderLevels(); renderRecords();
   localStorage.setItem('typingease-language', code);
 }
-const isEnglishHomepage = document.documentElement.lang === 'en' && /^\/en\/?$/.test(location.pathname);
+const homepageLocale = /^\/(en|ja)\/?$/.exec(location.pathname)?.[1] || '';
+const isEnglishHomepage = homepageLocale === 'en';
+const isLocalizedHomepage = Boolean(homepageLocale);
 document.querySelector('#language').addEventListener('change', event => {
-  if (isEnglishHomepage && event.target.value === 'vi') { location.href = '../'; return; }
-  if (!isEnglishHomepage && event.target.value === 'en') { location.href = './en/'; return; }
+  if (event.target.value === 'vi' && homepageLocale) { location.href = '../'; return; }
+  if (event.target.value === 'en' && homepageLocale !== 'en') { location.href = homepageLocale ? '../en/' : './en/'; return; }
+  if (event.target.value === 'ja' && homepageLocale !== 'ja') { location.href = homepageLocale ? '../ja/' : './ja/'; return; }
   applyLanguage(event.target.value);
 });
-const savedLanguage = isEnglishHomepage ? 'en' : (localStorage.getItem('typingease-language') || 'vi');
+const savedLanguage = homepageLocale || (localStorage.getItem('typingease-language') || 'vi');
 document.querySelector('#language').value = savedLanguage;
 applyLanguage(savedLanguage);
 updateLessonState(); makeKeyboard(); renderLevels(); renderRecords(); draw();

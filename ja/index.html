@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>無料タイピング練習 | タッチタイピングを基礎から練習 | TypingEase</title>
+    <meta name="description" content="無料でタイピング練習ができるオンラインツール。基礎レッスン、苦手キー練習、タイピング速度・正確率の記録で、初心者からタッチタイピングを身につけられます。" />
+    <link rel="canonical" href="https://typingease.site/ja/" />
+    <link rel="alternate" hreflang="vi" href="https://typingease.site/" />
+    <link rel="alternate" hreflang="en" href="https://typingease.site/en/" />
+    <link rel="alternate" hreflang="ja" href="https://typingease.site/ja/" />
+    <link rel="alternate" hreflang="x-default" href="https://typingease.site/" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="icon" type="image/x-icon" href="/assets/favicon.ico" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../style.css" />
+    <link rel="stylesheet" href="../keyboard.css" />
+    <style>
+      .daily-goal{display:grid;grid-template-columns:1.1fr 1fr auto;gap:18px;align-items:center;margin:-5px 0 22px;padding:15px 18px;border:1px solid #d5e8dd;border-radius:9px;background:#fff}.daily-goal p{margin:0}.daily-goal-copy>p:first-child{color:var(--green);font-size:10px;font-weight:800}.daily-goal h3{margin:4px 0;color:var(--ink);font-size:20px;letter-spacing:-.7px}.daily-goal-copy>p:last-child,.daily-goal-progress p{color:#6d877b;font-size:10px}.daily-progress-track{height:8px;overflow:hidden;border-radius:999px;background:#e4efe9}.daily-progress-track i{display:block;width:var(--daily-progress,0%);height:100%;border-radius:inherit;background:var(--green)}.daily-goal-progress p{margin-top:6px}.daily-goal-options{display:flex;gap:5px}.daily-goal-options button{border:1px solid #d5e6dd;border-radius:5px;padding:7px 8px;background:#fff;color:#6d877b;font-size:10px;font-weight:800}.daily-goal-options button.selected{border-color:var(--green);background:#e5f5df;color:var(--green)}@media(max-width:750px){.daily-goal{grid-template-columns:1fr;gap:12px;margin-bottom:18px}.daily-goal-options{display:grid;grid-template-columns:repeat(4,1fr)}.daily-goal-options button{padding:9px 4px}}
+    </style>
+  </head>
+  <body class="ja-site">
+    <header class="topbar">
+      <a class="brand" href="#">Typing<span>Ease</span></a>
+      <nav aria-label="Đều hưۛg chíh">
+        <a class="active" href="#luyen-go">Luyện gõ/a>
+        <a href="#huong-dan">Hưۛg dẫn</a>
+        <a href="#bang-xep-hang">Thàh tíh</a>
+      </nav>
+      <div class="header-actions"><label class="language-select"><span class="sr-only">Ngô ngữ</span><select id="language" aria-label="Chọn ngô ngữ"><option value="vi">Tiếng Việt</option><option value="en">English</option><option value="zh">中文</option><option value="ja">日本語</option><option value="ru">РÑсڐй/option><option value="pt">Portuguê</option><option value="pt-BR">Portuguê (Brasil)</option><option value="ar">اĘرșة(م՘)</option><option value="ms">Bahasa Melayu</option></select></label></div>
+    </header>
+
+    <main>
+      <section class="hero" id="luyen-go">
+        <div class="hero-copy">
+          <p class="eyebrow"><i></i> Luyện gõmỗi ngà</p>
+          <h1>無料タイピング練習</h1>
+          <p class="intro">基礎からタッチタイピングを練習し、タイピング速度と正確率を少しずつ伸ばしましょう。苦手なキーも自動で確認できます。</p>
+          <div class="hero-actions">
+            <button class="primary-button start-button" type="button">Bắt đڧ bà 1 <span>→</span></button>
+            <a class="secondary-button" href="./typing-test/">タイピングテスト <span>→</span></a>
+            <button class="continue-button" id="continue-lesson" type="button" hidden></button>
+          </div>
+          <div class="trust-row">
+            <p>Luyện gõmiễn phí khôg cần đî ký</p>
+          </div>
+        </div>
+        <div class="hero-visual" aria-hidden="true">
+          <div class="circle c1"></div><div class="circle c2"></div><div class="circle c3"></div>
+          <div class="visual-card">
+            <div class="mini-top"><span>Bà học hô nay</span><b>03 / 10</b></div>
+            <div class="progress"><i></i></div>
+            <p>Gõđڮ nhịp, từng phí một</p>
+            <div class="keys"><span>F</span><span>J</span><span>K</span><span>L</span></div>
+            <div class="spark">✦</div>
+          </div>
+        </div>
+      </section>
+
+      <section class="practice" aria-labelledby="practice-title">
+        <div class="section-heading">
+          <div><p class="eyebrow"><i></i> Sẵn sàg chư?</p><h2 id="practice-title">Luyện ngay bâ giờ</h2></div>
+          <div class="mode-switch" role="group" aria-label="Chọn chế đۙ>
+            <button class="selected" type="button">Bà cơbản</button><button type="button">Tự do</button><button type="button">Tròchơ</button>
+          </div>
+        </div>
+        <section class="daily-goal" aria-labelledby="daily-goal-title">
+          <div class="daily-goal-copy"><p id="daily-goal-kicker">Mục tiê hô nay</p><h3 id="daily-goal-title">0 / 10 phú</h3><p id="daily-goal-status">ߔŠ ngà liê tục</p></div>
+          <div class="daily-goal-progress"><div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div><p id="daily-best-streak">Kỷ lục: 0 ngà</p></div>
+          <div class="daily-goal-options" role="group" aria-label="Chọn mục tiê mỗi ngà"><button type="button" data-daily-goal="5" aria-pressed="false">5 phú</button><button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 phú</button><button type="button" data-daily-goal="15" aria-pressed="false">15 phú</button><button type="button" data-daily-goal="20" aria-pressed="false">20 phú</button></div>
+        </section>
+        <div class="lesson-path" aria-label="Lộ trìh bà học">
+          <div class="path-title"><strong>Touch typing course</strong><span id="lesson-progress">Lesson 1 / 30</span></div>
+          <div class="lesson-levels" id="lesson-levels"><button class="level active" type="button" data-level="0"><b>01</b>Home row</button><button class="level" type="button" data-level="1"><b>02</b>Alternating hands</button><button class="level" type="button" data-level="2"><b>03</b>Left index finger</button><button class="level" type="button" data-level="3"><b>04</b>Right index finger</button><button class="level" type="button" data-level="4"><b>05</b>Both index fingers</button><button class="level" type="button" data-level="5"><b>06</b>Middle fingers</button><button class="level" type="button" data-level="6"><b>07</b>Ring fingers</button><button class="level" type="button" data-level="7"><b>08</b>Pinky fingers</button><button class="level" type="button" data-level="8"><b>09</b>Long home row</button><button class="level" type="button" data-level="9"><b>10</b>Simple words</button></div>
+          <button class="toggle-lessons" id="toggle-lessons" type="button" aria-expanded="false" aria-controls="lesson-levels">View all 30 lessons</button>
+        </div>
+        <div class="practice-grid">
+          <article class="typing-card">
+            <div class="stats">
+              <div><span>Tốc đۙ/span><strong id="wpm">0 <small>WPM</small></strong></div>
+              <div><span>Đۙchíh xá</span><strong id="accuracy">--<small>%</small></strong></div>
+              <div><span>Thời gian</span><strong id="timer">00:00</strong></div>
+              <button class="reset" id="reset" type="button" title="Là lại">↻</button>
+            </div>
+            <div class="lesson-label"><span id="lesson-number">01</span> <span id="lesson-title">Hàg phí cơsở</span></div>
+            <p class="prompt" id="prompt" aria-label="Đạn vă cần gõ></p>
+            <label class="typing-label" for="typing-input">Bắt đڧ gõtại đ¹/label>
+            <textarea id="typing-input" rows="2" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Nhấn và đ¹vàbắt đڧ gõ.."></textarea>
+            <p class="feedback" id="feedback" aria-live="polite">Giữ cá ngó tay ở hàg phí cơsở nhé</p>
+            <div class="lesson-result" id="lesson-result" aria-live="polite">
+              <div><span>Tốc đۙ/span><strong id="result-wpm">0 WPM</strong></div>
+              <div><span>Chíh xá</span><strong id="result-accuracy">--%</strong></div>
+              <div><span>Số lỗi</span><strong id="result-errors">0</strong></div>
+              <div><span>Thời gian</span><strong id="result-time">00:00</strong></div>
+            </div>
+            <section class="weak-keys-result" id="weak-keys-result" aria-labelledby="weak-keys-title">
+              <h3 id="weak-keys-title">Phí cần luyện thê</h3>
+              <p id="weak-keys-empty">Bạn chư cóphí yếu nổi bật trong bà nà.</p>
+              <div class="weak-keys-list" id="weak-keys-list"></div>
+              <button class="practice-weak-keys" id="practice-weak-keys" type="button" hidden>Luyện phí yếu</button>
+            </section>
+            <button class="next-lesson" id="next-lesson" type="button">Bà tiếp theo →</button>
+            <button class="retry-lesson" id="retry-lesson" type="button">↻ Là lại bà nà</button>
+            <section class="free-practice" id="free-practice" aria-label="Luyện gõtự do">
+              <div class="free-intro"><strong>Luyện gõtự do</strong><span>Chọn một đạn vă của bạn hoặc tạo đہngẫu nhiê.</span></div>
+              <textarea id="custom-text" rows="3" placeholder="Dá hoặc nhập đạn vă bạn muốn luyện tại đ¹.."></textarea>
+              <div class="free-actions"><button class="use-text" id="use-text" type="button">Dùg đạn vă nà</button><button class="random-text" id="random-text" type="button">↻ Đạn vă ngẫu nhiê</button></div>
+              <div class="free-stats"><span>Tốc đۙ<b id="free-wpm">0 WPM</b></span><span>Chíh xá <b id="free-accuracy">--%</b></span><span>Thời gian <b id="free-timer">00:00</b></span></div>
+              <p class="free-sample" id="free-sample">Hã chọn một đạn vă đۃbắt đڧ luyện gõ</p>
+              <label class="typing-label" for="free-input">Gõlại đạn vă phí trê</label>
+              <textarea id="free-input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Bắt đڧ gõtại đ¹.."></textarea>
+              <p class="feedback" id="free-feedback" aria-live="polite">Bạn cóthể dá nội dung riêg hoặc tạo đạn ngẫu nhiê.</p>
+            </section>
+            <section class="game-practice" id="game-practice" aria-label="Tròchơ thi đڥ">
+              <div class="game-top"><div><p class="game-kicker">THỬ THÁH 30 GIÂ</p><h3>Đڥ tốc đۙ/h3><p>Gõcàg đڮ vànhanh, đểm thàh tíh càg cao.</p></div><div class="game-trophy">★</div></div>
+              <div class="game-scoreboard"><div><span>Thời gian</span><b id="game-time">30</b></div><div><span>Đểm</span><b id="game-score">0</b></div><div><span>Kỷ lục</span><b id="game-best">0</b></div></div>
+              <p class="game-sample" id="game-sample">Nhấn bắt đڧ đۃnhận thử tháh.</p>
+              <textarea id="game-input" rows="3" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="Gõtại đ¹khi thử tháh bắt đڧ..." disabled></textarea>
+              <div class="game-actions"><button class="game-start" id="game-start" type="button">Bắt đڧ thử tháh</button><p id="game-status">Mỗi lưۣ thi ké dà 30 giâ.</p></div>
+            </section>
+          </article>
+          <aside class="tip-card">
+            <div class="tip-icon">⌨</div>
+            <p class="tip-number">MẸO NHỎ</p>
+            <h3>Đ۫g nhì bà phí</h3>
+            <p>Đڷ ngó trỏ lê phí F vàJ. Hai chấm nổi sẽ giú bạn luô tì đڮ vị trí</p>
+            <div class="finger-guide"><span>Ú</span><span>Á ú</span><span>Giữa</span><span>Trỏ</span></div>
+          </aside>
+        </div>
+        <section class="keyboard-lab" aria-labelledby="keyboard-title">
+          <div class="keyboard-copy">
+            <p class="eyebrow"><i></i> Quan sá vị trítay</p>
+            <h3 id="keyboard-title">Bà phí &amp; ngó tay</h3>
+            <p>Phí cần gõsẽ ság mà xanh. Mà tưn ứng trê bà tay cho biết bạn nê dùg ngó nà.</p>
+            <div class="finger-legend"><span class="pinky">Ú</span><span class="ring">Á ú</span><span class="middle">Giữa</span><span class="index">Trỏ</span><span class="thumb">Cá</span></div>
+          </div>
+          <div class="keyboard-demo">
+            <div class="hand-row" aria-label="Minh hoạ hai bà tay">
+              <div class="hand left-hand"><b data-finger="LP">Ú</b><b data-finger="LR">Á ú</b><b data-finger="LM">Giữa</b><b data-finger="LI">Trỏ</b><b data-finger="LT">Cá</b><span>Bà tay trá</span></div>
+              <div class="hand right-hand"><b data-finger="RT">Cá</b><b data-finger="RI">Trỏ</b><b data-finger="RM">Giữa</b><b data-finger="RR">Á ú</b><b data-finger="RP">Ú</b><span>Bà tay phải</span></div>
+            </div>
+            <div class="keyboard" id="keyboard" aria-label="US keyboard"><div class="key-row"><span class="key">`</span><span class="key">1</span><span class="key">2</span><span class="key">3</span><span class="key">4</span><span class="key">5</span><span class="key">6</span><span class="key">7</span><span class="key">8</span><span class="key">9</span><span class="key">0</span><span class="key">-</span><span class="key">=</span><span class="key wide">Back</span></div><div class="key-row"><span class="key wide">Tab</span><span class="key">Q</span><span class="key">W</span><span class="key">E</span><span class="key">R</span><span class="key">T</span><span class="key">Y</span><span class="key">U</span><span class="key">I</span><span class="key">O</span><span class="key">P</span><span class="key">[</span><span class="key">]</span><span class="key">\</span></div><div class="key-row"><span class="key wide">Caps</span><span class="key">A</span><span class="key">S</span><span class="key">D</span><span class="key home">F</span><span class="key">G</span><span class="key">H</span><span class="key home">J</span><span class="key">K</span><span class="key">L</span><span class="key">;</span><span class="key">'</span><span class="key wide">Enter</span></div><div class="key-row"><span class="key wide">Shift</span><span class="key">Z</span><span class="key">X</span><span class="key">C</span><span class="key">V</span><span class="key">B</span><span class="key">N</span><span class="key">M</span><span class="key">,</span><span class="key">.</span><span class="key">/</span><span class="key wide">Shift</span></div><div class="key-row"><span class="key wide">Ctrl</span><span class="key wide">Alt</span><span class="key space">Space</span><span class="key wide">Alt</span><span class="key wide">Ctrl</span></div></div>
+          </div>
+        </section>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading"><div><p class="eyebrow"><i></i> Tiến bộ của bạn</p><h2 id="results-title">Thàh tíh bà học</h2><p>Đểm tốt nhất đСãlư trê thiết bị nà.</p></div><button class="clear-results" id="clear-results" type="button">Xoálịch sử</button></div>
+        <div class="results-summary"><div><span>Đàoà thàh</span><strong id="completed-count">0 / 30</strong></div><div><span>Tốc đۙcao nhất (100%)</span><strong id="best-wpm">0 WPM</strong></div><div><span>Thời gian nhanh nhất (100%)</span><strong id="best-time">--:--</strong></div></div>
+        <div class="results-table-wrap"><table class="results-table"><thead><tr><th>Bà học</th><th>Tốc đۙtốt nhất</th><th>Chíh xá</th><th>Thời gian nhanh nhất</th></tr></thead><tbody id="results-body"></tbody></table></div>
+      </section>
+
+      <section class="benefits" id="huong-dan">
+        <div><p class="eyebrow"><i></i> Đngiản màhiệu quả</p><h2>Tiến bộ từng<br /><em>phí bấm.</em></h2></div>
+        <div class="benefit-list">
+          <article><span>01</span><div><h3>Học đڮ tưthế</h3><p>Là quen vị trícá ngó tay trưۛ khi tăg tốc đۙ</p></div></article>
+          <article><span>02</span><div><h3>Luyện tập cónhịp</h3><p>Cá bà học ngắn giú bạn duy trìsự tập trung.</p></div></article>
+          <article><span>03</span><div><h3>Theo dõ tiến bộ</h3><p>Biết tốc đۙvàđۙchíh xá của mìh sau mỗi bà gõ</p></div></article>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Tà nguyê TypingEase</p>
+          <h2 id="explore-title">Khá pháTypingEase</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" href="./how-to-type-faster/">
+            <h3>Cáh gõ10 ngó</h3>
+            <p>Hưۛg dẫn vị tríngó tay, hàg phí cơsở vàcáh luyện gõđڮ kỹ thuật cho ngư۝ mới.</p>
+            <span>Xem hưۛg dẫn <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="./average-typing-speed/">
+            <h3>Kiểm tra tốc đۙđn má</h3>
+            <p>Là bà typing test 60 giâ đۃkiểm tra WPM, đۙchíh xá vàtốc đۙgõhiện tại của bạn.</p>
+            <span>Kiểm tra ngay <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="./what-is-wpm/">
+            <h3>WPM làgì</h3>
+            <p>Tì hiểu WPM, cáh tíh tốc đۙđn má vàvìsao WPM nê đСãxem cùg đۙchíh xá.</p>
+            <span>Tì hiểu WPM <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+      <section class="ja-home-content explore" aria-labelledby="ja-home-content-title"><div class="explore-heading"><p class="eyebrow"><i></i> TypingEaseでできること</p><h2 id="ja-home-content-title">タイピング練習を続けるコツ</h2></div><p>タッチタイピングは、ホームポジションを覚え、画面を見ながら短い練習を続けることで少しずつ身につきます。最初は速度より正確率を大切にし、同じ指で同じキーを押す感覚を育てましょう。TypingEase では基礎レッスン、苦手なキーの練習、30秒チャレンジ、日ごとの目標と連続記録を使えます。練習後は WPM と正確率を確認し、前回より安定して入力できたかを見るのがおすすめです。入力スピードを測りたいときは、<a class="inline-link" href="./typing-test/">タイピングテスト</a>で現在の結果を確認できます。</p></section>
+      <p class="ja-home-note">短時間でも毎日練習し、正確に打てたキーを増やしていくことが、自然なタッチタイピングへの近道です。</p>
+      <section class="ja-home-content explore"><h2>毎日の練習で身につくこと</h2><p>タイピング初心者は、まずキーボード練習の時間を短く区切ると続けやすくなります。ホームポジションを基準にして、押した指を元の位置へ戻す習慣を作りましょう。タッチタイピング（ブラインドタッチ）は一度に速く打とうとするより、画面を見たまま正しい指で入力する回数を重ねることが大切です。苦手なキーが見つかったら、そのキーを含む練習を繰り返し、正確率が安定してから速度を上げます。無料タイピング練習を毎日5分から10分でも続けると、指の動きと視線の使い方が少しずつ定着します。</p></section>
+    </main>
+    <footer><a class="brand" href="./">Typing<span>Ease</span></a><nav class="footer-links" aria-label="TypingEase resources"><a href="./typing-test/">Typing Test</a><a href="./what-is-wpm/">What Is WPM?</a><a href="./average-typing-speed/">Average Typing Speed</a><a href="./how-to-type-faster/">How to Type Faster</a><a href="../" lang="vi" hreflang="vi">Tiếng Việt</a></nav><p>Practise steadily, type with ease.</p><span>©2024 TypingEase</span></footer>
+    <script src="../script.js"></script>
+  </body>
+</html>

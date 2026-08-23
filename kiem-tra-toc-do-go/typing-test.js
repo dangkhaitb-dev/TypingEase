@@ -1,8 +1,26 @@
 const isEnglish = document.documentElement.lang === 'en';
-const passage = isEnglish
+const isJapanese = document.documentElement.lang === 'ja';
+const passage = (isEnglish || isJapanese)
   ? 'Touch typing is a skill built through calm, consistent practice. Keep your eyes on the screen, return your fingers to the home row, and focus on each accurate keystroke. As the movements become familiar, your speed can improve naturally and reliably.'
   : 'Gõ mười ngón là một kỹ năng được xây dựng từ những lần luyện tập bình tĩnh và đều đặn. Hãy giữ mắt trên màn hình, đặt các ngón tay về hàng phím cơ sở và ưu tiên từng ký tự chính xác. Khi thao tác trở nên quen thuộc, tốc độ của bạn sẽ cải thiện một cách tự nhiên và bền vững.';
-const text = (vietnamese, english) => isEnglish ? english : vietnamese;
+const text = (vietnamese, english) => {
+  if (!isJapanese) return isEnglish ? english : vietnamese;
+  if (/^-second typing test$/.test(english.replace(/^\d+/, ''))) return english.replace(/^(\d+)-second typing test$/, '$1秒タイピングテスト');
+  if (english === 'Same as your previous result.') return '前回と同じ結果です。';
+  if (english.startsWith('Time is up. Result:')) return english.replace(/^Time is up\. Result: (\d+) WPM, (.+?)% accuracy, (\d+) errors\.$/, '時間です。結果：$1 WPM、正確率 $2%、ミス $3 件。');
+  if (english === 'Calculating your result in real time.') return '入力中の結果をリアルタイムで計算しています。';
+  if (english === 'Ready when you are.') return '入力を開始してください。';
+  if (english === 'Not enough data yet. Complete a few tests to see your progress.') return 'まだ十分なデータがありません。テストを完了すると、ここに進捗が表示されます。';
+  if (english === 'No progress data yet.') return '進捗データはまだありません。';
+  if (english === 'No data is available for this metric.') return 'この指標のデータはまだありません。';
+  if (english === 'There is no suitable data to draw this chart.') return 'グラフを表示するためのデータが不足しています。';
+  if (english === 'Not enough data to calculate a trend.') return '傾向を計算するためのデータが不足しています。';
+  if (english === 'No change from the start of this period.') return '期間の開始時点から変化はありません。';
+  if (english.includes('from your previous result')) return english.replace(/^(\+?-?\d+) WPM from your previous result\.$/, '前回より $1 WPM');
+  if (english.includes('from the start of this period')) return english.replace(/^(\+?-?\d+) (.+) from the start of this period\.$/, '期間開始時より $1 $2');
+  if (english.includes('tests in the last')) return english.replace(/^(\d+) tests in the last (\d+) days\. Average WPM (.+), average accuracy (.+)%\.$/, '過去 $2 日間のテストは $1 回。平均 WPM は $3、平均正確率は $4% です。');
+  return english === '% Accuracy' ? '正確率' : english;
+};
 const HISTORY_KEY = 'typingease-speed-test-history-v1';
 const durations = [15, 30, 60, 120];
 const promptElement = document.querySelector('#test-prompt');
