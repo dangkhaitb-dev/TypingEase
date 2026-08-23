@@ -16,6 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="keyboard.css" />
+    <style>
+      .daily-goal{display:grid;grid-template-columns:1.1fr 1fr auto;gap:18px;align-items:center;margin:-5px 0 22px;padding:15px 18px;border:1px solid #d5e8dd;border-radius:9px;background:#fff}.daily-goal p{margin:0}.daily-goal-copy>p:first-child{color:var(--green);font-size:10px;font-weight:800}.daily-goal h3{margin:4px 0;color:var(--ink);font-size:20px;letter-spacing:-.7px}.daily-goal-copy>p:last-child,.daily-goal-progress p{color:#6d877b;font-size:10px}.daily-progress-track{height:8px;overflow:hidden;border-radius:999px;background:#e4efe9}.daily-progress-track i{display:block;width:var(--daily-progress,0%);height:100%;border-radius:inherit;background:var(--green)}.daily-goal-progress p{margin-top:6px}.daily-goal-options{display:flex;gap:5px}.daily-goal-options button{border:1px solid #d5e6dd;border-radius:5px;padding:7px 8px;background:#fff;color:#6d877b;font-size:10px;font-weight:800}.daily-goal-options button.selected{border-color:var(--green);background:#e5f5df;color:var(--green)}@media(max-width:750px){.daily-goal{grid-template-columns:1fr;gap:12px;margin-bottom:18px}.daily-goal-options{display:grid;grid-template-columns:repeat(4,1fr)}.daily-goal-options button{padding:9px 4px}}
+    </style>
   </head>
   <body>
     <header class="topbar">
@@ -62,6 +65,11 @@
             <button class="selected" type="button">Bài cơ bản</button><button type="button">Tự do</button><button type="button">Trò chơi</button>
           </div>
         </div>
+        <section class="daily-goal" aria-labelledby="daily-goal-title">
+          <div class="daily-goal-copy"><p id="daily-goal-kicker">Mục tiêu hôm nay</p><h3 id="daily-goal-title">0 / 10 phút</h3><p id="daily-goal-status">🔥 0 ngày liên tục</p></div>
+          <div class="daily-goal-progress"><div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div><p id="daily-best-streak">Kỷ lục: 0 ngày</p></div>
+          <div class="daily-goal-options" role="group" aria-label="Chọn mục tiêu mỗi ngày"><button type="button" data-daily-goal="5" aria-pressed="false">5 phút</button><button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 phút</button><button type="button" data-daily-goal="15" aria-pressed="false">15 phút</button><button type="button" data-daily-goal="20" aria-pressed="false">20 phút</button></div>
+        </section>
         <div class="lesson-path" aria-label="Lộ trình bài học">
           <div class="path-title"><strong>Lộ trình 10 ngón</strong><span id="lesson-progress">Bài 1 / 30</span></div>
           <div class="lesson-levels" id="lesson-levels"></div>

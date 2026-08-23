@@ -97,6 +97,18 @@ const weakKeyUi = {
   ms:{title:'Kekunci untuk dilatih',empty:'Tiada kekunci lemah yang menonjol dalam pelajaran ini.',practice:'Latih kekunci lemah',mode:'Latihan kekunci lemah',mistakes:'{count} kesilapan'}
 };
 function currentWeakKeyUi() { return weakKeyUi[activeLanguage] || weakKeyUi.en; }
+const dailyGoalUi = {
+  vi:{kicker:'Mục tiêu hôm nay',minutes:'{done} / {goal} phút',streak:'🔥 {count} ngày liên tục',best:'Kỷ lục: {count} ngày',goal:'{count} phút'},
+  en:{kicker:"Today's goal",minutes:'{done} / {goal} min',streak:'🔥 {count}-day streak',best:'Best: {count} days',goal:'{count} min'},
+  zh:{kicker:'今日目标',minutes:'{done} / {goal} 分钟',streak:'🔥 连续 {count} 天',best:'最佳：{count} 天',goal:'{count} 分钟'},
+  ja:{kicker:'今日の目標',minutes:'{done} / {goal} 分',streak:'🔥 {count}日連続',best:'最長：{count}日',goal:'{count} 分'},
+  ru:{kicker:'Цель на сегодня',minutes:'{done} / {goal} мин',streak:'🔥 Серия: {count} дн.',best:'Рекорд: {count} дн.',goal:'{count} мин'},
+  pt:{kicker:'Meta de hoje',minutes:'{done} / {goal} min',streak:'🔥 {count} dias seguidos',best:'Recorde: {count} dias',goal:'{count} min'},
+  'pt-BR':{kicker:'Meta de hoje',minutes:'{done} / {goal} min',streak:'🔥 {count} dias seguidos',best:'Recorde: {count} dias',goal:'{count} min'},
+  ar:{kicker:'هدف اليوم',minutes:'{done} / {goal} دقيقة',streak:'🔥 {count} أيام متتالية',best:'الأفضل: {count} أيام',goal:'{count} دقيقة'},
+  ms:{kicker:'Matlamat hari ini',minutes:'{done} / {goal} minit',streak:'🔥 {count} hari berturut-turut',best:'Rekod: {count} hari',goal:'{count} minit'}
+};
+function currentDailyGoalUi() { return dailyGoalUi[activeLanguage] || dailyGoalUi.en; }
 function localizedLessonName(index) { return activeLanguage === 'vi' ? lessons[index][0] : `${siteLanguages[activeLanguage]?.basic || 'Lesson'} ${index + 1}`; }
 const rows = [['`','1','2','3','4','5','6','7','8','9','0','-','=','Back'],['Tab','q','w','e','r','t','y','u','i','o','p','[',']','\\'],['Caps','a','s','d','f','g','h','j','k','l',';','\'','Enter'],['Shift','z','x','c','v','b','n','m',',','.','/','Shift'],['Ctrl','Alt',' ' ,'Alt','Ctrl']];
 const fingerMap = {q:'LP',a:'LP',z:'LP',w:'LR',s:'LR',x:'LR',e:'LM',d:'LM',c:'LM',r:'LI',f:'LI',v:'LI',t:'LI',g:'LI',b:'LI',y:'RI',h:'RI',n:'RI',u:'RI',j:'RI',m:'RI',i:'RM',k:'RM',',':'RM',o:'RR',l:'RR','.':'RR',p:'RP',';':'RP','/':'RP',' ':'LT',enter:'RP'};
@@ -111,6 +123,18 @@ let weakKeyRecords = {};
 try { weakKeyRecords = JSON.parse(localStorage.getItem(WEAK_KEYS_STORAGE_KEY)) || {}; } catch { weakKeyRecords = {}; }
 if (!weakKeyRecords || Array.isArray(weakKeyRecords)) weakKeyRecords = {};
 let lessonWeakKeys = {}, recordedWeakKeyPositions = new Set(), observedInputLength = 0, weakPracticeActive = false, weakPracticeText = '';
+const DAILY_GOAL_STORAGE_KEY = 'typingease-daily-goal-v1', DAILY_IDLE_MS = 45000, DAILY_HISTORY_DAYS = 90;
+let dailyGoal = {};
+try { dailyGoal = JSON.parse(localStorage.getItem(DAILY_GOAL_STORAGE_KEY)) || {}; } catch { dailyGoal = {}; }
+dailyGoal = { goalMinutes:[5,10,15,20].includes(dailyGoal.goalMinutes) ? dailyGoal.goalMinutes : 10, days:dailyGoal.days && typeof dailyGoal.days === 'object' ? dailyGoal.days : {}, currentStreak:Number(dailyGoal.currentStreak) || 0, bestStreak:Number(dailyGoal.bestStreak) || 0, lastCompletedDate:dailyGoal.lastCompletedDate || '' };
+let lastPracticeActivityAt = null;
+function localDateKey(date = new Date()) { return `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2,'0')}-${String(date.getDate()).padStart(2,'0')}`; }
+function dayBefore(key) { const [year, month, day] = key.split('-').map(Number), date = new Date(year, month - 1, day - 1); return localDateKey(date); }
+function saveDailyGoal() { const cutoff = new Date(); cutoff.setDate(cutoff.getDate() - DAILY_HISTORY_DAYS); const cutoffKey = localDateKey(cutoff); Object.keys(dailyGoal.days).forEach(key => { if (key < cutoffKey) delete dailyGoal.days[key]; }); localStorage.setItem(DAILY_GOAL_STORAGE_KEY, JSON.stringify(dailyGoal)); }
+function completeDailyGoal(key) { const day = dailyGoal.days[key]; if (!day || day.goalCompleted || day.practiceSeconds < dailyGoal.goalMinutes * 60) return; day.goalCompleted = true; if (dailyGoal.lastCompletedDate !== key) { dailyGoal.currentStreak = dailyGoal.lastCompletedDate === dayBefore(key) ? dailyGoal.currentStreak + 1 : 1; dailyGoal.lastCompletedDate = key; dailyGoal.bestStreak = Math.max(dailyGoal.bestStreak, dailyGoal.currentStreak); } }
+function renderDailyGoal() { const key = localDateKey(), day = dailyGoal.days[key] || {practiceSeconds:0,goalCompleted:false}, ui = currentDailyGoalUi(), done = Math.floor(day.practiceSeconds / 60), ratio = Math.min(100, day.practiceSeconds / (dailyGoal.goalMinutes * 60) * 100); document.querySelector('#daily-goal-kicker').textContent = ui.kicker; document.querySelector('#daily-goal-title').textContent = formatUi(ui.minutes,{done,goal:dailyGoal.goalMinutes}); document.querySelector('#daily-goal-status').textContent = formatUi(ui.streak,{count:dailyGoal.currentStreak}); document.querySelector('#daily-best-streak').textContent = formatUi(ui.best,{count:dailyGoal.bestStreak}); const progress = document.querySelector('#daily-progress'); progress.style.setProperty('--daily-progress', `${ratio}%`); progress.setAttribute('aria-valuemax', String(dailyGoal.goalMinutes)); progress.setAttribute('aria-valuenow', String(Math.min(dailyGoal.goalMinutes, done))); document.querySelectorAll('[data-daily-goal]').forEach(button => { const selected = Number(button.dataset.dailyGoal) === dailyGoal.goalMinutes; button.classList.toggle('selected',selected); button.setAttribute('aria-pressed',String(selected)); button.textContent = formatUi(ui.goal,{count:button.dataset.dailyGoal}); }); }
+function recordPracticeActivity(now = Date.now()) { const key = localDateKey(new Date(now)); dailyGoal.days[key] ||= {practiceSeconds:0,goalCompleted:false}; if (lastPracticeActivityAt && now - lastPracticeActivityAt <= DAILY_IDLE_MS) dailyGoal.days[key].practiceSeconds += (now - lastPracticeActivityAt) / 1000; lastPracticeActivityAt = now; completeDailyGoal(key); saveDailyGoal(); renderDailyGoal(); }
+function setDailyGoal(minutes) { dailyGoal.goalMinutes = minutes; const key = localDateKey(); dailyGoal.days[key] ||= {practiceSeconds:0,goalCompleted:false}; completeDailyGoal(key); saveDailyGoal(); renderDailyGoal(); }
 function formatDuration(seconds) { return seconds == null ? '--:--' : `${String(Math.floor(seconds / 60)).padStart(2,'0')}:${String(seconds % 60).padStart(2,'0')}`; }
 function normalizeWeakKey(character) { if (!character || character === '\n' || /\s/.test(character)) return ''; return character.toLocaleLowerCase(); }
 function getTopWeakKeys(source = weakKeyRecords) { return Object.entries(source).filter(([, count]) => Number.isFinite(count) && count > 0).sort(([keyA, countA], [keyB, countB]) => countB - countA || keyA.localeCompare(keyB)).slice(0, 3); }
@@ -267,6 +291,7 @@ function updateLocalizedStaticUi() {
   document.querySelectorAll('.footer-links a').forEach((link, index) => { link.textContent = ui.explore[index][0]; });
   document.querySelector('.footer-links').setAttribute('aria-label', ui.exploreTag);
   renderWeakKeys();
+  renderDailyGoal();
 }
 function showLessonResult(correctCharacters, typedCharacters) {
   const seconds = Math.max(1, Math.floor((Date.now() - startedAt) / 1000));
@@ -309,8 +334,8 @@ function setLesson(index) { weakPracticeActive = false; weakPracticeText = ''; l
 function startWeakPractice() { const currentKeys = getTopWeakKeys(lessonWeakKeys), selectedKeys = currentKeys.length ? currentKeys : getTopWeakKeys(), keys = selectedKeys.map(([key]) => key); if (!keys.length) return; weakPracticeActive = true; weakPracticeText = buildWeakPractice(keys, currentKeys.length ? lessonWeakKeys : weakKeyRecords); document.querySelector('#lesson-number').textContent = '★'; document.querySelector('.typing-card').classList.remove('is-last-lesson'); renderLevels(); reset(true); document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); }
 function openLesson(index) { setLesson(index); document.querySelector('.practice').scrollIntoView({behavior:'smooth'}); setTimeout(() => input.focus(), 500); }
 function tick() { const secs = Math.floor((Date.now() - startedAt) / 1000); timer.textContent = `${String(Math.floor(secs / 60)).padStart(2,'0')}:${String(secs % 60).padStart(2,'0')}`; }
-input.addEventListener('input', () => { if (!startedAt && input.value) { startedAt = Date.now(); interval = setInterval(tick, 1000); } if (!weakPracticeActive) trackWeakKeyErrors(input.value); draw(); });
-freeInput.addEventListener('input', () => { if (!freeText) return; if (!freeStartedAt && freeInput.value) { freeStartedAt = Date.now(); freeInterval = setInterval(tickFree, 1000); } drawFree(); });
+input.addEventListener('input', () => { if (!startedAt && input.value) { startedAt = Date.now(); interval = setInterval(tick, 1000); } if (startedAt || input.value) recordPracticeActivity(); if (!weakPracticeActive) trackWeakKeyErrors(input.value); draw(); });
+freeInput.addEventListener('input', () => { if (!freeText) return; if (!freeStartedAt && freeInput.value) { freeStartedAt = Date.now(); freeInterval = setInterval(tickFree, 1000); } if (freeStartedAt || freeInput.value) recordPracticeActivity(); drawFree(); });
 gameInput.addEventListener('input', () => { if (!gameActive) return; const typed = gameInput.value; if (typed.length >= gameText.length) { gameCorrect += [...typed].filter((char, index) => char === gameText[index]).length; updateGameScore(); setGameText(); } else renderGame(); });
 document.querySelector('#game-start').addEventListener('click', startGame);
 document.querySelector('#game-best').textContent = localStorage.getItem('typingease-game-best') || 0;
@@ -325,6 +350,7 @@ document.querySelectorAll('.mode-switch button').forEach((button, index) => butt
 document.querySelector('#next-lesson').addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); setLesson(Math.min(lessonIndex + 1, lessons.length - 1)); });
 document.querySelector('#retry-lesson').addEventListener('click', () => { document.querySelector('.typing-card').classList.remove('lesson-finished'); reset(true); });
 document.querySelector('#practice-weak-keys').addEventListener('click', startWeakPractice);
+document.querySelectorAll('[data-daily-goal]').forEach(button => button.addEventListener('click', () => setDailyGoal(Number(button.dataset.dailyGoal))));
 document.querySelector('#clear-results').addEventListener('click', () => { const message = activeLanguage === 'vi' ? 'Bạn có muốn xoá toàn bộ lịch sử thành tích?' : (siteLanguages[activeLanguage]?.results || 'Results'); if (confirm(message)) { lessonRecords = {}; localStorage.removeItem(SCORE_STORAGE_KEY); renderRecords(); } });
 function applyLanguage(code) {
   const t = siteLanguages[code] || siteLanguages.vi;
