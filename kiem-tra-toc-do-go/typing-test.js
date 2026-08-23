@@ -1,5 +1,8 @@
-const isEnglish = document.documentElement.lang === 'en';
-const isJapanese = document.documentElement.lang === 'ja';
+const routeLanguage = /^\/ja(?:\/|$)/.test(location.pathname) ? 'ja' : (/^\/en(?:\/|$)/.test(location.pathname) ? 'en' : '');
+if (routeLanguage) document.documentElement.lang = routeLanguage;
+const testLanguage = routeLanguage || document.documentElement.lang;
+const isEnglish = testLanguage === 'en';
+const isJapanese = testLanguage === 'ja';
 const passage = (isEnglish || isJapanese)
   ? 'Touch typing is a skill built through calm, consistent practice. Keep your eyes on the screen, return your fingers to the home row, and focus on each accurate keystroke. As the movements become familiar, your speed can improve naturally and reliably.'
   : 'Gõ mười ngón là một kỹ năng được xây dựng từ những lần luyện tập bình tĩnh và đều đặn. Hãy giữ mắt trên màn hình, đặt các ngón tay về hàng phím cơ sở và ưu tiên từng ký tự chính xác. Khi thao tác trở nên quen thuộc, tốc độ của bạn sẽ cải thiện một cách tự nhiên và bền vững.';
