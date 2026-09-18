@@ -208,7 +208,10 @@ function expand(screen, context) {
       lines = drillLines(rand, keys, { lines: screen.lines || 3, focus: screen.focus || [] });
     }
 
-    base.type = screen.gen;
+    // `gen` quyết định HÌNH DẠNG nội dung, `type` quyết định loại screen. Bài kiểm tra cũng là
+    // một đoạn văn như screen `standard`, chỉ khác nó đếm giờ — nên nó mượn chung bộ sinh nội
+    // dung mà không phải mang theo `dictation`.
+    base.type = screen.type || screen.gen;
     base.content = lines.join('\n');
     return base;
   }
@@ -236,7 +239,7 @@ function expand(screen, context) {
       }
       tokens = shuffled(rand, [...combos].filter(token => token.length > 1)).slice(0, count);
     }
-    base.type = 'burst';
+    base.type = screen.type || 'burst';
     base.tokens = tokens;
     return base;
   }
@@ -278,8 +281,12 @@ function buildLesson(lessonId) {
     title: entry.title,
     summary: recipe.summary,
     newKeys: entry.newKeys,
-    keysSoFar: [...keysBeforeLesson(lessonId)].filter(key => key !== ' ').concat(
-      entry.newKeys.map(key => (key in NAMED ? NAMED[key] : key))).filter((v, i, a) => a.indexOf(v) === i),
+    // Dau cach thuoc tap phim day RAT som va khong bao gio bi loai: validator so keysSoFar voi
+    // tap luy tien theo `sequence`, va tap do co ' ' ngay tu bai dau.
+    keysSoFar: [...new Set([
+      ...keysBeforeLesson(lessonId),
+      ...entry.newKeys.map(key => (key in NAMED ? NAMED[key] : key))
+    ])],
     // DECISIONS.md: 70 cho bốn bài đầu, 80 từ bài thứ năm.
     minAccuracy: position < 4 ? 70 : 80,
     estMinutes: entry.estMinutes,

@@ -1,0 +1,129 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-and-u",
+  "title": "R and U",
+  "summary": "The last two keys of the unit, and the first complete English sentences.",
+  "newKeys": [
+    "r",
+    "u"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "R and U are index-finger reaches upward — the same fingers that already stretch inward for G and H, now going up instead. That makes them the busiest fingers on the keyboard, which is exactly why touch typing assigns them the most common letters. After this lesson you will have fifteen keys, and enough of the language to type real sentences rather than lists of words.",
+  "congrats": "Fifteen keys, and you have typed English sentences without looking at your hands. The rest of the alphabet is the next unit, but the hard part — trusting your fingers to know where they are — is already behind you.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "LI",
+      "text": "Left index finger, up from F. This finger now covers four keys: F, G, R and later more. Each one is a different direction from the same starting point.",
+      "hint": "Press R to continue"
+    },
+    {
+      "newKey": "r",
+      "text": "R, F, G — up, home, inward. Three directions from one bump.",
+      "type": "block",
+      "content": "jgd frk jg\nrg gr rgrg\nfff rrrr gggg"
+    },
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "RI",
+      "text": "Right index finger, up from J. The mirror of R, and the last new key in this unit.",
+      "hint": "Press U to continue"
+    },
+    {
+      "newKey": "u",
+      "text": "U, J, H. If the reaches start to blur together, slow down until each one lands deliberately.",
+      "type": "block",
+      "content": "jhu ujh\ndju kfh dj\nhj jh hjhj"
+    },
+    {
+      "seconds": 20,
+      "text": "Words with the new keys. Both of them appear constantly in English, so this will feel natural quickly.",
+      "type": "burst",
+      "tokens": [
+        "add",
+        "sale",
+        "heir",
+        "see",
+        "hears",
+        "large",
+        "dark",
+        "ride",
+        "ads",
+        "shrill"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "R first. It follows almost every consonant in English, so the reach rarely happens in isolation.",
+      "type": "standard",
+      "content": "sale drags drill risks\nfires risk lager grass\nregard freed grid sure"
+    },
+    {
+      "dictation": "words",
+      "text": "Now U, which usually arrives just after a consonant too. Let the pairs flow rather than typing each letter separately.",
+      "type": "standard",
+      "content": "head desks lure used\nfires agree seeds salad\nlakes jugs silk file"
+    },
+    {
+      "seconds": 25,
+      "text": "Everything you have, as a burst. Fifteen keys is already most of what ordinary English needs.",
+      "type": "burst",
+      "tokens": [
+        "dad",
+        "idea",
+        "shield",
+        "dishes",
+        "rare",
+        "girls",
+        "ledge",
+        "glass",
+        "had",
+        "grief",
+        "deals",
+        "ears"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "Longer lines. Try to keep your eyes a word ahead of your fingers — that is where real speed comes from.",
+      "type": "standard",
+      "content": "drier sides fade fresh ah\nideal hails friar grief hall\ndark slash harsh ruler lie"
+    },
+    {
+      "dictation": "sentence",
+      "text": "Your first complete sentences. No capital letters or full stops yet — Shift and the full stop come in Unit 2 — but these are real English, typed without looking.",
+      "type": "standard",
+      "content": "his idea is a real deal\nshe asked her dad"
+    },
+    {
+      "dictation": "words",
+      "text": "Last screen of the last new-key lesson in this unit. Next comes a drill built from whichever keys you personally keep missing.",
+      "type": "standard",
+      "content": "alas regard files die\nshelf heels leaks gears\nharder fads grass side"
+    }
+  ]
+}

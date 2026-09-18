@@ -12,6 +12,10 @@
   // ngu, duc, dit, cut, dut, hut, buoi, buom, chim, dam, hiep, vai, ruou).
   // Nhóm đầu cố tình chỉ dùng các phím của Unit 1 (a d e f g h i j k l r s u) để khi lọc theo
   // `allowedKeys` hẹp vẫn còn đủ từ dùng; nhóm sau phủ phần còn lại của bàn phím.
+  // Kho tieng Viet o duoi la MAC DINH nam ngay trong file, khong phai mot file phai tai ve —
+  // trang tieng Viet vi the khong doi mot chut nao. Ngon ngu khac dang ky kho cua minh qua
+  // `window.TypingEaseWords.<lang>.drill` (xem data/words/en.js) va phai nap file do TRUOC file
+  // nay. Thieu thi tu dong lui ve kho tieng Viet: kem, nhung khong vo.
   const WORD_POOL = [
     // — chỉ dùng phím Unit 1 —
     'ai', 'la', 'le', 'ke', 'ha', 'he', 'hu', 'da', 'de', 'du', 'di',
@@ -154,6 +158,12 @@
    * Trả về chuỗi chỉ gồm các ký tự được phép; khi tập phím quá hẹp để ghép từ,
    * trả về drill tổ hợp chữ ("jjj fff jfj fjf") thay vì rỗng.
    */
+  function poolFor(lang) {
+    const external = global.TypingEaseWords && global.TypingEaseWords[lang];
+    const words = external && Array.isArray(external.drill) ? external.drill : null;
+    return words && words.length ? words : WORD_POOL;
+  }
+
   function buildWeakPractice(keys, source = {}, options = {}) {
     const settings = normalizeOptions(options);
     const allowed = toAllowedSet(settings.allowedKeys);
@@ -186,7 +196,9 @@
     const chunks = buildDrillChunks(drillKeys, weightOf);
     const scoreOf = word => [...word].reduce((score, character) => score + (weakSet.has(character) ? weightOf(character) : 0), 0);
     const hitsOf = word => [...word].filter(character => weakSet.has(character)).length;
-    const words = [...new Set(WORD_POOL)]
+    // Mac dinh 'vi' nen moi cho goi cu KHONG doi mot chu nao va hanh vi ban Viet giu nguyen.
+    const lang = options.lang || (global.document?.documentElement?.lang || 'vi').slice(0, 2).toLowerCase();
+    const words = [...new Set(poolFor(lang))]
       .filter(word => (!allowed || [...word].every(character => allowed.has(character))) && hitsOf(word) > 0)
       .sort((a, b) => hitsOf(b) / b.length - hitsOf(a) / a.length || scoreOf(b) - scoreOf(a) || a.length - b.length || a.localeCompare(b));
 

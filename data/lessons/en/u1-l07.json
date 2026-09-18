@@ -1,0 +1,127 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-and-i",
+  "title": "E and I",
+  "summary": "Two vowels, one row up — and suddenly most of what you can type is real English.",
+  "newKeys": [
+    "e",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "E is the most common letter in English and I is not far behind, so these two reaches will end up being among the most worn-in movements you own. Both are upward, with the middle fingers, from D and K. As before: reach, press, return. Adding these two keys roughly triples how much English you can write, which you will notice within a screen or two.",
+  "congrats": "That is the moment the course stops feeling like exercises. With E and I you can write hundreds of real words, and from here every lesson is mostly reading and typing rather than drilling.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "Left middle finger, up and slightly left from D. The most common letter in the language — this reach is worth getting exactly right.",
+      "hint": "Press E to continue"
+    },
+    {
+      "newKey": "e",
+      "text": "E then D, up and back. The finger should return far enough to feel D under it again.",
+      "type": "block",
+      "content": "des des\ndsf kej ds\nse es sese"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RM",
+      "text": "Right middle finger, up from K. Same movement mirrored, and the last of the four reaches this unit teaches.",
+      "hint": "Press I to continue"
+    },
+    {
+      "newKey": "i",
+      "text": "I then K. If your whole hand lifts, the reach is too big — only the finger needs to travel.",
+      "type": "block",
+      "content": "ilk kil\njlk dif jl\nli il lili"
+    },
+    {
+      "seconds": 20,
+      "text": "Words already, rather than letter patterns. That is what two vowels buy you.",
+      "type": "burst",
+      "tokens": [
+        "shades",
+        "egg",
+        "hi",
+        "lass",
+        "slide",
+        "sale",
+        "ale",
+        "shakes",
+        "seal",
+        "leak"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "Both new keys in real words. Read each word whole; your fingers can handle the spelling.",
+      "type": "standard",
+      "content": "feels sages desks fads\nflakes as lash glass\nshake shades if sales"
+    },
+    {
+      "dictation": "words",
+      "text": "Weighted towards I. It appears in more English words than any consonant.",
+      "type": "standard",
+      "content": "idea slide sales ideal\nfall flakes kids ah\nfails said saga alfalfa"
+    },
+    {
+      "seconds": 25,
+      "text": "A longer burst. If you make a mistake, keep going — stopping to feel bad about it costs more than the mistake did.",
+      "type": "burst",
+      "tokens": [
+        "flake",
+        "fad",
+        "silage",
+        "shed",
+        "flee",
+        "ledge",
+        "he",
+        "sides",
+        "said",
+        "high",
+        "flags",
+        "ideal"
+      ]
+    },
+    {
+      "dictation": "letters",
+      "text": "One pattern screen to check the return. Middle fingers up and back, index fingers never moving.",
+      "type": "standard",
+      "content": "iii eee ddd kkk\neieiei ieieie\nkeid iked"
+    },
+    {
+      "dictation": "words",
+      "text": "Longer lines now that there are enough words to fill them. Keep an even pace across the whole line.",
+      "type": "standard",
+      "content": "adds sails lakes eel deed\nfake a fall heels said\nfads shakes idea seeds ale"
+    },
+    {
+      "dictation": "words",
+      "text": "Last screen. Two more keys next lesson and Unit 1 is done.",
+      "type": "standard",
+      "content": "glad shale fields shield\nadd flags all aisle\nlife flasks half ahead"
+    }
+  ]
+}

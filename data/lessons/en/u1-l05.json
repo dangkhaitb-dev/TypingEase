@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "home-row-review",
+  "title": "Home row review",
+  "summary": "No new keys. Eight fingers, eight keys, until you stop thinking about any of them.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nothing new here on purpose. Every reach in the rest of this course starts from the eight keys you already have, and returns to them — so the more automatic they are now, the less work the next twenty-two lessons will be. If you can get through this lesson without looking down once, you are ready to leave the row.",
+  "congrats": "The home row is yours. From here your fingers start reaching — up a row, down a row — and every one of those reaches ends by coming back to exactly where they are now.",
+  "screens": [
+    {
+      "dictation": "letters",
+      "text": "Left hand alone, outward and back. Watch that your index finger stays put while the others move.",
+      "type": "standard",
+      "content": "fds alk fd\nfa af fafa\naaaa sss dddd ffff"
+    },
+    {
+      "text": "Right hand alone. Same shape, mirrored.",
+      "type": "block",
+      "content": ";k k; ;k;k\njjjj ;;; kkkk lll\njkjkjk kjkjkj"
+    },
+    {
+      "seconds": 20,
+      "text": "Both hands, mixed. Let it be a little uncomfortable; that is where the learning is.",
+      "type": "burst",
+      "tokens": [
+        "as",
+        "sk",
+        "ds",
+        "sa",
+        "af",
+        "sj",
+        "ss",
+        "aj",
+        "fs",
+        "sd"
+      ]
+    },
+    {
+      "dictation": "letters",
+      "text": "Pairs that cross between the hands. These are the fastest combinations on a keyboard once your fingers know them.",
+      "type": "standard",
+      "content": "ksl afd ks\nkj jk kjkj\nsss jjjj kkkk aaaa"
+    },
+    {
+      "dictation": "words",
+      "text": "Words again. Read the whole word before your fingers start moving — typing letter by letter is a habit worth not building.",
+      "type": "standard",
+      "content": "fad lad salads all\nlads asks flak fads\nfalls adds flasks salad"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of whole words. Speed here comes from not stopping, not from moving faster.",
+      "type": "burst",
+      "tokens": [
+        "lad",
+        "ask",
+        "flak",
+        "a",
+        "alas",
+        "salad",
+        "as",
+        "fall",
+        "sad",
+        "salads",
+        "falls",
+        "lads"
+      ]
+    },
+    {
+      "text": "The full row, straight across and back. This is the drill worth repeating on a bad day.",
+      "type": "block",
+      "content": "sal jfk sa\nsa as sasa\nffff ssss dddd aaa\nasas sasa"
+    },
+    {
+      "dictation": "letters",
+      "text": "Little fingers again. They are still the weakest and they always will be — which is why they get the last word in this lesson.",
+      "type": "standard",
+      "content": "sla; ;las\njfl dsa jf\nsl ls slsl"
+    },
+    {
+      "dictation": "words",
+      "text": "Last screen of the review. Next lesson your index fingers reach inward for the first time.",
+      "type": "standard",
+      "content": "alfalfa add flak salads\nlads asks sad lass\nask all a salad"
+    }
+  ]
+}

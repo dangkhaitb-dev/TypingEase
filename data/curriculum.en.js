@@ -85,15 +85,15 @@ window.TypingEaseCurriculum = {
     // English letters, so there is nothing to gain by reordering for letter frequency and a
     // great deal to lose by breaking the row discipline.
     'u1-l01': { title: 'F, J and the space bar', newKeys: ['f', 'j', ' '], screens: 10, estMinutes: 5, kind: 'keys', ready: true },
-    'u1-l02': { title: 'D and K', newKeys: ['d', 'k'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u1-l03': { title: 'S and L', newKeys: ['s', 'l'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u1-l04': { title: 'A and the semicolon', newKeys: ['a', ';'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u1-l05': { title: 'Home row review', newKeys: [], screens: 9, estMinutes: 5, kind: 'review', ready: false },
-    'u1-l06': { title: 'G and H', newKeys: ['g', 'h'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u1-l07': { title: 'E and I', newKeys: ['e', 'i'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u1-l08': { title: 'R and U', newKeys: ['r', 'u'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u1-l09': { title: 'Weak key drill', newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: false },
-    'u1-l10': { title: 'Unit 1 test', newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: false },
+    'u1-l02': { title: 'D and K', newKeys: ['d', 'k'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u1-l03': { title: 'S and L', newKeys: ['s', 'l'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u1-l04': { title: 'A and the semicolon', newKeys: ['a', ';'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u1-l05': { title: 'Home row review', newKeys: [], screens: 9, estMinutes: 5, kind: 'review', ready: true },
+    'u1-l06': { title: 'G and H', newKeys: ['g', 'h'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u1-l07': { title: 'E and I', newKeys: ['e', 'i'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u1-l08': { title: 'R and U', newKeys: ['r', 'u'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u1-l09': { title: 'Weak key drill', newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: true },
+    'u1-l10': { title: 'Unit 1 test', newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: true },
 
     // Unit 2
     'u2-l01': { title: 'T and Y', newKeys: ['t', 'y'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },

@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-and-the-semicolon",
+  "title": "A and the semicolon",
+  "summary": "The little fingers, the last two home-row keys, and the first real English words.",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Little fingers are the weakest of the eight, and they are asked to do a surprising amount of work: A, the semicolon, and later Shift, Enter and most of the punctuation. Start them off properly now and the rest of the course is much easier. With A in place you have every vowel the home row offers, which means that from the middle of this lesson you stop typing patterns and start typing words.",
+  "congrats": "Eight keys, eight fingers, and you have typed English. The word list was short because the home row alone is short — the next three lessons add six more keys and it opens up quickly.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "Left little finger, at the far left of the middle row. It is a small, weak finger doing a full-sized job; give it its own movement rather than swinging the whole hand.",
+      "hint": "Press A to continue"
+    },
+    {
+      "newKey": "a",
+      "text": "The whole left hand, one finger per key, outward and back. This is the shape your left hand will hold for the rest of the course.",
+      "type": "block",
+      "content": "sdaf fsda\ndfs klj df\naf fa afaf"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RP",
+      "text": "Right little finger. The semicolon is where your right hand rests, the mirror of A — and in a moment it becomes the anchor for reaching the punctuation further out.",
+      "hint": "Press the semicolon to continue"
+    },
+    {
+      "newKey": ";",
+      "text": "The right hand now has its full shape too. Both little fingers on the outside, both index fingers on their bumps.",
+      "type": "block",
+      "content": ";l;l l;l;\nk;lj l;kj\nfdj kl; fd"
+    },
+    {
+      "text": "All eight keys of the home row, which is what \"home row\" means: the row your hands live on.",
+      "type": "block",
+      "content": "adsf afsd\nldk jas ld\ndf fd dfdf\nfff ssss dddd aaa"
+    },
+    {
+      "seconds": 20,
+      "text": "Mixed, both hands. Let the fingers pick the keys; you pick the pace.",
+      "type": "burst",
+      "tokens": [
+        "sa",
+        "ad",
+        "sk",
+        "df",
+        "ds",
+        "sl",
+        "ss",
+        "da",
+        "dd",
+        "aj"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "Real English words, all of them typed without your hands leaving the home row. There are not many yet — that is honestly all eight keys can make.",
+      "type": "standard",
+      "content": "dad as salads asks\nfad lass falls adds\nlads fall alas ask"
+    },
+    {
+      "seconds": 25,
+      "text": "The same words as a burst. Whole words now, not letters — read the word, then type it, rather than reading one letter at a time.",
+      "type": "burst",
+      "tokens": [
+        "dads",
+        "dad",
+        "lads",
+        "lass",
+        "lad",
+        "fad",
+        "sad",
+        "ads",
+        "as",
+        "alas"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "Notice what changed: you are thinking about words, and your fingers are handling the letters. That is the whole goal of the course, arriving early.",
+      "type": "standard",
+      "content": "ad alas salad\nadd ask flasks\nfads sad lass"
+    },
+    {
+      "dictation": "letters",
+      "text": "Back to the little fingers on their own for a moment. They are the ones that will slow you down later if they are neglected now.",
+      "type": "standard",
+      "content": "a;a;a; ;a;a;a\ns;al l;as\nasd lf; as"
+    },
+    {
+      "dictation": "words",
+      "text": "Last one. Next lesson reviews all eight keys before the course starts reaching off the row.",
+      "type": "standard",
+      "content": "adds fads all flasks\nas falls alfalfa alas\nad ads fall flak"
+    }
+  ]
+}

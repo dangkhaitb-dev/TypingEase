@@ -1,0 +1,116 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-and-k",
+  "title": "D and K",
+  "summary": "Two more middle-row keys, one for each middle finger, without moving your hands.",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Your index fingers already know where they live. D and K sit directly beside them, under the middle fingers, so nothing about your hand position changes — only which finger does the work. If you find yourself moving a whole hand to reach one of these, the hand has drifted and the index fingers will tell you: they should still be touching their bumps.",
+  "congrats": "Four keys, four fingers, and your hands have not moved once. That is the whole trick of the home row, and everything that follows is the same idea applied further out.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "LM",
+      "text": "Left middle finger, one key to the left of F. Leave the index finger where it is — it stays on its bump while the middle finger reaches.",
+      "hint": "Press D to continue"
+    },
+    {
+      "newKey": "d",
+      "text": "Alternate between the two left-hand fingers. The hand itself should stay completely still.",
+      "type": "block",
+      "content": "df fd dfdf\nffff ddd\ndfdf fdfd"
+    },
+    {
+      "type": "intro",
+      "key": "k",
+      "finger": "RM",
+      "text": "Right middle finger, one key to the right of J. Same movement as D, mirrored across the keyboard — your two hands do the same things in opposite directions.",
+      "hint": "Press K to continue"
+    },
+    {
+      "newKey": "k",
+      "text": "Now the right hand. If this feels easier than D did, that is your left hand having already taught your right one the movement.",
+      "type": "block",
+      "content": "kkk jjj\nkjkj jkjk\nkj kj"
+    },
+    {
+      "seconds": 20,
+      "text": "All four keys, mixed. Do not rush — the point is that your fingers already know where to go.",
+      "type": "burst",
+      "tokens": [
+        "fd",
+        "ff",
+        "fk",
+        "jk",
+        "kd",
+        "kj",
+        "kk",
+        "jf",
+        "dk",
+        "df"
+      ]
+    },
+    {
+      "text": "Hands alternating. Notice how much easier it is when consecutive letters are on different hands.",
+      "type": "block",
+      "content": "dkdkdk kdkdkd\nfdjk jfdk\ndfj k df"
+    },
+    {
+      "dictation": "letters",
+      "text": "Keep the rhythm even. A steady slow pace builds the habit faster than a fast uneven one.",
+      "type": "standard",
+      "content": "dkdk kdkd\nfjkd fjkd\ndkf j dk"
+    },
+    {
+      "seconds": 25,
+      "text": "A longer burst. Eyes forward for the whole thing, even when you feel a mistake coming.",
+      "type": "burst",
+      "tokens": [
+        "jj",
+        "fj",
+        "dd",
+        "kk",
+        "kj",
+        "df",
+        "jk",
+        "jf",
+        "fd",
+        "kf"
+      ]
+    },
+    {
+      "dictation": "letters",
+      "text": "Same four keys in a different order. Your fingers should be deciding this, not your eyes.",
+      "type": "standard",
+      "content": "fff ddd kkkk jjj\nfdfd dfdf\njdkf dkjf"
+    },
+    {
+      "dictation": "letters",
+      "text": "If a finger hesitates, let it. Hesitating in the right place beats guessing quickly.",
+      "type": "standard",
+      "content": "kd dk kdkd\nfff jjj dddd kkkk\nkdkdkd dkdkdk"
+    },
+    {
+      "dictation": "letters",
+      "text": "Last one. Two lessons in, and half the home row is already under your fingers.",
+      "type": "standard",
+      "content": "djdj jdjd\ndkfj jdkf\ndkf j dk"
+    }
+  ]
+}

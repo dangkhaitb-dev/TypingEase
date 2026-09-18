@@ -1,0 +1,122 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "g-and-h",
+  "title": "G and H",
+  "summary": "The index fingers reach inward — the first time your fingers leave home and come back.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Everything so far has been one finger, one key, no movement. G and H change that: both index fingers stretch inward by one key, then return. The returning is the part that matters. If your index finger stays on G after typing it, the next letter it needs will be wrong — so the reach and the return are one single movement, not two.",
+  "congrats": "Your first reach, and your first return. That pattern — leave, press, come back — is every remaining lesson in miniature. The next one is the same movement upward instead of inward.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "LI",
+      "text": "Left index finger, one key to the right of F. Stretch, press, and let the finger fall back onto its bump — you should be able to feel that you have landed.",
+      "hint": "Press G to continue"
+    },
+    {
+      "newKey": "g",
+      "text": "G then F, over and over. The point of this drill is the return, not the reach.",
+      "type": "block",
+      "content": "ffff gggg dddd\ngfgfgf fgfgfg\ngfd gdf"
+    },
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RI",
+      "text": "Right index finger, one key to the left of J. The mirror image — and H is one of the most common letters in English, so this reach will be well worn in by the end of the course.",
+      "hint": "Press H to continue"
+    },
+    {
+      "newKey": "h",
+      "text": "H then J. Same movement, other hand. Keep the little fingers resting where they belong.",
+      "type": "block",
+      "content": "kkkk hhhh jjjj\nhjhj jhjh\nhjk kjh"
+    },
+    {
+      "seconds": 20,
+      "text": "Both reaches, alternating. This is the busiest your index fingers have been so far.",
+      "type": "burst",
+      "tokens": [
+        "gg",
+        "gj",
+        "hg",
+        "hj",
+        "hf",
+        "jj",
+        "fh",
+        "jf",
+        "fj",
+        "fg"
+      ]
+    },
+    {
+      "text": "Reaches mixed with the keys you already know, which is how they will actually appear in words.",
+      "type": "block",
+      "content": "ah ha ahah\nhhh ssss aaaa gggg\nghghgh hghghg"
+    },
+    {
+      "dictation": "words",
+      "text": "Real words with the new keys in them. Twice as many as the last lesson had, and they are starting to sound like English.",
+      "type": "standard",
+      "content": "hash sash gaff shall\ngal ash saga had\nflags has glass lad"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst weighted towards H. It is the fourth most common consonant in English — worth the drill.",
+      "type": "burst",
+      "tokens": [
+        "gash",
+        "dads",
+        "ash",
+        "flag",
+        "half",
+        "sash",
+        "salads",
+        "glad",
+        "lads",
+        "flash"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "Now G. Less common than H, and a slightly awkward stretch, so it gets its own screen.",
+      "type": "standard",
+      "content": "flak gash flash half\nadd shall saga sad\ngala dad ah gas"
+    },
+    {
+      "dictation": "letters",
+      "text": "Back to patterns for a moment, to check the return is still happening. Index fingers on their bumps between every reach.",
+      "type": "standard",
+      "content": "hj jh hjhj\nhhh jjjj gggg fff\nghgh hghg"
+    },
+    {
+      "dictation": "words",
+      "text": "Everything you have, mixed. Ten keys under your fingers and you have not moved your hands once.",
+      "type": "standard",
+      "content": "lass glass lad saga\ngal ads dad halls\nas salad all flags"
+    }
+  ]
+}
