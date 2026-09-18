@@ -38,15 +38,21 @@ const curriculum = window.TypingEaseCurriculum || null;
 const store = window.TypingEaseProgress || null;
 const profile = window.TypingEaseProfile || null;
 
-// Chỉ còn một trang chủ tiếng Việt ở gốc site, nên mọi đường dẫn đều tính từ './'.
-const base = './';
-const TEST_URL = './kiem-tra-toc-do-go/';
-const CURRICULUM_URL = `${base}bai-hoc/`;
-const PROGRESS_URL = `${base}tien-do/`;
-const FREE_URL = `${base}luyen-tu-do/`;
-const WEAK_URL = `${base}luyen-phim-yeu/`;
-const GUIDE_URL = './cach-go-10-ngon/';
-const lessonUrl = (lessonId, screen) => `${base}hoc/#${lessonId}/${screen}`;
+// Duong dan giua cac trang, TUYET DOI: ban tieng Anh nam sau mot cap (`/en/`) nen './' se truot,
+// va ten thu muc cung khac. Lop phu `TypingEaseUI.routes` ghi de bang nay tren trang tieng Anh.
+const ROUTES_VI = {
+  home: '/', lessons: '/bai-hoc/', learn: '/hoc/', test: '/kiem-tra-toc-do-go/',
+  progress: '/tien-do/', free: '/luyen-tu-do/', weak: '/luyen-phim-yeu/', guide: '/cach-go-10-ngon/'
+};
+const R = { ...ROUTES_VI, ...(window.TypingEaseUI?.routes || {}) };
+const base = R.home;
+const TEST_URL = R.test;
+const CURRICULUM_URL = R.lessons;
+const PROGRESS_URL = R.progress;
+const FREE_URL = R.free;
+const WEAK_URL = R.weak;
+const GUIDE_URL = R.guide;
+const lessonUrl = (lessonId, screen) => `${R.learn}#${lessonId}/${screen}`;
 const MARK = ['①','②','③','④','⑤','⑥','⑦','⑧','⑨','⑩','⑪','⑫'];
 
 const homeUi = {
@@ -200,7 +206,7 @@ function renderContinueCard() {
 function goContinue() {
   if (continueHref) { location.href = continueHref; return; }
   const target = resolveContinue();
-  location.href = target ? lessonUrl(target.lessonId, target.screen) : `${base}hoc/`;
+  location.href = target ? lessonUrl(target.lessonId, target.screen) : R.learn;
 }
 
 /* --- rail: unit đang học ------------------------------------------------------------------------ */

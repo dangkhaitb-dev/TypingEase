@@ -4,7 +4,12 @@
   // đều suy ra từ ba nguồn đã có (TypingEaseProgress, TypingEaseProfile, mục tiêu ngày), nên
   // xoá lịch sử ở /tien-do/ là huy hiệu tự mất theo, không cần dọn thêm.
   // Thứ duy nhất được lưu là NGÀY mở khoá lần đầu — số liệu gốc không nhớ nổi mốc đó.
-  const KEY = 'typingease-badges-v1';
+  // Mot kho huy hieu cho moi giao trinh, cung ly do nhu progress-store.js: hai giao trinh dung
+  // chung ma bai nen dung chung kho la dem cheo nhau.
+  const DEFAULT_KEY = 'typingease-badges-v1';
+  const LANG = (global.document?.documentElement?.lang || 'vi').slice(0, 2).toLowerCase();
+  const KEY = global.TypingEaseCurriculum?.badgesKey
+    || (LANG === 'vi' ? DEFAULT_KEY : `typingease-badges-${LANG}-v1`);
 
   const OPERANDS = {
     gte: (actual, value) => actual >= value,
@@ -33,7 +38,10 @@
       rules: [{ field: 'cleanWpm', operand: 'gte', value: 60 }] },
     { id: 'typed-5000', icon: '⌨️', title: '5.000 phím', hint: 'Gõ tổng cộng 5.000 phím.',
       rules: [{ field: 'typed', operand: 'gte', value: 5000 }] },
-    { id: 'telex', icon: '✍️', title: 'Gõ được dấu', hint: 'Hoàn thành một bài tiếng Việt có dấu (Unit 3).',
+    // `requires` = huy hieu nay chi ton tai voi giao trinh co tinh nang do. Giao trinh khong co
+    // Telex ma van hien the nay thi nguoi hoc thay mot o xam vinh vien va mot tieu de khong bao
+    // gio doc duoc "10/10" — giong site hong hon la thanh tuu chua mo.
+    { id: 'telex', icon: '✍️', requires: 'telex', title: 'Gõ được dấu', hint: 'Hoàn thành một bài tiếng Việt có dấu (Unit 3).',
       rules: [{ field: 'telexLessons', operand: 'gte', value: 1 }] }
   ];
 
@@ -59,7 +67,9 @@
     return {
       lessons: sequence.filter(isDone).length,
       units,
-      telexLessons: sequence.filter(id => id.startsWith('u3-') && isDone(id)).length,
+      // Do theo `inputMode` cua chinh giao trinh, khong theo tien to ma bai: bai co dau nam o
+      // dau thi tinh o do, va giao trinh khac danh so unit khac cung khong sai.
+      telexLessons: sequence.filter(id => curriculum.lessons[id]?.inputMode === 'telex' && isDone(id)).length,
       stars: sequence.reduce((total, id) => total + (store.getLesson(id)?.stars || 0), 0),
       streak: store.loadDaily().bestStreak || 0,
       // "Sạch" = nhanh VÀ chính xác trong cùng một lượt; ghép max(wpm) với max(accuracy) của hai
@@ -84,7 +94,10 @@
     const fields = collect(sources);
     const earnedAt = read();
     let changed = false;
-    const badges = LIST.map(badge => {
+    // Giao trinh cu khong khai `features`; mac dinh ['telex'] de no van hien du 10 huy hieu.
+    const features = sources.curriculum?.features || ['telex'];
+    const list = LIST.filter(badge => !badge.requires || features.includes(badge.requires));
+    const badges = list.map(badge => {
       const earned = badge.rules.every(rule => (OPERANDS[rule.operand] || OPERANDS.gte)(fields[rule.field] || 0, rule.value));
       if (earned && !earnedAt[badge.id]) { earnedAt[badge.id] = Date.now(); changed = true; }
       if (!earned && earnedAt[badge.id]) { delete earnedAt[badge.id]; changed = true; }

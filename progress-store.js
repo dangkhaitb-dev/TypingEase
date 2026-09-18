@@ -3,7 +3,15 @@
   // Separate from the old `goxanh-lesson-records-v2` (30 lessons, numeric index): the two
   // curricula do not line up lesson-for-lesson, so the old store is read once for a headline
   // count and an unlock, then left exactly where it is (see DECISIONS.md decision 5).
-  const KEY = 'typingease-progress-v3';
+  // Mỗi giáo trình một kho tiến độ. Mã bài là phẳng và trùng nhau giữa các ngôn ngữ
+  // ("u1-l01" của bản Việt và bản Anh là hai bài khác hẳn), nên dùng chung một khoá là hai
+  // giáo trình ghi đè lên nhau. `progressKey` đã được khai sẵn trong data/curriculum.*.js từ
+  // đầu mà chưa ai đọc — nay đọc nó. Bản Việt khai đúng khoá cũ nên dữ liệu người dùng hiện
+  // có không phải migrate gì cả; đây thuần tuý là đổi chỗ lấy tên khoá.
+  const DEFAULT_KEY = 'typingease-progress-v3';
+  const LANG = (global.document?.documentElement?.lang || 'vi').slice(0, 2).toLowerCase();
+  const KEY = global.TypingEaseCurriculum?.progressKey
+    || (LANG === 'vi' ? DEFAULT_KEY : `typingease-progress-${LANG}-v3`);
   const LEGACY_KEY = 'goxanh-lesson-records-v2';
   const DAILY_KEY = 'typingease-daily-goal-v1';
   const DAILY_IDLE_MS = 45000, DAILY_HISTORY_DAYS = 90, GOAL_CHOICES = [5, 10, 15, 20];
@@ -82,6 +90,10 @@
   // only carry across two facts: how many lessons the visitor finished, and the fact that a
   // returning visitor should not be walled out of the first two units.
   function migrate() {
+    // `goxanh-lesson-records-v2` là giáo trình 30 bài CŨ CỦA BẢN VIỆT. Chạy nó cho một kho
+    // khác là bê một sự kiện tiếng Việt sang ngôn ngữ khác: người mới tinh vào bản tiếng Anh
+    // sẽ được báo "đã xong 14 bài ở giáo trình cũ" và được mở sẵn hai unit chưa hề học.
+    if (KEY !== DEFAULT_KEY) { state.migratedAt = Date.now(); save(); return 0; }
     const legacy = read(storage(), LEGACY_KEY);
     const done = legacy && typeof legacy === 'object' && !Array.isArray(legacy)
       ? Object.keys(legacy).filter(key => /^\d{1,2}$/.test(key) && Number(key) < 30).length : 0;

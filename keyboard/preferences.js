@@ -23,7 +23,10 @@ export const DEFAULTS = Object.freeze({
   keyboardId: 1
 });
 
-const LABELS = {
+// Day la ES module nen no doc `globalThis`, khong phai bien cuc bo cua IIFE. `i18n/ui.<lang>.js`
+// la script thuong va script thuong luon chay TRUOC module co defer, nen thu tu an toan — nhung
+// dung them `defer` vao the script do, no se dao thu tu lai.
+const LABELS_VI = {
   title: 'Cài đặt bàn phím',
   showKeyboard: 'Hiện bàn phím',
   showHands: 'Hiện bàn tay',
@@ -38,6 +41,7 @@ const LABELS = {
   cancel: 'Huỷ',
   close: 'Đóng'
 };
+const LABELS = { ...LABELS_VI, ...(globalThis.TypingEaseUI?.keyboard || {}) };
 
 function stored() {
   try {

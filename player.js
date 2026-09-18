@@ -15,6 +15,23 @@
   const WEAK_KEYS_STORAGE_KEY = weakKeysApi?.STORAGE_KEY || 'typingease-weak-keys-v1';
   const MOBILE_NOTE_KEY = 'typingease-player-mobile-note-v1';
 
+  // Ngon ngu cua trang lay tu MOT nguon duy nhat: `<html lang>`. Khong do URL, khong doc
+  // localStorage. The do la thu crawler va trinh doc man hinh cung doc, va no co mat truoc khi
+  // bat ky script nao chay — nen khong co canh nao ma ba noi khai ba ngon ngu khac nhau.
+  const LANG = (document.documentElement.lang || 'vi').slice(0, 2).toLowerCase();
+  // Lop phu: bang tieng Viet la mac dinh NAM TRONG FILE, ban dich chi trai len tren. Trang tieng
+  // Viet vi the khong nap them mot byte nao va khong di qua nhanh ma nao moi. Mot khoa quen dich
+  // se hien tieng Viet — thay duoc ngay, va khong bao gio de trong.
+  const UI = global.TypingEaseUI || {};
+
+  // Lien ket giua cac trang. Phai TUYET DOI: `../tien-do/` tinh tu /hoc/ thi dung, nhung tinh tu
+  // mot trang nam sau hai cap thi truot, va ten thu muc con khac nhau giua cac ban ngon ngu.
+  const ROUTES_VI = {
+    home: '/', lessons: '/bai-hoc/', learn: '/hoc/',
+    test: '/kiem-tra-toc-do-go/', progress: '/tien-do/', weak: '/luyen-phim-yeu/'
+  };
+  const R = { ...ROUTES_VI, ...(UI.routes || {}) };
+
   const STAR_GREAT = 98, STAR_GOOD = 94, STARS = 3;
   const DEFAULT_MIN_ACCURACY = 75, DEFAULT_BURST_SECONDS = 25;
   const MIN_KEY_MS = 40, MAX_KEY_MS = 2500, SLOW_KEY_MS = 600, SLOW_KEY_SAMPLES = 3;
@@ -22,17 +39,18 @@
   // Mã ngón trong dữ liệu bài học (`screen.finger`) → tên tiếng Việt. Bảng này thuộc về giáo
   // trình, không thuộc bàn phím: nó thắng bảng phím→ngón vì tác giả bài mới biết mình muốn
   // dạy ngón nào (ví dụ phím cách có thể là ngón cái trái hay phải tuỳ bài).
-  const FINGER_NAMES = {
+  const FINGER_NAMES_VI = {
     LP: 'ngón út trái', LR: 'ngón áp út trái', LM: 'ngón giữa trái', LI: 'ngón trỏ trái', LT: 'ngón cái trái',
     RT: 'ngón cái phải', RI: 'ngón trỏ phải', RM: 'ngón giữa phải', RR: 'ngón áp út phải', RP: 'ngón út phải'
   };
+  const FINGER_NAMES = { ...FINGER_NAMES_VI, ...(UI.fingers || {}) };
 
-  const T = {
+  const T_VI = {
     loading: 'Đang tải bài học…',
     missingTitle: 'Chưa có nội dung bài này',
     missingBody: 'Không tải được <code>{path}</code>. Nội dung bài học đang được viết — hãy thử lại sau, hoặc chọn một bài khác từ trang chủ.',
     noCurriculum: 'Chưa nạp được chỉ mục giáo trình (<code>data/curriculum.vi.js</code>).',
-    fixtureNote: 'Đang dùng nội dung mẫu trong <code>hoc/_fixture/</code> — bài thật chưa có trong <code>data/lessons/vi/</code>.',
+    fixtureNote: 'Đang dùng nội dung mẫu trong <code>hoc/_fixture/</code> — bài thật chưa có trong <code>data/lessons/</code>.',
     screenOf: 'Screen {n} / {total}',
     newKey: 'PHÍM MỚI',
     pressToContinue: 'Nhấn <b>{key}</b> để tiếp tục',
@@ -93,6 +111,7 @@
     menuExit: 'Về trang chủ',
     clock: '{seconds} s'
   };
+  const T = { ...T_VI, ...(UI.player || {}) };
   const fill = (template, values = {}) =>
     Object.entries(values).reduce((text, [key, value]) => text.split(`{${key}}`).join(String(value)), template);
   const escapeHtml = value => String(value).replace(/[&<>"']/g, character =>
@@ -140,7 +159,7 @@
       + list.map(badge => `<span class="badge-notice-item" data-badge="${escapeHtml(badge.id)}">`
         + `<span class="badge-notice-icon" aria-hidden="true">${badge.icon}</span>`
         + `<span><small>${T.badgeNew}</small><b>${escapeHtml(badge.title)}</b></span></span>`).join('')
-      + `<a class="badge-notice-link" href="../tien-do/#badges">${T.badgeAll}</a></div>`;
+      + `<a class="badge-notice-link" href="${R.progress}#badges">${T.badgeAll}</a></div>`;
   }
 
   const soundEl = root.querySelector('#pt-sound');
@@ -278,7 +297,7 @@
     // The real index is a <script> in the page. If it is not there yet (the content for this
     // curriculum is written separately), fall back to the development fixture so the player
     // still runs instead of showing a blank page.
-    try { await loadScript('_fixture/curriculum.vi.js'); } catch { /* fixture missing too */ }
+    try { await loadScript(`_fixture/curriculum.${LANG}.js`); } catch { /* fixture missing too */ }
     curriculum = global.TypingEaseCurriculum || null;
     return curriculum;
   }
@@ -311,7 +330,8 @@
   const firstLessonId = () => curriculum?.starter?.lessonId || orderedIds().find(isReady) || 'u1-l01';
 
   // --- lesson loading -------------------------------------------------------------------------
-  const DATA_BASE = '../data/lessons/vi/';
+  // Tuyet doi, khong phai '../': mot trang nam sau hai cap se tinh ra /en/data/lessons/... 
+  const DATA_BASE = `/data/lessons/${LANG}/`;
   const FIXTURE_BASE = './_fixture/';
   const lessonCache = new Map();
 
@@ -936,7 +956,7 @@
       + (weak.length
         ? `<div class="weak-block"><p class="weak-title">${T.weakTitle}</p><p class="weak-list">`
           + weak.map(item => `<span class="weak-chip"><b>${escapeHtml(keyLabel(item.key))}</b>${item.accuracy}%</span>`).join('')
-          + `</p><a class="ghost-button" href="../luyen-phim-yeu/">${T.weakButton} ${weak.map(item => keyLabel(item.key)).join(', ')}</a></div>`
+          + `</p>${R.weak ? `<a class="ghost-button" href="${R.weak}">${T.weakButton} ${weak.map(item => keyLabel(item.key)).join(', ')}</a>` : ''}</div>`
         : '')
       + (unit ? `<p class="unit-progress">${fill(T.unitProgress, { unit: escapeHtml(unit.title), done: unitDone, total: unitIds.length })}</p>` : '')
       + (nextId ? '' : `<p class="no-more"><b>${T.noMoreTitle}</b><br>${T.noMoreBody}</p>`)
@@ -944,11 +964,11 @@
       + (nextId
         ? `<button class="primary-button" type="button" data-act="next-lesson" data-lesson="${escapeHtml(nextId)}">`
           + `${fill(T.nextLesson, { title: escapeHtml(nextEntry?.title || nextId) })}</button>`
-        : `<a class="primary-button" href="../">${T.finishAll}</a>`
-          + `<a class="ghost-button" href="../luyen-phim-yeu/">${T.weakPage}</a>`
-          + `<a class="ghost-button" href="../kiem-tra-toc-do-go/">${T.testPage}</a>`)
+        : `<a class="primary-button" href="${R.home}">${T.finishAll}</a>`
+          + (R.weak ? `<a class="ghost-button" href="${R.weak}">${T.weakPage}</a>` : '')
+          + `<a class="ghost-button" href="${R.test}">${T.testPage}</a>`)
       + `<button class="ghost-button" type="button" data-act="redo-lesson">${T.redoLesson}</button>`
-      + `<a class="ghost-button" href="../">${T.home}</a>`
+      + `<a class="ghost-button" href="${R.home}">${T.home}</a>`
       + '</div></section>';
     renderChrome();
     if (board) NT.setKeyboardState(board, '');
@@ -985,7 +1005,7 @@
     if (state === 'lesson-result') {
       const button = stageEl.querySelector('[data-act="next-lesson"]');
       if (button) openLesson(button.dataset.lesson, 1);
-      else location.href = '../';
+      else location.href = R.home;
       return;
     }
     if (state === 'intro' && run?.found) advance();
@@ -1039,7 +1059,7 @@
       + `<h2>${T.notReadyTitle}</h2>`
       + `<p>${fill(T.notReadyBody, { title: escapeHtml(entry?.title || lessonId) })}</p>`
       + `<p><a class="primary-button" href="#${escapeHtml(firstLessonId())}/1">${T.home === '' ? '' : 'Về bài đầu tiên'}</a>`
-      + ` <a class="ghost-button" href="../">${T.home}</a></p></section>`;
+      + ` <a class="ghost-button" href="${R.home}">${T.home}</a></p></section>`;
     lessonEl.textContent = entry?.title || T.notReadyTitle;
     unitEl.textContent = '';
     screenEl.textContent = '';
@@ -1055,9 +1075,9 @@
     stageEl.className = 'player-stage is-error';
     stageEl.innerHTML = '<section class="card error-card">'
       + `<h2>${T.missingTitle}</h2>`
-      + `<p>${fill(T.missingBody, { path: `data/lessons/vi/${escapeHtml(lessonId)}.json` })}</p>`
+      + `<p>${fill(T.missingBody, { path: `${DATA_BASE.replace(/^\//, '')}${escapeHtml(lessonId)}.json` })}</p>`
       + (curriculum ? '' : `<p>${T.noCurriculum}</p>`)
-      + `<p><a class="primary-button" href="../">${T.home}</a></p></section>`;
+      + `<p><a class="primary-button" href="${R.home}">${T.home}</a></p></section>`;
     lessonEl.textContent = T.missingTitle;
     unitEl.textContent = '';
     screenEl.textContent = '';
@@ -1076,7 +1096,7 @@
       + `<button class="primary-button" type="button" data-menu="resume">${T.menuResume}</button>`
       + `<button class="ghost-button" type="button" data-menu="redo">${T.menuRedo}</button>`
       + `<button class="ghost-button" type="button" data-menu="skip">${T.menuSkip}</button>`
-      + `<a class="ghost-button" href="../">${T.menuExit}</a></div>`;
+      + `<a class="ghost-button" href="${R.home}">${T.menuExit}</a></div>`;
     root.append(menu);
     menu.addEventListener('click', event => {
       const action = event.target.closest('[data-menu]')?.dataset.menu;

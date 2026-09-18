@@ -1,4 +1,12 @@
 (function (global) {
+
+// Duong dan giua cac trang, TUYET DOI (xem player.js): '../' tinh sai o ban ngon ngu nam sau
+// hai cap thu muc, va ten thu muc cung khac nhau. Lop phu `TypingEaseUI.routes` ghi de.
+const R = {
+  home: '/', lessons: '/bai-hoc/', learn: '/hoc/', test: '/kiem-tra-toc-do-go/',
+  progress: '/tien-do/', free: '/luyen-tu-do/', weak: '/luyen-phim-yeu/',
+  ...(window.TypingEaseUI?.routes || {})
+};
   // Trang tiến độ: mọi thứ trước đây chen chúc trên trang chủ (bảng thành tích, heatmap phím,
   // coach + biểu đồ, streak, mục tiêu ngày) sống ở đây. Dữ liệu đến từ ba chỗ:
   //   - TypingEaseProgress  : tiến độ 35 bài (typingease-progress-v3) + mục tiêu ngày
@@ -108,11 +116,11 @@
     if (!skill.samples) {
       advice.textContent = 'Hãy gõ một bài để hệ thống hiểu trình độ của bạn.';
       action.textContent = 'Bắt đầu bài đầu tiên →';
-      action.href = `../hoc/#${sequence[0]}/1`;
+      action.href = `${R.learn}#${sequence[0]}/1`;
     } else if (weak.length) {
       advice.textContent = `Phím ${weak.map(item => item.key.toUpperCase()).join(', ')} đang kéo bạn xuống — luyện riêng một phút sẽ đỡ hơn nhiều.`;
       action.textContent = `Luyện phím ${weak.map(item => item.key.toUpperCase()).join(', ')} →`;
-      action.href = '../luyen-phim-yeu/';
+      action.href = R.weak;
     } else {
       const current = store.getCurrent();
       const nextId = current && entry(current.lessonId) && !isDone(current.lessonId)
@@ -121,10 +129,10 @@
       if (nextId) {
         const screen = current && current.lessonId === nextId ? current.screen : 1;
         action.textContent = `Học bài ${sequence.indexOf(nextId) + 1} · ${entry(nextId).title} →`;
-        action.href = `../hoc/#${nextId}/${screen}`;
+        action.href = `${R.learn}#${nextId}/${screen}`;
       } else {
         action.textContent = 'Kiểm tra tốc độ →';
-        action.href = '../kiem-tra-toc-do-go/';
+        action.href = R.test;
       }
     }
     renderTrend(profile.getTrend(14));

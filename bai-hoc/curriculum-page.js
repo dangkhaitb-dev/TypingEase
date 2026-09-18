@@ -1,4 +1,12 @@
 (function (global) {
+
+// Duong dan giua cac trang, TUYET DOI (xem player.js): '../' tinh sai o ban ngon ngu nam sau
+// hai cap thu muc, va ten thu muc cung khac nhau. Lop phu `TypingEaseUI.routes` ghi de.
+const R = {
+  home: '/', lessons: '/bai-hoc/', learn: '/hoc/', test: '/kiem-tra-toc-do-go/',
+  progress: '/tien-do/', free: '/luyen-tu-do/', weak: '/luyen-phim-yeu/',
+  ...(window.TypingEaseUI?.routes || {})
+};
   // Trang lộ trình: HTML của 35 bài đã có sẵn (sinh bằng generate.mjs), script này chỉ PHỦ
   // trạng thái lên — bài đã xong, sao, bài đang dở, tiến độ unit, khoá mềm. Nếu localStorage
   // trống thì trang vẫn đọc được nguyên vẹn, đó là lý do danh sách không dựng bằng JS.
@@ -57,10 +65,10 @@
     // "Tiếp tục" khi đã có bất kỳ dấu vết nào — kể cả một screen giữa bài chưa xong. Chỉ người
     // hoàn toàn mới mới thấy "Bắt đầu".
     const started = doneIds.length > 0 || current.screen > 1 || screensDone(current.lessonId) > 0;
-    cta.href = `../hoc/#${current.lessonId}/${current.screen}`;
+    cta.href = `${R.learn}#${current.lessonId}/${current.screen}`;
     cta.innerHTML = `${started ? '▶ Tiếp tục' : '▶ Bắt đầu'} Bài ${number} · ${escapeHtml(entry(current.lessonId).title)} <span>→</span>`;
   } else if (cta && !current) {
-    cta.href = '../luyen-phim-yeu/';
+    cta.href = R.weak;
     cta.innerHTML = 'Bạn đã xong hết phần có nội dung — luyện phím yếu <span>→</span>';
   }
 
@@ -87,7 +95,7 @@
         ? `▶ Tiếp tục · screen ${current.screen}/${total}`
         : '▶ Bắt đầu';
       const link = row.querySelector('a');
-      if (link) link.href = `../hoc/#${id}/${current.screen}`;
+      if (link) link.href = `${R.learn}#${id}/${current.screen}`;
     } else if (done) {
       stateEl.textContent = '✓ Đã xong';
     } else {

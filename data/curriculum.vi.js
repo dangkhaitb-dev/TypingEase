@@ -13,6 +13,10 @@
 window.TypingEaseCurriculum = {
   lang: 'vi',
   progressKey: 'typingease-progress-v3',
+  badgesKey: 'typingease-badges-v1',
+  // Tinh nang rieng cua giao trinh nay. `badges.js` an nhung huy hieu doi tinh nang khong co,
+  // nen mot giao trinh khong day dau se khong co o huy hieu xam vinh vien.
+  features: ['telex'],
 
   units: [
     {
