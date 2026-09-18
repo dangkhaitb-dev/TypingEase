@@ -84,7 +84,7 @@ window.TypingEaseCurriculum = {
     // stretch on each row. By the end of this unit the learner has 9 of the 12 most common
     // English letters, so there is nothing to gain by reordering for letter frequency and a
     // great deal to lose by breaking the row discipline.
-    'u1-l01': { title: 'F, J and the space bar', newKeys: ['f', 'j', ' '], screens: 10, estMinutes: 5, kind: 'keys', ready: false },
+    'u1-l01': { title: 'F, J and the space bar', newKeys: ['f', 'j', ' '], screens: 10, estMinutes: 5, kind: 'keys', ready: true },
     'u1-l02': { title: 'D and K', newKeys: ['d', 'k'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
     'u1-l03': { title: 'S and L', newKeys: ['s', 'l'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
     'u1-l04': { title: 'A and the semicolon', newKeys: ['a', ';'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
