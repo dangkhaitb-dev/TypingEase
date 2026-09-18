@@ -19,6 +19,14 @@
   const DEFAULT_MIN_ACCURACY = 75, DEFAULT_BURST_SECONDS = 25;
   const MIN_KEY_MS = 40, MAX_KEY_MS = 2500, SLOW_KEY_MS = 600, SLOW_KEY_SAMPLES = 3;
 
+  // Mã ngón trong dữ liệu bài học (`screen.finger`) → tên tiếng Việt. Bảng này thuộc về giáo
+  // trình, không thuộc bàn phím: nó thắng bảng phím→ngón vì tác giả bài mới biết mình muốn
+  // dạy ngón nào (ví dụ phím cách có thể là ngón cái trái hay phải tuỳ bài).
+  const FINGER_NAMES = {
+    LP: 'ngón út trái', LR: 'ngón áp út trái', LM: 'ngón giữa trái', LI: 'ngón trỏ trái', LT: 'ngón cái trái',
+    RT: 'ngón cái phải', RI: 'ngón trỏ phải', RM: 'ngón giữa phải', RR: 'ngón áp út phải', RP: 'ngón út phải'
+  };
+
   const T = {
     loading: 'Đang tải bài học…',
     missingTitle: 'Chưa có nội dung bài này',
@@ -137,32 +145,75 @@
 
   const soundEl = root.querySelector('#pt-sound');
   const handsEl = root.querySelector('#pt-hands');
+  const keyboardEl = root.querySelector('#pt-keyboard');
   const sound = global.TypingEaseSound;
 
-  // Hai công tắc của người học, nhớ giữa các phiên. Bàn tay mặc định HIỆN, âm click mặc định
-  // TẮT — mặc định của mỗi cái nằm ở phía ít làm phiền hơn. (Tới 18/09 công tắc này bật/tắt
-  // chuyển động ngón của bàn tay vẽ; từ 19/09 tay là ảnh đứng yên nên nó thành hiện/ẩn bàn tay.
-  // Giữ nguyên khoá localStorage: "off" cũ = người dùng không muốn thấy tay nhúc nhích, nay = ẩn.)
-  const HANDS_KEY = 'typingease-hands-v1';
-  const readHands = () => { try { return global.localStorage.getItem(HANDS_KEY) !== 'off'; } catch { return true; } };
-  let showHands = readHands();
+  // Bàn phím + bàn tay 3D là API của typekute, treo trên `window.NTKeyboard` bởi keyboard/boot.js.
+  // `board` là phần tử bàn phím; nó chỉ có sau khi catalog layout tải xong nên mọi chỗ gọi phải
+  // chịu được `null`. Tuỳ chọn (hiện bàn phím/bàn tay, một tay, kiểu chữ, bố cục) nằm trong
+  // localStorage của module đó — công tắc ✋ trên thanh trên cùng chỉ là lối tắt tới `animatedHands`.
+  let NT = null;
+  let board = null;
+  let preferences = null;
 
-  const keyboard = global.TypingEaseKeyboard?.create({ host: boardEl, hands: showHands });
+  // Điện thoại không đủ chỗ cho bài + bàn phím + tay, nên tay tắt bất kể tuỳ chọn; đổi lại, người
+  // học xoay ngang máy là tay hiện lại mà không phải vào Cài đặt.
+  const boardPreferences = () => ({ ...preferences, showHands: preferences.showHands && !isPhone() });
+
+  function applyBoardPreferences() {
+    if (!board) return;
+    NT.applyKeyboardPreferences(board, boardPreferences());
+    // Khung bài học căn sát đáy để nằm ngay trên bàn phím; ẩn bàn phím đi mà vẫn căn đáy thì cả
+    // bài tụt xuống mép dưới, chừa một khoảng trống to tướng phía trên (đúng như ảnh chụp 18/09).
+    root.classList.toggle('no-keyboard', !preferences.showKeyboard);
+  }
+
+  // Bản gốc chỉ có một lối vào Cài đặt: liên kết ở góc bàn phím — nên tắt bàn phím là mất luôn lối
+  // vào đó. Ở đây nút ⌨ trên thanh trên cùng luôn có mặt, và bàn phím ẩn thì ẩn hẳn như bản gốc.
+  function openKeyboardSettings() {
+    if (!NT || !board) return;
+    NT.openSettingsFor(board, {
+      root: boardEl,
+      restoreFocus: focusInput,
+      onSave: (next) => { preferences = next; applyBoardPreferences(); syncToggles(); }
+    });
+  }
+
+  async function mountKeyboard() {
+    NT = await global.NTKeyboardReady;
+    if (!NT) return;
+    preferences = NT.loadKeyboardPreferences();
+    const layout = await NT.ready.catch(error => { console.warn('[player] bàn phím không tải được', error); return null; });
+    if (!layout) return;
+    const holder = document.createElement('div');
+    holder.className = 'cell js-keyboard-holder well';
+    board = NT.createKeyboard({
+      activeKey: '',
+      preferences: boardPreferences(),
+      layout,
+      onSettings: () => openKeyboardSettings()
+    });
+    holder.append(board);
+    boardEl.replaceChildren(holder);
+  }
 
   function syncToggles() {
     soundEl?.setAttribute('aria-pressed', String(Boolean(sound?.isOn())));
-    handsEl?.setAttribute('aria-pressed', String(showHands));
+    handsEl?.setAttribute('aria-pressed', String(Boolean(preferences?.animatedHands)));
   }
 
-  function setShowHands(value) {
-    showHands = Boolean(value);
-    try { global.localStorage.setItem(HANDS_KEY, showHands ? 'on' : 'off'); } catch { /* storage blocked */ }
-    applyViewport();
+  function setAnimatedHands(value) {
+    if (!NT) return;
+    preferences = NT.saveKeyboardPreferences({ ...preferences, animatedHands: Boolean(value) });
+    // Tư thế tay đổi theo hàng phím chỉ khi `animatedHands` bật, và bản gốc dựng lại board khi
+    // công tắc này đổi — `applyRootKeyboardPreferences` lo đúng việc đó.
+    NT.applyRootKeyboardPreferences(boardEl, boardPreferences(), NT.layout());
     syncToggles();
   }
 
   soundEl?.addEventListener('click', () => { sound?.toggle(); syncToggles(); focusInput(); });
-  handsEl?.addEventListener('click', () => { setShowHands(!showHands); focusInput(); });
+  handsEl?.addEventListener('click', () => { setAnimatedHands(!preferences?.animatedHands); focusInput(); });
+  keyboardEl?.addEventListener('click', () => openKeyboardSettings());
 
   // --- viewport -------------------------------------------------------------------------------
   // Hands need room to read; a phone gets three rows of letters and no hands at all (PLAN.md B8).
@@ -174,8 +225,7 @@
   const isPhone = () => phoneQuery.matches;
 
   function applyViewport() {
-    // Tay chỉ hiện khi đủ rộng VÀ người dùng muốn thấy.
-    keyboard?.layout({ compact: isPhone(), hands: wideQuery.matches && showHands });
+    applyBoardPreferences();
     root.classList.toggle('is-phone', isPhone());
     root.classList.toggle('is-touch', touchQuery.matches);
     if (tapEl) tapEl.textContent = T.tapToType;
@@ -429,7 +479,7 @@
     const cursor = promptEl.querySelector('.ch.cur');
     if (cursor && promptEl.scrollHeight > promptEl.clientHeight + 1)
       promptEl.scrollTop = Math.max(0, cursor.offsetTop - (promptEl.clientHeight - cursor.offsetHeight) / 2);
-    keyboard?.highlight(nextKeyHint(typed));
+    if (board) NT.setKeyboardState(board, nextKeyHint(typed));
   }
 
   // Which key the keyboard widget should light up next. In ascii that is simply the next
@@ -499,8 +549,8 @@
     state = 'intro';
     run = { type: 'intro', target: screen.key ? String(screen.key) : '', found: !screen.key, breaks: new Set() };
     renderIntro(screen);
-    keyboard?.mark(screen.key || '');
-    keyboard?.highlight(screen.key || '');
+    NT?.markKeys(board, screen.key || '');
+    if (board) NT.setKeyboardState(board, screen.key || '');
   }
 
   function enterTyping(screen) {
@@ -526,7 +576,7 @@
       typed: 0, correct: 0, errors: 0, keyMs: {}, timedOut: false,
       telex: telexMode && !asciiFallback, view: null, scored: []
     };
-    keyboard?.mark(Array.isArray(screen.newKeys) && screen.newKeys.length ? screen.newKeys : (screen.newKey || ''));
+    NT?.markKeys(board, Array.isArray(screen.newKeys) && screen.newKeys.length ? screen.newKeys : (screen.newKey || ''));
     if (screen.type === 'burst') setBurstToken();
     else Object.assign(run, buildTarget(content, screen.linebreak));
     if (!run.target) { advance(); return; }
@@ -634,12 +684,14 @@
   function reactToKeystroke(value) {
     const grew = value.length === lastInputLength + 1 || value.length === 1;
     lastInputLength = value.length;
-    if (!grew || !keyboard) return;
+    if (!grew || !board) return;
     const position = value.length - 1;
     const verdict = run.telex && run.view ? (run.view.states[position] || 'bad')
       : value[position] === run.target[position] ? 'ok' : 'bad';
-    if (verdict === 'ok') keyboard.press();
-    else if (verdict === 'bad') keyboard.reject(value[position]);
+    // Phím đầu tiên bắt đầu cho lớp màu ngón mờ dần đi, đúng như bản gốc.
+    board.classList.add('nt-keyboard-peek-started');
+    if (verdict === 'ok') NT.pressKey(board);
+    else if (verdict === 'bad') NT.highlightErrorKey(board, value[position]);
     if (verdict !== 'pending') sound?.click(verdict);
   }
 
@@ -649,7 +701,7 @@
       input.value = '';
       if (!run.found && typed && typed.toLowerCase().includes(run.target.toLowerCase())) {
         run.found = true;
-        keyboard?.press();
+        NT?.pressKey(board);
         renderIntro(currentScreen());
       }
       return;
@@ -731,7 +783,7 @@
     // typing the letter, so naming a side here would teach the wrong habit half the time.
     const finger = keys.length > 1 ? ''
       : keys[0] === 'shift' ? T.shiftFinger
-        : (keyboard?.nameOfFinger(fingerCode) || keyboard?.fingerName(keys[0]) || '');
+        : (FINGER_NAMES[fingerCode] || NT?.fingerNameVi(keys[0]) || '');
     return `<p class="key-chip"><span class="chip-label">${T.newKey}</span>`
       + keys.map(one => `<b class="chip-key">${escapeHtml(keyLabel(one))}</b>`).join('')
       + (finger ? `<span class="chip-finger">${escapeHtml(finger)}</span>` : '') + '</p>';
@@ -782,7 +834,7 @@
     }).join('');
     const nextEl = stageEl.querySelector('#burst-next');
     if (nextEl) nextEl.textContent = run.tokens[(run.tokenIndex + 1) % run.tokens.length] || '';
-    keyboard?.highlight(nextKeyHint(typed));
+    if (board) NT.setKeyboardState(board, nextKeyHint(typed));
   }
 
   function starRow(stars, max = STARS) {
@@ -822,7 +874,7 @@
           + `<button class="ghost-button" type="button" data-act="redo">${T.redoScreen}</button>`)
       + '</div></section>';
     liveEl.textContent = '';
-    keyboard?.highlight('');
+    if (board) NT.setKeyboardState(board, '');
     focusInput();
   }
 
@@ -899,8 +951,8 @@
       + `<a class="ghost-button" href="../">${T.home}</a>`
       + '</div></section>';
     renderChrome();
-    keyboard?.highlight('');
-    keyboard?.mark('');
+    if (board) NT.setKeyboardState(board, '');
+    NT?.markKeys(board, '');
     if (nextId) prefetch(nextId);
   }
 
@@ -1064,11 +1116,12 @@
 
   document.addEventListener('keydown', event => {
     // Phím tắt phải đi kèm Alt: mọi phím trần đều là ký tự cần gõ, và Ctrl/Cmd đã thuộc về
-    // trình duyệt. Alt+S / Alt+H bấm được ngay giữa lúc gõ mà không làm hỏng dòng đang dở.
+    // trình duyệt. Alt+S / Alt+H / Alt+K bấm được ngay giữa lúc gõ mà không làm hỏng dòng đang dở.
     if (event.altKey && !event.ctrlKey && !event.metaKey) {
       const shortcut = String(event.key).toLowerCase();
       if (shortcut === 's') { event.preventDefault(); sound?.toggle(); syncToggles(); return; }
-      if (shortcut === 'h') { event.preventDefault(); setShowHands(!showHands); return; }
+      if (shortcut === 'h') { event.preventDefault(); setAnimatedHands(!preferences?.animatedHands); return; }
+      if (shortcut === 'k') { event.preventDefault(); openKeyboardSettings(); return; }
       if (shortcut === 'r' && lesson) { event.preventDefault(); openLesson(lesson.id, 1); return; }
     }
     if (event.metaKey || event.ctrlKey || event.altKey) return;
@@ -1078,7 +1131,7 @@
       && String(event.key).toLowerCase() === run.target) {
       event.preventDefault();
       run.found = true;
-      keyboard?.press();
+      NT?.pressKey(board);
       renderIntro(currentScreen());
       return;
     }
@@ -1095,6 +1148,10 @@
     }
   });
 
+  // Mỗi bàn phím giữ một WebGL context; Chrome chỉ cho 16 context một tab rồi âm thầm giết cái
+  // cũ nhất. Trang này chỉ dựng một bàn phím, nhưng trả context lại khi rời trang vẫn là phép
+  // lịch sự với tab kế tiếp (và với chính người học khi họ quay lại bằng nút Back).
+  global.addEventListener('pagehide', () => board?.__ntHands?.destroy());
   global.addEventListener('hashchange', () => { route(); });
   wideQuery.addEventListener('change', applyViewport);
   phoneQuery.addEventListener('change', applyViewport);
@@ -1102,6 +1159,7 @@
   // --- boot -----------------------------------------------------------------------------------
   (async () => {
     await ensureCurriculum();
+    await mountKeyboard();
     syncToggles();
     applyViewport();
     await route();
