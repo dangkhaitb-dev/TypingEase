@@ -540,8 +540,16 @@ test('14 tốc độ thích ứng: tween của tay ngắn lại khi gõ nhanh', 
   assert.ok(before === null || Math.abs(before - 0.275) < 0.001, `ban đầu ${before}`);
   const lesson = await lessonJson(page, 'u1-l01');
   await page.keyboard.type(targetOf(lesson.screens[7]).slice(0, 10), { delay: 60 });
-  await sleep(200);
-  const after = (await handsState(page)).duration;
+  // Đợi ĐẾN KHI giá trị đổi, thay vì ngủ 200ms rồi đo một lần. `adaptiveDuration` được cập nhật trong
+  // vòng vẽ, nên khi cả bộ test chạy cùng lúc thì 200ms có thể chưa kịp một khung hình — đó là lý do
+  // test này chập chờn suốt: nó đo được tải của máy chứ không phải hành vi của mã. Phép kiểm không
+  // hề nới ra: vẫn đòi tween NGẮN LẠI và nằm trong đúng khoảng cũ, chỉ là không áp đặt hạn chót tùy tiện.
+  let after = null;
+  for (let attempt = 0; attempt < 30; attempt += 1) {
+    after = (await handsState(page)).duration;
+    if (Number.isFinite(after) && after < 0.275) break;
+    await sleep(100);
+  }
   assert.ok(Number.isFinite(after), 'có giá trị');
   assert.ok(after < 0.275 && after >= 0.09, `tween = ${after}s, cần trong [0.09, 0.275)`);
   assert.strictEqual((await playerState(page)).run.errors, 0);

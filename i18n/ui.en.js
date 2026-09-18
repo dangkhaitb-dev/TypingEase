@@ -137,6 +137,22 @@ window.TypingEaseUI = {
     close: 'Close'
   },
 
+  /* bai-hoc/curriculum-page.js — only the text the script WRITES at runtime. Everything
+     printed into the page by generate.mjs already arrives in English. */
+  curriculum: {
+    done: (a, b) => `${a}/${b} lessons done`,
+    legacy: n => `You finished ${n} lessons in the old course — Units 1 and 2 are already open.`,
+    ctaResume: '▶ Continue', ctaStart: '▶ Start',
+    ctaLesson: (verb, number, title) => `${verb} lesson ${number} · ${title} <span>→</span>`,
+    ctaAllDone: 'You have reached the end of what is written <span>→</span>',
+    rowResume: (screen, total) => `▶ Continue · screen ${screen}/${total}`,
+    rowStart: '▶ Start',
+    rowDone: '✓ Done',
+    unlocked: 'Open',
+    unlockAfter: n => `Opens after lesson ${n}`,
+    unlockNow: 'Open this unit now'
+  },
+
   /* badges.js — titles and hints only; the rules stay in the code */
   badges: {
     'first-step': { title: 'First step', hint: 'Finish your first lesson.' },

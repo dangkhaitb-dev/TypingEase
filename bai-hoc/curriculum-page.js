@@ -7,6 +7,23 @@ const R = {
   progress: '/tien-do/', free: '/luyen-tu-do/', weak: '/luyen-phim-yeu/',
   ...(window.TypingEaseUI?.routes || {})
 };
+
+// Chu do generate.mjs in san vao HTML thi khong can o day; bang nay chi chua chu mà script
+// GHI DE luc chay, tuc phan phu thuoc vao tien do cua tung nguoi.
+const S_VI = {
+  done: (a, b) => `Đã xong ${a}/${b} bài`,
+  legacy: n => `Đã hoàn thành ${n} bài ở giáo trình cũ — Unit 1 và Unit 2 đã mở cho bạn.`,
+  ctaResume: '▶ Tiếp tục', ctaStart: '▶ Bắt đầu',
+  ctaLesson: (verb, number, title) => `${verb} Bài ${number} · ${title} <span>→</span>`,
+  ctaAllDone: 'Bạn đã xong hết phần có nội dung — luyện phím yếu <span>→</span>',
+  rowResume: (screen, total) => `▶ Tiếp tục · screen ${screen}/${total}`,
+  rowStart: '▶ Bắt đầu',
+  rowDone: '✓ Đã xong',
+  unlocked: 'Đã mở',
+  unlockAfter: n => `Mở sau khi xong Bài ${n}`,
+  unlockNow: 'Mở sớm unit này'
+};
+const S = { ...S_VI, ...(window.TypingEaseUI?.curriculum || {}) };
   // Trang lộ trình: HTML của 35 bài đã có sẵn (sinh bằng generate.mjs), script này chỉ PHỦ
   // trạng thái lên — bài đã xong, sao, bài đang dở, tiến độ unit, khoá mềm. Nếu localStorage
   // trống thì trang vẫn đọc được nguyên vẹn, đó là lý do danh sách không dựng bằng JS.
@@ -48,14 +65,14 @@ const R = {
   const maxStars = sequence.reduce((total, id) => total + (store.getLesson(id)?.maxStars || 0), 0);
   const countEl = document.querySelector('#cur-count');
   if (countEl)
-    countEl.textContent = `Đã xong ${doneIds.length}/${sequence.length} bài`
+    countEl.textContent = S.done(doneIds.length, sequence.length)
       + (maxStars > 0 ? ` · ${totalStars}★/${maxStars}` : '');
 
   const legacy = store.legacyCompleted();
   const legacyEl = document.querySelector('#cur-legacy');
   if (legacyEl && legacy > 0) {
     // Quyết định 5: không map 1-1 sang giáo trình mới, chỉ nói thẳng con số.
-    legacyEl.textContent = `Đã hoàn thành ${legacy} bài ở giáo trình cũ — Unit 1 và Unit 2 đã mở cho bạn.`;
+    legacyEl.textContent = S.legacy(legacy);
     legacyEl.hidden = false;
   }
 
@@ -66,10 +83,10 @@ const R = {
     // hoàn toàn mới mới thấy "Bắt đầu".
     const started = doneIds.length > 0 || current.screen > 1 || screensDone(current.lessonId) > 0;
     cta.href = `${R.learn}#${current.lessonId}/${current.screen}`;
-    cta.innerHTML = `${started ? '▶ Tiếp tục' : '▶ Bắt đầu'} Bài ${number} · ${escapeHtml(entry(current.lessonId).title)} <span>→</span>`;
+    cta.innerHTML = S.ctaLesson(started ? S.ctaResume : S.ctaStart, number, escapeHtml(entry(current.lessonId).title));
   } else if (cta && !current) {
     cta.href = R.weak;
-    cta.innerHTML = 'Bạn đã xong hết phần có nội dung — luyện phím yếu <span>→</span>';
+    cta.innerHTML = S.ctaAllDone;
   }
 
   function escapeHtml(value) {
@@ -92,12 +109,12 @@ const R = {
     if (active) {
       const total = entry(id)?.screens || 0;
       stateEl.textContent = current.screen > 1 && total > 1
-        ? `▶ Tiếp tục · screen ${current.screen}/${total}`
-        : '▶ Bắt đầu';
+        ? S.rowResume(current.screen, total)
+        : S.rowStart;
       const link = row.querySelector('a');
       if (link) link.href = `${R.learn}#${id}/${current.screen}`;
     } else if (done) {
-      stateEl.textContent = '✓ Đã xong';
+      stateEl.textContent = S.rowDone;
     } else {
       stateEl.textContent = '';
     }
@@ -119,7 +136,7 @@ const R = {
     const unlocked = store.isUnlocked(unit.id);
     card.classList.toggle('is-locked', !unlocked);
     const lock = card.querySelector('[data-lock]');
-    if (lock) lock.textContent = unlocked ? 'Đã mở' : `Mở sau khi xong Bài ${sequence.indexOf(unit.unlockAfter) + 1}`;
+    if (lock) lock.textContent = unlocked ? S.unlocked : S.unlockAfter(sequence.indexOf(unit.unlockAfter) + 1);
     // Khoá unit là khoá MỀM (DECISIONS.md): người biết gõ luôn mở sớm được, không ai bị chặn.
     // Nhưng chỉ mời mở sớm khi trong unit đã có ít nhất một bài gõ được — mở một unit rỗng
     // thì cũng chẳng vào được bài nào.
@@ -127,7 +144,7 @@ const R = {
     if (!unlocked && hasContent && !card.querySelector('.unit-open')) {
       const wrap = document.createElement('p');
       wrap.className = 'unit-open';
-      wrap.innerHTML = '<button type="button">Mở sớm unit này</button>';
+      wrap.innerHTML = `<button type="button">${S.unlockNow}</button>`;
       wrap.querySelector('button').addEventListener('click', () => {
         store.unlock(unit.id);
         location.reload();
