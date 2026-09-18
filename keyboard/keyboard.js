@@ -100,8 +100,10 @@ function appendSettings(board, onSettings) {
   const settings = element("div", "keyboard-link js-keyboard-settings");
   const action = element("a", "keyboard-link-action");
   action.href = "#";
-  action.setAttribute("aria-label", "Cài đặt bàn phím");
-  action.innerHTML = `${SETTINGS_ICON}<span class="keyboard-link-text">Cài đặt bàn phím</span>`;
+  // Nhan nay trung voi `title` cua hop thoai Cai dat, nen no lay chung mot khoa.
+  const label = globalThis.TypingEaseUI?.keyboard?.title || "Cài đặt bàn phím";
+  action.setAttribute("aria-label", label);
+  action.innerHTML = `${SETTINGS_ICON}<span class="keyboard-link-text">${label}</span>`;
   action.addEventListener("click", (event) => {
     event.preventDefault();
     onSettings(event);

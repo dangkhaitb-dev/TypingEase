@@ -41,12 +41,16 @@ const LAYOUT_URL = id => `/data/keyboards/layouts/${Number(id)}.json`;
 // Nhún phím dài đúng bằng keyframe `keyPressDefault` của nguồn.
 const PRESS_MS = 250;
 
+// Bang nay dat ten ngon theo cach BAN PHIM goi ('left-index'), con player.js co bang rieng dat
+// ten theo ma cua du lieu bai hoc ('LI'). Hai bang, vi hai nguon goi khac nhau, va player doc
+// bang nao la tuy screen den tu dau.
 const VI_FINGERS = {
   'left-pinky': 'ngón út trái', 'left-ring': 'ngón áp út trái', 'left-middle': 'ngón giữa trái',
   'left-index': 'ngón trỏ trái', 'left-thumb': 'ngón cái trái', thumb: 'ngón cái',
   'right-index': 'ngón trỏ phải', 'right-middle': 'ngón giữa phải', 'right-ring': 'ngón áp út phải',
   'right-pinky': 'ngón út phải'
 };
+const FINGERS = { ...VI_FINGERS, ...(globalThis.TypingEaseUI?.keyboardFingers || {}) };
 
 let catalog = [];
 const layoutCache = new Map();
@@ -156,8 +160,8 @@ window.NTKeyboard = {
   // thêm cho player của site này
   pressKey,
   markKeys,
-  fingerNameVi: (character, layout = currentLayout) => VI_FINGERS[fingerForKey(character, layout)] || '',
-  fingerNameViOf: (name) => VI_FINGERS[String(name || '').replace(/ /g, '-')] || ''
+  fingerNameVi: (character, layout = currentLayout) => FINGERS[fingerForKey(character, layout)] || '',
+  fingerNameViOf: (name) => FINGERS[String(name || '').replace(/ /g, '-')] || ''
 };
 
 window.dispatchEvent(new CustomEvent('ntkeyboard:loaded'));

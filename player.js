@@ -109,7 +109,13 @@
     menuRedo: 'Làm lại screen',
     menuSkip: 'Bỏ qua screen',
     menuExit: 'Về trang chủ',
-    clock: '{seconds} s'
+    clock: '{seconds} s',
+    // Bon chuoi nay truoc nam rai trong than ham chu khong trong bang, nen ban tieng Anh van
+    // hien "Bai 1" giua mot trang tieng Anh. Dua vao day de lop phu voi toi duoc.
+    lessonNumber: 'Bài {number}',
+    pageTitle: 'Bài học · TypingEase',
+    screenTip: 'Screen {number} · {type}',
+    firstLesson: 'Về bài đầu tiên'
   };
   const T = { ...T_VI, ...(UI.player || {}) };
   const fill = (template, values = {}) =>
@@ -453,10 +459,10 @@
     const unit = unitOf(lesson?.id) || null;
     const entry = indexEntry(lesson?.id);
     const number = unit ? unitLessonIds(unit).indexOf(lesson.id) + 1 : 0;
-    unitEl.textContent = unit ? `${unit.title}${number ? ` › Bài ${number}` : ''}` : '';
+    unitEl.textContent = unit ? `${unit.title}${number ? ` › ${fill(T.lessonNumber, { number })}` : ''}` : '';
     lessonEl.textContent = lesson ? lesson.title : (entry?.title || T.loading);
     screenEl.textContent = screens.length ? fill(T.screenOf, { n: screenIndex + 1, total: screens.length }) : '';
-    document.title = lesson ? `${lesson.title} · TypingEase` : 'Bài học · TypingEase';
+    document.title = lesson ? `${lesson.title} · TypingEase` : T.pageTitle;
     renderProgress();
   }
 
@@ -468,7 +474,7 @@
     progressEl.innerHTML = screens.map((screen, position) => {
       const done = state === 'lesson-result' || position < screenIndex || Boolean(record?.screens[String(position)]);
       const status = state === 'lesson-result' ? 'done' : position === screenIndex ? 'current' : done ? 'done' : 'todo';
-      return `<span class="seg is-${status}" title="Screen ${position + 1} · ${escapeHtml(screen.type || '')}"></span>`;
+      return `<span class="seg is-${status}" title="${escapeHtml(fill(T.screenTip, { number: position + 1, type: screen.type || '' }))}"></span>`;
     }).join('');
   }
 
@@ -1058,7 +1064,7 @@
     stageEl.innerHTML = '<section class="card error-card">'
       + `<h2>${T.notReadyTitle}</h2>`
       + `<p>${fill(T.notReadyBody, { title: escapeHtml(entry?.title || lessonId) })}</p>`
-      + `<p><a class="primary-button" href="#${escapeHtml(firstLessonId())}/1">${T.home === '' ? '' : 'Về bài đầu tiên'}</a>`
+      + `<p><a class="primary-button" href="#${escapeHtml(firstLessonId())}/1">${T.firstLesson}</a>`
       + ` <a class="ghost-button" href="${R.home}">${T.home}</a></p></section>`;
     lessonEl.textContent = entry?.title || T.notReadyTitle;
     unitEl.textContent = '';
