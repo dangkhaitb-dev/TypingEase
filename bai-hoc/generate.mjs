@@ -90,8 +90,6 @@ const html = `<!doctype html>
     <title>Lộ trình luyện gõ 10 ngón · ${totalLessons} bài | TypingEase</title>
     <meta name="description" content="Lộ trình luyện gõ 10 ngón đầy đủ: ${totalUnits} unit, ${totalLessons} bài từ hàng phím cơ sở đến tiếng Việt có dấu, số và ký hiệu. Xem tiến độ từng bài và học tiếp ngay." />
     <link rel="canonical" href="https://typingease.site/bai-hoc/" />
-    <link rel="alternate" hreflang="vi" href="https://typingease.site/bai-hoc/" />
-    <link rel="alternate" hreflang="x-default" href="https://typingease.site/bai-hoc/" />
     <meta name="robots" content="index, follow" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
@@ -101,8 +99,8 @@ const html = `<!doctype html>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../style.css" />
-    <link rel="stylesheet" href="../keyboard.css" />
+    <link rel="stylesheet" href="../tokens.css" />
+    <link rel="stylesheet" href="../base.css" />
     <link rel="stylesheet" href="curriculum.css" />
     <!-- Danh sách bài dưới đây được sinh bằng bai-hoc/generate.mjs từ data/curriculum.vi.js.
          Sửa nội dung ở curriculum.vi.js rồi chạy lại script, đừng sửa tay hai chỗ. -->
@@ -187,9 +185,12 @@ ${curriculum.units.map(unitCard).join('\n')}
     <script src="../data/curriculum.vi.js"></script>
     <script src="../progress-store.js"></script>
     <script src="curriculum-page.js"></script>
+    <script src="../sw-register.js"></script>
   </body>
 </html>
 `;
 
-fs.writeFileSync(path.join(here, 'index.html'), html);
+// File nay luu bang CRLF nhung `index.html` la LF, va template literal mang nguyen ket thuc
+// dong cua file nguon — nen phai chuan hoa, khong thi moi lan chay lai la mot diff gia 170 dong.
+fs.writeFileSync(path.join(here, 'index.html'), html.replace(/\r\n/g, '\n'));
 console.log(`bai-hoc/index.html: ${totalUnits} unit, ${totalLessons} bài`);
