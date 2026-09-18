@@ -320,9 +320,28 @@ class SourceHandModel {
     this.applyMergedClipsAtTime(frame, time);
   }
 
+  /**
+   * Kho clip của mô hình KHÔNG phủ kín bảng tư thế đã port: `home-row-7-left` và
+   * `bottom-row-7-left` không có trong file GLTF, dù `home-row-6-left` / `bottom-row-6-left` —
+   * đúng tầm với đó — thì có. Gặp clip thiếu, hàm này trước đây im lặng về tư thế nghỉ, nên
+   * Caps Lock và Shift TRÁI là hai phím bấm mà tay đứng im. Nay lùi dần chỉ số với-ra tới clip
+   * gần nhất CÓ THẬT trên cùng hàng, cùng bên; hết đường mới về tư thế nghỉ.
+   */
+  resolveFrame(frame) {
+    if (this.clipByName.has(frame)) return frame;
+    const parts = /^(num|top|home|bottom)-row-(\d+)-(left|right)$/.exec(String(frame || ''));
+    if (parts) {
+      for (let index = Number(parts[2]) - 1; index >= 0; index -= 1) {
+        const candidate = `${parts[1]}-row-${index}-${parts[3]}`;
+        if (this.clipByName.has(candidate)) return candidate;
+      }
+    }
+    return `default-${this.side}`;
+  }
+
   setAnimationFrame(frame, time = 0) {
     if (!this.skinnedMesh || !this.clipByName.has('base')) return;
-    const target = this.clipByName.has(frame) ? frame : `default-${this.side}`;
+    const target = this.resolveFrame(frame);
     if (this.frameTransitionDuration <= 0 || !this.modelRoot) {
       this.frameTween = null;
       this.setFrameImmediate(target, time);

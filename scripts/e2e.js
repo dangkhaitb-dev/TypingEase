@@ -439,8 +439,85 @@ test('12 Shift: chữ A sáng cả phím a lẫn Shift tay kia', async page => {
   const slots = await handSlots(page, 'A');
   assert.strictEqual(slots.left.id, 'left-home-row-5', 'tay trái ở A');
   assert.strictEqual(slots.left.highlight, 'pinky', 'ngón út sáng');
-  // Khác bản cũ: bàn tay 3D của bản gốc KHÔNG đưa tay kia tới Shift, chỉ bàn phím chỉ ra điều đó.
-  assert.strictEqual(slots.right.id, 'right-resting-hand', 'tay phải giữ tư thế nghỉ');
+  // Khác bản gốc typekute: nó chỉ tô sáng phím Shift chứ để tay kia nghỉ. Chủ site yêu cầu phím nào
+  // cũng phải thấy ngón di chuyển, và chính bài u2-l09 dạy "ngón út bên kia giữ Shift".
+  assert.strictEqual(slots.right.id, 'right-bottom-row-6', 'ngón út phải với tới Shift');
+  assert.strictEqual(slots.right.highlight, 'pinky', 'ngón út phải sáng');
+
+  // Chiều ngược lại: "?" là Shift + "/" của tay PHẢI, nên Shift phải giữ là của tay TRÁI.
+  const question = await handSlots(page, '?');
+  assert.strictEqual(question.right.id, 'right-bottom-row-5', 'tay phải ở phím /');
+  assert.strictEqual(question.left.id, 'left-bottom-row-6', 'ngón út trái với tới Shift');
+});
+
+// Bốn lỗi rời nhau cùng cho một triệu chứng "bấm phím mà tay đứng im", nên kiểm cả bốn ở đây:
+//   1. bài học gọi tên viết thường ("shift"/"enter") mà layout ghi nhãn "Shift ⇧"/"Enter ⏎";
+//   2. phím rìa (Backspace) rơi ra ngoài dải chỉ số của kho tư thế;
+//   3. hàng Ctrl/Alt/Cmd chỉ có bảy ô nên công thức cột của hàng chữ cho ra chỉ số ngược hướng;
+//   4. bảng tư thế trỏ vào clip KHÔNG có trong file GLTF (`home-row-7-left`, `bottom-row-7-left`).
+// Lỗi 4 chỉ lộ ra ở renderer, nên phải hỏi chính mô hình xem clip nào được phát thật.
+test('12b mọi phím đều làm tay động, bằng clip có thật trong mô hình', async page => {
+  await openPlayer(page, 'u2-l09/1');
+  await page.waitForFunction(
+    () => document.querySelector('#board .nt-player-keyboard')?.__ntHands?.renderer?.leftHand?.clipByName?.has('base'),
+    null, { timeout: 30000 });
+
+  const result = await page.evaluate(async () => {
+    const board = document.querySelector('#board .nt-player-keyboard');
+    const renderer = board.__ntHands.renderer;
+    const played = [];
+    for (const side of ['leftHand', 'rightHand']) {
+      const hand = renderer[side];
+      const original = hand.setAnimationFrame.bind(hand);
+      hand.setAnimationFrame = frame => {
+        const used = hand.resolveFrame(frame);
+        played.push({ side: hand.side, used, resting: used === `default-${hand.side}` });
+        return original(frame);
+      };
+    }
+    // Mọi phím CÓ TRÊN BÀN PHÍM, lấy từ chính DOM chứ không phải danh sách chép tay.
+    const keys = [...board.querySelectorAll('.keyboard-key')]
+      .map(node => (node.dataset.values ?? '').split('')[0] || node.textContent.trim())
+      .filter(Boolean);
+    const { resolveHandSlots } = await import('/keyboard/hands-pose-map.js');
+    const layout = window.NTKeyboard.layout();
+    const dead = [];
+    for (const key of keys) {
+      played.length = 0;
+      window.NTKeyboard.setKeyboardState(board, key);
+      const moved = played.length > 0 && played.some(entry => !entry.resting);
+      const slots = resolveHandSlots({ layout, key, animated: true });
+      const lit = Boolean(slots.left?.entry?.highlight || slots.right?.entry?.highlight);
+      if (!moved && !lit) dead.push(key);
+    }
+    return { count: keys.length, dead };
+  });
+
+  assert.ok(result.count >= 60, `đếm được ${result.count} phím`);
+  // Đủ cho một phím là tay DỊCH tới nó, HOẬC ngón phụ trách sáng lên. Phím cách và dấu chấm phẩy
+  // rơi vào vế sau một cách có lý: tư thế NGHỈ vốn đã đặt ngón cái trên phím cách và ngón út trên
+  // ";", nên dịch tay thêm mới là sai. Phím nào không có cả hai thì người học không nhận được gì.
+  assert.deepStrictEqual(result.dead, [], 'không phím nào vừa đứng im vừa không sáng ngón');
+});
+
+test('12c màn dạy Shift và Enter: sáng đúng phím và đúng ngón', async page => {
+  // Bu1-l09 truyền `key: "shift"` / `key: "enter"` viết thường; trước đây không phím nào sáng cả.
+  await openPlayer(page, 'u2-l09/1');
+  let board = await boardState(page);
+  assert.strictEqual(board.activeKey, 'Shift ⇧', 'Shift trái sáng');
+  assert.deepStrictEqual(board.activeMod, ['⇧ Shift:r'], 'Shift phải cũng sáng — bài dạy dùng ngón út bên kia');
+  assert.strictEqual(board.activeFinger, 'left-pinky');
+  let slots = await handSlots(page, 'shift');
+  assert.strictEqual(slots.left.id, 'left-bottom-row-6', 'ngón út trái tới Shift trái');
+  assert.strictEqual(slots.right.id, 'right-bottom-row-6', 'ngón út phải tới Shift phải');
+
+  await openPlayer(page, 'u2-l09/3');
+  board = await boardState(page);
+  assert.strictEqual(board.activeKey, 'Enter ⏎', 'phím Enter sáng');
+  assert.strictEqual(board.activeFinger, 'right-pinky', 'ngón út phải, đúng lời bài');
+  slots = await handSlots(page, 'enter');
+  assert.strictEqual(slots.right.id, 'right-home-row-7', 'tay phải với ngang tới Enter');
+  assert.strictEqual(slots.left.id, 'left-resting-hand', 'tay trái nghỉ');
 });
 
 test('13 Space: ngón cái phải, tay trái nghỉ', async page => {

@@ -1,3 +1,5 @@
+import { findNamedIndexes, namedKeyCode, namedKeyOf } from "./named-keys.js";
+
 const FALLBACK_LAYOUT_ID = 1;
 
 const FINGER_NAMES = Object.freeze({
@@ -272,6 +274,13 @@ export function keyboardCharacterFromEvent(event) {
 export function fingerForKey(value, layout) {
   const source = String(value || "");
   const flat = layout?.structure?.flat() || [];
+  // Tên phím đặc biệt đi trước phép so ký tự: "shift" mà so theo ký tự thì không ô nào khớp và
+  // hàm rơi về "thumb", tức thanh trên cùng báo sai ngón cho đúng bài dạy Shift.
+  const named = namedKeyOf(source);
+  if (named) {
+    const indexes = findNamedIndexes(flat, named);
+    if (indexes.length) return FINGER_NAMES[flat[indexes[0]]?.finger] || "thumb";
+  }
   let entry = flat.find((key) => {
     const values = [key.main, key.shifted, key.alt].map(keyValue);
     return values.includes(source) || (source === " " && key.hardware === "Space");
@@ -367,11 +376,18 @@ export function resolveKeyTarget(entries, character) {
     const index = entries.findIndex((entry) => keyCode(entry.main) === code);
     return index < 0 ? null : { index, entry: entries[index], level: "special", modifiers: [] };
   };
-  if (character === "Enter" || character === "\n" || character === "\u23ce") return byCode(13);
-  if (character === "Backspace") return byCode(8);
   if (character === " ") {
     const index = entries.findIndex((entry) => entry.hardware === "Space" || keyCode(entry.main) === 32);
     return index < 0 ? null : { index, entry: entries[index], level: "special", modifiers: [] };
+  }
+  // Ph\u00edm kh\u00f4ng ph\u1ea3i k\u00fd t\u1ef1 \u0111i theo T\u00caN, kh\u00f4ng theo nh\u00e3n in tr\u00ean ph\u00edm: b\u00e0i h\u1ecdc g\u1ecdi "shift"/"enter"
+  // c\u00f2n layout ghi "Shift \u21e7"/"Enter \u23ce". Ph\u00edm c\u00f3 hai b\u00ean (Shift, Ctrl, Alt, Cmd) s\u00e1ng c\u1ea3 hai, v\u00ec
+  // g\u1ecdi t\u00ean tr\u1ea7n l\u00e0 ch\u01b0a ch\u1ec9 \u0111\u1ecbnh b\u00ean n\u00e0o \u2014 \u00f4 th\u1ee9 hai \u0111i v\u00e0o `modifiers` \u0111\u1ec3 c\u00f9ng \u0111\u01b0\u1ee3c t\u00f4.
+  const named = namedKeyOf(character);
+  if (named) {
+    const indexes = findNamedIndexes(entries, named);
+    if (!indexes.length) return byCode(namedKeyCode(named));
+    return { index: indexes[0], entry: entries[indexes[0]], level: "special", modifiers: indexes.slice(1) };
   }
   const found = (index, level) => {
     const entry = entries[index];

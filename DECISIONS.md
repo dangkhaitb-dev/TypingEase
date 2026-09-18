@@ -784,3 +784,68 @@ Rủi ro bản quyền vẫn nguyên như mô tả cũ; nó chỉ được **ch�
 16. **Mỗi bàn phím giữ một WebGL context** và Chrome chỉ cho 16 context mỗi tab rồi âm thầm giết cái
     cũ nhất (tay biến mất giữa bài). `hands-3d.js` gọi `forceContextLoss()` khi huỷ; player gọi
     `board.__ntHands.destroy()` ở `pagehide`. Đừng dựng bàn phím mới cho mỗi screen.
+
+---
+
+# 2026-09-18 (khuya) — BẤM PHÍM NÀO THÌ NGÓN ĐỘNG THEO PHÍM ĐÓ
+
+Chủ site: "ngón tay không di chuyển khi bấm nút shift và nút enter … giờ bất kì bấm nút nào thì
+ngón tay sẽ chuyển động theo nút tương ứng". Đo ra BỐN lỗi rời nhau, cùng cho một triệu chứng.
+
+## 1. Phím đặc biệt gọi theo TÊN thì không ai nhận ra
+`u2-l09` có hai màn intro `{"key": "shift"}` và `{"key": "enter"}` — tên viết thường. Cả hai đường
+phân giải đều trượt: `resolveKeyTarget` chỉ so đúng chuỗi `"Enter"`/`"Backspace"`/`" "` rồi so ký
+tự trên các ô **không** `other`, mà Shift/Enter/Tab/CapsLock đều `other: true`; `findLayoutEntry`
+thì so NHÃN in trên phím (`"Shift ⇧"`, `"Enter ⏎"`). Kết quả đo được: 0 phím sáng,
+`dataset.finger` = `thumb` (rác), hai tay nghỉ.
+
+`keyboard/named-keys.js` là bảng tên DUY NHẤT cho phím không phải ký tự: nó biết "shift",
+"Shift ⇧", "⇧ Shift" và mã 16 là cùng một phím. Cả `keyboard.js` lẫn `hands-pose-map.js` nay tra
+chung bảng đó. Thêm phím đặc biệt mới thì thêm ở ĐÓ, đừng thêm vào một trong hai bên.
+
+Phím có mặt ở cả hai bên (Shift, Ctrl, Alt, Cmd) mà gọi tên trần thì sáng CẢ HAI và đưa CẢ HAI
+ngón út tới — gọi tên trần là chưa chỉ định bên nào, và bài dạy Shift cũng nói "ngón út bên kia".
+
+## 2. Phím ở rìa rơi ra ngoài kho tư thế
+Backspace ra chỉ số 7 trên hàng số bên phải, mà kho chỉ có 0–6 → `genericFingerId` trả `null` →
+tay nghỉ. Nay kẹp vào tư thế vươn xa nhất CÒN CÓ THẬT thay vì bỏ cuộc. Đảo một dòng của bản gốc
+("Do not manufacture a pose outside it") — có chủ ý: kẹp là dùng lại tầm với ngoài cùng, không
+phải bịa clip mới.
+
+## 3. Hàng Ctrl/Alt/Cmd chỉ có bảy ô
+Công thức `column - 6` của các hàng chữ cho ra chỉ số NGƯỢC hướng ở bên phải: Ctrl phải (cột 7)
+thành `right-bottom-row-1`, tức ngón TRỎ với vào trong. Nay đo bằng khoảng cách tính từ phím cách
+đi ra, hai bên đối xứng. Hàng này không có clip riêng nên nó mượn hàng dưới liền trên — tay chỉ
+đúng hướng nhưng đốt cuối không trùng khít phím. Chủ site đã chọn đánh đổi đó thay vì để tay im.
+Riêng Option/Alt phải có clip riêng (`right-option`) nên không đi mượn.
+
+## 4. Bảng tư thế trỏ vào clip KHÔNG có trong file GLTF
+Lỗi sâu nhất, và là lỗi duy nhất không nhìn thấy được từ bảng: `POSE_MAP` map
+`left-home-row-6` → `home-row-7-left` và `left-bottom-row-6` → `bottom-row-7-left`, mà mô hình
+KHÔNG có hai clip đó (bên phải thì có). `setAnimationFrame` gặp clip thiếu thì im lặng rơi về
+`default-<bên>` — nên Caps Lock và Shift TRÁI là hai phím "tra bảng ra kết quả đúng mà tay vẫn
+đứng im". Mô hình lại CÓ `home-row-6-left` và `bottom-row-6-left`, đúng tầm với đó; bảng port từ
+nguồn chỉ đơn giản bỏ qua chúng. `Hand.resolveFrame` nay lùi dần chỉ số tới clip gần nhất có thật
+rồi mới chịu về tư thế nghỉ.
+
+## Đổi một hành vi của bản gốc
+Gõ chữ HOA nay đưa ngón út tay KIA tới Shift, trong khi tay chính gõ chữ. Bản gốc typekute chỉ tô
+sáng phím Shift chứ để tay kia nghỉ, và `scripts/e2e.js` test 12 từng chốt đúng điều đó — test ấy
+đã sửa theo. Lý do: chính lời bài u2-l09 dạy "ngón út bên kia giữ Shift".
+
+## Hai ngoại lệ KHÔNG phải lỗi
+Phím cách và dấu chấm phẩy để cả hai tay ở tư thế nghỉ, vì tư thế nghỉ vốn đã đặt ngón cái trên
+phím cách và ngón út phải trên `;`. Dịch tay thêm mới là sai. Ngón phụ trách vẫn sáng.
+
+## Kiểm chứng
+`scripts/e2e.js` **32/32 PASS**. Test 12 sửa theo hành vi mới; thêm 12b và 12c. 12b là cái đáng
+giữ nhất: nó duyệt MỌI phím lấy từ chính DOM bàn phím và đòi mỗi phím phải hoặc làm tay dịch bằng
+một clip có thật, hoặc làm sáng ngón phụ trách — hỏi chính renderer xem clip nào được phát, nên nó
+bắt được cả lỗi 4 mà mọi phép kiểm trên bảng đều bỏ lọt. `offline-check.js` 3/3 + 1.
+
+## Còn lại
+- Chế độ MỘT TAY: `single-home-row-comma-right` và `single-num-row-equals-right` cũng là clip
+  không tồn tại (phím `'` và `=`), và `resolveFrame` chỉ lùi được theo chỉ số nên không đỡ được
+  hai cái tên đó. Hiếm gặp, chưa sửa.
+- `dataset.finger` của Ctrl là `thumb` vì layout ghi `finger: null` cho ControlLeft/Right. Đó là
+  dữ liệu của bộ layout, không phải chỗ này.

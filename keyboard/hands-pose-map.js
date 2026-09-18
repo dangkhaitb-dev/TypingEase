@@ -1,3 +1,5 @@
+import { findNamedEntries, namedKeyHasSides, namedKeyOf } from './named-keys.js';
+
 // Source-derived hand pose table from app.745.js (`Au`). The source computes
 // the generic IDs from keyboard row/column, then uses the single-hand IDs when
 // a learner has restricted the display to one hand.
@@ -117,6 +119,13 @@ function normalizedKey(value) {
 }
 
 function findLayoutEntry(layout, key) {
+  // Phím không phải ký tự đi theo tên chuẩn, tra trước mọi phép so nhãn: bài học gọi "shift"/"enter"
+  // còn layout ghi nhãn "Shift ⇧"/"Enter ⏎", hai chuỗi đó không bao giờ bằng nhau.
+  const named = namedKeyOf(key);
+  if (named) {
+    const [first] = findNamedEntries(layout, named);
+    if (first) return first;
+  }
   const expected = normalizedKey(key);
   const rows = layout?.structure || [];
   // A glyph can appear both as a normal key and as a shifted/AltGr form on a
@@ -167,12 +176,8 @@ function sideForFinger(finger) {
 export function resolveLayoutKeyAssignment(layout, key) {
   const found = findLayoutEntry(layout, key);
   if (!found) return null;
-  const column = sourceColumn(found.row, found.column - 1);
-  return {
-    ...found,
-    column,
-    side: sideForFinger(found.entry.finger) || sideForColumn(found.row, column),
-  };
+  const side = sideOf(layout, found);
+  return { ...found, column: poseColumn(layout, found, side), side };
 }
 
 function sourceColumn(row, index) {
@@ -181,9 +186,28 @@ function sourceColumn(row, index) {
   return row === 0 ? index : index + 1;
 }
 
+// Kho tư thế của mô hình 3D là hữu hạn và không sinh thêm được: mỗi bên × mỗi hàng chỉ có một dải
+// chỉ số vươn-ra có thật (hàng số bên phải dừng ở 6, hàng trên bên phải tới 8, còn lại tới 7).
+const POSE_RANGE = (() => {
+  const range = {};
+  for (const id of Object.keys(POSE_MAP)) {
+    const parts = /^(left|right)-(num|top|home|bottom)-row-(\d+)$/.exec(id);
+    if (!parts) continue;
+    const slot = `${parts[1]}-${parts[2]}`;
+    const value = Number(parts[3]);
+    const current = range[slot] || { min: value, max: value };
+    range[slot] = { min: Math.min(current.min, value), max: Math.max(current.max, value) };
+  }
+  return Object.freeze(range);
+})();
+
+// Ngoài dải trên là những phím ở rìa: Backspace cuối hàng số, và cả hàng dưới cùng (Ctrl/Alt/Cmd) vốn
+// KHÔNG có clip nào. Trước đây chúng trả null → tay về tư thế nghỉ, tức bấm phím mà tay đứng im. Nay
+// kẹp vào tư thế vươn xa nhất còn có thật: tay chỉ đúng hướng, dù đốt cuối không trùng khít phím.
 function genericFingerId(row, column, side, animated = true) {
-  const name = rowName(row);
+  let name = rowName(row);
   if (!name) return null;
+  if (name === 'opt') name = 'bottom';
   let index = side === 'right' ? column - 6 : 7 - column;
   // Some national touch maps intentionally carry an index finger one key
   // beyond the US midpoint (for example Turkish F `ç`). The source atlas has
@@ -191,19 +215,90 @@ function genericFingerId(row, column, side, animated = true) {
   // reach and is the accurate existing pose for that assignment. Right number
   // row deliberately keeps its zero-index clip for the physical `6` key.
   if (side === 'left' && index < 1) index = 1;
-  if (index < 0) return null;
+  if (index < 0) index = 0;
   const poseRow = animated ? name : 'home';
   const poseIndex = animated ? index : Math.max(2, Math.min(5, index));
-  const id = `${side}-${poseRow}-row-${poseIndex}`;
-  // The source pose atlas was authored for the existing hand model, not every
-  // conceivable cross-over assignment. Do not manufacture a pose outside it.
+  const range = POSE_RANGE[`${side}-${poseRow}`];
+  if (!range) return null;
+  const id = `${side}-${poseRow}-row-${Math.min(range.max, Math.max(range.min, poseIndex))}`;
   return POSE_MAP[id] ? id : null;
 }
+
+// Phím Option/Alt phải có clip riêng trong kho, không phải đi mượn hàng dưới. `column` phải là cột đã
+// qua `sourceColumn`, vì đó mới là hệ toạ độ mà các mã tư thế dùng.
+function specialFingerId(entry, row, column, side, animated) {
+  if (entry.hardware === 'AltRight' && POSE_MAP['right-option']) return 'right-option';
+  return genericFingerId(row, column, side, animated);
+}
+
+// Hàng dưới cùng chỉ có bảy ô nên luật điểm-giữa-6-cột sai hẳn; bên trái/phải đo theo phím cách.
+function sideForOptionRow(layout, found) {
+  const entries = layout?.structure?.[found.row] || [];
+  const space = entries.findIndex((entry) => entry?.hardware === 'Space');
+  if (space < 0) return null;
+  return found.column - 1 < space ? 'left' : 'right';
+}
+
+function sideOf(layout, found) {
+  const column = sourceColumn(found.row, found.column - 1);
+  return sideForFinger(found.entry.finger)
+    || (found.row === 4 ? sideForOptionRow(layout, found) : null)
+    || sideForColumn(found.row, column);
+}
+
+// Hàng dưới cùng chỉ có bảy ô quanh phím cách, không phải mười ba như các hàng chữ, nên công thức
+// cột của hàng chữ cho ra chỉ số ngược hướng ở bên phải (Ctrl phải đã thành ngón TRỏ với vào trong).
+// Đo bằng khoảng cách tính từ phím cách đi ra: càng xa phím cách thì tay càng vươn ra ngoài, hai bên như nhau.
+function optionRowColumn(layout, found, side) {
+  const entries = layout?.structure?.[found.row] || [];
+  const space = entries.findIndex((entry) => entry?.hardware === 'Space');
+  if (space < 0) return sourceColumn(found.row, found.column - 1);
+  const distance = Math.abs((found.column - 1) - space);
+  const reach = 4 + distance;
+  return side === 'right' ? 6 + reach : 7 - reach;
+}
+
+/** Cột trong hệ toạ độ mà các mã tư thế dùng. */
+function poseColumn(layout, found, side) {
+  return found.row === 4 ? optionRowColumn(layout, found, side) : sourceColumn(found.row, found.column - 1);
+}
+
+function slotFrom(fingerId, side) {
+  const id = POSE_MAP[fingerId] ? fingerId : `${side}-resting-hand`;
+  return { fingerId: id, imageName: id, entry: POSE_MAP[id] };
+}
+
+/**
+ * Chữ hoa (và mọi ký tự tầng Shift) cần HAI tay: tay này gõ chữ, ngón út tay kia giữ Shift — đúng
+ * lời bài u2-l09 dạy. Bản gốc typekute chỉ tô sáng phím Shift chứ không đưa tay tới đó.
+ */
+function needsShiftKey(key, found) {
+  const raw = String(key ?? '');
+  if (raw.length !== 1) return false;
+  if (entryValue(found.entry.shifted) === raw) return true;
+  const main = entryValue(found.entry.main);
+  return main.length === 1 && main !== raw && main.toUpperCase() === raw;
+}
+
+function shiftSlotFor(layout, letterSide, animated) {
+  const side = letterSide === 'left' ? 'right' : 'left';
+  const found = findNamedEntries(layout, 'shift').find((candidate) => sideOf(layout, candidate) === side);
+  if (!found) return null;
+  const fingerId = specialFingerId(found.entry, found.row, poseColumn(layout, found, side), side, animated);
+  return fingerId ? slotFrom(fingerId, side) : null;
+}
+
+// Kho tư thế một-tay đánh theo TÊN PHÍM chứ không theo cột, và nó chỉ có phím ký tự (cộng `return`).
+// Phím đặc biệt khác mượn tư thế của phím ký tự sát cạnh nó trên cùng hàng.
+const SINGLE_NAMED_TOKENS = { enter: 'return', tab: 'q', capslock: 'a', backspace: 'equals' };
 
 function singleToken(found) {
   const value = entryValue(found.entry.main);
   if (found.entry.hardware === 'Enter') return 'return';
   if (found.entry.hardware === 'Space') return 'space';
+  const named = namedKeyOf(found.entry.main);
+  if (named === 'shift') return found.entry.hardware === 'ShiftRight' ? 'id-5' : 'z';
+  if (SINGLE_NAMED_TOKENS[named]) return SINGLE_NAMED_TOKENS[named];
   if (found.row === 0) {
     if (value === '`') return 'tilde';
     if (value === '-') return '-';
@@ -231,6 +326,22 @@ function restSlot(side) {
 }
 
 export function resolveHandSlots({ layout, key, side, dominantHand, animated = true } = {}) {
+  // Gọi tên trần một phím có ở cả hai bên (Shift, Ctrl, Alt, Cmd) là chưa chỉ định bên nào, và bài
+  // dạy Shift cũng nói "ngón út bên kia" — nên đưa CẢ HAI ngón út tới phím của bên mình.
+  const named = namedKeyOf(key);
+  if (named && namedKeyHasSides(named) && !dominantHand) {
+    const entries = findNamedEntries(layout, named);
+    if (entries.length > 1) {
+      const slots = { left: restSlot('left'), right: restSlot('right') };
+      for (const entry of entries) {
+        const handSide = sideOf(layout, entry);
+        if (!handSide) continue;
+        const column = poseColumn(layout, entry, handSide);
+        slots[handSide] = slotFrom(specialFingerId(entry.entry, entry.row, column, handSide, animated), handSide);
+      }
+      return slots;
+    }
+  }
   const assignment = resolveLayoutKeyAssignment(layout, key);
   if (!assignment) return { left: restSlot('left'), right: restSlot('right') };
   const found = assignment;
@@ -249,8 +360,10 @@ export function resolveHandSlots({ layout, key, side, dominantHand, animated = t
     const slot = { fingerId, imageName, entry };
     return { left: dominantHand === 'left' ? slot : null, right: dominantHand === 'right' ? slot : null };
   }
-  const fingerId = genericFingerId(found.row, found.column, activeSide, animated) || `${activeSide}-resting-hand`;
+  const fingerId = specialFingerId(found.entry, found.row, found.column, activeSide, animated) || `${activeSide}-resting-hand`;
   const entry = POSE_MAP[fingerId] || POSE_MAP[`${activeSide}-resting-hand`];
   const slot = { fingerId, imageName: fingerId, entry };
-  return activeSide === 'left' ? { left: slot, right: restSlot('right') } : { left: restSlot('left'), right: slot };
+  const otherSide = activeSide === 'left' ? 'right' : 'left';
+  const other = (needsShiftKey(key, found) && shiftSlotFor(layout, activeSide, animated)) || restSlot(otherSide);
+  return activeSide === 'left' ? { left: slot, right: other } : { left: other, right: slot };
 }
