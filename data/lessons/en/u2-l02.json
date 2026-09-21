@@ -1,0 +1,133 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-and-w",
+  "title": "O and W",
+  "summary": "The ring fingers reach up for the first time, and short everyday words arrive in bulk.",
+  "newKeys": [
+    "o",
+    "w"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Your ring fingers have done nothing but sit on S and L so far. O and W change that, and they are harder than the index reaches were: the ring finger is the least independent of the four, so its neighbours want to come along for the ride. Watch your little finger in particular — if it lifts off its home key every time you reach, slow down until it stops.",
+  "congrats": "O is the fourth most common letter in English and you now have it. Read back over the last few screens and notice how much more like real writing they look than the ones in Unit 1.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "RR",
+      "text": "Right ring finger, straight up from L. Keep the little finger on the semicolon while the ring finger goes — that is the whole difficulty of this key.",
+      "hint": "Press O to continue"
+    },
+    {
+      "newKey": "o",
+      "text": "O and L, over and over, with the neighbours mixed in. Straight up, straight back down.",
+      "type": "block",
+      "content": "lo ol lolo\nlll iiii kkk ooo\nololol lololo"
+    },
+    {
+      "type": "intro",
+      "key": "w",
+      "finger": "LR",
+      "text": "Left ring finger, straight up from S. The mirror of O, and the same problem: the little finger beside it would rather travel with it than stay at home.",
+      "hint": "Press W to continue"
+    },
+    {
+      "newKey": "w",
+      "text": "W and S. If your left hand rolls outward as you reach, reset it on the home row and start the line again.",
+      "type": "block",
+      "content": "wsws swsw\neswa seaw\nfsa ewd fs"
+    },
+    {
+      "seconds": 20,
+      "text": "Both ring fingers, alternating. This is the least practised movement your hands have made so far, so expect it to feel clumsy.",
+      "type": "burst",
+      "tokens": [
+        "ls",
+        "lw",
+        "os",
+        "ow",
+        "wo",
+        "sl",
+        "so",
+        "ww",
+        "ws",
+        "ll"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "Words with O in them, which turns out to be most words. Notice how many of these you could not type ten minutes ago.",
+      "type": "standard",
+      "content": "short ought world old\nhow oil stood soil\nsolid toward flow without"
+    },
+    {
+      "dictation": "words",
+      "text": "Now W. It nearly always opens a word rather than closing one, so the reach happens while your hand is still settling.",
+      "type": "standard",
+      "content": "water where draw world\nwrite threw wrote why\nwidow weight wall wash"
+    },
+    {
+      "seconds": 25,
+      "text": "Short words carrying both keys. Keep the rhythm even — a burst is not a race against the clock.",
+      "type": "burst",
+      "tokens": [
+        "loud",
+        "four",
+        "roads",
+        "stores",
+        "routes",
+        "grow",
+        "offer",
+        "lot",
+        "goes",
+        "weeks",
+        "so",
+        "look"
+      ]
+    },
+    {
+      "dictation": "letters",
+      "text": "Patterns again, to check the ring fingers are returning home. Both little fingers should be touching their keys the whole way through.",
+      "type": "standard",
+      "content": "os so osos\nwww llll ooo ssss\nwowo owow"
+    },
+    {
+      "dictation": "words",
+      "text": "Nineteen keys, five words to a line. Try reading each line once before you start typing it.",
+      "type": "standard",
+      "content": "uses although ties elder stool\nstudy what fresh go week\nday tire refill hours four"
+    },
+    {
+      "dictation": "sentence",
+      "text": "Three sentences that sound like ordinary English, because they are. Still no capitals — one more thing your little fingers will have to learn.",
+      "type": "standard",
+      "content": "we go to the old house\nhis idea is a real deal\nshe said that it is easy"
+    }
+  ]
+}

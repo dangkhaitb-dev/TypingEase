@@ -1,0 +1,26 @@
+/* scripts/lessons-en/u2-l10.js — Weak key drill. One screen, built at runtime.
+ * Same shape as u1-l09, but it now draws on the whole alphabet: the first drill could only
+ * offer fifteen keys to be weak at, and this one can find the two or three that really are.
+ */
+module.exports = {
+  slug: 'weak-key-drill',
+
+  summary: 'Two minutes on whichever keys you personally keep missing, now that you have all of them.',
+
+  intro: 'No fixed content again. The course has been counting your mistakes through the whole unit, '
+    + 'and it builds this drill out of the keys you get wrong most often — which after Unit 2 is '
+    + 'usually one of the bottom-row reaches or a little finger doing something it resents. Two '
+    + 'minutes here is worth more than another lesson on the keys you already have.',
+
+  congrats: 'Weak keys stay weak by being avoided, and there is no way to avoid one in a drill built '
+    + 'entirely out of it. Next is the test, and it is the same one minute you typed at the end of '
+    + 'Unit 1 — a straight comparison.',
+
+  screens: [
+    {
+      type: 'test', seconds: 120, source: 'weak-keys', minKeys: 2,
+      text: 'Two minutes, drawn from your own worst keys. There is no end of the text to reach, so '
+        + 'spend the time on accuracy rather than on finishing.'
+    }
+  ]
+};

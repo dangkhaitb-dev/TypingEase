@@ -1,0 +1,120 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "twenty-key-review",
+  "title": "Twenty-key review",
+  "summary": "No new keys. Every letter you have, until none of them needs thinking about.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nothing new in this lesson. You have been adding two keys every five minutes for a while now, and the reaches you learned first have had far more practice than the ones you learned last — this is where the rest catch up. The letters left in the unit are the rare ones, so what you consolidate here is most of what you will actually type for the rest of your life.",
+  "congrats": "That is the common half of the keyboard, under your fingers and mostly automatic. What is left of the alphabet — Q, P, B, X and Z — you could go a whole page without needing, which is exactly why they come last.",
+  "screens": [
+    {
+      "dictation": "words",
+      "text": "Start with words rather than patterns, because words are what you came here for. Read each one whole before you begin typing it.",
+      "type": "standard",
+      "content": "talk ill soil main\nshot any check know\nwhistle rules girls human"
+    },
+    {
+      "dictation": "letters",
+      "text": "The top-row reaches from this unit. Every one of them ends with the finger back on its home key, and that is the part to check.",
+      "type": "standard",
+      "content": "tow jfd to\now wo owow\nttt www ooo yyyy"
+    },
+    {
+      "dictation": "letters",
+      "text": "Now the bottom-row four. These are newer than the rest and they will feel it — which is the reason this screen exists.",
+      "type": "standard",
+      "content": "mmm nnn vvv ccc\ncncn ncnc\nnmcv cnvm"
+    },
+    {
+      "seconds": 20,
+      "text": "All eight new keys of the unit, mixed. Let your fingers choose; if you have to think about which one, that key needs another minute.",
+      "type": "burst",
+      "tokens": [
+        "co",
+        "ow",
+        "oc",
+        "cm",
+        "om",
+        "wy",
+        "on",
+        "cn",
+        "wn",
+        "wv"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "Longer lines of ordinary words. Try to keep a steady rhythm rather than typing in bursts and pauses.",
+      "type": "standard",
+      "content": "hot fact music mistake game\nlasted once check race touch\nnor watch voices grid know"
+    },
+    {
+      "seconds": 25,
+      "text": "Short words at speed. Speed here means not stopping between words, not moving your fingers faster.",
+      "type": "burst",
+      "tokens": [
+        "love",
+        "shot",
+        "inside",
+        "method",
+        "notice",
+        "shows",
+        "furl",
+        "surge",
+        "sand",
+        "grass",
+        "ahead",
+        "grow"
+      ]
+    },
+    {
+      "dictation": "sentence",
+      "text": "Whole sentences. This is the closest the course has come to ordinary writing, and there are still five letters missing.",
+      "type": "standard",
+      "content": "it is easier than it looks\nthe girls are here\nthe answer is not on this one line"
+    },
+    {
+      "dictation": "letters",
+      "text": "The little fingers, one more time. They are about to be handed Q, P, Z and most of the punctuation, so they may as well be ready.",
+      "type": "standard",
+      "content": "alj ;sd al\nla al lala\naaaa sss ;;; lll"
+    },
+    {
+      "dictation": "words",
+      "text": "Last screen of the review. The rest of the alphabet is five lessons away from being finished.",
+      "type": "standard",
+      "content": "fine tried ring another careful\ncould wide trade find method\ndaily toward world leaks chairs"
+    }
+  ]
+}

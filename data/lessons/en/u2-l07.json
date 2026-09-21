@@ -1,0 +1,141 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-and-x",
+  "title": "B and X",
+  "summary": "The last two letters for the left hand, and the two most often typed with the wrong finger.",
+  "newKeys": [
+    "b",
+    "x"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "B is the furthest the left index finger ever travels — down a row and two keys inward — and X sits below S, which means the ring finger, not the middle one. Both are commonly learned wrong and then stay wrong for years, because nothing about typing them badly feels like an error. Get them on the right fingers now, while there is no habit to undo.",
+  "congrats": "Every letter except Z is now yours, and the left hand is finished entirely. X is rare enough that you may not meet it again for several screens, but B will be along in the very next sentence you type.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "LI",
+      "text": "Left index finger, down a row and two keys inward from F. It is the longest reach in the alphabet, and the only one where the finger crosses well past the middle of the keyboard.",
+      "hint": "Press B to continue"
+    },
+    {
+      "newKey": "b",
+      "text": "B, V and F. Three keys, one finger, and the longest of the three is the new one — come back to the bump each time so you can feel where home is.",
+      "type": "block",
+      "content": "bjv dgk bj\nbv vb bvbv\ngggg bbbb ffff vvvv"
+    },
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LR",
+      "text": "Left ring finger, down from S. The ring finger, not the middle one: it feels wrong for about a minute and then it feels like nothing at all.",
+      "hint": "Press X to continue"
+    },
+    {
+      "newKey": "x",
+      "text": "X below S, with W above it — the same finger covering all three rows. C is next door and belongs to the middle finger, so keep them separate.",
+      "type": "block",
+      "content": "xsxsxs sxsxsx\nxwcs cwsx\nfcx dsw fc"
+    },
+    {
+      "seconds": 20,
+      "text": "The bottom row of the left hand, all four keys. This is the row that rewards going slowly more than any other.",
+      "type": "burst",
+      "tokens": [
+        "cc",
+        "xv",
+        "bv",
+        "cx",
+        "xx",
+        "vb",
+        "xc",
+        "bb",
+        "vv",
+        "cb"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "Words with B. It opens words far more often than it closes them, so the reach usually happens from a standing start.",
+      "type": "standard",
+      "content": "boil boxes broad numbers\nproblem number balance bought\nbeen bags be beautiful"
+    },
+    {
+      "dictation": "words",
+      "text": "Now X, which almost always sits in the middle of a word — often right after an E. Let the ring finger drop and come straight back.",
+      "type": "standard",
+      "content": "exercise explain excited excellent\nexcept expect maximum boxes\nnext index exactly relax"
+    },
+    {
+      "seconds": 25,
+      "text": "Both keys in short words. Watch that your left hand has not crept forward over the bottom row while you were busy.",
+      "type": "burst",
+      "tokens": [
+        "busy",
+        "butter",
+        "book",
+        "public",
+        "both",
+        "been",
+        "body",
+        "about",
+        "job",
+        "borrow",
+        "extreme",
+        "because"
+      ]
+    },
+    {
+      "dictation": "letters",
+      "text": "Bottom-row patterns for the left hand alone. Four keys, four different fingers, no borrowing.",
+      "type": "standard",
+      "content": "cb bc cbcb\nxxxx bbbb cccc vvv\nbxbx xbxb"
+    },
+    {
+      "dictation": "words",
+      "text": "Twenty-five letters, five words to a line. Only Z is left, and it comes with the punctuation in the next lesson.",
+      "type": "standard",
+      "content": "person sides rolls bottom walks\ncars safely vote gears tile\ntold jug team lass sales"
+    },
+    {
+      "dictation": "sentence",
+      "text": "Sentences using the whole alphabet bar one letter. If these feel easier than the ones two lessons ago, that is the point of the whole unit.",
+      "type": "standard",
+      "content": "his idea is a real deal\nthe answer is not on this one line\nbreak the habit before it breaks you"
+    }
+  ]
+}

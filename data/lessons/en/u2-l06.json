@@ -1,0 +1,139 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-and-p",
+  "title": "Q and P",
+  "summary": "The little fingers reach for the corners — the longest stretch either hand makes.",
+  "newKeys": [
+    "q",
+    "p"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Q and P are the outermost keys of the top row, and they belong to the little fingers, which are the shortest and weakest you have. That combination is why these two reaches are the ones people quietly give up on and start doing with the ring finger instead. Do not: the ring finger has its own key to cover, and borrowing it costs you more than the reach does.",
+  "congrats": "Q is the second rarest letter in English and it is almost always followed by U, so in practice you have learned one movement rather than two. P you will use constantly — and both of them just made your little fingers considerably more useful.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LP",
+      "text": "Left little finger, straight up from A. Keep the other fingers resting on their home keys while it goes — the hand should stay flat rather than rolling over to help.",
+      "hint": "Press Q to continue"
+    },
+    {
+      "newKey": "q",
+      "text": "Q and A, up and back. In English Q is nearly always followed by U, so the drill after this one will teach the pair rather than the letter.",
+      "type": "block",
+      "content": "aqj wds aq\nwa aw wawa\nwww aaa sss qqqq"
+    },
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "RP",
+      "text": "Right little finger, up from the semicolon. It is a long reach and the wrist will want to turn with it — let the finger stretch instead and the hand stay square.",
+      "hint": "Press P to continue"
+    },
+    {
+      "newKey": "p",
+      "text": "P and the semicolon. Your right little finger now covers both, and it will pick up most of the punctuation later in the unit.",
+      "type": "block",
+      "content": "p;p; ;p;p\n;lpo lop;\npdl ;jf pd"
+    },
+    {
+      "seconds": 20,
+      "text": "Both corners, alternating hands. If the reach starts pulling your whole hand out of position, stop and reset on the home row.",
+      "type": "burst",
+      "tokens": [
+        "pq",
+        "q;",
+        "qa",
+        "aa",
+        ";;",
+        ";p",
+        ";q",
+        "qq",
+        "a;",
+        "p;"
+      ]
+    },
+    {
+      "dictation": "words",
+      "text": "Words with P. It turns up at the start, the middle and the end of words equally, so the reach has to work from every direction.",
+      "type": "standard",
+      "content": "spend speak temperature stop\ntype plain peace page\npart deep purpose path"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "content": "quick quiet quite quote\nquestion questions quickly quietly\nquality quarter square",
+      "text": "Now Q, and this is very nearly the whole list — English has few of these. Notice the U behind every single one."
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of P words. The little finger tires faster than the others, so keep the pressure light and let the key do the work.",
+      "type": "burst",
+      "tokens": [
+        "upon",
+        "page",
+        "pair",
+        "photo",
+        "helps",
+        "support",
+        "places",
+        "space",
+        "spent",
+        "sharp",
+        "put",
+        "plenty"
+      ]
+    },
+    {
+      "dictation": "letters",
+      "text": "The corner reaches against the ring-finger keys beside them. These four are easy to mix up and worth separating deliberately.",
+      "type": "standard",
+      "content": "pw wp pwpw\nwwww pppp ooo qqq\nqpqp pqpq"
+    },
+    {
+      "dictation": "words",
+      "text": "Everything you have, five to a line. Twenty-three letters now, and only three missing.",
+      "type": "standard",
+      "content": "holds turn minutes regard for\nplant hurl roll stop cats\ntoward note least half tried"
+    },
+    {
+      "dictation": "sentence",
+      "text": "Sentences, including a few about typing itself. Two lessons left in the alphabet.",
+      "type": "standard",
+      "content": "we go to the old house\nyou can learn this in one hour\nthe mountain is over there"
+    }
+  ]
+}

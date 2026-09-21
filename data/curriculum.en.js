@@ -96,19 +96,19 @@ window.TypingEaseCurriculum = {
     'u1-l10': { title: 'Unit 1 test', newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: true },
 
     // Unit 2
-    'u2-l01': { title: 'T and Y', newKeys: ['t', 'y'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u2-l02': { title: 'O and W', newKeys: ['o', 'w'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u2-l03': { title: 'C and N', newKeys: ['c', 'n'], screens: 12, estMinutes: 5, kind: 'keys', ready: false },
-    'u2-l04': { title: 'M and V', newKeys: ['m', 'v'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u2-l05': { title: 'Twenty-key review', newKeys: [], screens: 9, estMinutes: 5, kind: 'review', ready: false },
-    'u2-l06': { title: 'Q and P', newKeys: ['q', 'p'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
-    'u2-l07': { title: 'B and X', newKeys: ['b', 'x'], screens: 11, estMinutes: 5, kind: 'keys', ready: false },
+    'u2-l01': { title: 'T and Y', newKeys: ['t', 'y'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u2-l02': { title: 'O and W', newKeys: ['o', 'w'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u2-l03': { title: 'C and N', newKeys: ['c', 'n'], screens: 12, estMinutes: 5, kind: 'keys', ready: true },
+    'u2-l04': { title: 'M and V', newKeys: ['m', 'v'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u2-l05': { title: 'Twenty-key review', newKeys: [], screens: 9, estMinutes: 5, kind: 'review', ready: true },
+    'u2-l06': { title: 'Q and P', newKeys: ['q', 'p'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u2-l07': { title: 'B and X', newKeys: ['b', 'x'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     // Four new keys, so one more screen than its Vietnamese counterpart: the validator
     // requires every key in `newKeys` to be introduced by a `block` screen of its own.
-    'u2-l08': { title: 'Z, punctuation and the apostrophe', newKeys: ['z', '.', ',', "'"], screens: 12, estMinutes: 6, kind: 'keys', ready: false },
-    'u2-l09': { title: 'Shift and Enter', newKeys: ['shift', 'enter'], screens: 9, estMinutes: 5, kind: 'keys', ready: false },
-    'u2-l10': { title: 'Weak key drill', newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: false },
-    'u2-l11': { title: 'Unit 2 test', newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: false },
+    'u2-l08': { title: 'Z, punctuation and the apostrophe', newKeys: ['z', '.', ',', "'"], screens: 12, estMinutes: 6, kind: 'keys', ready: true },
+    'u2-l09': { title: 'Shift and Enter', newKeys: ['shift', 'enter'], screens: 9, estMinutes: 5, kind: 'keys', ready: true },
+    'u2-l10': { title: 'Weak key drill', newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: true },
+    'u2-l11': { title: 'Unit 2 test', newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: true },
 
     // Unit 3 — `/` and `-` are the only new physical keys. Every other symbol this unit uses
     // (? ! @ # : _ " and the brackets) is Shift plus a key already taught, so it costs the

@@ -1,0 +1,142 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-punctuation-and-the-apostrophe",
+  "title": "Z, punctuation and the apostrophe",
+  "summary": "The last letter, the full stop, the comma and the apostrophe — the alphabet, finished.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Z is the rarest letter in English, and the three punctuation marks beside it are among the most common characters you will ever type. All four go to fingers that are already carrying more than their share: the left little finger takes Z, and the right hand picks up the full stop, the comma and the apostrophe. After this lesson every ordinary sentence in the language is something you can type.",
+  "congrats": "The alphabet is complete, and you can punctuate. One lesson left in this unit — capital letters and the Enter key — and after that there is nothing standing between you and an ordinary page of writing.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "Left little finger, down from A. The last letter of the alphabet and the rarest in the language, which is exactly why it has waited until now.",
+      "hint": "Press Z to continue"
+    },
+    {
+      "newKey": "z",
+      "text": "Z below A, with X next door. Three keys on the bottom row for the left hand, three different fingers.",
+      "type": "block",
+      "content": "saxz saxz\nfda sjz fd\nza az zaza"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Right ring finger, down from L. The same finger that reaches up for O now reaches down for the full stop — up, home, down, from one key.",
+      "hint": "Press the full stop to continue"
+    },
+    {
+      "type": "block",
+      "newKey": ".",
+      "content": "l.l. l.l.\n.l l. .l. l.l\nyes. no. so. go.",
+      "text": "The reach first, then the thing it is for. Notice there is no space before a full stop and one space after it."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Right middle finger, down from K. It sits just to the left of the full stop, so the two are easy to swap by accident until the fingers learn them apart.",
+      "hint": "Press the comma to continue"
+    },
+    {
+      "type": "block",
+      "newKey": ",",
+      "content": "k,k, k,k,\n,k k, ,k, k,k\nyes, no, well, then,",
+      "text": "Comma below K, full stop below L. Say which is which to yourself once; after that your fingers will remember."
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RP",
+      "text": "Right little finger, just to the right of the semicolon. It is a short reach for a finger that has already learned two long ones, and it makes contractions possible.",
+      "hint": "Press the apostrophe to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "'",
+      "content": "'; ;' '; ;'\nl' k' j' ;'\ndon't isn't can't won't",
+      "text": "The apostrophe sits beside the semicolon, so the little finger barely moves. No spaces around it — it lives inside the word."
+    },
+    {
+      "seconds": 20,
+      "text": "Contractions, one after another. These are the words you will type most often in anything that sounds like a person talking.",
+      "type": "burst",
+      "tokens": [
+        "i've",
+        "didn't",
+        "i'm",
+        "aren't",
+        "doesn't",
+        "haven't",
+        "don't",
+        "she's",
+        "they'll",
+        "i'd"
+      ]
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "content": "zero zone size lazy\ndozen frozen freeze prize\npuzzle quiz citizen magazine",
+      "text": "Words with Z. There are not many, and now you have met most of them."
+    },
+    {
+      "type": "standard",
+      "dictation": "sentence",
+      "content": "the box is open, and the letters are inside.\nwe can meet at six, or later if you like.\nshe types well now, but she still looks down.",
+      "text": "Sentences that stop and breathe properly. Still no capital letters — that is the very next lesson."
+    },
+    {
+      "type": "standard",
+      "dictation": "sentence",
+      "content": "i don't look at the keys any more.\nit isn't speed that matters first, it's accuracy.\nyou'll get there, one line at a time.",
+      "text": "The apostrophe in ordinary use. Keep the rhythm through it — it is a key like any other, not a pause."
+    }
+  ]
+}
