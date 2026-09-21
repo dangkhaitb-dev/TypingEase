@@ -1,0 +1,194 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "the-number-row",
+  "title": "The number row",
+  "summary": "Ten keys in one lesson, from the middle of the row outward, anchored to the home key below each one.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "The number row is the furthest your fingers ever reach, and the only row you will type without any hope of feeling your way back — there are no bumps up there. What makes it work is the anchor: every digit belongs to the finger directly below it, so 4 is the F finger, 7 is the J finger, 1 is the A finger. Learn each digit against its home key and the row stops being a guess.",
+  "congrats": "Ten keys in one lesson, and you kept your hands on the home row through all of them. Dates, prices, phone numbers and house numbers are now things you can type without looking down — which is most of what anybody actually uses the number row for.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "4",
+      "finger": "LI",
+      "text": "Left index finger, up two rows from F. Start in the middle of the row where the reach is shortest, and keep the other three fingers touching their home keys as it goes.",
+      "hint": "Press 4 to continue"
+    },
+    {
+      "type": "block",
+      "newKeys": [
+        "4",
+        "5"
+      ],
+      "content": "444 555 f4 f5\n45 54 445 554\nf4f5 4f5f 45 54",
+      "text": "Both of these belong to the left index finger: 4 straight up, 5 up and inward. Press the digit, then its home key, so the finger learns the way back."
+    },
+    {
+      "type": "block",
+      "newKeys": [
+        "6",
+        "7"
+      ],
+      "content": "666 777 j6 j7\n67 76 667 776\nj6j7 6j7j 67 76",
+      "text": "The mirror on the right hand. 6 is a long inward reach and the one people most often give to the wrong hand — it belongs to the right index finger."
+    },
+    {
+      "type": "burst",
+      "seconds": 20,
+      "tokens": [
+        "4",
+        "5",
+        "6",
+        "7",
+        "45",
+        "67",
+        "f4",
+        "j7",
+        "456",
+        "567"
+      ],
+      "text": "The four middle digits, alternating. Say each one to yourself as you type it; naming the key is what stops the finger guessing."
+    },
+    {
+      "type": "block",
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "content": "333 888 d3 k8\n38 83 338 883\nd3k8 3d8k 38 83",
+      "text": "Middle fingers now. Straight up from D and K, and straight back down — the same movement they make for E and I, just one row further."
+    },
+    {
+      "type": "block",
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "content": "222 999 s2 l9\n29 92 229 992\ns2l9 2s9l 29 92",
+      "text": "Ring fingers, which are the least independent you have. Watch the little finger beside each one: if it lifts off its home key, the reach is coming from the hand, not the finger."
+    },
+    {
+      "type": "block",
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "content": "111 000 a1 ;0\n10 01 110 001\na1;0 1a0; 10 01",
+      "text": "The little fingers and the longest reach on the keyboard. These two are worth going slowly for — they are also the two you will use most, because every year and every price has a 1 or a 0 in it."
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "tokens": [
+        "1",
+        "0",
+        "2",
+        "9",
+        "3",
+        "8",
+        "10",
+        "29",
+        "38",
+        "100"
+      ],
+      "text": "The outer digits mixed with the ones you learned first. Accuracy matters more here than anywhere else in the course: a wrong letter is a typo, a wrong digit is a wrong number."
+    },
+    {
+      "type": "standard",
+      "dictation": "letters",
+      "content": "12 34 56 78 90\n19 28 37 46 50\n101 202 303 2026",
+      "text": "The whole row in order, then in pairs from the outside in. Keep your eyes on the screen rather than hunting along the row."
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "content": "on 12 March 2026\nroom 314 and room 8\n30 days in June",
+      "text": "Digits inside ordinary phrases, which is where you will actually meet them. Notice how your hand has to come back to the home row between the numbers and the words."
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "tokens": [
+        "2026",
+        "1984",
+        "365",
+        "24",
+        "60",
+        "12",
+        "100",
+        "1000",
+        "50",
+        "07"
+      ],
+      "text": "Whole numbers rather than single digits. Type each one as a shape rather than as four separate keys — that is how you will read them back."
+    },
+    {
+      "type": "standard",
+      "dictation": "sentence",
+      "content": "I was born on 9 March 2010.\nOur class has 32 students, 18 girls and 14 boys.\nThe shop opens at 7 and closes at 9.",
+      "text": "Sentences with numbers in them. Last screen of the lesson — next comes the handful of symbols that make an address or a link possible."
+    }
+  ]
+}

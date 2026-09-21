@@ -113,12 +113,12 @@ window.TypingEaseCurriculum = {
     // Unit 3 — `/` and `-` are the only new physical keys. Every other symbol this unit uses
     // (? ! @ # : _ " and the brackets) is Shift plus a key already taught, so it costs the
     // learner a reach they already know rather than a new one.
-    'u3-l01': { title: 'The number row', newKeys: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], screens: 12, estMinutes: 6, kind: 'keys', ready: false },
-    'u3-l02': { title: 'Everyday symbols', newKeys: ['/', '-'], screens: 10, estMinutes: 5, kind: 'keys', ready: false },
-    'u3-l03': { title: 'Addresses, links and passwords', newKeys: [], screens: 8, estMinutes: 5, kind: 'review', ready: false },
-    'u3-l04': { title: 'Paragraphs and pace 1', newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: false },
-    'u3-l05': { title: 'Paragraphs and pace 2', newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: false },
-    'u3-l06': { title: 'Final test', newKeys: [], screens: 1, estMinutes: 3, kind: 'test', seconds: 180, ready: false }
+    'u3-l01': { title: 'The number row', newKeys: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], screens: 12, estMinutes: 6, kind: 'keys', ready: true },
+    'u3-l02': { title: 'Everyday symbols', newKeys: ['/', '-'], screens: 10, estMinutes: 5, kind: 'keys', ready: true },
+    'u3-l03': { title: 'Addresses, links and passwords', newKeys: [], screens: 8, estMinutes: 5, kind: 'review', ready: true },
+    'u3-l04': { title: 'Paragraphs and pace 1', newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
+    'u3-l05': { title: 'Paragraphs and pace 2', newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
+    'u3-l06': { title: 'Final test', newKeys: [], screens: 1, estMinutes: 3, kind: 'test', seconds: 180, ready: true }
   },
 
   sequence: [

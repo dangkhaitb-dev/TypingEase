@@ -1,0 +1,77 @@
+/* scripts/lessons-en/u3-l05.js — Paragraphs and pace 2. No new keys.
+ *
+ * The same shape as u3-l04, with the mixture the course has been building towards: prose with
+ * dates, times, addresses and links inside it. Nothing ordinary people type is purely letters,
+ * and the join between a sentence and a link is the last awkward movement left — the hand goes
+ * to the number row and back mid-thought.
+ */
+module.exports = {
+  slug: 'paragraphs-and-pace-2',
+
+  summary: 'Paragraphs with dates, times and links in them — the last awkward join, practised until it is not.',
+
+  intro: 'This lesson mixes everything. The paragraphs carry times, dates, an address and a link, '
+    + 'which means your hands leave the home row and come back several times a line. That join is '
+    + 'the last thing in the course that is genuinely awkward, and the only cure is meeting it '
+    + 'often enough that it stops being an event.',
+
+  congrats: 'That is the last lesson. Everything after this is a drill on your own weak keys and '
+    + 'the final test — three minutes of ordinary writing, which is now something you can do '
+    + 'without thinking about your hands at all.',
+
+  screens: [
+    {
+      type: 'standard', dictation: 'sentence',
+      content: 'The class meets on Monday and Thursday at 18:30.'
+        + '\nEach one runs for 45 minutes.\nIf you want a place, send an email before the 10th.',
+      text: 'Times and dates inside plain sentences. The colon is Shift and the semicolon, so your '
+        + 'little finger barely moves for it.'
+    },
+    {
+      type: 'burst', seconds: 20,
+      tokens: ['18:30', '45', 'Monday', 'Thursday', 'email', 'before', 'the', '10th', 'place', 'class'],
+      text: 'The awkward pieces of that paragraph on their own — a time, a number, a weekday. These '
+        + 'are what slowed you down, not the words.'
+    },
+    {
+      type: 'standard', dictation: 'sentence',
+      content: 'There are 24 hours in a day and you will spend about 3 of them at a keyboard.'
+        + '\nOver a year that is more than 1000 hours.'
+        + '\nTyping twice as fast gives you back more time than almost anything else you could learn.',
+      text: 'Bigger numbers in longer sentences. Type each number as a single shape rather than as '
+        + 'separate digits.'
+    },
+    {
+      type: 'standard', dictation: 'sentence',
+      content: 'In the morning I get up at 6 and work for an hour before anyone writes to me.'
+        + '\nI answer the mail first, then the harder things.'
+        + '\nBy 9 the day has usually decided what it wants to be.',
+      text: 'Ordinary writing with one number a line. Keep the rhythm even across the join — that is '
+        + 'the whole exercise.'
+    },
+    {
+      type: 'burst', seconds: 25,
+      tokens: ['morning', 'hour', 'answer', 'harder', 'usually', 'decided', 'writes', 'before',
+        'first', 'things'],
+      text: 'Longer words this time, no numbers. Let this one run fast; you have earned a screen '
+        + 'where nothing is difficult.'
+    },
+    {
+      type: 'standard', dictation: 'sentence',
+      content: 'Here is the address I promised: https://typingease.site/lessons'
+        + '\nYou can write to me at sam@mail.com whenever you like.'
+        + '\nSee you on Thursday!',
+      text: 'A link and an address inside a note. No spaces inside either of them, and the sentence '
+        + 'carries on afterwards as though nothing happened.'
+    },
+    {
+      type: 'standard', dictation: 'sentence', linebreak: 'enter',
+      content: 'After three months I type about 45 words a minute at 97 per cent.'
+        + '\nI do not look at the keyboard any more, and I have stopped noticing that I am typing.'
+        + '\nA page of writing now takes a few minutes instead of half an hour.'
+        + '\nThat was the whole reason I started.',
+      text: 'The last screen before the test. Enter at the end of every line, and no hurry — this '
+        + 'one is worth typing properly.'
+    }
+  ]
+};

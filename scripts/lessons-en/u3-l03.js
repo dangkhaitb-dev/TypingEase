@@ -1,0 +1,78 @@
+/* scripts/lessons-en/u3-l03.js — Addresses, links and passwords. No new keys.
+ *
+ * The lesson where the symbols stop being symbols and start being things people type all day.
+ * Everything here is written out: an email address, a URL and a password are the three strings
+ * in ordinary life where a single wrong character means the whole thing fails, so this is also
+ * the only lesson in the course where accuracy is not a preference but the entire point.
+ */
+module.exports = {
+  slug: 'addresses-links-and-passwords',
+
+  summary: 'The three strings where one wrong character ruins the whole thing — typed until they stop being fiddly.',
+
+  intro: 'An email address, a web address and a password have something in common that ordinary '
+    + 'writing does not: there is no such thing as a small mistake in them. A sentence with a typo '
+    + 'still reads; an address with a typo simply fails. That is why they get a lesson of their '
+    + 'own, and why the advice for this one is the opposite of the usual — go slowly, and read to '
+    + 'the end of the string before your fingers start.',
+
+  congrats: 'These are the strings you will type for the rest of your life, and now you can type '
+    + 'them without hunting for the at sign or the slash. Two lessons left, both of them long '
+    + 'paragraphs at whatever pace you can hold.',
+
+  screens: [
+    {
+      type: 'standard', dictation: 'words',
+      content: 'sam@mail.com anna.lee@mail.com\nteam_leader@work.com\nhello-there@typingease.site',
+      text: 'Email addresses, in the three shapes they come in: plain, with a full stop in the name, '
+        + 'with a hyphen or an underscore. No capitals and no spaces anywhere.'
+    },
+    {
+      type: 'burst', seconds: 25,
+      tokens: ['@mail.com', '@work.com', 'sam@', 'anna.lee@', 'team_leader@', 'a@b.co', 'x-y@z.com',
+        '.com', '.org', '.site'],
+      text: 'The pieces an address is made of, one at a time. Once these are automatic the whole '
+        + 'address comes out in one go.'
+    },
+    {
+      type: 'standard', dictation: 'words',
+      content: 'https://typingease.site\nhttps://typingease.site/learn\nhttps://typingease.site/typing-test',
+      text: 'Web addresses. The two slashes after the colon are the part everyone fumbles — they are '
+        + 'the same finger twice, so let it bounce rather than reaching twice.'
+    },
+    {
+      type: 'block',
+      content: 'http:// https:// www.\n/learn /lessons /typing-test\n.com .org .site .net',
+      text: 'The three parts of a link, drilled separately: what it starts with, what it ends with, '
+        + 'and the path in the middle.'
+    },
+    {
+      type: 'standard', dictation: 'words',
+      content: 'Summer-2026 Blue-Door-31\nHome_Row_9 TypeFast2026\nQuiet-Morning-7 Six_Keys!',
+      text: 'Passwords, or at least the shape of them: capitals, digits, a hyphen or an underscore, '
+        + 'sometimes a symbol. Every one of these needs Shift in the middle of a word.'
+    },
+    {
+      type: 'burst', seconds: 25,
+      tokens: ['Summer-2026', 'Blue-Door-31', 'Home_Row_9', 'TypeFast2026', 'Quiet-Morning-7',
+        'Six_Keys!', 'North_31', 'Green-Gate-8', 'Open_Window!', 'Ten-Fingers-10'],
+      text: 'Whole passwords under time pressure, which is the honest test: you cannot see what you '
+        + 'typed in a password box, so it has to be right the first time.'
+    },
+    {
+      type: 'standard', dictation: 'sentence',
+      content: 'Please send the file to sam@mail.com before 17:30.'
+        + '\nThe address is https://typingease.site/learn.'
+        + '\nMy password for the test account is Blue-Door-31.',
+      text: 'Addresses inside ordinary sentences, where the hard part is switching between the two '
+        + 'kinds of typing without slowing down for the join.'
+    },
+    {
+      type: 'standard', dictation: 'sentence', linebreak: 'enter',
+      content: 'Dear Anna,\nHere is the link I promised: https://typingease.site/lessons'
+        + '\nYou can reach me at sam@mail.com if it does not open.\nThanks!\nSam',
+      text: 'A whole note with a link and an address in it, Enter at the end of every line. This is '
+        + 'the message you will write a hundred times, so it may as well be easy.'
+    }
+  ]
+};

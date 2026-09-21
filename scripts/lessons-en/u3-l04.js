@@ -1,0 +1,74 @@
+/* scripts/lessons-en/u3-l04.js — Paragraphs and pace 1. No new keys.
+ *
+ * Written prose, deliberately. Every screen before this one was built to drill a key; these are
+ * built to be read, because reading ahead is the skill the last two lessons are actually for,
+ * and you cannot read ahead in a list of unrelated words. The subject is learning to type, on
+ * the theory that a learner halfway through is the one person guaranteed to care about it.
+ */
+module.exports = {
+  slug: 'paragraphs-and-pace-1',
+
+  summary: 'Whole paragraphs, read a few words ahead of your hands — the skill every drill so far was for.',
+
+  intro: 'From here the course stops teaching keys and starts asking for pace. A paragraph is '
+    + 'harder than a word list in one specific way: the words are not equally easy, so an even '
+    + 'rhythm takes effort rather than luck. The trick is to keep your eyes two or three words '
+    + 'ahead of your fingers, which feels wrong for about a minute and then feels like reading.',
+
+  congrats: 'You have typed several paragraphs without looking down, which is what the whole course '
+    + 'was for. One more lesson of this and then the final test — three minutes, one long passage, '
+    + 'no new anything.',
+
+  screens: [
+    {
+      type: 'standard', dictation: 'sentence',
+      content: 'Touch typing is not a talent.\nIt is a habit, and habits take time rather than skill.'
+        + '\nTen minutes a day is enough.',
+      text: 'Short sentences to start. Read each line whole before you begin it, and let your hands '
+        + 'follow your eyes rather than the other way round.'
+    },
+    {
+      type: 'burst', seconds: 20,
+      tokens: ['habit', 'every', 'day', 'ten', 'minutes', 'hands', 'keys', 'slow', 'steady', 'learn'],
+      text: 'The words from that paragraph on their own. Notice which one your fingers hesitate over '
+        + 'and remember it for the drill at the end of the unit.'
+    },
+    {
+      type: 'standard', dictation: 'sentence',
+      content: 'For the first week you will be slower than you were before you started, and that is normal.'
+        + '\nYour hands are learning where the keys are without your eyes to help them.'
+        + '\nAfter that the speed arrives quickly, and it keeps arriving for months.',
+      text: 'Longer lines now. If you lose your place, keep going from where your eyes are rather '
+        + 'than starting the line again.'
+    },
+    {
+      type: 'standard', dictation: 'sentence',
+      content: 'The one rule that matters is not looking down.'
+        + '\nEvery glance at the keyboard teaches your hands to wait for your eyes.'
+        + '\nLook at the screen, even while you are getting it wrong.',
+      text: 'This is the paragraph worth believing. Looking down feels like it helps and it is the '
+        + 'single thing that keeps people at forty words a minute for twenty years.'
+    },
+    {
+      type: 'burst', seconds: 25,
+      tokens: ['screen', 'never', 'look', 'down', 'accuracy', 'first', 'speed', 'follows', 'quiet', 'hands'],
+      text: 'A burst between two paragraphs, to reset the rhythm. Short words, no thinking required.'
+    },
+    {
+      type: 'standard', dictation: 'sentence',
+      content: 'Accuracy comes before speed, and not by a little.'
+        + '\nSomeone typing 40 words a minute at 98 per cent will finish a page'
+        + '\nlong before someone typing 60 and fixing every third word.',
+      text: 'Numbers in the middle of prose, which is where they are most awkward. The hand has to '
+        + 'leave the home row and come straight back.'
+    },
+    {
+      type: 'standard', dictation: 'sentence', linebreak: 'enter',
+      content: 'Today I typed a whole paragraph without looking at my hands.'
+        + '\nI did not think about a single key while I was doing it.'
+        + '\nNext week I will be faster than I am now, and I will not notice it happening.',
+      text: 'Last screen, with Enter at the end of every line. Type it as though you meant it — in '
+        + 'a few weeks it will be true.'
+    }
+  ]
+};
