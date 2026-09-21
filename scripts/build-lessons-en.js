@@ -76,12 +76,17 @@ function shuffled(rand, list) {
 // `shift` và `enter` là phím chức năng: shift mở ra chữ hoa, enter mở ra ký tự xuống dòng thật.
 const NAMED = { shift: 'SHIFT', enter: '\n', tab: '\t', backspace: 'BACKSPACE' };
 
-function keysBeforeLesson(lessonId) {
+// HAI TẬP PHÍM, KHÁC NHAU CÓ CHỦ Ý. `named: true` cho tập dùng để SINH nội dung: ở đó `shift`
+// phải thành 'SHIFT' và `enter` thành ký tự xuống dòng, vì cái được hỏi là "ký tự này gõ được
+// chưa".
+// `named: false` cho `keysSoFar` GHI RA FILE: chỗ đó phải đúng nguyên tên phím như chỉ mục
+// khai, vì validator so nó với tập luỹ tiến lấy thẳng từ `newKeys`.
+function keysBeforeLesson(lessonId, { named = true } = {}) {
   const taught = new Set([' ']);
   for (const id of curriculum.sequence) {
     if (id === lessonId) break;
     for (const key of curriculum.lessons[id]?.newKeys || []) {
-      taught.add(key in NAMED ? NAMED[key] : key);
+      taught.add(named && key in NAMED ? NAMED[key] : key);
     }
   }
   return taught;
@@ -141,7 +146,7 @@ function drillLines(rand, keys, { lines, focus = [] }) {
 }
 
 /* ---------- các họ mẫu bằng từ ---------- */
-function wordsFor(keys, { bias = [], minLength = 1, maxLength = 99 } = {}) {
+function wordsFor(keys, { bias = [], only = false, minLength = 1, maxLength = 99 } = {}) {
   const usable = BANK.words.filter(word =>
     word.length >= minLength && word.length <= maxLength && typeableWith(word, keys));
   if (!bias.length) return usable;
@@ -149,11 +154,17 @@ function wordsFor(keys, { bias = [], minLength = 1, maxLength = 99 } = {}) {
   // đọc như bài tập ngữ âm chứ không như tiếng Anh.
   const hit = usable.filter(word => bias.some(key => word.includes(key)));
   const rest = usable.filter(word => !bias.some(key => word.includes(key)));
+  // `only: true` — CHỈ lấy từ chứa phím đang dạy. Cần từ khi kho từ lớn lên: ở Unit 1 kho còn
+  // nhỏ nên nhân đôi phần trúng là đủ để chúng xuất hiện, nhưng với 458 từ trở đi thì một màn
+  // "từ chứa phím mới" lại ra toàn từ không có phím mới nào — tức là màn đó không dạy gì cả.
+  // Ưu tiên mềm vẫn là mặc định, vì nó cho ra thứ đọc như tiếng Anh; `only` dành cho đúng
+  // những màn mà phím mới LÀ nội dung. Pool cạn thì wordLines/burst đã báo lỗi sẵn.
+  if (only) return hit;
   return hit.length >= 8 ? [...hit, ...hit, ...rest] : usable;
 }
 
-function wordLines(rand, keys, { lines, perLine = 4, bias = [], maxLength = 99 }) {
-  const pool = wordsFor(keys, { bias, maxLength });
+function wordLines(rand, keys, { lines, perLine = 4, bias = [], only = false, maxLength = 99 }) {
+  const pool = wordsFor(keys, { bias, only, maxLength });
   if (pool.length < perLine) return null;
   const out = [];
   const used = new Set();
@@ -182,6 +193,7 @@ function expand(screen, context) {
   delete base.gen;
   delete base.pattern; delete base.lines; delete base.perLine; delete base.bias;
   delete base.focus; delete base.count; delete base.source; delete base.maxLength;
+  delete base.only;
 
   if (screen.gen === 'block' || screen.gen === 'standard') {
     const wantWords = screen.gen === 'standard' && screen.dictation === 'words';
@@ -201,7 +213,7 @@ function expand(screen, context) {
     } else if (wantWords) {
       lines = wordLines(rand, keys, {
         lines: screen.lines || 3, perLine: screen.perLine || 4,
-        bias: screen.bias || [], maxLength: screen.maxLength || 99
+        bias: screen.bias || [], only: !!screen.only, maxLength: screen.maxLength || 99
       });
       if (!lines) throw new Error(`${lessonId} screen ${index + 1}: không đủ từ gõ được để xếp dòng`);
     } else {
@@ -220,7 +232,7 @@ function expand(screen, context) {
     const count = screen.count || 8;
     let tokens;
     if (screen.source === 'words') {
-      const pool = wordsFor(keys, { bias: screen.bias || [], maxLength: screen.maxLength || 8 });
+      const pool = wordsFor(keys, { bias: screen.bias || [], only: !!screen.only, maxLength: screen.maxLength || 8 });
       if (pool.length < count) throw new Error(`${lessonId} screen ${index + 1}: chỉ có ${pool.length} từ, cần ${count}`);
       tokens = shuffled(rand, [...new Set(pool)]).slice(0, count);
     } else {
@@ -284,8 +296,8 @@ function buildLesson(lessonId) {
     // Dau cach thuoc tap phim day RAT som va khong bao gio bi loai: validator so keysSoFar voi
     // tap luy tien theo `sequence`, va tap do co ' ' ngay tu bai dau.
     keysSoFar: [...new Set([
-      ...keysBeforeLesson(lessonId),
-      ...entry.newKeys.map(key => (key in NAMED ? NAMED[key] : key))
+      ...keysBeforeLesson(lessonId, { named: false }),
+      ...entry.newKeys
     ])],
     // DECISIONS.md: 70 cho bốn bài đầu, 80 từ bài thứ năm.
     minAccuracy: position < 4 ? 70 : 80,
