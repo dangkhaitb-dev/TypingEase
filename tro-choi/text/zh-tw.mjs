@@ -4,7 +4,6 @@
  * Điện thoại không gửi mã phím vật lý, nên cả ba trò đều cần bàn phím thật. Không có trang kiểm tra
  * tốc độ tiếng Trung phồn thể, nên {test} rơi về trang khoá học. */
 export default {
-  live: false,
   typeByPosition: true,
   slug: 'dazi-youxi',
   title: '免費注音打字遊戲：十指盲打練習 | TypingEase',

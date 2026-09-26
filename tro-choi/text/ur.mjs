@@ -3,7 +3,6 @@
  * layout (phonetic or CRULP, no IME). Addressed with آپ, like data/courses/ur.js; sentences avoid verbs
  * that agree with the learner's gender. */
 export default {
-  live: false,
   slug: 'typing-games',
   title: 'مفت ٹائپنگ گیمز، اردو کی بورڈ پر | TypingEase',
   description: 'تین مفت ٹائپنگ گیمز: الفاظ کی بارش، سائے سے دوڑ اور کلید کی تلاش۔ براؤزر میں اپنے اردو کی بورڈ پر دس انگلیوں سے ٹائپنگ کی مشق کریں، بغیر سائن اپ کے۔',

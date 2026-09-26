@@ -5,7 +5,6 @@
  * Trang nói thẳng rằng đoạn văn tránh nguyên âm độc lập আ ই উ এ ও vì bố cục 107 không có phím cho chúng.
  */
 export default {
-  live: false,
   slug: 'typing-test',
   title: 'টাইপিং টেস্ট: বাংলা টাইপিং স্পিড ও নির্ভুলতা | TypingEase',
   description: 'ফ্রি বাংলা টাইপিং টেস্ট: ব্রাউজারে জাতীয় কিবোর্ডে ১, ৫ বা ১০ মিনিট টাইপ করুন, দেখুন আপনার স্পিড (WPM), নির্ভুলতা আর ভুল। কোনো সাইন আপ লাগবে না।',

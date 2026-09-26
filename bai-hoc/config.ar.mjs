@@ -22,8 +22,8 @@ export default {
     curriculumScript: '/data/curriculum.ar.js',
     ui: '/i18n/ui.ar.js',
     routes: {
-      home: '/ar/', lessons: '/ar/durus/', learn: '/ar/taallam/', test: null,
-      progress: '/ar/taqaddum/', free: null, weak: null, guide: null, wpm: null
+      home: '/ar/', lessons: '/ar/durus/', learn: '/ar/taallam/', test: '/ar/ikhtibar-alkitaba/',
+      progress: '/ar/taqaddum/', games: '/ar/alaab-alkitaba/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `دورة الكتابة باللمس بالعربية: ${c.sequence.length} درسا | TypingEase`,
@@ -34,7 +34,7 @@ export default {
         h1: (c, f) => `دورة الكتابة باللمس · ${f.name} · ${c.sequence.length} درسا`
       },
       description: c => `دورة مجانية للكتابة باللمس بالعربية: ${c.units.length} وحدات و${c.sequence.length} درسا، من صف الارتكاز إلى الهمزات والأرقام والنصوص الطويلة، على لوحة المفاتيح العربية نفسها.`,
-      nav: r => [[r.home, 'تدرب'], [r.lessons, 'الدورة'], [r.progress, 'التقدم'], [r.test, 'اختبار']],
+      nav: r => [[r.home, 'تدرب'], [r.lessons, 'الدورة'], [r.progress, 'التقدم'], [r.test, 'اختبار'], [r.games, 'ألعاب']],
       navAria: 'التنقل الرئيسي',
       enter: 'ابدأ',
       eyebrow: 'دورة TypingEase',

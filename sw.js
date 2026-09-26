@@ -45,7 +45,7 @@
  * Bàn tay 3D (three.js ~690 KB, model 967 KB, texture) KHÔNG nằm trong PRECACHE: chúng chỉ tải
  * khi người học thật sự bật bàn tay, và cache lối-đi-thật ở dưới sẽ giữ lại sau lần đầu.
  */
-const VERSION = 'v21';
+const VERSION = 'v23';
 const SHELL = `typingease-shell-${VERSION}`;
 const RUNTIME = `typingease-runtime-${VERSION}`;
 

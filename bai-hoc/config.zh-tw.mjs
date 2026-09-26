@@ -19,8 +19,8 @@ export default {
     curriculumScript: '/data/curriculum.zh-tw.js',
     ui: '/i18n/ui.zh-tw.js',
     routes: {
-      home: '/zh-tw/', lessons: '/zh-tw/kecheng/', learn: '/zh-tw/xuexi/', test: null,
-      progress: '/zh-tw/jindu/', free: null, weak: null, guide: null, wpm: null
+      home: '/zh-tw/', lessons: '/zh-tw/kecheng/', learn: '/zh-tw/xuexi/', test: '/zh-tw/dazi-ceyan/',
+      progress: '/zh-tw/jindu/', games: '/zh-tw/dazi-youxi/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `注音打字練習：${c.sequence.length} 課十指盲打 | TypingEase`,
@@ -32,7 +32,7 @@ export default {
         h1: (c, f) => `盲打課程 · ${f.name} · ${c.sequence.length} 課`
       },
       description: c => `${c.units.length} 個單元、${c.sequence.length} 課的免費注音打字練習，從基準列到聲調、符號和長文章，一個鍵一個鍵地練注音符號和聲調。`,
-      nav: r => [[r.home, '練習'], [r.lessons, '課程'], [r.progress, '進度'], [r.test, '測驗']],
+      nav: r => [[r.home, '練習'], [r.lessons, '課程'], [r.progress, '進度'], [r.test, '測驗'], [r.games, '遊戲']],
       navAria: '主要導覽',
       enter: '開始',
       eyebrow: 'TypingEase 課程',

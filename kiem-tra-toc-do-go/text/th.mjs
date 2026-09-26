@@ -5,7 +5,6 @@
  * chấm cuối câu, như ở ui.th.js. Tiếng Thái không chia số nhiều.
  */
 export default {
-  live: false,
   slug: 'thotsop-phim',
   title: 'ทดสอบพิมพ์ออนไลน์ฟรี วัดคำ/นาทีและความแม่นยำ | TypingEase',
   description: 'ทดสอบพิมพ์ภาษาไทยฟรีบนเบราว์เซอร์ พิมพ์ 1, 5 หรือ 10 นาทีบนแป้นเกษมณี แล้วดูความเร็วเป็นคำ/นาที ความแม่นยำ และจุดที่พิมพ์ผิด ไม่ต้องสมัครสมาชิก',

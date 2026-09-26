@@ -4,7 +4,6 @@
  * Latin digits in the game counters (bn-BD-u-nu-latn), matching the numbers filled into the result
  * lines and the "{n}টি পাঠ" style of the course pages. Addressed with আপনি, like data/courses/bn.js. */
 export default {
-  live: false,
   slug: 'typing-games',
   title: 'ফ্রি টাইপিং গেম, আপনার বাংলা কিবোর্ডে | TypingEase',
   description: 'তিনটি ফ্রি টাইপিং গেম: শব্দবৃষ্টি, ছায়া দৌড় আর কী শিকার। ব্রাউজারেই জাতীয় বাংলা কিবোর্ডে দশ আঙুলে টাইপিং অনুশীলন করুন, কোনো সাইন আপ ছাড়াই।',

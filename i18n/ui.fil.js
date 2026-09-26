@@ -20,7 +20,7 @@ window.TypingEaseUI = {
     lessons: '/fil/aralin/',
     learn: '/fil/matuto/',
     // Wala pang bersiyong Filipino ang mga pahinang ito. `null` = alisin ang link.
-    test: null,
+    test: '/fil/typing-test/',
     progress: '/fil/pag-unlad/',
     free: null,
     weak: null,

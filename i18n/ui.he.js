@@ -20,7 +20,7 @@ window.TypingEaseUI = {
     lessons: '/he/shiurim/',
     learn: '/he/lilmod/',
     // Chưa có các trang này bằng tiếng Hebrew. `null` là tín hiệu BỎ liên kết.
-    test: null,
+    test: '/he/mivchan-hakldada/',
     progress: '/he/hitkadmut/',
     free: null,
     weak: null,

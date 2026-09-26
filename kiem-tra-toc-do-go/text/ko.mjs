@@ -5,7 +5,6 @@
  * đó, không đưa ra hệ số quy đổi. Âm tiết cuối đang ghép (isComposing) là việc của typing-test.js.
  */
 export default {
-  live: false,
   slug: 'taja-teseuteu',
   title: '타자 속도 테스트: WPM과 정확도 | TypingEase',
   description: '무료 타자 테스트: 두벌식 자판으로 1분, 5분, 10분 동안 한글을 치고 WPM, 정확도, 오타 수를 확인해요. 가입은 필요 없어요.',

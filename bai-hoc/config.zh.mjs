@@ -19,8 +19,8 @@ export default {
     curriculumScript: '/data/curriculum.zh.js',
     ui: '/i18n/ui.zh.js',
     routes: {
-      home: '/zh/', lessons: '/zh/kecheng/', learn: '/zh/xuexi/', test: null,
-      progress: '/zh/jindu/', free: null, weak: null, guide: null, wpm: null
+      home: '/zh/', lessons: '/zh/kecheng/', learn: '/zh/xuexi/', test: '/zh/dazi-ceshi/',
+      progress: '/zh/jindu/', games: '/zh/dazi-youxi/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `拼音打字练习：${c.sequence.length} 课十指盲打 | TypingEase`,
@@ -32,7 +32,7 @@ export default {
         h1: (c, f) => `盲打课程 · ${f.name} · ${c.sequence.length} 课`
       },
       description: c => `${c.units.length} 个单元、${c.sequence.length} 课的免费拼音打字练习，从基准行到数字、符号和长文本。练的是输入法里真正要打的拼音字母，不带声调。`,
-      nav: r => [[r.home, '练习'], [r.lessons, '课程'], [r.progress, '进度'], [r.test, '测试']],
+      nav: r => [[r.home, '练习'], [r.lessons, '课程'], [r.progress, '进度'], [r.test, '测试'], [r.games, '游戏']],
       navAria: '主导航',
       enter: '开始',
       eyebrow: 'TypingEase 课程',

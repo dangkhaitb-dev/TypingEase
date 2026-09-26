@@ -4,7 +4,6 @@
  * từ như mọi chỗ khác của ui.sw.js ("masomo {lessons}", "dakika 5"). Bố cục 118 = QWERTY Mỹ.
  */
 export default {
-  live: false,
   slug: 'jaribio-la-kuandika',
   title: 'Jaribio la kasi ya kuandika (typing test) | TypingEase',
   description: 'Jaribio la kasi ya kuandika bure kwenye kivinjari: andika kwa dakika 1, 5 au 10 na uone WPM, usahihi na makosa yako kwenye kibodi yako. Bila kujisajili.',

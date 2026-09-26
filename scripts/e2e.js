@@ -801,7 +801,6 @@ const REDIRECTS = {
   '/en/': { to: '/', lang: 'en' },
   '/ja/': { to: '/ja/', lang: 'ja' },
   // Tu 2026-09-25 (Dot 0 SEO) cac URL cu ve trang CUNG ngon ngu, khong con sang ban tieng Viet.
-  '/ja/typing-test/': { to: '/ja/', lang: 'ja' },
   '/en/what-is-wpm/': { to: '/en/typing-test/', lang: 'en' },
   '/ja/what-is-wpm/': { to: '/ja/', lang: 'ja' },
   '/ja/touch-typing/': { to: '/ja/', lang: 'ja' },

@@ -20,7 +20,7 @@ window.TypingEaseUI = {
     lessons: '/ja/renshu/',
     learn: '/ja/manabu/',
     // Chưa có các trang này bằng tiếng Nhật. `null` là tín hiệu BỎ liên kết.
-    test: null,
+    test: '/ja/typing-test/',
     progress: '/ja/shinchoku/',
     free: null,
     weak: null,

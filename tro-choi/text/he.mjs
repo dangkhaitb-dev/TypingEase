@@ -3,7 +3,6 @@
  * layout (no IME, no dead keys). Plural imperative (הקלידו, לחצו), like data/courses/he.js, so no
  * sentence has to pick a gender. */
 export default {
-  live: false,
   slug: 'mishakei-hakldada',
   title: 'משחקי הקלדה בחינם על המקלדת העברית | TypingEase',
   description: 'שלושה משחקי הקלדה בחינם: גשם מילים, מרוץ רפאים וציד מקשים. תרגלו הקלדה עיוורת על המקלדת העברית התקנית, ישר בדפדפן ובלי הרשמה.',

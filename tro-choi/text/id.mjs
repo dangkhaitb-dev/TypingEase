@@ -2,7 +2,6 @@
  * diambil dari data/words/id.js, kumpulan kata yang sama dengan kursus /id/. Bố cục 115 = QWERTY Mỹ,
  * không phím chết: gõ thẳng. */
 export default {
-  live: false,
   slug: 'game-mengetik',
   title: 'Game mengetik gratis di papan ketik sendiri | TypingEase',
   description: 'Tiga game mengetik gratis: Hujan Kata, Balapan Bayangan, dan Buru Tombol. Latihan mengetik 10 jari di papan ketikmu sendiri, di browser, tanpa daftar.',

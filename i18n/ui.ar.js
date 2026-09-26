@@ -21,7 +21,7 @@ window.TypingEaseUI = {
     learn: '/ar/taallam/',
     // Ba trang này chưa có bản tiếng Ả Rập. `null` = BỎ liên kết, không phải trỏ sang bản tiếng
     // Anh hay tiếng Việt — xem cách `R.weak` bị chặn trong player.js.
-    test: null,
+    test: '/ar/ikhtibar-alkitaba/',
     progress: '/ar/taqaddum/',
     free: null,
     weak: null,

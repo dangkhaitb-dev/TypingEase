@@ -2,7 +2,6 @@
  * mga salita ay mula sa data/words/fil.js, ang parehong bangko ng kursong /fil/. Bố cục 117 = QWERTY Mỹ,
  * không phím chết, không có ñ: gõ thẳng. "Key", "space bar" để nguyên tiếng Anh như khoá học. */
 export default {
-  live: false,
   slug: 'laro-sa-pagta-type',
   title: 'Libreng laro sa pagta-type sa iyong keyboard | TypingEase',
   description: 'Tatlong libreng laro sa pagta-type: Ulan ng Salita, Karera ng Anino at Hanap-Key. Magsanay ng touch typing sa iyong keyboard sa browser, walang sign-up.',

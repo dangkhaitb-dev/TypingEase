@@ -23,7 +23,7 @@ window.TypingEaseUI = {
     lessons: '/sw/masomo/',
     learn: '/sw/jifunze/',
     // Chưa có các trang này bằng tiếng Swahili. `null` là tín hiệu BỎ liên kết.
-    test: null,
+    test: '/sw/jaribio-la-kuandika/',
     progress: '/sw/maendeleo/',
     free: null,
     weak: null,

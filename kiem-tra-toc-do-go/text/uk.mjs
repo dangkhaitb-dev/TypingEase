@@ -13,7 +13,6 @@ const plural = (n, one, few, many) => {
 };
 
 export default {
-  live: false,
   slug: 'test-shvydkosti-druku',
   title: 'Тест швидкості друку онлайн: сл/хв і точність | TypingEase',
   description: 'Безкоштовний тест швидкості друку в браузері: друкуй 1, 5 або 10 хвилин на українській розкладці ЙЦУКЕН і дивись швидкість, точність і помилки.',

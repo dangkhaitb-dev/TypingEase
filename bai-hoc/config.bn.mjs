@@ -20,8 +20,8 @@ export default {
     curriculumScript: '/data/curriculum.bn.js',
     ui: '/i18n/ui.bn.js',
     routes: {
-      home: '/bn/', lessons: '/bn/path/', learn: '/bn/shikhun/', test: null,
-      progress: '/bn/agragati/', free: null, weak: null, guide: null, wpm: null
+      home: '/bn/', lessons: '/bn/path/', learn: '/bn/shikhun/', test: '/bn/typing-test/',
+      progress: '/bn/agragati/', games: '/bn/typing-games/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `বাংলা টাইপিং কোর্স: দশ আঙুলে ${c.sequence.length}টি পাঠ | TypingEase`,
@@ -32,7 +32,7 @@ export default {
         h1: (c, f) => `টাইপিং কোর্স · ${f.name} · ${c.sequence.length}টি পাঠ`
       },
       description: c => `দশ আঙুলে বাংলা টাইপিং শেখার বিনামূল্যের কোর্স: ${c.units.length}টি ইউনিট আর ${c.sequence.length}টি পাঠ, জাতীয় কিবোর্ডের মূল সারি থেকে বাংলা অঙ্ক, চিহ্ন আর লম্বা লেখা পর্যন্ত।`,
-      nav: r => [[r.home, 'অনুশীলন'], [r.lessons, 'কোর্স'], [r.progress, 'অগ্রগতি'], [r.test, 'পরীক্ষা']],
+      nav: r => [[r.home, 'অনুশীলন'], [r.lessons, 'কোর্স'], [r.progress, 'অগ্রগতি'], [r.test, 'পরীক্ষা'], [r.games, 'গেম']],
       navAria: 'প্রধান মেনু',
       enter: 'শুরু করুন',
       eyebrow: 'TypingEase-এর কোর্স',

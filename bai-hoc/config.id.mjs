@@ -19,8 +19,8 @@ export default {
     curriculumScript: '/data/curriculum.id.js',
     ui: '/i18n/ui.id.js',
     routes: {
-      home: '/id/', lessons: '/id/pelajaran/', learn: '/id/belajar/', test: null,
-      progress: '/id/kemajuan/', free: null, weak: null, guide: null, wpm: null
+      home: '/id/', lessons: '/id/pelajaran/', learn: '/id/belajar/', test: '/id/tes-mengetik/',
+      progress: '/id/kemajuan/', games: '/id/game-mengetik/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `Latihan mengetik 10 jari: ${c.sequence.length} pelajaran gratis | TypingEase`,
@@ -32,7 +32,7 @@ export default {
         h1: (c, f) => `Kursus mengetik · ${f.name} · ${c.sequence.length} pelajaran`
       },
       description: c => `Kursus mengetik 10 jari gratis: ${c.units.length} unit dan ${c.sequence.length} pelajaran, dari baris dasar sampai angka, simbol, dan teks panjang, dengan kata-kata Indonesia sungguhan.`,
-      nav: r => [[r.home, 'Latihan'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan'], [r.test, 'Tes']],
+      nav: r => [[r.home, 'Latihan'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan'], [r.test, 'Tes'], [r.games, 'Permainan']],
       navAria: 'Navigasi utama',
       enter: 'Mulai',
       eyebrow: 'Kursus TypingEase',

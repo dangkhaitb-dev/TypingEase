@@ -21,7 +21,7 @@ export default {
     ui: '/i18n/ui.tr.js',
     routes: {
       home: '/tr/', lessons: '/tr/dersler/', learn: '/tr/ogren/', test: '/tr/klavye-hiz-testi/',
-      progress: '/tr/ilerleme/', free: null, weak: null, guide: null, wpm: null
+      progress: '/tr/ilerleme/', games: '/tr/klavye-oyunlari/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `10 parmak yazma kursu: ${c.sequence.length} ders | TypingEase`,
@@ -32,7 +32,7 @@ export default {
         h1: (c, f) => `On parmak kursu · ${f.name} · ${c.sequence.length} ders`
       },
       description: c => `Türkçe Q klavye için ücretsiz 10 parmak yazma kursu: temel sıradan sayılara, işaretlere ve uzun metinlere kadar ${c.units.length} ünite ve ${c.sequence.length} ders.`,
-      nav: r => [[r.home, 'Pratik'], [r.lessons, 'Kurs'], [r.progress, 'İlerleme'], [r.test, 'Test']],
+      nav: r => [[r.home, 'Pratik'], [r.lessons, 'Kurs'], [r.progress, 'İlerleme'], [r.test, 'Test'], [r.games, 'Oyunlar']],
       navAria: 'Ana gezinme',
       enter: 'Başla',
       eyebrow: 'TypingEase kursu',

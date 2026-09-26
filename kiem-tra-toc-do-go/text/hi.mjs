@@ -4,7 +4,6 @@
  * Đơn vị giữ "WPM" như ui.hi.js. Tiếng Hindi không đổi dạng danh từ sau số ở đây ("5 दिन", "{lessons} पाठ").
  */
 export default {
-  live: false,
   slug: 'typing-test',
   title: 'हिंदी टाइपिंग टेस्ट: स्पीड और सटीकता जाँचें | TypingEase',
   description: 'मुफ़्त हिंदी टाइपिंग टेस्ट: ब्राउज़र में 1, 5 या 10 मिनट इनस्क्रिप्ट कीबोर्ड पर टाइप करें और अपनी स्पीड (WPM), सटीकता और गलतियाँ देखें, बिना रजिस्ट्रेशन।',

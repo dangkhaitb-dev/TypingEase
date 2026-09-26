@@ -6,7 +6,6 @@
  * như tro-choi/text/zh-tw.mjs. typing-test.js phải đọc cờ này (hiện chưa) trước khi bỏ `live: false`.
  */
 export default {
-  live: false,
   typeByPosition: true,
   slug: 'dazi-ceyan',
   title: '線上打字測試：注音打字速度與準確率 | TypingEase',

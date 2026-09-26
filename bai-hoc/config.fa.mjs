@@ -20,8 +20,8 @@ export default {
   curriculumScript: '/data/curriculum.fa.js',
   ui: '/i18n/ui.fa.js',
   routes: {
-    home: '/fa/', lessons: '/fa/darsha/', learn: '/fa/amoozesh/', test: null,
-    progress: '/fa/pishraft/', free: null, weak: null, guide: null, wpm: null
+    home: '/fa/', lessons: '/fa/darsha/', learn: '/fa/amoozesh/', test: '/fa/test-tayp/',
+    progress: '/fa/pishraft/', games: '/fa/bazi-tayp/', free: null, weak: null, guide: null, wpm: null
   },
   s: {
     title: c => `دورهٔ آموزش تایپ فارسی: ${c.sequence.length} درس | TypingEase`,
@@ -32,7 +32,7 @@ export default {
       h1: (c, f) => `دورهٔ تایپ ده‌انگشتی · ${f.name} · ${c.sequence.length} درس`
     },
     description: c => `دورهٔ رایگان تمرین تایپ فارسی: ${c.units.length} بخش و ${c.sequence.length} درس روی صفحه‌کلید استاندارد فارسی، از ردیف پایه تا رقم‌های فارسی، نشانه‌ها و متن‌های بلند.`,
-    nav: r => [[r.home, 'تمرین'], [r.lessons, 'دوره'], [r.progress, 'پیشرفت'], [r.test, 'آزمون']],
+    nav: r => [[r.home, 'تمرین'], [r.lessons, 'دوره'], [r.progress, 'پیشرفت'], [r.test, 'آزمون'], [r.games, 'بازی']],
     navAria: 'ناوبری اصلی',
     enter: 'شروع',
     eyebrow: 'دورهٔ TypingEase',

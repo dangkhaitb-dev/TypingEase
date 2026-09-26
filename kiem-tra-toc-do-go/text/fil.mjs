@@ -4,7 +4,6 @@
  * Đơn vị WPM như ui.fil.js. Xưng "ikaw/mo"; "key", "keyboard", "Shift" giữ tiếng Anh. Không chia số nhiều.
  */
 export default {
-  live: false,
   slug: 'typing-test',
   title: 'Libreng typing speed test: WPM at katumpakan | TypingEase',
   description: 'Libreng typing test sa browser: mag-type nang 1, 5 o 10 minuto at makita ang iyong WPM, katumpakan at mga mali. Walang sign-up at walang account.',

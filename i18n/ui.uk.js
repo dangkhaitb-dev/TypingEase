@@ -37,7 +37,7 @@
       lessons: '/uk/uroky/',
       learn: '/uk/vchytysia/',
       // Chưa có các trang này bằng tiếng Ukraina. `null` là tín hiệu BỎ liên kết.
-      test: null,
+      test: '/uk/test-shvydkosti-druku/',
       progress: '/uk/prohres/',
       free: null,
       weak: null,

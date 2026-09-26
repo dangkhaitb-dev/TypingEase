@@ -5,7 +5,6 @@
  * sang chế độ tiếng Anh; trang nói thẳng điều đó. WPM = chữ cái pinyin chia năm, không quy ra số chữ Hán.
  */
 export default {
-  live: false,
   slug: 'dazi-ceshi',
   title: '在线打字测试：拼音打字速度与准确率 | TypingEase',
   description: '免费在线打字测试：关掉输入法，用拼音打 1 分钟、5 分钟或 10 分钟，查看 WPM、准确率和错误数。不用注册。',

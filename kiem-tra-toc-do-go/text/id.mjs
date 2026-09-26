@@ -4,7 +4,6 @@
  * menit) như ui.id.js và tro-choi/text/id.mjs. Xưng "kamu". Tiếng Indonesia không chia số nhiều.
  */
 export default {
-  live: false,
   slug: 'tes-mengetik',
   title: 'Tes mengetik online gratis: KPM dan ketepatan | TypingEase',
   description: 'Tes mengetik gratis di browser: ketik selama 1, 5, atau 10 menit, lalu lihat kecepatan mengetik dalam KPM, ketepatan, dan jumlah salah. Tanpa daftar.',

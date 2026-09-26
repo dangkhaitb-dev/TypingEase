@@ -3,7 +3,6 @@
  * Trang so chữ Latin, nên người học tắt bộ gõ hoặc chuyển nó sang chế độ tiếng Anh. Không có trang
  * kiểm tra tốc độ tiếng Trung, nên {test} rơi về trang khoá học. */
 export default {
-  live: false,
   slug: 'dazi-youxi',
   title: '免费打字游戏：用拼音练盲打 | TypingEase',
   description: '三个免费打字游戏：单词雨、追影赛跑和找键。在浏览器里用你自己的键盘练拼音盲打，不用注册，最好成绩只保存在本机。',

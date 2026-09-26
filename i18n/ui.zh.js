@@ -18,7 +18,7 @@ window.TypingEaseUI = {
     lessons: '/zh/kecheng/',
     learn: '/zh/xuexi/',
     // Chưa có các trang này bằng tiếng Trung. `null` là tín hiệu BỎ liên kết.
-    test: null,
+    test: '/zh/dazi-ceshi/',
     progress: '/zh/jindu/',
     free: null,
     weak: null,

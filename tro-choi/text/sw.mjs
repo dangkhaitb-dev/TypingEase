@@ -2,7 +2,6 @@
  * Maneno yanatoka data/words/sw.js, benki ileile ya kozi ya /sw/. Bố cục 118 = QWERTY Mỹ, không phím
  * chết: gõ thẳng. Thuật ngữ theo data/courses/sw.js (kitufe/vitufe, kibodi, kitufe cha nafasi). */
 export default {
-  live: false,
   slug: 'michezo-ya-kuandika',
   title: 'Michezo ya kuandika bure kwenye kibodi yako | TypingEase',
   description: 'Michezo mitatu ya kuandika bure: Mvua ya Maneno, Mbio za Kivuli na Windo la Vitufe. Jifunze kuandika kwa vidole kumi kwenye kibodi yako, bila kujisajili.',

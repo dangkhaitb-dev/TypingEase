@@ -2,7 +2,6 @@
  * diambil daripada data/words/ms.js, bank perkataan yang sama dengan kursus /ms/. Bố cục 116 = QWERTY
  * Mỹ, không phím chết: gõ thẳng. Xưng "anda" như khoá học. */
 export default {
-  live: false,
   slug: 'permainan-menaip',
   title: 'Permainan menaip percuma di papan kekunci anda | TypingEase',
   description: 'Tiga permainan menaip percuma: Hujan Kata, Lumba Bayang dan Buru Kekunci. Berlatih menaip sentuh pada papan kekunci anda dalam pelayar, tanpa daftar.',

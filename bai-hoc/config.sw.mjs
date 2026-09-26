@@ -18,8 +18,8 @@ export default {
     curriculumScript: '/data/curriculum.sw.js',
     ui: '/i18n/ui.sw.js',
     routes: {
-      home: '/sw/', lessons: '/sw/masomo/', learn: '/sw/jifunze/', test: null,
-      progress: '/sw/maendeleo/', free: null, weak: null, guide: null, wpm: null
+      home: '/sw/', lessons: '/sw/masomo/', learn: '/sw/jifunze/', test: '/sw/jaribio-la-kuandika/',
+      progress: '/sw/maendeleo/', games: '/sw/michezo-ya-kuandika/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `Kozi ya kuandika kwa vidole kumi: masomo ${c.sequence.length} | TypingEase`,
@@ -31,7 +31,7 @@ export default {
         h1: (c, f) => `Kozi ya kuandika · ${f.name} · masomo ${c.sequence.length}`
       },
       description: c => `Masomo ${c.sequence.length} ya kuandika kwa vidole kumi katika vitengo ${c.units.length}, kuanzia safu ya msingi hadi namba, alama na maandishi marefu. Bure, kwa maneno ya Kiswahili sanifu.`,
-      nav: r => [[r.home, 'Fanya mazoezi'], [r.lessons, 'Kozi'], [r.progress, 'Maendeleo'], [r.test, 'Jaribio']],
+      nav: r => [[r.home, 'Fanya mazoezi'], [r.lessons, 'Kozi'], [r.progress, 'Maendeleo'], [r.test, 'Jaribio'], [r.games, 'Michezo']],
       navAria: 'Urambazaji mkuu',
       enter: 'Anza',
       eyebrow: 'Kozi ya TypingEase',

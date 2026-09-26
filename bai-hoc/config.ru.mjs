@@ -29,7 +29,7 @@ export default {
     ui: '/i18n/ui.ru.js',
     routes: {
       home: '/ru/', lessons: '/ru/uroki/', learn: '/ru/uchitsya/', test: '/ru/test-skorosti-pechati/',
-      progress: '/ru/progress/', free: null, weak: null, guide: null, wpm: null
+      progress: '/ru/progress/', games: '/ru/igry-dlya-pechati/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `Печать десятью пальцами: курс, ${lessons(c)} | TypingEase`,
@@ -40,7 +40,7 @@ export default {
         h1: (c, f) => `Курс слепой печати · ${f.name} · ${lessons(c)}`
       },
       description: c => `Бесплатный курс печати десятью пальцами на раскладке ЙЦУКЕН: ${units(c)} и ${lessons(c)}, от основного ряда до цифр, знаков и длинных текстов.`,
-      nav: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогресс'], [r.test, 'Тест']],
+      nav: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогресс'], [r.test, 'Тест'], [r.games, 'Игры']],
       navAria: 'Основная навигация',
       enter: 'Начать',
       eyebrow: 'Курс TypingEase',

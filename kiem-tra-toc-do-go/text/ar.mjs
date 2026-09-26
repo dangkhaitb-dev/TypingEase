@@ -9,7 +9,6 @@ const plural = (n, one, two, few, many) =>
   n === 1 ? one : n === 2 ? two : n >= 3 && n <= 10 ? `${n} ${few}` : `${n} ${many}`;
 
 export default {
-  live: false,
   slug: 'ikhtibar-alkitaba',
   title: 'اختبار سرعة الكتابة: السرعة والدقة | TypingEase',
   description: 'اختبار سرعة الكتابة مجانا في المتصفح على لوحة المفاتيح العربية: اكتب دقيقة أو 5 أو 10 دقائق وشاهد عدد الكلمات في الدقيقة ودقتك وأخطاءك. بلا تسجيل.',

@@ -19,8 +19,8 @@ export default {
     curriculumScript: '/data/curriculum.he.js',
     ui: '/i18n/ui.he.js',
     routes: {
-      home: '/he/', lessons: '/he/shiurim/', learn: '/he/lilmod/', test: null,
-      progress: '/he/hitkadmut/', free: null, weak: null, guide: null, wpm: null
+      home: '/he/', lessons: '/he/shiurim/', learn: '/he/lilmod/', test: '/he/mivchan-hakldada/',
+      progress: '/he/hitkadmut/', games: '/he/mishakei-hakldada/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `קורס הקלדה עיוורת בעברית: ${c.sequence.length} שיעורים | TypingEase`,
@@ -31,7 +31,7 @@ export default {
         h1: (c, f) => `קורס הקלדה עיוורת · ${f.name} · ${c.sequence.length} שיעורים`
       },
       description: c => `קורס הקלדה עיוורת בחינם על המקלדת העברית התקנית: ${c.units.length} יחידות ו־${c.sequence.length} שיעורים, משורת הבית ועד הספרות, הסימנים והטקסטים הארוכים, עם האותיות הסופיות במקומן.`,
-      nav: r => [[r.home, 'תרגול'], [r.lessons, 'קורס'], [r.progress, 'התקדמות'], [r.test, 'מבחן']],
+      nav: r => [[r.home, 'תרגול'], [r.lessons, 'קורס'], [r.progress, 'התקדמות'], [r.test, 'מבחן'], [r.games, 'משחקים']],
       navAria: 'ניווט ראשי',
       enter: 'להתחיל',
       eyebrow: 'הקורס של TypingEase',

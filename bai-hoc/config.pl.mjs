@@ -28,7 +28,7 @@ export default {
     ui: '/i18n/ui.pl.js',
     routes: {
       home: '/pl/', lessons: '/pl/lekcje/', learn: '/pl/nauka/', test: '/pl/test-pisania/',
-      progress: '/pl/postepy/', free: null, weak: null, guide: null, wpm: null
+      progress: '/pl/postepy/', games: '/pl/gry-do-pisania/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `Kurs pisania dziesięcioma palcami: ${lessons(c.sequence.length)} | TypingEase`,
@@ -38,7 +38,7 @@ export default {
         h1: (c, f) => `Kurs pisania bezwzrokowego · ${f.name} · ${lessons(c.sequence.length)}`
       },
       description: c => `Darmowy kurs pisania dziesięcioma palcami na polskiej klawiaturze programisty: ${units(c.units.length)} i ${lessons(c.sequence.length)}, od rzędu podstawowego po cyfry, znaki i długie teksty.`,
-      nav: r => [[r.home, 'Ćwicz'], [r.lessons, 'Kurs'], [r.progress, 'Postępy'], [r.test, 'Test']],
+      nav: r => [[r.home, 'Ćwicz'], [r.lessons, 'Kurs'], [r.progress, 'Postępy'], [r.test, 'Test'], [r.games, 'Gry']],
       navAria: 'Nawigacja główna',
       enter: 'Zacznij',
       eyebrow: 'Kurs TypingEase',

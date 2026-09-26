@@ -1,19 +1,194 @@
 <!doctype html>
 <html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- URL cũ, giữ để không 404. Chuyển về trang CÙNG ngôn ngữ gần nhất (Đợt 0 SEO, 2026-09-25) —
-     trước đây nó đưa người đọc tiếng Anh/Nhật sang bài tiếng Việt. -->
-<meta http-equiv="refresh" content="0; url=/ja/">
-<link rel="canonical" href="https://typingease.site/ja/">
-<meta name="robots" content="noindex, follow">
-<title>このページは移動しました | TypingEase</title>
-<style>body{margin:0;min-height:100vh;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.75rem;text-align:center;padding:1.5rem;font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;color:#1f2933;background:#f7f8fa}a{color:#2563eb}</style>
-</head>
-<body>
-<p>このページは次の場所に移動しました: <a href="/ja/">タイピング練習（ローマ字入力）</a>.</p>
-<p><a href="/ja/">新しいページへ &rarr;</a></p>
-<script>location.replace('/ja/');</script>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タイピングテスト：ローマ字の速さを測る | TypingEase</title>
+    <meta name="description" content="無料のタイピングテスト。IME をオフにしてローマ字を1分・5分・10分打ち、WPM・正確さ・ミスの数を確認できます。登録は不要です。" />
+    <link rel="canonical" href="https://typingease.site/ja/typing-test/" />
+    <!-- seo:head -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TypingEase" />
+    <meta property="og:locale" content="ja_JP" />
+    <meta property="og:title" content="タイピングテスト：ローマ字の速さを測る | TypingEase" />
+    <meta property="og:description" content="無料のタイピングテスト。IME をオフにしてローマ字を1分・5分・10分打ち、WPM・正確さ・ミスの数を確認できます。登録は不要です。" />
+    <meta property="og:url" content="https://typingease.site/ja/typing-test/" />
+    <meta property="og:image" content="https://typingease.site/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="TypingEase" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"WebApplication","name":"タイピングテスト：ローマ字の速さを測る","description":"無料のタイピングテスト。IME をオフにしてローマ字を1分・5分・10分打ち、WPM・正確さ・ミスの数を確認できます。登録は不要です。","url":"https://typingease.site/ja/typing-test/","inLanguage":"ja","applicationCategory":"EducationalApplication","operatingSystem":"Any","browserRequirements":"Requires JavaScript","isAccessibleForFree":true,"provider":{"@type":"Organization","name":"TypingEase","url":"https://typingease.site/","logo":"https://typingease.site/assets/apple-touch-icon.png"}}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"トップページ","item":"https://typingease.site/ja/"},{"@type":"ListItem","position":2,"name":"タイピングテスト","item":"https://typingease.site/ja/typing-test/"}]}</script>
+    <!-- /seo:head -->
+    <link rel="alternate" hreflang="vi" href="https://typingease.site/kiem-tra-toc-do-go/" />
+    <link rel="alternate" hreflang="en" href="https://typingease.site/en/typing-test/" />
+    <link rel="alternate" hreflang="es" href="https://typingease.site/es/test-de-mecanografia/" />
+    <link rel="alternate" hreflang="de" href="https://typingease.site/de/tipptest/" />
+    <link rel="alternate" hreflang="it" href="https://typingease.site/it/test-di-battitura/" />
+    <link rel="alternate" hreflang="fr" href="https://typingease.site/fr/test-de-frappe/" />
+    <link rel="alternate" hreflang="ar" href="https://typingease.site/ar/ikhtibar-alkitaba/" />
+    <link rel="alternate" hreflang="bn" href="https://typingease.site/bn/typing-test/" />
+    <link rel="alternate" hreflang="zh" href="https://typingease.site/zh/dazi-ceshi/" />
+    <link rel="alternate" hreflang="zh-TW" href="https://typingease.site/zh-tw/dazi-ceyan/" />
+    <link rel="alternate" hreflang="nl" href="https://typingease.site/nl/typetest/" />
+    <link rel="alternate" hreflang="fil" href="https://typingease.site/fil/typing-test/" />
+    <link rel="alternate" hreflang="he" href="https://typingease.site/he/mivchan-hakldada/" />
+    <link rel="alternate" hreflang="hi" href="https://typingease.site/hi/typing-test/" />
+    <link rel="alternate" hreflang="id" href="https://typingease.site/id/tes-mengetik/" />
+    <link rel="alternate" hreflang="ja" href="https://typingease.site/ja/typing-test/" />
+    <link rel="alternate" hreflang="ko" href="https://typingease.site/ko/taja-teseuteu/" />
+    <link rel="alternate" hreflang="ms" href="https://typingease.site/ms/ujian-menaip/" />
+    <link rel="alternate" hreflang="fa" href="https://typingease.site/fa/test-tayp/" />
+    <link rel="alternate" hreflang="pl" href="https://typingease.site/pl/test-pisania/" />
+    <link rel="alternate" hreflang="pt" href="https://typingease.site/pt/teste-de-digitacao/" />
+    <link rel="alternate" hreflang="ru" href="https://typingease.site/ru/test-skorosti-pechati/" />
+    <link rel="alternate" hreflang="sw" href="https://typingease.site/sw/jaribio-la-kuandika/" />
+    <link rel="alternate" hreflang="th" href="https://typingease.site/th/thotsop-phim/" />
+    <link rel="alternate" hreflang="tr" href="https://typingease.site/tr/klavye-hiz-testi/" />
+    <link rel="alternate" hreflang="uk" href="https://typingease.site/uk/test-shvydkosti-druku/" />
+    <link rel="alternate" hreflang="ur" href="https://typingease.site/ur/typing-test/" />
+    <link rel="alternate" hreflang="x-default" href="https://typingease.site/en/typing-test/" />
+    <!-- Trang sinh bằng scripts/build-test-pages.mjs từ kiem-tra-toc-do-go/text/ja.mjs và bảng test
+         trong i18n/ui.ja.js. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/kiem-tra-toc-do-go/test.css" />
+    <link rel="stylesheet" href="/kiem-tra-toc-do-go/chart.css" />
+  </head>
+  <body>
+    <header class="topbar test-header">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="メインメニュー">
+        <a href="/ja/">練習</a>
+        <a href="/ja/renshu/">コース</a>
+        <a href="/ja/shinchoku/">進み具合</a>
+        <a class="active" href="/ja/typing-test/">テスト</a>
+        <a href="/ja/typing-games/">ゲーム</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="言語とキーボードを選ぶ">ホーム</a></div>
+    </header>
+
+    <main class="test-main">
+      <nav class="breadcrumb" aria-label="パンくずリスト">
+        <a href="/ja/">トップページ</a><span aria-hidden="true">›</span><span>タイピングテスト</span>
+      </nav>
+
+      <article>
+        <header class="test-hero">
+          <p class="eyebrow"><i></i> 無料のタイピングテスト</p>
+          <h1>タイピングテスト</h1>
+          <p>15秒から10分まで長さを選び、上の文章を打つと WPM・正確さ・ミスの数がわかります。文章は日本語をローマ字で書いたもので、IME をオフ（半角英数）にしてそのまま打ちます。時間は最初のキーを押した瞬間から始まります。</p>
+        </header>
+
+        <section class="typing-test" aria-labelledby="test-title">
+          <div class="test-heading"><h2 id="test-title">1分タイピングテスト</h2><p id="test-message" aria-live="polite">準備ができたら打ち始めてください。</p></div>
+          <div class="duration-picker" role="group" aria-label="テストの長さ">
+            <button type="button" data-duration="15" aria-pressed="false">15秒</button>
+            <button type="button" data-duration="30" aria-pressed="false">30秒</button>
+            <button type="button" data-duration="60" aria-pressed="true" class="selected">1分</button>
+            <button type="button" data-duration="120" aria-pressed="false">2分</button>
+            <button type="button" data-duration="180" aria-pressed="false">3分</button>
+            <button type="button" data-duration="300" aria-pressed="false">5分</button>
+            <button type="button" data-duration="600" aria-pressed="false">10分</button>
+          </div>
+          <div class="test-stats" aria-label="現在の結果">
+            <div><span>時間</span><strong id="time-left">1:00</strong></div>
+            <div><span>WPM</span><strong id="wpm">0</strong></div>
+            <div><span>正確さ</span><strong id="accuracy">--<small>%</small></strong></div>
+            <div><span>ミス</span><strong id="errors">0</strong></div>
+            <div><span>安定度</span><strong id="consistency">--<small>%</small></strong></div>
+          </div>
+          <p class="test-prompt" id="test-prompt" aria-label="打つ文章"></p>
+          <div class="input-head"><label for="typing-input">ここに打ち始めてください</label><button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" title="打つたびにキー音を鳴らす（Alt+S）">🔊 キー音</button></div>
+          <textarea id="typing-input" rows="4" autocomplete="off" autocapitalize="off" spellcheck="false" placeholder="ここをクリックして打ち始めてください..."></textarea>
+          <div class="test-actions"><button class="primary-button" id="restart" type="button">もう一度 <span>↻</span></button><p>WPM は、入力した文字数を5で割り、打った時間（分）で割った値です。ローマ字1文字、スペース1つ、句読点1つがそれぞれ1文字です。</p></div>
+          <section class="test-result" id="test-result" aria-live="polite" hidden>
+            <p>あなたの結果</p>
+            <strong id="result-wpm">0 WPM</strong>
+            <div class="result-details"><span>正確さ <b id="result-accuracy">--%</b></span><span>ミス <b id="result-errors">0</b></span><span>安定度 <b id="result-consistency">--%</b></span></div>
+            <p class="result-comparison" id="result-comparison" hidden></p>
+          </section>
+        </section>
+
+        <section class="progress-section" aria-labelledby="progress-title">
+          <div class="progress-heading"><div><p class="eyebrow"><i></i> 練習の記録</p><h2 id="progress-title">あなたの進み具合</h2></div><div class="progress-range" role="group" aria-label="期間"><button type="button" data-progress-range="7" aria-pressed="true" class="selected">7日間</button><button type="button" data-progress-range="30" aria-pressed="false">30日間</button></div></div>
+          <div class="progress-metric" role="group" aria-label="グラフの指標"><button type="button" data-progress-metric="wpm" aria-pressed="true" class="selected">WPM</button><button type="button" data-progress-metric="accuracy" aria-pressed="false">正確さ</button></div>
+          <p class="progress-note">長さの違うテストの結果が混ざっている場合があります。</p>
+          <div class="progress-summary" aria-label="進み具合のまとめ"><div><span>平均 WPM</span><strong id="progress-average-wpm">--</strong></div><div><span>最高 WPM</span><strong id="progress-best-wpm">--</strong></div><div><span>平均の正確さ</span><strong id="progress-average-accuracy">--%</strong></div><div><span>テストの回数</span><strong id="progress-test-count">0</strong></div></div>
+          <p class="progress-empty" id="progress-empty">まだデータが足りません。テストを何回か受けると、ここに進み具合が表示されます。</p>
+          <div class="progress-chart-wrap" id="progress-chart-wrap" hidden><svg class="progress-chart" id="progress-chart" viewBox="0 0 640 220" role="img" aria-label="進み具合のグラフ"></svg></div>
+          <p class="progress-trend" id="progress-trend" aria-live="polite"></p>
+          <p class="sr-only" id="progress-summary-text" aria-live="polite"></p>
+        </section>
+
+        <section>
+          <h2>テストの進め方</h2>
+          <p>上に出るのは、日本語の文章を<em>ローマ字</em>で書いたものです。選んだ時間のあいだ、できるだけ正確に打ち写します。打った文字はすぐに見本と比べられ、合っている文字はそのまま、違う文字は色で示されます。時間が残っていれば、Backspace で消して打ち直せます。</p><p>このテストは IME に入る前の打鍵そのものを測ります。始める前に IME を<em>オフ（半角英数）</em>にしてください。IME がオンだとローマ字がかなに変わり、見本と一致しません。綴りは IME に打つときのとおりです。学校は gakkou、切手は kitte、助詞の「は・を・へ」は ha・wo・he、語末の「ん」は nn、長音の「ー」はマイナスキーの - です。大文字は使わず、句読点は半角の . と , です。計算はすべてブラウザの中で行われ、登録は不要で、結果はこの端末にだけ保存されます。</p>
+        </section>
+
+        <section>
+          <h2>WPM と打鍵数</h2>
+          <p>このテストは速さを <em>WPM</em>（1分あたりの語数）で表します。単語の長さはまちまちなので、スペースや句読点も含めた5文字を1語として数えます。1分間に250文字打てば 50 WPM です。</p><p>日本のタイピング練習では、1分あたりの打鍵数やかなの数で速さを表すことがよくあります。このテストの文字はすべてローマ字なので、WPM を5倍すると、スペースと句読点を含めた1分あたりの打鍵数の目安になります。一方、かな1文字に必要なキーの数は「あ」の1つから「しゅ」の3つまでばらつくため、WPM からかなの数をきちんと求めることはできません。同じテストで自分の記録どうしを比べるのがいちばん確かです。</p>
+        </section>
+
+        <section>
+          <h2>ローマ字入力での数え方</h2>
+          <p>ローマ字1文字、スペース1つ、句読点1つがそれぞれ1文字です。「か」は ka で2文字、「がっこう」は gakkou で6文字になります。1文字抜かしたり余分に打ったりすると、そのあとの文字がすべて1つずれるので、すぐに気づけます。</p><p>JIS 配列でも、ローマ字入力で使う a から z の位置は英語の配列と同じです。句読点の . と , もホームポジションの右下にあり、薬指と中指で打ちます。長音の - は数字の0の右隣で、右手の小指が担当します。促音の「っ」は子音を2回打つだけなので、kitte や gakkou のように同じキーを続けて押す動きに慣れておくと、全体のリズムが崩れにくくなります。</p>
+        </section>
+
+        <section>
+          <h2>1分、5分、10分：どれを選ぶか</h2>
+          <p>1分以下の短いテストでわかるのは、主に最高速度です。集中しきることができ、疲れもほとんど影響しませんが、ミスひとつが結果を大きく左右します。</p><p>5分や10分のテストで測るのは持久力です。時間がたつと集中が切れ、手も疲れてきます。そのときにフォームとリズムを保てるかどうかが表れます。結果はふつう短いテストより少し低く、長いメールや報告書を書くときの実際の速さに近くなります。過去の自分と比べるなら、毎回同じ長さを選んでください。そうしないと、短距離走とマラソンを比べることになります。</p>
+        </section>
+
+        <section>
+          <h2>正確さの見方</h2>
+          <p>正確さは、入力した文字のうち見本と一致した文字の割合です。隣にあるミスの数は、テストが終わった時点で間違ったまま残っている文字の数です。直したミスはもう数えませんが、直すのに使った時間は戻りません。WPM は間違った文字も含めて計算するので、ミスが多いのに速さだけ高い場合は、実力より良く見えていることになります。</p><p>目安として、正確さが95%を下回るなら少し速度を落としましょう。実際の文章では、ミスのたびに時間がかかり、Backspace を何度も押すとリズムが崩れます。安定度は、テストのあいだ速さが一定だったか、大きく上下したかを示します。</p>
+        </section>
+
+        <section>
+          <h2>速く打つコツ</h2>
+          <ul><li>ホームポジションから10本の指で打つ方法を身につけましょう。左の人差し指を F、右の人差し指を J に置き、親指はスペースキーに添えます。</li><li>キーボードを見ないでください。最初は遅くなりますが、そうすることで指がキーの位置を覚えます。</li><li>nn、ou、kk のように、ローマ字でよく出る並びを指に覚えさせましょう。</li><li>週に一度1時間練習するより、毎日10分のほうが効果があります。</li><li>まず正確さを大事にしてください。指が慣れれば、速さはあとからついてきます。</li></ul><p><a class="inline-link" href="/ja/renshu/">全 36 レッスンの講座</a>では、ホームポジションから句読点まで、ローマ字入力の打ち方を順番に練習できます。</p>
+        </section>
+
+        <section>
+          <h2>よくある質問</h2>
+          <div class="faq">
+            <details><summary>WPM とは何ですか？</summary><p>1分あたりの語数です。スペースを含む5文字を1語として数えるので、文章に長い単語が多くても短い単語が多くても、結果を公平に比べられます。</p></details>
+            <details><summary>IME はオンとオフのどちらにしますか？</summary><p>オフ（半角英数）です。IME がオンだとローマ字がかなや漢字に変わり、見本と一致しなくなります。</p></details>
+            <details><summary>なぜかなや漢字ではなくローマ字を打つのですか？</summary><p>ローマ字入力で日本語を打つとき、指が実際に打っているのはローマ字だからです。このテストは IME が変換する前の打鍵の速さと正確さを測ります。変換の操作は含まれません。</p></details>
+            <details><summary>打鍵数に換算できますか？</summary><p>おおよそならできます。このテストの文字はすべてローマ字なので、WPM を5倍すると、スペースと句読点を含めた1分あたりの打鍵数の目安になります。</p></details>
+            <details><summary>どの長さを選べばいいですか？</summary><p>1分は最高速度を、5分や10分は持久力を示します。過去の結果と比べるなら、いつも同じ長さを選んでください。</p></details>
+            <details><summary>結果は保存されますか？</summary><p>この端末のこのブラウザにだけ保存されます。アカウントも登録もありません。ブラウザのデータを消すと記録も消えます。</p></details>
+          </div>
+        </section>
+
+        <section class="test-cta">
+          <p class="eyebrow"><i></i> もっと速く打ちたいなら</p>
+          <h2>ブラインドタッチを身につける</h2>
+          <p>自分のキーボード配列で 36 レッスン。ホームポジションから始めます。</p>
+          <a class="primary-button" href="/ja/renshu/">講座を見る <span>→</span></a>
+        </section>
+      </article>
+    </main>
+
+    <footer class="test-footer"><a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>少しゆっくり打つほど、遠くまで行けます。</p>
+      <!-- legal --><p class="footer-legal"><a href="/ja/about/">TypingEase について</a><span aria-hidden="true"> · </span><a href="/ja/terms/">利用規約</a><span aria-hidden="true"> · </span><a href="/ja/privacy/">プライバシーポリシー</a></p><!-- /legal --></footer>
+    <script src="/i18n/ui.ja.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/kiem-tra-toc-do-go/typing-test.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
 </html>

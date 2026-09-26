@@ -6,7 +6,6 @@
  * sinh sẽ ghi đè nó khi bật trang này.
  */
 export default {
-  live: false,
   slug: 'typing-test',
   title: 'タイピングテスト：ローマ字の速さを測る | TypingEase',
   description: '無料のタイピングテスト。IME をオフにしてローマ字を1分・5分・10分打ち、WPM・正確さ・ミスの数を確認できます。登録は不要です。',

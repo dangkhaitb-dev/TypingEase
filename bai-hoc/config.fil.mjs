@@ -18,8 +18,8 @@ export default {
     curriculumScript: '/data/curriculum.fil.js',
     ui: '/i18n/ui.fil.js',
     routes: {
-      home: '/fil/', lessons: '/fil/aralin/', learn: '/fil/matuto/', test: null,
-      progress: '/fil/pag-unlad/', free: null, weak: null, guide: null, wpm: null
+      home: '/fil/', lessons: '/fil/aralin/', learn: '/fil/matuto/', test: '/fil/typing-test/',
+      progress: '/fil/pag-unlad/', games: '/fil/laro-sa-pagta-type/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `Typing lessons sa Filipino: ${c.sequence.length} libreng aralin | TypingEase`,
@@ -29,7 +29,7 @@ export default {
         h1: (c, f) => `Kurso sa pagtitipa · ${f.name} · ${c.sequence.length} aralin`
       },
       description: c => `Libreng kurso sa pagtitipa: ${c.units.length} yunit at ${c.sequence.length} aralin, mula sa gitnang hanay hanggang sa mga numero, simbolo at mahahabang teksto, sa totoong salitang Filipino.`,
-      nav: r => [[r.home, 'Magsanay'], [r.lessons, 'Kurso'], [r.progress, 'Pag-unlad'], [r.test, 'Pagsusulit']],
+      nav: r => [[r.home, 'Magsanay'], [r.lessons, 'Kurso'], [r.progress, 'Pag-unlad'], [r.test, 'Pagsusulit'], [r.games, 'Laro']],
       navAria: 'Pangunahing nabigasyon',
       enter: 'Simulan',
       eyebrow: 'Ang kurso ng TypingEase',

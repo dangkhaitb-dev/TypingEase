@@ -2,7 +2,6 @@
  * z data/words/pl.js, tej samej listy co kurs na układzie Polski (programisty). Kurs nie uczy AltGr,
  * ale w grach pojawiają się też słowa z ą ć ę ł ń ó ś ź ż, więc wskazówka mówi, jak je wpisać. */
 export default {
-  live: false,
   slug: 'gry-do-pisania',
   title: 'Darmowe gry do pisania na klawiaturze | TypingEase',
   description: 'Trzy darmowe gry do pisania na klawiaturze: Deszcz słów, Wyścig z duchem i Polowanie na klawisze. Ćwicz pisanie bezwzrokowe w przeglądarce, bez konta.',

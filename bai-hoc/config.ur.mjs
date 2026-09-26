@@ -20,8 +20,8 @@ export default {
     curriculumScript: '/data/curriculum.ur.js',
     ui: '/i18n/ui.ur.js',
     routes: {
-      home: '/ur/', lessons: '/ur/asbaq/', learn: '/ur/seekhein/', test: null,
-      progress: '/ur/taraqqi/', free: null, weak: null, guide: null, wpm: null
+      home: '/ur/', lessons: '/ur/asbaq/', learn: '/ur/seekhein/', test: '/ur/typing-test/',
+      progress: '/ur/taraqqi/', games: '/ur/typing-games/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `اردو ٹائپنگ کورس: دس انگلیوں سے، ${c.sequence.length} اسباق | TypingEase`,
@@ -32,7 +32,7 @@ export default {
         h1: (c, f) => `ٹائپنگ کورس · ${f.name} · ${c.sequence.length} اسباق`
       },
       description: c => `دس انگلیوں سے اردو ٹائپنگ کا مفت کورس: ${c.units.length} حصے اور ${c.sequence.length} اسباق، بنیادی قطار سے ہندسوں، علامتوں اور لمبی عبارتوں تک، صوتی اردو کی بورڈ پر ھ اور ں سمیت۔`,
-      nav: r => [[r.home, 'مشق'], [r.lessons, 'کورس'], [r.progress, 'پیش رفت'], [r.test, 'امتحان']],
+      nav: r => [[r.home, 'مشق'], [r.lessons, 'کورس'], [r.progress, 'پیش رفت'], [r.test, 'امتحان'], [r.games, 'گیمز']],
       navAria: 'مرکزی نیویگیشن',
       enter: 'شروع کریں',
       eyebrow: 'TypingEase کا کورس',

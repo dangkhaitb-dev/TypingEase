@@ -2,7 +2,6 @@
  * data/words/tr.js'ten gelir, Türkçe Q kursunun kullandığı listenin aynısı. Bütün harfler (ç ğ ı i ö ş ü)
  * kendi tuşundadır; ölü tuş yok, â î û yok. Birim: KDK (ui.tr.js `test.wpmUnit`). */
 export default {
-  live: false,
   slug: 'klavye-oyunlari',
   title: 'Ücretsiz klavye oyunları, kendi klavyende | TypingEase',
   description: 'Üç ücretsiz klavye oyunu: Kelime Yağmuru, Hayalet Yarışı ve Tuş Avı. Kendi klavye düzeninde 10 parmak yazma pratiği yap, tarayıcıda ve kayıt olmadan.',

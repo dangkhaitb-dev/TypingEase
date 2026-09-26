@@ -1735,3 +1735,26 @@ Chủ site chọn "bật 1 đợt ngay" thay vì đợi 1–2 tuần. Vẫn gi�
 - e2e 11h/11i không còn danh sách cứng: đọc slug từ kiem-tra-toc-do-go/text và tro-choi/text, lấy URL có
   trong sitemap. Đợt sau chỉ cần bật, test tự phủ.
 - sw.js v21.
+
+---
+
+# 2026-09-26 — Đợt 3: thêm 5 trang test + 5 trang trò chơi
+
+Chủ site yêu cầu bật đợt 3 ngay sau đợt 2 (cùng ngày).
+- Test: ko /ko/taja-teseuteu/, ja /ja/typing-test/ (thay trang chuyển hướng cũ → bỏ dòng đó khỏi
+  REDIRECTS của e2e 11b), th /th/thotsop-phim/, uk /uk/test-shvydkosti-druku/, id /id/tes-mengetik/.
+- Trò chơi: pl /pl/gry-do-pisania/, ru /ru/igry-dlya-pechati/, tr /tr/klavye-oyunlari/,
+  uk /uk/ihry-dlia-druku/, id /id/game-mengetik/.
+- Có 14 trang test sinh + 2 viết tay, 16 trang trò chơi. Còn chờ (cả test lẫn game): ar bn zh zh-tw fil he hi
+  ms fa sw ur.
+- sw.js v22.
+
+---
+
+# 2026-09-26 — Đợt 4 + 5: mọi ngôn ngữ còn lại
+
+Chủ site yêu cầu bật luôn đợt 4 và 5 rồi deploy. Test + trò chơi cho ms fil sw zh zh-tw ar fa ur he hi bn
+(22 trang). Giờ cả 27 ngôn ngữ đều có trang test (25 sinh + 2 viết tay) và trang trò chơi (27), không còn
+file chữ nào `live: false`. Cách chống spam từ nay dựa vào chất lượng từng trang (nội dung riêng mỗi
+ngôn ngữ, một trang mỗi ngôn ngữ, không trang theo thời lượng), vì không còn tung dần được nữa.
+sw.js v23.

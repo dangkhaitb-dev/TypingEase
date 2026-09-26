@@ -18,8 +18,8 @@ export default {
     curriculumScript: '/data/curriculum.hi.js',
     ui: '/i18n/ui.hi.js',
     routes: {
-      home: '/hi/', lessons: '/hi/path/', learn: '/hi/seekhen/', test: null,
-      progress: '/hi/pragati/', free: null, weak: null, guide: null, wpm: null
+      home: '/hi/', lessons: '/hi/path/', learn: '/hi/seekhen/', test: '/hi/typing-test/',
+      progress: '/hi/pragati/', games: '/hi/typing-games/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `हिंदी टच टाइपिंग कोर्स: ${c.sequence.length} पाठ | TypingEase`,
@@ -30,7 +30,7 @@ export default {
         h1: (c, f) => `हिंदी टाइपिंग कोर्स · ${f.name} · ${c.sequence.length} पाठ`
       },
       description: c => `इनस्क्रिप्ट कीबोर्ड पर मुफ़्त हिंदी टच टाइपिंग कोर्स: ${c.units.length} यूनिट और ${c.sequence.length} पाठ, मात्राओं और व्यंजनों से लेकर शिफ़्ट वाले स्वरों, अंकों और लंबे अनुच्छेदों तक।`,
-      nav: r => [[r.home, 'अभ्यास'], [r.lessons, 'कोर्स'], [r.progress, 'प्रगति'], [r.test, 'परीक्षा']],
+      nav: r => [[r.home, 'अभ्यास'], [r.lessons, 'कोर्स'], [r.progress, 'प्रगति'], [r.test, 'परीक्षा'], [r.games, 'गेम']],
       navAria: 'मुख्य नेविगेशन',
       enter: 'शुरू करें',
       eyebrow: 'TypingEase का कोर्स',

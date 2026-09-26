@@ -2,7 +2,6 @@
  * data/words/ar.js, the bank the Arabic course is built from. Typed directly with the system's Arabic
  * layout (no IME, no dead keys). Latin digits, as on the rest of /ar/ (ar-u-nu-latn). */
 export default {
-  live: false,
   slug: 'alaab-alkitaba',
   title: 'ألعاب الكتابة مجانا على لوحة المفاتيح العربية | TypingEase',
   description: 'ثلاث ألعاب كتابة مجانية: مطر الكلمات وسباق الشبح وصيد المفاتيح. تدرب على الكتابة باللمس على لوحة المفاتيح العربية في المتصفح، من دون تسجيل.',

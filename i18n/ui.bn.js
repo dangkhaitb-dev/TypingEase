@@ -20,7 +20,7 @@ window.TypingEaseUI = {
     lessons: '/bn/path/',
     learn: '/bn/shikhun/',
     // Chưa có các trang này bằng tiếng Bengali. `null` là tín hiệu BỎ liên kết.
-    test: null,
+    test: '/bn/typing-test/',
     progress: '/bn/agragati/',
     free: null,
     weak: null,

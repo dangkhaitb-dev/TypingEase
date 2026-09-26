@@ -190,9 +190,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'Latihan lain',
     testTitle: 'Tes mengetik', testText: 'Ukur kata per menit dan ketepatanmu dalam tes 15 detik sampai 10 menit.',
     freeTitle: 'Latihan bebas', freeText: 'Tempel teksmu sendiri dan ketik dengan caramu.',
-    nav: { practice: 'Latihan', course: 'Kursus', progress: 'Kemajuan', test: 'Tes', free: 'Latihan bebas', guide: 'Cara mengetik sepuluh jari' },
+    nav: { games: 'Permainan', practice: 'Latihan', course: 'Kursus', progress: 'Kemajuan', test: 'Tes', free: 'Latihan bebas', guide: 'Cara mengetik sepuluh jari' },
     footerTag: 'Pelan sedikit, dan kamu akan melangkah jauh lebih jauh.',
-    routes: { progress: '/id/kemajuan/', test: null, free: null, guide: null }
+    routes: { games: '/id/game-mengetik/', progress: '/id/kemajuan/', test: '/id/tes-mengetik/', free: null, guide: null }
   },
 
   ms: {
@@ -216,9 +216,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'Latihan lain',
     testTitle: 'Ujian menaip', testText: 'Ukur perkataan seminit dan ketepatan anda dalam ujian 15 saat hingga 10 minit.',
     freeTitle: 'Latihan bebas', freeText: 'Tampal teks anda sendiri dan taip mengikut cara anda.',
-    nav: { practice: 'Latihan', course: 'Kursus', progress: 'Kemajuan', test: 'Ujian', free: 'Latihan bebas', guide: 'Cara menaip sepuluh jari' },
+    nav: { games: 'Permainan', practice: 'Latihan', course: 'Kursus', progress: 'Kemajuan', test: 'Ujian', free: 'Latihan bebas', guide: 'Cara menaip sepuluh jari' },
     footerTag: 'Perlahan sedikit, dan anda akan pergi jauh lebih jauh.',
-    routes: { progress: '/ms/kemajuan/', test: null, free: null, guide: null }
+    routes: { games: '/ms/permainan-menaip/', progress: '/ms/kemajuan/', test: '/ms/ujian-menaip/', free: null, guide: null }
   },
 
   fil: {
@@ -242,9 +242,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'Iba pang pagsasanay',
     testTitle: 'Typing test', testText: 'Sukatin ang salita kada minuto at katumpakan mo sa test na 15 segundo hanggang 10 minuto.',
     freeTitle: 'Malayang pagsasanay', freeText: 'I-paste ang sarili mong teksto at i-type ito sa paraan mo.',
-    nav: { practice: 'Magsanay', course: 'Kurso', progress: 'Pag-unlad', test: 'Typing test', free: 'Malayang pagsasanay', guide: 'Paano mag-type nang sampung daliri' },
+    nav: { games: 'Laro', practice: 'Magsanay', course: 'Kurso', progress: 'Pag-unlad', test: 'Typing test', free: 'Malayang pagsasanay', guide: 'Paano mag-type nang sampung daliri' },
     footerTag: 'Bumagal nang kaunti, at mas malayo ang mararating mo.',
-    routes: { progress: '/fil/pag-unlad/', test: null, free: null, guide: null }
+    routes: { games: '/fil/laro-sa-pagta-type/', progress: '/fil/pag-unlad/', test: '/fil/typing-test/', free: null, guide: null }
   },
 
   sw: {
@@ -268,9 +268,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'Mazoezi zaidi',
     testTitle: 'Jaribio la kuandika', testText: 'Pima maneno kwa dakika na usahihi wako kwa jaribio la sekunde 15 hadi dakika 10.',
     freeTitle: 'Mazoezi huru', freeText: 'Bandika maandishi yako mwenyewe na uyaandike kwa njia yako.',
-    nav: { practice: 'Mazoezi', course: 'Kozi', progress: 'Maendeleo', test: 'Jaribio', free: 'Mazoezi huru', guide: 'Jinsi ya kuandika kwa vidole kumi' },
+    nav: { games: 'Michezo', practice: 'Mazoezi', course: 'Kozi', progress: 'Maendeleo', test: 'Jaribio', free: 'Mazoezi huru', guide: 'Jinsi ya kuandika kwa vidole kumi' },
     footerTag: 'Punguza mwendo kidogo, na utafika mbali zaidi.',
-    routes: { progress: '/sw/maendeleo/', test: null, free: null, guide: null }
+    routes: { games: '/sw/michezo-ya-kuandika/', progress: '/sw/maendeleo/', test: '/sw/jaribio-la-kuandika/', free: null, guide: null }
   },
   nl: {
     title: 'Leer gratis blind typen op je eigen toetsenbord | TypingEase',
@@ -318,9 +318,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'Więcej ćwiczeń',
     testTitle: 'Test szybkości', testText: 'Zmierz szybkość (WPM) i dokładność w teście od 15 sekund do 10 minut.',
     freeTitle: 'Wolne pisanie', freeText: 'Wklej własny tekst i przepisz go po swojemu.',
-    nav: { practice: 'Ćwicz', course: 'Kurs', progress: 'Postępy', test: 'Test szybkości', free: 'Wolne pisanie', guide: 'Jak pisać bezwzrokowo' },
+    nav: { games: 'Gry', practice: 'Ćwicz', course: 'Kurs', progress: 'Postępy', test: 'Test szybkości', free: 'Wolne pisanie', guide: 'Jak pisać bezwzrokowo' },
     footerTag: 'Pisz trochę wolniej, a zajdziesz dużo dalej.',
-    routes: { progress: '/pl/postepy/', test: '/pl/test-pisania/', free: null, guide: null }
+    routes: { games: '/pl/gry-do-pisania/', progress: '/pl/postepy/', test: '/pl/test-pisania/', free: null, guide: null }
   },
   pt: {
     title: 'Aprenda a digitar com os dez dedos no seu próprio teclado, grátis | TypingEase',
@@ -368,9 +368,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'Daha fazla pratik',
     testTitle: 'Hız testi', testText: '15 saniyeden 10 dakikaya kadar bir testte dakikadaki kelime sayını ve doğruluğunu ölç.',
     freeTitle: 'Serbest pratik', freeText: 'Kendi metnini yapıştır ve istediğin gibi yaz.',
-    nav: { practice: 'Pratik', course: 'Kurs', progress: 'İlerleme', test: 'Hız testi', free: 'Serbest pratik', guide: 'On parmak nasıl yazılır' },
+    nav: { games: 'Oyunlar', practice: 'Pratik', course: 'Kurs', progress: 'İlerleme', test: 'Hız testi', free: 'Serbest pratik', guide: 'On parmak nasıl yazılır' },
     footerTag: 'Biraz daha yavaş git, çok daha uzağa varırsın.',
-    routes: { progress: '/tr/ilerleme/', test: '/tr/klavye-hiz-testi/', free: null, guide: null }
+    routes: { games: '/tr/klavye-oyunlari/', progress: '/tr/ilerleme/', test: '/tr/klavye-hiz-testi/', free: null, guide: null }
   },
   ru: {
     title: 'Слепая печать на твоей клавиатуре, бесплатно | TypingEase',
@@ -393,9 +393,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'Больше практики',
     testTitle: 'Тест скорости', testText: 'Измерь скорость и точность в тесте от 15 секунд до 10 минут.',
     freeTitle: 'Свободная практика', freeText: 'Вставь свой текст и набирай его по-своему.',
-    nav: { practice: 'Практика', course: 'Курс', progress: 'Прогресс', test: 'Тест скорости', free: 'Свободная практика', guide: 'Как печатать вслепую' },
+    nav: { games: 'Игры', practice: 'Практика', course: 'Курс', progress: 'Прогресс', test: 'Тест скорости', free: 'Свободная практика', guide: 'Как печатать вслепую' },
     footerTag: 'Чуть медленнее сейчас — гораздо дальше потом.',
-    routes: { progress: '/ru/progress/', test: '/ru/test-skorosti-pechati/', free: null, guide: null }
+    routes: { games: '/ru/igry-dlya-pechati/', progress: '/ru/progress/', test: '/ru/test-skorosti-pechati/', free: null, guide: null }
   },
   uk: {
     title: 'Безкоштовно навчися друкувати всліпу на своїй клавіатурі | TypingEase',
@@ -418,9 +418,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'Більше практики',
     testTitle: 'Тест швидкості', testText: 'Виміряй швидкість друку і точність у тесті від 15 секунд до 10 хвилин.',
     freeTitle: 'Вільна практика', freeText: 'Встав власний текст і надрукуй його по-своєму.',
-    nav: { practice: 'Практика', course: 'Курс', progress: 'Прогрес', test: 'Тест швидкості', free: 'Вільна практика', guide: 'Як друкувати всліпу' },
+    nav: { games: 'Ігри', practice: 'Практика', course: 'Курс', progress: 'Прогрес', test: 'Тест швидкості', free: 'Вільна практика', guide: 'Як друкувати всліпу' },
     footerTag: 'Трохи повільніше — і зайдеш набагато далі.',
-    routes: { progress: '/uk/prohres/', test: null, free: null, guide: null }
+    routes: { games: '/uk/ihry-dlia-druku/', progress: '/uk/prohres/', test: '/uk/test-shvydkosti-druku/', free: null, guide: null }
   },
   ar: {
     title: 'تعلم الكتابة باللمس على لوحة مفاتيحك أنت، مجانا | TypingEase',
@@ -443,9 +443,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'تدريب إضافي',
     testTitle: 'اختبار السرعة', testText: 'قس سرعتك بالكلمات في الدقيقة ودقتك في اختبار من 15 ثانية إلى 10 دقائق.',
     freeTitle: 'تدريب حر', freeText: 'الصق نصك واكتبه على طريقتك.',
-    nav: { practice: 'تدرب', course: 'الدورة', progress: 'التقدم', test: 'اختبار السرعة', free: 'تدريب حر', guide: 'كيف تكتب باللمس' },
+    nav: { games: 'ألعاب', practice: 'تدرب', course: 'الدورة', progress: 'التقدم', test: 'اختبار السرعة', free: 'تدريب حر', guide: 'كيف تكتب باللمس' },
     footerTag: 'اكتب أبطأ قليلا، تصل أبعد بكثير.',
-    routes: { progress: '/ar/taqaddum/', test: null, free: null, guide: null }
+    routes: { games: '/ar/alaab-alkitaba/', progress: '/ar/taqaddum/', test: '/ar/ikhtibar-alkitaba/', free: null, guide: null }
   },
   fa: {
     title: 'تایپ ده‌انگشتی را روی صفحه‌کلید خودتان یاد بگیرید، رایگان | TypingEase',
@@ -468,9 +468,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'تمرین بیشتر',
     testTitle: 'آزمون تایپ', testText: 'سرعت (کلمه در دقیقه) و دقت خود را در آزمونی از ۱۵ ثانیه تا ۱۰ دقیقه بسنجید.',
     freeTitle: 'تمرین آزاد', freeText: 'متن خودتان را بچسبانید و به روش خودتان تایپ کنید.',
-    nav: { practice: 'تمرین', course: 'دوره', progress: 'پیشرفت', test: 'آزمون تایپ', free: 'تمرین آزاد', guide: 'تایپ ده‌انگشتی چگونه است' },
+    nav: { games: 'بازی', practice: 'تمرین', course: 'دوره', progress: 'پیشرفت', test: 'آزمون تایپ', free: 'تمرین آزاد', guide: 'تایپ ده‌انگشتی چگونه است' },
     footerTag: 'کمی آهسته‌تر بروید، خیلی دورتر می‌رسید.',
-    routes: { progress: '/fa/pishraft/', test: null, free: null, guide: null }
+    routes: { games: '/fa/bazi-tayp/', progress: '/fa/pishraft/', test: '/fa/test-tayp/', free: null, guide: null }
   },
   ur: {
     title: 'اپنے کی بورڈ پر دس انگلیوں سے ٹائپنگ سیکھیں، مفت | TypingEase',
@@ -493,9 +493,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'مزید مشق',
     testTitle: 'ٹائپنگ کا امتحان', testText: '15 سیکنڈ سے 10 منٹ تک کے امتحان میں اپنی رفتار (الفاظ فی منٹ) اور درستی ناپیں۔',
     freeTitle: 'آزاد مشق', freeText: 'اپنی عبارت چسپاں کریں اور اپنے انداز میں لکھیں۔',
-    nav: { practice: 'مشق', course: 'کورس', progress: 'پیش رفت', test: 'ٹائپنگ کا امتحان', free: 'آزاد مشق', guide: 'دس انگلیوں سے ٹائپنگ کیسے کریں' },
+    nav: { games: 'گیمز', practice: 'مشق', course: 'کورس', progress: 'پیش رفت', test: 'ٹائپنگ کا امتحان', free: 'آزاد مشق', guide: 'دس انگلیوں سے ٹائپنگ کیسے کریں' },
     footerTag: 'آہستہ چلنے والا دور تک جاتا ہے۔',
-    routes: { progress: '/ur/taraqqi/', test: null, free: null, guide: null }
+    routes: { games: '/ur/typing-games/', progress: '/ur/taraqqi/', test: '/ur/typing-test/', free: null, guide: null }
   },
   he: {
     title: 'ללמוד הקלדה עיוורת על המקלדת שלכם, בחינם | TypingEase',
@@ -533,7 +533,7 @@ window.TypingEaseLandingText = {
       guide: 'איך מקלידים בעיוורון'
     },
     footerTag: 'קצת יותר לאט, והרבה יותר רחוק.',
-    routes: { progress: '/he/hitkadmut/', test: null, free: null, guide: null }
+    routes: { games: '/he/mishakei-hakldada/', progress: '/he/hitkadmut/', test: '/he/mivchan-hakldada/', free: null, guide: null }
   },
   hi: {
     title: 'अपने ही कीबोर्ड पर टच टाइपिंग सीखें, मुफ़्त | TypingEase',
@@ -556,9 +556,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'और अभ्यास',
     testTitle: 'टाइपिंग परीक्षा', testText: '15 सेकंड से 10 मिनट तक की परीक्षा में अपनी WPM और सटीकता नापें।',
     freeTitle: 'खुला अभ्यास', freeText: 'अपना पाठ चिपकाएँ और अपने तरीके से टाइप करें।',
-    nav: { practice: 'अभ्यास', course: 'कोर्स', progress: 'प्रगति', test: 'टाइपिंग परीक्षा', free: 'खुला अभ्यास', guide: 'टच टाइपिंग कैसे करें' },
+    nav: { games: 'गेम', practice: 'अभ्यास', course: 'कोर्स', progress: 'प्रगति', test: 'टाइपिंग परीक्षा', free: 'खुला अभ्यास', guide: 'टच टाइपिंग कैसे करें' },
     footerTag: 'थोड़ा धीरे चलिए, बहुत दूर तक पहुँचेंगे।',
-    routes: { progress: '/hi/pragati/', test: null, free: null, guide: null }
+    routes: { games: '/hi/typing-games/', progress: '/hi/pragati/', test: '/hi/typing-test/', free: null, guide: null }
   },
   bn: {
     title: 'নিজের কিবোর্ডে দশ আঙুলে টাইপিং শিখুন, বিনামূল্যে | TypingEase',
@@ -581,9 +581,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: 'আরও অনুশীলন',
     testTitle: 'টাইপিং পরীক্ষা', testText: '১৫ সেকেন্ড থেকে ১০ মিনিটের পরীক্ষায় আপনার WPM আর নির্ভুলতা মেপে নিন।',
     freeTitle: 'মুক্ত অনুশীলন', freeText: 'নিজের লেখা বসিয়ে নিজের মতো করে টাইপ করুন।',
-    nav: { practice: 'অনুশীলন', course: 'কোর্স', progress: 'অগ্রগতি', test: 'টাইপিং পরীক্ষা', free: 'মুক্ত অনুশীলন', guide: 'দশ আঙুলে টাইপিং কীভাবে' },
+    nav: { games: 'গেম', practice: 'অনুশীলন', course: 'কোর্স', progress: 'অগ্রগতি', test: 'টাইপিং পরীক্ষা', free: 'মুক্ত অনুশীলন', guide: 'দশ আঙুলে টাইপিং কীভাবে' },
     footerTag: 'একটু ধীরে চলুন, অনেক দূর যাবেন।',
-    routes: { progress: '/bn/agragati/', test: null, free: null, guide: null }
+    routes: { games: '/bn/typing-games/', progress: '/bn/agragati/', test: '/bn/typing-test/', free: null, guide: null }
   },
   th: {
     title: 'เรียนพิมพ์สัมผัสฟรีบนแป้นพิมพ์ของคุณเอง | TypingEase',
@@ -608,7 +608,7 @@ window.TypingEaseLandingText = {
     freeTitle: 'ฝึกอิสระ', freeText: 'วางข้อความของคุณเองแล้วพิมพ์ตามสบาย',
     nav: { games: 'เกม', practice: 'ฝึกพิมพ์', course: 'บทเรียน', progress: 'ความก้าวหน้า', test: 'ทดสอบความเร็ว', free: 'ฝึกอิสระ', guide: 'วิธีพิมพ์สัมผัส' },
     footerTag: 'ช้าลงอีกนิด แล้วจะไปได้ไกลกว่าเดิมมาก',
-    routes: { games: '/th/kem-fuek-phim/', progress: '/th/khwam-kuebna/', test: null, free: null, guide: null }
+    routes: { games: '/th/kem-fuek-phim/', progress: '/th/khwam-kuebna/', test: '/th/thotsop-phim/', free: null, guide: null }
   },
   zh: {
     title: '在你自己的键盘上免费学习盲打 | TypingEase',
@@ -631,9 +631,9 @@ window.TypingEaseLandingText = {
     shortcutsTitle: '更多练习',
     testTitle: '打字速度测试', testText: '在 15 秒到 10 分钟的测试中测量你的 WPM 和准确率。',
     freeTitle: '自由练习', freeText: '粘贴你自己的文本，按自己的方式来打。',
-    nav: { practice: '练习', course: '课程', progress: '进度', test: '打字速度测试', free: '自由练习', guide: '如何盲打' },
+    nav: { games: '游戏', practice: '练习', course: '课程', progress: '进度', test: '打字速度测试', free: '自由练习', guide: '如何盲打' },
     footerTag: '慢一点，你会走得更远。',
-    routes: { progress: '/zh/jindu/', test: null, free: null, guide: null }
+    routes: { games: '/zh/dazi-youxi/', progress: '/zh/jindu/', test: '/zh/dazi-ceshi/', free: null, guide: null }
   },
   ja: {
     title: '自分のキーボードで学ぶ無料のタッチタイピング | TypingEase',
@@ -658,7 +658,7 @@ window.TypingEaseLandingText = {
     freeTitle: '自由練習', freeText: '好きな文章を貼りつけて、自分のペースで打ちます。',
     nav: { games: 'ゲーム', practice: '練習', course: 'コース', progress: '進み具合', test: 'タイピングテスト', free: '自由練習', guide: 'タッチタイピングのやり方' },
     footerTag: '少しゆっくり打つほど、遠くまで行けます。',
-    routes: { games: '/ja/typing-games/', progress: '/ja/shinchoku/', test: null, free: null, guide: null }
+    routes: { games: '/ja/typing-games/', progress: '/ja/shinchoku/', test: '/ja/typing-test/', free: null, guide: null }
   },
   ko: {
     title: '내 자판으로 무료 타자 연습 | TypingEase',
@@ -683,7 +683,7 @@ window.TypingEaseLandingText = {
     freeTitle: '자유 연습', freeText: '원하는 글을 붙여 넣고 직접 쳐요.',
     nav: { games: '게임', practice: '연습', course: '강의', progress: '진도', test: '타자 속도 시험', free: '자유 연습', guide: '자판을 보지 않고 치는 법' },
     footerTag: '조금 천천히 가면 훨씬 멀리 가요.',
-    routes: { games: '/ko/taja-geim/', progress: '/ko/jindo/', test: null, free: null, guide: null }
+    routes: { games: '/ko/taja-geim/', progress: '/ko/jindo/', test: '/ko/taja-teseuteu/', free: null, guide: null }
   },
   'zh-tw': {
     title: '在你自己的鍵盤上免費學盲打 | TypingEase',
@@ -706,8 +706,8 @@ window.TypingEaseLandingText = {
     shortcutsTitle: '更多練習',
     testTitle: '打字速度測驗', testText: '在 15 秒到 10 分鐘的測驗中測量你的 WPM 和準確率。',
     freeTitle: '自由練習', freeText: '貼上你自己的文字，按自己的方式來打。',
-    nav: { practice: '練習', course: '課程', progress: '進度', test: '打字速度測驗', free: '自由練習', guide: '如何盲打' },
+    nav: { games: '遊戲', practice: '練習', course: '課程', progress: '進度', test: '打字速度測驗', free: '自由練習', guide: '如何盲打' },
     footerTag: '慢一點，你會走得更遠。',
-    routes: { progress: '/zh-tw/jindu/', test: null, free: null, guide: null }
+    routes: { games: '/zh-tw/dazi-youxi/', progress: '/zh-tw/jindu/', test: '/zh-tw/dazi-ceyan/', free: null, guide: null }
   }
 };

@@ -18,7 +18,7 @@ window.TypingEaseUI = {
     home: '/fa/',
     lessons: '/fa/darsha/',
     learn: '/fa/amoozesh/',
-    test: null,
+    test: '/fa/test-tayp/',
     progress: '/fa/pishraft/',
     free: null,
     weak: null,

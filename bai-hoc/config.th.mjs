@@ -17,7 +17,7 @@ export default {
     curriculumScript: '/data/curriculum.th.js',
     ui: '/i18n/ui.th.js',
     routes: {
-      home: '/th/', lessons: '/th/bot-rian/', learn: '/th/rian/', test: null,
+      home: '/th/', lessons: '/th/bot-rian/', learn: '/th/rian/', test: '/th/thotsop-phim/',
       progress: '/th/khwam-kuebna/', games: '/th/kem-fuek-phim/', free: null, weak: null, guide: null, wpm: null
     },
     s: {

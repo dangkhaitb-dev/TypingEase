@@ -18,7 +18,7 @@ window.TypingEaseUI = {
     lessons: '/hi/path/',
     learn: '/hi/seekhen/',
     // Chưa có các trang này bằng tiếng Hindi. `null` là tín hiệu BỎ liên kết.
-    test: null,
+    test: '/hi/typing-test/',
     progress: '/hi/pragati/',
     free: null,
     weak: null,

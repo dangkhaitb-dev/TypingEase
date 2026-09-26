@@ -33,8 +33,8 @@ export default {
     curriculumScript: '/data/curriculum.uk.js',
     ui: '/i18n/ui.uk.js',
     routes: {
-      home: '/uk/', lessons: '/uk/uroky/', learn: '/uk/vchytysia/', test: null,
-      progress: '/uk/prohres/', free: null, weak: null, guide: null, wpm: null
+      home: '/uk/', lessons: '/uk/uroky/', learn: '/uk/vchytysia/', test: '/uk/test-shvydkosti-druku/',
+      progress: '/uk/prohres/', games: '/uk/ihry-dlia-druku/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `Друк десятьма пальцями: курс, ${lessons(c.sequence.length)} | TypingEase`,
@@ -45,7 +45,7 @@ export default {
         h1: (c, f) => `Курс сліпого друку · ${f.name} розкладка · ${lessons(c.sequence.length)}`
       },
       description: c => `Безкоштовний курс друку десятьма пальцями на українській розкладці ЙЦУКЕН: ${units(c.units.length)} і ${lessons(c.sequence.length)}, від основного ряду до цифр, знаків і довгих текстів.`,
-      nav: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогрес'], [r.test, 'Тест']],
+      nav: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогрес'], [r.test, 'Тест'], [r.games, 'Ігри']],
       navAria: 'Головна навігація',
       enter: 'Почати',
       eyebrow: 'Курс TypingEase',

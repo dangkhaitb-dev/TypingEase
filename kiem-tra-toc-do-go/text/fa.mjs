@@ -8,7 +8,6 @@
 const fa = n => Number(n).toLocaleString('fa');
 
 export default {
-  live: false,
   slug: 'test-tayp',
   title: 'تست تایپ فارسی: سرعت و دقت تایپ | TypingEase',
   description: 'تست تایپ رایگان در مرورگر با صفحه‌کلید فارسی: ۱، ۵ یا ۱۰ دقیقه تایپ کنید و سرعت خود را به کلمه در دقیقه، همراه با دقت و خطاها، ببینید. بدون ثبت‌نام.',

@@ -16,7 +16,7 @@ window.TypingEaseUI = {
     lessons: '/id/pelajaran/',
     learn: '/id/belajar/',
     // Chưa có các trang này bằng tiếng Indonesia. `null` là tín hiệu BỎ liên kết.
-    test: null,
+    test: '/id/tes-mengetik/',
     progress: '/id/kemajuan/',
     free: null,
     weak: null,

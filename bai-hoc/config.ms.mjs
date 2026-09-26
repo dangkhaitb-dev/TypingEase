@@ -21,8 +21,8 @@ export default {
     curriculumScript: '/data/curriculum.ms.js',
     ui: '/i18n/ui.ms.js',
     routes: {
-      home: '/ms/', lessons: '/ms/pelajaran/', learn: '/ms/belajar/', test: null,
-      progress: '/ms/kemajuan/', free: null, weak: null, guide: null, wpm: null
+      home: '/ms/', lessons: '/ms/pelajaran/', learn: '/ms/belajar/', test: '/ms/ujian-menaip/',
+      progress: '/ms/kemajuan/', games: '/ms/permainan-menaip/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `Latihan menaip 10 jari: ${c.sequence.length} pelajaran percuma | TypingEase`,
@@ -34,7 +34,7 @@ export default {
         h1: (c, f) => `Kursus menaip sentuh · ${f.name} · ${c.sequence.length} pelajaran`
       },
       description: c => `Kursus menaip sentuh percuma: ${c.units.length} unit dan ${c.sequence.length} pelajaran, dari baris asas hingga nombor, simbol dan teks panjang, dengan perkataan Melayu sebenar.`,
-      nav: r => [[r.home, 'Berlatih'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan'], [r.test, 'Ujian']],
+      nav: r => [[r.home, 'Berlatih'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan'], [r.test, 'Ujian'], [r.games, 'Permainan']],
       navAria: 'Navigasi utama',
       enter: 'Mula',
       eyebrow: 'Kursus TypingEase',

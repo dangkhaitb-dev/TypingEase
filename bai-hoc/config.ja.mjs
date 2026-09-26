@@ -20,7 +20,7 @@ export default {
     curriculumScript: '/data/curriculum.ja.js',
     ui: '/i18n/ui.ja.js',
     routes: {
-      home: '/ja/', lessons: '/ja/renshu/', learn: '/ja/manabu/', test: null,
+      home: '/ja/', lessons: '/ja/renshu/', learn: '/ja/manabu/', test: '/ja/typing-test/',
       progress: '/ja/shinchoku/', games: '/ja/typing-games/', free: null, weak: null, guide: null, wpm: null
     },
     s: {

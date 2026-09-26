@@ -4,7 +4,6 @@
  * như ui.ms.js và tro-choi/text/ms.mjs. Xưng "anda". Bahasa Melayu không chia số nhiều.
  */
 export default {
-  live: false,
   slug: 'ujian-menaip',
   title: 'Ujian menaip online percuma: PSM dan ketepatan | TypingEase',
   description: 'Ujian menaip percuma dalam pelayar: taip selama 1, 5 atau 10 minit, kemudian lihat kelajuan menaip dalam PSM, ketepatan dan jumlah kesilapan anda.',

@@ -17,7 +17,7 @@ export default {
     curriculumScript: '/data/curriculum.ko.js',
     ui: '/i18n/ui.ko.js',
     routes: {
-      home: '/ko/', lessons: '/ko/gangui/', learn: '/ko/baeugi/', test: null,
+      home: '/ko/', lessons: '/ko/gangui/', learn: '/ko/baeugi/', test: '/ko/taja-teseuteu/',
       progress: '/ko/jindo/', games: '/ko/taja-geim/', free: null, weak: null, guide: null, wpm: null
     },
     s: {

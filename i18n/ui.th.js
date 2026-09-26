@@ -18,7 +18,7 @@ window.TypingEaseUI = {
     lessons: '/th/bot-rian/',
     learn: '/th/rian/',
     // Chưa có ba trang này bằng tiếng Thái. `null` là tín hiệu BỎ liên kết.
-    test: null,
+    test: '/th/thotsop-phim/',
     progress: '/th/khwam-kuebna/',
     free: null,
     weak: null,

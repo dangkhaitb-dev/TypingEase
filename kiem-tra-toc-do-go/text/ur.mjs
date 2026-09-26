@@ -4,7 +4,6 @@
  * Đơn vị: "الفاظ فی منٹ", khớp `test.wpmUnit` trong i18n/ui.ur.js. سیکنڈ، منٹ، دن không đổi theo số.
  */
 export default {
-  live: false,
   slug: 'typing-test',
   title: 'ٹائپنگ ٹیسٹ: الفاظ فی منٹ اور درستی | TypingEase',
   description: 'مفت ٹائپنگ ٹیسٹ براؤزر میں، اردو کی بورڈ پر: ایک، پانچ یا دس منٹ ٹائپ کریں اور اپنی رفتار الفاظ فی منٹ میں، درستی اور غلطیاں دیکھیں۔ رجسٹریشن نہیں۔',
