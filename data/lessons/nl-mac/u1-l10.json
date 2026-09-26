@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Test van unit 1",
+  "summary": "Een test op tijd met alles wat je hebt geleerd.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "Een test op tijd. Er is niets nieuws: alleen wat je al kunt, in een tempo dat je kunt volhouden.",
+  "congrats": "Test gehaald. Het getal telt minder dan dat je het einde hebt gehaald zonder te kijken.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "Geen nieuwe toetsen. Typ in een tempo dat je tot het eind kunt volhouden.",
+      "dictation": "sentence",
+      "content": "de reis is duur\nhij is al klaar\ndie jas is erg duur\nde kaas is heerlijk"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "D 和 K",
+  "summary": "新键：D 和 K。手指伸出去，按下，再回来。",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "本课的新键：D 和 K。由左手中指 和 右手中指负责。动作总是一样：伸出去，按下，回来。练的正是回来这一步，因为手指停在外面，下一个字母就会打错。",
+  "congrats": "手指下的键越来越多了。如果 D 和 K 已经不用找就能打出来，这一课就完成了它的任务。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "LM",
+      "text": "这个键由左手中指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 D 继续"
+    },
+    {
+      "newKey": "d",
+      "text": "只有 D 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "d d dd\ndddd\ndddd dddd"
+    },
+    {
+      "type": "intro",
+      "key": "k",
+      "finger": "RM",
+      "text": "这个键由右手中指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 K 继续"
+    },
+    {
+      "newKey": "k",
+      "text": "只有 K 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "ddd kkk\ndkdk kdkd\ndk dk"
+    },
+    {
+      "seconds": 20,
+      "text": "一组接一组的短组合。就算有打错的，也一直打到最后。",
+      "type": "burst",
+      "tokens": [
+        "dd",
+        "kdkk",
+        "dkkd",
+        "kddd",
+        "ddd",
+        "ddkk",
+        "kdk",
+        "kddk",
+        "dkdk",
+        "kdd"
+      ]
+    },
+    {
+      "text": "新键和旧键混在一起，就像以后在拼音里出现的那样。",
+      "type": "block",
+      "content": "dkdkdk kdkdkd\nfdjk jfdk\ndfj k df"
+    },
+    {
+      "text": "两个新键再练一遍。现在还拼不出用到它们的词，这很正常。",
+      "type": "block",
+      "content": "fkj d fk\ndk kd dkdk\nkkk dddd"
+    },
+    {
+      "seconds": 25,
+      "text": "稍长一点的组合。现在求快还没有用。",
+      "type": "burst",
+      "tokens": [
+        "dkk",
+        "ddkk",
+        "dkkk",
+        "dkd",
+        "kdkk",
+        "dk",
+        "kkkk",
+        "kkdk",
+        "dddk",
+        "kddk",
+        "dddd",
+        "kkk"
+      ]
+    },
+    {
+      "text": "你已经学会的所有键，分成短组合。眼睛看屏幕，不看手。",
+      "type": "block",
+      "content": "fkd j fk\ndj jd djdj\njjjj kkkk ffff dddd"
+    },
+    {
+      "text": "再回到组合练习，确认手指还能找到回去的路。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "dk kd dkdk\ndddd kkk\ndkdk kdkd"
+    },
+    {
+      "text": "用到目前为止学过的所有键，最后再练一轮。",
+      "type": "block",
+      "content": "jfd k jf\ndk kd dkdk\nkkkk ddd ffff jjj"
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "A ve K, bir de boşluk tuşu",
+  "summary": "Kabartmalı iki tuş, boşluk tuşu ve aşağı bakmama alışkanlığı.",
+  "newKeys": [
+    "a",
+    "k",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Üzerinde küçük bir kabartma olan tuşlar başlangıç noktası. İki işaret parmağı oraya oturur ve oradan ayrılmaz; kursun geri kalanı bu konumdan ölçülür. İki elini yerleştirerek başla ve yalnızca ekrana bak.",
+  "congrats": "Ellerin yerinde. Buradan sonra her şey, bu konumdan uzanıp bırakılan bir tuş.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LI",
+      "text": "Bu tuşa sol işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için A tuşuna bas"
+    },
+    {
+      "newKey": "a",
+      "text": "Yalnızca A ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "a a aa\naaaa\naaaaaa aaaaaa"
+    },
+    {
+      "type": "intro",
+      "key": "k",
+      "finger": "RI",
+      "text": "Bu tuşa sağ işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için K tuşuna bas"
+    },
+    {
+      "newKey": "k",
+      "text": "Yalnızca K ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "ka ka\nka ak kaka\nak ka akak"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "Boşluk tuşu sağ başparmağındır. Başparmakların başka işi yok; bu yüzden onu hiç aramazsın.",
+      "hint": "Devam etmek için boşluk tuşuna bas"
+    },
+    {
+      "newKey": " ",
+      "text": "Boşluklarla ayrılmış kısa gruplar. Sağ başparmak iner ve kalkar; öbür parmaklar tuşlarından ayrılmaz.",
+      "type": "block",
+      "content": "ka ka\nak ka akak\nkkkk aaaa"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "aak",
+        "aa",
+        "aaaa",
+        "akk",
+        "aakk",
+        "kaa",
+        "aka",
+        "kaak",
+        "ak",
+        "akaa"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "ak ak\nak ka akak\naaaa kkkk"
+    },
+    {
+      "text": "Yine iki yeni tuş. Onlarla yazılacak kelime henüz yok, bu normal.",
+      "type": "block",
+      "content": "ak ka\nka ka\nka ak kaka"
+    },
+    {
+      "seconds": 25,
+      "text": "Biraz daha uzun gruplar. Acele etmek henüz işe yaramaz.",
+      "type": "burst",
+      "tokens": [
+        "akak",
+        "aa",
+        "aka",
+        "kka",
+        "aaka",
+        "akkk",
+        "ak",
+        "kkaa",
+        "kakk",
+        "kak",
+        "kaa",
+        "kaak"
+      ]
+    },
+    {
+      "text": "Elindeki her şey, kısa gruplar halinde. Ellerine değil ekrana bak.",
+      "type": "block",
+      "content": "akak kaka\nka ka\nak ka akak"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ka ka\nak ka akak\naaaa kkkk"
+    },
+    {
+      "text": "Buraya kadar görülen her şeyle son bir tur.",
+      "type": "block",
+      "content": "akakak kakaka\nka ka\nak ak"
+    }
+  ]
+}

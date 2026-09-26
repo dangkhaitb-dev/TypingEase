@@ -1,0 +1,172 @@
+{
+  "id": "u4-l06",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 33,
+  "slug": "symbols-6",
+  "title": "|, >, ± en de puntkomma",
+  "summary": "In deze les: |, >, ± en de puntkomma.",
+  "newKeys": [
+    "|",
+    ">",
+    "±",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "+",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "´",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "/",
+    "°",
+    "¨",
+    "*",
+    "<",
+    "@",
+    "§",
+    "!",
+    "\"",
+    "#",
+    "$",
+    "%",
+    "&",
+    "_",
+    "(",
+    ")",
+    "'",
+    "?",
+    "]",
+    "[",
+    "|",
+    ">",
+    "±",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Toetsen die de cursus nog niet heeft gebruikt: |, >, ± en de puntkomma. Je krijgt ze allemaal met Shift en een toets die je vingers al kennen — Shift met de pink van de andere hand.",
+  "congrats": "|, >, ± en de puntkomma: nu onder je vingers. Het teken komt er net zo makkelijk uit als de letter ernaast.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "RP",
+      "text": "| typ je met de rechterpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op | om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "Eerst alleen |, daarna op de plek waar je het echt gebruikt.",
+      "content": "|| | keuken|markt guur|spel oefenen|augustus\n|| | gaaf|gevonden drinken|achter juni|kort\n|| | zeventig|die al|broer ontbijt|verhalen"
+    },
+    {
+      "type": "intro",
+      "key": ">",
+      "finger": "RP",
+      "text": "> typ je met de rechterpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op > om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": ">",
+      "text": "Eerst alleen >, daarna op de plek waar je het echt gebruikt.",
+      "content": ">> > <video's> <tomaat> <avontuur>\n>> > <kast> <klant> <snel>\n>> > <heten> <al> <knieën>"
+    },
+    {
+      "type": "intro",
+      "key": "±",
+      "finger": "RP",
+      "text": "± typ je met de rechterpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op ± om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "±",
+      "text": "Eerst alleen ±, daarna op de plek waar je het echt gebruikt.",
+      "content": "±± ± 81 ± 44 66 ± 15 15 ± 53\n±± ± 11 ± 37 51 ± 74 44 ± 54\n±± ± 23 ± 11 64 ± 70 75 ± 22"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RM",
+      "text": "de puntkomma typ je met de rechtermiddelvinger, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op ; om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "Eerst alleen de puntkomma, daarna op de plek waar je het echt gebruikt.",
+      "content": ";; ; veel; handig; komen;\n;; ; oktober; wijde; nu;\n;; ; schepen; twee; taal;"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Een reeks korte stukjes met deze tekens.",
+      "tokens": [
+        "<negen>",
+        "89±79",
+        "75±48",
+        "56±62",
+        "zebra|bus",
+        "<meteen>",
+        "bergen|keel",
+        "maandag;",
+        "blauw;",
+        "<oma>"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles van deze les, door elkaar.",
+      "content": "augustus|gaaf land|wijde patat|genoeg oud;\ntachtig; vriezer; <leefde> 43±44\n72 ± 16 lachen; midden; lift;"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Weer woorden, met de tekens op hun plek.",
+      "content": "duizend|blij excuus minuut|bakken uil <rijk>\nkapot; els 57 ± 25 boter probleem|hobby's\nweinig; blad <namen> guur appel;"
+    }
+  ]
+}

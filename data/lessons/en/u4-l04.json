@@ -1,0 +1,150 @@
+{
+  "id": "u4-l04",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 31,
+  "slug": "symbols-4",
+  "title": "[, {, ] and }",
+  "summary": "The last keys: [, {, ] and }.",
+  "newKeys": [
+    "[",
+    "{",
+    "]",
+    "}"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "`",
+    "~",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "=",
+    "+",
+    "[",
+    "{",
+    "]",
+    "}"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: [, {, ] and }. Some need Shift, held by the little finger of the other hand; the rest sit on a key the course has not used before.",
+  "congrats": "[, {, ] and }: under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "[",
+      "finger": "RP",
+      "text": "[ belongs to your right little finger.",
+      "hint": "Press [ to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "[",
+      "text": "[ on its own first, then where it is actually used.",
+      "content": "[[ [ [aisle [used [daily\n[[ [ [glee [game [rail\n[[ [ [covers [present [wouldn't"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "{ on its own first, then where it is actually used.",
+      "content": "{{ { {rest {both {color\n{{ { {whose {need {places\n{{ { {no {jug {shows"
+    },
+    {
+      "type": "intro",
+      "key": "]",
+      "finger": "RP",
+      "text": "] belongs to your right little finger.",
+      "hint": "Press ] to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "]",
+      "text": "] on its own first, then where it is actually used.",
+      "content": "]] ] [rest] [they've] [wool]\n]] ] [any] [upper] [risk]\n]] ] [urges] [guessed] [wire]"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "} on its own first, then where it is actually used.",
+      "content": "}} } {to} {car} {notes}\n}} } {reply} {wing} {hand}\n}} } {hair} {hi} {girth}"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "[ought]",
+        "[middle]",
+        "{foot}",
+        "{thank}",
+        "{rides}",
+        "[soon]",
+        "[letter]",
+        "{ha}",
+        "[size]",
+        "{exist}"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "{rare} [summer] {roses} [bottle]\n{too} {believe} [friar] {poor}\n[any] {east} {against} [please]"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "{sell} aghast [clearly] back [pages]\n{sing} offers {hide} wife {main}\n[board] ad {ah} country [although]"
+    }
+  ]
+}

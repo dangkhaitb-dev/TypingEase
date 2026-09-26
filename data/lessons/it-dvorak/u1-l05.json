@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Ripasso",
+  "summary": "Nessun tasto nuovo. Tutto il precedente, più di seguito e più in fretta.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Questa lezione non insegna niente di nuovo. È il momento di verificare che quello di prima esca senza pensarci, che è un'altra cosa rispetto a sapere dove sta ogni tasto.",
+  "congrats": "Niente di nuovo e comunque più in fretta. È esattamente quello che doveva succedere.",
+  "screens": [
+    {
+      "text": "Si comincia con parole sciolte. Senza fretta: la velocità nasce dalla precisione, mai il contrario.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "uno tutto sono ne\nsa o sotto sua\nnotte un state a"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica corta. Finisci la lista anche se qualcuna ti scappa.",
+      "type": "burst",
+      "tokens": [
+        "un",
+        "uno",
+        "state",
+        "sa",
+        "tutta",
+        "sotto",
+        "testa",
+        "sono",
+        "tu",
+        "attesa",
+        "o",
+        "ne"
+      ]
+    },
+    {
+      "text": "Cinque parole per riga. Lascia che gli occhi vadano avanti alle dita.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tutto sua testa ho attesa\ne estate otto tutto su\nanno una notte sua tu"
+    },
+    {
+      "text": "Di nuovo gli schemi, per controllare che le dita tornino alla riga di riposo.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "tea uon te\nth ht thth\neee hhhh tttt uuuu"
+    },
+    {
+      "text": "Parole corte, a buon ritmo. Queste dovrebbero uscire quasi da sole.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ho una notte sua\nho notte una un\nstate sono otto sotto"
+    },
+    {
+      "seconds": 30,
+      "text": "Più tempo e più parole. Tieni lo stesso ritmo dall'inizio alla fine.",
+      "type": "burst",
+      "tokens": [
+        "tutta",
+        "una",
+        "ho",
+        "nonno",
+        "a",
+        "sa",
+        "un",
+        "attesa",
+        "tutto",
+        "estate",
+        "notte",
+        "anno",
+        "sotto",
+        "testa"
+      ]
+    },
+    {
+      "text": "Frasi intere. Qui si vede se la mano rientra da sola al suo posto.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "anno se una uno\ntutto notte o sua\nho e estate otto"
+    },
+    {
+      "text": "L'ultimo giro. Se sei arrivato fin qui senza guardare la tastiera, la lezione è fatta.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "state tu testa nonno notte\nnon sotto a attesa su\nuno o su state tutto"
+    }
+  ]
+}

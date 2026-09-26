@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "第 1 单元测验",
+  "summary": "限时测验，包含所有学过的内容。",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "限时测验。没有新内容：只有你已经会的，用你能保持住的节奏来打。",
+  "congrats": "测验结束。数字没有那么重要，重要的是你一直打到最后都没有看键盘。",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "没有新键。用你能一直保持到最后的节奏来打。",
+      "dictation": "words",
+      "content": "dada ershi jieshi su\nshi de shuai gudai\nha jiushi lie hai\nla didi lai jia"
+    }
+  ]
+}

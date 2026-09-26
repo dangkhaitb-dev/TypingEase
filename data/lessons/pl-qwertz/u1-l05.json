@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Powtórka",
+  "summary": "Bez nowych klawiszy. Wszystko, co było wcześniej, szybciej i dłużej.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ł"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Ta lekcja nie uczy niczego nowego. To moment, żeby sprawdzić, czy to, co było wcześniej, wychodzi bez myślenia — a to nie to samo, co wiedzieć, gdzie są klawisze.",
+  "congrats": "Nic nowego, a jednak szybciej. Dokładnie tak miało być.",
+  "screens": [
+    {
+      "text": "Na początek pojedyncze słowa. Bez pośpiechu: szybkość bierze się z dokładności, nigdy odwrotnie.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jadł fajka fałda ład\nja skala łasa jajka\ndal skład salsa łaska"
+    },
+    {
+      "seconds": 25,
+      "text": "Krótka seria. Dokończ listę, nawet jeśli coś ci umknie.",
+      "type": "burst",
+      "tokens": [
+        "lalka",
+        "kładł",
+        "kask",
+        "laska",
+        "ja",
+        "sad",
+        "da",
+        "sala",
+        "skala",
+        "jajka",
+        "kajak",
+        "fala"
+      ]
+    },
+    {
+      "text": "Pięć słów w linii. Niech oczy wyprzedzają palce.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fajka dal laska kajak fala\nda klasa jaka sad skład\ndał łaska skład sad dal"
+    },
+    {
+      "text": "Znowu wzory, żeby sprawdzić, czy palce wracają do rzędu podstawowego.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Krótkie słowa w dobrym tempie. Te powinny wychodzić prawie same.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kajak dał skład sala\nłaska salsa kasa fałda\nfajka las jajka dal"
+    },
+    {
+      "seconds": 30,
+      "text": "Więcej czasu i więcej słów. Trzymaj to samo tempo od początku do końca.",
+      "type": "burst",
+      "tokens": [
+        "laska",
+        "lalka",
+        "a",
+        "skład",
+        "fajka",
+        "sala",
+        "łasa",
+        "ja",
+        "dał",
+        "jak",
+        "jadł",
+        "dal",
+        "skala",
+        "jajka"
+      ]
+    },
+    {
+      "text": "Dłuższe linie. Tu widać, czy dłoń wraca na miejsce sama.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ład dla dał jadł\nfajka łaska kajak dal\njak da kasa jaka"
+    },
+    {
+      "text": "Ostatnia seria. Jeśli udało ci się tu dojść bez patrzenia na klawiaturę, lekcja jest zrobiona.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "skala dal laska łaska kask\njajka a lalka las kładł\nskala las klasa fajka łaska"
+    }
+  ]
+}

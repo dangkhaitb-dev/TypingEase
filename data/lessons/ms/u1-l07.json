@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "E dan I",
+  "summary": "Kekunci baharu: E dan I. Jari keluar, tekan dan kembali.",
+  "newKeys": [
+    "e",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci baharu dalam pelajaran ini: E dan I. Ia ditekan oleh jari hantu kiri dan jari hantu kanan. Gerakannya sentiasa sama — keluar, tekan dan kembali — dan perjalanan pulang itulah yang dilatih, kerana jika jari tertinggal di luar, huruf seterusnya akan tersilap.",
+  "congrats": "Lebih banyak kekunci di bawah jari. Jika E dan I sudah keluar tanpa dicari, pelajaran ini telah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "Kekunci ini milik jari hantu kiri. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan E untuk meneruskan"
+    },
+    {
+      "newKey": "e",
+      "text": "Hanya E dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "e e\nedf j ed\ne e ee"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RM",
+      "text": "Kekunci ini milik jari hantu kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan I untuk meneruskan"
+    },
+    {
+      "newKey": "i",
+      "text": "Hanya I dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "ie ei\nfed ij fe\nei ie eiei"
+    },
+    {
+      "seconds": 20,
+      "text": "Kumpulan pendek, satu demi satu. Teruskan hingga habis walaupun anda tersilap.",
+      "type": "burst",
+      "tokens": [
+        "ie",
+        "eii",
+        "ieee",
+        "iie",
+        "eiei",
+        "eiie",
+        "ii",
+        "iei",
+        "iiei",
+        "eeii"
+      ]
+    },
+    {
+      "text": "Kekunci baharu bercampur dengan yang lama, seperti rupanya nanti di dalam perkataan.",
+      "type": "block",
+      "content": "ffff eeee jjjj iii\neieiei ieieie\njief fije"
+    },
+    {
+      "text": "Perkataan sebenar dengan kekunci baharu. Taip setiap perkataan sekali gus, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaki gigi segala sekali\nkasih lelah helai desa\njika jelas fail hasil"
+    },
+    {
+      "seconds": 25,
+      "text": "Satu pecutan perkataan pendek yang mengandungi kekunci baharu.",
+      "type": "burst",
+      "tokens": [
+        "halal",
+        "gali",
+        "ahli",
+        "kesal",
+        "jelas",
+        "akal",
+        "sila",
+        "fail",
+        "salad",
+        "kali"
+      ]
+    },
+    {
+      "text": "Sekarang tumpuan pada E, kekunci yang paling jarang anda tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "idea fail sahaja sehelai\nsedih helai gelak adik\nlagak ada selesa salak"
+    },
+    {
+      "text": "Kembali kepada corak sebentar, untuk memastikan jari masih tahu jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "eeee iiii\neieiei ieieie\nei ie"
+    },
+    {
+      "text": "Semua yang anda ada, bercampur. Perhatikan berapa banyak perkataan yang sudah keluar tanpa difikirkan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sasa lelah gagal jelas\ndada sah kala akhlak\ngelas sahaja salak akad"
+    }
+  ]
+}

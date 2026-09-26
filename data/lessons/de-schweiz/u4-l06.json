@@ -1,0 +1,172 @@
+{
+  "id": "u4-l06",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 33,
+  "slug": "symbols-6",
+  "title": "È, !, £ und É",
+  "summary": "Neu in dieser Lektion: È, !, £ und É.",
+  "newKeys": [
+    "è",
+    "!",
+    "£",
+    "é"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ä",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "^",
+    "ü",
+    "¨",
+    "$",
+    "§",
+    "°",
+    "+",
+    "\"",
+    "*",
+    "ç",
+    "%",
+    "&",
+    "/",
+    "(",
+    ")",
+    "=",
+    "?",
+    "<",
+    ">",
+    "è",
+    "!",
+    "£",
+    "é"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: È, !, £ und É. Jedes davon entsteht aus Shift und einer Taste, die deine Finger schon kennen — Shift mit dem kleinen Finger der anderen Hand.",
+  "congrats": "È, !, £ und É: jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "è",
+      "finger": "RP",
+      "text": "È: Dafür ist der rechte kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke È, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "è",
+      "text": "Zuerst È für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "èè è èèè èèè èèè\nèè è èèè èèè èèè\nèè è èèè èèè èèè"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "RP",
+      "text": "!: Dafür ist der rechte kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke !, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Zuerst ! für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "!! ! perfekt! frage! wurst!\n!! ! dose! lag! wünschen!\n!! ! nach! tag! mund!"
+    },
+    {
+      "type": "intro",
+      "key": "£",
+      "finger": "RP",
+      "text": "£: Dafür ist der rechte kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke £, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "£",
+      "text": "Zuerst £ für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "££ £ £72 £30 £69\n££ £ £81 £9 £87\n££ £ £89 £21 £65"
+    },
+    {
+      "type": "intro",
+      "key": "é",
+      "finger": "RP",
+      "text": "É: Dafür ist der rechte kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke É, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "é",
+      "text": "Zuerst É für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "éé é ééé ééé ééé\néé é ééé ééé ééé\néé é ééé ééé ééé"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "èèè",
+        "foto!",
+        "ééé",
+        "vier!",
+        "ufer!",
+        "£82",
+        "bild!",
+        "schon!",
+        "warte!",
+        "nach!"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "£75 èèè èèè sei!\nlächeln! èèè ééé £34\nunten! leise! èèè £23"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "£29 eure platz! tür ééé\nèèè früher èèè baby ééé\nèèè als èèè ändern süden!"
+    }
+  ]
+}

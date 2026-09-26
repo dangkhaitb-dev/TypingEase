@@ -1,0 +1,117 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "S en L",
+  "summary": "Nieuwe toetsen: S en L. De vinger strekt, slaat aan en keert terug.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nieuwe toetsen in deze les: S en L. Je slaat ze aan met de linkerringvinger en de rechterringvinger. De beweging is altijd dezelfde — uitstrekken, aanslaan en terug — en het terugkeren is wat je oefent, want als de vinger buiten blijft, gaat de volgende letter scheef.",
+  "congrats": "Weer toetsen onder je vingers. Als S en L er zonder zoeken uitkomen, heeft de les zijn werk gedaan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "LR",
+      "text": "Deze toets is voor de linkerringvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op S om verder te gaan"
+    },
+    {
+      "newKey": "s",
+      "text": "Alleen S en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "dfs j df\ns s ss\nsss"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RR",
+      "text": "Deze toets is voor de rechterringvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op L om verder te gaan"
+    },
+    {
+      "newKey": "l",
+      "text": "Alleen L en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "sss llll\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 20,
+      "text": "Korte groepjes, de een na de ander. Maak de lijst af, ook als je er een paar mist.",
+      "type": "burst",
+      "tokens": [
+        "slls",
+        "llls",
+        "slss",
+        "llsl",
+        "lss",
+        "ss",
+        "ssl",
+        "slll",
+        "lsll",
+        "lls"
+      ]
+    },
+    {
+      "text": "De nieuwe toetsen gemengd met de vorige, zoals je ze straks in woorden tegenkomt.",
+      "type": "block",
+      "content": "fjls jfsl\nklf sdj kl\nfs sf fsfs"
+    },
+    {
+      "text": "Nog eens de twee nieuwe toetsen. Er zijn nog geen woorden om ermee te typen, en dat is normaal.",
+      "type": "block",
+      "content": "lll sss\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 25,
+      "text": "Iets langere groepjes. Haast helpt nog niet.",
+      "type": "burst",
+      "tokens": [
+        "llll",
+        "ss",
+        "lsl",
+        "ssll",
+        "lsll",
+        "sss",
+        "llss",
+        "llls",
+        "llsl",
+        "slss",
+        "slls",
+        "lssl"
+      ]
+    },
+    {
+      "text": "Alles wat je hebt, in korte groepjes. Kijk naar het scherm, niet naar je handen.",
+      "type": "block",
+      "content": "jkl dsf jk\ndf fd dfdf\nllll jjj ssss fff ddd"
+    },
+    {
+      "text": "Even terug naar de patronen, om te controleren dat de vingers nog steeds naar hun plek teruggaan.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ls sl\nsjf ld sj\nsl ls slsl"
+    },
+    {
+      "text": "Een laatste ronde met alles wat je tot nu toe hebt geleerd.",
+      "type": "block",
+      "content": "ksl dfj ks\njf fj jfjf\ndddd fff kkkk jjj"
+    }
+  ]
+}

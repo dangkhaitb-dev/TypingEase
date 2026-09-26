@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Ulang kaji",
+  "summary": "Tiada kekunci baharu. Semua yang lepas, lebih berturut-turut dan lebih laju.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Pelajaran ini tidak mengajar apa-apa yang baharu. Inilah masa untuk memastikan yang lepas keluar tanpa difikirkan, yang berbeza daripada sekadar tahu di mana letaknya setiap kekunci.",
+  "congrats": "Tiada yang baharu, tetapi lebih laju. Itulah yang sepatutnya berlaku.",
+  "screens": [
+    {
+      "text": "Mula dengan perkataan satu-satu. Jangan tergesa-gesa: kelajuan datang daripada ketepatan, bukan sebaliknya.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "garis ia mainan nilai\nmaksud cermin cuti cermat\ncuaca kek ahli umur"
+    },
+    {
+      "seconds": 25,
+      "text": "Satu pecutan pendek. Habiskan senarai walaupun ada yang terlepas.",
+      "type": "burst",
+      "tokens": [
+        "tulis",
+        "lihat",
+        "cerah",
+        "tolak",
+        "duka",
+        "jangan",
+        "masin",
+        "masalah",
+        "enam",
+        "nama",
+        "hal",
+        "senang"
+      ]
+    },
+    {
+      "text": "Lima perkataan sebaris. Biarkan mata mendahului jari.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lada khas hari cuka jauh\nlaju hadir ikut mencari gagal\nsurat sana mendengar coklat sama"
+    },
+    {
+      "text": "Corak sekali lagi, untuk memastikan jari masih kembali ke baris asas.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Perkataan pendek, pada rentak yang baik. Yang ini sepatutnya sudah keluar hampir sendiri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tulis dalam kena cuka\nsemua ekor akan lori\nkemas mesra tolak awal"
+    },
+    {
+      "seconds": 30,
+      "text": "Lebih lama dan lebih banyak perkataan. Kekalkan rentak yang sama dari awal hingga akhir.",
+      "type": "burst",
+      "tokens": [
+        "kawasan",
+        "kasut",
+        "hala",
+        "lengan",
+        "jarang",
+        "galah",
+        "keluarga",
+        "kosong",
+        "kereta",
+        "ayah",
+        "setengah",
+        "dengar",
+        "tangisan",
+        "kuku"
+      ]
+    },
+    {
+      "text": "Ayat penuh. Di sinilah kelihatan sama ada tangan kembali sendiri ke tempatnya.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "kucing itu tidur di atas kerusi\nair sungai itu jernih dan sejuk\nrumah kami dekat dengan sungai"
+    },
+    {
+      "text": "Pusingan terakhir. Jika anda sampai di sini tanpa melihat papan kekunci, pelajaran ini selesai.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "nyata senang nilai kotak kuat\nvisual nanti sikit kemas dada\nnaik kolej lemah visa selalu"
+    }
+  ]
+}

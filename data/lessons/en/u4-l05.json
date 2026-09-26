@@ -1,0 +1,161 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "\\, |, < and >",
+  "summary": "The last keys: \\, |, < and >.",
+  "newKeys": [
+    "\\",
+    "|",
+    "<",
+    ">"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "`",
+    "~",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "=",
+    "+",
+    "[",
+    "{",
+    "]",
+    "}",
+    "\\",
+    "|",
+    "<",
+    ">"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: \\, |, < and >. Some need Shift, held by the little finger of the other hand; the rest sit on a key the course has not used before.",
+  "congrats": "\\, |, < and >: under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "\\",
+      "finger": "RP",
+      "text": "\\ belongs to your right little finger.",
+      "hint": "Press \\ to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "\\",
+      "text": "\\ on its own first, then where it is actually used.",
+      "content": "\\\\ \\ bags\\house weight\\heels explain\\ruler\n\\\\ \\ put\\broad piece\\ahead agree\\head\n\\\\ \\ horse\\week them\\french list\\tails"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "| on its own first, then where it is actually used.",
+      "content": "|| | visit|sing seeds|machine enough|buy\n|| | stores|faith city|fire popular|residue\n|| | hardly|soft hails|needs method|steady"
+    },
+    {
+      "type": "intro",
+      "key": "<",
+      "finger": "RM",
+      "text": "< belongs to your right middle finger, with Shift held by the other hand.",
+      "hint": "Press < to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "<",
+      "text": "< on its own first, then where it is actually used.",
+      "content": "<< < <never <older <about\n<< < <feed <explain <live\n<< < <sleep <meat <read"
+    },
+    {
+      "type": "intro",
+      "key": ">",
+      "finger": "RR",
+      "text": "> belongs to your right ring finger, with Shift held by the other hand.",
+      "hint": "Press > to continue"
+    },
+    {
+      "type": "block",
+      "newKey": ">",
+      "text": "> on its own first, then where it is actually used.",
+      "content": ">> > <phones> <beside> <rock>\n>> > <fall> <flee> <feed>\n>> > <hadn't> <trades> <rare>"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "<rules>",
+        "shrill|sour",
+        "<it's>",
+        "cover\\residue",
+        "<meant>",
+        "<sigh>",
+        "<wool>",
+        "<he>",
+        "<careful>",
+        "soil\\believe"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "nice|jump wait\\borrow <river> trip|trip\nhappen|aghast simple|ad <sand> <gala>\n<places> song|covers <good> <message>"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "<us> never points|sea whose <room>\npull|lads eat <urge> above covers\\salads\n<moment> upper special\\under safely <their>"
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "Il punto e C",
+  "summary": "Tasti nuovi: il punto e C. Il dito esce, preme e rientra.",
+  "newKeys": [
+    ".",
+    "c"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: il punto e C. Si premono con il medio sinistro e il medio destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se il punto e C ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "LM",
+      "text": "Questo tasto lo prende il medio sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi . per continuare"
+    },
+    {
+      "newKey": ".",
+      "text": "Solo . e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": ". .\n.eu h .e\n. . .."
+    },
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "RM",
+      "text": "Questo tasto lo prende il medio destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi C per continuare"
+    },
+    {
+      "newKey": "c",
+      "text": "Solo C e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "c. .c\nu.e ch u.\n.c c. .c.c"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "c.",
+        ".cc",
+        "c...",
+        "cc.",
+        ".c.c",
+        ".cc.",
+        "cc",
+        "c.c",
+        "cc.c",
+        "..cc"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "uuuu .... hhhh ccc\n.c.c.c c.c.c.\nhc.u uch."
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ci che canto cena\ncucina canto casa stanco\nchi anche secondo chiesa"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "nido",
+        "ne",
+        "un",
+        "testa",
+        "noi",
+        "cane",
+        "tutto",
+        "anche",
+        "in",
+        "tutti"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su C, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "cento sud ho cena\nche casa chi una\ndita contento cucina e"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ".... cccc\n.c.c.c c.c.c.\n.c c."
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dea stanco sotto nei\nad testa da ci\notto se sua canto"
+    }
+  ]
+}

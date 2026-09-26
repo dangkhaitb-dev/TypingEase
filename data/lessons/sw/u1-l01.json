@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "F na J, pamoja na kitufe cha nafasi",
+  "summary": "Vitufe viwili vyenye kivimbe, kitufe cha nafasi, na mazoea ya kutotazama chini.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe vyenye kivimbe kidogo ndipo unapoanzia. Vidole viwili vya shahada vinakaa hapo na havihami; kila kitu kingine katika kozi kinapimwa kutoka mahali hapo. Anza kwa kuweka mikono yote miwili na kutazama skrini tu.",
+  "congrats": "Mikono yako sasa iko mahali pake. Kuanzia hapa, kila kitu ni vitufe vinavyofikiwa kutoka mahali hapa na kuachiwa tena.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "LI",
+      "text": "Kitufe hiki ni cha kidole cha shahada cha kushoto. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza F ili kuendelea"
+    },
+    {
+      "newKey": "f",
+      "text": "F tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "f f ff\nffff\nffffff ffffff"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RI",
+      "text": "Kitufe hiki ni cha kidole cha shahada cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza J ili kuendelea"
+    },
+    {
+      "newKey": "j",
+      "text": "J tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "jf jf\njf fj jfjf\nfj jf fjfj"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "Kitufe cha nafasi ni cha kidole gumba cha kulia. Vidole gumba havifanyi kazi nyingine, ndiyo sababu hutakitafuta kamwe.",
+      "hint": "Bonyeza kitufe cha nafasi ili kuendelea"
+    },
+    {
+      "newKey": " ",
+      "text": "Vikundi vifupi vyenye nafasi kati yao. Kidole gumba cha kulia kinashuka na kupanda; vidole vingine vinabaki palepale.",
+      "type": "block",
+      "content": "jf jf\nfj jf fjfj\njjjj ffff"
+    },
+    {
+      "seconds": 20,
+      "text": "Vikundi vifupi, kimoja baada ya kingine. Endelea hadi mwisho hata ukikosea kimoja.",
+      "type": "burst",
+      "tokens": [
+        "ffj",
+        "ff",
+        "ffff",
+        "fjj",
+        "ffjj",
+        "jff",
+        "fjf",
+        "jffj",
+        "fj",
+        "fjff"
+      ]
+    },
+    {
+      "text": "Vitufe vipya vikichanganywa na vya zamani, jinsi vitakavyotokea ndani ya maneno.",
+      "type": "block",
+      "content": "fj fj\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Vitufe viwili vipya mara nyingine. Bado hakuna maneno ya kuandika navyo, na hilo ni kawaida.",
+      "type": "block",
+      "content": "fj jf\njf jf\njf fj jfjf"
+    },
+    {
+      "seconds": 25,
+      "text": "Vikundi virefu kidogo. Haraka bado haisaidii.",
+      "type": "burst",
+      "tokens": [
+        "fjfj",
+        "ff",
+        "fjf",
+        "jjf",
+        "ffjf",
+        "fjjj",
+        "fj",
+        "jjff",
+        "jfjj",
+        "jfj",
+        "jff",
+        "jffj"
+      ]
+    },
+    {
+      "text": "Kila ulicho nacho, kwa vikundi vifupi. Macho kwenye skrini, si kwenye mikono.",
+      "type": "block",
+      "content": "fjfj jfjf\njf jf\nfj jf fjfj"
+    },
+    {
+      "text": "Turudi kwenye mifumo kwa muda, kuhakikisha vidole bado vinapata njia ya kurudi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf jf\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Mzunguko wa mwisho na yote uliyojifunza hadi hapa.",
+      "type": "block",
+      "content": "fjfjfj jfjfjf\njf jf\nfj fj"
+    }
+  ]
+}

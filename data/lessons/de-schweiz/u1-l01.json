@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "F und J, dazu die Leertaste",
+  "summary": "Die zwei Tasten mit der Erhebung, die Leertaste und die Gewohnheit, nicht nach unten zu sehen.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Die beiden Tasten mit der kleinen Erhebung sind der Ausgangspunkt. Dort liegen die Zeigefinger und dort bleiben sie; alles andere im Kurs wird von dieser Stellung aus gemessen. Fang damit an, beide Hände aufzulegen und nur auf den Bildschirm zu sehen.",
+  "congrats": "Die Hände liegen jetzt richtig. Ab hier sind alle Tasten solche, die man aus dieser Stellung erreicht und wieder loslässt.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "LI",
+      "text": "Für diese Taste ist der linke Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke F, um weiterzugehen"
+    },
+    {
+      "newKey": "f",
+      "text": "Nur F und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "f f ff\nffff\nffffff ffffff"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RI",
+      "text": "Für diese Taste ist der rechte Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke J, um weiterzugehen"
+    },
+    {
+      "newKey": "j",
+      "text": "Nur J und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "jf jf\njf fj jfjf\nfj jf fjfj"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "Die Leertaste gehört dem rechten Daumen. Die Daumen machen sonst nichts, und deshalb muss man sie nie suchen.",
+      "hint": "Drücke die Leertaste, um weiterzugehen"
+    },
+    {
+      "newKey": " ",
+      "text": "Kurze Gruppen, durch Leerzeichen getrennt. Der rechte Daumen geht runter und wieder hoch; die anderen Finger bleiben liegen.",
+      "type": "block",
+      "content": "jf jf\nfj jf fjfj\njjjj ffff"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "ffj",
+        "ff",
+        "ffff",
+        "fjj",
+        "ffjj",
+        "jff",
+        "fjf",
+        "jffj",
+        "fj",
+        "fjff"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "fj fj\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Noch einmal die beiden neuen Tasten. Es gibt damit noch keine Wörter zu schreiben, und das ist so gewollt.",
+      "type": "block",
+      "content": "fj jf\njf jf\njf fj jfjf"
+    },
+    {
+      "seconds": 25,
+      "text": "Etwas längere Gruppen. Eile hilft hier noch nichts.",
+      "type": "burst",
+      "tokens": [
+        "fjfj",
+        "ff",
+        "fjf",
+        "jjf",
+        "ffjf",
+        "fjjj",
+        "fj",
+        "jjff",
+        "jfjj",
+        "jfj",
+        "jff",
+        "jffj"
+      ]
+    },
+    {
+      "text": "Alles, was du bis hierhin hast, in kurzen Gruppen. Sieh auf den Bildschirm, nicht auf die Hände.",
+      "type": "block",
+      "content": "fjfj jfjf\njf jf\nfj jf fjfj"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf jf\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Ein letzter Durchgang mit allem aus dieser Lektion.",
+      "type": "block",
+      "content": "fjfjfj jfjfjf\njf jf\nfj fj"
+    }
+  ]
+}

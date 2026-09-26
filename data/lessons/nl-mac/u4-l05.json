@@ -1,0 +1,171 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "{, }, | en de dubbele punt",
+  "summary": "In deze les: {, }, | en de dubbele punt.",
+  "newKeys": [
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Toetsen die de cursus nog niet heeft gebruikt: {, }, | en de dubbele punt. Je krijgt ze allemaal met Shift en een toets die je vingers al kennen — Shift met de pink van de andere hand.",
+  "congrats": "{, }, | en de dubbele punt: nu onder je vingers. Het teken komt er net zo makkelijk uit als de letter ernaast.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "{ typ je met de rechterpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op { om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "Eerst alleen {, daarna op de plek waar je het echt gebruikt.",
+      "content": "{{ { {vriend {avond {kleine\n{{ { {recht {aardig {noord\n{{ { {kopen {hiel {hotel"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "} typ je met de rechterpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op } om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "Eerst alleen }, daarna op de plek waar je het echt gebruikt.",
+      "content": "}} } {dochter} {avontuur} {boom}\n}} } {excuus} {jurk} {in}\n}} } {tegel} {groep} {nu}"
+    },
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "RP",
+      "text": "| typ je met de rechterpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op | om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "Eerst alleen |, daarna op de plek waar je het echt gebruikt.",
+      "content": "|| | bent|sterk wonen|gek geen|moeder\n|| | gewoonte|blauw stem|zeven zelfs|reus\n|| | zelf|fiets zes|sloot veertig|tegen"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RP",
+      "text": "de dubbele punt typ je met de rechterpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op : om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "Eerst alleen de dubbele punt, daarna op de plek waar je het echt gebruikt.",
+      "content": ":: : citroen: kamer: drama:\n:: : lijf: lift: zuinig:\n:: : reclame: landen: fles:"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Een reeks korte stukjes met deze tekens.",
+      "tokens": [
+        "tekst|oefenen",
+        "ui|fruit",
+        "{lade}",
+        "{modern}",
+        "fris|kamperen",
+        "zijn|kost",
+        "{post}",
+        "{school}",
+        "oma's:",
+        "schip|zebra"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles van deze les, door elkaar.",
+      "content": "handig: {schepen} gelijk: zuur:\ntwaalf|blauw {handdoek} {toch} zon:\nzoveel: {oktober} klein: {klaar}"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Weer woorden, met de tekens op hun plek.",
+      "content": "nodig: idee wit: test {oom}\navontuur|kruid vaak {nu} bakken {foto's}\n{examen} boom {type} tegen die:"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "g-h",
+  "title": "G e H",
+  "summary": "Teclas novas: G e H. O dedo sai, aperta e volta.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas novas nesta lição: G e H. Elas se apertam com o indicador esquerdo e o indicador direito. O movimento é sempre o mesmo — sair, apertar e voltar — e a volta é a parte que se treina, porque se o dedo fica fora, a letra seguinte sai errada.",
+  "congrats": "Mais teclas debaixo dos dedos. Se G e H já saem sem procurar, a lição fez o seu trabalho.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "LI",
+      "text": "Esta tecla é do indicador esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte G para continuar"
+    },
+    {
+      "newKey": "g",
+      "text": "Só G e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "gggg\ngggg gggg\ng g"
+    },
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RI",
+      "text": "Esta tecla é do indicador direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte H para continuar"
+    },
+    {
+      "newKey": "h",
+      "text": "Só H e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "ggg hhhh\nghghgh hghghg\ngh hg"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos curtos, um atrás do outro. Vá até o fim mesmo que erre algum.",
+      "type": "burst",
+      "tokens": [
+        "ghgh",
+        "hhhh",
+        "ghg",
+        "hhg",
+        "gg",
+        "gghg",
+        "ghh",
+        "gh",
+        "ghhg",
+        "hghg"
+      ]
+    },
+    {
+      "text": "As teclas novas misturadas com as anteriores, que é como elas vão aparecer nas palavras.",
+      "type": "block",
+      "content": "fh hf fhfh\nhhh jjjj ffff gggg\nghghgh hghghg"
+    },
+    {
+      "text": "Palavras de verdade com as teclas novas. Escreva a palavra inteira de uma vez, não letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fala gala haja algas\nsalgada salgadas asa falsa\nassadas galas dadas ala"
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada de palavras curtas com as teclas novas.",
+      "type": "burst",
+      "tokens": [
+        "saladas",
+        "falas",
+        "haja",
+        "aja",
+        "faladas",
+        "assa",
+        "sala",
+        "salada",
+        "salsa",
+        "faça"
+      ]
+    },
+    {
+      "text": "Agora com o peso em G, a que você menos apertou.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "saladas saga assada faça\nfala assa alga galas\nfada asas haja gala"
+    },
+    {
+      "text": "Voltamos aos padrões por um momento, para conferir que os dedos continuam voltando para o lugar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "gh hg ghgh\nhhh gggg\nghgh hghg"
+    },
+    {
+      "text": "Tudo o que você tem, misturado. Repare em quantas palavras já saem sem pensar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dada faças salsa assa\nsalgadas as salas aja\nfalas fada fala alga"
+    }
+  ]
+}

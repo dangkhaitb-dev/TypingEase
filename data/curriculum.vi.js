@@ -12,6 +12,15 @@
 */
 window.TypingEaseCurriculum = {
   lang: 'vi',
+  // US Standard. Khai ro thay vi dua vao mac dinh cua keyboard/preferences.js: tu khi
+  // giao trinh quyet dinh ban phim, mot chi muc khong khai gi la mot chi muc im lang
+  // nhan bat cu thu gi mac dinh dang la.
+  keyboardId: 1,
+  course: 'vi',
+  // CHI bo cuc US. Khoa nay day Telex tren ban phim My; cac bo cuc 208-212 ("Vietnamese") go dau
+  // truc tiep bang phim rieng, tuc la mot khoa khac han chua ai viet. keyboard/preferences.js
+  // khong ve mot bo cuc da luu nam ngoai danh sach nay o day.
+  layouts: [1],
   progressKey: 'typingease-progress-v3',
   badgesKey: 'typingease-badges-v1',
   // Tinh nang rieng cua giao trinh nay. `badges.js` an nhung huy hieu doi tinh nang khong co,
@@ -75,6 +84,24 @@ window.TypingEaseCurriculum = {
         { id: 'toc-do', title: 'Tốc độ', lessons: ['u4-l04', 'u4-l05', 'u4-l06'] }
       ]
     }
+    // Khối dưới đây do scripts/build-unit-symbols.js ghi (unit "mọi phím còn lại"). Đừng sửa tay.
+    // <auto:symbols:units>
+    , {
+      id: 'u5',
+      index: 5,
+      // Sinh bởi scripts/build-unit-symbols.js — đừng sửa tay trong khối này.
+      autoSymbols: true,
+      title: "Mọi phím còn lại",
+      summary: "21 ký tự trên bàn phím mà khoá chưa dùng tới — ngoặc, ký hiệu tiền, phần còn lại của tầng Shift — mỗi ký tự gõ đúng chỗ nó hay đứng.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: 'u4-l06',
+      groups: [
+        { id: 'symbols', title: "Những phím còn lại", lessons: ['u5-l01', 'u5-l02', 'u5-l03', 'u5-l04', 'u5-l05', 'u5-l06'] },
+        { id: 'finish', title: "Về đích", lessons: ['u5-l07', 'u5-l08'] }
+      ]
+    }
+    // </auto:symbols:units>
   ],
 
   /* kind: keys | review | weak | test */
@@ -119,6 +146,17 @@ window.TypingEaseCurriculum = {
     'u4-l04': { title: 'Đoạn văn và tốc độ 1', newKeys: [], screens: 7, estMinutes: 5, kind: 'review', inputMode: 'telex', ready: true },
     'u4-l05': { title: 'Đoạn văn và tốc độ 2', newKeys: [], screens: 7, estMinutes: 6, kind: 'review', inputMode: 'telex', ready: true },
     'u4-l06': { title: 'Tổng kết và Kiểm tra cuối', newKeys: [], screens: 1, estMinutes: 3, kind: 'test', seconds: 180, inputMode: 'telex', ready: true }
+    // Khối dưới đây do scripts/build-unit-symbols.js ghi (unit "mọi phím còn lại"). Đừng sửa tay.
+    // <auto:symbols:lessons>
+    , 'u5-l01': { title: "`, ~, $ và %", newKeys: ["`","~","$","%"], screens: 10, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u5-l02': { title: "^, &, * và (", newKeys: ["^","&","*","("], screens: 11, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u5-l03': { title: "), = và +", newKeys: [")","=","+"], screens: 8, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u5-l04': { title: "[, {, ] và }", newKeys: ["[","{","]","}"], screens: 9, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u5-l05': { title: "\\, |, dấu nháy và \"", newKeys: ["\\","|","'","\""], screens: 9, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u5-l06': { title: "< và >", newKeys: ["<",">"], screens: 7, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u5-l07': { title: "Mọi ký hiệu cùng lúc", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true }
+    , 'u5-l08': { title: "Kiểm tra Unit 5", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
+    // </auto:symbols:lessons>
   },
 
   sequence: [
@@ -126,6 +164,10 @@ window.TypingEaseCurriculum = {
     'u2-l01', 'u2-l02', 'u2-l03', 'u2-l04', 'u2-l05', 'u2-l06', 'u2-l07', 'u2-l08', 'u2-l09', 'u2-l10', 'u2-l11',
     'u3-l01', 'u3-l02', 'u3-l03', 'u3-l04', 'u3-l05', 'u3-l06', 'u3-l07', 'u3-l08',
     'u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05', 'u4-l06'
+    // Khối dưới đây do scripts/build-unit-symbols.js ghi (unit "mọi phím còn lại"). Đừng sửa tay.
+    // <auto:symbols:sequence>
+    , 'u5-l01', 'u5-l02', 'u5-l03', 'u5-l04', 'u5-l05', 'u5-l06', 'u5-l07', 'u5-l08'
+    // </auto:symbols:sequence>
   ],
 
   /* Dòng gõ thử ở hero trang chủ — inline để không phải chờ fetch.

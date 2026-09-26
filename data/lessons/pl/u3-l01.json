@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "Rząd cyfr",
+  "summary": "Dziesięć cyfr, każdy palec prosto w górę.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Rząd cyfr leży nad wszystkim, co było do tej pory, i to jedyny rząd, w którym palce sięgają w górę zamiast w dół. Tu myli się więcej niż gdziekolwiek indziej w kursie, a naprawia się to tak jak wszystko inne: najpierw powoli.",
+  "congrats": "Rząd cyfr jest najtrudniejszy i potem najrzadziej ćwiczony. Wracaj czasem do tej lekcji.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "Rząd cyfr leży nad górnym rzędem liter. Każdy palec idzie prosto w górę i tak samo wraca. To najdłuższe ruchy w całym kursie.",
+      "hint": "Naciśnij 1, aby przejść dalej"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "Klawisze 1 i 0 naciskają lewy mały palec i ten sam palec prawej ręki. W górę, uderz, wróć do rzędu podstawowego.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "Klawisze 2 i 9 naciskają lewy palec serdeczny i ten sam palec prawej ręki. W górę, uderz, wróć do rzędu podstawowego.",
+      "type": "block",
+      "content": "df2 9j df\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Krótka seria z tym, czego właśnie się uczysz.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "Klawisze 3 i 8 naciskają lewy palec środkowy i ten sam palec prawej ręki. W górę, uderz, wróć do rzędu podstawowego.",
+      "type": "block",
+      "content": "383838 838383\n83 38\nd83 jf d8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "Klawisze 4 i 7 naciskają lewy palec wskazujący i ten sam palec prawej ręki. W górę, uderz, wróć do rzędu podstawowego.",
+      "type": "block",
+      "content": "47 47\nfj4 7d fj\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "Dwa pozostałe należą do palców wskazujących, które i tak sięgają do większej liczby klawiszy niż jakikolwiek inny palec.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nfj6 5d fj"
+    },
+    {
+      "text": "Cały rząd w grupach. Nie spuszczaj wzroku, żeby szukać.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Wszystkie dziesięć, wymieszane. Na początku myli się tu dużo; to normalne.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Na chwilę wracamy do słów, żeby dłonie pamiętały, gdzie mieszkają.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "wolny ciszy niebieski maluje\nmokro ten wiemy lata\nstoi pokoje szklanka kuchni"
+    },
+    {
+      "text": "Znowu zdania, z całą klawiaturą do dyspozycji.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Babcia piecze sernik na urodziny.\nPies czeka przy drzwiach.\nZamknij okno bo jest zimno."
+    }
+  ]
+}

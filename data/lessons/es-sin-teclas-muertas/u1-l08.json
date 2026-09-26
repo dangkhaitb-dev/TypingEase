@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "R y U",
+  "summary": "Teclas nuevas: R y U. El dedo sale, pulsa y vuelve.",
+  "newKeys": [
+    "r",
+    "u"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas nuevas en esta lección: R y U. Se pulsan con el índice izquierdo y el índice derecho. El movimiento es siempre el mismo — salir, pulsar y volver — y la vuelta es la parte que se entrena, porque si el dedo se queda fuera, la siguiente letra sale mal.",
+  "congrats": "Más teclas bajo los dedos. Si R y U ya te salen sin buscarlas, la lección ha hecho su trabajo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "LI",
+      "text": "Esta tecla la lleva el índice izquierdo. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa R para continuar"
+    },
+    {
+      "newKey": "r",
+      "text": "Solo R y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "fjr d fj\nr r rr\nrrr"
+    },
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "RI",
+      "text": "Esta tecla la lleva el índice derecho. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa U para continuar"
+    },
+    {
+      "newKey": "u",
+      "text": "Solo U y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "ur ur\nrju fd rj\nru ur ruru"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos cortos, uno detrás de otro. Cuenta hasta el final aunque falles alguno.",
+      "type": "burst",
+      "tokens": [
+        "rru",
+        "ruru",
+        "rrr",
+        "ruur",
+        "uru",
+        "rr",
+        "uuur",
+        "urru",
+        "rruu",
+        "uruu"
+      ]
+    },
+    {
+      "text": "Las teclas nuevas mezcladas con las anteriores, que es como aparecerán en las palabras.",
+      "type": "block",
+      "content": "fr rf frfr\nrrrr jjjj ffff uuu\nruru urur"
+    },
+    {
+      "text": "Palabras de verdad con las teclas nuevas. Escribe la palabra entera de un tirón, no letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "llegar seguir lugares dudas\nusada largas salir rueda\nguardar lugar igual sur"
+    },
+    {
+      "seconds": 25,
+      "text": "Una ráfaga de palabras cortas con las teclas nuevas dentro.",
+      "type": "burst",
+      "tokens": [
+        "al",
+        "largas",
+        "algas",
+        "figura",
+        "hada",
+        "asada",
+        "el",
+        "falsa",
+        "asadas",
+        "salsa"
+      ]
+    },
+    {
+      "text": "Ahora con el peso en R, que es la que menos veces has pulsado.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sigla segura largas fallas\nlarga asadas señas ideal\nsedas guardia salida salir"
+    },
+    {
+      "text": "Volvemos a los patrones un momento, para comprobar que los dedos siguen regresando a su sitio.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "rrr uuuu\nrururu ururur\nur ur"
+    },
+    {
+      "text": "Todo lo que tienes, mezclado. Fíjate en cuántas palabras ya te salen sin pensarlas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "al usar hagas gala\nde fila islas guarda\nreglas sal larga esa"
+    }
+  ]
+}

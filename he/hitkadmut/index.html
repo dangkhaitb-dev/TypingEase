@@ -1,0 +1,198 @@
+<!doctype html>
+<html lang="he" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ההתקדמות שלכם בהקלדה | TypingEase</title>
+    <meta name="description" content="איך הולכת ההקלדה העיוורת: ציון לכל שיעור, המהירות והדיוק הכי טובים שלכם, מפת חום של המקשים שבהם אתם טועים, רצף הימים והיעד היומי." />
+    <link rel="canonical" href="https://typingease.site/he/hitkadmut/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/he.mjs, progress trong
+         i18n/ui.he.js và bai-hoc/config.he.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="ניווט ראשי">
+        <a href="/he/">תרגול</a>
+        <a data-route="lessons" href="/he/shiurim/">קורס</a>
+        <a class="active" href="/he/hitkadmut/">התקדמות</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="בחירת שפה ומקלדת">דף הבית</a><a class="secondary-button" data-route="learn" href="/he/lilmod/">להמשיך ללמוד <span>←</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> איך זה הולך</p>
+        <h1>ההתקדמות שלכם בהקלדה</h1>
+        <p class="prog-intro">כל המספרים בדף הזה שמורים במכשיר הזה בלבד ולא נשלחים לשום מקום. הקלידו עוד שיעור אחד, והם יתעדכנו.</p>
+        <nav class="prog-courses" id="prog-courses" aria-label="קורס">
+          <a href="/he/hitkadmut/?course=he" data-course="he" aria-current="page">תקני</a>
+          <a href="/he/hitkadmut/?course=he-si1452" data-course="he-si1452">SI-1452</a>
+          <a href="/he/hitkadmut/?course=he-fonetit" data-course="he-fonetit">פונטית</a>
+        </nav>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 0 ימים ברצף</span>
+          <span id="strip-today">0 דק׳ היום</span>
+          <span id="strip-level">רמה: צעדים ראשונים</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="סקירה">
+        <div><span>שיעורים שהושלמו</span><strong id="sum-lessons">0 / 35</strong></div>
+        <div><span>כוכבים שנאספו</span><strong id="sum-stars">0</strong></div>
+        <div><span>שיא מילים לדקה</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>שיא דיוק</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> אבני דרך</p>
+            <h2 id="badges-title">תגים</h2>
+            <p>כל תג קשור למספר אמיתי בטבלה שלמטה — אין דרך לקבל אותו חוץ מלהקליד.</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">היעד של היום</p>
+          <h3 id="daily-goal-title">0 / 10 דק׳</h3>
+          <p id="daily-goal-status">🔥 0 ימים ברצף</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">שיא: 0 ימים</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="בחירת יעד יומי">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 דק׳</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 דק׳</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 דק׳</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 דק׳</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">המאמן שלכם</p><h3 id="coach-title">איפה אתם עומדים</h3></div>
+          <span class="coach-level" id="coach-level">צעדים ראשונים</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="התקדמות אחרונה" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">עוד שני שיעורים, ויהיו מספיק נתונים כדי לשרטט מגמה.</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">הקלידו שיעור אחד, והדף הזה כבר יידע איפה אתם עומדים.</p>
+        <a class="coach-action" id="coach-action" href="/he/lilmod/">להתחיל את שיעור 1 ←</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> מקש אחרי מקש</p>
+          <h3 id="heat-title">מפת חום של המקלדת</h3>
+          <p>מקשים ירוקים אתם מקישים נקי, כתומים — פעם כן ופעם לא, ואדומים עולים לכם במהירות. מקש מקבל צבע רק אחרי שהקלדתם אותו מספיק פעמים כדי שאפשר יהיה להגיד עליו משהו.</p>
+          <p class="heat-empty" id="heat-empty">עדיין אין מספיק נתונים — הקלידו כמה שיעורים וחזרו לכאן.</p>
+          <div class="heat-legend" id="heat-legend" aria-label="דיוק לפי מקש" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="הקורס · {n} שיעורים"><i></i> הקורס · 35 שיעורים</p>
+            <h2 id="results-title">ציון לכל שיעור</h2>
+            <p>הסיבוב הכי טוב שלכם בכל שיעור, שמור במכשיר הזה.</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">מחיקת ההיסטוריה</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>שיעור</th><th>מסכים שהושלמו</th><th>כוכבים</th><th>שיא מילים לדקה</th><th>דיוק</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> ממשיכים</p>
+          <h2 id="prog-explore-title">מה עכשיו</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/he/shiurim/">
+            <h3>הקורס המלא</h3>
+            <p>כל היחידות לפי הסדר. חזרו לשיעור שתרצו לעשות שוב, או פתחו את היחידה הבאה מוקדם.</p>
+            <span>לקורס <b aria-hidden="true">←</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>להקליד על המקלדת שלכם</h3>
+            <p>עברית תקנית, SI-1452, פונטית, QWERTY, AZERTY — 119 פריסות אמיתיות, והקורס הולך אחרי זו שתבחרו.</p>
+            <span>לכל הפריסות <b aria-hidden="true">←</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>קצת יותר לאט, והרבה יותר רחוק.</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/he/about/">אודות</a><span aria-hidden="true"> · </span><a href="/he/terms/">תנאי שימוש</a><span aria-hidden="true"> · </span><a href="/he/privacy/">מדיניות פרטיות</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.he.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.he.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"he":{"learn":"/he/lilmod/","lessons":"/he/shiurim/"},"he-si1452":{"learn":"/he/si1452/lilmod/","lessons":"/he/si1452/"},"he-fonetit":{"learn":"/he/fonetit/lilmod/","lessons":"/he/fonetit/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "he";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

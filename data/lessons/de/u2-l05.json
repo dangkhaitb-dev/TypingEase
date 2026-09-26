@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Wiederholung",
+  "summary": "Keine neue Taste. Alles Bisherige, dichter und schneller.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Diese Lektion bringt nichts Neues bei. Jetzt zeigt sich, ob das Bisherige ohne Nachdenken kommt, und das ist etwas anderes, als zu wissen, wo jede Taste liegt.",
+  "congrats": "Nichts Neues und trotzdem schneller. Genau das sollte passieren.",
+  "screens": [
+    {
+      "text": "Zum Anfang einzelne Wörter. Ohne Eile: Tempo kommt aus Genauigkeit, nie umgekehrt.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "gerade hall viele schnell\nraum moment wohl möglich\nstoff leise hilfe mond"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine kurze Runde. Mach die Liste zu Ende, auch wenn dir eins durchrutscht.",
+      "type": "burst",
+      "tokens": [
+        "leider",
+        "skala",
+        "teil",
+        "helle",
+        "chef",
+        "start",
+        "wolke",
+        "reif",
+        "kleider",
+        "arzt",
+        "auch",
+        "vorher"
+      ]
+    },
+    {
+      "text": "Fünf Wörter pro Zeile. Lass die Augen den Fingern vorausgehen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "das lag diesel sand fluss\ner riesig geht sieger vogel\nsaga tiger offen volk wahl"
+    },
+    {
+      "text": "Noch einmal Muster, um zu prüfen, ob die Finger weiter in die Grundstellung zurückkehren.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Kurze Wörter in gutem Tempo. Die sollten inzwischen fast von allein kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "geht wand schon uns\njacke tag werk stolz\nmonat von dort sofa"
+    },
+    {
+      "seconds": 30,
+      "text": "Mehr Zeit und mehr Wörter. Halte dasselbe Tempo von Anfang bis Ende.",
+      "type": "burst",
+      "tokens": [
+        "hitze",
+        "los",
+        "vase",
+        "zahl",
+        "adler",
+        "wann",
+        "haus",
+        "teil",
+        "wer",
+        "reise",
+        "sechs",
+        "sofa",
+        "glas",
+        "nadel"
+      ]
+    },
+    {
+      "text": "Ganze Sätze. Hier zeigt sich, ob die Hand von allein zurückfindet.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "werk natur glas lachen\njacke name sitz mann\nund lass hals warte"
+    },
+    {
+      "text": "Der letzte Durchgang. Wenn du bis hierhin nicht auf die Tastatur gesehen hast, ist die Lektion erledigt.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "land wetter schnell sitz gitarre\nverstehen werk freude monat das\nkind hitze verein mensch ruhe"
+    }
+  ]
+}

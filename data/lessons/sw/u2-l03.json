@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C na N",
+  "summary": "Vitufe vipya: C na N. Kidole kinatoka, kinabonyeza na kurudi.",
+  "newKeys": [
+    "c",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe vipya katika somo hili: C na N. Vinabonyezwa na kidole cha kati cha kushoto na kidole cha shahada cha kulia. Mwendo ni uleule kila mara — toka, bonyeza na rudi — na kurudi ndiko kunakofanyiwa mazoezi, kwa sababu kidole kikibaki nje, herufi inayofuata inakosewa.",
+  "congrats": "Vitufe zaidi chini ya vidole vyako. Kama C na N vinakuja bila kuvitafuta, somo limefanya kazi yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "Kitufe hiki ni cha kidole cha kati cha kushoto. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza C ili kuendelea"
+    },
+    {
+      "newKey": "c",
+      "text": "C tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "cccc cccc\nc c\njfc d jf"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "Kitufe hiki ni cha kidole cha shahada cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza N ili kuendelea"
+    },
+    {
+      "newKey": "n",
+      "text": "N tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "cncncn ncncnc\nnc nc\njdc nf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Vikundi vifupi, kimoja baada ya kingine. Endelea hadi mwisho hata ukikosea kimoja.",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "nnn",
+        "nc",
+        "ccnc",
+        "cnnn",
+        "cnn",
+        "ncc",
+        "nncc",
+        "nccc",
+        "ncnn"
+      ]
+    },
+    {
+      "text": "Vitufe vipya vikichanganywa na vya zamani, jinsi vitakavyotokea ndani ya maneno.",
+      "type": "block",
+      "content": "nc cn ncnc\nnnn ccc jjj fff\ncncn ncnc"
+    },
+    {
+      "text": "Maneno halisi yenye vitufe vipya. Andika kila neno kwa mkupuo mmoja, si herufi kwa herufi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lini kando nafaka neno\nchini nyuki kinywaji uwanja\nkucheka uchafu endelea kutana"
+    },
+    {
+      "seconds": 25,
+      "text": "Mfululizo wa maneno mafupi yenye vitufe vipya.",
+      "type": "burst",
+      "tokens": [
+        "tangu",
+        "njano",
+        "ghala",
+        "kutaka",
+        "shauri",
+        "kioo",
+        "sikia",
+        "sasa",
+        "sherehe",
+        "kukaa"
+      ]
+    },
+    {
+      "text": "Sasa uzito uko kwenye C, kitufe ulichobonyeza mara chache zaidi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lile ofisi kuta kawaida\nnje ghala choo tahadhari\nredio sana saa ndiyo"
+    },
+    {
+      "text": "Turudi kwenye mifumo kwa muda, kuhakikisha vidole bado vinapata njia ya kurudi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nnnn ccc\ncncn ncnc\nnc nc"
+    },
+    {
+      "text": "Kila ulicho nacho, kimechanganywa. Angalia ni maneno mangapi tayari yanakuja bila kufikiri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kuchukua kufika na hatua\ntaifa uhuru aridhi nyanya\nyako shairi ni saa"
+    }
+  ]
+}

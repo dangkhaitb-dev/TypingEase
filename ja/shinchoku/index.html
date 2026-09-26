@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>タイピングの進み具合 | TypingEase</title>
+    <meta name="description" content="タイピングの進み具合をひと目で確認できます。レッスンごとの成績、最高 WPM と正確さ、よく間違えるキーのヒートマップ、連続日数と1日の目標。" />
+    <link rel="canonical" href="https://typingease.site/ja/shinchoku/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/ja.mjs, progress trong
+         i18n/ui.ja.js và bai-hoc/config.ja.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="メインメニュー">
+        <a href="/ja/">練習</a>
+        <a data-route="lessons" href="/ja/renshu/">コース</a>
+        <a class="active" href="/ja/shinchoku/">進み具合</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="言語とキーボードを選ぶ">ホーム</a><a class="secondary-button" data-route="learn" href="/ja/manabu/">練習を続ける <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> いまの調子</p>
+        <h1>タイピングの進み具合</h1>
+        <p class="prog-intro">このページの数字はすべてこの端末に保存され、どこにも送信されません。レッスンをもうひとつ終えると更新されます。</p>
+        <nav class="prog-courses" id="prog-courses" aria-label="コース">
+          <a href="/ja/shinchoku/?course=ja" data-course="ja" aria-current="page">JIS</a>
+          <a href="/ja/shinchoku/?course=ja-us" data-course="ja-us">US配列</a>
+        </nav>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 0 日連続</span>
+          <span id="strip-today">今日 0 分</span>
+          <span id="strip-level">レベル：はじめたばかり</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="概要">
+        <div><span>終えたレッスン</span><strong id="sum-lessons">0 / 36</strong></div>
+        <div><span>集めた星</span><strong id="sum-stars">0</strong></div>
+        <div><span>最高 WPM</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>最高の正確さ</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> これまでの記録</p>
+            <h2 id="badges-title">バッジ</h2>
+            <p>どのバッジも下の表にある実際の数字と結びついています。手に入れる方法は、打つことだけです。</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">今日の目標</p>
+          <h3 id="daily-goal-title">0 / 10 分</h3>
+          <p id="daily-goal-status">🔥 0 日連続</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">最長：0 日</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="1日の目標を選ぶ">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 分</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 分</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 分</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 分</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">コーチから</p><h3 id="coach-title">いまの位置</h3></div>
+          <span class="coach-level" id="coach-level">はじめたばかり</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="最近の伸び" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">あと 2 レッスンで、傾向を描けるだけのデータがそろいます。</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">レッスンをひとつ終えると、このページにいまの位置が表示されます。</p>
+        <a class="coach-action" id="coach-action" href="/ja/manabu/">レッスン 1 を始める →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> キーごとに</p>
+          <h3 id="heat-title">キーボードのヒートマップ</h3>
+          <p>緑のキーは正確に打てているキー、黄色は当たり外れがあるキー、赤は速さを落としているキーです。意味のあることが言えるだけの回数を打ったキーにだけ色が付きます。</p>
+          <p class="heat-empty" id="heat-empty">まだデータが足りません。いくつかレッスンを終えてから、また見に来てください。</p>
+          <div class="heat-legend" id="heat-legend" aria-label="キーごとの正確さ" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="全 {n} レッスンのコース"><i></i> 全 36 レッスンのコース</p>
+            <h2 id="results-title">レッスンごとの成績</h2>
+            <p>各レッスンでいちばんよかった回を、この端末に保存しています。</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">記録を消す</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>レッスン</th><th>終えた画面</th><th>星</th><th>最高 WPM</th><th>正確さ</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> この先へ</p>
+          <h2 id="prog-explore-title">次にすること</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/ja/renshu/">
+            <h3>コース全体</h3>
+            <p>すべてのユニットを順番に。やり直したいレッスンに戻ることも、次のユニットを先に開くこともできます。</p>
+            <span>コースを見る <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>自分のキーボードで打つ</h3>
+            <p>QWERTY、AZERTY、QWERTZ、デーヴァナーガリー、アラビア文字、JIS など、実在する 119 の配列。選んだ配列にコースが合わせます。</p>
+            <span>配列を見る <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>少しゆっくり打つほど、遠くまで行けます。</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/ja/about/">TypingEase について</a><span aria-hidden="true"> · </span><a href="/ja/terms/">利用規約</a><span aria-hidden="true"> · </span><a href="/ja/privacy/">プライバシーポリシー</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.ja.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.ja.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"ja":{"learn":"/ja/manabu/","lessons":"/ja/renshu/"},"ja-us":{"learn":"/ja/us/manabu/","lessons":"/ja/us/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "ja";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

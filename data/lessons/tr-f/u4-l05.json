@@ -1,0 +1,163 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "Yeni tuşlar: <, >, iki nokta üst üste ve noktalı virgül",
+  "summary": "Bu derste: <, >, iki nokta üst üste ve noktalı virgül.",
+  "newKeys": [
+    "<",
+    ">",
+    ":",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c",
+    "f",
+    "p",
+    "ç",
+    "ö",
+    "j",
+    ".",
+    "b",
+    "ş",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ",",
+    "/",
+    "-",
+    "q",
+    "w",
+    "x",
+    "+",
+    "*",
+    "!",
+    "\"",
+    "$",
+    "%",
+    "&",
+    "'",
+    "(",
+    ")",
+    "=",
+    "?",
+    "_",
+    "<",
+    ">",
+    ":",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kursun henüz kullanmadığı tuşlar: <, >, iki nokta üst üste ve noktalı virgül. Bazıları Shift ister, öbür elin serçe parmağıyla; ötekilerin kendi tuşu var, kurs onları henüz kullanmamıştı.",
+  "congrats": "Artık parmaklarının altında: <, >, iki nokta üst üste ve noktalı virgül. İşaret de yanındaki harf kadar kolay çıkıyor.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "<",
+      "finger": "LP",
+      "text": "Bu karakter için sol serçe parmak çalışır: <.",
+      "hint": "Devam etmek için < tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "<",
+      "text": "Önce yalnızca <, sonra gerçekten kullanıldığı yerde.",
+      "content": "<< < <tuşa <sarar <üç\n<< < <ceket <hız <gece\n<< < <kapalı <insan <hazır"
+    },
+    {
+      "type": "block",
+      "newKey": ">",
+      "text": "Önce yalnızca >, sonra gerçekten kullanıldığı yerde.",
+      "content": ">> > <şort> <korku> <küçük>\n>> > <kaptan> <perde> <tren>\n>> > <park> <kırsal> <yönet>"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RR",
+      "text": "Bu karakter için sağ yüzük parmağı çalışır: iki nokta üst üste; Shift öbür elde.",
+      "hint": "Devam etmek için : tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "Önce yalnızca iki nokta üst üste, sonra gerçekten kullanıldığı yerde.",
+      "content": ":: : kısa: onlar: hele:\n:: : maç: mont: burun:\n:: : problem: koyu: yarın:"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RP",
+      "text": "Bu karakter için sağ serçe parmak çalışır: noktalı virgül; Shift öbür elde.",
+      "hint": "Devam etmek için ; tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "Önce yalnızca noktalı virgül, sonra gerçekten kullanıldığı yerde.",
+      "content": ";; ; sayı; böyle; pilav;\n;; ; kasım; düz; bil;\n;; ; kültür; burada; durur;"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Bu karakterlerle kısa parçalardan bir seri.",
+      "tokens": [
+        "<saat>",
+        "<yazı>",
+        "az:",
+        "<kırk>",
+        "<büyük>",
+        "<sonbahar>",
+        "<gün>",
+        "<tabela>",
+        "akıl;",
+        "<bu>"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Bu derste gelen her şey, karışık.",
+      "content": "kumsal; dışa: incir: ok;\n<mavi> <tablo> şu: <mesafe>\nanne; <pusula> <kelime> <uzun>"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Yeniden kelimeler, işaretler yerli yerinde.",
+      "content": "çocuk: ekmek <burun> sel <kek>\nkes; sade al; esas <pusula>\notur; kolaylık <istasyon> temmuz <kutular>"
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift na Enter",
+  "summary": "Herufi kubwa kwa kidole kidogo cha upande wa pili, na kuruka mstari.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Hadi sasa kila kitu kimeandikwa kwa herufi ndogo. Shift inabadilisha hilo, na ina kanuni moja inayofaa kujifunzwa vizuri tangu mwanzo: inabonyezwa na kidole kidogo cha mkono ulio kinyume na herufi. Ukitumia kidole kidogo cha upande uleule, mkono unajipinda na unaishia kutazama kibodi.",
+  "congrats": "Kwa Shift na Enter unaweza kuandika maandishi kamili kama yanavyoandikwa nje ya hapa.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Herufi kubwa huandikwa kwa kidole kidogo cha mkono ulio kinyume na herufi. Shikilia Shift, bonyeza herufi, achia. Kamwe si kwa kidole kidogo cha mkono unaoandika herufi hiyo.",
+      "hint": "Shikilia Shift na ubonyeze herufi ili kuendelea"
+    },
+    {
+      "newKey": "shift",
+      "text": "Herufi kubwa na ndogo kwa kupokezana. Kidole kidogo kinashuka na kupanda; mkono mwingine haubadilishi mahali.",
+      "type": "block",
+      "content": "Pp Jj Zz Ee\nCc Dd Qq Gg\nTt Uu Kk Rr\nXx Mm Ff Bb"
+    },
+    {
+      "text": "Maneno yanayoanza kwa herufi kubwa, kama majina.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "chanzo haja baadaye afisa\nkitalu haki ubao shida\nlori pata ukuta zaa"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter ni kitufe cha kidole kidogo cha kulia, upande wa kulia wa safu ya msingi. Ndicho kitufe kikubwa zaidi ambacho kidole hicho kinapaswa kukifikia.",
+      "hint": "Bonyeza Enter ili kuendelea"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Mstari mmoja, Enter, mstari mwingine. Kidole kidogo kinatoka na kurudi bila kuuvuta mkono.",
+      "type": "block",
+      "content": "Tumaini\nBaraka\nAmani\nFaraji\nSalma\nLamu"
+    },
+    {
+      "text": "Sentensi zenye herufi kubwa mwanzoni na nukta mwishoni. Sasa inafanana na kuandika halisi.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Haba na haba hujaza kibaba.\nRafiki yangu anaishi karibu na soko.\nBaba yangu anafanya kazi mjini."
+    },
+    {
+      "seconds": 25,
+      "text": "Mfululizo wa kuimarisha somo hili.",
+      "type": "burst",
+      "tokens": [
+        "zima",
+        "ukurasa",
+        "kabati",
+        "wote",
+        "mistari",
+        "kidogo",
+        "kung'oa",
+        "dunia",
+        "baridi",
+        "jiko",
+        "kiu",
+        "mavazi"
+      ]
+    },
+    {
+      "text": "Matano kwa mstari, kidole kidogo kikifanya kazi pande zote mbili.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "barabara chukua sheria ripoti matumaini\nofisi hivyo kweli pembeni uhakika\nmia kitoweo kijani viti baba"
+    },
+    {
+      "text": "Kufunga, sentensi nzima. Shift, herufi, achia — bila kusimama kufikiri.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Kesho tutasafiri kwenda pwani.\nKila siku natembea hadi kituo cha basi.\nMaji ya mto huu ni baridi sana."
+    }
+  ]
+}

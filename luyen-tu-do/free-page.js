@@ -12,14 +12,30 @@
   const customText = document.querySelector('#custom-text');
   if (!sampleEl || !input || !customText) return;
 
-  // Đoạn mẫu viết KHÔNG DẤU: gõ được ngay mà không cần bật Unikey, và khớp với nội dung
-  // Unit 1-2 của giáo trình. Muốn gõ có dấu thì dán đoạn của bạn vào ô trên.
-  const SAMPLES = [
-    'Moi ngay danh ra muoi phut de luyen go la du de tay ban quen dan vi tri cac phim. Dieu quan trong khong phai la go nhanh ngay tu dau, ma la go dung, deu tay va khong nhin xuong ban phim.',
-    'Buoi sang yen tinh la luc de tap trung nhat. Ngoi thang lung, hai ban chan dat vung tren san, hai ngon tro dat len phim F va J, roi bat dau tu nhung dong ngan truoc khi go doan dai.',
-    'Do chinh xac di truoc toc do. Khi tay da nho dung duong di cua tung ngon, toc do se tu tang len ma ban khong can co gang. Con neu go nhanh nhung sai nhieu thi sua lai rat mat thoi gian.',
-    'Hay giu mat tren man hinh va de moi ngon tro ve hang phim co so sau khi go. Go tot khong phai la mot cuoc dua; do la mot ky nang lon len dan theo tung ngay luyen tap co y thuc.'
-  ];
+  // Bảng chữ tiếng Việt là mặc định dựng sẵn; trang tiếng Anh nạp /i18n/ui.en.js rồi phủ
+  // `TypingEaseUI.free` lên trên. Thiếu key nào thì key đó hiện ra tiếng Việt — cố ý: sai mà
+  // nhìn thấy vẫn hơn là trống trơn. Vì vậy tên key ở ui.en.js phải trùng tuyệt đối.
+  // Đoạn mẫu nằm luôn trong bảng này: mỗi ngôn ngữ cần đoạn văn của riêng nó, không phải
+  // một bản dịch — dịch đoạn tiếng Việt sang tiếng Anh thì đọc ra ngay là đồ dịch máy.
+  const S_VI = {
+    // Đoạn mẫu viết KHÔNG DẤU: gõ được ngay mà không cần bật Unikey, và khớp với nội dung
+    // Unit 1-2 của giáo trình. Muốn gõ có dấu thì dán đoạn của bạn vào ô trên.
+    samples: [
+      'Moi ngay danh ra muoi phut de luyen go la du de tay ban quen dan vi tri cac phim. Dieu quan trong khong phai la go nhanh ngay tu dau, ma la go dung, deu tay va khong nhin xuong ban phim.',
+      'Buoi sang yen tinh la luc de tap trung nhat. Ngoi thang lung, hai ban chan dat vung tren san, hai ngon tro dat len phim F va J, roi bat dau tu nhung dong ngan truoc khi go doan dai.',
+      'Do chinh xac di truoc toc do. Khi tay da nho dung duong di cua tung ngon, toc do se tu tang len ma ban khong can co gang. Con neu go nhanh nhung sai nhieu thi sua lai rat mat thoi gian.',
+      'Hay giu mat tren man hinh va de moi ngon tro ve hang phim co so sau khi go. Go tot khong phai la mot cuoc dua; do la mot ky nang lon len dan theo tung ngay luyen tap co y thuc.'
+    ],
+    empty: 'Hãy chọn một đoạn văn để bắt đầu luyện gõ.',
+    idle: 'Bạn có thể dán nội dung riêng hoặc tạo đoạn ngẫu nhiên.',
+    done: 'Hoan thanh! Hay chon mot doan van moi de luyen tiep.',
+    clean: 'Rất tốt, hãy giữ nhịp gõ đều.',
+    mistakes: 'Có ký tự chưa đúng, hãy gõ chậm lại một chút.'
+  };
+  const S = { ...S_VI, ...(window.TypingEaseUI?.free || {}) };
+
+  // Không có bảng `R` tuyến đường ở đây như curriculum-page.js / player.js: script này không
+  // dựng một liên kết nào — mọi đường dẫn của cả hai bản ngôn ngữ đều nằm cứng trong HTML.
 
   let target = '', startedAt = null, timer = null, recorded = false;
   let keyStart = null, observed = 0;
@@ -131,7 +147,7 @@
     if (typed === target && target) {
       clearInterval(timer);
       timer = null;
-      feedback.textContent = 'Hoan thanh! Hay chon mot doan van moi de luyen tiep.';
+      feedback.textContent = S.done;
       if (startedAt && !recorded) {
         recorded = true;
         const elapsed = Math.max(1, Math.round((Date.now() - startedAt) / 1000));
@@ -139,9 +155,9 @@
         profile?.save();
       }
     } else if (!typed.length) {
-      feedback.textContent = 'Bạn có thể dán nội dung riêng hoặc tạo đoạn ngẫu nhiên.';
+      feedback.textContent = S.idle;
     } else {
-      feedback.textContent = percent === 100 ? 'Rất tốt, hãy giữ nhịp gõ đều.' : 'Có ký tự chưa đúng, hãy gõ chậm lại một chút.';
+      feedback.textContent = percent === 100 ? S.clean : S.mistakes;
     }
   }
 
@@ -149,7 +165,7 @@
     target = String(value || '').replace(/\s+/g, ' ').trim();
     reset();
     if (!target) {
-      sampleEl.textContent = 'Hãy chọn một đoạn văn để bắt đầu luyện gõ.';
+      sampleEl.textContent = S.empty;
       if (board) NT.setKeyboardState(board, '');
       return;
     }
@@ -159,7 +175,7 @@
 
   document.querySelector('#use-text').addEventListener('click', () => setTarget(customText.value));
   document.querySelector('#random-text').addEventListener('click', () => {
-    const next = SAMPLES[Math.floor(Math.random() * SAMPLES.length)];
+    const next = S.samples[Math.floor(Math.random() * S.samples.length)];
     customText.value = next;
     setTarget(next);
   });

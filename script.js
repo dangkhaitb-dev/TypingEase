@@ -1,7 +1,11 @@
 /* =================================================================================================
    BẢNG CHUỖI CÒN LẠI CỦA TRANG CHỦ.
-   Site chỉ còn MỘT ngôn ngữ: tiếng Việt. /en/ và /ja/ đã thành trang chuyển hướng, dropdown chọn
-   ngôn ngữ đã gỡ — nên bảng dưới đây chỉ còn đúng khoá `vi`.
+   File này chạy trên HAI trang chủ: `/vi/` (tiếng Việt) và `/` (tiếng Anh, có thêm bộ chọn ngôn
+   ngữ do landing.js lo). Bảng dưới đây là bản TIẾNG VIỆT MẶC ĐỊNH; trang tiếng Anh nạp
+   `i18n/ui.en.js` trước file này và `currentLocalizedUi()` / `currentHomeUi()` phủ nó lên trên —
+   đúng cơ chế mà player.js, curriculum-page.js và progress-page.js đã dùng từ đầu.
+   Khoá thiếu ở lớp phủ thì hiện tiếng Việt: sai trông thấy vẫn hơn ô trống, và nếu ui.en.js hỏng
+   thì trang chủ tiếng Anh vẫn chạy chứ không trắng màn hình.
    Ngày 18/09/2026 dọn nốt di sản của engine 30 bài cũ (77 dòng): `lessons`, `lessonSecondLines`,
    `translations`, `siteLanguages`, `activeLanguage`, `homeActionText`, `weakKeyUi`, `coachUi`,
    `coachTrendHint`, `dailyGoalUi`, `rows`, `fingerMap`, `localizedLessonName` đã xoá hẳn — không
@@ -11,7 +15,9 @@
 const localizedUi = {
   vi: { errors:'Số lỗi', notYet:'Chưa có', next:'Bài tiếp theo →', retry:'↻ Làm lại bài này', perfect:'Hoàn thành xuất sắc! Bạn có thể sang bài tiếp theo hoặc luyện lại.', accuracy:'Bạn đã hoàn thành với độ chính xác {accuracy}%. Hãy luyện lại để cải thiện nhé.', exploreTag:'Tài nguyên TypingEase', exploreTitle:'Khám phá TypingEase', explore:[['Cách gõ 10 ngón','Hướng dẫn vị trí ngón tay, hàng phím cơ sở và cách luyện gõ đúng kỹ thuật cho người mới.','Xem hướng dẫn'],['Kiểm tra tốc độ đánh máy','Làm bài typing test 60 giây để kiểm tra WPM, độ chính xác và tốc độ gõ hiện tại của bạn.','Kiểm tra ngay'],['WPM là gì?','Tìm hiểu WPM, cách tính tốc độ đánh máy và vì sao WPM nên được xem cùng độ chính xác.','Tìm hiểu WPM']], game:{tab:'Trò chơi',kicker:'THỬ THÁCH 30 GIÂY',title:'Đấu tốc độ',description:'Gõ càng đúng và nhanh, điểm thành tích càng cao.',time:'Thời gian',score:'Điểm',best:'Kỷ lục',idle:'Nhấn bắt đầu để nhận thử thách.',placeholder:'Gõ tại đây khi thử thách bắt đầu...',start:'Bắt đầu thử thách',running:'Đang thi đấu...',status:'Mỗi lượt thi kéo dài 30 giây.',focus:'Tập trung, gõ nhanh và chính xác!',finish:'Hoàn thành! Bạn đạt {score} điểm.',replay:'Chơi lại'} }
 };
-function currentLocalizedUi() { return localizedUi.vi; }
+// `explore` là mảng, không phải object — spread nông sẽ thay CẢ mảng chứ không trộn từng phần tử,
+// và đó chính là điều mong muốn: trang tiếng Anh có bộ card riêng, không phải bản dịch từng ô.
+function currentLocalizedUi() { return { ...localizedUi.vi, ...(window.TypingEaseUI?.localized || {}) }; }
 function formatUi(template, values) { return Object.entries(values).reduce((text, [key, value]) => text.replace(`{${key}}`, value), template); }
 
 /* =================================================================================================
@@ -41,7 +47,7 @@ const profile = window.TypingEaseProfile || null;
 // Duong dan giua cac trang, TUYET DOI: ban tieng Anh nam sau mot cap (`/en/`) nen './' se truot,
 // va ten thu muc cung khac. Lop phu `TypingEaseUI.routes` ghi de bang nay tren trang tieng Anh.
 const ROUTES_VI = {
-  home: '/', lessons: '/bai-hoc/', learn: '/hoc/', test: '/kiem-tra-toc-do-go/',
+  home: '/vi/', lessons: '/bai-hoc/', learn: '/hoc/', test: '/kiem-tra-toc-do-go/',
   progress: '/tien-do/', free: '/luyen-tu-do/', weak: '/luyen-phim-yeu/', guide: '/cach-go-10-ngon/'
 };
 const R = { ...ROUTES_VI, ...(window.TypingEaseUI?.routes || {}) };
@@ -69,7 +75,7 @@ const homeUi = {
     teaserLocked: '🔒',
     shortcutsTitle: 'Luyện thêm',
     shortcuts: [
-      ['Kiểm tra tốc độ', 'Đo WPM và độ chính xác trong 15 · 30 · 60 · 120 giây.'],
+      ['Kiểm tra tốc độ', 'Đo WPM và độ chính xác trong bài test từ 15 giây đến 10 phút.'],
       ['Luyện phím yếu', 'Bài tập sinh riêng từ những phím bạn hay sai nhất.'],
       ['Luyện tự do', 'Dán đoạn văn của bạn và gõ lại theo cách bạn muốn.']
     ],
@@ -91,7 +97,7 @@ const homeUi = {
     contentVi: ''
   }
 };
-function currentHomeUi() { return homeUi.vi; }
+function currentHomeUi() { return { ...homeUi.vi, ...(window.TypingEaseUI?.home || {}) }; }
 const escapeHtml = value => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
 const localDateKey = (date = new Date()) =>
   `${date.getFullYear()}-${String(date.getMonth() + 1).padStart(2, '0')}-${String(date.getDate()).padStart(2, '0')}`;
@@ -162,7 +168,8 @@ function renderContinueCard() {
     track.style.setProperty('--continue-progress', `${ratio}%`);
     track.setAttribute('aria-valuenow', String(ratio));
   } else {
-    continueHref = TEST_URL;
+    // Ban tieng Anh chua co trang kiem tra toc do, nen khi het bai thi dua ve lo trinh.
+    continueHref = TEST_URL || CURRICULUM_URL;
     card.querySelector('#continue-name').textContent = ui.doneName;
     card.querySelector('#continue-count').textContent = ui.doneCount;
     const track = card.querySelector('#continue-track');
@@ -312,7 +319,10 @@ function applyCopy() {
 const LEGACY_HASH = { '#bang-xep-hang': () => PROGRESS_URL, '#huong-dan': () => GUIDE_URL, '#thanh-tich': () => PROGRESS_URL };
 function followLegacyHash() {
   const resolve = LEGACY_HASH[location.hash];
-  if (resolve) location.replace(resolve());
+  // Dich co the la null o ban ngon ngu chua co trang do — thi cu de nguyen hash con hon
+  // `location.replace(null)`, thu se dua nguoi dung toi mot URL ten la "null".
+  const target = resolve?.();
+  if (target) location.replace(target);
 }
 window.addEventListener('hashchange', followLegacyHash);
 

@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "F at J, pati ang space bar",
+  "summary": "Ang dalawang key na may umbok, ang space bar, at ang ugaling hindi tumingin sa ibaba.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nagsisimula ang lahat sa mga key na may maliit na umbok. Doon nakapatong ang dalawang hintuturo at hindi sila umaalis; mula sa posisyong iyon sinusukat ang buong kurso. Ilagay muna ang dalawang kamay, at sa screen lang tumingin.",
+  "congrats": "Nasa puwesto na ang mga kamay mo. Mula rito, bawat key ay inaabot mula sa posisyong ito at binibitawan ulit.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "LI",
+      "text": "Ang key na ito ay para sa kaliwang hintuturo. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang F para magpatuloy"
+    },
+    {
+      "newKey": "f",
+      "text": "F lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "f f ff\nffff\nffffff ffffff"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RI",
+      "text": "Ang key na ito ay para sa kanang hintuturo. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang J para magpatuloy"
+    },
+    {
+      "newKey": "j",
+      "text": "J lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "jf jf\njf fj jfjf\nfj jf fjfj"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "Ang space bar ay para sa kanang hinlalaki. Wala nang ibang ginagawa ang mga hinlalaki, kaya hindi mo ito kailangang hanapin.",
+      "hint": "Pindutin ang space bar para magpatuloy"
+    },
+    {
+      "newKey": " ",
+      "text": "Maiikling grupo na may espasyo sa pagitan. Bumababa at umaangat ang kanang hinlalaki; hindi gumagalaw ang ibang daliri.",
+      "type": "block",
+      "content": "jf jf\nfj jf fjfj\njjjj ffff"
+    },
+    {
+      "seconds": 20,
+      "text": "Maiikling grupo, sunod-sunod. Ituloy hanggang dulo kahit may mamali.",
+      "type": "burst",
+      "tokens": [
+        "ffj",
+        "ff",
+        "ffff",
+        "fjj",
+        "ffjj",
+        "jff",
+        "fjf",
+        "jffj",
+        "fj",
+        "fjff"
+      ]
+    },
+    {
+      "text": "Ang mga bagong key na kahalo ng mga luma, gaya ng paglabas nila sa loob ng mga salita.",
+      "type": "block",
+      "content": "fj fj\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Ang dalawang bagong key ulit. Wala pang salitang matitipa sa kanila, at inaasahan iyon.",
+      "type": "block",
+      "content": "fj jf\njf jf\njf fj jfjf"
+    },
+    {
+      "seconds": 25,
+      "text": "Mas mahahabang grupo. Hindi pa nakakatulong ang pagmamadali.",
+      "type": "burst",
+      "tokens": [
+        "fjfj",
+        "ff",
+        "fjf",
+        "jjf",
+        "ffjf",
+        "fjjj",
+        "fj",
+        "jjff",
+        "jfjj",
+        "jfj",
+        "jff",
+        "jffj"
+      ]
+    },
+    {
+      "text": "Lahat ng mayroon ka na, sa maiikling grupo. Sa screen ang tingin, hindi sa mga kamay.",
+      "type": "block",
+      "content": "fjfj jfjf\njf jf\nfj jf fjfj"
+    },
+    {
+      "text": "Balik muna sa mga pattern, para matiyak na nakakabalik pa rin ang mga daliri.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf jf\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Isang huling ikot gamit ang lahat ng natutunan mo hanggang dito.",
+      "type": "block",
+      "content": "fjfjfj jfjfjf\njf jf\nfj fj"
+    }
+  ]
+}

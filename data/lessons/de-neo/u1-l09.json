@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "Schwache Tasten",
+  "summary": "Eine Übung, gebaut aus den Tasten, die dir am häufigsten danebengehen.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "ascii",
+  "intro": "Diese Übung wird aus den Tasten gebaut, die dir danebengehen, nicht aus einer festen Liste. Änderst du dich, ändert sie sich mit.",
+  "congrats": "Schwache Tasten hören mit einer Minute am Tag auf, schwach zu sein — nicht mit einer Stunde im Monat.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "Eine Übung aus genau den Tasten, die dir am häufigsten danebengehen. Sie ändert sich mit jedem Mal."
+    }
+  ]
+}

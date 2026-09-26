@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "B at X",
+  "summary": "Mga bagong key: B at X. Lumalabas ang daliri, pumipindot, at bumabalik.",
+  "newKeys": [
+    "b",
+    "x"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Mga bagong key sa araling ito: B at X. Para sila sa kaliwang hintuturo at kaliwang palasingsingan. Laging pareho ang galaw — labas, pindot, balik — at ang pagbalik ang sinasanay, dahil ang daliring naiwan sa labas ang sumisira sa susunod na titik.",
+  "congrats": "Mas maraming key sa ilalim ng mga daliri mo. Kung lumalabas na ang B at X nang hindi hinahanap, nagawa na ng aralin ang trabaho nito.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "LI",
+      "text": "Ang key na ito ay para sa kaliwang hintuturo. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang B para magpatuloy"
+    },
+    {
+      "newKey": "b",
+      "text": "B lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "bjd f bj\nb b bb\nbbbb"
+    },
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LR",
+      "text": "Ang key na ito ay para sa kaliwang palasingsingan. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang X para magpatuloy"
+    },
+    {
+      "newKey": "x",
+      "text": "X lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "bxbxbx xbxbxb\nxb xb\njdx bf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Maiikling grupo, sunod-sunod. Ituloy hanggang dulo kahit may mamali.",
+      "type": "burst",
+      "tokens": [
+        "xxxx",
+        "xxxb",
+        "bbb",
+        "xxx",
+        "xbx",
+        "bbxx",
+        "xbbb",
+        "bxbb",
+        "xb",
+        "bbbb"
+      ]
+    },
+    {
+      "text": "Ang mga bagong key na kahalo ng mga luma, gaya ng paglabas nila sa loob ng mga salita.",
+      "type": "block",
+      "content": "jjjj bbbb xxx fff\nbxbx xbxb\nxjbf fjxb"
+    },
+    {
+      "text": "Totoong mga salita na may mga bagong key. Tipahin ang bawat salita nang tuloy-tuloy, hindi titik-titik.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "binti braso abo buhok\nbuwan ibigay bus busog\nmabilis kaibigan sabay bibili"
+    },
+    {
+      "seconds": 25,
+      "text": "Isang bugso ng maiikling salita na may mga bagong key.",
+      "type": "burst",
+      "tokens": [
+        "aklat",
+        "gusali",
+        "tita",
+        "kanan",
+        "pansin",
+        "isulat",
+        "bundok",
+        "nagluto",
+        "paa",
+        "isang"
+      ]
+    },
+    {
+      "text": "Ngayon, nasa B ang bigat, ang key na pinakakaunti mong napindot.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "si katulad huling sa\nantukin maayos tatlo unan\npaligid kanila mabagal magbayad"
+    },
+    {
+      "text": "Balik muna sa mga pattern, para matiyak na nakakabalik pa rin ang mga daliri.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jdf xb jd\nxb bx xbxb\nxxxx bbb"
+    },
+    {
+      "text": "Lahat ng mayroon ka, magkakahalo. Pansinin kung ilang salita na ang lumalabas nang hindi pinag-iisipan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ubas magtrabaho hapunan isip\nsaksi malamig hula araw\nkuwarto tsaa hindi liham"
+    }
+  ]
+}

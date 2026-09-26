@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="sw">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maendeleo yako ya kuandika | TypingEase</title>
+    <meta name="description" content="Ona unavyoendelea katika kuandika: alama za kila somo, WPM yako bora na usahihi wako bora, ramani ya joto ya vitufe unavyokosea, siku zako mfululizo na lengo lako la kila siku." />
+    <link rel="canonical" href="https://typingease.site/sw/maendeleo/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/sw.mjs, progress trong
+         i18n/ui.sw.js và bai-hoc/config.sw.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="Urambazaji mkuu">
+        <a href="/sw/">Fanya mazoezi</a>
+        <a data-route="lessons" href="/sw/masomo/">Kozi</a>
+        <a class="active" href="/sw/maendeleo/">Maendeleo</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="Chagua lugha na kibodi">Mwanzo</a><a class="secondary-button" data-route="learn" href="/sw/jifunze/">Endelea kujifunza <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> Unavyoendelea</p>
+        <h1>Maendeleo yako ya kuandika</h1>
+        <p class="prog-intro">Kila namba kwenye ukurasa huu imehifadhiwa kwenye kifaa hiki na haitumwi popote. Andika somo moja zaidi na itabadilika.</p>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 siku 0 mfululizo</span>
+          <span id="strip-today">dakika 0 leo</span>
+          <span id="strip-level">Kiwango: Mwanzoni</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="Muhtasari">
+        <div><span>Masomo yaliyokamilika</span><strong id="sum-lessons">0 / 35</strong></div>
+        <div><span>Nyota zilizokusanywa</span><strong id="sum-stars">0</strong></div>
+        <div><span>WPM bora</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>Usahihi bora</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> Hatua muhimu</p>
+            <h2 id="badges-title">Beji</h2>
+            <p>Kila beji imefungamana na namba halisi kwenye jedwali lililo hapa chini — hakuna njia ya kuipata isipokuwa kwa kuandika.</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">Lengo la leo</p>
+          <h3 id="daily-goal-title">dakika 0 / 10</h3>
+          <p id="daily-goal-status">🔥 siku 0 mfululizo</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">Bora zaidi: siku 0</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="Chagua lengo la kila siku">
+          <button type="button" data-daily-goal="5" aria-pressed="false">dakika 5</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">dakika 10</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">dakika 15</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">dakika 20</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">Kocha wako</p><h3 id="coach-title">Ulipo sasa</h3></div>
+          <span class="coach-level" id="coach-level">Mwanzoni</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="Maendeleo ya karibuni" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">Masomo mawili zaidi na kutakuwa na data ya kutosha kuchora mwelekeo.</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">Andika somo moja na ukurasa huu utajua ulipo.</p>
+        <a class="coach-action" id="coach-action" href="/sw/jifunze/">Anza somo la 1 →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> Kitufe kwa kitufe</p>
+          <h3 id="heat-title">Ramani ya joto ya kibodi</h3>
+          <p>Vitufe vya kijani ni vile unavyobonyeza bila kosa, vya manjano ni vya kubahatisha, na vyekundu ndivyo vinavyokupunguzia kasi. Kitufe hupewa rangi tu baada ya kukiandika mara za kutosha kusema jambo la maana.</p>
+          <p class="heat-empty" id="heat-empty">Bado hakuna data ya kutosha — andika masomo machache kisha urudi.</p>
+          <div class="heat-legend" id="heat-legend" aria-label="Usahihi kwa kila kitufe" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="Kozi ya masomo {n}"><i></i> Kozi ya masomo 35</p>
+            <h2 id="results-title">Alama za kila somo</h2>
+            <p>Mzunguko wako bora katika kila somo, umehifadhiwa kwenye kifaa hiki.</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">Futa historia</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>Somo</th><th>Skrini zilizokamilika</th><th>Nyota</th><th>WPM bora</th><th>Usahihi</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Endelea mbele</p>
+          <h2 id="prog-explore-title">Nini kinafuata</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/sw/masomo/">
+            <h3>Kozi nzima</h3>
+            <p>Vitengo vyote kwa mpangilio. Rudia somo unalotaka kulifanya tena, au fungua kitengo kinachofuata mapema.</p>
+            <span>Tazama kozi <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>Andika kwenye kibodi yako mwenyewe</h3>
+            <p>QWERTY, AZERTY, QWERTZ, Devanagari, Kiarabu, JIS — mipangilio halisi 119, na kozi inafuata ule utakaouchagua.</p>
+            <span>Tazama mipangilio <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>Nenda polepole kidogo, na utafika mbali zaidi.</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/sw/about/">Kuhusu</a><span aria-hidden="true"> · </span><a href="/sw/terms/">Masharti ya Huduma</a><span aria-hidden="true"> · </span><a href="/sw/privacy/">Sera ya Faragha</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.sw.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.sw.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"sw":{"learn":"/sw/jifunze/","lessons":"/sw/masomo/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "sw";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

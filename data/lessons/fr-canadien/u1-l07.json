@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "g-h",
+  "title": "G et H",
+  "summary": "Nouvelles touches : G et H. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : G et H. Elles se tapent avec l'index gauche et l'index droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si G et H sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "LI",
+      "text": "C'est l'index gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur G pour continuer"
+    },
+    {
+      "newKey": "g",
+      "text": "Seulement G et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "g g\ngdf j gd\ng g gg"
+    },
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur H pour continuer"
+    },
+    {
+      "newKey": "h",
+      "text": "Seulement H et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "hg gh\nfgd hj fg\ngh hg ghgh"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "hg",
+        "ghh",
+        "hggg",
+        "hhg",
+        "ghgh",
+        "ghhg",
+        "hh",
+        "hgh",
+        "hhgh",
+        "gghh"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "ffff gggg jjjj hhh\nghghgh hghghg\njhgf fhjg"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "gifles hisses skis les\nil hisse fil glisses\ngifle elle if lisse"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "selle",
+        "sel",
+        "se",
+        "les",
+        "si",
+        "ifs",
+        "filles",
+        "ski",
+        "hisses",
+        "fils"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur G, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "se sa hisse elles\nif le lisse glisse\nsel dis ski les"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "gggg hhhh\nghghgh hghghg\ngh hg"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "je a la fil\nskis de if des\ndise se si sa"
+    }
+  ]
+}

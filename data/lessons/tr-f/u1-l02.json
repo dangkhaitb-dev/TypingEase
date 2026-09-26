@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "E ve M",
+  "summary": "Yeni tuşlar: E ve M. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "e",
+    "m"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: E ve M. Bunlara sol orta parmak ve sağ orta parmak basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. E ve M artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "Bu tuşa sol orta parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için E tuşuna bas"
+    },
+    {
+      "newKey": "e",
+      "text": "Yalnızca E ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "e e ee\neeee\neeee eeee"
+    },
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RM",
+      "text": "Bu tuşa sağ orta parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için M tuşuna bas"
+    },
+    {
+      "newKey": "m",
+      "text": "Yalnızca M ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "eee mmm\nemem meme\nem em"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "ee",
+        "memm",
+        "emme",
+        "meee",
+        "eee",
+        "eemm",
+        "mem",
+        "meem",
+        "emem",
+        "mee"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "ememem mememe\naekm kaem\neak m ea"
+    },
+    {
+      "text": "Yine iki yeni tuş. Onlarla yazılacak kelime henüz yok, bu normal.",
+      "type": "block",
+      "content": "amk e am\nem me emem\nmmm eeee"
+    },
+    {
+      "seconds": 25,
+      "text": "Biraz daha uzun gruplar. Acele etmek henüz işe yaramaz.",
+      "type": "burst",
+      "tokens": [
+        "emm",
+        "eemm",
+        "emmm",
+        "eme",
+        "memm",
+        "em",
+        "mmmm",
+        "mmem",
+        "eeem",
+        "meem",
+        "eeee",
+        "mmm"
+      ]
+    },
+    {
+      "text": "Elindeki her şey, kısa gruplar halinde. Ellerine değil ekrana bak.",
+      "type": "block",
+      "content": "ame k am\nek ke ekek\nkkkk mmmm aaaa eeee"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "em me emem\neeee mmm\nemem meme"
+    },
+    {
+      "text": "Buraya kadar görülen her şeyle son bir tur.",
+      "type": "block",
+      "content": "kae m ka\nem me emem\nmmmm eee aaaa kkk"
+    }
+  ]
+}

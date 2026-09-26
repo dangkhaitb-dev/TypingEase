@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "P and D",
+  "summary": "Two new keys: P and D. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "p",
+    "d"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y",
+    "r",
+    "u",
+    "w",
+    "f",
+    "b",
+    "j",
+    "p",
+    "d"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: P and D. They belong to your right ring finger and your left ring finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If P and D already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "RR",
+      "text": "This key belongs to your right ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press P to continue"
+    },
+    {
+      "newKey": "p",
+      "text": "Only P and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "p p pp\npppp\npppppp pppppp"
+    },
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "LR",
+      "text": "This key belongs to your left ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press D to continue"
+    },
+    {
+      "newKey": "d",
+      "text": "Only D and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "pdpd dpdp\npd dp\ndht pn dh"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "ppd",
+        "dppd",
+        "ppp",
+        "dp",
+        "dddp",
+        "dd",
+        "dddd",
+        "pdd",
+        "dpp",
+        "pdpd"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "thp ens th\nnp pn npnp\nppp ddd ttt nnnn"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dish drags ready need\nunder bridge ahead regards\ndoor read page reads"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "brown",
+        "boys",
+        "fade",
+        "houses",
+        "report",
+        "series",
+        "day",
+        "taste",
+        "grow",
+        "before"
+      ]
+    },
+    {
+      "text": "Now the weight is on P, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "body ship sheep trees\nwash others suit dish\nsouth sages white speed"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "pdpdpd dpdpdp\npd dp\ndph tn dp"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "toward write story wind\nfind tooth jugs poor\nbright sing edge then"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "#, $, % and ^",
+  "summary": "The last keys: #, $, % and ^.",
+  "newKeys": [
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "d",
+    "h",
+    "f",
+    "u",
+    "p",
+    "l",
+    "g",
+    "j",
+    "y",
+    "w",
+    "c",
+    "k",
+    "m",
+    "v",
+    "q",
+    ";",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: #, $, % and ^. Each of them is Shift plus a key your fingers already know — Shift with the little finger of the other hand.",
+  "congrats": "#, $, % and ^: under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LM",
+      "text": "# belongs to your left middle finger, with Shift held by the other hand.",
+      "hint": "Press # to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "# on its own first, then where it is actually used.",
+      "content": "## # #51 #46 #13\n## # #56 #15 #17\n## # #61 #72 #20"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "$ belongs to your left index finger, with Shift held by the other hand.",
+      "hint": "Press $ to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "$ on its own first, then where it is actually used.",
+      "content": "$$ $ $46 $37 $60\n$$ $ $13 $62 $53\n$$ $ $19 $66 $40"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "% belongs to your left index finger, with Shift held by the other hand.",
+      "hint": "Press % to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "% on its own first, then where it is actually used.",
+      "content": "%% % 44% 21% 69%\n%% % 93% 85% 12%\n%% % 2% 29% 16%"
+    },
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RI",
+      "text": "^ belongs to your right index finger, with Shift held by the other hand.",
+      "hint": "Press ^ to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "^",
+      "text": "^ on its own first, then where it is actually used.",
+      "content": "^^ ^ 58^2 92^1 91^2\n^^ ^ 77^3 47^3 13^1\n^^ ^ 96^2 96^2 9^1"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "#42",
+        "#37",
+        "$97",
+        "$32",
+        "34^3",
+        "#70",
+        "72%",
+        "37%",
+        "76^1",
+        "23%"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "$4 65^1 $75 $64\n82^2 50^2 86% #56\n5% 62^1 83% 34^2"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "82^1 line 13% salt $8\n21% miles $22 coats #74\n#46 so $29 surf 58%"
+    }
+  ]
+}

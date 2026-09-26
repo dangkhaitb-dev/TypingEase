@@ -1,0 +1,136 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-p",
+  "title": "Q na P",
+  "summary": "Vitufe vipya: Q na P. Kidole kinatoka, kinabonyeza na kurudi.",
+  "newKeys": [
+    "q",
+    "p"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe vipya katika somo hili: Q na P. Vinabonyezwa na kidole kidogo cha kushoto na kidole kidogo cha kulia. Mwendo ni uleule kila mara — toka, bonyeza na rudi — na kurudi ndiko kunakofanyiwa mazoezi, kwa sababu kidole kikibaki nje, herufi inayofuata inakosewa.",
+  "congrats": "Vitufe zaidi chini ya vidole vyako. Kama Q na P vinakuja bila kuvitafuta, somo limefanya kazi yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LP",
+      "text": "Kitufe hiki ni cha kidole kidogo cha kushoto. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza Q ili kuendelea"
+    },
+    {
+      "newKey": "q",
+      "text": "Q tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "qdf j qd\nq q qq\nqqqq"
+    },
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "RP",
+      "text": "Kitufe hiki ni cha kidole kidogo cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza P ili kuendelea"
+    },
+    {
+      "newKey": "p",
+      "text": "P tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "qpqp pqpq\nqp pq\njfq dp jf"
+    },
+    {
+      "seconds": 20,
+      "text": "Vikundi vifupi, kimoja baada ya kingine. Endelea hadi mwisho hata ukikosea kimoja.",
+      "type": "burst",
+      "tokens": [
+        "pqq",
+        "qpqp",
+        "ppqq",
+        "ppq",
+        "pqqp",
+        "pqpp",
+        "qpq",
+        "qpp",
+        "qqqq",
+        "qqqp"
+      ]
+    },
+    {
+      "text": "Vitufe vipya vikichanganywa na vya zamani, jinsi vitakavyotokea ndani ya maneno.",
+      "type": "block",
+      "content": "ffff jjjj qqqq ppp\nqpqpqp pqpqpq\nfjqp pqjf"
+    },
+    {
+      "text": "Maneno halisi yenye vitufe vipya. Andika kila neno kwa mkupuo mmoja, si herufi kwa herufi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "panda kipimo kupiga pana\npima pwani hapa kipindi\nkupima pikipiki pale papai"
+    },
+    {
+      "seconds": 25,
+      "text": "Mfululizo wa maneno mafupi yenye vitufe vipya.",
+      "type": "burst",
+      "tokens": [
+        "shauku",
+        "kitanda",
+        "tangu",
+        "ugali",
+        "nyanya",
+        "falsafa",
+        "jiwe",
+        "sufuria",
+        "mstari",
+        "fikiria"
+      ]
+    },
+    {
+      "text": "Sasa uzito uko kwenye P, kitufe ulichobonyeza mara chache zaidi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mikono wingu picha fahali\nkipande kupata hatua endelea\nmifuko hasa saga isha"
+    },
+    {
+      "text": "Turudi kwenye mifumo kwa muda, kuhakikisha vidole bado vinapata njia ya kurudi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "qpqpqp pqpqpq\nqp pq\npfq jd pf"
+    },
+    {
+      "text": "Kila ulicho nacho, kimechanganywa. Angalia ni maneno mangapi tayari yanakuja bila kufikiri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jalada falsafa mistari mpishi\nduka sikia kufuata kutafuta\nkupika korosho chungwa hifadhi"
+    }
+  ]
+}

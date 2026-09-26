@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "R i U",
+  "summary": "Nowe klawisze: R i U. Palec wychodzi, uderza i wraca.",
+  "newKeys": [
+    "r",
+    "u"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nowe klawisze w tej lekcji: R i U. Naciskają je lewy palec wskazujący i prawy palec wskazujący. Ruch jest zawsze ten sam — wyjść, uderzyć, wrócić — i ćwiczy się tu właśnie powrót, bo palec, który został na zewnątrz, myli następną literę.",
+  "congrats": "Nowe klawisze pod palcami. Jeśli R i U wychodzą już bez szukania, lekcja zrobiła swoje.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "LI",
+      "text": "Ten klawisz naciska lewy palec wskazujący. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij R, aby przejść dalej"
+    },
+    {
+      "newKey": "r",
+      "text": "Tylko R i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "fjr d fj\nr r rr\nrrr"
+    },
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "RI",
+      "text": "Ten klawisz naciska prawy palec wskazujący. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij U, aby przejść dalej"
+    },
+    {
+      "newKey": "u",
+      "text": "Tylko U i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "ur ur\nrju fd rj\nru ur ruru"
+    },
+    {
+      "seconds": 20,
+      "text": "Krótkie grupy, jedna po drugiej. Dojdź do końca, nawet jeśli coś pomylisz.",
+      "type": "burst",
+      "tokens": [
+        "rru",
+        "ruru",
+        "rrr",
+        "ruur",
+        "uru",
+        "rr",
+        "uuur",
+        "urru",
+        "rruu",
+        "uruu"
+      ]
+    },
+    {
+      "text": "Nowe klawisze wymieszane ze starymi, tak jak pojawią się w słowach.",
+      "type": "block",
+      "content": "fr rf frfr\nrrrr jjjj ffff uuu\nruru urur"
+    },
+    {
+      "text": "Prawdziwe słowa z nowymi klawiszami. Pisz całe słowo jednym ruchem, nie litera po literze.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kreda harfa ser kula\ndruga kraj kara kurs\nskarga lider kasjer gra"
+    },
+    {
+      "seconds": 25,
+      "text": "Seria krótkich słów z nowymi klawiszami.",
+      "type": "burst",
+      "tokens": [
+        "i",
+        "fala",
+        "sklejka",
+        "da",
+        "flaga",
+        "dali",
+        "jaskier",
+        "sala",
+        "kule",
+        "radar"
+      ]
+    },
+    {
+      "text": "Teraz z naciskiem na R — tego klawisza było do tej pory najmniej.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sale radar rada lekka\nsfera kurier hej idee\nkilka lider ulga kreda"
+    },
+    {
+      "text": "Na chwilę wracamy do wzorów, żeby sprawdzić, czy palce zawsze wracają na swoje miejsce.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "rrr uuuu\nrururu ururur\nur ur"
+    },
+    {
+      "text": "Wszystko, co masz, wymieszane. Zobacz, ile słów wychodzi już bez zastanowienia.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ja kule gaj hak\nlisa kafelek jedli jaskier\nharfa las jej kleje"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "B e X",
+  "summary": "Tasti nuovi: B e X. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "b",
+    "x"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "m",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: B e X. Si premono con l'indice sinistro e l'anulare sinistro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se B e X ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "LI",
+      "text": "Questo tasto lo prende l'indice sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi B per continuare"
+    },
+    {
+      "newKey": "b",
+      "text": "Solo B e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "bjd f bj\nb b bb\nbbbb"
+    },
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LR",
+      "text": "Questo tasto lo prende l'anulare sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi X per continuare"
+    },
+    {
+      "newKey": "x",
+      "text": "Solo X e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "bxbxbx xbxbxb\nxb xb\njdx bf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "xxxx",
+        "xxxb",
+        "bbb",
+        "xxx",
+        "xbx",
+        "bbxx",
+        "xbbb",
+        "bxbb",
+        "xb",
+        "bbbb"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "jjjj bbbb xxx fff\nbxbx xbxb\nxjbf fjxb"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "burro biblioteca libri banca\nbreve buona bordo extra\nbambina bello balcone buono"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "a",
+        "figli",
+        "paese",
+        "uomo",
+        "dentro",
+        "ritardi",
+        "molto",
+        "uguale",
+        "tardi",
+        "barca"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su B, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "grazie teatrale corsa esile\npizza zio strada corso\nzero cosa a balcone"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jdf xb jd\nxb bx xbxb\nxxxx bbb"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "piccolo qua qualcosa dea\nesile certo egli gialla\nletti tardi lettura bambina"
+    }
+  ]
+}

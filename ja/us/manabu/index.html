@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="ja" data-course="ja-us">
+  <head>
+    <!-- SINH TỰ ĐỘNG bằng scripts/build-family-pages.js từ ja/manabu/index.html. Sửa trang gốc rồi chạy lại. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>レッスン · TypingEase</title>
+    <meta name="description" content="TypingEase のレッスン画面です。一度にひとつの画面を、どの指で押すかを示すキーボードと手と一緒に練習します。" />
+    <!-- ランディングページではなくアプリです。/hoc/ や /en/learn/ と同じ理由で、練習画面に検索の価値は
+         なく、道順はハッシュにあるので、インデックスから外します。hreflang もありません。 -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://typingease.site/ja/us/manabu/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/player.css" />
+  </head>
+  <body class="player-page">
+    <div class="player" id="player">
+      <header class="player-topbar">
+        <a class="pt-back" href="/ja/us/" id="pt-back">← コース</a>
+        <div class="pt-title">
+          <span id="pt-unit"></span>
+          <strong id="pt-lesson">読み込み中…</strong>
+        </div>
+        <div class="pt-right">
+          <span class="pt-screen" id="pt-screen"></span>
+          <button class="pt-redo" id="pt-redo" type="button" title="レッスンを最初からやり直す" aria-label="レッスンを最初からやり直す">↻</button>
+          <button class="pt-toggle" id="pt-sound" type="button" aria-pressed="false" title="打鍵音（Alt+S）" aria-label="打鍵音">🔊</button>
+          <button class="pt-toggle" id="pt-hands" type="button" aria-pressed="true" title="手がキーの動きに合わせて動く（Alt+H）" aria-label="手がキーの動きに合わせて動く">✋</button>
+          <button class="pt-redo" id="pt-keyboard" type="button" title="キーボードの設定（Alt+K）" aria-label="キーボードの設定">⚙</button>
+        </div>
+      </header>
+
+      <div class="progress-segments" id="pt-progress" role="progressbar" aria-label="レッスンの進み具合" aria-valuemin="0" aria-valuenow="0"></div>
+
+      <div class="player-notes" id="player-note" hidden></div>
+
+      <main class="player-stage is-loading" id="stage">
+        <section class="card"><p class="intro-text">レッスンを読み込んでいます…</p></section>
+      </main>
+
+      <div class="player-board keyboard-demo" id="board" aria-hidden="true"></div>
+
+      <p class="player-live" id="live" role="status" aria-live="polite"></p>
+
+      <label class="sr-only" for="player-input">上の行を入力してください</label>
+      <textarea class="player-input" id="player-input" rows="1" autocomplete="off" autocapitalize="off"
+        autocorrect="off" spellcheck="false" inputmode="text" aria-describedby="live"></textarea>
+
+      <button class="tap-to-type" id="tap-to-type" type="button">タップして入力</button>
+    </div>
+
+    <!-- ui.ja.js を最初に。下の各モジュールはこれを既定値（ベトナム語）の上に重ねるので、
+         それらが動く時点で存在している必要があります。わざと普通のスクリプトです。
+         telex-match.js はありません。Telex はベトナム語の入力方式で、この講座では使いません。
+         data/words/ja.js は、そこから単語を読む weak-keys.js より前に置きます。 -->
+    <script src="/i18n/ui.ja.js"></script>
+    <script src="/profile.js"></script>
+    <script src="/data/words/ja.js"></script>
+    <script src="/weak-keys.js"></script>
+    <script src="/data/curriculum.ja-us.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/player.js"></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

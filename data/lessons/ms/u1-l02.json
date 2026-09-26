@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "D dan K",
+  "summary": "Kekunci baharu: D dan K. Jari keluar, tekan dan kembali.",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci baharu dalam pelajaran ini: D dan K. Ia ditekan oleh jari hantu kiri dan jari hantu kanan. Gerakannya sentiasa sama — keluar, tekan dan kembali — dan perjalanan pulang itulah yang dilatih, kerana jika jari tertinggal di luar, huruf seterusnya akan tersilap.",
+  "congrats": "Lebih banyak kekunci di bawah jari. Jika D dan K sudah keluar tanpa dicari, pelajaran ini telah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "LM",
+      "text": "Kekunci ini milik jari hantu kiri. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan D untuk meneruskan"
+    },
+    {
+      "newKey": "d",
+      "text": "Hanya D dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "d d dd\ndddd\ndddd dddd"
+    },
+    {
+      "type": "intro",
+      "key": "k",
+      "finger": "RM",
+      "text": "Kekunci ini milik jari hantu kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan K untuk meneruskan"
+    },
+    {
+      "newKey": "k",
+      "text": "Hanya K dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "ddd kkk\ndkdk kdkd\ndk dk"
+    },
+    {
+      "seconds": 20,
+      "text": "Kumpulan pendek, satu demi satu. Teruskan hingga habis walaupun anda tersilap.",
+      "type": "burst",
+      "tokens": [
+        "dd",
+        "kdkk",
+        "dkkd",
+        "kddd",
+        "ddd",
+        "ddkk",
+        "kdk",
+        "kddk",
+        "dkdk",
+        "kdd"
+      ]
+    },
+    {
+      "text": "Kekunci baharu bercampur dengan yang lama, seperti rupanya nanti di dalam perkataan.",
+      "type": "block",
+      "content": "dkdkdk kdkdkd\nfdjk jfdk\ndfj k df"
+    },
+    {
+      "text": "Dua kekunci baharu sekali lagi. Belum ada perkataan yang boleh ditaip dengannya, dan itu memang dijangka.",
+      "type": "block",
+      "content": "fkj d fk\ndk kd dkdk\nkkk dddd"
+    },
+    {
+      "seconds": 25,
+      "text": "Kumpulan yang lebih panjang sedikit. Tergesa-gesa belum membantu.",
+      "type": "burst",
+      "tokens": [
+        "dkk",
+        "ddkk",
+        "dkkk",
+        "dkd",
+        "kdkk",
+        "dk",
+        "kkkk",
+        "kkdk",
+        "dddk",
+        "kddk",
+        "dddd",
+        "kkk"
+      ]
+    },
+    {
+      "text": "Semua yang anda ada setakat ini, dalam kumpulan pendek. Mata pada skrin, bukan pada tangan.",
+      "type": "block",
+      "content": "fkd j fk\ndj jd djdj\njjjj kkkk ffff dddd"
+    },
+    {
+      "text": "Kembali kepada corak sebentar, untuk memastikan jari masih tahu jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "dk kd dkdk\ndddd kkk\ndkdk kdkd"
+    },
+    {
+      "text": "Satu pusingan terakhir dengan semua yang dipelajari setakat ini.",
+      "type": "block",
+      "content": "jfd k jf\ndk kd dkdk\nkkkk ddd ffff jjj"
+    }
+  ]
+}

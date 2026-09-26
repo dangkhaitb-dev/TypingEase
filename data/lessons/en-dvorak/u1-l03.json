@@ -1,0 +1,118 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "O and N",
+  "summary": "Two new keys: O and N. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "o",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: O and N. They belong to your left ring finger and your right ring finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If O and N already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "LR",
+      "text": "This key belongs to your left ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press O to continue"
+    },
+    {
+      "newKey": "o",
+      "text": "Only O and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "euo h eu\no o oo\nooo"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RR",
+      "text": "This key belongs to your right ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press N to continue"
+    },
+    {
+      "newKey": "n",
+      "text": "Only N and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "ooo nnnn\nononon nonono\non no"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "onno",
+        "nnno",
+        "onoo",
+        "nnon",
+        "noo",
+        "oo",
+        "oon",
+        "onnn",
+        "nonn",
+        "nno"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "uhno huon\ntnu oeh tn\nuo ou uouo"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "on to tooth one\nonto tooth too ten\nten tone out hot"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "onto",
+        "one",
+        "hot",
+        "then",
+        "hunt",
+        "note",
+        "to",
+        "he",
+        "the",
+        "too"
+      ]
+    },
+    {
+      "text": "Now the weight is on O, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "not onto then hot\nhunt note on to\ntone too ten he"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "no on\nohu ne oh\non no onon"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "then out too the\nout on then tooth\nno ten hot on"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "H ve G",
+  "summary": "Yeni tuşlar: H ve G. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "h",
+    "g"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: H ve G. Bunlara sağ yüzük parmağı ve sol yüzük parmağı basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. H ve G artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RR",
+      "text": "Bu tuşa sağ yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için H tuşuna bas"
+    },
+    {
+      "newKey": "h",
+      "text": "Yalnızca H ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "h h hh\nhhhh\nhhhhhh hhhhhh"
+    },
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "LR",
+      "text": "Bu tuşa sol yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için G tuşuna bas"
+    },
+    {
+      "newKey": "g",
+      "text": "Yalnızca G ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "hghg ghgh\nhg gh\ngea hk ge"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "hhg",
+        "ghhg",
+        "hhh",
+        "gh",
+        "gggh",
+        "gg",
+        "gggg",
+        "hgg",
+        "ghh",
+        "hghg"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "aeh mki ae\nkh hk khkh\nhhh ggg aaa kkkk"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hala gel her yargı\ngünler hatalar hayatta ruh\nharita gala anahtar yangın"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "yürü",
+        "otlak",
+        "onu",
+        "kayak",
+        "ak",
+        "dolu",
+        "yarar",
+        "o",
+        "uğur",
+        "adam"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık H tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "diller ahlak olay oyun\nodada koy kara aynı\nkurallar ekranlar halkla halka"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "hghghg ghghgh\nhg gh\nghe ak gh"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "otlak ağla odalar dağlar\nama oylar kulaklar yorum\ndiller uğur hele kalem"
+    }
+  ]
+}

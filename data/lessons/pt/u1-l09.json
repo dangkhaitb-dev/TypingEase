@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "Teclas fracas",
+  "summary": "Um exercício gerado com as teclas que você mais erra.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "ascii",
+  "intro": "Este exercício é montado com as teclas que você erra, não com uma lista fixa. Se você muda, ele muda.",
+  "congrats": "As teclas fracas deixam de ser fracas com um minuto por dia, não com uma hora por mês.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "Um exercício feito a partir das teclas que você mais erra. Ele muda a cada vez."
+    }
+  ]
+}

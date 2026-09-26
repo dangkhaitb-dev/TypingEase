@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "B dan X",
+  "summary": "Tombol baru: B dan X. Jari keluar, menekan, lalu kembali.",
+  "newKeys": [
+    "b",
+    "x"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tombol baru di pelajaran ini: B dan X. Ditekan dengan telunjuk kiri dan jari manis kiri. Gerakannya selalu sama — keluar, tekan, kembali — dan jalan pulang itulah yang dilatih, karena kalau jarinya tertinggal di luar, huruf berikutnya akan salah.",
+  "congrats": "Makin banyak tombol di bawah jarimu. Kalau B dan X sudah keluar tanpa dicari, pelajaran ini sudah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "LI",
+      "text": "Tombol ini ditekan dengan telunjuk kiri. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan B untuk lanjut"
+    },
+    {
+      "newKey": "b",
+      "text": "Hanya B dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "bjd f bj\nb b bb\nbbbb"
+    },
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LR",
+      "text": "Tombol ini ditekan dengan jari manis kiri. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan X untuk lanjut"
+    },
+    {
+      "newKey": "x",
+      "text": "Hanya X dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "bxbxbx xbxbxb\nxb xb\njdx bf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Kelompok pendek, satu demi satu. Terus sampai akhir meskipun ada yang meleset.",
+      "type": "burst",
+      "tokens": [
+        "xxxx",
+        "xxxb",
+        "bbb",
+        "xxx",
+        "xbx",
+        "bbxx",
+        "xbbb",
+        "bxbb",
+        "xb",
+        "bbbb"
+      ]
+    },
+    {
+      "text": "Tombol baru dicampur dengan yang lama, seperti nanti muncul di dalam kata.",
+      "type": "block",
+      "content": "jjjj bbbb xxx fff\nbxbx xbxb\nxjbf fjxb"
+    },
+    {
+      "text": "Kata sungguhan dengan tombol baru. Ketik setiap kata dalam satu tarikan, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "bawa sabun lebih bibir\nbagus banyak jawab ember\nbola baik sabar bantu"
+    },
+    {
+      "seconds": 25,
+      "text": "Rentetan kata pendek yang berisi tombol baru.",
+      "type": "burst",
+      "tokens": [
+        "kemarin",
+        "nyanyi",
+        "cinta",
+        "sapi",
+        "tadi",
+        "cerita",
+        "salju",
+        "cukup",
+        "musim",
+        "asal"
+      ]
+    },
+    {
+      "text": "Sekarang bebannya di B, tombol yang paling jarang kamu tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "pesta keluarga wortel lagak\ncukup tepat ruas wilayah\nputih sedikit biasa bekerja"
+    },
+    {
+      "text": "Kembali ke pola sebentar, untuk memastikan jari masih menemukan jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jdf xb jd\nxb bx xbxb\nxxxx bbb"
+    },
+    {
+      "text": "Semua yang kamu punya, dicampur. Perhatikan berapa banyak kata yang sudah keluar tanpa dipikir.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "pagi lampu harap fiskal\njahe dingin fisik gadis\ngurau redup satu pukul"
+    }
+  ]
+}

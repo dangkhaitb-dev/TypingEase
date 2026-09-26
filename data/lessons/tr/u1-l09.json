@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "Zayıf tuşlar",
+  "summary": "En çok kaçırdığın tuşlardan kurulan bir alıştırma.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş",
+    "g",
+    "h",
+    "e",
+    "ı",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "ascii",
+  "intro": "Bu alıştırma sabit bir listeden değil, senin kaçırdığın tuşlardan kurulur. Sen değişirsen o da değişir.",
+  "congrats": "Zayıf tuşlar, ayda bir saatle değil, günde bir dakikayla zayıf olmaktan çıkar.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "En çok kaçırdığın tuşlardan kurulan bir alıştırma. Her çalışmada değişir."
+    }
+  ]
+}

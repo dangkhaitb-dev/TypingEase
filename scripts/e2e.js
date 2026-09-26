@@ -304,8 +304,8 @@ const homeShape = page => page.evaluate(() => {
   };
 });
 
-test('7 trang chủ: không còn bàn phím/bàn tay, lộ trình hiện ngay', async page => {
-  await page.goto(`${BASE}/`, { waitUntil: 'networkidle' });
+test('7 trang chủ /vi/: không còn bàn phím/bàn tay, lộ trình hiện ngay', async page => {
+  await page.goto(`${BASE}/vi/`, { waitUntil: 'networkidle' });
   await page.waitForSelector('#unit-rail a, #unit-rail button');
   const home = await homeShape(page);
   assert.ok(!home.returning, 'khách mới không phải is-returning');
@@ -323,12 +323,106 @@ test('7 trang chủ: không còn bàn phím/bàn tay, lộ trình hiện ngay', 
   await page.waitForURL(/\/hoc\//, { timeout: 4000 });
 });
 
-test('7b trang chủ 1366x768: lộ trình vẫn lọt màn hình đầu', { viewport: { width: 1366, height: 768 } }, async page => {
-  await page.goto(`${BASE}/`, { waitUntil: 'networkidle' });
+test('7b trang chủ /vi/ 1366x768: lộ trình vẫn lọt màn hình đầu', { viewport: { width: 1366, height: 768 } }, async page => {
+  await page.goto(`${BASE}/vi/`, { waitUntil: 'networkidle' });
   await page.waitForSelector('#unit-rail a, #unit-rail button');
   const home = await homeShape(page);
   assert.strictEqual(home.widgets, 0);
   assert.ok(home.roadmapTop < home.viewport, `tiêu đề lộ trình phải thấy được: top ${Math.round(home.roadmapTop)} ≥ ${home.viewport}`);
+});
+
+// Trang dau `/` la ban tieng Anh, va hero cua no NGUOC HAN voi /vi/: o day ban phim la diem
+// chinh, khong phai thu phai don di. Phep do canh dung loi hua cua no — chon ngon ngu thi ban
+// phim doi theo, va nut vao hoc tro vao khoa tieng Anh chu khong phai khoa tieng Viet.
+test('7c trang đầu /: bộ chọn ngôn ngữ dựng bàn phím thật, đổi ngôn ngữ là đổi phím', async page => {
+  await page.goto(`${BASE}/`, { waitUntil: 'networkidle' });
+  assert.strictEqual(await page.evaluate(() => document.documentElement.lang), 'en');
+  await page.waitForSelector('#kb-preview .keyboard-key');
+
+  const shape = await page.evaluate(() => ({
+    languages: document.querySelectorAll('#pick-language option').length,
+    layouts: document.querySelectorAll('#pick-layout option').length,
+    language: document.querySelector('#pick-language').value,
+    keys: document.querySelectorAll('#kb-preview .keyboard-key').length,
+    ctaHref: document.querySelector('#hero-go').getAttribute('href'),
+    grid: document.querySelectorAll('#lang-grid .lang-chip').length,
+    // Ban tay 3D khong duoc keo theo vao trang dau: no la three.js ~690 KB + model 967 KB.
+    canvases: document.querySelectorAll('#kb-preview canvas').length
+  }));
+  assert.ok(shape.languages >= 20, `mới có ${shape.languages} ngôn ngữ trong bộ chọn`);
+  assert.strictEqual(shape.language, 'en', 'mặc định phải là tiếng Anh');
+  assert.ok(shape.keys >= 55, `bàn phím chỉ có ${shape.keys} phím`);
+  assert.ok(shape.layouts >= 2, 'tiếng Anh phải có nhiều hơn một bố cục để chọn');
+  assert.ok(/\/en\/learn\/$/.test(shape.ctaHref || ''), `nút vào học trỏ đâu: ${shape.ctaHref}`);
+  assert.ok(shape.grid >= 20, `lưới ngôn ngữ chỉ có ${shape.grid} ô`);
+  assert.strictEqual(shape.canvases, 0, 'trang đầu không được dựng bàn tay 3D');
+
+  // Doi sang tieng A Rap: nhan phim phai thanh chu A Rap, khong con la a-z.
+  const latin = await page.evaluate(() =>
+    [...document.querySelectorAll('#kb-preview .key--letter .key-label')].map(node => node.textContent).join(''));
+  await page.selectOption('#pick-language', 'ar');
+  await page.waitForFunction(() =>
+    [...document.querySelectorAll('#kb-preview .keyboard-key')].some(key => /[\u0600-\u06FF]/.test(key.textContent)),
+    null, { timeout: 5000 });
+  const arabic = await page.evaluate(() => ({
+    text: [...document.querySelectorAll('#kb-preview .keyboard-key')].map(node => node.textContent).join(''),
+    cta: document.querySelector('#hero-go').className,
+    note: document.querySelector('#hero-note').textContent
+  }));
+  assert.ok(/[\u0600-\u06FF]/.test(arabic.text), 'bàn phím Ả Rập phải hiện chữ Ả Rập');
+  assert.ok(!/[\u0600-\u06FF]/.test(latin), 'bàn phím tiếng Anh không được có chữ Ả Rập');
+  // Tieng A Rap nay co khoa: nut chinh vao lo trinh cua no, va CA TRANG lat sang phai-sang-trai.
+  assert.ok(!/is-secondary/.test(arabic.cta), 'tiếng Ả Rập đã có khoá, nút phải là nút chính');
+  assert.strictEqual(await page.evaluate(() => document.querySelector('#hero-go').getAttribute('href')), '/ar/taallam/');
+  assert.strictEqual(await page.evaluate(() => document.documentElement.dir), 'rtl', 'trang tiếng Ả Rập phải dir=rtl');
+  // Tieng Trung phon the (ngon ngu cuoi cung duoc them, 2026-09-25): nut chinh vao khoa Chu am, va
+  // doi tu tieng A Rap sang thi trang lat ve trai-sang-phai.
+  await page.selectOption('#pick-language', 'zh-tw');
+  await page.waitForFunction(() => document.querySelector('#hero-go').getAttribute('href') === '/zh-tw/xuexi/', null, { timeout: 5000 })
+    .catch(() => { throw new Error('tiếng Trung phồn thể phải vào /zh-tw/xuexi/'); });
+  const traditional = await page.evaluate(() => ({ cta: document.querySelector('#hero-go').className, dir: document.documentElement.dir }));
+  assert.ok(!/is-secondary/.test(traditional.cta), 'tiếng Trung phồn thể đã có khoá, nút phải là nút chính');
+  assert.strictEqual(traditional.dir, 'ltr', 'rời tiếng Ả Rập thì trang về LTR');
+  // Moi ngon ngu trong bo chon deu da co khoa: khong con muc nao trong nhom "sap co".
+  const soonCount = await page.evaluate(() => {
+    const catalogue = window.TypingEaseLanguages?.list || [];
+    return catalogue.filter(entry => entry.course?.status !== 'ready').length;
+  });
+  assert.strictEqual(soonCount, 0, `còn ${soonCount} ngôn ngữ chưa có khoá`);
+
+  // LOI GOC cua ke hoach ho chuoi phim: chon BEPO thi ban phim doi, nut van vao khoa AZERTY.
+  // Nay nut phai di theo BO CUC, khong theo ngon ngu — va doi lai AZERTY thi nut quay ve.
+  await page.selectOption('#pick-language', 'fr');
+  // Chon mot ngon ngu co bang chu (landing-i18n.js) la doi CA TRANG sang ngon ngu do — khong chi
+  // ban phim. Menu phai dan toi lo trinh tieng Phap, khong con trang tieng Anh nao.
+  const french = await page.evaluate(() => ({
+    lang: document.documentElement.lang, h1: document.querySelector('.hero h1').textContent,
+    nav: [...document.querySelectorAll('.topbar nav a')].map(a => a.getAttribute('href'))
+  }));
+  assert.strictEqual(french.lang, 'fr', 'chọn tiếng Pháp thì <html lang> phải là fr');
+  assert.ok(/clavier/.test(french.h1), `tiêu đề chưa đổi sang tiếng Pháp: ${french.h1}`);
+  assert.ok(french.nav.includes('/fr/lecons/') && !french.nav.some(href => href.startsWith('/en/')),
+    `menu khi chọn tiếng Pháp: ${french.nav.join(', ')}`);
+  await page.selectOption('#pick-layout', '184');
+  await page.waitForFunction(() => /\/fr\/bepo\/apprendre\/$/.test(document.querySelector('#hero-go').getAttribute('href')),
+    null, { timeout: 5000 }).catch(() => {});
+  const bepoHref = await page.evaluate(() => document.querySelector('#hero-go').getAttribute('href'));
+  assert.ok(/\/fr\/bepo\/apprendre\/$/.test(bepoHref), `chọn BÉPO mà nút vẫn trỏ ${bepoHref}`);
+  await page.selectOption('#pick-layout', '183');
+  const ossHref = await page.evaluate(() => document.querySelector('#hero-go').getAttribute('href'));
+  assert.ok(/\/fr\/apprendre\/$/.test(ossHref), `French (OSS) thuộc họ AZERTY, nút lại trỏ ${ossHref}`);
+  const cards = await page.evaluate(() => [...document.querySelectorAll('#lang-grid a.lang-chip')].map(a => a.getAttribute('href')));
+  for (const href of ['/fr/bepo/', '/en/dvorak/', '/de/neo/', '/en/lessons/', '/bai-hoc/']) {
+    assert.ok(cards.includes(href), `lưới thiếu thẻ khoá ${href}`);
+  }
+  assert.strictEqual(await page.locator('#course').count(), 0, 'trang đầu không còn lộ trình tiếng Anh');
+  await page.selectOption('#pick-language', 'ar');
+
+  // Lua chon duoc nho lai: nap lai trang phai van la tieng A Rap.
+  await page.reload({ waitUntil: 'networkidle' });
+  await page.waitForSelector('#kb-preview .keyboard-key');
+  assert.strictEqual(await page.evaluate(() => document.querySelector('#pick-language').value), 'ar',
+    'lựa chọn ngôn ngữ phải được nhớ giữa hai lần vào');
 });
 
 test('8a responsive 1024: bàn phím đầy đủ + tay', { viewport: { width: 1024, height: 900 } }, async page => {
@@ -591,12 +685,19 @@ test('16 resize 1440→1024→1440: giữ phím đích, canvas vẽ lại', asyn
   }
 });
 
-test('17 cài đặt bàn phím: đổi bố cục và dựng lại board', async page => {
-  await openPlayer(page, 'u1-l01/2');
+// Hop cai dat chi liet ke CA HO cua khoa dang hoc (curriculum.layouts), khong phai ca danh muc:
+// chon Dvorak trong khoa QWERTY la ve mot ban phim ma bai hoc khong day. Khoa tieng Anh co nam bo
+// cuc cung ho (US, UK x2, Canada, US Intl) nen la noi thu doi bo cuc; khoa tieng Viet chi co US.
+test('17 cài đặt bàn phím: đổi bố cục trong họ và dựng lại board', async page => {
+  await page.goto(`${BASE}/en/learn/#u1-l01/2`, { waitUntil: 'networkidle' });
+  await page.waitForFunction(() => window.TypingEasePlayer && !['loading'].includes(window.TypingEasePlayer.getState().state));
+  await page.waitForFunction(() => document.querySelector('#board .nt-player-keyboard'), null, { timeout: 15000 });
+  await sleep(150);
+  const before = await boardState(page);
   await page.click('#board .js-keyboard-settings a');
   await page.waitForSelector('.kb-settings-card');
-  const options = await page.evaluate(() => document.querySelectorAll('select[name=keyboard_id] option').length);
-  assert.ok(options > 100, `catalog có ${options} bố cục`);
+  const options = await page.evaluate(() => [...document.querySelectorAll('select[name=keyboard_id] option')].map(o => Number(o.value)));
+  assert.deepStrictEqual(options.slice().sort((a, b) => a - b), [1, 120, 123, 125, 128], `hộp cài đặt liệt kê ${options}`);
   await page.selectOption('select[name=keyboard_id]', { label: 'British (PC)' });
   await page.click('.kb-settings-footer .primary-button');
   await page.waitForFunction(() => !document.querySelector('.kb-settings'));
@@ -608,8 +709,16 @@ test('17 cài đặt bàn phím: đổi bố cục và dựng lại board', asyn
   assert.strictEqual(state.layout, 'British (PC)', 'layout đã đổi');
   assert.ok(Number.isFinite(state.stored), 'bố cục được nhớ lại');
   const board = await boardState(page);
-  assert.strictEqual(board.activeKey, 'j', 'phím đích được áp lại lên bàn phím mới');
+  assert.strictEqual(board.activeKey, before.activeKey, 'phím đích được áp lại lên bàn phím mới');
   assert.ok(board.hands, 'bàn tay dựng lại cùng board');
+});
+
+test('17d khoá tiếng Việt chỉ vẽ bàn phím US, dù đã lưu bố cục "Vietnamese"', async page => {
+  await page.goto(`${BASE}/robots.txt`);
+  await page.evaluate(() => localStorage.setItem('typingease-keyboard-v1', JSON.stringify({ keyboardId: 208 })));
+  await openPlayer(page, 'u1-l01/2');
+  const name = await page.evaluate(() => window.NTKeyboard.layout()?.name);
+  assert.strictEqual(name, 'United States Standard', `khoá Telex vẽ ${name}`);
 });
 
 test('17b ẩn bàn phím: bài dồn lên đầu trang, nút ⚙ mở lại được', async page => {
@@ -670,7 +779,9 @@ test('17c Alt+K mở Cài đặt bàn phím ngay giữa lúc gõ', async page =>
   assert.strictEqual(state.value, '', 'phím tắt không lọt vào ô nhập');
 });
 
-for (const route of ['/tien-do/', '/luyen-tu-do/', '/bai-hoc/', '/kiem-tra-toc-do-go/', '/luyen-phim-yeu/']) {
+for (const route of ['/tien-do/', '/luyen-tu-do/', '/bai-hoc/', '/kiem-tra-toc-do-go/', '/luyen-phim-yeu/',
+  '/vi/', '/en/lessons/', '/en/typing-test/', '/en/progress/', '/en/practice/', '/en/touch-typing/',
+  '/es/', '/es/lecciones/']) {
   test(`10 ${route} load không lỗi JS`, async page => {
     const response = await page.goto(`${BASE}${route}`, { waitUntil: 'networkidle' });
     assert.ok(response.ok(), `HTTP ${response.status()}`);
@@ -682,27 +793,472 @@ for (const route of ['/tien-do/', '/luyen-tu-do/', '/bai-hoc/', '/kiem-tra-toc-d
 
 // Bản tiếng Anh/Nhật đã bỏ, nhưng 9 URL cũ còn nằm trong kết quả tìm kiếm nên mỗi cái phải đưa
 // người dùng sang trang tiếng Việt tương ứng chứ không rơi vào 404.
+// `/en/` va `/ja/` tung la trang chu cua hai ban ngon ngu da bo, roi thanh trang chuyen huong ve
+// ban tieng Viet. Nay `/` LA ban tieng Anh, nen chung ve do va trang dich noi tieng Anh.
+// `/en/typing-test/` KHONG con o day: no da thanh trang that. Khi mot URL trong bang nay duoc
+// viet thanh trang that thi phai go khoi bang — de lai la test se doi no chuyen huong, va se do.
 const REDIRECTS = {
-  '/en/': '/',
-  '/ja/': '/',
-  '/en/typing-test/': '/kiem-tra-toc-do-go/',
-  '/ja/typing-test/': '/kiem-tra-toc-do-go/',
-  '/en/what-is-wpm/': '/wpm-la-gi/',
-  '/ja/what-is-wpm/': '/wpm-la-gi/',
-  '/ja/touch-typing/': '/cach-go-10-ngon/',
-  '/en/how-to-type-faster/': '/cach-tang-wpm/',
-  '/en/average-typing-speed/': '/wpm-bao-nhieu-la-nhanh/'
+  '/en/': { to: '/', lang: 'en' },
+  '/ja/': { to: '/ja/', lang: 'ja' },
+  // Tu 2026-09-25 (Dot 0 SEO) cac URL cu ve trang CUNG ngon ngu, khong con sang ban tieng Viet.
+  '/ja/typing-test/': { to: '/ja/', lang: 'ja' },
+  '/en/what-is-wpm/': { to: '/en/typing-test/', lang: 'en' },
+  '/ja/what-is-wpm/': { to: '/ja/', lang: 'ja' },
+  '/ja/touch-typing/': { to: '/ja/', lang: 'ja' },
+  '/en/how-to-type-faster/': { to: '/en/typing-test/', lang: 'en' },
+  '/en/average-typing-speed/': { to: '/en/typing-test/', lang: 'en' }
 };
-test('11b URL en/ja cũ chuyển hướng về bản tiếng Việt', async page => {
-  for (const [from, to] of Object.entries(REDIRECTS)) {
+// /ja/ nay là trang nhà của khoá tiếng Nhật (không còn chuyển hướng); vẫn giữ để chắc nó sống.
+test('11b URL en/ja cũ không rơi vào 404', async page => {
+  for (const [from, { to, lang }] of Object.entries(REDIRECTS)) {
     const response = await page.goto(`${BASE}${from}`, { waitUntil: 'networkidle' });
     assert.ok(response.ok(), `${from}: HTTP ${response.status()}`);
     await page.waitForURL(url => new URL(url).pathname === to, { timeout: 4000 })
       .catch(() => { throw new Error(`${from} → ${new URL(page.url()).pathname}, cần ${to}`); });
     const title = await page.title();
     assert.ok(title && !/404/.test(title), `${to}: title ${title}`);
-    assert.strictEqual(await page.evaluate(() => document.documentElement.lang), 'vi', `${to}: lang=vi`);
+    assert.strictEqual(await page.evaluate(() => document.documentElement.lang), lang, `${to}: lang=${lang}`);
   }
+});
+
+// Ban tieng Viet doi tu `/` sang `/vi/`. Moi trang tieng Viet phai tro ve dung nha moi; khong
+// trang nao con duoc dua nguoi dung ve `/`, noi bay gio la mot trang ngon ngu khac — TRU dung o
+// "Trang chu" (.home-switch) va logo (.brand), hai thu co y dua ve trang chon ngon ngu va ban phim.
+test('11c trang tiếng Việt trỏ về /vi/, không trỏ về /', async page => {
+  for (const path of ['/bai-hoc/', '/tien-do/', '/luyen-tu-do/', '/kiem-tra-toc-do-go/', '/cach-go-10-ngon/']) {
+    await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' });
+    const links = await page.evaluate(() =>
+      [...document.querySelectorAll('a[href]:not(.home-switch):not(.brand)')].map(a => a.getAttribute('href')));
+    assert.ok(links.includes('/vi/'), `${path}: không có lối về /vi/`);
+    const brands = await page.evaluate(() => [...document.querySelectorAll('a.brand')].map(a => a.getAttribute('href')));
+    assert.ok(brands.length && brands.every(href => href === '/'), `${path}: logo phải về /, đang là ${brands.join(', ')}`);
+    assert.ok(!links.includes('/'), `${path}: còn ${links.filter(h => h === '/').length} liên kết trỏ thẳng về /`);
+  }
+});
+
+// Trang tieng Anh phai o lai trong the gioi tieng Anh. Truoc day `/en/typing-test/` va ba URL
+// khac duoi /en/ la trang chuyen huong ve bai tieng Viet, nen mot nguoi hoc tieng Anh bam vao
+// "Typing test" la roi thang sang mot trang ho khong doc duoc. Phep do nay chan dung lop loi do:
+// khong trang tieng Anh nao duoc tro sang duong dan tieng Viet, tru dung nut doi ngon ngu.
+const EN_PAGES = ['/', '/en/lessons/', '/en/typing-test/', '/en/progress/', '/en/practice/', '/en/touch-typing/'];
+const VI_PATHS = ['/vi/', '/hoc/', '/bai-hoc/', '/tien-do/', '/luyen-tu-do/', '/luyen-phim-yeu/',
+  '/kiem-tra-toc-do-go/', '/cach-go-10-ngon/', '/cach-tang-wpm/', '/wpm-la-gi/', '/wpm-bao-nhieu-la-nhanh/'];
+test('11d trang tiếng Anh không trỏ sang trang tiếng Việt', async page => {
+  for (const path of EN_PAGES) {
+    const response = await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' });
+    assert.ok(response.ok(), `${path}: HTTP ${response.status()}`);
+    assert.strictEqual(await page.evaluate(() => document.documentElement.lang), 'en', `${path}: lang`);
+    const leaks = await page.evaluate(vi => [...document.querySelectorAll('a[href]')]
+      .filter(a => a.getAttribute('hreflang') !== 'vi')
+      .map(a => a.getAttribute('href'))
+      .filter(href => vi.some(p => href === p || href.startsWith(p + '#'))), VI_PATHS);
+    assert.deepStrictEqual(leaks, [], `${path}: trỏ sang trang tiếng Việt: ${leaks.join(', ')}`);
+  }
+});
+
+// O doi ngon ngu (EN, VI, ES…) da bi bo o goc phai moi trang, thay bang MOT o "Trang chu" ve `/`
+// — trang chon ngon ngu va ban phim. Kiem tren moi trang trong sitemap (tru chinh `/`, noi o ay
+// se tro ve chinh no) va tren cac trang ung dung tieng Viet khong nam trong sitemap.
+test('11f mọi trang: một ô Trang chủ về /, không còn ô đổi ngôn ngữ', async page => {
+  const sitemap = fs.readFileSync(path.join(__dirname, '..', 'sitemap.xml'), 'utf8');
+  const paths = [...sitemap.matchAll(/<loc>https:\/\/typingease\.site([^<]*)<\/loc>/g)].map(m => m[1]);
+  for (const route of paths) {
+    await page.goto(`${BASE}${route}`, { waitUntil: 'domcontentloaded' });
+    const shape = await page.evaluate(() => ({
+      switches: document.querySelectorAll('.lang-switch').length,
+      homes: [...document.querySelectorAll('.topbar .home-switch')].map(a => a.getAttribute('href'))
+    }));
+    assert.strictEqual(shape.switches, 0, `${route}: còn ${shape.switches} ô đổi ngôn ngữ`);
+    if (route === '/') assert.deepStrictEqual(shape.homes, [], '/ không cần ô Trang chủ trỏ về chính nó');
+    else if (await page.evaluate(() => !!document.querySelector('.topbar .header-actions'))) {
+      assert.deepStrictEqual(shape.homes, ['/'], `${route}: ô Trang chủ = ${JSON.stringify(shape.homes)}`);
+    }
+  }
+});
+
+// Moi trang duoc khai trong sitemap phai that su ton tai va that su cho index. Sitemap noi doi la
+// kieu loi khong bao gio hien ra trong trinh duyet — no chi hien trong Search Console, vai tuan sau.
+test('11e sitemap: mọi URL đều sống và đều index được', async page => {
+  const body = await (await page.goto(`${BASE}/sitemap.xml`)).text();
+  const paths = [...body.matchAll(/<loc>https:\/\/typingease\.site([^<]*)<\/loc>/g)].map(m => m[1]);
+  assert.ok(paths.length >= 16, `sitemap chỉ có ${paths.length} URL`);
+  for (const path of paths) {
+    const response = await page.goto(`${BASE}${path}`, { waitUntil: 'domcontentloaded' });
+    assert.ok(response.ok(), `${path}: HTTP ${response.status()}`);
+    const robots = await page.evaluate(() =>
+      document.querySelector('meta[name="robots"]')?.getAttribute('content') || 'index');
+    assert.ok(!/noindex/.test(robots), `${path}: nằm trong sitemap mà lại ${robots}`);
+  }
+});
+
+// Menu tren dien thoai (menu.js): <= 900px menu tren cung bi an; nut ☰ mo chinh menu do thanh bang tha
+// xuong, Esc dong, bam ra ngoai dong; tren man rong nut khong hien.
+test('11k menu điện thoại: nút ☰ mở menu trên cùng, Esc và bấm ra ngoài thì đóng', async page => {
+  await page.setViewportSize({ width: 390, height: 844 });
+  for (const url of ['/', '/vi/', '/fr/', '/ar/durus/', '/fr/test-de-frappe/', '/tro-choi/']) {
+    await page.goto(`${BASE}${url}`, { waitUntil: 'networkidle' });
+    assert.ok(await page.isVisible('.menu-toggle'), `${url}: không thấy nút ☰`);
+    assert.ok(!(await page.isVisible('.topbar > nav')), `${url}: menu phải ẩn trước khi bấm`);
+    await page.click('.menu-toggle');
+    const links = await page.$$eval('.topbar > nav a', items => items.filter(a => a.offsetParent).length);
+    assert.ok(links >= 3, `${url}: menu mở ra chỉ có ${links} liên kết`);
+    const box = await page.$eval('.topbar > nav', nav => nav.getBoundingClientRect().width);
+    assert.ok(box >= 380, `${url}: menu thả xuống phải rộng hết màn hình (${box}px)`);
+    await page.keyboard.press('Escape');
+    assert.ok(!(await page.isVisible('.topbar > nav')), `${url}: Esc không đóng menu`);
+    await page.click('.menu-toggle');
+    await page.mouse.click(195, 800);
+    assert.strictEqual(await page.getAttribute('.menu-toggle', 'aria-expanded'), 'false', `${url}: bấm ra ngoài không đóng menu`);
+  }
+  await page.setViewportSize({ width: 1280, height: 800 });
+  await page.goto(`${BASE}/fr/`, { waitUntil: 'networkidle' });
+  assert.ok(!(await page.isVisible('.menu-toggle')) && await page.isVisible('.topbar > nav'), 'màn rộng: nút ☰ phải ẩn, menu phải hiện');
+});
+
+// Trang phap ly (scripts/build-legal-pages.mjs): moi trang nha co dong Gioi thieu / Dieu khoan / Quyen
+// rieng tu o chan trang, ba lien ket deu song; About duoc index, Terms/Privacy noindex; ban dich ghi ro
+// ban tieng Anh co hieu luc va co email lien he.
+test('11j trang pháp lý: chân trang mọi trang nhà trỏ tới 3 trang sống, About index, Terms/Privacy noindex', async page => {
+  const catalogue = loadGlobal('data/languages.js').TypingEaseLanguages.list;
+  const homes = ['/', '/vi/', ...catalogue.filter(entry => !['en', 'vi'].includes(entry.code)).map(entry => `/${entry.code}/`)];
+  for (const home of homes) {
+    const html = await (await page.request.get(`${BASE}${home}`)).text();
+    const block = /<p class="footer-legal">([\s\S]*?)<\/p>/.exec(html);
+    assert.ok(block, `${home}: chân trang thiếu dòng pháp lý`);
+    const links = [...block[1].matchAll(/href="([^"]+)"/g)].map(m => m[1]);
+    assert.strictEqual(links.length, 3, `${home}: cần 3 liên kết pháp lý`);
+    for (const [index, url] of links.entries()) {
+      const response = await page.request.get(`${BASE}${url}`);
+      assert.ok(response.ok(), `${home} → ${url}: HTTP ${response.status()}`);
+      const text = await response.text();
+      const robots = /<meta name="robots" content="([^"]+)"/.exec(text)[1];
+      assert.strictEqual(robots, index === 0 ? 'index, follow' : 'noindex, follow', `${url}: robots ${robots}`);
+      assert.ok(text.includes('support@typingease.site'), `${url}: thiếu email liên hệ`);
+      if (home !== '/') assert.ok(/hreflang="en" lang="en">English<\/a>/.test(text), `${url}: bản dịch phải trỏ về bản tiếng Anh có hiệu lực`);
+    }
+  }
+});
+
+// Trang tro choi (scripts/build-game-pages.mjs, tro-choi/games.js): ca ba tro choi that su choi duoc
+// bang ban phim that — Mua chu pha duoc tu, Dua voi bong ve dich, San phim nhan phim theo vi tri.
+test('11i trò chơi: Mưa chữ phá được từ, Đua về đích, Săn phím tính điểm', async page => {
+  const sitemap = await (await page.request.get(`${BASE}/sitemap.xml`)).text();
+  const gamePages = ['/en/typing-games/', '/tro-choi/', ...['/es/juegos-de-mecanografia/', '/pt/jogos-de-digitacao/', '/fr/jeux-de-dactylographie/', '/de/tippspiele/']
+    .filter(url => sitemap.includes(`https://typingease.site${url}`))];
+  for (const url of gamePages) {
+    await page.goto(`${BASE}${url}`, { waitUntil: 'networkidle' });
+    await page.click('[data-act="rain-start"]');
+    await page.waitForFunction(() => window.TypingEaseGames.rain.drops.length > 0, null, { timeout: 5000 });
+    const word = await page.evaluate(() => window.TypingEaseGames.rain.drops[0].word);
+    await page.keyboard.type(word);
+    await page.keyboard.press('Space');
+    assert.strictEqual(await page.evaluate(() => window.TypingEaseGames.rain.cleared), 1, `${url}: Mưa chữ không phá được "${word}"`);
+
+    await page.click('[data-game-tab="race"]');
+    await page.selectOption('#race-pace', '20');
+    await page.click('[data-act="race-start"]');
+    await page.keyboard.type(await page.evaluate(() => window.TypingEaseGames.race.text));
+    await page.waitForFunction(() => !document.querySelector('#race-result').hidden, null, { timeout: 5000 });
+
+    await page.click('[data-game-tab="keys"]');
+    await page.click('[data-act="keys-start"]');
+    await page.waitForFunction(() => window.TypingEaseGames.hunt.running && window.TypingEaseGames.hunt.current, null, { timeout: 8000 });
+    const code = await page.evaluate(() => {
+      const want = window.TypingEaseGames.hunt.current;
+      for (const row of window.NTKeyboard.layout().structure) for (const key of row) if (key.main === want) return key.hardware;
+      return null;
+    });
+    await page.keyboard.press(code);
+    assert.strictEqual(await page.textContent('#keys-hits'), '1', `${url}: Săn phím không tính phím ${code}`);
+  }
+});
+
+// Dot 1 SEO: trang test toc do cua tung ngon ngu (scripts/build-test-pages.mjs). Moi trang trong
+// sitemap co the-luong 15 s -> 10 phut, go bang ban phim that 15 giay la ra ket qua dung don vi cua
+// ngon ngu do, va bai 10 phut noi them doan van khi nguoi go toi gan cuoi.
+test('11h trang test tốc độ theo ngôn ngữ: gõ thật ra kết quả, bài dài nối thêm văn bản', async page => {
+  const body = await (await page.request.get(`${BASE}/sitemap.xml`)).text();
+  const tests = [...body.matchAll(/<loc>https:\/\/typingease\.site(\/[a-z-]+\/(?:test-de-mecanografia|teste-de-digitacao|test-de-frappe|tipptest)\/)<\/loc>/g)].map(m => m[1]);
+  assert.ok(tests.length >= 4, `sitemap chỉ có ${tests.length} trang test theo ngôn ngữ`);
+  for (const url of tests) {
+    await page.goto(`${BASE}${url}`, { waitUntil: 'networkidle' });
+    const durations = await page.$$eval('[data-duration]', buttons => buttons.map(button => Number(button.dataset.duration)));
+    assert.deepStrictEqual(durations, [15, 30, 60, 120, 180, 300, 600], `${url}: thời lượng`);
+    await page.click('[data-duration="600"]');
+    assert.strictEqual(await page.textContent('#time-left'), '10:00', `${url}: đồng hồ 10 phút`);
+    const before = (await page.textContent('#test-prompt')).length;
+    await page.evaluate(n => { const input = document.querySelector('#typing-input'); input.value = document.querySelector('#test-prompt').textContent.slice(0, n); input.dispatchEvent(new Event('input')); }, before - 100);
+    assert.ok((await page.textContent('#test-prompt')).length > before, `${url}: bài dài không nối thêm văn bản`);
+    await page.click('#restart');
+    await page.click('[data-duration="15"]');
+    const text = await page.textContent('#test-prompt');
+    await page.click('#typing-input');
+    await page.keyboard.type(text.slice(0, 30));
+    await page.waitForFunction(() => !document.querySelector('#test-result').hidden, null, { timeout: 20000 });
+    const unit = await page.textContent('.test-stats > div:nth-child(2) span');
+    assert.ok((await page.textContent('#result-wpm')).endsWith(unit), `${url}: kết quả phải dùng đơn vị ${unit}`);
+    assert.strictEqual(await page.textContent('#result-accuracy'), '100%', `${url}: gõ đúng mà không 100%`);
+  }
+});
+
+// Dot 0 SEO chong spam (2026-09-25). Doc thang HTML (khong mo trinh duyet) cho nhanh: moi URL trong
+// sitemap co <lastmod>, canonical tro ve chinh no, the chia se du, JSON-LD doc duoc va khong co
+// AggregateRating/Review; trang tien do noindex va khong nam trong sitemap; trang nha cac ngon ngu
+// khai hreflang HAI CHIEU voi nhau.
+test('11g SEO: lastmod, canonical, OG, JSON-LD sạch, tiến độ noindex, hreflang trang nhà hai chiều', async page => {
+  const body = await (await page.request.get(`${BASE}/sitemap.xml`)).text();
+  const entries = [...body.matchAll(/<url><loc>https:\/\/typingease\.site([^<]*)<\/loc>(<lastmod>\d{4}-\d{2}-\d{2}<\/lastmod>)?<\/url>/g)];
+  const html = async url => (await page.request.get(`${BASE}${url}`)).text();
+  for (const [, url, lastmod] of entries) {
+    assert.ok(lastmod, `${url}: thiếu <lastmod>`);
+    const text = await html(url);
+    assert.ok(text.includes(`<link rel="canonical" href="https://typingease.site${url}"`), `${url}: canonical không trỏ về chính nó`);
+    for (const tag of ['og:title', 'og:description', 'og:image', 'og:url', 'twitter:card'])
+      assert.ok(text.includes(`"${tag}"`), `${url}: thiếu ${tag}`);
+    for (const [, json] of text.matchAll(/<script type="application\/ld\+json">([\s\S]*?)<\/script>/g)) {
+      assert.doesNotThrow(() => JSON.parse(json), `${url}: JSON-LD không đọc được`);
+      assert.ok(!/AggregateRating|"Review"/.test(json), `${url}: JSON-LD khai đánh giá không có thật`);
+    }
+  }
+  const catalogue = loadGlobal('data/languages.js').TypingEaseLanguages.list;
+  const listed = new Set(entries.map(([, url]) => url));
+  for (const progress of ['/tien-do/', '/en/progress/', '/fr/progres/', '/ja/shinchoku/']) {
+    assert.ok(!listed.has(progress), `${progress}: trang tiến độ không được nằm trong sitemap`);
+    assert.ok(/<meta name="robots" content="noindex, follow"/.test(await html(progress)), `${progress}: phải noindex, follow`);
+  }
+  const homes = ['/', '/vi/', ...catalogue.filter(entry => !['en', 'vi'].includes(entry.code)).map(entry => `/${entry.code}/`)];
+  const clusters = new Map();
+  for (const home of homes) {
+    const text = await html(home);
+    clusters.set(home, new Set([...text.slice(0, text.indexOf('</head>')).matchAll(/hreflang="[^"]+" href="https:\/\/typingease\.site([^"]+)"/g)].map(m => m[1])));
+  }
+  for (const [home, targets] of clusters) {
+    for (const other of homes) assert.ok(targets.has(other), `${home}: hreflang thiếu ${other}`);
+  }
+});
+
+// Khoa Tier 2 KHONG duoc viet tay: scripts/build-course.js suy thu tu day phim tu chinh file
+// bo cuc, roi trai noi dung tu data/words/<lang>.js. Cai de sai nhat trong ca co che do la mot
+// thu rat cu the: khoa duoc sinh ra tu bo cuc nay, ma man hinh lai ve mot bo cuc khac — nguoi
+// hoc doc bai bao bam mot phim khong ton tai tren ban phim truoc mat.
+//
+// Phep do nay vi the so HANG CO SO THAT tren man hinh voi hang co so trong file bo cuc, cho
+// MOI ngon ngu ma data/languages.js khai la da san sang. Khong mot hang so ngon ngu nao o day:
+// them mot khoa moi la no tu duoc kiem, khong phai sua test.
+const HOME_ROW_HW = ['KeyA', 'KeyS', 'KeyD', 'KeyF', 'KeyG', 'KeyH', 'KeyJ', 'KeyK', 'KeyL', 'Semicolon', 'Quote'];
+
+function loadGlobal(file) {
+  const scope = {};
+  new Function('window', fs.readFileSync(path.join(__dirname, '..', file), 'utf8'))(scope);
+  return scope;
+}
+
+// MOI HO, khong chi ho mac dinh: /fr/bepo/apprendre/ phai ve BEPO, /en/dvorak/learn/ phai ve
+// Dvorak. Doc thang tu `courses` cua data/languages.js, nen them mot ho la no tu duoc kiem.
+function tier2Courses() {
+  const list = loadGlobal('data/languages.js').TypingEaseLanguages.list;
+  return list.filter(entry => entry.course?.status === 'ready')
+    .flatMap(entry => entry.courses || [])
+    .map(family => {
+      const file = path.join(__dirname, '..', 'data', `curriculum.${family.id}.js`);
+      if (!fs.existsSync(file)) return null;
+      const curriculum = loadGlobal(`data/curriculum.${family.id}.js`).TypingEaseCurriculum;
+      // Chi khoa SINH TU DONG moi co header canh bao; khoa viet tay (en, vi) khong qua duong nay.
+      const generated = /SINH T\u1ef0 \u0110\u1ed8NG/.test(fs.readFileSync(file, 'utf8'));
+      return generated ? { code: family.id, href: family.href, keyboardId: curriculum.keyboardId } : null;
+    })
+    .filter(Boolean);
+}
+
+for (const course of tier2Courses()) {
+  test(`21 ${course.code}: bàn phím trên màn hình đúng là bố cục ${course.keyboardId} mà khoá được sinh ra từ đó`, async page => {
+    const layout = JSON.parse(fs.readFileSync(
+      path.join(__dirname, '..', 'data', 'keyboards', 'layouts', `${course.keyboardId}.json`), 'utf8'));
+    const byHardware = new Map();
+    for (const row of layout.structure) {
+      for (const key of row) if (key.hardware && !byHardware.has(key.hardware)) byHardware.set(key.hardware, key);
+    }
+    const expected = HOME_ROW_HW.map(hw => {
+      const main = byHardware.get(hw)?.main;
+      return String((main && typeof main === 'object' ? main.key : main) || '');
+    }).filter(Boolean).join('');
+
+    const curriculum = loadGlobal(`data/curriculum.${course.code}.js`).TypingEaseCurriculum;
+    const first = curriculum.sequence[0];
+    // Gieo mot lua chon ban phim NGOAI HO: nguoi nay da chon mot bo cuc khac o mot khoa khac.
+    // Truoc day lua chon da luu luon thang, va khoa BEPO hien ban phim AZERTY cua ho. Nay no phai
+    // hien bo cuc cua khoa — lua chon kia van con nguyen trong kho, chi khong duoc ve o day.
+    const outsider = curriculum.layouts.includes(1) ? 181 : 1;
+    await page.goto(`${BASE}/robots.txt`);
+    await page.evaluate(id => localStorage.setItem('typingease-keyboard-v1',
+      JSON.stringify({ showKeyboard: true, showHands: false, keyboardId: id })), outsider);
+    const lessonRequests = [];
+    page.on('request', request => { if (request.url().includes('/data/lessons/')) lessonRequests.push(request.url()); });
+    const response = await page.goto(`${BASE}${course.href}#${first}/1`, { waitUntil: 'networkidle' });
+    assert.ok(response.ok(), `${course.href}: HTTP ${response.status()}`);
+    await page.waitForSelector('#board .keyboard-key');
+    assert.ok(lessonRequests.some(url => url.includes(`/data/lessons/${course.code}/${first}.json`)),
+      `${course.code}: player không tải bài từ data/lessons/${course.code}/ (đã tải: ${lessonRequests.join(', ') || 'không gì'})`);
+    const kept = await page.evaluate(() => JSON.parse(localStorage.getItem('typingease-keyboard-v1')).keyboardId);
+    assert.strictEqual(kept, outsider, 'lựa chọn bàn phím đã lưu không được bị ghi đè');
+
+    const shown = await page.evaluate(() => {
+      const keys = [...document.querySelectorAll('#board .keyboard-key')];
+      // Nhan phim mang ca ky tu Shift; lay dong nhan CUOI, tuc ky tu khong Shift.
+      return keys.map(key => {
+        const labels = [...key.querySelectorAll('.key-label')];
+        return (labels[labels.length - 1]?.textContent || '').trim();
+      }).join('\u0001');
+    });
+    const flat = shown.split('\u0001').join('').toLowerCase();
+    for (const character of expected) {
+      assert.ok(flat.includes(character.toLowerCase()),
+        `${course.code}: bàn phím thiếu "${character}" — hàng cơ sở của bố cục ${course.keyboardId} là "${expected}"`);
+    }
+    // "Có mặt đâu đó" là chưa đủ: BÉPO và AZERTY có chung gần hết chữ cái, chỉ khác CHỖ. Hàng cơ sở
+    // phải hiện ra LIỀN NHAU, đúng thứ tự, theo ký tự chính của từng phím.
+    const mains = await page.evaluate(() => [...document.querySelectorAll('#board .keyboard-key')]
+      .map(key => (key.dataset.values || '').split('\u0001')[0]).filter(value => value.length === 1).join(''));
+    assert.ok(mains.includes(expected),
+      `${course.code}: hàng cơ sở trên màn hình không phải "${expected}" (bố cục ${course.keyboardId})`);
+  });
+}
+
+// --- ban phim 105 phim (ISO) va Unit 4 -----------------------------------------------------------
+// Bo cuc ISO mang them o IntlBackslash ngay sau Shift trai (scripts/add-iso-key.js); nguoi hoc noi
+// ban phim THAT cua ho la kieu nao qua `keyboardShape`. Cac test 22 kiem ca hai chieu cua lua chon
+// ay, duong di qua hop cai dat, bai Unit 4 day chinh phim do, va tu the tay tren hang co o ISO.
+async function openCourse(page, href, hash, preferences) {
+  if (preferences) {
+    await page.goto(`${BASE}/robots.txt`);
+    await page.evaluate(value => localStorage.setItem('typingease-keyboard-v1', JSON.stringify(value)), preferences);
+  }
+  await page.goto(`${BASE}${href}#${hash}`, { waitUntil: 'networkidle' });
+  await page.waitForFunction(() => window.TypingEasePlayer && !['loading'].includes(window.TypingEasePlayer.getState().state));
+  await page.waitForFunction(() => document.querySelector('#board .nt-player-keyboard'), null, { timeout: 15000 });
+  await sleep(150);
+}
+
+// Hang chua Shift trai, doc tu DOM: ky tu chinh cua tung phim theo thu tu, vi tri Shift trai, va so
+// phim tren CA ban phim mang ky tu chinh `probe`.
+const shiftRow = (page, probe) => page.evaluate(probe => {
+  const main = key => (key.dataset.values ?? '').split('\u0001')[0];
+  const keys = [...document.querySelectorAll('#board .keyboard-key')];
+  const shift = keys.find(key => /^Shift/.test(main(key)));
+  const row = shift ? [...shift.closest('.keyboard-row').querySelectorAll('.keyboard-key')] : [];
+  return {
+    total: keys.length,
+    row: row.map(main),
+    shiftAt: row.indexOf(shift),
+    probe: keys.filter(key => main(key) === probe).length,
+    probeInRow: row.findIndex(key => main(key) === probe)
+  };
+}, probe);
+
+// AZERTY in "<" o dung cho do tren moi ban phim Phap that; neu o nay mat, bai u4-l02 day mot phim
+// khong co tren man hinh.
+test('22a ISO: AZERTY vẽ đúng một phím "<" ngay sau Shift trái', async page => {
+  await openCourse(page, '/fr/apprendre/', 'u1-l01/1');
+  const shape = await shiftRow(page, '<');
+  assert.strictEqual(shape.probe, 1, `bàn phím có ${shape.probe} phím "<"`);
+  assert.ok(shape.shiftAt >= 0, 'không thấy Shift trái');
+  assert.strictEqual(shape.probeInRow, shape.shiftAt + 1, `hàng Shift: ${shape.row.join(' ')}`);
+  assert.strictEqual(shape.row[shape.shiftAt + 2], 'w', 'sau "<" là w (KeyZ)');
+});
+
+// Lua chon kieu ban phim phai thang bo cuc theo CA hai chieu: nguoi dung ban phim My voi bo cuc Phap
+// khong co o "<", con nguoi dung ban phim chau Au voi bo cuc US lai co. keyboardId gieo nam TRONG ho
+// cua khoa, de luat "chi ve bo cuc cua ho" khong xen vao.
+test('22b kiểu bàn phím: ansi bỏ phím "<" của AZERTY, iso thêm phím cạnh Shift cho US', async page => {
+  await openCourse(page, '/fr/apprendre/', 'u1-l01/1', { keyboardId: 181, keyboardShape: 'ansi' });
+  const ansi = await shiftRow(page, '<');
+  assert.strictEqual(ansi.probe, 0, `ansi vẫn còn phím "<": ${ansi.row.join(' ')}`);
+  assert.strictEqual(ansi.row[ansi.shiftAt + 1], 'w', 'ngay sau Shift trái là w');
+
+  await openCourse(page, '/en/learn/', 'u1-l01/1', { keyboardId: 1, keyboardShape: 'auto' });
+  const plain = await shiftRow(page, '\\');
+  assert.strictEqual(plain.row[plain.shiftAt + 1], 'z', `US auto: ${plain.row.join(' ')}`);
+  await openCourse(page, '/en/learn/', 'u1-l01/1', { keyboardId: 1, keyboardShape: 'iso' });
+  const iso = await shiftRow(page, '\\');
+  assert.strictEqual(iso.total, plain.total + 1, `iso: ${plain.total} → ${iso.total} phím`);
+  assert.strictEqual(iso.probeInRow, iso.shiftAt + 1, `iso: hàng Shift ${iso.row.join(' ')}`);
+  assert.strictEqual(iso.probe, 2, 'phím mới là bản sao của Backslash');
+  assert.strictEqual(iso.row[iso.shiftAt + 2], 'z');
+});
+
+// Duong nguoi hoc that di: mo hop cai dat, doi kieu, luu. Board phai dung lai ngay, khong can nap trang.
+test('22c hộp cài đặt: chọn kiểu bàn phím ansi rồi lưu là board mất phím "<"', async page => {
+  await openCourse(page, '/fr/apprendre/', 'u1-l01/2');
+  await page.click('#board .js-keyboard-settings a');
+  await page.waitForSelector('.kb-settings-card');
+  const options = await page.evaluate(() => [...document.querySelectorAll('select[name=keyboard_shape] option')].map(o => o.value));
+  assert.deepStrictEqual(options, ['auto', 'ansi', 'iso'], `lựa chọn: ${options}`);
+  assert.strictEqual(await page.inputValue('select[name=keyboard_shape]'), 'auto', 'mặc định là auto');
+  await page.selectOption('select[name=keyboard_shape]', 'ansi');
+  await page.click('.kb-settings-footer .primary-button');
+  await page.waitForFunction(() => !document.querySelector('.kb-settings'));
+  await page.waitForFunction(() => ![...document.querySelectorAll('#board .keyboard-key')]
+    .some(key => (key.dataset.values ?? '').split('\u0001')[0] === '<'), null, { timeout: 5000 });
+  const stored = await page.evaluate(() => JSON.parse(localStorage.getItem('typingease-keyboard-v1')).keyboardShape);
+  assert.strictEqual(stored, 'ansi', 'lựa chọn được nhớ lại');
+  const board = await boardState(page);
+  assert.ok(board.hands, 'bàn tay dựng lại cùng board');
+});
+
+// Unit 4 la nhanh moi nhat cua bo sinh khoa; mot man go cua no phai choi het duoc tu dau den cuoi,
+// ke ca "<" va chu co dau nhu ô, ê ma Playwright chen thang vao o nhap.
+test('22d Unit 4: màn gõ đầu tiên của u4-l02 (AZERTY) chơi xong với 100% chính xác', async page => {
+  const response = await page.request.get(`${BASE}/data/lessons/fr/u4-l02.json`);
+  assert.ok(response.ok(), 'không tải được data/lessons/fr/u4-l02.json');
+  const lesson = await response.json();
+  const index = lesson.screens.findIndex(screen => typeof screen.content === 'string' && screen.content.trim());
+  assert.ok(index >= 0, 'bài không có màn gõ');
+  const target = targetOf(lesson.screens[index]);
+  // Tat ban tay 3D: moi phim mot tween WebGL tren swiftshader (~350 ms), 84 ky tu thanh 30 s. Test
+  // nay kiem noi dung bai, tay da co 11-15 lo.
+  await openCourse(page, '/fr/apprendre/', `u4-l02/${index + 1}`, { keyboardId: 181, showKeyboard: true, showHands: false });
+  const state = await playerState(page);
+  assert.strictEqual(state.state, 'typing', `player ở trạng thái ${state.state}`);
+  assert.strictEqual((await boardState(page)).activeKey, target[0], 'phím đích là ký tự đầu');
+  await page.keyboard.type(target);
+  await page.waitForFunction(() => window.TypingEasePlayer.getState().state === 'screen-result', null, { timeout: 10000 });
+  const run = await page.evaluate(() => window.TypingEasePlayer.getRun());
+  assert.strictEqual(run.errors, 0, `lỗi: ${run.errors}`);
+  assert.strictEqual(await page.locator('#stage .star.is-on').count(), 3, '100% chính xác → 3 sao');
+});
+
+// Chu am Dai Loan (`typeByPosition`): bo go tat, phim vat ly KeyF phai ra ㄑ — trang tu doi ma phim
+// sang ky tu cua bo cuc 215. Go mot man u3 (co dau thanh) chi bang ma phim vat ly, phai xong 100%.
+test('22f Chú âm: gõ theo vị trí phím, u3 có dấu thanh xong với 100% chính xác', async page => {
+  const layout = await (await page.request.get(`${BASE}/data/keyboards/layouts/215.json`)).json();
+  const codeOf = new Map(layout.structure.flat().filter(entry => typeof entry.main === 'string').map(entry => [entry.main, entry.hardware]));
+  codeOf.set(' ', 'Space');
+  const lesson = await (await page.request.get(`${BASE}/data/lessons/zh-tw/u3-l01.json`)).json();
+  const index = lesson.screens.findIndex(screen => typeof screen.content === 'string' && /[ˇˋˊ˙]/.test(screen.content));
+  assert.ok(index >= 0, 'u3-l01 không có màn nào có dấu thanh');
+  const target = targetOf(lesson.screens[index]);
+  await openCourse(page, '/zh-tw/xuexi/', `u3-l01/${index + 1}`, { keyboardId: 215, showKeyboard: true, showHands: false });
+  assert.strictEqual((await playerState(page)).state, 'typing');
+  for (const character of target) {
+    const code = codeOf.get(character);
+    assert.ok(code, `không có phím cho ${character}`);
+    await page.keyboard.press(code);
+  }
+  await page.waitForFunction(() => window.TypingEasePlayer.getState().state === 'screen-result', null, { timeout: 10000 });
+  const run = await page.evaluate(() => window.TypingEasePlayer.getRun());
+  assert.strictEqual(run.errors, 0, `lỗi: ${run.errors}`);
+});
+
+// O ISO chen vao truoc KeyZ; neu kho tu the dem no la mot cot thi tay voi sang phim ben canh. w cua
+// AZERTY nam dung cho z cua US nen phai cung mot tu the.
+test('22e tư thế: w của AZERTY (KeyZ) trùng tư thế z của US', async page => {
+  await openCourse(page, '/fr/apprendre/', 'u1-l01/1');
+  const azerty = await handSlots(page, 'w');
+  const less = await handSlots(page, '<');
+  await openCourse(page, '/en/learn/', 'u1-l01/1', { keyboardId: 1 });
+  const us = await handSlots(page, 'z');
+  assert.deepStrictEqual(azerty, us, `w AZERTY ${JSON.stringify(azerty)} ≠ z US ${JSON.stringify(us)}`);
+  assert.notDeepStrictEqual(less.left, azerty.left, 'phím "<" không được mượn tư thế của w');
 });
 
 // Huy hiệu: gieo sẵn tiến độ vào localStorage rồi nạp lại trang — huy hiệu phải khớp đúng số liệu
@@ -837,7 +1393,7 @@ test('19 service worker: kiểm soát trang và cache đúng lối đi của ng�
 // 18/09 nav được đưa vào giữa bằng grid `1fr auto 1fr`, và vì lưới xếp theo thứ tự, link
 // `← Trang chủ` của 6 trang bị kéo vào cột giữa — chỉ nhìn trang chủ thì không thấy. Phép đo này
 // đi qua đủ ba hình dạng: logo sát mép trái, nav đúng tâm, phần tử cuối sát mép phải.
-const TOPBAR_PAGES = ['/', '/tien-do/', '/kiem-tra-toc-do-go/', '/cach-go-10-ngon/'];
+const TOPBAR_PAGES = ['/', '/vi/', '/tien-do/', '/kiem-tra-toc-do-go/', '/cach-go-10-ngon/'];
 test('20 topbar: logo trái, nav giữa, phần tử cuối sát mép phải trên cả ba hình dạng', async page => {
   for (const path of TOPBAR_PAGES) {
     await page.goto(`${BASE}${path}`, { waitUntil: 'networkidle' });

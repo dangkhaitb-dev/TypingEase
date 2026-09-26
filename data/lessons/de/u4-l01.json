@@ -1,0 +1,157 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "°, !, \" und §",
+  "summary": "Neu in dieser Lektion: °, !, \" und §.",
+  "newKeys": [
+    "°",
+    "!",
+    "\"",
+    "§"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ä",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "ß",
+    "´",
+    "ü",
+    "+",
+    "#",
+    "°",
+    "!",
+    "\"",
+    "§"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: °, !, \" und §. Jedes davon entsteht aus Shift und einer Taste, die deine Finger schon kennen — Shift mit dem kleinen Finger der anderen Hand.",
+  "congrats": "°, !, \" und §: jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "°",
+      "finger": "LP",
+      "text": "°: Dafür ist der linke kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke °, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "°",
+      "text": "Zuerst ° für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "°° ° 57° 30° 4°\n°° ° 45° 21° 79°\n°° ° 82° 27° 33°"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "!: Dafür ist der linke kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke !, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Zuerst ! für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "!! ! mond! esel! ecke!\n!! ! ziel! qualität! flagge!\n!! ! glück! unter! buch!"
+    },
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LR",
+      "text": "\": Dafür ist der linke Ringfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke \", um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "Zuerst \" für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "\"\" \" \"mein\" \"ein\" \"programm\"\n\"\" \" \"tage\" \"hall\" \"möglich\"\n\"\" \" \"symbol\" \"ort\" \"yacht\""
+    },
+    {
+      "type": "intro",
+      "key": "§",
+      "finger": "LM",
+      "text": "§: Dafür ist der linke Mittelfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke §, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "§",
+      "text": "Zuerst § für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "§§ § §8 §79 §60\n§§ § §36 §18 §53\n§§ § §88 §3 §5"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "36°",
+        "33°",
+        "§39",
+        "\"stücke\"",
+        "\"schnell\"",
+        "51°",
+        "§41",
+        "86°",
+        "falls!",
+        "§49"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "bekannt! \"arbeit\" 77° \"spät\"\n\"musik\" 32° \"raus\" §2\n98° 53° 80° §20"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "ohne! außen es! freude §52\n78° lag können! heißt zettel!\n\"morgen\" mund zeug! platz §30"
+    }
+  ]
+}

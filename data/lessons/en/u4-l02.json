@@ -1,0 +1,157 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "^, &, * and (",
+  "summary": "The last keys: ^, &, * and (.",
+  "newKeys": [
+    "^",
+    "&",
+    "*",
+    "("
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "`",
+    "~",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "("
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: ^, &, * and (. Each of them is Shift plus a key your fingers already know — Shift with the little finger of the other hand.",
+  "congrats": "^, &, * and (: under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RI",
+      "text": "^ belongs to your right index finger, with Shift held by the other hand.",
+      "hint": "Press ^ to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "^",
+      "text": "^ on its own first, then where it is actually used.",
+      "content": "^^ ^ 83^2 53^1 17^1\n^^ ^ 72^3 33^1 76^2\n^^ ^ 48^1 67^3 32^3"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "& belongs to your right index finger, with Shift held by the other hand.",
+      "hint": "Press & to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "& on its own first, then where it is actually used.",
+      "content": "&& & however & path agree & prove seat & won't\n&& & plants & match regard & silage they & power\n&& & rails & costs sake & total quietly & well"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "* belongs to your right middle finger, with Shift held by the other hand.",
+      "hint": "Press * to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "* on its own first, then where it is actually used.",
+      "content": "** * *came* *past* *size*\n** * *brother* *ask* *true*\n** * *rope* *cover* *nights*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "( belongs to your right ring finger, with Shift held by the other hand.",
+      "hint": "Press ( to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "( on its own first, then where it is actually used.",
+      "content": "(( ( (study (this (broken\n(( ( (roll (okay (left\n(( ( (faith (tests (body"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "*steady*",
+        "sound&tree",
+        "*dishes*",
+        "over&finds",
+        "(lie",
+        "*big*",
+        "*voice*",
+        "bank&organize",
+        "33^3",
+        "*model*"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "35^2 11^2 *hours* *soup*\n45^1 *except* quickly&leak shows&soon\n(through *with* 90^1 go&place"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "wing & them eight 84^1 school 29^2\nwhistle & thin rides (soil talk *would*\n*sick* heal *list* wall 96^3"
+    }
+  ]
+}

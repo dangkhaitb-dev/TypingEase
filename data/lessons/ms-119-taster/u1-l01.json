@@ -1,0 +1,204 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "home-row",
+  "title": "The home row",
+  "summary": "The eight keys under your fingers on Malay (Jawi), and the space bar.",
+  "newKeys": [
+    "ب",
+    "ت",
+    "ي",
+    "ن",
+    "س",
+    "م",
+    "ش",
+    "ک",
+    " "
+  ],
+  "keysSoFar": [
+    "ب",
+    "ت",
+    "ي",
+    "ن",
+    "س",
+    "م",
+    "ش",
+    "ک",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "This is Malay (Jawi) as it really is, and its home row, the eight keys every course starts from. The Malay course is built on another layout; this one has no course of its own yet. What there is, is the part that does not need words at all: each finger finding its key without looking, and coming back.",
+  "congrats": "That is the home row of Malay (Jawi). The Malay course teaches the same habits on its own layout.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "ب",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger come back.",
+      "hint": "Press ب to continue"
+    },
+    {
+      "type": "block",
+      "text": "Only ب and what you already have. Slowly — the finger returns to the home row after every press.",
+      "content": "ب ب بب\nببب\nبببببب بببببب",
+      "newKey": "ب"
+    },
+    {
+      "type": "intro",
+      "key": "ت",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger come back.",
+      "hint": "Press ت to continue"
+    },
+    {
+      "type": "block",
+      "text": "Only ت and what you already have. Slowly — the finger returns to the home row after every press.",
+      "content": "ت ت\nبت بت\nت ت تت",
+      "newKey": "ت"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "The space bar belongs to your right thumb. The thumbs do nothing else.",
+      "hint": "Press the space bar to continue"
+    },
+    {
+      "type": "block",
+      "text": "Short groups with spaces between them. The thumb goes down and up; nothing else moves.",
+      "content": "تب تب\nتب بت تبتب\nببب تتت",
+      "newKey": " "
+    },
+    {
+      "type": "block",
+      "text": "The two together, then back and forth.",
+      "content": "بتبتبت تبتبتب\nبت بت\nتب تب"
+    },
+    {
+      "type": "intro",
+      "key": "ي",
+      "finger": "LM",
+      "text": "This key belongs to your left middle finger. Find it without looking, press it once, and let the finger come back.",
+      "hint": "Press ي to continue"
+    },
+    {
+      "type": "block",
+      "text": "Only ي and what you already have. Slowly — the finger returns to the home row after every press.",
+      "content": "تبي تب\nي ي يي\nييي",
+      "newKey": "ي"
+    },
+    {
+      "type": "intro",
+      "key": "ن",
+      "finger": "RM",
+      "text": "This key belongs to your right middle finger. Find it without looking, press it once, and let the finger come back.",
+      "hint": "Press ن to continue"
+    },
+    {
+      "type": "block",
+      "text": "Only ن and what you already have. Slowly — the finger returns to the home row after every press.",
+      "content": "ننن\nنننننن نننننن\nن ن",
+      "newKey": "ن"
+    },
+    {
+      "type": "block",
+      "text": "The two together, then back and forth.",
+      "content": "ينب ت ين\nني ين نيني\nيييي ننن"
+    },
+    {
+      "type": "intro",
+      "key": "س",
+      "finger": "LR",
+      "text": "This key belongs to your left ring finger. Find it without looking, press it once, and let the finger come back.",
+      "hint": "Press س to continue"
+    },
+    {
+      "type": "block",
+      "text": "Only س and what you already have. Slowly — the finger returns to the home row after every press.",
+      "content": "س س سس\nسسس\nسسسسسس سسسسسس",
+      "newKey": "س"
+    },
+    {
+      "type": "intro",
+      "key": "م",
+      "finger": "RR",
+      "text": "This key belongs to your right ring finger. Find it without looking, press it once, and let the finger come back.",
+      "hint": "Press م to continue"
+    },
+    {
+      "type": "block",
+      "text": "Only م and what you already have. Slowly — the finger returns to the home row after every press.",
+      "content": "مممم مممم\nم م\nبيم ت بي",
+      "newKey": "م"
+    },
+    {
+      "type": "block",
+      "text": "The two together, then back and forth.",
+      "content": "متي سب مت\nسم مس سمسم\nسسسس ممم"
+    },
+    {
+      "type": "intro",
+      "key": "ش",
+      "finger": "LP",
+      "text": "This key belongs to your left little finger. Find it without looking, press it once, and let the finger come back.",
+      "hint": "Press ش to continue"
+    },
+    {
+      "type": "block",
+      "text": "Only ش and what you already have. Slowly — the finger returns to the home row after every press.",
+      "content": "شششش\nشششششش شششششش\nش ش",
+      "newKey": "ش"
+    },
+    {
+      "type": "intro",
+      "key": "ک",
+      "finger": "RP",
+      "text": "This key belongs to your right little finger. Find it without looking, press it once, and let the finger come back.",
+      "hint": "Press ک to continue"
+    },
+    {
+      "type": "block",
+      "text": "Only ک and what you already have. Slowly — the finger returns to the home row after every press.",
+      "content": "ک ک کک\nککک\nکککک کککک",
+      "newKey": "ک"
+    },
+    {
+      "type": "block",
+      "text": "The two together, then back and forth.",
+      "content": "شبک يت شب\nشک کش شکشک\nککک شششش"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Short groups from all eight keys, one after another. Keep going to the end.",
+      "tokens": [
+        "شن",
+        "نکست",
+        "مک",
+        "نسبب",
+        "سب",
+        "نتن",
+        "يب",
+        "سبشم",
+        "مشي",
+        "يبشس",
+        "نت",
+        "نيبس"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "The whole home row. Eyes on the screen, not on your hands.",
+      "content": "ييي ممم تتت کککک نننن سسسس ششش بببب\nبتبت تبتب\nتمينبشکس متيبسنشک"
+    },
+    {
+      "type": "block",
+      "text": "One last round. If the fingers found their way home on their own, the lesson is done.",
+      "content": "کم مک کمکم\nتتت يييي سسسس ببب کککک ششش ممم نننن\nبتبت تبتب"
+    }
+  ]
+}

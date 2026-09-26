@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "Yeni tuşlar: \", É, ! ve kesme işareti",
+  "summary": "Bu derste: \", É, ! ve kesme işareti.",
+  "newKeys": [
+    "\"",
+    "é",
+    "!",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş",
+    "g",
+    "h",
+    "e",
+    "ı",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    "ç",
+    "ö",
+    "i",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ".",
+    "*",
+    "-",
+    "ğ",
+    "ü",
+    ",",
+    "\"",
+    "é",
+    "!",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kursun henüz kullanmadığı tuşlar: \", É, ! ve kesme işareti. Bazıları Shift ister, öbür elin serçe parmağıyla; ötekilerin kendi tuşu var, kurs onları henüz kullanmamıştı.",
+  "congrats": "Artık parmaklarının altında: \", É, ! ve kesme işareti. İşaret de yanındaki harf kadar kolay çıkıyor.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LP",
+      "text": "Bu karakter için sol serçe parmak çalışır: \".",
+      "hint": "Devam etmek için \" tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "Önce yalnızca \", sonra gerçekten kullanıldığı yerde.",
+      "content": "\"\" \" \"ampul\" \"resim\" \"köprü\"\n\"\" \" \"sorar\" \"kumsal\" \"çalış\"\n\"\" \" \"at\" \"hat\" \"varsa\""
+    },
+    {
+      "type": "block",
+      "newKey": "é",
+      "text": "Önce yalnızca É, sonra gerçekten kullanıldığı yerde.",
+      "content": "éé é ééé ééé ééé\néé é ééé ééé ééé\néé é ééé ééé ééé"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "Bu karakter için sol serçe parmak çalışır: !; Shift öbür elde.",
+      "hint": "Devam etmek için ! tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Önce yalnızca !, sonra gerçekten kullanıldığı yerde.",
+      "content": "!! ! bulmaca! metinler! yorgun!\n!! ! ülke! soda! uğraş!\n!! ! aşk! kavramak! dost!"
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "LR",
+      "text": "Bu karakter için sol yüzük parmağı çalışır: kesme işareti; Shift öbür elde.",
+      "hint": "Devam etmek için ' tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "'",
+      "text": "Önce yalnızca kesme işareti, sonra gerçekten kullanıldığı yerde.",
+      "content": "'' ' 'başla' 'evimiz' 'yataklar'\n'' ' 'soda' 'ışık' 'ütü'\n'' ' 'ekmekler' 'doğum' 'menü'"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Bu karakterlerle kısa parçalardan bir seri.",
+      "tokens": [
+        "öğrenci!",
+        "korku!",
+        "\"yıl\"",
+        "ééé",
+        "\"şöyle\"",
+        "'kez'",
+        "'pamuk'",
+        "\"koca\"",
+        "\"ceket\"",
+        "\"memur\""
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Bu derste gelen her şey, karışık.",
+      "content": "ééé 'kısa' 'istasyon' ééé\n'paket' \"marul\" kırk! ééé\nééé ééé \"hep\" \"yangın\""
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Yeniden kelimeler, işaretler yerli yerinde.",
+      "content": "'kayıt' kar 'yüksek' git ééé\nrenkler! cadde taraflar! ruh \"arar\"\nééé yanıt \"iğne\" kur kurs!"
+    }
+  ]
+}

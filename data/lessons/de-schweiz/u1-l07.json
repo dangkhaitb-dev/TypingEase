@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "E und I",
+  "summary": "Neue Tasten: E und I. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "e",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: E und I. Dafür sind der linke Mittelfinger und der rechte Mittelfinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn E und I ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "Für diese Taste ist der linke Mittelfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke E, um weiterzugehen"
+    },
+    {
+      "newKey": "e",
+      "text": "Nur E und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "e e\nedf j ed\ne e ee"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RM",
+      "text": "Für diese Taste ist der rechte Mittelfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke I, um weiterzugehen"
+    },
+    {
+      "newKey": "i",
+      "text": "Nur I und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "ie ei\nfed ij fe\nei ie eiei"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "ie",
+        "eii",
+        "ieee",
+        "iie",
+        "eiei",
+        "eiie",
+        "ii",
+        "iei",
+        "iiei",
+        "eeii"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "ffff eeee jjjj iii\neieiei ieieie\njief fije"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "des sei segel ideal\nkleid seele halle siegel\nje alle seife seil"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "es",
+        "sie",
+        "alfalfa",
+        "fall",
+        "hals",
+        "flagge",
+        "fad",
+        "höfe",
+        "jede",
+        "kleid"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf E — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hell gala höfe sieg\nkasse klasse sie saal\nfliege alles lied eile"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "eeee iiii\neieiei ieieie\nei ie"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ass segel dies hell\ndas gas ja halle\nhalal fad kalk sieg"
+    }
+  ]
+}

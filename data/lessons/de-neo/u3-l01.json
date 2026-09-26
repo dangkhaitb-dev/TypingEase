@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "Die Zahlenreihe",
+  "summary": "Die zehn Ziffern, jeder Finger geht geradeaus nach oben.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h",
+    "w",
+    "k",
+    "f",
+    "v",
+    "ä",
+    "b",
+    "m",
+    "p",
+    "x",
+    "q",
+    "z",
+    "ö",
+    "ü",
+    ".",
+    ",",
+    "y",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Die Zahlenreihe liegt über allem, was du bisher geschrieben hast, und hier müssen die Finger am weitesten nach oben. Hier geht mehr daneben als irgendwo sonst im Kurs, und es lässt sich genauso beheben wie alles andere: erst langsam.",
+  "congrats": "Die Zahlenreihe ist die schwerste und die, die danach am wenigsten geübt wird. Komm ab und zu zu dieser Lektion zurück.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "Die Zahlenreihe liegt über der oberen Buchstabenreihe. Jeder Finger geht geradeaus hoch und genauso wieder runter. Das sind die längsten Wege im ganzen Kurs.",
+      "hint": "Drücke 1, um weiterzugehen"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "1 und 0: der linke kleine Finger und sein Gegenstück auf der anderen Hand. Hoch, tippen, zurück in die Grundstellung.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "2 und 9: der linke Ringfinger und sein Gegenstück auf der anderen Hand. Hoch, tippen, zurück in die Grundstellung.",
+      "type": "block",
+      "content": "ae2 9n ae\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Eine kurze Runde mit den Zahlen, die du bis hierhin hast.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "3 und 8: der linke Mittelfinger und sein Gegenstück auf der anderen Hand. Hoch, tippen, zurück in die Grundstellung.",
+      "type": "block",
+      "content": "383838 838383\n83 38\na83 ne a8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "4 und 7: der linke Zeigefinger und sein Gegenstück auf der anderen Hand. Hoch, tippen, zurück in die Grundstellung.",
+      "type": "block",
+      "content": "47 47\nen4 7a en\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "Die zwei übrigen gehören den Zeigefingern, die ohnehin mehr Tasten erreichen als jeder andere Finger.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nen6 5a en"
+    },
+    {
+      "text": "Die ganze Reihe, in Gruppen. Sieh nicht nach unten, um die 6 zu suchen.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Alle zehn, gemischt. Am Anfang geht hier viel daneben; das ist normal.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Kurz zurück zu den Wörtern, damit die Hände sich erinnern, wo sie wohnen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "nach stärke berg bücher\ndanke haltestelle wunsch freude\nhast musik früh weiter"
+    },
+    {
+      "text": "Wieder Sätze, jetzt mit der ganzen Tastatur.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Am Freitag treffen wir uns vor dem Bahnhof.\nIm Sommer wird es hier sehr warm.\nAm Wochenende fahren wir an die See."
+    }
+  ]
+}

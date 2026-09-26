@@ -25,10 +25,16 @@
  * Script này tự tính tập phím cho phép, KHÔNG dùng chung mã với validate-lessons.js. Đó là
  * chủ ý: hai phép tính độc lập, và validator là bên gác. Lệch nhau thì validator kêu ngay,
  * to và rõ — tốt hơn nhiều so với một thư viện chung sai ở cả hai nơi cùng lúc.
+ *
+ * Bộ sinh NỘI DUNG GÕ (drill, dòng từ, burst, seeded RNG) đã chuyển sang scripts/lib/content.js
+ * ngày 23/09/2026 để khoá tiếng Pháp dùng chung. Chỉ nội dung gõ — thứ tự dạy phím và lời dạy
+ * vẫn ở đây và ở scripts/lessons-en/. `--check` là thứ chốt rằng lần tách đó không đổi một byte
+ * nào của 27 file; chạy lại nó sau mỗi lần sửa lib.
  */
 'use strict';
 const fs = require('fs');
 const path = require('path');
+const { seeded, shuffled, typeableWith, drillLines, wordsFor, wordLines, serialize } = require('./lib/content');
 
 const ROOT = path.resolve(__dirname, '..');
 const RECIPE_DIR = path.join(ROOT, 'scripts', 'lessons-en');
@@ -46,31 +52,6 @@ function loadGlobal(file) {
 }
 const curriculum = loadGlobal(path.join('data', 'curriculum.en.js')).TypingEaseCurriculum;
 const BANK = loadGlobal(path.join('data', 'words', 'en.js')).TypingEaseWords.en;
-
-/* ---------- ngẫu nhiên nhưng cố định ---------- */
-// xorshift32 gieo bằng chính tên screen: cùng screen luôn ra cùng dãy, khác screen thì khác.
-function seeded(label) {
-  let state = 2166136261;
-  for (const character of label) {
-    state ^= character.charCodeAt(0);
-    state = Math.imul(state, 16777619);
-  }
-  return () => {
-    state ^= state << 13; state >>>= 0;
-    state ^= state >>> 17;
-    state ^= state << 5; state >>>= 0;
-    return state / 4294967296;
-  };
-}
-const pick = (rand, list) => list[Math.floor(rand() * list.length)];
-function shuffled(rand, list) {
-  const out = [...list];
-  for (let i = out.length - 1; i > 0; i -= 1) {
-    const j = Math.floor(rand() * (i + 1));
-    [out[i], out[j]] = [out[j], out[i]];
-  }
-  return out;
-}
 
 /* ---------- tập phím cho phép ---------- */
 // `shift` và `enter` là phím chức năng: shift mở ra chữ hoa, enter mở ra ký tự xuống dòng thật.
@@ -90,99 +71,6 @@ function keysBeforeLesson(lessonId, { named = true } = {}) {
     }
   }
   return taught;
-}
-
-const typeableWith = (text, keys) => [...text].every(character => {
-  if (keys.has(character)) return true;
-  // Chữ hoa chỉ hợp lệ khi đã dạy Shift VÀ đã dạy chính chữ thường của nó.
-  const lower = character.toLowerCase();
-  return lower !== character && keys.has('SHIFT') && keys.has(lower);
-});
-
-/* ---------- các họ mẫu luyện ngón ---------- */
-// Dùng cho những bài chưa đủ phím để thành từ. Mỗi dòng là một MẪU CÓ TÊN, không phải chuỗi
-// ngẫu nhiên: lặp, đảo tay, luân phiên, cuộn ngón. Chuỗi vô nghĩa ở đây là đúng sư phạm —
-// nhưng chuỗi vô nghĩa mà không theo mẫu nào thì chỉ là nhiễu.
-function drillLines(rand, keys, { lines, focus = [] }) {
-  const letters = [...keys].filter(key => /^[a-z;',.\/-]$/.test(key));
-  const core = focus.length ? focus : letters.slice(0, 4);
-  const others = letters.filter(key => !core.includes(key));
-  const out = [];
-  const families = [
-    // lặp khối — độ dài lấy theo bộ ngẫu nhiên, nếu không thì hai screen cùng `focus` sẽ ra
-    // y hệt nhau và người học gõ lại đúng dòng vừa gõ
-    () => shuffled(rand, core).map(key => key.repeat(3 + Math.floor(rand() * 2))).join(' '),
-    () => {
-      const [a, b] = [core[0], core[1] || core[0]];
-      const n = 2 + Math.floor(rand() * 2);
-      return `${(a + b).repeat(n)} ${(b + a).repeat(n)}`;                 // luân phiên
-    },
-    () => shuffled(rand, core).join('') + ' ' + shuffled(rand, core).join(''),  // cuộn ngón
-    () => {
-      const mix = shuffled(rand, [...core, ...others.slice(0, 3)]);
-      const take = Math.max(2, Math.min(3, mix.length));
-      return mix.slice(0, take).join('') + ' ' + mix.slice(take, take * 2).join('')
-        + ' ' + mix.slice(0, 2).join('');
-    },
-    () => {
-      const pair = shuffled(rand, core).slice(0, 2).join('');
-      return `${pair} ${pair.split('').reverse().join('')} ${pair.repeat(2)}`;
-    }
-  ];
-  // Mot ho mau co the sinh ra doan rong khi `core` qua ngan (hai phim thi `mix.slice(2,4)` la
-  // rong), va hai dau cach lien nhau bi validator chan thang. Don o MOT cho thay vi bat moi ho
-  // mau tu nho — cho nao quen la mot loi lot luoi.
-  const tidy = line => line.split(' ').filter(Boolean).join(' ').trim();
-  const offset = Math.floor(rand() * families.length);
-  const seen = new Set();
-  for (let i = 0; i < lines; i += 1) {
-    let line = '', guard = 0;
-    do { line = tidy(families[(offset + i + guard) % families.length]()); guard += 1; }
-    while ((seen.has(line) || !line) && guard < 12);
-    seen.add(line);
-    out.push(line);
-  }
-  return out;
-}
-
-/* ---------- các họ mẫu bằng từ ---------- */
-function wordsFor(keys, { bias = [], only = false, minLength = 1, maxLength = 99 } = {}) {
-  const usable = BANK.words.filter(word =>
-    word.length >= minLength && word.length <= maxLength && typeableWith(word, keys));
-  if (!bias.length) return usable;
-  // Từ chứa phím mới được ưu tiên, nhưng phần còn lại vẫn ở lại — một bài toàn từ chứa `g`
-  // đọc như bài tập ngữ âm chứ không như tiếng Anh.
-  const hit = usable.filter(word => bias.some(key => word.includes(key)));
-  const rest = usable.filter(word => !bias.some(key => word.includes(key)));
-  // `only: true` — CHỈ lấy từ chứa phím đang dạy. Cần từ khi kho từ lớn lên: ở Unit 1 kho còn
-  // nhỏ nên nhân đôi phần trúng là đủ để chúng xuất hiện, nhưng với 458 từ trở đi thì một màn
-  // "từ chứa phím mới" lại ra toàn từ không có phím mới nào — tức là màn đó không dạy gì cả.
-  // Ưu tiên mềm vẫn là mặc định, vì nó cho ra thứ đọc như tiếng Anh; `only` dành cho đúng
-  // những màn mà phím mới LÀ nội dung. Pool cạn thì wordLines/burst đã báo lỗi sẵn.
-  if (only) return hit;
-  return hit.length >= 8 ? [...hit, ...hit, ...rest] : usable;
-}
-
-function wordLines(rand, keys, { lines, perLine = 4, bias = [], only = false, maxLength = 99 }) {
-  const pool = wordsFor(keys, { bias, only, maxLength });
-  if (pool.length < perLine) return null;
-  const out = [];
-  const used = new Set();
-  for (let i = 0; i < lines; i += 1) {
-    const row = [];
-    let guard = 0;
-    while (row.length < perLine && guard < 400) {
-      guard += 1;
-      const word = pick(rand, pool);
-      // Không lặp trong cùng một dòng, và hạn chế lặp trong cả screen khi kho còn rộng.
-      if (row.includes(word)) continue;
-      if (used.has(word) && pool.length > perLine * lines * 2) continue;
-      used.add(word);
-      row.push(word);
-    }
-    out.push(row.join(' '));
-  }
-  return out;
 }
 
 /* ---------- screen ---------- */
@@ -211,7 +99,7 @@ function expand(screen, context) {
         lines = lines.map(line => line[0].toUpperCase() + line.slice(1) + '.');
       }
     } else if (wantWords) {
-      lines = wordLines(rand, keys, {
+      lines = wordLines(rand, BANK, keys, {
         lines: screen.lines || 3, perLine: screen.perLine || 4,
         bias: screen.bias || [], only: !!screen.only, maxLength: screen.maxLength || 99
       });
@@ -232,7 +120,7 @@ function expand(screen, context) {
     const count = screen.count || 8;
     let tokens;
     if (screen.source === 'words') {
-      const pool = wordsFor(keys, { bias: screen.bias || [], only: !!screen.only, maxLength: screen.maxLength || 8 });
+      const pool = wordsFor(BANK, keys, { bias: screen.bias || [], only: !!screen.only, maxLength: screen.maxLength || 8 });
       if (pool.length < count) throw new Error(`${lessonId} screen ${index + 1}: chỉ có ${pool.length} từ, cần ${count}`);
       tokens = shuffled(rand, [...new Set(pool)]).slice(0, count);
     } else {
@@ -313,9 +201,6 @@ function buildLesson(lessonId) {
 }
 
 /* ---------- ghi ---------- */
-// 2 dấu cách, LF, có dòng trắng cuối — khớp đúng data/lessons/vi/*.json. Trên Windows mà để
-// writeFileSync tự xử lý thì ra CRLF, và `checkFormatting` của validator từ chối ký tự \r.
-const serialize = lesson => JSON.stringify(lesson, null, 2).split('\r\n').join('\n') + '\n';
 
 function main() {
   if (!fs.existsSync(RECIPE_DIR)) { console.error(`chưa có thư mục công thức ${RECIPE_DIR}`); process.exit(1); }

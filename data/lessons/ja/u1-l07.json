@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "g-h",
+  "title": "G と H",
+  "summary": "新しいキー：G と H。指が出て、押して、戻ります。",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンの新しいキー：G と H。左手の人差し指 と 右手の人差し指で押します。動きはいつも同じで、出て、押して、戻ります。練習するのは戻る動きです。指が外に残ったままだと、次の文字を間違えるからです。",
+  "congrats": "指の下のキーが増えました。G と H を探さずに打てるなら、このレッスンの役目は果たせています。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "LI",
+      "text": "このキーは左手の人差し指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "G を押して次へ"
+    },
+    {
+      "newKey": "g",
+      "text": "G と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "g g\ngdf j gd\ng g gg"
+    },
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RI",
+      "text": "このキーは右手の人差し指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "H を押して次へ"
+    },
+    {
+      "newKey": "h",
+      "text": "H と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "hg gh\nfgd hj fg\ngh hg ghgh"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        "hg",
+        "ghh",
+        "hggg",
+        "hhg",
+        "ghgh",
+        "ghhg",
+        "hh",
+        "hgh",
+        "hhgh",
+        "gghh"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "ffff gggg jjjj hhh\nghghgh hghghg\njhgf fhjg"
+    },
+    {
+      "text": "新しいキーを使う、本物の日本語の単語です。一文字ずつではなく、単語をひと続きに打ってください。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "haha shika deshi hi\ngakki kaishi kaisha kaigai\ngaka kagi ikaga shikashi"
+    },
+    {
+      "seconds": 25,
+      "text": "新しいキーを含む、短い単語の連打です。",
+      "type": "burst",
+      "tokens": [
+        "kaishi",
+        "hada",
+        "shika",
+        "kiki",
+        "seki",
+        "jissai",
+        "ii",
+        "keshiki",
+        "ai",
+        "shi"
+      ]
+    },
+    {
+      "text": "次は、いちばん押す回数が少なかった G を多めに打ちます。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "eiga jiki shikashi ha\nasa gakki keiki kekka\nkaki haha seki kaigai"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "gggg hhhh\nghghgh hghghg\ngh hg"
+    },
+    {
+      "text": "ここまでのキーすべてを混ぜて。考えなくても出てくる単語が、もうかなりあるはずです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "e kiki kaigi kekka\naka sake kasa gakki\nsekai ha iie hiji"
+    }
+  ]
+}

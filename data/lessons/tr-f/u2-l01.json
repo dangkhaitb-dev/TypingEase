@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "O ve D",
+  "summary": "Yeni tuşlar: O ve D. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "o",
+    "d"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: O ve D. Bunlara sol işaret parmağı ve sağ işaret parmağı basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. O ve D artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "LI",
+      "text": "Bu tuşa sol işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için O tuşuna bas"
+    },
+    {
+      "newKey": "o",
+      "text": "Yalnızca O ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "oak e oa\no o oo\noooo"
+    },
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "RI",
+      "text": "Bu tuşa sağ işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için D tuşuna bas"
+    },
+    {
+      "newKey": "d",
+      "text": "Yalnızca D ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "kde ao kd\nod do odod\nddd ooo"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "ood",
+        "oodd",
+        "ooo",
+        "dood",
+        "oooo",
+        "oodo",
+        "oood",
+        "odo",
+        "odod",
+        "dod"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "do od dodo\noooo kkk aaa ddd\nodod dodo"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kadın ot orada mont\noy okullar koltuk okumak\nmotor on olur kolaylık"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "dakika",
+        "tarla",
+        "okumak",
+        "memur",
+        "yatakta",
+        "kal",
+        "kayıt",
+        "müdür",
+        "yatak",
+        "ayna"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık O tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yatakta dil dünya kalın\nuğur yürü dakika at\nek nerede akar kayak"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "do od\nkoe da ko\nod do odod"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ne ekmekler yanında unut\nyanıt metin dokun yarın\nyol dikkat ritim erik"
+    }
+  ]
+}

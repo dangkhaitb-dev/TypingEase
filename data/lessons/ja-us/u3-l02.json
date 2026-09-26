@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "右端の列",
+  "summary": "右端の列の6つのキー。すべて右手の小指で押します。長音「ー」を打つ「-」もここにあります。",
+  "newKeys": [
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "右手の小指は、ほかのどの指よりも多くのキーを受け持ちます。右端の列はホームポジションからいちばん遠く、練習されることもいちばん少ない場所です。US配列では / - = [ ] \\ が並び、そのうち「-」は IME で長音の「ー」になります。コーヒーは ko-hi-、ラーメンは ra-menn と打ちます。",
+  "congrats": "右端の列は、多くの講座が途中で終わらせてしまう場所です。この講座では、もう終わりました。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RP",
+      "text": "右端の列のキーです。すべて右手の小指で押します。US配列では / - = [ ] \\ が並びます。「-」は、IME で長音の「ー」になるキーです。",
+      "hint": "/ を押して次へ"
+    },
+    {
+      "newKeys": [
+        "/",
+        "-"
+      ],
+      "text": "次は / と - です。小指が外へ出て、また戻ります。手は動かしません。",
+      "type": "block",
+      "content": "/-/- -/-/\n/- -/\nj-d /f j-"
+    },
+    {
+      "newKeys": [
+        "=",
+        "["
+      ],
+      "text": "次は = と [ です。小指が外へ出て、また戻ります。手は動かしません。",
+      "type": "block",
+      "content": "[= =[\n=fj [d =f\n=[ [= =[=["
+    },
+    {
+      "seconds": 20,
+      "text": "この列で覚えたキーを使う連打です。",
+      "type": "burst",
+      "tokens": [
+        "[-",
+        "-=",
+        "--",
+        "[/",
+        "-/",
+        "/[",
+        "[=",
+        "/-",
+        "-[",
+        "[["
+      ]
+    },
+    {
+      "newKeys": [
+        "]",
+        "\\"
+      ],
+      "text": "次は ] と \\ です。小指が外へ出て、また戻ります。手は動かしません。",
+      "type": "block",
+      "content": "]\\ ]\\\n]fd \\j ]f\n]\\ \\] ]\\]\\"
+    },
+    {
+      "text": "6つをまとめて。指が戻らないと、手首がいちばんねじれやすい場所です。",
+      "type": "block",
+      "content": "f=/ d\\- f=\n\\] ]\\ \\]\\]\n\\\\\\\\ ==== --- /// [[[ ]]]]"
+    },
+    {
+      "seconds": 25,
+      "text": "もう一度単語です。端のキーが続いたあとで、手をほぐします。",
+      "type": "burst",
+      "tokens": [
+        "rizumu",
+        "iu",
+        "kuri",
+        "kage",
+        "kyori",
+        "toshi",
+        "namae",
+        "dekiru",
+        "ki",
+        "douyatte",
+        "zairyou",
+        "nokoru"
+      ]
+    },
+    {
+      "text": "単語に戻ります。ここからは「-」を使う、コーヒー（ko-hi-）のようなカタカナ語も出てきます。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kippari sekai shougakusei momo\nhikari yotei gaka tsukiai\nwasureru yuujin muri yorokobu"
+    },
+    {
+      "text": "キーを覚えるレッスンの締めくくりに、文を打ちます。",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Kaisha ha eki no chikaku ni arimasu.\nHeya no mado wo akete kudasai.\nAsa gohann wo tabemashita."
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "#, $, % at ^",
+  "summary": "Sa araling ito: #, $, % at ^.",
+  "newKeys": [
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Mga key na hindi pa nagagamit ng kurso: #, $, % at ^. Lahat sila ay Shift at isang key na kilala na ng mga daliri mo — ang Shift ay sa hinliliit ng kabilang kamay.",
+  "congrats": "#, $, % at ^: nasa ilalim na ng mga daliri mo. Shift sa kabilang kamay, at kasindali na ng katabing titik ang simbolo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LM",
+      "text": "Ang # ay para sa kaliwang hinlalato, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang # para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "Una, # nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "## # #43 #81 #51\n## # #29 #12 #73\n## # #10 #7 #39"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "Ang $ ay para sa kaliwang hintuturo, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang $ para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Una, $ nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "$$ $ $70 $84 $41\n$$ $ $54 $86 $75\n$$ $ $51 $87 $18"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "Ang % ay para sa kaliwang hintuturo, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang % para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Una, % nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "%% % 56% 96% 12%\n%% % 56% 71% 21%\n%% % 48% 36% 88%"
+    },
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RI",
+      "text": "Ang ^ ay para sa kanang hintuturo, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang ^ para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "^",
+      "text": "Una, ^ nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "^^ ^ 44^1 43^1 11^1\n^^ ^ 23^2 73^1 72^1\n^^ ^ 61^2 16^3 89^1"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Isang bugso ng maiikling piraso na may ganitong mga character.",
+      "tokens": [
+        "#78",
+        "#79",
+        "$15",
+        "9^3",
+        "$24",
+        "13^2",
+        "44^2",
+        "74%",
+        "86^1",
+        "20%"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Lahat ng nasa araling ito, magkakahalo.",
+      "content": "$27 #16 #93 97^1\n30^2 #66 $48 88%\n$9 35% #15 #45"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Mga salita ulit, nasa tamang lugar ang mga simbolo.",
+      "content": "#5 doon $70 opo #57\n#59 pinya 16^3 pitaka #90\n89^1 walo $68 daliring 94^3"
+    }
+  ]
+}

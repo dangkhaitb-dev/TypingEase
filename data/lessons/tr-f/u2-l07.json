@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "Ç ve Ö",
+  "summary": "Yeni tuşlar: Ç ve Ö. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "ç",
+    "ö"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c",
+    "f",
+    "p",
+    "ç",
+    "ö"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: Ç ve Ö. Bunlara sol işaret parmağı ve sol yüzük parmağı basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. Ç ve Ö artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "ç",
+      "finger": "LI",
+      "text": "Bu tuşa sol işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Ç tuşuna bas"
+    },
+    {
+      "newKey": "ç",
+      "text": "Yalnızca Ç ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "çke a çk\nç ç çç\nçççç"
+    },
+    {
+      "type": "intro",
+      "key": "ö",
+      "finger": "LR",
+      "text": "Bu tuşa sol yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Ö tuşuna bas"
+    },
+    {
+      "newKey": "ö",
+      "text": "Yalnızca Ö ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "çöçöçö öçöçöç\nöç öç\nkeö ça ke"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "öööö",
+        "öööç",
+        "ççç",
+        "ööö",
+        "öçö",
+        "ççöö",
+        "öççç",
+        "çöçç",
+        "öç",
+        "çççç"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "kkkk çççç ööö aaa\nçöçö öçöç\nökça aköç"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yönet için rahatça yön\nöz köy iç ödül\nçanta göz çünkü özel"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "üzgün",
+        "derse",
+        "gel",
+        "köprü",
+        "kısa",
+        "olay",
+        "neden",
+        "yiyecek",
+        "nisan",
+        "defter"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık Ç tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "güvercin oturur numara ağır\ndünya güney doktor seyahat\nürün emek ek çiftlik"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kea öç ke\nöç çö öçöç\nöööö ççç"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yazmak kelime ritim sıra\ndurak mahalle sık fark\nsaygı yol orada resimler"
+    }
+  ]
+}

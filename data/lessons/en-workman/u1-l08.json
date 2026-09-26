@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "W and F",
+  "summary": "Two new keys: W and F. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "w",
+    "f"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y",
+    "r",
+    "u",
+    "w",
+    "f"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: W and F. They belong to your left index finger and your right index finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If W and F already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "w",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press W to continue"
+    },
+    {
+      "newKey": "w",
+      "text": "Only W and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "tnw h tn\nw w ww\nwww"
+    },
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press F to continue"
+    },
+    {
+      "newKey": "f",
+      "text": "Only F and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "fw fw\nwnf th wn\nwf fw wfwf"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "wwf",
+        "wfwf",
+        "www",
+        "wffw",
+        "fwf",
+        "ww",
+        "fffw",
+        "fwwf",
+        "wwff",
+        "fwff"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "tw wt twtw\nwwww nnnn tttt fff\nwfwf fwfw"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "with wrote often father\nfair wire fine we\ngrow worth wife show"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "hash",
+        "turn",
+        "his",
+        "or",
+        "hour",
+        "thus",
+        "ought",
+        "friar",
+        "tie",
+        "neat"
+      ]
+    },
+    {
+      "text": "Now the weight is on W, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "another high ages then\nwear surge foot things\nnotes two star who"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "www ffff\nwfwfwf fwfwfw\nfw fw"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "shag son surf gear\ntries hot offers run\nfine aha wine suit"
+    }
+  ]
+}

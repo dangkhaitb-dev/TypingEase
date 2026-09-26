@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "O ve W",
+  "summary": "Yeni tuşlar: O ve W. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "o",
+    "w"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş",
+    "g",
+    "h",
+    "e",
+    "ı",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: O ve W. Bunlara sağ yüzük parmağı ve sol yüzük parmağı basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. O ve W artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "RR",
+      "text": "Bu tuşa sağ yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için O tuşuna bas"
+    },
+    {
+      "newKey": "o",
+      "text": "Yalnızca O ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "o o oo\noooo\noooooo oooooo"
+    },
+    {
+      "type": "intro",
+      "key": "w",
+      "finger": "LR",
+      "text": "Bu tuşa sol yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için W tuşuna bas"
+    },
+    {
+      "newKey": "w",
+      "text": "Yalnızca W ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "owow wowo\now wo\nwdf oj wd"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "oow",
+        "woow",
+        "ooo",
+        "wo",
+        "wwwo",
+        "ww",
+        "wwww",
+        "oww",
+        "woo",
+        "owow"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "fdo kjs fd\njo oj jojo\nooo www fff jjjj"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "oda koku olsa doktor\nkolaylık okullar tost otur\nokur soru yollar dostlar"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "taraf",
+        "şaka",
+        "dostlar",
+        "tuhaf",
+        "hasta",
+        "seyahat",
+        "yer",
+        "kayık",
+        "kaya",
+        "kutu"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık O tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaya yollar jel karar\nsu akıllı koy ruh\nsorgu kuşlar odalar otoyol"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "owowow wowowo\now wo\nwod fj wo"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "durur yaşlı sesler arkadaş\nayrı kurar hele tuşları\notel sorar sakla yatak"
+    }
+  ]
+}

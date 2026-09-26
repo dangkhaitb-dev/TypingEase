@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "Baris nombor",
+  "summary": "Sepuluh nombor, setiap jari naik lurus.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Baris nombor terletak di atas semua yang telah anda taip setakat ini, dan di sinilah jari mencapai paling jauh. Kesilapan lebih banyak di sini berbanding bahagian lain kursus, dan ia dibaiki dengan cara yang sama: perlahan-lahan dahulu.",
+  "congrats": "Baris nombor paling sukar dan paling jarang dilatih selepas ini. Kembalilah ke pelajaran ini sekali-sekala.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "Baris nombor terletak di atas baris atas. Setiap jari naik lurus dan turun dengan cara yang sama. Inilah jangkauan paling jauh dalam kursus ini.",
+      "hint": "Tekan 1 untuk meneruskan"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "1 dan 0 ditekan oleh jari kelingking kiri dan jari yang sama di tangan sebelah lagi. Naik, tekan, turun ke baris asas.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "2 dan 9 ditekan oleh jari manis kiri dan jari yang sama di tangan sebelah lagi. Naik, tekan, turun ke baris asas.",
+      "type": "block",
+      "content": "df2 9j df\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Satu pecutan pendek dengan nombor yang sudah anda pelajari.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "3 dan 8 ditekan oleh jari hantu kiri dan jari yang sama di tangan sebelah lagi. Naik, tekan, turun ke baris asas.",
+      "type": "block",
+      "content": "383838 838383\n83 38\nd83 jf d8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "4 dan 7 ditekan oleh jari telunjuk kiri dan jari yang sama di tangan sebelah lagi. Naik, tekan, turun ke baris asas.",
+      "type": "block",
+      "content": "47 47\nfj4 7d fj\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "Dua yang tinggal milik jari telunjuk, yang sudah mencapai lebih banyak kekunci daripada jari lain.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nfj6 5d fj"
+    },
+    {
+      "text": "Seluruh baris, dalam kumpulan. Jangan tunduk untuk mencari angka 6.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Kesemua sepuluh, bercampur. Pada mulanya banyak kesilapan di sini; itu biasa.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Kembali kepada perkataan sebentar, supaya tangan ingat di mana tempatnya.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kucing bekerja petang zon\ntulisan tayar zink kerusi\nsetia mata dibuka dan"
+    },
+    {
+      "text": "Ayat semula, kini dengan seluruh papan kekunci tersedia.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Setiap orang ada cara belajar sendiri.\nNenek menanam sayur di belakang rumah.\nCuaca hari ini sangat panas."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "U e H, più la barra spaziatrice",
+  "summary": "I due tasti con il rilievo, la barra spaziatrice, e l'abitudine di non guardare in basso.",
+  "newKeys": [
+    "u",
+    "h",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "I tasti con un piccolo rilievo sono il punto di partenza. I due indici si appoggiano lì e non se ne vanno; tutto il resto del corso si misura da quella posizione. Comincia mettendo a posto le due mani e guardando solo lo schermo.",
+  "congrats": "Adesso hai le mani a posto. Da qui in avanti sono tutti tasti che si raggiungono da questa posizione e che si lasciano subito.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "LI",
+      "text": "Questo tasto lo prende l'indice sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi U per continuare"
+    },
+    {
+      "newKey": "u",
+      "text": "Solo U e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "u u uu\nuuuu\nuuuuuu uuuuuu"
+    },
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RI",
+      "text": "Questo tasto lo prende l'indice destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi H per continuare"
+    },
+    {
+      "newKey": "h",
+      "text": "Solo H e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "hu hu\nhu uh huhu\nuh hu uhuh"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "La barra spaziatrice è del pollice destro. I pollici non fanno altro, e per questo non serve mai cercarla.",
+      "hint": "Premi la barra spaziatrice per continuare"
+    },
+    {
+      "newKey": " ",
+      "text": "Gruppi corti separati da spazi. Il pollice destro scende e risale; le altre dita restano dove sono.",
+      "type": "block",
+      "content": "hu hu\nuh hu uhuh\nhhhh uuuu"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "uuh",
+        "uu",
+        "uuuu",
+        "uhh",
+        "uuhh",
+        "huu",
+        "uhu",
+        "huuh",
+        "uh",
+        "uhuu"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "uh uh\nuh hu uhuh\nuuuu hhhh"
+    },
+    {
+      "text": "Di nuovo i due tasti nuovi. Non ci sono ancora parole da scrivere con loro, ed è normale.",
+      "type": "block",
+      "content": "uh hu\nhu hu\nhu uh huhu"
+    },
+    {
+      "seconds": 25,
+      "text": "Gruppi un po' più lunghi. La fretta non aiuta ancora.",
+      "type": "burst",
+      "tokens": [
+        "uhuh",
+        "uu",
+        "uhu",
+        "hhu",
+        "uuhu",
+        "uhhh",
+        "uh",
+        "hhuu",
+        "huhh",
+        "huh",
+        "huu",
+        "huuh"
+      ]
+    },
+    {
+      "text": "Tutto quello che hai, in gruppi corti. Guarda lo schermo, non le mani.",
+      "type": "block",
+      "content": "uhuh huhu\nhu hu\nuh hu uhuh"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "hu hu\nuh hu uhuh\nuuuu hhhh"
+    },
+    {
+      "text": "Un ultimo giro con tutto quello che hai imparato fin qui.",
+      "type": "block",
+      "content": "uhuhuh huhuhu\nhu hu\nuh uh"
+    }
+  ]
+}

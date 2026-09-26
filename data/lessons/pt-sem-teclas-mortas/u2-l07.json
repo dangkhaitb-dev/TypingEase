@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "B e X",
+  "summary": "Teclas novas: B e X. O dedo sai, aperta e volta.",
+  "newKeys": [
+    "b",
+    "x"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas novas nesta lição: B e X. Elas se apertam com o indicador esquerdo e o anelar esquerdo. O movimento é sempre o mesmo — sair, apertar e voltar — e a volta é a parte que se treina, porque se o dedo fica fora, a letra seguinte sai errada.",
+  "congrats": "Mais teclas debaixo dos dedos. Se B e X já saem sem procurar, a lição fez o seu trabalho.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "LI",
+      "text": "Esta tecla é do indicador esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte B para continuar"
+    },
+    {
+      "newKey": "b",
+      "text": "Só B e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "bjd f bj\nb b bb\nbbbb"
+    },
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LR",
+      "text": "Esta tecla é do anelar esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte X para continuar"
+    },
+    {
+      "newKey": "x",
+      "text": "Só X e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "bxbxbx xbxbxb\nxb xb\njdx bf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos curtos, um atrás do outro. Vá até o fim mesmo que erre algum.",
+      "type": "burst",
+      "tokens": [
+        "xxxx",
+        "xxxb",
+        "bbb",
+        "xxx",
+        "xbx",
+        "bbxx",
+        "xbbb",
+        "bxbb",
+        "xb",
+        "bbbb"
+      ]
+    },
+    {
+      "text": "As teclas novas misturadas com as anteriores, que é como elas vão aparecer nas palavras.",
+      "type": "block",
+      "content": "jjjj bbbb xxx fff\nbxbx xbxb\nxjbf fjxb"
+    },
+    {
+      "text": "Palavras de verdade com as teclas novas. Escreva a palavra inteira de uma vez, não letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "textos roxo bolos exemplo\nacabar trabalhar obrigada sabia\nbairros bom tabela sabe"
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada de palavras curtas com as teclas novas.",
+      "type": "burst",
+      "tokens": [
+        "pai",
+        "ruas",
+        "serviço",
+        "jeito",
+        "cavalo",
+        "lado",
+        "mesmo",
+        "sapato",
+        "deixar",
+        "segunda"
+      ]
+    },
+    {
+      "text": "Agora com o peso em B, a que você menos apertou.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "exemplo flauta encontrar lajes\npiada corpo ter dono\nqualidade linha batatas busca"
+    },
+    {
+      "text": "Voltamos aos padrões por um momento, para conferir que os dedos continuam voltando para o lugar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jdf xb jd\nxb bx xbxb\nxxxx bbb"
+    },
+    {
+      "text": "Tudo o que você tem, misturado. Repare em quantas palavras já saem sem pensar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "quente esquerda pior lugar\nreais troca siglas filial\ndata outra folha mapa"
+    }
+  ]
+}

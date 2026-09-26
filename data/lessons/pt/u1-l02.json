@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "D e K",
+  "summary": "Teclas novas: D e K. O dedo sai, aperta e volta.",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas novas nesta lição: D e K. Elas se apertam com o dedo médio esquerdo e o dedo médio direito. O movimento é sempre o mesmo — sair, apertar e voltar — e a volta é a parte que se treina, porque se o dedo fica fora, a letra seguinte sai errada.",
+  "congrats": "Mais teclas debaixo dos dedos. Se D e K já saem sem procurar, a lição fez o seu trabalho.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "LM",
+      "text": "Esta tecla é do dedo médio esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte D para continuar"
+    },
+    {
+      "newKey": "d",
+      "text": "Só D e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "d d dd\ndddd\ndddd dddd"
+    },
+    {
+      "type": "intro",
+      "key": "k",
+      "finger": "RM",
+      "text": "Esta tecla é do dedo médio direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte K para continuar"
+    },
+    {
+      "newKey": "k",
+      "text": "Só K e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "ddd kkk\ndkdk kdkd\ndk dk"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos curtos, um atrás do outro. Vá até o fim mesmo que erre algum.",
+      "type": "burst",
+      "tokens": [
+        "dd",
+        "kdkk",
+        "dkkd",
+        "kddd",
+        "ddd",
+        "ddkk",
+        "kdk",
+        "kddk",
+        "dkdk",
+        "kdd"
+      ]
+    },
+    {
+      "text": "As teclas novas misturadas com as anteriores, que é como elas vão aparecer nas palavras.",
+      "type": "block",
+      "content": "dkdkdk kdkdkd\nfdjk jfdk\ndfj k df"
+    },
+    {
+      "text": "De novo as duas teclas novas. Ainda não há palavras para escrever com elas, e isso é normal.",
+      "type": "block",
+      "content": "fkj d fk\ndk kd dkdk\nkkk dddd"
+    },
+    {
+      "seconds": 25,
+      "text": "Grupos um pouco mais longos. A pressa ainda não ajuda.",
+      "type": "burst",
+      "tokens": [
+        "dkk",
+        "ddkk",
+        "dkkk",
+        "dkd",
+        "kdkk",
+        "dk",
+        "kkkk",
+        "kkdk",
+        "dddk",
+        "kddk",
+        "dddd",
+        "kkk"
+      ]
+    },
+    {
+      "text": "Tudo o que você já tem, em grupos curtos. Olhe para a tela, não para as mãos.",
+      "type": "block",
+      "content": "fkd j fk\ndj jd djdj\njjjj kkkk ffff dddd"
+    },
+    {
+      "text": "Voltamos aos padrões por um momento, para conferir que os dedos continuam voltando para o lugar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "dk kd dkdk\ndddd kkk\ndkdk kdkd"
+    },
+    {
+      "text": "Uma última série com tudo o que foi visto até aqui.",
+      "type": "block",
+      "content": "jfd k jf\ndk kd dkdk\nkkkk ddd ffff jjj"
+    }
+  ]
+}

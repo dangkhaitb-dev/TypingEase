@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "&, *, ( and )",
+  "summary": "The last keys: &, *, ( and ).",
+  "newKeys": [
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "'",
+    "l",
+    "x",
+    "q",
+    ";",
+    "v",
+    "w",
+    "-",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "z",
+    "[",
+    "]",
+    "/",
+    "=",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: &, *, ( and ). Each of them is Shift plus a key your fingers already know — Shift with the little finger of the other hand.",
+  "congrats": "&, *, ( and ): under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "& belongs to your right index finger, with Shift held by the other hand.",
+      "hint": "Press & to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "& on its own first, then where it is actually used.",
+      "content": "&& & each & looks gal & hurdle read & bed\n&& & dad & below remember & kind wheat & shred\n&& & photo & child examine & bed halls & form"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "* belongs to your right middle finger, with Shift held by the other hand.",
+      "hint": "Press * to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "* on its own first, then where it is actually used.",
+      "content": "** * *light* *party* *magazine*\n** * *tail* *points* *path*\n** * *trades* *storm* *date*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "( belongs to your right ring finger, with Shift held by the other hand.",
+      "hint": "Press ( to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "( on its own first, then where it is actually used.",
+      "content": "(( ( (lines (rear (grass\n(( ( (longer (saga (court\n(( ( (mother (voices (careful"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RP",
+      "text": ") belongs to your right little finger, with Shift held by the other hand.",
+      "hint": "Press ) to continue"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": ") on its own first, then where it is actually used.",
+      "content": ")) ) (practice) (ale) (form)\n)) ) (subject) (having) (path)\n)) ) (however) (regards) (heard)"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "(show)",
+        "*stand*",
+        "(out)",
+        "*butter*",
+        "(wild)",
+        "*loud*",
+        "(field)",
+        "*being*",
+        "*flake*",
+        "*bird*"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "(roses) tear&prove *walks* girl&poor\n(just) *order* (letters) (lines)\n*true* *hurdle* (salads) held&earl"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "*plans* left (harder) shall (ears)\n(mother) after *son* house (flake)\ndrill & root street *by* choose (prove)"
+    }
+  ]
+}

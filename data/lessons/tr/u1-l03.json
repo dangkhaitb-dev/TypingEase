@@ -1,0 +1,117 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "S ve L",
+  "summary": "Yeni tuşlar: S ve L. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: S ve L. Bunlara sol yüzük parmağı ve sağ yüzük parmağı basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. S ve L artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "LR",
+      "text": "Bu tuşa sol yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için S tuşuna bas"
+    },
+    {
+      "newKey": "s",
+      "text": "Yalnızca S ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "dfs j df\ns s ss\nsss"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RR",
+      "text": "Bu tuşa sağ yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için L tuşuna bas"
+    },
+    {
+      "newKey": "l",
+      "text": "Yalnızca L ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "sss llll\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "slls",
+        "llls",
+        "slss",
+        "llsl",
+        "lss",
+        "ss",
+        "ssl",
+        "slll",
+        "lsll",
+        "lls"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "fjls jfsl\nklf sdj kl\nfs sf fsfs"
+    },
+    {
+      "text": "Yine iki yeni tuş. Onlarla yazılacak kelime henüz yok, bu normal.",
+      "type": "block",
+      "content": "lll sss\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 25,
+      "text": "Biraz daha uzun gruplar. Acele etmek henüz işe yaramaz.",
+      "type": "burst",
+      "tokens": [
+        "llll",
+        "ss",
+        "lsl",
+        "ssll",
+        "lsll",
+        "sss",
+        "llss",
+        "llls",
+        "llsl",
+        "slss",
+        "slls",
+        "lssl"
+      ]
+    },
+    {
+      "text": "Elindeki her şey, kısa gruplar halinde. Ellerine değil ekrana bak.",
+      "type": "block",
+      "content": "jkl dsf jk\ndf fd dfdf\nllll jjj ssss fff ddd"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ls sl\nsjf ld sj\nsl ls slsl"
+    },
+    {
+      "text": "Buraya kadar görülen her şeyle son bir tur.",
+      "type": "block",
+      "content": "ksl dfj ks\njf fj jfjf\ndddd fff kkkk jjj"
+    }
+  ]
+}

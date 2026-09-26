@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "|, °, ! y \"",
+  "summary": "En esta lección: |, °, ! y \".",
+  "newKeys": [
+    "|",
+    "°",
+    "!",
+    "\""
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "{",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "¿",
+    "´",
+    "+",
+    "}",
+    "|",
+    "°",
+    "!",
+    "\""
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas que el curso todavía no ha usado: |, °, ! y \". Algunas necesitan Shift, con el meñique de la otra mano; las demás tienen su propia tecla, que el curso aún no había usado.",
+  "congrats": "|, °, ! y \": ya bajo tus dedos. El signo sale tan fácil como la letra de al lado.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "LP",
+      "text": "Es el meñique izquierdo el que pulsa |.",
+      "hint": "Pulsa | para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "Primero |, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "|| | águila|fuerzas noches|parte zapato|hallas\n|| | otros|máquinas valor|vecinos regla|verdades\n|| | caña|águila regla|cabezas baja|ciencia"
+    },
+    {
+      "type": "block",
+      "newKey": "°",
+      "text": "Primero °, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "°° ° 15° 45° 52°\n°° ° 72° 74° 62°\n°° ° 9° 2° 12°"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "Es el meñique izquierdo el que pulsa !, con Shift en la otra mano.",
+      "hint": "Pulsa ! para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Primero !, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "!! ! faldas! verdades! espera!\n!! ! ahí! guardar! dada!\n!! ! hombros! campo! ellas!"
+    },
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LR",
+      "text": "Es el anular izquierdo el que pulsa \", con Shift en la otra mano.",
+      "hint": "Pulsa \" para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "Primero \", sin nada alrededor, y después donde de verdad se usa.",
+      "content": "\"\" \" \"del\" \"cielo\" \"hasta\"\n\"\" \" \"nombre\" \"textos\" \"esta\"\n\"\" \" \"carta\" \"madres\" \"trabajo\""
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Una ráfaga de trozos cortos con estos caracteres.",
+      "tokens": [
+        "\"ayudas\"",
+        "69°",
+        "28°",
+        "\"escribir\"",
+        "países|llevas",
+        "adiós!",
+        "\"camino\"",
+        "mundos!",
+        "\"viene\"",
+        "26°"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Todo lo de esta lección, mezclado.",
+      "content": "primero! \"cómo\" \"mas\" \"cantar\"\nuña! falda! 32° \"quedar\"\n\"proyecto\" \"traer\" reloj|ideas \"salada\""
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Otra vez palabras, con los signos en su sitio.",
+      "content": "trabajos! océanos 32° palabras unos|paz\n\"sala\" porque caminos|cámara guardar zapatos!\ntierras! corta 98° año otro!"
+    }
+  ]
+}

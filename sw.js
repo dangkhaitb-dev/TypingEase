@@ -20,18 +20,49 @@
  * Đổi VERSION là dọn sạch cache cũ ở lần activate kế tiếp. v3: bàn phím/bàn tay thay bằng bản
  * port từ typekute — keyboard-widget.js, hands.js, keyboard.css, hands.css không còn tồn tại, nên
  * quét sạch cache v2 để không ai còn giữ chúng.
+ * v4: `/` đổi hẳn ngôn ngữ — trước là trang chủ tiếng Việt, nay là trang đầu tiếng Anh có bộ chọn
+ * bàn phím, còn bản Việt dời sang `/vi/`. Bản `/` cũ nằm trong runtime cache v3 là bản tiếng Việt;
+ * mạng-trước nghĩa là nó chỉ hiện khi mất mạng, nhưng "mất mạng thì thấy trang ngôn ngữ khác" vẫn
+ * là sai, nên phải quét.
+ * v5: `/` đổi được sang 10 ngôn ngữ (landing-i18n.js mới vào PRECACHE), và mọi trang bỏ ô đổi
+ * ngôn ngữ để lấy ô "Trang chủ". Bản cũ trong cache v4 còn ô EN/VI/ES và thiếu file chữ.
+ * v6: 26 ngôn ngữ trên `/`, khu lưới chỉ còn tiêu đề "Sơ đồ bàn phím" (bỏ đoạn giải thích).
+ * v7: trang tiến độ cho 24 ngôn ngữ còn thiếu; ui.<lang>.js có thêm bảng `progress` và route.
+ * v8: khoá tiếng Trung phồn thể (Chú âm, gõ theo vị trí phím) — player.js và landing-i18n.js đổi.
+ * v9: logo TypingEase trên mọi trang về `/` (trang chọn ngôn ngữ và bàn phím).
+ * v10: Đợt 0 SEO — thẻ chia sẻ, JSON-LD, tiêu đề/mô tả mới, trang tiến độ noindex.
+ * v11: Đợt 1 SEO — trang test tốc độ es/pt/fr/de, công cụ test 15 giây–10 phút nhiều đoạn văn.
+ * v12: giữ chỗ chống xê dịch (CLS) ở trang đầu và trang nhà; breadcrumb JSON-LD; câu thời lượng test mới.
+ * v13: trang trò chơi gõ phím (/tro-choi/, /en/typing-games/), tro-choi/games.js + games.css.
+ * v14: hình minh hoạ SVG cho trang trò chơi (thẻ, hướng dẫn ba bước, cảnh Mưa chữ, xe đua).
+ * v15: trang trò chơi es/pt/fr/de; đua RTL, font cho chữ không Latin trong trò chơi.
+ * v16: trang Giới thiệu / Điều khoản / Quyền riêng tư cho 27 ngôn ngữ, dòng pháp lý ở chân mọi trang.
+ * v18: nút ☰ menu trên điện thoại (menu.js, vào PRECACHE).
+ * v19: trang test viết sẵn cho 21 ngôn ngữ (chưa bật); typing-test.js gõ theo vị trí phím (Chú âm), font cho chữ không Latin.
+ * v20: trang test chọn đoạn văn theo kiểu bàn phím (Hindi Bolnagri), trò chơi lọc từ theo bố cục đang chọn.
+ * v17: chân trang ba cột — dòng pháp lý ở giữa, bỏ hàng liên kết lộ trình/bài học.
  *
  * Bàn tay 3D (three.js ~690 KB, model 967 KB, texture) KHÔNG nằm trong PRECACHE: chúng chỉ tải
  * khi người học thật sự bật bàn tay, và cache lối-đi-thật ở dưới sẽ giữ lại sau lần đầu.
  */
-const VERSION = 'v3';
+const VERSION = 'v20';
 const SHELL = `typingease-shell-${VERSION}`;
 const RUNTIME = `typingease-runtime-${VERSION}`;
 
-// Đủ để mở trang chủ và vào học khi offline ngay từ lần thứ hai, không hơn.
+// Đủ để mở trang đầu và vào học khi offline ngay từ lần thứ hai, không hơn.
+//
+// Chỉ shell của `/` — trang đầu tiếng Anh, cửa vào của MỌI người. `/vi/` và
+// `data/curriculum.vi.js` KHÔNG nằm đây: cache theo lối đi thật vẫn giữ chúng lại ngay sau lần
+// người dùng tiếng Việt ghé qua lần đầu, còn tải sẵn cả hai giáo trình cho mọi khách là đúng thứ
+// mà đầu file này nói là không làm.
+//
+// Bàn phím của hero (keyboard.css + chuỗi module + 12 KB catalog + layout JSON) cũng đứng ngoài,
+// vì nó là phần TĂNG THÊM: mất mạng lần đầu thì landing.js thay chỗ nó bằng một dòng chữ và cả
+// trang còn lại — bộ chọn, lộ trình, nút vào học — vẫn dùng được.
 const PRECACHE = [
-  '/', '/tokens.css', '/base.css', '/home.css', '/script.js',
-  '/profile.js', '/progress-store.js', '/data/curriculum.vi.js', '/favicon.ico'
+  '/', '/tokens.css', '/base.css', '/home.css', '/landing.css',
+  '/script.js', '/landing-i18n.js', '/landing.js', '/menu.js', '/profile.js', '/progress-store.js',
+  '/data/curriculum.en.js', '/data/languages.js', '/favicon.ico'
 ];
 
 const FONT_HOSTS = ['fonts.googleapis.com', 'fonts.gstatic.com'];
@@ -65,16 +96,17 @@ const putCopy = (cacheName, request, response, { allowOpaque = false } = {}) => 
 // Trang chủ dùng đường dẫn tương đối ('tokens.css'), đặt nó ở /luyen-phim-yeu/ là mọi liên kết
 // lệch một cấp — vừa vỡ giao diện vừa nói dối người dùng về việc họ đang đứng ở đâu. Một trang
 // offline tự chứa thì thành thật hơn và không phụ thuộc file nào.
-const OFFLINE_HTML = '<!doctype html><html lang="vi"><head><meta charset="utf-8">'
-  + '<meta name="viewport" content="width=device-width,initial-scale=1"><title>Không có mạng | TypingEase</title>'
+const OFFLINE_HTML = '<!doctype html><html lang="en"><head><meta charset="utf-8">'
+  + '<meta name="viewport" content="width=device-width,initial-scale=1"><title>No connection | TypingEase</title>'
   + '<style>body{margin:0;min-height:100vh;display:grid;place-items:center;background:#f6faf7;'
   + 'color:#15352b;font:16px/1.6 system-ui,-apple-system,"Segoe UI",sans-serif;text-align:center}'
   + 'main{max-width:420px;padding:32px 24px}h1{margin:0 0 12px;font-size:24px;letter-spacing:-.5px}'
   + 'p{margin:0 0 20px;color:#6e8179;font-size:14px}a{display:inline-block;padding:11px 18px;'
   + 'border-radius:6px;background:#157a55;color:#fff;font-size:13px;font-weight:700;text-decoration:none}</style>'
-  + '</head><body><main id="offline-note"><h1>Mất mạng rồi</h1>'
-  + '<p>Trang này bạn chưa mở lần nào nên máy chưa giữ được bản nào. Những bài đã học thì vẫn gõ được bình thường.</p>'
-  + '<a href="/">Về trang chủ</a></main></body></html>';
+  + '</head><body><main id="offline-note"><h1>You are offline</h1>'
+  + '<p>You have never opened this page, so there is no copy of it on this device. The lessons you have already started still work.</p>'
+  + '<p lang="vi">Trang này bạn chưa mở lần nào nên máy chưa giữ được bản nào. Những bài đã học thì vẫn gõ được bình thường.</p>'
+  + '<a href="/">TypingEase</a></main></body></html>';
 
 const offlinePage = () => new Response(OFFLINE_HTML, {
   status: 503, headers: { 'Content-Type': 'text/html; charset=utf-8', 'Cache-Control': 'no-store' }

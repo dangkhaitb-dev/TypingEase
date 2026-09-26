@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, ! dan @",
+  "summary": "Di pelajaran ini: `, ~, ! dan @.",
+  "newKeys": [
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tombol yang belum dipakai kursus ini: `, ~, ! dan @. Sebagian perlu Shift, ditekan kelingking tangan yang lain; sisanya punya tombol sendiri yang belum pernah dipakai kursus ini.",
+  "congrats": "`, ~, ! dan @: sekarang sudah di bawah jarimu. Shift dengan tangan yang lain, dan simbol keluar semudah huruf di sebelahnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "` ditekan dengan kelingking kiri.",
+      "hint": "Tekan ` untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "Pertama ` saja, lalu di tempat ia memang dipakai.",
+      "content": "`` ` `maksud` `hawa` `tabel`\n`` ` `adas` `lokasi` `celana`\n`` ` `kelak` `bekal` `motor`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "Pertama ~ saja, lalu di tempat ia memang dipakai.",
+      "content": "~~ ~ ~48 ~50 ~87\n~~ ~ ~22 ~3 ~44\n~~ ~ ~53 ~82 ~5"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "! ditekan dengan kelingking kiri, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan ! untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Pertama ! saja, lalu di tempat ia memang dipakai.",
+      "content": "!! ! tahukah! selisih! mentega!\n!! ! bintang! gagah! biasa!\n!! ! madu! tutup! delapan!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "@ ditekan dengan jari manis kiri, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan @ untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "Pertama @ saja, lalu di tempat ia memang dipakai.",
+      "content": "@@ @ tebal@kaki perlu@usaha mengetik@tua\n@@ @ ideal@teguran salju@semangat mesin@aturan\n@@ @ minum@kisah segi@delapan tugas@kemarin"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Rentetan potongan pendek yang berisi karakter-karakter ini.",
+      "tokens": [
+        "ruangan@raya",
+        "`jari`",
+        "kebun!",
+        "~74",
+        "umur!",
+        "ada!",
+        "~3",
+        "kalah!",
+        "~36",
+        "~4"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Semua isi pelajaran ini, dicampur.",
+      "content": "rakyat@sepeda `geli` `nanti` ~16\nnyaring! foto! `sapu` buka!\n`muka` ~24 keluarga@usaha akhir!"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Kata-kata lagi, dengan simbol di tempatnya.",
+      "content": "~64 ruas perlu@peta itu sisi@lagu\n`sampai` kilas `ozon` tiap dewasa@cinta\n~29 takut lafal@pergi tanya ~38"
+    }
+  ]
+}

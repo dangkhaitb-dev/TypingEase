@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "T und Z",
+  "summary": "Neue Tasten: T und Z. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "t",
+    "z"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: T und Z. Dafür sind der linke Zeigefinger und der rechte Zeigefinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn T und Z ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "LI",
+      "text": "Für diese Taste ist der linke Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke T, um weiterzugehen"
+    },
+    {
+      "newKey": "t",
+      "text": "Nur T und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "tfj d tf\nt t tt\ntttt"
+    },
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "RI",
+      "text": "Für diese Taste ist der rechte Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke Z, um weiterzugehen"
+    },
+    {
+      "newKey": "z",
+      "text": "Nur Z und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "jzd ft jz\ntz zt tztz\nzzz ttt"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "ttz",
+        "ttzz",
+        "ttt",
+        "zttz",
+        "tttt",
+        "ttzt",
+        "tttz",
+        "tzt",
+        "tztz",
+        "ztz"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "zt tz ztzt\ntttt jjj fff zzz\ntztz ztzt"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "haltestelle tier start zahl\ngeht ist stufe zelt\nzeit halt stelle zusage"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "sieg",
+        "figur",
+        "taste",
+        "eier",
+        "sei",
+        "kleider",
+        "gute",
+        "rede",
+        "eile",
+        "ihr"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf T — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "griff leider reif ihr\neier kleider sei falls\nsieg diese seife tief"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "zt tz\njtd zf jt\ntz zt tztz"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "rad tal sauer erde\nlieder haltestelle kleider riesig\nkasse halt steht ei"
+    }
+  ]
+}

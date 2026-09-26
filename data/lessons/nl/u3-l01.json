@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "De cijferrij",
+  "summary": "De tien cijfers, elke vinger recht omhoog.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "+",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "´",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "De cijferrij ligt boven alles wat je tot nu toe hebt getypt, en hier gaan de vingers het verst. Hier gaat meer mis dan waar ook in de cursus, en het wordt beter zoals de rest: eerst langzaam.",
+  "congrats": "De cijferrij kost het meeste moeite en wordt daarna het minst geoefend. Kom af en toe terug naar deze les.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "De cijferrij ligt boven de bovenste rij. Elke vinger gaat recht omhoog en op dezelfde manier weer terug. Dit zijn de langste strekkingen van de cursus.",
+      "hint": "Druk op 1 om verder te gaan"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "De toetsen 1 en 0 sla je aan met de linkerpink en met dezelfde vinger van de andere hand. Omhoog, aanslaan en terug naar de thuisrij.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "De toetsen 2 en 9 sla je aan met de linkerringvinger en met dezelfde vinger van de andere hand. Omhoog, aanslaan en terug naar de thuisrij.",
+      "type": "block",
+      "content": "df2 9j df\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Een korte reeks met de cijfers die je hebt geleerd.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "De toetsen 3 en 8 sla je aan met de linkermiddelvinger en met dezelfde vinger van de andere hand. Omhoog, aanslaan en terug naar de thuisrij.",
+      "type": "block",
+      "content": "383838 838383\n83 38\nd83 jf d8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "De toetsen 4 en 7 sla je aan met de linkerwijsvinger en met dezelfde vinger van de andere hand. Omhoog, aanslaan en terug naar de thuisrij.",
+      "type": "block",
+      "content": "47 47\nfj4 7d fj\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "De twee die overblijven zijn voor de wijsvingers, die inmiddels meer toetsen halen dan elke andere vinger.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nfj6 5d fj"
+    },
+    {
+      "text": "De hele rij, in groepjes. Kijk niet omlaag om de 6 te zoeken.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Alle tien, door elkaar. In het begin gaat hier veel mis; dat is normaal.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Even terug naar woorden, zodat de handen onthouden waar ze thuishoren.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "winkels beetje slaap zegt\nmoeder stoel zoveel tijd\nrood vriendin dezelfde tanden"
+    },
+    {
+      "text": "Weer zinnen, nu met het hele toetsenbord tot je beschikking.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "De trein naar de stad vertrekt om negen uur.\nZe leest elke avond een boek voor het slapen.\nEr staat een grote boom voor het huis."
+    }
+  ]
+}

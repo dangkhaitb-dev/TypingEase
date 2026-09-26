@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "E y I",
+  "summary": "Teclas nuevas: E y I. El dedo sale, pulsa y vuelve.",
+  "newKeys": [
+    "e",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas nuevas en esta lección: E y I. Se pulsan con el corazón izquierdo y el corazón derecho. El movimiento es siempre el mismo — salir, pulsar y volver — y la vuelta es la parte que se entrena, porque si el dedo se queda fuera, la siguiente letra sale mal.",
+  "congrats": "Más teclas bajo los dedos. Si E y I ya te salen sin buscarlas, la lección ha hecho su trabajo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "Esta tecla la lleva el corazón izquierdo. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa E para continuar"
+    },
+    {
+      "newKey": "e",
+      "text": "Solo E y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "e e\nedf j ed\ne e ee"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RM",
+      "text": "Esta tecla la lleva el corazón derecho. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa I para continuar"
+    },
+    {
+      "newKey": "i",
+      "text": "Solo I y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "ie ei\nfed ij fe\nei ie eiei"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos cortos, uno detrás de otro. Cuenta hasta el final aunque falles alguno.",
+      "type": "burst",
+      "tokens": [
+        "ie",
+        "eii",
+        "ieee",
+        "iie",
+        "eiei",
+        "eiie",
+        "ii",
+        "iei",
+        "iiei",
+        "eeii"
+      ]
+    },
+    {
+      "text": "Las teclas nuevas mezcladas con las anteriores, que es como aparecerán en las palabras.",
+      "type": "block",
+      "content": "ffff eeee jjjj iii\neieiei ieieie\njief fije"
+    },
+    {
+      "text": "Palabras de verdad con las teclas nuevas. Escribe la palabra entera de un tirón, no letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "del ellas añade fila\nhija idea sedes ella\nese seda dijes señas"
+    },
+    {
+      "seconds": 25,
+      "text": "Una ráfaga de palabras cortas con las teclas nuevas dentro.",
+      "type": "burst",
+      "tokens": [
+        "siglas",
+        "les",
+        "ellas",
+        "hadas",
+        "falsas",
+        "fallas",
+        "salas",
+        "filas",
+        "dadas",
+        "isla"
+      ]
+    },
+    {
+      "text": "Ahora con el peso en E, que es la que menos veces has pulsado.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "edades sigla gala esa\nel esas halla asadas\nsedes ese a edad"
+    },
+    {
+      "text": "Volvemos a los patrones un momento, para comprobar que los dedos siguen regresando a su sitio.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "eeee iiii\neieiei ieieie\nei ie"
+    },
+    {
+      "text": "Todo lo que tienes, mezclado. Fíjate en cuántas palabras ya te salen sin pensarlas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "salsa ideales hallas esas\nal dadas la edad\ngafas ala falsas llega"
+    }
+  ]
+}

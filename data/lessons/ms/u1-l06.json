@@ -1,0 +1,122 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "g-h",
+  "title": "G dan H",
+  "summary": "Kekunci baharu: G dan H. Jari keluar, tekan dan kembali.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci baharu dalam pelajaran ini: G dan H. Ia ditekan oleh jari telunjuk kiri dan jari telunjuk kanan. Gerakannya sentiasa sama — keluar, tekan dan kembali — dan perjalanan pulang itulah yang dilatih, kerana jika jari tertinggal di luar, huruf seterusnya akan tersilap.",
+  "congrats": "Lebih banyak kekunci di bawah jari. Jika G dan H sudah keluar tanpa dicari, pelajaran ini telah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "LI",
+      "text": "Kekunci ini milik jari telunjuk kiri. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan G untuk meneruskan"
+    },
+    {
+      "newKey": "g",
+      "text": "Hanya G dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "gggg\ngggg gggg\ng g"
+    },
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RI",
+      "text": "Kekunci ini milik jari telunjuk kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan H untuk meneruskan"
+    },
+    {
+      "newKey": "h",
+      "text": "Hanya H dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "ggg hhhh\nghghgh hghghg\ngh hg"
+    },
+    {
+      "seconds": 20,
+      "text": "Kumpulan pendek, satu demi satu. Teruskan hingga habis walaupun anda tersilap.",
+      "type": "burst",
+      "tokens": [
+        "ghgh",
+        "hhhh",
+        "ghg",
+        "hhg",
+        "gg",
+        "gghg",
+        "ghh",
+        "gh",
+        "ghhg",
+        "hghg"
+      ]
+    },
+    {
+      "text": "Kekunci baharu bercampur dengan yang lama, seperti rupanya nanti di dalam perkataan.",
+      "type": "block",
+      "content": "fh hf fhfh\nhhh jjjj ffff gggg\nghghgh hghghg"
+    },
+    {
+      "text": "Perkataan sebenar dengan kekunci baharu. Taip setiap perkataan sekali gus, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hala salah halal sah\nlagak salah dahaga kalah\nsalah gajah sahaja galak"
+    },
+    {
+      "seconds": 25,
+      "text": "Satu pecutan perkataan pendek yang mengandungi kekunci baharu.",
+      "type": "burst",
+      "tokens": [
+        "saja",
+        "akal",
+        "khas",
+        "fasal",
+        "galah",
+        "salak",
+        "lada",
+        "akhlak",
+        "salah",
+        "asal"
+      ]
+    },
+    {
+      "text": "Sekarang tumpuan pada G, kekunci yang paling jarang anda tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hal sajak kalah hala\najak laksa ada lagak\nsalad galak hak saja"
+    },
+    {
+      "text": "Kembali kepada corak sebentar, untuk memastikan jari masih tahu jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "gh hg ghgh\nhhh gggg\nghgh hghg"
+    },
+    {
+      "text": "Semua yang anda ada, bercampur. Perhatikan berapa banyak perkataan yang sudah keluar tanpa difikirkan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lasak gajah alas galah\nhak dada sajak halal\nakal jala ajak sahaja"
+    }
+  ]
+}

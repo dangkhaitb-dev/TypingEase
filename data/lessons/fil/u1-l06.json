@@ -1,0 +1,122 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "g-h",
+  "title": "G at H",
+  "summary": "Mga bagong key: G at H. Lumalabas ang daliri, pumipindot, at bumabalik.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Mga bagong key sa araling ito: G at H. Para sila sa kaliwang hintuturo at kanang hintuturo. Laging pareho ang galaw — labas, pindot, balik — at ang pagbalik ang sinasanay, dahil ang daliring naiwan sa labas ang sumisira sa susunod na titik.",
+  "congrats": "Mas maraming key sa ilalim ng mga daliri mo. Kung lumalabas na ang G at H nang hindi hinahanap, nagawa na ng aralin ang trabaho nito.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "LI",
+      "text": "Ang key na ito ay para sa kaliwang hintuturo. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang G para magpatuloy"
+    },
+    {
+      "newKey": "g",
+      "text": "G lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "gggg\ngggg gggg\ng g"
+    },
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RI",
+      "text": "Ang key na ito ay para sa kanang hintuturo. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang H para magpatuloy"
+    },
+    {
+      "newKey": "h",
+      "text": "H lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "ggg hhhh\nghghgh hghghg\ngh hg"
+    },
+    {
+      "seconds": 20,
+      "text": "Maiikling grupo, sunod-sunod. Ituloy hanggang dulo kahit may mamali.",
+      "type": "burst",
+      "tokens": [
+        "ghgh",
+        "hhhh",
+        "ghg",
+        "hhg",
+        "gg",
+        "gghg",
+        "ghh",
+        "gh",
+        "ghhg",
+        "hghg"
+      ]
+    },
+    {
+      "text": "Ang mga bagong key na kahalo ng mga luma, gaya ng paglabas nila sa loob ng mga salita.",
+      "type": "block",
+      "content": "fh hf fhfh\nhhh jjjj ffff gggg\nghghgh hghghg"
+    },
+    {
+      "text": "Totoong mga salita na may mga bagong key. Tipahin ang bawat salita nang tuloy-tuloy, hindi titik-titik.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "alaga hasa halaga hala\ndagdag dagsa alagad haka\nsagala dalaga hasa lagak"
+    },
+    {
+      "seconds": 25,
+      "text": "Isang bugso ng maiikling salita na may mga bagong key.",
+      "type": "burst",
+      "tokens": [
+        "alagad",
+        "dagsa",
+        "ahas",
+        "lakas",
+        "sagala",
+        "lagak",
+        "saka",
+        "dala",
+        "hasa",
+        "dasal"
+      ]
+    },
+    {
+      "text": "Ngayon, nasa G ang bigat, ang key na pinakakaunti mong napindot.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dasal dalaga alas alaala\nlagak halaga dala ka\nhala ahas sa laksa"
+    },
+    {
+      "text": "Balik muna sa mga pattern, para matiyak na nakakabalik pa rin ang mga daliri.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "gh hg ghgh\nhhh gggg\nghgh hghg"
+    },
+    {
+      "text": "Lahat ng mayroon ka, magkakahalo. Pansinin kung ilang salita na ang lumalabas nang hindi pinag-iisipan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "alaala laksa dasal halaga\nagad ka kasal hasa\nlasa kalas sala sagala"
+    }
+  ]
+}

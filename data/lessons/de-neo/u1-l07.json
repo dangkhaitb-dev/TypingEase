@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "L und G",
+  "summary": "Neue Tasten: L und G. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "l",
+    "g"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: L und G. Dafür sind der linke Mittelfinger und der rechte Mittelfinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn L und G ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "LM",
+      "text": "Für diese Taste ist der linke Mittelfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke L, um weiterzugehen"
+    },
+    {
+      "newKey": "l",
+      "text": "Nur L und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "l l\nlae n la\nl l ll"
+    },
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "RM",
+      "text": "Für diese Taste ist der rechte Mittelfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke G, um weiterzugehen"
+    },
+    {
+      "newKey": "g",
+      "text": "Nur G und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "gl lg\nela gn el\nlg gl lglg"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "gl",
+        "lgg",
+        "glll",
+        "ggl",
+        "lglg",
+        "lggl",
+        "gg",
+        "glg",
+        "gglg",
+        "llgg"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "eeee llll nnnn ggg\nlglglg glglgl\nngle egnl"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "aal sag glatt liege\nleider gitarre leise tage\nglas geld lager gerade"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "sieg",
+        "als",
+        "der",
+        "esel",
+        "es",
+        "oder",
+        "dir",
+        "dort",
+        "eine",
+        "still"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf L — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "diesel unter tiger seil\naal eile saal tor\ngras also seele die"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "llll gggg\nlglglg glglgl\nlg gl"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "seid denn unten riesig\nteil dass diesel lass\ntiger rede sag geld"
+    }
+  ]
+}

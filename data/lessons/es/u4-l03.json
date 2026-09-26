@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "/, (, ) y =",
+  "summary": "En esta lección: /, (, ) y =.",
+  "newKeys": [
+    "/",
+    "(",
+    ")",
+    "="
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "´",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "¡",
+    "`",
+    "+",
+    "ç",
+    "º",
+    "ª",
+    "!",
+    "\"",
+    "·",
+    "$",
+    "%",
+    "&",
+    "/",
+    "(",
+    ")",
+    "="
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas que el curso todavía no ha usado: /, (, ) y =. Todas salen con Shift y una tecla que tus dedos ya conocen — Shift con el meñique de la otra mano.",
+  "congrats": "/, (, ) y =: ya bajo tus dedos. El signo sale tan fácil como la letra de al lado.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RI",
+      "text": "Es el índice derecho el que pulsa /, con Shift en la otra mano.",
+      "hint": "Pulsa / para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "/",
+      "text": "Primero /, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "// / mañana/quedar bajo/sal sugerir/gustar\n// / textos/trabajar ayuda/suerte dada/por\n// / nada/líneas difícil/comida buena/precios"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RM",
+      "text": "Es el corazón derecho el que pulsa (, con Shift en la otra mano.",
+      "hint": "Pulsa ( para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Primero (, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "(( ( (tardes (empezar (algas\n(( ( (músicas (bien (otro\n(( ( (cartas (ala (partes"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RR",
+      "text": "Es el anular derecho el que pulsa ), con Shift en la otra mano.",
+      "hint": "Pulsa ) para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "Primero ), sin nada alrededor, y después donde de verdad se usa.",
+      "content": ")) ) (ayudas) (sedes) (reloj)\n)) ) (centro) (sabe) (guarda)\n)) ) (mi) (aquí) (examen)"
+    },
+    {
+      "type": "intro",
+      "key": "=",
+      "finger": "RP",
+      "text": "Es el meñique derecho el que pulsa =, con Shift en la otra mano.",
+      "hint": "Pulsa = para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "=",
+      "text": "Primero =, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "== = 38 = 78 25 = 20 27 = 24\n== = 88 = 47 11 = 27 98 = 70\n== = 51 = 35 77 = 16 18 = 87"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Una ráfaga de trozos cortos con estos caracteres.",
+      "tokens": [
+        "niña/cortas",
+        "juegos/azul",
+        "mundos/atención",
+        "5=32",
+        "(después)",
+        "(nuestro)",
+        "(extraña)",
+        "93=37",
+        "31=48",
+        "(voces)"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Todo lo de esta lección, mezclado.",
+      "content": "(común) (viajes) (comer) (mi)\n27 = 7 (bebe) 19=46 músicas/todas\n59 = 33 (fuerzas) (vale) 58=44"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Otra vez palabras, con los signos en su sitio.",
+      "content": "plaza/caminos proyecto 63 = 60 allí 64 = 68\n53 = 10 ciudades 63 = 91 quince 46 = 61\n(brazos) ciudades 95 = 39 esta 83 = 8"
+    }
+  ]
+}

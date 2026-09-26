@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "&, *, ( と )",
+  "summary": "このレッスンのキー：&, *, ( と )",
+  "newKeys": [
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "この講座でまだ使っていないキーです：&, *, ( と )。どれも、指がすでに知っているキーを Shift と一緒に押します。Shift は反対の手の小指で押してください。",
+  "congrats": "&, *, ( と )も指が覚えました。記号も、となりの文字と同じように出てきます。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "& は右手の人差し指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "& を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "まず & だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "&& & furu & umibe hito & kibou hito & juu\n&& & akeru & hi deshi & ta-oru hoka & douzo\n&& & toriniku & mise ne & hitsuyou docchi & mochiron"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "* は右手の中指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "* を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "まず * だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "** * *gozenn* *motto* *yasashii*\n** * *umibe* *sushi* *nagai*\n** * *nioi* *saigo* *fushigi*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "( は右手の薬指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "( を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "まず ( だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "(( ( (wazawaza (kuru (sumu\n(( ( (shizuka (tooku (sumaho\n(( ( (suuji (wadai (kao"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RP",
+      "text": ") は右手の小指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": ") を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "まず ) だけを打ち、次に実際に使われる形で打ちます。",
+      "content": ")) ) (nedann) (ongaku) (kiki)\n)) ) (kuuki) (kuruma) (jouzu)\n)) ) (mada) (obaasann) (ippunn)"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "これらの文字を含む短いかたまりの連打です。",
+      "tokens": [
+        "(hakaru)",
+        "ringo&renshuu",
+        "haha&jitaku",
+        "(kawaru)",
+        "(kubi)",
+        "(ue)",
+        "(chikai)",
+        "(koe)",
+        "(iru)",
+        "*ani*"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "このレッスンで出てきたものを、すべて混ぜて打ちます。",
+      "content": "(fureru) *dore* (kizu) (takai)\n*otouto* (yuuki) (nokoru) *depa-to*\n(kaiketsu) kanpai&uchi (tsukue) (kabinn)"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "もう一度単語です。記号はそれぞれ使われる位置にあります。",
+      "content": "jibunn & fuyu ageru *otouto* enpitsu (kabann)\n*ryokou* zairyou (ro-maji) motto *te*\n(maiasa) chotto (kaeri) ki (sa-bisu)"
+    }
+  ]
+}

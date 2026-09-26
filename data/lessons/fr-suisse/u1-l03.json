@@ -1,0 +1,117 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "S et L",
+  "summary": "Nouvelles touches : S et L. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : S et L. Elles se tapent avec l'annulaire gauche et l'annulaire droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si S et L sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "LR",
+      "text": "C'est l'annulaire gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur S pour continuer"
+    },
+    {
+      "newKey": "s",
+      "text": "Seulement S et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "dfs j df\ns s ss\nsss"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RR",
+      "text": "C'est l'annulaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur L pour continuer"
+    },
+    {
+      "newKey": "l",
+      "text": "Seulement L et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "sss llll\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "slls",
+        "llls",
+        "slss",
+        "llsl",
+        "lss",
+        "ss",
+        "ssl",
+        "slll",
+        "lsll",
+        "lls"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "fjls jfsl\nklf sdj kl\nfs sf fsfs"
+    },
+    {
+      "text": "Encore les deux nouvelles touches. Il n'y a pas encore de mots à écrire avec, et c'est normal.",
+      "type": "block",
+      "content": "lll sss\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 25,
+      "text": "Des groupes un peu plus longs. Se dépêcher n'aide pas encore.",
+      "type": "burst",
+      "tokens": [
+        "llll",
+        "ss",
+        "lsl",
+        "ssll",
+        "lsll",
+        "sss",
+        "llss",
+        "llls",
+        "llsl",
+        "slss",
+        "slls",
+        "lssl"
+      ]
+    },
+    {
+      "text": "Tout ce que tu as, en groupes courts. Regarde l'écran, pas tes mains.",
+      "type": "block",
+      "content": "jkl dsf jk\ndf fd dfdf\nllll jjj ssss fff ddd"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ls sl\nsjf ld sj\nsl ls slsl"
+    },
+    {
+      "text": "Une dernière série avec tout ce qui a été vu jusqu'ici.",
+      "type": "block",
+      "content": "ksl dfj ks\njf fj jfjf\ndddd fff kkkk jjj"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="zh-TW">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>你的打字進度 | TypingEase</title>
+    <meta name="description" content="看看你的打字練得怎麼樣：每一課的成績、最好的 WPM 和準確率、哪些鍵最常打錯的熱度圖，還有連續天數和每日目標。" />
+    <link rel="canonical" href="https://typingease.site/zh-tw/jindu/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/zh-tw.mjs, progress trong
+         i18n/ui.zh-tw.js và bai-hoc/config.zh-tw.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="主要導覽">
+        <a href="/zh-tw/">練習</a>
+        <a data-route="lessons" href="/zh-tw/kecheng/">課程</a>
+        <a class="active" href="/zh-tw/jindu/">進度</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="選擇語言和鍵盤">首頁</a><a class="secondary-button" data-route="learn" href="/zh-tw/xuexi/">繼續學習 <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> 你練得怎麼樣</p>
+        <h1>你的打字進度</h1>
+        <p class="prog-intro">這個頁面上的每個數字都只儲存在這台裝置上，不會傳送到任何地方。再練一課，它就會更新。</p>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 連續 0 天</span>
+          <span id="strip-today">今天 0 分鐘</span>
+          <span id="strip-level">程度：起步</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="總覽">
+        <div><span>已完成的課</span><strong id="sum-lessons">0 / 31</strong></div>
+        <div><span>獲得的星星</span><strong id="sum-stars">0</strong></div>
+        <div><span>最好的 WPM</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>最高準確率</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> 里程碑</p>
+            <h2 id="badges-title">徽章</h2>
+            <p>每個徽章都對應下面表格裡一個真實的數字，想拿到它，只有靠打字。</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">今天的目標</p>
+          <h3 id="daily-goal-title">0 / 10 分鐘</h3>
+          <p id="daily-goal-status">🔥 連續 0 天</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">最長：0 天</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="選擇每日目標">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 分鐘</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 分鐘</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 分鐘</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 分鐘</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">你的教練</p><h3 id="coach-title">你現在的程度</h3></div>
+          <span class="coach-level" id="coach-level">起步</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="最近的進步" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">再練兩課，就有足夠的資料畫出趨勢。</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">練一課，這個頁面就能知道你現在的程度。</p>
+        <a class="coach-action" id="coach-action" href="/zh-tw/xuexi/">開始第 1 課 →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> 逐鍵查看</p>
+          <h3 id="heat-title">鍵盤熱度圖</h3>
+          <p>綠色的鍵你打得又準又穩，黃色的鍵時對時錯，紅色的鍵正在拖慢你的速度。一個鍵要打夠一定次數、資料有意義了，才會顯示顏色。</p>
+          <p class="heat-empty" id="heat-empty">資料還不夠。先練幾課，再回來看看。</p>
+          <div class="heat-legend" id="heat-legend" aria-label="每個鍵的準確率" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="{n} 課的課程"><i></i> 31 課的課程</p>
+            <h2 id="results-title">每一課的成績</h2>
+            <p>每一課你最好的一次，儲存在這台裝置上。</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">清除紀錄</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>課</th><th>已完成的頁</th><th>星星</th><th>最好的 WPM</th><th>準確率</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> 繼續前進</p>
+          <h2 id="prog-explore-title">接下來做什麼</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/zh-tw/kecheng/">
+            <h3>完整課程</h3>
+            <p>按順序排好的所有單元。回頭重練想再打一遍的課，或者提前打開下一個單元。</p>
+            <span>查看課程 <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>在你自己的鍵盤上打字</h3>
+            <p>QWERTY、AZERTY、QWERTZ、注音、天城文、阿拉伯文、JIS——119 種真實的鍵盤配置，課程會跟著你選的配置走。</p>
+            <span>查看鍵盤配置 <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>慢一點，你會走得更遠。</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/zh-tw/about/">關於我們</a><span aria-hidden="true"> · </span><a href="/zh-tw/terms/">服務條款</a><span aria-hidden="true"> · </span><a href="/zh-tw/privacy/">隱私權政策</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.zh-tw.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.zh-tw.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"zh-tw":{"learn":"/zh-tw/xuexi/","lessons":"/zh-tw/kecheng/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "zh-tw";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

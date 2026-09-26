@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "R と U",
+  "summary": "新しいキー：R と U。指が出て、押して、戻ります。",
+  "newKeys": [
+    "r",
+    "u"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンの新しいキー：R と U。左手の人差し指 と 右手の人差し指で押します。動きはいつも同じで、出て、押して、戻ります。練習するのは戻る動きです。指が外に残ったままだと、次の文字を間違えるからです。",
+  "congrats": "指の下のキーが増えました。R と U を探さずに打てるなら、このレッスンの役目は果たせています。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "LI",
+      "text": "このキーは左手の人差し指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "R を押して次へ"
+    },
+    {
+      "newKey": "r",
+      "text": "R と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "fjr d fj\nr r rr\nrrr"
+    },
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "RI",
+      "text": "このキーは右手の人差し指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "U を押して次へ"
+    },
+    {
+      "newKey": "u",
+      "text": "U と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "ur ur\nrju fd rj\nru ur ruru"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        "rru",
+        "ruru",
+        "rrr",
+        "ruur",
+        "uru",
+        "rr",
+        "uuur",
+        "urru",
+        "rruu",
+        "uruu"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "fr rf frfr\nrrrr jjjj ffff uuu\nruru urur"
+    },
+    {
+      "text": "新しいキーを使う、本物の日本語の単語です。一文字ずつではなく、単語をひと続きに打ってください。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "suuji igaku kaeri kau\nurusai are hikari hiru\naruku kaeru juu riku"
+    },
+    {
+      "seconds": 25,
+      "text": "新しいキーを含む、短い単語の連打です。",
+      "type": "burst",
+      "tokens": [
+        "iru",
+        "kiru",
+        "hakase",
+        "kaigai",
+        "desu",
+        "kiseki",
+        "e",
+        "daigaku",
+        "dake",
+        "akiru"
+      ]
+    },
+    {
+      "text": "次は、いちばん押す回数が少なかった R を多めに打ちます。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaishi hiru hare hiji\nhikari sakeru au suki\nseiki rikai fushigi kusuri"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "rrr uuuu\nrururu ururur\nur ur"
+    },
+    {
+      "text": "ここまでのキーすべてを混ぜて。考えなくても出てくる単語が、もうかなりあるはずです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "saka shiriai kekka hi\nseiki aru kuru hakaru\nderu haha are kaishi"
+    }
+  ]
+}

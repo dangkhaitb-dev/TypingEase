@@ -1,0 +1,135 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift e Invio",
+  "summary": "Le maiuscole con il mignolo opposto, il ritorno a capo e il punto.",
+  "newKeys": [
+    "shift",
+    "enter",
+    "."
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "m",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "w",
+    ":",
+    ";",
+    "ù",
+    "shift",
+    "enter",
+    "."
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Fino a qui hai scritto tutto in minuscolo. Shift lo cambia, e ha una regola che conviene imparare bene fin dall'inizio: lo preme il mignolo della mano opposta alla lettera. Su questa tastiera Shift dà anche il punto, che non ha un tasto suo.",
+  "congrats": "Con Shift e Invio puoi scrivere un testo intero come si scrive fuori da qui.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Le maiuscole si fanno con il mignolo della mano opposta alla lettera. Tieni premuto Shift, batti la lettera, rilascia. Mai con lo stesso mignolo che scrive.",
+      "hint": "Tieni Shift e premi una lettera per continuare"
+    },
+    {
+      "newKey": "shift",
+      "text": "Maiuscole e minuscole alternate. Il mignolo scende e risale; l'altra mano non si sposta.",
+      "type": "block",
+      "content": "Pp Jj Ww Hh\nZz Dd Qq Mm\nUu Rr Kk Ii\nXx Nn Ff Bb"
+    },
+    {
+      "text": "Parole con la maiuscola iniziale, come i nomi propri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mi sala sabato sei\ngite alghe nebbia dei\nun paese giusti mezzo"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Invio è del mignolo destro, a destra della riga di riposo. È il tasto più lontano che quel dito debba raggiungere.",
+      "hint": "Premi Invio per continuare"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Una riga, Invio, un'altra riga. Il mignolo esce e rientra senza trascinare la mano.",
+      "type": "block",
+      "content": "Maria\nGenova\nGiulia\nMatteo\nAnna\nGiorgio"
+    },
+    {
+      "newKeys": [
+        "."
+      ],
+      "text": "Maiuscole e minuscole alternate. Il mignolo scende e risale; l'altra mano non si sposta.",
+      "type": "block",
+      "content": "alto. lo. conto. sale.\nsud. pulito. stanza. fa.\npulito. cosa. ho. nella."
+    },
+    {
+      "text": "Frasi con la maiuscola iniziale e il punto finale. Comincia a somigliare a scrivere davvero.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Ogni sera leggo un fumetto sul divano.\nOgni mattina faccio una lunga camminata.\nIl professore spiega la lezione con molta calma."
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica per fissare quello che hai visto in questa lezione.",
+      "type": "burst",
+      "tokens": [
+        "ovest",
+        "ad",
+        "quasi",
+        "larghe",
+        "galla",
+        "mi",
+        "sabbia",
+        "salda",
+        "collina",
+        "mia",
+        "verdi",
+        "con"
+      ]
+    },
+    {
+      "text": "Cinque per riga, con il mignolo che lavora nelle due direzioni.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mi ghiaia web azzurro nostro\nsfida quando teatrale presto molto\nlegge meglio bottone gara biblioteca"
+    },
+    {
+      "text": "Per chiudere, frasi intere. Shift, lettera, rilascia — senza fermarsi a pensarci.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "La neve cade lenta sul tetto della scuola.\nLa mia casa ha una finestra molto grande.\nIl cane corre nel giardino dietro casa."
+    }
+  ]
+}

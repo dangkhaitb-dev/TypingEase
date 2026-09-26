@@ -84,6 +84,10 @@
 .key--duo .key-label:first-child { height: 0; overflow: hidden; }
 /* Phím chức năng: nhãn nhỏ, nằm ở góc, và ẩn hẳn trên màn hình hẹp. */
 .key--special.key { text-transform: lowercase; }
+/* Phim ma dang hoa dai hon dang thuong: ß cua ban phim Duc, va bat cu ky tu nao sau nay
+   cung the. `text-transform: uppercase` bien no thanh 'SS' — hai chu tren mot phim in ra
+   mot ky tu. keyboard.js gan class nay; xem `changesLength` o do. */
+.key--nocase.key { text-transform: none; }
 .key--special .key-label {
   align-items: flex-end;
   bottom: 5px;
@@ -500,3 +504,7 @@
 .kb-settings-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 18px; }
 .kb-settings-footer .ghost-button,
 .kb-settings-footer .primary-button { min-width: 104px; }
+
+/* Trang tiếng Ả Rập/Ba Tư/Urdu/Hebrew mang dir="rtl", nhưng bàn phím là VỊ TRÍ VẬT LÝ: phím Tab vẫn
+   ở bên trái, hàng số vẫn chạy 1 → 0. Không khoá hướng ở đây thì cả bàn phím bị lật gương. */
+[dir="rtl"] .keyboard, [dir="rtl"] .player-board, [dir="rtl"] .kb-preview { direction: ltr; }

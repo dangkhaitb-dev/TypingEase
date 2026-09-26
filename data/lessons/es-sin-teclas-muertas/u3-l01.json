@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "La fila de números",
+  "summary": "Los diez números, cada dedo subiendo en línea recta.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "´",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "La fila de números queda por encima de todo lo que has escrito hasta ahora, y es donde los dedos llegan más lejos. Se falla más aquí que en ninguna otra parte del curso, y se arregla igual que el resto: despacio primero.",
+  "congrats": "La fila de números es la que más cuesta y la que menos se practica después. Vuelve a esta lección de vez en cuando.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "La fila de números está por encima de la fila superior. Cada dedo sube en línea recta y baja igual. Son los estiramientos más largos del curso.",
+      "hint": "Pulsa 1 para continuar"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "1 y 0 se pulsan con el meñique izquierdo y el mismo dedo de la otra mano. Sube, pulsa, baja a la fila de reposo.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "2 y 9 se pulsan con el anular izquierdo y el mismo dedo de la otra mano. Sube, pulsa, baja a la fila de reposo.",
+      "type": "block",
+      "content": "df2 9j df\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Una ráfaga corta con los números que llevas.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "3 y 8 se pulsan con el corazón izquierdo y el mismo dedo de la otra mano. Sube, pulsa, baja a la fila de reposo.",
+      "type": "block",
+      "content": "383838 838383\n83 38\nd83 jf d8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "4 y 7 se pulsan con el índice izquierdo y el mismo dedo de la otra mano. Sube, pulsa, baja a la fila de reposo.",
+      "type": "block",
+      "content": "47 47\nfj4 7d fj\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "Los dos que quedan son de los índices, que ya alcanzan más teclas que ningún otro dedo.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nfj6 5d fj"
+    },
+    {
+      "text": "Toda la fila, en grupos. No bajes la vista para buscar el 6.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Los diez, mezclados. Al principio se falla mucho aquí; es normal.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Volvemos a las palabras un momento, para que las manos recuerden dónde viven.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "nuevo están brazo común\nmucha traes canción águila\nllevas ver ángulo unas"
+    },
+    {
+      "text": "Frases otra vez, ya con todo el teclado disponible.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Mi padre prepara la comida los domingos.\nHace mucho calor en el mes de agosto.\nNo tengo tiempo para ese viaje."
+    }
+  ]
+}

@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "F dan J, serta bar ruang",
+  "summary": "Dua kekunci yang ada bonjolan, bar ruang, dan tabiat tidak melihat ke bawah.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci yang ada bonjolan kecil ialah titik permulaan. Kedua-dua jari telunjuk berehat di situ dan tidak pergi ke mana-mana; semua yang lain dalam kursus ini diukur dari kedudukan itu. Mula dengan meletakkan kedua-dua tangan dan lihat skrin sahaja.",
+  "congrats": "Tangan anda sudah di tempatnya. Mulai sekarang, semuanya ialah kekunci yang dicapai dari kedudukan ini dan dilepaskan semula.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "LI",
+      "text": "Kekunci ini milik jari telunjuk kiri. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan F untuk meneruskan"
+    },
+    {
+      "newKey": "f",
+      "text": "Hanya F dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "f f ff\nffff\nffffff ffffff"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RI",
+      "text": "Kekunci ini milik jari telunjuk kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan J untuk meneruskan"
+    },
+    {
+      "newKey": "j",
+      "text": "Hanya J dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "jf jf\njf fj jfjf\nfj jf fjfj"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "Bar ruang milik ibu jari kanan. Ibu jari tidak melakukan kerja lain, sebab itu anda tidak perlu mencarinya.",
+      "hint": "Tekan bar ruang untuk meneruskan"
+    },
+    {
+      "newKey": " ",
+      "text": "Kumpulan pendek dipisahkan oleh ruang. Ibu jari kanan turun dan naik; jari lain kekal di tempatnya.",
+      "type": "block",
+      "content": "jf jf\nfj jf fjfj\njjjj ffff"
+    },
+    {
+      "seconds": 20,
+      "text": "Kumpulan pendek, satu demi satu. Teruskan hingga habis walaupun anda tersilap.",
+      "type": "burst",
+      "tokens": [
+        "ffj",
+        "ff",
+        "ffff",
+        "fjj",
+        "ffjj",
+        "jff",
+        "fjf",
+        "jffj",
+        "fj",
+        "fjff"
+      ]
+    },
+    {
+      "text": "Kekunci baharu bercampur dengan yang lama, seperti rupanya nanti di dalam perkataan.",
+      "type": "block",
+      "content": "fj fj\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Dua kekunci baharu sekali lagi. Belum ada perkataan yang boleh ditaip dengannya, dan itu memang dijangka.",
+      "type": "block",
+      "content": "fj jf\njf jf\njf fj jfjf"
+    },
+    {
+      "seconds": 25,
+      "text": "Kumpulan yang lebih panjang sedikit. Tergesa-gesa belum membantu.",
+      "type": "burst",
+      "tokens": [
+        "fjfj",
+        "ff",
+        "fjf",
+        "jjf",
+        "ffjf",
+        "fjjj",
+        "fj",
+        "jjff",
+        "jfjj",
+        "jfj",
+        "jff",
+        "jffj"
+      ]
+    },
+    {
+      "text": "Semua yang anda ada setakat ini, dalam kumpulan pendek. Mata pada skrin, bukan pada tangan.",
+      "type": "block",
+      "content": "fjfj jfjf\njf jf\nfj jf fjfj"
+    },
+    {
+      "text": "Kembali kepada corak sebentar, untuk memastikan jari masih tahu jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf jf\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Satu pusingan terakhir dengan semua yang dipelajari setakat ini.",
+      "type": "block",
+      "content": "fjfjfj jfjfjf\njf jf\nfj fj"
+    }
+  ]
+}

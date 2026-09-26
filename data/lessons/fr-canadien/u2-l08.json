@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, le point, la virgule et `",
+  "summary": "Nouvelles touches : Z, le point, la virgule et `. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "`"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "`"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : Z, le point, la virgule et `. Elles se tapent avec l'auriculaire gauche, l'annulaire droit, le majeur droit et l'auriculaire droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si Z, le point, la virgule et ` sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur Z pour continuer"
+    },
+    {
+      "newKey": "z",
+      "text": "Seulement Z et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "z z\ndfj z df\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "C'est l'annulaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur . pour continuer"
+    },
+    {
+      "newKey": ".",
+      "text": "Seulement . et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": ".z .z\n.zf dj .z\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "C'est le majeur droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur , pour continuer"
+    },
+    {
+      "newKey": ",",
+      "text": "Seulement , et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "z,. .z,\n.,j fzd .,\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur ` pour continuer"
+    },
+    {
+      "newKey": "`",
+      "text": "Seulement ` et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "f.j ,`d f.\n`. .` `.`.\n``` ,,, zzzz ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "z`",
+        "z.",
+        ",,",
+        ".,",
+        "``",
+        ",`",
+        "zz",
+        "`,",
+        "..",
+        "z,"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "z.z.z. .z.z.z\nz`j.f, f`z,j.\nsz` .dj sz"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "zestes tout forte musique\nexemple appels exemples tir\ndit baisse ou paroles"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "plus",
+        "avoir",
+        "un",
+        "style",
+        "onze",
+        "triste",
+        "paroles",
+        "ta",
+        "elles",
+        "je"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur Z, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "plupart bien toi sont\nvous gel vivent fleurs\ndur je dite tir"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, zzz ``` ...\nz.z.z. .z.z.z\n,z`. ,z`."
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "venir à succès autres\nensuite projet nom progrès\nnovembre vertu personne outils"
+    }
+  ]
+}

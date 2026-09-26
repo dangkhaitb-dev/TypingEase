@@ -1,0 +1,117 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "S y L",
+  "summary": "Teclas nuevas: S y L. El dedo sale, pulsa y vuelve.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas nuevas en esta lección: S y L. Se pulsan con el anular izquierdo y el anular derecho. El movimiento es siempre el mismo — salir, pulsar y volver — y la vuelta es la parte que se entrena, porque si el dedo se queda fuera, la siguiente letra sale mal.",
+  "congrats": "Más teclas bajo los dedos. Si S y L ya te salen sin buscarlas, la lección ha hecho su trabajo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "LR",
+      "text": "Esta tecla la lleva el anular izquierdo. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa S para continuar"
+    },
+    {
+      "newKey": "s",
+      "text": "Solo S y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "dfs j df\ns s ss\nsss"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RR",
+      "text": "Esta tecla la lleva el anular derecho. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa L para continuar"
+    },
+    {
+      "newKey": "l",
+      "text": "Solo L y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "sss llll\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos cortos, uno detrás de otro. Cuenta hasta el final aunque falles alguno.",
+      "type": "burst",
+      "tokens": [
+        "slls",
+        "llls",
+        "slss",
+        "llsl",
+        "lss",
+        "ss",
+        "ssl",
+        "slll",
+        "lsll",
+        "lls"
+      ]
+    },
+    {
+      "text": "Las teclas nuevas mezcladas con las anteriores, que es como aparecerán en las palabras.",
+      "type": "block",
+      "content": "fjls jfsl\nklf sdj kl\nfs sf fsfs"
+    },
+    {
+      "text": "Otra vez las dos teclas nuevas. Todavía no hay palabras que escribir con ellas, y eso es normal.",
+      "type": "block",
+      "content": "lll sss\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 25,
+      "text": "Grupos algo más largos. La prisa no ayuda todavía.",
+      "type": "burst",
+      "tokens": [
+        "llll",
+        "ss",
+        "lsl",
+        "ssll",
+        "lsll",
+        "sss",
+        "llss",
+        "llls",
+        "llsl",
+        "slss",
+        "slls",
+        "lssl"
+      ]
+    },
+    {
+      "text": "Todo lo que llevas, en grupos cortos. Mira la pantalla, no las manos.",
+      "type": "block",
+      "content": "jkl dsf jk\ndf fd dfdf\nllll jjj ssss fff ddd"
+    },
+    {
+      "text": "Volvemos a los patrones un momento, para comprobar que los dedos siguen regresando a su sitio.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ls sl\nsjf ld sj\nsl ls slsl"
+    },
+    {
+      "text": "Una última tanda con todo lo aprendido hasta aquí.",
+      "type": "block",
+      "content": "ksl dfj ks\njf fj jfjf\ndddd fff kkkk jjj"
+    }
+  ]
+}

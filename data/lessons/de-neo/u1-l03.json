@@ -1,0 +1,117 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "I und T",
+  "summary": "Neue Tasten: I und T. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "i",
+    "t"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: I und T. Dafür sind der linke Ringfinger und der rechte Ringfinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn I und T ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "LR",
+      "text": "Für diese Taste ist der linke Ringfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke I, um weiterzugehen"
+    },
+    {
+      "newKey": "i",
+      "text": "Nur I und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "aei n ae\ni i ii\niii"
+    },
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "RR",
+      "text": "Für diese Taste ist der rechte Ringfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke T, um weiterzugehen"
+    },
+    {
+      "newKey": "t",
+      "text": "Nur T und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "iii tttt\nititit tititi\nit ti"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "itti",
+        "ttti",
+        "itii",
+        "ttit",
+        "tii",
+        "ii",
+        "iit",
+        "ittt",
+        "titt",
+        "tti"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "enti neit\nrte ian rt\nei ie eiei"
+    },
+    {
+      "text": "Noch einmal die beiden neuen Tasten. Es gibt damit noch keine Wörter zu schreiben, und das ist so gewollt.",
+      "type": "block",
+      "content": "ttt iii\nititit tititi\nit ti"
+    },
+    {
+      "seconds": 25,
+      "text": "Etwas längere Gruppen. Eile hilft hier noch nichts.",
+      "type": "burst",
+      "tokens": [
+        "tttt",
+        "ii",
+        "tit",
+        "iitt",
+        "titt",
+        "iii",
+        "ttii",
+        "ttti",
+        "ttit",
+        "itii",
+        "itti",
+        "tiit"
+      ]
+    },
+    {
+      "text": "Alles, was du bis hierhin hast, in kurzen Gruppen. Sieh auf den Bildschirm, nicht auf die Hände.",
+      "type": "block",
+      "content": "nrt aie nr\nae ea aeae\ntttt nnn iiii eee aaa"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ti it\nine ta in\nit ti itit"
+    },
+    {
+      "text": "Ein letzter Durchgang mit allem aus dieser Lektion.",
+      "type": "block",
+      "content": "rit aen ri\nne en nene\naaaa eee rrrr nnn"
+    }
+  ]
+}

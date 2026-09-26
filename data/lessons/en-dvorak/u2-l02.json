@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "R and comma",
+  "summary": "Two new keys: R and comma. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "r",
+    ","
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ","
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: R and comma. They belong to your right ring finger and your left ring finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If R and comma already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "RR",
+      "text": "This key belongs to your right ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press R to continue"
+    },
+    {
+      "newKey": "r",
+      "text": "Only R and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "r r rr\nrrrr\nrrrrrr rrrrrr"
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "LR",
+      "text": "This key belongs to your left ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press , to continue"
+    },
+    {
+      "newKey": ",",
+      "text": "Only , and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "r,r, ,r,r\nr, ,r\n,eu rh ,e"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "rr,",
+        ",rr,",
+        "rrr",
+        ",r",
+        ",,,r",
+        ",,",
+        ",,,,",
+        "r,,",
+        ",rr",
+        "r,r,"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "uer tho ue\nhr rh hrhr\nrrr ,,, uuu hhhh"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ride hair rain our\ntrip support roads urges\nfor grief through grid"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "against",
+        "girth",
+        "side",
+        "heads",
+        "aside",
+        "trust",
+        "onto",
+        "fresh",
+        "either",
+        "fads"
+      ]
+    },
+    {
+      "text": "Now the weight is on R, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "costs surge shred car\nfade proper grand four\nsport rest aside urges"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "r,r,r, ,r,r,r\nr, ,r\n,re uh ,r"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "roads us good tire\ninside house users hang\nhappy sheep safe enter"
+    }
+  ]
+}

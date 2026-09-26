@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "I et S",
+  "summary": "Nouvelles touches : I et S. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "i",
+    "s"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : I et S. Elles se tapent avec le majeur gauche et le majeur droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si I et S sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "LM",
+      "text": "C'est le majeur gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur I pour continuer"
+    },
+    {
+      "newKey": "i",
+      "text": "Seulement I et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "i i ii\niiii\niiii iiii"
+    },
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "RM",
+      "text": "C'est le majeur droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur S pour continuer"
+    },
+    {
+      "newKey": "s",
+      "text": "Seulement S et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "iii sss\nisis sisi\nis is"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "ii",
+        "siss",
+        "issi",
+        "siii",
+        "iii",
+        "iiss",
+        "sis",
+        "siis",
+        "isis",
+        "sii"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "isisis sisisi\neits teis\niet s ie"
+    },
+    {
+      "text": "Encore les deux nouvelles touches. Il n'y a pas encore de mots à écrire avec, et c'est normal.",
+      "type": "block",
+      "content": "est i es\nis si isis\nsss iiii"
+    },
+    {
+      "seconds": 25,
+      "text": "Des groupes un peu plus longs. Se dépêcher n'aide pas encore.",
+      "type": "burst",
+      "tokens": [
+        "iss",
+        "iiss",
+        "isss",
+        "isi",
+        "siss",
+        "is",
+        "ssss",
+        "ssis",
+        "iiis",
+        "siis",
+        "iiii",
+        "sss"
+      ]
+    },
+    {
+      "text": "Tout ce que tu as, en groupes courts. Regarde l'écran, pas tes mains.",
+      "type": "block",
+      "content": "esi t es\nit ti itit\ntttt ssss eeee iiii"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "is si isis\niiii sss\nisis sisi"
+    },
+    {
+      "text": "Une dernière série avec tout ce qui a été vu jusqu'ici.",
+      "type": "block",
+      "content": "tei s te\nis si isis\nssss iii eeee ttt"
+    }
+  ]
+}

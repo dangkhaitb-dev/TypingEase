@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "T e Y",
+  "summary": "Teclas novas: T e Y. O dedo sai, aperta e volta.",
+  "newKeys": [
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas novas nesta lição: T e Y. Elas se apertam com o indicador esquerdo e o indicador direito. O movimento é sempre o mesmo — sair, apertar e voltar — e a volta é a parte que se treina, porque se o dedo fica fora, a letra seguinte sai errada.",
+  "congrats": "Mais teclas debaixo dos dedos. Se T e Y já saem sem procurar, a lição fez o seu trabalho.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "LI",
+      "text": "Esta tecla é do indicador esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte T para continuar"
+    },
+    {
+      "newKey": "t",
+      "text": "Só T e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "tfj d tf\nt t tt\ntttt"
+    },
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "RI",
+      "text": "Esta tecla é do indicador direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte Y para continuar"
+    },
+    {
+      "newKey": "y",
+      "text": "Só Y e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "jyd ft jy\nty yt tyty\nyyy ttt"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos curtos, um atrás do outro. Vá até o fim mesmo que erre algum.",
+      "type": "burst",
+      "tokens": [
+        "tty",
+        "ttyy",
+        "ttt",
+        "ytty",
+        "tttt",
+        "ttyt",
+        "ttty",
+        "tyt",
+        "tyty",
+        "yty"
+      ]
+    },
+    {
+      "text": "As teclas novas misturadas com as anteriores, que é como elas vão aparecer nas palavras.",
+      "type": "block",
+      "content": "yt ty ytyt\ntttt jjj fff yyy\ntyty ytyt"
+    },
+    {
+      "text": "Palavras de verdade com as teclas novas. Escreva a palavra inteira de uma vez, não letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "atletas estas festas atuais\ntela listas tira estuda\ndata atleta tratar justiça"
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada de palavras curtas com as teclas novas.",
+      "type": "burst",
+      "tokens": [
+        "legais",
+        "hei",
+        "lista",
+        "filhas",
+        "estuda",
+        "fala",
+        "flauta",
+        "terras",
+        "lei",
+        "raça"
+      ]
+    },
+    {
+      "text": "Agora com o peso em T, a que você menos apertou.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "liga jarras raça lealdade\nregular graças surgir se\ngrudar utilidade deseja alga"
+    },
+    {
+      "text": "Voltamos aos padrões por um momento, para conferir que os dedos continuam voltando para o lugar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "yt ty\njtd yf jt\nty yt tyty"
+    },
+    {
+      "text": "Tudo o que você tem, misturado. Repare em quantas palavras já saem sem pensar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "grades tardes surgir usar\nsaudade direita segue guardar\ndeseja artista resta seus"
+    }
+  ]
+}

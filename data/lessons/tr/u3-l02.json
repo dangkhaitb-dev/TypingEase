@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "Dış sütun",
+  "summary": "Sağ kenardaki sütun: altı tuş, hepsi serçe parmakta; aralarında Ğ, Ü, nokta ve virgül.",
+  "newKeys": [
+    ".",
+    "*",
+    "-",
+    "ğ",
+    "ü",
+    ","
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş",
+    "g",
+    "h",
+    "e",
+    "ı",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    "ç",
+    "ö",
+    "i",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ".",
+    "*",
+    "-",
+    "ğ",
+    "ü",
+    ","
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Sağ serçe parmak öbür parmakların hepsinden çok tuşa bakar, ve kenardaki tuşlar en az çalışılanlardır. Türkçe Q klavyede bu sütun iki kat önemli: Ğ, Ü, nokta ve virgül burada. Onlarsız güzel, değil, bugün yazılmaz; cümleler de noktasız kalır.",
+  "congrats": "Ğ ve Ü ile Türk alfabesinde eksik harf kalmadı. Çoğu kursun yarım bıraktığı sütun budur.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RP",
+      "text": "Sağ kenardaki tuşlar, hepsi sağ serçe parmakta. Bu klavyede Ğ ve Ü burada, nokta ve virgül de.",
+      "hint": "Devam etmek için . tuşuna bas"
+    },
+    {
+      "newKeys": [
+        ".",
+        "*"
+      ],
+      "text": "Şimdi . ve *. Serçe parmak dışarı çıkar ve geri döner; el onunla gitmez.",
+      "type": "block",
+      "content": ".*.* *.*.\n.* *.\nj*d .f j*"
+    },
+    {
+      "newKeys": [
+        "-",
+        "ğ"
+      ],
+      "text": "Şimdi - ve ğ. Serçe parmak dışarı çıkar ve geri döner; el onunla gitmez.",
+      "type": "block",
+      "content": "ğ- -ğ\n-fj ğd -f\n-ğ ğ- -ğ-ğ"
+    },
+    {
+      "seconds": 20,
+      "text": "Bu sütundan öğrendiklerinle bir seri.",
+      "type": "burst",
+      "tokens": [
+        "ğ*",
+        "*-",
+        "**",
+        "ğ.",
+        "*.",
+        ".ğ",
+        "ğ-",
+        ".*",
+        "*ğ",
+        "ğğ"
+      ]
+    },
+    {
+      "newKeys": [
+        "ü",
+        ","
+      ],
+      "text": "Şimdi ü ve ,. Serçe parmak dışarı çıkar ve geri döner; el onunla gitmez.",
+      "type": "block",
+      "content": "ü, ü,\nüfd ,j üf\nü, ,ü ü,ü,"
+    },
+    {
+      "text": "Altısı bir arada. Parmak geri dönmezse bileğin en çok burada bükülür.",
+      "type": "block",
+      "content": "f-. d,* f-\n,ü ü, ,ü,ü\n,,,, ---- *** ... ğğğ üüüü"
+    },
+    {
+      "seconds": 25,
+      "text": "Bunca kenar tuşundan sonra eli gevşetmek için yine kelimeler.",
+      "type": "burst",
+      "tokens": [
+        "isim",
+        "dikkat",
+        "yatak",
+        "as",
+        "menü",
+        "yarar",
+        "mal",
+        "sırada",
+        "paylaş",
+        "evde",
+        "aile",
+        "esas"
+      ]
+    },
+    {
+      "text": "Yeniden kelimeler, artık bütün klavyeyle — Ğ ve Ü dahil.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "uzak üst acele kök\nde otur doğa alır\nyeter haklar sabahlar almak"
+    },
+    {
+      "text": "Tuş derslerini kapatmak için tam cümleler.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Bu kelimeyi klavyeye bakmadan yaz.\nBabam işten eve geç geldi.\nBahçedeki ağaçlar çiçek açtı."
+    }
+  ]
+}

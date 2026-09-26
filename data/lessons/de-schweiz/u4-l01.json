@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "§, °, + und \"",
+  "summary": "Neu in dieser Lektion: §, °, + und \".",
+  "newKeys": [
+    "§",
+    "°",
+    "+",
+    "\""
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ä",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "^",
+    "ü",
+    "¨",
+    "$",
+    "§",
+    "°",
+    "+",
+    "\""
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: §, °, + und \". Manche brauchen Shift, mit dem kleinen Finger der anderen Hand; die übrigen haben eine eigene Taste, die der Kurs bisher nicht benutzt hat.",
+  "congrats": "§, °, + und \": jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "§",
+      "finger": "LP",
+      "text": "§: Dafür ist der linke kleine Finger zuständig.",
+      "hint": "Drücke §, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "§",
+      "text": "Zuerst § für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "§§ § §22 §70 §54\n§§ § §35 §71 §63\n§§ § §27 §15 §36"
+    },
+    {
+      "type": "block",
+      "newKey": "°",
+      "text": "Zuerst ° für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "°° ° 14° 67° 46°\n°° ° 12° 90° 24°\n°° ° 18° 32° 13°"
+    },
+    {
+      "type": "intro",
+      "key": "+",
+      "finger": "LP",
+      "text": "+: Dafür ist der linke kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke +, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "+",
+      "text": "Zuerst + für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "++ + 26 + 15 24 + 32 38 + 83\n++ + 51 + 28 88 + 62 60 + 47\n++ + 26 + 78 19 + 32 12 + 11"
+    },
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LR",
+      "text": "\": Dafür ist der linke Ringfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke \", um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "Zuerst \" für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "\"\" \" \"quartal\" \"werk\" \"sonne\"\n\"\" \" \"essen\" \"hilfe\" \"pass\"\n\"\" \" \"analyse\" \"pizza\" \"kuchen\""
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "55°",
+        "3°",
+        "§12",
+        "\"mit\"",
+        "\"rätsel\"",
+        "\"ziel\"",
+        "§96",
+        "9°",
+        "\"gast\"",
+        "§62"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "§17 §21 85+11 \"wald\"\n82 + 79 \"quelle\" \"ja\" \"lächeln\"\n49° §62 \"brief\" §42"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "\"platz\" finden \"klasse\" dose §52\n30° falls §52 quote \"hobby\"\n32° zelt 31° symbol 21 + 23"
+    }
+  ]
+}

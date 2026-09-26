@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift and Enter",
+  "summary": "Capitals with the opposite little finger, and the line break.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "d",
+    "h",
+    "f",
+    "u",
+    "p",
+    "l",
+    "g",
+    "j",
+    "y",
+    "w",
+    "c",
+    "k",
+    "m",
+    "v",
+    "q",
+    ";",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Everything so far has been lower case. Shift changes that, and it has one rule worth getting right from the start: the little finger of the hand opposite the letter presses it. With the same little finger the hand twists and you end up looking at the keyboard.",
+  "congrats": "With Shift and Enter you can type a whole piece of text the way it is written outside this course.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Capitals come from the little finger of the hand opposite the letter. Hold Shift, press the letter, let go. Never with the same little finger that types it.",
+      "hint": "Hold Shift and press a letter to continue"
+    },
+    {
+      "newKey": "shift",
+      "text": "Capitals and lower case, alternating. The little finger goes down and up; the other hand does not move.",
+      "type": "block",
+      "content": "Qq Nn Zz Hh\nWw Ss Vv Oo\nLl Pp Ee Uu\nXx Kk Tt Bb"
+    },
+    {
+      "text": "Words with a capital at the front, the way names are written.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "french shag east glide\nlady age door heal\nwe upper ugly school"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter belongs to your right little finger, to the right of the home row. It is the biggest key that finger has to reach.",
+      "hint": "Press Enter to continue"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "A line, Enter, the next line. The little finger goes out and back without dragging the hand along.",
+      "type": "block",
+      "content": "Petra\nAli\nRuth\nNadia\nNoah\nPaul"
+    },
+    {
+      "text": "Sentences with a capital at the start and a period at the end. This is starting to look like real writing.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Be quick but do not be careless.\nThey are still here.\nThe story is worth it."
+    },
+    {
+      "seconds": 25,
+      "text": "A burst to settle what this lesson taught.",
+      "type": "burst",
+      "tokens": [
+        "trains",
+        "follow",
+        "roads",
+        "quiz",
+        "allow",
+        "market",
+        "glad",
+        "speak",
+        "urges",
+        "sake",
+        "tire",
+        "most"
+      ]
+    },
+    {
+      "text": "Five to a line, with the little finger working in both directions.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "wasn't notes grid excellent kept\nonly will house birds title\nlong wild stood entire give"
+    },
+    {
+      "text": "Whole sentences to finish. Shift, letter, release — without stopping to think about it.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "You can learn this in one hour.\nYou'll get there one line at a time.\nThe question is simple enough."
+    }
+  ]
+}

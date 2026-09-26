@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A dan koma bernoktah",
+  "summary": "Kekunci baharu: A dan koma bernoktah. Jari keluar, tekan dan kembali.",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci baharu dalam pelajaran ini: A dan koma bernoktah. Ia ditekan oleh jari kelingking kiri dan jari kelingking kanan. Gerakannya sentiasa sama — keluar, tekan dan kembali — dan perjalanan pulang itulah yang dilatih, kerana jika jari tertinggal di luar, huruf seterusnya akan tersilap.",
+  "congrats": "Lebih banyak kekunci di bawah jari. Jika A dan koma bernoktah sudah keluar tanpa dicari, pelajaran ini telah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "Kekunci ini milik jari kelingking kiri. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan A untuk meneruskan"
+    },
+    {
+      "newKey": "a",
+      "text": "Hanya A dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RP",
+      "text": "Kekunci ini milik jari kelingking kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan ; untuk meneruskan"
+    },
+    {
+      "newKey": ";",
+      "text": "Hanya ; dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "a;a; ;a;a\na; ;a\n;df ja ;d"
+    },
+    {
+      "seconds": 20,
+      "text": "Kumpulan pendek, satu demi satu. Teruskan hingga habis walaupun anda tersilap.",
+      "type": "burst",
+      "tokens": [
+        ";aaa",
+        "aa;",
+        "aaa",
+        "a;;a",
+        ";a;;",
+        ";;aa",
+        "a;;",
+        "aa;;",
+        ";a;a",
+        "a;aa"
+      ]
+    },
+    {
+      "text": "Kekunci baharu bercampur dengan yang lama, seperti rupanya nanti di dalam perkataan.",
+      "type": "block",
+      "content": "a; ;a a;a;\naaa ;;;; ffff jjj\na;a; ;a;a"
+    },
+    {
+      "text": "Perkataan sebenar dengan kekunci baharu. Taip setiap perkataan sekali gus, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jala alas salak kala\nlasak kakak sasa akal\ndada lada kakak akal"
+    },
+    {
+      "seconds": 25,
+      "text": "Satu pecutan perkataan pendek yang mengandungi kekunci baharu.",
+      "type": "burst",
+      "tokens": [
+        "ajak",
+        "jala",
+        "akad",
+        "asal",
+        "lasak",
+        "kakak",
+        "laksa",
+        "alas",
+        "sasa",
+        "jaja"
+      ]
+    },
+    {
+      "text": "Sekarang tumpuan pada A, kekunci yang paling jarang anda tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dada salak lasak akal\nalas asal ada sasa\njaja lada kala sajak"
+    },
+    {
+      "text": "Kembali kepada corak sebentar, untuk memastikan jari masih tahu jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "a;a;a; ;a;a;a\na; ;a\nj;a df j;"
+    },
+    {
+      "text": "Semua yang anda ada, bercampur. Perhatikan berapa banyak perkataan yang sudah keluar tanpa difikirkan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kala fasal jala sasa\nakal alas salad jala\ndada jala lada jaja"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "B i X",
+  "summary": "Nowe klawisze: B i X. Palec wychodzi, uderza i wraca.",
+  "newKeys": [
+    "b",
+    "x"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nowe klawisze w tej lekcji: B i X. Naciskają je lewy palec wskazujący i lewy palec serdeczny. Ruch jest zawsze ten sam — wyjść, uderzyć, wrócić — i ćwiczy się tu właśnie powrót, bo palec, który został na zewnątrz, myli następną literę.",
+  "congrats": "Nowe klawisze pod palcami. Jeśli B i X wychodzą już bez szukania, lekcja zrobiła swoje.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "LI",
+      "text": "Ten klawisz naciska lewy palec wskazujący. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij B, aby przejść dalej"
+    },
+    {
+      "newKey": "b",
+      "text": "Tylko B i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "bjd f bj\nb b bb\nbbbb"
+    },
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LR",
+      "text": "Ten klawisz naciska lewy palec serdeczny. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij X, aby przejść dalej"
+    },
+    {
+      "newKey": "x",
+      "text": "Tylko X i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "bxbxbx xbxbxb\nxb xb\njdx bf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Krótkie grupy, jedna po drugiej. Dojdź do końca, nawet jeśli coś pomylisz.",
+      "type": "burst",
+      "tokens": [
+        "xxxx",
+        "xxxb",
+        "bbb",
+        "xxx",
+        "xbx",
+        "bbxx",
+        "xbbb",
+        "bxbb",
+        "xb",
+        "bbbb"
+      ]
+    },
+    {
+      "text": "Nowe klawisze wymieszane ze starymi, tak jak pojawią się w słowach.",
+      "type": "block",
+      "content": "jjjj bbbb xxx fff\nbxbx xbxb\nxjbf fjxb"
+    },
+    {
+      "text": "Prawdziwe słowa z nowymi klawiszami. Pisz całe słowo jednym ruchem, nie litera po literze.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tablica tablicy obecnie osoba\ndobra robi kubek robot\nbrama autobus niebieska dobre"
+    },
+    {
+      "seconds": 25,
+      "text": "Seria krótkich słów z nowymi klawiszami.",
+      "type": "burst",
+      "tokens": [
+        "swoje",
+        "kolega",
+        "strony",
+        "banany",
+        "ogon",
+        "obecnie",
+        "styl",
+        "notatka",
+        "marchew",
+        "otwarte"
+      ]
+    },
+    {
+      "text": "Teraz z naciskiem na B — tego klawisza było do tej pory najmniej.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kupujemy gitary cyfry saga\nwiatrak napisy list cele\nproste on robota problem"
+    },
+    {
+      "text": "Na chwilę wracamy do wzorów, żeby sprawdzić, czy palce zawsze wracają na swoje miejsce.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jdf xb jd\nxb bx xbxb\nxxxx bbb"
+    },
+    {
+      "text": "Wszystko, co masz, wymieszane. Zobacz, ile słów wychodzi już bez zastanowienia.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "spacery spotkanie bar kasjer\nlider nad dali gra\ndo drogi wiele dobry"
+    }
+  ]
+}

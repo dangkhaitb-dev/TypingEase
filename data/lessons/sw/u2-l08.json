@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, nukta, koma na ritifaa",
+  "summary": "Vitufe vipya: Z, nukta, koma na ritifaa. Kidole kinatoka, kinabonyeza na kurudi.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe vipya katika somo hili: Z, nukta, koma na ritifaa. Vinabonyezwa na kidole kidogo cha kushoto, kidole cha pete cha kulia, kidole cha kati cha kulia na kidole kidogo cha kulia. Mwendo ni uleule kila mara — toka, bonyeza na rudi — na kurudi ndiko kunakofanyiwa mazoezi, kwa sababu kidole kikibaki nje, herufi inayofuata inakosewa.",
+  "congrats": "Vitufe zaidi chini ya vidole vyako. Kama Z, nukta, koma na ritifaa vinakuja bila kuvitafuta, somo limefanya kazi yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "Kitufe hiki ni cha kidole kidogo cha kushoto. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza Z ili kuendelea"
+    },
+    {
+      "newKey": "z",
+      "text": "Z tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "z z\ndfj z df\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Kitufe hiki ni cha kidole cha pete cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza . ili kuendelea"
+    },
+    {
+      "newKey": ".",
+      "text": ". tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": ".z .z\n.zf dj .z\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Kitufe hiki ni cha kidole cha kati cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza , ili kuendelea"
+    },
+    {
+      "newKey": ",",
+      "text": ", tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "z,. .z,\n.,j fzd .,\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RP",
+      "text": "Kitufe hiki ni cha kidole kidogo cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza ' ili kuendelea"
+    },
+    {
+      "newKey": "'",
+      "text": "' tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "f.j ,'d f.\n'. .' '.'.\n''' ,,, zzzz ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Vikundi vifupi, kimoja baada ya kingine. Endelea hadi mwisho hata ukikosea kimoja.",
+      "type": "burst",
+      "tokens": [
+        "z'",
+        "z.",
+        ",,",
+        ".,",
+        "''",
+        ",'",
+        "zz",
+        "',",
+        "..",
+        "z,"
+      ]
+    },
+    {
+      "text": "Vitufe vipya vikichanganywa na vya zamani, jinsi vitakavyotokea ndani ya maneno.",
+      "type": "block",
+      "content": "z.z.z. .z.z.z\nz'j.f, f'z,j.\nsz' .dj sz"
+    },
+    {
+      "text": "Maneno halisi yenye vitufe vipya. Andika kila neno kwa mkupuo mmoja, si herufi kwa herufi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "zawadi mbuzi zamani mzuri\nmatatizo zuri mzee mavazi\nng'ambo ng'aa kizuri ndizi"
+    },
+    {
+      "seconds": 25,
+      "text": "Mfululizo wa maneno mafupi yenye vitufe vipya.",
+      "type": "burst",
+      "tokens": [
+        "choo",
+        "kupata",
+        "nane",
+        "maelezo",
+        "tai",
+        "shukuru",
+        "fikia",
+        "kiwanja",
+        "fahari",
+        "vile"
+      ]
+    },
+    {
+      "text": "Sasa uzito uko kwenye Z, kitufe ulichobonyeza mara chache zaidi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "vitabu jiwe ushauri leo\nkuosha mzigo ona kizazi\nwanafunzi miezi hasa kisa"
+    },
+    {
+      "text": "Turudi kwenye mifumo kwa muda, kuhakikisha vidole bado vinapata njia ya kurudi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, zzz ''' ...\nz.z.z. .z.z.z\n,z'. ,z'."
+    },
+    {
+      "text": "Kila ulicho nacho, kimechanganywa. Angalia ni maneno mangapi tayari yanakuja bila kufikiri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mti ziara ng'oa kupenda\nngazi pembeni andika vyumba\nmkono maua kuanza ngoma"
+    }
+  ]
+}

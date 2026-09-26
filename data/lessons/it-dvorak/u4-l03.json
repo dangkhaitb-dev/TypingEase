@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "/, (, ) e =",
+  "summary": "In questa lezione: /, (, ) e =.",
+  "newKeys": [
+    "/",
+    "(",
+    ")",
+    "="
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "à",
+    "l",
+    "x",
+    "q",
+    "ò",
+    "v",
+    "w",
+    "-",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "z",
+    "'",
+    "ì",
+    "è",
+    "+",
+    "ù",
+    "\\",
+    "|",
+    "!",
+    "\"",
+    "£",
+    "$",
+    "%",
+    "&",
+    "/",
+    "(",
+    ")",
+    "="
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti che il corso non ha ancora usato: /, (, ) e =. Ognuno si ottiene con Shift e un tasto che le tue dita conoscono già — Shift con il mignolo dell'altra mano.",
+  "congrats": "/, (, ) e =: ora sotto le tue dita. Il segno esce facile come la lettera accanto.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RI",
+      "text": "È l'indice destro a premere /, con Shift tenuto dall'altra mano.",
+      "hint": "Premi / per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "/",
+      "text": "Prima / e basta, poi dove si usa davvero.",
+      "content": "// / se/frasi poco/società libertà/libro\n// / grigia/vestito starò/vero le/nonno\n// / farò/sa pulito/ali figlia/tale"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RM",
+      "text": "È il medio destro a premere (, con Shift tenuto dall'altra mano.",
+      "hint": "Premi ( per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Prima ( e basta, poi dove si usa davvero.",
+      "content": "(( ( (neve (ci (quasi\n(( ( (noi (porto (fila\n(( ( (ho (vero (circa"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RR",
+      "text": "È l'anulare destro a premere ), con Shift tenuto dall'altra mano.",
+      "hint": "Premi ) per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "Prima ) e basta, poi dove si usa davvero.",
+      "content": ")) ) (tutti) (cammino) (salda)\n)) ) (così) (uomo) (fila)\n)) ) (fuga) (per) (zaino)"
+    },
+    {
+      "type": "intro",
+      "key": "=",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere =, con Shift tenuto dall'altra mano.",
+      "hint": "Premi = per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "=",
+      "text": "Prima = e basta, poi dove si usa davvero.",
+      "content": "== = 5 = 81 27 = 41 11 = 34\n== = 41 = 98 88 = 53 34 = 51\n== = 90 = 2 94 = 26 7 = 49"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Una raffica di pezzi brevi con questi caratteri.",
+      "tokens": [
+        "65=11",
+        "(piccolo)",
+        "(l'altro)",
+        "(figlio)",
+        "(naturale)",
+        "avere/mia",
+        "(canzone)",
+        "(quercia)",
+        "pensiero/terzo",
+        "centro/così"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tutto quello di questa lezione, mescolato.",
+      "content": "(mezzo) farò/nel larga/studio (sei)\nanno/aiutare (l'idea) 86=41 46=33\n63 = 58 (l'uomo) 48=59 gala/scuola"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Di nuovo parole, con i segni al loro posto.",
+      "content": "8 = 67 cielo unità/starà balcone 84 = 73\n(leggere) tavolo 46 = 75 gioia (voglio)\n(treno) qui (l'idea) primo giovedì/avrò"
+    }
+  ]
+}

@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "#, $, % e &",
+  "summary": "Nesta lição: #, $, % e &.",
+  "newKeys": [
+    "#",
+    "$",
+    "%",
+    "&"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "~",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ";",
+    "-",
+    "=",
+    "´",
+    "[",
+    "]",
+    "'",
+    "\"",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "&"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas que o curso ainda não usou: #, $, % e &. Todas saem com Shift e uma tecla que os seus dedos já conhecem — Shift com o mindinho da outra mão.",
+  "congrats": "#, $, % e &: agora debaixo dos seus dedos. O sinal sai tão fácil quanto a letra ao lado.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LM",
+      "text": "Quem aperta # é o dedo médio esquerdo, com Shift na outra mão.",
+      "hint": "Aperte # para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "Primeiro # sozinho, e depois onde ele realmente aparece.",
+      "content": "## # #71 #24 #28\n## # #71 #40 #81\n## # #47 #33 #90"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "Quem aperta $ é o indicador esquerdo, com Shift na outra mão.",
+      "hint": "Aperte $ para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Primeiro $ sozinho, e depois onde ele realmente aparece.",
+      "content": "$$ $ $78 $54 $68\n$$ $ $42 $32 $63\n$$ $ $35 $93 $59"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "Quem aperta % é o indicador esquerdo, com Shift na outra mão.",
+      "hint": "Aperte % para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Primeiro % sozinho, e depois onde ele realmente aparece.",
+      "content": "%% % 30% 28% 12%\n%% % 95% 21% 30%\n%% % 57% 66% 28%"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "Quem aperta & é o indicador direito, com Shift na outra mão.",
+      "hint": "Aperte & para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Primeiro & sozinho, e depois onde ele realmente aparece.",
+      "content": "&& & frases & baixar acabar & chapéu maçã & nuvens\n&& & servir & depois aberto & redes chave & mandar\n&& & chuva & roda bonito & artistas vai & nomes"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Uma rajada de trechos curtos com estes caracteres.",
+      "tokens": [
+        "$37",
+        "$21",
+        "61%",
+        "cinema&fale",
+        "83%",
+        "#13",
+        "8%",
+        "$68",
+        "cansado&hotéis",
+        "#2"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tudo o que esta lição trouxe, misturado.",
+      "content": "grandes & alas $62 20% 50%\n16% 40% 57% #69\n#59 #8 $57 #21"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Palavras de novo, com os sinais no lugar.",
+      "content": "$23 cansada bolo & opinião lixo #12\n96% fruta $14 chaves $61\n93% olhar #14 seda $83"
+    }
+  ]
+}

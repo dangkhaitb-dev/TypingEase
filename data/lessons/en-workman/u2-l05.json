@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Review",
+  "summary": "No new keys. Everything so far, longer and faster.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y",
+    "r",
+    "u",
+    "w",
+    "f",
+    "b",
+    "j",
+    "p",
+    "d",
+    "m",
+    "k",
+    "l",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "This lesson teaches nothing new. It is the moment to check that what came before comes out without thinking, which is not the same as knowing where each key is.",
+  "congrats": "Nothing new, and faster anyway. That is exactly what was supposed to happen.",
+  "screens": [
+    {
+      "text": "Single words to start. No rush: speed comes out of accuracy, never the other way round.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yards sails soil past\nshop any always leg\ncount ear rare join"
+    },
+    {
+      "seconds": 25,
+      "text": "A short burst. Finish the list even if one gets away from you.",
+      "type": "burst",
+      "tokens": [
+        "dish",
+        "people",
+        "feeds",
+        "bottle",
+        "well",
+        "tire",
+        "trade",
+        "one",
+        "fail",
+        "edge",
+        "circle",
+        "flee"
+      ]
+    },
+    {
+      "text": "Five words to a line. Let your eyes run ahead of your fingers.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "alas head hurl seems tears\ngrill to root sun kid\nokay much ten being beat"
+    },
+    {
+      "text": "Patterns again, to check the fingers keep returning to the home row.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ohn sae oh\ntn nt tntn\neee nnn tttt hhh"
+    },
+    {
+      "text": "Short words at a good pace. These should almost type themselves by now.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sour jump birth bags\nfact offer make open\nsaw town court cats"
+    },
+    {
+      "seconds": 30,
+      "text": "More time and more words. Hold the same rhythm from start to finish.",
+      "type": "burst",
+      "tokens": [
+        "friar",
+        "cold",
+        "head",
+        "sand",
+        "till",
+        "problem",
+        "salud",
+        "minute",
+        "butter",
+        "rise",
+        "will",
+        "across",
+        "apple",
+        "costs"
+      ]
+    },
+    {
+      "text": "Whole sentences. This is where you find out whether the hand goes home on its own.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "the girls are here\nthe road was too rough to walk\nplease put the paper on the top shelf"
+    },
+    {
+      "text": "The last round. If you got here without looking at the keyboard, the lesson is done.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "poor eat past follows tower\nus garden true date add\nplants allows wind burn yes"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A et É",
+  "summary": "Nouvelles touches : A et É. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "a",
+    "é"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "é"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : A et É. Elles se tapent avec l'auriculaire gauche et l'auriculaire droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si A et É sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur A pour continuer"
+    },
+    {
+      "newKey": "a",
+      "text": "Seulement A et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": "é",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur É pour continuer"
+    },
+    {
+      "newKey": "é",
+      "text": "Seulement É et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "aéaé éaéa\naé éa\nédf ja éd"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "éaaa",
+        "aaé",
+        "aaa",
+        "aééa",
+        "éaéé",
+        "ééaa",
+        "aéé",
+        "aaéé",
+        "éaéa",
+        "aéaa"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "aé éa aéaé\naaa éééé ffff jjj\naéaé éaéa"
+    },
+    {
+      "text": "Encore les deux nouvelles touches. Il n'y a pas encore de mots à écrire avec, et c'est normal.",
+      "type": "block",
+      "content": "aé éa\néjd fa éj\néa aé éaéa"
+    },
+    {
+      "seconds": 25,
+      "text": "Des groupes un peu plus longs. Se dépêcher n'aide pas encore.",
+      "type": "burst",
+      "tokens": [
+        "aéa",
+        "aééa",
+        "éaaa",
+        "ééaa",
+        "aaaé",
+        "aaéé",
+        "aéaa",
+        "éaé",
+        "ééaé",
+        "ééa",
+        "aaéa",
+        "éaéé"
+      ]
+    },
+    {
+      "text": "Tout ce que tu as, en groupes courts. Regarde l'écran, pas tes mains.",
+      "type": "block",
+      "content": "ja aj jaja\njjj dddd aaa ééé ffff\naéaé éaéa"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "aéaéaé éaéaéa\naé éa\njéa df jé"
+    },
+    {
+      "text": "Une dernière série avec tout ce qui a été vu jusqu'ici.",
+      "type": "block",
+      "content": "kd dk kdkd\njjjj dddd kkk ffff\nfjfjfj jfjfjf"
+    }
+  ]
+}

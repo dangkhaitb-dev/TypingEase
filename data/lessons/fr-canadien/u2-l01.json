@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "T et Y",
+  "summary": "Nouvelles touches : T et Y. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : T et Y. Elles se tapent avec l'index gauche et l'index droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si T et Y sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "LI",
+      "text": "C'est l'index gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur T pour continuer"
+    },
+    {
+      "newKey": "t",
+      "text": "Seulement T et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "tfj d tf\nt t tt\ntttt"
+    },
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur Y pour continuer"
+    },
+    {
+      "newKey": "y",
+      "text": "Seulement Y et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "jyd ft jy\nty yt tyty\nyyy ttt"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "tty",
+        "ttyy",
+        "ttt",
+        "ytty",
+        "tttt",
+        "ttyt",
+        "ttty",
+        "tyt",
+        "tyty",
+        "yty"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "yt ty ytyt\ntttt jjj fff yyy\ntyty ytyt"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tel dites tires listes\ntitres utiles sites tristes\nguitare styles tir juillet"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "grise",
+        "rues",
+        "skis",
+        "titre",
+        "huile",
+        "sa",
+        "sujet",
+        "elles",
+        "dures",
+        "dite"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur T, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "surgir grises a dur\nrusse rigide je juger\nlettres hisses le lis"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "yt ty\njtd yf jt\nty yt tyty"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "rigides utiles lisse fleur\njuger triste tu jus\nhuile luttes sud lutte"
+    }
+  ]
+}

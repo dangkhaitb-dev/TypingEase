@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "Yeni tuşlar: +, yıldız, ! ve \"",
+  "summary": "Bu derste: +, yıldız, ! ve \".",
+  "newKeys": [
+    "+",
+    "*",
+    "!",
+    "\""
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c",
+    "f",
+    "p",
+    "ç",
+    "ö",
+    "j",
+    ".",
+    "b",
+    "ş",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ",",
+    "/",
+    "-",
+    "q",
+    "w",
+    "x",
+    "+",
+    "*",
+    "!",
+    "\""
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kursun henüz kullanmadığı tuşlar: +, yıldız, ! ve \". Bazıları Shift ister, öbür elin serçe parmağıyla; ötekilerin kendi tuşu var, kurs onları henüz kullanmamıştı.",
+  "congrats": "Artık parmaklarının altında: +, yıldız, ! ve \". İşaret de yanındaki harf kadar kolay çıkıyor.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "+",
+      "finger": "LP",
+      "text": "Bu karakter için sol serçe parmak çalışır: +.",
+      "hint": "Devam etmek için + tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "+",
+      "text": "Önce yalnızca +, sonra gerçekten kullanıldığı yerde.",
+      "content": "++ + 57 + 26 73 + 64 36 + 97\n++ + 53 + 92 19 + 26 90 + 7\n++ + 20 + 51 88 + 16 22 + 36"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Önce yalnızca yıldız, sonra gerçekten kullanıldığı yerde.",
+      "content": "** * *değişik* *ben* *köy*\n** * *toplantı* *yollar* *dil*\n** * *görüş* *tabak* *durak*"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "Bu karakter için sol serçe parmak çalışır: !; Shift öbür elde.",
+      "hint": "Devam etmek için ! tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Önce yalnızca !, sonra gerçekten kullanıldığı yerde.",
+      "content": "!! ! çiçek! sahada! yüksek!\n!! ! bir! çocuk! doktor!\n!! ! dolap! konuk! okulda!"
+    },
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LR",
+      "text": "Bu karakter için sol yüzük parmağı çalışır: \"; Shift öbür elde.",
+      "hint": "Devam etmek için \" tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "Önce yalnızca \", sonra gerçekten kullanıldığı yerde.",
+      "content": "\"\" \" \"kupa\" \"kalın\" \"kasaba\"\n\"\" \" \"anahtar\" \"iyi\" \"ay\"\n\"\" \" \"ekip\" \"çalışmak\" \"vapur\""
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Bu karakterlerle kısa parçalardan bir seri.",
+      "tokens": [
+        "korku!",
+        "*göz*",
+        "27+94",
+        "98+74",
+        "kadın!",
+        "\"taraf\"",
+        "\"mesafe\"",
+        "olur!",
+        "çalış!",
+        "*mermer*"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Bu derste gelen her şey, karışık.",
+      "content": "*acı* yorgun! 9+53 temiz!\n*niçin* \"far\" *özel* aralık!\n11 + 30 sayılar! ceviz! yapay!"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Yeniden kelimeler, işaretler yerli yerinde.",
+      "content": "bora! sahada \"onlar\" noktalar *sabır*\n29 + 85 renk *yeterli* haftalar 71 + 89\n96 + 78 gelir *aile* dert köy!"
+    }
+  ]
+}

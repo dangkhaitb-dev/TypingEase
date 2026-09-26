@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "R dan U",
+  "summary": "Tombol baru: R dan U. Jari keluar, menekan, lalu kembali.",
+  "newKeys": [
+    "r",
+    "u"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tombol baru di pelajaran ini: R dan U. Ditekan dengan telunjuk kiri dan telunjuk kanan. Gerakannya selalu sama — keluar, tekan, kembali — dan jalan pulang itulah yang dilatih, karena kalau jarinya tertinggal di luar, huruf berikutnya akan salah.",
+  "congrats": "Makin banyak tombol di bawah jarimu. Kalau R dan U sudah keluar tanpa dicari, pelajaran ini sudah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "LI",
+      "text": "Tombol ini ditekan dengan telunjuk kiri. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan R untuk lanjut"
+    },
+    {
+      "newKey": "r",
+      "text": "Hanya R dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "fjr d fj\nr r rr\nrrr"
+    },
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "RI",
+      "text": "Tombol ini ditekan dengan telunjuk kanan. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan U untuk lanjut"
+    },
+    {
+      "newKey": "u",
+      "text": "Hanya U dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "ur ur\nrju fd rj\nru ur ruru"
+    },
+    {
+      "seconds": 20,
+      "text": "Kelompok pendek, satu demi satu. Terus sampai akhir meskipun ada yang meleset.",
+      "type": "burst",
+      "tokens": [
+        "rru",
+        "ruru",
+        "rrr",
+        "ruur",
+        "uru",
+        "rr",
+        "uuur",
+        "urru",
+        "rruu",
+        "uruu"
+      ]
+    },
+    {
+      "text": "Tombol baru dicampur dengan yang lama, seperti nanti muncul di dalam kata.",
+      "type": "block",
+      "content": "fr rf frfr\nrrrr jjjj ffff uuu\nruru urur"
+    },
+    {
+      "text": "Kata sungguhan dengan tombol baru. Ketik setiap kata dalam satu tarikan, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kursi keluarga ular lurus\nakhir usia dahulu gurih\njauh udara jujur gerak"
+    },
+    {
+      "seconds": 25,
+      "text": "Rentetan kata pendek yang berisi tombol baru.",
+      "type": "burst",
+      "tokens": [
+        "lada",
+        "kala",
+        "jujur",
+        "gigi",
+        "isi",
+        "kasur",
+        "sisi",
+        "las",
+        "kaldu",
+        "kalah"
+      ]
+    },
+    {
+      "text": "Sekarang bebannya di R, tombol yang paling jarang kamu tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sejak lari keluarga kedelai\nrisau jaksa kilah seleksi\ngeli gerak aula gali"
+    },
+    {
+      "text": "Kembali ke pola sebentar, untuk memastikan jari masih menemukan jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "rrr uuuu\nrururu ururur\nur ur"
+    },
+    {
+      "text": "Semua yang kamu punya, dicampur. Perhatikan berapa banyak kata yang sudah keluar tanpa dipikir.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lada suku ia kalah\njelas kisah kedai gurau\nkeluarga asal usia ikal"
+    }
+  ]
+}

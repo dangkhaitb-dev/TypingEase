@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "The outer column",
+  "summary": "The column along the right edge: six keys, all for the little finger.",
+  "newKeys": [
+    "z",
+    "[",
+    "]",
+    "/",
+    "=",
+    "\\"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "'",
+    "l",
+    "x",
+    "q",
+    ";",
+    "v",
+    "w",
+    "-",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "z",
+    "[",
+    "]",
+    "/",
+    "=",
+    "\\"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Your right little finger carries more keys than any other, and the ones on the edge are the ones almost nobody practises. They sit further from the home row than anything else, so the trick is the usual one: out, press, back, without the hand following.",
+  "congrats": "That column is the one most courses leave half-done. Not yours.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "RP",
+      "text": "The keys along the right edge, all of them for the little finger. They are the longest reaches that finger makes, and the ones least practised afterwards.",
+      "hint": "Press Z to continue"
+    },
+    {
+      "newKeys": [
+        "z",
+        "["
+      ],
+      "text": "Now z and [. The little finger goes out and comes back; the hand stays where it is.",
+      "type": "block",
+      "content": "z[z[ [z[z\nz[ [z\nh[e zu h["
+    },
+    {
+      "newKeys": [
+        "]",
+        "/"
+      ],
+      "text": "Now ] and /. The little finger goes out and comes back; the hand stays where it is.",
+      "type": "block",
+      "content": "/] ]/\n]uh /e ]u\n]/ /] ]/]/"
+    },
+    {
+      "seconds": 20,
+      "text": "A burst with what you have of this column so far.",
+      "type": "burst",
+      "tokens": [
+        "/[",
+        "[]",
+        "[[",
+        "/z",
+        "[z",
+        "z/",
+        "/]",
+        "z[",
+        "[/",
+        "//"
+      ]
+    },
+    {
+      "newKeys": [
+        "=",
+        "\\"
+      ],
+      "text": "Now = and \\. The little finger goes out and comes back; the hand stays where it is.",
+      "type": "block",
+      "content": "=\\ =\\\n=ue \\h =u\n=\\ \\= =\\=\\"
+    },
+    {
+      "text": "All six together. This is the corner of the keyboard where the wrist twists most if the finger does not come home.",
+      "type": "block",
+      "content": "u]z e\\[ u]\n\\= =\\ \\=\\=\n\\\\\\\\ ]]]] [[[ zzz /// ===="
+    },
+    {
+      "seconds": 25,
+      "text": "Words again, to loosen the hand after all that edge.",
+      "type": "burst",
+      "tokens": [
+        "wise",
+        "name",
+        "ads",
+        "store",
+        "expect",
+        "stop",
+        "sages",
+        "add",
+        "member",
+        "years",
+        "lily",
+        "ball"
+      ]
+    },
+    {
+      "text": "Back to words, with the whole keyboard available.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "we've edge coast black\nshred work held delight\nroad old happy just"
+    },
+    {
+      "text": "Whole sentences to close the key lessons.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "The box is bigger than the book.\nHe told us how it works.\nThe girls are here."
+    }
+  ]
+}

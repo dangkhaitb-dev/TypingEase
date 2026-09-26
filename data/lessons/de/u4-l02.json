@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "$, %, & und /",
+  "summary": "Neu in dieser Lektion: $, %, & und /.",
+  "newKeys": [
+    "$",
+    "%",
+    "&",
+    "/"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ä",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "ß",
+    "´",
+    "ü",
+    "+",
+    "#",
+    "°",
+    "!",
+    "\"",
+    "§",
+    "$",
+    "%",
+    "&",
+    "/"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: $, %, & und /. Jedes davon entsteht aus Shift und einer Taste, die deine Finger schon kennen — Shift mit dem kleinen Finger der anderen Hand.",
+  "congrats": "$, %, & und /: jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "$: Dafür ist der linke Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke $, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Zuerst $ für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "$$ $ $78 $18 $36\n$$ $ $47 $23 $68\n$$ $ $5 $32 $64"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "%: Dafür ist der linke Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke %, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Zuerst % für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "%% % 17% 95% 54%\n%% % 53% 88% 20%\n%% % 44% 66% 87%"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "&: Dafür ist der rechte Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke &, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Zuerst & für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "&& & außerdem & kunst straßen & käse nadel & erde\n&& & genießen & ort quark & für zählen & seife\n&& & ziel & flasche eis & nach geben & dorf"
+    },
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RI",
+      "text": "/: Dafür ist der rechte Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke /, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "/",
+      "text": "Zuerst / für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "// / kann/ufer ass/hinter rhythmus/beruf\n// / vor/sonne zahl/total rolle/warm\n// / heißt/ufer ass/hinter figur/kajak"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "87%",
+        "$83",
+        "$95",
+        "nur&wild",
+        "$91",
+        "mund/lag",
+        "85%",
+        "$84",
+        "spiel/eine",
+        "macht/reif"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "ort/städte $52 $71 $49\nstraßen/vorher 41% $83 11%\nkappe/wer 32% lexikon/all blau/leider"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "physik/weiter adler $46 hell 82%\n$96 hilfe steht/sorge treppe wolke & weise\n65% ecke maß & start meer lag & perfekt"
+    }
+  ]
+}

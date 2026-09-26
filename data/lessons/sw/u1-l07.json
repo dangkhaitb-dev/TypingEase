@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "E na I",
+  "summary": "Vitufe vipya: E na I. Kidole kinatoka, kinabonyeza na kurudi.",
+  "newKeys": [
+    "e",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe vipya katika somo hili: E na I. Vinabonyezwa na kidole cha kati cha kushoto na kidole cha kati cha kulia. Mwendo ni uleule kila mara — toka, bonyeza na rudi — na kurudi ndiko kunakofanyiwa mazoezi, kwa sababu kidole kikibaki nje, herufi inayofuata inakosewa.",
+  "congrats": "Vitufe zaidi chini ya vidole vyako. Kama E na I vinakuja bila kuvitafuta, somo limefanya kazi yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "Kitufe hiki ni cha kidole cha kati cha kushoto. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza E ili kuendelea"
+    },
+    {
+      "newKey": "e",
+      "text": "E tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "e e\nedf j ed\ne e ee"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RM",
+      "text": "Kitufe hiki ni cha kidole cha kati cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza I ili kuendelea"
+    },
+    {
+      "newKey": "i",
+      "text": "I tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "ie ei\nfed ij fe\nei ie eiei"
+    },
+    {
+      "seconds": 20,
+      "text": "Vikundi vifupi, kimoja baada ya kingine. Endelea hadi mwisho hata ukikosea kimoja.",
+      "type": "burst",
+      "tokens": [
+        "ie",
+        "eii",
+        "ieee",
+        "iie",
+        "eiei",
+        "eiie",
+        "ii",
+        "iei",
+        "iiei",
+        "eeii"
+      ]
+    },
+    {
+      "text": "Vitufe vipya vikichanganywa na vya zamani, jinsi vitakavyotokea ndani ya maneno.",
+      "type": "block",
+      "content": "ffff eeee jjjj iii\neieiei ieieie\njief fije"
+    },
+    {
+      "text": "Maneno halisi yenye vitufe vipya. Andika kila neno kwa mkupuo mmoja, si herufi kwa herufi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hili safi fahali fisi\nkifaa shida shika sikia\nkiasi sahihi dakika hali"
+    },
+    {
+      "seconds": 25,
+      "text": "Mfululizo wa maneno mafupi yenye vitufe vipya.",
+      "type": "burst",
+      "tokens": [
+        "shada",
+        "falsafa",
+        "lala",
+        "hali",
+        "haja",
+        "fikia",
+        "jaa",
+        "kisa",
+        "ala",
+        "fahali"
+      ]
+    },
+    {
+      "text": "Sasa uzito uko kwenye E, kitufe ulichobonyeza mara chache zaidi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaka fedha hifadhi hafla\nsaga ada ile afisa\nfikia hii hisia dhidi"
+    },
+    {
+      "text": "Turudi kwenye mifumo kwa muda, kuhakikisha vidole bado vinapata njia ya kurudi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "eeee iiii\neieiei ieieie\nei ie"
+    },
+    {
+      "text": "Kila ulicho nacho, kimechanganywa. Angalia ni maneno mangapi tayari yanakuja bila kufikiri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jalada elea kisa dhidi\nkaa saga saa sisi\nhili kaka ala fedha"
+    }
+  ]
+}

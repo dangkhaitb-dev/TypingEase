@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C e N",
+  "summary": "Teclas novas: C e N. O dedo sai, aperta e volta.",
+  "newKeys": [
+    "c",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas novas nesta lição: C e N. Elas se apertam com o dedo médio esquerdo e o indicador direito. O movimento é sempre o mesmo — sair, apertar e voltar — e a volta é a parte que se treina, porque se o dedo fica fora, a letra seguinte sai errada.",
+  "congrats": "Mais teclas debaixo dos dedos. Se C e N já saem sem procurar, a lição fez o seu trabalho.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "Esta tecla é do dedo médio esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte C para continuar"
+    },
+    {
+      "newKey": "c",
+      "text": "Só C e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "cccc cccc\nc c\njfc d jf"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "Esta tecla é do indicador direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte N para continuar"
+    },
+    {
+      "newKey": "n",
+      "text": "Só N e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "cncncn ncncnc\nnc nc\njdc nf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos curtos, um atrás do outro. Vá até o fim mesmo que erre algum.",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "nnn",
+        "nc",
+        "ccnc",
+        "cnnn",
+        "cnn",
+        "ncc",
+        "nncc",
+        "nccc",
+        "ncnn"
+      ]
+    },
+    {
+      "text": "As teclas novas misturadas com as anteriores, que é como elas vão aparecer nas palavras.",
+      "type": "block",
+      "content": "nc cn ncnc\nnnn ccc jjj fff\ncncn ncnc"
+    },
+    {
+      "text": "Palavras de verdade com as teclas novas. Escreva a palavra inteira de uma vez, não letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "escuro chega cachorro alcança\ngrande chinelo ninho cansado\njunto doce sonhar carne"
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada de palavras curtas com as teclas novas.",
+      "type": "burst",
+      "tokens": [
+        "desta",
+        "escuro",
+        "olho",
+        "tela",
+        "artista",
+        "fases",
+        "feira",
+        "corre",
+        "guias",
+        "desejo"
+      ]
+    },
+    {
+      "text": "Agora com o peso em C, a que você menos apertou.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fechar frete graus utilidade\norelha lanchonete criança rasgar\nturistas resultado troca estado"
+    },
+    {
+      "text": "Voltamos aos padrões por um momento, para conferir que os dedos continuam voltando para o lugar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nnnn ccc\ncncn ncnc\nnc nc"
+    },
+    {
+      "text": "Tudo o que você tem, misturado. Repare em quantas palavras já saem sem pensar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sentido rua notas saltar\no jarra aluga longo\ntijolo liga tanto fala"
+    }
+  ]
+}

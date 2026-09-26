@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "最外一列",
+  "summary": "键盘右边缘的一列：六个键，都归小指管。",
+  "newKeys": [
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "右手小指负责的键比其他手指都多，而它边上的这些键几乎没有人专门练过。它们离基准行最远，所以方法不变：伸出去，按下，回来，不要把整只手带过去。",
+  "congrats": "几乎所有课程都只教一半的就是这一列。你的课程里不再是这样了。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RP",
+      "text": "键盘右边缘的这些键都归小指管。这是小指伸得最远的地方，也是以后最少被练到的键。",
+      "hint": "按 / 继续"
+    },
+    {
+      "newKeys": [
+        "/",
+        "-"
+      ],
+      "text": "现在练 / 和 -。小指伸出去再收回来，手掌留在原位。",
+      "type": "block",
+      "content": "/-/- -/-/\n/- -/\nj-d /f j-"
+    },
+    {
+      "newKeys": [
+        "=",
+        "["
+      ],
+      "text": "现在练 = 和 [。小指伸出去再收回来，手掌留在原位。",
+      "type": "block",
+      "content": "[= =[\n=fj [d =f\n=[ [= =[=["
+    },
+    {
+      "seconds": 20,
+      "text": "一组组短练习，用上这一列你已经学过的键。",
+      "type": "burst",
+      "tokens": [
+        "[-",
+        "-=",
+        "--",
+        "[/",
+        "-/",
+        "/[",
+        "[=",
+        "/-",
+        "-[",
+        "[["
+      ]
+    },
+    {
+      "newKeys": [
+        "]",
+        "\\"
+      ],
+      "text": "现在练 ] 和 \\。小指伸出去再收回来，手掌留在原位。",
+      "type": "block",
+      "content": "]\\ ]\\\n]fd \\j ]f\n]\\ \\] ]\\]\\"
+    },
+    {
+      "text": "六个键一起练。键盘的这个角落，手指不回位的话手腕最容易拧着。",
+      "type": "block",
+      "content": "f=/ d\\- f=\n\\] ]\\ \\]\\]\n\\\\\\\\ ==== --- /// [[[ ]]]]"
+    },
+    {
+      "seconds": 25,
+      "text": "再练一些单词，打了这么多边缘键之后让手放松一下。",
+      "type": "burst",
+      "tokens": [
+        "mianfei",
+        "fenzhong",
+        "wenxue",
+        "paidui",
+        "buguo",
+        "bao",
+        "caidan",
+        "qianbao",
+        "shuyu",
+        "nvhai",
+        "qiantian",
+        "juedui"
+      ]
+    },
+    {
+      "text": "回到单词，现在整块键盘都能用了。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "xiyi shui shangdian xigua\ntese shengyin du guowai\nnin luoji qianmian zhege"
+    },
+    {
+      "text": "用完整的句子结束按键部分。",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Zhe ben shu hen you yisi.\nTa jia you yi zhi xiao mao.\nDidi zai gongyuan li ti zuqiu."
+    }
+  ]
+}

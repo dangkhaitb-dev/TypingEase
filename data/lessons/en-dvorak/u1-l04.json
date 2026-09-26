@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A and S",
+  "summary": "Two new keys: A and S. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "a",
+    "s"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: A and S. They belong to your left little finger and your right little finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If A and S already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "This key belongs to your left little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press A to continue"
+    },
+    {
+      "newKey": "a",
+      "text": "Only A and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "a a\nuha e uh\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "RP",
+      "text": "This key belongs to your right little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press S to continue"
+    },
+    {
+      "newKey": "s",
+      "text": "Only S and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "asas sasa\nas sa\nseu ha se"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "saaa",
+        "aas",
+        "aaa",
+        "assa",
+        "sass",
+        "ssaa",
+        "ass",
+        "aass",
+        "sasa",
+        "asaa"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "as sa asas\naaa ssss uuuu hhh\nasas sasa"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "she than house aha\nseat soon heat these\nhas ha shut that"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "note",
+        "out",
+        "aha",
+        "houses",
+        "at",
+        "taste",
+        "tests",
+        "hash",
+        "she",
+        "shoe"
+      ]
+    },
+    {
+      "text": "Now the weight is on A, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ash heat set tea\nsash house he hunt\nnotes these ah south"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "asasas sasasa\nas sa\nhsa eu hs"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "use no these hat\nto one tone the\nhas uses ah note"
+    }
+  ]
+}

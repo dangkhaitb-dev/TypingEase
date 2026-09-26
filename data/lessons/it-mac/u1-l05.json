@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Ripasso",
+  "summary": "Nessun tasto nuovo. Tutto il precedente, più di seguito e più in fretta.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Questa lezione non insegna niente di nuovo. È il momento di verificare che quello di prima esca senza pensarci, che è un'altra cosa rispetto a sapere dove sta ogni tasto.",
+  "congrats": "Niente di nuovo e comunque più in fretta. È esattamente quello che doveva succedere.",
+  "screens": [
+    {
+      "text": "Si comincia con parole sciolte. Senza fretta: la velocità nasce dalla precisione, mai il contrario.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "falsa dalla alfa falla\nad ala alfa dalla\ndalla la falda salda"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica corta. Finisci la lista anche se qualcuna ti scappa.",
+      "type": "burst",
+      "tokens": [
+        "alfa",
+        "sala",
+        "salda",
+        "fa",
+        "dal",
+        "alla",
+        "da",
+        "ad",
+        "sa",
+        "ala",
+        "dalla",
+        "falla"
+      ]
+    },
+    {
+      "text": "Cinque parole per riga. Lascia che gli occhi vadano avanti alle dita.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dalla la dal ala ad\nsa alla la falda salda\nfalda la ala sala alla"
+    },
+    {
+      "text": "Di nuovo gli schemi, per controllare che le dita tornino alla riga di riposo.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Parole corte, a buon ritmo. Queste dovrebbero uscire quasi da sole.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ala salda falda da\nala falda salda sala\nfa alfa ala dalla"
+    },
+    {
+      "seconds": 30,
+      "text": "Più tempo e più parole. Tieni lo stesso ritmo dall'inizio alla fine.",
+      "type": "burst",
+      "tokens": [
+        "falsa",
+        "dal",
+        "da",
+        "a",
+        "la",
+        "fa",
+        "dalla",
+        "alla",
+        "al",
+        "falla",
+        "ala",
+        "ad",
+        "salda",
+        "falda"
+      ]
+    },
+    {
+      "text": "Frasi intere. Qui si vede se la mano rientra da sola al suo posto.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "falla al salda falsa\ndalla salda falda ala\nla alla ad fa"
+    },
+    {
+      "text": "L'ultimo giro. Se sei arrivato fin qui senza guardare la tastiera, la lezione è fatta.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sa la fa falda sala\ndalla a dal sala al\nfalsa ala al sa dalla"
+    }
+  ]
+}

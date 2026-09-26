@@ -1,0 +1,136 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-p",
+  "title": "Q en P",
+  "summary": "Nieuwe toetsen: Q en P. De vinger strekt, slaat aan en keert terug.",
+  "newKeys": [
+    "q",
+    "p"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "+",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nieuwe toetsen in deze les: Q en P. Je slaat ze aan met de linkerpink en de rechterpink. De beweging is altijd dezelfde — uitstrekken, aanslaan en terug — en het terugkeren is wat je oefent, want als de vinger buiten blijft, gaat de volgende letter scheef.",
+  "congrats": "Weer toetsen onder je vingers. Als Q en P er zonder zoeken uitkomen, heeft de les zijn werk gedaan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LP",
+      "text": "Deze toets is voor de linkerpink. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op Q om verder te gaan"
+    },
+    {
+      "newKey": "q",
+      "text": "Alleen Q en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "qdf j qd\nq q qq\nqqqq"
+    },
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "RP",
+      "text": "Deze toets is voor de rechterpink. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op P om verder te gaan"
+    },
+    {
+      "newKey": "p",
+      "text": "Alleen P en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "qpqp pqpq\nqp pq\njfq dp jf"
+    },
+    {
+      "seconds": 20,
+      "text": "Korte groepjes, de een na de ander. Maak de lijst af, ook als je er een paar mist.",
+      "type": "burst",
+      "tokens": [
+        "pqq",
+        "qpqp",
+        "ppqq",
+        "ppq",
+        "pqqp",
+        "pqpp",
+        "qpq",
+        "qpp",
+        "qqqq",
+        "qqqp"
+      ]
+    },
+    {
+      "text": "De nieuwe toetsen gemengd met de vorige, zoals je ze straks in woorden tegenkomt.",
+      "type": "block",
+      "content": "ffff jjjj qqqq ppp\nqpqpqp pqpqpq\nfjqp pqjf"
+    },
+    {
+      "text": "Echte woorden met de nieuwe toetsen. Typ het hele woord in één beweging, niet letter voor letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sport paraplu lampen stap\npapa open planten hulp\npijl opnieuw plein kip"
+    },
+    {
+      "seconds": 25,
+      "text": "Een reeks korte woorden met de nieuwe toetsen erin.",
+      "type": "burst",
+      "tokens": [
+        "vol",
+        "kleur",
+        "dief",
+        "woning",
+        "heel",
+        "juni",
+        "huis",
+        "oude",
+        "maar",
+        "lade"
+      ]
+    },
+    {
+      "text": "Nu met de nadruk op P, de toets die je het minst hebt aangeslagen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "vis rivier loop lade\nparaplu aardappel ook teken\nmooie slak salsa alle"
+    },
+    {
+      "text": "Even terug naar de patronen, om te controleren dat de vingers nog steeds naar hun plek teruggaan.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "qpqpqp pqpqpq\nqp pq\npfq jd pf"
+    },
+    {
+      "text": "Alles wat je hebt, door elkaar. Kijk hoeveel woorden al vanzelf gaan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "slak sjaal nummer appelmoes\nrijk glas land fout\nlamp andere kijken lees"
+    }
+  ]
+}

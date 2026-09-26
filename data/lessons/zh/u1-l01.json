@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "F 和 J，加上空格",
+  "summary": "两个有凸起的键、空格键，以及不低头看键盘的习惯。",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "这门课练的是拼音的按键：你用十个手指打出不带声调的拼音字母，比如 nihao、zhongguo，输入法再把它们变成汉字。练习页面只检查你打的字母，所以不需要打开输入法。先从两个有小凸起的键开始，两个食指放在上面，不离开；课程里的其他一切都从这个位置出发。放好双手，眼睛只看屏幕。",
+  "congrats": "你的手已经放到位置上了。从现在开始，一切都是从这个位置伸出去、再回来的键。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "LI",
+      "text": "这个键由左手食指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 F 继续"
+    },
+    {
+      "newKey": "f",
+      "text": "只有 F 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "f f ff\nffff\nffffff ffffff"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RI",
+      "text": "这个键由右手食指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 J 继续"
+    },
+    {
+      "newKey": "j",
+      "text": "只有 J 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "jf jf\njf fj jfjf\nfj jf fjfj"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "空格键归右手拇指。拇指不做别的事，所以你不需要找它。",
+      "hint": "按 空格 继续"
+    },
+    {
+      "newKey": " ",
+      "text": "用空格隔开的短组合。右手拇指按下、抬起，其他手指留在原位。",
+      "type": "block",
+      "content": "jf jf\nfj jf fjfj\njjjj ffff"
+    },
+    {
+      "seconds": 20,
+      "text": "一组接一组的短组合。就算有打错的，也一直打到最后。",
+      "type": "burst",
+      "tokens": [
+        "ffj",
+        "ff",
+        "ffff",
+        "fjj",
+        "ffjj",
+        "jff",
+        "fjf",
+        "jffj",
+        "fj",
+        "fjff"
+      ]
+    },
+    {
+      "text": "新键和旧键混在一起，就像以后在拼音里出现的那样。",
+      "type": "block",
+      "content": "fj fj\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "两个新键再练一遍。现在还拼不出用到它们的词，这很正常。",
+      "type": "block",
+      "content": "fj jf\njf jf\njf fj jfjf"
+    },
+    {
+      "seconds": 25,
+      "text": "稍长一点的组合。现在求快还没有用。",
+      "type": "burst",
+      "tokens": [
+        "fjfj",
+        "ff",
+        "fjf",
+        "jjf",
+        "ffjf",
+        "fjjj",
+        "fj",
+        "jjff",
+        "jfjj",
+        "jfj",
+        "jff",
+        "jffj"
+      ]
+    },
+    {
+      "text": "你已经学会的所有键，分成短组合。眼睛看屏幕，不看手。",
+      "type": "block",
+      "content": "fjfj jfjf\njf jf\nfj jf fjfj"
+    },
+    {
+      "text": "再回到组合练习，确认手指还能找到回去的路。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf jf\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "用到目前为止学过的所有键，最后再练一轮。",
+      "type": "block",
+      "content": "fjfjfj jfjfjf\njf jf\nfj fj"
+    }
+  ]
+}

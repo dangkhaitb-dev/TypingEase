@@ -1,0 +1,118 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "İ ve L",
+  "summary": "Yeni tuşlar: İ ve L. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "i",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: İ ve L. Bunlara sol yüzük parmağı ve sağ yüzük parmağı basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. İ ve L artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "LR",
+      "text": "Bu tuşa sol yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için İ tuşuna bas"
+    },
+    {
+      "newKey": "i",
+      "text": "Yalnızca İ ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "eai k ea\ni i ii\niii"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RR",
+      "text": "Bu tuşa sağ yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için L tuşuna bas"
+    },
+    {
+      "newKey": "l",
+      "text": "Yalnızca L ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "iii llll\nililil lilili\nil li"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "illi",
+        "llli",
+        "ilii",
+        "llil",
+        "lii",
+        "ii",
+        "iil",
+        "illl",
+        "lill",
+        "lli"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "akli kail\nmla iek ml\nai ia aiai"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ekle al el ile\nile el aile ekim\nekim kelime kala kalk"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "elma",
+        "ek",
+        "emek",
+        "kek",
+        "kalem",
+        "kelime",
+        "el",
+        "ekmek",
+        "a",
+        "ekim"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık İ tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kalk ele kelime ak\nel kal elle ekle\nkek a kala ilk"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "li il\nika le ik\nil li ilil"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ile kalk aile al\nekle ilk ele kalem\nelma el ekmek kelime"
+    }
+  ]
+}

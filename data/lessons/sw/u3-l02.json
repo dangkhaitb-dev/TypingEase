@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "Safu ya ukingo",
+  "summary": "Safu ya ukingo wa kulia: vitufe sita, vyote vya kidole kidogo.",
+  "newKeys": [
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Kidole kidogo cha kulia kinabeba vitufe vingi kuliko kidole kingine chochote, na vile vya ukingo ndivyo vinavyofanyiwa mazoezi kidogo kuliko vyote. Viko mbali na safu ya msingi kuliko vingine, kwa hiyo mbinu ni ileile: toka, bonyeza na rudi, bila kuuvuta mkono nyuma yake.",
+  "congrats": "Safu hiyo ndiyo inayoachwa nusu katika karibu kila kozi. Si katika yako tena.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RP",
+      "text": "Vitufe vya ukingo wa kulia, vyote ni vya kidole kidogo. Ndivyo vinavyokinyoosha kidole hicho mbali zaidi, na ndivyo vinavyofanyiwa mazoezi kidogo zaidi baadaye.",
+      "hint": "Bonyeza / ili kuendelea"
+    },
+    {
+      "newKeys": [
+        "/",
+        "-"
+      ],
+      "text": "Sasa / na -. Kidole kidogo kinatoka nje na kurudi; mkono unabaki palepale.",
+      "type": "block",
+      "content": "/-/- -/-/\n/- -/\nj-d /f j-"
+    },
+    {
+      "newKeys": [
+        "=",
+        "["
+      ],
+      "text": "Sasa = na [. Kidole kidogo kinatoka nje na kurudi; mkono unabaki palepale.",
+      "type": "block",
+      "content": "[= =[\n=fj [d =f\n=[ [= =[=["
+    },
+    {
+      "seconds": 20,
+      "text": "Mfululizo na vitufe vya safu hii ulivyonavyo hadi sasa.",
+      "type": "burst",
+      "tokens": [
+        "[-",
+        "-=",
+        "--",
+        "[/",
+        "-/",
+        "/[",
+        "[=",
+        "/-",
+        "-[",
+        "[["
+      ]
+    },
+    {
+      "newKeys": [
+        "]",
+        "\\"
+      ],
+      "text": "Sasa ] na \\. Kidole kidogo kinatoka nje na kurudi; mkono unabaki palepale.",
+      "type": "block",
+      "content": "]\\ ]\\\n]fd \\j ]f\n]\\ \\] ]\\]\\"
+    },
+    {
+      "text": "Vyote sita pamoja. Hapa ndipo kifundo cha mkono hujipinda zaidi kama kidole hakirudi kwenye safu ya msingi.",
+      "type": "block",
+      "content": "f=/ d\\- f=\n\\] ]\\ \\]\\]\n\\\\\\\\ ==== --- /// [[[ ]]]]"
+    },
+    {
+      "seconds": 25,
+      "text": "Maneno tena, ili kulegeza mkono baada ya ukingo huo wote.",
+      "type": "burst",
+      "tokens": [
+        "zaa",
+        "msichana",
+        "zeituni",
+        "hafla",
+        "uji",
+        "kung'oa",
+        "kua",
+        "rudia",
+        "yeyote",
+        "eleza",
+        "yule",
+        "viatu"
+      ]
+    },
+    {
+      "text": "Turudi kwenye maneno, na kibodi nzima ikiwa tayari.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jibu rudi chumba kipaji\ntaifa chakula kusikia dola\njiko ukweli kupata zamani"
+    },
+    {
+      "text": "Sentensi kamili ili kufunga masomo ya vitufe.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Tunapanda miti mingi kila mwaka.\nChai hii ni moto sana.\nVidole vyako vinarudi kwenye safu ya msingi."
+    }
+  ]
+}

@@ -1,0 +1,136 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-p",
+  "title": "Q ve P",
+  "summary": "Yeni tuşlar: Q ve P. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "q",
+    "p"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş",
+    "g",
+    "h",
+    "e",
+    "ı",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: Q ve P. Bunlara sol serçe parmak ve sağ serçe parmak basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. Q ve P artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LP",
+      "text": "Bu tuşa sol serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Q tuşuna bas"
+    },
+    {
+      "newKey": "q",
+      "text": "Yalnızca Q ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "qdf j qd\nq q qq\nqqqq"
+    },
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "RP",
+      "text": "Bu tuşa sağ serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için P tuşuna bas"
+    },
+    {
+      "newKey": "p",
+      "text": "Yalnızca P ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "qpqp pqpq\nqp pq\njfq dp jf"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "pqq",
+        "qpqp",
+        "ppqq",
+        "ppq",
+        "pqqp",
+        "pqpp",
+        "qpq",
+        "qpp",
+        "qqqq",
+        "qqqp"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "ffff jjjj qqqq ppp\nqpqpqp pqpqpq\nfjqp pqjf"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "program toplantı parmak pamuk\nkaptan patates yaprak kaplan\nperde pay dolap yapmak"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "a",
+        "her",
+        "fakat",
+        "cadde",
+        "doktor",
+        "tuşa",
+        "dua",
+        "can",
+        "kahve",
+        "tarla"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık P tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mahalle salı perde saklı\ndal plan sayı ama\nkahve kalas adada dede"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "qpqpqp pqpqpq\nqp pq\npfq jd pf"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "laf kas mont mutfakta\nşu hal odalar artık\naltı oy kanat esas"
+    }
+  ]
+}

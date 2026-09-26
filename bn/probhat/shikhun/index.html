@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="bn" data-course="bn-probhat">
+  <head>
+    <!-- SINH TỰ ĐỘNG bằng scripts/build-family-pages.js từ bn/shikhun/index.html. Sửa trang gốc rồi chạy lại. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>পাঠ · TypingEase</title>
+    <meta name="description" content="TypingEase-এর পাঠ চালানোর পাতা: একবারে একটি স্ক্রিন, সঙ্গে কিবোর্ড আর হাত, যা দেখায় কোন আঙুল কোথায় যাবে।" />
+    <!-- Ứng dụng, không phải trang đích: bài tập không có giá trị tìm kiếm và đường dẫn nằm trong
+         hash, nên nó đứng ngoài chỉ mục. Không có hreflang cho trang không ai nên lập chỉ mục. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://typingease.site/bn/probhat/shikhun/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/player.css" />
+  </head>
+  <body class="player-page">
+    <div class="player" id="player">
+      <header class="player-topbar">
+        <a class="pt-back" href="/bn/probhat/" id="pt-back">← কোর্স</a>
+        <div class="pt-title">
+          <span id="pt-unit"></span>
+          <strong id="pt-lesson">লোড হচ্ছে…</strong>
+        </div>
+        <div class="pt-right">
+          <span class="pt-screen" id="pt-screen"></span>
+          <button class="pt-redo" id="pt-redo" type="button" title="পাঠটি আবার শুরু করুন" aria-label="পাঠটি আবার শুরু করুন">↻</button>
+          <button class="pt-toggle" id="pt-sound" type="button" aria-pressed="false" title="কী-এর শব্দ (Alt+S)" aria-label="কী-এর শব্দ">🔊</button>
+          <button class="pt-toggle" id="pt-hands" type="button" aria-pressed="true" title="হাত কী অনুসরণ করবে (Alt+H)" aria-label="হাত কী অনুসরণ করবে">✋</button>
+          <button class="pt-redo" id="pt-keyboard" type="button" title="কিবোর্ডের সেটিংস (Alt+K)" aria-label="কিবোর্ডের সেটিংস">⚙</button>
+        </div>
+      </header>
+
+      <div class="progress-segments" id="pt-progress" role="progressbar" aria-label="পাঠের অগ্রগতি" aria-valuemin="0" aria-valuenow="0"></div>
+
+      <div class="player-notes" id="player-note" hidden></div>
+
+      <main class="player-stage is-loading" id="stage">
+        <section class="card"><p class="intro-text">পাঠ লোড হচ্ছে…</p></section>
+      </main>
+
+      <div class="player-board keyboard-demo" id="board" aria-hidden="true"></div>
+
+      <p class="player-live" id="live" role="status" aria-live="polite"></p>
+
+      <label class="sr-only" for="player-input">ওপরের লাইনটি টাইপ করুন</label>
+      <textarea class="player-input" id="player-input" rows="1" autocomplete="off" autocapitalize="off"
+        autocorrect="off" spellcheck="false" inputmode="text" aria-describedby="live"></textarea>
+
+      <button class="tap-to-type" id="tap-to-type" type="button">টাইপ করতে ছুঁয়ে দিন</button>
+    </div>
+
+    <!-- ui.bn.js trước tiên: mỗi module bên dưới trải nó lên bảng mặc định tiếng Việt của mình.
+         Script thường có chủ ý — script thường chạy trước module có defer, và keyboard/boot.js
+         dựa vào đúng điều đó. Không có telex-match.js: Telex là kiểu gõ tiếng Việt.
+         data/words/bn.js phải đứng trước weak-keys.js, file đó đọc danh sách từ ở đây. -->
+    <script src="/i18n/ui.bn.js"></script>
+    <script src="/profile.js"></script>
+    <script src="/data/words/bn.js"></script>
+    <script src="/weak-keys.js"></script>
+    <script src="/data/curriculum.bn-probhat.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/player.js"></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

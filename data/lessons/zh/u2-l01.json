@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "T 和 Y",
+  "summary": "新键：T 和 Y。手指伸出去，按下，再回来。",
+  "newKeys": [
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "本课的新键：T 和 Y。由左手食指 和 右手食指负责。动作总是一样：伸出去，按下，回来。练的正是回来这一步，因为手指停在外面，下一个字母就会打错。",
+  "congrats": "手指下的键越来越多了。如果 T 和 Y 已经不用找就能打出来，这一课就完成了它的任务。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "LI",
+      "text": "这个键由左手食指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 T 继续"
+    },
+    {
+      "newKey": "t",
+      "text": "只有 T 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "tfj d tf\nt t tt\ntttt"
+    },
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "RI",
+      "text": "这个键由右手食指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 Y 继续"
+    },
+    {
+      "newKey": "y",
+      "text": "只有 Y 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "jyd ft jy\nty yt tyty\nyyy ttt"
+    },
+    {
+      "seconds": 20,
+      "text": "一组接一组的短组合。就算有打错的，也一直打到最后。",
+      "type": "burst",
+      "tokens": [
+        "tty",
+        "ttyy",
+        "ttt",
+        "ytty",
+        "tttt",
+        "ttyt",
+        "ttty",
+        "tyt",
+        "tyty",
+        "yty"
+      ]
+    },
+    {
+      "text": "新键和旧键混在一起，就像以后在拼音里出现的那样。",
+      "type": "block",
+      "content": "yt ty ytyt\ntttt jjj fff yyy\ntyty ytyt"
+    },
+    {
+      "text": "含有新键的真实拼音。每个词一口气打完，不要一个字母一个字母地想。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dayu ye yiyi yishu\nshiti yushi tushu keti\nshiyue yuedui yigui yiju"
+    },
+    {
+      "seconds": 25,
+      "text": "一组组短拼音，里面有新学的键。",
+      "type": "burst",
+      "tokens": [
+        "shihe",
+        "shafa",
+        "shuai",
+        "yiju",
+        "gua",
+        "sha",
+        "jiaru",
+        "shuhua",
+        "tie",
+        "kuaile"
+      ]
+    },
+    {
+      "text": "现在重点放在 T 上，这是你按得最少的键。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "eryue yuedu yeshi shijue\nyeli yuyue fu lijie\ngudai ru guai tie"
+    },
+    {
+      "text": "再回到组合练习，确认手指还能找到回去的路。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "yt ty\njtd yf jt\nty yt tyty"
+    },
+    {
+      "text": "你会的全部内容，混在一起。留意有多少词已经不用想就打出来了。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "shui tu kuaile gua\nshuaige yuedui gudai huai\nkaifa shuyu yishi du"
+    }
+  ]
+}

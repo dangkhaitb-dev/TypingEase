@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "Weak keys",
+  "summary": "A drill generated from the keys you miss most.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y",
+    "r",
+    "u",
+    "w",
+    "f"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "ascii",
+  "intro": "This drill is built from the keys you miss, not from a fixed list. When you change, it changes.",
+  "congrats": "Weak keys stop being weak with a minute a day, not an hour a month.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "A drill built from the keys you miss most. It changes every time you practise."
+    }
+  ]
+}

@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, ! 和 @",
+  "summary": "本课内容：`, ~, ! 和 @。",
+  "newKeys": [
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "课程还没用到的按键：`, ~, ! 和 @。一部分要按 Shift，由另一只手的小指负责；其余的有自己的键，课程之前还没用过。",
+  "congrats": "`, ~, ! 和 @：现在已经在你的手指下了。另一只手按 Shift，符号就和旁边的字母一样容易打出。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "` 由左手小指负责。找到它，按一下，手指再回到基准行。",
+      "hint": "按 ` 继续"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "先单独练 `，再放到它平时出现的地方。",
+      "content": "`` ` `bixu` `zhenshi` `laoshi`\n`` ` `yinyue` `shu` `qihou`\n`` ` `nin` `ri` `jiayi`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "先单独练 ~，再放到它平时出现的地方。",
+      "content": "~~ ~ ~95 ~88 ~63\n~~ ~ ~35 ~23 ~16\n~~ ~ ~28 ~47 ~26"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "! 由左手小指负责，另一只手同时按住 Shift。找到它，按一下，手指再回到基准行。",
+      "hint": "按 ! 继续"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "先单独练 !，再放到它平时出现的地方。",
+      "content": "!! ! qihou! tongxue! tu!\n!! ! zhuanjia! tedi! qingchu!\n!! ! mianbao! zhengque! zao!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "@ 由左手无名指负责，另一只手同时按住 Shift。找到它，按一下，手指再回到基准行。",
+      "hint": "按 @ 继续"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "先单独练 @，再放到它平时出现的地方。",
+      "content": "@@ @ nin@shipin zuqiu@pinming renyuan@ziji\n@@ @ xiaoshi@ning xiche@mu beizi@shumu\n@@ @ zhongyao@xingming nongcun@lei yue@fa"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "一组组短片段，里面都有这些字符。",
+      "tokens": [
+        "~87",
+        "~53",
+        "`bowuguan`",
+        "riqi@xiaoshi",
+        "~28",
+        "yiqi!",
+        "jiehe!",
+        "`lishi`",
+        "zhongwen@qiantian",
+        "feiji!"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "本课的全部内容，混在一起。",
+      "content": "jiating@fandian `mingnian` ~46 guai@hudie\n~43 jiu! la! jiehe!\n`jiejie` paiqiu! mian@yinci tuijian!"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "再练单词，符号放在它该在的位置。",
+      "content": "xianzai@keshi guanxi ditu@hanjia xianjin ~16\nsha@qidai zhongyao ~89 shijue gangcai@renmin\njieshi@nver zhijie duo! kafei xianjin@lvtu"
+    }
+  ]
+}

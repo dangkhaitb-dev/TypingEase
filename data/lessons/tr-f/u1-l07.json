@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "Ğ ve N",
+  "summary": "Yeni tuşlar: Ğ ve N. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "ğ",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: Ğ ve N. Bunlara sol orta parmak ve sağ orta parmak basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. Ğ ve N artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "ğ",
+      "finger": "LM",
+      "text": "Bu tuşa sol orta parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Ğ tuşuna bas"
+    },
+    {
+      "newKey": "ğ",
+      "text": "Yalnızca Ğ ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "ğ ğ\nğea k ğe\nğ ğ ğğ"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RM",
+      "text": "Bu tuşa sağ orta parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için N tuşuna bas"
+    },
+    {
+      "newKey": "n",
+      "text": "Yalnızca N ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "nğ ğn\nağe nk ağ\nğn nğ ğnğn"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "nğ",
+        "ğnn",
+        "nğğğ",
+        "nnğ",
+        "ğnğn",
+        "ğnnğ",
+        "nn",
+        "nğn",
+        "nnğn",
+        "ğğnn"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "aaaa ğğğğ kkkk nnn\nğnğnğn nğnğnğ\nknğa ankğ"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "an anne yağ kanal\nkanun mümkün unut metin\nana yan tane ayna"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "mal",
+        "yan",
+        "iğne",
+        "unut",
+        "ek",
+        "ütü",
+        "yemek",
+        "almak",
+        "ak",
+        "kalk"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık Ğ tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ele tüm iyi kutu\nkat kalk aile menü\nnane kayak tane ek"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ğğğğ nnnn\nğnğnğn nğnğnğ\nğn nğ"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ya ülke ütü anne\nmum al kat kal\nana ama an ele"
+    }
+  ]
+}

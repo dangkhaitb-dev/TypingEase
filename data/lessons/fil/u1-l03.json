@@ -1,0 +1,117 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "S at L",
+  "summary": "Mga bagong key: S at L. Lumalabas ang daliri, pumipindot, at bumabalik.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Mga bagong key sa araling ito: S at L. Para sila sa kaliwang palasingsingan at kanang palasingsingan. Laging pareho ang galaw — labas, pindot, balik — at ang pagbalik ang sinasanay, dahil ang daliring naiwan sa labas ang sumisira sa susunod na titik.",
+  "congrats": "Mas maraming key sa ilalim ng mga daliri mo. Kung lumalabas na ang S at L nang hindi hinahanap, nagawa na ng aralin ang trabaho nito.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "LR",
+      "text": "Ang key na ito ay para sa kaliwang palasingsingan. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang S para magpatuloy"
+    },
+    {
+      "newKey": "s",
+      "text": "S lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "dfs j df\ns s ss\nsss"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RR",
+      "text": "Ang key na ito ay para sa kanang palasingsingan. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang L para magpatuloy"
+    },
+    {
+      "newKey": "l",
+      "text": "L lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "sss llll\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 20,
+      "text": "Maiikling grupo, sunod-sunod. Ituloy hanggang dulo kahit may mamali.",
+      "type": "burst",
+      "tokens": [
+        "slls",
+        "llls",
+        "slss",
+        "llsl",
+        "lss",
+        "ss",
+        "ssl",
+        "slll",
+        "lsll",
+        "lls"
+      ]
+    },
+    {
+      "text": "Ang mga bagong key na kahalo ng mga luma, gaya ng paglabas nila sa loob ng mga salita.",
+      "type": "block",
+      "content": "fjls jfsl\nklf sdj kl\nfs sf fsfs"
+    },
+    {
+      "text": "Ang dalawang bagong key ulit. Wala pang salitang matitipa sa kanila, at inaasahan iyon.",
+      "type": "block",
+      "content": "lll sss\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 25,
+      "text": "Mas mahahabang grupo. Hindi pa nakakatulong ang pagmamadali.",
+      "type": "burst",
+      "tokens": [
+        "llll",
+        "ss",
+        "lsl",
+        "ssll",
+        "lsll",
+        "sss",
+        "llss",
+        "llls",
+        "llsl",
+        "slss",
+        "slls",
+        "lssl"
+      ]
+    },
+    {
+      "text": "Lahat ng mayroon ka na, sa maiikling grupo. Sa screen ang tingin, hindi sa mga kamay.",
+      "type": "block",
+      "content": "jkl dsf jk\ndf fd dfdf\nllll jjj ssss fff ddd"
+    },
+    {
+      "text": "Balik muna sa mga pattern, para matiyak na nakakabalik pa rin ang mga daliri.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ls sl\nsjf ld sj\nsl ls slsl"
+    },
+    {
+      "text": "Isang huling ikot gamit ang lahat ng natutunan mo hanggang dito.",
+      "type": "block",
+      "content": "ksl dfj ks\njf fj jfjf\ndddd fff kkkk jjj"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A e S",
+  "summary": "Tasti nuovi: A e S. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "a",
+    "s"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: A e S. Si premono con il mignolo sinistro e il mignolo destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se A e S ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "Questo tasto lo prende il mignolo sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi A per continuare"
+    },
+    {
+      "newKey": "a",
+      "text": "Solo A e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "a a\nuha e uh\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "RP",
+      "text": "Questo tasto lo prende il mignolo destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi S per continuare"
+    },
+    {
+      "newKey": "s",
+      "text": "Solo S e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "asas sasa\nas sa\nseu ha se"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "saaa",
+        "aas",
+        "aaa",
+        "assa",
+        "sass",
+        "ssaa",
+        "ass",
+        "aass",
+        "sasa",
+        "asaa"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "as sa asas\naaa ssss uuuu hhh\nasas sasa"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "se estate attesa sotto\nanno state sua sa\nsa anno su una"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "uno",
+        "sua",
+        "non",
+        "sono",
+        "e",
+        "estate",
+        "tu",
+        "ne",
+        "anno",
+        "state"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su A, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sa state uno attesa\no una un sotto\ne tutta tutto anno"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "asasas sasasa\nas sa\nhsa eu hs"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "su ho tu non\ntutta tutto nonno sua\nsa e otto sono"
+    }
+  ]
+}

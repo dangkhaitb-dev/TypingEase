@@ -1,0 +1,121 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "g-h",
+  "title": "La virgule et C",
+  "summary": "Nouvelles touches : la virgule et C. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    ",",
+    "c"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : la virgule et C. Elles se tapent avec l'index gauche et l'index droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si la virgule et C sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "LI",
+      "text": "C'est l'index gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur , pour continuer"
+    },
+    {
+      "newKey": ",",
+      "text": "Seulement , et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": ",,,,\n,,,, ,,,,\n, ,"
+    },
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur C pour continuer"
+    },
+    {
+      "newKey": "c",
+      "text": "Seulement C et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": ",,, cccc\n,c,c,c c,c,c,\n,c c,"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        ",c,c",
+        "cccc",
+        ",c,",
+        "cc,",
+        ",,",
+        ",,c,",
+        ",cc",
+        ",c",
+        ",cc,",
+        "c,c,"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "ec ce ecec\nccc tttt eeee ,,,,\n,c,c,c c,c,c,"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "titres te tes rues\nsite russe tirs tu\nun ses ensuite ainsi"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "ensuite",
+        "autres",
+        "sites",
+        "centre",
+        "triste",
+        "nuits",
+        "un",
+        "tu",
+        "tir",
+        "rue"
+      ]
+    },
+    {
+      "text": "Encore les deux nouvelles touches. Il n'y a pas encore de mots à écrire avec, et c'est normal.",
+      "type": "block",
+      "content": ",,, ccc\n,c,c c,c,\nc, ,c"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",c c, ,c,c\nccc ,,,,\n,c,c c,c,"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tir triste sites un\ntant ses tu ensuite\nsur rues tirs ta"
+    }
+  ]
+}

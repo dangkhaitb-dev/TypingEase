@@ -279,10 +279,10 @@ window.TypingEaseWords.en = {
     // typeable from u2-l08 (z . , ')
     "i don't look at the keys any more",
     "it isn't speed that matters first",
-    "she can't type fast yet, and that's fine",
+    "she can't type fast yet and that's fine",
     "we're going to read the whole page",
     "that's the size of it",
-    "you'll get there, one line at a time"
+    "you'll get there one line at a time"
   ],
 
   /* The runtime pool weak-keys.js draws from. Unit-1-typeable words come first, on

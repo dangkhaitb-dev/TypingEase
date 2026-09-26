@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="bn">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>আপনার টাইপিংয়ের অগ্রগতি | TypingEase</title>
+    <meta name="description" content="আপনার টাইপিং কেমন এগোচ্ছে দেখুন: প্রতিটি পাঠের স্কোর, আপনার সেরা WPM আর নির্ভুলতা, কোন কীগুলোতে ভুল হয় তার হিট ম্যাপ, টানা কত দিন অনুশীলন করলেন আর রোজকার লক্ষ্য।" />
+    <link rel="canonical" href="https://typingease.site/bn/agragati/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/bn.mjs, progress trong
+         i18n/ui.bn.js và bai-hoc/config.bn.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="প্রধান মেনু">
+        <a href="/bn/">অনুশীলন</a>
+        <a data-route="lessons" href="/bn/path/">কোর্স</a>
+        <a class="active" href="/bn/agragati/">অগ্রগতি</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="ভাষা ও কিবোর্ড বেছে নিন">প্রথম পাতা</a><a class="secondary-button" data-route="learn" href="/bn/shikhun/">শেখা চালিয়ে যান <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> আপনি কেমন করছেন</p>
+        <h1>আপনার টাইপিংয়ের অগ্রগতি</h1>
+        <p class="prog-intro">এই পাতার প্রতিটি সংখ্যা এই ডিভাইসেই থাকে, কোথাও পাঠানো হয় না। আরও একটি পাঠ করুন, সংখ্যাগুলো নিজে থেকেই বদলে যাবে।</p>
+        <nav class="prog-courses" id="prog-courses" aria-label="কোর্স">
+          <a href="/bn/agragati/?course=bn" data-course="bn" aria-current="page">জাতীয়</a>
+          <a href="/bn/agragati/?course=bn-probhat" data-course="bn-probhat">প্রভাত</a>
+        </nav>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 টানা 0 দিন</span>
+          <span id="strip-today">আজ 0 মিনিট</span>
+          <span id="strip-level">স্তর: শুরু করছেন</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="সারসংক্ষেপ">
+        <div><span>শেষ করা পাঠ</span><strong id="sum-lessons">0 / 37</strong></div>
+        <div><span>জমানো তারা</span><strong id="sum-stars">0</strong></div>
+        <div><span>সেরা WPM</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>সেরা নির্ভুলতা</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> মাইলফলক</p>
+            <h2 id="badges-title">ব্যাজ</h2>
+            <p>প্রতিটি ব্যাজ নিচের তালিকার একটি আসল সংখ্যার সঙ্গে বাঁধা — টাইপ করা ছাড়া কোনোটি পাওয়ার আর কোনো উপায় নেই।</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">আজকের লক্ষ্য</p>
+          <h3 id="daily-goal-title">0 / 10 মিনিট</h3>
+          <p id="daily-goal-status">🔥 টানা 0 দিন</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">সেরা: টানা 0 দিন</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="রোজকার লক্ষ্য বেছে নিন">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 মিনিট</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 মিনিট</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 মিনিট</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 মিনিট</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">আপনার কোচ</p><h3 id="coach-title">আপনি এখন কোথায়</h3></div>
+          <span class="coach-level" id="coach-level">শুরু করছেন</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="সাম্প্রতিক অগ্রগতি" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">আর ২টি পাঠ করলেই অগ্রগতির রেখা আঁকার মতো তথ্য জমবে।</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">একটি পাঠ টাইপ করুন, তাহলেই এই পাতা বুঝবে আপনি কোথায় আছেন।</p>
+        <a class="coach-action" id="coach-action" href="/bn/shikhun/">পাঠ ১ শুরু করুন →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> কী ধরে ধরে</p>
+          <h3 id="heat-title">কিবোর্ডের হিট ম্যাপ</h3>
+          <p>সবুজ কীগুলো আপনি নির্ভুলভাবে চাপেন, হলুদগুলোতে কখনো ঠিক কখনো ভুল হয়, আর লালগুলো আপনার গতি কমিয়ে দিচ্ছে। কোনো কী তখনই রং পায়, যখন সেটি এতবার টাইপ করা হয়েছে যে কাজের কিছু বলা যায়।</p>
+          <p class="heat-empty" id="heat-empty">এখনো যথেষ্ট তথ্য নেই — কয়েকটি পাঠ করে আবার আসুন।</p>
+          <div class="heat-legend" id="heat-legend" aria-label="প্রতিটি কী-এর নির্ভুলতা" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="{n}টি পাঠের কোর্স"><i></i> 37টি পাঠের কোর্স</p>
+            <h2 id="results-title">প্রতিটি পাঠের স্কোর</h2>
+            <p>প্রতিটি পাঠে আপনার সেরা চেষ্টা, এই ডিভাইসেই রাখা।</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">ইতিহাস মুছুন</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>পাঠ</th><th>শেষ করা স্ক্রিন</th><th>তারা</th><th>সেরা WPM</th><th>নির্ভুলতা</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> এগিয়ে চলুন</p>
+          <h2 id="prog-explore-title">এরপর কী করবেন</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/bn/path/">
+            <h3>পুরো কোর্স</h3>
+            <p>সব ইউনিট ক্রম অনুযায়ী। যে পাঠ আবার করতে চান সেখানে ফিরে যান, অথবা পরের ইউনিট আগেভাগেই খুলে নিন।</p>
+            <span>কোর্স দেখুন <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>নিজের কিবোর্ডে টাইপ করুন</h3>
+            <p>জাতীয়, প্রভাত, QWERTY, AZERTY, আরবি, JIS — ১১৯টি আসল লেআউট, আর কোর্স চলে আপনার বেছে নেওয়া লেআউট অনুযায়ী।</p>
+            <span>লেআউটগুলো দেখুন <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>একটু ধীরে চলুন, অনেক দূর যাবেন।</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/bn/about/">আমাদের সম্পর্কে</a><span aria-hidden="true"> · </span><a href="/bn/terms/">পরিষেবার শর্তাবলি</a><span aria-hidden="true"> · </span><a href="/bn/privacy/">গোপনীয়তা নীতি</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.bn.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.bn.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"bn":{"learn":"/bn/shikhun/","lessons":"/bn/path/"},"bn-probhat":{"learn":"/bn/probhat/shikhun/","lessons":"/bn/probhat/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "bn";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

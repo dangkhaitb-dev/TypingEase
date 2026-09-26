@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Wiederholung",
+  "summary": "Keine neue Taste. Alles Bisherige, dichter und schneller.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h",
+    "w",
+    "k",
+    "f",
+    "v",
+    "ä",
+    "b",
+    "m",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Diese Lektion bringt nichts Neues bei. Jetzt zeigt sich, ob das Bisherige ohne Nachdenken kommt, und das ist etwas anderes, als zu wissen, wo jede Taste liegt.",
+  "congrats": "Nichts Neues und trotzdem schneller. Genau das sollte passieren.",
+  "screens": [
+    {
+      "text": "Zum Anfang einzelne Wörter. Ohne Eile: Tempo kommt aus Genauigkeit, nie umgekehrt.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tief alle gespräch vor\nländer berg chef bruder\nsand ihr der brief"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine kurze Runde. Mach die Liste zu Ende, auch wenn dir eins durchrutscht.",
+      "type": "burst",
+      "tokens": [
+        "wäsche",
+        "bitte",
+        "wald",
+        "essen",
+        "mein",
+        "viel",
+        "wand",
+        "täglich",
+        "freude",
+        "fluss",
+        "finden",
+        "kleider"
+      ]
+    },
+    {
+      "text": "Fünf Wörter pro Zeile. Lass die Augen den Fingern vorausgehen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "das diese hier viele ufer\nkrise kaiser sorge räume es\ngold nehmen bäume rock kappe"
+    },
+    {
+      "text": "Noch einmal Muster, um zu prüfen, ob die Finger weiter in die Grundstellung zurückkehren.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "tan iur ta\nen ne enen\nrrr nnn eeee aaa"
+    },
+    {
+      "text": "Kurze Wörter in gutem Tempo. Die sollten inzwischen fast von allein kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hof spur vor traum\npass ist licht nuss\nbett käse nach an"
+    },
+    {
+      "seconds": 30,
+      "text": "Mehr Zeit und mehr Wörter. Halte dasselbe Tempo von Anfang bis Ende.",
+      "type": "burst",
+      "tokens": [
+        "wählen",
+        "licht",
+        "morgen",
+        "test",
+        "warm",
+        "reise",
+        "wald",
+        "butter",
+        "ohr",
+        "dass",
+        "erde",
+        "sand",
+        "tasse",
+        "plan"
+      ]
+    },
+    {
+      "text": "Ganze Sätze. Hier zeigt sich, ob die Hand von allein zurückfindet.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ende machen halal pferd\npass abend kein aber\nrichtig ass seid rock"
+    },
+    {
+      "text": "Der letzte Durchgang. Wenn du bis hierhin nicht auf die Tastatur gesehen hast, ist die Lektion erledigt.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "verkauf sich vor kein wetter\nwählen ende teil beruf das\nversuch keine träumen bauen tiger"
+    }
+  ]
+}

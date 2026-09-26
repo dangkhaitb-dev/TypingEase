@@ -1,0 +1,171 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": ":, {, } and |",
+  "summary": "The last keys: :, {, } and |.",
+  "newKeys": [
+    ":",
+    "{",
+    "}",
+    "|"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y",
+    "r",
+    "u",
+    "w",
+    "f",
+    "b",
+    "j",
+    "p",
+    "d",
+    "m",
+    "k",
+    "l",
+    "c",
+    "q",
+    ";",
+    "v",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    ":",
+    "{",
+    "}",
+    "|"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: :, {, } and |. Each of them is Shift plus a key your fingers already know — Shift with the little finger of the other hand.",
+  "congrats": ":, {, } and |: under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RP",
+      "text": ": belongs to your right little finger, with Shift held by the other hand.",
+      "hint": "Press : to continue"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": ": on its own first, then where it is actually used.",
+      "content": ":: : mix: deep: pair:\n:: : piece: grill: fresh:\n:: : seat: taxi: various:"
+    },
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "{ belongs to your right little finger, with Shift held by the other hand.",
+      "hint": "Press { to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "{ on its own first, then where it is actually used.",
+      "content": "{{ { {older {express {tooth\n{{ { {sled {milk {tone\n{{ { {neat {lure {space"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "} belongs to your right little finger, with Shift held by the other hand.",
+      "hint": "Press } to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "} on its own first, then where it is actually used.",
+      "content": "}} } {buy} {meat} {cloud}\n}} } {i'll} {shade} {plan}\n}} } {examine} {nature} {exercise}"
+    },
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "RP",
+      "text": "| belongs to your right little finger, with Shift held by the other hand.",
+      "hint": "Press | to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "| on its own first, then where it is actually used.",
+      "content": "|| | ears|thing later|citizen yard|sides\n|| | live|wheat kids|shield weigh|bought\n|| | mail|common nature|sold fair|moment"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "work|because",
+        "{lash}",
+        "{remember}",
+        "{saga}",
+        "{latest}",
+        "{thus}",
+        "held|four",
+        "{silk}",
+        "{lass}",
+        "{feels}"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "{moves} fad: letter|gold {wheat}\n{widow} {quickly} glares|gather {seems}\n{tools} {both} {spring} along:"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "{you'll} watch {rail} french {bird}\noffice: after {morning} apply {high}\n{agree} suits {used} meet well:"
+    }
+  ]
+}

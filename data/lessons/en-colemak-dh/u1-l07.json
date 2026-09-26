@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "F and U",
+  "summary": "Two new keys: F and U. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "f",
+    "u"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "g",
+    "m",
+    "f",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: F and U. They belong to your left middle finger and your right middle finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If F and U already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "LM",
+      "text": "This key belongs to your left middle finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press F to continue"
+    },
+    {
+      "newKey": "f",
+      "text": "Only F and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "f f\nfst n fs\nf f ff"
+    },
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "RM",
+      "text": "This key belongs to your right middle finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press U to continue"
+    },
+    {
+      "newKey": "u",
+      "text": "Only U and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "uf fu\ntfs un tf\nfu uf fufu"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "uf",
+        "fuu",
+        "ufff",
+        "uuf",
+        "fufu",
+        "fuuf",
+        "uu",
+        "ufu",
+        "uufu",
+        "ffuu"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "tttt ffff nnnn uuu\nfufufu ufufuf\nnuft tunf"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "first use fast our\nroof farm urges measure\nreef grief tour soft"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "me",
+        "is",
+        "roots",
+        "for",
+        "tire",
+        "got",
+        "form",
+        "no",
+        "more",
+        "ran"
+      ]
+    },
+    {
+      "text": "Now the weight is on F, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "for soon message users\nsages is soft saga\nseems main treats gear"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ffff uuuu\nfufufu ufufuf\nfu uf"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "gears see sense roots\niron saga times sages\nroot attention offers air"
+    }
+  ]
+}

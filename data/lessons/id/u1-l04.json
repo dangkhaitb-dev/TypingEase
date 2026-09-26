@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A dan titik koma",
+  "summary": "Tombol baru: A dan titik koma. Jari keluar, menekan, lalu kembali.",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tombol baru di pelajaran ini: A dan titik koma. Ditekan dengan kelingking kiri dan kelingking kanan. Gerakannya selalu sama — keluar, tekan, kembali — dan jalan pulang itulah yang dilatih, karena kalau jarinya tertinggal di luar, huruf berikutnya akan salah.",
+  "congrats": "Makin banyak tombol di bawah jarimu. Kalau A dan titik koma sudah keluar tanpa dicari, pelajaran ini sudah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "Tombol ini ditekan dengan kelingking kiri. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan A untuk lanjut"
+    },
+    {
+      "newKey": "a",
+      "text": "Hanya A dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RP",
+      "text": "Tombol ini ditekan dengan kelingking kanan. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan ; untuk lanjut"
+    },
+    {
+      "newKey": ";",
+      "text": "Hanya ; dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "a;a; ;a;a\na; ;a\n;df ja ;d"
+    },
+    {
+      "seconds": 20,
+      "text": "Kelompok pendek, satu demi satu. Terus sampai akhir meskipun ada yang meleset.",
+      "type": "burst",
+      "tokens": [
+        ";aaa",
+        "aa;",
+        "aaa",
+        "a;;a",
+        ";a;;",
+        ";;aa",
+        "a;;",
+        "aa;;",
+        ";a;a",
+        "a;aa"
+      ]
+    },
+    {
+      "text": "Tombol baru dicampur dengan yang lama, seperti nanti muncul di dalam kata.",
+      "type": "block",
+      "content": "a; ;a a;a;\naaa ;;;; ffff jjj\na;a; ;a;a"
+    },
+    {
+      "text": "Kata sungguhan dengan tombol baru. Ketik setiap kata dalam satu tarikan, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jaksa kas jala salak\njas fasal las dada\nsaja lada fasal kala"
+    },
+    {
+      "seconds": 25,
+      "text": "Rentetan kata pendek yang berisi tombol baru.",
+      "type": "burst",
+      "tokens": [
+        "jas",
+        "fasal",
+        "sajak",
+        "adas",
+        "kakak",
+        "laksa",
+        "dada",
+        "jaksa",
+        "kas",
+        "las"
+      ]
+    },
+    {
+      "text": "Sekarang bebannya di A, tombol yang paling jarang kamu tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "saja jala jas kala\nkas asal ada las\nlafal salak alas kakak"
+    },
+    {
+      "text": "Kembali ke pola sebentar, untuk memastikan jari masih menemukan jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "a;a;a; ;a;a;a\na; ;a\nj;a df j;"
+    },
+    {
+      "text": "Semua yang kamu punya, dicampur. Perhatikan berapa banyak kata yang sudah keluar tanpa dipikir.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "salak adas jaksa las\ndada lafal asas jaksa\nsaja jaksa lada lafal"
+    }
+  ]
+}

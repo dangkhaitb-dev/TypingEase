@@ -1,0 +1,134 @@
+{
+  "id": "u2-l04",
+  "unit": "u2",
+  "group": "start",
+  "order": 14,
+  "slug": "m-v",
+  "title": "M und P",
+  "summary": "Neue Tasten: M und P. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "m",
+    "p"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h",
+    "w",
+    "k",
+    "f",
+    "v",
+    "ä",
+    "b",
+    "m",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: M und P. Dafür sind der rechte Zeigefinger und der linke Zeigefinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn M und P ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RI",
+      "text": "Für diese Taste ist der rechte Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke M, um weiterzugehen"
+    },
+    {
+      "newKey": "m",
+      "text": "Nur M und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "ane m an\nm m mm\nmmmm"
+    },
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "LI",
+      "text": "Für diese Taste ist der linke Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke P, um weiterzugehen"
+    },
+    {
+      "newKey": "p",
+      "text": "Nur P und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "pppp mmmm\nmpmpmp pmpmpm\npm mp"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "mm",
+        "pmmm",
+        "ppmm",
+        "mpmp",
+        "mmmm",
+        "pmpm",
+        "ppm",
+        "pmpp",
+        "mp",
+        "mmmp"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "pm mp pmpm\neeee ppp mmmm nnn\nmpmpmp pmpmpm"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "springen warm milch kappe\npass beispiel papier oper\nkopf himmel markt spur"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "er",
+        "hall",
+        "essen",
+        "sprache",
+        "meer",
+        "nur",
+        "tiger",
+        "bringen",
+        "blau",
+        "viele"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf M — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ich äpfel während mit\nmorgen sand moment mund\nkopie wer kopf nacht"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "mpmp pmpm\npm pm\nane mp an"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "der vase plan vor\ngras wenn flagge fliege\nreise kuss steht bruder"
+    }
+  ]
+}

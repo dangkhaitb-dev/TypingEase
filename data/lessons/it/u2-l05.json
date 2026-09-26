@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Ripasso",
+  "summary": "Nessun tasto nuovo. Tutto il precedente, più di seguito e più in fretta.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ò",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Questa lezione non insegna niente di nuovo. È il momento di verificare che quello di prima esca senza pensarci, che è un'altra cosa rispetto a sapere dove sta ogni tasto.",
+  "congrats": "Niente di nuovo e comunque più in fretta. È esattamente quello che doveva succedere.",
+  "screens": [
+    {
+      "text": "Si comincia con parole sciolte. Senza fretta: la velocità nasce dalla precisione, mai il contrario.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "darò dei amici chiaro\navanti verdi casa avere\nuno delega legge neve"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica corta. Finisci la lista anche se qualcuna ti scappa.",
+      "type": "burst",
+      "tokens": [
+        "delle",
+        "madre",
+        "gradi",
+        "usare",
+        "neve",
+        "loro",
+        "colore",
+        "alto",
+        "camera",
+        "mai",
+        "grigia",
+        "sono"
+      ]
+    },
+    {
+      "text": "Cinque parole per riga. Lascia che gli occhi vadano avanti alle dita.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ad galla dea canto agire\nserie larga risultati domenica le\nteatrale dolce nome cena mattina"
+    },
+    {
+      "text": "Di nuovo gli schemi, per controllare che le dita tornino alla riga di riposo.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Parole corte, a buon ritmo. Queste dovrebbero uscire quasi da sole.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tigre mela canto nido\nmolti latte ci yoga\nverdi amici forte fuori"
+    },
+    {
+      "seconds": 30,
+      "text": "Più tempo e più parole. Tieni lo stesso ritmo dall'inizio alla fine.",
+      "type": "burst",
+      "tokens": [
+        "sole",
+        "foglia",
+        "cane",
+        "starò",
+        "giusta",
+        "forte",
+        "tali",
+        "figure",
+        "fila",
+        "ride",
+        "sala",
+        "mese",
+        "naturale",
+        "lei"
+      ]
+    },
+    {
+      "text": "Frasi intere. Qui si vede se la mano rientra da sola al suo posto.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "il treno arriva alle sette del mattino\nmio fratello studia medicina da tre anni\nogni mattina faccio una lunga camminata"
+    },
+    {
+      "text": "L'ultimo giro. Se sei arrivato fin qui senza guardare la tastiera, la lezione è fatta.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "contento anche chiaro stadio oro\nvivere centro sarò vento a\ncuoco foglia tavolo vita dirò"
+    }
+  ]
+}

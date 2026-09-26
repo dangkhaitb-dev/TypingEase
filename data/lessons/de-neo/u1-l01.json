@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "E und N, dazu die Leertaste",
+  "summary": "Die zwei Tasten mit der Erhebung, die Leertaste und die Gewohnheit, nicht nach unten zu sehen.",
+  "newKeys": [
+    "e",
+    "n",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Die beiden Tasten mit der kleinen Erhebung sind der Ausgangspunkt. Dort liegen die Zeigefinger und dort bleiben sie; alles andere im Kurs wird von dieser Stellung aus gemessen. Fang damit an, beide Hände aufzulegen und nur auf den Bildschirm zu sehen.",
+  "congrats": "Die Hände liegen jetzt richtig. Ab hier sind alle Tasten solche, die man aus dieser Stellung erreicht und wieder loslässt.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LI",
+      "text": "Für diese Taste ist der linke Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke E, um weiterzugehen"
+    },
+    {
+      "newKey": "e",
+      "text": "Nur E und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "e e ee\neeee\neeeeee eeeeee"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "Für diese Taste ist der rechte Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke N, um weiterzugehen"
+    },
+    {
+      "newKey": "n",
+      "text": "Nur N und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "ne ne\nne en nene\nen ne enen"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "Die Leertaste gehört dem rechten Daumen. Die Daumen machen sonst nichts, und deshalb muss man sie nie suchen.",
+      "hint": "Drücke die Leertaste, um weiterzugehen"
+    },
+    {
+      "newKey": " ",
+      "text": "Kurze Gruppen, durch Leerzeichen getrennt. Der rechte Daumen geht runter und wieder hoch; die anderen Finger bleiben liegen.",
+      "type": "block",
+      "content": "ne ne\nen ne enen\nnnnn eeee"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "een",
+        "ee",
+        "eeee",
+        "enn",
+        "eenn",
+        "nee",
+        "ene",
+        "neen",
+        "en",
+        "enee"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "en en\nen ne enen\neeee nnnn"
+    },
+    {
+      "text": "Noch einmal die beiden neuen Tasten. Es gibt damit noch keine Wörter zu schreiben, und das ist so gewollt.",
+      "type": "block",
+      "content": "en ne\nne ne\nne en nene"
+    },
+    {
+      "seconds": 25,
+      "text": "Etwas längere Gruppen. Eile hilft hier noch nichts.",
+      "type": "burst",
+      "tokens": [
+        "enen",
+        "ee",
+        "ene",
+        "nne",
+        "eene",
+        "ennn",
+        "en",
+        "nnee",
+        "nenn",
+        "nen",
+        "nee",
+        "neen"
+      ]
+    },
+    {
+      "text": "Alles, was du bis hierhin hast, in kurzen Gruppen. Sieh auf den Bildschirm, nicht auf die Hände.",
+      "type": "block",
+      "content": "enen nene\nne ne\nen ne enen"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ne ne\nen ne enen\neeee nnnn"
+    },
+    {
+      "text": "Ein letzter Durchgang mit allem aus dieser Lektion.",
+      "type": "block",
+      "content": "enenen nenene\nne ne\nen en"
+    }
+  ]
+}

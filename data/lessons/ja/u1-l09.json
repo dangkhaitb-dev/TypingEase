@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "苦手なキー",
+  "summary": "いちばんよく間違えるキーから作る練習。",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "ascii",
+  "intro": "この練習は決まったリストではなく、あなたが間違えたキーから作られます。上達すれば、内容も変わります。",
+  "congrats": "苦手なキーは、月に一時間より、毎日一分の練習で苦手でなくなります。",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "いちばんよく間違えるキーから作る練習です。練習するたびに内容が変わります。"
+    }
+  ]
+}

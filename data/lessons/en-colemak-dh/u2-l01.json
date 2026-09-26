@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "B and J",
+  "summary": "Two new keys: B and J. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "b",
+    "j"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "g",
+    "m",
+    "f",
+    "u",
+    "p",
+    "l",
+    "b",
+    "j"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: B and J. They belong to your left index finger and your right index finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If B and J already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press B to continue"
+    },
+    {
+      "newKey": "b",
+      "text": "Only B and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "btn s bt\nb b bb\nbbbb"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press J to continue"
+    },
+    {
+      "newKey": "j",
+      "text": "Only J and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "njs tb nj\nbj jb bjbj\njjj bbb"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "bbj",
+        "bbjj",
+        "bbb",
+        "jbbj",
+        "bbbb",
+        "bbjb",
+        "bbbj",
+        "bjb",
+        "bjbj",
+        "jbj"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "jb bj jbjb\nbbbb nnn ttt jjj\nbjbj jbjb"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "began business bag bottom\nbring base beat possible\nbutter born before problem"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "roots",
+        "lies",
+        "sister",
+        "air",
+        "son",
+        "fall",
+        "best",
+        "mine",
+        "bottom",
+        "smiles"
+      ]
+    },
+    {
+      "text": "Now the weight is on B, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ring fair sport summer\nsing soon fast soft\nsingle tie mirror roof"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jb bj\nnbs jt nb\nbj jb bjbj"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "national appear fun agree\nmeant for message general\ngo fast foot bottle"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "Baris angka",
+  "summary": "Sepuluh angka, setiap jari naik lurus ke atas.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Baris angka berada di atas semua yang sudah kamu ketik, dan di situlah jari menjangkau paling jauh. Di sini lebih banyak yang meleset daripada di bagian lain kursus, dan cara memperbaikinya sama saja: pelan-pelan dulu.",
+  "congrats": "Baris angka adalah yang paling sulit dan paling jarang dilatih sesudahnya. Sesekali kembalilah ke pelajaran ini.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "Baris angka ada di atas baris atas. Setiap jari naik lurus dan turun dengan cara yang sama. Inilah jangkauan terjauh di seluruh kursus.",
+      "hint": "Tekan 1 untuk lanjut"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "1 dan 0 ditekan dengan kelingking kiri dan jari yang sama di tangan satunya. Naik, tekan, turun ke baris dasar.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "2 dan 9 ditekan dengan jari manis kiri dan jari yang sama di tangan satunya. Naik, tekan, turun ke baris dasar.",
+      "type": "block",
+      "content": "df2 9j df\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Rentetan pendek dengan angka yang sudah kamu punya.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "3 dan 8 ditekan dengan jari tengah kiri dan jari yang sama di tangan satunya. Naik, tekan, turun ke baris dasar.",
+      "type": "block",
+      "content": "383838 838383\n83 38\nd83 jf d8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "4 dan 7 ditekan dengan telunjuk kiri dan jari yang sama di tangan satunya. Naik, tekan, turun ke baris dasar.",
+      "type": "block",
+      "content": "47 47\nfj4 7d fj\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "Dua yang tersisa milik telunjuk, yang sudah menjangkau lebih banyak tombol daripada jari lain.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nfj6 5d fj"
+    },
+    {
+      "text": "Seluruh baris, dalam kelompok. Jangan menunduk untuk mencari angka 6.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Kesepuluhnya, dicampur. Di awal memang banyak yang meleset di sini; itu wajar.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Kembali ke kata-kata sebentar, supaya tangan ingat di mana rumahnya.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sosial buku apa kambing\nturun tahu xilofon guru\nkita ruangan cabang radio"
+    },
+    {
+      "text": "Kalimat lagi, sekarang dengan seluruh papan ketik.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Kami berjalan kaki ke taman setelah makan.\nRumah baru itu punya pintu berwarna hijau.\nKita perlu membeli buah dan air minum."
+    }
+  ]
+}

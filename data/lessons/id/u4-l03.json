@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "&, *, ( dan )",
+  "summary": "Di pelajaran ini: &, *, ( dan ).",
+  "newKeys": [
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tombol yang belum dipakai kursus ini: &, *, ( dan ). Semuanya keluar dengan Shift ditambah tombol yang sudah dikenal jarimu — Shift ditekan kelingking tangan yang lain.",
+  "congrats": "&, *, ( dan ): sekarang sudah di bawah jarimu. Shift dengan tangan yang lain, dan simbol keluar semudah huruf di sebelahnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "& ditekan dengan telunjuk kanan, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan & untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Pertama & saja, lalu di tempat ia memang dipakai.",
+      "content": "&& & ikal & wajah adas & visi sangat & kilah\n&& & kakek & sabar garis & gunung segera & celana\n&& & asas & jiwa nasi & dengar gigi & tulis"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "* ditekan dengan jari tengah kanan, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan * untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Pertama * saja, lalu di tempat ia memang dipakai.",
+      "content": "** * *gurih* *rahasia* *kita*\n** * *pelajar* *kesal* *rendah*\n** * *kiri* *waras* *menanam*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "( ditekan dengan jari manis kanan, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan ( untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Pertama ( saja, lalu di tempat ia memang dipakai.",
+      "content": "(( ( (kelak (kamar (emas\n(( ( (sayang (murid (jamur\n(( ( (cucu (minum (kamar"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RP",
+      "text": ") ditekan dengan kelingking kanan, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan ) untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "Pertama ) saja, lalu di tempat ia memang dipakai.",
+      "content": ")) ) (nyanyi) (bawang) (badan)\n)) ) (air) (kakek) (sehelai)\n)) ) (teguran) (diri) (bibir)"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Rentetan potongan pendek yang berisi karakter-karakter ini.",
+      "tokens": [
+        "(ada)",
+        "*dahulu*",
+        "(aturan)",
+        "*anak*",
+        "(kenangan)",
+        "(punya)",
+        "(baik)",
+        "(kalah)",
+        "(tadi)",
+        "otak&ketua"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Semua isi pelajaran ini, dicampur.",
+      "content": "(panjang) *orang* mesin&melihat (musim)\n*hidup* *tersedia* (wajar) (jadi)\nlama & sepi (keju) (lafal) *pada*"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Kata-kata lagi, dengan simbol di tempatnya.",
+      "content": "tiang & roda kacang (dasi) laut dia & belum\ngaram & nama bertemu (dengar) suara tanah & cokelat\n(ikhlas) bulan (keju) tidak cincin & tiap"
+    }
+  ]
+}

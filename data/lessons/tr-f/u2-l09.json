@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift ve Enter",
+  "summary": "Karşı elin serçe parmağıyla büyük harfler, bir de satır başı.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c",
+    "f",
+    "p",
+    "ç",
+    "ö",
+    "j",
+    ".",
+    "b",
+    "ş",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Buraya kadar her şey küçük harfle yazıldı. Shift bunu değiştirir, ve baştan öğrenmeye değer bir kuralı var: ona harfin karşısındaki elin serçe parmağı basar. Aynı taraftaki serçe parmakla basarsan el bükülür ve sonunda klavyeye bakarsın.",
+  "congrats": "Shift, Enter ve nokta ile bir metni, dışarıda nasıl yazılıyorsa öyle yazabilirsin.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Büyük harf, harfin karşısındaki elin serçe parmağıyla yapılır. Shift'i basılı tut, harfe bas, bırak. Yazan elin serçe parmağıyla asla.",
+      "hint": "Devam etmek için Shift tuşunu basılı tut ve bir harfe bas"
+    },
+    {
+      "newKey": "shift",
+      "text": "Büyük ve küçük harf sırayla. Serçe parmak iner ve kalkar; öbür el yerinden oynamaz.",
+      "type": "block",
+      "content": "Üü Şş Iı Ğğ\nÖö Çç Kk Ee\nPp Rr Ll Bb\nJj Mm Zz Tt"
+    },
+    {
+      "text": "Yine kelimeler, küçük harfle. Serçe parmaklar dinlenirken ritmi koru.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kapsam kasada başka ışık\ntost kar eski ekle\nnoktalar hızlı yollar ütü"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter sağ serçe parmağındır, temel sıranın sağında. Bu parmağın uzandığı en büyük tuş odur.",
+      "hint": "Devam etmek için Enter tuşuna bas"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Bir satır, Enter, bir satır daha. Her satır büyük harfle başlıyor. Serçe parmak çıkar ve döner, eli sürüklemeden.",
+      "type": "block",
+      "content": "Mersin\nElif\nBursa\nAli\nMustafa\nFatma"
+    },
+    {
+      "text": "Büyük harfle başlayan, noktayla biten cümleler. Artık gerçek bir yazıya benziyor.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Babam işten eve geç geldi.\nEkranda gördüğün harfleri sırayla yaz.\nYeni bir dil öğrenmek zaman ister."
+    },
+    {
+      "seconds": 25,
+      "text": "Bu dersi yerine oturtmak için bir seri.",
+      "type": "burst",
+      "tokens": [
+        "çocuk",
+        "havlu",
+        "elle",
+        "bey",
+        "dağ",
+        "yazar",
+        "orman",
+        "ülke",
+        "yürü",
+        "kuru",
+        "yemek",
+        "korku"
+      ]
+    },
+    {
+      "text": "Satırda beş kelime, serçe parmak iki yönde de çalışarak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sandalye kapı taş hata mısır\nkan havlu kanun geç ok\nbak kavun kalın hesap yedi"
+    },
+    {
+      "text": "Kapanışta tam cümleler. Shift, harf, bırak — durup düşünmeden.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Annem sofraya sıcak yemek koydu.\nKitabı masanın üstüne bıraktım.\nPazar günü ailemle kahvaltı yaptık."
+    }
+  ]
+}

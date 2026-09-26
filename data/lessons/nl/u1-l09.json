@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "Zwakke toetsen",
+  "summary": "Een oefening gemaakt van de toetsen waarbij je de meeste fouten maakt.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "+",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "ascii",
+  "intro": "Deze oefening wordt gebouwd op de toetsen waarbij jij fouten maakt, niet op een vaste lijst. Als jij verandert, verandert hij mee.",
+  "congrats": "Zwakke toetsen worden sterk met een minuut per dag, niet met een uur per maand.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "Een oefening gebouwd op de toetsen waarbij je de meeste fouten maakt. Elke keer dat je oefent is hij anders."
+    }
+  ]
+}

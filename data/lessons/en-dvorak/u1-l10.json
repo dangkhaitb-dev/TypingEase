@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Unit 1 test",
+  "summary": "A timed test with everything learned so far.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "A timed test. Nothing new: only what you already know, at a pace you can keep up.",
+  "congrats": "Test passed. The number matters less than getting to the end without looking.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "No new keys. Type at a pace you can hold all the way to the end.",
+      "dictation": "words",
+      "content": "gash step goods one\nsages hi pass dash\nhas spent gas its\nuse dads so guess"
+    }
+  ]
+}

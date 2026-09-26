@@ -1,0 +1,172 @@
+{
+  "id": "u4-l06",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 33,
+  "slug": "symbols-6",
+  "title": "`, {, } e ^",
+  "summary": "Nesta lição: `, {, } e ^.",
+  "newKeys": [
+    "`",
+    "{",
+    "}",
+    "^"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "~",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ";",
+    "-",
+    "=",
+    "'",
+    "[",
+    "]",
+    "\"",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "¨",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "\\",
+    "|",
+    "`",
+    "{",
+    "}",
+    "^"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas que o curso ainda não usou: `, {, } e ^. Todas saem com Shift e uma tecla que os seus dedos já conhecem — Shift com o mindinho da outra mão.",
+  "congrats": "`, {, } e ^: agora debaixo dos seus dedos. O sinal sai tão fácil quanto a letra ao lado.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "RP",
+      "text": "Quem aperta ` é o mindinho direito, com Shift na outra mão.",
+      "hint": "Aperte ` para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "Primeiro ` sozinho, e depois onde ele realmente aparece.",
+      "content": "`` ` `tempo` `lutar` `atual`\n`` ` `lugar` `sim` `velas`\n`` ` `semanas` `qual` `gala`"
+    },
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "Quem aperta { é o mindinho direito, com Shift na outra mão.",
+      "hint": "Aperte { para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "Primeiro { sozinho, e depois onde ele realmente aparece.",
+      "content": "{{ { {pimenta {cara {feliz\n{{ { {boa {portas {novo\n{{ { {mala {raças {fundo"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "Quem aperta } é o mindinho direito, com Shift na outra mão.",
+      "hint": "Aperte } para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "Primeiro } sozinho, e depois onde ele realmente aparece.",
+      "content": "}} } {encontro} {fez} {bolacha}\n}} } {cena} {sinal} {fazendo}\n}} } {piada} {lugares} {fases}"
+    },
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RP",
+      "text": "Quem aperta ^ é o mindinho direito, com Shift na outra mão.",
+      "hint": "Aperte ^ para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "^",
+      "text": "Primeiro ^ sozinho, e depois onde ele realmente aparece.",
+      "content": "^^ ^ 23^1 22^1 27^3\n^^ ^ 27^1 90^3 58^2\n^^ ^ 52^2 35^2 54^2"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Uma rajada de trechos curtos com estes caracteres.",
+      "tokens": [
+        "81^2",
+        "71^2",
+        "`segue`",
+        "{tarde}",
+        "{ruas}",
+        "{centro}",
+        "{empresa}",
+        "`restar`",
+        "{brincar}",
+        "`lei`"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tudo o que esta lição trouxe, misturado.",
+      "content": "74^3 27^1 4^2 `sobrinho`\n51^3 35^1 {teste} {porque}\n`falas` {pessoas} {vai} 17^2"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Palavras de novo, com os sinais no lugar.",
+      "content": "{fada} turista 88^2 anos `quatro`\n{queixo} lei {vezes} guarda `salada`\n`boas` bota {feriado} se 66^3"
+    }
+  ]
+}

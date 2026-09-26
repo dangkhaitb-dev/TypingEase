@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Revisão",
+  "summary": "Nenhuma tecla nova. Tudo o que veio antes, mais seguido e mais rápido.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Esta lição não ensina nada novo. É a hora de conferir que o que veio antes sai sem pensar, o que é diferente de saber onde fica cada tecla.",
+  "congrats": "Nada novo e mesmo assim mais rápido. É exatamente o que devia acontecer.",
+  "screens": [
+    {
+      "text": "Para começar, palavras soltas. Sem pressa: a velocidade vem da precisão, nunca o contrário.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "frutas idade ouve mesa\nestavam alguma fechar mato\nnota iguais regras museu"
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada curta. Termine a lista mesmo que alguma escape.",
+      "type": "burst",
+      "tokens": [
+        "vidas",
+        "saiu",
+        "alho",
+        "feio",
+        "onde",
+        "saladas",
+        "amor",
+        "escrita",
+        "folhas",
+        "cara",
+        "setor",
+        "fila"
+      ]
+    },
+    {
+      "text": "Cinco palavras por linha. Deixe os olhos irem na frente dos dedos.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "das deles saiu mesmo tira\ndesligar esta rodas vivo lei\nsol anda vontade ficou ave"
+    },
+    {
+      "text": "Padrões de novo, para conferir que os dedos continuam voltando à fila de repouso.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Palavras curtas, em bom ritmo. Estas já deveriam sair quase sozinhas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "olhar algum vinte homem\nforma outra longo notas\nmuda trem entre conto"
+    },
+    {
+      "seconds": 30,
+      "text": "Mais tempo e mais palavras. Mantenha o mesmo ritmo do começo ao fim.",
+      "type": "burst",
+      "tokens": [
+        "velho",
+        "camas",
+        "favor",
+        "conhecido",
+        "tanto",
+        "datas",
+        "saias",
+        "contra",
+        "salada",
+        "eles",
+        "listas",
+        "todos",
+        "gosto",
+        "certo"
+      ]
+    },
+    {
+      "text": "Frases inteiras. É aqui que se vê se a mão volta sozinha para o lugar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "junho caderno elas verde\nvenda caminhar noite menino\nsaco faça fiel final"
+    },
+    {
+      "text": "A última série. Se você chegou até aqui sem olhar para o teclado, a lição está feita.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "amiga curso mesa noites feio\nalmoço linda ter algumas da\ncomo nada moça mora tarefa"
+    }
+  ]
+}

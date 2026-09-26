@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "D と K",
+  "summary": "新しいキー：D と K。指が出て、押して、戻ります。",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンの新しいキー：D と K。左手の中指 と 右手の中指で押します。動きはいつも同じで、出て、押して、戻ります。練習するのは戻る動きです。指が外に残ったままだと、次の文字を間違えるからです。",
+  "congrats": "指の下のキーが増えました。D と K を探さずに打てるなら、このレッスンの役目は果たせています。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "LM",
+      "text": "このキーは左手の中指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "D を押して次へ"
+    },
+    {
+      "newKey": "d",
+      "text": "D と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "d d dd\ndddd\ndddd dddd"
+    },
+    {
+      "type": "intro",
+      "key": "k",
+      "finger": "RM",
+      "text": "このキーは右手の中指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "K を押して次へ"
+    },
+    {
+      "newKey": "k",
+      "text": "K と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "ddd kkk\ndkdk kdkd\ndk dk"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        "dd",
+        "kdkk",
+        "dkkd",
+        "kddd",
+        "ddd",
+        "ddkk",
+        "kdk",
+        "kddk",
+        "dkdk",
+        "kdd"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "dkdkdk kdkdkd\nfdjk jfdk\ndfj k df"
+    },
+    {
+      "text": "もう一度、新しい2つのキーです。これだけで打てる単語はまだありませんが、それで問題ありません。",
+      "type": "block",
+      "content": "fkj d fk\ndk kd dkdk\nkkk dddd"
+    },
+    {
+      "seconds": 25,
+      "text": "少し長いかたまりです。まだ急いでも速くはなりません。",
+      "type": "burst",
+      "tokens": [
+        "dkk",
+        "ddkk",
+        "dkkk",
+        "dkd",
+        "kdkk",
+        "dk",
+        "kkkk",
+        "kkdk",
+        "dddk",
+        "kddk",
+        "dddd",
+        "kkk"
+      ]
+    },
+    {
+      "text": "ここまでのキーすべてを、短いかたまりで。見るのは画面で、手ではありません。",
+      "type": "block",
+      "content": "fkd j fk\ndj jd djdj\njjjj kkkk ffff dddd"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "dk kd dkdk\ndddd kkk\ndkdk kdkd"
+    },
+    {
+      "text": "ここまで覚えたキーすべてで、最後の一回です。",
+      "type": "block",
+      "content": "jfd k jf\ndk kd dkdk\nkkkk ddd ffff jjj"
+    }
+  ]
+}

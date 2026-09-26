@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C und N",
+  "summary": "Neue Tasten: C und N. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "c",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: C und N. Dafür sind der linke Mittelfinger und der rechte Zeigefinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn C und N ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "Für diese Taste ist der linke Mittelfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke C, um weiterzugehen"
+    },
+    {
+      "newKey": "c",
+      "text": "Nur C und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "cccc cccc\nc c\njfc d jf"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "Für diese Taste ist der rechte Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke N, um weiterzugehen"
+    },
+    {
+      "newKey": "n",
+      "text": "Nur N und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "cncncn ncncnc\nnc nc\njdc nf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "nnn",
+        "nc",
+        "ccnc",
+        "cnnn",
+        "cnn",
+        "ncc",
+        "nncc",
+        "nccc",
+        "ncnn"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "nc cn ncnc\nnnn ccc jjj fff\ncncn ncnc"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "unser ende ecke wand\nnuss winter acht decke\nwann schnell tasche rock"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "hinter",
+        "wand",
+        "sei",
+        "der",
+        "dies",
+        "tal",
+        "kuh",
+        "lauf",
+        "kind",
+        "ohr"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf C — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sag zelt tasse ort\nwarte jacke sich tier\nsitz wort schwer hof"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nnnn ccc\ncncn ncnc\nnc nc"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kind siegel kein stufe\nstark hier frau sonne\nhof erde keine dass"
+    }
+  ]
+}

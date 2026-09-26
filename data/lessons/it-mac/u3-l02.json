@@ -1,0 +1,173 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "La colonna esterna",
+  "summary": "La colonna del bordo destro: sei tasti del mignolo, fra cui ò e ì.",
+  "newKeys": [
+    "ò",
+    "-",
+    "=",
+    "ì",
+    "$",
+    "§"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "m",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "w",
+    ":",
+    ";",
+    "ù",
+    "shift",
+    "enter",
+    ".",
+    "&",
+    "\"",
+    "'",
+    "(",
+    "ç",
+    "è",
+    ")",
+    "£",
+    "à",
+    "é",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "ò",
+    "-",
+    "=",
+    "ì",
+    "$",
+    "§"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Il mignolo destro ha più tasti di qualsiasi altro dito, e quelli del bordo sono i meno esercitati. Su questa tastiera qui stanno ò e ì: senza questa colonna non si scrivono né però, né farò, né lì.",
+  "congrats": "Con ò e ì la colonna del bordo è fatta. È quella che quasi tutti i corsi lasciano a metà.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "ò",
+      "finger": "RP",
+      "text": "I tasti del bordo destro, tutti del mignolo. Su questa tastiera due di loro sono ò e ì.",
+      "hint": "Premi Ò per continuare"
+    },
+    {
+      "newKeys": [
+        "ò",
+        "-"
+      ],
+      "text": "Adesso ò e -. Il mignolo esce verso il bordo e torna; la mano resta dov’è.",
+      "type": "block",
+      "content": "ò-ò- -ò-ò\nò- -ò\nj-d òf j-"
+    },
+    {
+      "newKeys": [
+        "=",
+        "ì"
+      ],
+      "text": "Adesso = e ì. Il mignolo esce verso il bordo e torna; la mano resta dov’è.",
+      "type": "block",
+      "content": "ì= =ì\n=fj ìd =f\n=ì ì= =ì=ì"
+    },
+    {
+      "seconds": 20,
+      "text": "Una raffica con quello che hai di questa colonna.",
+      "type": "burst",
+      "tokens": [
+        "ì-",
+        "-=",
+        "--",
+        "ìò",
+        "-ò",
+        "òì",
+        "ì=",
+        "ò-",
+        "-ì",
+        "ìì"
+      ]
+    },
+    {
+      "newKeys": [
+        "$",
+        "§"
+      ],
+      "text": "Adesso $ e §. Il mignolo esce verso il bordo e torna; la mano resta dov’è.",
+      "type": "block",
+      "content": "$§ $§\n$fd §j $f\n$§ §$ $§$§"
+    },
+    {
+      "text": "Tutti e sei insieme. È il punto in cui il polso si storce di più se il dito non torna.",
+      "type": "block",
+      "content": "f=ò d§- f=\n§$ $§ §$§$\n§§§§ ==== --- òòò ììì $$$$"
+    },
+    {
+      "seconds": 25,
+      "text": "Di nuovo parole, per sciogliere la mano dopo tutto questo bordo.",
+      "type": "burst",
+      "tokens": [
+        "colore",
+        "poiché",
+        "vivere",
+        "sala",
+        "decidere",
+        "tutta",
+        "vicino",
+        "corso",
+        "quercia",
+        "nido",
+        "dalle",
+        "inverno"
+      ]
+    },
+    {
+      "text": "Si torna alle parole, ora con la tastiera intera — accenti compresi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "esperienza se incontro bottone\nsuggerire lontano il alta\nyogurt stadio bianco società"
+    },
+    {
+      "text": "Frasi intere per chiudere le lezioni di tasti.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Durante il viaggio abbiamo visto molte montagne.\nOgni mattina faccio una lunga camminata.\nIl bambino gioca con una palla rossa."
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "g-h",
+  "title": "I e D",
+  "summary": "Tasti nuovi: I e D. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "i",
+    "d"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: I e D. Si premono con l'indice sinistro e l'indice destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se I e D ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "LI",
+      "text": "Questo tasto lo prende l'indice sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi I per continuare"
+    },
+    {
+      "newKey": "i",
+      "text": "Solo I e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "iiii\niiii iiii\ni i"
+    },
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "RI",
+      "text": "Questo tasto lo prende l'indice destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi D per continuare"
+    },
+    {
+      "newKey": "d",
+      "text": "Solo D e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "iii dddd\nididid dididi\nid di"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "idid",
+        "dddd",
+        "idi",
+        "ddi",
+        "ii",
+        "iidi",
+        "idd",
+        "id",
+        "iddi",
+        "didi"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "ud du udud\nddd hhhh uuuu iiii\nididid dididi"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tesi idea dei sedia\nsei tutti studio ad\nstadio donna idea nei"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "testa",
+        "sotto",
+        "notte",
+        "estate",
+        "tu",
+        "idea",
+        "non",
+        "o",
+        "se",
+        "sono"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su I, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ho noi un otto\nnei non idea sei\nestate sa nonno dei"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "id di idid\nddd iiii\nidid didi"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "attesa ho tutta tutto\nsono ad idea non\nse e dita anno"
+    }
+  ]
+}

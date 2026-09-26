@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "$, %, ^ i &",
+  "summary": "W programie: $, %, ^ i &.",
+  "newKeys": [
+    "$",
+    "%",
+    "^",
+    "&"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Klawisze, których kurs jeszcze nie używał: $, %, ^ i &. Każdy z nich to Shift i klawisz, który twoje palce już znają — Shift małym palcem drugiej ręki.",
+  "congrats": "$, %, ^ i &: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "Ten znak — $ — naciska lewy palec wskazujący, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij $, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Najpierw sam $, potem tam, gdzie naprawdę się go używa.",
+      "content": "$$ $ $85 $23 $79\n$$ $ $68 $50 $93\n$$ $ $53 $52 $6"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "Ten znak — % — naciska lewy palec wskazujący, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij %, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Najpierw sam %, potem tam, gdzie naprawdę się go używa.",
+      "content": "%% % 12% 93% 23%\n%% % 96% 78% 48%\n%% % 44% 75% 75%"
+    },
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RI",
+      "text": "Ten znak — ^ — naciska prawy palec wskazujący, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij ^, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "^",
+      "text": "Najpierw sam ^, potem tam, gdzie naprawdę się go używa.",
+      "content": "^^ ^ 4^2 73^3 83^1\n^^ ^ 19^2 64^1 89^1\n^^ ^ 33^3 49^3 92^1"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "Ten znak — & — naciska prawy palec wskazujący, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij &, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Najpierw sam &, potem tam, gdzie naprawdę się go używa.",
+      "content": "&& & sprawa & potem owoce & bez grudka & gaj\n&& & rzecz & kamyki zamyka & czarna boki & sowa\n&& & znowu & biega marzec & fotel stoi & obecnie"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Seria krótkich kawałków z tymi znakami.",
+      "tokens": [
+        "72%",
+        "moja&zielone",
+        "72^3",
+        "dobra&kierowca",
+        "30%",
+        "$55",
+        "50%",
+        "85%",
+        "17%",
+        "83%"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Wszystko, co przyniosła ta lekcja, wymieszane.",
+      "content": "$27 $38 kreda&jedli $17\n$42 75% 86% $16\n81% 31^1 42% wieki&raj"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Znowu słowa, ze znakami na swoich miejscach.",
+      "content": "61% sprawa $22 przed 78%\n32^3 cyfry $80 trudy 82%\n$38 domek 56^1 lotnisko kamyk & ceny"
+    }
+  ]
+}

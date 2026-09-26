@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "Yeni tuşlar: +, %, & ve eğik çizgi",
+  "summary": "Bu derste: +, %, & ve eğik çizgi.",
+  "newKeys": [
+    "+",
+    "%",
+    "&",
+    "/"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş",
+    "g",
+    "h",
+    "e",
+    "ı",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    "ç",
+    "ö",
+    "i",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ".",
+    "*",
+    "-",
+    "ğ",
+    "ü",
+    ",",
+    "\"",
+    "é",
+    "!",
+    "'",
+    "+",
+    "%",
+    "&",
+    "/"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kursun henüz kullanmadığı tuşlar: +, %, & ve eğik çizgi. Hepsi Shift ve parmaklarının zaten tanıdığı bir tuşla çıkar — Shift öbür elin serçe parmağında.",
+  "congrats": "Artık parmaklarının altında: +, %, & ve eğik çizgi. İşaret de yanındaki harf kadar kolay çıkıyor.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "+",
+      "finger": "LI",
+      "text": "Bu karakter için sol işaret parmağı çalışır: +; Shift öbür elde.",
+      "hint": "Devam etmek için + tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "+",
+      "text": "Önce yalnızca +, sonra gerçekten kullanıldığı yerde.",
+      "content": "++ + 31 + 80 2 + 5 77 + 32\n++ + 6 + 89 81 + 13 77 + 37\n++ + 3 + 79 48 + 58 58 + 95"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "Bu karakter için sol işaret parmağı çalışır: %; Shift öbür elde.",
+      "hint": "Devam etmek için % tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Önce yalnızca %, sonra gerçekten kullanıldığı yerde.",
+      "content": "%% % 55% 81% 32%\n%% % 13% 60% 84%\n%% % 48% 17% 33%"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "Bu karakter için sağ işaret parmağı çalışır: &; Shift öbür elde.",
+      "hint": "Devam etmek için & tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Önce yalnızca &, sonra gerçekten kullanıldığı yerde.",
+      "content": "&& & yağ & bardak dikkatli & daha masada & on\n&& & kentler & sert fark & bey sekiz & çiğ\n&& & nereye & öğrenci marul & kuruş onların & tablo"
+    },
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RI",
+      "text": "Bu karakter için sağ işaret parmağı çalışır: eğik çizgi; Shift öbür elde.",
+      "hint": "Devam etmek için / tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "/",
+      "text": "Önce yalnızca eğik çizgi, sonra gerçekten kullanıldığı yerde.",
+      "content": "// / sebep/ağız kablo/şeker patlıcan/simit\n// / otlak/yangın masada/damlalar cuma/kutu\n// / bilmek/tat al/parmak halı/kart"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Bu karakterlerle kısa parçalardan bir seri.",
+      "tokens": [
+        "79%",
+        "30+32",
+        "yüz/gazete",
+        "damlalar&akar",
+        "75%",
+        "uğur/dolar",
+        "temiz/tek",
+        "30%",
+        "yeşil&batı",
+        "94+86"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Bu derste gelen her şey, karışık.",
+      "content": "değil & akıl sanat&karar tek&şöyle sayfa/ödül\nkabul & misafir kahve/mantık 88+66 kafa&uygar\nhayat/al 8+82 91+44 9+43"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Yeniden kelimeler, işaretler yerli yerinde.",
+      "content": "59% aralık 98 + 5 sözlük 49%\nyok/kas onu 6% yazı 53%\n17% ağustos 38% boğaz 23%"
+    }
+  ]
+}

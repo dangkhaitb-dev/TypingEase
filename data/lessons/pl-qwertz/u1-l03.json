@@ -1,0 +1,117 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "S i L",
+  "summary": "Nowe klawisze: S i L. Palec wychodzi, uderza i wraca.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nowe klawisze w tej lekcji: S i L. Naciskają je lewy palec serdeczny i prawy palec serdeczny. Ruch jest zawsze ten sam — wyjść, uderzyć, wrócić — i ćwiczy się tu właśnie powrót, bo palec, który został na zewnątrz, myli następną literę.",
+  "congrats": "Nowe klawisze pod palcami. Jeśli S i L wychodzą już bez szukania, lekcja zrobiła swoje.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "LR",
+      "text": "Ten klawisz naciska lewy palec serdeczny. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij S, aby przejść dalej"
+    },
+    {
+      "newKey": "s",
+      "text": "Tylko S i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "dfs j df\ns s ss\nsss"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RR",
+      "text": "Ten klawisz naciska prawy palec serdeczny. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij L, aby przejść dalej"
+    },
+    {
+      "newKey": "l",
+      "text": "Tylko L i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "sss llll\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 20,
+      "text": "Krótkie grupy, jedna po drugiej. Dojdź do końca, nawet jeśli coś pomylisz.",
+      "type": "burst",
+      "tokens": [
+        "slls",
+        "llls",
+        "slss",
+        "llsl",
+        "lss",
+        "ss",
+        "ssl",
+        "slll",
+        "lsll",
+        "lls"
+      ]
+    },
+    {
+      "text": "Nowe klawisze wymieszane ze starymi, tak jak pojawią się w słowach.",
+      "type": "block",
+      "content": "fjls jfsl\nklf sdj kl\nfs sf fsfs"
+    },
+    {
+      "text": "Jeszcze raz nowe klawisze. Nie ma jeszcze słów, które dałoby się nimi napisać, i to normalne.",
+      "type": "block",
+      "content": "lll sss\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 25,
+      "text": "Trochę dłuższe grupy. Pośpiech jeszcze nie pomaga.",
+      "type": "burst",
+      "tokens": [
+        "llll",
+        "ss",
+        "lsl",
+        "ssll",
+        "lsll",
+        "sss",
+        "llss",
+        "llls",
+        "llsl",
+        "slss",
+        "slls",
+        "lssl"
+      ]
+    },
+    {
+      "text": "Wszystko, co masz, w krótkich grupach. Patrz na ekran, nie na dłonie.",
+      "type": "block",
+      "content": "jkl dsf jk\ndf fd dfdf\nllll jjj ssss fff ddd"
+    },
+    {
+      "text": "Na chwilę wracamy do wzorów, żeby sprawdzić, czy palce zawsze wracają na swoje miejsce.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ls sl\nsjf ld sj\nsl ls slsl"
+    },
+    {
+      "text": "Ostatnia seria ze wszystkim, co było do tej pory.",
+      "type": "block",
+      "content": "ksl dfj ks\njf fj jfjf\ndddd fff kkkk jjj"
+    }
+  ]
+}

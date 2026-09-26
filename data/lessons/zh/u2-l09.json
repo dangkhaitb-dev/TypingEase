@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift 和 Enter",
+  "summary": "用另一侧的小指打大写字母，以及换行。",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "到目前为止都是小写。Shift 会改变这一点，有一条规则最好从一开始就学对：Shift 用和字母相反那只手的小指按。用同一侧的小指，手会拧着，最后你就会去看键盘。",
+  "congrats": "有了 Shift 和 Enter，你就能像平时写东西一样打出完整的文本。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "大写字母用和字母相反那只手的小指按 Shift。按住 Shift，按字母，松开。不要用正在打字的那只手的小指。单独按一下 Shift，很多拼音输入法会在中英文之间切换；这里练的是按住 Shift 打大写字母的指法。",
+      "hint": "按住 Shift 再按一个字母继续"
+    },
+    {
+      "newKey": "shift",
+      "text": "大写和小写交替出现。小指按下、抬起，另一只手不动。",
+      "type": "block",
+      "content": "Pp Jj Zz Ee\nCc Dd Qq Gg\nTt Uu Kk Rr\nXx Mm Ff Bb"
+    },
+    {
+      "text": "首字母大写的词，就像拼音写的人名和地名。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jiaocheng ge zi jieshi\ndao kaifa xingming jiali\nchi pingchang tao zhiliang"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter 归右手小指，在基准行的右边。这是小指要够的最大的键。在多数拼音输入法里，拼音还没选字时按 Enter，会把字母原样上屏。",
+      "hint": "按 Enter 继续"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "一行，Enter，下一行。小指伸出去再收回来，不要带动整只手。",
+      "type": "block",
+      "content": "Zihan\nShenzhen\nHua\nFang\nLei\nHao"
+    },
+    {
+      "text": "句子以大写字母开头，以句号键结尾。在输入法的中文模式下，同一个键通常打出的是「。」。",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Zhe jian yifu you dian da.\nMama zai chufang zuo fan.\nWo xiang mai yi ge xin shouji."
+    },
+    {
+      "seconds": 25,
+      "text": "连续练习，巩固这一课的内容。",
+      "type": "burst",
+      "tokens": [
+        "xiayu",
+        "ye",
+        "yinwei",
+        "didi",
+        "kuai",
+        "meihao",
+        "tuijian",
+        "haojiu",
+        "jiti",
+        "bing",
+        "dongman",
+        "jiedai"
+      ]
+    },
+    {
+      "text": "每行五个，小指在两个方向上都要工作。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yiban shengyi guize lvxing qiangdiao\nyouyi chifan youju xiexie huiyi\nlv shenghuo ni tiaojian haoma"
+    },
+    {
+      "text": "最后是完整的句子。Shift、字母、松开，中间不要停下来想。",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Wo xihuan he cha.\nDazi de shihou bu yao kan jianpan.\nQing ni shuo man yidian."
+    }
+  ]
+}

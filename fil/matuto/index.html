@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="fil" data-course="fil">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aralin · TypingEase</title>
+    <meta name="description" content="Ang lesson player ng TypingEase: isang screen bawat pagkakataon, may keyboard at mga kamay na nagpapakita kung saan pupunta ang bawat daliri." />
+    <!-- Ang app, hindi landing page. Walang halaga sa paghahanap ang mga pagsasanay at nasa hash
+         ang ruta, kaya hindi ito ini-index. Wala ring hreflang para sa pahinang hindi ini-index. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://typingease.site/fil/matuto/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/player.css" />
+  </head>
+  <body class="player-page">
+    <div class="player" id="player">
+      <header class="player-topbar">
+        <a class="pt-back" href="/fil/aralin/" id="pt-back">← Kurso</a>
+        <div class="pt-title">
+          <span id="pt-unit"></span>
+          <strong id="pt-lesson">Nilo-load…</strong>
+        </div>
+        <div class="pt-right">
+          <span class="pt-screen" id="pt-screen"></span>
+          <button class="pt-redo" id="pt-redo" type="button" title="Simulan ulit ang aralin" aria-label="Simulan ulit ang aralin">↻</button>
+          <button class="pt-toggle" id="pt-sound" type="button" aria-pressed="false" title="Tunog ng key (Alt+S)" aria-label="Tunog ng key">🔊</button>
+          <button class="pt-toggle" id="pt-hands" type="button" aria-pressed="true" title="Sumusunod ang mga kamay sa mga key (Alt+H)" aria-label="Sumusunod ang mga kamay sa mga key">✋</button>
+          <button class="pt-redo" id="pt-keyboard" type="button" title="Mga setting ng keyboard (Alt+K)" aria-label="Mga setting ng keyboard">⚙</button>
+        </div>
+      </header>
+
+      <div class="progress-segments" id="pt-progress" role="progressbar" aria-label="Progreso ng aralin" aria-valuemin="0" aria-valuenow="0"></div>
+
+      <div class="player-notes" id="player-note" hidden></div>
+
+      <main class="player-stage is-loading" id="stage">
+        <section class="card"><p class="intro-text">Nilo-load ang aralin…</p></section>
+      </main>
+
+      <div class="player-board keyboard-demo" id="board" aria-hidden="true"></div>
+
+      <p class="player-live" id="live" role="status" aria-live="polite"></p>
+
+      <label class="sr-only" for="player-input">Tipahin ang linya sa itaas</label>
+      <textarea class="player-input" id="player-input" rows="1" autocomplete="off" autocapitalize="off"
+        autocorrect="off" spellcheck="false" inputmode="text" aria-describedby="live"></textarea>
+
+      <button class="tap-to-type" id="tap-to-type" type="button">Pindutin para magtipa</button>
+    </div>
+
+    <!-- Una ang ui.fil.js: ipinapatong ito ng bawat module sa ibaba sa sarili nilang default, kaya
+         kailangang naroon na ito bago sila tumakbo. Klasikong script nang sadya — nauuna ang mga
+         klasikong script sa mga module na may defer, at doon umaasa ang keyboard/boot.js.
+         Walang telex-match.js dito: pang-Vietnamese ang Telex.
+         Kailangang mauna ang data/words/fil.js sa weak-keys.js, na doon kumukuha ng listahan.
+         `data-course="fil"` sa <html>: iyon ang binabasa ng player para sa folder ng mga aralin. -->
+    <script src="/i18n/ui.fil.js"></script>
+    <script src="/profile.js"></script>
+    <script src="/data/words/fil.js"></script>
+    <script src="/weak-keys.js"></script>
+    <script src="/data/curriculum.fil.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/player.js"></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

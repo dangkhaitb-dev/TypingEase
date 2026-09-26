@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift at Enter",
+  "summary": "Malaking titik gamit ang kabilang hinliliit, at ang paglipat ng linya.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Puro maliliit na titik ang lahat hanggang dito. Binabago iyon ng Shift, at may isang tuntunin itong dapat matutunan nang tama mula sa simula: ang hinliliit ng kamay na kabila ng titik ang pumipindot dito. Kapag ang hinliliit sa parehong panig, napipilipit ang kamay at napapatingin ka sa keyboard.",
+  "congrats": "Gamit ang Shift at Enter, kaya mo nang magtipa ng buong teksto gaya ng pagsulat nito sa labas ng kurso.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Ang malaking titik ay galing sa hinliliit ng kamay na kabila ng titik. Hawakan ang Shift, pindutin ang titik, bitawan. Huwag gamitin ang hinliliit na nagtitipa ng titik.",
+      "hint": "Hawakan ang Shift at pindutin ang isang titik para magpatuloy"
+    },
+    {
+      "newKey": "shift",
+      "text": "Malaki at maliit na titik, salitan. Bumababa at umaangat ang hinliliit; hindi gumagalaw ang kabilang kamay.",
+      "type": "block",
+      "content": "Pp Jj Zz Ee\nCc Dd Qq Gg\nTt Uu Kk Rr\nXx Mm Ff Bb"
+    },
+    {
+      "text": "Mga salitang may malaking titik sa unahan, gaya ng pagsulat ng pangalan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kama dagdag sandali kislap\ntuktok lugi talaga halika\ndingding bangko loob tamad"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Ang Enter ay para sa kanang hinliliit, sa kanan ng gitnang hanay. Ito ang pinakamalaking key na kailangang abutin ng daliring iyon.",
+      "hint": "Pindutin ang Enter para magpatuloy"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Isang linya, Enter, ang susunod na linya. Lumalabas at bumabalik ang hinliliit nang hindi hinihila ang kamay.",
+      "type": "block",
+      "content": "Nena\nJose\nJuan\nMaria\nRamon\nTess"
+    },
+    {
+      "text": "Mga pangungusap na may malaking titik sa simula at tuldok sa dulo. Parang totoong pagsusulat na.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Mabilis lumipas ang oras kapag masaya ka sa ginagawa mo.\nMaagang dumating ang tren kaninang umaga.\nNaglalakad ako tuwing umaga papunta sa palengke."
+    },
+    {
+      "seconds": 25,
+      "text": "Isang bugso para tumatak ang itinuro ng araling ito.",
+      "type": "burst",
+      "tokens": [
+        "uhaw",
+        "baso",
+        "masarap",
+        "bilog",
+        "mayaman",
+        "sayaw",
+        "daan",
+        "tiyak",
+        "tumakbo",
+        "iwas",
+        "gawa",
+        "nanay"
+      ]
+    },
+    {
+      "text": "Lima bawat linya, gumagana ang hinliliit sa magkabilang direksiyon.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sayawan umalis katawan mangingisda sabaw\ngabi ninang naman hugasan kasiyahan\ndaliring ninong unan magsalita puti"
+    },
+    {
+      "text": "Buong pangungusap para tapusin. Shift, titik, bitaw — nang hindi humihinto para mag-isip.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Natutulog ang pusa sa ibabaw ng mesa.\nGusto kong matutong magtipa nang hindi tumitingin sa mga daliri ko.\nNagluluto ang tatay ko ng hapunan tuwing sabado."
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, noktah, koma dan apostrof",
+  "summary": "Kekunci baharu: Z, noktah, koma dan apostrof. Jari keluar, tekan dan kembali.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci baharu dalam pelajaran ini: Z, noktah, koma dan apostrof. Ia ditekan oleh jari kelingking kiri, jari manis kanan, jari hantu kanan dan jari kelingking kanan. Gerakannya sentiasa sama — keluar, tekan dan kembali — dan perjalanan pulang itulah yang dilatih, kerana jika jari tertinggal di luar, huruf seterusnya akan tersilap.",
+  "congrats": "Lebih banyak kekunci di bawah jari. Jika Z, noktah, koma dan apostrof sudah keluar tanpa dicari, pelajaran ini telah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "Kekunci ini milik jari kelingking kiri. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan Z untuk meneruskan"
+    },
+    {
+      "newKey": "z",
+      "text": "Hanya Z dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "z z\ndfj z df\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Kekunci ini milik jari manis kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan . untuk meneruskan"
+    },
+    {
+      "newKey": ".",
+      "text": "Hanya . dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": ".z .z\n.zf dj .z\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Kekunci ini milik jari hantu kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan , untuk meneruskan"
+    },
+    {
+      "newKey": ",",
+      "text": "Hanya , dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "z,. .z,\n.,j fzd .,\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RP",
+      "text": "Kekunci ini milik jari kelingking kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan ' untuk meneruskan"
+    },
+    {
+      "newKey": "'",
+      "text": "Hanya ' dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "f.j ,'d f.\n'. .' '.'.\n''' ,,, zzzz ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Kumpulan pendek, satu demi satu. Teruskan hingga habis walaupun anda tersilap.",
+      "type": "burst",
+      "tokens": [
+        "z'",
+        "z.",
+        ",,",
+        ".,",
+        "''",
+        ",'",
+        "zz",
+        "',",
+        "..",
+        "z,"
+      ]
+    },
+    {
+      "text": "Kekunci baharu bercampur dengan yang lama, seperti rupanya nanti di dalam perkataan.",
+      "type": "block",
+      "content": "z.z.z. .z.z.z\nz'j.f, f'z,j.\nsz' .dj sz"
+    },
+    {
+      "text": "Perkataan sebenar dengan kekunci baharu. Taip setiap perkataan sekali gus, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lazat izin zon zamrud\nazam ozon zaitun muzik\nozon kuiz lazim zaman"
+    },
+    {
+      "seconds": 25,
+      "text": "Satu pecutan perkataan pendek yang mengandungi kekunci baharu.",
+      "type": "burst",
+      "tokens": [
+        "masalah",
+        "siapa",
+        "kuasa",
+        "sejarah",
+        "tenang",
+        "pilihan",
+        "selain",
+        "kawan",
+        "hilang",
+        "bijak"
+      ]
+    },
+    {
+      "text": "Sekarang tumpuan pada Z, kekunci yang paling jarang anda tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "pagi harap syukur lengan\nsekolah salah kami juga\nadik azam gurau kuasa"
+    },
+    {
+      "text": "Kembali kepada corak sebentar, untuk memastikan jari masih tahu jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, zzz ''' ...\nz.z.z. .z.z.z\n,z'. ,z'."
+    },
+    {
+      "text": "Semua yang anda ada, bercampur. Perhatikan berapa banyak perkataan yang sudah keluar tanpa difikirkan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "malam burung lazim tetapi\ncukup mimpi kain zat\nsemalam sama lemah tangga"
+    }
+  ]
+}

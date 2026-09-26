@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Unit 1 test",
+  "summary": "A timed test with everything learned so far.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y",
+    "r",
+    "u",
+    "w",
+    "f"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "A timed test. Nothing new: only what you already know, at a pace you can keep up.",
+  "congrats": "Test passed. The number matters less than getting to the end without looking.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "No new keys. Type at a pace you can hold all the way to the end.",
+      "dictation": "words",
+      "content": "ah west either wrote\nuse sure another gate\nfish east test urge\nsash stays there at"
+    }
+  ]
+}

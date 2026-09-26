@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "Yeni tuşlar: $, %, & ve kesme işareti",
+  "summary": "Bu derste: $, %, & ve kesme işareti.",
+  "newKeys": [
+    "$",
+    "%",
+    "&",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c",
+    "f",
+    "p",
+    "ç",
+    "ö",
+    "j",
+    ".",
+    "b",
+    "ş",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ",",
+    "/",
+    "-",
+    "q",
+    "w",
+    "x",
+    "+",
+    "*",
+    "!",
+    "\"",
+    "$",
+    "%",
+    "&",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kursun henüz kullanmadığı tuşlar: $, %, & ve kesme işareti. Hepsi Shift ve parmaklarının zaten tanıdığı bir tuşla çıkar — Shift öbür elin serçe parmağında.",
+  "congrats": "Artık parmaklarının altında: $, %, & ve kesme işareti. İşaret de yanındaki harf kadar kolay çıkıyor.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "Bu karakter için sol işaret parmağı çalışır: $; Shift öbür elde.",
+      "hint": "Devam etmek için $ tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Önce yalnızca $, sonra gerçekten kullanıldığı yerde.",
+      "content": "$$ $ $40 $29 $33\n$$ $ $62 $90 $88\n$$ $ $12 $60 $62"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "Bu karakter için sol işaret parmağı çalışır: %; Shift öbür elde.",
+      "hint": "Devam etmek için % tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Önce yalnızca %, sonra gerçekten kullanıldığı yerde.",
+      "content": "%% % 34% 30% 24%\n%% % 24% 96% 40%\n%% % 44% 13% 49%"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "Bu karakter için sağ işaret parmağı çalışır: &; Shift öbür elde.",
+      "hint": "Devam etmek için & tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Önce yalnızca &, sonra gerçekten kullanıldığı yerde.",
+      "content": "&& & izle & yazmak yarış & akşamlar üzerinde & oda\n&& & aynı & sayı havlu & doğa büyük & pırasa\n&& & masa & yatakta şef & dost yedi & rahatça"
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RI",
+      "text": "Bu karakter için sağ işaret parmağı çalışır: kesme işareti; Shift öbür elde.",
+      "hint": "Devam etmek için ' tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "'",
+      "text": "Önce yalnızca kesme işareti, sonra gerçekten kullanıldığı yerde.",
+      "content": "'' ' 'bölüm' 'çözüm' 'kitaplar'\n'' ' 'ağız' 'cümle' 'emek'\n'' ' 'satır' 'sevinç' 'mahalle'"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Bu karakterlerle kısa parçalardan bir seri.",
+      "tokens": [
+        "pul&evde",
+        "26%",
+        "kolay&banka",
+        "'toplantı'",
+        "55%",
+        "$74",
+        "yüksek&sesler",
+        "$66",
+        "'ocak'",
+        "18%"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Bu derste gelen her şey, karışık.",
+      "content": "'zarf' 48% 77% odalar&yok\n77% $30 hat&yazı 66%\n'sayılar' 'bitir' $84 'evet'"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Yeniden kelimeler, işaretler yerli yerinde.",
+      "content": "vermek & kasa eş 94% bey $23\n$31 ceviz $68 yer 43%\nkaşık & otur sıcak 12% karar 45%"
+    }
+  ]
+}

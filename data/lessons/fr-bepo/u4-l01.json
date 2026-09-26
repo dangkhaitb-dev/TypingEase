@@ -1,0 +1,160 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "$, #, ° et le point-virgule",
+  "summary": "Au programme : $, #, ° et le point-virgule.",
+  "newKeys": [
+    "$",
+    "#",
+    "°",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d",
+    "o",
+    "v",
+    "è",
+    "^",
+    "l",
+    "é",
+    "x",
+    "'",
+    "q",
+    ".",
+    "b",
+    "j",
+    "k",
+    "y",
+    "à",
+    "h",
+    "g",
+    "m",
+    "shift",
+    "enter",
+    "\"",
+    "«",
+    "»",
+    "(",
+    ")",
+    "@",
+    "+",
+    "-",
+    "/",
+    "*",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "f",
+    "=",
+    "%",
+    "z",
+    "w",
+    "ç",
+    "$",
+    "#",
+    "°",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Des touches que le cours n'a pas encore utilisées : $, #, ° et le point-virgule. Certaines demandent Maj, avec l'auriculaire de l'autre main ; les autres ont leur propre touche, que le cours n'avait pas encore utilisée.",
+  "congrats": "$, #, ° et le point-virgule : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe $.",
+      "hint": "Appuie sur $ pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "D'abord $ sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "$$ $ $75 $66 $82\n$$ $ $25 $79 $86\n$$ $ $61 $13 $5"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "D'abord # sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "## # #39 #85 #92\n## # #12 #17 #98\n## # #36 #59 #69"
+    },
+    {
+      "type": "intro",
+      "key": "°",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe °, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ° pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "°",
+      "text": "D'abord ° sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "°° ° 28° 97° 70°\n°° ° 85° 38° 78°\n°° ° 59° 70° 17°"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "LI",
+      "text": "C'est l'index gauche qui frappe le point-virgule, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ; pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "D'abord le point-virgule sans rien autour, puis là où on s'en sert vraiment.",
+      "content": ";; ; son; notre; vite;\n;; ; projets; surgir; mûre;\n;; ; mesure; jures; succès;"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Une série de petits morceaux avec ces caractères.",
+      "tokens": [
+        "demi;",
+        "$11",
+        "$86",
+        "#19",
+        "idées;",
+        "6°",
+        "grands;",
+        "#86",
+        "bien;",
+        "#5"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tout ce que cette leçon a apporté, mélangé.",
+      "content": "35° #46 $88 32°\nelle; 51° voit; #25\ntoi; textes; taxis; $48"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Des mots à nouveau, avec les signes à leur place.",
+      "content": "51° surgir $81 luttes #18\n$39 titre 30° idem #50\nkiwis; soleil $53 rues lumières;"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="hi" data-course="hi-bolnagri">
+  <head>
+    <!-- SINH TỰ ĐỘNG bằng scripts/build-family-pages.js từ hi/seekhen/index.html. Sửa trang gốc rồi chạy lại. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>पाठ · TypingEase</title>
+    <meta name="description" content="TypingEase का पाठ प्लेयर: एक बार में एक स्क्रीन, साथ में कीबोर्ड और हाथ जो दिखाते हैं कि कौन-सी उँगली कहाँ जाती है।" />
+    <!-- The app, not a landing page. Same reasoning as /hoc/ and /en/learn/: the drills have no
+         search value and the route lives in the hash, so it stays out of the index. No hreflang
+         either: alternates are not declared for pages nobody should index. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://typingease.site/hi/bolnagri/seekhen/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/player.css" />
+  </head>
+  <body class="player-page">
+    <div class="player" id="player">
+      <header class="player-topbar">
+        <a class="pt-back" href="/hi/bolnagri/" id="pt-back">← कोर्स</a>
+        <div class="pt-title">
+          <span id="pt-unit"></span>
+          <strong id="pt-lesson">लोड हो रहा है…</strong>
+        </div>
+        <div class="pt-right">
+          <span class="pt-screen" id="pt-screen"></span>
+          <button class="pt-redo" id="pt-redo" type="button" title="पाठ फिर से शुरू करें" aria-label="पाठ फिर से शुरू करें">↻</button>
+          <button class="pt-toggle" id="pt-sound" type="button" aria-pressed="false" title="कुंजी की आवाज़ (Alt+S)" aria-label="कुंजी की आवाज़">🔊</button>
+          <button class="pt-toggle" id="pt-hands" type="button" aria-pressed="true" title="हाथ कुंजियों के साथ चलें (Alt+H)" aria-label="हाथ कुंजियों के साथ चलें">✋</button>
+          <button class="pt-redo" id="pt-keyboard" type="button" title="कीबोर्ड सेटिंग (Alt+K)" aria-label="कीबोर्ड सेटिंग">⚙</button>
+        </div>
+      </header>
+
+      <div class="progress-segments" id="pt-progress" role="progressbar" aria-label="पाठ की प्रगति" aria-valuemin="0" aria-valuenow="0"></div>
+
+      <div class="player-notes" id="player-note" hidden></div>
+
+      <main class="player-stage is-loading" id="stage">
+        <section class="card"><p class="intro-text">पाठ लोड हो रहा है…</p></section>
+      </main>
+
+      <div class="player-board keyboard-demo" id="board" aria-hidden="true"></div>
+
+      <p class="player-live" id="live" role="status" aria-live="polite"></p>
+
+      <label class="sr-only" for="player-input">ऊपर वाली पंक्ति लिखें</label>
+      <textarea class="player-input" id="player-input" rows="1" autocomplete="off" autocapitalize="off"
+        autocorrect="off" spellcheck="false" inputmode="text" aria-describedby="live"></textarea>
+
+      <button class="tap-to-type" id="tap-to-type" type="button">लिखने के लिए छुएँ</button>
+    </div>
+
+    <!-- ui.hi.js first: every module below spreads it over its own Vietnamese defaults, so it has
+         to exist when they run. A classic script on purpose — classic scripts run before deferred
+         modules, which is exactly what keyboard/boot.js relies on.
+         No telex-match.js here: Telex is a Vietnamese input method and this course never reaches
+         that code path.
+         data/words/hi.js must come before weak-keys.js, which reads its word list from there. -->
+    <script src="/i18n/ui.hi.js"></script>
+    <script src="/profile.js"></script>
+    <script src="/data/words/hi.js"></script>
+    <script src="/weak-keys.js"></script>
+    <script src="/data/curriculum.hi-bolnagri.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/player.js"></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

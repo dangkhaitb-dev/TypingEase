@@ -1,0 +1,137 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Free typing practice with your own text | TypingEase</title>
+    <meta name="description" content="Paste your own text or pick a sample passage, then type it back while you watch your WPM, your accuracy and a keyboard that shows which finger to use." />
+    <link rel="canonical" href="https://typingease.site/en/practice/" />
+    <!-- seo:head -->
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="TypingEase" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:title" content="Free typing practice with your own text | TypingEase" />
+    <meta property="og:description" content="Paste your own text or pick a sample passage, then type it back while you watch your WPM, your accuracy and a keyboard that shows which finger to use." />
+    <meta property="og:url" content="https://typingease.site/en/practice/" />
+    <meta property="og:image" content="https://typingease.site/assets/og-image.png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="TypingEase" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <!-- /seo:head -->
+    <link rel="alternate" hreflang="vi" href="https://typingease.site/luyen-tu-do/" />
+    <link rel="alternate" hreflang="en" href="https://typingease.site/en/practice/" />
+    <link rel="alternate" hreflang="x-default" href="https://typingease.site/en/practice/" />
+    <meta name="robots" content="index, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <!-- free.css is shared with /luyen-tu-do/ and keyed off the ids and classes below, so the
+         markup here mirrors the Vietnamese page element for element. Change one, change both. -->
+    <link rel="stylesheet" href="/luyen-tu-do/free.css" />
+  </head>
+  <body class="free-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="Main navigation">
+        <a href="/">Practice</a>
+        <a href="/en/lessons/">Course</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="Choose your language and keyboard">Home</a><a class="secondary-button" href="/en/lessons/">The course <span>→</span></a></div>
+    </header>
+
+    <main class="free-main">
+      <section class="free-head">
+        <p class="eyebrow"><i></i> Free practice</p>
+        <h1>Type text of your own</h1>
+        <p class="free-lead">Paste anything you want to practice on — notes, an email, a page of a book — then
+          type it back and watch your speed and accuracy. Nothing here is graded and no lesson is waiting,
+          but the keyboard still shows you which finger the next key belongs to.</p>
+      </section>
+
+      <section class="free-practice" id="free-practice" aria-label="Free typing practice">
+        <div class="free-intro">
+          <strong>Choose your text</strong>
+          <span>Paste your own, or take one of the sample passages.</span>
+        </div>
+        <label class="sr-only" for="custom-text">Text to practice on</label>
+        <textarea id="custom-text" rows="3" placeholder="Paste or type the text you want to practice on here..."></textarea>
+        <div class="free-actions">
+          <button class="use-text" id="use-text" type="button">Use this text</button>
+          <button class="random-text" id="random-text" type="button">↻ Random passage</button>
+        </div>
+        <div class="free-stats">
+          <span>Speed <b id="free-wpm">0 WPM</b></span>
+          <span>Accuracy <b id="free-accuracy">--%</b></span>
+          <span>Time <b id="free-timer">00:00</b></span>
+        </div>
+        <p class="free-sample" id="free-sample">Choose a passage to start typing.</p>
+        <div class="input-head"><label class="typing-label" for="free-input">Type the text above</label><button class="sound-toggle" id="sound-toggle" type="button" aria-pressed="false" title="Key click sound (Alt+S)">🔊 Key click</button></div>
+        <textarea id="free-input" rows="3" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" placeholder="Start typing here..."></textarea>
+        <p class="feedback" id="free-feedback" aria-live="polite">Paste something of your own, or take a sample passage.</p>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="free-keyboard-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> Watch where your hands go</p>
+          <h3 id="free-keyboard-title">Keyboard and fingers</h3>
+          <p>The key you need lights up blue and the finger that owns it lifts. Look at the screen, not at your hands.</p>
+          <div class="finger-legend"><span class="pinky">Little</span><span class="ring">Ring</span><span class="middle">Middle</span><span class="index">Index</span><span class="thumb">Thumb</span></div>
+        </div>
+        <div class="keyboard-demo free-board" id="free-board"></div>
+      </section>
+
+      <section class="explore" aria-labelledby="free-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Want more structure?</p>
+          <h2 id="free-explore-title">If you would rather be taught</h2>
+        </div>
+        <!-- Two cards, not the three the Vietnamese page shows: /en/typing-test/ and
+             /en/weak-keys/ do not exist yet, and sending an English learner to the Vietnamese
+             article is worse than not offering the link. Same rule as the null routes in
+             i18n/ui.en.js. -->
+        <div class="explore-grid">
+          <a class="explore-card" href="/en/lessons/">
+            <h3>The 27-lesson course</h3>
+            <p>Three units from the home row to numbers and symbols, two new keys and about five minutes per lesson.</p>
+            <span>See the course <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>Type on your own keyboard</h3>
+            <p>QWERTY, AZERTY, QWERTZ, Devanagari, Arabic, JIS — 119 real layouts, and the keyboard above follows the one you pick.</p>
+            <span>See the layouts <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>Go a little slower, and you will get a lot further.</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/about/">About</a><span aria-hidden="true"> · </span><a href="/terms/">Terms of Service</a><span aria-hidden="true"> · </span><a href="/privacy/">Privacy Policy</a></p><!-- /legal -->
+    </footer>
+
+    <!-- ui.en.js first: free-page.js spreads it over its own Vietnamese defaults, so it has to
+         exist by the time that runs. It is a classic script on purpose — classic scripts
+         execute before deferred modules, which is what keyboard/boot.js relies on, and this
+         page mounts the keyboard widget. Do not add `defer`. -->
+    <script src="/i18n/ui.en.js"></script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/luyen-tu-do/free-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

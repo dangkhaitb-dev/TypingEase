@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C dan N",
+  "summary": "Kekunci baharu: C dan N. Jari keluar, tekan dan kembali.",
+  "newKeys": [
+    "c",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci baharu dalam pelajaran ini: C dan N. Ia ditekan oleh jari hantu kiri dan jari telunjuk kanan. Gerakannya sentiasa sama — keluar, tekan dan kembali — dan perjalanan pulang itulah yang dilatih, kerana jika jari tertinggal di luar, huruf seterusnya akan tersilap.",
+  "congrats": "Lebih banyak kekunci di bawah jari. Jika C dan N sudah keluar tanpa dicari, pelajaran ini telah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "Kekunci ini milik jari hantu kiri. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan C untuk meneruskan"
+    },
+    {
+      "newKey": "c",
+      "text": "Hanya C dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "cccc cccc\nc c\njfc d jf"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "Kekunci ini milik jari telunjuk kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan N untuk meneruskan"
+    },
+    {
+      "newKey": "n",
+      "text": "Hanya N dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "cncncn ncncnc\nnc nc\njdc nf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Kumpulan pendek, satu demi satu. Teruskan hingga habis walaupun anda tersilap.",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "nnn",
+        "nc",
+        "ccnc",
+        "cnnn",
+        "cnn",
+        "ncc",
+        "nncc",
+        "nccc",
+        "ncnn"
+      ]
+    },
+    {
+      "text": "Kekunci baharu bercampur dengan yang lama, seperti rupanya nanti di dalam perkataan.",
+      "type": "block",
+      "content": "nc cn ncnc\nnnn ccc jjj fff\ncncn ncnc"
+    },
+    {
+      "text": "Perkataan sebenar dengan kekunci baharu. Taip setiap perkataan sekali gus, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sendiri selatan cekal sunyi\ndinding lencana hidangan cawangan\nsiang ingat ketinggian cergas"
+    },
+    {
+      "seconds": 25,
+      "text": "Satu pecutan perkataan pendek yang mengandungi kekunci baharu.",
+      "type": "burst",
+      "tokens": [
+        "lewat",
+        "udara",
+        "gula",
+        "segala",
+        "kuning",
+        "susu",
+        "sajak",
+        "gajah",
+        "lukisan",
+        "cawan"
+      ]
+    },
+    {
+      "text": "Sekarang tumpuan pada C, kekunci yang paling jarang anda tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kali roti tali lori\nnenek akal lancar kaya\notak hanya kunci tangga"
+    },
+    {
+      "text": "Kembali kepada corak sebentar, untuk memastikan jari masih tahu jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nnnn ccc\ncncn ncnc\nnc nc"
+    },
+    {
+      "text": "Semua yang anda ada, bercampur. Perhatikan berapa banyak perkataan yang sudah keluar tanpa difikirkan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kerana ahli cincin tidur\nkaya suara sejuk goreng\nkolej haus coklat kala"
+    }
+  ]
+}

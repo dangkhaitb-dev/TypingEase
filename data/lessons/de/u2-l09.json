@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift und Enter",
+  "summary": "Großbuchstaben mit dem gegenüberliegenden kleinen Finger, dazu der Zeilenumbruch.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ä",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bis hierhin war alles klein geschrieben. Shift ändert das, und dazu gehört eine Regel, die man gleich richtig lernen sollte: Shift drückt der kleine Finger der Hand, die den Buchstaben nicht schreibt. Mit dem kleinen Finger derselben Hand verdreht sich die Hand, und am Ende siehst du wieder auf die Tastatur.",
+  "congrats": "Mit Shift und Enter kannst du einen ganzen Text so schreiben, wie er außerhalb dieses Kurses geschrieben wird.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Großbuchstaben macht der kleine Finger der anderen Hand. Shift halten, Buchstabe tippen, loslassen. Nie mit demselben kleinen Finger, der auch den Buchstaben schreibt.",
+      "hint": "Halte Shift und tippe einen Buchstaben, um weiterzugehen"
+    },
+    {
+      "newKey": "shift",
+      "text": "Groß und klein im Wechsel. Der kleine Finger geht runter und hoch; die andere Hand bleibt, wo sie ist.",
+      "type": "block",
+      "content": "Öö Ää Jj Bb\nVv Tt Ii Ll\nDd Pp Ee Zz\nKk Nn Uu Yy"
+    },
+    {
+      "text": "Wörter mit großem Anfangsbuchstaben, so wie Namen geschrieben werden.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lachen aal index jede\nstark feld extra hall\nstolz gruppe steht stärke"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter gehört dem rechten kleinen Finger, rechts neben der Grundstellung. Es ist die größte Taste, die dieser Finger erreichen muss.",
+      "hint": "Drücke Enter, um weiterzugehen"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Eine Zeile, Enter, die nächste Zeile. Der kleine Finger geht raus und zurück, ohne die Hand mitzunehmen.",
+      "type": "block",
+      "content": "Bremen\nMaria\nKlara\nKiel\nLena\nLaura"
+    },
+    {
+      "text": "Sätze mit großem Anfang und Punkt am Ende. Das sieht jetzt nach echtem Schreiben aus.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Er kocht heute eine Suppe mit frischen Kartoffeln.\nAm Wochenende fahren wir an die See.\nIch lese jeden Abend ein paar Seiten."
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde, um das aus dieser Lektion festzumachen.",
+      "type": "burst",
+      "tokens": [
+        "gute",
+        "eis",
+        "hund",
+        "esel",
+        "tal",
+        "mit",
+        "reise",
+        "leute",
+        "hotel",
+        "tasse",
+        "nur",
+        "stunde"
+      ]
+    },
+    {
+      "text": "Fünf pro Zeile, mit dem kleinen Finger in beide Richtungen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "butter sind sieger berg privat\nziel weg arzt spur gut\nende dose schwer mund blatt"
+    },
+    {
+      "text": "Zum Schluss ganze Sätze. Shift, Buchstabe, loslassen — ohne darüber nachzudenken.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Die Blumen auf dem Balkon brauchen Wasser.\nMein Bruder arbeitet in einem kleinen Betrieb.\nDie Katze schläft den ganzen Tag auf dem Sofa."
+    }
+  ]
+}

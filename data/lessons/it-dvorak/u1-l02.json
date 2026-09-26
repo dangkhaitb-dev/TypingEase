@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "E e T",
+  "summary": "Tasti nuovi: E e T. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "e",
+    "t"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: E e T. Si premono con il medio sinistro e il medio destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se E e T ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "Questo tasto lo prende il medio sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi E per continuare"
+    },
+    {
+      "newKey": "e",
+      "text": "Solo E e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "e e ee\neeee\neeee eeee"
+    },
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "RM",
+      "text": "Questo tasto lo prende il medio destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi T per continuare"
+    },
+    {
+      "newKey": "t",
+      "text": "Solo T e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "eee ttt\netet tete\net et"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "ee",
+        "tett",
+        "ette",
+        "teee",
+        "eee",
+        "eett",
+        "tet",
+        "teet",
+        "etet",
+        "tee"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "etetet tetete\nueht huet\neuh t eu"
+    },
+    {
+      "text": "Di nuovo i due tasti nuovi. Non ci sono ancora parole da scrivere con loro, ed è normale.",
+      "type": "block",
+      "content": "uth e ut\net te etet\nttt eeee"
+    },
+    {
+      "seconds": 25,
+      "text": "Gruppi un po' più lunghi. La fretta non aiuta ancora.",
+      "type": "burst",
+      "tokens": [
+        "ett",
+        "eett",
+        "ettt",
+        "ete",
+        "tett",
+        "et",
+        "tttt",
+        "ttet",
+        "eeet",
+        "teet",
+        "eeee",
+        "ttt"
+      ]
+    },
+    {
+      "text": "Tutto quello che hai, in gruppi corti. Guarda lo schermo, non le mani.",
+      "type": "block",
+      "content": "ute h ut\neh he eheh\nhhhh tttt uuuu eeee"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "et te etet\neeee ttt\netet tete"
+    },
+    {
+      "text": "Un ultimo giro con tutto quello che hai imparato fin qui.",
+      "type": "block",
+      "content": "hue t hu\net te etet\ntttt eee uuuu hhh"
+    }
+  ]
+}

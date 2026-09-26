@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "La columna exterior",
+  "summary": "La columna del borde derecho: seis teclas, todas del meñique.",
+  "newKeys": [
+    "-",
+    "'",
+    "¿",
+    "`",
+    "+",
+    "ç"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "´",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "¿",
+    "`",
+    "+",
+    "ç"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "El meñique derecho lleva más teclas que ningún otro dedo, y las del borde son las que casi nadie practica. Se salen de la fila de reposo más que cualquier otra, así que el truco es el de siempre: sale, pulsa y vuelve, sin arrastrar la mano detrás.",
+  "congrats": "Esa columna es la que se queda a medias en casi todos los cursos. Ya no en el tuyo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "-",
+      "finger": "RP",
+      "text": "Las teclas del borde derecho, todas del meñique. Son los estiramientos más largos que hace ese dedo, y las que menos se practican después.",
+      "hint": "Pulsa - para continuar"
+    },
+    {
+      "newKeys": [
+        "-",
+        "'"
+      ],
+      "text": "Ahora - y '. El meñique sale hacia fuera y vuelve; la mano no se va con él.",
+      "type": "block",
+      "content": "-'-' '-'-\n-' '-\nj'd -f j'"
+    },
+    {
+      "newKeys": [
+        "¿",
+        "`"
+      ],
+      "text": "Ahora ¿ y `. El meñique sale hacia fuera y vuelve; la mano no se va con él.",
+      "type": "block",
+      "content": "`¿ ¿`\n¿fj `d ¿f\n¿` `¿ ¿`¿`"
+    },
+    {
+      "seconds": 20,
+      "text": "Una ráfaga con lo que llevas de esta columna.",
+      "type": "burst",
+      "tokens": [
+        "`'",
+        "'¿",
+        "''",
+        "`-",
+        "'-",
+        "-`",
+        "`¿",
+        "-'",
+        "'`",
+        "``"
+      ]
+    },
+    {
+      "newKeys": [
+        "+",
+        "ç"
+      ],
+      "text": "Ahora + y ç. El meñique sale hacia fuera y vuelve; la mano no se va con él.",
+      "type": "block",
+      "content": "+ç +ç\n+fd çj +f\n+ç ç+ +ç+ç"
+    },
+    {
+      "text": "Las seis juntas. Es la parte del teclado donde más se tuerce la muñeca si el dedo no vuelve.",
+      "type": "block",
+      "content": "f¿- dç' f¿\nç+ +ç ç+ç+\nçççç ¿¿¿¿ ''' --- ``` ++++"
+    },
+    {
+      "seconds": 25,
+      "text": "Palabras otra vez, para soltar la mano después de tanto borde.",
+      "type": "burst",
+      "tokens": [
+        "iguales",
+        "ciudades",
+        "práctica",
+        "verdes",
+        "vez",
+        "brazo",
+        "primero",
+        "usadas",
+        "los",
+        "añade",
+        "hasta",
+        "filas"
+      ]
+    },
+    {
+      "text": "De vuelta a las palabras, con el teclado entero disponible.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "empieza selva catorce debe\ngusta centros hilos seguro\nno agosto blancas única"
+    },
+    {
+      "text": "Frases completas para cerrar la unidad de teclas.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Mi padre prepara la comida los domingos.\nMi madre trabaja en el centro de la ciudad.\nLos niños juegan en el jardín de la escuela."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "P et D",
+  "summary": "Nouvelles touches : P et D. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "p",
+    "d"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : P et D. Elles se tapent avec le majeur gauche et le majeur droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si P et D sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "LM",
+      "text": "C'est le majeur gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur P pour continuer"
+    },
+    {
+      "newKey": "p",
+      "text": "Seulement P et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "p p\npie t pi\np p pp"
+    },
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "RM",
+      "text": "C'est le majeur droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur D pour continuer"
+    },
+    {
+      "newKey": "d",
+      "text": "Seulement D et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "dp pd\nepi dt ep\npd dp pdpd"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "dp",
+        "pdd",
+        "dppp",
+        "ddp",
+        "pdpd",
+        "pddp",
+        "dd",
+        "dpd",
+        "ddpd",
+        "ppdd"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "eeee pppp tttt ddd\npdpdpd dpdpdp\ntdpe edtp"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dis dur prendre dites\npar dessus peu dise\ndures partie part petite"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "ses",
+        "suite",
+        "centres",
+        "dur",
+        "tu",
+        "une",
+        "ainsi",
+        "nuit",
+        "passer",
+        "titre"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur P, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "papiers aussi titre passer\npapier peu nuit tir\nrues passe sud de"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "pppp dddd\npdpdpd dpdpdp\npd dp"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dure petite petits tir\nensuite des te se\nnuit site dise durs"
+    }
+  ]
+}

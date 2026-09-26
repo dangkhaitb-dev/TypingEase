@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "U ve Y",
+  "summary": "Yeni tuşlar: U ve Y. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "u",
+    "y"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: U ve Y. Bunlara sol serçe parmak ve sağ serçe parmak basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. U ve Y artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "LP",
+      "text": "Bu tuşa sol serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için U tuşuna bas"
+    },
+    {
+      "newKey": "u",
+      "text": "Yalnızca U ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "u u\naku e ak\nu u uu"
+    },
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "RP",
+      "text": "Bu tuşa sağ serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Y tuşuna bas"
+    },
+    {
+      "newKey": "y",
+      "text": "Yalnızca Y ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "uyuy yuyu\nuy yu\nyea ku ye"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "yuuu",
+        "uuy",
+        "uuu",
+        "uyyu",
+        "yuyy",
+        "yyuu",
+        "uyy",
+        "uuyy",
+        "yuyu",
+        "uyuu"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "uy yu uyuy\nuuu yyyy aaaa kkk\nuyuy yuyu"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ay mum yaka yemek\nkum mum kaya ya\nya kum kaya yumak"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "elma",
+        "a",
+        "mum",
+        "mal",
+        "yay",
+        "kayak",
+        "almak",
+        "ekim",
+        "kalem",
+        "kim"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık U tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "al ele kim kalk\nkulak yemek kalem iyi\nile ama kal kek"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "uyuyuy yuyuyu\nuy yu\nkyu ea ky"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "el kayak ekle yemek\nelle mal kelime ele\nak ek kala ama"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, il punto, la virgola e À",
+  "summary": "Tasti nuovi: Z, il punto, la virgola e À. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "à"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ò",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "à"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: Z, il punto, la virgola e À. Si premono con il mignolo sinistro, l'anulare destro, il medio destro e il mignolo destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se Z, il punto, la virgola e À ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "Questo tasto lo prende il mignolo sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi Z per continuare"
+    },
+    {
+      "newKey": "z",
+      "text": "Solo Z e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "z z\ndfj z df\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Questo tasto lo prende l'anulare destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi . per continuare"
+    },
+    {
+      "newKey": ".",
+      "text": "Solo . e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": ".z .z\n.zf dj .z\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Questo tasto lo prende il medio destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi , per continuare"
+    },
+    {
+      "newKey": ",",
+      "text": "Solo , e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "z,. .z,\n.,j fzd .,\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": "à",
+      "finger": "RP",
+      "text": "Questo tasto lo prende il mignolo destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi À per continuare"
+    },
+    {
+      "newKey": "à",
+      "text": "Solo À e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "f.j ,àd f.\nà. .à à.à.\nààà ,,, zzzz ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "zà",
+        "z.",
+        ",,",
+        ".,",
+        "àà",
+        ",à",
+        "zz",
+        "à,",
+        "..",
+        "z,"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "z.z.z. .z.z.z\nzàj.f, fàz,j.\nszà .dj sz"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "grazie prezzo palazzo ragazza\nsocietà realtà lezione canzone\nnecessità comunità difficoltà zia"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "buona",
+        "regale",
+        "breve",
+        "questa",
+        "fiera",
+        "lezione",
+        "forte",
+        "falsa",
+        "treno",
+        "lega"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su Z, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "avrò penna tagliare chi\ncanta lezione meno fila\nesperienza ragazzo sfida regale"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, zzz ààà ...\nz.z.z. .z.z.z\n,zà. ,zà."
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mercato vacanza cioccolata quando\ndecidere cinque sono comune\nvento partire collina colore"
+    }
+  ]
+}

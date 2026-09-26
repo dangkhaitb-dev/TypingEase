@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "La riga dei numeri",
+  "summary": "I dieci numeri, ogni dito che sale in linea retta.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "à",
+    "l",
+    "x",
+    "q",
+    "ò",
+    "v",
+    "w",
+    "-",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "La riga dei numeri sta sopra tutto quello che hai scritto finora, ed è quella in cui le dita vanno più lontano. Qui si sbaglia più che in qualsiasi altro punto del corso, e si aggiusta come il resto: prima piano.",
+  "congrats": "La riga dei numeri è quella che costa di più e quella che dopo si pratica di meno. Torna a questa lezione ogni tanto.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "La riga dei numeri sta sopra la riga superiore. Ogni dito sale in linea retta e scende allo stesso modo. Sono gli allunghi più lunghi del corso.",
+      "hint": "Premi 1 per continuare"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "I tasti 1 e 0 si premono con il mignolo sinistro e con lo stesso dito dell'altra mano. Sali, premi e torna alla riga di riposo.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "I tasti 2 e 9 si premono con l'anulare sinistro e con lo stesso dito dell'altra mano. Sali, premi e torna alla riga di riposo.",
+      "type": "block",
+      "content": "eu2 9h eu\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Una raffica corta con i numeri che hai imparato.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "I tasti 3 e 8 si premono con il medio sinistro e con lo stesso dito dell'altra mano. Sali, premi e torna alla riga di riposo.",
+      "type": "block",
+      "content": "383838 838383\n83 38\ne83 hu e8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "I tasti 4 e 7 si premono con l'indice sinistro e con lo stesso dito dell'altra mano. Sali, premi e torna alla riga di riposo.",
+      "type": "block",
+      "content": "47 47\nuh4 7e uh\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "I due che restano sono degli indici, che ormai raggiungono più tasti di ogni altro dito.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nuh6 5e uh"
+    },
+    {
+      "text": "Tutta la riga, in gruppi. Non abbassare lo sguardo per cercare il 6.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Tutti e dieci, mescolati. All'inizio qui si sbaglia molto; è normale.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Torniamo un momento alle parole, perché le mani si ricordino dove abitano.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "cosa banco punto potrà\ncredere tirare necessità larghe\ntali madre sarà yoga"
+    },
+    {
+      "text": "Di nuovo frasi, ormai con tutta la tastiera a disposizione.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Il cane corre nel giardino dietro casa.\nI nonni vivono in una casa vicino al mare.\nOgni mattina faccio una lunga camminata."
+    }
+  ]
+}

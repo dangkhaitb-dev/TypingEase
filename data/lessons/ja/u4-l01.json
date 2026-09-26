@@ -1,0 +1,157 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "!, \", # と $",
+  "summary": "このレッスンのキー：!, \", # と $",
+  "newKeys": [
+    "!",
+    "\"",
+    "#",
+    "$"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    ":",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "^",
+    "@",
+    "[",
+    "]",
+    "!",
+    "\"",
+    "#",
+    "$"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "この講座でまだ使っていないキーです：!, \", # と $。どれも、指がすでに知っているキーを Shift と一緒に押します。Shift は反対の手の小指で押してください。",
+  "congrats": "!, \", # と $も指が覚えました。記号も、となりの文字と同じように出てきます。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "! は左手の小指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "! を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "まず ! だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "!! ! asoko! chizu! soba!\n!! ! umai! tetsudau! shiki!\n!! ! oshii! yousu! dasu!"
+    },
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LR",
+      "text": "\" は左手の薬指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "\" を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "まず \" だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "\"\" \" \"imasu\" \"furu\" \"ashi\"\n\"\" \" \"shoushou\" \"ukeru\" \"te\"\n\"\" \" \"eikyou\" \"tsuite\" \"ikiru\""
+    },
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LM",
+      "text": "# は左手の中指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "# を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "まず # だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "## # #24 #6 #72\n## # #59 #28 #35\n## # #87 #32 #11"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "$ は左手の人差し指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "$ を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "まず $ だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "$$ $ $29 $10 $72\n$$ $ $30 $93 $87\n$$ $ $81 $68 $62"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "これらの文字を含む短いかたまりの連打です。",
+      "tokens": [
+        "rikai!",
+        "$20",
+        "#87",
+        "#23",
+        "#10",
+        "nakusu!",
+        "$38",
+        "#17",
+        "\"tamago\"",
+        "\"kaeru\""
+      ]
+    },
+    {
+      "type": "block",
+      "text": "このレッスンで出てきたものを、すべて混ぜて打ちます。",
+      "content": "$13 $29 kawaru! su-pa-!\n#69 #5 sushi! hikouki!\n\"agaru\" \"asobu\" #65 \"ashita\""
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "もう一度単語です。記号はそれぞれ使われる位置にあります。",
+      "content": "\"tooku\" douyatte chichi! futatsu moji!\n#72 yomu #79 fuku tsugou!\nnihonn! dougu \"yomimasu\" kibunn $97"
+    }
+  ]
+}

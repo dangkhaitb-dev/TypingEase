@@ -1,0 +1,122 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "g-h",
+  "title": "O und S",
+  "summary": "Neue Tasten: O und S. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "o",
+    "s"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: O und S. Dafür sind der linke Zeigefinger und der rechte Zeigefinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn O und S ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "LI",
+      "text": "Für diese Taste ist der linke Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke O, um weiterzugehen"
+    },
+    {
+      "newKey": "o",
+      "text": "Nur O und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "oooo\noooo oooo\no o"
+    },
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "RI",
+      "text": "Für diese Taste ist der rechte Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke S, um weiterzugehen"
+    },
+    {
+      "newKey": "s",
+      "text": "Nur S und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "ooo ssss\nososos sososo\nos so"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "osos",
+        "ssss",
+        "oso",
+        "sso",
+        "oo",
+        "ooso",
+        "oss",
+        "os",
+        "osso",
+        "soso"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "es se eses\nsss nnnn eeee oooo\nososos sososo"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "start seid eis diese\naus sei sauer oder\ndass dose sonne sie"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "nuss",
+        "oder",
+        "stunde",
+        "rose",
+        "es",
+        "tasse",
+        "diese",
+        "und",
+        "an",
+        "das"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf O — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "einer da natur nein\nder nase dies ort\nist ass sauer sand"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "os so osos\nsss oooo\nosos soso"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dauer oder rede rot\nende ass eis in\nsei eure es unten"
+    }
+  ]
+}

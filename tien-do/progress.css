@@ -13,6 +13,11 @@
 .prog-intro{max-width:600px;margin:0;color:var(--muted);font-size:14px;line-height:1.75}
 
 /* ---------- status strip (streak · phút hôm nay · trình độ) ---------- */
+/* Ngôn ngữ nhiều khoá (AZERTY, BÉPO…): mỗi khoá một kho tiến độ, chọn khoá nào thì trang đọc kho đó. */
+.prog-courses{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}
+.prog-courses a{padding:7px 14px;border:1px solid var(--border-soft);border-radius:var(--r-pill);background:var(--surface);color:var(--ink-soft);font-size:var(--fs-xs);font-weight:700;text-decoration:none}
+.prog-courses a:hover{background:var(--surface-tint);color:var(--ink)}
+.prog-courses a[aria-current="page"]{border-color:var(--green);background:var(--green);color:#fff}
 .status-strip{display:flex;flex-wrap:wrap;gap:8px 10px;margin-top:20px}
 /* #4c6b5f là sắc chữ riêng của pill: đậm hơn --muted một bậc để chữ 11px in đậm không bị chìm
    trên nền trắng. Chưa có token tương ứng — xem mục "đề nghị token" trong báo cáo. */

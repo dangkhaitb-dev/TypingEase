@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "U and H and the space bar",
+  "summary": "The two keys with bumps, the space bar, and the habit of not looking down.",
+  "newKeys": [
+    "u",
+    "h",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "The keys with a small bump are where everything starts. Both index fingers rest there and do not wander; the rest of the course is measured from that position. Start by placing both hands and looking only at the screen.",
+  "congrats": "Your hands are in place. From here on, everything is a key you reach from this position and let go of again.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press U to continue"
+    },
+    {
+      "newKey": "u",
+      "text": "Only U and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "u u uu\nuuuu\nuuuuuu uuuuuu"
+    },
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press H to continue"
+    },
+    {
+      "newKey": "h",
+      "text": "Only H and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "hu hu\nhu uh huhu\nuh hu uhuh"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "The space bar belongs to your right thumb. The thumbs do nothing else, which is why you never have to look for it.",
+      "hint": "Press the space bar to continue"
+    },
+    {
+      "newKey": " ",
+      "text": "Short groups with spaces between them. The right thumb goes down and up; every other finger stays put.",
+      "type": "block",
+      "content": "hu hu\nuh hu uhuh\nhhhh uuuu"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "uuh",
+        "uu",
+        "uuuu",
+        "uhh",
+        "uuhh",
+        "huu",
+        "uhu",
+        "huuh",
+        "uh",
+        "uhuu"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "uh uh\nuh hu uhuh\nuuuu hhhh"
+    },
+    {
+      "text": "The two new keys once more. There are no words to write with them yet, and that is expected.",
+      "type": "block",
+      "content": "uh hu\nhu hu\nhu uh huhu"
+    },
+    {
+      "seconds": 25,
+      "text": "Slightly longer groups. Hurrying does not help yet.",
+      "type": "burst",
+      "tokens": [
+        "uhuh",
+        "uu",
+        "uhu",
+        "hhu",
+        "uuhu",
+        "uhhh",
+        "uh",
+        "hhuu",
+        "huhh",
+        "huh",
+        "huu",
+        "huuh"
+      ]
+    },
+    {
+      "text": "Everything you have so far, in short groups. Eyes on the screen, not on your hands.",
+      "type": "block",
+      "content": "uhuh huhu\nhu hu\nuh hu uhuh"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "hu hu\nuh hu uhuh\nuuuu hhhh"
+    },
+    {
+      "text": "One last round with everything learned up to here.",
+      "type": "block",
+      "content": "uhuhuh huhuhu\nhu hu\nuh uh"
+    }
+  ]
+}

@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C i N",
+  "summary": "Nowe klawisze: C i N. Palec wychodzi, uderza i wraca.",
+  "newKeys": [
+    "c",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ł",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nowe klawisze w tej lekcji: C i N. Naciskają je lewy palec środkowy i prawy palec wskazujący. Ruch jest zawsze ten sam — wyjść, uderzyć, wrócić — i ćwiczy się tu właśnie powrót, bo palec, który został na zewnątrz, myli następną literę.",
+  "congrats": "Nowe klawisze pod palcami. Jeśli C i N wychodzą już bez szukania, lekcja zrobiła swoje.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "Ten klawisz naciska lewy palec środkowy. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij C, aby przejść dalej"
+    },
+    {
+      "newKey": "c",
+      "text": "Tylko C i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "cccc cccc\nc c\njfc d jf"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "Ten klawisz naciska prawy palec wskazujący. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij N, aby przejść dalej"
+    },
+    {
+      "newKey": "n",
+      "text": "Tylko N i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "cncncn ncncnc\nnc nc\njdc nf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Krótkie grupy, jedna po drugiej. Dojdź do końca, nawet jeśli coś pomylisz.",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "nnn",
+        "nc",
+        "ccnc",
+        "cnnn",
+        "cnn",
+        "ncc",
+        "nncc",
+        "nccc",
+        "ncnn"
+      ]
+    },
+    {
+      "text": "Nowe klawisze wymieszane ze starymi, tak jak pojawią się w słowach.",
+      "type": "block",
+      "content": "nc cn ncnc\nnnn ccc jjj fff\ncncn ncnc"
+    },
+    {
+      "text": "Prawdziwe słowa z nowymi klawiszami. Pisz całe słowo jednym ruchem, nie litera po literze.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tenis dzwoni czarne sernik\ndania całe dziennik czasu\nciotka nad zadanie nasza"
+    },
+    {
+      "seconds": 25,
+      "text": "Seria krótkich słów z nowymi klawiszami.",
+      "type": "burst",
+      "tokens": [
+        "weto",
+        "a",
+        "sera",
+        "ta",
+        "znowu",
+        "gaj",
+        "gwiazda",
+        "sala",
+        "wiadro",
+        "ogniska"
+      ]
+    },
+    {
+      "text": "Teraz z naciskiem na C — tego klawisza było do tej pory najmniej.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ci tania kwiat wiosna\nzoo lekcja akcja tego\nnauka wasz kierowca nasze"
+    },
+    {
+      "text": "Na chwilę wracamy do wzorów, żeby sprawdzić, czy palce zawsze wracają na swoje miejsce.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nnnn ccc\ncncn ncnc\nnc nc"
+    },
+    {
+      "text": "Wszystko, co masz, wymieszane. Zobacz, ile słów wychodzi już bez zastanowienia.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "truskawki drugie czarne nikt\nnas stal w kucharz\nciche od szafa dla"
+    }
+  ]
+}

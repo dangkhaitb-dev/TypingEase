@@ -1,0 +1,134 @@
+{
+  "id": "u2-l04",
+  "unit": "u2",
+  "group": "start",
+  "order": 14,
+  "slug": "m-v",
+  "title": "M e V",
+  "summary": "Tasti nuovi: M e V. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "m",
+    "v"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ò",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: M e V. Si premono con l'indice destro e l'indice sinistro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se M e V ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RI",
+      "text": "Questo tasto lo prende l'indice destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi M per continuare"
+    },
+    {
+      "newKey": "m",
+      "text": "Solo M e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "djf m dj\nm m mm\nmmmm"
+    },
+    {
+      "type": "intro",
+      "key": "v",
+      "finger": "LI",
+      "text": "Questo tasto lo prende l'indice sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi V per continuare"
+    },
+    {
+      "newKey": "v",
+      "text": "Solo V e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "vvvv mmmm\nmvmvmv vmvmvm\nvm mv"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "mm",
+        "vmmm",
+        "vvmm",
+        "mvmv",
+        "mmmm",
+        "vmvm",
+        "vvm",
+        "vmvv",
+        "mv",
+        "mmmv"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "vm mv vmvm\nffff vvv mmmm jjj\nmvmvmv vmvmvm"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "camera via macchina vittoria\nnuovo domenica vento avanti\nvolere mercato minuto cammino"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "sorella",
+        "camera",
+        "wafer",
+        "larghe",
+        "festa",
+        "durare",
+        "uguale",
+        "sala",
+        "antico",
+        "leggere"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su M, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "una vivere vincere uomini\nmi forte me moneta\nstanco taglia sono alta"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "mvmv vmvm\nvm vm\ndjf mv dj"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "legge incontro mai chiaro\nusare watt lega fedele\nregale ferie testa avere"
+    }
+  ]
+}

@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "I ve R",
+  "summary": "Yeni tuşlar: I ve R. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "ı",
+    "r"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: I ve R. Bunlara sol işaret parmağı ve sağ işaret parmağı basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. I ve R artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "ı",
+      "finger": "LI",
+      "text": "Bu tuşa sol işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için I tuşuna bas"
+    },
+    {
+      "newKey": "ı",
+      "text": "Yalnızca I ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "akı e ak\nı ı ıı\nııı"
+    },
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "RI",
+      "text": "Bu tuşa sağ işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için R tuşuna bas"
+    },
+    {
+      "newKey": "r",
+      "text": "Yalnızca R ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "rı rı\nıkr ae ık\nır rı ırır"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "ıır",
+        "ırır",
+        "ııı",
+        "ırrı",
+        "rır",
+        "ıı",
+        "rrrı",
+        "rıır",
+        "ıırr",
+        "rırr"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "aı ıa aıaı\nıııı kkkk aaaa rrr\nırır rırı"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "katlar kutular kulaklar kere\nyumurta uğur erken tur\nyarın yataklar yarı renk"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "yat",
+        "kur",
+        "nane",
+        "ay",
+        "ama",
+        "renkler",
+        "iğne",
+        "yanıt",
+        "turta",
+        "ütü"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık I tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kum kuru er ile\narı tek ekim iyi\nkalemler aynı kültür kalın"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ııı rrrr\nırırır rırırı\nrı rı"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ak tren alır kalkar\nkart kayak yataklar ekim\ntamam ek tüm kayık"
+    }
+  ]
+}

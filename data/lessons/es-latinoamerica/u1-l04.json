@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A y Ñ",
+  "summary": "Teclas nuevas: A y Ñ. El dedo sale, pulsa y vuelve.",
+  "newKeys": [
+    "a",
+    "ñ"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas nuevas en esta lección: A y Ñ. Se pulsan con el meñique izquierdo y el meñique derecho. El movimiento es siempre el mismo — salir, pulsar y volver — y la vuelta es la parte que se entrena, porque si el dedo se queda fuera, la siguiente letra sale mal.",
+  "congrats": "Más teclas bajo los dedos. Si A y Ñ ya te salen sin buscarlas, la lección ha hecho su trabajo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "Esta tecla la lleva el meñique izquierdo. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa A para continuar"
+    },
+    {
+      "newKey": "a",
+      "text": "Solo A y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": "ñ",
+      "finger": "RP",
+      "text": "Esta tecla la lleva el meñique derecho. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa Ñ para continuar"
+    },
+    {
+      "newKey": "ñ",
+      "text": "Solo Ñ y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "añañ ñaña\nañ ña\nñdf ja ñd"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos cortos, uno detrás de otro. Cuenta hasta el final aunque falles alguno.",
+      "type": "burst",
+      "tokens": [
+        "ñaaa",
+        "aañ",
+        "aaa",
+        "añña",
+        "ñaññ",
+        "ññaa",
+        "aññ",
+        "aaññ",
+        "ñaña",
+        "añaa"
+      ]
+    },
+    {
+      "text": "Las teclas nuevas mezcladas con las anteriores, que es como aparecerán en las palabras.",
+      "type": "block",
+      "content": "añ ña añañ\naaa ññññ ffff jjj\nañañ ñaña"
+    },
+    {
+      "text": "Palabras de verdad con las teclas nuevas. Escribe la palabra entera de un tirón, no letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sal falsas asada falda\nsal salada dadas asada\nsalas la las dadas"
+    },
+    {
+      "seconds": 25,
+      "text": "Una ráfaga de palabras cortas con las teclas nuevas dentro.",
+      "type": "burst",
+      "tokens": [
+        "salada",
+        "ala",
+        "la",
+        "saladas",
+        "salsa",
+        "dadas",
+        "faldas",
+        "salas",
+        "falsas",
+        "asada"
+      ]
+    },
+    {
+      "text": "Ahora con el peso en A, que es la que menos veces has pulsado.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "al falda salada sala\nfalsas ala a asada\nfalsa las sal alas"
+    },
+    {
+      "text": "Volvemos a los patrones un momento, para comprobar que los dedos siguen regresando a su sitio.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "añañañ ñañaña\nañ ña\njña df jñ"
+    },
+    {
+      "text": "Todo lo que tienes, mezclado. Fíjate en cuántas palabras ya te salen sin pensarlas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "las salsa sala asadas\nsalas falsas falla sal\nal sal la falsa"
+    }
+  ]
+}

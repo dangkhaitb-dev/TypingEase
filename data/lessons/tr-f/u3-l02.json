@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "Dış sütun",
+  "summary": "Sağ kenardaki sütun: altı tuş, hepsi serçe parmakta; aralarında virgül ile Q, W ve X.",
+  "newKeys": [
+    ",",
+    "/",
+    "-",
+    "q",
+    "w",
+    "x"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c",
+    "f",
+    "p",
+    "ç",
+    "ö",
+    "j",
+    ".",
+    "b",
+    "ş",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ",",
+    "/",
+    "-",
+    "q",
+    "w",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Sağ serçe parmak öbür parmakların hepsinden çok tuşa bakar, ve kenardaki tuşlar en az çalışılanlardır. Türkçe F klavyede burada virgül var, bir de Türkçenin kullanmadığı üç harf: Q, W ve X. Yabancı adlarda ve internet adreslerinde yine de karşına çıkarlar.",
+  "congrats": "Virgülle birlikte cümleler eksiksiz yazılıyor. Çoğu kursun yarım bıraktığı sütun budur.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RP",
+      "text": "Sağ kenardaki tuşlar, hepsi sağ serçe parmakta. Bu klavyede virgül burada, bir de Türkçede pek kullanılmayan Q, W ve X.",
+      "hint": "Devam etmek için , tuşuna bas"
+    },
+    {
+      "newKeys": [
+        ",",
+        "/"
+      ],
+      "text": "Şimdi , ve /. Serçe parmak dışarı çıkar ve geri döner; el onunla gitmez.",
+      "type": "block",
+      "content": ",/,/ /,/,\n,/ /,\nk/e ,a k/"
+    },
+    {
+      "newKeys": [
+        "-",
+        "q"
+      ],
+      "text": "Şimdi - ve q. Serçe parmak dışarı çıkar ve geri döner; el onunla gitmez.",
+      "type": "block",
+      "content": "q- -q\n-ak qe -a\n-q q- -q-q"
+    },
+    {
+      "seconds": 20,
+      "text": "Bu sütundan öğrendiklerinle bir seri.",
+      "type": "burst",
+      "tokens": [
+        "q/",
+        "/-",
+        "//",
+        "q,",
+        "/,",
+        ",q",
+        "q-",
+        ",/",
+        "/q",
+        "qq"
+      ]
+    },
+    {
+      "newKeys": [
+        "w",
+        "x"
+      ],
+      "text": "Şimdi w ve x. Serçe parmak dışarı çıkar ve geri döner; el onunla gitmez.",
+      "type": "block",
+      "content": "wx wx\nwae xk wa\nwx xw wxwx"
+    },
+    {
+      "text": "Altısı bir arada. Parmak geri dönmezse bileğin en çok burada bükülür.",
+      "type": "block",
+      "content": "a-, ex/ a-\nxw wx xwxw\nxxxx ---- /// ,,, qqq wwww"
+    },
+    {
+      "seconds": 25,
+      "text": "Bunca kenar tuşundan sonra eli gevşetmek için yine kelimeler.",
+      "type": "burst",
+      "tokens": [
+        "isim",
+        "dikkat",
+        "yatak",
+        "as",
+        "menü",
+        "yarar",
+        "mal",
+        "sırada",
+        "paylaş",
+        "evde",
+        "aile",
+        "esas"
+      ]
+    },
+    {
+      "text": "Yeniden kelimeler, artık bütün klavyeyle.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "herkes ruhsal para içmek\ntuşa mayıs uslu acele\nsorun renk sıfır üzüm"
+    },
+    {
+      "text": "Tuş derslerini kapatmak için tam cümleler.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Bu kelimeyi klavyeye bakmadan yaz.\nBabam işten eve geç geldi.\nBahçedeki ağaçlar çiçek açtı."
+    }
+  ]
+}

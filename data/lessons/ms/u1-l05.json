@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Ulang kaji",
+  "summary": "Tiada kekunci baharu. Semua yang lepas, lebih berturut-turut dan lebih laju.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Pelajaran ini tidak mengajar apa-apa yang baharu. Inilah masa untuk memastikan yang lepas keluar tanpa difikirkan, yang berbeza daripada sekadar tahu di mana letaknya setiap kekunci.",
+  "congrats": "Tiada yang baharu, tetapi lebih laju. Itulah yang sepatutnya berlaku.",
+  "screens": [
+    {
+      "text": "Mula dengan perkataan satu-satu. Jangan tergesa-gesa: kelajuan datang daripada ketepatan, bukan sebaliknya.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ajak alas salad akad\ndada laksa salad alas\nalas jala kakak lasak"
+    },
+    {
+      "seconds": 25,
+      "text": "Satu pecutan pendek. Habiskan senarai walaupun ada yang terlepas.",
+      "type": "burst",
+      "tokens": [
+        "lasak",
+        "ajak",
+        "akal",
+        "salad",
+        "jaja",
+        "sajak",
+        "alas",
+        "salak",
+        "lada",
+        "asal",
+        "dada",
+        "laksa"
+      ]
+    },
+    {
+      "text": "Lima perkataan sebaris. Biarkan mata mendahului jari.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jaja jala asal fasal dada\nsalak jaja kala kakak ajak\nsaja kakak kala jala laksa"
+    },
+    {
+      "text": "Corak sekali lagi, untuk memastikan jari masih kembali ke baris asas.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Perkataan pendek, pada rentak yang baik. Yang ini sepatutnya sudah keluar hampir sendiri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "laksa lasak kakak jala\nlaksa saja lasak sasa\nsajak salad fasal alas"
+    },
+    {
+      "seconds": 30,
+      "text": "Lebih lama dan lebih banyak perkataan. Kekalkan rentak yang sama dari awal hingga akhir.",
+      "type": "burst",
+      "tokens": [
+        "ada",
+        "kakak",
+        "akad",
+        "saja",
+        "sajak",
+        "asal",
+        "alas",
+        "akal",
+        "jala",
+        "jaja",
+        "lada",
+        "kala",
+        "lasak",
+        "fasal"
+      ]
+    },
+    {
+      "text": "Ayat penuh. Di sinilah kelihatan sama ada tangan kembali sendiri ke tempatnya.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kakak lada ajak alas\nlasak saja laksa jala\nfasal dada salak jaja"
+    },
+    {
+      "text": "Pusingan terakhir. Jika anda sampai di sini tanpa melihat papan kekunci, pelajaran ini selesai.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "laksa jala sajak saja sasa\nalas ada asal kala ajak\nlaksa kala salak alas saja"
+    }
+  ]
+}

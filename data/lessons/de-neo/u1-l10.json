@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Test zu Einheit 1",
+  "summary": "Ein Test auf Zeit mit allem, was du bis hierhin gelernt hast.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "Ein Test auf Zeit. Es kommt nichts Neues: nur das, was du schon kannst, in einem Tempo, das du halten kannst.",
+  "congrats": "Test bestanden. Die Zahl zählt weniger als die Tatsache, bis zum Ende gekommen zu sein, ohne hinzusehen.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "Keine neuen Tasten. Schreib in einem Tempo, das du bis zum Ende halten kannst.",
+      "dictation": "words",
+      "content": "aal durch reise halt\nhell die und natur\nglas noch sieg seil\nlass haus hase segel"
+    }
+  ]
+}

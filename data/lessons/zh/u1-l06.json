@@ -1,0 +1,106 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "review-u1-6",
+  "title": "复习",
+  "summary": "没有新键。之前的全部内容，更紧凑、更快。",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "这一课不教新东西。现在要确认之前学的不用想就能打出来，这和知道每个键在哪里是两回事。",
+  "congrats": "没有新东西，但更快了。本来就应该是这样：手指越少思考，节奏就越稳。",
+  "screens": [
+    {
+      "text": "先从单个的词开始。不要着急：速度来自准确，从来不是反过来。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "a lala dasha fa\ndada la sa ha\nda haha fada dasha"
+    },
+    {
+      "seconds": 25,
+      "text": "短的连续练习。即使有漏掉的，也把整组打完。",
+      "type": "burst",
+      "tokens": [
+        "shafa",
+        "ka",
+        "da",
+        "haha",
+        "ga",
+        "dasha",
+        "a",
+        "la",
+        "fada",
+        "ha",
+        "fa",
+        "sha"
+      ]
+    },
+    {
+      "text": "每行五个词。让眼睛走在手指前面。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "da a dasha sa lala\nda fada la fa ga\nga a la ha dasha"
+    },
+    {
+      "text": "再练组合，确认手指还会回到基准行。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf fj jfjf\nkkk fff jjjj ddd\nfjfjfj jfjfjf"
+    },
+    {
+      "text": "短词，保持好的节奏。这些现在应该差不多能自己打出来了。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "a dasha da haha\nfa sa dada lala\ndada ga lala fada"
+    },
+    {
+      "seconds": 30,
+      "text": "时间更长，词更多。从头到尾保持同一个节奏。",
+      "type": "burst",
+      "tokens": [
+        "sha",
+        "fa",
+        "ha",
+        "sa",
+        "haha",
+        "a",
+        "dada",
+        "fada",
+        "ka",
+        "dasha",
+        "da",
+        "lala",
+        "shafa",
+        "ga"
+      ]
+    },
+    {
+      "text": "完整的句子。在这里能看出手是不是自己回到了原位。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fada ka da la\nfa dada lala a\nha dasha ka sha"
+    },
+    {
+      "text": "最后一轮。如果你打到这里都没看键盘，这一课就完成了。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ha lala la a dasha\nla lala sa sha da\ndasha da la dada sa"
+    }
+  ]
+}

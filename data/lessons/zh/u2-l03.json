@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C 和 N",
+  "summary": "新键：C 和 N。手指伸出去，按下，再回来。",
+  "newKeys": [
+    "c",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "本课的新键：C 和 N。由左手中指 和 右手食指负责。动作总是一样：伸出去，按下，回来。练的正是回来这一步，因为手指停在外面，下一个字母就会打错。",
+  "congrats": "手指下的键越来越多了。如果 C 和 N 已经不用找就能打出来，这一课就完成了它的任务。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "这个键由左手中指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 C 继续"
+    },
+    {
+      "newKey": "c",
+      "text": "只有 C 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "cccc cccc\nc c\njfc d jf"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "这个键由右手食指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 N 继续"
+    },
+    {
+      "newKey": "n",
+      "text": "只有 N 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "cncncn ncncnc\nnc nc\njdc nf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "一组接一组的短组合。就算有打错的，也一直打到最后。",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "nnn",
+        "nc",
+        "ccnc",
+        "cnnn",
+        "cnn",
+        "ncc",
+        "nncc",
+        "nccc",
+        "ncnn"
+      ]
+    },
+    {
+      "text": "新键和旧键混在一起，就像以后在拼音里出现的那样。",
+      "type": "block",
+      "content": "nc cn ncnc\nnnn ccc jjj fff\ncncn ncnc"
+    },
+    {
+      "text": "含有新键的真实拼音。每个词一口气打完，不要一个字母一个字母地想。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yinwei wenjian suiran lingwai\nchengji shuangshou kending shunli\ncesuo fangfa shenti tingshuo"
+    },
+    {
+      "seconds": 25,
+      "text": "一组组短拼音，里面有新学的键。",
+      "type": "burst",
+      "tokens": [
+        "di",
+        "huifu",
+        "kua",
+        "se",
+        "he",
+        "kafei",
+        "lijie",
+        "yushi",
+        "dajia",
+        "nongcun"
+      ]
+    },
+    {
+      "text": "现在重点放在 C 上，这是你按得最少的键。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "shei shoudu wei jiayou\nrenshi da chufa ruyi\nwutai difang caidan dianying"
+    },
+    {
+      "text": "再回到组合练习，确认手指还能找到回去的路。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nnnn ccc\ncncn ncnc\nnc nc"
+    },
+    {
+      "text": "你会的全部内容，混在一起。留意有多少词已经不用想就打出来了。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "renkou su chuangyi ruyi\nwei shuru shuhua jiaotong\nyouju fuli niunai ka"
+    }
+  ]
+}

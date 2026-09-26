@@ -131,3 +131,11 @@ a.rail-chip:hover,a.rail-chip:focus-visible{border-color:var(--green);background
   .shortcut-grid{grid-template-columns:1fr}
   .shortcut-card:last-child{grid-column:auto}
 }
+
+/* Trang nhà các ngôn ngữ vẽ lộ trình bằng script.js sau khi nạp: trước đó trang ngắn và chân trang lọt
+   vào màn hình đầu, rồi bị đẩy xuống (CLS 0,065 trên /fr/). Giữ phần chính cao ít nhất một màn hình. */
+body > main{min-height:100vh}
+/* Lộ trình (unit-rail + unit-teasers) cũng vẽ sau: giữ chỗ bằng chiều cao đo được của unit 1 (10 bài). */
+.unit-rail:empty{min-height:132px}
+.unit-teasers:empty{min-height:33px}
+@media (max-width:640px){.unit-rail:empty{min-height:258px}.unit-teasers:empty{min-height:115px}}

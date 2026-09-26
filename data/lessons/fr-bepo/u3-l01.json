@@ -1,0 +1,218 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "Les signes et les chiffres",
+  "summary": "Les guillemets et les signes sans Maj, les chiffres avec Maj — toute la rangée des chiffres.",
+  "newKeys": [
+    "\"",
+    "«",
+    "»",
+    "(",
+    ")",
+    "@",
+    "+",
+    "-",
+    "/",
+    "*",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d",
+    "o",
+    "v",
+    "è",
+    "^",
+    "l",
+    "é",
+    "x",
+    "'",
+    "q",
+    ".",
+    "b",
+    "j",
+    "k",
+    "y",
+    "à",
+    "h",
+    "g",
+    "m",
+    "shift",
+    "enter",
+    "\"",
+    "«",
+    "»",
+    "(",
+    ")",
+    "@",
+    "+",
+    "-",
+    "/",
+    "*",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "La rangée tout en haut d'un clavier BÉPO porte deux étages : les guillemets, les parenthèses et les signes sans Maj, les chiffres avec. Les doigts y vont plus loin que partout ailleurs, et c'est la rangée où l'on se trompe le plus dans tout le cours. Elle se répare comme le reste : lentement d'abord.",
+  "congrats": "La rangée du haut est la plus difficile et la moins pratiquée ensuite. Reviens à cette leçon de temps en temps.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LP",
+      "text": "Sur BÉPO, la rangée tout en haut donne sans Maj les guillemets, les parenthèses, l'arobase et les signes de calcul, et avec Maj les chiffres. C'est la rangée où les doigts vont le plus loin.",
+      "hint": "Appuie sur \" pour continuer"
+    },
+    {
+      "newKeys": [
+        "\"",
+        "*"
+      ],
+      "text": "\" et * se tapent avec l'auriculaire gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "*\" \"* *\"*\"\n*** \"\"\"\"\n\"*\"*\"* *\"*\"*\""
+    },
+    {
+      "newKeys": [
+        "«",
+        "/"
+      ],
+      "text": "« et / se tapent avec l'annulaire gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "ie« /t ie\n«/ /« «/«/\n««« ////"
+    },
+    {
+      "seconds": 20,
+      "text": "Une série courte avec ce que tu viens d'apprendre.",
+      "type": "burst",
+      "tokens": [
+        "**",
+        "/*",
+        "*«",
+        "\"*",
+        "/\"",
+        "«*",
+        "««",
+        "«/",
+        "*\"",
+        "*/"
+      ]
+    },
+    {
+      "newKeys": [
+        "»",
+        "-"
+      ],
+      "text": "» et - se tapent avec le majeur gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "»-»-»- -»-»-»\n-» »-\ni-» te i-"
+    },
+    {
+      "newKeys": [
+        "(",
+        "+"
+      ],
+      "text": "( et + se tapent avec l'index gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "(+ (+\net( +i et\n+( (+ +(+("
+    },
+    {
+      "newKeys": [
+        ")",
+        "@"
+      ],
+      "text": "Les deux qui restent sont aux index, qui atteignent déjà plus de touches que n'importe quel autre doigt.",
+      "type": "block",
+      "content": ")@)@)@ @)@)@)\n)@ )@\net@ )i et"
+    },
+    {
+      "newKeys": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0"
+      ],
+      "text": "Les mêmes touches avec Maj : c'est là que se trouvent les chiffres sur ce clavier.",
+      "type": "block",
+      "content": "38 24 67 15 90\n09 65 21 87 34\n70 96 58 41 32"
+    },
+    {
+      "text": "Toute la rangée, en groupes. Ne baisse pas les yeux pour chercher.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "t/+ )i» t/\n)( () )()(\n(((( /// «««« )))) ++++ »»» **** --- @@@@ \"\"\"\""
+    },
+    {
+      "seconds": 30,
+      "text": "Les dix, mélangés. On rate beaucoup ici au début ; c'est normal.",
+      "type": "burst",
+      "tokens": [
+        "\"/",
+        "»»",
+        "»(",
+        "\"\"",
+        "«)",
+        "»«",
+        "«-",
+        "\")",
+        "\"»",
+        "\"@",
+        "\"«",
+        "\"*",
+        "«\"",
+        "»-"
+      ]
+    },
+    {
+      "text": "On revient aux mots un instant, pour que les mains se souviennent d'où elles habitent.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "autres précise par musiques\nle aller sorte côte\ntable voit lettre tir"
+    },
+    {
+      "text": "Des phrases à nouveau, avec le clavier entier disponible.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Nous partons demain matin pour la campagne.\nLa porte du jardin reste ouverte toute la journée.\nTous les jours je passe devant cette boutique."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift dan Enter",
+  "summary": "Huruf besar dengan kelingking bertentangan, dan baris baharu.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Setakat ini semuanya ditaip dalam huruf kecil. Shift mengubahnya, dan ada satu peraturan yang elok dipelajari betul-betul dari awal: ia ditekan oleh kelingking tangan yang bertentangan dengan huruf itu. Dengan kelingking di sebelah yang sama, tangan terpulas dan akhirnya anda melihat papan kekunci.",
+  "congrats": "Dengan Shift dan Enter, anda boleh menaip satu teks penuh seperti ditaip di luar sini.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Huruf besar ditaip dengan kelingking tangan yang bertentangan dengan huruf itu. Tahan Shift, tekan huruf, lepaskan. Jangan sekali-kali dengan kelingking yang sama yang menaip huruf.",
+      "hint": "Tahan Shift dan tekan satu huruf untuk meneruskan"
+    },
+    {
+      "newKey": "shift",
+      "text": "Huruf besar dan huruf kecil berselang-seli. Kelingking turun dan naik; tangan yang satu lagi tidak berganjak.",
+      "type": "block",
+      "content": "Pp Jj Zz Ee\nCc Dd Qq Gg\nTt Uu Kk Rr\nXx Mm Ff Bb"
+    },
+    {
+      "text": "Perkataan dengan huruf besar di awal, seperti nama orang dan tempat.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lagunya akad bangun kelas\ntukar fail biru lagi\nyang sampai ketiga bumbung"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter milik kelingking kanan, di sebelah kanan baris asas. Inilah kekunci paling besar yang perlu dicapai oleh jari itu.",
+      "hint": "Tekan Enter untuk meneruskan"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Satu baris, Enter, baris seterusnya. Kelingking keluar dan kembali tanpa menarik tangan.",
+      "type": "block",
+      "content": "Siti\nPerak\nNurul\nKumar\nAminah\nRavi"
+    },
+    {
+      "text": "Ayat dengan huruf besar di awal dan noktah di akhir. Sudah hampir seperti menaip sebenar.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Masa berlalu dengan cepat apabila kita sibuk.\nDia menulis surat kepada kawan lamanya.\nHujan turun sejak petang tadi."
+    },
+    {
+      "seconds": 25,
+      "text": "Satu pecutan untuk mengukuhkan pelajaran ini.",
+      "type": "burst",
+      "tokens": [
+        "ringan",
+        "ragu",
+        "tinggi",
+        "galah",
+        "kota",
+        "bijirin",
+        "cukup",
+        "setia",
+        "muzik",
+        "gagal",
+        "biru",
+        "fasal"
+      ]
+    },
+    {
+      "text": "Lima sebaris, dengan kelingking bekerja ke dua-dua arah.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "baru jiran gurau pinggir penting\nhilang cuci hotel mimpi sayur\nhitam awas cawangan semalam hampir"
+    },
+    {
+      "text": "Sebagai penutup, ayat penuh. Shift, huruf, lepas — tanpa berhenti untuk berfikir.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Kucing itu tidur di atas kerusi.\nBudak itu bermain bola di padang.\nNenek menanam sayur di belakang rumah."
+    }
+  ]
+}

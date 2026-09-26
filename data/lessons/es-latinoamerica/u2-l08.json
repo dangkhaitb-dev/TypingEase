@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, el punto, la coma y {",
+  "summary": "Teclas nuevas: Z, el punto, la coma y {. El dedo sale, pulsa y vuelve.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "{"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "{"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas nuevas en esta lección: Z, el punto, la coma y {. Se pulsan con el meñique izquierdo, el anular derecho, el corazón derecho y el meñique derecho. El movimiento es siempre el mismo — salir, pulsar y volver — y la vuelta es la parte que se entrena, porque si el dedo se queda fuera, la siguiente letra sale mal.",
+  "congrats": "Más teclas bajo los dedos. Si Z, el punto, la coma y { ya te salen sin buscarlas, la lección ha hecho su trabajo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "Esta tecla la lleva el meñique izquierdo. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa Z para continuar"
+    },
+    {
+      "newKey": "z",
+      "text": "Solo Z y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "z z\ndfj z df\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Esta tecla la lleva el anular derecho. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa . para continuar"
+    },
+    {
+      "newKey": ".",
+      "text": "Solo . y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": ".z .z\n.zf dj .z\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Esta tecla la lleva el corazón derecho. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa , para continuar"
+    },
+    {
+      "newKey": ",",
+      "text": "Solo , y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "z,. .z,\n.,j fzd .,\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "Esta tecla la lleva el meñique derecho. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa { para continuar"
+    },
+    {
+      "newKey": "{",
+      "text": "Solo { y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "f.j ,{d f.\n{. .{ {.{.\n{{{ ,,, zzzz ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos cortos, uno detrás de otro. Cuenta hasta el final aunque falles alguno.",
+      "type": "burst",
+      "tokens": [
+        "z{",
+        "z.",
+        ",,",
+        ".,",
+        "{{",
+        ",{",
+        "zz",
+        "{,",
+        "..",
+        "z,"
+      ]
+    },
+    {
+      "text": "Las teclas nuevas mezcladas con las anteriores, que es como aparecerán en las palabras.",
+      "type": "block",
+      "content": "z.z.z. .z.z.z\nz{j.f, f{z,j.\nsz{ .dj sz"
+    },
+    {
+      "text": "Palabras de verdad con las teclas nuevas. Escribe la palabra entera de un tirón, no letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "zonas zona plazas empezar\nfuerza brazos brazo empieza\nvez cabezas zapato comenzar"
+    },
+    {
+      "seconds": 25,
+      "text": "Una ráfaga de palabras cortas con las teclas nuevas dentro.",
+      "type": "burst",
+      "tokens": [
+        "nadie",
+        "caminos",
+        "doce",
+        "conocer",
+        "centros",
+        "isla",
+        "planta",
+        "edades",
+        "la",
+        "espera"
+      ]
+    },
+    {
+      "text": "Ahora con el peso en Z, que es la que menos veces has pulsado.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "vecinos puntos juguetes rojo\ncuerdas comienza señora fila\nalas zona ideal sus"
+    },
+    {
+      "text": "Volvemos a los patrones un momento, para comprobar que los dedos siguen regresando a su sitio.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, zzz {{{ ...\nz.z.z. .z.z.z\n,z{. ,z{."
+    },
+    {
+      "text": "Todo lo que tienes, mezclado. Fíjate en cuántas palabras ya te salen sin pensarlas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "trece exacta comunes palabra\nciencia primera cielos minuto\nmuy comidas entonces nadie"
+    }
+  ]
+}

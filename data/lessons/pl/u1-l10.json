@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Test z części 1",
+  "summary": "Test na czas ze wszystkim, co już umiesz.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "Test na czas. Nic nowego: tylko to, co już umiesz, w tempie, które utrzymasz.",
+  "congrats": "Test zaliczony. Liczba znaczy mniej niż to, że udało się dojść do końca bez patrzenia.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "Żadnych nowych klawiszy. Pisz w tempie, które utrzymasz do końca.",
+      "dictation": "words",
+      "content": "las jaki sale ruda\nfajka kasa kefir ulga\ndal skarga ale flaga\ndla klej saga flagi"
+    }
+  ]
+}

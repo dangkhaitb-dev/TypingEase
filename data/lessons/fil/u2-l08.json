@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, tuldok, kuwit at kudlit",
+  "summary": "Mga bagong key: Z, tuldok, kuwit at kudlit. Lumalabas ang daliri, pumipindot, at bumabalik.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Mga bagong key sa araling ito: Z, tuldok, kuwit at kudlit. Para sila sa kaliwang hinliliit, kanang palasingsingan, kanang hinlalato at kanang hinliliit. Laging pareho ang galaw — labas, pindot, balik — at ang pagbalik ang sinasanay, dahil ang daliring naiwan sa labas ang sumisira sa susunod na titik.",
+  "congrats": "Mas maraming key sa ilalim ng mga daliri mo. Kung lumalabas na ang Z, tuldok, kuwit at kudlit nang hindi hinahanap, nagawa na ng aralin ang trabaho nito.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "Ang key na ito ay para sa kaliwang hinliliit. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang Z para magpatuloy"
+    },
+    {
+      "newKey": "z",
+      "text": "Z lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "z z\ndfj z df\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Ang key na ito ay para sa kanang palasingsingan. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang . para magpatuloy"
+    },
+    {
+      "newKey": ".",
+      "text": ". lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": ".z .z\n.zf dj .z\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Ang key na ito ay para sa kanang hinlalato. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang , para magpatuloy"
+    },
+    {
+      "newKey": ",",
+      "text": ", lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "z,. .z,\n.,j fzd .,\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RP",
+      "text": "Ang key na ito ay para sa kanang hinliliit. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang ' para magpatuloy"
+    },
+    {
+      "newKey": "'",
+      "text": "' lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "f.j ,'d f.\n'. .' '.'.\n''' ,,, zzzz ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Maiikling grupo, sunod-sunod. Ituloy hanggang dulo kahit may mamali.",
+      "type": "burst",
+      "tokens": [
+        "z'",
+        "z.",
+        ",,",
+        ".,",
+        "''",
+        ",'",
+        "zz",
+        "',",
+        "..",
+        "z,"
+      ]
+    },
+    {
+      "text": "Ang mga bagong key na kahalo ng mga luma, gaya ng paglabas nila sa loob ng mga salita.",
+      "type": "block",
+      "content": "z.z.z. .z.z.z\nz'j.f, f'z,j.\nsz' .dj sz"
+    },
+    {
+      "text": "Totoong mga salita na may mga bagong key. Tipahin ang bawat salita nang tuloy-tuloy, hindi titik-titik.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "nagluto huling ninong huwag\nsimbahan libro palaruan tahanan\ndaliri tabi buong binti"
+    },
+    {
+      "seconds": 25,
+      "text": "Isang bugso ng maiikling salita na may mga bagong key.",
+      "type": "burst",
+      "tokens": [
+        "lalo",
+        "lolo",
+        "gusto",
+        "lihim",
+        "una",
+        "lapis",
+        "numero",
+        "ngipin",
+        "tiyak",
+        "mali"
+      ]
+    },
+    {
+      "text": "Ngayon, nasa Z ang bigat, ang key na pinakakaunti mong napindot.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "bangko dyip handa mahirap\npo lusak paraan tigas\nhugis laksa bibig gawa"
+    },
+    {
+      "text": "Balik muna sa mga pattern, para matiyak na nakakabalik pa rin ang mga daliri.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, zzz ''' ...\nz.z.z. .z.z.z\n,z'. ,z'."
+    },
+    {
+      "text": "Lahat ng mayroon ka, magkakahalo. Pansinin kung ilang salita na ang lumalabas nang hindi pinag-iisipan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "daliring malungkot yata batang\nkumain hugasan maikli sige\npasok pero bintana siyam"
+    }
+  ]
+}

@@ -1,0 +1,134 @@
+{
+  "id": "u2-l04",
+  "unit": "u2",
+  "group": "start",
+  "order": 14,
+  "slug": "m-v",
+  "title": "M na V",
+  "summary": "Vitufe vipya: M na V. Kidole kinatoka, kinabonyeza na kurudi.",
+  "newKeys": [
+    "m",
+    "v"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe vipya katika somo hili: M na V. Vinabonyezwa na kidole cha shahada cha kulia na kidole cha shahada cha kushoto. Mwendo ni uleule kila mara — toka, bonyeza na rudi — na kurudi ndiko kunakofanyiwa mazoezi, kwa sababu kidole kikibaki nje, herufi inayofuata inakosewa.",
+  "congrats": "Vitufe zaidi chini ya vidole vyako. Kama M na V vinakuja bila kuvitafuta, somo limefanya kazi yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RI",
+      "text": "Kitufe hiki ni cha kidole cha shahada cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza M ili kuendelea"
+    },
+    {
+      "newKey": "m",
+      "text": "M tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "djf m dj\nm m mm\nmmmm"
+    },
+    {
+      "type": "intro",
+      "key": "v",
+      "finger": "LI",
+      "text": "Kitufe hiki ni cha kidole cha shahada cha kushoto. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza V ili kuendelea"
+    },
+    {
+      "newKey": "v",
+      "text": "V tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "vvvv mmmm\nmvmvmv vmvmvm\nvm mv"
+    },
+    {
+      "seconds": 20,
+      "text": "Vikundi vifupi, kimoja baada ya kingine. Endelea hadi mwisho hata ukikosea kimoja.",
+      "type": "burst",
+      "tokens": [
+        "mm",
+        "vmmm",
+        "vvmm",
+        "mvmv",
+        "mmmm",
+        "vmvm",
+        "vvm",
+        "vmvv",
+        "mv",
+        "mmmv"
+      ]
+    },
+    {
+      "text": "Vitufe vipya vikichanganywa na vya zamani, jinsi vitakavyotokea ndani ya maneno.",
+      "type": "block",
+      "content": "vm mv vmvm\nffff vvv mmmm jjj\nmvmvmv vmvmvm"
+    },
+    {
+      "text": "Maneno halisi yenye vitufe vipya. Andika kila neno kwa mkupuo mmoja, si herufi kwa herufi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mawingu mawe mlima mvua\nmashine vuta msitu mwisho\nmfano mstari mwalimu simu"
+    },
+    {
+      "seconds": 25,
+      "text": "Mfululizo wa maneno mafupi yenye vitufe vipya.",
+      "type": "burst",
+      "tokens": [
+        "misitu",
+        "nafaka",
+        "soko",
+        "nchi",
+        "chai",
+        "nini",
+        "wote",
+        "duara",
+        "ni",
+        "hatari"
+      ]
+    },
+    {
+      "text": "Sasa uzito uko kwenye M, kitufe ulichobonyeza mara chache zaidi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ofisi wingu viti mstari\nmifano kiatu mistari mikono\nkucheka rudia kutaja duka"
+    },
+    {
+      "text": "Turudi kwenye mifumo kwa muda, kuhakikisha vidole bado vinapata njia ya kurudi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "mvmv vmvm\nvm vm\ndjf mv dj"
+    },
+    {
+      "text": "Kila ulicho nacho, kimechanganywa. Angalia ni maneno mangapi tayari yanakuja bila kufikiri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kula kuendesha jana nyekundu\nushauri maswali shikilia rafiki\nuhuru sherehe tatu samaki"
+    }
+  ]
+}

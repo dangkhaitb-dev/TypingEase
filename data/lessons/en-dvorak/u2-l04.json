@@ -1,0 +1,134 @@
+{
+  "id": "u2-l04",
+  "unit": "u2",
+  "group": "start",
+  "order": 14,
+  "slug": "m-v",
+  "title": "M and K",
+  "summary": "Two new keys: M and K. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "m",
+    "k"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: M and K. They belong to your right index finger and your left index finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If M and K already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press M to continue"
+    },
+    {
+      "newKey": "m",
+      "text": "Only M and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "ehu m eh\nm m mm\nmmmm"
+    },
+    {
+      "type": "intro",
+      "key": "k",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press K to continue"
+    },
+    {
+      "newKey": "k",
+      "text": "Only K and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "kkkk mmmm\nmkmkmk kmkmkm\nkm mk"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "mm",
+        "kmmm",
+        "kkmm",
+        "mkmk",
+        "mmmm",
+        "kmkm",
+        "kkm",
+        "kmkk",
+        "mk",
+        "mmmk"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "km mk kmkm\nuuuu kkk mmmm hhh\nmkmkmk kmkmkm"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "bottom break meet me\ncoming must remember mine\ntheme same matter come"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "ad",
+        "board",
+        "branch",
+        "front",
+        "age",
+        "eight",
+        "usher",
+        "neat",
+        "aside",
+        "rate"
+      ]
+    },
+    {
+      "text": "Now the weight is on M, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "than three speed from\nteam against jump minutes\nbroad sought bright neat"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "mkmk kmkm\nkm km\nehu mk eh"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "daughter speak beach put\ntie ahead rides guards\ngreed surge or reach"
+    }
+  ]
+}

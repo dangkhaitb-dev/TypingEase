@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "T dan Y",
+  "summary": "Kekunci baharu: T dan Y. Jari keluar, tekan dan kembali.",
+  "newKeys": [
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci baharu dalam pelajaran ini: T dan Y. Ia ditekan oleh jari telunjuk kiri dan jari telunjuk kanan. Gerakannya sentiasa sama — keluar, tekan dan kembali — dan perjalanan pulang itulah yang dilatih, kerana jika jari tertinggal di luar, huruf seterusnya akan tersilap.",
+  "congrats": "Lebih banyak kekunci di bawah jari. Jika T dan Y sudah keluar tanpa dicari, pelajaran ini telah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "LI",
+      "text": "Kekunci ini milik jari telunjuk kiri. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan T untuk meneruskan"
+    },
+    {
+      "newKey": "t",
+      "text": "Hanya T dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "tfj d tf\nt t tt\ntttt"
+    },
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "RI",
+      "text": "Kekunci ini milik jari telunjuk kanan. Cari tanpa melihat, tekan sekali, dan biarkan jari kembali ke tempatnya. Perjalanan pulang sama penting dengan tekanan.",
+      "hint": "Tekan Y untuk meneruskan"
+    },
+    {
+      "newKey": "y",
+      "text": "Hanya Y dan apa yang anda sudah tahu. Perlahan-lahan, dan bawa jari kembali ke baris asas selepas setiap tekanan.",
+      "type": "block",
+      "content": "jyd ft jy\nty yt tyty\nyyy ttt"
+    },
+    {
+      "seconds": 20,
+      "text": "Kumpulan pendek, satu demi satu. Teruskan hingga habis walaupun anda tersilap.",
+      "type": "burst",
+      "tokens": [
+        "tty",
+        "ttyy",
+        "ttt",
+        "ytty",
+        "tttt",
+        "ttyt",
+        "ttty",
+        "tyt",
+        "tyty",
+        "yty"
+      ]
+    },
+    {
+      "text": "Kekunci baharu bercampur dengan yang lama, seperti rupanya nanti di dalam perkataan.",
+      "type": "block",
+      "content": "yt ty ytyt\ntttt jjj fff yyy\ntyty ytyt"
+    },
+    {
+      "text": "Perkataan sebenar dengan kekunci baharu. Taip setiap perkataan sekali gus, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "utara kita kertas ketika\nsurat tikus ayat tiada\nlatih tukar tujuh rakyat"
+    },
+    {
+      "seconds": 25,
+      "text": "Satu pecutan perkataan pendek yang mengandungi kekunci baharu.",
+      "type": "burst",
+      "tokens": [
+        "selesa",
+        "kayu",
+        "kekal",
+        "rusa",
+        "saya",
+        "fail",
+        "kalau",
+        "dia",
+        "jauh",
+        "galah"
+      ]
+    },
+    {
+      "text": "Sekarang tumpuan pada T, kekunci yang paling jarang anda tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dahulu ragu duka jarak\nselalu kurus hadir kaki\nraja lada hari gagal"
+    },
+    {
+      "text": "Kembali kepada corak sebentar, untuk memastikan jari masih tahu jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "yt ty\njtd yf jt\nty yt tyty"
+    },
+    {
+      "text": "Semua yang anda ada, bercampur. Perhatikan berapa banyak perkataan yang sudah keluar tanpa difikirkan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "keluarga satu jari lurus\nkiri ketiga saudara risau\nsedikit utara tadi hayat"
+    }
+  ]
+}

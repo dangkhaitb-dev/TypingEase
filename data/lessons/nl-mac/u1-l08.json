@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "R en U",
+  "summary": "Nieuwe toetsen: R en U. De vinger strekt, slaat aan en keert terug.",
+  "newKeys": [
+    "r",
+    "u"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nieuwe toetsen in deze les: R en U. Je slaat ze aan met de linkerwijsvinger en de rechterwijsvinger. De beweging is altijd dezelfde — uitstrekken, aanslaan en terug — en het terugkeren is wat je oefent, want als de vinger buiten blijft, gaat de volgende letter scheef.",
+  "congrats": "Weer toetsen onder je vingers. Als R en U er zonder zoeken uitkomen, heeft de les zijn werk gedaan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "LI",
+      "text": "Deze toets is voor de linkerwijsvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op R om verder te gaan"
+    },
+    {
+      "newKey": "r",
+      "text": "Alleen R en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "fjr d fj\nr r rr\nrrr"
+    },
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "RI",
+      "text": "Deze toets is voor de rechterwijsvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op U om verder te gaan"
+    },
+    {
+      "newKey": "u",
+      "text": "Alleen U en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "ur ur\nrju fd rj\nru ur ruru"
+    },
+    {
+      "seconds": 20,
+      "text": "Korte groepjes, de een na de ander. Maak de lijst af, ook als je er een paar mist.",
+      "type": "burst",
+      "tokens": [
+        "rru",
+        "ruru",
+        "rrr",
+        "ruur",
+        "uru",
+        "rr",
+        "uuur",
+        "urru",
+        "rruu",
+        "uruu"
+      ]
+    },
+    {
+      "text": "De nieuwe toetsen gemengd met de vorige, zoals je ze straks in woorden tegenkomt.",
+      "type": "block",
+      "content": "fr rf frfr\nrrrr jjjj ffff uuu\nruru urur"
+    },
+    {
+      "text": "Echte woorden met de nieuwe toetsen. Typ het hele woord in één beweging, niet letter voor letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sluis jurk reis klaar\ndruif erg heerlijk leer\ngrijs rijk klus dus"
+    },
+    {
+      "seconds": 25,
+      "text": "Een reeks korte woorden met de nieuwe toetsen erin.",
+      "type": "burst",
+      "tokens": [
+        "rijk",
+        "dus",
+        "aal",
+        "jaar",
+        "els",
+        "alfa",
+        "deel",
+        "is",
+        "eerder",
+        "dal"
+      ]
+    },
+    {
+      "text": "Nu met de nadruk op R, de toets die je het minst hebt aangeslagen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "leek kerk geld raad\nsluier gids heide dijk\nlelijk suiker alles ijsje"
+    },
+    {
+      "text": "Even terug naar de patronen, om te controleren dat de vingers nog steeds naar hun plek teruggaan.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "rrr uuuu\nrururu ururur\nur ur"
+    },
+    {
+      "text": "Alles wat je hebt, door elkaar. Kijk hoeveel woorden al vanzelf gaan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "af frisse half haak\nelf geld lied lelijk\nklus jas leuke kijk"
+    }
+  ]
+}

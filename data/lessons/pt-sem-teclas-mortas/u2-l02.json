@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "O e W",
+  "summary": "Teclas novas: O e W. O dedo sai, aperta e volta.",
+  "newKeys": [
+    "o",
+    "w"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas novas nesta lição: O e W. Elas se apertam com o anelar direito e o anelar esquerdo. O movimento é sempre o mesmo — sair, apertar e voltar — e a volta é a parte que se treina, porque se o dedo fica fora, a letra seguinte sai errada.",
+  "congrats": "Mais teclas debaixo dos dedos. Se O e W já saem sem procurar, a lição fez o seu trabalho.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "RR",
+      "text": "Esta tecla é do anelar direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte O para continuar"
+    },
+    {
+      "newKey": "o",
+      "text": "Só O e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "o o oo\noooo\noooooo oooooo"
+    },
+    {
+      "type": "intro",
+      "key": "w",
+      "finger": "LR",
+      "text": "Esta tecla é do anelar esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte W para continuar"
+    },
+    {
+      "newKey": "w",
+      "text": "Só W e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "owow wowo\now wo\nwdf oj wd"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos curtos, um atrás do outro. Vá até o fim mesmo que erre algum.",
+      "type": "burst",
+      "tokens": [
+        "oow",
+        "woow",
+        "ooo",
+        "wo",
+        "wwwo",
+        "ww",
+        "wwww",
+        "oww",
+        "woo",
+        "owow"
+      ]
+    },
+    {
+      "text": "As teclas novas misturadas com as anteriores, que é como elas vão aparecer nas palavras.",
+      "type": "block",
+      "content": "fdo kjs fd\njo oj jojo\nooo www fff jjjj"
+    },
+    {
+      "text": "Palavras de verdade com as teclas novas. Escreva a palavra inteira de uma vez, não letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "isso gostar frio oito\nisolado golfe rodas hoje\nsetor lado teatro rota"
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada de palavras curtas com as teclas novas.",
+      "type": "burst",
+      "tokens": [
+        "rios",
+        "direito",
+        "dar",
+        "todo",
+        "feira",
+        "agosto",
+        "dessa",
+        "tristes",
+        "fogo",
+        "rodas"
+      ]
+    },
+    {
+      "text": "Agora com o peso em O, a que você menos apertou.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "feiras folhas folha faladas\nseu fiel se gosto\naldeia hoje sua olhar"
+    },
+    {
+      "text": "Voltamos aos padrões por um momento, para conferir que os dedos continuam voltando para o lugar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "owowow wowowo\now wo\nwod fj wo"
+    },
+    {
+      "text": "Tudo o que você tem, misturado. Repare em quantas palavras já saem sem pensar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "rasgar leste aluga roteiro\nestradas geral fale lutar\ngosto galho gala fruta"
+    }
+  ]
+}

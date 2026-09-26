@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "弱點鍵",
+  "summary": "用你最常打錯的鍵組成的練習。",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "ㄑ",
+    "ㄨ",
+    "ㄎ",
+    "ㄜ",
+    "ㄋ",
+    "ㄠ",
+    "ㄇ",
+    "ㄤ",
+    "ㄕ",
+    "ㄘ",
+    "ㄍ",
+    "ㄛ",
+    "ㄐ",
+    "ㄧ"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "ascii",
+  "intro": "這個練習是用你打錯的鍵組成的，不是固定的清單。你的情況變了，練習也會跟著變。",
+  "congrats": "弱點鍵靠每天一分鐘變強，而不是每月一小時。打錯時先放慢，準確了再提速。",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "用你最常打錯的鍵組成的練習。每次練習內容都會變。"
+    }
+  ]
+}

@@ -1,0 +1,171 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "{, }, | at tutuldok",
+  "summary": "Sa araling ito: {, }, | at tutuldok.",
+  "newKeys": [
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Mga key na hindi pa nagagamit ng kurso: {, }, | at tutuldok. Lahat sila ay Shift at isang key na kilala na ng mga daliri mo — ang Shift ay sa hinliliit ng kabilang kamay.",
+  "congrats": "{, }, | at tutuldok: nasa ilalim na ng mga daliri mo. Shift sa kabilang kamay, at kasindali na ng katabing titik ang simbolo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "Ang { ay para sa kanang hinliliit, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang { para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "Una, { nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "{{ { {gabi {mababaw {maluwag\n{{ { {paa {paminta {kamay\n{{ { {tawag {tinapay {telepono"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "Ang } ay para sa kanang hinliliit, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang } para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "Una, } nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "}} } {ulitin} {pa} {tinidor}\n}} } {kutsilyo} {si} {sitaw}\n}} } {almusal} {tiyak} {magulo}"
+    },
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "RP",
+      "text": "Ang | ay para sa kanang hinliliit, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang | para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "Una, | nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "|| | katulad|bumili loob|tula kusina|maliit\n|| | maayos|salamat subalit|dikdik ito|lawa\n|| | inyo|mainit bansa|dahon init|marami"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RP",
+      "text": "Ang tutuldok ay para sa kanang hinliliit, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang : para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "Una, tutuldok nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": ":: : lasa: hula: ninang:\n:: : dasalan: ilagay: halik:\n:: : na: tumawa: bubong:"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Isang bugso ng maiikling piraso na may ganitong mga character.",
+      "tokens": [
+        "{gilid}",
+        "{magsulat}",
+        "{buhangin}",
+        "{magluto}",
+        "{batang}",
+        "{bawang}",
+        "pitaka|alaga",
+        "{sidhi}",
+        "pansin|ilagak",
+        "{ingay}"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Lahat ng nasa araling ito, magkakahalo.",
+      "content": "naglaro|mahina sobra|raw {paa} {malambot}\nkumanta|ipon {tigas} saksi: {kanto}\nng: mabagal: pindutin|kalat {kusa}"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Mga salita ulit, nasa tamang lugar ang mga simbolo.",
+      "content": "nakatayo: palaruan {magbasa} nina {awit}\n{bumili} antukin {daan} kalan malaki|lapit\nsando|na galit {pa} sapat {asa}"
+    }
+  ]
+}

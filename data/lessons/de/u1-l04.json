@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A und Ö",
+  "summary": "Neue Tasten: A und Ö. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "a",
+    "ö"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: A und Ö. Dafür sind der linke kleine Finger und der rechte kleine Finger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn A und Ö ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "Für diese Taste ist der linke kleine Finger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke A, um weiterzugehen"
+    },
+    {
+      "newKey": "a",
+      "text": "Nur A und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": "ö",
+      "finger": "RP",
+      "text": "Für diese Taste ist der rechte kleine Finger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke Ö, um weiterzugehen"
+    },
+    {
+      "newKey": "ö",
+      "text": "Nur Ö und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "aöaö öaöa\naö öa\nödf ja öd"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "öaaa",
+        "aaö",
+        "aaa",
+        "aööa",
+        "öaöö",
+        "ööaa",
+        "aöö",
+        "aaöö",
+        "öaöa",
+        "aöaa"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "aö öa aöaö\naaa öööö ffff jjj\naöaö öaöa"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "als ass fass ja\nkalk salsa skala fall\ndas dass salsa all"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "kalk",
+        "salsa",
+        "alfalfa",
+        "lass",
+        "kajak",
+        "öl",
+        "fall",
+        "als",
+        "ass",
+        "skala"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf A — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "das fad kalk all\naal falls skala ja\nsaal lass kajak alfalfa"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "aöaöaö öaöaöa\naö öa\njöa df jö"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ja lass als skala\nfall aal ölfass als\ndas als dass aal"
+    }
+  ]
+}

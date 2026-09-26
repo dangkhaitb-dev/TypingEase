@@ -1,0 +1,136 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-p",
+  "title": "Q e P",
+  "summary": "Teclas novas: Q e P. O dedo sai, aperta e volta.",
+  "newKeys": [
+    "q",
+    "p"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas novas nesta lição: Q e P. Elas se apertam com o mindinho esquerdo e o mindinho direito. O movimento é sempre o mesmo — sair, apertar e voltar — e a volta é a parte que se treina, porque se o dedo fica fora, a letra seguinte sai errada.",
+  "congrats": "Mais teclas debaixo dos dedos. Se Q e P já saem sem procurar, a lição fez o seu trabalho.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LP",
+      "text": "Esta tecla é do mindinho esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte Q para continuar"
+    },
+    {
+      "newKey": "q",
+      "text": "Só Q e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "qdf j qd\nq q qq\nqqqq"
+    },
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "RP",
+      "text": "Esta tecla é do mindinho direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte P para continuar"
+    },
+    {
+      "newKey": "p",
+      "text": "Só P e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "qpqp pqpq\nqp pq\njfq dp jf"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos curtos, um atrás do outro. Vá até o fim mesmo que erre algum.",
+      "type": "burst",
+      "tokens": [
+        "pqq",
+        "qpqp",
+        "ppqq",
+        "ppq",
+        "pqqp",
+        "pqpp",
+        "qpq",
+        "qpp",
+        "qqqq",
+        "qqqp"
+      ]
+    },
+    {
+      "text": "As teclas novas misturadas com as anteriores, que é como elas vão aparecer nas palavras.",
+      "type": "block",
+      "content": "ffff jjjj qqqq ppp\nqpqpqp pqpqpq\nfjqp pqjf"
+    },
+    {
+      "text": "Palavras de verdade com as teclas novas. Escreva a palavra inteira de uma vez, não letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "pena sapato preço quadro\njaqueta programa por pior\nsapatos papel pai pera"
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada de palavras curtas com as teclas novas.",
+      "type": "burst",
+      "tokens": [
+        "pensar",
+        "perder",
+        "salas",
+        "tias",
+        "servir",
+        "falta",
+        "festas",
+        "deste",
+        "por",
+        "uns"
+      ]
+    },
+    {
+      "text": "Agora com o peso em Q, a que você menos apertou.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "vontade copo pequenas datas\nlugares fase diferente molhado\nroupas desligar gerais tratar"
+    },
+    {
+      "text": "Voltamos aos padrões por um momento, para conferir que os dedos continuam voltando para o lugar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "qpqpqp pqpqpq\nqp pq\npfq jd pf"
+    },
+    {
+      "text": "Tudo o que você tem, misturado. Repare em quantas palavras já saem sem pensar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "salada faça volume pacote\nguia sei escolas direito\nespaço cinto chega legais"
+    }
+  ]
+}

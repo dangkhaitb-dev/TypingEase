@@ -1,0 +1,122 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "e-i",
+  "title": "E et I",
+  "summary": "Nouvelles touches : E et I. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "e",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : E et I. Elles se tapent avec le majeur gauche et le majeur droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si E et I sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "C'est le majeur gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur E pour continuer"
+    },
+    {
+      "newKey": "e",
+      "text": "Seulement E et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "e e ee\neee\neeeeee eeeeee"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RM",
+      "text": "C'est le majeur droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur I pour continuer"
+    },
+    {
+      "newKey": "i",
+      "text": "Seulement I et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "jdi fe jd\nie ei ieie\niiii eee"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "eiie",
+        "iie",
+        "eeei",
+        "eiei",
+        "ei",
+        "iii",
+        "eeie",
+        "iei",
+        "ieei",
+        "ii"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "eieiei ieieie\nifej jefi\nske dfj sk"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fille les ski fils\nlis lisse elles ses\ndis le ifs dise"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "salle",
+        "skis",
+        "fille",
+        "si",
+        "sel",
+        "if",
+        "fil",
+        "ils",
+        "lisse",
+        "dis"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur E, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "a je sa ski\nils des fil if\nsalle ifs selle lis"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "iii eee\neieiei ieieie\nei ie"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "salle sel elle ils\nski lisse la si\ndes lis elles salles"
+    }
+  ]
+}

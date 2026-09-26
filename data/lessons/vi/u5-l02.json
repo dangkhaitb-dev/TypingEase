@@ -1,0 +1,163 @@
+{
+  "id": "u5-l02",
+  "unit": "u5",
+  "group": "symbols",
+  "order": 37,
+  "slug": "symbols-2",
+  "title": "^, &, * và (",
+  "summary": "Những phím cuối: ^, &, * và (.",
+  "newKeys": [
+    "^",
+    "&",
+    "*",
+    "("
+  ],
+  "keysSoFar": [
+    "j",
+    "f",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "shift",
+    "enter",
+    "aa",
+    "ee",
+    "oo",
+    "dd",
+    "aw",
+    "uw",
+    "ow",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "`",
+    "~",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "("
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Những phím khoá học chưa dùng tới: ^, &, * và (. Tất cả đều là Shift cộng một phím ngón tay bạn đã quen — Shift bằng ngón út của bàn tay kia.",
+  "congrats": "^, &, * và (: giờ đã nằm dưới ngón tay bạn. Shift bằng tay kia, và ký hiệu ra dễ như chữ cái bên cạnh.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RI",
+      "text": "^ do ngón trỏ phải phụ trách, giữ Shift bằng tay kia.",
+      "hint": "Nhấn ^ để tiếp tục"
+    },
+    {
+      "type": "block",
+      "newKey": "^",
+      "text": "Gõ riêng ^ trước, rồi gõ nó ở đúng chỗ nó hay đứng.",
+      "content": "^^ ^ 54^2 42^1 4^3\n^^ ^ 85^2 32^2 23^2\n^^ ^ 83^1 85^3 65^2"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "& do ngón trỏ phải phụ trách, giữ Shift bằng tay kia.",
+      "hint": "Nhấn & để tiếp tục"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Gõ riêng & trước, rồi gõ nó ở đúng chỗ nó hay đứng.",
+      "content": "&& & mai & ed pho & vam phim & ese\n&& & chan & xuan che & lai he & khi\n&& & khoi & aa gio & sau ta & asl"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "* do ngón giữa phải phụ trách, giữ Shift bằng tay kia.",
+      "hint": "Nhấn * để tiếp tục"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Gõ riêng * trước, rồi gõ nó ở đúng chỗ nó hay đứng.",
+      "content": "** * *nhap* *ty* *kha*\n** * *muoi* *gai* *mat*\n** * *hay* *ru* *noi*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "( do ngón áp út phải phụ trách, giữ Shift bằng tay kia.",
+      "hint": "Nhấn ( để tiếp tục"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Gõ riêng ( trước, rồi gõ nó ở đúng chỗ nó hay đứng.",
+      "content": "(( ( (on (giai (xoa\n(( ( (trong (hy (dep\n(( ( (gap (bien (trong"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Một loạt mẩu ngắn có những ký tự này.",
+      "tokens": [
+        "(phep",
+        "(im",
+        "kha&dep",
+        "45^2",
+        "36^1",
+        "(che",
+        "(xe",
+        "khe&ne",
+        "(asl",
+        "(ox"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Mọi thứ của bài này, trộn lẫn.",
+      "content": "*mai* *nui* ci&kia *thi*\nkieu & nen (ma 48^1 67^2\niki & tap *pho* puq&anh (bung"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Lại là từ, với ký hiệu ở đúng chỗ của nó.",
+      "content": "so & dao nhat *ede* ed *anh*\n*muoi* pu (ese pu *nhau*\n(tre yt *cha* de bang & chi"
+    }
+  ]
+}

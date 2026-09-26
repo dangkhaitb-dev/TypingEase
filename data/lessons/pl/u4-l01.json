@@ -1,0 +1,157 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, !, @ i #",
+  "summary": "W programie: `, !, @ i #.",
+  "newKeys": [
+    "`",
+    "!",
+    "@",
+    "#"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "!",
+    "@",
+    "#"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Klawisze, których kurs jeszcze nie używał: `, !, @ i #. Niektóre wymagają Shiftu, małym palcem drugiej ręki; pozostałe mają własny klawisz, którego kurs jeszcze nie używał.",
+  "congrats": "`, !, @ i #: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "Ten znak — ` — naciska lewy mały palec.",
+      "hint": "Naciśnij `, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "Najpierw sam `, potem tam, gdzie naprawdę się go używa.",
+      "content": "`` ` `robimy` `lista` `zadania`\n`` ` `jajko` `wie` `pyta`\n`` ` `ciotka` `kasety` `plany`"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "Ten znak — ! — naciska lewy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij !, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Najpierw sam !, potem tam, gdzie naprawdę się go używa.",
+      "content": "!! ! szuka! noga! trasa!\n!! ! biel! kapusta! lekarz!\n!! ! drugi! dziecko! okno!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "Ten znak — @ — naciska lewy palec serdeczny, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij @, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "Najpierw sam @, potem tam, gdzie naprawdę się go używa.",
+      "content": "@@ @ minuta@osoby czarny@szansa tramwaj@ruda\n@@ @ drewno@wieczory swoje@kanion myszka@cele\n@@ @ wieku@zielona wiosny@domu moc@kolor"
+    },
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LM",
+      "text": "Ten znak — # — naciska lewy palec środkowy, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij #, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "Najpierw sam #, potem tam, gdzie naprawdę się go używa.",
+      "content": "## # #72 #40 #9\n## # #71 #70 #6\n## # #46 #35 #98"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Seria krótkich kawałków z tymi znakami.",
+      "tokens": [
+        "#48",
+        "`ja`",
+        "`mu`",
+        "wiatr!",
+        "`praca`",
+        "`piosenki`",
+        "kurs@place",
+        "`tani`",
+        "grudka@lista",
+        "#83"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Wszystko, co przyniosła ta lekcja, wymieszane.",
+      "content": "wyraz@robota harfa! sam@oba hak@szare\n#25 kolacja! trudna@kula `koniec`\n`cukier` wiedza@dworek `kiedy` biega!"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Znowu słowa, ze znakami na swoich miejscach.",
+      "content": "bieg! gwiazda `palce` czeka `osoba`\n`wieki` sporty `tani` rokiem `pomaga`\ntramwaj! wiedza `leki` numery #26"
+    }
+  ]
+}

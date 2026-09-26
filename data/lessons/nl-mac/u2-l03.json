@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C en N",
+  "summary": "Nieuwe toetsen: C en N. De vinger strekt, slaat aan en keert terug.",
+  "newKeys": [
+    "c",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nieuwe toetsen in deze les: C en N. Je slaat ze aan met de linkermiddelvinger en de rechterwijsvinger. De beweging is altijd dezelfde — uitstrekken, aanslaan en terug — en het terugkeren is wat je oefent, want als de vinger buiten blijft, gaat de volgende letter scheef.",
+  "congrats": "Weer toetsen onder je vingers. Als C en N er zonder zoeken uitkomen, heeft de les zijn werk gedaan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "Deze toets is voor de linkermiddelvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op C om verder te gaan"
+    },
+    {
+      "newKey": "c",
+      "text": "Alleen C en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "cccc cccc\nc c\njfc d jf"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "Deze toets is voor de rechterwijsvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op N om verder te gaan"
+    },
+    {
+      "newKey": "n",
+      "text": "Alleen N en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "cncncn ncncnc\nnc nc\njdc nf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Korte groepjes, de een na de ander. Maak de lijst af, ook als je er een paar mist.",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "nnn",
+        "nc",
+        "ccnc",
+        "cnnn",
+        "cnn",
+        "ncc",
+        "nncc",
+        "nccc",
+        "ncnn"
+      ]
+    },
+    {
+      "text": "De nieuwe toetsen gemengd met de vorige, zoals je ze straks in woorden tegenkomt.",
+      "type": "block",
+      "content": "nc cn ncnc\nnnn ccc jjj fff\ncncn ncnc"
+    },
+    {
+      "text": "Echte woorden met de nieuwe toetsen. Typ het hele woord in één beweging, niet letter voor letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "klein station dingen donderdag\nonder handdoek hangen wacht\ntand wind slecht lente"
+    },
+    {
+      "seconds": 25,
+      "text": "Een reeks korte woorden met de nieuwe toetsen erin.",
+      "type": "burst",
+      "tokens": [
+        "dorst",
+        "dag",
+        "suiker",
+        "woning",
+        "tanden",
+        "na",
+        "hoofd",
+        "deftig",
+        "glas",
+        "taart"
+      ]
+    },
+    {
+      "text": "Nu met de nadruk op C, de toets die je het minst hebt aangeslagen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "de twaalf waar oude\ngenoeg contact lach ook\nkoek oefenen schoenen niets"
+    },
+    {
+      "text": "Even terug naar de patronen, om te controleren dat de vingers nog steeds naar hun plek teruggaan.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nnnn ccc\ncncn ncnc\nnc nc"
+    },
+    {
+      "text": "Alles wat je hebt, door elkaar. Kijk hoeveel woorden al vanzelf gaan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kracht uur klein wel\nwij geur uil gordijn\nwijde kaars nooit ja"
+    }
+  ]
+}

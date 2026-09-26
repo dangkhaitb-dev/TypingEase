@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, ! and @",
+  "summary": "The last keys: `, ~, ! and @.",
+  "newKeys": [
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "g",
+    "m",
+    "f",
+    "u",
+    "p",
+    "l",
+    "b",
+    "j",
+    "y",
+    "w",
+    "d",
+    "k",
+    "h",
+    "v",
+    "q",
+    ";",
+    "z",
+    "c",
+    "x",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: `, ~, ! and @. Some need Shift, held by the little finger of the other hand; the rest sit on a key the course has not used before.",
+  "congrats": "`, ~, ! and @: under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "` belongs to your left little finger.",
+      "hint": "Press ` to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "` on its own first, then where it is actually used.",
+      "content": "`` ` `excited` `mind` `isle`\n`` ` `shelf` `dry` `grill`\n`` ` `tried` `games` `evening`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "~ on its own first, then where it is actually used.",
+      "content": "~~ ~ ~4 ~50 ~70\n~~ ~ ~26 ~23 ~22\n~~ ~ ~34 ~5 ~83"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "! belongs to your left little finger, with Shift held by the other hand.",
+      "hint": "Press ! to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "! on its own first, then where it is actually used.",
+      "content": "!! ! strike! rock! grid!\n!! ! ads! things! quote!\n!! ! again! truly! every!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "@ belongs to your left ring finger, with Shift held by the other hand.",
+      "hint": "Press @ to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "@ on its own first, then where it is actually used.",
+      "content": "@@ @ ten@nine close@you're wear@possible\n@@ @ know@his root@isle less@whole\n@@ @ drills@another center@shield those@ice"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "ruler@story",
+        "fall@together",
+        "`hard`",
+        "board@wood",
+        "touch@agree",
+        "mouth@fridge",
+        "`natural`",
+        "~21",
+        "~14",
+        "would@girl"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "early@feels `city` box@cat money!\nwhether@yes ~14 round@good holes@straight\nsteel! shadow@gaff ~48 ~53"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "duty! now rights! offers `shades`\n`ages` loved ~32 offers lash!\nstorm@ball hunt ~41 trail pass!"
+    }
+  ]
+}

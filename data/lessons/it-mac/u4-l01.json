@@ -1,0 +1,161 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "@, #, _ e +",
+  "summary": "In questa lezione: @, #, _ e +.",
+  "newKeys": [
+    "@",
+    "#",
+    "_",
+    "+"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "m",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "w",
+    ":",
+    ";",
+    "ù",
+    "shift",
+    "enter",
+    ".",
+    "&",
+    "\"",
+    "'",
+    "(",
+    "ç",
+    "è",
+    ")",
+    "£",
+    "à",
+    "é",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "ò",
+    "-",
+    "=",
+    "ì",
+    "$",
+    "§",
+    "@",
+    "#",
+    "_",
+    "+"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti che il corso non ha ancora usato: @, #, _ e +. Alcuni vogliono Shift, con il mignolo dell'altra mano; gli altri hanno un tasto tutto loro, che il corso non aveva ancora usato.",
+  "congrats": "@, #, _ e +: ora sotto le tue dita. Il segno esce facile come la lettera accanto.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LP",
+      "text": "È il mignolo sinistro a premere @.",
+      "hint": "Premi @ per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "Prima @ e basta, poi dove si usa davvero.",
+      "content": "@@ @ quanto@fila vedere@vero ora@cuore\n@@ @ l'amica@braccio dà@sarò venerdì@tali\n@@ @ porto@yogurt comune@teatro felicità@lega"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "Prima # e basta, poi dove si usa davvero.",
+      "content": "## # #43 #71 #45\n## # #56 #23 #39\n## # #25 #11 #41"
+    },
+    {
+      "type": "intro",
+      "key": "_",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere _, con Shift tenuto dall'altra mano.",
+      "hint": "Premi _ per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "_",
+      "text": "Prima _ e basta, poi dove si usa davvero.",
+      "content": "__ _ forza_vetro legge_pizza tastiera_animale\n__ _ madre_avrò starà_libro fila_li\n__ _ bianco_figlie questo_tastiera abitare_galla"
+    },
+    {
+      "type": "intro",
+      "key": "+",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere +, con Shift tenuto dall'altra mano.",
+      "hint": "Premi + per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "+",
+      "text": "Prima + e basta, poi dove si usa davvero.",
+      "content": "++ + 77 + 41 71 + 21 17 + 43\n++ + 13 + 23 93 + 80 69 + 20\n++ + 12 + 45 24 + 75 50 + 78"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Una raffica di pezzi brevi con questi caratteri.",
+      "tokens": [
+        "40+55",
+        "58+88",
+        "pieno_prato",
+        "grigia@ritardi",
+        "però_ragazzi",
+        "46+39",
+        "38+90",
+        "sera@dovrà",
+        "l'anno@l'anno",
+        "51+58"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tutto quello di questa lezione, mescolato.",
+      "content": "66 + 27 girare@zio agire_tesi lega@sale\n#82 71+83 partire_tè migliore@lontano\nattesa@gioia naturale@quanto per_tutto #27"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Di nuovo parole, con i segni al loro posto.",
+      "content": "via@figlie bagno 28 + 2 l'idea 47 + 34\n#21 piatto sa@gradi durare foglia_ieri\n25 + 84 extra dalle_oro digitali #25"
+    }
+  ]
+}

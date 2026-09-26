@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="th">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ความก้าวหน้าในการพิมพ์ของคุณ | TypingEase</title>
+    <meta name="description" content="ดูว่าการพิมพ์ของคุณไปถึงไหนแล้ว ทั้งคะแนนของทุกบทเรียน คำ/นาทีและความแม่นยำสูงสุด แผนที่ความร้อนของแป้นที่พิมพ์ผิด จำนวนวันที่ฝึกติดกัน และเป้าหมายรายวัน" />
+    <link rel="canonical" href="https://typingease.site/th/khwam-kuebna/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/th.mjs, progress trong
+         i18n/ui.th.js và bai-hoc/config.th.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="เมนูหลัก">
+        <a href="/th/">ฝึกพิมพ์</a>
+        <a data-route="lessons" href="/th/bot-rian/">บทเรียน</a>
+        <a class="active" href="/th/khwam-kuebna/">ความก้าวหน้า</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="เลือกภาษาและแป้นพิมพ์">หน้าแรก</a><a class="secondary-button" data-route="learn" href="/th/rian/">เรียนต่อ <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> คุณทำได้แค่ไหนแล้ว</p>
+        <h1>ความก้าวหน้าในการพิมพ์ของคุณ</h1>
+        <p class="prog-intro">ตัวเลขทุกตัวในหน้านี้เก็บไว้บนอุปกรณ์นี้เท่านั้น ไม่ถูกส่งไปที่ไหน พิมพ์อีกหนึ่งบทแล้วตัวเลขจะอัปเดตเอง</p>
+        <nav class="prog-courses" id="prog-courses" aria-label="หลักสูตร">
+          <a href="/th/khwam-kuebna/?course=th" data-course="th" aria-current="page">เกษมณี</a>
+          <a href="/th/khwam-kuebna/?course=th-pattachote" data-course="th-pattachote">ปัตตะโชติ</a>
+        </nav>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 ติดกัน 0 วัน</span>
+          <span id="strip-today">วันนี้ 0 นาที</span>
+          <span id="strip-level">ระดับ: เพิ่งเริ่ม</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="ภาพรวม">
+        <div><span>บทที่เรียนแล้ว</span><strong id="sum-lessons">0 / 36</strong></div>
+        <div><span>ดาวที่สะสมได้</span><strong id="sum-stars">0</strong></div>
+        <div><span>คำ/นาทีสูงสุด</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>ความแม่นยำสูงสุด</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> หมุดหมาย</p>
+            <h2 id="badges-title">เหรียญ</h2>
+            <p>เหรียญแต่ละเหรียญผูกกับตัวเลขจริงในตารางด้านล่าง ไม่มีทางได้มานอกจากการพิมพ์</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">เป้าหมายวันนี้</p>
+          <h3 id="daily-goal-title">0 / 10 นาที</h3>
+          <p id="daily-goal-status">🔥 ติดกัน 0 วัน</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">สูงสุด: ติดกัน 0 วัน</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="เลือกเป้าหมายรายวัน">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 นาที</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 นาที</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 นาที</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 นาที</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">โค้ชของคุณ</p><h3 id="coach-title">ตอนนี้คุณอยู่ตรงไหน</h3></div>
+          <span class="coach-level" id="coach-level">เพิ่งเริ่ม</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="ความก้าวหน้าล่าสุด" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">อีก 2 บทก็มีข้อมูลพอจะวาดเส้นแนวโน้มได้</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">พิมพ์สักหนึ่งบท แล้วหน้านี้จะรู้ว่าคุณอยู่ตรงไหน</p>
+        <a class="coach-action" id="coach-action" href="/th/rian/">เริ่มบทที่ 1 →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> ทีละแป้น</p>
+          <h3 id="heat-title">แผนที่ความร้อนของแป้นพิมพ์</h3>
+          <p>แป้นสีเขียวคือแป้นที่คุณกดได้แม่นยำ สีเหลืองคือแป้นที่ถูกบ้างผิดบ้าง สีแดงคือแป้นที่ทำให้คุณช้าลง แป้นจะมีสีก็ต่อเมื่อพิมพ์มากพอที่จะบอกอะไรได้จริง</p>
+          <p class="heat-empty" id="heat-empty">ข้อมูลยังไม่พอ ลองเรียนสักสองสามบทแล้วกลับมาดูใหม่</p>
+          <div class="heat-legend" id="heat-legend" aria-label="ความแม่นยำของแต่ละแป้น" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="หลักสูตร {n} บทเรียน"><i></i> หลักสูตร 36 บทเรียน</p>
+            <h2 id="results-title">คะแนนของทุกบทเรียน</h2>
+            <p>รอบที่ดีที่สุดของคุณในแต่ละบท เก็บไว้บนอุปกรณ์นี้</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">ล้างประวัติ</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>บทเรียน</th><th>หน้าจอที่ทำแล้ว</th><th>ดาว</th><th>คำ/นาทีสูงสุด</th><th>ความแม่นยำ</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> ไปต่อ</p>
+          <h2 id="prog-explore-title">ทำอะไรต่อดี</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/th/bot-rian/">
+            <h3>หลักสูตรทั้งหมด</h3>
+            <p>ทุกหน่วยเรียงตามลำดับ กลับไปทำบทที่อยากทำใหม่ หรือเปิดหน่วยถัดไปก่อนก็ได้</p>
+            <span>ดูบทเรียนทั้งหมด <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>พิมพ์บนแป้นพิมพ์ของคุณเอง</h3>
+            <p>QWERTY, AZERTY, QWERTZ, เกษมณี, ปัตตะโชติ, อาหรับ, JIS ผังแป้นพิมพ์จริง 119 แบบ และบทเรียนจะตามผังที่คุณเลือก</p>
+            <span>ดูผังแป้นพิมพ์ <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>ช้าลงอีกนิด แล้วจะไปได้ไกลกว่าเดิมมาก</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/th/about/">เกี่ยวกับเรา</a><span aria-hidden="true"> · </span><a href="/th/terms/">ข้อกำหนดการให้บริการ</a><span aria-hidden="true"> · </span><a href="/th/privacy/">นโยบายความเป็นส่วนตัว</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.th.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.th.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"th":{"learn":"/th/rian/","lessons":"/th/bot-rian/"},"th-pattachote":{"learn":"/th/pattachote/rian/","lessons":"/th/pattachote/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "th";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

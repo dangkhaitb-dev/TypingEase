@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A ve Ş",
+  "summary": "Yeni tuşlar: A ve Ş. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "a",
+    "ş"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: A ve Ş. Bunlara sol serçe parmak ve sağ serçe parmak basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. A ve Ş artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "Bu tuşa sol serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için A tuşuna bas"
+    },
+    {
+      "newKey": "a",
+      "text": "Yalnızca A ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": "ş",
+      "finger": "RP",
+      "text": "Bu tuşa sağ serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Ş tuşuna bas"
+    },
+    {
+      "newKey": "ş",
+      "text": "Yalnızca Ş ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "aşaş şaşa\naş şa\nşdf ja şd"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "şaaa",
+        "aaş",
+        "aaa",
+        "aşşa",
+        "şaşş",
+        "şşaa",
+        "aşş",
+        "aaşş",
+        "şaşa",
+        "aşaa"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "aş şa aşaş\naaa şşşş ffff jjj\naşaş şaşa"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dal kala kaş da\nkafada kalfa dalda sal\nak as kalas kal"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "ak",
+        "salla",
+        "kala",
+        "sal",
+        "da",
+        "laf",
+        "kasada",
+        "şakak",
+        "dal",
+        "ada"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık A tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ad kas kafada kal\nkala şal a dalda\nşaka as da laf"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "aşaşaş şaşaşa\naş şa\njşa df jş"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "da kasa fal kasada\nsal ada adada dal\nad ak şaka sakal"
+    }
+  ]
+}

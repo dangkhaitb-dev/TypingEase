@@ -1,0 +1,134 @@
+{
+  "id": "u2-l04",
+  "unit": "u2",
+  "group": "start",
+  "order": 14,
+  "slug": "m-v",
+  "title": "M en V",
+  "summary": "Nieuwe toetsen: M en V. De vinger strekt, slaat aan en keert terug.",
+  "newKeys": [
+    "m",
+    "v"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nieuwe toetsen in deze les: M en V. Je slaat ze aan met de rechterwijsvinger en de linkerwijsvinger. De beweging is altijd dezelfde — uitstrekken, aanslaan en terug — en het terugkeren is wat je oefent, want als de vinger buiten blijft, gaat de volgende letter scheef.",
+  "congrats": "Weer toetsen onder je vingers. Als M en V er zonder zoeken uitkomen, heeft de les zijn werk gedaan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RI",
+      "text": "Deze toets is voor de rechterwijsvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op M om verder te gaan"
+    },
+    {
+      "newKey": "m",
+      "text": "Alleen M en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "djf m dj\nm m mm\nmmmm"
+    },
+    {
+      "type": "intro",
+      "key": "v",
+      "finger": "LI",
+      "text": "Deze toets is voor de linkerwijsvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op V om verder te gaan"
+    },
+    {
+      "newKey": "v",
+      "text": "Alleen V en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "vvvv mmmm\nmvmvmv vmvmvm\nvm mv"
+    },
+    {
+      "seconds": 20,
+      "text": "Korte groepjes, de een na de ander. Maak de lijst af, ook als je er een paar mist.",
+      "type": "burst",
+      "tokens": [
+        "mm",
+        "vmmm",
+        "vvmm",
+        "mvmv",
+        "mmmm",
+        "vmvm",
+        "vvm",
+        "vmvv",
+        "mv",
+        "mmmv"
+      ]
+    },
+    {
+      "text": "De nieuwe toetsen gemengd met de vorige, zoals je ze straks in woorden tegenkomt.",
+      "type": "block",
+      "content": "vm mv vmvm\nffff vvv mmmm jjj\nmvmvmv vmvmvm"
+    },
+    {
+      "text": "Echte woorden met de nieuwe toetsen. Typ het hele woord in één beweging, niet letter voor letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "stroom tram vraag tomaat\nmogen vinden kilometer vol\nemmer maken vaak modern"
+    },
+    {
+      "seconds": 25,
+      "text": "Een reeks korte woorden met de nieuwe toetsen erin.",
+      "type": "burst",
+      "tokens": [
+        "mensen",
+        "dak",
+        "onder",
+        "huis",
+        "agenda",
+        "vaak",
+        "herfst",
+        "scholen",
+        "cultuur",
+        "dag"
+      ]
+    },
+    {
+      "text": "Nu met de nadruk op M, de toets die je het minst hebt aangeslagen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "land schrijven handdoek drama\nreclame kunnen oma samen\neigen weer tong fotograaf"
+    },
+    {
+      "text": "Even terug naar de patronen, om te controleren dat de vingers nog steeds naar hun plek teruggaan.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "mvmv vmvm\nvm vm\ndjf mv dj"
+    },
+    {
+      "text": "Alles wat je hebt, door elkaar. Kijk hoeveel woorden al vanzelf gaan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ruil kerstnacht mooi kunst\naarde recht held ideale\nkleur gras terug hemel"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "X e Q",
+  "summary": "Tasti nuovi: X e Q. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "x",
+    "q"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "à",
+    "l",
+    "x",
+    "q"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: X e Q. Si premono con l'indice sinistro e l'anulare sinistro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se X e Q ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LI",
+      "text": "Questo tasto lo prende l'indice sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi X per continuare"
+    },
+    {
+      "newKey": "x",
+      "text": "Solo X e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "xhe u xh\nx x xx\nxxxx"
+    },
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LR",
+      "text": "Questo tasto lo prende l'anulare sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi Q per continuare"
+    },
+    {
+      "newKey": "q",
+      "text": "Solo Q e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "xqxqxq qxqxqx\nqx qx\nheq xu he"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "qqqq",
+        "qqqx",
+        "xxx",
+        "qqq",
+        "qxq",
+        "xxqq",
+        "qxxx",
+        "xqxx",
+        "qx",
+        "xxxx"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "hhhh xxxx qqq uuu\nxqxq qxqx\nqhxu uhqx"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "quadro qualcosa cinque qua\nquasi quale xilofono quattro\nquando fax qua quale"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "nonno",
+        "giorno",
+        "camera",
+        "loro",
+        "là",
+        "fax",
+        "fa",
+        "salire",
+        "notte",
+        "oggi"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su X, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "possibilità foglia canta tutta\ngià xilofono tutto antico\nbalcone collina dea del"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "heu qx he\nqx xq qxqx\nqqqq xxx"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "pensare quattro qua legale\ngialla cielo e lega\nride dita tali quindi"
+    }
+  ]
+}

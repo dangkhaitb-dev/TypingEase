@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "Die äußere Spalte",
+  "summary": "Die Spalte am rechten Rand: sechs Tasten, alle vom kleinen Finger, darunter J und ß.",
+  "newKeys": [
+    "j",
+    "-",
+    "`",
+    "ß",
+    "´",
+    "\\"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h",
+    "w",
+    "k",
+    "f",
+    "v",
+    "ä",
+    "b",
+    "m",
+    "p",
+    "x",
+    "q",
+    "z",
+    "ö",
+    "ü",
+    ".",
+    ",",
+    "y",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "j",
+    "-",
+    "`",
+    "ß",
+    "´",
+    "\\"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Der rechte kleine Finger ist für mehr Tasten zuständig als jeder andere, und die am Rand übt fast niemand. Auf Neo liegen hier zwei Buchstaben, die man ständig braucht: das J und das ß. Ohne sie fehlen ja, groß, weiß und Straße.",
+  "congrats": "Mit J und ß fehlt kein Buchstabe mehr. Das ist die Spalte, die die meisten Kurse auslassen.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RP",
+      "text": "Die Tasten am rechten Rand, alle vom kleinen Finger. Auf Neo liegen hier das J, das ß und zwei tote Tasten für die Akzente.",
+      "hint": "Drücke J, um weiterzugehen"
+    },
+    {
+      "newKeys": [
+        "j",
+        "-"
+      ],
+      "text": "Jetzt j und -. Der kleine Finger geht nach außen und kommt zurück; die Hand bleibt, wo sie ist.",
+      "type": "block",
+      "content": "j-j- -j-j\nj- -j\nn-a je n-"
+    },
+    {
+      "newKeys": [
+        "`",
+        "ß"
+      ],
+      "text": "Jetzt ` und ß. Der kleine Finger geht nach außen und kommt zurück; die Hand bleibt, wo sie ist.",
+      "type": "block",
+      "content": "ß` `ß\n`en ßa `e\n`ß ß` `ß`ß"
+    },
+    {
+      "seconds": 20,
+      "text": "Eine Runde mit dem, was du aus dieser Spalte schon hast.",
+      "type": "burst",
+      "tokens": [
+        "ß-",
+        "-`",
+        "--",
+        "ßj",
+        "-j",
+        "jß",
+        "ß`",
+        "j-",
+        "-ß",
+        "ßß"
+      ]
+    },
+    {
+      "newKeys": [
+        "´",
+        "\\"
+      ],
+      "text": "Jetzt ´ und \\. Der kleine Finger geht nach außen und kommt zurück; die Hand bleibt, wo sie ist.",
+      "type": "block",
+      "content": "´\\ ´\\\n´ea \\n ´e\n´\\ \\´ ´\\´\\"
+    },
+    {
+      "text": "Alle sechs zusammen. Hier verdreht sich das Handgelenk am schnellsten, wenn der Finger nicht zurückkehrt.",
+      "type": "block",
+      "content": "e`j a\\- e`\n\\´ ´\\ \\´\\´\n\\\\\\\\ ```` --- jjj ßßß ´´´´"
+    },
+    {
+      "seconds": 25,
+      "text": "Wieder Wörter, damit die Hand nach so viel Rand locker wird.",
+      "type": "burst",
+      "tokens": [
+        "traum",
+        "euer",
+        "bücher",
+        "minute",
+        "mehr",
+        "buch",
+        "schnell",
+        "hals",
+        "prüfen",
+        "direkt",
+        "bitte",
+        "programm"
+      ]
+    },
+    {
+      "text": "Zurück zu den Wörtern, jetzt mit der ganzen Tastatur — ß eingeschlossen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "wäsche lass nacht bilder\nuhr wo stoß still\nzusage sagt springen typ"
+    },
+    {
+      "text": "Ganze Sätze zum Abschluss der Tastenlektionen.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Mein Bruder arbeitet in einem kleinen Betrieb.\nMeine Schwester wohnt in einer kleinen Stadt.\nDer Lehrer erklärt die Aufgabe noch einmal."
+    }
+  ]
+}

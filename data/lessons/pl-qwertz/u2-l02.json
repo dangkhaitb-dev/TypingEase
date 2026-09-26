@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "O i W",
+  "summary": "Nowe klawisze: O i W. Palec wychodzi, uderza i wraca.",
+  "newKeys": [
+    "o",
+    "w"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ł",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nowe klawisze w tej lekcji: O i W. Naciskają je prawy palec serdeczny i lewy palec serdeczny. Ruch jest zawsze ten sam — wyjść, uderzyć, wrócić — i ćwiczy się tu właśnie powrót, bo palec, który został na zewnątrz, myli następną literę.",
+  "congrats": "Nowe klawisze pod palcami. Jeśli O i W wychodzą już bez szukania, lekcja zrobiła swoje.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "RR",
+      "text": "Ten klawisz naciska prawy palec serdeczny. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij O, aby przejść dalej"
+    },
+    {
+      "newKey": "o",
+      "text": "Tylko O i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "o o oo\noooo\noooooo oooooo"
+    },
+    {
+      "type": "intro",
+      "key": "w",
+      "finger": "LR",
+      "text": "Ten klawisz naciska lewy palec serdeczny. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij W, aby przejść dalej"
+    },
+    {
+      "newKey": "w",
+      "text": "Tylko W i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "owow wowo\now wo\nwdf oj wd"
+    },
+    {
+      "seconds": 20,
+      "text": "Krótkie grupy, jedna po drugiej. Dojdź do końca, nawet jeśli coś pomylisz.",
+      "type": "burst",
+      "tokens": [
+        "oow",
+        "woow",
+        "ooo",
+        "wo",
+        "wwwo",
+        "ww",
+        "wwww",
+        "oww",
+        "woo",
+        "owow"
+      ]
+    },
+    {
+      "text": "Nowe klawisze wymieszane ze starymi, tak jak pojawią się w słowach.",
+      "type": "block",
+      "content": "fdo kjs fd\njo oj jojo\nooo www fff jjjj"
+    },
+    {
+      "text": "Prawdziwe słowa z nowymi klawiszami. Pisz całe słowo jednym ruchem, nie litera po literze.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lato fotel słowo swoje\nzłoto kawa dworek wiek\ngotuje dwa wie weto"
+    },
+    {
+      "seconds": 25,
+      "text": "Seria krótkich słów z nowymi klawiszami.",
+      "type": "burst",
+      "tokens": [
+        "flaga",
+        "złoto",
+        "kładł",
+        "do",
+        "koszula",
+        "ja",
+        "kawa",
+        "jak",
+        "daleko",
+        "roku"
+      ]
+    },
+    {
+      "text": "Teraz z naciskiem na O — tego klawisza było do tej pory najmniej.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kwiat towar wiadro kask\nkasjer lekki lek drogo\nul kolega ulga wideo"
+    },
+    {
+      "text": "Na chwilę wracamy do wzorów, żeby sprawdzić, czy palce zawsze wracają na swoje miejsce.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "owowow wowowo\now wo\nwod fj wo"
+    },
+    {
+      "text": "Wszystko, co masz, wymieszane. Zobacz, ile słów wychodzi już bez zastanowienia.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "od złoto sufit krzesło\nwtorki to dali kraje\nrzeki dał flaga foto"
+    }
+  ]
+}

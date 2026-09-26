@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Tes unit 1",
+  "summary": "Tes berwaktu dengan semua yang sudah dipelajari.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "Tes berwaktu. Tidak ada yang baru: hanya yang sudah kamu tahu, dengan irama yang bisa kamu pertahankan.",
+  "congrats": "Tes selesai. Angkanya kurang penting dibanding kenyataan bahwa kamu sampai di akhir tanpa melihat.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "Tidak ada tombol baru. Ketik dengan irama yang bisa kamu pertahankan sampai akhir.",
+      "dictation": "words",
+      "content": "asal dasar gadis lurus\ngas fasal selalu gelar\nadas sisir dada fisik\ndia kala saksi lagi"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Herhaling",
+  "summary": "Geen nieuwe toetsen. Alles van hiervoor, langer achter elkaar en sneller.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Deze les leert je niets nieuws. Het is het moment om te controleren dat wat je hiervoor hebt geleerd vanzelf gaat, en dat is iets anders dan weten waar elke toets zit.",
+  "congrats": "Niets nieuws en toch sneller. Dat is precies wat er moest gebeuren.",
+  "screens": [
+    {
+      "text": "We beginnen met losse woorden. Zonder haast: snelheid komt uit nauwkeurigheid, nooit andersom.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kajak sla daal salsa\nals lak daal slak\nslak dak kalk sjaal"
+    },
+    {
+      "seconds": 25,
+      "text": "Een korte reeks. Maak de lijst af, ook als er eentje misgaat.",
+      "type": "burst",
+      "tokens": [
+        "salsa",
+        "kajak",
+        "kas",
+        "als",
+        "das",
+        "lak",
+        "aal",
+        "jas",
+        "kaal",
+        "dak",
+        "sla",
+        "slak"
+      ]
+    },
+    {
+      "text": "Vijf woorden per regel. Laat je ogen vooruitlopen op je vingers.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sla dal kas las jas\naf kaal laf dak kalk\nkajak kalf kalk dak dal"
+    },
+    {
+      "text": "Weer de patronen, om te controleren dat de vingers naar de thuisrij teruggaan.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Korte woorden, in een goed tempo. Deze zouden bijna vanzelf moeten gaan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lak sjaal kalk dal\nlak kalk sjaal aal\nkaas daal las sla"
+    },
+    {
+      "seconds": 30,
+      "text": "Meer tijd en meer woorden. Houd hetzelfde tempo van begin tot eind.",
+      "type": "burst",
+      "tokens": [
+        "kalf",
+        "las",
+        "al",
+        "sjaal",
+        "kalk",
+        "das",
+        "jas",
+        "alfa",
+        "kaas",
+        "sla",
+        "kajak",
+        "kas",
+        "dal",
+        "slak"
+      ]
+    },
+    {
+      "text": "Hele zinnen. Hier zie je of de hand vanzelf naar zijn plek teruggaat.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "alfa ja kajak sla\nsjaal kalf lak dak\nlas af kaas laf"
+    },
+    {
+      "text": "De laatste ronde. Ben je hier gekomen zonder naar het toetsenbord te kijken, dan is de les klaar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaal dal kas kalf slak\nslak al jas ja salsa\nlak ja kaal sla kalf"
+    }
+  ]
+}

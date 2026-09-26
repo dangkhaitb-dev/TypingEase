@@ -1,0 +1,169 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Y, le point, la virgule et À",
+  "summary": "Nouvelles touches : Y, le point, la virgule et À. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "y",
+    ".",
+    ",",
+    "à"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "é",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "à"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : Y, le point, la virgule et À. Elles se tapent avec l'auriculaire gauche, l'annulaire droit, le majeur droit et l'auriculaire droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si Y, le point, la virgule et À sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur Y pour continuer"
+    },
+    {
+      "newKey": "y",
+      "text": "Seulement Y et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "y y\ndfj y df\ny y yy"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "C'est l'annulaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur . pour continuer"
+    },
+    {
+      "newKey": ".",
+      "text": "Seulement . et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": ".y .y\n.yf dj .y\ny. .y y.y."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "C'est le majeur droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur , pour continuer"
+    },
+    {
+      "newKey": ",",
+      "text": "Seulement , et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "y,. .y,\n.,j fyd .,\ny. .y y.y."
+    },
+    {
+      "type": "intro",
+      "key": "à",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur À pour continuer"
+    },
+    {
+      "newKey": "à",
+      "text": "Seulement À et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "f.j ,àd f.\nà. .à à.à.\nààà ,,, yyyy ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "yà",
+        "y.",
+        ",,",
+        ".,",
+        "àà",
+        ",à",
+        "yy",
+        "à,",
+        "..",
+        "y,"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "y.y.y. .y.y.y\nyàj.f, fày,j.\nsyà .dj sy"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "douze tous sotte musique\nexplique papier besoin tir\ndit exacte kiwi personnes"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "triste",
+        "noms",
+        "voiles",
+        "sud",
+        "vins",
+        "autres",
+        "jolie",
+        "envie",
+        "baisse",
+        "avec"
+      ]
+    },
+    {
+      "text": "Encore les deux nouvelles touches. Il n'y a pas encore de mots à écrire avec, et c'est normal.",
+      "type": "block",
+      "content": ",fy dàj ,f\n., ,. .,.,\n... yyyy àààà ,,,,"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, yyy ààà ...\ny.y.y. .y.y.y\n,yà. ,yà."
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "voir années précis passe\ncontent moment noms précise\na veut premier un"
+    }
+  ]
+}

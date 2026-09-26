@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "Kolom luar",
+  "summary": "Kolom di tepi kanan: enam tombol, semuanya milik kelingking.",
+  "newKeys": [
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Kelingking kanan memegang lebih banyak tombol daripada jari lain, dan tombol di tepinya hampir tidak pernah dilatih orang. Tombol-tombol itu paling jauh dari baris dasar, jadi caranya tetap sama: keluar, tekan, kembali, tanpa menyeret tangan di belakangnya.",
+  "congrats": "Kolom itulah yang biasanya setengah jadi di hampir semua kursus. Di kursusmu tidak lagi.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RP",
+      "text": "Tombol-tombol di tepi kanan, semuanya milik kelingking. Inilah jangkauan terjauh jari itu, dan tombol yang paling jarang dilatih sesudahnya.",
+      "hint": "Tekan / untuk lanjut"
+    },
+    {
+      "newKeys": [
+        "/",
+        "-"
+      ],
+      "text": "Sekarang / dan -. Kelingking keluar lalu kembali; tangan tetap di tempatnya.",
+      "type": "block",
+      "content": "/-/- -/-/\n/- -/\nj-d /f j-"
+    },
+    {
+      "newKeys": [
+        "=",
+        "["
+      ],
+      "text": "Sekarang = dan [. Kelingking keluar lalu kembali; tangan tetap di tempatnya.",
+      "type": "block",
+      "content": "[= =[\n=fj [d =f\n=[ [= =[=["
+    },
+    {
+      "seconds": 20,
+      "text": "Rentetan dengan tombol kolom ini yang sudah kamu punya.",
+      "type": "burst",
+      "tokens": [
+        "[-",
+        "-=",
+        "--",
+        "[/",
+        "-/",
+        "/[",
+        "[=",
+        "/-",
+        "-[",
+        "[["
+      ]
+    },
+    {
+      "newKeys": [
+        "]",
+        "\\"
+      ],
+      "text": "Sekarang ] dan \\. Kelingking keluar lalu kembali; tangan tetap di tempatnya.",
+      "type": "block",
+      "content": "]\\ ]\\\n]fd \\j ]f\n]\\ \\] ]\\]\\"
+    },
+    {
+      "text": "Keenamnya sekaligus. Di sudut papan ketik inilah pergelangan paling mudah terpelintir kalau jarinya tidak pulang.",
+      "type": "block",
+      "content": "f=/ d\\- f=\n\\] ]\\ \\]\\]\n\\\\\\\\ ==== --- /// [[[ ]]]]"
+    },
+    {
+      "seconds": 25,
+      "text": "Kata-kata lagi, untuk melemaskan tangan setelah sekian banyak tombol tepi.",
+      "type": "burst",
+      "tokens": [
+        "hujan",
+        "diri",
+        "kerja",
+        "gala",
+        "hebat",
+        "kilas",
+        "bersama",
+        "kunci",
+        "boleh",
+        "kawah",
+        "minum",
+        "pohon"
+      ]
+    },
+    {
+      "text": "Kembali ke kata-kata, dengan seluruh papan ketik sudah bisa dipakai.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hampir dasi santai lampu\nsuku waras kelak syukur\nawal kritik penting bersih"
+    },
+    {
+      "text": "Kalimat utuh untuk menutup pelajaran tombol.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Kakak menanam bunga di depan rumah.\nDia menulis surat untuk teman lamanya.\nSetiap orang punya irama sendiri."
+    }
+  ]
+}

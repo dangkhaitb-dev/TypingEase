@@ -1,0 +1,136 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-p",
+  "title": "Q と P",
+  "summary": "新しいキー：Q と P。指が出て、押して、戻ります。",
+  "newKeys": [
+    "q",
+    "p"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンの新しいキー：Q と P。左手の小指 と 右手の小指で押します。動きはいつも同じで、出て、押して、戻ります。練習するのは戻る動きです。指が外に残ったままだと、次の文字を間違えるからです。",
+  "congrats": "指の下のキーが増えました。Q と P を探さずに打てるなら、このレッスンの役目は果たせています。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LP",
+      "text": "このキーは左手の小指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "Q を押して次へ"
+    },
+    {
+      "newKey": "q",
+      "text": "Q と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "qdf j qd\nq q qq\nqqqq"
+    },
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "RP",
+      "text": "このキーは右手の小指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "P を押して次へ"
+    },
+    {
+      "newKey": "p",
+      "text": "P と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "qpqp pqpq\nqp pq\njfq dp jf"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        "pqq",
+        "qpqp",
+        "ppqq",
+        "ppq",
+        "pqqp",
+        "pqpp",
+        "qpq",
+        "qpp",
+        "qqqq",
+        "qqqp"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "ffff jjjj qqqq ppp\nqpqpqp pqpqpq\nfjqp pqjf"
+    },
+    {
+      "text": "新しいキーを使う、本物の日本語の単語です。一文字ずつではなく、単語をひと続きに打ってください。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "posuto happyaku yappari poketto\nnanpunn pinku ippai sappari\npiano purinn pikapika ippunn"
+    },
+    {
+      "seconds": 25,
+      "text": "新しいキーを含む、短い単語の連打です。",
+      "type": "burst",
+      "tokens": [
+        "warau",
+        "kimeru",
+        "kantann",
+        "katte",
+        "chuusha",
+        "densha",
+        "kochira",
+        "shiki",
+        "kaigai",
+        "kawaru"
+      ]
+    },
+    {
+      "text": "次は、いちばん押す回数が少なかった P を多めに打ちます。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "omoi moshimoshi purinn tsuki\nagaru hi yowai ringo\nkaimono suuji igaku kirei"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "qpqpqp pqpqpq\nqp pq\npfq jd pf"
+    },
+    {
+      "text": "ここまでのキーすべてを混ぜて。考えなくても出てくる単語が、もうかなりあるはずです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "iki kaki tatemono happyaku\nrika ikkai dougu koko\nmushiatsui kyori sensei suru"
+    }
+  ]
+}

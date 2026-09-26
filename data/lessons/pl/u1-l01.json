@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "F i J oraz spacja",
+  "summary": "Dwa klawisze z wypustkami, spacja i nawyk niepatrzenia w dół.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Klawisze z małą wypustką są punktem wyjścia. Oba palce wskazujące kładą się na nich i już się z nich nie ruszają; cała reszta kursu mierzy się od tej pozycji. Zacznij od położenia obu dłoni i patrz tylko na ekran.",
+  "congrats": "Dłonie są na miejscu. Od teraz każdy klawisz to ruch z tej pozycji i powrót.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "LI",
+      "text": "Ten klawisz naciska lewy palec wskazujący. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij F, aby przejść dalej"
+    },
+    {
+      "newKey": "f",
+      "text": "Tylko F i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "f f ff\nffff\nffffff ffffff"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RI",
+      "text": "Ten klawisz naciska prawy palec wskazujący. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij J, aby przejść dalej"
+    },
+    {
+      "newKey": "j",
+      "text": "Tylko J i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "jf jf\njf fj jfjf\nfj jf fjfj"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "Spacja należy do prawego kciuka. Kciuki nie robią nic innego i dlatego nigdy nie trzeba jej szukać.",
+      "hint": "Naciśnij spację, aby przejść dalej"
+    },
+    {
+      "newKey": " ",
+      "text": "Krótkie grupy rozdzielone spacjami. Prawy kciuk opada i wraca; pozostałe palce nie ruszają się ze swoich klawiszy.",
+      "type": "block",
+      "content": "jf jf\nfj jf fjfj\njjjj ffff"
+    },
+    {
+      "seconds": 20,
+      "text": "Krótkie grupy, jedna po drugiej. Dojdź do końca, nawet jeśli coś pomylisz.",
+      "type": "burst",
+      "tokens": [
+        "ffj",
+        "ff",
+        "ffff",
+        "fjj",
+        "ffjj",
+        "jff",
+        "fjf",
+        "jffj",
+        "fj",
+        "fjff"
+      ]
+    },
+    {
+      "text": "Nowe klawisze wymieszane ze starymi, tak jak pojawią się w słowach.",
+      "type": "block",
+      "content": "fj fj\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Jeszcze raz nowe klawisze. Nie ma jeszcze słów, które dałoby się nimi napisać, i to normalne.",
+      "type": "block",
+      "content": "fj jf\njf jf\njf fj jfjf"
+    },
+    {
+      "seconds": 25,
+      "text": "Trochę dłuższe grupy. Pośpiech jeszcze nie pomaga.",
+      "type": "burst",
+      "tokens": [
+        "fjfj",
+        "ff",
+        "fjf",
+        "jjf",
+        "ffjf",
+        "fjjj",
+        "fj",
+        "jjff",
+        "jfjj",
+        "jfj",
+        "jff",
+        "jffj"
+      ]
+    },
+    {
+      "text": "Wszystko, co masz, w krótkich grupach. Patrz na ekran, nie na dłonie.",
+      "type": "block",
+      "content": "fjfj jfjf\njf jf\nfj jf fjfj"
+    },
+    {
+      "text": "Na chwilę wracamy do wzorów, żeby sprawdzić, czy palce zawsze wracają na swoje miejsce.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf jf\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Ostatnia seria ze wszystkim, co było do tej pory.",
+      "type": "block",
+      "content": "fjfjfj jfjfjf\njf jf\nfj fj"
+    }
+  ]
+}

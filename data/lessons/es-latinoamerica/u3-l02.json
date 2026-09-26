@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "La columna exterior",
+  "summary": "La columna del borde derecho: seis teclas, todas del meñique, entre ellas la tilde.",
+  "newKeys": [
+    "-",
+    "'",
+    "¿",
+    "´",
+    "+",
+    "}"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "{",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "¿",
+    "´",
+    "+",
+    "}"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "El meñique derecho lleva más teclas que ningún otro dedo, y las del borde son las que casi nadie practica. En este teclado, una de ellas vale doble: la tilde es una tecla muerta. Se pulsa ella y después la vocal, y así se escriben más, está, también y canción.",
+  "congrats": "Con la tilde ya casi no falta nada para escribir español de verdad. Esa columna es la que se queda a medias en casi todos los cursos.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "-",
+      "finger": "RP",
+      "text": "Las teclas del borde derecho, todas del meñique. En este teclado, una de ellas es la tilde: una tecla muerta que sirve para escribir á é í ó ú.",
+      "hint": "Pulsa - para continuar"
+    },
+    {
+      "newKeys": [
+        "-",
+        "'"
+      ],
+      "text": "Ahora - y '. El meñique sale hacia fuera y vuelve; la mano no se va con él.",
+      "type": "block",
+      "content": "-'-' '-'-\n-' '-\nj'd -f j'"
+    },
+    {
+      "newKeys": [
+        "¿",
+        "´"
+      ],
+      "text": "Ahora ¿ y ´. El meñique sale hacia fuera y vuelve; la mano no se va con él.",
+      "type": "block",
+      "content": "´¿ ¿´\n¿fj ´d ¿f\n¿´ ´¿ ¿´¿´"
+    },
+    {
+      "seconds": 20,
+      "text": "Una ráfaga con lo que llevas de esta columna.",
+      "type": "burst",
+      "tokens": [
+        "´'",
+        "'¿",
+        "''",
+        "´-",
+        "'-",
+        "-´",
+        "´¿",
+        "-'",
+        "'´",
+        "´´"
+      ]
+    },
+    {
+      "newKeys": [
+        "+",
+        "}"
+      ],
+      "text": "Ahora + y }. El meñique sale hacia fuera y vuelve; la mano no se va con él.",
+      "type": "block",
+      "content": "+} +}\n+fd }j +f\n+} }+ +}+}"
+    },
+    {
+      "text": "Las seis juntas. Es la parte del teclado donde más se tuerce la muñeca si el dedo no vuelve.",
+      "type": "block",
+      "content": "f¿- d}' f¿\n}+ +} }+}+\n}}}} ¿¿¿¿ ''' --- ´´´ ++++"
+    },
+    {
+      "seconds": 25,
+      "text": "Palabras otra vez, para soltar la mano después de tanto borde.",
+      "type": "burst",
+      "tokens": [
+        "iguales",
+        "ciudades",
+        "práctica",
+        "verdes",
+        "vez",
+        "brazo",
+        "primero",
+        "usadas",
+        "los",
+        "añade",
+        "hasta",
+        "filas"
+      ]
+    },
+    {
+      "text": "De vuelta a las palabras, con el teclado entero disponible — tildes incluidas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "empieza selva catorce debe\ngusta centros hilos seguro\nno agosto blancas única"
+    },
+    {
+      "text": "Frases completas para cerrar la unidad de teclas.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Mi padre prepara la comida los domingos.\nMi madre trabaja en el centro de la ciudad.\nLos niños juegan en el jardín de la escuela."
+    }
+  ]
+}

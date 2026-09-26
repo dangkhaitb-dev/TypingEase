@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "数字行",
+  "summary": "十个数字，每个手指直直向上。",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "数字行在你打过的所有键上面，手指要伸得最远。这里打错的会比课程其他部分多，解决的办法还是一样：先慢下来。",
+  "congrats": "数字行是最难、以后也最少练到的一行。时不时回来练练这一课，手指向上伸之后记得落回基准行。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "数字行在上排键的上面。每个手指都直直地向上伸，再用同样的方式落回来。这是整个课程里伸得最远的地方。打拼音时，数字键还用来选择候选字，所以这一行值得练熟。",
+      "hint": "按 1 继续"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "1 和 0 由左手小指和另一只手的同一个手指负责。向上，按下，落回基准行。",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "2 和 9 由左手无名指和另一只手的同一个手指负责。向上，按下，落回基准行。",
+      "type": "block",
+      "content": "df2 9j df\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "短的连续练习，用上你已经学过的数字。",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "3 和 8 由左手中指和另一只手的同一个手指负责。向上，按下，落回基准行。",
+      "type": "block",
+      "content": "383838 838383\n83 38\nd83 jf d8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "4 和 7 由左手食指和另一只手的同一个手指负责。向上，按下，落回基准行。",
+      "type": "block",
+      "content": "47 47\nfj4 7d fj\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "剩下的两个归食指，它负责的键本来就比别的手指多。",
+      "type": "block",
+      "content": "565656 656565\n56 56\nfj6 5d fj"
+    },
+    {
+      "text": "整行数字，分成组来练。不要低头找数字 6。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "十个数字混在一起。一开始这里会打错很多，这很正常。",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "先回到单词，让手记得自己的位置。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "niunai bixu bi zuobian\nwenti huo zhaodao shuidi\nyou nimen zhongxue sheng"
+    },
+    {
+      "text": "再练句子，现在用上整块键盘。",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Wo zhengzai xue yong shi gen shouzhi dazi.\nWo meitian he yi bei niunai.\nJintian tianqi hen hao."
+    }
+  ]
+}

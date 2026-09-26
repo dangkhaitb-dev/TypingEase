@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "#, |, ! et \"",
+  "summary": "Au programme : #, |, ! et \".",
+  "newKeys": [
+    "#",
+    "|",
+    "!",
+    "\""
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "`",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "é",
+    "-",
+    "=",
+    "^",
+    "¸",
+    "<",
+    "#",
+    "|",
+    "!",
+    "\""
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Des touches que le cours n'a pas encore utilisées : #, |, ! et \". Certaines demandent Maj, avec l'auriculaire de l'autre main ; les autres ont leur propre touche, que le cours n'avait pas encore utilisée.",
+  "congrats": "#, |, ! et \" : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe #.",
+      "hint": "Appuie sur # pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "D'abord # sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "## # #20 #35 #30\n## # #20 #10 #6\n## # #41 #44 #65"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "D'abord | sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "|| | brûler|plutôt heures|continue vivent|mêmes\n|| | rue|vivre contre|wagon route|porte\n|| | vitesse|textes heures|bonne listes|tu"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe !, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ! pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "D'abord ! sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "!! ! style! bras! textes!\n!! ! il! huit! dos!\n!! ! aussi! huile! rêves!"
+    },
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LR",
+      "text": "C'est l'annulaire gauche qui frappe \", avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur \" pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "D'abord \" sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "\"\" \" \"textes\" \"rose\" \"gels\"\n\"\" \" \"août\" \"ainsi\" \"détail\"\n\"\" \" \"avoir\" \"paroles\" \"sûr\""
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Une série de petits morceaux avec ces caractères.",
+      "tokens": [
+        "#8",
+        "\"belles\"",
+        "mes|mêmes",
+        "somme|glisse",
+        "derrière|était",
+        "quant|hôtels",
+        "fille|passe",
+        "\"mettre\"",
+        "fleur|novembre",
+        "ouvrir|guides"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tout ce que cette leçon a apporté, mélangé.",
+      "content": "#77 même|humides \"sociétés\" surgir|guides\nvoile! #42 \"sorte\" grands!\n\"vendredi\" #5 #93 élèves|mêmes"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Des mots à nouveau, avec les signes à leur place.",
+      "content": "#84 passer dure! tant novembre!\n#84 jamais #7 rôle #92\ndiriger|rigides fêtes bouche|île dîner #54"
+    }
+  ]
+}

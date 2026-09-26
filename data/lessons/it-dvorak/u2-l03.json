@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "J e B",
+  "summary": "Tasti nuovi: J e B. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "j",
+    "b"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: J e B. Si premono con il medio sinistro e l'indice destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se J e B ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "LM",
+      "text": "Questo tasto lo prende il medio sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi J per continuare"
+    },
+    {
+      "newKey": "j",
+      "text": "Solo J e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "jjjj jjjj\nj j\nhuj e hu"
+    },
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "RI",
+      "text": "Questo tasto lo prende l'indice destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi B per continuare"
+    },
+    {
+      "newKey": "b",
+      "text": "Solo B e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "jbjbjb bjbjbj\nbj bj\nhej bu he"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "jjjj",
+        "bbb",
+        "bj",
+        "jjbj",
+        "jbbb",
+        "jbb",
+        "bjj",
+        "bbjj",
+        "bjjj",
+        "bjbb"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "bj jb bjbj\nbbb jjj hhh uuu\njbjb bjbj"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "barca bere sabato bicchiere\nbraccio abitare bordo sabato\nbraccio banca sabbia bagno"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "o",
+        "buona",
+        "pane",
+        "paese",
+        "una",
+        "forte",
+        "noi",
+        "gradi",
+        "dita",
+        "gustare"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su B, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dea noi dietro nord\ncredere sabbia banca riso\ncento chiedere bocca chiesa"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "bbbb jjj\njbjb bjbj\nbj bj"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "piatto ridere per gusto\nyogurt dita festa potere\ncuore gustare poco ad"
+    }
+  ]
+}

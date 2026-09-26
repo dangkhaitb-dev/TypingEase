@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "#, $, % en ^",
+  "summary": "In deze les: #, $, % en ^.",
+  "newKeys": [
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Toetsen die de cursus nog niet heeft gebruikt: #, $, % en ^. Je krijgt ze allemaal met Shift en een toets die je vingers al kennen — Shift met de pink van de andere hand.",
+  "congrats": "#, $, % en ^: nu onder je vingers. Het teken komt er net zo makkelijk uit als de letter ernaast.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LM",
+      "text": "# typ je met de linkermiddelvinger, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op # om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "Eerst alleen #, daarna op de plek waar je het echt gebruikt.",
+      "content": "## # #12 #8 #57\n## # #4 #2 #20\n## # #95 #24 #46"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "$ typ je met de linkerwijsvinger, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op $ om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Eerst alleen $, daarna op de plek waar je het echt gebruikt.",
+      "content": "$$ $ $65 $9 $92\n$$ $ $95 $7 $28\n$$ $ $92 $47 $35"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "% typ je met de linkerwijsvinger, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op % om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Eerst alleen %, daarna op de plek waar je het echt gebruikt.",
+      "content": "%% % 73% 46% 79%\n%% % 6% 56% 7%\n%% % 52% 5% 96%"
+    },
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RI",
+      "text": "^ typ je met de rechterwijsvinger, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op ^ om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "^",
+      "text": "Eerst alleen ^, daarna op de plek waar je het echt gebruikt.",
+      "content": "^^ ^ 95^3 82^1 13^3\n^^ ^ 23^1 40^3 76^2\n^^ ^ 53^3 49^2 18^1"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Een reeks korte stukjes met deze tekens.",
+      "tokens": [
+        "$47",
+        "67%",
+        "6^1",
+        "53^1",
+        "92^1",
+        "#11",
+        "74%",
+        "76%",
+        "$82",
+        "$52"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles van deze les, door elkaar.",
+      "content": "#18 $73 45% #6\n3^3 87% #2 #59\n4% $96 64% 33^1"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Weer woorden, met de tekens op hun plek.",
+      "content": "91% lekker #45 mevrouw 82%\n$64 op 33^2 kennen 37%\n#66 foto's #72 appel #98"
+    }
+  ]
+}

@@ -1,0 +1,122 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "g-h",
+  "title": "G and Y",
+  "summary": "Two new keys: G and Y. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "g",
+    "y"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: G and Y. They belong to your left index finger and your right index finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If G and Y already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press G to continue"
+    },
+    {
+      "newKey": "g",
+      "text": "Only G and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "gggg\ngggg gggg\ng g"
+    },
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press Y to continue"
+    },
+    {
+      "newKey": "y",
+      "text": "Only Y and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "ggg yyyy\ngygygy ygygyg\ngy yg"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "gygy",
+        "yyyy",
+        "gyg",
+        "yyg",
+        "gg",
+        "ggyg",
+        "gyy",
+        "gy",
+        "gyyg",
+        "ygyg"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "ty yt tyty\nyyy nnnn tttt gggg\ngygygy ygygyg"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "eight highs egg sages\nthey age yes high\ngoes gash nights sign"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "then",
+        "hi",
+        "one",
+        "ties",
+        "than",
+        "tests",
+        "yeast",
+        "tooth",
+        "shot",
+        "this"
+      ]
+    },
+    {
+      "text": "Now the weight is on G, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "neat sign than nine\nthing into sages shag\nstays nose saga she"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "gy yg gygy\nyyy gggg\ngygy ygyg"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tight on test night\ntiny saga age eat\nshe he stay ah"
+    }
+  ]
+}

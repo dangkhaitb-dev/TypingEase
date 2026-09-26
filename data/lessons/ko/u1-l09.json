@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "약한 키",
+  "summary": "가장 자주 틀리는 키로 만든 연습.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "ㄹ",
+    "ㅓ",
+    "ㅇ",
+    "ㅏ",
+    "ㄴ",
+    "ㅣ",
+    "ㅁ",
+    ";",
+    "ㅎ",
+    "ㅗ",
+    "ㄷ",
+    "ㅑ",
+    "ㄱ",
+    "ㅕ"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "이 연습은 정해진 목록이 아니라 내가 틀리는 키로 만들어져요. 내가 달라지면 연습도 달라져요.",
+  "congrats": "약한 키는 한 달에 한 시간이 아니라 하루에 일 분으로 약하지 않게 돼요.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "가장 자주 틀리는 키로 만든 연습이에요. 할 때마다 달라져요."
+    }
+  ]
+}

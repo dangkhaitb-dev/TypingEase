@@ -1,0 +1,173 @@
+{
+  "id": "u4-l06",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 33,
+  "slug": "symbols-6",
+  "title": "É, *, § e Ç",
+  "summary": "In questa lezione: É, *, § e Ç.",
+  "newKeys": [
+    "é",
+    "*",
+    "§",
+    "ç"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ò",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "à",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "ì",
+    "è",
+    "+",
+    "ù",
+    "\\",
+    "|",
+    "!",
+    "\"",
+    "£",
+    "$",
+    "%",
+    "&",
+    "/",
+    "(",
+    ")",
+    "=",
+    "?",
+    "^",
+    "<",
+    ">",
+    "é",
+    "*",
+    "§",
+    "ç"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti che il corso non ha ancora usato: É, *, § e Ç. Ognuno si ottiene con Shift e un tasto che le tue dita conoscono già — Shift con il mignolo dell'altra mano.",
+  "congrats": "É, *, § e Ç: ora sotto le tue dita. Il segno esce facile come la lettera accanto.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "é",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere É, con Shift tenuto dall'altra mano.",
+      "hint": "Premi É per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "é",
+      "text": "Prima É e basta, poi dove si usa davvero.",
+      "content": "éé é affinché poiché perché\néé é benché perché benché\néé é perché perché perché"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere *, con Shift tenuto dall'altra mano.",
+      "hint": "Premi * per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Prima * e basta, poi dove si usa davvero.",
+      "content": "** * *wafer* *bella* *digitare*\n** * *corsa* *giada* *sedia*\n** * *bambino* *ala* *l'anno*"
+    },
+    {
+      "type": "intro",
+      "key": "§",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere §, con Shift tenuto dall'altra mano.",
+      "hint": "Premi § per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "§",
+      "text": "Prima § e basta, poi dove si usa davvero.",
+      "content": "§§ § §43 §52 §96\n§§ § §96 §93 §19\n§§ § §8 §79 §8"
+    },
+    {
+      "type": "intro",
+      "key": "ç",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere Ç, con Shift tenuto dall'altra mano.",
+      "hint": "Premi Ç per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "ç",
+      "text": "Prima Ç e basta, poi dove si usa davvero.",
+      "content": "çç ç ççç ççç ççç\nçç ç ççç ççç ççç\nçç ç ççç ççç ççç"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Una raffica di pezzi brevi con questi caratteri.",
+      "tokens": [
+        "ventitré",
+        "§72",
+        "ççç",
+        "§31",
+        "affinché",
+        "*pezzo*",
+        "§9",
+        "*farà*",
+        "perché",
+        "poiché"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tutto quello di questa lezione, mescolato.",
+      "content": "affinché ççç ççç §14\nççç *piazza* ççç *pranzo*\nperché *l'amico* §7 ventitré"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Di nuovo parole, con i segni al loro posto.",
+      "content": "*sfida* donna §43 sabbia *andrò*\n*farò* lontano §8 un'idea ventitré\n*giada* collina *burro* libro *parola*"
+    }
+  ]
+}

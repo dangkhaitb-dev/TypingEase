@@ -1,0 +1,153 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "², ° et +",
+  "summary": "Au programme : ², ° et +.",
+  "newKeys": [
+    "²",
+    "°",
+    "+"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v",
+    "a",
+    "p",
+    "b",
+    "x",
+    "w",
+    ":",
+    ";",
+    "ù",
+    "shift",
+    "enter",
+    ".",
+    "&",
+    "é",
+    "\"",
+    "'",
+    "(",
+    "-",
+    "è",
+    "_",
+    "ç",
+    "à",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "!",
+    ")",
+    "=",
+    "^",
+    "$",
+    "*",
+    "²",
+    "°",
+    "+"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Des touches que le cours n'a pas encore utilisées : ², ° et +. Certaines demandent Maj, avec l'auriculaire de l'autre main ; les autres ont leur propre touche, que le cours n'avait pas encore utilisée.",
+  "congrats": "², ° et + : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "²",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe ².",
+      "hint": "Appuie sur ² pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "²",
+      "text": "D'abord ² sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "²² ² 47² 34² 13²\n²² ² 17² 80² 30²\n²² ² 79² 54² 31²"
+    },
+    {
+      "type": "intro",
+      "key": "°",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe °, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ° pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "°",
+      "text": "D'abord ° sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "°° ° 32° 48° 83°\n°° ° 30° 70° 91°\n°° ° 38° 34° 18°"
+    },
+    {
+      "type": "intro",
+      "key": "+",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe +, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur + pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "+",
+      "text": "D'abord + sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "++ + 19 + 63 21 + 22 76 + 91\n++ + 80 + 53 78 + 19 67 + 35\n++ + 16 + 89 83 + 85 47 + 78"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Une série de petits morceaux avec ces caractères.",
+      "tokens": [
+        "30+65",
+        "25°",
+        "81²",
+        "16°",
+        "57+56",
+        "72²",
+        "70+26",
+        "9+23",
+        "34°",
+        "12²"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tout ce que cette leçon a apporté, mélangé.",
+      "content": "34² 15° 58° 5°\n9² 51+15 94° 4°\n68 + 56 98+33 11+50 77+79"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Des mots à nouveau, avec les signes à leur place.",
+      "content": "19° frère 63° côte 8 + 55\n62² ouvre 44° gifle 47²\n10² rôles 91² tant 51²"
+    }
+  ]
+}

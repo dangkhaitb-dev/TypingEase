@@ -33,7 +33,7 @@ article li{margin:7px 0}
 .test-heading p{max-width:220px;margin:3px 0 0;color:var(--muted);font-size:var(--fs-xs);line-height:1.5;text-align:right}
 
 /* Bộ chọn thời lượng (từ test-upgrade.css). */
-.duration-picker{display:grid;grid-template-columns:repeat(4,1fr);gap:7px;margin:-4px 0 18px}
+.duration-picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(84px,1fr));gap:7px;margin:-4px 0 18px}
 .duration-picker button{min-height:38px;border:1px solid var(--border-soft);border-radius:var(--r-sm);background:var(--surface);color:var(--muted);font-size:var(--fs-xs);font-weight:800}
 /* #e5f5df = nền "đang chọn" dùng chung với /tien-do/; ngả vàng hơn --surface-tint nên giữ literal. */
 .duration-picker button.selected{border-color:var(--green);background:#e5f5df;color:var(--green)}
@@ -45,7 +45,10 @@ article li{margin:7px 0}
 .test-stats strong{display:block;margin-top:3px;font-size:21px;letter-spacing:-1px}
 .test-stats small{font-size:10px;color:var(--green);letter-spacing:0;margin-left:2px}
 
-.test-prompt{min-height:102px;margin:0 0 14px;padding:17px;border-radius:var(--r);background:var(--surface-soft);color:var(--ink);font:15px/1.85 "DM Mono",monospace;white-space:pre-wrap;overflow-wrap:anywhere}
+/* Năm dòng cố định: bài 10 phút có vài nghìn ký tự, typing-test.js cuộn để dòng đang gõ luôn là dòng thứ
+   hai. Khoảng đệm trên/dưới là VIỀN trong suốt chứ không phải padding: viền không cuộn theo chữ, nên
+   không lộ nửa dòng phía trên. */
+.test-prompt{position:relative;box-sizing:border-box;height:calc(1.85em * 5 + 34px);overflow:hidden;margin:0 0 14px;padding:0 17px;border-block:17px solid transparent;border-radius:var(--r);background:var(--surface-soft);color:var(--ink);font:15px/1.85 "DM Mono",monospace;white-space:pre-wrap;overflow-wrap:break-word}
 .test-prompt .current{background:var(--lime);color:var(--green);border-radius:2px}
 .test-prompt .wrong{color:var(--danger);text-decoration:underline;text-decoration-thickness:2px}
 label{display:block;color:var(--muted);font-size:var(--fs-xs);font-weight:700;margin-bottom:7px}
@@ -89,7 +92,7 @@ details p{margin:10px 0 0;color:var(--muted);font-size:14px}
   .typing-test{padding:21px 17px}
   .test-heading{display:block}
   .test-heading p{text-align:left;margin-top:7px}
-  .duration-picker{grid-template-columns:repeat(2,1fr)}
+  .duration-picker{grid-template-columns:repeat(4,1fr)}
   .test-stats{grid-template-columns:repeat(2,1fr);gap:14px}
   .test-stats div:last-child{grid-column:span 2}
   .test-prompt{font-size:13px}
@@ -97,3 +100,11 @@ details p{margin:10px 0 0;color:var(--muted);font-size:14px}
   .result-details{grid-template-columns:1fr;gap:10px}
   .test-result>strong{font-size:27px}
 }
+/* Liên kết trong bài của trang test/trò chơi: trước đây chỉ khai ở cach-go-10-ngon/article.css, nên ở đây ra màu xanh mặc định. */
+.test-main .inline-link{color:var(--green);font-weight:700;text-decoration:underline;text-decoration-color:var(--border-soft);text-underline-offset:3px}
+/* DM Mono chỉ có chữ Latin: chữ Ả Rập, Ba Tư, Urdu, Hebrew, Devanagari, Bengali, Thái, CJK, Hàn rơi về font
+   dự phòng theo TỪNG ký tự (mỗi ký tự một <span>) và nét nối bị ngắt. Dùng font không đơn cách cho các hệ chữ đó. */
+:is(:lang(ar),:lang(fa),:lang(ur),:lang(he),:lang(hi),:lang(bn),:lang(th),:lang(zh),:lang(ja),:lang(ko)) :is(.test-prompt,#typing-input){font-family:"Be Vietnam Pro",system-ui,sans-serif;letter-spacing:0}
+/* Ô chọn bàn phím (chỉ ở ngôn ngữ mà các kiểu bàn phím gõ được bộ đoạn văn khác nhau). */
+.test-course{display:flex;align-items:center;gap:8px;margin:-4px 0 14px;color:var(--muted);font-size:var(--fs-xs);font-weight:700}
+.test-course select{min-height:34px;padding:0 10px;border:1px solid var(--border-soft);border-radius:var(--r-sm);background:var(--surface);color:var(--ink);font:inherit}

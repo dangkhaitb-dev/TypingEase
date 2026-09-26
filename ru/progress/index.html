@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Твой прогресс в слепой печати | TypingEase</title>
+    <meta name="description" content="Как идут дела со слепой печатью: оценка за каждый урок, лучшая скорость и точность, тепловая карта клавиш с ошибками, серия дней подряд и дневная цель." />
+    <link rel="canonical" href="https://typingease.site/ru/progress/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/ru.mjs, progress trong
+         i18n/ui.ru.js và bai-hoc/config.ru.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="Основная навигация">
+        <a href="/ru/">Практика</a>
+        <a data-route="lessons" href="/ru/uroki/">Курс</a>
+        <a class="active" href="/ru/progress/">Прогресс</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="Выбрать язык и клавиатуру">Главная</a><a class="secondary-button" data-route="learn" href="/ru/uchitsya/">Продолжить учиться <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> Как у тебя дела</p>
+        <h1>Твой прогресс в слепой печати</h1>
+        <p class="prog-intro">Все цифры на этой странице хранятся только на этом устройстве и никуда не отправляются. Пройди еще один урок — и они обновятся.</p>
+        <nav class="prog-courses" id="prog-courses" aria-label="Курс">
+          <a href="/ru/progress/?course=ru" data-course="ru" aria-current="page">ЙЦУКЕН</a>
+          <a href="/ru/progress/?course=ru-fonetika" data-course="ru-fonetika">фонетическая</a>
+        </nav>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 0 дней подряд</span>
+          <span id="strip-today">Сегодня 0 минут</span>
+          <span id="strip-level">Уровень: Первые шаги</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="Сводка">
+        <div><span>Пройдено уроков</span><strong id="sum-lessons">0 / 34</strong></div>
+        <div><span>Собрано звезд</span><strong id="sum-stars">0</strong></div>
+        <div><span>Лучшая скорость, сл/мин</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>Лучшая точность</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> Достижения</p>
+            <h2 id="badges-title">Значки</h2>
+            <p>Каждый значок привязан к настоящей цифре из таблицы ниже — получить его можно только одним способом: печатать.</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">Цель на сегодня</p>
+          <h3 id="daily-goal-title">0 / 10 минут</h3>
+          <p id="daily-goal-status">🔥 0 дней подряд</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">Рекорд: 0 дней</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="Выбери дневную цель">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 мин</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 мин</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 мин</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 мин</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">Твой тренер</p><h3 id="coach-title">Где ты сейчас</h3></div>
+          <span class="coach-level" id="coach-level">Первые шаги</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="Недавний прогресс" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">Еще 2 урока — и можно будет построить тренд.</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">Пройди один урок, и эта страница поймет, где ты сейчас.</p>
+        <a class="coach-action" id="coach-action" href="/ru/uchitsya/">Начать урок 1 →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> Клавиша за клавишей</p>
+          <h3 id="heat-title">Тепловая карта клавиатуры</h3>
+          <p>Зеленые клавиши ты нажимаешь чисто, желтые — через раз, а красные отнимают у тебя скорость. Клавиша получает цвет только тогда, когда ты набрал ее достаточно раз, чтобы о ней можно было что-то сказать.</p>
+          <p class="heat-empty" id="heat-empty">Данных пока мало — пройди несколько уроков и возвращайся.</p>
+          <div class="heat-legend" id="heat-legend" aria-label="Точность по клавишам" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="Курс · уроков: {n}"><i></i> Курс · уроков: 34</p>
+            <h2 id="results-title">Оценка за каждый урок</h2>
+            <p>Твой лучший проход по каждому уроку, сохраненный на этом устройстве.</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">Очистить историю</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>Урок</th><th>Пройдено экранов</th><th>Звезды</th><th>Лучшая скорость</th><th>Точность</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Не останавливайся</p>
+          <h2 id="prog-explore-title">Что делать дальше</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/ru/uroki/">
+            <h3>Весь курс</h3>
+            <p>Все разделы по порядку. Вернись к уроку, который хочешь пройти заново, или открой следующий раздел пораньше.</p>
+            <span>Открыть курс <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>Печатай на своей клавиатуре</h3>
+            <p>ЙЦУКЕН, фонетическая, QWERTY, AZERTY, JIS — 119 настоящих раскладок, и курс идет за той, которую ты выберешь.</p>
+            <span>Все раскладки <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>Чуть медленнее сейчас — гораздо дальше потом.</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/ru/about/">О проекте</a><span aria-hidden="true"> · </span><a href="/ru/terms/">Условия использования</a><span aria-hidden="true"> · </span><a href="/ru/privacy/">Политика конфиденциальности</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.ru.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.ru.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"ru":{"learn":"/ru/uchitsya/","lessons":"/ru/uroki/"},"ru-fonetika":{"learn":"/ru/fonetika/uchitsya/","lessons":"/ru/fonetika/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "ru";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

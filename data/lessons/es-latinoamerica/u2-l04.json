@@ -1,0 +1,134 @@
+{
+  "id": "u2-l04",
+  "unit": "u2",
+  "group": "start",
+  "order": 14,
+  "slug": "m-v",
+  "title": "M y V",
+  "summary": "Teclas nuevas: M y V. El dedo sale, pulsa y vuelve.",
+  "newKeys": [
+    "m",
+    "v"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas nuevas en esta lección: M y V. Se pulsan con el índice derecho y el índice izquierdo. El movimiento es siempre el mismo — salir, pulsar y volver — y la vuelta es la parte que se entrena, porque si el dedo se queda fuera, la siguiente letra sale mal.",
+  "congrats": "Más teclas bajo los dedos. Si M y V ya te salen sin buscarlas, la lección ha hecho su trabajo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RI",
+      "text": "Esta tecla la lleva el índice derecho. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa M para continuar"
+    },
+    {
+      "newKey": "m",
+      "text": "Solo M y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "djf m dj\nm m mm\nmmmm"
+    },
+    {
+      "type": "intro",
+      "key": "v",
+      "finger": "LI",
+      "text": "Esta tecla la lleva el índice izquierdo. Búscala sin mirar, pulsa una vez y deja que el dedo vuelva a su sitio. La vuelta importa tanto como la pulsación.",
+      "hint": "Pulsa V para continuar"
+    },
+    {
+      "newKey": "v",
+      "text": "Solo V y lo que ya sabes. Despacio, y que el dedo regrese a la fila de reposo después de cada pulsación.",
+      "type": "block",
+      "content": "vvvv mmmm\nmvmvmv vmvmvm\nvm mv"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos cortos, uno detrás de otro. Cuenta hasta el final aunque falles alguno.",
+      "type": "burst",
+      "tokens": [
+        "mm",
+        "vmmm",
+        "vvmm",
+        "mvmv",
+        "mmmm",
+        "vmvm",
+        "vvm",
+        "vmvv",
+        "mv",
+        "mmmv"
+      ]
+    },
+    {
+      "text": "Las teclas nuevas mezcladas con las anteriores, que es como aparecerán en las palabras.",
+      "type": "block",
+      "content": "vm mv vmvm\nffff vvv mmmm jjj\nmvmvmv vmvmvm"
+    },
+    {
+      "text": "Palabras de verdad con las teclas nuevas. Escribe la palabra entera de un tirón, no letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "viajes vecino madres mucha\nvale vidas ventana mano\nverde valor mesa vamos"
+    },
+    {
+      "seconds": 25,
+      "text": "Una ráfaga de palabras cortas con las teclas nuevas dentro.",
+      "type": "burst",
+      "tokens": [
+        "figuras",
+        "salir",
+        "la",
+        "sueños",
+        "mas",
+        "son",
+        "mucho",
+        "cosas",
+        "ruedas",
+        "lugar"
+      ]
+    },
+    {
+      "text": "Ahora con el peso en M, que es la que menos veces has pulsado.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "relojes voces viajes comer\ncomunes hijo come mundos\nciencias fuerte ciencia otro"
+    },
+    {
+      "text": "Volvemos a los patrones un momento, para comprobar que los dedos siguen regresando a su sitio.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "mvmv vmvm\nvm vm\ndjf mv dj"
+    },
+    {
+      "text": "Todo lo que tienes, mezclado. Fíjate en cuántas palabras ya te salen sin pensarlas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dije niño daño corta\nruedas seguro edad hija\nideal seña jugar verdad"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "{, }, | i dwukropek",
+  "summary": "W programie: {, }, | i dwukropek.",
+  "newKeys": [
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Klawisze, których kurs jeszcze nie używał: {, }, | i dwukropek. Każdy z nich to Shift i klawisz, który twoje palce już znają — Shift małym palcem drugiej ręki.",
+  "congrats": "{, }, | i dwukropek: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "Ten znak — { — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij {, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "Najpierw sam {, potem tam, gdzie naprawdę się go używa.",
+      "content": "{{ { {kasa {ty {sklep\n{{ { {rzeczy {wiatrak {drzewa\n{{ { {worek {kot {idee"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "Ten znak — } — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij }, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "Najpierw sam }, potem tam, gdzie naprawdę się go używa.",
+      "content": "}} } {sekundy} {razem} {ceny}\n}} } {turystka} {kule} {blisko}\n}} } {tancerka} {mu} {plan}"
+    },
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "RP",
+      "text": "Ten znak — | — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij |, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "Najpierw sam |, potem tam, gdzie naprawdę się go używa.",
+      "content": "|| | biurko|ciekawy okno|kto lista|pomocy\n|| | sklejka|czerwiec sufit|ciekawa chmury|cebula\n|| | firma|dzieci tekst|loty otwiera|pomidory"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RP",
+      "text": "Ten znak — dwukropek — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij :, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "Najpierw sam dwukropek, potem tam, gdzie naprawdę się go używa.",
+      "content": ":: : cytryna: lek: zabawa:\n:: : tematy: zegarek: idzie:\n:: : pije: hak: mecz:"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Seria krótkich kawałków z tymi znakami.",
+      "tokens": [
+        "bajka:",
+        "{gwiazdy}",
+        "programy|filmy",
+        "{dziennik}",
+        "lipiec|suchy",
+        "opera|program",
+        "miesza:",
+        "zoo:",
+        "jeszcze:",
+        "farby:"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Wszystko, co przyniosła ta lekcja, wymieszane.",
+      "content": "{muzyka} motyl|kasjer {da} {orzech}\n{czarne} telefon|numery {przed} {mi}\n{dary} torba|rady {spacery} {sekundy}"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Znowu słowa, ze znakami na swoich miejscach.",
+      "content": "{taki} dali {sfera} lotnisko gruszka:\n{motyl} problem nadal|szybki haka {pisze}\n{minuta} gotowy {ziemniak} tekst {ognisko}"
+    }
+  ]
+}

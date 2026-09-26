@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "Kekunci lemah",
+  "summary": "Latihan yang dijana daripada kekunci yang paling kerap anda tersilap.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "ascii",
+  "intro": "Latihan ini dibina daripada kekunci yang anda sendiri tersilap, bukan daripada senarai tetap. Jika anda berubah, ia pun berubah.",
+  "congrats": "Kekunci lemah berhenti menjadi lemah dengan seminit sehari, bukan sejam sebulan.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "Latihan yang dibina daripada kekunci yang paling kerap anda tersilap. Ia berubah setiap kali anda berlatih."
+    }
+  ]
+}

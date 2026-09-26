@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Powtórka",
+  "summary": "Bez nowych klawiszy. Wszystko, co było wcześniej, szybciej i dłużej.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Ta lekcja nie uczy niczego nowego. To moment, żeby sprawdzić, czy to, co było wcześniej, wychodzi bez myślenia — a to nie to samo, co wiedzieć, gdzie są klawisze.",
+  "congrats": "Nic nowego, a jednak szybciej. Dokładnie tak miało być.",
+  "screens": [
+    {
+      "text": "Na początek pojedyncze słowa. Bez pośpiechu: szybkość bierze się z dokładności, nigdy odwrotnie.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sufit kleje truskawka ciocie\nnisko kamyki lekcje mniej\ncyfry harfa lider rytm"
+    },
+    {
+      "seconds": 25,
+      "text": "Krótka seria. Dokończ listę, nawet jeśli coś ci umknie.",
+      "type": "burst",
+      "tokens": [
+        "haka",
+        "stare",
+        "mleko",
+        "ta",
+        "ciotka",
+        "tutaj",
+        "notatka",
+        "otwiera",
+        "lot",
+        "ci",
+        "kawy",
+        "sucha"
+      ]
+    },
+    {
+      "text": "Pięć słów w linii. Niech oczy wyprzedzają palce.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "da leki skarga wolny gitary\nkasjerka tekst wiele otwiera lisa\ntwoje strona rysuje ulicy sama"
+    },
+    {
+      "text": "Znowu wzory, żeby sprawdzić, czy palce wracają do rzędu podstawowego.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Krótkie słowa w dobrym tempie. Te powinny wychodzić prawie same.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "okres filmy matka moja\nkomin wody jeden okno\ndym wiemy noga ten"
+    },
+    {
+      "seconds": 30,
+      "text": "Więcej czasu i więcej słów. Trzymaj to samo tempo od początku do końca.",
+      "type": "burst",
+      "tokens": [
+        "tramwaj",
+        "wtedy",
+        "owoce",
+        "maj",
+        "truskawki",
+        "okres",
+        "ulica",
+        "lody",
+        "dwie",
+        "wysoko",
+        "sad",
+        "kot",
+        "rokiem",
+        "temat"
+      ]
+    },
+    {
+      "text": "Dłuższe linie. Tu widać, czy dłoń wraca na miejsce sama.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ogon ciche flagi most\ndomek wtedy kolegi imiona\nnowina skala kilka ulicy"
+    },
+    {
+      "text": "Ostatnia seria. Jeśli udało ci się tu dojść bez patrzenia na klawiaturę, lekcja jest zrobiona.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mnie jeden kanion nie klawiatura\ngo ogon litera ramiona ja\nmama wy filmy turystka styl"
+    }
+  ]
+}

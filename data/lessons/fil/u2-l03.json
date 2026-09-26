@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C at N",
+  "summary": "Mga bagong key: C at N. Lumalabas ang daliri, pumipindot, at bumabalik.",
+  "newKeys": [
+    "c",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Mga bagong key sa araling ito: C at N. Para sila sa kaliwang hinlalato at kanang hintuturo. Laging pareho ang galaw — labas, pindot, balik — at ang pagbalik ang sinasanay, dahil ang daliring naiwan sa labas ang sumisira sa susunod na titik.",
+  "congrats": "Mas maraming key sa ilalim ng mga daliri mo. Kung lumalabas na ang C at N nang hindi hinahanap, nagawa na ng aralin ang trabaho nito.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "Ang key na ito ay para sa kaliwang hinlalato. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang C para magpatuloy"
+    },
+    {
+      "newKey": "c",
+      "text": "C lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "cccc cccc\nc c\njfc d jf"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "Ang key na ito ay para sa kanang hintuturo. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang N para magpatuloy"
+    },
+    {
+      "newKey": "n",
+      "text": "N lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "cncncn ncncnc\nnc nc\njdc nf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "Maiikling grupo, sunod-sunod. Ituloy hanggang dulo kahit may mamali.",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "nnn",
+        "nc",
+        "ccnc",
+        "cnnn",
+        "cnn",
+        "ncc",
+        "nncc",
+        "nccc",
+        "ncnn"
+      ]
+    },
+    {
+      "text": "Ang mga bagong key na kahalo ng mga luma, gaya ng paglabas nila sa loob ng mga salita.",
+      "type": "block",
+      "content": "nc cn ncnc\nnnn ccc jjj fff\ncncn ncnc"
+    },
+    {
+      "text": "Totoong mga salita na may mga bagong key. Tipahin ang bawat salita nang tuloy-tuloy, hindi titik-titik.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tingin karne aklatan kanang\nninyo sanayin nagtanong hinlalaki\nkanila lungsod sulatin kinuha"
+    },
+    {
+      "seconds": 25,
+      "text": "Isang bugso ng maiikling salita na may mga bagong key.",
+      "type": "burst",
+      "tokens": [
+        "sisi",
+        "langit",
+        "kasi",
+        "noon",
+        "tigil",
+        "ayaw",
+        "natuto",
+        "dagat",
+        "kay",
+        "at"
+      ]
+    },
+    {
+      "text": "Ngayon, nasa N ang bigat, ang key na pinakakaunti mong napindot.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kahon kalahi lasa gulay\ntiyak tainga ngayon kina\nalis oo itinuro kayo"
+    },
+    {
+      "text": "Balik muna sa mga pattern, para matiyak na nakakabalik pa rin ang mga daliri.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nnnn ccc\ncncn ncnc\nnc nc"
+    },
+    {
+      "text": "Lahat ng mayroon ka, magkakahalo. Pansinin kung ilang salita na ang lumalabas nang hindi pinag-iisipan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "regalo ilaw kalinisan gawain\ntuwalya ayaw sayaw tanghalian\ntungkol dalaga ko sala"
+    }
+  ]
+}

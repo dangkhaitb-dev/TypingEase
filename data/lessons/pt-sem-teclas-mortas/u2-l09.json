@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift e Enter",
+  "summary": "Maiúsculas com o mindinho oposto, e a quebra de linha.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "~",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Até aqui tudo foi escrito em minúsculas. Shift muda isso, e tem uma regra que vale aprender bem desde o começo: quem aperta é o mindinho da mão oposta à letra. Com o mindinho do mesmo lado, a mão se torce e você acaba olhando para o teclado.",
+  "congrats": "Com Shift e Enter você consegue escrever um texto inteiro do jeito que se escreve fora daqui.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "As maiúsculas se fazem com o mindinho da mão oposta à letra. Segure Shift, aperte a letra, solte. Nunca com o mesmo mindinho que escreve.",
+      "hint": "Segure Shift e aperte uma letra para continuar"
+    },
+    {
+      "newKey": "shift",
+      "text": "Maiúsculas e minúsculas alternadas. O mindinho desce e sobe; a outra mão não sai do lugar.",
+      "type": "block",
+      "content": "Çç Pp Jj Zz\nEe Cc Dd Qq\nGg Tt Uu Kk\nRr Xx Mm Ff"
+    },
+    {
+      "text": "Palavras com maiúscula no começo, como os nomes próprios.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "verde assadas puxar sigla\nfilhos sejas texto idades\nneto pedra torta exato"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter é do mindinho direito, à direita da fila de repouso. É a maior tecla que esse dedo precisa alcançar.",
+      "hint": "Aperte Enter para continuar"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Uma linha, Enter, outra linha. O mindinho sai e volta sem arrastar a mão.",
+      "type": "block",
+      "content": "Natal\nPaulo\nRio\nCamila\nBeatriz\nMaria"
+    },
+    {
+      "text": "Frases com maiúscula no começo e ponto no final. Já parece escrever de verdade.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "A praia estava cheia no domingo.\nQuero aprender a digitar sem olhar para o teclado.\nPreciso comprar papel e dois cadernos."
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada para fixar o que esta lição trouxe.",
+      "type": "burst",
+      "tokens": [
+        "simples",
+        "portas",
+        "ajas",
+        "calma",
+        "pato",
+        "ver",
+        "umas",
+        "costa",
+        "dele",
+        "nada",
+        "pronta",
+        "trocar"
+      ]
+    },
+    {
+      "text": "Cinco por linha, com o mindinho trabalhando nas duas direções.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "bairros chinelos esta praticar portas\nsetor cliente antes compras todas\nmovimento cinto gente mundo mandar"
+    },
+    {
+      "text": "Para fechar, frases inteiras. Shift, letra, solta — sem parar para pensar.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Escrevo devagar para errar menos.\nO menino tem um livro novo na mochila.\nAs crianças brincam no jardim da escola."
+    }
+  ]
+}

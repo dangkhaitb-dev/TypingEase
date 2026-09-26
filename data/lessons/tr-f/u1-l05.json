@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Tekrar",
+  "summary": "Yeni tuş yok. Öncekilerin hepsi, daha seri ve daha hızlı.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu ders yeni bir şey öğretmiyor. Öncekilerin düşünmeden çıktığını görme zamanı; bu, tuşların nerede olduğunu bilmekle aynı şey değil.",
+  "congrats": "Yeni bir şey yok ama daha hızlı. Olması gereken tam da buydu.",
+  "screens": [
+    {
+      "text": "Başlangıç için tek tek kelimeler. Acele yok: hız doğruluktan gelir, tersi olmaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ile mal aile iyi\nak ayak kelime ekmek\nemek ele elma yumak"
+    },
+    {
+      "seconds": 25,
+      "text": "Kısa bir seri. Kaçırdığın olsa da listeyi bitir.",
+      "type": "burst",
+      "tokens": [
+        "elma",
+        "mal",
+        "yay",
+        "ay",
+        "mum",
+        "ayak",
+        "ile",
+        "ak",
+        "kal",
+        "kelime",
+        "kim",
+        "iki"
+      ]
+    },
+    {
+      "text": "Satırda beş kelime. Gözlerin parmaklarının önünden gitsin.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ama ele ya kayak kulak\nkal yay ek elma iki\nekim ekle yumak mum elle"
+    },
+    {
+      "text": "Yine kalıplar; parmakların temel sıraya döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "meu ail me\nmk km mkmk\neee kkkk mmmm aaaa"
+    },
+    {
+      "text": "Kısa kelimeler, iyi bir ritimle. Bunlar artık neredeyse kendiliğinden çıkmalı.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ayak yumak elma ekle\nyemek ay almak kayak\nmal el emek ele"
+    },
+    {
+      "seconds": 30,
+      "text": "Daha uzun süre, daha çok kelime. Baştan sona aynı ritmi koru.",
+      "type": "burst",
+      "tokens": [
+        "ay",
+        "kaya",
+        "ama",
+        "kelime",
+        "ilk",
+        "yay",
+        "yemek",
+        "ayak",
+        "elle",
+        "mal",
+        "al",
+        "mum",
+        "a",
+        "kek"
+      ]
+    },
+    {
+      "text": "Satır satır, durmadan. Elin kendiliğinden yerine dönüyor mu, burada anlaşılır.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kim kalk iki ile\nmal ekim kayak ele\nkalem kal kaya ama"
+    },
+    {
+      "text": "Son tur. Buraya klavyeye bakmadan geldiysen ders tamam.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yaka ekle ya almak ekim\nekmek a kulak el ile\nayak yay mal iyi iki"
+    }
+  ]
+}

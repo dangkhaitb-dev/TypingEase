@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "La colonne de droite",
+  "summary": "La colonne du bord droit : six touches, toutes à l'auriculaire, dont le é et l'accent circonflexe.",
+  "newKeys": [
+    "é",
+    "-",
+    "=",
+    "^",
+    "¸",
+    "<"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "`",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "é",
+    "-",
+    "=",
+    "^",
+    "¸",
+    "<"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "L'auriculaire droit s'occupe de plus de touches que n'importe quel autre doigt, et celles du bord sont celles que presque personne ne travaille. Sur ce clavier, elles comptent double : le é est là, et l'accent circonflexe aussi — une touche morte : on la frappe, puis on frappe la voyelle.",
+  "congrats": "Avec le é et le circonflexe, presque tout le français courant s'écrit maintenant. C'est la colonne que la plupart des cours laissent de côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "é",
+      "finger": "RP",
+      "text": "Les touches du bord droit, toutes à l'auriculaire. On y trouve ici le é, et l'accent circonflexe : une touche morte, qui sert à écrire â ê î ô û.",
+      "hint": "Appuie sur É pour continuer"
+    },
+    {
+      "newKeys": [
+        "é",
+        "-"
+      ],
+      "text": "Maintenant é et -. L'auriculaire part vers l'extérieur et revient ; la main ne suit pas.",
+      "type": "block",
+      "content": "é-é- -é-é\né- -é\nj-d éf j-"
+    },
+    {
+      "newKeys": [
+        "=",
+        "^"
+      ],
+      "text": "Maintenant = et ^. L'auriculaire part vers l'extérieur et revient ; la main ne suit pas.",
+      "type": "block",
+      "content": "^= =^\n=fj ^d =f\n=^ ^= =^=^"
+    },
+    {
+      "seconds": 20,
+      "text": "Une série avec ce que tu as de cette colonne.",
+      "type": "burst",
+      "tokens": [
+        "^-",
+        "-=",
+        "--",
+        "^é",
+        "-é",
+        "é^",
+        "^=",
+        "é-",
+        "-^",
+        "^^"
+      ]
+    },
+    {
+      "newKeys": [
+        "¸",
+        "<"
+      ],
+      "text": "Maintenant ¸ et <. L'auriculaire part vers l'extérieur et revient ; la main ne suit pas.",
+      "type": "block",
+      "content": "¸< ¸<\n¸fd <j ¸f\n¸< <¸ ¸<¸<"
+    },
+    {
+      "text": "Les six ensemble. C'est l'endroit du clavier où le poignet se tord le plus si le doigt ne revient pas.",
+      "type": "block",
+      "content": "f=é d<- f=\n<¸ ¸< <¸<¸\n<<<< ==== --- ééé ^^^ ¸¸¸¸"
+    },
+    {
+      "seconds": 25,
+      "text": "Des mots à nouveau, pour détendre la main après tout ce bord.",
+      "type": "burst",
+      "tokens": [
+        "mots",
+        "lumières",
+        "mur",
+        "après",
+        "projet",
+        "dite",
+        "dis",
+        "nouveau",
+        "mesure",
+        "alors",
+        "une",
+        "tristes"
+      ]
+    },
+    {
+      "text": "Retour aux mots, avec le clavier entier disponible — é et accents circonflexes compris.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "problèmes résultats ton expliquer\ndurs tous détail sites\nlistes tires salle tête"
+    },
+    {
+      "text": "Des phrases entières pour terminer les leçons de touches.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Je préfère écrire sans regarder le clavier.\nLa porte du jardin reste ouverte toute la journée.\nIl lit une lettre devant la porte."
+    }
+  ]
+}

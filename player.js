@@ -12,13 +12,19 @@
   const profile = global.TypingEaseProfile;
   const weakKeysApi = global.TypingEaseWeakKeys;
   const telex = global.TypingEaseTelex;
+  // Bộ ghép thứ hai, cùng giao diện với Telex: tiếng Hàn 2-set (hangul-match.js). Mỗi màn chọn một
+  // bộ theo `inputMode` (telex | hangul); `composer` là bộ của màn đang gõ.
+  const hangul = global.TypingEaseHangul;
+  let composer = telex;
   const WEAK_KEYS_STORAGE_KEY = weakKeysApi?.STORAGE_KEY || 'typingease-weak-keys-v1';
   const MOBILE_NOTE_KEY = 'typingease-player-mobile-note-v1';
 
   // Ngon ngu cua trang lay tu MOT nguon duy nhat: `<html lang>`. Khong do URL, khong doc
   // localStorage. The do la thu crawler va trinh doc man hinh cung doc, va no co mat truoc khi
   // bat ky script nao chay — nen khong co canh nao ma ba noi khai ba ngon ngu khac nhau.
-  const LANG = (document.documentElement.lang || 'vi').slice(0, 2).toLowerCase();
+  // Cat o dau '-', khong cat 2 ky tu: ma tieng Filipino la `fil`, va `slice(0, 2)` bien no thanh
+  // `fi` (tieng Phan Lan). Cung sua y the o badges.js, progress-store.js, weak-keys.js.
+  const LANG = (document.documentElement.lang || 'vi').toLowerCase().split('-')[0];
   // Lop phu: bang tieng Viet la mac dinh NAM TRONG FILE, ban dich chi trai len tren. Trang tieng
   // Viet vi the khong nap them mot byte nao va khong di qua nhanh ma nao moi. Mot khoa quen dich
   // se hien tieng Viet — thay duoc ngay, va khong bao gio de trong.
@@ -27,7 +33,7 @@
   // Lien ket giua cac trang. Phai TUYET DOI: `../tien-do/` tinh tu /hoc/ thi dung, nhung tinh tu
   // mot trang nam sau hai cap thi truot, va ten thu muc con khac nhau giua cac ban ngon ngu.
   const ROUTES_VI = {
-    home: '/', lessons: '/bai-hoc/', learn: '/hoc/',
+    home: '/vi/', lessons: '/bai-hoc/', learn: '/hoc/',
     test: '/kiem-tra-toc-do-go/', progress: '/tien-do/', weak: '/luyen-phim-yeu/'
   };
   const R = { ...ROUTES_VI, ...(UI.routes || {}) };
@@ -127,7 +133,7 @@
   // aa -> â, ow -> ơ … a Telex pair is a rule, not a key, so it is labelled by its result.
   const TELEX_LABELS = { aa: 'aa→â', ee: 'ee→ê', oo: 'oo→ô', dd: 'dd→đ', aw: 'aw→ă', uw: 'uw→ư', ow: 'ow→ơ' };
   const keyLabel = key => (key === ' ' ? 'Space'
-    : TELEX_LABELS[key] || NAMED_KEY_LABELS[key] || String(key || '').toUpperCase());
+    : TELEX_LABELS[key] || NAMED_KEY_LABELS[key] || String(key || '').toLocaleUpperCase(document.documentElement.lang || 'en'));
 
   // --- DOM ------------------------------------------------------------------------------------
   const root = document.querySelector('#player');
@@ -165,7 +171,12 @@
       + list.map(badge => `<span class="badge-notice-item" data-badge="${escapeHtml(badge.id)}">`
         + `<span class="badge-notice-icon" aria-hidden="true">${badge.icon}</span>`
         + `<span><small>${T.badgeNew}</small><b>${escapeHtml(badge.title)}</b></span></span>`).join('')
-      + `<a class="badge-notice-link" href="${R.progress}#badges">${T.badgeAll}</a></div>`;
+      // `R.progress` co the la null (ban tieng Anh chua co trang tien do). Khong co trang thi
+      // khong co lien ket — giong het cach `R.weak` duoc chan o duoi.
+      // Player cua mot HO (data-course="fr-bepo") tro ve trang tien do kem `?course=` — trang do
+      // dung chung cho moi khoa cua ngon ngu va doc kho cua khoa ghi trong tham so.
+      + (R.progress ? `<a class="badge-notice-link" href="${R.progress}${document.documentElement.dataset.course ? `?course=${encodeURIComponent(document.documentElement.dataset.course)}` : ''}#badges">${T.badgeAll}</a>` : '')
+      + '</div>';
   }
 
   const soundEl = root.querySelector('#pt-sound');
@@ -273,6 +284,10 @@
     if (imeNoteVisible && !asciiFallback)
       rows.push(`<p class="player-note is-warn"><span>⚠ ${T.imeNote}</span>`
         + `<button type="button" class="note-close" id="note-ascii">${T.imeNoteButton}</button></p>`);
+    // Khoa go theo vi tri phim (Chu am): bo go dang BAT thi phim bi bo go nuot mat. Chi bao, khong
+    // co nut — tat bo go la viec cua nguoi hoc, trang khong lam thay duoc.
+    if (positionNoteVisible && T.positionNote)
+      rows.push(`<p class="player-note is-warn"><span>⚠ ${T.positionNote}</span></p>`);
     if (asciiFallback)
       rows.push(`<p class="player-note is-info"><span>ⓘ ${T.asciiNote}</span>`
         + `<button type="button" class="note-close" id="note-telex">${T.asciiNoteButton}</button></p>`);
@@ -337,7 +352,12 @@
 
   // --- lesson loading -------------------------------------------------------------------------
   // Tuyet doi, khong phai '../': mot trang nam sau hai cap se tinh ra /en/data/lessons/... 
-  const DATA_BASE = `/data/lessons/${LANG}/`;
+  // Thu muc theo KHOA, khong theo ngon ngu: tieng Phap co bon khoa (AZERTY, Canada, Suisse, BEPO)
+  // va chung khong the cung nam o /data/lessons/fr/. Ma khoa lay tu `<html data-course>` — cung
+  // mot loai nguon voi `<html lang>`, co mat truoc moi script — roi moi toi chi muc da nap. Trang
+  // cua ho mac dinh khong can khai gi: ma khoa cua no chinh la ma ngon ngu.
+  const COURSE = (document.documentElement.dataset.course || curriculum?.course || LANG).toLowerCase();
+  const DATA_BASE = `/data/lessons/${COURSE}/`;
   const FIXTURE_BASE = './_fixture/';
   const lessonCache = new Map();
 
@@ -367,7 +387,13 @@
   // Content lines are joined by one keystroke, and `linebreak` picks which one: "space" (the
   // default, where the line break is presentation only) or "enter", where the newline is a real
   // character of the target and only a real Enter press satisfies it (DECISIONS.md bổ sung 6).
+  // Ký tự TRÌNH BÀY của chữ Ả Rập (ﻻ ﻷ ﻹ ﻵ, U+FB50–FDFF, FE70–FEFF): file bố cục ghi phím lam-alef là
+  // một ký tự ﻻ, nhưng bàn phím Windows thật gõ ra hai ký tự ل ا. Quy cả chữ cần gõ lẫn chữ đã gõ về
+  // dạng chuẩn (NFKC) — CHỈ trong dải đó: NFKC cả chuỗi sẽ đổi jamo tiếng Hàn và phá bộ gõ.
+  const unpresent = text => String(text ?? '').replace(/[\uFB50-\uFDFF\uFE70-\uFEFF]/g, character => character.normalize('NFKC'));
+
   function buildTarget(content, linebreak) {
+    content = unpresent(content);
     const glue = linebreak === 'enter' ? '\n' : ' ';
     const lines = String(content ?? '').split('\n').map(line => line.trim()).filter(Boolean);
     let target = '';
@@ -390,7 +416,7 @@
       keysSoFar: Array.isArray(raw.keysSoFar) ? raw.keysSoFar : [],
       minAccuracy: Number.isFinite(Number(raw.minAccuracy)) ? Number(raw.minAccuracy) : DEFAULT_MIN_ACCURACY,
       estMinutes: Number(raw.estMinutes) || 0,
-      inputMode: raw.inputMode === 'telex' ? 'telex' : 'ascii',
+      inputMode: raw.inputMode === 'telex' || raw.inputMode === 'hangul' ? raw.inputMode : 'ascii',
       intro: raw.intro || '',
       congrats: raw.congrats || '',
       screens
@@ -403,7 +429,7 @@
   let run = null, runLog = [], clockTimer = null, lastDailyPing = 0;
   // Telex (Unit 3): `asciiFallback` is the escape hatch of DECISIONS.md quyết định 1 — the
   // same lesson with every diacritic stripped, for a machine with no Vietnamese IME.
-  let asciiFallback = false, imeNoteVisible = false, uncomposedHits = 0;
+  let asciiFallback = false, imeNoteVisible = false, uncomposedHits = 0, positionNoteVisible = false;
 
   const currentScreen = () => screens[screenIndex] || null;
   const screenSeconds = screen => Number(screen?.seconds ?? screen?.timeLimit) || 0;
@@ -513,17 +539,23 @@
   // highlight follows the composition rather than jumping straight to the finished letter.
   function nextKeyHint(typedValue) {
     const position = typedValue.length;
-    if (!run.telex || !telex) return run.target[position];
+    if (!run.telex || !composer) return run.target[position];
     const states = run.view?.states || [];
     if (position > 0 && states[position - 1] === 'pending') {
       const want = run.target[position - 1];
-      const at = telex.steps(want).indexOf(typedValue[position - 1]);
-      const keys = telex.keysFor(want);
+      const at = composer.steps(want).indexOf(typedValue[position - 1]);
+      const keys = composer.keysFor(want);
       if (at >= 0 && keys[at + 1]) return keys[at + 1];
+      // Tiếng Hàn, phụ âm cuối "mượn tạm" ("넌" trên đường tới "너나"): phụ âm đã gõ rồi, phím kế là
+      // nguyên âm của âm tiết SAU.
+      if (at < 0 && composer.isBorrowed && composer.isBorrowed(typedValue[position - 1], want, run.target[position])) {
+        const next = composer.keysFor(run.target[position]);
+        if (next[1]) return next[1];
+      }
     }
     const want = run.target[position];
     if (!want) return want;
-    const keys = telex.keysFor(want);
+    const keys = composer.keysFor(want);
     return keys[0] || want;
   }
 
@@ -563,8 +595,9 @@
     // Telex is Phase 4. All that exists here is the seam: the mode is resolved per screen
     // (screen overrides lesson) and published on the root, so the composition-aware matcher of
     // PLAN.md C6 can hook in without touching anything else. Until then every mode types ascii.
-    root.dataset.inputMode = screen.inputMode === 'telex'
-      || (screen.inputMode !== 'ascii' && lesson.inputMode === 'telex') ? 'telex' : 'ascii';
+    const composed = mode => mode === 'telex' || mode === 'hangul';
+    root.dataset.inputMode = composed(screen.inputMode) ? screen.inputMode
+      : screen.inputMode !== 'ascii' && composed(lesson.inputMode) ? lesson.inputMode : 'ascii';
     if (screen.type === 'intro') enterIntro(screen);
     else enterTyping(screen);
     renderChrome();
@@ -583,8 +616,9 @@
     state = 'typing';
     // A telex screen is matched by TypingEaseTelex (composition-aware, error per syllable);
     // with the fallback on, the very same text is stripped of its diacritics and typed as ascii.
-    const telexMode = root.dataset.inputMode === 'telex' && !!telex;
-    const plain = text => (telexMode && asciiFallback && telex ? telex.toAscii(text) : text);
+    composer = root.dataset.inputMode === 'hangul' ? hangul : telex;
+    const telexMode = root.dataset.inputMode !== 'ascii' && !!composer;
+    const plain = text => (telexMode && asciiFallback && composer ? composer.toAscii(text) : text);
     const content = plain(screen.type === 'burst'
       ? ''
       : screen.source === 'weak-keys' ? weakDrillContent(screen) : String(screen.content ?? ''));
@@ -614,7 +648,7 @@
 
   function setBurstToken() {
     const token = run.tokens[run.tokenIndex % run.tokens.length] || '';
-    run.target = token;
+    run.target = unpresent(token);
     run.breaks = new Set();
     run.seen = 0;
     input.value = '';
@@ -663,7 +697,7 @@
   // accumulated per keystroke: the IME rewrites text that is already there ("nguyên" becomes
   // "nguyễn" when the tone key lands), so yesterday's verdict on a character is not final.
   function scoreTelex(value) {
-    const view = telex.compare(value, run.target);
+    const view = composer.compare(value, run.target);
     run.view = view;
     run.correct = view.ok;
     run.typed = view.ok + view.bad;
@@ -674,7 +708,7 @@
       run.scored[index] = state;
       const expected = run.target[index];
       if (!expected || /\s/.test(expected)) return;
-      const keys = telex.keysFor(expected);
+      const keys = composer.keysFor(expected);
       const physical = keys.length ? keys : [expected];
       physical.forEach(key => profile?.recordKeystroke(key, state === 'ok', null));
       if (state === 'bad') noteWeakKey(physical[0]);
@@ -685,7 +719,7 @@
     const targetTokens = run.target.split(/\s/);
     uncomposedHits = 0;
     for (let i = 0; i < typedTokens.length - 1; i += 1)
-      if (telex.looksUncomposed(typedTokens[i], targetTokens[i])) uncomposedHits += 1;
+      if (composer.looksUncomposed(typedTokens[i], targetTokens[i])) uncomposedHits += 1;
     if (uncomposedHits >= 3 && !imeNoteVisible) { imeNoteVisible = true; renderNotes(); }
 
     const now = Date.now();
@@ -733,6 +767,7 @@
       return;
     }
     if (state !== 'typing' || !run) { input.value = ''; return; }
+    if (/[\uFB50-\uFDFF\uFE70-\uFEFF]/.test(input.value)) input.value = unpresent(input.value);
     // Ascii runs stop the field at the length of the target. A telex run leaves a little slack:
     // a typist whose IME is off produces LONGER text ("mas" for "má"), and cutting it off would
     // hide the very evidence that says the IME is off.
@@ -747,8 +782,8 @@
     // A syllable still mid-composition ("ma" on the way to "má") is not a finished screen.
     if (run.telex && run.view && run.view.pending) return;
     if (run.type === 'burst') {
-      const clean = run.telex && telex
-        ? telex.compare(input.value, run.target).complete
+      const clean = run.telex && composer
+        ? composer.compare(input.value, run.target).complete
         : [...input.value].every((character, position) => character === run.target[position]);
       if (clean) run.tokensDone += 1;
       run.tokenIndex += 1;
@@ -828,6 +863,12 @@
     if (run.found) stageEl.querySelector('.intro-card').classList.add('is-found');
   }
 
+  // Chữ viết từ phải sang trái (Ả Rập, Ba Tư, Urdu, Hebrew): dòng cần gõ, cụm burst và ô nhập mang
+  // dir="rtl". Mỗi từ là một khối `.w` riêng, nên không có hướng thì từ xếp trái→phải trong khi
+  // chữ trong từ lại chạy phải→trái — con trỏ nằm sai đầu dòng. Bàn phím thì KHÔNG đảo: nó là vị
+  // trí vật lý (keyboard.css giữ nó ở ltr).
+  const textDir = () => (curriculum?.dir === 'rtl' || document.documentElement.dir === 'rtl' ? 'rtl' : 'ltr');
+
   function renderTyping(screen) {
     const key = Array.isArray(screen.newKeys) && screen.newKeys.length
       ? screen.newKeys
@@ -837,7 +878,8 @@
     stageEl.className = `player-stage is-typing is-${screen.type}`;
     if (screen.type === 'burst') {
       stageEl.innerHTML = `${clock}${lead}<section class="card burst-card">`
-        + `<p class="burst-token" id="burst-token"></p><p class="burst-next" id="burst-next"></p></section>`;
+        + `<p class="burst-token" id="burst-token" dir="${textDir()}"></p><p class="burst-next" id="burst-next" dir="${textDir()}"></p></section>`;
+      input.dir = textDir();
       renderBurstToken();
       return;
     }
@@ -845,7 +887,8 @@
     // for single letters, ordinary word spacing for words, a left-aligned paragraph for prose.
     const dictation = ['letters', 'words', 'sentence'].includes(screen.dictation) ? screen.dictation : '';
     stageEl.innerHTML = `${chipHtml(key, screen.finger)}${clock}${lead}`
-      + `<section class="card prompt-card"><p class="prompt-lines${dictation ? ` as-${dictation}` : ''}" id="prompt-lines"></p></section>`;
+      + `<section class="card prompt-card"><p class="prompt-lines${dictation ? ` as-${dictation}` : ''}" id="prompt-lines" dir="${textDir()}"></p></section>`;
+    input.dir = textDir();
   }
 
   function renderBurstToken() {
@@ -972,7 +1015,7 @@
           + `${fill(T.nextLesson, { title: escapeHtml(nextEntry?.title || nextId) })}</button>`
         : `<a class="primary-button" href="${R.home}">${T.finishAll}</a>`
           + (R.weak ? `<a class="ghost-button" href="${R.weak}">${T.weakPage}</a>` : '')
-          + `<a class="ghost-button" href="${R.test}">${T.testPage}</a>`)
+          + (R.test ? `<a class="ghost-button" href="${R.test}">${T.testPage}</a>` : ''))
       + `<button class="ghost-button" type="button" data-act="redo-lesson">${T.redoLesson}</button>`
       + `<a class="ghost-button" href="${R.home}">${T.home}</a>`
       + '</div></section>';
@@ -1121,6 +1164,44 @@
   }
 
   input.addEventListener('input', onInput);
+
+  // GO THEO VI TRI PHIM (`typeByPosition`, khoa Chu am Dai Loan). Bo go Chu am bien phim thanh chu
+  // Han ngay khi go, nen trang khong the biet nguoi hoc vua bam phim nao. Khoa nay yeu cau tat bo
+  // go (che do tieng Anh): phim vat ly KeyA khi do ra "a", va o day doi no thanh ky tu ma bo cuc cua
+  // khoa dat o KeyA (ㄇ). Tra cuu theo `event.code`, khong theo `event.key`, nen dung voi moi bo cuc
+  // he dieu hanh dang bat. Phim dang soan bo go (`isComposing`, key "Process") thi de nguyen.
+  let positionMap = null;
+  function positionalCharacter(event) {
+    if (!curriculum?.typeByPosition || event.isComposing || event.key === 'Process') return null;
+    if (event.ctrlKey || event.metaKey || event.altKey) return null;
+    const layout = NT?.layout?.();
+    if (!layout?.structure) return null;
+    if (!positionMap || positionMap.layout !== layout) {
+      const map = new Map();
+      for (const row of layout.structure) for (const entry of row) {
+        if (!entry?.hardware || typeof entry.main !== 'string' || [...entry.main].length !== 1) continue;
+        map.set(entry.hardware, { main: entry.main, shifted: typeof entry.shifted === 'string' ? entry.shifted : null });
+      }
+      positionMap = { layout, map };
+    }
+    const slot = positionMap.map.get(event.code);
+    if (!slot) return null;
+    return event.shiftKey ? slot.shifted : slot.main;
+  }
+  input.addEventListener('keydown', event => {
+    if (state !== 'typing' && state !== 'intro') return;
+    if (curriculum?.typeByPosition && (event.isComposing || event.key === 'Process') && !positionNoteVisible) {
+      positionNoteVisible = true;
+      renderNotes();
+    }
+    const character = positionalCharacter(event);
+    if (!character) return;
+    event.preventDefault();
+    const start = input.selectionStart ?? input.value.length, end = input.selectionEnd ?? start;
+    input.setRangeText(character, start, end, 'end');
+    onInput();
+  });
+
   input.addEventListener('keydown', event => {
     // Enter is a navigation key, except on a `linebreak: "enter"` screen at the exact position
     // where the target carries a newline — there it has to reach the textarea as a character.

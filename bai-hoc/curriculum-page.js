@@ -3,7 +3,7 @@
 // Duong dan giua cac trang, TUYET DOI (xem player.js): '../' tinh sai o ban ngon ngu nam sau
 // hai cap thu muc, va ten thu muc cung khac nhau. Lop phu `TypingEaseUI.routes` ghi de.
 const R = {
-  home: '/', lessons: '/bai-hoc/', learn: '/hoc/', test: '/kiem-tra-toc-do-go/',
+  home: '/vi/', lessons: '/bai-hoc/', learn: '/hoc/', test: '/kiem-tra-toc-do-go/',
   progress: '/tien-do/', free: '/luyen-tu-do/', weak: '/luyen-phim-yeu/',
   ...(window.TypingEaseUI?.routes || {})
 };

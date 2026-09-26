@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "·, $, % y &",
+  "summary": "En esta lección: ·, $, % y &.",
+  "newKeys": [
+    "·",
+    "$",
+    "%",
+    "&"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "´",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "¡",
+    "`",
+    "+",
+    "ç",
+    "º",
+    "ª",
+    "!",
+    "\"",
+    "·",
+    "$",
+    "%",
+    "&"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas que el curso todavía no ha usado: ·, $, % y &. Todas salen con Shift y una tecla que tus dedos ya conocen — Shift con el meñique de la otra mano.",
+  "congrats": "·, $, % y &: ya bajo tus dedos. El signo sale tan fácil como la letra de al lado.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "·",
+      "finger": "LM",
+      "text": "Es el corazón izquierdo el que pulsa ·, con Shift en la otra mano.",
+      "hint": "Pulsa · para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "·",
+      "text": "Primero ·, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "·· · ··· ··· ···\n·· · ··· ··· ···\n·· · ··· ··· ···"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "Es el índice izquierdo el que pulsa $, con Shift en la otra mano.",
+      "hint": "Pulsa $ para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Primero $, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "$$ $ $61 $68 $28\n$$ $ $74 $5 $50\n$$ $ $86 $60 $63"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "Es el índice izquierdo el que pulsa %, con Shift en la otra mano.",
+      "hint": "Pulsa % para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Primero %, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "%% % 27% 94% 52%\n%% % 9% 95% 23%\n%% % 22% 24% 40%"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "Es el índice derecho el que pulsa &, con Shift en la otra mano.",
+      "hint": "Pulsa & para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Primero &, sin nada alrededor, y después donde de verdad se usa.",
+      "content": "&& & hallé & esperar sal & saber halla & poca\n&& & nombres & carta me & luz alturas & hombros\n&& & páginas & pueden figura & verdades quizás & oreja"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Una ráfaga de trozos cortos con estos caracteres.",
+      "tokens": [
+        "···",
+        "18%",
+        "$98",
+        "$56",
+        "viajes&baja",
+        "33%",
+        "89%",
+        "$89",
+        "78%",
+        "menos&brazo"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Todo lo de esta lección, mezclado.",
+      "content": "··· ··· 22% ···\n$83 71% $82 21%\n$45 $92 ··· 8%"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Otra vez palabras, con los signos en su sitio.",
+      "content": "88% seguir $28 solas viento & busca\nsegura & escribe oreja ··· son 68%\n91% son 72% ideas $5"
+    }
+  ]
+}

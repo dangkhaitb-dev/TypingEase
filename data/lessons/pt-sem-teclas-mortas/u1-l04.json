@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A e Ç",
+  "summary": "Teclas novas: A e Ç. O dedo sai, aperta e volta.",
+  "newKeys": [
+    "a",
+    "ç"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas novas nesta lição: A e Ç. Elas se apertam com o mindinho esquerdo e o mindinho direito. O movimento é sempre o mesmo — sair, apertar e voltar — e a volta é a parte que se treina, porque se o dedo fica fora, a letra seguinte sai errada.",
+  "congrats": "Mais teclas debaixo dos dedos. Se A e Ç já saem sem procurar, a lição fez o seu trabalho.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "Esta tecla é do mindinho esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte A para continuar"
+    },
+    {
+      "newKey": "a",
+      "text": "Só A e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": "ç",
+      "finger": "RP",
+      "text": "Esta tecla é do mindinho direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte Ç para continuar"
+    },
+    {
+      "newKey": "ç",
+      "text": "Só Ç e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "açaç çaça\naç ça\nçdf ja çd"
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos curtos, um atrás do outro. Vá até o fim mesmo que erre algum.",
+      "type": "burst",
+      "tokens": [
+        "çaaa",
+        "aaç",
+        "aaa",
+        "açça",
+        "çaçç",
+        "ççaa",
+        "açç",
+        "aaçç",
+        "çaça",
+        "açaa"
+      ]
+    },
+    {
+      "text": "As teclas novas misturadas com as anteriores, que é como elas vão aparecer nas palavras.",
+      "type": "block",
+      "content": "aç ça açaç\naaa çççç ffff jjj\naçaç çaça"
+    },
+    {
+      "text": "Palavras de verdade com as teclas novas. Escreva a palavra inteira de uma vez, não letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sala salada falsas falas\nfaças alfa saladas asa\nda fala assa assadas"
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada de palavras curtas com as teclas novas.",
+      "type": "burst",
+      "tokens": [
+        "saladas",
+        "falas",
+        "assadas",
+        "fadas",
+        "salas",
+        "faças",
+        "alfa",
+        "fada",
+        "salsa",
+        "alas"
+      ]
+    },
+    {
+      "text": "Agora com o peso em A, a que você menos apertou.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "da falsas faças salas\nfadas ala a saladas\nfada fala falas alas"
+    },
+    {
+      "text": "Voltamos aos padrões por um momento, para conferir que os dedos continuam voltando para o lugar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "açaçaç çaçaça\naç ça\njça df jç"
+    },
+    {
+      "text": "Tudo o que você tem, misturado. Repare em quantas palavras já saem sem pensar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "falas dada salas saladas\nasa fadas ajas sala\nda das fada faladas"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, de punt, de komma en de apostrof",
+  "summary": "Nieuwe toetsen: Z, de punt, de komma en de apostrof. De vinger strekt, slaat aan en keert terug.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nieuwe toetsen in deze les: Z, de punt, de komma en de apostrof. Je slaat ze aan met de linkerpink, de rechterringvinger, de rechtermiddelvinger en de rechterpink. De beweging is altijd dezelfde — uitstrekken, aanslaan en terug — en het terugkeren is wat je oefent, want als de vinger buiten blijft, gaat de volgende letter scheef.",
+  "congrats": "Weer toetsen onder je vingers. Als Z, de punt, de komma en de apostrof er zonder zoeken uitkomen, heeft de les zijn werk gedaan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "Deze toets is voor de linkerpink. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op Z om verder te gaan"
+    },
+    {
+      "newKey": "z",
+      "text": "Alleen Z en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "z z\ndfj z df\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Deze toets is voor de rechterringvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op . om verder te gaan"
+    },
+    {
+      "newKey": ".",
+      "text": "Alleen . en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": ".z .z\n.zf dj .z\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Deze toets is voor de rechtermiddelvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op , om verder te gaan"
+    },
+    {
+      "newKey": ",",
+      "text": "Alleen , en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "z,. .z,\n.,j fzd .,\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RP",
+      "text": "Deze toets is voor de rechterpink. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op ' om verder te gaan"
+    },
+    {
+      "newKey": "'",
+      "text": "Alleen ' en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "f.j ,'d f.\n'. .' '.'.\n''' ,,, zzzz ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Korte groepjes, de een na de ander. Maak de lijst af, ook als je er een paar mist.",
+      "type": "burst",
+      "tokens": [
+        "z'",
+        "z.",
+        ",,",
+        ".,",
+        "''",
+        ",'",
+        "zz",
+        "',",
+        "..",
+        "z,"
+      ]
+    },
+    {
+      "text": "De nieuwe toetsen gemengd met de vorige, zoals je ze straks in woorden tegenkomt.",
+      "type": "block",
+      "content": "z.z.z. .z.z.z\nz'j.f, f'z,j.\nsz' .dj sz"
+    },
+    {
+      "text": "Echte woorden met de nieuwe toetsen. Typ het hele woord in één beweging, niet letter voor letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "zorg zwemmen zoon zelfs\nzakdoek zilver zondag zomer\nzo'n menu's zuinig zeer"
+    },
+    {
+      "seconds": 25,
+      "text": "Een reeks korte woorden met de nieuwe toetsen erin.",
+      "type": "burst",
+      "tokens": [
+        "rijst",
+        "sla",
+        "brief",
+        "erg",
+        "in",
+        "las",
+        "foto's",
+        "kleur",
+        "nummers",
+        "doel"
+      ]
+    },
+    {
+      "text": "Nu met de nadruk op Z, de toets die je het minst hebt aangeslagen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "maaltijd planten kast gaan\nrennen zee schrift hak\nzwaar zak heel kies"
+    },
+    {
+      "text": "Even terug naar de patronen, om te controleren dat de vingers nog steeds naar hun plek teruggaan.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, zzz ''' ...\nz.z.z. .z.z.z\n,z'. ,z'."
+    },
+    {
+      "text": "Alles wat je hebt, door elkaar. Kijk hoeveel woorden al vanzelf gaan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "verder zoeken baby's computer\ntekening kamperen tocht aardig\navonden opstaan horen koken"
+    }
+  ]
+}

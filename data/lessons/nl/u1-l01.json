@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "F en J, plus de spatiebalk",
+  "summary": "De twee toetsen met een ribbeltje, de spatiebalk, en de gewoonte om niet omlaag te kijken.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "De toetsen met een klein ribbeltje zijn het vertrekpunt. De twee wijsvingers rusten daar en gaan er niet weg; de rest van de cursus wordt gemeten vanuit die houding. Begin met je handen op hun plek te leggen en kijk alleen naar het scherm.",
+  "congrats": "Nu liggen je handen op hun plek. Vanaf hier zijn het allemaal toetsen die je vanuit deze houding bereikt en meteen weer loslaat.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "LI",
+      "text": "Deze toets is voor de linkerwijsvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op F om verder te gaan"
+    },
+    {
+      "newKey": "f",
+      "text": "Alleen F en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "f f ff\nffff\nffffff ffffff"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RI",
+      "text": "Deze toets is voor de rechterwijsvinger. Zoek hem zonder te kijken, druk één keer en laat de vinger teruggaan naar zijn plek. Het terugkeren telt net zo zwaar als het aanslaan.",
+      "hint": "Druk op J om verder te gaan"
+    },
+    {
+      "newKey": "j",
+      "text": "Alleen J en wat je al kent. Rustig, en na elke aanslag gaat de vinger terug naar de thuisrij.",
+      "type": "block",
+      "content": "jf jf\njf fj jfjf\nfj jf fjfj"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "De spatiebalk is voor de rechterduim. De duimen doen verder niets, en daarom hoef je hem nooit te zoeken.",
+      "hint": "Druk op de spatiebalk om verder te gaan"
+    },
+    {
+      "newKey": " ",
+      "text": "Korte groepjes met spaties ertussen. De rechterduim gaat omlaag en weer omhoog; de andere vingers blijven waar ze zijn.",
+      "type": "block",
+      "content": "jf jf\nfj jf fjfj\njjjj ffff"
+    },
+    {
+      "seconds": 20,
+      "text": "Korte groepjes, de een na de ander. Maak de lijst af, ook als je er een paar mist.",
+      "type": "burst",
+      "tokens": [
+        "ffj",
+        "ff",
+        "ffff",
+        "fjj",
+        "ffjj",
+        "jff",
+        "fjf",
+        "jffj",
+        "fj",
+        "fjff"
+      ]
+    },
+    {
+      "text": "De nieuwe toetsen gemengd met de vorige, zoals je ze straks in woorden tegenkomt.",
+      "type": "block",
+      "content": "fj fj\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Nog eens de twee nieuwe toetsen. Er zijn nog geen woorden om ermee te typen, en dat is normaal.",
+      "type": "block",
+      "content": "fj jf\njf jf\njf fj jfjf"
+    },
+    {
+      "seconds": 25,
+      "text": "Iets langere groepjes. Haast helpt nog niet.",
+      "type": "burst",
+      "tokens": [
+        "fjfj",
+        "ff",
+        "fjf",
+        "jjf",
+        "ffjf",
+        "fjjj",
+        "fj",
+        "jjff",
+        "jfjj",
+        "jfj",
+        "jff",
+        "jffj"
+      ]
+    },
+    {
+      "text": "Alles wat je hebt, in korte groepjes. Kijk naar het scherm, niet naar je handen.",
+      "type": "block",
+      "content": "fjfj jfjf\njf jf\nfj jf fjfj"
+    },
+    {
+      "text": "Even terug naar de patronen, om te controleren dat de vingers nog steeds naar hun plek teruggaan.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf jf\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "Een laatste ronde met alles wat je tot nu toe hebt geleerd.",
+      "type": "block",
+      "content": "fjfjfj jfjfjf\njf jf\nfj fj"
+    }
+  ]
+}

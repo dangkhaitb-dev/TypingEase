@@ -1,0 +1,173 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "£, µ, % et ?",
+  "summary": "Au programme : £, µ, % et ?.",
+  "newKeys": [
+    "£",
+    "µ",
+    "%",
+    "?"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v",
+    "a",
+    "p",
+    "b",
+    "x",
+    "w",
+    ":",
+    ";",
+    "ù",
+    "shift",
+    "enter",
+    ".",
+    "&",
+    "é",
+    "\"",
+    "'",
+    "(",
+    "-",
+    "è",
+    "_",
+    "ç",
+    "à",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "!",
+    ")",
+    "=",
+    "^",
+    "$",
+    "*",
+    "²",
+    "°",
+    "+",
+    "<",
+    ">",
+    "£",
+    "µ",
+    "%",
+    "?"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Des touches que le cours n'a pas encore utilisées : £, µ, % et ?. Chacune se fait avec Maj et une touche que tes doigts connaissent déjà — Maj à l'auriculaire de l'autre main.",
+  "congrats": "£, µ, % et ? : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "£",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe £, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur £ pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "£",
+      "text": "D'abord £ sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "££ £ £23 £34 £44\n££ £ £77 £53 £71\n££ £ £4 £63 £53"
+    },
+    {
+      "type": "intro",
+      "key": "µ",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe µ, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur µ pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "µ",
+      "text": "D'abord µ sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "µµ µ 96µ 66µ 29µ\nµµ µ 46µ 15µ 35µ\nµµ µ 53µ 34µ 44µ"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe %, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur % pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "D'abord % sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "%% % 46% 97% 39%\n%% % 62% 90% 4%\n%% % 34% 77% 85%"
+    },
+    {
+      "type": "intro",
+      "key": "?",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe ?, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ? pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "?",
+      "text": "D'abord ? sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "?? ? général? toujours? goûts?\n?? ? vendredi? l'année? mettre?\n?? ? fille? motif? mur?"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Une série de petits morceaux avec ces caractères.",
+      "tokens": [
+        "62µ",
+        "26%",
+        "£38",
+        "66%",
+        "£54",
+        "£25",
+        "43%",
+        "elle?",
+        "£71",
+        "68%"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tout ce que cette leçon a apporté, mélangé.",
+      "content": "vendredi? 37% règles? £81\nbesoins? 69% 90µ £25\n£25 hôtel? ouvre? £71"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Des mots à nouveau, avec les signes à leur place.",
+      "content": "78µ tire avec? l'eau £54\n£68 être gifles? court somme?\n£3 château 11µ pas £67"
+    }
+  ]
+}

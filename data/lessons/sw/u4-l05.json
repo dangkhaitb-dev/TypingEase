@@ -1,0 +1,171 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "{, }, | na nukta pacha",
+  "summary": "Katika somo hili: {, }, | na nukta pacha.",
+  "newKeys": [
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe ambavyo kozi bado haijavitumia: {, }, | na nukta pacha. Vyote vinapatikana kwa Shift pamoja na kitufe ambacho vidole vyako tayari vinakijua — Shift kwa kidole kidogo cha mkono mwingine.",
+  "congrats": "{, }, | na nukta pacha: sasa viko chini ya vidole vyako. Shift kwa mkono mwingine, na alama inakuja kwa urahisi kama herufi iliyo kando yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "Kitufe { ni cha kidole kidogo cha kulia, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza { ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "Kwanza { peke yake, kisha pale kinapotumika kweli.",
+      "content": "{{ { {ona {tufaha {kike\n{{ { {zaa {mwisho {fisi\n{{ { {babu {haki {kiini"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "Kitufe } ni cha kidole kidogo cha kulia, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza } ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "Kwanza } peke yake, kisha pale kinapotumika kweli.",
+      "content": "}} } {eleza} {baadaye} {mfano}\n}} } {ng'ambo} {kidole} {kuzaliwa}\n}} } {mwendo} {tarehe} {tahajia}"
+    },
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "RP",
+      "text": "Kitufe | ni cha kidole kidogo cha kulia, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza | ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "Kwanza | peke yake, kisha pale kinapotumika kweli.",
+      "content": "|| | ukurasa|mnyama nafasi|mti kweli|kumi\n|| | vizazi|afisa fahari|ghala mbwa|jiwe\n|| | pamoja|mtoto mzazi|mchana kutua|chanzo"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RP",
+      "text": "Kitufe nukta pacha ni cha kidole kidogo cha kulia, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza : ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "Kwanza nukta pacha peke yake, kisha pale kinapotumika kweli.",
+      "content": ":: : kuishi: nchi: basi:\n:: : jibu: nguvu: nyasi:\n:: : lazima: mifano: buibui:"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Mfululizo wa vipande vifupi vyenye alama hizi.",
+      "tokens": [
+        "{viti}",
+        "{ndizi}",
+        "yeyote:",
+        "{mimi}",
+        "{kupenda}",
+        "milima:",
+        "mnyama|pesa",
+        "biashara|kiatu",
+        "kilo:",
+        "kurasa|sawa"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Kila kitu kutoka somo hili, kwa mchanganyiko.",
+      "content": "huru: {mchele} {kupanda} swali:\n{nyasi} wajibu: kuvuka|papai mchana:\npapai: {kahawa} {siku} {lugha}"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Maneno tena, na alama zikiwa mahali pake.",
+      "content": "maisha: ngoma kumaliza: ukweli {bafu}\n{nchi} kompyuta {juu} kuvuta chungwa|lugha\nduara|mikono boma kujua|vaa viti la:"
+    }
+  ]
+}

@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A et N",
+  "summary": "Nouvelles touches : A et N. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "a",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : A et N. Elles se tapent avec l'auriculaire gauche et l'auriculaire droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si A et N sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur A pour continuer"
+    },
+    {
+      "newKey": "a",
+      "text": "Seulement A et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "a a\neta i et\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur N pour continuer"
+    },
+    {
+      "newKey": "n",
+      "text": "Seulement N et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "anan nana\nan na\nnie ta ni"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "naaa",
+        "aan",
+        "aaa",
+        "anna",
+        "nann",
+        "nnaa",
+        "ann",
+        "aann",
+        "nana",
+        "anaa"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "an na anan\naaa nnnn eeee ttt\nanan nana"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ensuite aussi a ainsi\nautres aussi nuit une\nune autres nuit autre"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "rues",
+        "titres",
+        "autre",
+        "tirs",
+        "tir",
+        "nuits",
+        "tristes",
+        "ta",
+        "sa",
+        "site"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur A, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sa tristes autre site\nrusse titres tires te\naussi sites ainsi un"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ananan nanana\nan na\ntna ie tn"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "russe tires te ensuite\nsuite tristes autres tu\nsi rue triste tant"
+    }
+  ]
+}

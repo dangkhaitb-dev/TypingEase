@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift と Enter",
+  "summary": "反対の手の小指で打つ大文字と、改行の Enter。",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    ":",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "ここまではすべて小文字でした。Shift を使うと大文字になります。最初に身につけたい決まりがひとつあります。Shift は、打つ文字と反対の手の小指で押します。同じ側の小指で押すと手がねじれ、結局キーボードを見ることになります。日本語を IME で入力するときに大文字はほとんど使いませんが、ローマ字で名前を書くときや英字の入力では必要になります。",
+  "congrats": "Shift と Enter で、複数行の文章をまとめて打てるようになりました。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "大文字は、その文字と反対の手の小指で Shift を押しながら打ちます。Shift を押したまま文字を打ち、離します。その文字を打つ側の小指では押しません。",
+      "hint": "Shift を押したまま文字を打って次へ"
+    },
+    {
+      "newKey": "shift",
+      "text": "大文字と小文字を交互に。小指が下りて戻ります。もう一方の手は動かしません。",
+      "type": "block",
+      "content": "Pp Jj Zz Gg\nCc Dd Qq Ee\nTt Uu Kk Rr\nXx Mm Ff Bb"
+    },
+    {
+      "text": "いつもの単語に戻ります。Shift を押したあとも、手がホームポジションに戻っているかを確かめてください。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "nana kage boku ishi\ntsurai kiku yubi daiji\nwagashi kome tekisetsu bikkuri"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter は右手の小指で押します。ホームポジションの右にあり、この指が届くキーの中でいちばん大きなキーです。",
+      "hint": "Enter を押して次へ"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "1行打って Enter、また次の行。小指が出て戻り、手はついていきません。",
+      "type": "block",
+      "content": "Haruka\nRika\nSakura\nTakumi\nYuki\nKaito"
+    },
+    {
+      "text": "頭を大文字に、終わりをピリオドにした文です。IME で入力するときは、ピリオドが「。」になります。",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Heya no mado wo akete kudasai.\nToshokann de honn wo karimashita.\nKono michi wo massugu itte kudasai."
+    },
+    {
+      "seconds": 25,
+      "text": "このレッスンの内容を固める連打です。",
+      "type": "burst",
+      "tokens": [
+        "tenpura",
+        "kuukou",
+        "shinai",
+        "taberu",
+        "kuuki",
+        "bunka",
+        "kibunn",
+        "shinkou",
+        "bara",
+        "pittari",
+        "semai",
+        "ikaga"
+      ]
+    },
+    {
+      "text": "1行に5語。小指が両方向に働きます。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "happyaku tanoshii furikaeru pann hajimeru\nhikouki dougu hoka momo tsutaeru\nnageru dokoka toshi shinkansenn kouenn"
+    },
+    {
+      "text": "最後に文を打ちます。Shift、文字、離す。考えるために止まらないでください。",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Haha ha sushi ga daisuki desu.\nKono honn ha totemo omoshiroi desu.\nKinou ha ichinichi uchi ni imashita."
+    }
+  ]
+}

@@ -849,3 +849,872 @@ bắt được cả lỗi 4 mà mọi phép kiểm trên bảng đều bỏ lọ
   hai cái tên đó. Hiếm gặp, chưa sửa.
 - `dataset.finger` của Ctrl là `thumb` vì layout ghi `finger: null` cho ControlLeft/Right. Đó là
   dữ liệu của bộ layout, không phải chỗ này.
+
+
+# 2026-09-22 — `/` THÀNH TRANG ĐẦU TIẾNG ANH CÓ BỘ CHỌN BÀN PHÍM; BẢN VIỆT VỀ `/vi/`
+
+## Quyết định của chủ site
+1. **`/` đổi sang tiếng Anh.** Chấp nhận đánh đổi SEO: `/` đang xếp hạng cho truy vấn tiếng Việt,
+   và đổi ngôn ngữ của nó là đổi trang mà Google đã biết. Đã nêu rõ rủi ro trước khi làm, chủ site
+   xác nhận vẫn làm. Trang chủ tiếng Việt dời sang `/vi/`.
+2. **Trang đầu theo phương án B**, không phải A (màn chọn ngôn ngữ chắn trước) hay C (lưới cờ):
+   `/` vẫn là landing page thật, index được, có h1 và nội dung cho crawler đọc — bộ chọn nằm TRONG
+   hero chứ không đứng trước nó. Bàn phím preview đổi ngay khi chọn ngôn ngữ.
+
+## Ba trục tách rời — nền tảng của cả thiết kế
+`data/languages.js` giữ ba cột mà người ta hay gộp làm một: ngôn ngữ muốn GÕ, bố cục bàn phím GÕ
+TRÊN, và có GIÁO TRÌNH hay chưa. Bằng chứng rõ nhất là chính tiếng Việt: hầu hết người Việt gõ
+Telex trên bàn phím US, nên `vi` mặc định layout 1 chứ không phải layout 208 ("Vietnamese", có
+ă â ê ô trên hàng số). Chọn 208 thì gọn về mặt phân loại và sai với gần như mọi người dùng.
+
+27 ngôn ngữ, 119 bố cục. Hai ngôn ngữ có giáo trình thật (en 27 bài, vi 35 bài); 25 ngôn ngữ còn
+lại ở trạng thái `soon` — **vẫn dựng bàn phím đầy đủ**, và nút CTA nói thẳng là chưa có bài thay vì
+giả vờ. Cho người Ả Rập xem đúng bàn phím của họ có giá trị hơn là giấu ngôn ngữ đó đi.
+
+## Ba thứ chỉ lộ ra khi nhìn ảnh chụp thật
+1. **Emoji cờ hỏng trên Windows.** Windows chưa bao giờ có font cờ, nên cặp regional-indicator rơi
+   về hai chữ cái: bộ chọn hiện "us English", lưới hiện "sa العربية". Site dạy gõ 10 ngón thì
+   người dùng ngồi trước bàn phím vật lý, tức Windows là đa số — đây là trường hợp THƯỜNG, không
+   phải ngoại lệ. Bỏ hẳn cờ; lưới dùng huy hiệu mã ngôn ngữ. Cũng là nhãn thành thật hơn: cờ là
+   quốc gia, đây là ngôn ngữ. Tiếng Ả Rập không phải Ả Rập Xê Út, tiếng Anh không phải nước Mỹ.
+2. **Hero nhảy ngang ~170px khi đổi ngôn ngữ.** `grid-template-columns:1fr 1fr` thực chất là
+   `minmax(auto,1fr)`, mà chiều rộng `auto` của một `<select>` là OPTION DÀI NHẤT của nó — nên
+   khung co giãn theo ngôn ngữ đang chọn. `minmax(0,1fr)` khoá lại. Cùng lý do, `dir` trên
+   `<option>` bị gỡ: nó lật căn lề của cả cái `<select>` khi chọn mục RTL.
+3. **Màu ngón chỉ chạy cho layout Latin.** `keyboard.css` gán `--fk` qua bộ chọn `.key-<mã ký tự>`
+   — đúng cách bản gốc typekute làm, hoàn hảo cho những layout nó ship kèm, và vô dụng với 100
+   layout còn lại. Bàn phím Hindi/Ả Rập ra gần như trắng trơn, tức đúng thứ màu sắc sinh ra để
+   dạy — ngón nào giữ phím nào — lại thiếu ở chính những layout người học ít quen nhất.
+   `keyboard.js` nay ghi `data-finger` từ dữ liệu layout cho MỌI phím; `landing.css` tô từ đó.
+   Nhóm ngón của dữ liệu trùng khít nhóm của bộ chọn cũ (1/10 út, 2/9 áp út, 3/8 giữa, 4/7 trỏ,
+   5/6 cái) nên bàn phím US không đổi một pixel nào.
+   Loại trừ `.key--special`: layout cũng ghi `finger` cho Tab/Ctrl/Alt/Cmd và ở các file không phải
+   Latin thì đó rõ ràng là số điền cho đủ — layout 106 đặt Alt phải vào ngón áp út. Màu sai một
+   cách tự tin còn dạy tệ hơn là không màu.
+
+## Định tuyến
+- `/` → tiếng Anh · `/vi/` → tiếng Việt · các trang tiếng Việt GIỮ NGUYÊN URL (`/bai-hoc/`,
+  `/hoc/`, `/tien-do/`...). Slug của chúng là tiếng Việt nên không tranh chấp với tiếng Anh, và
+  giữ nguyên là giữ nguyên toàn bộ SEO của chúng. Chỉ `/` là chỗ tranh chấp thật.
+- `/en/` (từng là trang chủ tiếng Anh, rồi thành trang chuyển hướng về bản Việt) nay chuyển về `/`.
+- **KHÔNG auto-redirect theo `navigator.language`.** Googlebot crawl từ Mỹ, nên nó sẽ chỉ bao giờ
+  thấy bản tiếng Anh và nửa tiếng Việt của site lặng lẽ hết index. Thay bằng một dòng banner tắt
+  được, và nhớ lựa chọn vào localStorage.
+- `routes` tiếng Anh: trang nào chưa tồn tại thì để `null`, và mọi nơi tiêu thụ BỎ liên kết chứ
+  không trỏ vào trang 404 hay vào bài tiếng Việt. `player.js` đã có sẵn nếp đó cho `R.weak`; nay
+  `R.progress`/`R.test` cũng được chặn, và `generate.mjs` sinh nav bằng danh sách lọc null.
+
+## Lớp i18n mở lại cho trang chủ
+`script.js` từng bị dọn sạch còn đúng khoá `vi` khi site rút về một ngôn ngữ. Nay `currentHomeUi()`
+và `currentLocalizedUi()` phủ `TypingEaseUI.home` / `.localized` lên bảng tiếng Việt — đúng cơ chế
+`player.js`, `curriculum-page.js`, `progress-page.js` vẫn dùng. Khoá thiếu thì hiện tiếng Việt: sai
+trông thấy vẫn hơn ô trống, và ui.en.js hỏng thì trang chủ tiếng Anh vẫn chạy.
+
+## Service worker
+VERSION v3 → v4. Bắt buộc: bản `/` nằm trong runtime cache v3 là trang TIẾNG VIỆT. Mạng-trước nên
+nó chỉ hiện khi mất mạng, nhưng "mất mạng thì thấy trang ngôn ngữ khác" vẫn là sai.
+PRECACHE chỉ còn shell của `/`. `/vi/` và `curriculum.vi.js` đứng ngoài — cache lối-đi-thật giữ
+chúng ngay sau lần ghé đầu, còn tải sẵn cả hai giáo trình cho mọi khách là đúng thứ đầu file nói
+là không làm. Bàn phím của hero cũng đứng ngoài: mất mạng lần đầu thì landing.js thay nó bằng một
+dòng chữ và cả trang còn lại vẫn dùng được.
+
+## Kiểm định
+`scripts/e2e.js` **34/34 PASS**. Test 7/7b chuyển sang `/vi/`; thêm:
+- **7c** `/`: bộ chọn ≥20 ngôn ngữ, mặc định `en`, dựng ≥55 phím thật, KHÔNG có canvas (bàn tay 3D
+  không được kéo theo vào trang đầu), đổi sang `ar` thì nhãn phím phải thành chữ Ả Rập còn bàn phím
+  tiếng Anh thì không, nút phải chuyển sang kiểu phụ và ghi chú phải nói rõ chưa có bài, và nạp lại
+  trang phải nhớ đúng lựa chọn.
+- **11b** sửa: `/en/` `/ja/` nay về `/` và trang đích nói tiếng Anh; 7 URL bài viết còn lại vẫn về
+  đúng bài tiếng Việt.
+- **11c** mới: mọi trang tiếng Việt phải có lối về `/vi/` và không trang nào còn liên kết trỏ thẳng
+  về `/` — nơi bây giờ là một trang ngôn ngữ khác.
+
+## Còn lại
+- 25 ngôn ngữ `soon`. Phân tầng đã chốt: Tier 2 = layout Latin sinh tự động từ chính `finger` +
+  `hardware` trong layout JSON (chỉ cần thêm word list + bảng UI mỗi ngôn ngữ); Tier 3 = RTL
+  (ar fa he ur, phải lật cả player), IME (ja zh ko, phải chấm điểm theo chuỗi đã commit chứ không
+  theo từng phím vì IME nuốt keystroke), Indic (hi bn, phải so theo grapheme cluster).
+- Font: "Be Vietnam Pro" không có glyph Ả Rập/Devanagari/Thái/Hebrew/Hangul/CJK. Hiện rơi về
+  system-ui và render đúng trên máy thử, nhưng mỗi ngôn ngữ Tier 3 sẽ cần font riêng, nạp có
+  điều kiện theo `script` trong `data/languages.js`.
+- `navigator.keyboard.getLayoutMap()` đọc được layout VẬT LÝ thật của người dùng và sẽ đoán đúng
+  hơn `navigator.language`. Chưa dùng: trường `type` trong `index.json` không đáng tin (layout 181
+  tên "French (AZERTY)" mà ghi `type:"qwerty"`), nên không có gì để khớp kết quả vào.
+
+## Bốn trang tiếng Anh còn thiếu (làm song song bằng 4 agent)
+`/en/typing-test/`, `/en/progress/`, `/en/practice/`, `/en/touch-typing/` — trước đó cả bốn URL đều
+là trang chuyển hướng về bài tiếng Việt, nên mọi liên kết tới chúng phải bị giấu đi. Nay là trang
+thật; `routes` tiếng Anh bật lại đủ, chỉ `weak` và `wpm` còn `null`.
+
+Phân việc theo QUYỀN SỞ HỮU FILE (cạm bẫy 9): mỗi agent một trang + đúng một file JS dùng chung mà
+nó phải thêm lớp i18n vào (`typing-test.js`, `progress-page.js`, `free-page.js`), không ai được
+sửa `i18n/ui.en.js` — mỗi agent nộp bảng chuỗi ra scratchpad, việc ghép do một mình chỗ này làm.
+
+**Cách chia đó vẫn hỏng một lần, và đáng ghi lại.** Hai agent muốn xem trang mình render tiếng Anh
+nên dán tạm bảng chuỗi vào `ui.en.js` rồi hoàn tác bằng `git checkout -- i18n/ui.en.js`. File đó
+đang có thay đổi CHƯA COMMIT, nên checkout kéo nó về HEAD và xoá luôn phần người khác vừa viết.
+Bài học: cấm sửa một file dùng chung là chưa đủ — phải cấm cả `git checkout` lên nó, vì trong một
+cây làm việc bẩn thì lệnh đó không phải "hoàn tác thay đổi của tôi" mà là "vứt thay đổi của mọi
+người". Khắc phục: script ghép ở scratchpad chạy lại được nhiều lần, mỗi bước tự kiểm tra đã có
+chưa rồi mới chèn. Lần sau: hoặc cấp `isolation: worktree`, hoặc bắt kiểm chứng bằng cách chèn
+`window.TypingEaseUI.<khoá> = {...}` từ console thay vì sửa file.
+
+## Hai lỗi cũ lộ ra nhờ đợt này
+1. **Chú thích `curriculum.en.js` nói sai số.** "9 of the 12 most common English letters" — Unit 1
+   dạy A D E F G H I J K L R S U, đối chiếu ETAOINSHRDLC thì được 8 (E A I S H R D L), thiếu
+   T O N C. Phát hiện khi có người định nhắc lại con số đó trên một trang công khai và cộng không
+   ra. Đã sửa thành 8 kèm danh sách chữ, để lần sau kiểm được. Một con số trong chú thích rồi sẽ
+   có ngày bị trích dẫn.
+2. **`badges.js` không có móc i18n.** `TypingEaseUI.badges` nằm trong `ui.en.js` từ đầu mà KHÔNG
+   file nào đọc, nên huy hiệu hiện tiếng Việt trên cả khoá tiếng Anh — ở bảng `/en/progress/` lẫn
+   ở thông báo "New badge" player.js bật ra giữa bài. Lớp phủ nay đặt ngay trên `LIST` trong
+   `badges.js` nên mọi nơi tiêu thụ cùng đúng; chỉ `title`/`hint` được phủ, còn `icon`/`rules`/
+   `requires`/`id` là cơ chế. Cũng gỡ khoá `typed-20000` trong `ui.en.js` — huy hiệu đó chưa bao
+   giờ tồn tại. `.lang-switch` cũng vậy: có trong markup của 4 trang mà không có một luật CSS nào
+   trong cả repo, nên hiện ra như `<a>` mặc định xanh dương giữa một topbar không có gì xanh dương.
+
+## Còn lại sau đợt này
+- `profile.js` (`typingease-profile-v1`) và kho mục tiêu ngày (`typingease-daily-goal-v1`) KHÔNG
+  tách theo ngôn ngữ. Nên bài/sao/WPM/huy hiệu thì riêng mỗi khoá, còn coach, heatmap từng phím và
+  streak lại dùng chung cho cả máy. Phím dấu tiếng Việt vì thế làm lệch heatmap của người học
+  tiếng Anh trên cùng máy. Là hành vi cũ, nhưng cần một quyết định có ý thức.
+- `luyen-tu-do/free-page.js`: `mountKeyboard()` kết thúc bằng `draw()`, mà `draw()` với target rỗng
+  ghi đè `#free-sample` thành `''` — nên dòng gợi ý dựng sẵn trong HTML bị xoá ngay lúc bàn phím
+  gắn vào, ở CẢ hai ngôn ngữ. Lỗi cũ, chưa sửa vì đụng vào hành vi bản Việt.
+- `/en/how-to-type-faster/`, `/en/what-is-wpm/`, `/en/average-typing-speed/` vẫn là trang chuyển
+  hướng sang bài tiếng Việt. Ba bài viết tiếng Anh còn nợ.
+
+
+# 2026-09-23 — TIER 2: SINH CẢ MỘT KHOÁ HỌC TỪ BỐ CỤC BÀN PHÍM
+
+## Quyết định của chủ site
+Làm RỘNG trước: mở thêm ngôn ngữ dùng bảng chữ Latin bằng cách sinh tự động, thay vì làm SÂU
+(Nhật/Ấn/Ả Rập). Tiếng Tây Ban Nha là ngôn ngữ đầu tiên đi qua đường đó, và là bằng chứng bộ máy
+chạy thật.
+
+## Ý tưởng cốt lõi, và nó đúng tới đâu
+Khoá tiếng Anh có 27 công thức viết tay. Viết 27 bài văn cho mỗi ngôn ngữ mới là thứ không nhân
+bản nổi — nhưng đó cũng không phải phần khó thật. Phần khó thật là THỨ TỰ DẠY PHÍM, và nó SUY RA
+ĐƯỢC: mỗi file trong `data/keyboards/layouts/` đã ghi sẵn `hardware` (ô phím vật lý) và `finger`
+(ngón phụ trách) cho từng phím.
+
+Nên bản kế hoạch trong `scripts/build-course.js` viết bằng VỊ TRÍ, không bằng chữ cái: "bài 4 dạy
+ô KeyA và ô Semicolon". Trên QWERTY Mỹ ra `a` và `;`. Trên bố cục Tây Ban Nha ra **`a` và `ñ`** —
+tức là chữ đặc trưng nhất của tiếng Tây Ban Nha nằm ngay hàng cơ sở dưới ngón út phải, và người
+học chạm vào nó ở bài thứ tư. Trên AZERTY ra `q` và `m`. Trên QWERTZ Đức ra `a` và `ö`.
+Một bản kế hoạch, đúng cho mọi bàn phím Latin, và đúng theo nghĩa mạnh.
+
+## Bốn thứ chỉ lộ ra khi thật sự chạy nó
+1. **Hàng cơ sở AZERTY không có nguyên âm.** `q s d f g h j k l m ù` — bốn bài đầu không viết nổi
+   một từ tiếng Pháp nào, và bài ôn tập thứ năm không có gì để ôn. `promoteVowel` phát hiện bằng
+   cách HỎI KHO TỪ ("tới đây đã viết nổi từ nào chưa"), không bằng một danh sách nguyên âm chốt
+   cứng, rồi kéo bài phím gần nhất lên trước bài ôn tập. Bàn phím có sẵn `a` thì không bị đụng.
+   Đã kiểm 12 bố cục Tier 2: chỉ AZERTY rơi vào cảnh này.
+2. **Chữ có dấu cần phím chết.** á é í ó ú gõ bằng ´ rồi tới nguyên âm, và ´ nằm ở ô Quote — dạy ở
+   u2-l08. Trước khi có `typeableWith(text, keys, deadKeys)`, kho từ tiếng Tây Ban Nha hoặc phải
+   bỏ hết dấu (tức không còn là tiếng Tây Ban Nha) hoặc phải nhét từ có dấu vào bài mà người học
+   chưa gõ nổi. Ô Quote vì thế được đưa vào bài dạy dấu câu cho MỌI bố cục: trên QWERTY nó là dấu
+   nháy, trên bố cục có dấu nó mở ra cả hệ thống dấu. `ñ` thì khác — nó có phím riêng nên tới sớm
+   hơn `está` rất nhiều.
+3. **Giáo trình phải quyết định BÀN PHÍM.** Player luôn dựng bố cục 1 (US Standard) vì đó là
+   `DEFAULTS.keyboardId`. Đúng cho tiếng Anh và tiếng Việt — cả hai dạy trên US QWERTY. Sai hẳn
+   cho tiếng Tây Ban Nha: bài 4 bảo bấm `ñ`, trên một bàn phím không có phím đó. Nay `curriculum`
+   khai `keyboardId` và `loadKeyboardPreferences()` đọc nó khi người dùng chưa tự chọn. Lựa chọn
+   đã lưu vẫn thắng — đổi bàn phím trong Cài đặt là một quyết định có ý thức.
+4. **`generate.mjs` giả định chỉ có hai ngôn ngữ.** Hai dòng hreflang viết thẳng bằng
+   `lang === 'en' ? url : alt`: đúng khi có hai bản, im lặng sai ngay khi có bản thứ ba — trang
+   tiếng Tây Ban Nha sẽ tự khai mình là bản tiếng Việt. Nay có bảng `ALTERNATES`, và nút đổi ngôn
+   ngữ thành DANH SÁCH, vì với ba bản thì "một nút đổi ngôn ngữ" không còn trả lời được "đổi sang
+   cái nào".
+
+## Bộ gác mới, và vì sao nó cần thiết
+`scripts/check-words.js` so mọi từ với bảng chữ mà chính kho từ khai. Bản nháp đầu của
+`data/words/es.js` lọt **bốn mục viết bằng chữ Cyrillic và chữ Hán** (`урна`, `해`, `留`, `ределя`)
+cùng 23 mục trùng lặp. Trên một danh sách 400 từ thì không ai soát bằng mắt ra; một phép so bảng
+chữ cái bắt ngay. Sai chính tả vẫn phải soát tay, nhưng từ viết bằng hệ chữ khác thì máy phải chặn.
+
+## Tách bộ sinh nội dung
+`scripts/lib/content.js` giữ seeded-RNG, mẫu luyện ngón, xếp dòng từ, burst — dùng chung cho cả
+khoá viết tay lẫn khoá sinh tự động. Phép chốt của lần tách: `build-lessons-en.js --check` phải
+báo 27 file tiếng Anh ra BYTE Y HỆT. Nó báo đúng thế, trước và sau.
+
+## Kiểm định
+`scripts/e2e.js` **45/45 PASS** (thêm test 21: khoá tiếng Tây Ban Nha phải bám đúng bố cục — bài 4
+dạy Ñ, và bàn phím trên màn hình phải có phím ấy). `validate-lessons.js` PASS cho cả ba ngôn ngữ.
+`build-course.js --lang es --check` 28 file khớp. `check-words.js --lang es` PASS.
+417 liên kết nội bộ tuyệt đối đều trỏ tới file có thật.
+
+## Giá của ngôn ngữ Tier 2 TIẾP THEO, đo từ chính lần này
+Bộ máy đã xong và dùng lại được nguyên vẹn. Mỗi ngôn ngữ mới còn đúng năm thứ, tất cả đều là DỮ LIỆU:
+- `data/words/<lang>.js` — ~500 từ + 20 câu, soát bằng `check-words.js`. **Đây là phần nặng nhất**,
+  và là phần duy nhất cần người biết ngôn ngữ đó soát lại.
+- `data/courses/<lang>.js` — ~60 mẫu lời dạy.
+- `i18n/ui.<lang>.js` — bảng UI, chép từ `ui.es.js` rồi dịch.
+- Một khối CONFIG trong `bai-hoc/generate.mjs`, và hai trang (`/<lang>/`, `/<lang>/<player>/`).
+- Một dòng trong `data/languages.js` đổi `soon` → `ready`, cộng sitemap.
+Không phải sửa một dòng nào trong `build-course.js` — trừ khi bố cục đó đặt dấu câu ở chỗ khác.
+
+## Đã biết trước cho các bố cục còn lại
+- **AZERTY (fr) và Türkçe** đặt `.` và `,` KHÔNG ở ô Period/Comma: AZERTY để `:` `;` ở đó, Türkçe
+  để `ç` `ö`. Khoá vẫn sinh đúng (dạy theo vị trí), nhưng luật viết hoa đầu câu của generator kiểm
+  `keys.has('.')` nên nó chỉ bật khi bài dạy đúng ô có dấu chấm. Cần xem lại khi tới hai ngôn ngữ đó.
+- **Tiếng Pháp** còn cần dấu nháy (`'` nằm ở hàng số trên AZERTY) cho `l'eau`, `c'est`, `d'accord`.
+
+
+# 2026-09-23 (tối) — PHÁP, ĐỨC, Ý: BA KHOÁ TIER 2 CÙNG LÚC
+
+## Cách chia việc
+Ba ngôn ngữ, ba agent song song, quyền sở hữu file TUYỆT ĐỐI rời nhau: mỗi agent chỉ được đụng
+`data/words/<lang>.js`, `data/courses/<lang>.js`, `i18n/ui.<lang>.js`, `bai-hoc/config.<lang>.mjs`
+và hai trang HTML của mình. Bộ máy (`build-course.js`, `lib/content.js`, `check-words.js`),
+`data/languages.js`, `sitemap.xml`, `scripts/e2e.js` là của chỗ này, không ai khác.
+
+Brief mở đầu bằng **lệnh cấm `git checkout`/`restore`/`stash`/`reset`** — sự cố ngày 22/09 xảy ra
+đúng vì một agent "hoàn tác thay đổi của tôi" trên một cây làm việc bẩn và xoá luôn việc người khác.
+
+## Tách cấu hình trang lộ trình ra file riêng
+`bai-hoc/generate.mjs` từng giữ một object `CONFIG` chung cho mọi ngôn ngữ. Ba người thêm ba ngôn
+ngữ cùng lúc là ba lần tranh chấp trên một file. Nay mỗi ngôn ngữ một file `bai-hoc/config.<lang>.mjs`,
+generate.mjs nạp theo `--lang`. Thêm ngôn ngữ không còn phải sửa file mà ngôn ngữ khác cũng dùng.
+
+## AZERTY — và đây mới là chỗ bộ máy thật sự bị thử
+Tiếng Pháp lộ ra ba thứ mà tiếng Tây Ban Nha không lộ:
+
+1. **Hàng cơ sở không có nguyên âm** (`q s d f g h j k l m ù`). `promoteVowel` đã viết sẵn từ lần
+   trước chạy đúng: nó thử bài `g h` (vẫn không có nguyên âm, hỏng), rồi `e i` (đủ từ), và kéo bài
+   đó lên trước bài ôn tập. Thứ tự thật của khoá tiếng Pháp vì thế là
+   `f j · d k · s l · q m · **e i** · [ôn] · g h · r u`.
+2. **Dấu chấm KHÔNG có ô riêng** — nó là Maj + ô `;`. Không xử lý thì khoá tiếng Pháp không bao giờ
+   dạy dấu chấm và mọi câu đều thiếu dấu kết. Thêm `shiftUnlocks: ['.']`: ký tự mở ra đúng ở bài
+   dạy Maj, và bài đó có một màn riêng cho nó — vì validator đòi mọi phím trong `newKeys` phải được
+   một màn gõ thật giới thiệu.
+3. **Chữ số nằm ở tầng Maj.** Hàng số không-Maj của AZERTY in ra `& é " ' ( - è _ ç à` — tức đúng
+   những chữ có dấu của tiếng Pháp. Thêm `digitsAreShifted: true`: bài đó dạy CẢ HAI TẦNG, và tiêu
+   đề của nó là *"Les accents et les chiffres"* chứ không phải "hàng số" như trên bàn phím Mỹ.
+   Đây là chỗ thiết kế "dạy theo vị trí vật lý" trả công: không ai phải quyết định rằng é è ç à nên
+   dạy ở bài 22 — bàn phím quyết định, và nó quyết định đúng.
+
+**Một màn hỏng lộ ra khi đọc kết quả:** bài Maj chỉ mở ra MỘT ký tự (dấu chấm), nên bộ sinh xếp
+cặp cho ra ba dòng chỉ có `.` — một màn không dạy gì. Sửa: dưới ba ký tự thì gắn chúng vào cuối
+những từ ngắn đã gõ được, ra `notre. donc. lutte. soi.` — đúng thứ người học sẽ gõ thật.
+
+## Cái AZERTY KHÔNG làm được, và nói thẳng ra
+`^` và `¨` nằm ở ô BracketLeft, ngoài kế hoạch — nên **â ê î ô û ë ï ü không gõ được trong khoá
+này**. Không có `être`, `même`, `août`, `hôtel`, `goût`. Đây là mất mát thật. Cách xử lý ĐÚNG là
+loại chúng khỏi kho từ, không phải viết chúng thiếu dấu cho qua: một khoá dạy gõ mà in ra tiếng
+Pháp sai chính tả thì dạy sai, và người học gõ lại cái sai đó ba mươi lần.
+Cùng lý do: `a` chỉ đến ở bài 16 (ô KeyQ là hàng trên, ngón út trái, và kế hoạch dạy hàng trên
+theo thứ tự trỏ → giữa → áp út → út). Kho từ phải sống bằng vốn từ tiếng Pháp không có `a` —
+381/473 từ trong `data/words/fr.js` không có `a`, và đó là chủ ý chứ không phải tình cờ.
+
+## Phép đo thay thế
+Test 21 cũ chốt cứng cho tiếng Tây Ban Nha ("bài 4 phải dạy Ñ"). Một phép đo phải sửa mỗi lần thêm
+ngôn ngữ là một phép đo sẽ không được sửa. Nay nó đọc `data/languages.js`, lọc ra mọi khoá SINH TỰ
+ĐỘNG đã sẵn sàng, và so HÀNG CƠ SỞ THẬT trên màn hình với hàng cơ sở trong file bố cục. Không còn
+hằng số ngôn ngữ nào; thêm khoá mới là nó tự được kiểm.
+
+## Sáu lỗi mà tiếng Đức và tiếng Ý lộ ra — tất cả đều nằm trong bộ máy, không nằm ở dữ liệu
+Đây là phần đáng giá nhất của đợt này. Hai agent làm đúng việc được giao và báo về những thứ
+KHÔNG phải của họ, thay vì lách qua. Cả sáu đều đã sửa.
+
+1. **PHÍM CHẾT KHÔNG ĐƯỢC NỐI DÂY — và không có gì báo.** `scripts/lib/content.js` có
+   `typeableWith(text, keys, deadKeys)` từ hồi làm tiếng Tây Ban Nha, nhưng `build-course.js`
+   KHÔNG BAO GIỜ truyền `deadKeys`. Hậu quả chỉ thấy khi đi đếm: **70 từ có dấu sắc trong
+   `data/words/es.js` không xuất hiện ở MỘT bài nào.** Khoá tiếng Tây Ban Nha đang dạy thứ tiếng
+   Tây Ban Nha không dấu — `esta`/`está`, `si`/`sí`, `mas`/`más` là ba cặp khác nghĩa hẳn.
+   Mọi gate đều xanh suốt thời gian đó, vì không gate nào hỏi "kho từ có được dùng hết không".
+   Sửa: `deadIn(keys)` lọc phím chết ra khỏi chính tập phím đã dạy — không cần đường ống mới —
+   và `validate-lessons.js` học luật chữ ghép (phím chết + chữ gốc, cả hai phải đã dạy).
+   Nay từ có dấu tiếng Tây Ban Nha xuất hiện từ u2-l08 trở đi.
+
+2. **Tiếng Đức không viết hoa danh từ.** Kho từ bắt buộc viết thường (đúng — `haus` phải gõ được
+   ở u1-l08 trong khi Shift tới u2-l09), và bộ sinh chỉ viết hoa chữ ĐẦU CÂU. Nên mọi câu tiếng
+   Đức sinh ra đều sai chính tả: *"Die katze schläft den ganzen tag auf dem sofa."* Với tiếng Tây
+   Ban Nha điều này vô hình; với tiếng Đức nó là lỗi dễ thấy nhất trong cả khoá, và người học gõ
+   lại cái sai đó ba mươi lần. Sửa: `check-words.js` nay CHO PHÉP chữ hoa trong `sentences`
+   (vẫn cấm trong `words`), và `typeableWith` vốn đã đòi Shift cho chữ hoa nên câu viết hoa tự
+   động chỉ xuất hiện sau bài dạy Shift. Kho tiếng Đức viết lại 20 câu đúng chính tả.
+
+3. **`upper('ß')` trả về `'SS'`.** `'ß'.toUpperCase()` là hai ký tự, nên tiêu đề bài u3-l02 tiếng
+   Đức đọc là *"- und SS"* trong khi nội dung của nó vẫn là `ß` đúng. Luật mới: viết hoa mà làm
+   ĐỔI ĐỘ DÀI thì giữ nguyên dạng thường. Cùng lỗi ở widget bàn phím, nhưng qua CSS
+   `text-transform: uppercase` — thêm class `key--nocase` cho những phím như thế.
+
+4. **Tiêu đề bốn phím đọc như một danh sách hỏng**: *"Y und . und , und Ä"*. `keyList` nay nối
+   bằng dấu phẩy và chỉ dùng liên từ cho cặp cuối: *"Y, ., , und Ä"*. Đúng ở mọi ngôn ngữ.
+
+5. **Màn luyện Shift bỏ sót đúng chữ đặc trưng của ngôn ngữ.** Nó lấy 16 chữ đầu sau khi xáo, và
+   một lần xáo không may ném cả Ä lẫn Ö ra khỏi bài Shift của tiếng Đức — trong khi Ä/Ö có Shift
+   chính là thứ bài ấy tồn tại để dạy. Nay chữ ngoài ASCII được xếp lên đầu rồi mới xáo phần còn
+   lại. Không để cho may rủi.
+
+6. **`hasSentences` không tính `shift`.** Nó kiểm `step.newKeys.includes(ch)` — một phép so KÝ TỰ
+   — nên ở bài Shift (`newKeys = ['shift','enter']`) mọi câu viết hoa bị coi là chưa gõ được, và
+   đúng cái bài dạy chữ hoa lại nhận về danh sách từ trong khi lời dạy hứa là câu. Sửa cùng lúc
+   với (1): tập phím sau bước được tính qua bảng `NAMED`, nên `shift` thành `SHIFT` và
+   `typeableWith` nhận ra ngay.
+
+**Cộng thêm một lỗi chất lượng**: mỗi màn gieo bộ ngẫu nhiên riêng, nên hai màn cạnh nhau rút
+trùng câu — một bài từng kết ba màn liên tiếp bằng cùng một câu. Nay có một tập `used` sống theo
+cả bài; đo lại: không bài nào của bốn ngôn ngữ còn một câu lặp.
+
+## Hai giới hạn của bố cục, nói thẳng chứ không giấu
+- **Tiếng Ý không gõ được `è`** — dạng chia của *essere*, gần như là từ hay gặp nhất trong tiếng
+  Ý viết. Nó nằm ở ô `BracketLeft`, cùng `ì` (Equal) và `ù` (Backslash), mà kế hoạch dừng ở
+  `KeyP`/`Semicolon`/`Quote`. Cũng chính lý do đó khiến tiếng Đức mất `ü` (`für`, `über`, `fünf`)
+  và tiếng Pháp mất cả họ dấu mũ. Đây là một lỗ CÓ HỆ THỐNG, không phải chuyện riêng của ngôn ngữ
+  nào, và cách sửa đúng là dạy thêm nhóm phím rìa phải — chưa làm trong đợt này.
+- **Tiếng Ý khai `letterTest` không có `ò à`** (khác tiếng Tây Ban Nha có `ñ`), vì Shift+ò trên
+  bàn phím Ý ra `ç` chứ không ra `Ò` — một dòng `Òò` là dòng không ai gõ được. Đúng, nhưng cách
+  sửa gọn hơn nằm ở `build-course.js`: loại chữ không-Shift-được khỏi riêng màn `shiftpairs`,
+  thay vì loại khỏi toàn bộ `letterTest`.
+
+## Kiểm định cuối
+`scripts/e2e.js` **48/48 PASS** — test 21 nay tự chạy cho cả bốn khoá sinh tự động (es, fr, de, it).
+`validate-lessons.js` PASS cho cả sáu ngôn ngữ. `check-words.js` PASS cho bốn kho.
+`--check` khớp: 28 file mỗi khoá sinh tự động, 27 file khoá tiếng Anh viết tay.
+644 liên kết nội bộ tuyệt đối đều trỏ tới file có thật. `offline-check.js` 3/3 + 1.
+
+## Vá lỗ BracketLeft: bài "cột ngoài của ngón út phải"
+Kế hoạch dừng ở `KeyP` / `Semicolon` / `Quote`, nên sáu ô KHÔNG BAO GIỜ được dạy: `Slash`,
+`Minus`, `Equal`, `BracketLeft`, `BracketRight`, `Backslash`. Trên bàn phím Mỹ đó là `/ - = [ ] \`
+— tiếng Anh không thiếu gì. Trên các bố cục khác thì đó là CHỮ:
+
+| | Equal | BracketLeft | Backslash |
+|---|---|---|---|
+| **Ý** | `ì` | **`è`** | `ù` |
+| **Đức** | `´` | **`ü`** | `#` |
+| **Pháp** | `=` | **`^`** (phím chết) | `*` |
+| **T.B.Nha** | `¡` | `` ` `` (phím chết) | `ç` |
+
+Tức là khoá tiếng Ý không gõ nổi **`è`** — dạng chia của *essere*, gần như là từ hay gặp nhất
+trong tiếng Ý viết. Tiếng Đức mất `für`, `über`, `fünf`, `Glück`. Tiếng Pháp mất cả họ dấu mũ:
+`être`, `même`, `hôtel`, `goût`. **Một lỗ, ba ngôn ngữ** — đúng dấu hiệu của lỗi ở bộ máy chứ
+không ở dữ liệu.
+
+**Cách vá.** Cả sáu ô đều là `finger: 10` trong MỌI file bố cục — chúng vốn là một nhóm: cột
+ngoài cùng của ngón út phải, ngón phải với xa nhất và được luyện ít nhất. Nên bài `Slash + Minus`
+cũ (u3-l02) thành bài **"cột ngoài"** dạy cả sáu. Số bài vẫn là 27, cấu trúc unit không đổi.
+Màn hình theo hình dạng của bài hàng số — một intro cho cả nhóm rồi ba màn cặp — vì mười hai màn
+intro đọc như một danh sách chứ không như một bài học.
+
+Một chi tiết nhỏ mà thiếu thì hỏng cả ý nghĩa: màn "quay lại với từ" của bài đó được **ưu tiên
+theo chính những chữ nó vừa mở ra**. Không có dòng ấy thì một bài dạy `è` lại có màn từ không
+chứa `è` nào.
+
+**Và phải sửa kho từ, không chỉ kế hoạch.** Ba file `data/words/*.js` đang ghi chú rằng những chữ
+ấy "không gõ được" — điều vừa hết đúng. Đã mở `alphabet`, thêm nhóm từ mới (55 từ dấu mũ tiếng
+Pháp, 33 từ `ü` tiếng Đức, 23 từ `è ì ù` tiếng Ý) và viết lại chú thích. Thêm bài mà không thêm
+từ thì bài đó dạy những phím không bài nào dùng — tệ hơn là không dạy.
+
+**Kiểm chứng trong trình duyệt, cả bốn ngôn ngữ**: mở `u3-l02`, quét mọi dòng của từng màn tìm
+chữ mới, rồi gõ thật vào ô nhập. IT `èì ìè`, DE `ü´ ´ü`, ES `` `¡ ¡` ``, FR `donc sommes déjà
+forêts` — tất cả đều gõ được và thanh trạng thái báo đúng ngôn ngữ.
+
+*(Phép kiểm đầu tiên báo tiếng Pháp hỏng, và nó sai: nó chỉ soi DÒNG ĐẦU mỗi màn, còn `forêt`
+nằm ở dòng ba. Một phép đo quá hẹp báo sai về sản phẩm đúng cũng nguy hiểm như phép đo bỏ lọt.)*
+
+**Còn lại sau lần vá này**: `Backquote` (ngón út TRÁI: `` ` `` trên Mỹ, `²` trên AZERTY, `^` trên
+QWERTZ Đức, `\` trên Ý) vẫn chưa dạy. Không ngôn ngữ nào trong bốn khoá hiện tại cần nó.
+Dấu `¨` của tiếng Pháp (ë ï ü) là Shift + `^`, nay về mặt cơ chế đã gõ được nhưng kho từ chưa dùng.
+
+
+# 2026-09-23 (đêm) — KẾ HOẠCH: KHOÁ HỌC THEO HỌ CHUỖI PHÍM, TRANG ĐẦU CHỈ CÒN BÀN PHÍM
+
+## Lỗi thật mà yêu cầu này sửa
+Trên `/`, chọn bàn phím BÉPO thì bàn phím trên màn hình đổi sang BÉPO — nhưng nút "Bắt đầu" vẫn dẫn
+vào khoá AZERTY (`landing.js`: `cta.href = course.href`, bố cục đã chọn không đi vào đâu). Người
+học nhìn bàn phím BÉPO, làm bài dạy vị trí AZERTY. Cùng loại lỗi với tiếng Việt: bố cục 208–212
+("Vietnamese", ă â ê ô đ ở hàng số, gõ trực tiếp) đang hiện khoá Telex — sai hoàn toàn.
+
+## Ma trận khả thi (đo thật, scratchpad/matrix.js)
+Giải bản kế hoạch dạy phím trên từng bố cục của 6 ngôn ngữ có kho từ; đếm từ ở bài ôn tập đầu:
+US QWERTY 26 · **Dvorak 64** · **Colemak 83** · Workman 67 · AZERTY 0 (tự kéo nguyên âm) ·
+**BÉPO 35, không cần kéo** · Neo 32. Mọi bố cục đều chạy, không ô nào thiếu. Các bố cục "lạ" cho
+khoá học GIÀU HƠN QWERTY vì chúng được thiết kế để đặt chữ hay gặp lên hàng cơ sở.
+Nhưng nhiều bố cục giải ra CÙNG một chuỗi: US/UK/CA/Intl y hệt, 4 bố cục Tây Ban Nha y hệt,
+3 QWERTZ Đức y hệt. Sinh mỗi bố cục một khoá là tạo ~20 khoá trùng byte.
+
+## Bốn quyết định của chủ site
+1. **Khoá học = HỌ CHUỖI PHÍM, không phải bố cục.** Bố cục cùng chuỗi 27 bài dùng chung khoá; bàn
+   phím trên màn hình vẫn hiện đúng biến thể. 32 bố cục → 14 họ sinh tự động + vi viết tay = 15 khoá:
+   en: qwerty · dvorak · colemak(+DH) · workman — fr: azerty(+OSS) · canadien · suisse · bépo —
+   it: italiano · mac(`am`) · dvorak — de: qwertz · neo — es: 1 — vi: 1.
+2. **URL họ không-mặc-định: `/fr/bepo/`** (lộ trình) và `/fr/bepo/apprendre/` (player). Họ mặc định
+   giữ nguyên URL đang có. Dữ liệu `data/curriculum.fr-bepo.js`, `data/lessons/fr-bepo/`. Mỗi họ
+   một `canonical`; KHÔNG hreflang giữa các họ (cùng ngôn ngữ, không phải bản dịch của nhau).
+3. **Tiếng Việt tạm chỉ hiện bố cục US (1).** Năm bố cục 208–212 chờ khoá "gõ trực tiếp".
+4. **Làm cả giai đoạn D**: 21 ngôn ngữ chưa có kho từ nhận một bài "hàng cơ sở" luyện ngón (không
+   cần từ), để bấm vào không ra trang trống.
+
+## Thay đổi kỹ thuật bắt buộc
+- Player hiện suy mọi thứ từ `<html lang>` (`player.js:343` → `/data/lessons/${LANG}/`; weak-keys.js
+  cũng vậy). Một trang không phục vụ được hai khoá. Nay đọc mã khoá từ `<html data-course="fr-bepo">`.
+- `build-course.js --lang fr --layout 184` → đặt tên file theo họ.
+- Trang đầu: BỎ `#course` (lộ trình tiếng Anh — nội dung một ngôn ngữ trên trang trung lập ngôn ngữ);
+  lưới bàn phím thành thân trang, MỘT thẻ mỗi họ ghi số biến thể, bấm → thẳng lộ trình họ đó; CTA
+  hero dẫn vào cặp (ngôn ngữ, họ). Thẻ "Tiếp tục" về trang chủ từng ngôn ngữ vì `/` không biết
+  tiến độ của 15 kho khác nhau.
+- Tiếng Anh cần một bảng lời dạy `data/courses/en.js` (~60 câu) cho các họ sinh tự động; họ QWERTY
+  tiếng Anh vẫn dùng 27 công thức viết tay.
+
+## Giai đoạn
+A. player/generator đọc `data-course`, tên file theo họ, `--layout` — ½ phiên
+B. sinh 14 họ + bảng lời dạy en + 8 họ không-mặc-định × 2 trang (bằng script) — 1 phiên
+C. trang đầu, sitemap, mở rộng test 21 cho mọi họ — ½ phiên
+D. bài nếm thử "hàng cơ sở" cho 21 ngôn ngữ — ½ phiên
+
+## Rủi ro biết trước
+Khoá tiếng Anh sinh tự động đọc khác giọng bản viết tay — chấp nhận, người dùng Dvorak đang có
+KHÔNG GÌ CẢ. Neo và BÉPO có tầng Shift/phím chết lạ — qua ma trận rồi nhưng phải kiểm trong trình
+duyệt như bài cột ngoài. Chủ site yêu cầu đổi model trước khi làm.
+
+---
+
+# 2026-09-23 (khuya) — ĐÃ LÀM: KHOÁ HỌC THEO HỌ CHUỖI PHÍM, TRANG ĐẦU, BÀI NẾM THỬ
+
+Kế hoạch ở mục trên đã làm đủ bốn giai đoạn A–D. Chưa commit, chưa push.
+
+## Số họ thật: 18 khoá, không phải 15
+`build-course.js` giờ GIẢI LẠI bản kế hoạch trên từng bố cục của một họ và từ chối build nếu một
+bố cục ra khác phím/khác ngón (`checkFamily`). Chạy nó lần đầu đã bác ba chỗ gộp của bản kế hoạch:
+- **Tây Ban Nha không phải một họ mà ba**: 174 Latin America đặt `{` ở ô Quote và ´ ở BracketLeft
+  (dấu sắc tới ở unit 3, không phải u2-l08); 177 khác 175 ở ô Equal (`¿` thay `¡`).
+- **Colemak-DH ≠ Colemak**: dời G/H/D/V/Z/B/M/C/X.
+- **Swiss German ≠ QWERTZ Đức**: không có ß, cột ngoài khác.
+Danh sách cuối (data/languages.js → `courses`): en (viết tay: 1,120,128,123,125) · en-dvorak ·
+en-colemak · en-colemak-dh · en-workman · es (175,176) · es-latinoamerica · es-sin-teclas-muertas ·
+de (188,189) · de-schweiz · de-neo · it (194,195) · it-mac · it-dvorak · fr (181,183) · fr-canadien ·
+fr-suisse · fr-bepo · vi (viết tay, chỉ 1). 16 khoá sinh tự động, 12 khoá MỚI.
+
+## Cơ chế
+- `data/languages.js` → `courses[]` là nguồn duy nhất: id, name, keyboard (cụm từ trong ngôn ngữ
+  đó, cho tiêu đề), layouts, href, roadmap, handwritten. build-course, generate.mjs, build-family-pages,
+  landing.js, e2e test 21 đều đọc nó.
+- `data/courses/<lang>.js` → `families.<slug>`: lớp phủ công tắc + câu dạy cho họ đó (BÉPO không có
+  shiftUnlocks; it-mac và fr-suisse dạy hai tầng hàng số; câu nói "Ü ở mép phải" bị viết lại cho Neo…).
+- `data/courses/en.js` MỚI: ~90 câu dạy tiếng Anh cho bốn họ sinh tự động.
+- Chỗ trống `{reach}` trong tóm tắt unit 1 (trước đó chốt cứng "G H, E I, R U" — sai trên mọi họ khác).
+- `T.keyNames`: dấu câu trong tiêu đề/tóm tắt gọi bằng tên ("La virgule et C", "Z, el punto, la coma y ´").
+- player.js đọc thư mục bài từ `<html data-course>` → `curriculum.course` → `lang`.
+- keyboard/preferences.js: lựa chọn đã lưu CHỈ thắng khi nằm trong `curriculum.layouts`; hộp cài đặt
+  chỉ liệt kê bố cục của họ. Lựa chọn ngoài họ không bị xoá.
+- Trang: `scripts/build-family-pages.js` (player = bản sao player họ mặc định, 4 chỗ đổi; lộ trình =
+  `generate.mjs --course`; chèn sitemap). Lộ trình họ: canonical riêng, KHÔNG hreflang.
+- `node scripts/build-course.js` không tham số = build lại mọi khoá sinh tự động; `--check` kiểm cả 16.
+
+## Lỗi cũ tìm thấy dọc đường, đã sửa
+- **Mọi khoá sinh tự động hiện `<b>` nguyên văn** ("Pulsa <b>F</b> para continuar"): player escape
+  `text`/`hint`. Máy sinh giờ bỏ thẻ khi ghi. Đổi nội dung bài của es/de/it/fr mặc định (chỉ phần chữ).
+- `hasSentences` đòi ≥ 3 câu (BÉPO chết ở u2-l05 với "có 1 câu là đủ"); bài kiểm tra 4 dòng đòi ≥ 4.
+
+## Trang đầu `/`
+Bỏ `#course` (lộ trình tiếng Anh) và continue card tiếng Anh. Lưới thành thân trang: MỘT THẺ MỖI KHOÁ
+(link thẳng tới lộ trình), rồi chip cho 21 ngôn ngữ chưa có khoá. CTA đi theo BỐ CỤC đang chọn —
+lỗi gốc (BÉPO → khoá AZERTY) đã có test ở 7c. "Tiếp tục" đọc kho tiến độ của chính khoá đó
+(`progressKeyOf` trong landing.js — CÙNG luật với build-course.js, sửa một bên phải sửa bên kia).
+
+## Tiếng Việt chỉ US
+`layouts: [1]` ở cả languages.js lẫn curriculum.vi.js. Test 17 (đổi bố cục) chuyển sang khoá tiếng Anh;
+test 17d mới: đã lưu 208 mà vào /hoc/ vẫn vẽ US.
+
+## Giai đoạn D — bài nếm thử
+`scripts/build-tasters.js`: 21 khoá `<code>-taster`, một bài "hàng cơ sở" (25 màn, không cần từ)
+trên bố cục ĐẦU TIÊN của ngôn ngữ, trang `/try/<code>/` (noindex, giao diện tiếng Anh). CTA trang đầu
+của ngôn ngữ chưa có khoá: "Try the home row on this keyboard".
+
+## Còn thiếu / biết trước
+- Trang tiến độ (/tien-do/, /en/progress/) chỉ đọc kho của họ mặc định; tiến độ BÉPO, Dvorak… không hiện ở đó.
+- Bài nếm thử chỉ có cho bố cục đầu của mỗi ngôn ngữ (Arabic 110, không có 141).
+- Cédille chết của fr-canadien không dạy: keyboard.js chưa biết tô ¸+c, nên từ có ç tự rơi khỏi khoá.
+- Lời dạy tiếng Anh sinh tự động đọc khác giọng bản viết tay — đã chấp nhận ở kế hoạch.
+- Chưa ai đọc bản ngữ các lớp phủ families (fr/es/de/it) — nên nhờ người bản ngữ đọc lại trước khi push.
+
+---
+
+# 2026-09-24 — GIAI ĐOẠN 1 + 2 SAU KHI NGHIÊN CỨU typingstudy.com
+
+typingstudy.com dạy HẾT mọi ký tự của từng bố cục (15 bài cho US, 18 cho Đức/Tây Ban Nha, 24 cho
+BÉPO, 25 cho Telex/VNI) và cho chọn khung 104/105 phím. Đo lại khoá của mình: mỗi khoá còn 8–27 ký
+tự chưa dạy (khoá Đức không có `? ! :`), và KHÔNG bố cục nào có phím 105. Chủ site chọn sửa hai lỗ
+này trước khi mở rộng ngôn ngữ. Chỉ học cấu trúc, không lấy nội dung chữ của họ.
+
+## Giai đoạn 2 — phím 105 (ISO)
+- `scripts/add-iso-key.js`: bảng 31 bố cục (mã ≥ 100) + ký tự Windows ở ô `IntlBackslash`
+  (`< >`; `\ |` cho UK/ABNT2; `` ` ~ `` cho UK Mac; `« »` Canada; `ê` BÉPO; `] [` Hà Lan). Chèn sau
+  Shift trái, Shift trái ngắn đi 45px, ghi `geometry.physicalStandard = 'iso'` (+ index.json).
+  File nguồn layouts.json không còn, nên đây là sửa thẳng dữ liệu; script chạy lại được, có `--check`.
+- `keyboard/keyboard.js` `shapedLayout()` + tuỳ chọn `keyboardShape` (auto/ansi/iso) trong Cài đặt,
+  dịch 6 ngôn ngữ. ISO trên bố cục US = bản sao phím Backslash (đúng như Windows).
+- `keyboard/hands-pose-map.js`: cột tư thế tay BỎ QUA ô IntlBackslash — không thì Z, X, C… lệch một
+  cột và tay 3D với sang phím bên cạnh. Đã kiểm: `w` trên AZERTY = tư thế của `z` trên US.
+
+## Giai đoạn 1 — unit "mọi phím còn lại"
+- `scripts/lib/unit-symbols.js` (dùng chung): ký tự bố cục có mà NỘI DUNG các bài chưa từng dùng →
+  chia bài theo hàng số / tay trái / tay phải (≤ 4 ký tự), mỗi ký hiệu đặt đúng chỗ nó hay đứng
+  (`mond!`, `(prüfung)`, `27 = 7`, `57°`, `$12`), rồi một bài ôn + một bài kiểm tra 120 s.
+- Phím chết (`´ ` ^ ~ ¨ ˇ ¸`) KHÔNG dạy trừ khi khoá khai `symbolsLive` (en và vi: `^ ` ~`; it: `^`).
+  AltGr chưa dạy (player chưa biết chỉ AltGr).
+- Khoá sinh tự động: build-course.js gọi nó sau bài 27 → unit 4, 5–9 bài tuỳ bố cục.
+- Khoá viết tay: `scripts/build-unit-symbols.js` ghi vào ba cặp dấu `<auto:symbols:*>` trong
+  curriculum.en.js / curriculum.vi.js; phần viết tay không bị đụng. en: unit 4 (7 bài, 19 ký tự);
+  vi: unit 5 (8 bài, 21 ký tự, gõ ascii, từ không dấu lấy từ chính các bài của khoá — lọc bỏ mảnh
+  luyện ngón bằng luật âm tiết: có nguyên âm, không f j w z).
+- Số bài giờ khác nhau theo khoá (BÉPO 32 … Ý 36, vi 43). `build-family-pages.js` ghi `lessons`/
+  `units` của từng khoá vào data/languages.js từ chỉ mục; trang đầu đọc từ đó. Số ghi cứng trên các
+  trang chủ ngôn ngữ đã sửa tay.
+- Máy sinh giờ xoá file bài thừa khi số bài giảm (trước đó để lại "file lạc").
+
+## Lệnh
+`node scripts/add-iso-key.js --check` · `node scripts/build-course.js` · `node scripts/build-unit-symbols.js`
+· `node scripts/build-family-pages.js` · `node bai-hoc/generate.mjs --lang <x>` (6 ngôn ngữ).
+
+## Điều phối (2026-09-24): 2 agent song song, mỗi agent chỉ sở hữu file của mình, cấm git checkout
+- Agent test: thêm e2e 22a–22e (phím 105 AZERTY, ansi/iso, hộp Cài đặt, chơi hết một màn unit 4,
+  tư thế tay w=z). Toàn bộ: 67/67 PASS, offline 3/3.
+- Agent rà soát văn bản fr/es/de/it: sửa cả MẪU CÂU DÙNG CHUNG, không chỉ phần họ/ký hiệu — "zwei
+  neue Tasten" cho bài bốn phím, "revient à le majeur" (~40 chỗ), "coger" (tục ở Mỹ Latinh), "Mayús"
+  lệch với "Shift" của phần còn lại, v.v. Thêm `':'` vào keyNames es/de.
+- Còn để ngỏ: tóm tắt unit 1 có dấu câu đọc lủng củng ("puis la virgule et C, P D et O V"); fr-suisse
+  chưa có câu riêng cho cột ngoài (è, ¨ chết); AZERTY congrats.edge nói "không thiếu gì" dù ë ï ü chưa
+  dạy; phím chết và AltGr chưa dạy ở đâu cả; `«` của fr-canadien (ô ISO) chưa đối chiếu với bàn phím thật.
+
+---
+
+# 2026-09-24 — GIAI ĐOẠN 3, NHÓM 1: INDONESIA, MÃ LAI, FILIPINO, SWAHILI (chưa commit)
+
+Bốn bố cục 115–118 y hệt US QWERTY (chỉ khác ở chỗ ghi chữ hoa tầng Shift), nên máy sinh chạy
+nguyên. Mỗi ngôn ngữ một agent, song song, mỗi agent chỉ sở hữu file của ngôn ngữ đó (kho từ, lời
+dạy, ui.<lang>.js, config roadmap, trang chủ + player); lead giữ mọi file dùng chung và ghép cuối.
+
+| khoá | URL | từ | câu | bài |
+|---|---|---|---|---|
+| id | /id/ · /id/pelajaran/ · /id/belajar/ | 633 (532 dùng) | 21 | 35 |
+| ms | /ms/ · /ms/pelajaran/ · /ms/belajar/ | 680 (578 dùng) | 21 | 35 |
+| fil | /fil/ · /fil/aralin/ · /fil/matuto/ | 805 (634 dùng) | 22 | 35 |
+| sw | /sw/ · /sw/masomo/ · /sw/jifunze/ | 614 (534 dùng) | 21 | 35 |
+
+Filipino: bố cục 117 không có ñ → kho không có từ ñ. Swahili: từ có dấu nháy (ng'ombe) vào từ u2-l08.
+`/sw/` (thư mục) không đụng `/sw.js` (service worker) — đã kiểm; đừng thêm rewrite `/sw` → `/sw.js`.
+
+## Sửa dùng chung dọc đường
+- `slice(0, 2)` trên `<html lang>` (player, badges, progress-store, weak-keys) biến `fil` thành `fi` →
+  nay cắt ở `-`.
+- weak-keys.js chỉ đọc `drill` của kho từ → bài phím yếu của es/fr/de/it lấy TỪ TIẾNG VIỆT. Nay
+  rơi về `words` khi kho không có `drill`.
+- Màn "giờ dồn vào phím X" (wordsOne) nói về q/x trong khi không từ nào chứa chúng (ms/id) → chọn
+  phím mới đầu tiên có ≥ 4 từ; không có thì là màn luyện ngón. Đổi đúng một bài cũ (fr u2-l04), và
+  bài đó cũng từng mắc đúng lỗi này.
+- `aria-label` bàn phím chốt cứng tiếng Việt → đọc `keyboard.boardAria/keypadAria` từ ui.<lang>.js.
+- Bố cục LẺ của ngôn ngữ đã có khoá (ms 119 Jawi): build-tasters.js sinh `/try/<code>-<id>/`, trang
+  đầu dẫn tới đó thay vì khoá Latin. Bài nếm thử cũ của ngôn ngữ vừa có khoá tự bị xoá.
+- `data/languages.js`: bốn mục vẫn nằm trong nhóm chú thích "keyboard now, course later" dù đã ready
+  — chỉ là thứ tự trong file, landing.js tự xếp lại.
+
+Kiểm chứng: 24 khoá validator PASS · check-words 8 kho PASS · build-lessons-en 27 khớp · e2e 71/71 ·
+offline 3/3.
+
+---
+
+# 2026-09-24 — Topbar: bỏ ô đổi ngôn ngữ, thay bằng một ô "Trang chủ" về `/`
+
+Theo yêu cầu chủ site. Mười ngôn ngữ làm dãy ô EN/VI/ES… dài ra mà vẫn không trả lời được "đổi
+sang cái nào"; trang `/` (chọn ngôn ngữ + bàn phím) trả lời được. `.lang-switch` không còn trên trang
+nào; `.home-switch` (base.css, cao 46px bằng `.secondary-button`) nhãn theo `<html lang>`: Home, Trang
+chủ, Inicio, Accueil, Startseite, Home, Beranda, Laman utama, Home, Mwanzo.
+- Trang lộ trình: `bai-hoc/generate.mjs` (bảng HOME_SWITCH); `s.switches` trong config.*.mjs bỏ không dùng.
+- `/` không có ô này (nó sẽ trỏ về chính nó); header-actions để trống.
+- Sáu trang bài viết/ứng dụng tiếng Việt từng có "← Trang chủ" → `/vi/` trên topbar: thay bằng ô mới
+  về `/`, để một nhãn không mang hai nghĩa. Logo và breadcrumb vẫn về `/vi/`.
+- hreflang trong <head> giữ nguyên — đó là cho máy tìm kiếm, không phải cho người đọc.
+- e2e: 11c bỏ qua `.home-switch`; 11d đổi tên; 11f mới kiểm mọi trang trong sitemap. 72/72 PASS.
+
+---
+
+# 2026-09-24 — `/` đổi TOÀN BỘ ngôn ngữ theo bộ chọn ngôn ngữ ("Choose a language" / "Chọn ngôn ngữ")
+
+Theo yêu cầu chủ site. `landing-i18n.js` (mới) giữ chữ của trang đầu cho 10 ngôn ngữ có khoá, cùng
+`routes` từng ngôn ngữ thật sự có (progress/test/free/guide; null = ẩn mục đó). landing.js
+`applyLanguage()` đổi `<html lang>`, `<title>`, h1, đoạn mở, nhãn bộ chọn, nút + ghi chú, nhóm trong
+danh sách, khối lưới, lối tắt (ẩn ô/khối khi ngôn ngữ chưa có trang), menu trên, chân trang. Ngôn
+ngữ chưa có bảng (ar, hi…) → tiếng Anh. Lựa chọn được nhớ (khoá cũ `typingease-language-v1`), nên
+lần sau trang mở thẳng bằng ngôn ngữ ấy.
+- HTML gốc của `/` vẫn là tiếng Anh: đó là bản Google đọc, và hreflang trong <head> không đổi.
+- Bỏ dải "This site is available in …": trang tự đổi ngôn ngữ rồi, dải đó thừa.
+- sw.js v5: landing-i18n.js vào PRECACHE; quét cache v4 (còn ô EN/VI/ES cũ).
+- e2e 7c: chọn tiếng Pháp → lang=fr, tiêu đề tiếng Pháp, menu về /fr/lecons/ và không còn /en/.
+  Toàn bộ 72/72 PASS, offline 3/3.
+- Câu chữ của 8 ngôn ngữ ngoài en/vi là bản tôi viết, chưa ai bản ngữ đọc.
+
+---
+
+# 2026-09-24 — 16 ngôn ngữ còn lại có khoá: nl pl pt tr ru uk ar fa ur he hi bn th zh ja ko
+
+Theo yêu cầu chủ site ("làm tiếp các ngôn ngữ còn lại"). Mỗi ngôn ngữ một agent (kho từ
+`data/words/<L>.js`, `data/courses/<L>.js`, `i18n/ui.<L>.js`, `bai-hoc/config.<L>.mjs`, trang
+`/<L>/` và `/<L>/<học>/`); tôi giữ file chung. 26/27 ngôn ngữ nay 'ready', 54 khoá (28 họ bàn phím).
+- Hạ tầng mới trong build-course.js/player: CHỮ KHÔNG HOA-THƯỜNG (`caseless`: bài Shift dạy tầng
+  Shift), RTL (`textDir()`, `dir="rtl"` cho trang lộ trình, bàn phím luôn LTR, letter-spacing 0 cho
+  chữ nối nét), BỘ GÕ HANGUL (`hangul-match.js`, composer thứ hai cạnh Telex; `scripts/test-hangul.js`),
+  hoa/thường theo locale (İ ı tiếng Thổ), `sentenceEnd` (। Hindi/Bengali), `listSep` (، ), chữ số bản
+  ngữ trong unit "mọi phím còn lại", ký tự trình bày Ả Rập (ﻻ) quy về ل ا khi so.
+- Trang đầu: `landing-i18n.js` thêm 16 bảng (26 ngôn ngữ); chọn ngôn ngữ RTL thì cả `<html dir>` lật;
+  fa/bn điền số bài bằng chữ số bản ngữ (Intl.NumberFormat).
+- `/ja/` không còn chuyển về `/`: nay là trang nhà khoá tiếng Nhật (romaji qua IME). e2e 11b sửa theo.
+- sitemap: 32 URL mới (trang nhà + lộ trình) + lộ trình các họ phụ.
+- Kho từ tiếng Anh: bỏ dấu phẩy trong hai câu (check-words bắt); 3 file en-* sinh lại.
+- build-course: bài chỉ có MỘT phím trọng tâm thì cụm luyện nhanh ghép nó với các phím đã học (trước
+  đó ra 3 cụm, validator đòi ≥4 — hi-bolnagri u2-l06).
+- CHƯA LÀM: zh-tw (Zhuyin: IME đổi phím thành chữ Hán, chưa có cách chấm). zh chỉ Pinyin trên US.
+- Giới hạn biết: AltGr và phím chết trên tầng Shift chưa dạy (pl programmer, pt â ê); nhãn phím Hebrew
+  hiển thị chưa đẹp; ngắt dòng chữ Thái (không có dấu cách) là thẩm mỹ. Toàn bộ câu chữ 16 ngôn ngữ do
+  agent viết, chưa người bản ngữ nào đọc.
+
+---
+
+# 2026-09-24 — Trang tiến độ cho mọi ngôn ngữ (trước chỉ có vi và en)
+
+Theo yêu cầu chủ site ("thêm trang tiến độ vào các ngôn ngữ còn thiếu, cho đồng bộ"). 24 trang mới
+`/<lang>/<slug>/` (es/progreso, fr/progres, de/fortschritt, ru/progress, ar/taqaddum, ja/shinchoku…).
+- `scripts/build-progress-pages.mjs` sinh cả 25 trang (gồm /en/progress/, trước viết tay) từ ba
+  nguồn: `tien-do/text/<lang>.mjs` (chữ tĩnh), `progress` trong `i18n/ui.<lang>.js` (chữ JS, cũng
+  dùng để in giá trị ban đầu), `bai-hoc/config.<lang>.mjs` (menu/chân trang/khẩu hiệu — khớp trang
+  lộ trình). `--check` so byte. /tien-do/ vẫn viết tay; máy sinh chỉ thay khối hreflang của nó để
+  26 trang khai hreflang qua lại.
+- MỘT trang cho mọi khoá của ngôn ngữ: `?course=fr-bepo` chọn khoá (mỗi khoá một kho tiến độ,
+  `progressKey`), một script nhỏ nạp `data/curriculum.<khoá>.js` bằng document.write TRƯỚC
+  progress-store.js/badges.js. Ngôn ngữ nhiều khoá có hàng nút chọn khoá. Lộ trình của các họ và
+  thông báo huy hiệu trong player trỏ về trang kèm `?course=` của khoá đó. Tiếng Anh cũng được
+  hàng chọn khoá (QWERTY/Dvorak/Colemak/Colemak-DH/Workman).
+- Nối dây: `routes.progress` trong 24 ui.<lang>.js, 24 config.<lang>.mjs (de thêm mục menu), bảng
+  landing-i18n.js; mục "Tiến độ" trên menu + chân trang 24 trang nhà `/<lang>/`; sitemap +24.
+  `bai-hoc/home-switch.mjs` tách bảng nhãn "Trang chủ" để hai máy sinh dùng chung. sw.js v7.
+- Chữ 24 ngôn ngữ do 8 agent viết (dùng lại thuật ngữ sẵn có của từng ngôn ngữ), chưa ai bản ngữ đọc.
+  Còn lệch nhỏ: số bài/WPM trên trang fa/bn vẫn in chữ số Latin ở vài chỗ do JS chung điền.
+
+---
+
+# 2026-09-25 — Tiếng Trung phồn thể (Đài Loan): khoá Chú âm, gõ theo VỊ TRÍ phím
+
+Chủ site chọn hướng "Chú âm, tắt bộ gõ". Bộ gõ Chú âm biến phím thành chữ Hán ngay khi gõ nên trang
+không đọc được phím vừa bấm; người học để bộ gõ ở chế độ tiếng Anh (Shift) và trang tự đổi.
+- `typeByPosition: true` (data/courses/zh-tw.js → data/curriculum.zh-tw.js). player.js: keydown trên
+  ô nhập tra `event.code` trong bố cục của khoá (215) và chèn ký tự Chú âm (KeyA → ㄇ), không phụ
+  thuộc bố cục hệ điều hành. Phím đang soạn bộ gõ (`isComposing`/"Process") thì để nguyên và hiện
+  `player.positionNote` (bảo tắt bộ gõ). Nội dung khoá là CHÚ ÂM (ㄋㄧˇㄏㄠˇ), không phải chữ Hán.
+- 31 bài / 256 màn trên bố cục 215; kho 609 từ, 24 câu (agent viết, chưa người bản ngữ đọc). Dấu thanh
+  (ˇ ˋ ˊ ˙ ở hàng số) chỉ đến ở Unit 3 theo kế hoạch hàng phím chung — Unit 1–2 chỉ có âm tiết thanh 1.
+  Không luyện bước chọn chữ Hán (giới hạn đã chấp nhận).
+- `<html lang>` của trang sinh: mã vùng viết hoa (zh-tw → zh-TW) ở generate.mjs và
+  build-progress-pages.mjs. /try/zh-tw/ tự bị xoá (build-tasters). e2e 22f gõ một màn u3 có dấu thanh
+  chỉ bằng mã phím vật lý. sw.js v8. 27/27 ngôn ngữ có khoá.
+
+---
+
+# 2026-09-25 — Logo TypingEase về `/` trên mọi trang
+
+Theo yêu cầu chủ site: bấm logo là về trang chọn ngôn ngữ và bàn phím, không còn về trang nhà của
+từng ngôn ngữ (/fr/, /vi/…). 218 liên kết `.brand` trong 109 trang HTML, cộng hai máy sinh
+(bai-hoc/generate.mjs, scripts/build-progress-pages.mjs) — cả topbar lẫn chân trang. Trang nhà từng
+ngôn ngữ vẫn tới được qua menu ("Luyện gõ"/"Practice"…) và breadcrumb. e2e 11c: loại `.brand` khỏi
+luật "không trỏ về /" và kiểm logo phải về `/`. sw.js v9.
+
+---
+
+# 2026-09-25 — Đợt 0 SEO: dọn sạch trước khi tăng trưởng (chống bị Google coi là spam)
+
+Theo yêu cầu chủ site, sau khi đối chiếu bảng từ khoá của chủ site với chính sách spam của Google.
+- 27 trang tiến độ → `noindex, follow`, bỏ hreflang, ra khỏi sitemap (Google chỉ thấy 27 bản trạng
+  thái trống cùng khuôn — dạng trang cửa ngõ). build-progress-pages.mjs; /tien-do/ sửa tay.
+- 6 trang chuyển hướng cũ (/en/what-is-wpm/…, /ja/typing-test/…) trỏ về trang CÙNG ngôn ngữ, không
+  sang bài tiếng Việt; bỏ câu "TypingEase nay chỉ còn bản tiếng Việt". e2e 11b sửa theo.
+- Tiêu đề ≤ 60 ký tự (CJK ≤ 32), mô tả 120–155 (CJK 50–80), mỗi trang một từ khoá chính lấy từ bảng
+  của chủ site (L3 cho trang nhà/lộ trình, L2 cho trang test), không nhồi, không hứa điều trang
+  không có. 5 agent viết theo ngôn ngữ, sửa ở nguồn (config.<lang>.mjs, <lang>/index.html).
+  /tr/ đang ghi 35 bài, thật là 34 — đã sửa.
+- `scripts/lib/seo-head.mjs`: khối OG + Twitter + JSON-LD giữa `<!-- seo:head -->`. JSON-LD chỉ khai
+  điều có thật: WebSite + Organization ở `/`, Course ở trang lộ trình, WebApplication ở hai trang
+  test; không AggregateRating/Review/FAQ mới (FAQPage cũ của 2 bài tiếng Việt giữ nguyên — nội dung
+  có thật trên trang). bai-hoc/generate.mjs in khối cho lộ trình; `scripts/build-seo-head.mjs` in cho
+  trang viết tay, dựng cụm hreflang đủ 27 trang nhà (trước chỉ một chiều), điền `<lastmod>` thật
+  (ngày commit nếu file sạch, không thì ngày sửa file). `--check` có. build-family-pages.js nhận
+  dòng sitemap có lastmod.
+- Ảnh chia sẻ `assets/og-image.png` 1200×630, không chữ ngôn ngữ nào ngoài logo (phím nhiều hệ chữ).
+- e2e 11g canh các luật trên. 106/106 PASS. sw.js v10.
+- Chưa làm (các đợt sau): trang test tốc độ cho từng ngôn ngữ (Đợt 1), người bản ngữ đọc lại.
+
+---
+
+# 2026-09-25 — Đợt 1 SEO, đợt tung thứ nhất: trang test tốc độ es / pt / fr / de
+
+Nhắm nhóm từ khoá lớn nhất trong bảng của chủ site (L2 "test tốc độ", L4 "test 1/5/10 phút") mà
+trước đây chỉ vi và en có trang.
+- Công cụ (kiem-tra-toc-do-go/typing-test.js, dùng chung): nhiều đoạn văn (`T.passages`) xáo rồi nối
+  tiếp, gần hết thì nối thêm vòng nữa; thời lượng đọc từ nút trên trang, nay 15 s, 30 s, 1, 2, 3, 5,
+  10 phút; đồng hồ phút:giây; khung chữ 5 dòng cố định, cuộn theo dòng đang gõ (khoảng đệm là viền
+  trong suốt để không lộ nửa dòng); dấu cách không còn là &nbsp; nên chữ không bị cắt giữa từ (lỗi
+  có từ bản cũ); đơn vị theo ngôn ngữ `T.wpmUnit` (PPM, MPM); lịch sử riêng từng ngôn ngữ (vi/en giữ
+  khoá cũ). vi và en: thêm 7 đoạn văn mỗi bên, sửa số bài cũ (35→43 vi, 27→34 en).
+- `scripts/build-test-pages.mjs`: MỘT trang mỗi ngôn ngữ, chọn thời lượng bằng nút — không bao giờ một
+  trang mỗi thời lượng (trang cửa ngõ). Bật một ngôn ngữ = có `kiem-tra-toc-do-go/text/<lang>.mjs` +
+  bảng `test` trong ui.<lang>.js (≥ 4 đoạn). In khối OG/JSON-LD WebApplication, cụm hreflang chung với
+  /kiem-tra-toc-do-go/ và /en/typing-test/ (máy sinh thay khối hreflang của hai trang viết tay).
+- URL: /es/test-de-mecanografia/, /pt/teste-de-digitacao/, /fr/test-de-frappe/, /de/tipptest/.
+  routes.test nối ở ui/config/landing; menu + chân trang của trang nhà, lộ trình, tiến độ; sitemap.
+- Chữ 4 ngôn ngữ (9–10 đoạn văn, 6 mục bài viết, FAQ) do 4 agent viết, chưa người bản ngữ đọc.
+- e2e 11h: mọi trang test theo ngôn ngữ trong sitemap gõ thật 15 giây ra kết quả đúng đơn vị, bài
+  10 phút nối thêm văn bản. 107/107 PASS. sw.js v11.
+- Đợt tung tiếp theo (đề xuất): it, nl, pl, tr, ru (gõ trực tiếp, không bộ gõ). ja/zh/zh-tw cần cách
+  chấm riêng cho bộ gõ; ko phải kiểm hành vi âm tiết đang ghép trước khi bật.
+
+---
+
+# 2026-09-25 — Hoàn thiện sau Đợt 1: nội dung đợt 2 viết sẵn, CLS, breadcrumb, câu chữ cũ
+
+- Đợt tung 2 (it, nl, pl, tr, ru) VIẾT SẴN nhưng chưa bật: `live: false` trong kiem-tra-toc-do-go/text/
+  <lang>.mjs; build-test-pages.mjs bỏ qua và in "chờ đợt sau". Bật = xoá dòng đó, nối routes.test
+  (ui/config/landing/menu trang nhà), thêm sitemap, chạy các máy sinh. wpmUnit: it PPM, tr KDK, ru сл/мин.
+- CLS (điện thoại, 4G chậm): `/` 0,354 → 0,052 (giữ chỗ cho bàn phím xem trước bằng aspect-ratio khi
+  chưa nạp), `/fr/` 0,101 → 0,033 và `/vi/` 0,114 → ~0 (home.css: main cao ≥ 1 màn hình, giữ chỗ cho
+  unit-rail/unit-teasers khi còn trống). LCP các trang được index 1,0–1,6 s.
+- BreadcrumbList JSON-LD cho trang có breadcrumb HIỂN THỊ (trang test sinh + /en/typing-test/,
+  /kiem-tra-toc-do-go/…); không trùng với các bài tiếng Việt đã tự khai.
+- Câu "15, 30, 60 hoặc 120 giây" đã sai từ khi có bài 10 phút: sửa ở 27 bảng landing-i18n, ui.en.js,
+  script.js, index.html, vi/index.html, config.en/vi.mjs, luyen-tu-do, tien-do.
+- sw.js v12. 107/107 PASS.
+
+---
+
+# 2026-09-25 — Trang trò chơi gõ phím (phần 1: vi + en)
+
+Theo yêu cầu chủ site ("làm cả trang game, nghiên cứu và lên kế hoạch"). Đối thủ: chữ rơi (ZType,
+Falling Words), đua gõ nhiều người (TypeRacer, Nitro Type — cần máy chủ), kho game trẻ em (typing.com,
+KidzType). Điểm khác của TypingEase: trò chơi chạy trên ĐÚNG bố cục và ngôn ngữ của khoá học.
+- MỘT trang mỗi ngôn ngữ, ba trò chọn bằng thẻ (không tách trang theo trò/độ khó — trang cửa ngõ):
+  Mưa chữ (từ rơi, gõ + Space để phá, 3 mạng, lên màn mỗi 8 từ), Đua với bóng (đua với xe chạy đều ở
+  20–80 WPM hoặc kỷ lục của chính mình — KHÔNG có người chơi khác và trang nói rõ), Săn phím (60 giây,
+  phím sáng trên bàn phím ảo của khoá, nhận theo event.code nên đúng với mọi bố cục hệ điều hành).
+- tro-choi/games.js + games.css (dùng lại khung trang test); scripts/build-game-pages.mjs sinh trang
+  từ tro-choi/text/<lang>.mjs; kho từ in thẳng vào trang (vi: kho có dấu gõ Telex trong file chữ; ngôn
+  ngữ khác: data/words/<lang>.js của khoá). Tung theo đợt, `live: false` như trang test.
+  JSON-LD WebApplication/GameApplication + breadcrumb. Kỷ lục chỉ localStorage, không bảng xếp hạng.
+- /tro-choi/ và /en/typing-games/: menu + chân trang (config vi/en → lộ trình, họ, tiến độ; / và /vi/
+  tĩnh + landing-i18n routes.games), sitemap.
+- Sửa kèm: `.inline-link` trên trang test trước giờ ra màu xanh mặc định (kiểu chỉ có trong article.css).
+- e2e 11i chơi thật cả ba trò trên hai trang. 108/108 PASS. sw.js v13.
+- Kế hoạch: đợt game 2 = ko (타자 게임), ja (タイピングゲーム), th (เกมฝึกพิมพ์) — có từ khoá riêng trong bảng
+  của chủ site, nhưng cần kiểm bộ gõ (ko ghép âm tiết, ja romaji) trước; đợt 3 = es pt fr de (trùng
+  ngôn ngữ đã có trang test). Chế độ mới cân nhắc sau: lọc từ theo phím đã học trong khoá.
+
+---
+
+# 2026-09-25 — Hình minh hoạ cho trang trò chơi
+
+Theo góp ý chủ site ("có hình ảnh minh hoạ dễ hiểu thì hay"). `scripts/lib/game-art.mjs`: SVG vẽ tay,
+in thẳng vào trang (không file ảnh, không thư viện, KHÔNG chữ trong hình → một bộ hình cho mọi ngôn
+ngữ): ảnh thu nhỏ 120×72 trên ba thẻ chọn trò; hướng dẫn ba bước có biểu tượng ở đầu mỗi trò (chữ ở
+`how` trong tro-choi/text/<lang>.mjs, máy sinh báo lỗi nếu thiếu); cảnh nền Mưa chữ (mây, cỏ); xe đua
+SVG thay cho viên thuốc trong Đua với bóng. Tất cả aria-hidden. CLS trang game vẫn 0,002. sw.js v14.
+
+---
+
+# 2026-09-25 — Trò chơi cho 25 ngôn ngữ còn lại: nội dung đủ cả, bật đợt đầu es/pt/fr/de
+
+Theo yêu cầu chủ site ("làm thêm các ngôn ngữ khác", "điều phối agent cho nhanh"): 5 agent viết song
+song tro-choi/text/<lang>.mjs cho 25 ngôn ngữ, mỗi file nói đúng cách gõ của khoá (phím chết, AltGr
+tiếng Ba Lan, bộ gõ Hàn ghép âm tiết, romaji tắt IME, pinyin, Chú âm theo vị trí phím, thứ tự nguyên âm
+Thái, chữ giống nhau Ả Rập/Ba Tư/Urdu, chữ cuối Hebrew…). Kho từ = data/words/<lang>.js của khoá.
+- BẬT: es /es/juegos-de-mecanografia/, pt /pt/jogos-de-digitacao/, fr /fr/jeux-de-dactylographie/,
+  de /de/tippspiele/ (menu, chân trang, landing, trang nhà, sitemap, hreflang tự động).
+- CHỜ (`live: false`, đã thử trong Chrome qua `build-game-pages.mjs --preview` → _preview/, đã xoá): it
+  ar bn zh zh-tw nl fil he hi id ja ko ms fa pl ru sw th tr uk ur — cả 21 trang: Mưa chữ phá được từ,
+  Săn phím tính điểm, RTL đúng chiều, không lỗi console, không tràn ngang.
+- Bật một đợt: `python <scratchpad>/enable-games.py it:Giochi nl:Spellen …` (bỏ `live`, nối
+  config/landing/menu trang nhà/sitemap) rồi chạy generate.mjs + các máy sinh + build-seo-head.
+- Bộ gõ Hàn kiểm bằng CDP Input.imeSetComposition: đang ghép không nộp, Space sau khi ghép thì phá từ.
+- CSS: đường đua RTL chạy từ phải sang trái, cờ đích bên trái; chữ không Latin trong trò chơi dùng font
+  không đơn cách (DM Mono làm chữ Ả Rập đứt nét). e2e 11i chơi mọi trang game trong sitemap.
+  108/108 PASS. sw.js v15.
+
+---
+
+# 2026-09-26 — Giới thiệu / Điều khoản / Quyền riêng tư cho 27 ngôn ngữ
+
+Theo yêu cầu chủ site (tín hiệu tin cậy E-E-A-T; bắt buộc nếu sau này chạy quảng cáo). Chủ site chọn:
+email support@typingease.site, người vận hành "TypingEase" (Việt Nam), hosting Cloudflare Pages.
+- Nội dung khớp sự thật của mã (đã kiểm): không tài khoản, không cookie, không analytics/quảng cáo;
+  tiến độ, huy hiệu, kỷ lục, tuỳ chọn trong localStorage; service worker; bên thứ ba duy nhất: Google
+  Fonts (IP) và Cloudflare (log kỹ thuật). Luật áp dụng: Việt Nam. Đổi hành vi site → sửa en.mjs trước.
+- phap-ly/text/en.mjs là BẢN GỐC có hiệu lực; 26 bản dịch (5 agent, dịch sát nghĩa, cùng thẻ/chỗ trống)
+  in câu "nếu khác bản tiếng Anh thì bản tiếng Anh áp dụng" + liên kết English. scripts/build-legal-pages.mjs
+  sinh 81 trang: /about/ /terms/ /privacy/ (en), /vi/gioi-thieu/ /vi/dieu-khoan/ /vi/quyen-rieng-tu/,
+  /<lang>/about|terms|privacy/. About: index + sitemap + hreflang + breadcrumb; Terms/Privacy:
+  `noindex, follow` (không cần xếp hạng; hàng chục bản dịch của cùng một văn bản không nên vào chỉ mục).
+- Dòng "About · Terms · Privacy" theo ngôn ngữ ở chân MỌI trang: scripts/lib/legal.mjs `legalFooter()`,
+  in bởi generate.mjs, build-progress/test/game/legal-pages; trang viết tay do build-seo-head.mjs chèn
+  (khối <!-- legal -->). Mã lang có đuôi (zh-Hans) quy về zh.
+- Giọng xưng hô giữ như cả site (tu/du, 해요체…) — văn bản pháp lý ở Pháp/Đức/Hàn thường trang trọng hơn;
+  đổi thì đổi cả site. e2e 11j. 109/109 PASS. sw.js v16.
+
+---
+
+# 2026-09-26 — Chân trang ba cột: dòng pháp lý ở giữa
+
+Theo yêu cầu chủ site: bỏ hàng liên kết lộ trình/bài học (`.footer-links`) ở chân MỌI trang, dòng
+Giới thiệu · Điều khoản · Quyền riêng tư vào giữa. base.css: lưới `1fr auto 1fr` — logo | pháp lý |
+khẩu hiệu + ©; ≤ 900px xếp dọc căn giữa (logo, pháp lý, khẩu hiệu), ẩn dấu "·". Liên kết pháp lý: chữ
+xanh đậm, nền nhạt khi rê chuột. Máy sinh (generate.mjs, progress/test/game/legal) không in nav nữa;
+build-seo-head.mjs gỡ nav khỏi trang viết tay. Sửa kèm: `footer span` thu nhỏ nhầm chữ "Ease" của logo
+(nay `footer > span`). config.<lang>.mjs `footerLinks` còn đó nhưng không dùng.
+Lưu ý: ≤ 900px menu trên bị ẩn (.topbar nav display:none), nên trên điện thoại các trang không còn liên
+kết chéo tới lộ trình/tiến độ/test ở chân trang. 109/109 PASS. sw.js v17.
+
+---
+
+# 2026-09-26 — Nút ☰ menu trên điện thoại
+
+Chủ site đồng ý bổ sung sau khi chân trang bỏ hàng liên kết (≤ 900px menu trên cùng vốn bị ẩn, nên điện
+thoại mất lối sang Lộ trình/Tiến độ/Test/Trò chơi). `menu.js`: không dựng menu thứ hai — gắn nút ☰
+vào .header-actions, bấm thì CHÍNH `.topbar > nav` thành bảng thả xuống rộng hết màn hình (đúng ngôn
+ngữ, cả `/` nơi landing.js vẽ lại nav). Esc / bấm ra ngoài / bấm liên kết thì đóng; aria-expanded,
+aria-controls, nhãn đọc = aria-label của nav. Trên màn rộng nút ẩn.
+- base.css: `.topbar.is-menu-open > nav` cần `justify-self:stretch` — `.topbar nav` mang
+  `justify-self:center`, mà với phần tử position:absolute thì nó co về vừa nội dung dù left/right = 0.
+- Nạp `<script src="/menu.js" defer>`: 5 máy sinh in sẵn; build-seo-head.mjs chèn vào trang viết tay có
+  topbar chứa nav (204 trang). menu.js vào PRECACHE. e2e 11k. 110/110 PASS. sw.js v18.
+
+---
+
+# 2026-09-26 — Trang test tốc độ viết sẵn cho 16 ngôn ngữ còn lại (chưa bật)
+
+Theo yêu cầu chủ site ("làm các việc chưa làm"). 4 agent viết kiem-tra-toc-do-go/text/<lang>.mjs + bảng
+`test` trong ui.<lang>.js cho uk id ms fil sw hi bn th ar fa ur he ko ja zh zh-tw, `live: false`.
+Cùng đợt 2 (it nl pl ru tr), 21 trang test đang CHỜ; đã dựng thử bằng `build-test-pages.mjs --preview`
+(→ _preview-test/, đã xoá) và gõ thật 15 giây trong Chrome: đúng đơn vị, 100%, không lỗi console.
+- Đoạn văn gõ ĐÚNG như khoá học: ja romaji tắt IME theo quy ước data/words/ja.js; zh pinyin không
+  dấu, ü = v; zh-tw Chú âm (typeByPosition); ko Hangul qua bộ gõ (kiểm CDP: âm tiết đang ghép không
+  tính lỗi); ar/fa/ur/he/hi/bn/th chỉ ký tự bố cục của khoá gõ được (agent kiểm từng ký tự).
+- typing-test.js: gõ theo vị trí phím khi trang in `window.TypingEaseTestKeys` (máy sinh đọc bố cục
+  khoá nếu file chữ có `typeByPosition`). test.css: font không đơn cách cho chữ không Latin.
+- Cần nhớ khi BẬT: /ja/typing-test/ hiện là trang chuyển hướng cũ (→ /ja/) — trang thật sẽ thay nó,
+  phải sửa bảng REDIRECTS của e2e 11b. Bengali: bố cục 107 không có phím cho nguyên âm độc lập ngoài অ
+  (chỉ AltGr), đoạn văn tránh các từ đó — trang nói rõ. Hindi 106 không có ? : ! → đoạn văn không dùng.
+- sw.js v19.
+
+---
+
+# 2026-09-26 — Rà trang test/game theo TỪNG KIỂU BÀN PHÍM của mỗi ngôn ngữ
+
+Theo yêu cầu chủ site ("phù hợp với từng ngôn ngữ và loại bàn phím tương ứng"). Theo ngôn ngữ thì cả
+27 đã có nội dung test + game (phần lớn đang `live: false`). Rà theo kiểu bàn phím: 65 họ/bố cục, đoạn
+văn test + kho từ game, đúng luật typeableWith (phím chính/Shift/AltGr, phím chết). 62 gõ được trọn vẹn.
+- Urdu CRULP (139) không có ؤ: 1 đoạn văn đổi گاؤں → بستیاں.
+- Pháp Canada (186): ç gõ bằng phím chết ¸ + c — gõ được thật; kiểm tra của trang/trò chơi hiểu ¸.
+- Hindi Bolnagri (137): dữ liệu bố cục không có ई ऊ ऐ औ (có trong mọi đoạn và 29 từ). Thêm 5 đoạn văn
+  không dùng chúng (agent, kiểm bằng typeableWith trên 106 và 137). build-test-pages.mjs: nếu các họ của
+  một ngôn ngữ không gõ được cùng một bộ đoạn → in ô #test-course + `window.TypingEaseTestCourses`
+  ({khoá: [chỉ số đoạn]}); typing-test.js chỉ dùng các đoạn đó, nhớ lựa chọn. Hiện chỉ trang Hindi có ô.
+  Máy sinh báo lỗi nếu một họ gõ được < 4 đoạn.
+- tro-choi/games.js: lọc kho từ theo bố cục ĐANG CHỌN (ký tự chính/Shift/AltGr, chữ hoa, dấu ghép bằng
+  phím chết ´ ` ^ ~ ¨ ¸); không lọc vi (Telex) và ko (bộ gõ ghép); còn < 60 từ thì giữ nguyên kho.
+- 110/110 PASS. sw.js v20.

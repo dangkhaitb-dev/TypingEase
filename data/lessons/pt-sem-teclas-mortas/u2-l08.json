@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, o ponto, a vírgula e o til",
+  "summary": "Teclas novas: Z, o ponto, a vírgula e o til. O dedo sai, aperta e volta.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "~"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "~"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas novas nesta lição: Z, o ponto, a vírgula e o til. Elas se apertam com o mindinho esquerdo, o anelar direito, o dedo médio direito e o mindinho direito. O movimento é sempre o mesmo — sair, apertar e voltar — e a volta é a parte que se treina, porque se o dedo fica fora, a letra seguinte sai errada.",
+  "congrats": "Mais teclas debaixo dos dedos. Se Z, o ponto, a vírgula e o til já saem sem procurar, a lição fez o seu trabalho.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "Esta tecla é do mindinho esquerdo. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte Z para continuar"
+    },
+    {
+      "newKey": "z",
+      "text": "Só Z e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "z z\ndfj z df\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Esta tecla é do anelar direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte . para continuar"
+    },
+    {
+      "newKey": ".",
+      "text": "Só . e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": ".z .z\n.zf dj .z\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Esta tecla é do dedo médio direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte , para continuar"
+    },
+    {
+      "newKey": ",",
+      "text": "Só , e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "z,. .z,\n.,j fzd .,\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": "~",
+      "finger": "RP",
+      "text": "Esta tecla é do mindinho direito. Encontre-a sem olhar, aperte uma vez e deixe o dedo voltar para o lugar. A volta importa tanto quanto o toque.",
+      "hint": "Aperte ~ para continuar"
+    },
+    {
+      "newKey": "~",
+      "text": "Só ~ e o que você já sabe. Devagar, e com o dedo voltando à fila de repouso depois de cada toque.",
+      "type": "block",
+      "content": "f.j ,~d f.\n~. .~ ~.~.\n~~~ ,,, zzzz ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Grupos curtos, um atrás do outro. Vá até o fim mesmo que erre algum.",
+      "type": "burst",
+      "tokens": [
+        "z~",
+        "z.",
+        ",,",
+        ".,",
+        "~~",
+        ",~",
+        "zz",
+        "~,",
+        "..",
+        "z,"
+      ]
+    },
+    {
+      "text": "As teclas novas misturadas com as anteriores, que é como elas vão aparecer nas palavras.",
+      "type": "block",
+      "content": "z.z.z. .z.z.z\nz~j.f, f~z,j.\nsz~ .dj sz"
+    },
+    {
+      "text": "Palavras de verdade com as teclas novas. Escreva a palavra inteira de uma vez, não letra por letra.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "diz faz dizer vez\nfez onze luz vozes\nlazer horizonte raiz azuis"
+    },
+    {
+      "seconds": 25,
+      "text": "Uma rajada de palavras curtas com as teclas novas.",
+      "type": "burst",
+      "tokens": [
+        "sapato",
+        "força",
+        "deste",
+        "salada",
+        "clara",
+        "esquina",
+        "surgir",
+        "pena",
+        "azul",
+        "abacate"
+      ]
+    },
+    {
+      "text": "Agora com o peso em Z, a que você menos apertou.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "melancia primeira torta cursos\nchinelos fiz vinte ruas\nassa dizer alugar raças"
+    },
+    {
+      "text": "Voltamos aos padrões por um momento, para conferir que os dedos continuam voltando para o lugar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, zzz ~~~ ...\nz.z.z. .z.z.z\n,z~. ,z~."
+    },
+    {
+      "text": "Tudo o que você tem, misturado. Repare em quantas palavras já saem sem pensar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "animal escova zebra papel\nme compras calça fez\nmarca forma pequeno senha"
+    }
+  ]
+}

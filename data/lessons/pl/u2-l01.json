@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "T i Y",
+  "summary": "Nowe klawisze: T i Y. Palec wychodzi, uderza i wraca.",
+  "newKeys": [
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nowe klawisze w tej lekcji: T i Y. Naciskają je lewy palec wskazujący i prawy palec wskazujący. Ruch jest zawsze ten sam — wyjść, uderzyć, wrócić — i ćwiczy się tu właśnie powrót, bo palec, który został na zewnątrz, myli następną literę.",
+  "congrats": "Nowe klawisze pod palcami. Jeśli T i Y wychodzą już bez szukania, lekcja zrobiła swoje.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "LI",
+      "text": "Ten klawisz naciska lewy palec wskazujący. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij T, aby przejść dalej"
+    },
+    {
+      "newKey": "t",
+      "text": "Tylko T i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "tfj d tf\nt t tt\ntttt"
+    },
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "RI",
+      "text": "Ten klawisz naciska prawy palec wskazujący. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij Y, aby przejść dalej"
+    },
+    {
+      "newKey": "y",
+      "text": "Tylko Y i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "jyd ft jy\nty yt tyty\nyyy ttt"
+    },
+    {
+      "seconds": 20,
+      "text": "Krótkie grupy, jedna po drugiej. Dojdź do końca, nawet jeśli coś pomylisz.",
+      "type": "burst",
+      "tokens": [
+        "tty",
+        "ttyy",
+        "ttt",
+        "ytty",
+        "tttt",
+        "ttyt",
+        "ttty",
+        "tyt",
+        "tyty",
+        "yty"
+      ]
+    },
+    {
+      "text": "Nowe klawisze wymieszane ze starymi, tak jak pojawią się w słowach.",
+      "type": "block",
+      "content": "yt ty ytyt\ntttt jjj fff yyy\ntyty ytyt"
+    },
+    {
+      "text": "Prawdziwe słowa z nowymi klawiszami. Pisz całe słowo jednym ruchem, nie litera po literze.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "latarka tata stare litera\nfakty tekst list turystka\nteatry kurtka listy tygrys"
+    },
+    {
+      "seconds": 25,
+      "text": "Seria krótkich słów z nowymi klawiszami.",
+      "type": "burst",
+      "tokens": [
+        "taki",
+        "kura",
+        "list",
+        "ruda",
+        "gitara",
+        "rak",
+        "lekka",
+        "tu",
+        "tata",
+        "lekki"
+      ]
+    },
+    {
+      "text": "Teraz z naciskiem na T — tego klawisza było do tej pory najmniej.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kury kara jaki rak\nseriale rajd rasa flaga\ntygrys sali kask lekka"
+    },
+    {
+      "text": "Na chwilę wracamy do wzorów, żeby sprawdzić, czy palce zawsze wracają na swoje miejsce.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "yt ty\njtd yf jt\nty yt tyty"
+    },
+    {
+      "text": "Wszystko, co masz, wymieszane. Zobacz, ile słów wychodzi już bez zastanowienia.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lider stare jaskier dres\nkurier rajd dary figura\nu teatry stal sera"
+    }
+  ]
+}

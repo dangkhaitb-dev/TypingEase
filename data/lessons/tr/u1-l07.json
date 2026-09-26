@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "E ve I",
+  "summary": "Yeni tuşlar: E ve I. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "e",
+    "ı"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş",
+    "g",
+    "h",
+    "e",
+    "ı"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: E ve I. Bunlara sol orta parmak ve sağ orta parmak basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. E ve I artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "Bu tuşa sol orta parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için E tuşuna bas"
+    },
+    {
+      "newKey": "e",
+      "text": "Yalnızca E ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "e e\nedf j ed\ne e ee"
+    },
+    {
+      "type": "intro",
+      "key": "ı",
+      "finger": "RM",
+      "text": "Bu tuşa sağ orta parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için I tuşuna bas"
+    },
+    {
+      "newKey": "ı",
+      "text": "Yalnızca I ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "ıe eı\nfed ıj fe\neı ıe eıeı"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "ıe",
+        "eıı",
+        "ıeee",
+        "ııe",
+        "eıeı",
+        "eııe",
+        "ıı",
+        "ıeı",
+        "ııeı",
+        "eeıı"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "ffff eeee jjjj ııı\neıeıeı ıeıeıe\njıef fıje"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "de eş dış hedef\nelle esas akıl kes\nhele sık kış alış"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "a",
+        "ele",
+        "akıllı",
+        "sal",
+        "şah",
+        "şakak",
+        "kes",
+        "kalk",
+        "kalfa",
+        "kısa"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık E tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kek kılık daha dede\nele ekle sık hak\nda hedef kaş şef"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "eeee ıııı\neıeıeı ıeıeıe\neı ıe"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaş saklı dış saha\nkes al kafada ak\neş hala sal kasa"
+    }
+  ]
+}

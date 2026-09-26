@@ -1,0 +1,117 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "S と L",
+  "summary": "新しいキー：S と L。指が出て、押して、戻ります。",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンの新しいキー：S と L。左手の薬指 と 右手の薬指で押します。動きはいつも同じで、出て、押して、戻ります。練習するのは戻る動きです。指が外に残ったままだと、次の文字を間違えるからです。",
+  "congrats": "指の下のキーが増えました。S と L を探さずに打てるなら、このレッスンの役目は果たせています。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "LR",
+      "text": "このキーは左手の薬指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "S を押して次へ"
+    },
+    {
+      "newKey": "s",
+      "text": "S と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "dfs j df\ns s ss\nsss"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RR",
+      "text": "このキーは右手の薬指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "L を押して次へ"
+    },
+    {
+      "newKey": "l",
+      "text": "L と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "sss llll\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        "slls",
+        "llls",
+        "slss",
+        "llsl",
+        "lss",
+        "ss",
+        "ssl",
+        "slll",
+        "lsll",
+        "lls"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "fjls jfsl\nklf sdj kl\nfs sf fsfs"
+    },
+    {
+      "text": "もう一度、新しい2つのキーです。これだけで打てる単語はまだありませんが、それで問題ありません。",
+      "type": "block",
+      "content": "lll sss\nslslsl lslsls\nsl ls"
+    },
+    {
+      "seconds": 25,
+      "text": "少し長いかたまりです。まだ急いでも速くはなりません。",
+      "type": "burst",
+      "tokens": [
+        "llll",
+        "ss",
+        "lsl",
+        "ssll",
+        "lsll",
+        "sss",
+        "llss",
+        "llls",
+        "llsl",
+        "slss",
+        "slls",
+        "lssl"
+      ]
+    },
+    {
+      "text": "ここまでのキーすべてを、短いかたまりで。見るのは画面で、手ではありません。",
+      "type": "block",
+      "content": "jkl dsf jk\ndf fd dfdf\nllll jjj ssss fff ddd"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ls sl\nsjf ld sj\nsl ls slsl"
+    },
+    {
+      "text": "ここまで覚えたキーすべてで、最後の一回です。",
+      "type": "block",
+      "content": "ksl dfj ks\njf fj jfjf\ndddd fff kkkk jjj"
+    }
+  ]
+}

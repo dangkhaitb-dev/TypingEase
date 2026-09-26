@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C と N",
+  "summary": "新しいキー：C と N。指が出て、押して、戻ります。",
+  "newKeys": [
+    "c",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンの新しいキー：C と N。左手の中指 と 右手の人差し指で押します。動きはいつも同じで、出て、押して、戻ります。練習するのは戻る動きです。指が外に残ったままだと、次の文字を間違えるからです。",
+  "congrats": "指の下のキーが増えました。C と N を探さずに打てるなら、このレッスンの役目は果たせています。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "このキーは左手の中指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "C を押して次へ"
+    },
+    {
+      "newKey": "c",
+      "text": "C と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "cccc cccc\nc c\njfc d jf"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "このキーは右手の人差し指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "N を押して次へ"
+    },
+    {
+      "newKey": "n",
+      "text": "N と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "cncncn ncncnc\nnc nc\njdc nf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "nnn",
+        "nc",
+        "ccnc",
+        "cnnn",
+        "cnn",
+        "ncc",
+        "nncc",
+        "nccc",
+        "ncnn"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "nc cn ncnc\nnnn ccc jjj fff\ncncn ncnc"
+    },
+    {
+      "text": "新しいキーを使う、本物の日本語の単語です。一文字ずつではなく、単語をひと続きに打ってください。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "okane ane jinja nishiguchi\nningenn niku konshuu kenchiku\ndochira nigai shinjiru ninjinn"
+    },
+    {
+      "seconds": 25,
+      "text": "新しいキーを含む、短い単語の連打です。",
+      "type": "burst",
+      "tokens": [
+        "jiki",
+        "ikaga",
+        "yoku",
+        "riku",
+        "hi",
+        "oshieru",
+        "iru",
+        "koe",
+        "kasu",
+        "hoteru"
+      ]
+    },
+    {
+      "text": "次は、いちばん押す回数が少なかった C を多めに打ちます。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kuri kawaru kao koori\ntenisu kaki choushoku eigo\nhoshii nana kocha sann"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nnnn ccc\ncncn ncnc\nnc nc"
+    },
+    {
+      "text": "ここまでのキーすべてを混ぜて。考えなくても出てくる単語が、もうかなりあるはずです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hanashi juu denwa wakaru\nosoi kakaru suisai niwa\nshiryou ashita genki sakka"
+    }
+  ]
+}

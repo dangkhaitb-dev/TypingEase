@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Ujian unit 1",
+  "summary": "Ujian bermasa dengan semua yang telah dipelajari.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "Ujian bermasa. Tiada yang baharu: hanya apa yang anda sudah tahu, pada rentak yang boleh anda kekalkan.",
+  "congrats": "Ujian lulus. Angkanya kurang penting berbanding hakikat anda sampai ke hujung tanpa melihat.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "Tiada kekunci baharu. Taip pada rentak yang boleh anda kekalkan hingga akhir.",
+      "dictation": "words",
+      "content": "asal jual kedai susu\nlagak akad haus ragu\nfasal gerai gigi galak\njala gelak lagi adik"
+    }
+  ]
+}

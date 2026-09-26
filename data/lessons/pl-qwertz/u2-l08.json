@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Y, kropka, przecinek i Ą",
+  "summary": "Nowe klawisze: Y, kropka, przecinek i Ą. Palec wychodzi, uderza i wraca.",
+  "newKeys": [
+    "y",
+    ".",
+    ",",
+    "ą"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ł",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ą"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nowe klawisze w tej lekcji: Y, kropka, przecinek i Ą. Naciskają je lewy mały palec, prawy palec serdeczny, prawy palec środkowy i prawy mały palec. Ruch jest zawsze ten sam — wyjść, uderzyć, wrócić — i ćwiczy się tu właśnie powrót, bo palec, który został na zewnątrz, myli następną literę.",
+  "congrats": "Nowe klawisze pod palcami. Jeśli Y, kropka, przecinek i Ą wychodzą już bez szukania, lekcja zrobiła swoje.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "LP",
+      "text": "Ten klawisz naciska lewy mały palec. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij Y, aby przejść dalej"
+    },
+    {
+      "newKey": "y",
+      "text": "Tylko Y i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "y y\ndfj y df\ny y yy"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Ten klawisz naciska prawy palec serdeczny. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij ., aby przejść dalej"
+    },
+    {
+      "newKey": ".",
+      "text": "Tylko . i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": ".y .y\n.yf dj .y\ny. .y y.y."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Ten klawisz naciska prawy palec środkowy. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij ,, aby przejść dalej"
+    },
+    {
+      "newKey": ",",
+      "text": "Tylko , i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "y,. .y,\n.,j fyd .,\ny. .y y.y."
+    },
+    {
+      "type": "intro",
+      "key": "ą",
+      "finger": "RP",
+      "text": "Ten klawisz naciska prawy mały palec. Znajdź go bez patrzenia, naciśnij raz i pozwól palcowi wrócić na miejsce. Powrót jest tak samo ważny jak uderzenie.",
+      "hint": "Naciśnij Ą, aby przejść dalej"
+    },
+    {
+      "newKey": "ą",
+      "text": "Tylko Ą i to, co już znasz. Powoli, a po każdym uderzeniu palec wraca do rzędu podstawowego.",
+      "type": "block",
+      "content": "f.j ,ąd f.\ną. .ą ą.ą.\nąąą ,,, yyyy ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Krótkie grupy, jedna po drugiej. Dojdź do końca, nawet jeśli coś pomylisz.",
+      "type": "burst",
+      "tokens": [
+        "yą",
+        "y.",
+        ",,",
+        ".,",
+        "ąą",
+        ",ą",
+        "yy",
+        "ą,",
+        "..",
+        "y,"
+      ]
+    },
+    {
+      "text": "Nowe klawisze wymieszane ze starymi, tak jak pojawią się w słowach.",
+      "type": "block",
+      "content": "y.y.y. .y.y.y\nyąj.f, fąy,j.\nsyą .dj sy"
+    },
+    {
+      "text": "Prawdziwe słowa z nowymi klawiszami. Pisz całe słowo jednym ruchem, nie litera po literze.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lampy smutny pogody ceny\nbył gazety wysoki godziny\nładny złoty ciszy tygrys"
+    },
+    {
+      "seconds": 25,
+      "text": "Seria krótkich słów z nowymi klawiszami.",
+      "type": "burst",
+      "tokens": [
+        "prosty",
+        "wąski",
+        "serial",
+        "wtorki",
+        "pisz",
+        "spacery",
+        "salsa",
+        "wiatrak",
+        "ciekawy",
+        "kolacja"
+      ]
+    },
+    {
+      "text": "Teraz z naciskiem na Y — tego klawisza było do tej pory najmniej.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "program biblioteka skala twoi\nogon pracujemy zna tygrys\nczytam fryzjer mocny pomidory"
+    },
+    {
+      "text": "Na chwilę wracamy do wzorów, żeby sprawdzić, czy palce zawsze wracają na swoje miejsce.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, yyy ąąą ...\ny.y.y. .y.y.y\n,yą. ,yą."
+    },
+    {
+      "text": "Wszystko, co masz, wymieszane. Zobacz, ile słów wychodzi już bez zastanowienia.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tempo fałda miesiąc czysta\nzimno wasza mieszkam pociąg\nbajka pisz bez rama"
+    }
+  ]
+}

@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "Y and F",
+  "summary": "Two new keys: Y and F. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "y",
+    "f"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: Y and F. They belong to your left index finger and your right index finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If Y and F already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press Y to continue"
+    },
+    {
+      "newKey": "y",
+      "text": "Only Y and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "yuh e yu\ny y yy\nyyyy"
+    },
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press F to continue"
+    },
+    {
+      "newKey": "f",
+      "text": "Only F and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "hfe uy hf\nyf fy yfyf\nfff yyy"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "yyf",
+        "yyff",
+        "yyy",
+        "fyyf",
+        "yyyy",
+        "yyfy",
+        "yyyf",
+        "yfy",
+        "yfyf",
+        "fyf"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "fy yf fyfy\nyyyy hhh uuu fff\nyfyf fyfy"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "soft feeds study type\nsteady of yet easy\npay office city fact"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "song",
+        "east",
+        "ages",
+        "stop",
+        "cost",
+        "once",
+        "ahead",
+        "hat",
+        "nice",
+        "food"
+      ]
+    },
+    {
+      "text": "Now the weight is on Y, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "shop gate speed thing\nson space hat cat\nsong ties attention in"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "fy yf\nhye fu hy\nyf fy yfyf"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "cash point nice cheap\nnotes sand once coats\nso hunt said easy"
+    }
+  ]
+}

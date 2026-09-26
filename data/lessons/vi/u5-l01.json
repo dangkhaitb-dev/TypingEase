@@ -1,0 +1,152 @@
+{
+  "id": "u5-l01",
+  "unit": "u5",
+  "group": "symbols",
+  "order": 36,
+  "slug": "symbols-1",
+  "title": "`, ~, $ và %",
+  "summary": "Những phím cuối: `, ~, $ và %.",
+  "newKeys": [
+    "`",
+    "~",
+    "$",
+    "%"
+  ],
+  "keysSoFar": [
+    "j",
+    "f",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "shift",
+    "enter",
+    "aa",
+    "ee",
+    "oo",
+    "dd",
+    "aw",
+    "uw",
+    "ow",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "`",
+    "~",
+    "$",
+    "%"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Những phím khoá học chưa dùng tới: `, ~, $ và %. Vài ký tự cần Shift, bằng ngón út của bàn tay kia; số còn lại nằm trên một phím khoá học chưa dùng.",
+  "congrats": "`, ~, $ và %: giờ đã nằm dưới ngón tay bạn. Shift bằng tay kia, và ký hiệu ra dễ như chữ cái bên cạnh.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "` do ngón út trái phụ trách.",
+      "hint": "Nhấn ` để tiếp tục"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "Gõ riêng ` trước, rồi gõ nó ở đúng chỗ nó hay đứng.",
+      "content": "`` ` `la` `thay` `hep`\n`` ` `isi` `tai` `ma`\n`` ` `ru` `ke` `ho`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "Gõ riêng ~ trước, rồi gõ nó ở đúng chỗ nó hay đứng.",
+      "content": "~~ ~ ~52 ~54 ~81\n~~ ~ ~39 ~34 ~57\n~~ ~ ~22 ~13 ~7"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "$ do ngón trỏ trái phụ trách, giữ Shift bằng tay kia.",
+      "hint": "Nhấn $ để tiếp tục"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Gõ riêng $ trước, rồi gõ nó ở đúng chỗ nó hay đứng.",
+      "content": "$$ $ $60 $6 $38\n$$ $ $69 $69 $17\n$$ $ $26 $4 $2"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "% do ngón trỏ trái phụ trách, giữ Shift bằng tay kia.",
+      "hint": "Nhấn % để tiếp tục"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Gõ riêng % trước, rồi gõ nó ở đúng chỗ nó hay đứng.",
+      "content": "%% % 96% 39% 79%\n%% % 94% 51% 62%\n%% % 89% 52% 10%"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Một loạt mẩu ngắn có những ký tự này.",
+      "tokens": [
+        "51%",
+        "$95",
+        "`vam`",
+        "75%",
+        "~77",
+        "`tam`",
+        "38%",
+        "~23",
+        "`ay`",
+        "`voi`"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Mọi thứ của bài này, trộn lẫn.",
+      "content": "~44 30% 74% ~4\n`na` `cay` ~45 ~50\n~8 `email` $67 ~86"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Lại là từ, với ký hiệu ở đúng chỗ của nó.",
+      "content": "~25 duoc $95 them ~53\n`phan` hoi ~63 que $87\n~39 av ~91 canh `thich`"
+    }
+  ]
+}

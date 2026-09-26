@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "De buitenste kolom",
+  "summary": "De kolom aan de rechterrand: zes toetsen, allemaal voor de pink.",
+  "newKeys": [
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "De rechterpink heeft meer toetsen dan elke andere vinger, en de toetsen aan de rand oefent bijna niemand. Ze liggen verder van de thuisrij dan alle andere, dus de truc is dezelfde als altijd: uitstrekken, aanslaan en terug, zonder dat de hand meegaat.",
+  "congrats": "Dat is de kolom die in bijna elke cursus half blijft liggen. In de jouwe niet.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RP",
+      "text": "De toetsen aan de rechterrand, allemaal voor de pink. Het zijn de langste strekkingen die deze vinger maakt, en de toetsen die daarna het minst geoefend worden.",
+      "hint": "Druk op / om verder te gaan"
+    },
+    {
+      "newKeys": [
+        "/",
+        "-"
+      ],
+      "text": "Nu / en -. De pink gaat naar buiten en komt terug; de hand blijft waar hij is.",
+      "type": "block",
+      "content": "/-/- -/-/\n/- -/\nj-d /f j-"
+    },
+    {
+      "newKeys": [
+        "=",
+        "["
+      ],
+      "text": "Nu = en [. De pink gaat naar buiten en komt terug; de hand blijft waar hij is.",
+      "type": "block",
+      "content": "[= =[\n=fj [d =f\n=[ [= =[=["
+    },
+    {
+      "seconds": 20,
+      "text": "Een korte reeks met wat je van deze kolom hebt.",
+      "type": "burst",
+      "tokens": [
+        "[-",
+        "-=",
+        "--",
+        "[/",
+        "-/",
+        "/[",
+        "[=",
+        "/-",
+        "-[",
+        "[["
+      ]
+    },
+    {
+      "newKeys": [
+        "]",
+        "\\"
+      ],
+      "text": "Nu ] en \\. De pink gaat naar buiten en komt terug; de hand blijft waar hij is.",
+      "type": "block",
+      "content": "]\\ ]\\\n]fd \\j ]f\n]\\ \\] ]\\]\\"
+    },
+    {
+      "text": "Alle zes samen. Hier draait de pols het meest als de vinger niet terugkomt.",
+      "type": "block",
+      "content": "f=/ d\\- f=\n\\] ]\\ \\]\\]\n\\\\\\\\ ==== --- /// [[[ ]]]]"
+    },
+    {
+      "seconds": 25,
+      "text": "Weer woorden, om de hand los te maken na al die randtoetsen.",
+      "type": "burst",
+      "tokens": [
+        "over",
+        "wolken",
+        "vijftien",
+        "lach",
+        "snelle",
+        "circus",
+        "zee",
+        "rustig",
+        "paard",
+        "proberen",
+        "grijs",
+        "tuig"
+      ]
+    },
+    {
+      "text": "Terug naar woorden, nu met het hele toetsenbord.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "banken regel koffie bus\nook eindelijk uur in\nander noord schip zaak"
+    },
+    {
+      "text": "Hele zinnen om de lessen met nieuwe toetsen af te sluiten.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Het museum is op maandag gesloten.\nMijn zus schrijft een brief aan haar oma.\nDe trein naar de stad vertrekt om negen uur."
+    }
+  ]
+}

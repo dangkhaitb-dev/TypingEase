@@ -1,0 +1,136 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-p",
+  "title": "Q dan P",
+  "summary": "Tombol baru: Q dan P. Jari keluar, menekan, lalu kembali.",
+  "newKeys": [
+    "q",
+    "p"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tombol baru di pelajaran ini: Q dan P. Ditekan dengan kelingking kiri dan kelingking kanan. Gerakannya selalu sama — keluar, tekan, kembali — dan jalan pulang itulah yang dilatih, karena kalau jarinya tertinggal di luar, huruf berikutnya akan salah.",
+  "congrats": "Makin banyak tombol di bawah jarimu. Kalau Q dan P sudah keluar tanpa dicari, pelajaran ini sudah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LP",
+      "text": "Tombol ini ditekan dengan kelingking kiri. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan Q untuk lanjut"
+    },
+    {
+      "newKey": "q",
+      "text": "Hanya Q dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "qdf j qd\nq q qq\nqqqq"
+    },
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "RP",
+      "text": "Tombol ini ditekan dengan kelingking kanan. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan P untuk lanjut"
+    },
+    {
+      "newKey": "p",
+      "text": "Hanya P dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "qpqp pqpq\nqp pq\njfq dp jf"
+    },
+    {
+      "seconds": 20,
+      "text": "Kelompok pendek, satu demi satu. Terus sampai akhir meskipun ada yang meleset.",
+      "type": "burst",
+      "tokens": [
+        "pqq",
+        "qpqp",
+        "ppqq",
+        "ppq",
+        "pqqp",
+        "pqpp",
+        "qpq",
+        "qpp",
+        "qqqq",
+        "qqqp"
+      ]
+    },
+    {
+      "text": "Tombol baru dicampur dengan yang lama, seperti nanti muncul di dalam kata.",
+      "type": "block",
+      "content": "ffff jjjj qqqq ppp\nqpqpqp pqpqpq\nfjqp pqjf"
+    },
+    {
+      "text": "Kata sungguhan dengan tombol baru. Ketik setiap kata dalam satu tarikan, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "pikir pisang atap sapu\npaman pensil para harap\npesta pelan apa pantai"
+    },
+    {
+      "seconds": 25,
+      "text": "Rentetan kata pendek yang berisi tombol baru.",
+      "type": "burst",
+      "tokens": [
+        "serta",
+        "daun",
+        "ayah",
+        "radio",
+        "melihat",
+        "tanya",
+        "pilih",
+        "lekas",
+        "musim",
+        "lawak"
+      ]
+    },
+    {
+      "text": "Sekarang bebannya di P, tombol yang paling jarang kamu tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "makan vokal kapal lagi\nsetiap pasar urus tahun\nmasalah paman dapur hal"
+    },
+    {
+      "text": "Kembali ke pola sebentar, untuk memastikan jari masih menemukan jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "qpqpqp pqpqpq\nqp pq\npfq jd pf"
+    },
+    {
+      "text": "Semua yang kamu punya, dicampur. Perhatikan berapa banyak kata yang sudah keluar tanpa dipikir.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lafal kas mengetik sayap\nideal lagak rawat raya\nsiap fokus dunia kelas"
+    }
+  ]
+}

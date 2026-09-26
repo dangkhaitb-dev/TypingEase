@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Pagsusulit ng yunit 1",
+  "summary": "Isang pagsusulit na may oras, gamit ang lahat ng natutunan mo.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "Isang pagsusulit na may oras. Walang bago: ang alam mo na lang, sa bilis na kaya mong panatilihin.",
+  "congrats": "Pasado. Mas mahalaga ang pagtapos nang hindi tumitingin kaysa sa numero.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "Walang bagong key. Magtipa sa bilis na kaya mong panatilihin hanggang dulo.",
+      "dictation": "words",
+      "content": "lasa lagi higa hugas\nlaksa dasal sukli lahi\nkasal kusa sala lagak\ndagsa asa laki alaga"
+    }
+  ]
+}

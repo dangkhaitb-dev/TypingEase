@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "O dan W",
+  "summary": "Tombol baru: O dan W. Jari keluar, menekan, lalu kembali.",
+  "newKeys": [
+    "o",
+    "w"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tombol baru di pelajaran ini: O dan W. Ditekan dengan jari manis kanan dan jari manis kiri. Gerakannya selalu sama — keluar, tekan, kembali — dan jalan pulang itulah yang dilatih, karena kalau jarinya tertinggal di luar, huruf berikutnya akan salah.",
+  "congrats": "Makin banyak tombol di bawah jarimu. Kalau O dan W sudah keluar tanpa dicari, pelajaran ini sudah menjalankan tugasnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "RR",
+      "text": "Tombol ini ditekan dengan jari manis kanan. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan O untuk lanjut"
+    },
+    {
+      "newKey": "o",
+      "text": "Hanya O dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "o o oo\noooo\noooooo oooooo"
+    },
+    {
+      "type": "intro",
+      "key": "w",
+      "finger": "LR",
+      "text": "Tombol ini ditekan dengan jari manis kiri. Cari tanpa melihat, tekan sekali, lalu biarkan jarinya kembali. Jalan pulang sama pentingnya dengan tekanannya.",
+      "hint": "Tekan W untuk lanjut"
+    },
+    {
+      "newKey": "w",
+      "text": "Hanya W dan yang sudah kamu tahu. Pelan-pelan, dan kembalikan jari ke baris dasar setiap selesai menekan.",
+      "type": "block",
+      "content": "owow wowo\now wo\nwdf oj wd"
+    },
+    {
+      "seconds": 20,
+      "text": "Kelompok pendek, satu demi satu. Terus sampai akhir meskipun ada yang meleset.",
+      "type": "burst",
+      "tokens": [
+        "oow",
+        "woow",
+        "ooo",
+        "wo",
+        "wwwo",
+        "ww",
+        "wwww",
+        "oww",
+        "woo",
+        "owow"
+      ]
+    },
+    {
+      "text": "Tombol baru dicampur dengan yang lama, seperti nanti muncul di dalam kata.",
+      "type": "block",
+      "content": "fdo kjs fd\njo oj jojo\nooo www fff jjjj"
+    },
+    {
+      "text": "Kata sungguhan dengan tombol baru. Ketik setiap kata dalam satu tarikan, bukan huruf demi huruf.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "roti radio awet waduk\nlewat olahraga wisata tokoh\nkuota wajar sewa dewasa"
+    },
+    {
+      "seconds": 25,
+      "text": "Rentetan kata pendek yang berisi tombol baru.",
+      "type": "burst",
+      "tokens": [
+        "gula",
+        "agar",
+        "ruas",
+        "rakyat",
+        "suku",
+        "waktu",
+        "lekat",
+        "salah",
+        "dulu",
+        "lusa"
+      ]
+    },
+    {
+      "text": "Sekarang bebannya di O, tombol yang paling jarang kamu tekan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tegas toko kota suka\naula garis gula sah\ndiri gagah kesal roti"
+    },
+    {
+      "text": "Kembali ke pola sebentar, untuk memastikan jari masih menemukan jalan pulang.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "owowow wowowo\now wo\nwod fj wo"
+    },
+    {
+      "text": "Semua yang kamu punya, dicampur. Perhatikan berapa banyak kata yang sudah keluar tanpa dipikir.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lari kertas kasur tolak\nkayu keluarga fiksi raya\nsifat rawat hal tadi"
+    }
+  ]
+}

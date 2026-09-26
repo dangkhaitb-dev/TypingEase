@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="th" data-course="th-pattachote">
+  <head>
+    <!-- SINH TỰ ĐỘNG bằng scripts/build-family-pages.js từ th/rian/index.html. Sửa trang gốc rồi chạy lại. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>บทเรียน · TypingEase</title>
+    <meta name="description" content="เครื่องเล่นบทเรียนของ TypingEase: ทีละหน้าจอ พร้อมแป้นพิมพ์และมือที่แสดงว่านิ้วไหนกดแป้นไหน" />
+    <!-- Ứng dụng, không phải trang đích: bài tập không có giá trị tìm kiếm và đường dẫn nằm ở hash,
+         nên đứng ngoài chỉ mục. Cũng không có hreflang cho trang không ai nên lập chỉ mục. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://typingease.site/th/pattachote/rian/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/player.css" />
+  </head>
+  <body class="player-page">
+    <div class="player" id="player">
+      <header class="player-topbar">
+        <a class="pt-back" href="/th/pattachote/" id="pt-back">← บทเรียน</a>
+        <div class="pt-title">
+          <span id="pt-unit"></span>
+          <strong id="pt-lesson">กำลังโหลด…</strong>
+        </div>
+        <div class="pt-right">
+          <span class="pt-screen" id="pt-screen"></span>
+          <button class="pt-redo" id="pt-redo" type="button" title="เริ่มบทนี้ใหม่" aria-label="เริ่มบทนี้ใหม่">↻</button>
+          <button class="pt-toggle" id="pt-sound" type="button" aria-pressed="false" title="เสียงแป้น (Alt+S)" aria-label="เสียงแป้น">🔊</button>
+          <button class="pt-toggle" id="pt-hands" type="button" aria-pressed="true" title="มือขยับตามแป้น (Alt+H)" aria-label="มือขยับตามแป้น">✋</button>
+          <button class="pt-redo" id="pt-keyboard" type="button" title="ตั้งค่าแป้นพิมพ์ (Alt+K)" aria-label="ตั้งค่าแป้นพิมพ์">⚙</button>
+        </div>
+      </header>
+
+      <div class="progress-segments" id="pt-progress" role="progressbar" aria-label="ความคืบหน้าของบทเรียน" aria-valuemin="0" aria-valuenow="0"></div>
+
+      <div class="player-notes" id="player-note" hidden></div>
+
+      <main class="player-stage is-loading" id="stage">
+        <section class="card"><p class="intro-text">กำลังโหลดบทเรียน…</p></section>
+      </main>
+
+      <div class="player-board keyboard-demo" id="board" aria-hidden="true"></div>
+
+      <p class="player-live" id="live" role="status" aria-live="polite"></p>
+
+      <label class="sr-only" for="player-input">พิมพ์บรรทัดด้านบน</label>
+      <textarea class="player-input" id="player-input" rows="1" autocomplete="off" autocapitalize="off"
+        autocorrect="off" spellcheck="false" inputmode="text" aria-describedby="live"></textarea>
+
+      <button class="tap-to-type" id="tap-to-type" type="button">แตะเพื่อพิมพ์</button>
+    </div>
+
+    <!-- ui.th.js trước tiên: mỗi module bên dưới trải nó lên giá trị mặc định tiếng Việt của mình.
+         Script thường có chủ ý — script thường chạy trước module defer, và keyboard/boot.js dựa vào đó.
+         Không có telex-match.js: Telex là bộ gõ tiếng Việt, khoá này không bao giờ tới nhánh ấy.
+         data/words/th.js phải đứng trước weak-keys.js, vì nó đọc danh sách từ ở đó. -->
+    <script src="/i18n/ui.th.js"></script>
+    <script src="/profile.js"></script>
+    <script src="/data/words/th.js"></script>
+    <script src="/weak-keys.js"></script>
+    <script src="/data/curriculum.th-pattachote.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/player.js"></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

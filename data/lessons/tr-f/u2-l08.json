@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "J, nokta, B ve Ş",
+  "summary": "Yeni tuşlar: J, nokta, B ve Ş. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "j",
+    ".",
+    "b",
+    "ş"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c",
+    "f",
+    "p",
+    "ç",
+    "ö",
+    "j",
+    ".",
+    "b",
+    "ş"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: J, nokta, B ve Ş. Bunlara sol serçe parmak, sağ yüzük parmağı, sağ orta parmak ve sağ serçe parmak basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. J, nokta, B ve Ş artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "LP",
+      "text": "Bu tuşa sol serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için J tuşuna bas"
+    },
+    {
+      "newKey": "j",
+      "text": "Yalnızca J ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "j j\neak j ea\nj j jj"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Bu tuşa sağ yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için . tuşuna bas"
+    },
+    {
+      "newKey": ".",
+      "text": "Yalnızca . ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": ".j .j\n.ja ek .j\nj. .j j.j."
+    },
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "RM",
+      "text": "Bu tuşa sağ orta parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için B tuşuna bas"
+    },
+    {
+      "newKey": "b",
+      "text": "Yalnızca B ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "jb. .jb\n.bk aje .b\nj. .j j.j."
+    },
+    {
+      "type": "intro",
+      "key": "ş",
+      "finger": "RP",
+      "text": "Bu tuşa sağ serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Ş tuşuna bas"
+    },
+    {
+      "newKey": "ş",
+      "text": "Yalnızca Ş ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "a.k bşe a.\nş. .ş ş.ş.\nşşş bbb jjjj ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "jş",
+        "j.",
+        "bb",
+        ".b",
+        "şş",
+        "bş",
+        "jj",
+        "şb",
+        "..",
+        "jb"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "j.j.j. .j.j.j\njşk.ab aşjbk.\nijş .ek ij"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kabul beş bunlar yarış\nşimdi gibi bazen akşam\nyanlış bitti bağlantı kişi"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "yeterli",
+        "sahada",
+        "kısa",
+        "yurt",
+        "şu",
+        "yumuşak",
+        "derse",
+        "kasada",
+        "yeşil",
+        "sürekli"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık B tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yeşil zor ateş yan\nmal bitti numara bugün\nbebek boya hala kes"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "bbbb jjj şşş ...\nj.j.j. .j.j.j\nbjş. bjş."
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "baş süt boğaz az\nkapan geç devam sekiz\nboya niçin mantık soyadı"
+    }
+  ]
+}

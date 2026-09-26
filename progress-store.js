@@ -9,7 +9,7 @@
   // đầu mà chưa ai đọc — nay đọc nó. Bản Việt khai đúng khoá cũ nên dữ liệu người dùng hiện
   // có không phải migrate gì cả; đây thuần tuý là đổi chỗ lấy tên khoá.
   const DEFAULT_KEY = 'typingease-progress-v3';
-  const LANG = (global.document?.documentElement?.lang || 'vi').slice(0, 2).toLowerCase();
+  const LANG = (global.document?.documentElement?.lang || 'vi').toLowerCase().split('-')[0];
   const KEY = global.TypingEaseCurriculum?.progressKey
     || (LANG === 'vi' ? DEFAULT_KEY : `typingease-progress-${LANG}-v3`);
   const LEGACY_KEY = 'goxanh-lesson-records-v2';

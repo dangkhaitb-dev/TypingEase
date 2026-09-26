@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "A und R",
+  "summary": "Neue Tasten: A und R. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "a",
+    "r"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: A und R. Dafür sind der linke Mittelfinger und der rechte Mittelfinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn A und R ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LM",
+      "text": "Für diese Taste ist der linke Mittelfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke A, um weiterzugehen"
+    },
+    {
+      "newKey": "a",
+      "text": "Nur A und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "a a aa\naaaa\naaaa aaaa"
+    },
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "RM",
+      "text": "Für diese Taste ist der rechte Mittelfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke R, um weiterzugehen"
+    },
+    {
+      "newKey": "r",
+      "text": "Nur R und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "aaa rrr\narar rara\nar ar"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "aa",
+        "rarr",
+        "arra",
+        "raaa",
+        "aaa",
+        "aarr",
+        "rar",
+        "raar",
+        "arar",
+        "raa"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "ararar rarara\neanr near\naen r ae"
+    },
+    {
+      "text": "Noch einmal die beiden neuen Tasten. Es gibt damit noch keine Wörter zu schreiben, und das ist so gewollt.",
+      "type": "block",
+      "content": "ern a er\nar ra arar\nrrr aaaa"
+    },
+    {
+      "seconds": 25,
+      "text": "Etwas längere Gruppen. Eile hilft hier noch nichts.",
+      "type": "burst",
+      "tokens": [
+        "arr",
+        "aarr",
+        "arrr",
+        "ara",
+        "rarr",
+        "ar",
+        "rrrr",
+        "rrar",
+        "aaar",
+        "raar",
+        "aaaa",
+        "rrr"
+      ]
+    },
+    {
+      "text": "Alles, was du bis hierhin hast, in kurzen Gruppen. Sieh auf den Bildschirm, nicht auf die Hände.",
+      "type": "block",
+      "content": "era n er\nan na anan\nnnnn rrrr eeee aaaa"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ar ra arar\naaaa rrr\narar rara"
+    },
+    {
+      "text": "Ein letzter Durchgang mit allem aus dieser Lektion.",
+      "type": "block",
+      "content": "nea r ne\nar ra arar\nrrrr aaa eeee nnn"
+    }
+  ]
+}

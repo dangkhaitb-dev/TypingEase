@@ -1,31 +1,83 @@
-const routeLanguage = /^\/ja(?:\/|$)/.test(location.pathname) ? 'ja' : (/^\/en(?:\/|$)/.test(location.pathname) ? 'en' : '');
-if (routeLanguage) document.documentElement.lang = routeLanguage;
-const testLanguage = routeLanguage || document.documentElement.lang;
-const isEnglish = testLanguage === 'en';
-const isJapanese = testLanguage === 'ja';
-const passage = (isEnglish || isJapanese)
-  ? 'Touch typing is a skill built through calm, consistent practice. Keep your eyes on the screen, return your fingers to the home row, and focus on each accurate keystroke. As the movements become familiar, your speed can improve naturally and reliably.'
-  : 'Gõ mười ngón là một kỹ năng được xây dựng từ những lần luyện tập bình tĩnh và đều đặn. Hãy giữ mắt trên màn hình, đặt các ngón tay về hàng phím cơ sở và ưu tiên từng ký tự chính xác. Khi thao tác trở nên quen thuộc, tốc độ của bạn sẽ cải thiện một cách tự nhiên và bền vững.';
-const text = (vietnamese, english) => {
-  if (!isJapanese) return isEnglish ? english : vietnamese;
-  if (/^-second typing test$/.test(english.replace(/^\d+/, ''))) return english.replace(/^(\d+)-second typing test$/, '$1秒タイピングテスト');
-  if (english === 'Same as your previous result.') return '前回と同じ結果です。';
-  if (english.startsWith('Time is up. Result:')) return english.replace(/^Time is up\. Result: (\d+) WPM, (.+?)% accuracy, (\d+) errors\.$/, '時間です。結果：$1 WPM、正確率 $2%、ミス $3 件。');
-  if (english === 'Calculating your result in real time.') return '入力中の結果をリアルタイムで計算しています。';
-  if (english === 'Ready when you are.') return '入力を開始してください。';
-  if (english === 'Not enough data yet. Complete a few tests to see your progress.') return 'まだ十分なデータがありません。テストを完了すると、ここに進捗が表示されます。';
-  if (english === 'No progress data yet.') return '進捗データはまだありません。';
-  if (english === 'No data is available for this metric.') return 'この指標のデータはまだありません。';
-  if (english === 'There is no suitable data to draw this chart.') return 'グラフを表示するためのデータが不足しています。';
-  if (english === 'Not enough data to calculate a trend.') return '傾向を計算するためのデータが不足しています。';
-  if (english === 'No change from the start of this period.') return '期間の開始時点から変化はありません。';
-  if (english.includes('from your previous result')) return english.replace(/^(\+?-?\d+) WPM from your previous result\.$/, '前回より $1 WPM');
-  if (english.includes('from the start of this period')) return english.replace(/^(\+?-?\d+) (.+) from the start of this period\.$/, '期間開始時より $1 $2');
-  if (english.includes('tests in the last')) return english.replace(/^(\d+) tests in the last (\d+) days\. Average WPM (.+), average accuracy (.+)%\.$/, '過去 $2 日間のテストは $1 回。平均 WPM は $3、平均正確率は $4% です。');
-  return english === '% Accuracy' ? '正確率' : english;
+// Bảng tiếng Việt nằm ngay trong file, bản dịch chỉ trải lên trên — giống player.js,
+// curriculum-page.js và progress-page.js. Trang tiếng Việt vì thế không tải thêm byte nào, còn
+// một khoá thiếu bản dịch thì hiện tiếng Việt chứ không để trống.
+//
+// Bản trước đây gọi `text(vietnamese, english)` rồi dịch sang tiếng Nhật bằng cách dò NGƯỢC câu
+// tiếng Anh đã dựng xong (`if (english === 'Ready when you are.')`). Cách đó vừa không cho
+// ui.en.js ghi đè được gì, vừa hỏng lặng lẽ ngay khi ai đó sửa một dấu chấm trong câu tiếng Anh.
+// Các trang /ja/ nay chỉ còn là trang chuyển hướng và không nạp file này, nên nhánh đó đã bỏ.
+const T_VI = {
+  passage: 'Gõ mười ngón là một kỹ năng được xây dựng từ những lần luyện tập bình tĩnh và đều đặn. Hãy giữ mắt trên màn hình, đặt các ngón tay về hàng phím cơ sở và ưu tiên từng ký tự chính xác. Khi thao tác trở nên quen thuộc, tốc độ của bạn sẽ cải thiện một cách tự nhiên và bền vững.',
+  // Các đoạn nối tiếp nhau cho bài dài (tới 10 phút). Văn viết thường ngày, có dấu, có hoa, có dấu câu.
+  passages: [
+    'Gõ mười ngón là một kỹ năng được xây dựng từ những lần luyện tập bình tĩnh và đều đặn. Hãy giữ mắt trên màn hình, đặt các ngón tay về hàng phím cơ sở và ưu tiên từng ký tự chính xác. Khi thao tác trở nên quen thuộc, tốc độ của bạn sẽ cải thiện một cách tự nhiên và bền vững.',
+    'Sáng nay trời mưa nhẹ, cả con phố như chậm lại. Người bán bánh mì ở đầu ngõ vẫn dọn hàng từ sớm, chiếc ô xanh che kín chiếc xe đẩy nhỏ. Ai đi ngang qua cũng dừng lại một chút, mua một ổ bánh nóng rồi vội vàng đi tiếp dưới làn mưa bay.',
+    'Bà tôi có một khu vườn nhỏ sau nhà. Mỗi buổi chiều, bà tưới rau, nhổ cỏ và kể cho tôi nghe về những mùa thu hoạch ngày xưa. Có năm được mùa, cả xóm mang rổ sang xin rau muống, bà cho hết mà không lấy của ai một đồng nào.',
+    'Chuyến tàu đêm rời ga lúc mười giờ kém mười lăm. Trong toa, có người đọc sách, có người ngủ gục trên vai bạn đồng hành. Tôi ngồi cạnh cửa sổ, nhìn những ngọn đèn nhà ai lướt qua trong bóng tối và nghĩ về những ngày sắp tới ở một thành phố mới.',
+    'Muốn nấu một nồi canh chua ngon, bạn cần cà chua chín, dứa, đậu bắp và một ít me. Đun sôi nước, thả me vào cho ra vị chua, rồi cho cá vào sau cùng để thịt không bị nát. Nêm vừa ăn, rắc thêm rau thơm là có một bữa cơm nhà ấm áp.',
+    'Độ chính xác đi trước tốc độ. Khi tay đã nhớ đúng đường đi của từng ngón, tốc độ sẽ tự tăng lên mà bạn không cần cố gắng. Còn nếu gõ nhanh nhưng sai nhiều, bạn sẽ mất thời gian quay lại sửa, và nhịp gõ cũng bị đứt quãng.',
+    'Thư viện của trường mở cửa đến chín giờ tối. Những ngày gần kỳ thi, bàn nào cũng kín chỗ, chỉ nghe tiếng lật sách và tiếng bàn phím lách cách. Cô thủ thư đi một vòng, nhắc mọi người giữ yên lặng rồi mỉm cười quay về chỗ ngồi.',
+    'Cuối tuần, cả nhà tôi thường đạp xe ra bờ hồ. Không khí buổi sớm trong lành, mặt nước phẳng lặng như gương. Chúng tôi dừng lại ăn một bát phở, uống một cốc trà đá, rồi thong thả đạp xe về khi nắng bắt đầu lên cao.'
+  ],
+  title: 'Test tốc độ gõ {seconds} giây',
+  titleMinutes: 'Test tốc độ gõ {minutes} phút',
+  ready: 'Sẵn sàng khi bạn muốn.',
+  running: 'Đang tính kết quả theo thời gian thực.',
+  finished: 'Đã hết {seconds} giây. Kết quả: {wpm} WPM, {accuracy}% chính xác, {errors} lỗi.',
+  finishedMinutes: 'Đã hết {minutes} phút. Kết quả: {wpm} WPM, {accuracy}% chính xác, {errors} lỗi.',
+  comparisonSame: 'Bằng kết quả lần trước.',
+  comparisonDelta: '{delta} WPM so với lần trước',
+  progressEmpty: 'Chưa có đủ dữ liệu. Hãy hoàn thành vài bài kiểm tra để xem tiến bộ của bạn.',
+  progressNone: 'Chưa có dữ liệu tiến bộ.',
+  metricEmpty: 'Chưa có dữ liệu cho chỉ số này.',
+  chartEmpty: 'Chưa có dữ liệu phù hợp để vẽ biểu đồ.',
+  chartLabel: '{metric} theo thời gian',
+  trendEmpty: 'Chưa đủ dữ liệu để tính xu hướng.',
+  trendSame: 'Không thay đổi so với đầu kỳ.',
+  trendDelta: '{change} {measure} so với đầu kỳ.',
+  // Đơn vị đứng sau con số trong `trendDelta`. Tiếng Việt vẫn gọi là Accuracy như trên nhãn HTML.
+  measureAccuracy: '% Accuracy',
+  progressSummary: '{count} bài test trong {days} ngày. WPM trung bình {wpm}, Accuracy trung bình {accuracy}%.',
+  // Nhãn ngày trên trục hoành: '18/09' ở vi-VN, '09/18' ở en-US. Là dữ liệu chứ không phải câu
+  // chữ, nhưng vẫn thuộc về bản dịch nên để cùng bảng.
+  dateLocale: 'vi-VN'
 };
-const HISTORY_KEY = 'typingease-speed-test-history-v1';
-const durations = [15, 30, 60, 120];
+const T = { ...T_VI, ...(window.TypingEaseUI?.test || {}) };
+// Đơn vị tốc độ theo ngôn ngữ: PPM (es, pt), MPM (fr)… — cùng con số, chỉ khác tên.
+const UNIT = T.wpmUnit || 'WPM';
+const fill = (template, values = {}) =>
+  Object.entries(values).reduce((text, [key, value]) => text.split(`{${key}}`).join(String(value)), template);
+// Nhiều đoạn văn (`T.passages`), xáo thứ tự rồi nối tiếp: bài 5 hay 10 phút cần vài nghìn ký tự, một
+// đoạn cố định thì hết giữa chừng. Người gõ tới gần cuối là nối thêm một vòng nữa (`extendPassage`).
+const ALL_PASSAGES = (Array.isArray(T.passages) && T.passages.length ? T.passages : [T.passage]).filter(Boolean);
+// Ngôn ngữ có nhiều kiểu bàn phím mà không kiểu nào cũng gõ được mọi đoạn (Hindi Bolnagri thiếu phím ई ऊ
+// ऐ औ): máy sinh in `window.TypingEaseTestCourses` = { mã khoá: [chỉ số đoạn gõ được] } và một ô
+// #test-course. Chỉ lấy những đoạn gõ được trên bàn phím người học chọn; lựa chọn được nhớ.
+const COURSE_PASSAGES = window.TypingEaseTestCourses || null;
+const courseSelect = document.querySelector('#test-course');
+const COURSE_KEY = `typingease-test-course-${(document.documentElement.lang || 'vi').toLowerCase()}-v1`;
+if (courseSelect) {
+  try { const saved = localStorage.getItem(COURSE_KEY); if (saved && COURSE_PASSAGES?.[saved]) courseSelect.value = saved; } catch { /* storage blocked */ }
+}
+const passagesFor = id => {
+  const indexes = COURSE_PASSAGES?.[id];
+  const list = indexes && indexes.length ? indexes.map(index => ALL_PASSAGES[index]).filter(Boolean) : ALL_PASSAGES;
+  return list.length ? list : ALL_PASSAGES;
+};
+let PASSAGES = courseSelect ? passagesFor(courseSelect.value) : ALL_PASSAGES;
+const shuffled = list => { const copy = [...list]; for (let i = copy.length - 1; i > 0; i -= 1) { const j = Math.floor(Math.random() * (i + 1)); [copy[i], copy[j]] = [copy[j], copy[i]]; } return copy; };
+let passage = '';
+function extendPassage() {
+  let order = shuffled(PASSAGES);
+  // Không để một đoạn lặp lại liền kề chính nó ở chỗ nối hai vòng.
+  if (passage && order.length > 1 && passage.endsWith(order[0])) order = [...order.slice(1), order[0]];
+  passage = [passage, ...order].filter(Boolean).join(' ');
+}
+// Lịch sử theo ngôn ngữ: kết quả gõ tiếng Pháp không so với lần gõ tiếng Việt. Tiếng Việt và tiếng Anh
+// giữ khoá cũ để không mất lịch sử đã có.
+const PAGE_LANG = (document.documentElement.lang || 'vi').toLowerCase();
+const HISTORY_KEY = T.historyKey || (['vi', 'en'].includes(PAGE_LANG.split('-')[0])
+  ? 'typingease-speed-test-history-v1' : `typingease-speed-test-history-${PAGE_LANG}-v1`);
 const promptElement = document.querySelector('#test-prompt');
 const input = document.querySelector('#typing-input');
 const timeElement = document.querySelector('#time-left');
@@ -37,6 +89,8 @@ const messageElement = document.querySelector('#test-message');
 const titleElement = document.querySelector('#test-title');
 const restartButton = document.querySelector('#restart');
 const durationButtons = [...document.querySelectorAll('[data-duration]')];
+// Các mức thời lượng đọc từ chính các nút trên trang (15 giây … 10 phút), không viết cứng ở đây.
+const durations = durationButtons.map(button => Number(button.dataset.duration)).filter(Number.isFinite);
 const resultElement = document.querySelector('#test-result');
 const resultWpm = document.querySelector('#result-wpm');
 const resultAccuracy = document.querySelector('#result-accuracy');
@@ -54,7 +108,7 @@ const progressAverageWpm = document.querySelector('#progress-average-wpm');
 const progressBestWpm = document.querySelector('#progress-best-wpm');
 const progressAverageAccuracy = document.querySelector('#progress-average-accuracy');
 const progressTestCount = document.querySelector('#progress-test-count');
-let selectedDuration = 60;
+let selectedDuration = Number(durationButtons.find(button => button.getAttribute('aria-pressed') === 'true')?.dataset.duration) || 60;
 let startedAt = null;
 let timer = null;
 let finished = false;
@@ -98,12 +152,29 @@ function saveHistory(record) {
   renderProgress();
 }
 
+// Dưới một phút: số giây trơn ("45"). Từ một phút trở lên: phút:giây ("4:05").
+const clock = seconds => (seconds < 60 ? String(seconds) : `${Math.floor(seconds / 60)}:${String(seconds % 60).padStart(2, '0')}`);
+
 function renderPrompt() {
   const typed = input.value;
+  if (typed.length > passage.length - 160) extendPassage();
   promptElement.innerHTML = [...passage].map((character, index) => {
     const state = index < typed.length ? (typed[index] === character ? '' : 'wrong') : index === typed.length ? 'current' : '';
-    return `<span class="${state}">${character === ' ' ? '&nbsp;' : character}</span>`;
+    // Dấu cách để nguyên (không &nbsp;): .test-prompt là pre-wrap, nên dòng xuống ở giữa hai từ
+    // chứ không cắt đôi một từ như trước.
+    return `<span class="${state}">${character === '<' ? '&lt;' : character === '&' ? '&amp;' : character}</span>`;
   }).join('');
+  // Khung chữ cao cố định (test.css); cuộn để dòng đang gõ luôn là dòng thứ hai.
+  const current = promptElement.querySelector('.current');
+  if (current) {
+    // .test-prompt là offsetParent (position:relative), nên offsetTop của ký tự tính từ mép trong
+    // khung. Chừa lại đúng một dòng phía trên dòng đang gõ.
+    // Cuộn theo đúng lưới dòng: offsetTop của một ký tự nằm lệch nửa khoảng cách dòng so với đỉnh dòng.
+    const style = getComputedStyle(promptElement);
+    const line = parseFloat(style.lineHeight) || current.offsetHeight;
+    const row = Math.floor((current.offsetTop + line / 2) / line);
+    promptElement.scrollTop = Math.max(0, (row - 1) * line);
+  }
 }
 
 function calculateMetrics(now = Date.now()) {
@@ -147,7 +218,7 @@ function collectWpmSample(now = Date.now()) {
 
 function updateDurationUi() {
   const running = Boolean(startedAt && !finished);
-  titleElement.textContent = text(`Test tốc độ gõ ${selectedDuration} giây`, `${selectedDuration}-second typing test`);
+  titleElement.textContent = fill(selectedDuration >= 60 && T.titleMinutes ? T.titleMinutes : T.title, { seconds: selectedDuration, minutes: selectedDuration / 60 });
   durationButtons.forEach(button => {
     const selected = Number(button.dataset.duration) === selectedDuration;
     button.classList.toggle('selected', selected);
@@ -157,14 +228,16 @@ function updateDurationUi() {
 }
 
 function showResult(metrics, consistency) {
-  resultWpm.textContent = `${metrics.wpm} WPM`;
+  resultWpm.textContent = `${metrics.wpm} ${UNIT}`;
   resultAccuracy.textContent = `${metrics.accuracy ?? '--'}%`;
   resultErrors.textContent = String(metrics.errors);
   resultConsistency.textContent = `${consistency ?? '--'}%`;
   const previous = [...testHistory].reverse().find(item => item.duration === selectedDuration);
   if (previous) {
     const difference = metrics.wpm - previous.wpm;
-    comparisonElement.textContent = difference === 0 ? text('Bằng kết quả lần trước.', 'Same as your previous result.') : text(`${difference > 0 ? '+' : ''}${difference} WPM so với lần trước`, `${difference > 0 ? '+' : ''}${difference} WPM from your previous result`);
+    comparisonElement.textContent = difference === 0
+      ? T.comparisonSame
+      : fill(T.comparisonDelta, { delta: `${difference > 0 ? '+' : ''}${difference}` });
     comparisonElement.hidden = false;
   } else {
     comparisonElement.hidden = true;
@@ -183,7 +256,7 @@ function endTest() {
   input.disabled = true;
   showResult(metrics, consistency);
   saveHistory({ duration: selectedDuration, wpm: metrics.wpm, accuracy: metrics.accuracy, errors: metrics.errors, consistency, timestamp: Date.now() });
-  messageElement.textContent = text(`Đã hết ${selectedDuration} giây. Kết quả: ${metrics.wpm} WPM, ${metrics.accuracy ?? '--'}% chính xác, ${metrics.errors} lỗi.`, `Time is up. Result: ${metrics.wpm} WPM, ${metrics.accuracy ?? '--'}% accuracy, ${metrics.errors} errors.`);
+  messageElement.textContent = fill(selectedDuration >= 60 && T.finishedMinutes ? T.finishedMinutes : T.finished, { seconds: selectedDuration, minutes: selectedDuration / 60, wpm: metrics.wpm, accuracy: metrics.accuracy ?? '--', errors: metrics.errors });
   updateDurationUi();
 }
 
@@ -191,7 +264,7 @@ function tick() {
   if (!startedAt || finished) return;
   const now = Date.now();
   const elapsedSeconds = Math.floor((now - startedAt) / 1000);
-  timeElement.textContent = Math.max(selectedDuration - elapsedSeconds, 0);
+  timeElement.textContent = clock(Math.max(selectedDuration - elapsedSeconds, 0));
   collectWpmSample(now);
   updateMetrics(now);
   if (elapsedSeconds >= selectedDuration) endTest();
@@ -200,7 +273,7 @@ function tick() {
 function beginTest() {
   if (startedAt || finished || !input.value) return;
   startedAt = Date.now();
-  messageElement.textContent = text('Đang tính kết quả theo thời gian thực.', 'Calculating your result in real time.');
+  messageElement.textContent = T.running;
   updateDurationUi();
   timer = setInterval(tick, 250);
 }
@@ -213,14 +286,16 @@ function resetTest(focus = true) {
   lastSampleSecond = 0;
   input.disabled = false;
   input.value = '';
-  timeElement.textContent = String(selectedDuration);
+  passage = '';
+  extendPassage();
+  timeElement.textContent = clock(selectedDuration);
   wpmElement.textContent = '0';
   setPercent(accuracyElement, null);
   errorsElement.textContent = '0';
   setPercent(consistencyElement, null);
   resultElement.hidden = true;
   comparisonElement.hidden = true;
-  messageElement.textContent = text('Sẵn sàng khi bạn muốn.', 'Ready when you are.');
+  messageElement.textContent = T.ready;
   updateDurationUi();
   renderPrompt();
   if (focus) input.focus();
@@ -257,7 +332,7 @@ function groupProgressByDay(records) {
   }));
 }
 
-function formatProgressDate(date) { return date.toLocaleDateString(isEnglish ? 'en-US' : 'vi-VN', { day: '2-digit', month: '2-digit' }); }
+function formatProgressDate(date) { return date.toLocaleDateString(T.dateLocale, { day: '2-digit', month: '2-digit' }); }
 
 function renderProgressChart(groups) {
   const values = groups.map(group => progressMetric === 'wpm' ? group.averageWpm : group.averageAccuracy).filter(Number.isFinite);
@@ -271,16 +346,16 @@ function renderProgressChart(groups) {
   const path = groups.map((group, index) => `${index ? 'L' : 'M'}${x(index).toFixed(1)},${y(progressMetric === 'wpm' ? group.averageWpm : group.averageAccuracy).toFixed(1)}`).join(' ');
   const grid = [0, .5, 1].map(step => { const value = Math.round(maxValue - step * valueRange); const lineY = top + step * chartHeight; return `<line class="grid" x1="${left}" y1="${lineY}" x2="${width - right}" y2="${lineY}"/><text class="axis-label" x="8" y="${lineY + 4}">${value}${progressMetric === 'accuracy' ? '%' : ''}</text>`; }).join('');
   const labels = groups.map((group, index) => (groups.length <= 6 || index === 0 || index === groups.length - 1 || index % Math.ceil(groups.length / 4) === 0) ? `<text class="axis-label" text-anchor="middle" x="${x(index)}" y="${height - 13}">${formatProgressDate(group.day)}</text>` : '').join('');
-  const points = groups.map((group, index) => { const value = progressMetric === 'wpm' ? group.averageWpm : group.averageAccuracy; return `<circle class="point" cx="${x(index)}" cy="${y(value)}" r="4"><title>${formatProgressDate(group.day)}: ${Math.round(value)}${progressMetric === 'accuracy' ? '%' : ' WPM'}</title></circle>`; }).join('');
+  const points = groups.map((group, index) => { const value = progressMetric === 'wpm' ? group.averageWpm : group.averageAccuracy; return `<circle class="point" cx="${x(index)}" cy="${y(value)}" r="4"><title>${formatProgressDate(group.day)}: ${Math.round(value)}${progressMetric === 'accuracy' ? '%' : ` ${UNIT}`}</title></circle>`; }).join('');
   progressChart.innerHTML = `${grid}<path class="line" d="${path}"/>${points}${labels}`;
-  progressChart.setAttribute('aria-label', text(`${progressMetric === 'wpm' ? 'WPM' : 'Accuracy'} theo thời gian`, `${progressMetric === 'wpm' ? 'WPM' : 'Accuracy'} over time`));
+  progressChart.setAttribute('aria-label', fill(T.chartLabel, { metric: progressMetric === 'wpm' ? UNIT : (T.accuracyName || 'Accuracy') }));
 }
 
 function renderProgress() {
   const records = getProgressRecords();
   const groups = groupProgressByDay(records);
   const chartGroups = groups.filter(group => Number.isFinite(progressMetric === 'wpm' ? group.averageWpm : group.averageAccuracy));
-  progressEmpty.textContent = text('Chưa có đủ dữ liệu. Hãy hoàn thành vài bài kiểm tra để xem tiến bộ của bạn.', 'Not enough data yet. Complete a few tests to see your progress.');
+  progressEmpty.textContent = T.progressEmpty;
   const accuracyRecords = records.filter(record => Number.isFinite(record.accuracy));
   const averageWpm = records.length ? Math.round(records.reduce((total, record) => total + record.wpm, 0) / records.length) : null;
   const bestWpm = records.length ? Math.max(...records.map(record => record.wpm)) : null;
@@ -295,38 +370,59 @@ function renderProgress() {
     progressEmpty.hidden = false;
     progressChartWrap.hidden = true;
     progressTrend.textContent = '';
-    progressSummaryText.textContent = text('Chưa có dữ liệu tiến bộ.', 'No progress data yet.');
+    progressSummaryText.textContent = T.progressNone;
     return;
   }
   if (!chartGroups.length) {
     progressEmpty.hidden = false;
     progressChartWrap.hidden = true;
-    progressTrend.textContent = text('Chưa có dữ liệu cho chỉ số này.', 'No data is available for this metric.');
-    progressSummaryText.textContent = text('Chưa có dữ liệu phù hợp để vẽ biểu đồ.', 'There is no suitable data to draw this chart.');
+    progressTrend.textContent = T.metricEmpty;
+    progressSummaryText.textContent = T.chartEmpty;
     return;
   }
   progressEmpty.hidden = true;
   progressChartWrap.hidden = false;
   renderProgressChart(chartGroups);
-  const measure = progressMetric === 'wpm' ? 'WPM' : text('% Accuracy', '% Accuracy');
+  const measure = progressMetric === 'wpm' ? UNIT : T.measureAccuracy;
   if (chartGroups.length < 2) {
     progressTrend.className = 'progress-trend';
-    progressTrend.textContent = text('Chưa đủ dữ liệu để tính xu hướng.', 'Not enough data to calculate a trend.');
+    progressTrend.textContent = T.trendEmpty;
   } else {
     const first = progressMetric === 'wpm' ? chartGroups[0].averageWpm : chartGroups[0].averageAccuracy;
     const last = progressMetric === 'wpm' ? chartGroups.at(-1).averageWpm : chartGroups.at(-1).averageAccuracy;
     const change = Math.round(last - first);
     progressTrend.className = `progress-trend ${change > 0 ? 'positive' : change < 0 ? 'negative' : ''}`;
-    progressTrend.textContent = change === 0 ? text('Không thay đổi so với đầu kỳ.', 'No change from the start of this period.') : text(`${change > 0 ? '+' : ''}${change} ${measure} so với đầu kỳ.`, `${change > 0 ? '+' : ''}${change} ${measure} from the start of this period.`);
+    progressTrend.textContent = change === 0
+      ? T.trendSame
+      : fill(T.trendDelta, { change: `${change > 0 ? '+' : ''}${change}`, measure });
   }
-  progressSummaryText.textContent = text(`${records.length} bài test trong ${progressRange} ngày. WPM trung bình ${averageWpm ?? '--'}, Accuracy trung bình ${averageAccuracy ?? '--'}%.`, `${records.length} tests in the last ${progressRange} days. Average WPM ${averageWpm ?? '--'}, average accuracy ${averageAccuracy ?? '--'}%.`);
+  progressSummaryText.textContent = fill(T.progressSummary, { count: records.length, days: progressRange, wpm: averageWpm ?? '--', accuracy: averageAccuracy ?? '--' });
 }
 
+courseSelect?.addEventListener('change', () => {
+  PASSAGES = passagesFor(courseSelect.value);
+  try { localStorage.setItem(COURSE_KEY, courseSelect.value); } catch { /* storage blocked */ }
+  resetTest(false);
+});
 durationButtons.forEach(button => button.addEventListener('click', () => {
   if (startedAt && !finished) return;
   selectedDuration = Number(button.dataset.duration);
   resetTest(false);
 }));
+// Gõ theo VỊ TRÍ phím (Chú âm Đài Loan): trang in sẵn `window.TypingEaseTestKeys` = { mã phím: [chữ,
+// chữ khi giữ Shift] } của bố cục khoá học (scripts/build-test-pages.mjs). Người gõ để bộ gõ ở chế độ
+// tiếng Anh; phím vật lý được đổi thành ký tự của bố cục — cùng luật với player.js và trò chơi.
+const POSITION_KEYS = window.TypingEaseTestKeys || null;
+if (POSITION_KEYS) input.addEventListener('keydown', event => {
+  if (event.isComposing || event.key === 'Process' || event.ctrlKey || event.metaKey || event.altKey) return;
+  const slot = POSITION_KEYS[event.code];
+  const character = slot && (event.shiftKey ? slot[1] : slot[0]);
+  if (!character) return;
+  event.preventDefault();
+  const start = input.selectionStart ?? input.value.length, end = input.selectionEnd ?? start;
+  input.setRangeText(character, start, end, 'end');
+  input.dispatchEvent(new Event('input'));
+});
 input.addEventListener('input', () => {
   if (!finished) clickFor(input.value);
   beginTest();

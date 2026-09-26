@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tes progrès en dactylographie | TypingEase</title>
+    <meta name="description" content="Vois où tu en es : la note de chaque leçon, tes meilleurs MPM et ta meilleure précision, une carte de chaleur des touches que tu rates, ta série de jours et ton objectif quotidien." />
+    <link rel="canonical" href="https://typingease.site/fr/progres/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/fr.mjs, progress trong
+         i18n/ui.fr.js và bai-hoc/config.fr.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="Navigation principale">
+        <a href="/fr/">Pratiquer</a>
+        <a data-route="lessons" href="/fr/lecons/">Cours</a>
+        <a class="active" href="/fr/progres/">Progrès</a>
+        <a href="/fr/test-de-frappe/">Test</a>
+        <a href="/fr/jeux-de-dactylographie/">Jeux</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="Choisis ta langue et ton clavier">Accueil</a><a class="secondary-button" data-route="learn" href="/fr/apprendre/">Continuer à apprendre <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> Où tu en es</p>
+        <h1>Tes progrès en dactylographie</h1>
+        <p class="prog-intro">Tous les chiffres de cette page sont enregistrés sur cet appareil et ne partent nulle part. Fais une leçon de plus et ils se mettent à jour.</p>
+        <nav class="prog-courses" id="prog-courses" aria-label="Cours">
+          <a href="/fr/progres/?course=fr" data-course="fr" aria-current="page">AZERTY</a>
+          <a href="/fr/progres/?course=fr-canadien" data-course="fr-canadien">Canada</a>
+          <a href="/fr/progres/?course=fr-suisse" data-course="fr-suisse">Suisse</a>
+          <a href="/fr/progres/?course=fr-bepo" data-course="fr-bepo">BÉPO</a>
+        </nav>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 0 jours de suite</span>
+          <span id="strip-today">0 minutes aujourd’hui</span>
+          <span id="strip-level">Niveau : Débutant</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="Vue d'ensemble">
+        <div><span>Leçons faites</span><strong id="sum-lessons">0 / 33</strong></div>
+        <div><span>Étoiles réunies</span><strong id="sum-stars">0</strong></div>
+        <div><span>Meilleurs MPM</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>Meilleure précision</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> Étapes franchies</p>
+            <h2 id="badges-title">Badges</h2>
+            <p>Chaque badge est lié à un vrai chiffre du tableau ci-dessous — la seule façon d'en débloquer un, c'est de taper.</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">Objectif du jour</p>
+          <h3 id="daily-goal-title">0 / 10 minutes</h3>
+          <p id="daily-goal-status">🔥 0 jours de suite</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">Record : 0 jours</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="Choisis un objectif quotidien">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 min</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 min</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 min</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 min</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">Ton coach</p><h3 id="coach-title">Où tu en es</h3></div>
+          <span class="coach-level" id="coach-level">Débutant</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="Progrès récents" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">Encore 2 leçons et il y aura assez de données pour tracer une tendance.</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">Fais une leçon et cette page saura où tu en es.</p>
+        <a class="coach-action" id="coach-action" href="/fr/apprendre/">Commencer la leçon 1 →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> Touche par touche</p>
+          <h3 id="heat-title">Carte de chaleur du clavier</h3>
+          <p>Les touches vertes sont celles que tu frappes sans faute, les orange passent une fois sur deux, les rouges te font perdre de la vitesse. Une touche ne prend une couleur qu'une fois que tu l'as tapée assez souvent pour en dire quelque chose d'utile.</p>
+          <p class="heat-empty" id="heat-empty">Pas encore assez de données — fais quelques leçons et reviens.</p>
+          <div class="heat-legend" id="heat-legend" aria-label="Précision par touche" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="Le cours de {n} leçons"><i></i> Le cours de 33 leçons</p>
+            <h2 id="results-title">Chaque leçon, notée</h2>
+            <p>Ton meilleur passage sur chaque leçon, gardé sur cet appareil.</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">Effacer l'historique</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>Leçon</th><th>Écrans faits</th><th>Étoiles</th><th>Meilleurs MPM</th><th>Précision</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Continue</p>
+          <h2 id="prog-explore-title">Et maintenant</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/fr/lecons/">
+            <h3>Le cours complet</h3>
+            <p>Toutes les unités dans l'ordre. Reviens sur une leçon que tu veux refaire, ou ouvre l'unité suivante en avance.</p>
+            <span>Voir le cours <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>Écris sur ton propre clavier</h3>
+            <p>QWERTY, AZERTY, QWERTZ, devanagari, arabe, JIS — 119 dispositions réelles, et le cours suit celle que tu choisis.</p>
+            <span>Voir les dispositions <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>Va un peu plus lentement, et tu iras beaucoup plus loin.</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/fr/about/">À propos</a><span aria-hidden="true"> · </span><a href="/fr/terms/">Conditions d’utilisation</a><span aria-hidden="true"> · </span><a href="/fr/privacy/">Politique de confidentialité</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.fr.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.fr.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"fr":{"learn":"/fr/apprendre/","lessons":"/fr/lecons/"},"fr-canadien":{"learn":"/fr/canadien/apprendre/","lessons":"/fr/canadien/"},"fr-suisse":{"learn":"/fr/suisse/apprendre/","lessons":"/fr/suisse/"},"fr-bepo":{"learn":"/fr/bepo/apprendre/","lessons":"/fr/bepo/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "fr";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "V and X",
+  "summary": "Two new keys: V and X. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "v",
+    "x"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y",
+    "r",
+    "u",
+    "w",
+    "f",
+    "b",
+    "j",
+    "p",
+    "d",
+    "m",
+    "k",
+    "l",
+    "c",
+    "q",
+    ";",
+    "v",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: V and X. They belong to your left index finger and your left ring finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If V and X already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "v",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press V to continue"
+    },
+    {
+      "newKey": "v",
+      "text": "Only V and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "vnh t vn\nv v vv\nvvvv"
+    },
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LR",
+      "text": "This key belongs to your left ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press X to continue"
+    },
+    {
+      "newKey": "x",
+      "text": "Only X and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "vxvxvx xvxvxv\nxv xv\nnhx vt nh"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "xxxx",
+        "xxxv",
+        "vvv",
+        "xxx",
+        "xvx",
+        "vvxx",
+        "xvvv",
+        "vxvv",
+        "xv",
+        "vvvv"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "nnnn vvvv xxx ttt\nvxvx xvxv\nxnvt tnxv"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "loved seven observe lives\nvisit volume heavy maximum\nevening however express visits"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "story",
+        "make",
+        "ah",
+        "walks",
+        "yeast",
+        "age",
+        "day",
+        "rose",
+        "last",
+        "could"
+      ]
+    },
+    {
+      "text": "Now the weight is on V, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "two light corner use\nshort sell hardly color\nring not his visit"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nht xv nh\nxv vx xvxv\nxxxx vvv"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "protect beside boat hears\nledge children shelf leaf\nthat trail study about"
+    }
+  ]
+}

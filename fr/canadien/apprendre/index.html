@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="fr" data-course="fr-canadien">
+  <head>
+    <!-- SINH TỰ ĐỘNG bằng scripts/build-family-pages.js từ fr/apprendre/index.html. Sửa trang gốc rồi chạy lại. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leçon · TypingEase</title>
+    <meta name="description" content="Le lecteur de leçons TypingEase : un écran à la fois, avec un clavier et des mains qui montrent où va chaque doigt." />
+    <!-- L'application, pas une page d'atterrissage. Même raisonnement que /hoc/ et
+         /en/learn/ : les exercices n'ont aucune valeur de recherche et la route vit dans
+         le hash, donc la page reste hors de l'index. Pas de hreflang non plus : on n'annote
+         pas les alternatives de pages que personne ne devrait indexer. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://typingease.site/fr/canadien/apprendre/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/player.css" />
+  </head>
+  <body class="player-page">
+    <div class="player" id="player">
+      <header class="player-topbar">
+        <a class="pt-back" href="/fr/canadien/" id="pt-back">← Cours</a>
+        <div class="pt-title">
+          <span id="pt-unit"></span>
+          <strong id="pt-lesson">Chargement…</strong>
+        </div>
+        <div class="pt-right">
+          <span class="pt-screen" id="pt-screen"></span>
+          <button class="pt-redo" id="pt-redo" type="button" title="Recommencer la leçon" aria-label="Recommencer la leçon">↻</button>
+          <button class="pt-toggle" id="pt-sound" type="button" aria-pressed="false" title="Son des touches (Alt+S)" aria-label="Son des touches">🔊</button>
+          <button class="pt-toggle" id="pt-hands" type="button" aria-pressed="true" title="Les mains suivent les touches (Alt+H)" aria-label="Les mains suivent les touches">✋</button>
+          <button class="pt-redo" id="pt-keyboard" type="button" title="Réglages du clavier (Alt+K)" aria-label="Réglages du clavier">⚙</button>
+        </div>
+      </header>
+
+      <div class="progress-segments" id="pt-progress" role="progressbar" aria-label="Progression de la leçon" aria-valuemin="0" aria-valuenow="0"></div>
+
+      <div class="player-notes" id="player-note" hidden></div>
+
+      <main class="player-stage is-loading" id="stage">
+        <section class="card"><p class="intro-text">Chargement de la leçon…</p></section>
+      </main>
+
+      <div class="player-board keyboard-demo" id="board" aria-hidden="true"></div>
+
+      <p class="player-live" id="live" role="status" aria-live="polite"></p>
+
+      <label class="sr-only" for="player-input">Écris la ligne ci-dessus</label>
+      <textarea class="player-input" id="player-input" rows="1" autocomplete="off" autocapitalize="off"
+        autocorrect="off" spellcheck="false" inputmode="text" aria-describedby="live"></textarea>
+
+      <button class="tap-to-type" id="tap-to-type" type="button">Touche ici pour écrire</button>
+    </div>
+
+    <!-- ui.fr.js d'abord : chaque module ci-dessous le superpose à ses propres valeurs par
+         défaut en vietnamien, donc il doit exister quand ils s'exécutent. Script classique
+         exprès — les scripts classiques s'exécutent avant les modules avec defer, ce dont
+         dépend keyboard/boot.js.
+         Pas de telex-match.js ici : Telex est une méthode de saisie vietnamienne et ce cours
+         n'atteint jamais ce chemin de code.
+         data/words/fr.js doit venir avant weak-keys.js, qui y lit sa liste. -->
+    <script src="/i18n/ui.fr.js"></script>
+    <script src="/profile.js"></script>
+    <script src="/data/words/fr.js"></script>
+    <script src="/weak-keys.js"></script>
+    <script src="/data/curriculum.fr-canadien.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/player.js"></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

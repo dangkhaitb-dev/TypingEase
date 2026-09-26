@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, period, comma and apostrophe",
+  "summary": "Two new keys: Z, period, comma and apostrophe. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y",
+    "r",
+    "u",
+    "w",
+    "f",
+    "b",
+    "j",
+    "p",
+    "d",
+    "m",
+    "k",
+    "l",
+    "c",
+    "q",
+    ";",
+    "v",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: Z, period, comma and apostrophe. They belong to your left little finger, your right ring finger, your right middle finger and your right little finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If Z, period, comma and apostrophe already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "This key belongs to your left little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press Z to continue"
+    },
+    {
+      "newKey": "z",
+      "text": "Only Z and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "z z\nhtn z ht\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "This key belongs to your right ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press . to continue"
+    },
+    {
+      "newKey": ".",
+      "text": "Only . and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": ".z .z\n.zt hn .z\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "This key belongs to your right middle finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press , to continue"
+    },
+    {
+      "newKey": ",",
+      "text": "Only , and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "z,. .z,\n.,n tzh .,\nz. .z z.z."
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RP",
+      "text": "This key belongs to your right little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press ' to continue"
+    },
+    {
+      "newKey": "'",
+      "text": "Only ' and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "t.n ,'h t.\n'. .' '.'.\n''' ,,, zzzz ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "z'",
+        "z.",
+        ",,",
+        ".,",
+        "''",
+        ",'",
+        "zz",
+        "',",
+        "..",
+        "z,"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "z.z.z. .z.z.z\nz'n.t, t'z,n.\nsz' .hn sz"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "isn't don't didn't frozen\nthey're you've recognize realize\nthey'll that's amaze i've"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "farm",
+        "user",
+        "i'd",
+        "dads",
+        "birds",
+        "present",
+        "girder",
+        "country",
+        "seeds",
+        "team"
+      ]
+    },
+    {
+      "text": "Now the weight is on Z, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "appear borrow hope class\nthanks ill meant daughter\naside lazy refuse their"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, zzz ''' ...\nz.z.z. .z.z.z\n,z'. ,z'."
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "longer rich wind up\nnatural birth cloud window\ngives may produce cat"
+    }
+  ]
+}

@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "Yeni tuşlar: (, ), = ve ?",
+  "summary": "Bu derste: (, ), = ve ?.",
+  "newKeys": [
+    "(",
+    ")",
+    "=",
+    "?"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c",
+    "f",
+    "p",
+    "ç",
+    "ö",
+    "j",
+    ".",
+    "b",
+    "ş",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ",",
+    "/",
+    "-",
+    "q",
+    "w",
+    "x",
+    "+",
+    "*",
+    "!",
+    "\"",
+    "$",
+    "%",
+    "&",
+    "'",
+    "(",
+    ")",
+    "=",
+    "?"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kursun henüz kullanmadığı tuşlar: (, ), = ve ?. Hepsi Shift ve parmaklarının zaten tanıdığı bir tuşla çıkar — Shift öbür elin serçe parmağında.",
+  "congrats": "Artık parmaklarının altında: (, ), = ve ?. İşaret de yanındaki harf kadar kolay çıkıyor.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RM",
+      "text": "Bu karakter için sağ orta parmak çalışır: (; Shift öbür elde.",
+      "hint": "Devam etmek için ( tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Önce yalnızca (, sonra gerçekten kullanıldığı yerde.",
+      "content": "(( ( (sorular (kadın (bazen\n(( ( (kanat (deniz (satır\n(( ( (mutfakta (yedi (yanıt"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RR",
+      "text": "Bu karakter için sağ yüzük parmağı çalışır: ); Shift öbür elde.",
+      "hint": "Devam etmek için ) tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "Önce yalnızca ), sonra gerçekten kullanıldığı yerde.",
+      "content": ")) ) (pembe) (güzel) (öğrenci)\n)) ) (siz) (fırın) (sağ)\n)) ) (taraf) (aile) (dil)"
+    },
+    {
+      "type": "intro",
+      "key": "=",
+      "finger": "RP",
+      "text": "Bu karakter için sağ serçe parmak çalışır: =; Shift öbür elde.",
+      "hint": "Devam etmek için = tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "=",
+      "text": "Önce yalnızca =, sonra gerçekten kullanıldığı yerde.",
+      "content": "== = 75 = 94 83 = 15 56 = 66\n== = 38 = 31 16 = 60 92 = 50\n== = 40 = 48 45 = 75 17 = 90"
+    },
+    {
+      "type": "intro",
+      "key": "?",
+      "finger": "RP",
+      "text": "Bu karakter için sağ serçe parmak çalışır: ?; Shift öbür elde.",
+      "hint": "Devam etmek için ? tuşuna bas"
+    },
+    {
+      "type": "block",
+      "newKey": "?",
+      "text": "Önce yalnızca ?, sonra gerçekten kullanıldığı yerde.",
+      "content": "?? ? sesler? dolu? için?\n?? ? çarşamba? dünya? deniz?\n?? ? çalışmak? kese? koca?"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Bu karakterlerle kısa parçalardan bir seri.",
+      "tokens": [
+        "göl?",
+        "(noktalar)",
+        "(doktor)",
+        "(tuhaf)",
+        "hurda?",
+        "46=77",
+        "14=9",
+        "23=84",
+        "(yaş)",
+        "38=83"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Bu derste gelen her şey, karışık.",
+      "content": "(yağ) 14=47 (numara) (domates)\nkasada? (kanun) 74=94 (bakmadan)\ndinle? (araba) pamuk? (bak)"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Yeniden kelimeler, işaretler yerli yerinde.",
+      "content": "(ekim) değişik 51 = 90 tepe (yüzme)\n(mümkün) işçi cesur? hesaplar (program)\nsözlük? ön 65 = 85 soda (aralık)"
+    }
+  ]
+}

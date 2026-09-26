@@ -1,0 +1,134 @@
+{
+  "id": "u2-l04",
+  "unit": "u2",
+  "group": "start",
+  "order": 14,
+  "slug": "m-v",
+  "title": "M と V",
+  "summary": "新しいキー：M と V。指が出て、押して、戻ります。",
+  "newKeys": [
+    "m",
+    "v"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンの新しいキー：M と V。右手の人差し指 と 左手の人差し指で押します。動きはいつも同じで、出て、押して、戻ります。練習するのは戻る動きです。指が外に残ったままだと、次の文字を間違えるからです。",
+  "congrats": "指の下のキーが増えました。M と V を探さずに打てるなら、このレッスンの役目は果たせています。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RI",
+      "text": "このキーは右手の人差し指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "M を押して次へ"
+    },
+    {
+      "newKey": "m",
+      "text": "M と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "djf m dj\nm m mm\nmmmm"
+    },
+    {
+      "type": "intro",
+      "key": "v",
+      "finger": "LI",
+      "text": "このキーは左手の人差し指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "V を押して次へ"
+    },
+    {
+      "newKey": "v",
+      "text": "V と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "vvvv mmmm\nmvmvmv vmvmvm\nvm mv"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        "mm",
+        "vmmm",
+        "vvmm",
+        "mvmv",
+        "mmmm",
+        "vmvm",
+        "vvm",
+        "vmvv",
+        "mv",
+        "mmmv"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "vm mv vmvm\nffff vvv mmmm jjj\nmvmvmv vmvmvm"
+    },
+    {
+      "text": "新しいキーを使う、本物の日本語の単語です。一文字ずつではなく、単語をひと続きに打ってください。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "manga anime mukashi arimasu\nmatsuri umareru kimatta mijikai\numai kimono mada kumori"
+    },
+    {
+      "seconds": 25,
+      "text": "新しいキーを含む、短い単語の連打です。",
+      "type": "burst",
+      "tokens": [
+        "aoi",
+        "ichi",
+        "yasai",
+        "rajio",
+        "iki",
+        "shiji",
+        "hikari",
+        "rika",
+        "nashi",
+        "kocchi"
+      ]
+    },
+    {
+      "text": "次は、いちばん押す回数が少なかった M を多めに打ちます。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kotaeru shinchou kinyuu mamoru\nimouto yoi momo ikimashou\nshiranai itai shinai koe"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "mvmv vmvm\nvm vm\ndjf mv dj"
+    },
+    {
+      "text": "ここまでのキーすべてを混ぜて。考えなくても出てくる単語が、もうかなりあるはずです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "riku hanasu nashi sentaku\ntsukue koori kaesu fukai\nshiraseru jikkuri yurusu kami"
+    }
+  ]
+}

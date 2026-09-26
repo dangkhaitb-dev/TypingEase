@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Y, Punkt, Komma und Ä",
+  "summary": "Neue Tasten: Y, Punkt, Komma und Ä. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "y",
+    ".",
+    ",",
+    "ä"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ä"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: Y, Punkt, Komma und Ä. Dafür sind der linke kleine Finger, der rechte Ringfinger, der rechte Mittelfinger und der rechte kleine Finger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn Y, Punkt, Komma und Ä ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "LP",
+      "text": "Für diese Taste ist der linke kleine Finger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke Y, um weiterzugehen"
+    },
+    {
+      "newKey": "y",
+      "text": "Nur Y und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "y y\ndfj y df\ny y yy"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "Für diese Taste ist der rechte Ringfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke ., um weiterzugehen"
+    },
+    {
+      "newKey": ".",
+      "text": "Nur . und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": ".y .y\n.yf dj .y\ny. .y y.y."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "Für diese Taste ist der rechte Mittelfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke ,, um weiterzugehen"
+    },
+    {
+      "newKey": ",",
+      "text": "Nur , und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "y,. .y,\n.,j fyd .,\ny. .y y.y."
+    },
+    {
+      "type": "intro",
+      "key": "ä",
+      "finger": "RP",
+      "text": "Für diese Taste ist der rechte kleine Finger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke Ä, um weiterzugehen"
+    },
+    {
+      "newKey": "ä",
+      "text": "Nur Ä und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "f.j ,äd f.\nä. .ä ä.ä.\näää ,,, yyyy ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "yä",
+        "y.",
+        ",,",
+        ".,",
+        "ää",
+        ",ä",
+        "yy",
+        "ä,",
+        "..",
+        "y,"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "y.y.y. .y.y.y\nyäj.f, fäy,j.\nsyä .dj sy"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ändern stärke äpfel nächste\nzylinder systeme kälte hände\nlyrik rhythmus bäcker typen"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "hose",
+        "praxis",
+        "krise",
+        "durch",
+        "marke",
+        "chef",
+        "möchte",
+        "sich",
+        "platz",
+        "verein"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf Y — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "vorsicht kopie letzte weise\nschön fad rock klasse\nglas symbol uhr riesig"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, yyy äää ...\ny.y.y. .y.y.y\n,yä. ,yä."
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ende räume synonym treppe\nsonne spur natur möglich\nsechs pflanze einer eine"
+    }
+  ]
+}

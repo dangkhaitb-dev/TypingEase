@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Tekrar",
+  "summary": "Yeni tuş yok. Öncekilerin hepsi, daha seri ve daha hızlı.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu ders yeni bir şey öğretmiyor. Öncekilerin düşünmeden çıktığını görme zamanı; bu, tuşların nerede olduğunu bilmekle aynı şey değil.",
+  "congrats": "Yeni bir şey yok ama daha hızlı. Olması gereken tam da buydu.",
+  "screens": [
+    {
+      "text": "Başlangıç için tek tek kelimeler. Acele yok: hız doğruluktan gelir, tersi olmaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "o kese sürekli kimse\nmüzik resimler avlu değer\norman hurda karar doğru"
+    },
+    {
+      "seconds": 25,
+      "text": "Kısa bir seri. Kaçırdığın olsa da listeyi bitir.",
+      "type": "burst",
+      "tokens": [
+        "konuk",
+        "kelime",
+        "kiraz",
+        "kalk",
+        "kanal",
+        "ak",
+        "kolay",
+        "kaya",
+        "dere",
+        "sular",
+        "soğuk",
+        "neden"
+      ]
+    },
+    {
+      "text": "Satırda beş kelime. Gözlerin parmaklarının önünden gitsin.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ad kes sesler dil yargı\net artık ana cümleler ekle\noturur deniz doğum yavru ver"
+    },
+    {
+      "text": "Yine kalıplar; parmakların temel sıraya döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "lek ium le\nak ka akak\nmmm kkk aaaa eee"
+    },
+    {
+      "text": "Kısa kelimeler, iyi bir ritimle. Bunlar artık neredeyse kendiliğinden çıkmalı.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yan kahve yazı incir\nserin orada hemen mal\ndeğil cümle amca sıcak"
+    },
+    {
+      "seconds": 30,
+      "text": "Daha uzun süre, daha çok kelime. Baştan sona aynı ritmi koru.",
+      "type": "burst",
+      "tokens": [
+        "satır",
+        "yıl",
+        "acele",
+        "hele",
+        "serin",
+        "ilk",
+        "yüksek",
+        "kollar",
+        "yurt",
+        "masal",
+        "kal",
+        "orta",
+        "uzun",
+        "kayıt"
+      ]
+    },
+    {
+      "text": "Satır satır, durmadan. Elin kendiliğinden yerine dönüyor mu, burada anlaşılır.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "sokakta kar var ve yollar kaygan\nyarın hava ılık olacak\nyarın hava güzel olursa denize gideriz"
+    },
+    {
+      "text": "Son tur. Buraya klavyeye bakmadan geldiysen ders tamam.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hazır mart kimse yanıt hoca\nyükseklik sevmek yakalar sandalye al\nmısır konu eğitim kahve ok"
+    }
+  ]
+}

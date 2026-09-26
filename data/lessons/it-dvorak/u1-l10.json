@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Prova dell'unità 1",
+  "summary": "Una prova a tempo con tutto quello che hai imparato.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "Una prova a tempo. Non c'è niente di nuovo: solo quello che sai già, a un ritmo che riesci a tenere.",
+  "congrats": "Prova superata. Il numero conta meno del fatto di essere arrivato in fondo senza guardare.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "Nessun tasto nuovo. Scrivi a un ritmo che riesci a tenere fino in fondo.",
+      "dictation": "words",
+      "content": "sa pioggia otto cosa\ndiga sei gatto canto\ngas stanco estate tutti\nda o attesa dita"
+    }
+  ]
+}

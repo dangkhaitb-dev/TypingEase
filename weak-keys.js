@@ -160,7 +160,10 @@
    */
   function poolFor(lang) {
     const external = global.TypingEaseWords && global.TypingEaseWords[lang];
-    const words = external && Array.isArray(external.drill) ? external.drill : null;
+    // `drill` nếu kho có (en, fil), không thì chính `words` của kho. Trước đây chỉ đọc `drill`, nên
+    // bài luyện phím yếu của các khoá es/fr/de/it lặng lẽ rơi về danh sách từ tiếng Việt ở trên.
+    const words = external && Array.isArray(external.drill) ? external.drill
+      : external && Array.isArray(external.words) ? external.words : null;
     return words && words.length ? words : WORD_POOL;
   }
 
@@ -197,7 +200,7 @@
     const scoreOf = word => [...word].reduce((score, character) => score + (weakSet.has(character) ? weightOf(character) : 0), 0);
     const hitsOf = word => [...word].filter(character => weakSet.has(character)).length;
     // Mac dinh 'vi' nen moi cho goi cu KHONG doi mot chu nao va hanh vi ban Viet giu nguyen.
-    const lang = options.lang || (global.document?.documentElement?.lang || 'vi').slice(0, 2).toLowerCase();
+    const lang = options.lang || (global.document?.documentElement?.lang || 'vi').toLowerCase().split('-')[0];
     const words = [...new Set(poolFor(lang))]
       .filter(word => (!allowed || [...word].every(character => allowed.has(character))) && hitsOf(word) > 0)
       .sort((a, b) => hitsOf(b) / b.length - hitsOf(a) / a.length || scoreOf(b) - scoreOf(a) || a.length - b.length || a.localeCompare(b));

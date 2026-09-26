@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="fil">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ang pag-unlad mo sa pagtitipa | TypingEase</title>
+    <meta name="description" content="Tingnan kung kumusta ang pagtitipa mo: ang marka ng bawat aralin, ang pinakamataas mong WPM at katumpakan, isang heat map ng mga key na madalas mong mamali, ang sunod-sunod mong araw at ang layunin mo sa araw-araw." />
+    <link rel="canonical" href="https://typingease.site/fil/pag-unlad/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/fil.mjs, progress trong
+         i18n/ui.fil.js và bai-hoc/config.fil.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="Pangunahing nabigasyon">
+        <a href="/fil/">Magsanay</a>
+        <a data-route="lessons" href="/fil/aralin/">Kurso</a>
+        <a class="active" href="/fil/pag-unlad/">Pag-unlad</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="Pumili ng wika at keyboard">Home</a><a class="secondary-button" data-route="learn" href="/fil/matuto/">Ituloy ang pag-aaral <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> Kumusta ka na</p>
+        <h1>Ang pag-unlad mo sa pagtitipa</h1>
+        <p class="prog-intro">Nakatago sa device na ito ang bawat numero sa pahinang ito, at hindi ipinapadala kahit saan. Magtipa ng isa pang aralin at magbabago ito.</p>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 0 araw na sunod-sunod</span>
+          <span id="strip-today">0 minuto ngayong araw</span>
+          <span id="strip-level">Antas: Nagsisimula</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="Buod">
+        <div><span>Mga aralin na tapos</span><strong id="sum-lessons">0 / 35</strong></div>
+        <div><span>Mga bituing naipon</span><strong id="sum-stars">0</strong></div>
+        <div><span>Pinakamataas na WPM</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>Pinakamataas na katumpakan</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> Mga yugto</p>
+            <h2 id="badges-title">Mga badge</h2>
+            <p>Nakatali ang bawat badge sa isang totoong numero sa talaan sa ibaba — walang ibang paraan para makuha ito kundi ang magtipa.</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">Layunin ngayong araw</p>
+          <h3 id="daily-goal-title">0 / 10 minuto</h3>
+          <p id="daily-goal-status">🔥 0 araw na sunod-sunod</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">Pinakamahaba: 0 araw</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="Pumili ng layunin sa araw-araw">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 min</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 min</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 min</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 min</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">Ang coach mo</p><h3 id="coach-title">Nasaan ka na</h3></div>
+          <span class="coach-level" id="coach-level">Nagsisimula</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="Kamakailang pag-unlad" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">2 pang aralin at sapat na ang datos para makita ang takbo.</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">Magtipa ng isang aralin at malalaman ng pahinang ito kung nasaan ka.</p>
+        <a class="coach-action" id="coach-action" href="/fil/matuto/">Simulan ang aralin 1 →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> Isa-isang key</p>
+          <h3 id="heat-title">Heat map ng keyboard</h3>
+          <p>Berde ang mga key na malinis mong napipindot, dilaw ang minsang tama at minsang mali, at pula ang mga nagpapabagal sa iyo. Kinukulayan lang ang isang key kapag sapat na ang dami ng pagtipa mo rito para may masabi.</p>
+          <p class="heat-empty" id="heat-empty">Kulang pa ang datos — magtipa ng ilang aralin at bumalik dito.</p>
+          <div class="heat-legend" id="heat-legend" aria-label="Katumpakan bawat key" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="Ang kursong may {n} aralin"><i></i> Ang kursong may 35 aralin</p>
+            <h2 id="results-title">Ang marka ng bawat aralin</h2>
+            <p>Ang pinakamahusay mong ikot sa bawat aralin, nakatago sa device na ito.</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">Burahin ang kasaysayan</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>Aralin</th><th>Screen na tapos</th><th>Bituin</th><th>Pinakamataas na WPM</th><th>Katumpakan</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Ituloy lang</p>
+          <h2 id="prog-explore-title">Ano ang susunod</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/fil/aralin/">
+            <h3>Ang buong kurso</h3>
+            <p>Lahat ng yunit ayon sa pagkakasunod. Balikan ang araling gusto mong ulitin, o buksan nang maaga ang susunod na yunit.</p>
+            <span>Tingnan ang kurso <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>Magtipa sa sarili mong keyboard</h3>
+            <p>QWERTY, AZERTY, QWERTZ, Devanagari, Arabic, JIS — 119 totoong layout, at sinusundan ng kurso ang pipiliin mo.</p>
+            <span>Tingnan ang mga layout <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>Bagalan nang kaunti, at mas malayo ang mararating mo.</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/fil/about/">Tungkol sa Amin</a><span aria-hidden="true"> · </span><a href="/fil/terms/">Mga Tuntunin ng Serbisyo</a><span aria-hidden="true"> · </span><a href="/fil/privacy/">Patakaran sa Privacy</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.fil.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.fil.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"fil":{"learn":"/fil/matuto/","lessons":"/fil/aralin/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "fil";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

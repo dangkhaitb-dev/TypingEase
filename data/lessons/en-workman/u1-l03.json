@@ -1,0 +1,118 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "S and O",
+  "summary": "Two new keys: S and O. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "s",
+    "o"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: S and O. They belong to your left ring finger and your right ring finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If S and O already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "LR",
+      "text": "This key belongs to your left ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press S to continue"
+    },
+    {
+      "newKey": "s",
+      "text": "Only S and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "hts n ht\ns s ss\nsss"
+    },
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "RR",
+      "text": "This key belongs to your right ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press O to continue"
+    },
+    {
+      "newKey": "o",
+      "text": "Only O and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "sss oooo\nsososo ososos\nso os"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "soos",
+        "ooos",
+        "soss",
+        "ooso",
+        "oss",
+        "ss",
+        "sso",
+        "sooo",
+        "osoo",
+        "oos"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "tnos ntso\neot shn eo\nts st tsts"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tooth she hot one\nsee too shot stone\ntest so nose those"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "she",
+        "sense",
+        "tone",
+        "tests",
+        "then",
+        "shot",
+        "ten",
+        "too",
+        "those",
+        "so"
+      ]
+    },
+    {
+      "text": "Now the weight is on S, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "set stone then so\nten shoe nose these\ntests test see hot"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "os so\nsnt oh sn\nso os soso"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "set tests too the\non shoe those nose\nson so see tone"
+    }
+  ]
+}

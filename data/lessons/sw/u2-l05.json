@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Marudio",
+  "summary": "Hakuna kitufe kipya. Yote yaliyotangulia, kwa mfululizo zaidi na kwa kasi zaidi.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Somo hili halifundishi kitu kipya. Ni wakati wa kuhakikisha kwamba yaliyotangulia yanakuja bila kufikiri, jambo ambalo ni tofauti na kujua kila kitufe kiko wapi.",
+  "congrats": "Hakuna jipya, na bado kwa kasi zaidi. Hicho ndicho hasa kilichopaswa kutokea.",
+  "screens": [
+    {
+      "text": "Kuanza, maneno moja moja. Bila haraka: kasi hutokana na usahihi, si kinyume chake.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kurudia jiji jiwe nyekundu\nvuka maisha kuosha samaki\nkitoweo kuku kusikia mkate"
+    },
+    {
+      "seconds": 25,
+      "text": "Mfululizo mfupi. Maliza orodha hata ukikosea neno moja.",
+      "type": "burst",
+      "tokens": [
+        "kuku",
+        "mito",
+        "saga",
+        "ile",
+        "miguu",
+        "kahawa",
+        "nane",
+        "njano",
+        "ua",
+        "msitu",
+        "hasa",
+        "mashine"
+      ]
+    },
+    {
+      "text": "Maneno matano kwa mstari. Acha macho yatangulie mbele ya vidole.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaa sikia duka chukua saidia\nshauri darasa kuta mwanga fikia\ntiketi kuchora mkutano sufuria mvua"
+    },
+    {
+      "text": "Mifumo tena, kuhakikisha vidole bado vinarudi kwenye safu ya msingi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Maneno mafupi, kwa mwendo mzuri. Haya yanapaswa kuja karibu yenyewe sasa.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sauti mto mtu nyasi\nmwaka yule sana utoto\nviatu maua soko kweli"
+    },
+    {
+      "seconds": 30,
+      "text": "Muda zaidi na maneno zaidi. Shika mwendo uleule tangu mwanzo hadi mwisho.",
+      "type": "burst",
+      "tokens": [
+        "nafasi",
+        "mwili",
+        "kioo",
+        "mtu",
+        "kwaheri",
+        "osha",
+        "kuchora",
+        "sifa",
+        "mvua",
+        "kifaa",
+        "kando",
+        "mchana",
+        "kuku",
+        "kuishi"
+      ]
+    },
+    {
+      "text": "Sentensi kamili. Hapa ndipo utaona kama mkono unarudi wenyewe mahali pake.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "vidole vyako vinarudi kwenye safu ya msingi\ntafadhali funga mlango wa darasa\nmvua ilinyesha usiku wote"
+    },
+    {
+      "text": "Mzunguko wa mwisho. Kama umefika hapa bila kutazama kibodi, somo limekamilika.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tangu kuwafikia nyekundu yako dereva\nmaneno nini kurudi kama kaa\nuwanja hayo kuoga mito huduma"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "Sayı sırası",
+  "summary": "On rakam, her parmak dümdüz yukarı çıkarak.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c",
+    "f",
+    "p",
+    "ç",
+    "ö",
+    "j",
+    ".",
+    "b",
+    "ş",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Sayı sırası şimdiye kadar yazdığın her şeyin üstünde, ve parmakların en uzağa gittiği yer orası. Kursun hiçbir yerinde burada olduğu kadar hata yapılmaz; düzeltmesi de öbürleri gibi: önce yavaş.",
+  "congrats": "Sayı sırası en zor olanı ve sonradan en az çalışılanı. Bu derse arada bir geri dön.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "Sayı sırası üst sıranın da üstünde. Her parmak dümdüz yukarı çıkar ve aynı yoldan iner. Kurstaki en uzun uzanışlar bunlar.",
+      "hint": "Devam etmek için 1 tuşuna bas"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "1 ve 0: sol serçe parmak ve öbür elde aynı parmak. Çık, bas, temel sıraya in.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "2 ve 9: sol yüzük parmağı ve öbür elde aynı parmak. Çık, bas, temel sıraya in.",
+      "type": "block",
+      "content": "ea2 9k ea\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Öğrendiğin sayılarla kısa bir seri.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "3 ve 8: sol orta parmak ve öbür elde aynı parmak. Çık, bas, temel sıraya in.",
+      "type": "block",
+      "content": "383838 838383\n83 38\ne83 ka e8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "4 ve 7: sol işaret parmağı ve öbür elde aynı parmak. Çık, bas, temel sıraya in.",
+      "type": "block",
+      "content": "47 47\nak4 7e ak\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "Kalan ikisi işaret parmaklarının; onlar zaten her parmaktan çok tuşa uzanır.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nak6 5e ak"
+    },
+    {
+      "text": "Bütün sıra, gruplar halinde. 6 tuşunu aramak için aşağı bakma.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Onu birden, karışık. Başta burada çok kaçırılır; bu normal.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Bir an kelimelere dönüyoruz; eller nerede oturduklarını unutmasın.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "varsa çalışkan pazar yüzme\nplan dolu yükseklik hayat\notur bayram türkçe oyunlar"
+    },
+    {
+      "text": "Yine cümleler, bütün klavye elinin altında.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Arkadaşım bana güzel bir mektup yazdı.\nBahçedeki ağaçlar çiçek açtı.\nSokakta çocuklar top oynuyor."
+    }
+  ]
+}

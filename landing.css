@@ -1,0 +1,138 @@
+/* landing.css — the English landing page at `/`, and only that page.
+   Loaded AFTER home.css, which it shares the roadmap rail, continue card and hero frame with.
+   Everything below is either new (picker, keyboard preview, course grid) or an override of
+   a home.css rule that is right for the Vietnamese home page and wrong for this one.
+
+   QUY UOC cua repo: moi rule mot dong, mau moi thi them vao tokens.css chu khong khai o day. */
+
+/* ===== Hero ==================================================================================
+   home.css hides #hero-start once script.js finds saved progress, so a returning learner sees
+   only the continue card. Here that would hide the language picker from exactly the people most
+   likely to want another language — so it stays, and the continue card sits below it. */
+body.is-returning #hero-start{display:grid}
+.landing-page .hero{padding:40px var(--pad-x) 24px}
+.landing-page .hero>.hero-copy{max-width:940px}
+.landing-page .hero>.hero-copy>.intro{max-width:660px}
+#hero-start{gap:16px}
+
+/* ===== Picker ================================================================================ */
+.picker{width:100%}
+/* minmax(0,1fr), not 1fr. A bare `1fr` is `minmax(auto,1fr)`, and a <select>'s auto width is its
+   LONGEST OPTION — so the hero grew and shrank as the language changed, jumping ~170px between
+   "United States Standard" and the Arabic list. Flooring the track at 0 makes the two columns
+   depend on the container instead of on whichever language happens to be selected. */
+.picker-row{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:12px;margin:0 auto;max-width:780px;text-align:left}
+.picker-field{display:grid;gap:6px;min-width:0}
+.picker-field>span{color:var(--muted);font-size:var(--fs-xs);font-weight:800;letter-spacing:1.1px;text-transform:uppercase}
+/* The arrow is drawn here rather than left to the platform: Windows, macOS and Android draw
+   three different widgets, and two side-by-side selects that do not match look broken. */
+.picker-field select{appearance:none;width:100%;min-height:52px;padding:13px 40px 13px 14px;border:1px solid var(--border-soft);border-radius:var(--r);background-color:var(--surface);color:var(--ink);font:700 var(--fs-body)/1.35 "Be Vietnam Pro",sans-serif;cursor:pointer;
+  background-image:url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath fill='%23157a55' d='M4 6l4 4 4-4z'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 13px center;background-size:16px}
+.picker-field select:hover{border-color:var(--border-hover)}
+.picker-field select:focus-visible{outline:none;border-color:var(--green);box-shadow:var(--shadow-focus)}
+.picker-field select:disabled{color:var(--muted);background-color:var(--surface-soft);cursor:default}
+.picker-cta{margin:0}
+
+/* ===== Keyboard preview ======================================================================
+   keyboard.js always appends a hand layer and a ⚙ settings link, and neither can be switched
+   off at the call site. On this page the two selects above ARE the settings, and the hands
+   belong in a lesson, not in a hero — so both are removed here rather than in the widget,
+   which stays a faithful port. */
+/* Same 780px as the picker above it, so the board and the two dropdowns read as one control. */
+.kb-preview{width:100%;max-width:780px;min-height:96px;margin:2px auto 0}
+/* Giữ sẵn chỗ cho bàn phím khi nó CHƯA nạp: trước đây bàn phím nạp xong đẩy nút bắt đầu và cả phần dưới
+   xuống 76px (CLS 0,31 trên điện thoại). Tỉ lệ đo từ bàn phím thật: ~2,1:1 khi hẹp, ~2,35:1 khi rộng. */
+.kb-preview:not(:has(.keyboard)){aspect-ratio:2.35/1}
+@media (max-width:480px){.kb-preview:not(:has(.keyboard)){aspect-ratio:2.12/1}}
+.kb-preview:not(:has(.keyboard)) .kb-loading{padding:0;height:100%;display:flex;align-items:center;justify-content:center}
+.kb-preview .keyboard-link{display:none}
+.kb-preview .hands{display:none}
+.kb-preview .keyboard--hands{margin-bottom:0}
+.kb-preview .keyboard--hasSettings{padding-top:15px}
+.kb-loading{margin:0;padding:34px 0;color:var(--muted);font-size:var(--fs-sm);text-align:center}
+
+/* The finger colours are the whole point of showing a keyboard at all, so unlike the player —
+   where they fade out once typing starts — they stay on here. keyboard.css scopes its own
+   version of this to .player-page/.free-page, hence the copy. */
+.kb-preview .keyboard--full:not(.keyboard--numpad){--fng-peek:1}
+.kb-preview .keyboard--full:not(.keyboard--numpad) .key--a:not(.is-active):not(.is-wrong){background-color:color-mix(in srgb,var(--fk,#fff) 58%,#fff);border-bottom-color:color-mix(in srgb,var(--fk-line,#cdd4e0) 55%,#cdd4e0);color:color-mix(in srgb,var(--fk-ink,#2b3444) 100%,#2b3444)}
+
+/* Finger colours for the layouts keyboard.css cannot reach. Its `.key-<charcode>` tiers only
+   match Latin characters, so a Hindi or Arabic board arrived almost entirely white — see the
+   note in keyboard/keyboard.js where `data-finger` is written. `entry.finger` groups the two
+   hands the same way those tiers do (1/10 little, 2/9 ring, 3/8 middle, 4/7 index, 5/6 thumb),
+   so on a US board the two agree key for key and nothing changes; everywhere else this is the
+   only thing colouring the board at all. Scoped to the preview: the player and the progress
+   heatmap have their own reasons for the colours they use and must not inherit these.
+   `:not(.key--special)` because the layout files carry a `finger` on Tab, Ctrl, Alt and Cmd too,
+   and on the non-Latin files it is plainly filler — layout 106 puts the right Alt on the ring
+   finger. A confidently wrong colour teaches worse than no colour, so the modifier keys keep
+   whatever keyboard.css gives them and stay neutral where it gives them nothing. */
+.kb-preview .key:not(.key--special)[data-finger="1"],.kb-preview .key:not(.key--special)[data-finger="10"]{--fk:var(--fng-pinky);--fk-line:var(--fng-pinky-line);--fk-ink:var(--fng-pinky-ink)}
+.kb-preview .key:not(.key--special)[data-finger="2"],.kb-preview .key:not(.key--special)[data-finger="9"]{--fk:var(--fng-ring);--fk-line:var(--fng-ring-line);--fk-ink:var(--fng-ring-ink)}
+.kb-preview .key:not(.key--special)[data-finger="3"],.kb-preview .key:not(.key--special)[data-finger="8"]{--fk:var(--fng-middle);--fk-line:var(--fng-middle-line);--fk-ink:var(--fng-middle-ink)}
+.kb-preview .key:not(.key--special)[data-finger="4"],.kb-preview .key:not(.key--special)[data-finger="7"]{--fk:var(--fng-index);--fk-line:var(--fng-index-line);--fk-ink:var(--fng-index-ink)}
+.kb-preview .key:not(.key--special)[data-finger="5"],.kb-preview .key:not(.key--special)[data-finger="6"]{--fk:var(--fng-thumb);--fk-line:var(--fng-thumb-line);--fk-ink:var(--fng-thumb-ink)}
+
+/* Scripts whose glyphs are taller than Latin need the extra room, or Devanagari matras and
+   Arabic marks clip against the key edge. Set from `preview.dataset.script` in landing.js. */
+.kb-preview[data-script="devanagari"] .key-label,
+.kb-preview[data-script="bengali"] .key-label,
+.kb-preview[data-script="thai"] .key-label,
+.kb-preview[data-script="arabic"] .key-label,
+.kb-preview[data-script="hebrew"] .key-label{font-family:"Be Vietnam Pro",system-ui,sans-serif;line-height:1.5}
+.kb-preview[data-script="han"] .key-label,
+.kb-preview[data-script="japanese"] .key-label,
+.kb-preview[data-script="hangul"] .key-label{font-family:system-ui,sans-serif}
+
+/* ===== CTA =================================================================================== */
+/* A language with no course yet must not get a green "start" button — the button is real, but
+   what it starts is the English course, and it should not look like the main event. */
+#hero-go.is-secondary{background:var(--surface);color:var(--green);border:1px solid var(--border-soft);box-shadow:none}
+#hero-go.is-secondary:hover{border-color:var(--green);background:var(--surface-tint)}
+#hero-note a{color:var(--green);font-weight:700}
+#hero-note b{color:var(--ink)}
+
+/* Two cards where home.css lays out three. Its `repeat(3,1fr)` would leave a gap in the row, and
+   its 900px rule makes the last card span both columns — right for an odd third card, wrong when
+   there are exactly two. */
+/* Ngôn ngữ chưa có trang kiểm tra / luyện tự do thì ô đó ẩn (landing.js); cả khối ẩn khi không còn ô nào. */
+.home-shortcuts[hidden],.shortcut-card[hidden]{display:none}
+.shortcut-grid--two{grid-template-columns:repeat(2,1fr)}
+@media(max-width:900px){.shortcut-grid--two .shortcut-card:last-child{grid-column:auto}}
+@media(max-width:620px){.shortcut-grid--two{grid-template-columns:1fr}}
+
+/* ===== Language grid ========================================================================= */
+.langs{max-width:var(--w-page);margin:0 auto;padding:12px 0 var(--gap-section)}
+.langs-heading{margin-bottom:22px}
+.langs-heading .eyebrow{margin-bottom:10px}
+.langs-heading h2{margin-bottom:12px}
+.lang-grid{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:8px;margin:0;padding:0;list-style:none}
+.lang-grid>li{display:flex}
+/* Một kiểu ô cho mọi ngôn ngữ, như bảng bố cục của typingstudy.com: cao bằng nhau, một nhãn căn
+   giữa, tối đa hai dòng. Ô khoá học là liên kết, ô chỉ-có-bàn-phím là nút — nhìn y như nhau. */
+.lang-chip{display:flex;align-items:center;justify-content:center;width:100%;height:48px;padding:4px 10px;border:1px solid var(--border-soft);border-radius:var(--r);background:var(--surface);box-shadow:0 1px 2px #174c3910;color:var(--green);font:700 var(--fs-sm)/1.25 "Be Vietnam Pro",sans-serif;text-align:center;cursor:pointer}
+a.lang-chip{text-decoration:none}
+.lang-chip:hover,.lang-chip:focus-visible{border-color:var(--green);background:var(--surface-tint);outline:none}
+.lang-name{display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;overflow-wrap:anywhere}
+
+/* ===== "This site is available in …" =========================================================
+   Same shape as .update-bar in base.css on purpose: the site has exactly one place it speaks to
+   the visitor out of band, and two different-looking bars would read as two different systems. */
+.lang-offer{position:fixed;left:50%;bottom:18px;z-index:60;display:flex;align-items:center;gap:12px;max-width:calc(100vw - 32px);padding:10px 12px 10px 16px;border:1px solid var(--border-soft);border-radius:var(--r);background:var(--surface);color:var(--ink);font-size:var(--fs-sm);box-shadow:var(--shadow-lift);transform:translateX(-50%)}
+.lang-offer a,.lang-offer button{border:1px solid var(--border-soft);border-radius:var(--r-sm);padding:7px 11px;background:var(--surface);color:var(--muted);font-size:var(--fs-xs);font-weight:700;white-space:nowrap;text-decoration:none}
+.lang-offer a.is-primary{border-color:var(--green);background:var(--green);color:var(--surface)}
+.lang-offer a:hover,.lang-offer button:hover{filter:brightness(.96)}
+
+/* ===== Responsive ============================================================================ */
+@media(max-width:900px){
+  .langs{margin:0 var(--pad-x);padding-bottom:52px}
+  .lang-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media(max-width:620px){
+  .landing-page .hero{padding:28px 20px 20px}
+  .picker-row{grid-template-columns:1fr;gap:10px}
+  .picker-field select{min-height:48px;font-size:var(--fs-sm)}
+  .lang-grid{grid-template-columns:1fr 1fr;gap:6px}
+  .lang-offer{left:16px;right:16px;bottom:12px;flex-wrap:wrap;transform:none;max-width:none}
+}

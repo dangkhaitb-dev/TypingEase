@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "À, H, G et M",
+  "summary": "Nouvelles touches : À, H, G et M. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "à",
+    "h",
+    "g",
+    "m"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d",
+    "o",
+    "v",
+    "è",
+    "^",
+    "l",
+    "é",
+    "x",
+    "'",
+    "q",
+    ".",
+    "b",
+    "j",
+    "k",
+    "y",
+    "à",
+    "h",
+    "g",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : À, H, G et M. Elles se tapent avec l'auriculaire gauche, l'annulaire droit, le majeur droit et l'auriculaire droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si À, H, G et M sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "à",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur À pour continuer"
+    },
+    {
+      "newKey": "à",
+      "text": "Seulement À et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "à à\niet à ie\nà à àà"
+    },
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RR",
+      "text": "C'est l'annulaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur H pour continuer"
+    },
+    {
+      "newKey": "h",
+      "text": "Seulement H et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "hà hà\nhàe it hà\nàh hà àhàh"
+    },
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "RM",
+      "text": "C'est le majeur droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur G pour continuer"
+    },
+    {
+      "newKey": "g",
+      "text": "Seulement G et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "àgh hàg\nhgt eài hg\nàh hà àhàh"
+    },
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur M pour continuer"
+    },
+    {
+      "newKey": "m",
+      "text": "Seulement M et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "eht gmi eh\nmh hm mhmh\nmmm ggg àààà hhh"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "àm",
+        "àh",
+        "gg",
+        "hg",
+        "mm",
+        "gm",
+        "àà",
+        "mg",
+        "hh",
+        "àg"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "àhàhàh hàhàhà\nàmtheg emàgth\nuàm hit uà"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mot guitare terme huiles\naujourd'hui déjà mesures rigides\nchâteau bâtiment mère demi"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "bonne",
+        "plus",
+        "ski",
+        "espèces",
+        "un",
+        "somme",
+        "célèbre",
+        "terme",
+        "idées",
+        "mères"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur H, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ou journée soleil votes\navant se grands musique\nlis histoires suite titre"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "gggg ààà mmm hhh\nàhàhàh hàhàhà\ngàmh gàmh"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "prendre âges sûre écoles\nma dernières voici salles\njamais bateaux votes vous"
+    }
+  ]
+}

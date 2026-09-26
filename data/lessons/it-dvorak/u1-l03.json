@@ -1,0 +1,118 @@
+{
+  "id": "u1-l03",
+  "unit": "u1",
+  "group": "start",
+  "order": 3,
+  "slug": "s-l",
+  "title": "O e N",
+  "summary": "Tasti nuovi: O e N. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "o",
+    "n"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: O e N. Si premono con l'anulare sinistro e l'anulare destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se O e N ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "LR",
+      "text": "Questo tasto lo prende l'anulare sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi O per continuare"
+    },
+    {
+      "newKey": "o",
+      "text": "Solo O e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "euo h eu\no o oo\nooo"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RR",
+      "text": "Questo tasto lo prende l'anulare destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi N per continuare"
+    },
+    {
+      "newKey": "n",
+      "text": "Solo N e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "ooo nnnn\nononon nonono\non no"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "onno",
+        "nnno",
+        "onoo",
+        "nnon",
+        "noo",
+        "oo",
+        "oon",
+        "onnn",
+        "nonn",
+        "nno"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "uhno huon\ntnu oeh tn\nuo ou uouo"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ne o un non\notto tutto un tu\nne nonno otto non"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "uno",
+        "un",
+        "tu",
+        "ne",
+        "e",
+        "o",
+        "tutto",
+        "nonno",
+        "ho",
+        "otto"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su O, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "non notte un otto\nne uno otto non\no nonno tutto ne"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "no on\nohu ne oh\non no onon"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "uno o nonno e\no otto uno ho\ntutto ne o otto"
+    }
+  ]
+}

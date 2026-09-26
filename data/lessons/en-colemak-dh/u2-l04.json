@@ -1,0 +1,134 @@
+{
+  "id": "u2-l04",
+  "unit": "u2",
+  "group": "start",
+  "order": 14,
+  "slug": "m-v",
+  "title": "H and V",
+  "summary": "Two new keys: H and V. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "h",
+    "v"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "g",
+    "m",
+    "f",
+    "u",
+    "p",
+    "l",
+    "b",
+    "j",
+    "y",
+    "w",
+    "d",
+    "k",
+    "h",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: H and V. They belong to your right index finger and your left index finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If H and V already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "h",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press H to continue"
+    },
+    {
+      "newKey": "h",
+      "text": "Only H and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "snt h sn\nh h hh\nhhhh"
+    },
+    {
+      "type": "intro",
+      "key": "v",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press V to continue"
+    },
+    {
+      "newKey": "v",
+      "text": "Only V and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "vvvv hhhh\nhvhvhv vhvhvh\nvh hv"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "hh",
+        "vhhh",
+        "vvhh",
+        "hvhv",
+        "hhhh",
+        "vhvh",
+        "vvh",
+        "vhvv",
+        "hv",
+        "hhhv"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "vh hv vhvh\ntttt vvv hhhh nnn\nhvhvhv vhvhvh"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "river serve holds hairs\nvalue every path loves\nhaving very slight move"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "guild",
+        "salads",
+        "good",
+        "taste",
+        "fifty",
+        "fake",
+        "sour",
+        "being",
+        "high",
+        "model"
+      ]
+    },
+    {
+      "text": "Now the weight is on H, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "group under spot why\nwhite onto with harsh\nspent stays spend wide"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "hvhv vhvh\nvh vh\nsnt hv sn"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "rides parts prove games\nresidue threw heels girls\nlaugh ruler fairly key"
+    }
+  ]
+}

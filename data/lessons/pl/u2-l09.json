@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift i Enter",
+  "summary": "Wielkie litery małym palcem drugiej ręki i przejście do nowej linii.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Do tej pory wszystko było pisane małymi literami. Shift to zmienia i od początku warto przyjąć jedną zasadę: wciska go mały palec ręki przeciwnej do litery. Małym palcem po tej samej stronie dłoń się wykręca i w końcu zaczynasz patrzeć na klawiaturę.",
+  "congrats": "Z Shiftem i Enterem możesz napisać cały tekst tak, jak pisze się go poza kursem.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Wielkie litery pisze się małym palcem ręki przeciwnej do litery. Przytrzymaj Shift, naciśnij literę, puść. Nigdy małym palcem, który pisze.",
+      "hint": "Przytrzymaj Shift i naciśnij literę, aby przejść dalej"
+    },
+    {
+      "newKey": "shift",
+      "text": "Wielkie i małe litery na zmianę. Mały palec opada i wraca; druga ręka się nie rusza.",
+      "type": "block",
+      "content": "Pp Jj Zz Ee\nCc Dd Qq Gg\nTt Uu Kk Rr\nXx Mm Ff Bb"
+    },
+    {
+      "text": "Słowa, a wielka litera przyjdzie za chwilę — najpierw niech ręce wrócą do rytmu.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "smutny salsa zdrowy rak\nono harfa zapach hej\nkraje bloki nic daleko"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter należy do prawego małego palca, na prawo od rzędu podstawowego. To największy klawisz, do którego ten palec sięga.",
+      "hint": "Naciśnij Enter, aby przejść dalej"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Imię, Enter, następne imię. Mały palec wychodzi i wraca, nie zabierając ze sobą dłoni.",
+      "type": "block",
+      "content": "Gdynia\nPiotr\nKrzysztof\nMagda\nKarol\nEwa"
+    },
+    {
+      "text": "Zdania z wielką literą na początku i kropką na końcu. To już zaczyna przypominać prawdziwe pisanie.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Mama kupuje chleb i ser.\nZamknij okno bo jest zimno.\nBrat gra na gitarze."
+    },
+    {
+      "seconds": 25,
+      "text": "Seria, która utrwala to, czego uczy ta lekcja.",
+      "type": "burst",
+      "tokens": [
+        "jezioro",
+        "bank",
+        "to",
+        "wiele",
+        "tory",
+        "taka",
+        "bluzka",
+        "zielone",
+        "owoc",
+        "dwa",
+        "trzy",
+        "ogon"
+      ]
+    },
+    {
+      "text": "Pięć w linii. Mały palec odpoczywa, zanim znowu wróci do Shiftu.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "rzeka maj koty czasem biblioteka\ndane teraz sekunda baton woli\npiosenka ekrany mieszkam patrz szansa"
+    },
+    {
+      "text": "Na koniec całe zdania. Shift, litera, puść — bez zatrzymywania się, żeby o tym myśleć.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "W lesie jest cicho i ciemno.\nTo jest nasz nowy dom.\nNa stole stoi kubek herbaty."
+    }
+  ]
+}

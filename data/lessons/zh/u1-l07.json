@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "E 和 I",
+  "summary": "新键：E 和 I。手指伸出去，按下，再回来。",
+  "newKeys": [
+    "e",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "本课的新键：E 和 I。由左手中指 和 右手中指负责。动作总是一样：伸出去，按下，回来。练的正是回来这一步，因为手指停在外面，下一个字母就会打错。",
+  "congrats": "手指下的键越来越多了。如果 E 和 I 已经不用找就能打出来，这一课就完成了它的任务。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "这个键由左手中指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 E 继续"
+    },
+    {
+      "newKey": "e",
+      "text": "只有 E 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "e e\nedf j ed\ne e ee"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RM",
+      "text": "这个键由右手中指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 I 继续"
+    },
+    {
+      "newKey": "i",
+      "text": "只有 I 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "ie ei\nfed ij fe\nei ie eiei"
+    },
+    {
+      "seconds": 20,
+      "text": "一组接一组的短组合。就算有打错的，也一直打到最后。",
+      "type": "burst",
+      "tokens": [
+        "ie",
+        "eii",
+        "ieee",
+        "iie",
+        "eiei",
+        "eiie",
+        "ii",
+        "iei",
+        "iiei",
+        "eeii"
+      ]
+    },
+    {
+      "text": "新键和旧键混在一起，就像以后在拼音里出现的那样。",
+      "type": "block",
+      "content": "ffff eeee jjjj iii\neieiei ieieie\njief fije"
+    },
+    {
+      "text": "含有新键的真实拼音。每个词一口气打完，不要一个字母一个字母地想。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "he ji jiedai die\nhaishi shidai gai keji\nshe gei lijie kaishi"
+    },
+    {
+      "seconds": 25,
+      "text": "一组组短拼音，里面有新学的键。",
+      "type": "burst",
+      "tokens": [
+        "fa",
+        "feiji",
+        "shihe",
+        "shei",
+        "ji",
+        "shifei",
+        "shi",
+        "lie",
+        "jiehe",
+        "le"
+      ]
+    },
+    {
+      "text": "现在重点放在 E 上，这是你按得最少的键。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jie shishi si le\njiage kafei hei dajia\nshafa jiejie she dajie"
+    },
+    {
+      "text": "再回到组合练习，确认手指还能找到回去的路。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "eeee iiii\neieiei ieieie\nei ie"
+    },
+    {
+      "text": "你会的全部内容，混在一起。留意有多少词已经不用想就打出来了。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dasha kaifa hai feiji\nda se ka kai\nshijie fei lala de"
+    }
+  ]
+}

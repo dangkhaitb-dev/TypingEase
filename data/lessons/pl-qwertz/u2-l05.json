@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Powtórka",
+  "summary": "Bez nowych klawiszy. Wszystko, co było wcześniej, szybciej i dłużej.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ł",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Ta lekcja nie uczy niczego nowego. To moment, żeby sprawdzić, czy to, co było wcześniej, wychodzi bez myślenia — a to nie to samo, co wiedzieć, gdzie są klawisze.",
+  "congrats": "Nic nowego, a jednak szybciej. Dokładnie tak miało być.",
+  "screens": [
+    {
+      "text": "Na początek pojedyncze słowa. Bez pośpiechu: szybkość bierze się z dokładności, nigdy odwrotnie.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "wola lekka mało razem\nład wiesz mnie kawa\nstrona druga kara winogrona"
+    },
+    {
+      "seconds": 25,
+      "text": "Krótka seria. Dokończ listę, nawet jeśli coś ci umknie.",
+      "type": "burst",
+      "tokens": [
+        "ciasto",
+        "wasz",
+        "kolacje",
+        "słowa",
+        "znasz",
+        "dla",
+        "długa",
+        "trasa",
+        "jaka",
+        "drzewo",
+        "sztuka",
+        "stoliki"
+      ]
+    },
+    {
+      "text": "Pięć słów w linii. Niech oczy wyprzedzają palce.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "da kilka kurier lotnisko droga\nkurtka worek wino wtorek łatwo\nkleje ona tramwaj ładna moi"
+    },
+    {
+      "text": "Znowu wzory, żeby sprawdzić, czy palce wracają do rzędu podstawowego.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Krótkie słowa w dobrym tempie. Te powinny wychodzić prawie same.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "wujek sto zoo ze\nkasza wola mocno ciche\nte ładne tenis dania"
+    },
+    {
+      "seconds": 30,
+      "text": "Więcej czasu i więcej słów. Trzymaj to samo tempo od początku do końca.",
+      "type": "burst",
+      "tokens": [
+        "wujek",
+        "stara",
+        "kurczak",
+        "kefir",
+        "głos",
+        "kot",
+        "leki",
+        "zadanie",
+        "osiem",
+        "dania",
+        "taki",
+        "wolna",
+        "ciasno",
+        "cukier"
+      ]
+    },
+    {
+      "text": "Dłuższe linie. Tu widać, czy dłoń wraca na miejsce sama.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "wiatr wieje od morza\nmoja siostra mieszka nad morzem\nw lesie jest cicho i ciemno"
+    },
+    {
+      "text": "Ostatnia seria. Jeśli udało ci się tu dojść bez patrzenia na klawiaturę, lekcja jest zrobiona.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "zoo wieczorem razem kolana ciekawa\nkrzesło miejsce los znowu ja\nzielona ciasno głos wiatrak wiek"
+    }
+  ]
+}

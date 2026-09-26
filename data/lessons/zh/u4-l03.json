@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "&, *, ( 和 )",
+  "summary": "本课内容：&, *, ( 和 )。",
+  "newKeys": [
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "课程还没用到的按键：&, *, ( 和 )。它们都是 Shift 加上你已经熟悉的键打出来的，Shift 由另一只手的小指按住。",
+  "congrats": "&, *, ( 和 )：现在已经在你的手指下了。另一只手按 Shift，符号就和旁边的字母一样容易打出。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "& 由右手食指负责，另一只手同时按住 Shift。找到它，按一下，手指再回到基准行。",
+      "hint": "按 & 继续"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "先单独练 &，再放到它平时出现的地方。",
+      "content": "&& & jishi & pao haojiu & neng pinming & kuaiji\n&& & ge & tie xiche & shili baozi & yumi\n&& & re & peiyin sai & shuohua xianzai & qi"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "* 由右手中指负责，另一只手同时按住 Shift。找到它，按一下，手指再回到基准行。",
+      "hint": "按 * 继续"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "先单独练 *，再放到它平时出现的地方。",
+      "content": "** * *canjia* *shenme* *cai*\n** * *tongxue* *mingnian* *jiuyue*\n** * *suishi* *jiti* *nianji*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "( 由右手无名指负责，另一只手同时按住 Shift。找到它，按一下，手指再回到基准行。",
+      "hint": "按 ( 继续"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "先单独练 (，再放到它平时出现的地方。",
+      "content": "(( ( (riji (kuai (doufu\n(( ( (xinxi (dai (wai\n(( ( (zhe (zenme (ning"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RP",
+      "text": ") 由右手小指负责，另一只手同时按住 Shift。找到它，按一下，手指再回到基准行。",
+      "hint": "按 ) 继续"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "先单独练 )，再放到它平时出现的地方。",
+      "content": ")) ) (lvguan) (anquan) (lvse)\n)) ) (yeye) (zhiding) (si)\n)) ) (huai) (xiangxin) (shafa)"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "一组组短片段，里面都有这些字符。",
+      "tokens": [
+        "*shiyue*",
+        "(biaoge)",
+        "(guanxi)",
+        "(gu)",
+        "(lvyou)",
+        "shuhua&mutou",
+        "(changge)",
+        "tian&shurufa",
+        "*youju*",
+        "(cai)"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "本课的全部内容，混在一起。",
+      "content": "gongsi & she (banjia) (shiji) zuo&wenjian\n*maojin* *zuzhi* (shuai) huodong&tongguo\n*shengri* *shui* (tiaoyue) jiti&zhoumo"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "再练单词，符号放在它该在的位置。",
+      "content": "difang & jiankang dongman (zhanshi) lianjie *duo*\nji & ru yeli *tu* ze (lala)\n*lingyu* pengyou *shisi* niunai (caise)"
+    }
+  ]
+}

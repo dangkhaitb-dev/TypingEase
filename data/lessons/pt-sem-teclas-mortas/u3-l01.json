@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "A fila dos números",
+  "summary": "Os dez números, cada dedo subindo em linha reta.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "~",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "A fila dos números fica acima de tudo o que você escreveu até agora, e é onde os dedos vão mais longe. Aqui se erra mais do que em qualquer outra parte do curso, e se conserta como o resto: devagar primeiro.",
+  "congrats": "A fila dos números é a mais difícil e a menos praticada depois. Volte a esta lição de vez em quando.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "A fila dos números fica acima da fila de cima. Cada dedo sobe em linha reta e desce do mesmo jeito. São os alcances mais longos do curso.",
+      "hint": "Aperte 1 para continuar"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "1 e 0 se apertam com o mindinho esquerdo e o mesmo dedo da outra mão. Suba, aperte, desça para a fila de repouso.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "2 e 9 se apertam com o anelar esquerdo e o mesmo dedo da outra mão. Suba, aperte, desça para a fila de repouso.",
+      "type": "block",
+      "content": "df2 9j df\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Uma rajada curta com os números que você já tem.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "3 e 8 se apertam com o dedo médio esquerdo e o mesmo dedo da outra mão. Suba, aperte, desça para a fila de repouso.",
+      "type": "block",
+      "content": "383838 838383\n83 38\nd83 jf d8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "4 e 7 se apertam com o indicador esquerdo e o mesmo dedo da outra mão. Suba, aperte, desça para a fila de repouso.",
+      "type": "block",
+      "content": "47 47\nfj4 7d fj\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "Os dois que faltam são dos indicadores, que já alcançam mais teclas do que qualquer outro dedo.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nfj6 5d fj"
+    },
+    {
+      "text": "A fila inteira, em grupos. Não baixe os olhos para procurar o 6.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Os dez, misturados. No começo se erra muito aqui; é normal.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Voltamos às palavras por um momento, para as mãos lembrarem onde moram.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fundo caixas ponte beleza\nminuto grosso onze tirar\nforte ave paz nossos"
+    },
+    {
+      "text": "Frases de novo, já com o teclado inteiro disponível.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Escrevo devagar para errar menos.\nQuero aprender a digitar sem olhar para o teclado.\nVamos caminhar pelo parque hoje de tarde."
+    }
+  ]
+}

@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Maj et Entrée",
+  "summary": "Les majuscules avec l'auriculaire opposé, et le retour à la ligne.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "`",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Jusqu'ici tout s'est écrit en minuscules. Maj change ça, et il y a une règle à prendre dès le début : c'est l'auriculaire de la main opposée à la lettre qui l'enfonce. Avec l'auriculaire du même côté, la main se tord et tu finis par regarder le clavier.",
+  "congrats": "Avec Maj et Entrée, tu peux écrire un texte entier comme il s'écrit en dehors d'ici.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Les majuscules se font avec l'auriculaire de la main opposée à la lettre. Maintiens Maj, frappe la lettre, relâche. Jamais avec l'auriculaire qui écrit.",
+      "hint": "Maintiens Maj et frappe une lettre pour continuer"
+    },
+    {
+      "newKey": "shift",
+      "text": "Majuscules et minuscules en alternance. L'auriculaire descend et remonte ; l'autre main ne bouge pas.",
+      "type": "block",
+      "content": "Pp Jj Zz Gg\nCc Dd Qq Ee\nTt Uu Kk Rr\nXx Mm Ff Bb"
+    },
+    {
+      "text": "Des mots avec une majuscule au début, comme les noms propres.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "onze il boire mise\ntelle gels bords selle\nfours plupart item pères"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Entrée revient à l'auriculaire droit, à droite de la rangée de repos. C'est la plus grande touche que ce doigt ait à atteindre.",
+      "hint": "Appuie sur Entrée pour continuer"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Une ligne, Entrée, une autre ligne. L'auriculaire sort et revient sans emmener la main.",
+      "type": "block",
+      "content": "Marie\nRennes\nSophie\nOlivier\nJulie\nLucas"
+    },
+    {
+      "text": "Des phrases avec majuscule au début et point à la fin. Ça commence à ressembler à écrire pour de vrai.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Le train arrive à la gare dans une heure.\nMon frère habite dans une grande ville du sud.\nLe livre que je cherche est sur la table."
+    },
+    {
+      "seconds": 25,
+      "text": "Une série pour fixer ce que fait cette leçon.",
+      "type": "burst",
+      "tokens": [
+        "parties",
+        "vies",
+        "diriger",
+        "me",
+        "sa",
+        "mère",
+        "bureau",
+        "huit",
+        "passe",
+        "moi",
+        "nuits",
+        "vote"
+      ]
+    },
+    {
+      "text": "Cinq par ligne, avec l'auriculaire qui travaille dans les deux sens.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "taxi encore humide bonnes jamais\nsujet forte jolie projet sites\nvient fort mou nuit devoirs"
+    },
+    {
+      "text": "Pour finir, des phrases entières. Maj, lettre, relâche — sans s'arrêter pour y penser.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Nous avons besoin de deux personnes de plus.\nTous les jours je passe devant cette boutique.\nLa petite fille joue dans le jardin."
+    }
+  ]
+}

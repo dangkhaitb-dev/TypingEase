@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, ! と @",
+  "summary": "このレッスンのキー：`, ~, ! と @",
+  "newKeys": [
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "この講座でまだ使っていないキーです：`, ~, ! と @。Shift が必要なものは、反対の手の小指で Shift を押します。そのほかは専用のキーがあり、この講座ではまだ使っていなかったものです。",
+  "congrats": "`, ~, ! と @も指が覚えました。記号も、となりの文字と同じように出てきます。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "` は左手の小指で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "` を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "まず ` だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "`` ` `kanarazu` `omiyage` `ne`\n`` ` `ototoi` `midori` `bijutsu`\n`` ` `itai` `ooku` `kyou`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "まず ~ だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "~~ ~ ~41 ~18 ~44\n~~ ~ ~42 ~66 ~97\n~~ ~ ~41 ~39 ~34"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "! は左手の小指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "! を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "まず ! だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "!! ! kyouiku! tetsudau! bideo!\n!! ! hakkiri! ryuugaku! tsuyu!\n!! ! iwa! sumu! anime!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "@ は左手の薬指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "@ を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "まず @ だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "@@ @ motsu@gakkou tsukaeru@washoku hanashi@tenninn\n@@ @ owari@kyori anzenn@ginkou ne@kau\n@@ @ saisho@tsuyu atsui@kazoku zenbu@hada"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "これらの文字を含む短いかたまりの連打です。",
+      "tokens": [
+        "`tobu`",
+        "wazawaza@kisha",
+        "chikyuu@itsu",
+        "`hoteru`",
+        "~5",
+        "tsutaeru@goro",
+        "~44",
+        "shoushou@kippu",
+        "`fushigi`",
+        "sakasa@otouto"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "このレッスンで出てきたものを、すべて混ぜて打ちます。",
+      "content": "~51 kinchou@yomu `akeru` ~89\n~52 ~2 ~12 ~62\nnigiyaka@asa `kare-` kaisoku! `su-tsu`"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "もう一度単語です。記号はそれぞれ使われる位置にあります。",
+      "content": "katakana@hiroi shiroi `kiku` kaeru ~15\nshikkari! tenki ~85 omiyage ~68\nkoppu! kuchi shikashi! sentaku `tsuki`"
+    }
+  ]
+}

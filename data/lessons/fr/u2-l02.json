@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "O et Z",
+  "summary": "Nouvelles touches : O et Z. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "o",
+    "z"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : O et Z. Elles se tapent avec l'annulaire droit et l'annulaire gauche. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si O et Z sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "RR",
+      "text": "C'est l'annulaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur O pour continuer"
+    },
+    {
+      "newKey": "o",
+      "text": "Seulement O et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "o o oo\noooo\noooooo oooooo"
+    },
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LR",
+      "text": "C'est l'annulaire gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur Z pour continuer"
+    },
+    {
+      "newKey": "z",
+      "text": "Seulement Z et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "ozoz zozo\noz zo\nzdf oj zd"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "ooz",
+        "zooz",
+        "ooo",
+        "zo",
+        "zzzo",
+        "zz",
+        "zzzz",
+        "ozz",
+        "zoo",
+        "ozoz"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "fdo kjs fd\njo oj jojo\nooo zzz fff jjjj"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dos mode sommes four\nou histoires mort moi\nsomme rose sorte sortes"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "jolie",
+        "style",
+        "dise",
+        "titre",
+        "te",
+        "ou",
+        "routes",
+        "me",
+        "items",
+        "lime"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur O, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tu tous dis huiles\nmises selle mode glisse\ntoi guide jour sous"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ozozoz zozozo\noz zo\nzod fj zo"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "surgir ou mur routes\nlettres dessus idem tristes\ndoses motifs dis items"
+    }
+  ]
+}

@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "O e Z",
+  "summary": "Tasti nuovi: O e Z. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "o",
+    "z"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "m",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: O e Z. Si premono con l'anulare destro e l'anulare sinistro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se O e Z ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "RR",
+      "text": "Questo tasto lo prende l'anulare destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi O per continuare"
+    },
+    {
+      "newKey": "o",
+      "text": "Solo O e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "o o oo\noooo\noooooo oooooo"
+    },
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LR",
+      "text": "Questo tasto lo prende l'anulare sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi Z per continuare"
+    },
+    {
+      "newKey": "z",
+      "text": "Solo Z e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "ozoz zozo\noz zo\nzdf oj zd"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "ooz",
+        "zooz",
+        "ooo",
+        "zo",
+        "zzzo",
+        "zz",
+        "zzzz",
+        "ozz",
+        "zoo",
+        "ozoz"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "fdo kjs fd\njo oj jojo\nooo zzz fff jjjj"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ora alto ragazzi altro\ngrazie zia teatro studio\nragazzo olio yoga yogurt"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "gatto",
+        "otto",
+        "delle",
+        "riga",
+        "mezzo",
+        "tali",
+        "figlio",
+        "lega",
+        "sole",
+        "ala"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su O, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "testa gioia le regale\nfile e radio legale\nfiglio sera sorella fuori"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ozozoz zozozo\noz zo\nzod fj zo"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fuga alzare agire forza\nritardi ride ideale ora\nfiore mela gala giusti"
+    }
+  ]
+}

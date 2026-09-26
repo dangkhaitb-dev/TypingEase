@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="he" dir="rtl" data-course="he-si1452">
+  <head>
+    <!-- SINH TỰ ĐỘNG bằng scripts/build-family-pages.js từ he/lilmod/index.html. Sửa trang gốc rồi chạy lại. -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>שיעור · TypingEase</title>
+    <meta name="description" content="נגן השיעורים של TypingEase: מסך אחד בכל פעם, עם מקלדת וידיים שמראות לאן הולכת כל אצבע." />
+    <!-- האפליקציה, לא דף נחיתה. לתרגילים אין ערך בחיפוש והנתיב חי ב־hash, ולכן הדף מחוץ לאינדקס.
+         גם אין hreflang: לא מסמנים חלופות לדפים שאף אחד לא אמור לאנדקס. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="canonical" href="https://typingease.site/he/si1452/lilmod/" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/player.css" />
+  </head>
+  <body class="player-page">
+    <div class="player" id="player">
+      <header class="player-topbar">
+        <a class="pt-back" href="/he/si1452/" id="pt-back">→ קורס</a>
+        <div class="pt-title">
+          <span id="pt-unit"></span>
+          <strong id="pt-lesson">טוען…</strong>
+        </div>
+        <div class="pt-right">
+          <span class="pt-screen" id="pt-screen"></span>
+          <button class="pt-redo" id="pt-redo" type="button" title="להתחיל את השיעור מחדש" aria-label="להתחיל את השיעור מחדש">↻</button>
+          <button class="pt-toggle" id="pt-sound" type="button" aria-pressed="false" title="צליל הקשה (Alt+S)" aria-label="צליל הקשה">🔊</button>
+          <button class="pt-toggle" id="pt-hands" type="button" aria-pressed="true" title="הידיים עוקבות אחרי המקשים (Alt+H)" aria-label="הידיים עוקבות אחרי המקשים">✋</button>
+          <button class="pt-redo" id="pt-keyboard" type="button" title="הגדרות מקלדת (Alt+K)" aria-label="הגדרות מקלדת">⚙</button>
+        </div>
+      </header>
+
+      <div class="progress-segments" id="pt-progress" role="progressbar" aria-label="ההתקדמות בשיעור" aria-valuemin="0" aria-valuenow="0"></div>
+
+      <div class="player-notes" id="player-note" hidden></div>
+
+      <main class="player-stage is-loading" id="stage">
+        <section class="card"><p class="intro-text">השיעור נטען…</p></section>
+      </main>
+
+      <div class="player-board keyboard-demo" id="board" aria-hidden="true"></div>
+
+      <p class="player-live" id="live" role="status" aria-live="polite"></p>
+
+      <label class="sr-only" for="player-input">הקלידו את השורה שלמעלה</label>
+      <textarea class="player-input" id="player-input" rows="1" autocomplete="off" autocapitalize="off"
+        autocorrect="off" spellcheck="false" inputmode="text" aria-describedby="live"></textarea>
+
+      <button class="tap-to-type" id="tap-to-type" type="button">הקישו כאן כדי להקליד</button>
+    </div>
+
+    <!-- ui.he.js ראשון: כל מודול למטה פורש אותו מעל ברירות המחדל שלו, ולכן הוא חייב להתקיים כשהם
+         רצים. סקריפט רגיל בכוונה — סקריפטים רגילים רצים לפני מודולים עם defer, ועל זה keyboard/boot.js
+         סומך. אין כאן telex-match.js: Telex היא שיטת קלט וייטנאמית והקורס הזה לא מגיע לשם.
+         data/words/he.js חייב לבוא לפני weak-keys.js, שקורא ממנו את הרשימה. -->
+    <script src="/i18n/ui.he.js"></script>
+    <script src="/profile.js"></script>
+    <script src="/data/words/he.js"></script>
+    <script src="/weak-keys.js"></script>
+    <script src="/data/curriculum.he-si1452.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/player.js"></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

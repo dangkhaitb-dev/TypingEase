@@ -7,7 +7,7 @@
   // Mot kho huy hieu cho moi giao trinh, cung ly do nhu progress-store.js: hai giao trinh dung
   // chung ma bai nen dung chung kho la dem cheo nhau.
   const DEFAULT_KEY = 'typingease-badges-v1';
-  const LANG = (global.document?.documentElement?.lang || 'vi').slice(0, 2).toLowerCase();
+  const LANG = (global.document?.documentElement?.lang || 'vi').toLowerCase().split('-')[0];
   const KEY = global.TypingEaseCurriculum?.badgesKey
     || (LANG === 'vi' ? DEFAULT_KEY : `typingease-badges-${LANG}-v1`);
 
@@ -19,7 +19,7 @@
 
   // `hint` là câu mô tả điều kiện, hiện cả khi chưa đạt — người dùng phải biết mình đang đi tới đâu.
   // `field` của luật ĐẦU TIÊN là thanh tiến trình hiển thị cho huy hiệu đó.
-  const LIST = [
+  const LIST_VI = [
     { id: 'first-step', icon: '🌱', title: 'Bước đầu tiên', hint: 'Hoàn thành bài học đầu tiên.',
       rules: [{ field: 'lessons', operand: 'gte', value: 1 }] },
     { id: 'unit-1', icon: '🏁', title: 'Xong Unit 1', hint: 'Hoàn thành trọn vẹn một unit.',
@@ -44,6 +44,14 @@
     { id: 'telex', icon: '✍️', requires: 'telex', title: 'Gõ được dấu', hint: 'Hoàn thành một bài tiếng Việt có dấu (Unit 3).',
       rules: [{ field: 'telexLessons', operand: 'gte', value: 1 }] }
   ];
+
+  // Lop phu ngon ngu dat NGAY DAY chu khong o tung noi tieu thu. `TypingEaseUI.badges` da nam
+  // trong i18n/ui.en.js tu dau ma khong file nao doc — nen huy hieu van hien tieng Viet tren
+  // khoa tieng Anh, ca o bang /en/progress/ lan o thong bao "New badge" ma player.js bat ra
+  // giua bai. Sua o mot cho thi ca hai cho cung dung; sua o bang thi chi bang dung.
+  // Chi `title` va `hint` duoc phu: `icon`, `rules`, `requires` va `id` la co che, khong phai chu.
+  const LIST = LIST_VI.map(badge => ({ ...badge, ...(global.TypingEaseUI?.badges?.[badge.id] || {}),
+    id: badge.id, icon: badge.icon, rules: badge.rules, requires: badge.requires }));
 
   // --- các trường đo được ------------------------------------------------------------------
   function collect({ store, profile, curriculum } = {}) {

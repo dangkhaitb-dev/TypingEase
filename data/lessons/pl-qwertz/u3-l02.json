@@ -1,0 +1,165 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "Prawa kolumna",
+  "summary": "Kolumna przy prawej krawędzi: sześć klawiszy małego palca, a wśród nich ż, ś i ó.",
+  "newKeys": [
+    "-",
+    "+",
+    "'",
+    "ż",
+    "ś",
+    "ó"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ł",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ą",
+    "shift",
+    "enter",
+    "ę",
+    ";",
+    ":",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "+",
+    "'",
+    "ż",
+    "ś",
+    "ó"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Prawy mały palec obsługuje więcej klawiszy niż jakikolwiek inny, a tych przy krawędzi prawie nikt nie ćwiczy. Tutaj liczą się podwójnie: leżą na nich ż, ś i ó. Bez tej kolumny nie napiszesz ani już, ani coś, ani mój. Z Shiftem te same klawisze dają ń, ć i ź — do nich dojdziesz w ostatniej części kursu.",
+  "congrats": "Z ż, ś i ó brakuje już tylko ń, ć i ź — czekają w ostatniej części kursu.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "-",
+      "finger": "RP",
+      "text": "Klawisze przy prawej krawędzi, wszystkie dla małego palca. Na tej klawiaturze trzy z nich to litery: ż, ś i ó.",
+      "hint": "Naciśnij -, aby przejść dalej"
+    },
+    {
+      "newKeys": [
+        "-",
+        "+"
+      ],
+      "text": "Teraz - i +. Mały palec wychodzi na zewnątrz i wraca; dłoń za nim nie idzie.",
+      "type": "block",
+      "content": "-+-+ +-+-\n-+ +-\nj+d -f j+"
+    },
+    {
+      "newKeys": [
+        "'",
+        "ż"
+      ],
+      "text": "Teraz ' i ż. Mały palec wychodzi na zewnątrz i wraca; dłoń za nim nie idzie.",
+      "type": "block",
+      "content": "ż' 'ż\n'fj żd 'f\n'ż ż' 'ż'ż"
+    },
+    {
+      "seconds": 20,
+      "text": "Seria z tym, co masz już z tej kolumny.",
+      "type": "burst",
+      "tokens": [
+        "ż+",
+        "+'",
+        "++",
+        "ż-",
+        "+-",
+        "-ż",
+        "ż'",
+        "-+",
+        "+ż",
+        "żż"
+      ]
+    },
+    {
+      "newKeys": [
+        "ś",
+        "ó"
+      ],
+      "text": "Teraz ś i ó. Mały palec wychodzi na zewnątrz i wraca; dłoń za nim nie idzie.",
+      "type": "block",
+      "content": "śó śó\nśfd ój śf\nśó óś śóśó"
+    },
+    {
+      "text": "Wszystkie sześć razem. To miejsce na klawiaturze, gdzie nadgarstek najbardziej się wykręca, jeśli palec nie wraca.",
+      "type": "block",
+      "content": "f'- dó+ f'\nóś śó óśóś\nóóóó '''' +++ --- żżż śśśś"
+    },
+    {
+      "seconds": 25,
+      "text": "Znowu słowa, żeby rozluźnić dłoń po całej tej krawędzi.",
+      "type": "burst",
+      "tokens": [
+        "czarna",
+        "ślad",
+        "dieta",
+        "bilety",
+        "zadanie",
+        "będę",
+        "kolorowe",
+        "ciężko",
+        "stal",
+        "bok",
+        "smutna",
+        "że"
+      ]
+    },
+    {
+      "text": "Powrót do słów — teraz także z ż, ś i ó.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "czosnek jesteś minuta brzeg\ntaka cytryny coś wiersz\ncel swoi zegar skład"
+    },
+    {
+      "text": "Całe zdania na zakończenie lekcji z klawiszami.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Moja siostra mieszka nad morzem.\nDzisiaj jest ładna pogoda.\nPies czeka przy drzwiach."
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "Z and C",
+  "summary": "Two new keys: Z and C. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "z",
+    "c"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "g",
+    "m",
+    "f",
+    "u",
+    "p",
+    "l",
+    "b",
+    "j",
+    "y",
+    "w",
+    "d",
+    "k",
+    "h",
+    "v",
+    "q",
+    ";",
+    "z",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: Z and C. They belong to your left index finger and your left ring finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If Z and C already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press Z to continue"
+    },
+    {
+      "newKey": "z",
+      "text": "Only Z and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "zns t zn\nz z zz\nzzzz"
+    },
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LR",
+      "text": "This key belongs to your left ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press C to continue"
+    },
+    {
+      "newKey": "c",
+      "text": "Only C and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "zczczc czczcz\ncz cz\nnsc zt ns"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "cccz",
+        "zzz",
+        "ccc",
+        "czc",
+        "zzcc",
+        "czzz",
+        "zczz",
+        "cz",
+        "zzzz"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "nnnn zzzz ccc ttt\nzczc czcz\ncnzt tncz"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "cut nice voices covers\ncloth college lunch rock\ncause watch recognize coach"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "mile",
+        "gal",
+        "till",
+        "cells",
+        "then",
+        "drives",
+        "titles",
+        "treat",
+        "isle",
+        "shale"
+      ]
+    },
+    {
+      "text": "Now the weight is on Z, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "until houses into refuse\nsick set often every\nsaid costs feel had"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nst cz ns\ncz zc czcz\ncccc zzz"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "program began block hear\nideal checks shelf kale\nusher trades salty button"
+    }
+  ]
+}

@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "B 和 X",
+  "summary": "新键：B 和 X。手指伸出去，按下，再回来。",
+  "newKeys": [
+    "b",
+    "x"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "本课的新键：B 和 X。由左手食指 和 左手无名指负责。动作总是一样：伸出去，按下，回来。练的正是回来这一步，因为手指停在外面，下一个字母就会打错。",
+  "congrats": "手指下的键越来越多了。如果 B 和 X 已经不用找就能打出来，这一课就完成了它的任务。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "LI",
+      "text": "这个键由左手食指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 B 继续"
+    },
+    {
+      "newKey": "b",
+      "text": "只有 B 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "bjd f bj\nb b bb\nbbbb"
+    },
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LR",
+      "text": "这个键由左手无名指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 X 继续"
+    },
+    {
+      "newKey": "x",
+      "text": "只有 X 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "bxbxbx xbxbxb\nxb xb\njdx bf jd"
+    },
+    {
+      "seconds": 20,
+      "text": "一组接一组的短组合。就算有打错的，也一直打到最后。",
+      "type": "burst",
+      "tokens": [
+        "xxxx",
+        "xxxb",
+        "bbb",
+        "xxx",
+        "xbx",
+        "bbxx",
+        "xbbb",
+        "bxbb",
+        "xb",
+        "bbbb"
+      ]
+    },
+    {
+      "text": "新键和旧键混在一起，就像以后在拼音里出现的那样。",
+      "type": "block",
+      "content": "jjjj bbbb xxx fff\nbxbx xbxb\nxjbf fjxb"
+    },
+    {
+      "text": "含有新键的真实拼音。每个词一口气打完，不要一个字母一个字母地想。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "daxue shuxue bisai huaxue\nxiangmu xiawu bianhua xiangbi\nxiang bao baoxian xingqi"
+    },
+    {
+      "seconds": 25,
+      "text": "一组组短拼音，里面有新学的键。",
+      "type": "burst",
+      "tokens": [
+        "wa",
+        "shiti",
+        "chunjie",
+        "bingqie",
+        "diaoyu",
+        "xingfu",
+        "jiushi",
+        "ning",
+        "lingwai",
+        "keti"
+      ]
+    },
+    {
+      "text": "现在重点放在 B 上，这是你按得最少的键。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "xuanxiang jiayi niunai shui\nxiangfa xuesheng jiuyue chuangyi\nxue chuan di bian"
+    },
+    {
+      "text": "再回到组合练习，确认手指还能找到回去的路。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jdf xb jd\nxb bx xbxb\nxxxx bbb"
+    },
+    {
+      "text": "你会的全部内容，混在一起。留意有多少词已经不用想就打出来了。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "pian piping nianqing hu\nri nongcun lishi sheji\nyue jiuyue wai poqie"
+    }
+  ]
+}

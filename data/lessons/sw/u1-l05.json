@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Marudio",
+  "summary": "Hakuna kitufe kipya. Yote yaliyotangulia, kwa mfululizo zaidi na kwa kasi zaidi.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Somo hili halifundishi kitu kipya. Ni wakati wa kuhakikisha kwamba yaliyotangulia yanakuja bila kufikiri, jambo ambalo ni tofauti na kujua kila kitufe kiko wapi.",
+  "congrats": "Hakuna jipya, na bado kwa kasi zaidi. Hicho ndicho hasa kilichopaswa kutokea.",
+  "screens": [
+    {
+      "text": "Kuanza, maneno moja moja. Bila haraka: kasi hutokana na usahihi, si kinyume chake.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "falsafa lala faa la\nkaka faa kasa lala\nsaa ala kasa lala"
+    },
+    {
+      "seconds": 25,
+      "text": "Mfululizo mfupi. Maliza orodha hata ukikosea neno moja.",
+      "type": "burst",
+      "tokens": [
+        "kaa",
+        "jaa",
+        "kaka",
+        "kasa",
+        "lala",
+        "ada",
+        "dada",
+        "sasa",
+        "falsafa",
+        "faa",
+        "jalada",
+        "la"
+      ]
+    },
+    {
+      "text": "Maneno matano kwa mstari. Acha macho yatangulie mbele ya vidole.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lala jaa ada sasa kaa\ndada sasa lala saa ala\njalada ala saa jaa kaka"
+    },
+    {
+      "text": "Mifumo tena, kuhakikisha vidole bado vinarudi kwenye safu ya msingi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Maneno mafupi, kwa mwendo mzuri. Haya yanapaswa kuja karibu yenyewe sasa.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dada lala ala saa\ndada ala lala ada\nfaa kaka sasa kaa"
+    },
+    {
+      "seconds": 30,
+      "text": "Muda zaidi na maneno zaidi. Shika mwendo uleule tangu mwanzo hadi mwisho.",
+      "type": "burst",
+      "tokens": [
+        "jalada",
+        "saa",
+        "jaa",
+        "ada",
+        "sasa",
+        "falsafa",
+        "la",
+        "ala",
+        "kaa",
+        "kasa",
+        "faa",
+        "lala",
+        "dada",
+        "kaka"
+      ]
+    },
+    {
+      "text": "Sentensi kamili. Hapa ndipo utaona kama mkono unarudi wenyewe mahali pake.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "falsafa kaa jalada lala\njalada ala kaka saa\nsasa kaa dada saa"
+    },
+    {
+      "text": "Mzunguko wa mwisho. Kama umefika hapa bila kutazama kibodi, somo limekamilika.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaka jaa ada ala kasa\nkasa la ada saa falsafa\nkaka saa lala ala falsafa"
+    }
+  ]
+}

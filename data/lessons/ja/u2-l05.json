@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "復習",
+  "summary": "新しいキーはありません。ここまでのすべてを、前より長く、前より速く。",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンでは新しいことは習いません。ここまでのキーが考えなくても出てくるかを確かめる時間です。キーの位置を知っていることと、それは同じではありません。",
+  "congrats": "新しいことはないのに、前より速くなりました。それがこのレッスンの目的です。",
+  "screens": [
+    {
+      "text": "まずは単語をひとつずつ。急がないでください。速さは正確さから生まれ、その逆はありません。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "shitsurei kiseki umai sentaku\nomiyage arimasu kanji kaminari\nkoutsuu suuji rika mokuteki"
+    },
+    {
+      "seconds": 25,
+      "text": "短い連打です。取りこぼしがあっても最後まで打ってください。",
+      "type": "burst",
+      "tokens": [
+        "maiasa",
+        "ohayou",
+        "onaka",
+        "sagaru",
+        "hikouki",
+        "mado",
+        "tokoro",
+        "kimi",
+        "niwa",
+        "hanko",
+        "tsuyu",
+        "kinchou"
+      ]
+    },
+    {
+      "text": "1行に5語です。目を指より先に進めてください。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "saka shikashi igaku kantann tsuyu\nkurasu yasui otouto anime daigaku\nsoko nageru kimatta chiisai nenrei"
+    },
+    {
+      "text": "もう一度打鍵パターンです。指がホームポジションに戻っているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "短い単語を、いいリズムで。このあたりは、もうほとんど自然に出てくるはずです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fuyu namae nioi naru\ntanka itsu yousu wadai\nmono amai okiru aoi"
+    },
+    {
+      "seconds": 30,
+      "text": "時間も単語も多めです。最初から最後まで同じリズムを保ってください。",
+      "type": "burst",
+      "tokens": [
+        "kinou",
+        "yuuki",
+        "katei",
+        "hayaku",
+        "taiiku",
+        "agaru",
+        "katakana",
+        "youji",
+        "memo",
+        "ningenn",
+        "kuroi",
+        "yume",
+        "shoujiki",
+        "ude"
+      ]
+    },
+    {
+      "text": "文を打ちます。手がひとりでに元の位置に戻るかどうかが、ここでわかります。",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "ie ha eki kara sugu desu\nyoru ha hayaku nemasu\nshigoto no ato de ocha wo nomimasu"
+    },
+    {
+      "text": "最後の一回です。キーボードを見ずにここまで来られたなら、このレッスンは終わりです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yuushoku ashioto sentaku wareru iwau\nakeru socchi yuuki shimasu aka\nchikyuu massugu mise tsukare atsui"
+    }
+  ]
+}

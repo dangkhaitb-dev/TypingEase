@@ -1,0 +1,119 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A 和 分号键",
+  "summary": "新键：A 和 分号键。手指伸出去，按下，再回来。",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "本课的新键：A 和 分号键。由左手小指 和 右手小指负责。动作总是一样：伸出去，按下，回来。练的正是回来这一步，因为手指停在外面，下一个字母就会打错。",
+  "congrats": "手指下的键越来越多了。如果 A 和 分号键 已经不用找就能打出来，这一课就完成了它的任务。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "这个键由左手小指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 A 继续"
+    },
+    {
+      "newKey": "a",
+      "text": "只有 A 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RP",
+      "text": "这个键由右手小指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 ; 继续"
+    },
+    {
+      "newKey": ";",
+      "text": "只有 ; 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "a;a; ;a;a\na; ;a\n;df ja ;d"
+    },
+    {
+      "seconds": 20,
+      "text": "一组接一组的短组合。就算有打错的，也一直打到最后。",
+      "type": "burst",
+      "tokens": [
+        ";aaa",
+        "aa;",
+        "aaa",
+        "a;;a",
+        ";a;;",
+        ";;aa",
+        "a;;",
+        "aa;;",
+        ";a;a",
+        "a;aa"
+      ]
+    },
+    {
+      "text": "新键和旧键混在一起，就像以后在拼音里出现的那样。",
+      "type": "block",
+      "content": "a; ;a a;a;\naaa ;;;; ffff jjj\na;a; ;a;a"
+    },
+    {
+      "text": "两个新键再练一遍。现在还拼不出用到它们的词，这很正常。",
+      "type": "block",
+      "content": "a; ;a\n;jd fa ;j\n;a a; ;a;a"
+    },
+    {
+      "seconds": 25,
+      "text": "稍长一点的组合。现在求快还没有用。",
+      "type": "burst",
+      "tokens": [
+        "a;a",
+        "a;;a",
+        ";aaa",
+        ";;aa",
+        "aaa;",
+        "aa;;",
+        "a;aa",
+        ";a;",
+        ";;a;",
+        ";;a",
+        "aa;a",
+        ";a;;"
+      ]
+    },
+    {
+      "text": "你已经学会的所有键，分成短组合。眼睛看屏幕，不看手。",
+      "type": "block",
+      "content": "ja aj jaja\njjj dddd aaa ;;; ffff\na;a; ;a;a"
+    },
+    {
+      "text": "再回到组合练习，确认手指还能找到回去的路。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "a;a;a; ;a;a;a\na; ;a\nj;a df j;"
+    },
+    {
+      "text": "用到目前为止学过的所有键，最后再练一轮。",
+      "type": "block",
+      "content": "kd dk kdkd\njjjj dddd kkk ffff\nfjfjfj jfjfjf"
+    }
+  ]
+}

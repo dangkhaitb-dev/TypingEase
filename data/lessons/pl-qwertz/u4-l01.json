@@ -1,0 +1,160 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "!, \", # i $",
+  "summary": "W programie: !, \", # i $.",
+  "newKeys": [
+    "!",
+    "\"",
+    "#",
+    "$"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ł",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ą",
+    "shift",
+    "enter",
+    "ę",
+    ";",
+    ":",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "+",
+    "'",
+    "ż",
+    "ś",
+    "ó",
+    "!",
+    "\"",
+    "#",
+    "$"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Klawisze, których kurs jeszcze nie używał: !, \", # i $. Każdy z nich to Shift i klawisz, który twoje palce już znają — Shift małym palcem drugiej ręki.",
+  "congrats": "!, \", # i $: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "Ten znak — ! — naciska lewy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij !, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Najpierw sam !, potem tam, gdzie naprawdę się go używa.",
+      "content": "!! ! za! nowina! półka!\n!! ! sok! leki! robota!\n!! ! klawisze! języki! pilot!"
+    },
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LR",
+      "text": "Ten znak — \" — naciska lewy palec serdeczny, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij \", aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "Najpierw sam \", potem tam, gdzie naprawdę się go używa.",
+      "content": "\"\" \" \"mądry\" \"system\" \"sufit\"\n\"\" \" \"drewno\" \"siedem\" \"sok\"\n\"\" \" \"wrócę\" \"rura\" \"miejsce\""
+    },
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LM",
+      "text": "Ten znak — # — naciska lewy palec środkowy, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij #, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "Najpierw sam #, potem tam, gdzie naprawdę się go używa.",
+      "content": "## # #87 #84 #4\n## # #83 #6 #71\n## # #43 #25 #83"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "Ten znak — $ — naciska lewy palec wskazujący, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij $, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Najpierw sam $, potem tam, gdzie naprawdę się go używa.",
+      "content": "$$ $ $19 $43 $23\n$$ $ $56 $15 $78\n$$ $ $82 $60 $8"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Seria krótkich kawałków z tymi znakami.",
+      "tokens": [
+        "#9",
+        "#24",
+        "#4",
+        "tabela!",
+        "\"plac\"",
+        "kierowca!",
+        "\"marchew\"",
+        "#49",
+        "\"mówi\"",
+        "$72"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Wszystko, co przyniosła ta lekcja, wymieszane.",
+      "content": "sprawy! $77 $16 wysoki!\n#90 kiedy! biurko! #27\n$4 $76 szkła! \"tej\""
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Znowu słowa, ze znakami na swoich miejscach.",
+      "content": "\"sklepy\" lider \"telefon\" baton \"córki\"\n$97 tapeta dali! pracuje czerwony!\n\"się\" ład \"cyfry\" lista czy!"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Révision",
+  "summary": "Aucune touche nouvelle. Tout ce qui précède, plus vite et plus longtemps.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Cette leçon n'apprend rien de neuf. C'est le moment de vérifier que ce qui précède sort sans y penser, ce qui n'est pas la même chose que savoir où sont les touches.",
+  "congrats": "Rien de neuf et pourtant plus rapide. C'est exactement ce qui devait arriver.",
+  "screens": [
+    {
+      "text": "Pour commencer, des mots isolés. Sans se presser : la vitesse vient de la précision, jamais l'inverse.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "heures mille vivre nos\ndevenir vie jours votes\ndose hisse glisses vous"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série courte. Termine la liste même si tu en laisses passer.",
+      "type": "burst",
+      "tokens": [
+        "gels",
+        "centre",
+        "demis",
+        "mes",
+        "sort",
+        "huile",
+        "dure",
+        "vie",
+        "murs",
+        "sotte",
+        "glisse",
+        "un"
+      ]
+    },
+    {
+      "text": "Cinq mots par ligne. Laisse les yeux passer devant les doigts.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "des dise rue mon rigides\nluges grise tire ouvre fil\ndite outils envie four centre"
+    },
+    {
+      "text": "Des motifs à nouveau, pour vérifier que les doigts retournent à la rangée de repos.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sqk ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Des mots courts, à bon rythme. Ceux-là devraient presque sortir seuls.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sites onze nom ton\nmonde juger jours mode\nvient voile rose mots"
+    },
+    {
+      "seconds": 30,
+      "text": "Plus de temps et plus de mots. Garde le même rythme du début à la fin.",
+      "type": "burst",
+      "tokens": [
+        "mode",
+        "onze",
+        "midi",
+        "sommes",
+        "moments",
+        "gifles",
+        "tel",
+        "vitesse",
+        "vote",
+        "gros",
+        "ifs",
+        "selle",
+        "dur",
+        "voile"
+      ]
+    },
+    {
+      "text": "Des phrases entières. C'est là qu'on voit si la main revient toute seule.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mort histoires elles contes\ncontent souvent tristes connue\nsortes ses mil four"
+    },
+    {
+      "text": "La dernière série. Si tu es arrivé jusqu'ici sans regarder le clavier, la leçon est faite.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "donc sous nos tristes telle\ndevoirs mort heure vies de\ncourte moment second fleur rigides"
+    }
+  ]
+}

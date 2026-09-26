@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift en Enter",
+  "summary": "Hoofdletters met de tegenovergestelde pink, en een nieuwe regel.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "+",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "´",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tot nu toe heb je alles in kleine letters getypt. Shift verandert dat, en er is één regel die je meteen goed moet leren: je drukt hem in met de pink van de hand tegenover de letter. Met de pink van dezelfde hand draait de hand en ga je naar het toetsenbord kijken.",
+  "congrats": "Met Shift en Enter kun je een hele tekst typen zoals je buiten deze cursus schrijft.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Hoofdletters maak je met de pink van de hand tegenover de letter. Houd Shift ingedrukt, sla de letter aan, laat los. Nooit met de pink van de hand die de letter typt.",
+      "hint": "Houd Shift ingedrukt en druk op een letter om verder te gaan"
+    },
+    {
+      "newKey": "shift",
+      "text": "Hoofdletters en kleine letters om en om. De pink gaat omlaag en weer omhoog; de andere hand blijft staan.",
+      "type": "block",
+      "content": "Pp Jj Zz Ee\nCc Dd Qq Gg\nTt Uu Kk Rr\nXx Mm Ff Bb"
+    },
+    {
+      "text": "Woorden met een hoofdletter aan het begin, zoals namen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "naam kalk januari lijf\ntoets dief bladeren eis\nklant patat hotel zwart"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter is voor de rechterpink, rechts van de thuisrij. Het is de verste toets die deze vinger moet halen.",
+      "hint": "Druk op Enter om verder te gaan"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Een regel, Enter, nog een regel. De pink gaat naar buiten en terug zonder de hand mee te slepen.",
+      "type": "block",
+      "content": "Lotte\nAnna\nAmsterdam\nLeiden\nSem\nSanne"
+    },
+    {
+      "text": "Zinnen met een hoofdletter aan het begin en een punt aan het eind. Dit begint op echt schrijven te lijken.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Hij is al klaar.\nDe kinderen spelen buiten in de tuin.\nDe zon schijnt en de lucht is blauw."
+    },
+    {
+      "seconds": 25,
+      "text": "Een reeks om vast te zetten wat je in deze les hebt gezien.",
+      "type": "burst",
+      "tokens": [
+        "kennen",
+        "krant",
+        "na",
+        "zwart",
+        "spoor",
+        "ezel",
+        "dit",
+        "verder",
+        "koken",
+        "nee",
+        "wordt",
+        "koude"
+      ]
+    },
+    {
+      "text": "Vijf per regel, met de pink die in beide richtingen werkt.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "gebruiken cultuur ruig bord lampen\nfotograaf keuken na mama wij\nvandaag kinderen me meteen heb"
+    },
+    {
+      "text": "Tot slot hele zinnen. Shift, letter, loslaten — zonder erbij stil te staan.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "We wandelen samen langs de rivier.\nIk lees hier elke dag.\nWil je nog een kopje thee."
+    }
+  ]
+}

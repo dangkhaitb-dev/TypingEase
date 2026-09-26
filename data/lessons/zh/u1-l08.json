@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "R 和 U",
+  "summary": "新键：R 和 U。手指伸出去，按下，再回来。",
+  "newKeys": [
+    "r",
+    "u"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "本课的新键：R 和 U。由左手食指 和 右手食指负责。动作总是一样：伸出去，按下，回来。练的正是回来这一步，因为手指停在外面，下一个字母就会打错。",
+  "congrats": "手指下的键越来越多了。如果 R 和 U 已经不用找就能打出来，这一课就完成了它的任务。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "r",
+      "finger": "LI",
+      "text": "这个键由左手食指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 R 继续"
+    },
+    {
+      "newKey": "r",
+      "text": "只有 R 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "fjr d fj\nr r rr\nrrr"
+    },
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "RI",
+      "text": "这个键由右手食指负责。不看键盘找到它，按一下，然后让手指回位。回去的路和按下去一样重要。",
+      "hint": "按 U 继续"
+    },
+    {
+      "newKey": "u",
+      "text": "只有 U 和你已经学过的键。慢慢来，每按一次都让手指回到基准行。",
+      "type": "block",
+      "content": "ur ur\nrju fd rj\nru ur ruru"
+    },
+    {
+      "seconds": 20,
+      "text": "一组接一组的短组合。就算有打错的，也一直打到最后。",
+      "type": "burst",
+      "tokens": [
+        "rru",
+        "ruru",
+        "rrr",
+        "ruur",
+        "uru",
+        "rr",
+        "uuur",
+        "urru",
+        "rruu",
+        "uruu"
+      ]
+    },
+    {
+      "text": "新键和旧键混在一起，就像以后在拼音里出现的那样。",
+      "type": "block",
+      "content": "fr rf frfr\nrrrr jjjj ffff uuu\nruru urur"
+    },
+    {
+      "text": "含有新键的真实拼音。每个词一口气打完，不要一个字母一个字母地想。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "shufu shuru gui ju\nfuli duli shijue gua\nsuiji rui kuaile er"
+    },
+    {
+      "seconds": 25,
+      "text": "一组组短拼音，里面有新学的键。",
+      "type": "burst",
+      "tokens": [
+        "shu",
+        "shuai",
+        "ji",
+        "guai",
+        "gege",
+        "shishi",
+        "shifei",
+        "shei",
+        "gei",
+        "jiage"
+      ]
+    },
+    {
+      "text": "现在重点放在 R 上，这是你按得最少的键。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "shufu dai hai suiji\nka lijie huijia gushi\nkuai ruhe shiliu jiaru"
+    },
+    {
+      "text": "再回到组合练习，确认手指还能找到回去的路。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "rrr uuuu\nrururu ururur\nur ur"
+    },
+    {
+      "text": "你会的全部内容，混在一起。留意有多少词已经不用想就打出来了。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fa juli kai hei\nshijie kele shili shuhua\nkuaile dada shuidi lishi"
+    }
+  ]
+}

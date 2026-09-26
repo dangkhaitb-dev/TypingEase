@@ -1,0 +1,122 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "e-i",
+  "title": "E と I",
+  "summary": "新しいキー：E と I。指が出て、押して、戻ります。",
+  "newKeys": [
+    "e",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンの新しいキー：E と I。左手の中指 と 右手の中指で押します。動きはいつも同じで、出て、押して、戻ります。練習するのは戻る動きです。指が外に残ったままだと、次の文字を間違えるからです。",
+  "congrats": "指の下のキーが増えました。E と I を探さずに打てるなら、このレッスンの役目は果たせています。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "このキーは左手の中指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "E を押して次へ"
+    },
+    {
+      "newKey": "e",
+      "text": "E と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "e e ee\neee\neeeeee eeeeee"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RM",
+      "text": "このキーは右手の中指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "I を押して次へ"
+    },
+    {
+      "newKey": "i",
+      "text": "I と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "jdi fe jd\nie ei ieie\niiii eee"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        "eiie",
+        "iie",
+        "eeei",
+        "eiei",
+        "ei",
+        "iii",
+        "eeie",
+        "iei",
+        "ieei",
+        "ii"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "eieiei ieieie\nifej jefi\nske dfj sk"
+    },
+    {
+      "text": "新しいキーを使う、本物の日本語の単語です。一文字ずつではなく、単語をひと続きに打ってください。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sekkei ike kiseki seiki\nikkai jiki ki ika\nai iie kiji kekka"
+    },
+    {
+      "seconds": 25,
+      "text": "新しいキーを含む、短い単語の連打です。",
+      "type": "burst",
+      "tokens": [
+        "keiki",
+        "aka",
+        "ki",
+        "daiji",
+        "kikai",
+        "ikkai",
+        "kiji",
+        "eki",
+        "jissai",
+        "asa"
+      ]
+    },
+    {
+      "text": "次は、いちばん押す回数が少なかった E を多めに打ちます。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jiki seki kikai jissai\nakai kiji eki ikkai\nki iie keiki aki"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "iii eee\neieiei ieieie\nei ie"
+    },
+    {
+      "text": "ここまでのキーすべてを混ぜて。考えなくても出てくる単語が、もうかなりあるはずです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kikai ai sake iki\nsakki seiki kiki iie\naka ikkai eki jissai"
+    }
+  ]
+}

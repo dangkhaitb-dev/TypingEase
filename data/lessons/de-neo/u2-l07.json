@@ -1,0 +1,138 @@
+{
+  "id": "u2-l07",
+  "unit": "u2",
+  "group": "reach",
+  "order": 17,
+  "slug": "b-x",
+  "title": "Z und Ö",
+  "summary": "Neue Tasten: Z und Ö. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "z",
+    "ö"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h",
+    "w",
+    "k",
+    "f",
+    "v",
+    "ä",
+    "b",
+    "m",
+    "p",
+    "x",
+    "q",
+    "z",
+    "ö"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: Z und Ö. Dafür sind der linke Zeigefinger und der linke Ringfinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn Z und Ö ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LI",
+      "text": "Für diese Taste ist der linke Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke Z, um weiterzugehen"
+    },
+    {
+      "newKey": "z",
+      "text": "Nur Z und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "zna e zn\nz z zz\nzzzz"
+    },
+    {
+      "type": "intro",
+      "key": "ö",
+      "finger": "LR",
+      "text": "Für diese Taste ist der linke Ringfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke Ö, um weiterzugehen"
+    },
+    {
+      "newKey": "ö",
+      "text": "Nur Ö und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "zözözö özözöz\nöz öz\nnaö ze na"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "öööö",
+        "öööz",
+        "zzz",
+        "ööö",
+        "özö",
+        "zzöö",
+        "özzz",
+        "zözz",
+        "öz",
+        "zzzz"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "nnnn zzzz ööö eee\nzözö özöz\nönze enöz"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hitze witz sitz zusage\nzart holz quiz zeigt\nölfass pilz höfe platz"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "hart",
+        "können",
+        "pilot",
+        "ufer",
+        "hose",
+        "städte",
+        "doktor",
+        "kälte",
+        "quer",
+        "stark"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf Z — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ändern still stunde igel\nländer luxus tage unser\nexamen nur fass zeigt"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nae öz na\nöz zö özöz\nöööö zzz"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "programm quadrat quiz hase\nsiegel nacht elf kleid\ngriff teil sagt bekannt"
+    }
+  ]
+}

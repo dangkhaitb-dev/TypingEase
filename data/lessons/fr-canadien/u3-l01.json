@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "La rangée des chiffres",
+  "summary": "Les dix chiffres, chaque doigt montant en ligne droite.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "`",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "La rangée des chiffres est au-dessus de tout ce que tu as écrit jusqu'ici, et c'est là que les doigts vont le plus loin. On s'y trompe plus que partout ailleurs dans le cours, et ça se répare comme le reste : lentement d'abord.",
+  "congrats": "La rangée des chiffres est la plus difficile et la moins pratiquée ensuite. Reviens à cette leçon de temps en temps.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "La rangée des chiffres est au-dessus de la rangée du haut. Chaque doigt y monte en ligne droite et redescend de même. Ce sont les plus longs trajets du cours.",
+      "hint": "Appuie sur 1 pour continuer"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "1 et 0 se tapent avec l'auriculaire gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "2 et 9 se tapent avec l'annulaire gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "df2 9j df\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Une série courte avec ce que tu viens d'apprendre.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "3 et 8 se tapent avec le majeur gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "383838 838383\n83 38\nd83 jf d8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "4 et 7 se tapent avec l'index gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "47 47\nfj4 7d fj\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "Les deux qui restent sont aux index, qui atteignent déjà plus de touches que n'importe quel autre doigt.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nfj6 5d fj"
+    },
+    {
+      "text": "Toute la rangée, en groupes. Ne baisse pas les yeux pour chercher.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Les dix, mélangés. On rate beaucoup ici au début ; c'est normal.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "On revient aux mots un instant, pour que les mains se souviennent d'où elles habitent.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "histoires blanche point espèces\ncentres tel systèmes heure\nutile voir derrière four"
+    },
+    {
+      "text": "Des phrases à nouveau, avec le clavier entier disponible.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Elle a pris le premier train du matin.\nLe temps passe vite quand le travail avance bien.\nTous les jours je passe devant cette boutique."
+    }
+  ]
+}

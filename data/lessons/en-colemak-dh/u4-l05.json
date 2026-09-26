@@ -1,0 +1,171 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": ":, {, } and |",
+  "summary": "The last keys: :, {, } and |.",
+  "newKeys": [
+    ":",
+    "{",
+    "}",
+    "|"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "g",
+    "m",
+    "f",
+    "u",
+    "p",
+    "l",
+    "b",
+    "j",
+    "y",
+    "w",
+    "d",
+    "k",
+    "h",
+    "v",
+    "q",
+    ";",
+    "z",
+    "c",
+    "x",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    ":",
+    "{",
+    "}",
+    "|"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: :, {, } and |. Each of them is Shift plus a key your fingers already know — Shift with the little finger of the other hand.",
+  "congrats": ":, {, } and |: under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RP",
+      "text": ": belongs to your right little finger, with Shift held by the other hand.",
+      "hint": "Press : to continue"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": ": on its own first, then where it is actually used.",
+      "content": ":: : truly: longer: miles:\n:: : method: lead: nights:\n:: : salud: needs: this:"
+    },
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "{ belongs to your right little finger, with Shift held by the other hand.",
+      "hint": "Press { to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "{ on its own first, then where it is actually used.",
+      "content": "{{ { {for {has {prize\n{{ { {tail {hail {train\n{{ { {types {grease {costs"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "} belongs to your right little finger, with Shift held by the other hand.",
+      "hint": "Press } to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "} on its own first, then where it is actually used.",
+      "content": "}} } {classes} {much} {there's}\n}} } {grades} {hole} {any}\n}} } {show} {talks} {harsh}"
+    },
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "RP",
+      "text": "| belongs to your right little finger, with Shift held by the other hand.",
+      "hint": "Press | to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "| on its own first, then where it is actually used.",
+      "content": "|| | town|points teach|special sash|rolls\n|| | better|able took|began per|root\n|| | beside|we'll rulers|high gash|track"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "nothing:",
+        "{peace}",
+        "{smile}",
+        "{provide}",
+        "{quarter}",
+        "{shred}",
+        "{file}",
+        "aside|purpose",
+        "do|meat",
+        "yard:"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "{star} {silver} harsh: poor|jump\n{could} frozen|them {jail} heavy|views\nbad: {set} grid|tears {dread}"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "wire|his thought see|think sail send|sides\nplace|route ran {shape} rather {sharks}\ndoor: rose i'm|lands hails {plans}"
+    }
+  ]
+}

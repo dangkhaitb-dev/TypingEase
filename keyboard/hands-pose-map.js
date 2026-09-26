@@ -128,6 +128,14 @@ function findLayoutEntry(layout, key) {
   }
   const expected = normalizedKey(key);
   const rows = layout?.structure || [];
+  // Cot tu the, KHONG PHAI vi tri trong mang. Phim thu 105 (IntlBackslash, xem scripts/add-iso-key.js)
+  // chen vao hang duoi ngay sau Shift trai, va neu dem no thi Z, X, C… lech sang phai mot cot — tay
+  // se voi toi phim ben canh. Kho tu the chi biet khung 104 phim, nen phim ay mang cot cua Shift
+  // trai (ut trai voi xa nhat) va moi phim sau no giu dung cot cua ban phim My.
+  const columnOf = (entries, index) => {
+    const iso = entries.findIndex((item) => item?.hardware === 'IntlBackslash');
+    return iso >= 0 && index >= iso ? index : index + 1;
+  };
   // A glyph can appear both as a normal key and as a shifted/AltGr form on a
   // different physical key (notably in phonetic Hebrew). Prefer its direct
   // key so an unmodified typing prompt always receives the matching hand.
@@ -137,13 +145,13 @@ function findLayoutEntry(layout, key) {
   for (const property of ['main', 'shifted', 'alt', 'hidden']) {
     for (const [row, entries] of rows.entries()) {
       for (const [index, entry] of entries.entries()) {
-        if (normalizedKey(entryValue(entry[property])) === expected) return { entry, row, column: index + 1 };
+        if (normalizedKey(entryValue(entry[property])) === expected) return { entry, row, column: columnOf(entries, index) };
       }
     }
   }
   for (const [row, entries] of rows.entries()) {
     for (const [index, entry] of entries.entries()) {
-      if ((expected === 'enter' && entry.hardware === 'Enter') || (expected === 'backspace' && entry.hardware === 'Backspace') || (expected === ' ' && entry.hardware === 'Space')) return { entry, row, column: index + 1 };
+      if ((expected === 'enter' && entry.hardware === 'Enter') || (expected === 'backspace' && entry.hardware === 'Backspace') || (expected === ' ' && entry.hardware === 'Space')) return { entry, row, column: columnOf(entries, index) };
     }
   }
   return null;

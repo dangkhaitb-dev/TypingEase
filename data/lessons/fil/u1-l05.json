@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Balik-aral",
+  "summary": "Walang bagong key. Lahat ng nauna, mas mahaba at mas mabilis.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Walang itinuturong bago ang araling ito. Ito ang sandali para tiyakin na lumalabas ang mga nauna nang hindi pinag-iisipan, na iba sa pag-alam kung nasaan ang bawat key.",
+  "congrats": "Walang bago, pero mas mabilis pa rin. Iyon mismo ang dapat mangyari.",
+  "screens": [
+    {
+      "text": "Isa-isang salita muna. Walang pagmamadali: sa katumpakan nanggagaling ang bilis, hindi baligtad.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "alas dasal laksa lakad\nka dala laksa dasal\ndasal sala lakas kalas"
+    },
+    {
+      "seconds": 25,
+      "text": "Isang maikling bugso. Tapusin ang listahan kahit may makalusot.",
+      "type": "burst",
+      "tokens": [
+        "laksa",
+        "alaala",
+        "kalas",
+        "kasal",
+        "saka",
+        "dalas",
+        "lasa",
+        "ka",
+        "kala",
+        "dala",
+        "dasal",
+        "lakad"
+      ]
+    },
+    {
+      "text": "Limang salita bawat linya. Hayaang mauna ang mga mata sa mga daliri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dasal sala saka dala ka\nkala dalas sala lakas kalas\nlakas sala dala alaala dalas"
+    },
+    {
+      "text": "Mga pattern ulit, para matiyak na bumabalik pa rin ang mga daliri sa gitnang hanay.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Maiikling salita sa maayos na bilis. Dapat halos kusa na silang lumalabas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kala kalas lakas sala\nkala lakas kalas kasal\nlaksa dala dalas asa"
+    },
+    {
+      "seconds": 30,
+      "text": "Mas mahabang oras at mas maraming salita. Iisang ritmo mula umpisa hanggang dulo.",
+      "type": "burst",
+      "tokens": [
+        "alas",
+        "saka",
+        "lasa",
+        "sa",
+        "sala",
+        "kasal",
+        "dasal",
+        "dalas",
+        "asa",
+        "lakad",
+        "dala",
+        "ka",
+        "kalas",
+        "lakas"
+      ]
+    },
+    {
+      "text": "Buong pangungusap. Dito mo malalaman kung kusang bumabalik ang kamay.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lakad asa kalas alas\ndasal kalas lakas dala\nsala dalas ka kasal"
+    },
+    {
+      "text": "Ang huling ikot. Kung nakarating ka rito nang hindi tumitingin sa keyboard, tapos na ang aralin.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kala sala kasal lakas alaala\ndasal sa saka alaala asa\nalas dala asa kala dasal"
+    }
+  ]
+}

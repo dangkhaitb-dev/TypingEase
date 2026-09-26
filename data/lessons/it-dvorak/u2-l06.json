@@ -1,0 +1,136 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-p",
+  "title": "À e L",
+  "summary": "Tasti nuovi: À e L. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "à",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "à",
+    "l"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: À e L. Si premono con il mignolo sinistro e il mignolo destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se À e L ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "à",
+      "finger": "LP",
+      "text": "Questo tasto lo prende il mignolo sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi À per continuare"
+    },
+    {
+      "newKey": "à",
+      "text": "Solo À e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "àeu h àe\nà à àà\nàààà"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RP",
+      "text": "Questo tasto lo prende il mignolo destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi L per continuare"
+    },
+    {
+      "newKey": "l",
+      "text": "Solo L e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "àlàl làlà\nàl là\nhuà el hu"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "làà",
+        "àlàl",
+        "llàà",
+        "llà",
+        "lààl",
+        "làll",
+        "àlà",
+        "àll",
+        "àààà",
+        "àààl"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "uuuu hhhh àààà lll\nàlàlàl làlàlà\nuhàl làhu"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "stella realtà figlio taglia\ndà legge dalle alto\ndifficoltà regale lei pulito"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "uguale",
+        "primo",
+        "fila",
+        "cena",
+        "mattina",
+        "agire",
+        "pulito",
+        "alfa",
+        "stanco",
+        "già"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su À, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "primo biblioteca potrà larga\nlega salda stadio comune\nbottiglia legge dea erede"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "àlàlàl làlàlà\nàl là\nluà he lu"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ala alla pesce unità\nali il nel digitare\nbottone nei conto sale"
+    }
+  ]
+}

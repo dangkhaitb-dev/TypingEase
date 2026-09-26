@@ -1,0 +1,146 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, $ and %",
+  "summary": "The last keys: `, ~, $ and %.",
+  "newKeys": [
+    "`",
+    "~",
+    "$",
+    "%"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "`",
+    "~",
+    "$",
+    "%"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: `, ~, $ and %. Some need Shift, held by the little finger of the other hand; the rest sit on a key the course has not used before.",
+  "congrats": "`, ~, $ and %: under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "` belongs to your left little finger.",
+      "hint": "Press ` to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "` on its own first, then where it is actually used.",
+      "content": "`` ` `mouth` `covers` `drives`\n`` ` `side` `hunt` `meet`\n`` ` `busy` `observe` `touch`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "~ on its own first, then where it is actually used.",
+      "content": "~~ ~ ~21 ~13 ~57\n~~ ~ ~80 ~11 ~15\n~~ ~ ~44 ~59 ~92"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "$ belongs to your left index finger, with Shift held by the other hand.",
+      "hint": "Press $ to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "$ on its own first, then where it is actually used.",
+      "content": "$$ $ $4 $35 $46\n$$ $ $6 $85 $31\n$$ $ $33 $65 $72"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "% belongs to your left index finger, with Shift held by the other hand.",
+      "hint": "Press % to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "% on its own first, then where it is actually used.",
+      "content": "%% % 89% 11% 54%\n%% % 59% 23% 84%\n%% % 79% 3% 72%"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "85%",
+        "28%",
+        "8%",
+        "98%",
+        "$83",
+        "`orders`",
+        "`present`",
+        "$33",
+        "~53",
+        "~29"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "47% 9% 95% ~85\n28% `rides` `tour` 92%\n85% $92 $9 ~22"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "$64 notice `guild` follow $22\n8% rules ~54 miles $62\n96% we've ~15 papers $59"
+    }
+  ]
+}

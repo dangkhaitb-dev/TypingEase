@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Balik-aral",
+  "summary": "Walang bagong key. Lahat ng nauna, mas mahaba at mas mabilis.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Walang itinuturong bago ang araling ito. Ito ang sandali para tiyakin na lumalabas ang mga nauna nang hindi pinag-iisipan, na iba sa pag-alam kung nasaan ang bawat key.",
+  "congrats": "Walang bago, pero mas mabilis pa rin. Iyon mismo ang dapat mangyari.",
+  "screens": [
+    {
+      "text": "Isa-isang salita muna. Walang pagmamadali: sa katumpakan nanggagaling ang bilis, hindi baligtad.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "totoo halik likuan lamang\nmagaan awitin namin ilalim\nninang luha lahi madalas"
+    },
+    {
+      "seconds": 25,
+      "text": "Isang maikling bugso. Tapusin ang listahan kahit may makalusot.",
+      "type": "burst",
+      "tokens": [
+        "wala",
+        "lakad",
+        "mesa",
+        "hangin",
+        "maganda",
+        "usisa",
+        "hugas",
+        "ilong",
+        "ahas",
+        "maayos",
+        "tunog",
+        "likod"
+      ]
+    },
+    {
+      "text": "Limang salita bawat linya. Hayaang mauna ang mga mata sa mga daliri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "asa hila ligaw tama sagot\ntita kalye naku magsanay dilis\ngulong tumulong sanayin ina magsimula"
+    },
+    {
+      "text": "Mga pattern ulit, para matiyak na bumabalik pa rin ang mga daliri sa gitnang hanay.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Maiikling salita sa maayos na bilis. Dapat halos kusa na silang lumalabas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "oras susi mali maaga\ngusto kalat handa natin\nlagi daw isang na"
+    },
+    {
+      "seconds": 30,
+      "text": "Mas mahabang oras at mas maraming salita. Iisang ritmo mula umpisa hanggang dulo.",
+      "type": "burst",
+      "tokens": [
+        "hugasan",
+        "dumating",
+        "lugaw",
+        "ligaw",
+        "tuwa",
+        "halika",
+        "ano",
+        "luto",
+        "kotse",
+        "tigil",
+        "saya",
+        "isa",
+        "dila",
+        "tawag"
+      ]
+    },
+    {
+      "text": "Buong pangungusap. Dito mo malalaman kung kusang bumabalik ang kamay.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "marami uminom sisi asul\nkunin takot daan ulam\nkamatis laksa silid nanay"
+    },
+    {
+      "text": "Ang huling ikot. Kung nakarating ka rito nang hindi tumitingin sa keyboard, tapos na ang aralin.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hintuturo dalangin lamang gitna tanghali\ndaw marami oo kaarawan ka\nmatuto sige susi oras kalat"
+    }
+  ]
+}

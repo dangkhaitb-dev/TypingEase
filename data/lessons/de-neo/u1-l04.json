@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "U und D",
+  "summary": "Neue Tasten: U und D. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "u",
+    "d"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: U und D. Dafür sind der linke kleine Finger und der rechte kleine Finger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn U und D ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "u",
+      "finger": "LP",
+      "text": "Für diese Taste ist der linke kleine Finger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke U, um weiterzugehen"
+    },
+    {
+      "newKey": "u",
+      "text": "Nur U und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "u u\nenu a en\nu u uu"
+    },
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "RP",
+      "text": "Für diese Taste ist der rechte kleine Finger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke D, um weiterzugehen"
+    },
+    {
+      "newKey": "d",
+      "text": "Nur D und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "udud dudu\nud du\ndae nu da"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "duuu",
+        "uud",
+        "uuu",
+        "uddu",
+        "dudd",
+        "dduu",
+        "udd",
+        "uudd",
+        "dudu",
+        "uduu"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "ud du udud\nuuu dddd eeee nnn\nudud dudu"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dir nur neu euer\ndir neun unten neu\nerde idee der unten"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "der",
+        "eier",
+        "unter",
+        "euer",
+        "rad",
+        "und",
+        "ei",
+        "eine",
+        "erde",
+        "unten"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf U — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "euer unter eine neu\nund erde die ein\nin der tier einer"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ududud dududu\nud du\nndu ae nd"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "er und rad nein\nrede ein unter dir\nidee ei an ende"
+    }
+  ]
+}

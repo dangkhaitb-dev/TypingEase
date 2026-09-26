@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "1. ünite testi",
+  "summary": "Öğrenilen her şeyle süreli bir test.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "Süreli bir test. Yeni bir şey yok: yalnızca bildiklerin, tutabileceğin bir ritimle.",
+  "congrats": "Test geçildi. Sayı, sona bakmadan varmış olmaktan daha az önemli.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "Yeni tuş yok. Sonuna kadar tutabileceğin bir ritimle yaz.",
+      "dictation": "words",
+      "content": "el mümkün yaka kalın\nkere kur mantık ile\nkek kum tatlı akar\nkalk tarla ya at"
+    }
+  ]
+}

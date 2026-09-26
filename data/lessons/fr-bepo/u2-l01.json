@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "È et ^",
+  "summary": "Nouvelles touches : È et ^. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "è",
+    "^"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d",
+    "o",
+    "v",
+    "è",
+    "^"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : È et ^. Elles se tapent avec l'index gauche et l'index droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si È et ^ sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "è",
+      "finger": "LI",
+      "text": "C'est l'index gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur È pour continuer"
+    },
+    {
+      "newKey": "è",
+      "text": "Seulement È et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "èet i èe\nè è èè\nèèèè"
+    },
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur ^ pour continuer"
+    },
+    {
+      "newKey": "^",
+      "text": "Seulement ^ et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "t^i eè t^\nè^ ^è è^è^\n^^^ èèè"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "èè^",
+        "èè^^",
+        "èèè",
+        "^èè^",
+        "èèèè",
+        "èè^è",
+        "èèè^",
+        "è^è",
+        "è^è^",
+        "^è^"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "^è è^ ^è^è\nèèèè ttt eee ^^^\nè^è^ ^è^è"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "derrière père dernière espèces\naprès dernière dernières pères\nsuccès espèces derrière pères"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "tire",
+        "second",
+        "sur",
+        "site",
+        "ses",
+        "dures",
+        "notre",
+        "devenir",
+        "autre",
+        "votes"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur È, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "prêt porte dîners part\nancêtre dîner portes vie\npâte nos sa connu"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "^è è^\ntèi ^e tè\nè^ ^è è^è^"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "vin petits devenir voit\nnouveau espèce envie vertu\ncontes derrière très centres"
+    }
+  ]
+}

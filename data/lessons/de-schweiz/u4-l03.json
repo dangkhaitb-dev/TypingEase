@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "/, (, ) und =",
+  "summary": "Neu in dieser Lektion: /, (, ) und =.",
+  "newKeys": [
+    "/",
+    "(",
+    ")",
+    "="
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ä",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "^",
+    "ü",
+    "¨",
+    "$",
+    "§",
+    "°",
+    "+",
+    "\"",
+    "*",
+    "ç",
+    "%",
+    "&",
+    "/",
+    "(",
+    ")",
+    "="
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: /, (, ) und =. Jedes davon entsteht aus Shift und einer Taste, die deine Finger schon kennen — Shift mit dem kleinen Finger der anderen Hand.",
+  "congrats": "/, (, ) und =: jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RI",
+      "text": "/: Dafür ist der rechte Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke /, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "/",
+      "text": "Zuerst / für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "// / warte/vase denn/reif kühl/hitze\n// / komplex/gold baby/quelle glas/mehr\n// / rad/band länder/falls sauber/garten"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RM",
+      "text": "(: Dafür ist der rechte Mittelfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke (, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Zuerst ( für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "(( ( (finden (mund (vase\n(( ( (in (käse (mehr\n(( ( (kind (physik (rätsel"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RR",
+      "text": "): Dafür ist der rechte Ringfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke ), um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "Zuerst ) für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": ")) ) (über) (mensch) (strand)\n)) ) (marke) (geduld) (sonne)\n)) ) (bäcker) (zahl) (dort)"
+    },
+    {
+      "type": "intro",
+      "key": "=",
+      "finger": "RP",
+      "text": "=: Dafür ist der rechte kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke =, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "=",
+      "text": "Zuerst = für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "== = 60 = 89 86 = 11 12 = 29\n== = 39 = 45 63 = 65 49 = 84\n== = 98 = 2 29 = 82 63 = 22"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "(lippe)",
+        "(geblüht)",
+        "(bett)",
+        "75=62",
+        "26=81",
+        "(hände)",
+        "(macht)",
+        "(gespräch)",
+        "3=30",
+        "(offen)"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "(macht) (strand) (blau) 51=89\n(zimmer) (dir) (danke) (kopf)\n(kajak) wasser/qualle analyse/lied zucker/müsste"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "47 = 42 edel (treppe) kälte (wäsche)\n89 = 39 eile (alle) stimme kleid/wünschen\n(bücher) heraus 15 = 6 also (dass)"
+    }
+  ]
+}

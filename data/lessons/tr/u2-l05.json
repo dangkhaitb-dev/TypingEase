@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Tekrar",
+  "summary": "Yeni tuş yok. Öncekilerin hepsi, daha seri ve daha hızlı.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş",
+    "g",
+    "h",
+    "e",
+    "ı",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu ders yeni bir şey öğretmiyor. Öncekilerin düşünmeden çıktığını görme zamanı; bu, tuşların nerede olduğunu bilmekle aynı şey değil.",
+  "congrats": "Yeni bir şey yok ama daha hızlı. Olması gereken tam da buydu.",
+  "screens": [
+    {
+      "text": "Başlangıç için tek tek kelimeler. Acele yok: hız doğruluktan gelir, tersi olmaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fare şah okumak ulusal\nelma haftalar nasıl klavyede\nortak gelecek kılık evde"
+    },
+    {
+      "seconds": 25,
+      "text": "Kısa bir seri. Kaçırdığın olsa da listeyi bitir.",
+      "type": "burst",
+      "tokens": [
+        "sonuna",
+        "nane",
+        "yarış",
+        "ne",
+        "kere",
+        "oy",
+        "olur",
+        "domates",
+        "vermek",
+        "okul",
+        "almak",
+        "an"
+      ]
+    },
+    {
+      "text": "Satırda beş kelime. Gözlerin parmaklarının önünden gitsin.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ad hal şu oyunlar kuruş\ndua harfler yarış hatalar halka\nkayıt kalın arkadaş cesur maksat"
+    },
+    {
+      "text": "Yine kalıplar; parmakların temel sıraya döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Kısa kelimeler, iyi bir ritimle. Bunlar artık neredeyse kendiliğinden çıkmalı.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tarak memur hava ev\nduvar kat onlar sorgu\nevler ver tost korku"
+    },
+    {
+      "seconds": 30,
+      "text": "Daha uzun süre, daha çok kelime. Baştan sona aynı ritmi koru.",
+      "type": "burst",
+      "tokens": [
+        "su",
+        "garaj",
+        "moda",
+        "daha",
+        "kolay",
+        "şef",
+        "şah",
+        "ada",
+        "sokaklar",
+        "hasta",
+        "dereler",
+        "manav",
+        "nerede",
+        "kentler"
+      ]
+    },
+    {
+      "text": "Satır satır, durmadan. Elin kendiliğinden yerine dönüyor mu, burada anlaşılır.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "yarın okula erken gel\nkardeşler akşam erken uyur\nyarın hava ılık olacak"
+    },
+    {
+      "text": "Son tur. Buraya klavyeye bakmadan geldiysen ders tamam.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kavun on ulusal sokak uygar\nsandalye yakın dereler mesela al\nama soru onların seyahat sarf"
+    }
+  ]
+}

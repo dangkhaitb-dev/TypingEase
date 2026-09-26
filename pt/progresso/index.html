@@ -1,0 +1,199 @@
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>O seu progresso na digitação | TypingEase</title>
+    <meta name="description" content="Veja como vai a sua digitação: a nota de cada lição, as suas melhores PPM e precisão, um mapa de calor das teclas que você mais erra, os seus dias seguidos e a sua meta diária." />
+    <link rel="canonical" href="https://typingease.site/pt/progresso/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/pt.mjs, progress trong
+         i18n/ui.pt.js và bai-hoc/config.pt.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="Navegação principal">
+        <a href="/pt/">Praticar</a>
+        <a data-route="lessons" href="/pt/licoes/">Curso</a>
+        <a class="active" href="/pt/progresso/">Progresso</a>
+        <a href="/pt/teste-de-digitacao/">Teste de velocidade</a>
+        <a href="/pt/jogos-de-digitacao/">Jogos</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="Escolha idioma e teclado">Início</a><a class="secondary-button" data-route="learn" href="/pt/aprender/">Continuar aprendendo <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> Como você está indo</p>
+        <h1>O seu progresso na digitação</h1>
+        <p class="prog-intro">Todos os números desta página ficam guardados neste aparelho e não são enviados para lugar nenhum. Faça mais uma lição e eles se atualizam.</p>
+        <nav class="prog-courses" id="prog-courses" aria-label="Curso">
+          <a href="/pt/progresso/?course=pt" data-course="pt" aria-current="page">ABNT2</a>
+          <a href="/pt/progresso/?course=pt-sem-teclas-mortas" data-course="pt-sem-teclas-mortas">ABNT2 sem teclas mortas</a>
+        </nav>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 0 dias seguidos</span>
+          <span id="strip-today">0 minutos hoje</span>
+          <span id="strip-level">Nível: Começando</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="Visão geral">
+        <div><span>Lições feitas</span><strong id="sum-lessons">0 / 36</strong></div>
+        <div><span>Estrelas conquistadas</span><strong id="sum-stars">0</strong></div>
+        <div><span>Melhor PPM</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>Melhor precisão</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> Conquistas</p>
+            <h2 id="badges-title">Medalhas</h2>
+            <p>Cada medalha depende de um número de verdade da tabela abaixo — o único jeito de ganhar uma é digitando.</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">Meta de hoje</p>
+          <h3 id="daily-goal-title">0 / 10 minutos</h3>
+          <p id="daily-goal-status">🔥 0 dias seguidos</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">Recorde: 0 dias</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="Escolha uma meta diária">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 min</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 min</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 min</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 min</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">O seu treinador</p><h3 id="coach-title">Onde você está</h3></div>
+          <span class="coach-level" id="coach-level">Começando</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="Progresso recente" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">Mais 2 lições e já dá para traçar uma tendência.</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">Faça uma lição e esta página vai saber em que ponto você está.</p>
+        <a class="coach-action" id="coach-action" href="/pt/aprender/">Começar a lição 1 →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> Tecla por tecla</p>
+          <h3 id="heat-title">Mapa de calor do teclado</h3>
+          <p>As teclas verdes são as que você acerta com segurança, as amarelas às vezes acerta, às vezes não, e as vermelhas estão custando velocidade. Uma tecla só ganha cor depois que você a digitou vezes suficientes para a cor dizer alguma coisa.</p>
+          <p class="heat-empty" id="heat-empty">Ainda não há dados suficientes — faça algumas lições e volte aqui.</p>
+          <div class="heat-legend" id="heat-legend" aria-label="Precisão por tecla" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="O curso de {n} lições"><i></i> O curso de 36 lições</p>
+            <h2 id="results-title">A nota de cada lição</h2>
+            <p>A sua melhor volta em cada lição, guardada neste aparelho.</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">Apagar o histórico</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>Lição</th><th>Telas feitas</th><th>Estrelas</th><th>Melhor PPM</th><th>Precisão</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Siga em frente</p>
+          <h2 id="prog-explore-title">O que fazer agora</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/pt/licoes/">
+            <h3>O curso completo</h3>
+            <p>Todas as unidades em ordem. Volte a uma lição que você quer refazer ou abra a próxima unidade antes da hora.</p>
+            <span>Ver o curso <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>Digite no seu próprio teclado</h3>
+            <p>QWERTY, AZERTY, QWERTZ, devanágari, árabe, JIS — 119 layouts reais, e o curso acompanha o que você escolher.</p>
+            <span>Ver os layouts <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>Vá um pouco mais devagar e você vai chegar muito mais longe.</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/pt/about/">Sobre</a><span aria-hidden="true"> · </span><a href="/pt/terms/">Termos de Uso</a><span aria-hidden="true"> · </span><a href="/pt/privacy/">Política de Privacidade</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.pt.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.pt.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"pt":{"learn":"/pt/aprender/","lessons":"/pt/licoes/"},"pt-sem-teclas-mortas":{"learn":"/pt/sem-teclas-mortas/aprender/","lessons":"/pt/sem-teclas-mortas/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "pt";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

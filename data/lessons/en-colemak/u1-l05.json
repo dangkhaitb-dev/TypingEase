@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Review",
+  "summary": "No new keys. Everything so far, longer and faster.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "This lesson teaches nothing new. It is the moment to check that what came before comes out without thinking, which is not the same as knowing where each key is.",
+  "congrats": "Nothing new, and faster anyway. That is exactly what was supposed to happen.",
+  "screens": [
+    {
+      "text": "Single words to start. No rush: speed comes out of accuracy, never the other way round.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "rest nose tone see\nrises stores tire one\ntear soon iron notes"
+    },
+    {
+      "seconds": 25,
+      "text": "A short burst. Finish the list even if one gets away from you.",
+      "type": "burst",
+      "tokens": [
+        "train",
+        "note",
+        "are",
+        "sit",
+        "star",
+        "root",
+        "rose",
+        "son",
+        "rare",
+        "rise",
+        "entire",
+        "sort"
+      ]
+    },
+    {
+      "text": "Five words to a line. Let your eyes run ahead of your fingers.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "neat tear trees tears in\ntreat rear roots near to\nson rain start tea test"
+    },
+    {
+      "text": "Patterns again, to check the fingers keep returning to the home row.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "esa tri es\nen ne enen\nsss nnnn eeee tttt"
+    },
+    {
+      "text": "Short words at a good pace. These should almost type themselves by now.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "in east star tears\nstart rain into so\ntire no nose it"
+    },
+    {
+      "seconds": 30,
+      "text": "More time and more words. Hold the same rhythm from start to finish.",
+      "type": "burst",
+      "tokens": [
+        "sort",
+        "ten",
+        "see",
+        "a",
+        "treats",
+        "street",
+        "root",
+        "neat",
+        "stories",
+        "trains",
+        "nine",
+        "tests",
+        "ears",
+        "rate"
+      ]
+    },
+    {
+      "text": "Whole sentences. This is where you find out whether the hand goes home on its own.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "set series rain rate\nnose east start an\ntear no rear root"
+    },
+    {
+      "text": "The last round. If you got here without looking at the keyboard, the lesson is done.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sort test tries start enter\none as tree its rest\nstories it roses nose nine"
+    }
+  ]
+}

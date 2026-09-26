@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "La colonna esterna",
+  "summary": "La colonna del bordo destro: sei tasti del mignolo, fra cui è, ì e ù.",
+  "newKeys": [
+    "z",
+    "'",
+    "ì",
+    "è",
+    "+",
+    "ù"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "à",
+    "l",
+    "x",
+    "q",
+    "ò",
+    "v",
+    "w",
+    "-",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "z",
+    "'",
+    "ì",
+    "è",
+    "+",
+    "ù"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Il mignolo destro ha più tasti di qualsiasi altro dito, e quelli del bordo sono i meno esercitati. Qui valgono doppio: è, ì e ù stanno tutti su questa colonna. Fino a questa lezione non potevi scrivere è, che è probabilmente la parola più frequente dell’italiano scritto.",
+  "congrats": "Adesso è, perché, più e così si scrivono per intero. Era l’ultimo pezzo che mancava.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "RP",
+      "text": "I tasti del bordo destro, tutti del mignolo. Tre di loro sono è, ì e ù — senza il primo non si scrive nemmeno \"è\".",
+      "hint": "Premi Z per continuare"
+    },
+    {
+      "newKeys": [
+        "z",
+        "'"
+      ],
+      "text": "Adesso z e '. Il mignolo esce verso il bordo e torna; la mano resta dov’è.",
+      "type": "block",
+      "content": "z'z' 'z'z\nz' 'z\nh'e zu h'"
+    },
+    {
+      "newKeys": [
+        "ì",
+        "è"
+      ],
+      "text": "Adesso ì e è. Il mignolo esce verso il bordo e torna; la mano resta dov’è.",
+      "type": "block",
+      "content": "èì ìè\nìuh èe ìu\nìè èì ìèìè"
+    },
+    {
+      "seconds": 20,
+      "text": "Una raffica con quello che hai di questa colonna.",
+      "type": "burst",
+      "tokens": [
+        "è'",
+        "'ì",
+        "''",
+        "èz",
+        "'z",
+        "zè",
+        "èì",
+        "z'",
+        "'è",
+        "èè"
+      ]
+    },
+    {
+      "newKeys": [
+        "+",
+        "ù"
+      ],
+      "text": "Adesso + e ù. Il mignolo esce verso il bordo e torna; la mano resta dov’è.",
+      "type": "block",
+      "content": "+ù +ù\n+ue ùh +u\n+ù ù+ +ù+ù"
+    },
+    {
+      "text": "Tutti e sei insieme. È il punto in cui il polso si storce di più se il dito non torna.",
+      "type": "block",
+      "content": "uìz eù' uì\nù+ +ù ù+ù+\nùùùù ìììì ''' zzz èèè ++++"
+    },
+    {
+      "seconds": 25,
+      "text": "Di nuovo parole, per sciogliere la mano dopo tutto questo bordo.",
+      "type": "burst",
+      "tokens": [
+        "farò",
+        "chiudere",
+        "lega",
+        "volere",
+        "giusta",
+        "loro",
+        "cento",
+        "realtà",
+        "ragazzi",
+        "nel",
+        "figli",
+        "abitare"
+      ]
+    },
+    {
+      "text": "Si torna alle parole, ora con la tastiera intera — accenti compresi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "quadro zucca rosa pane\nla tesi lunedì diga\nsfera durare voglio biblioteca"
+    },
+    {
+      "text": "Frasi intere per chiudere le lezioni di tasti.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Durante il viaggio abbiamo visto molte montagne.\nOgni mattina faccio una lunga camminata.\nIl bambino gioca con una palla rossa."
+    }
+  ]
+}

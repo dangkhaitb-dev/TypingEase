@@ -1,0 +1,171 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "°, il punto e virgola, i due punti e Ç",
+  "summary": "In questa lezione: °, il punto e virgola, i due punti e Ç.",
+  "newKeys": [
+    "°",
+    ";",
+    ":",
+    "ç"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "à",
+    "l",
+    "x",
+    "q",
+    "ò",
+    "v",
+    "w",
+    "-",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "z",
+    "'",
+    "ì",
+    "è",
+    "+",
+    "ù",
+    "\\",
+    "|",
+    "!",
+    "\"",
+    "£",
+    "$",
+    "%",
+    "&",
+    "/",
+    "(",
+    ")",
+    "=",
+    "?",
+    "^",
+    "°",
+    ";",
+    ":",
+    "ç"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti che il corso non ha ancora usato: °, il punto e virgola, i due punti e Ç. Ognuno si ottiene con Shift e un tasto che le tue dita conoscono già — Shift con il mignolo dell'altra mano.",
+  "congrats": "°, il punto e virgola, i due punti e Ç: ora sotto le tue dita. Il segno esce facile come la lettera accanto.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "°",
+      "finger": "LP",
+      "text": "È il mignolo sinistro a premere °, con Shift tenuto dall'altra mano.",
+      "hint": "Premi ° per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "°",
+      "text": "Prima ° e basta, poi dove si usa davvero.",
+      "content": "°° ° 81° 11° 22°\n°° ° 95° 25° 84°\n°° ° 16° 28° 6°"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "LR",
+      "text": "È l'anulare sinistro a premere il punto e virgola, con Shift tenuto dall'altra mano.",
+      "hint": "Premi ; per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "Prima il punto e virgola e basta, poi dove si usa davvero.",
+      "content": ";; ; certo; l'estate; dei;\n;; ; starò; pesce; aiutare;\n;; ; taglia; alta; voglio;"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "LM",
+      "text": "È il medio sinistro a premere i due punti, con Shift tenuto dall'altra mano.",
+      "hint": "Premi : per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "Prima i due punti e basta, poi dove si usa davvero.",
+      "content": ":: : alzare: portare: olio:\n:: : valore: meno: non:\n:: : tutta: vacanza: ferie:"
+    },
+    {
+      "type": "intro",
+      "key": "ç",
+      "finger": "LP",
+      "text": "È il mignolo sinistro a premere Ç, con Shift tenuto dall'altra mano.",
+      "hint": "Premi Ç per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "ç",
+      "text": "Prima Ç e basta, poi dove si usa davvero.",
+      "content": "çç ç ççç ççç ççç\nçç ç ççç ççç ççç\nçç ç ççç ççç ççç"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Una raffica di pezzi brevi con questi caratteri.",
+      "tokens": [
+        "dalla:",
+        "lontano;",
+        "farà;",
+        "stadio:",
+        "persona:",
+        "92°",
+        "ççç",
+        "feste;",
+        "55°",
+        "larga:"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tutto quello di questa lezione, mescolato.",
+      "content": "stanza: ççç ççç 34°\nfiera: fiore; ççç ççç\nvisita; ne: 44° già;"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Di nuovo parole, con i segni al loro posto.",
+      "content": "vivere; c'era davvero: dire ççç\ninverno; padre ççç parola quale:\nvacanza; camera bambina: corsa file;"
+    }
+  ]
+}

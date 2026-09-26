@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "#, $, % na ^",
+  "summary": "Katika somo hili: #, $, % na ^.",
+  "newKeys": [
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe ambavyo kozi bado haijavitumia: #, $, % na ^. Vyote vinapatikana kwa Shift pamoja na kitufe ambacho vidole vyako tayari vinakijua — Shift kwa kidole kidogo cha mkono mwingine.",
+  "congrats": "#, $, % na ^: sasa viko chini ya vidole vyako. Shift kwa mkono mwingine, na alama inakuja kwa urahisi kama herufi iliyo kando yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LM",
+      "text": "Kitufe # ni cha kidole cha kati cha kushoto, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza # ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "Kwanza # peke yake, kisha pale kinapotumika kweli.",
+      "content": "## # #34 #29 #27\n## # #22 #35 #7\n## # #53 #59 #17"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "Kitufe $ ni cha kidole cha shahada cha kushoto, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza $ ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Kwanza $ peke yake, kisha pale kinapotumika kweli.",
+      "content": "$$ $ $12 $81 $39\n$$ $ $77 $44 $78\n$$ $ $20 $94 $95"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "Kitufe % ni cha kidole cha shahada cha kushoto, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza % ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Kwanza % peke yake, kisha pale kinapotumika kweli.",
+      "content": "%% % 9% 3% 40%\n%% % 28% 18% 72%\n%% % 44% 13% 52%"
+    },
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RI",
+      "text": "Kitufe ^ ni cha kidole cha shahada cha kulia, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza ^ ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "^",
+      "text": "Kwanza ^ peke yake, kisha pale kinapotumika kweli.",
+      "content": "^^ ^ 66^1 23^1 30^3\n^^ ^ 78^3 82^1 63^2\n^^ ^ 22^2 93^2 91^3"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Mfululizo wa vipande vifupi vyenye alama hizi.",
+      "tokens": [
+        "#20",
+        "#80",
+        "$36",
+        "90%",
+        "#74",
+        "43%",
+        "87^1",
+        "58^3",
+        "79^1",
+        "#42"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Kila kitu kutoka somo hili, kwa mchanganyiko.",
+      "content": "45% #65 33^2 37^2\n$11 #52 2% 24%\n76^3 39% 59% #98"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Maneno tena, na alama zikiwa mahali pake.",
+      "content": "47^1 hifadhi #31 kituo 8%\n28^1 baadaye $91 shukuru #37\n#4 watu 18% pilipili $64"
+    }
+  ]
+}

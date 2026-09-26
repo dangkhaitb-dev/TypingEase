@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, ! and @",
+  "summary": "The last keys: `, ~, ! and @.",
+  "newKeys": [
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i",
+    "g",
+    "y",
+    "r",
+    "u",
+    "w",
+    "f",
+    "b",
+    "j",
+    "p",
+    "d",
+    "m",
+    "k",
+    "l",
+    "c",
+    "q",
+    ";",
+    "v",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Keys this course has not used yet: `, ~, ! and @. Some need Shift, held by the little finger of the other hand; the rest sit on a key the course has not used before.",
+  "congrats": "`, ~, ! and @: under your fingers now. Shift with the other hand, and a symbol comes as easily as the letter beside it.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "` belongs to your left little finger.",
+      "hint": "Press ` to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "` on its own first, then where it is actually used.",
+      "content": "`` ` `tails` `ash` `when`\n`` ` `gash` `push` `local`\n`` ` `is` `okay` `fix`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "~ on its own first, then where it is actually used.",
+      "content": "~~ ~ ~25 ~67 ~91\n~~ ~ ~8 ~36 ~6\n~~ ~ ~44 ~48 ~46"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "! belongs to your left little finger, with Shift held by the other hand.",
+      "hint": "Press ! to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "! on its own first, then where it is actually used.",
+      "content": "!! ! speed! step! box!\n!! ! moved! brown! check!\n!! ! natural! map! edge!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "@ belongs to your left ring finger, with Shift held by the other hand.",
+      "hint": "Press @ to continue"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "@ on its own first, then where it is actually used.",
+      "content": "@@ @ write@of wise@whose longer@would\n@@ @ of@dark set@drag another@sheep\n@@ @ up@public stool@food message@method"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "A burst of short pieces with these characters in them.",
+      "tokens": [
+        "comes@won't",
+        "~70",
+        "brush@sole",
+        "extreme@company",
+        "trees@birds",
+        "~22",
+        "couldn't!",
+        "~62",
+        "to!",
+        "~11"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Everything from this lesson, mixed.",
+      "content": "`minutes` ~51 never@check `shrug`\nspent@minute by@colors eel@of over!\naside@tea motion! deed! ~25"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Words again, with the symbols where they belong.",
+      "content": "exact@words collect always! line chair!\n~54 river one@pass makes `titles`\n`today` yield `delight` don't change!"
+    }
+  ]
+}

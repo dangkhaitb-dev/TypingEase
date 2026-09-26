@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "\\, |, ! e \"",
+  "summary": "In questa lezione: \\, |, ! e \".",
+  "newKeys": [
+    "\\",
+    "|",
+    "!",
+    "\""
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ò",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "à",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "ì",
+    "è",
+    "+",
+    "ù",
+    "\\",
+    "|",
+    "!",
+    "\""
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti che il corso non ha ancora usato: \\, |, ! e \". Alcuni vogliono Shift, con il mignolo dell'altra mano; gli altri hanno un tasto tutto loro, che il corso non aveva ancora usato.",
+  "congrats": "\\, |, ! e \": ora sotto le tue dita. Il segno esce facile come la lettera accanto.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "\\",
+      "finger": "LP",
+      "text": "È il mignolo sinistro a premere \\.",
+      "hint": "Premi \\ per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "\\",
+      "text": "Prima \\ e basta, poi dove si usa davvero.",
+      "content": "\\\\ \\ andrò\\estate qualità\\realtà usare\\giù\n\\\\ \\ gioia\\colore testa\\pesce dea\\caffè\n\\\\ \\ guidare\\utile ancora\\forte zucchero\\quando"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "Prima | e basta, poi dove si usa davvero.",
+      "content": "|| | giardino|cuore piatto|zero verso|scuole\n|| | nel|valore già|sabbia noi|contento\n|| | piccolo|prima inverno|falò mattina|otto"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "È il mignolo sinistro a premere !, con Shift tenuto dall'altra mano.",
+      "hint": "Premi ! per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Prima ! e basta, poi dove si usa davvero.",
+      "content": "!! ! pioggia! wafer! libero!\n!! ! sua! moneta! guida!\n!! ! prima! fedele! sorella!"
+    },
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LR",
+      "text": "È l'anulare sinistro a premere \", con Shift tenuto dall'altra mano.",
+      "hint": "Premi \" per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "Prima \" e basta, poi dove si usa davvero.",
+      "content": "\"\" \" \"dare\" \"watt\" \"caffè\"\n\"\" \" \"piazza\" \"pranzo\" \"le\"\n\"\" \" \"padre\" \"bambina\" \"andrò\""
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Una raffica di pezzi brevi con questi caratteri.",
+      "tokens": [
+        "forse!",
+        "\"qui\"",
+        "l'uomo|piccolo",
+        "fa\\gioia",
+        "\"l'amico\"",
+        "vedere\\parte",
+        "pensiero!",
+        "ciò!",
+        "mio|banca",
+        "ridere\\camera"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tutto quello di questa lezione, mescolato.",
+      "content": "l'amico! mucca|gustare avrà! verità!\nl'acqua\\lì potrà! \"nuovo\" verde!\n\"dea\" l'amica\\lei ci\\contare attesa|molto"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Di nuovo parole, con i segni al loro posto.",
+      "content": "paese! dare domenica! quattro \"ride\"\n\"giardino\" braccio cioè! l'estate zona|canta\nnei! chiaro grigia! gala punto!"
+    }
+  ]
+}

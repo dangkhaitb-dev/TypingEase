@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "$, %, ¨ e &",
+  "summary": "Nesta lição: $, %, ¨ e &.",
+  "newKeys": [
+    "$",
+    "%",
+    "¨",
+    "&"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "~",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ";",
+    "-",
+    "=",
+    "'",
+    "[",
+    "]",
+    "\"",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "¨",
+    "&"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas que o curso ainda não usou: $, %, ¨ e &. Todas saem com Shift e uma tecla que os seus dedos já conhecem — Shift com o mindinho da outra mão.",
+  "congrats": "$, %, ¨ e &: agora debaixo dos seus dedos. O sinal sai tão fácil quanto a letra ao lado.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "Quem aperta $ é o indicador esquerdo, com Shift na outra mão.",
+      "hint": "Aperte $ para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Primeiro $ sozinho, e depois onde ele realmente aparece.",
+      "content": "$$ $ $45 $46 $9\n$$ $ $46 $82 $58\n$$ $ $54 $59 $76"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "Quem aperta % é o indicador esquerdo, com Shift na outra mão.",
+      "hint": "Aperte % para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Primeiro % sozinho, e depois onde ele realmente aparece.",
+      "content": "%% % 24% 94% 6%\n%% % 51% 20% 72%\n%% % 92% 42% 6%"
+    },
+    {
+      "type": "intro",
+      "key": "¨",
+      "finger": "RI",
+      "text": "Quem aperta ¨ é o indicador direito, com Shift na outra mão.",
+      "hint": "Aperte ¨ para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "¨",
+      "text": "Primeiro ¨ sozinho, e depois onde ele realmente aparece.",
+      "content": "¨¨ ¨ ¨¨¨ ¨¨¨ ¨¨¨\n¨¨ ¨ ¨¨¨ ¨¨¨ ¨¨¨\n¨¨ ¨ ¨¨¨ ¨¨¨ ¨¨¨"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "Quem aperta & é o indicador direito, com Shift na outra mão.",
+      "hint": "Aperte & para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Primeiro & sozinho, e depois onde ele realmente aparece.",
+      "content": "&& & desse & saco sentido & conhecer batatas & azuis\n&& & sonhos & recebe orelha & estado pipoca & mercado\n&& & meia & roteiro peixes & faças qual & meu"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Uma rajada de trechos curtos com estes caracteres.",
+      "tokens": [
+        "¨¨¨",
+        "nuvem&alas",
+        "avançar&sul",
+        "80%",
+        "aqui&verdes",
+        "projeto&filhos",
+        "escolas&vaso",
+        "$66",
+        "61%",
+        "91%"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tudo o que esta lição trouxe, misturado.",
+      "content": "$67 ¨¨¨ ¨¨¨ 87%\n¨¨¨ velha&conhece ¨¨¨ $14\n22% 80% ¨¨¨ ¨¨¨"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Palavras de novo, com os sinais no lugar.",
+      "content": "$19 mexer suco & sonhos chega 35%\nlutar & aos galas 79% fala nas & gelada\n73% fitas 97% frutas sim & pronto"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Ulangan",
+  "summary": "Tidak ada tombol baru. Semua yang sebelumnya, lebih rapat dan lebih cepat.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Pelajaran ini tidak mengajarkan hal baru. Saatnya memastikan yang sebelumnya keluar tanpa dipikir, dan itu berbeda dengan tahu letak setiap tombol.",
+  "congrats": "Tidak ada yang baru, tetapi lebih cepat. Memang itu yang seharusnya terjadi.",
+  "screens": [
+    {
+      "text": "Untuk mulai, kata-kata lepas. Tidak usah buru-buru: kecepatan datang dari ketepatan, tidak pernah sebaliknya.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kakak lafal asas sajak\nsaja adas asas kas\nkas jaksa fasal las"
+    },
+    {
+      "seconds": 25,
+      "text": "Rentetan pendek. Selesaikan daftarnya meskipun ada yang terlewat.",
+      "type": "burst",
+      "tokens": [
+        "jas",
+        "dada",
+        "kala",
+        "lafal",
+        "kakak",
+        "kas",
+        "asas",
+        "kasa",
+        "jala",
+        "lada",
+        "asal",
+        "saja"
+      ]
+    },
+    {
+      "text": "Lima kata per baris. Biarkan mata berjalan di depan jari.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lafal jaksa asal adas dada\nlada kasa alas lafal jaksa\nfasal jas laksa jaksa adas"
+    },
+    {
+      "text": "Pola lagi, untuk memastikan jari masih kembali ke baris dasar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Kata-kata pendek, dengan irama yang baik. Yang ini seharusnya sudah keluar hampir dengan sendirinya.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "adas jas fasal kala\nadas laksa jas las\nkasa asas adas lafal"
+    },
+    {
+      "seconds": 30,
+      "text": "Lebih lama dan lebih banyak kata. Jaga irama yang sama dari awal sampai akhir.",
+      "type": "burst",
+      "tokens": [
+        "sajak",
+        "ada",
+        "asal",
+        "asas",
+        "kala",
+        "laksa",
+        "fasal",
+        "kas",
+        "dada",
+        "jaksa",
+        "lafal",
+        "jas",
+        "salak",
+        "saja"
+      ]
+    },
+    {
+      "text": "Kalimat utuh. Di sini terlihat apakah tangan kembali ke tempatnya sendiri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sajak lada jas kakak\nlafal jas laksa adas\njaksa alas saja kasa"
+    },
+    {
+      "text": "Putaran terakhir. Kalau kamu sampai di sini tanpa melihat papan ketik, pelajaran ini selesai.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "jala jaksa asal laksa kas\nkas ada dada salak kakak\nadas salak jala lafal laksa"
+    }
+  ]
+}

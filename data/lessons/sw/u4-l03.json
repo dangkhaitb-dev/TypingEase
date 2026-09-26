@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "&, *, ( na )",
+  "summary": "Katika somo hili: &, *, ( na ).",
+  "newKeys": [
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe ambavyo kozi bado haijavitumia: &, *, ( na ). Vyote vinapatikana kwa Shift pamoja na kitufe ambacho vidole vyako tayari vinakijua — Shift kwa kidole kidogo cha mkono mwingine.",
+  "congrats": "&, *, ( na ): sasa viko chini ya vidole vyako. Shift kwa mkono mwingine, na alama inakuja kwa urahisi kama herufi iliyo kando yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "Kitufe & ni cha kidole cha shahada cha kulia, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza & ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Kwanza & peke yake, kisha pale kinapotumika kweli.",
+      "content": "&& & lakini & pembeni jiji & yai kumbuka & shoka\n&& & shati & kibao mchanga & ugali mahali & jifiche\n&& & watoto & pale shaka & kubeba jino & mimi"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "Kitufe * ni cha kidole cha kati cha kulia, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza * ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Kwanza * peke yake, kisha pale kinapotumika kweli.",
+      "content": "** * *hasara* *jaribu* *mawe*\n** * *ziara* *upendo* *dirisha*\n** * *kinywaji* *jaa* *haki*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "Kitufe ( ni cha kidole cha pete cha kulia, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza ( ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Kwanza ( peke yake, kisha pale kinapotumika kweli.",
+      "content": "(( ( (nne (paka (jina\n(( ( (ile (pamoja (panda\n(( ( (maua (kueleza (jiji"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RP",
+      "text": "Kitufe ) ni cha kidole kidogo cha kulia, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza ) ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "Kwanza ) peke yake, kisha pale kinapotumika kweli.",
+      "content": ")) ) (kuzima) (sawa) (miezi)\n)) ) (jino) (likizo) (kama)\n)) ) (kuwa) (mito) (kizuri)"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Mfululizo wa vipande vifupi vyenye alama hizi.",
+      "tokens": [
+        "majina&asubuhi",
+        "*lini*",
+        "pembeni&bahari",
+        "(mlima)",
+        "(kama)",
+        "(bila)",
+        "(jina)",
+        "*ng'ambo*",
+        "(mpishi)",
+        "(kuvuta)"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Kila kitu kutoka somo hili, kwa mchanganyiko.",
+      "content": "(benki) *wote* (mpishi) (la)\n(kifaa) *ng'aa* (faida) (milango)\n(zima) *kupima* (hapo) (yako)"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Maneno tena, na alama zikiwa mahali pake.",
+      "content": "jaribu & usiku njano (kuwaka) mashine buibui & rafiki\n(dawa) kike (hali) matunda (jirani)\nndoto & yai kueleza (uhuru) kufurahi *ukali*"
+    }
+  ]
+}

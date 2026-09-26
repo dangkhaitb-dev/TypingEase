@@ -25,6 +25,15 @@
 */
 window.TypingEaseCurriculum = {
   lang: 'en',
+  // US Standard. Khai ro thay vi dua vao mac dinh cua keyboard/preferences.js: tu khi
+  // giao trinh quyet dinh ban phim, mot chi muc khong khai gi la mot chi muc im lang
+  // nhan bat cu thu gi mac dinh dang la.
+  keyboardId: 1,
+  course: 'en',
+  // Every layout this course is correct on: the handwritten lessons teach the US key positions,
+  // and these four put the same letters in the same places. keyboard/preferences.js refuses to
+  // draw a saved layout outside this list here — Dvorak has its own course at /en/dvorak/.
+  layouts: [1, 120, 128, 123, 125],
   // Its own store. Lesson ids repeat across languages, so one shared key would mean two
   // courses overwriting each other's progress, unlocks and "continue" pointer.
   progressKey: 'typingease-progress-en-v3',
@@ -75,15 +84,36 @@ window.TypingEaseCurriculum = {
         { id: 'speed', title: 'Speed', lessons: ['u3-l04', 'u3-l05', 'u3-l06'] }
       ]
     }
+    // Khối dưới đây do scripts/build-unit-symbols.js ghi (unit "mọi phím còn lại"). Đừng sửa tay.
+    // <auto:symbols:units>
+    , {
+      id: 'u4',
+      index: 4,
+      // Sinh bởi scripts/build-unit-symbols.js — đừng sửa tay trong khối này.
+      autoSymbols: true,
+      title: "Every other key",
+      summary: "The 19 characters this keyboard has that the course has not used yet — brackets, currency, the rest of the Shift layer — each typed where it is actually used.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: 'u3-l06',
+      groups: [
+        { id: 'symbols', title: "The remaining keys", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05'] },
+        { id: 'finish', title: "Finish the unit", lessons: ['u4-l06', 'u4-l07'] }
+      ]
+    }
+    // </auto:symbols:units>
   ],
 
   /* kind: keys | review | weak | test */
   lessons: {
     // Unit 1 — the key order is the Vietnamese one unchanged, because it is not Vietnamese:
     // it is index → middle → ring → little finger across the home row, then the same mirrored
-    // stretch on each row. By the end of this unit the learner has 9 of the 12 most common
-    // English letters, so there is nothing to gain by reordering for letter frequency and a
-    // great deal to lose by breaking the row discipline.
+    // stretch on each row. By the end of this unit the learner has 8 of the 12 most common
+    // English letters (E A I S H R D L; T O N C are the four it misses), so there is nothing
+    // much to gain by reordering for letter frequency and a great deal to lose by breaking the
+    // row discipline. This line said 9 until 2026-09-22, when someone writing the English
+    // touch-typing guide tried to repeat the claim on a public page and could not make the
+    // count come out — worth remembering that a number in a comment gets quoted eventually.
     'u1-l01': { title: 'F, J and the space bar', newKeys: ['f', 'j', ' '], screens: 10, estMinutes: 5, kind: 'keys', ready: true },
     'u1-l02': { title: 'D and K', newKeys: ['d', 'k'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u1-l03': { title: 'S and L', newKeys: ['s', 'l'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
@@ -119,12 +149,26 @@ window.TypingEaseCurriculum = {
     'u3-l04': { title: 'Paragraphs and pace 1', newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
     'u3-l05': { title: 'Paragraphs and pace 2', newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
     'u3-l06': { title: 'Final test', newKeys: [], screens: 1, estMinutes: 3, kind: 'test', seconds: 180, ready: true }
+    // Khối dưới đây do scripts/build-unit-symbols.js ghi (unit "mọi phím còn lại"). Đừng sửa tay.
+    // <auto:symbols:lessons>
+    , 'u4-l01': { title: "`, ~, $ and %", newKeys: ["`","~","$","%"], screens: 10, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u4-l02': { title: "^, &, * and (", newKeys: ["^","&","*","("], screens: 11, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u4-l03': { title: "), = and +", newKeys: [")","=","+"], screens: 8, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u4-l04': { title: "[, {, ] and }", newKeys: ["[","{","]","}"], screens: 9, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u4-l05': { title: "\\, |, < and >", newKeys: ["\\","|","<",">"], screens: 10, estMinutes: 5, kind: 'keys', ready: true }
+    , 'u4-l06': { title: "All the symbols together", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true }
+    , 'u4-l07': { title: "Unit 4 test", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
+    // </auto:symbols:lessons>
   },
 
   sequence: [
     'u1-l01', 'u1-l02', 'u1-l03', 'u1-l04', 'u1-l05', 'u1-l06', 'u1-l07', 'u1-l08', 'u1-l09', 'u1-l10',
     'u2-l01', 'u2-l02', 'u2-l03', 'u2-l04', 'u2-l05', 'u2-l06', 'u2-l07', 'u2-l08', 'u2-l09', 'u2-l10', 'u2-l11',
     'u3-l01', 'u3-l02', 'u3-l03', 'u3-l04', 'u3-l05', 'u3-l06'
+    // Khối dưới đây do scripts/build-unit-symbols.js ghi (unit "mọi phím còn lại"). Đừng sửa tay.
+    // <auto:symbols:sequence>
+    , 'u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05', 'u4-l06', 'u4-l07'
+    // </auto:symbols:sequence>
   ],
 
   /* The taster line on the home page hero, inline so it needs no fetch. It must byte-match

@@ -1,0 +1,150 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "“, ” und —",
+  "summary": "Neu in dieser Lektion: “, ” und —.",
+  "newKeys": [
+    "“",
+    "”",
+    "—"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h",
+    "w",
+    "k",
+    "f",
+    "v",
+    "ä",
+    "b",
+    "m",
+    "p",
+    "x",
+    "q",
+    "z",
+    "ö",
+    "ü",
+    ".",
+    ",",
+    "y",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "j",
+    "-",
+    "`",
+    "ß",
+    "´",
+    "\\",
+    "°",
+    "§",
+    "ℓ",
+    "»",
+    "«",
+    "$",
+    "€",
+    "„",
+    "“",
+    "”",
+    "—"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: “, ” und —. Jedes davon entsteht aus Shift und einer Taste, die deine Finger schon kennen — Shift mit dem kleinen Finger der anderen Hand.",
+  "congrats": "“, ” und —: jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "“",
+      "finger": "RR",
+      "text": "“: Dafür ist der rechte Ringfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke “, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "“",
+      "text": "Zuerst “ für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "““ “ “stimme “marke “gitarre\n““ “ “elf “minute “eure\n““ “ “mein “seid “bier"
+    },
+    {
+      "type": "intro",
+      "key": "”",
+      "finger": "RP",
+      "text": "”: Dafür ist der rechte kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke ”, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "”",
+      "text": "Zuerst ” für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "”” ” “kalk” “genießen” “wer”\n”” ” “aber” “pferd” “fuß”\n”” ” “die” “müssen” “zusage”"
+    },
+    {
+      "type": "intro",
+      "key": "—",
+      "finger": "RP",
+      "text": "—: Dafür ist der rechte kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke —, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "—",
+      "text": "Zuerst — für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "—— — die—lippe sechs—jacke falls—feld\n—— — kuchen—mythos sich—extra weiß—die\n—— — hart—lächeln helle—reif pause—moment"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "“stoff”",
+        "“dass”",
+        "hund—viele",
+        "“tag”",
+        "“zusage”",
+        "quer—hobby",
+        "“pause”",
+        "“person”",
+        "“hotel”",
+        "“voll”"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "rot—halal “frage” licht—mann “jagd”\n“lager” moment—höfe halal—frau “gruß”\n“können” versuch—weiß “stadt” “nicht”"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "“eine” fall “schön” letzte “yoga”\nhaus—fad außer “sofa” finden ruhe—hall\nhell—skala danke “hinter” park “seide”"
+    }
+  ]
+}

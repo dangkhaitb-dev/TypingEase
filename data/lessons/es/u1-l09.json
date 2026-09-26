@@ -1,0 +1,41 @@
+{
+  "id": "u1-l09",
+  "unit": "u1",
+  "group": "finish",
+  "order": 9,
+  "slug": "weak-u1",
+  "title": "Teclas flojas",
+  "summary": "Un ejercicio generado con las teclas que más fallas.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "ascii",
+  "intro": "Este ejercicio se construye con las teclas que tú fallas, no con una lista fija. Si cambias, cambia él.",
+  "congrats": "Las teclas flojas dejan de serlo con un minuto al día, no con una hora al mes.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 120,
+      "source": "weak-keys",
+      "minKeys": 2,
+      "text": "Un ejercicio hecho a partir de las teclas que más fallas. Cambia cada vez que practicas."
+    }
+  ]
+}

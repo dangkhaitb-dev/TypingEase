@@ -1,0 +1,136 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-p",
+  "title": "B et J",
+  "summary": "Nouvelles touches : B et J. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "b",
+    "j"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d",
+    "o",
+    "v",
+    "è",
+    "^",
+    "l",
+    "é",
+    "x",
+    "'",
+    "q",
+    ".",
+    "b",
+    "j"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : B et J. Elles se tapent avec l'auriculaire gauche et l'auriculaire droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si B et J sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur B pour continuer"
+    },
+    {
+      "newKey": "b",
+      "text": "Seulement B et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "bie t bi\nb b bb\nbbbb"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur J pour continuer"
+    },
+    {
+      "newKey": "j",
+      "text": "Seulement J et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "bjbj jbjb\nbj jb\nteb ij te"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "jbb",
+        "bjbj",
+        "jjbb",
+        "jjb",
+        "jbbj",
+        "jbjj",
+        "bjb",
+        "bjj",
+        "bbbb",
+        "bbbj"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "eeee tttt bbbb jjj\nbjbjbj jbjbjb\netbj jbte"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "base célèbre bruit table\nj'ai bon jolie bras\nbonnes jolies banques d'abord"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "se",
+        "notre",
+        "tel",
+        "qu'on",
+        "contes",
+        "soirée",
+        "places",
+        "bruits",
+        "parties",
+        "doses"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur B, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "réponse côtés bruit lettres\nelles belles connue élève\nparaître jure sud tirs"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "bjbjbj jbjbjb\nbj jb\njeb ti je"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "si il détail août\ntelles dur pas second\nrêve part autres tes"
+    }
+  ]
+}

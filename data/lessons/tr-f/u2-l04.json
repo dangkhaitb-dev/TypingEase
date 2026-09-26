@@ -1,0 +1,134 @@
+{
+  "id": "u2-l04",
+  "unit": "u2",
+  "group": "start",
+  "order": 14,
+  "slug": "m-v",
+  "title": "S ve C",
+  "summary": "Yeni tuşlar: S ve C. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "s",
+    "c"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z",
+    "s",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: S ve C. Bunlara sağ işaret parmağı ve sol işaret parmağı basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. S ve C artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "s",
+      "finger": "RI",
+      "text": "Bu tuşa sağ işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için S tuşuna bas"
+    },
+    {
+      "newKey": "s",
+      "text": "Yalnızca S ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "eka s ek\ns s ss\nssss"
+    },
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LI",
+      "text": "Bu tuşa sol işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için C tuşuna bas"
+    },
+    {
+      "newKey": "c",
+      "text": "Yalnızca C ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "cccc ssss\nscscsc cscscs\ncs sc"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "ss",
+        "csss",
+        "ccss",
+        "scsc",
+        "ssss",
+        "cscs",
+        "ccs",
+        "cscc",
+        "sc",
+        "sssc"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "cs sc cscs\naaaa ccc ssss kkk\nscscsc cscscs"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "satırlar sessiz soldan sayı\nsiyah mayıs istasyon hoca\nresim istek sorular sekiz"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "mevcut",
+        "maksat",
+        "iki",
+        "dinle",
+        "kentler",
+        "ayna",
+        "sayı",
+        "ceviz",
+        "odalar",
+        "mısır"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık S tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ama dağlar eylül ulusal\nvarsa dokun masa sakal\nkızlar ot yazmak kent"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "scsc cscs\ncs cs\neka sc ek"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sakal elma gazete kimse\nyaka insan kulak kere\nya tel korku değer"
+    }
+  ]
+}

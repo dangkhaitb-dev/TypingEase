@@ -1,0 +1,157 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "°, §, ℓ und »",
+  "summary": "Neu in dieser Lektion: °, §, ℓ und ».",
+  "newKeys": [
+    "°",
+    "§",
+    "ℓ",
+    "»"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h",
+    "w",
+    "k",
+    "f",
+    "v",
+    "ä",
+    "b",
+    "m",
+    "p",
+    "x",
+    "q",
+    "z",
+    "ö",
+    "ü",
+    ".",
+    ",",
+    "y",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "j",
+    "-",
+    "`",
+    "ß",
+    "´",
+    "\\",
+    "°",
+    "§",
+    "ℓ",
+    "»"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: °, §, ℓ und ». Jedes davon entsteht aus Shift und einer Taste, die deine Finger schon kennen — Shift mit dem kleinen Finger der anderen Hand.",
+  "congrats": "°, §, ℓ und »: jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "°",
+      "finger": "LP",
+      "text": "°: Dafür ist der linke kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke °, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "°",
+      "text": "Zuerst ° für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "°° ° 35° 59° 72°\n°° ° 42° 48° 13°\n°° ° 53° 4° 74°"
+    },
+    {
+      "type": "intro",
+      "key": "§",
+      "finger": "LR",
+      "text": "§: Dafür ist der linke Ringfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke §, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "§",
+      "text": "Zuerst § für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "§§ § §98 §60 §76\n§§ § §36 §74 §9\n§§ § §65 §57 §46"
+    },
+    {
+      "type": "intro",
+      "key": "ℓ",
+      "finger": "LM",
+      "text": "ℓ: Dafür ist der linke Mittelfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke ℓ, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "ℓ",
+      "text": "Zuerst ℓ für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "ℓℓ ℓ ℓℓℓ ℓℓℓ ℓℓℓ\nℓℓ ℓ ℓℓℓ ℓℓℓ ℓℓℓ\nℓℓ ℓ ℓℓℓ ℓℓℓ ℓℓℓ"
+    },
+    {
+      "type": "intro",
+      "key": "»",
+      "finger": "LI",
+      "text": "»: Dafür ist der linke Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke », um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "»",
+      "text": "Zuerst » für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "»» » ufer» straße» alt»\n»» » vorne» ohr» punkt»\n»» » zeug» ändern» also»"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "§95",
+        "bühne»",
+        "stimme»",
+        "58°",
+        "ℓℓℓ",
+        "14°",
+        "hände»",
+        "schwarz»",
+        "72°",
+        "nächste»"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "reise» 20° ℓℓℓ 21°\nℓℓℓ ℓℓℓ 71° 49°\n71° 58° ℓℓℓ 43°"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "§98 wolke kann» einer ohr»\nℓℓℓ dort müsste» kajak 90°\nℓℓℓ gute vorher» sommer 5°"
+    }
+  ]
+}

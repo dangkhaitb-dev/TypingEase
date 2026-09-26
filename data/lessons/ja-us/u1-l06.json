@@ -1,0 +1,106 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "review-u1-6",
+  "title": "復習",
+  "summary": "新しいキーはありません。ここまでのすべてを、前より長く、前より速く。",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンでは新しいことは習いません。ここまでのキーが考えなくても出てくるかを確かめる時間です。キーの位置を知っていることと、それは同じではありません。",
+  "congrats": "新しいことはないのに、前より速くなりました。それがこのレッスンの目的です。",
+  "screens": [
+    {
+      "text": "まずは単語をひとつずつ。急がないでください。速さは正確さから生まれ、その逆はありません。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "aka ki kiki e\neki ii sake kekka\nsakka kikai sekai daiji"
+    },
+    {
+      "seconds": 25,
+      "text": "短い連打です。取りこぼしがあっても最後まで打ってください。",
+      "type": "burst",
+      "tokens": [
+        "kasa",
+        "sekkei",
+        "kekka",
+        "ike",
+        "daiji",
+        "kiki",
+        "ai",
+        "sakka",
+        "kiji",
+        "e",
+        "akai",
+        "ii"
+      ]
+    },
+    {
+      "text": "1行に5語です。目を指より先に進めてください。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sakka asa kiki saka kaki\nki kiji ika e daiji\naki aka iki ikkai seki"
+    },
+    {
+      "text": "もう一度打鍵パターンです。指がホームポジションに戻っているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf fj jfjf\nkkk fff jjjj ddd\nfjfjfj jfjfjf"
+    },
+    {
+      "text": "短い単語を、いいリズムで。このあたりは、もうほとんど自然に出てくるはずです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "aka keiki kasa kikai\ne ika sake kaji\nikkai seki asa iki"
+    },
+    {
+      "seconds": 30,
+      "text": "時間も単語も多めです。最初から最後まで同じリズムを保ってください。",
+      "type": "burst",
+      "tokens": [
+        "seiki",
+        "e",
+        "dake",
+        "sake",
+        "jissai",
+        "daiji",
+        "ii",
+        "ai",
+        "ki",
+        "kaki",
+        "iie",
+        "kiji",
+        "sakki",
+        "sakasa"
+      ]
+    },
+    {
+      "text": "文を打ちます。手がひとりでに元の位置に戻るかどうかが、ここでわかります。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kiji iie ii sakka\nika e sake ie\nki aka ikkai kiki"
+    },
+    {
+      "text": "最後の一回です。キーボードを見ずにここまで来られたなら、このレッスンは終わりです。",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ikkai kaji ike aka sekkei\nika akai saka kiki iki\neki kaki ie jiki sake"
+    }
+  ]
+}

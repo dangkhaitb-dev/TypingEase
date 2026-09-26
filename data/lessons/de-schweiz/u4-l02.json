@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "*, Ç, % und &",
+  "summary": "Neu in dieser Lektion: *, Ç, % und &.",
+  "newKeys": [
+    "*",
+    "ç",
+    "%",
+    "&"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ä",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "^",
+    "ü",
+    "¨",
+    "$",
+    "§",
+    "°",
+    "+",
+    "\"",
+    "*",
+    "ç",
+    "%",
+    "&"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: *, Ç, % und &. Jedes davon entsteht aus Shift und einer Taste, die deine Finger schon kennen — Shift mit dem kleinen Finger der anderen Hand.",
+  "congrats": "*, Ç, % und &: jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "LM",
+      "text": "*: Dafür ist der linke Mittelfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke *, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Zuerst * für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "** * *des* *pflanze* *lexikon*\n** * *bühne* *liebe* *müssen*\n** * *paar* *programm* *boden*"
+    },
+    {
+      "type": "intro",
+      "key": "ç",
+      "finger": "LI",
+      "text": "Ç: Dafür ist der linke Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke Ç, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "ç",
+      "text": "Zuerst Ç für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "çç ç ççç ççç ççç\nçç ç ççç ççç ççç\nçç ç ççç ççç ççç"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "%: Dafür ist der linke Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke %, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Zuerst % für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "%% % 64% 52% 71%\n%% % 33% 70% 68%\n%% % 71% 93% 49%"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "&: Dafür ist der rechte Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke &, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Zuerst & für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "&& & springen & person prüfung & hast wärme & kuss\n&& & himmel & reif lippe & jede haben & wetter\n&& & bilder & brot geben & perfekt qualle & flagge"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "sorge&berg",
+        "76%",
+        "später&baum",
+        "*quote*",
+        "50%",
+        "tiger&danke",
+        "*blick*",
+        "bild&held",
+        "hast&kuss",
+        "*gitarre*"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "ççç 62% *südlich* 20%\n58% ja&acht 73% *schüler*\nççç 56% *können* ççç"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "*eine* marke 30% bücher ççç\n88% esel 74% nächste ççç\npuppe & weiter lächeln 92% sich butter & ort"
+    }
+  ]
+}

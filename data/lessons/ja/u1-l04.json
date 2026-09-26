@@ -1,0 +1,119 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A と セミコロン",
+  "summary": "新しいキー：A と セミコロン。指が出て、押して、戻ります。",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "このレッスンの新しいキー：A と セミコロン。左手の小指 と 右手の小指で押します。動きはいつも同じで、出て、押して、戻ります。練習するのは戻る動きです。指が外に残ったままだと、次の文字を間違えるからです。",
+  "congrats": "指の下のキーが増えました。A と セミコロン を探さずに打てるなら、このレッスンの役目は果たせています。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "このキーは左手の小指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "A を押して次へ"
+    },
+    {
+      "newKey": "a",
+      "text": "A と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RP",
+      "text": "このキーは右手の小指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "; を押して次へ"
+    },
+    {
+      "newKey": ";",
+      "text": "; と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "a;a; ;a;a\na; ;a\n;df ja ;d"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        ";aaa",
+        "aa;",
+        "aaa",
+        "a;;a",
+        ";a;;",
+        ";;aa",
+        "a;;",
+        "aa;;",
+        ";a;a",
+        "a;aa"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "a; ;a a;a;\naaa ;;;; ffff jjj\na;a; ;a;a"
+    },
+    {
+      "text": "もう一度、新しい2つのキーです。これだけで打てる単語はまだありませんが、それで問題ありません。",
+      "type": "block",
+      "content": "a; ;a\n;jd fa ;j\n;a a; ;a;a"
+    },
+    {
+      "seconds": 25,
+      "text": "少し長いかたまりです。まだ急いでも速くはなりません。",
+      "type": "burst",
+      "tokens": [
+        "a;a",
+        "a;;a",
+        ";aaa",
+        ";;aa",
+        "aaa;",
+        "aa;;",
+        "a;aa",
+        ";a;",
+        ";;a;",
+        ";;a",
+        "aa;a",
+        ";a;;"
+      ]
+    },
+    {
+      "text": "ここまでのキーすべてを、短いかたまりで。見るのは画面で、手ではありません。",
+      "type": "block",
+      "content": "ja aj jaja\njjj dddd aaa ;;; ffff\na;a; ;a;a"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "a;a;a; ;a;a;a\na; ;a\nj;a df j;"
+    },
+    {
+      "text": "ここまで覚えたキーすべてで、最後の一回です。",
+      "type": "block",
+      "content": "kd dk kdkd\njjjj dddd kkk ffff\nfjfjfj jfjfjf"
+    }
+  ]
+}

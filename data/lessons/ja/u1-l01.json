@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "F と J、そしてスペースキー",
+  "summary": "突起のある2つのキー、スペースキー、そして下を見ない習慣。",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "この講座では、日本語を IME に入力するときのローマ字の打鍵を練習します。たとえば gakkou と打つと、IME がそれを「がっこう」にし、「学校」に変換します。練習の画面ではローマ字をそのまま打つので、IME はオフ（半角英数）にしてください。まずは小さな突起のある F と J に両手の人差し指を置きます。人差し指はそこから動かさず、講座のすべてのキーをこの位置から測ります。両手を置いたら、見るのは画面だけにしてください。",
+  "congrats": "手の位置が決まりました。ここからは、すべてこの位置から届くキーを押して、離すだけです。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "LI",
+      "text": "このキーは左手の人差し指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "F を押して次へ"
+    },
+    {
+      "newKey": "f",
+      "text": "F と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "f f ff\nffff\nffffff ffffff"
+    },
+    {
+      "type": "intro",
+      "key": "j",
+      "finger": "RI",
+      "text": "このキーは右手の人差し指で押します。見ないで探し、一度押して、指を元の位置に戻してください。戻る動きも、押す動きと同じくらい大切です。",
+      "hint": "J を押して次へ"
+    },
+    {
+      "newKey": "j",
+      "text": "J と、もう覚えたキーだけです。ゆっくり打ち、一打ごとに指をホームポジションに戻してください。",
+      "type": "block",
+      "content": "jf jf\njf fj jfjf\nfj jf fjfj"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "スペースキーは右手の親指で押します。親指はほかのキーを受け持たないので、探す必要はありません。",
+      "hint": "スペースキーを押して次へ"
+    },
+    {
+      "newKey": " ",
+      "text": "スペースで区切った短いかたまりです。右手の親指が下りて戻ります。ほかの指はキーの上から動かしません。",
+      "type": "block",
+      "content": "jf jf\nfj jf fjfj\njjjj ffff"
+    },
+    {
+      "seconds": 20,
+      "text": "短いかたまりが次々に出ます。間違えても最後まで続けてください。",
+      "type": "burst",
+      "tokens": [
+        "ffj",
+        "ff",
+        "ffff",
+        "fjj",
+        "ffjj",
+        "jff",
+        "fjf",
+        "jffj",
+        "fj",
+        "fjff"
+      ]
+    },
+    {
+      "text": "新しいキーを、覚えたキーと混ぜて打ちます。単語の中で出てくるのと同じ形です。",
+      "type": "block",
+      "content": "fj fj\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "もう一度、新しい2つのキーです。これだけで打てる単語はまだありませんが、それで問題ありません。",
+      "type": "block",
+      "content": "fj jf\njf jf\njf fj jfjf"
+    },
+    {
+      "seconds": 25,
+      "text": "少し長いかたまりです。まだ急いでも速くはなりません。",
+      "type": "burst",
+      "tokens": [
+        "fjfj",
+        "ff",
+        "fjf",
+        "jjf",
+        "ffjf",
+        "fjjj",
+        "fj",
+        "jjff",
+        "jfjj",
+        "jfj",
+        "jff",
+        "jffj"
+      ]
+    },
+    {
+      "text": "ここまでのキーすべてを、短いかたまりで。見るのは画面で、手ではありません。",
+      "type": "block",
+      "content": "fjfj jfjf\njf jf\nfj jf fjfj"
+    },
+    {
+      "text": "少しだけ打鍵パターンに戻ります。指が帰り道を覚えているかを確かめます。",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf jf\nfj jf fjfj\nffff jjjj"
+    },
+    {
+      "text": "ここまで覚えたキーすべてで、最後の一回です。",
+      "type": "block",
+      "content": "fjfjfj jfjfjf\njf jf\nfj fj"
+    }
+  ]
+}

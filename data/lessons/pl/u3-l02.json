@@ -1,0 +1,162 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "Prawa kolumna",
+  "summary": "Kolumna przy prawej krawędzi: sześć klawiszy, wszystkie dla małego palca.",
+  "newKeys": [
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Prawy mały palec obsługuje więcej klawiszy niż jakikolwiek inny, a tych przy krawędzi prawie nikt nie ćwiczy. Leżą dalej od rzędu podstawowego niż cokolwiek innego, więc sposób jest ten sam co zawsze: wyjdź, naciśnij, wróć — bez przesuwania dłoni.",
+  "congrats": "Tę kolumnę większość kursów zostawia w połowie. Tutaj została przerobiona do końca.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RP",
+      "text": "Klawisze przy prawej krawędzi, wszystkie dla małego palca: ukośnik, łącznik, znak równości, dwa nawiasy kwadratowe i ukośnik wsteczny. To najdalsze ruchy tego palca.",
+      "hint": "Naciśnij /, aby przejść dalej"
+    },
+    {
+      "newKeys": [
+        "/",
+        "-"
+      ],
+      "text": "Teraz / i -. Mały palec wychodzi na zewnątrz i wraca; dłoń za nim nie idzie.",
+      "type": "block",
+      "content": "/-/- -/-/\n/- -/\nj-d /f j-"
+    },
+    {
+      "newKeys": [
+        "=",
+        "["
+      ],
+      "text": "Teraz = i [. Mały palec wychodzi na zewnątrz i wraca; dłoń za nim nie idzie.",
+      "type": "block",
+      "content": "[= =[\n=fj [d =f\n=[ [= =[=["
+    },
+    {
+      "seconds": 20,
+      "text": "Seria z tym, co masz już z tej kolumny.",
+      "type": "burst",
+      "tokens": [
+        "[-",
+        "-=",
+        "--",
+        "[/",
+        "-/",
+        "/[",
+        "[=",
+        "/-",
+        "-[",
+        "[["
+      ]
+    },
+    {
+      "newKeys": [
+        "]",
+        "\\"
+      ],
+      "text": "Teraz ] i \\. Mały palec wychodzi na zewnątrz i wraca; dłoń za nim nie idzie.",
+      "type": "block",
+      "content": "]\\ ]\\\n]fd \\j ]f\n]\\ \\] ]\\]\\"
+    },
+    {
+      "text": "Wszystkie sześć razem. To miejsce na klawiaturze, gdzie nadgarstek najbardziej się wykręca, jeśli palec nie wraca.",
+      "type": "block",
+      "content": "f=/ d\\- f=\n\\] ]\\ \\]\\]\n\\\\\\\\ ==== --- /// [[[ ]]]]"
+    },
+    {
+      "seconds": 25,
+      "text": "Znowu słowa, żeby rozluźnić dłoń po całej tej krawędzi.",
+      "type": "burst",
+      "tokens": [
+        "dzwoni",
+        "obraz",
+        "dom",
+        "samo",
+        "sery",
+        "losy",
+        "hala",
+        "pogody",
+        "loty",
+        "wiersz",
+        "psa",
+        "dwa"
+      ]
+    },
+    {
+      "text": "Powrót do słów, z całą klawiaturą do dyspozycji.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lekarz tak momenty zadanie\notwarta ciocie kurier lekcje\ndrogie sekundy lubi wiatrak"
+    },
+    {
+      "text": "Całe zdania na zakończenie lekcji z klawiszami.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Ile kosztuje ten chleb.\nKawa stoi na biurku.\nTo jest moja ulubiona piosenka."
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "id": "u1-l07",
+  "unit": "u1",
+  "group": "reach",
+  "order": 7,
+  "slug": "e-i",
+  "title": "Period and C",
+  "summary": "Two new keys: period and C. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    ".",
+    "c"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: period and C. They belong to your left middle finger and your right middle finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If period and C already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "LM",
+      "text": "This key belongs to your left middle finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press . to continue"
+    },
+    {
+      "newKey": ".",
+      "text": "Only . and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": ". .\n.eu h .e\n. . .."
+    },
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "RM",
+      "text": "This key belongs to your right middle finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press C to continue"
+    },
+    {
+      "newKey": "c",
+      "text": "Only C and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "c. .c\nu.e ch u.\n.c c. .c.c"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "c.",
+        ".cc",
+        "c...",
+        "cc.",
+        ".c.c",
+        ".cc.",
+        "cc",
+        "c.c",
+        "cc.c",
+        "..cc"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "uuuu .... hhhh ccc\n.c.c.c c.c.c.\nhc.u uch."
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "case cash action coach\ncost chance nice cases\ncats cotton costs ice"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "dishes",
+        "end",
+        "not",
+        "tea",
+        "nice",
+        "uses",
+        "soon",
+        "the",
+        "sand",
+        "teach"
+      ]
+    },
+    {
+      "text": "Now the weight is on C, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "cut son note add\nnotice nice coast dash\nan ideas dads used"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ".... cccc\n.c.c.c c.c.c.\n.c c."
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ideas shot house coat\nadd the dad costs\ndo aha side stand"
+    }
+  ]
+}

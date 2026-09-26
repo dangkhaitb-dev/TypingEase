@@ -1,0 +1,172 @@
+{
+  "id": "u3-l02",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 23,
+  "slug": "outer-column",
+  "title": "La colonne de droite",
+  "summary": "La colonne du bord droit : six touches, toutes à l'auriculaire, dont f, z, w et ç.",
+  "newKeys": [
+    "f",
+    "=",
+    "%",
+    "z",
+    "w",
+    "ç"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d",
+    "o",
+    "v",
+    "è",
+    "^",
+    "l",
+    "é",
+    "x",
+    "'",
+    "q",
+    ".",
+    "b",
+    "j",
+    "k",
+    "y",
+    "à",
+    "h",
+    "g",
+    "m",
+    "shift",
+    "enter",
+    "\"",
+    "«",
+    "»",
+    "(",
+    ")",
+    "@",
+    "+",
+    "-",
+    "/",
+    "*",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "f",
+    "=",
+    "%",
+    "z",
+    "w",
+    "ç"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "L'auriculaire droit s'occupe de plus de touches que n'importe quel autre doigt, et celles du bord sont celles que presque personne ne travaille. Sur BÉPO, on y trouve des lettres : f, z, w et ç. Sans cette colonne, pas de fait, pas de zéro, pas de ça.",
+  "congrats": "Avec f, z, w et ç, il ne manque plus aucune lettre. C'est la colonne que la plupart des cours laissent de côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "RP",
+      "text": "Les touches du bord droit, toutes à l'auriculaire. Sur BÉPO, quatre d'entre elles sont des lettres : f, z, w et ç.",
+      "hint": "Appuie sur F pour continuer"
+    },
+    {
+      "newKeys": [
+        "f",
+        "="
+      ],
+      "text": "Maintenant f et =. L'auriculaire part vers l'extérieur et revient ; la main ne suit pas.",
+      "type": "block",
+      "content": "f=f= =f=f\nf= =f\nt=i fe t="
+    },
+    {
+      "newKeys": [
+        "%",
+        "z"
+      ],
+      "text": "Maintenant % et z. L'auriculaire part vers l'extérieur et revient ; la main ne suit pas.",
+      "type": "block",
+      "content": "z% %z\n%et zi %e\n%z z% %z%z"
+    },
+    {
+      "seconds": 20,
+      "text": "Une série avec ce que tu as de cette colonne.",
+      "type": "burst",
+      "tokens": [
+        "z=",
+        "=%",
+        "==",
+        "zf",
+        "=f",
+        "fz",
+        "z%",
+        "f=",
+        "=z",
+        "zz"
+      ]
+    },
+    {
+      "newKeys": [
+        "w",
+        "ç"
+      ],
+      "text": "Maintenant w et ç. L'auriculaire part vers l'extérieur et revient ; la main ne suit pas.",
+      "type": "block",
+      "content": "wç wç\nwei çt we\nwç çw wçwç"
+    },
+    {
+      "text": "Les six ensemble. C'est l'endroit du clavier où le poignet se tord le plus si le doigt ne revient pas.",
+      "type": "block",
+      "content": "e%f iç= e%\nçw wç çwçw\nçççç %%%% === fff zzz wwww"
+    },
+    {
+      "seconds": 25,
+      "text": "Des mots à nouveau, pour détendre la main après tout ce bord.",
+      "type": "burst",
+      "tokens": [
+        "lumières",
+        "élèves",
+        "complète",
+        "l'eau",
+        "point",
+        "sur",
+        "résultat",
+        "bruits",
+        "forêt",
+        "bureau",
+        "mon",
+        "sel"
+      ]
+    },
+    {
+      "text": "Retour aux mots, avec le clavier entier disponible — f, z, w et ç compris.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "complet française continuer mères\nhuiles sommes zeste item\njolie luttes banques même"
+    },
+    {
+      "text": "Des phrases entières pour terminer les leçons de touches.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Elle a pris le premier train du matin.\nLa petite fille joue dans le jardin.\nMon frère habite dans une grande ville du sud."
+    }
+  ]
+}

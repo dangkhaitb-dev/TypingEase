@@ -1,0 +1,171 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "{, }, | dan titik bertindih",
+  "summary": "Dalam pelajaran ini: {, }, | dan titik bertindih.",
+  "newKeys": [
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci yang belum digunakan dalam kursus ini: {, }, | dan titik bertindih. Setiap satu ialah Shift bersama kekunci yang jari anda sudah kenal — Shift ditekan oleh kelingking tangan yang sebelah lagi.",
+  "congrats": "{, }, | dan titik bertindih: kini di bawah jari anda. Simbol keluar semudah huruf di sebelahnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "{ ditekan oleh jari kelingking kanan, dengan Shift di tangan yang sebelah lagi.",
+      "hint": "Tekan { untuk meneruskan"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "{ seorang diri dahulu, kemudian di tempat ia benar-benar digunakan.",
+      "content": "{{ { {biru {tulis {akan\n{{ { {logo {kunci {cawan\n{{ { {tarikh {risau {habis"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "} ditekan oleh jari kelingking kanan, dengan Shift di tangan yang sebelah lagi.",
+      "hint": "Tekan } untuk meneruskan"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "} seorang diri dahulu, kemudian di tempat ia benar-benar digunakan.",
+      "content": "}} } {lagi} {kuning} {hayat}\n}} } {mungkin} {mesti} {pinggir}\n}} } {pandai} {jelas} {tugas}"
+    },
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "RP",
+      "text": "| ditekan oleh jari kelingking kanan, dengan Shift di tangan yang sebelah lagi.",
+      "hint": "Tekan | untuk meneruskan"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "| seorang diri dahulu, kemudian di tempat ia benar-benar digunakan.",
+      "content": "|| | daerah|tempat servis|tua kawan|sunyi\n|| | tetapi|hadir angin|mesti mungkin|lipat\n|| | wau|dengar hiasan|pinjam kereta|laksa"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RP",
+      "text": "titik bertindih ditekan oleh jari kelingking kanan, dengan Shift di tangan yang sebelah lagi.",
+      "hint": "Tekan : untuk meneruskan"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "titik bertindih seorang diri dahulu, kemudian di tempat ia benar-benar digunakan.",
+      "content": ":: : halal: hutan: dengan:\n:: : setuju: asal: jual:\n:: : rapat: jadual: empat:"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Satu pecutan cebisan pendek yang mengandungi aksara ini.",
+      "tokens": [
+        "{zoo}",
+        "untuk:",
+        "masin:",
+        "{peta}",
+        "{rakaman}",
+        "{gerai}",
+        "wira:",
+        "{ringan}",
+        "{orang}",
+        "sendiri|sekarang"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Semua yang ada dalam pelajaran ini, bercampur.",
+      "content": "besar|teh dan|syukur {gelak} salah:\nlazat|murah tokoh|minit mana|tidur {ketika}\nzebra: sup: semasa: {wau}"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Perkataan semula, dengan simbol di tempatnya.",
+      "content": "berapa|kertas siaran {burung} pergi salak:\nbelakang|jam dinding {hotel} cawangan {desa}\n{paparan} jawapan hak|minggu musim {pendek}"
+    }
+  ]
+}

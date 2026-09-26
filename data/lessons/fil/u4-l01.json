@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, ! at @",
+  "summary": "Sa araling ito: `, ~, ! at @.",
+  "newKeys": [
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Mga key na hindi pa nagagamit ng kurso: `, ~, ! at @. Ang ilan ay kailangan ng Shift, sa hinliliit ng kabilang kamay; ang iba ay may sariling key na hindi pa nagagamit ng kurso.",
+  "congrats": "`, ~, ! at @: nasa ilalim na ng mga daliri mo. Shift sa kabilang kamay, at kasindali na ng katabing titik ang simbolo.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "Ang ` ay para sa kaliwang hinliliit.",
+      "hint": "Pindutin ang ` para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "Una, ` nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "`` ` `biyahe` `hula` `magkano`\n`` ` `tuhod` `ulo` `handaan`\n`` ` `lapit` `meryenda` `sabaw`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "Una, ~ nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "~~ ~ ~58 ~91 ~95\n~~ ~ ~29 ~24 ~68\n~~ ~ ~14 ~39 ~43"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "Ang ! ay para sa kaliwang hinliliit, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang ! para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Una, ! nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "!! ! dikdik! orasan! sina!\n!! ! akin! magbasa! baka!\n!! ! sabaw! sabay! suka!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "Ang @ ay para sa kaliwang palasingsingan, habang hawak ng kabilang kamay ang Shift.",
+      "hint": "Pindutin ang @ para magpatuloy"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "Una, @ nang mag-isa, saka kung saan talaga ito ginagamit.",
+      "content": "@@ @ tapusin@kanang numero@luma tipan@sukli\n@@ @ aklat@sombrero paano@kita pag-ibig@anak\n@@ @ gisa@ligaw magkaiba@pindutan libro@magbayad"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Isang bugso ng maiikling piraso na may ganitong mga character.",
+      "tokens": [
+        "~78",
+        "~35",
+        "linisin!",
+        "`tindahan`",
+        "aklatan!",
+        "mula!",
+        "kapit@kailan",
+        "gumawa!",
+        "~51",
+        "ulitin!"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Lahat ng nasa araling ito, magkakahalo.",
+      "content": "~64 hangin@lakas ~21 antok@ugali\n~89 ~82 ~80 ~6\n`kalat` sulok@kahel gawa@bundok `larawan`"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Mga salita ulit, nasa tamang lugar ang mga simbolo.",
+      "content": "~66 gatas ilog@dagdag nila `sabay`\n`tuktok` ibang tuwing@tuwid bahay `tandang`\n~74 maayos tito! tita apat@sipag"
+    }
+  ]
+}

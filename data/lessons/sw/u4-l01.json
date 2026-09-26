@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, ! na @",
+  "summary": "Katika somo hili: `, ~, ! na @.",
+  "newKeys": [
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe ambavyo kozi bado haijavitumia: `, ~, ! na @. Baadhi vinahitaji Shift, kwa kidole kidogo cha mkono mwingine; vingine viko kwenye kitufe ambacho kozi haijakitumia bado.",
+  "congrats": "`, ~, ! na @: sasa viko chini ya vidole vyako. Shift kwa mkono mwingine, na alama inakuja kwa urahisi kama herufi iliyo kando yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "Kitufe ` ni cha kidole kidogo cha kushoto.",
+      "hint": "Bonyeza ` ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "Kwanza ` peke yake, kisha pale kinapotumika kweli.",
+      "content": "`` ` `miji` `kibanda` `upendo`\n`` ` `ofisi` `nyama` `baba`\n`` ` `pikipiki` `wageni` `kubeba`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "Kwanza ~ peke yake, kisha pale kinapotumika kweli.",
+      "content": "~~ ~ ~9 ~53 ~8\n~~ ~ ~11 ~59 ~40\n~~ ~ ~33 ~40 ~72"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "Kitufe ! ni cha kidole kidogo cha kushoto, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza ! ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Kwanza ! peke yake, kisha pale kinapotumika kweli.",
+      "content": "!! ! kawaida! msitu! wakati!\n!! ! ukweli! lini! kulia!\n!! ! zuri! kupenda! kasi!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "Kitufe @ ni cha kidole cha pete cha kushoto, huku Shift ikishikwa na mkono mwingine.",
+      "hint": "Bonyeza @ ili kuendelea"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "Kwanza @ peke yake, kisha pale kinapotumika kweli.",
+      "content": "@@ @ bora@kilo kujibu@chukua faa@sherehe\n@@ @ miezi@ya hifadhi@rudisha kusaidia@kahawa\n@@ @ afisa@kubeba fika@mifuko kiasi@hili"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Mfululizo wa vipande vifupi vyenye alama hizi.",
+      "tokens": [
+        "ghala@kiwanja",
+        "ngazi!",
+        "nyuma@kufurahi",
+        "~21",
+        "lazima@osha",
+        "~64",
+        "~23",
+        "mchele@kitabu",
+        "`hadaa`",
+        "`watoto`"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Kila kitu kutoka somo hili, kwa mchanganyiko.",
+      "content": "~90 `giza` hatari@baada ~48\n~82 ~76 kuruhusu@nzuri yake!\n~55 ~81 ~91 pokea!"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Maneno tena, na alama zikiwa mahali pake.",
+      "content": "shauri! bati mlima! doa nyama@safisha\n`hili` miti nguvu@kueleza yako `furaha`\njitihada@biashara tukio saidiana@redio darasa `simu`"
+    }
+  ]
+}

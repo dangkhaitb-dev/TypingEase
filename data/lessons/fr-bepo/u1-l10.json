@@ -1,0 +1,41 @@
+{
+  "id": "u1-l10",
+  "unit": "u1",
+  "group": "finish",
+  "order": 10,
+  "slug": "test-u1",
+  "title": "Test de l'unité 1",
+  "summary": "Un test chronométré avec tout ce qui a été appris.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d",
+    "o",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 1,
+  "inputMode": "ascii",
+  "intro": "Un test chronométré. Rien de neuf : seulement ce que tu sais déjà, à un rythme que tu peux tenir.",
+  "congrats": "Test réussi. Le chiffre compte moins que le fait d'être arrivé au bout sans regarder.",
+  "screens": [
+    {
+      "type": "test",
+      "seconds": 60,
+      "text": "Aucune touche nouvelle. Écris à un rythme que tu peux tenir jusqu'au bout.",
+      "dictation": "words",
+      "content": "dise porte ton vient\nsuites russe ouvre partie\nsur pas soi tristes\nsi un rose dose"
+    }
+  ]
+}

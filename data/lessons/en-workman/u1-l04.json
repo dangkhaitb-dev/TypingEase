@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A and I",
+  "summary": "Two new keys: A and I. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "a",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "h",
+    "e",
+    "s",
+    "o",
+    "a",
+    "i"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: A and I. They belong to your left little finger and your right little finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If A and I already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "This key belongs to your left little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press A to continue"
+    },
+    {
+      "newKey": "a",
+      "text": "Only A and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "a a\ntna h tn\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RP",
+      "text": "This key belongs to your right little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press I to continue"
+    },
+    {
+      "newKey": "i",
+      "text": "Only I and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "aiai iaia\nai ia\niht na ih"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "iaaa",
+        "aai",
+        "aaa",
+        "aiia",
+        "iaii",
+        "iiaa",
+        "aii",
+        "aaii",
+        "iaia",
+        "aiaa"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "ai ia aiai\naaa iiii tttt nnn\naiai iaia"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ah neat at ha\nattention sea eat his\nash has heat is"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "nine",
+        "is",
+        "thin",
+        "stone",
+        "than",
+        "hash",
+        "notes",
+        "tooth",
+        "see",
+        "sense"
+      ]
+    },
+    {
+      "text": "Now the weight is on A, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ash heat see tea\nsash ties he into\nnose the aha hot"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "aiaiai iaiaia\nai ia\nnia ht ni"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "is no that than\nits notes taste hi\nhas ah nose tone"
+    }
+  ]
+}

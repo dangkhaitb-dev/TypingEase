@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "D na K",
+  "summary": "Vitufe vipya: D na K. Kidole kinatoka, kinabonyeza na kurudi.",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe vipya katika somo hili: D na K. Vinabonyezwa na kidole cha kati cha kushoto na kidole cha kati cha kulia. Mwendo ni uleule kila mara — toka, bonyeza na rudi — na kurudi ndiko kunakofanyiwa mazoezi, kwa sababu kidole kikibaki nje, herufi inayofuata inakosewa.",
+  "congrats": "Vitufe zaidi chini ya vidole vyako. Kama D na K vinakuja bila kuvitafuta, somo limefanya kazi yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "d",
+      "finger": "LM",
+      "text": "Kitufe hiki ni cha kidole cha kati cha kushoto. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza D ili kuendelea"
+    },
+    {
+      "newKey": "d",
+      "text": "D tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "d d dd\ndddd\ndddd dddd"
+    },
+    {
+      "type": "intro",
+      "key": "k",
+      "finger": "RM",
+      "text": "Kitufe hiki ni cha kidole cha kati cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza K ili kuendelea"
+    },
+    {
+      "newKey": "k",
+      "text": "K tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "ddd kkk\ndkdk kdkd\ndk dk"
+    },
+    {
+      "seconds": 20,
+      "text": "Vikundi vifupi, kimoja baada ya kingine. Endelea hadi mwisho hata ukikosea kimoja.",
+      "type": "burst",
+      "tokens": [
+        "dd",
+        "kdkk",
+        "dkkd",
+        "kddd",
+        "ddd",
+        "ddkk",
+        "kdk",
+        "kddk",
+        "dkdk",
+        "kdd"
+      ]
+    },
+    {
+      "text": "Vitufe vipya vikichanganywa na vya zamani, jinsi vitakavyotokea ndani ya maneno.",
+      "type": "block",
+      "content": "dkdkdk kdkdkd\nfdjk jfdk\ndfj k df"
+    },
+    {
+      "text": "Vitufe viwili vipya mara nyingine. Bado hakuna maneno ya kuandika navyo, na hilo ni kawaida.",
+      "type": "block",
+      "content": "fkj d fk\ndk kd dkdk\nkkk dddd"
+    },
+    {
+      "seconds": 25,
+      "text": "Vikundi virefu kidogo. Haraka bado haisaidii.",
+      "type": "burst",
+      "tokens": [
+        "dkk",
+        "ddkk",
+        "dkkk",
+        "dkd",
+        "kdkk",
+        "dk",
+        "kkkk",
+        "kkdk",
+        "dddk",
+        "kddk",
+        "dddd",
+        "kkk"
+      ]
+    },
+    {
+      "text": "Kila ulicho nacho, kwa vikundi vifupi. Macho kwenye skrini, si kwenye mikono.",
+      "type": "block",
+      "content": "fkd j fk\ndj jd djdj\njjjj kkkk ffff dddd"
+    },
+    {
+      "text": "Turudi kwenye mifumo kwa muda, kuhakikisha vidole bado vinapata njia ya kurudi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "dk kd dkdk\ndddd kkk\ndkdk kdkd"
+    },
+    {
+      "text": "Mzunguko wa mwisho na yote uliyojifunza hadi hapa.",
+      "type": "block",
+      "content": "jfd k jf\ndk kd dkdk\nkkkk ddd ffff jjj"
+    }
+  ]
+}

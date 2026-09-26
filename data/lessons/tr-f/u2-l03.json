@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "V ve Z",
+  "summary": "Yeni tuşlar: V ve Z. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "v",
+    "z"
+  ],
+  "keysSoFar": [
+    " ",
+    "a",
+    "k",
+    "e",
+    "m",
+    "i",
+    "l",
+    "u",
+    "y",
+    "ü",
+    "t",
+    "ğ",
+    "n",
+    "ı",
+    "r",
+    "o",
+    "d",
+    "h",
+    "g",
+    "v",
+    "z"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: V ve Z. Bunlara sol orta parmak ve sağ işaret parmağı basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. V ve Z artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "v",
+      "finger": "LM",
+      "text": "Bu tuşa sol orta parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için V tuşuna bas"
+    },
+    {
+      "newKey": "v",
+      "text": "Yalnızca V ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "vvvv vvvv\nv v\nkav e ka"
+    },
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "RI",
+      "text": "Bu tuşa sağ işaret parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Z tuşuna bas"
+    },
+    {
+      "newKey": "z",
+      "text": "Yalnızca Z ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "vzvzvz zvzvzv\nzv zv\nkev za ke"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "vvvv",
+        "zzz",
+        "zv",
+        "vvzv",
+        "vzzz",
+        "vzz",
+        "zvv",
+        "zzvv",
+        "zvvv",
+        "zvzz"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "zv vz zvzv\nzzz vvv kkk aaa\nvzvz zvzv"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kırmızı odamız kuzey gündüz\nklavye düz gazete vermek\nmeyve uzun izlemek dizi"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "eylül",
+        "oy",
+        "okur",
+        "ok",
+        "evde",
+        "yollar",
+        "duru",
+        "kurar",
+        "gala",
+        "evler"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık V tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kural hemen kenar altı\nizle dal klavye onay\ndamlalar hata evler dikkat"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "zzzz vvv\nvzvz zvzv\nzv zv"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dağ tur hız anahtar\nonay yarar kayak kahvaltı\nkamera yıllar hızlı ak"
+    }
+  ]
+}

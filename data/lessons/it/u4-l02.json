@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "£, $, % e &",
+  "summary": "In questa lezione: £, $, % e &.",
+  "newKeys": [
+    "£",
+    "$",
+    "%",
+    "&"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ò",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "à",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "'",
+    "ì",
+    "è",
+    "+",
+    "ù",
+    "\\",
+    "|",
+    "!",
+    "\"",
+    "£",
+    "$",
+    "%",
+    "&"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti che il corso non ha ancora usato: £, $, % e &. Ognuno si ottiene con Shift e un tasto che le tue dita conoscono già — Shift con il mignolo dell'altra mano.",
+  "congrats": "£, $, % e &: ora sotto le tue dita. Il segno esce facile come la lettera accanto.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "£",
+      "finger": "LM",
+      "text": "È il medio sinistro a premere £, con Shift tenuto dall'altra mano.",
+      "hint": "Premi £ per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "£",
+      "text": "Prima £ e basta, poi dove si usa davvero.",
+      "content": "££ £ £10 £23 £62\n££ £ £31 £48 £43\n££ £ £75 £68 £54"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "È l'indice sinistro a premere $, con Shift tenuto dall'altra mano.",
+      "hint": "Premi $ per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Prima $ e basta, poi dove si usa davvero.",
+      "content": "$$ $ $58 $38 $57\n$$ $ $77 $49 $79\n$$ $ $4 $37 $58"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "È l'indice sinistro a premere %, con Shift tenuto dall'altra mano.",
+      "hint": "Premi % per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Prima % e basta, poi dove si usa davvero.",
+      "content": "%% % 22% 28% 97%\n%% % 66% 69% 79%\n%% % 34% 37% 48%"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "È l'indice destro a premere &, con Shift tenuto dall'altra mano.",
+      "hint": "Premi & per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Prima & e basta, poi dove si usa davvero.",
+      "content": "&& & l'acqua & però velocità & quando uova & feste\n&& & feste & leggere cinque & buona molti & alla\n&& & passo & farò digitali & andrà vero & sa"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Una raffica di pezzi brevi con questi caratteri.",
+      "tokens": [
+        "balcone&mare",
+        "£17",
+        "45%",
+        "stanza&che",
+        "50%",
+        "£92",
+        "£75",
+        "$45",
+        "£81",
+        "$23"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tutto quello di questa lezione, mescolato.",
+      "content": "$50 lettura&riso $47 inverno&tale\npiù & avanti $95 89% piccolo&fax\nscuola & cosa $68 $54 £56"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Di nuovo parole, con i segni al loro posto.",
+      "content": "$82 lezione $49 libero 14%\n£92 questo 36% l'occhio 65%\n21% mano figure & l'estate nostra incontro & strade"
+    }
+  ]
+}

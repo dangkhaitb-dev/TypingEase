@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Review",
+  "summary": "No new keys. Everything so far, longer and faster.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "This lesson teaches nothing new. It is the moment to check that what came before comes out without thinking, which is not the same as knowing where each key is.",
+  "congrats": "Nothing new, and faster anyway. That is exactly what was supposed to happen.",
+  "screens": [
+    {
+      "text": "Single words to start. No rush: speed comes out of accuracy, never the other way round.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "stay ages sit apart\nshort fast means reach\nhang share judges pick"
+    },
+    {
+      "seconds": 25,
+      "text": "A short burst. Finish the list even if one gets away from you.",
+      "type": "burst",
+      "tokens": [
+        "song",
+        "against",
+        "instead",
+        "years",
+        "south",
+        "agree",
+        "boys",
+        "first",
+        "on",
+        "mean",
+        "tired",
+        "right"
+      ]
+    },
+    {
+      "text": "Five words to a line. Let your eyes run ahead of your fingers.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "add fake harsh program trains\nregards tiger together star sides\nrooms phone step meet break"
+    },
+    {
+      "text": "Patterns again, to check the fingers keep returning to the home row.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "neh oat ne\nuh hu uhuh\nttt hhh uuuu eee"
+    },
+    {
+      "text": "Short words at a good pace. These should almost type themselves by now.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "an rain after boys\nhat hopes page made\nsense sun find best"
+    },
+    {
+      "seconds": 30,
+      "text": "More time and more words. Hold the same rhythm from start to finish.",
+      "type": "burst",
+      "tokens": [
+        "ought",
+        "are",
+        "better",
+        "together",
+        "broke",
+        "theme",
+        "phones",
+        "rush",
+        "agree",
+        "through",
+        "not",
+        "ha",
+        "hand",
+        "act"
+      ]
+    },
+    {
+      "text": "Whole sentences. This is where you find out whether the hand goes home on its own.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "break the habit before it breaks you\nshe said that it is easy\nshe asked her dad"
+    },
+    {
+      "text": "The last round. If you got here without looking at the keyboard, the lesson is done.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "type many apart nine catch\ntiny might fifty for ads\nsupport north track drop straight"
+    }
+  ]
+}

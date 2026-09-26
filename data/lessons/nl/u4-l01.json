@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "@, §, ! en \"",
+  "summary": "In deze les: @, §, ! en \".",
+  "newKeys": [
+    "@",
+    "§",
+    "!",
+    "\""
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "+",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "´",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "/",
+    "°",
+    "¨",
+    "*",
+    "<",
+    "@",
+    "§",
+    "!",
+    "\""
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Toetsen die de cursus nog niet heeft gebruikt: @, §, ! en \". Voor sommige heb je Shift nodig, met de pink van de andere hand; de andere hebben een eigen toets die de cursus nog niet had gebruikt.",
+  "congrats": "@, §, ! en \": nu onder je vingers. Het teken komt er net zo makkelijk uit als de letter ernaast.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LP",
+      "text": "@ typ je met de linkerpink.",
+      "hint": "Druk op @ om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "Eerst alleen @, daarna op de plek waar je het echt gebruikt.",
+      "content": "@@ @ wist@ijsje gebruik@alles op@maand\n@@ @ april@zilver citroen@zout park@kruk\n@@ @ lezen@maart trein@precies gast@leek"
+    },
+    {
+      "type": "block",
+      "newKey": "§",
+      "text": "Eerst alleen §, daarna op de plek waar je het echt gebruikt.",
+      "content": "§§ § §87 §77 §62\n§§ § §43 §39 §25\n§§ § §57 §30 §95"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "! typ je met de linkerpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op ! om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Eerst alleen !, daarna op de plek waar je het echt gebruikt.",
+      "content": "!! ! museum! doen! zegt!\n!! ! niets! bericht! stil!\n!! ! soort! ballen! bezoeken!"
+    },
+    {
+      "type": "intro",
+      "key": "\"",
+      "finger": "LR",
+      "text": "\" typ je met de linkerringvinger, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op \" om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "\"",
+      "text": "Eerst alleen \", daarna op de plek waar je het echt gebruikt.",
+      "content": "\"\" \" \"worst\" \"december\" \"stoep\"\n\"\" \" \"gevonden\" \"zoon\" \"dromen\"\n\"\" \" \"jij\" \"lag\" \"grijs\""
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Een reeks korte stukjes met deze tekens.",
+      "tokens": [
+        "\"kampeer\"",
+        "\"ooit\"",
+        "zebra@stilte",
+        "links@voeten",
+        "\"papa\"",
+        "prettig@vijftig",
+        "\"geef\"",
+        "hand@typen",
+        "§49",
+        "§74"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles van deze les, door elkaar.",
+      "content": "kajak@zal wereld! veertig! dezelfde@agenda\nooit@tuig §12 helpen! open!\n\"zoveel\" weekdag! §66 zus!"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Weer woorden, met de tekens op hun plek.",
+      "content": "\"type\" gas de! brief §91\nkapot@ruig geur kost! humor ruim!\ntoen@door vorige zelfs! leer §57"
+    }
+  ]
+}

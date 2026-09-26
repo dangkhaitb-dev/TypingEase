@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Wiederholung",
+  "summary": "Keine neue Taste. Alles Bisherige, dichter und schneller.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Diese Lektion bringt nichts Neues bei. Jetzt zeigt sich, ob das Bisherige ohne Nachdenken kommt, und das ist etwas anderes, als zu wissen, wo jede Taste liegt.",
+  "congrats": "Nichts Neues und trotzdem schneller. Genau das sollte passieren.",
+  "screens": [
+    {
+      "text": "Zum Anfang einzelne Wörter. Ohne Eile: Tempo kommt aus Genauigkeit, nie umgekehrt.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kajak aal ölfass alfalfa\ndas lass ölfass ass\nass als salsa skala"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine kurze Runde. Mach die Liste zu Ende, auch wenn dir eins durchrutscht.",
+      "type": "burst",
+      "tokens": [
+        "kalk",
+        "fall",
+        "all",
+        "aal",
+        "kajak",
+        "ass",
+        "ölfass",
+        "fad",
+        "fass",
+        "dass",
+        "falls",
+        "das"
+      ]
+    },
+    {
+      "text": "Fünf Wörter pro Zeile. Lass die Augen den Fingern vorausgehen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "aal als falls lass fall\ndass fad saal aal als\nsalsa kalk öl als lass"
+    },
+    {
+      "text": "Noch einmal Muster, um zu prüfen, ob die Finger weiter in die Grundstellung zurückkehren.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Kurze Wörter in gutem Tempo. Die sollten inzwischen fast von allein kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fass ass salsa als\nfass salsa ass falls\nöl fass saal ja"
+    },
+    {
+      "seconds": 30,
+      "text": "Mehr Zeit und mehr Wörter. Halte dasselbe Tempo von Anfang bis Ende.",
+      "type": "burst",
+      "tokens": [
+        "alfalfa",
+        "da",
+        "falls",
+        "ölfass",
+        "all",
+        "öl",
+        "salsa",
+        "ass",
+        "fall",
+        "als",
+        "aal",
+        "kalk",
+        "ja",
+        "das"
+      ]
+    },
+    {
+      "text": "Ganze Sätze. Hier zeigt sich, ob die Hand von allein zurückfindet.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "alfalfa dass kalk kajak\naal kalk öl lass\nals saal das fad"
+    },
+    {
+      "text": "Der letzte Durchgang. Wenn du bis hierhin nicht auf die Tastatur gesehen hast, ist die Lektion erledigt.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "fass als falls öl ass\nass da fall ja kajak\nlass ja fass aal öl"
+    }
+  ]
+}

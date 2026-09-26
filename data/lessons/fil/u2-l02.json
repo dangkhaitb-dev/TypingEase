@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "O at W",
+  "summary": "Mga bagong key: O at W. Lumalabas ang daliri, pumipindot, at bumabalik.",
+  "newKeys": [
+    "o",
+    "w"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Mga bagong key sa araling ito: O at W. Para sila sa kanang palasingsingan at kaliwang palasingsingan. Laging pareho ang galaw — labas, pindot, balik — at ang pagbalik ang sinasanay, dahil ang daliring naiwan sa labas ang sumisira sa susunod na titik.",
+  "congrats": "Mas maraming key sa ilalim ng mga daliri mo. Kung lumalabas na ang O at W nang hindi hinahanap, nagawa na ng aralin ang trabaho nito.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "o",
+      "finger": "RR",
+      "text": "Ang key na ito ay para sa kanang palasingsingan. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang O para magpatuloy"
+    },
+    {
+      "newKey": "o",
+      "text": "O lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "o o oo\noooo\noooooo oooooo"
+    },
+    {
+      "type": "intro",
+      "key": "w",
+      "finger": "LR",
+      "text": "Ang key na ito ay para sa kaliwang palasingsingan. Hanapin ito nang hindi tumitingin, pindutin nang isang beses, at hayaang bumalik ang daliri. Kasinghalaga ng pagpindot ang pagbalik.",
+      "hint": "Pindutin ang W para magpatuloy"
+    },
+    {
+      "newKey": "w",
+      "text": "W lang at ang alam mo na. Dahan-dahan, at ibalik ang daliri sa gitnang hanay pagkatapos ng bawat pindot.",
+      "type": "block",
+      "content": "owow wowo\now wo\nwdf oj wd"
+    },
+    {
+      "seconds": 20,
+      "text": "Maiikling grupo, sunod-sunod. Ituloy hanggang dulo kahit may mamali.",
+      "type": "burst",
+      "tokens": [
+        "oow",
+        "woow",
+        "ooo",
+        "wo",
+        "wwwo",
+        "ww",
+        "wwww",
+        "oww",
+        "woo",
+        "owow"
+      ]
+    },
+    {
+      "text": "Ang mga bagong key na kahalo ng mga luma, gaya ng paglabas nila sa loob ng mga salita.",
+      "type": "block",
+      "content": "fdo kjs fd\njo oj jojo\nooo www fff jjjj"
+    },
+    {
+      "text": "Totoong mga salita na may mga bagong key. Tipahin ang bawat salita nang tuloy-tuloy, hindi titik-titik.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ilaw tuloy sarado tsokolate\nlalo guro kuko iyo\nkaldero itlog wika sigurado"
+    },
+    {
+      "seconds": 25,
+      "text": "Isang bugso ng maiikling salita na may mga bagong key.",
+      "type": "burst",
+      "tokens": [
+        "kuwarto",
+        "kalahi",
+        "gulay",
+        "saka",
+        "dala",
+        "kilay",
+        "aklat",
+        "kalat",
+        "dikit",
+        "ahas"
+      ]
+    },
+    {
+      "text": "Ngayon, nasa O ang bigat, ang key na pinakakaunti mong napindot.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lugaw kuko dilis ahas\nkuliglig gisa ulo lugi\nkutsilyo at aso kuwarto"
+    },
+    {
+      "text": "Balik muna sa mga pattern, para matiyak na nakakabalik pa rin ang mga daliri.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "owowow wowowo\now wo\nwod fj wo"
+    },
+    {
+      "text": "Lahat ng mayroon ka, magkakahalo. Pansinin kung ilang salita na ang lumalabas nang hindi pinag-iisipan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lolo halos saya yata\ntotoo lola halik tsokolate\nhawak agad hala dito"
+    }
+  ]
+}

@@ -1,0 +1,219 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "Les accents et les chiffres",
+  "summary": "Les accents sans Maj, les chiffres avec Maj — toute la rangée du haut.",
+  "newKeys": [
+    "&",
+    "é",
+    "\"",
+    "'",
+    "(",
+    "-",
+    "è",
+    "_",
+    "ç",
+    "à",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v",
+    "a",
+    "p",
+    "b",
+    "x",
+    "w",
+    ":",
+    ";",
+    "ù",
+    "shift",
+    "enter",
+    ".",
+    "&",
+    "é",
+    "\"",
+    "'",
+    "(",
+    "-",
+    "è",
+    "_",
+    "ç",
+    "à",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "La rangée du haut d'un clavier AZERTY porte deux étages : les accents sans Maj, les chiffres avec. Les doigts y montent au lieu de descendre, et c'est la rangée où l'on se trompe le plus dans tout le cours. Elle se répare comme le reste : lentement d'abord.",
+  "congrats": "La rangée du haut est la plus difficile et la moins pratiquée ensuite. Reviens à cette leçon de temps en temps.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "LP",
+      "text": "Sur un clavier AZERTY, la rangée du haut donne les accents sans Maj — é è ç à — et les chiffres avec Maj. C'est la seule rangée où les doigts montent au lieu de descendre, et c'est celle où l'on se trompe le plus.",
+      "hint": "Appuie sur & pour continuer"
+    },
+    {
+      "newKeys": [
+        "&",
+        "à"
+      ],
+      "text": "& et à se tapent avec l'auriculaire gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "à& &à à&à&\nààà &&&&\n&à&à&à à&à&à&"
+    },
+    {
+      "newKeys": [
+        "é",
+        "ç"
+      ],
+      "text": "é et ç se tapent avec l'annulaire gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "dfé çj df\néç çé éçéç\nééé çççç"
+    },
+    {
+      "seconds": 20,
+      "text": "Une série courte avec ce que tu viens d'apprendre.",
+      "type": "burst",
+      "tokens": [
+        "àà",
+        "çà",
+        "àé",
+        "&à",
+        "ç&",
+        "éà",
+        "éé",
+        "éç",
+        "à&",
+        "àç"
+      ]
+    },
+    {
+      "newKeys": [
+        "\"",
+        "_"
+      ],
+      "text": "\" et _ se tapent avec le majeur gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "\"_\"_\"_ _\"_\"_\"\n_\" \"_\nd_\" jf d_"
+    },
+    {
+      "newKeys": [
+        "'",
+        "è"
+      ],
+      "text": "' et è se tapent avec l'index gauche et le même doigt de l'autre main. Monte, frappe, redescends à la rangée de repos.",
+      "type": "block",
+      "content": "'è 'è\nfj' èd fj\nè' 'è è'è'"
+    },
+    {
+      "newKeys": [
+        "(",
+        "-"
+      ],
+      "text": "Les deux qui restent sont aux index, qui atteignent déjà plus de touches que n'importe quel autre doigt.",
+      "type": "block",
+      "content": "(-(-(- -(-(-(\n(- (-\nfj- (d fj"
+    },
+    {
+      "newKeys": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0"
+      ],
+      "text": "Les mêmes touches avec Maj : c'est là que se trouvent les chiffres sur ce clavier.",
+      "type": "block",
+      "content": "38 24 67 15 90\n09 65 21 87 34\n70 96 58 41 32"
+    },
+    {
+      "text": "Toute la rangée, en groupes. Ne baisse pas les yeux pour chercher.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jçè (d\" jç\n(' '( ('('\n'''' ççç éééé (((( èèèè \"\"\" àààà ___ ---- &&&&"
+    },
+    {
+      "seconds": 30,
+      "text": "Les dix, mélangés. On rate beaucoup ici au début ; c'est normal.",
+      "type": "burst",
+      "tokens": [
+        "&ç",
+        "\"\"",
+        "\"'",
+        "&&",
+        "é(",
+        "\"é",
+        "é_",
+        "&(",
+        "&\"",
+        "&-",
+        "&é",
+        "&à",
+        "é&",
+        "\"_"
+      ]
+    },
+    {
+      "text": "On revient aux mots un instant, pour que les mains se souviennent d'où elles habitent.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "plus père ville lui\nle envie mode précis\nplupart content tirs lisse"
+    },
+    {
+      "text": "Des phrases à nouveau, avec le clavier entier disponible.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Nous partons demain matin pour la campagne.\nIl lit une lettre devant la porte.\nIl fait très beau depuis le début de la semaine."
+    }
+  ]
+}

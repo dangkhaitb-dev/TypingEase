@@ -1,0 +1,115 @@
+{
+  "id": "u1-l02",
+  "unit": "u1",
+  "group": "start",
+  "order": 2,
+  "slug": "d-k",
+  "title": "E and T",
+  "summary": "Two new keys: E and T. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "e",
+    "t"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: E and T. They belong to your left middle finger and your right middle finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If E and T already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LM",
+      "text": "This key belongs to your left middle finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press E to continue"
+    },
+    {
+      "newKey": "e",
+      "text": "Only E and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "e e ee\neeee\neeee eeee"
+    },
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "RM",
+      "text": "This key belongs to your right middle finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press T to continue"
+    },
+    {
+      "newKey": "t",
+      "text": "Only T and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "eee ttt\netet tete\net et"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "ee",
+        "tett",
+        "ette",
+        "teee",
+        "eee",
+        "eett",
+        "tet",
+        "teet",
+        "etet",
+        "tee"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "etetet tetete\nueht huet\neuh t eu"
+    },
+    {
+      "text": "The two new keys once more. There are no words to write with them yet, and that is expected.",
+      "type": "block",
+      "content": "uth e ut\net te etet\nttt eeee"
+    },
+    {
+      "seconds": 25,
+      "text": "Slightly longer groups. Hurrying does not help yet.",
+      "type": "burst",
+      "tokens": [
+        "ett",
+        "eett",
+        "ettt",
+        "ete",
+        "tett",
+        "et",
+        "tttt",
+        "ttet",
+        "eeet",
+        "teet",
+        "eeee",
+        "ttt"
+      ]
+    },
+    {
+      "text": "Everything you have so far, in short groups. Eyes on the screen, not on your hands.",
+      "type": "block",
+      "content": "ute h ut\neh he eheh\nhhhh tttt uuuu eeee"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "et te etet\neeee ttt\netet tete"
+    },
+    {
+      "text": "One last round with everything learned up to here.",
+      "type": "block",
+      "content": "hue t hu\net te etet\ntttt eee uuuu hhh"
+    }
+  ]
+}

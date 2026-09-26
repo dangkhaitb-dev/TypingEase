@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "*, (, ) i _",
+  "summary": "W programie: *, (, ) i _.",
+  "newKeys": [
+    "*",
+    "(",
+    ")",
+    "_"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Klawisze, których kurs jeszcze nie używał: *, (, ) i _. Każdy z nich to Shift i klawisz, który twoje palce już znają — Shift małym palcem drugiej ręki.",
+  "congrats": "*, (, ) i _: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "Ten znak — * — naciska prawy palec środkowy, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij *, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Najpierw sam *, potem tam, gdzie naprawdę się go używa.",
+      "content": "** * *da* *obie* *kapitan*\n** * *zaczyna* *plik* *sfera*\n** * *kamyk* *lekcje* *szafa*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "Ten znak — ( — naciska prawy palec serdeczny, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij (, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Najpierw sam (, potem tam, gdzie naprawdę się go używa.",
+      "content": "(( ( (styl (bajki (punkt\n(( ( (samo (jaskier (system\n(( ( (filmy (licznik (zadanie"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RP",
+      "text": "Ten znak — ) — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij ), aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "Najpierw sam ), potem tam, gdzie naprawdę się go używa.",
+      "content": ")) ) (trasa) (nowe) (kierowca)\n)) ) (jajko) (tak) (brat)\n)) ) (kleje) (jajko) (turystka)"
+    },
+    {
+      "type": "intro",
+      "key": "_",
+      "finger": "RP",
+      "text": "Ten znak — _ — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij _, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "_",
+      "text": "Najpierw sam _, potem tam, gdzie naprawdę się go używa.",
+      "content": "__ _ ocean_mosty papier_rzeka ile_znam\n__ _ pomidor_makaron obraz_zaczyna rasa_winda\n__ _ haka_prace mimo_kasa sobota_wyraz"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Seria krótkich kawałków z tymi znakami.",
+      "tokens": [
+        "(blisko)",
+        "okienko_stoi",
+        "(gruszka)",
+        "(kawy)",
+        "kolega_one",
+        "*zadanie*",
+        "(jej)",
+        "*czeka*",
+        "*noc*",
+        "*trzy*"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Wszystko, co przyniosła ta lekcja, wymieszane.",
+      "content": "(nauki) (kasa) *myszka* *szpital*\n*obiad* (ekrany) list_pomidor (pisze)\nnic_czyta (jaskier) (fali) moda_licznik"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Znowu słowa, ze znakami na swoich miejscach.",
+      "content": "*brama* lody prawie_ile jaki (ogrody)\nsport_seria kreda (tematy) mamy *puste*\n*herbaty* rejs *osiem* zielone (flagi)"
+    }
+  ]
+}

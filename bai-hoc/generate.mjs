@@ -3,6 +3,7 @@
  * Chạy (từ thư mục gốc project):
  *   node bai-hoc/generate.mjs                → bai-hoc/index.html      (tiếng Việt)
  *   node bai-hoc/generate.mjs --lang en      → en/lessons/index.html   (tiếng Anh)
+ *   node bai-hoc/generate.mjs --course fr-bepo → fr/bepo/index.html   (một họ bàn phím khác)
  *
  * Vì sao cần script: trang lộ trình là trang CÓ giá trị SEO, nên tên từng bài phải nằm sẵn
  * trong HTML cho crawler đọc (PLAN.md B7). JS của trang chỉ phủ thêm tiến độ/sao/trạng thái.
@@ -18,117 +19,115 @@
  */
 import fs from 'node:fs';
 import path from 'node:path';
-import { fileURLToPath } from 'node:url';
+import { fileURLToPath, pathToFileURL } from 'node:url';
+import { HOME_SWITCH } from './home-switch.mjs';
+import { seoHead } from '../scripts/lib/seo-head.mjs';
+import { legalFooter } from '../scripts/lib/legal.mjs';
 
 const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
 
 const args = process.argv.slice(2);
-const lang = args.indexOf('--lang') >= 0 ? args[args.indexOf('--lang') + 1] : 'vi';
+const courseArg = args.indexOf('--course') >= 0 ? args[args.indexOf('--course') + 1] : null;
 
-const source = fs.readFileSync(path.join(root, 'data', `curriculum.${lang}.js`), 'utf8');
+// `--course fr-bepo`: trang lộ trình của MỘT HỌ không-mặc-định. Họ là gì, nằm ở URL nào, gọi là gì
+// — tất cả đọc từ data/languages.js (`courses`), cùng nguồn với trang đầu và build-course.js.
+const languages = (() => {
+  const scope = {};
+  new Function('window', fs.readFileSync(path.join(root, 'data', 'languages.js'), 'utf8'))(scope);
+  return scope.TypingEaseLanguages.list;
+})();
+const family = courseArg
+  ? languages.flatMap(entry => (entry.courses || []).map(item => ({ ...item, lang: entry.code })))
+    .find(item => item.id === courseArg)
+  : null;
+if (courseArg && !family) throw new Error(`không có khoá ${courseArg} trong data/languages.js`);
+if (family && family.id === family.lang) throw new Error(`${courseArg} là họ mặc định — chạy --lang ${family.lang}`);
+const lang = family ? family.lang
+  : args.indexOf('--lang') >= 0 ? args[args.indexOf('--lang') + 1] : 'vi';
+const code = family ? family.id : lang;
+// Ả Rập, Ba Tư, Urdu, Hebrew: trang lộ trình mang dir="rtl" (đọc từ data/languages.js).
+const pageDir = (languages.find(entry => entry.code === lang) || {}).dir || 'ltr';
+
+const source = fs.readFileSync(path.join(root, 'data', `curriculum.${code}.js`), 'utf8');
 const scope = { window: {} };
 new Function('window', source)(scope.window);
 const curriculum = scope.window.TypingEaseCurriculum;
-if (!curriculum) throw new Error(`data/curriculum.${lang}.js không gán window.TypingEaseCurriculum`);
+if (!curriculum) throw new Error(`data/curriculum.${code}.js không gán window.TypingEaseCurriculum`);
 if (curriculum.lang !== lang) throw new Error(`curriculum.lang = ${curriculum.lang}, đợi ${lang}`);
+if (family && curriculum.course !== code) throw new Error(`curriculum.course = ${curriculum.course}, đợi ${code}`);
 
 /* ---------- cấu hình theo ngôn ngữ ---------- */
-const CONFIG = {
-  vi: {
-    out: path.join(root, 'bai-hoc', 'index.html'),
-    url: 'https://typingease.site/bai-hoc/',
-    alt: 'https://typingease.site/en/lessons/',
-    curriculumScript: '/data/curriculum.vi.js',
-    ui: null,
-    routes: {
-      home: '/', lessons: '/bai-hoc/', learn: '/hoc/', test: '/kiem-tra-toc-do-go/',
-      progress: '/tien-do/', free: '/luyen-tu-do/', weak: '/luyen-phim-yeu/',
-      guide: '/cach-go-10-ngon/', wpm: '/cach-tang-wpm/'
-    },
-    s: {
-      title: c => `Lộ trình luyện gõ 10 ngón · ${c.sequence.length} bài | TypingEase`,
-      description: c => `Lộ trình luyện gõ 10 ngón đầy đủ: ${c.units.length} unit, ${c.sequence.length} bài từ hàng phím cơ sở đến tiếng Việt có dấu, số và ký hiệu. Xem tiến độ từng bài và học tiếp ngay.`,
-      nav: ['Luyện gõ', 'Lộ trình', 'Tiến độ', 'Kiểm tra tốc độ'],
-      navAria: 'Điều hướng chính',
-      enter: 'Vào học',
-      eyebrow: 'Giáo trình TypingEase',
-      h1: c => `Lộ trình gõ 10 ngón · ${c.sequence.length} bài · ${c.units.length} unit`,
-      intro: 'Từ hai phím có gờ nổi đến đoạn văn tiếng Việt có dấu. Mỗi bài dạy hai phím mới,\n          chia thành nhiều screen ngắn, xen kẽ drill và bài gõ nhanh — khoảng năm phút một bài.',
-      countDone: total => `Đã xong 0/${total} bài`,
-      cta: 'Bắt đầu Bài 1',
-      sideUnit: 'Unit', sideOther: 'Khác', sideAria: 'Danh sách unit',
-      otherLinks: r => [[r.weak, 'Luyện phím yếu'], [r.test, 'Kiểm tra tốc độ'], [r.free, 'Luyện tự do'], [r.progress, 'Tiến độ của bạn']],
-      unitKicker: n => `Unit ${n}`,
-      locked: 'Chưa mở',
-      unitScore: 'bài đã xong',
-      noteNone: 'Nội dung unit này đang được viết — bạn sẽ thấy bài mở dần.',
-      noteSome: (ready, total) => `Đã có nội dung cho ${ready}/${total} bài; phần còn lại đang được viết.`,
-      kind: { keys: '', review: 'Ôn tập', weak: 'Cá nhân hoá', test: 'Kiểm tra' },
-      lessonMeta: (n, meta, tag) => `Bài ${n} · ${meta}${tag ? ` · ${tag}` : ''}`,
-      seconds: n => `${n} giây`, screens: n => `${n} screen`, minutes: n => `${n}'`,
-      soon: 'Sắp có',
-      exploreEyebrow: 'Đọc thêm', exploreTitle: 'Trước khi bắt đầu',
-      explore: r => [
-        [r.guide, 'Cách gõ 10 ngón', 'Vị trí ngón tay trên hàng phím cơ sở, tư thế ngồi và những lỗi thường gặp của người mới.', 'Xem hướng dẫn'],
-        [r.wpm, 'Cách tăng WPM', 'Vì sao độ chính xác đi trước tốc độ, và cách luyện để WPM tăng mà không sinh tật.', 'Đọc tiếp'],
-        [r.test, 'Kiểm tra tốc độ gõ', 'Đo WPM và độ chính xác trong 15 · 30 · 60 · 120 giây để biết mình đang ở đâu.', 'Kiểm tra ngay']
-      ],
-      footerAria: 'Tài nguyên TypingEase',
-      footerLinks: r => [[r.lessons, 'Lộ trình'], [r.progress, 'Tiến độ'], [r.free, 'Luyện tự do'], [r.guide, 'Cách gõ 10 ngón']],
-      footerTag: 'Gõ chậm một chút, rồi bạn sẽ đi rất xa.',
-      switchLabel: 'EN', switchHref: '/en/lessons/', switchLang: 'en', switchTitle: 'English version'
-    }
-  },
-
-  en: {
-    out: path.join(root, 'en', 'lessons', 'index.html'),
-    url: 'https://typingease.site/en/lessons/',
-    alt: 'https://typingease.site/bai-hoc/',
-    curriculumScript: '/data/curriculum.en.js',
-    ui: '/i18n/ui.en.js',
-    routes: {
-      home: '/en/', lessons: '/en/lessons/', learn: '/en/learn/', test: '/en/typing-test/',
-      progress: '/en/progress/', free: '/en/practice/', weak: null,
-      guide: '/en/touch-typing/', wpm: '/en/how-to-type-faster/'
-    },
-    s: {
-      title: c => `Learn to type: the full ${c.sequence.length}-lesson course | TypingEase`,
-      description: c => `A complete free touch typing course: ${c.units.length} units, ${c.sequence.length} lessons from the home row to numbers, symbols and full paragraphs. Track every lesson and pick up where you left off.`,
-      nav: ['Practice', 'Course', 'Progress', 'Typing test'],
-      navAria: 'Main navigation',
-      enter: 'Start learning',
-      eyebrow: 'The TypingEase course',
-      h1: c => `Touch typing course · ${c.sequence.length} lessons · ${c.units.length} units`,
-      intro: 'From the two keys with a raised bump to full paragraphs at speed. Every lesson teaches\n          two new keys across a handful of short screens, alternating drills with timed bursts —\n          about five minutes each.',
-      countDone: total => `0/${total} lessons done`,
-      cta: 'Start lesson 1',
-      sideUnit: 'Units', sideOther: 'More', sideAria: 'Unit list',
-      otherLinks: r => [[r.test, 'Typing test'], [r.progress, 'Your progress']],
-      unitKicker: n => `Unit ${n}`,
-      locked: 'Locked',
-      unitScore: 'lessons done',
-      noteNone: 'This unit is still being written — lessons will open as they land.',
-      noteSome: (ready, total) => `${ready} of ${total} lessons are written; the rest are on the way.`,
-      kind: { keys: '', review: 'Review', weak: 'Personalised', test: 'Test' },
-      lessonMeta: (n, meta, tag) => `Lesson ${n} · ${meta}${tag ? ` · ${tag}` : ''}`,
-      seconds: n => `${n} seconds`, screens: n => `${n} screens`, minutes: n => `${n} min`,
-      soon: 'Coming soon',
-      exploreEyebrow: 'Before you start', exploreTitle: 'Worth knowing first',
-      explore: r => [
-        [r.learn, 'Start with the home row', 'Eight keys, eight fingers, and the habit of not looking down. The first unit is the one that decides the rest.', 'Open lesson 1'],
-        [r.test, 'Measure where you are', 'A timed test over 15, 30, 60 or 120 seconds, so the number you improve on is a real one.', 'Take the test']
-      ],
-      footerAria: 'TypingEase resources',
-      footerLinks: r => [[r.lessons, 'Course'], [r.progress, 'Progress'], [r.test, 'Typing test']],
-      footerTag: 'Go a little slower, and you will get a lot further.',
-      switchLabel: 'VI', switchHref: '/bai-hoc/', switchLang: 'vi', switchTitle: 'Bản tiếng Việt'
-    }
-  }
+// Mọi bản của TRANG LỘ TRÌNH, để dựng hreflang. Trước đây hai dòng hreflang được viết thẳng vào
+// template với điều kiện `lang === 'en' ? url : alt`, đúng khi chỉ có hai ngôn ngữ và im lặng sai
+// ngay khi có ngôn ngữ thứ ba: bản tiếng Tây Ban Nha sẽ tự khai mình là bản tiếng Việt.
+// x-default trỏ về bản tiếng Anh vì `/` là tiếng Anh.
+const ALTERNATES = {
+  vi: 'https://typingease.site/bai-hoc/',
+  en: 'https://typingease.site/en/lessons/',
+  es: 'https://typingease.site/es/lecciones/',
+  fr: 'https://typingease.site/fr/lecons/',
+  de: 'https://typingease.site/de/lektionen/',
+  it: 'https://typingease.site/it/lezioni/',
+  id: 'https://typingease.site/id/pelajaran/',
+  ms: 'https://typingease.site/ms/pelajaran/',
+  fil: 'https://typingease.site/fil/aralin/',
+  sw: 'https://typingease.site/sw/masomo/',
+  nl: 'https://typingease.site/nl/lessen/',
+  pl: 'https://typingease.site/pl/lekcje/',
+  pt: 'https://typingease.site/pt/licoes/',
+  tr: 'https://typingease.site/tr/dersler/',
+  ru: 'https://typingease.site/ru/uroki/',
+  uk: 'https://typingease.site/uk/uroky/',
+  ar: 'https://typingease.site/ar/durus/',
+  fa: 'https://typingease.site/fa/darsha/',
+  ur: 'https://typingease.site/ur/asbaq/',
+  he: 'https://typingease.site/he/shiurim/',
+  hi: 'https://typingease.site/hi/path/',
+  bn: 'https://typingease.site/bn/path/',
+  th: 'https://typingease.site/th/bot-rian/',
+  zh: 'https://typingease.site/zh/kecheng/',
+  'zh-TW': 'https://typingease.site/zh-tw/kecheng/',
+  ja: 'https://typingease.site/ja/renshu/',
+  ko: 'https://typingease.site/ko/gangui/'
 };
+const X_DEFAULT = ALTERNATES.en;
 
-const config = CONFIG[lang];
-if (!config) throw new Error(`chưa có cấu hình cho --lang ${lang}`);
+// Cau hinh cua tung ngon ngu song trong bai-hoc/config.<lang>.mjs. Truoc day chung nam chung
+// trong mot object CONFIG o day; tach ra vi them mot ngon ngu khong nen la sua mot file ma moi
+// ngon ngu khac cung dung.
+const configFile = path.join(here, `config.${lang}.mjs`);
+if (!fs.existsSync(configFile)) {
+  throw new Error(`chua co cau hinh cho --lang ${lang} (can ${path.relative(root, configFile).split(path.sep).join('/')})`);
+}
+const baseConfig = (await import(pathToFileURL(configFile).href)).default;
+if (!baseConfig) throw new Error(`chưa có cấu hình cho --lang ${lang}`);
+
+// Một họ dùng lại toàn bộ cấu hình của ngôn ngữ, chỉ đổi những gì thuộc về KHOÁ: đường dẫn ra,
+// URL, chỉ mục nạp vào, hai route lộ trình/player, và ba câu có tên bàn phím (`s.family`). Không
+// hreflang: /fr/bepo/ và /fr/lecons/ cùng một ngôn ngữ, không phải bản dịch của nhau.
+function familyConfig(config) {
+  if (!family) return config;
+  if (!config.s.family) throw new Error(`bai-hoc/config.${lang}.mjs thiếu s.family cho trang ${code}`);
+  const F = config.s.family;
+  return {
+    ...config,
+    out: path.join(root, ...family.roadmap.split('/').filter(Boolean), 'index.html'),
+    url: `https://typingease.site${family.roadmap}`,
+    curriculumScript: `/data/curriculum.${code}.js`,
+    alternates: false,
+    // Trang tiến độ dùng chung cho mọi khoá của ngôn ngữ; `?course=` chọn kho tiến độ của họ này.
+    routes: { ...config.routes, lessons: family.roadmap, learn: family.href,
+      progress: config.routes.progress && `${config.routes.progress}?course=${code}` },
+    s: {
+      ...config.s,
+      title: c => F.title(c, family),
+      description: c => F.description(c, family),
+      h1: c => F.h1(c, family)
+    }
+  };
+}
+const config = familyConfig(baseConfig);
 const { s: S, routes: R } = config;
 
 const esc = value => String(value)
@@ -192,7 +191,24 @@ const sideLinks = curriculum.units.map(unit => {
     + `<em data-side-count="${esc(unit.id)}">0/${ids.length}</em></a></li>`;
 }).join('');
 
+// Mot o "Trang chu" ve `/` — trang chon ngon ngu va ban phim — thay cho day o doi ngon ngu
+// (EN, VI, ES…). Voi muoi ngon ngu, day o ay dai ra ma van khong tra loi duoc "doi sang cai nao";
+// trang `/` tra loi duoc. `s.switches` trong config.<lang>.mjs khong con duoc dung.
+const [homeLabel, homeTitle] = HOME_SWITCH[lang] || HOME_SWITCH.en;
+const switchLinks = `<a class="home-switch" href="/" title="${esc(homeTitle)}">${esc(homeLabel)}</a>`;
+
+const alternateLinks = config.alternates === false ? '' : [
+  ...Object.entries(ALTERNATES).map(([code, href]) => `<link rel="alternate" hreflang="${code}" href="${href}" />`),
+  `<link rel="alternate" hreflang="x-default" href="${X_DEFAULT}" />`
+].join('\n    ');
+
 const totalLessons = curriculum.sequence.length;
+// Nav di theo cung luat voi otherLinks/explore: route null thi khong in lien ket. Chan trang khong con hang
+// lien ket lo trinh/bai hoc (2026-09-26): o giua chan trang la dong phap ly (scripts/lib/legal.mjs).
+// Ban tieng Anh chua co trang tien do va trang kiem tra toc do, nen nav cua no chi con hai muc.
+const navLinks = S.nav(R).filter(([href]) => href)
+  .map(([href, label]) => `<a${href === R.lessons ? ' class="active"' : ''} href="${href}">${esc(label)}</a>`)
+  .join('\n        ');
 const otherLinks = S.otherLinks(R).filter(([href]) => href)
   .map(([href, label]) => `<li><a href="${href}">${esc(label)}</a></li>`).join('\n            ');
 const exploreCards = S.explore(R).filter(([href]) => href).map(([href, title, body, action]) =>
@@ -201,20 +217,18 @@ const exploreCards = S.explore(R).filter(([href]) => href).map(([href, title, bo
             <p>${esc(body)}</p>
             <span>${esc(action)} <b aria-hidden="true">→</b></span>
           </a>`).join('\n          ');
-const footerLinks = S.footerLinks(R).filter(([href]) => href)
-  .map(([href, label]) => `<a href="${href}">${esc(label)}</a>`).join('');
 
 const html = `<!doctype html>
-<html lang="${lang}">
+<html lang="${lang.replace(/-([a-z]+)$/, (dash, region) => `-${region.toUpperCase()}`)}"${pageDir === 'rtl' ? ' dir="rtl"' : ''}${family ? ` data-course="${code}"` : ''}>
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>${esc(S.title(curriculum))}</title>
     <meta name="description" content="${esc(S.description(curriculum))}" />
     <link rel="canonical" href="${config.url}" />
-    <link rel="alternate" hreflang="vi" href="${lang === 'vi' ? config.url : config.alt}" />
-    <link rel="alternate" hreflang="en" href="${lang === 'en' ? config.url : config.alt}" />
-    <link rel="alternate" hreflang="x-default" href="${lang === 'en' ? config.url : config.alt}" />
+${seoHead({ kind: 'course', url: new URL(config.url).pathname, title: S.title(curriculum), description: S.description(curriculum),
+  lang: lang.replace(/-([a-z]+)$/, (dash, region) => `-${region.toUpperCase()}`) })}
+    ${alternateLinks}
     <meta name="robots" content="index, follow" />
     <link rel="icon" href="/favicon.ico" sizes="any" />
     <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
@@ -227,19 +241,16 @@ const html = `<!doctype html>
     <link rel="stylesheet" href="/tokens.css" />
     <link rel="stylesheet" href="/base.css" />
     <link rel="stylesheet" href="/bai-hoc/curriculum.css" />
-    <!-- Danh sách bài dưới đây được sinh bằng bai-hoc/generate.mjs từ data/curriculum.${lang}.js.
-         Sửa nội dung ở curriculum.${lang}.js rồi chạy lại script, đừng sửa tay hai chỗ. -->
+    <!-- Danh sách bài dưới đây được sinh bằng bai-hoc/generate.mjs từ data/curriculum.${code}.js.
+         Sửa nội dung ở curriculum.${code}.js rồi chạy lại script, đừng sửa tay hai chỗ. -->
   </head>
   <body class="curriculum-page">
     <header class="topbar">
-      <a class="brand" href="${R.home}">Typing<span>Ease</span></a>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
       <nav aria-label="${esc(S.navAria)}">
-        <a href="${R.home}">${esc(S.nav[0])}</a>
-        <a class="active" href="${R.lessons}">${esc(S.nav[1])}</a>
-        <a href="${R.progress}">${esc(S.nav[2])}</a>
-        <a href="${R.test}">${esc(S.nav[3])}</a>
+        ${navLinks}
       </nav>
-      <div class="header-actions"><a class="lang-switch" hreflang="${S.switchLang}" lang="${S.switchLang}" href="${S.switchHref}" title="${esc(S.switchTitle)}">${esc(S.switchLabel)}</a><a class="secondary-button" href="${R.learn}">${esc(S.enter)} <span>→</span></a></div>
+      <div class="header-actions">${switchLinks}<a class="secondary-button" href="${R.learn}">${esc(S.enter)} <span>${pageDir === 'rtl' ? '←' : '→'}</span></a></div>
     </header>
 
     <main class="curriculum">
@@ -281,17 +292,16 @@ ${curriculum.units.map(unitCard).join('\n')}
     </main>
 
     <footer>
-      <a class="brand" href="${R.home}">Typing<span>Ease</span></a>
-      <nav class="footer-links" aria-label="${esc(S.footerAria)}">
-        ${footerLinks}
-      </nav>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
       <p>${esc(S.footerTag)}</p>
       <span>© 2024 TypingEase</span>
+      ${legalFooter(lang)}
     </footer>
 ${config.ui ? `\n    <script src="${config.ui}"></script>` : ''}
     <script src="${config.curriculumScript}"></script>
     <script src="/progress-store.js"></script>
     <script src="/bai-hoc/curriculum-page.js"></script>
+    <script src="/menu.js" defer></script>
     <script src="/sw-register.js"></script>
   </body>
 </html>

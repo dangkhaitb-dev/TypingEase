@@ -1,0 +1,164 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "%, &, ukośnik i (",
+  "summary": "W programie: %, &, ukośnik i (.",
+  "newKeys": [
+    "%",
+    "&",
+    "/",
+    "("
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ł",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ą",
+    "shift",
+    "enter",
+    "ę",
+    ";",
+    ":",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "+",
+    "'",
+    "ż",
+    "ś",
+    "ó",
+    "!",
+    "\"",
+    "#",
+    "$",
+    "%",
+    "&",
+    "/",
+    "("
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Klawisze, których kurs jeszcze nie używał: %, &, ukośnik i (. Każdy z nich to Shift i klawisz, który twoje palce już znają — Shift małym palcem drugiej ręki.",
+  "congrats": "%, &, ukośnik i (: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "Ten znak — % — naciska lewy palec wskazujący, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij %, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Najpierw sam %, potem tam, gdzie naprawdę się go używa.",
+      "content": "%% % 51% 82% 18%\n%% % 85% 41% 96%\n%% % 51% 47% 16%"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "Ten znak — & — naciska prawy palec wskazujący, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij &, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "Najpierw sam &, potem tam, gdzie naprawdę się go używa.",
+      "content": "&& & prawda & czyste wiatrak & flaga gwiazdy & wiosny\n&& & wiek & suchy kłopot & drewno dwa & globus\n&& & wy & jajek ściany & północ dworzec & biegnie"
+    },
+    {
+      "type": "intro",
+      "key": "/",
+      "finger": "RI",
+      "text": "Ten znak — ukośnik — naciska prawy palec wskazujący, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij /, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "/",
+      "text": "Najpierw sam ukośnik, potem tam, gdzie naprawdę się go używa.",
+      "content": "// / idee/słowa mysz/macie rysuje/szuka\n// / wiersz/było twoje/tata chmura/święto\n// / papier/kurier stacja/dał ekran/trudne"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RM",
+      "text": "Ten znak — ( — naciska prawy palec środkowy, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij (, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Najpierw sam (, potem tam, gdzie naprawdę się go używa.",
+      "content": "(( ( (takie (szkoły (kurtka\n(( ( (szkła (list (kolorowy\n(( ( (półka (kamyk (noga"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Seria krótkich kawałków z tymi znakami.",
+      "tokens": [
+        "zna&tak",
+        "(robi",
+        "(jeden",
+        "proszę&zabawa",
+        "herb&fałda",
+        "nisko&warzywa",
+        "9%",
+        "rzeki&bo",
+        "łatwy&nauki",
+        "5%"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Wszystko, co przyniosła ta lekcja, wymieszane.",
+      "content": "chcę & towar 35% (pół 57%\nszara/prawda 12% 97% nowe/jajek\n20% (punkt (klasa (ciasno"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Znowu słowa, ze znakami na swoich miejscach.",
+      "content": "nasz/rzeki kury (gitara moda (noc\npomoc/drogo pory (ciocia dobre 14%\n(zdania zdrowy mokra & mecz program obiady/wino"
+    }
+  ]
+}

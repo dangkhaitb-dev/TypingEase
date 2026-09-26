@@ -1,0 +1,135 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Maj et Entrée",
+  "summary": "Les majuscules avec l'auriculaire opposé, le retour à la ligne, et le point.",
+  "newKeys": [
+    "shift",
+    "enter",
+    "."
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v",
+    "a",
+    "p",
+    "b",
+    "x",
+    "w",
+    ":",
+    ";",
+    "ù",
+    "shift",
+    "enter",
+    "."
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Jusqu'ici tout s'est écrit en minuscules. Maj change ça, et il y a une règle à prendre dès le début : c'est l'auriculaire de la main opposée à la lettre qui l'enfonce. Avec l'auriculaire du même côté, la main se tord et tu finis par regarder le clavier. Sur ce clavier, Maj donne aussi le point, qui n'a pas de touche à lui.",
+  "congrats": "Avec Maj, Entrée et le point, tu peux écrire un texte entier comme il s'écrit en dehors d'ici.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Les majuscules se font avec l'auriculaire de la main opposée à la lettre. Maintiens Maj, frappe la lettre, relâche. Jamais avec l'auriculaire qui écrit.",
+      "hint": "Maintiens Maj et frappe une lettre pour continuer"
+    },
+    {
+      "newKey": "shift",
+      "text": "Majuscules et minuscules en alternance. L'auriculaire descend et remonte ; l'autre main ne bouge pas.",
+      "type": "block",
+      "content": "Ùù Pp Jj Ww\nIi Zz Dd Aa\nMm Uu Rr Kk\nHh Xx Nn Ff"
+    },
+    {
+      "text": "Des mots avec une majuscule au début, comme les noms propres.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "encore si bases limes\ntires ski beau sel\nmodes appel titres besoins"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Entrée revient à l'auriculaire droit, à droite de la rangée de repos. C'est la plus grande touche que ce doigt ait à atteindre.",
+      "hint": "Appuie sur Entrée pour continuer"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Une ligne, Entrée, une autre ligne. L'auriculaire sort et revient sans emmener la main.",
+      "type": "block",
+      "content": "Marie\nRennes\nSophie\nOlivier\nJulie\nLucas"
+    },
+    {
+      "newKeys": [
+        "."
+      ],
+      "text": "Maj donne aussi .. Sur ce clavier, le point est Maj + la touche du point-virgule — il n'a pas de touche à lui.",
+      "type": "block",
+      "content": "notre. donc. lutte. soi.\ngel. telle. ifs. bruits.\ndure. contes. villes. vins."
+    },
+    {
+      "text": "Des phrases avec majuscule au début et point à la fin. Ça commence à ressembler à écrire pour de vrai.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Nous partons demain matin pour la campagne.\nLa petite fille joue dans le jardin.\nNous parlons de ce projet depuis longtemps."
+    },
+    {
+      "seconds": 25,
+      "text": "Une série pour fixer ce que fait cette leçon.",
+      "type": "burst",
+      "tokens": [
+        "appel",
+        "site",
+        "kiwis",
+        "dites",
+        "wagon",
+        "gestes",
+        "petits",
+        "sotte",
+        "dures",
+        "travaux",
+        "if",
+        "tous"
+      ]
+    },
+    {
+      "text": "Cinq par ligne, avec l'auriculaire qui travaille dans les deux sens.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ensuite ski taxis bord motif\ndur grande suites prendre nuit\nhisses notre bureaux sud salles"
+    },
+    {
+      "text": "Pour finir, des phrases entières. Maj, lettre, relâche — sans s'arrêter pour y penser.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Nous avons besoin de deux personnes de plus.\nIl lit une lettre devant la porte.\nLe livre que je cherche est sur la table."
+    }
+  ]
+}

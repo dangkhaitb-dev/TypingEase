@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "P and L",
+  "summary": "Two new keys: P and L. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "p",
+    "l"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "d",
+    "h",
+    "f",
+    "u",
+    "p",
+    "l"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: P and L. They belong to your left index finger and your right index finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If P and L already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press P to continue"
+    },
+    {
+      "newKey": "p",
+      "text": "Only P and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "tnp s tn\np p pp\nppp"
+    },
+    {
+      "type": "intro",
+      "key": "l",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press L to continue"
+    },
+    {
+      "newKey": "l",
+      "text": "Only L and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "lp lp\npnl ts pn\npl lp plpl"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "ppl",
+        "plpl",
+        "ppp",
+        "pllp",
+        "lpl",
+        "pp",
+        "lllp",
+        "lppl",
+        "ppll",
+        "lpll"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "tp pt tptp\npppp nnnn tttt lll\nplpl lplp"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "last hold sales shelf\nplans soil parts ruler\nsold slides old latest"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "photo",
+        "lands",
+        "us",
+        "popular",
+        "food",
+        "latest",
+        "happen",
+        "road",
+        "so",
+        "ha"
+      ]
+    },
+    {
+      "text": "Now the weight is on P, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "nine fail sail enter\nplants air line into\ntool shop shut hopes"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ppp llll\nplplpl lplplp\nlp lp"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dad rest sure ideal\nrulers trains trade ale\nperiod hall sun refuse"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Ulangan",
+  "summary": "Tidak ada tombol baru. Semua yang sebelumnya, lebih rapat dan lebih cepat.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Pelajaran ini tidak mengajarkan hal baru. Saatnya memastikan yang sebelumnya keluar tanpa dipikir, dan itu berbeda dengan tahu letak setiap tombol.",
+  "congrats": "Tidak ada yang baru, tetapi lebih cepat. Memang itu yang seharusnya terjadi.",
+  "screens": [
+    {
+      "text": "Untuk mulai, kata-kata lepas. Tidak usah buru-buru: kecepatan datang dari ketepatan, tidak pernah sebaliknya.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sekolah di aktivitas kenal\nversi mana tolak teman\nwujud fiskal keladi diam"
+    },
+    {
+      "seconds": 25,
+      "text": "Rentetan pendek. Selesaikan daftarnya meskipun ada yang terlewat.",
+      "type": "burst",
+      "tokens": [
+        "hari",
+        "mainan",
+        "hutan",
+        "roda",
+        "waduk",
+        "daun",
+        "ia",
+        "mau",
+        "rumah",
+        "jiwa",
+        "kata",
+        "tulis"
+      ]
+    },
+    {
+      "text": "Lima kata per baris. Biarkan mata berjalan di depan jari.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lada adakah khas kunci kursi\nsuka dulu usia selalu minuman\nkalah tugas nyata semut dan"
+    },
+    {
+      "text": "Pola lagi, untuk memastikan jari masih kembali ke baris dasar.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Kata-kata pendek, dengan irama yang baik. Yang ini seharusnya sudah keluar hampir dengan sendirinya.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tiga macam cucu danau\nrumah agar awet tokoh\nkamar semut warga lekat"
+    },
+    {
+      "seconds": 30,
+      "text": "Lebih lama dan lebih banyak kata. Jaga irama yang sama dari awal sampai akhir.",
+      "type": "burst",
+      "tokens": [
+        "dari",
+        "kala",
+        "agar",
+        "wortel",
+        "itu",
+        "hitung",
+        "awas",
+        "dasar",
+        "teguran",
+        "atau",
+        "hanya",
+        "aturan",
+        "keluarga",
+        "kuning"
+      ]
+    },
+    {
+      "text": "Kalimat utuh. Di sini terlihat apakah tangan kembali ke tempatnya sendiri.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "kucing itu tidur di atas meja kayu\ndia menulis surat untuk teman lamanya\nhari ini cuaca cerah dan angin terasa sejuk"
+    },
+    {
+      "text": "Putaran terakhir. Kalau kamu sampai di sini tanpa melihat papan ketik, pelajaran ini selesai.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "cinta gelora kenal lekat ketua\nmadu dengan usaha masih saja\ncara dekat selamat minggu dahulu"
+    }
+  ]
+}

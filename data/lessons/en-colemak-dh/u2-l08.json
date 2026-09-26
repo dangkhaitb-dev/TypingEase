@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "X, period, comma and apostrophe",
+  "summary": "Two new keys: X, period, comma and apostrophe. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "x",
+    ".",
+    ",",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "g",
+    "m",
+    "f",
+    "u",
+    "p",
+    "l",
+    "b",
+    "j",
+    "y",
+    "w",
+    "d",
+    "k",
+    "h",
+    "v",
+    "q",
+    ";",
+    "z",
+    "c",
+    "x",
+    ".",
+    ",",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: X, period, comma and apostrophe. They belong to your left little finger, your right ring finger, your right middle finger and your right little finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If X, period, comma and apostrophe already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LP",
+      "text": "This key belongs to your left little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press X to continue"
+    },
+    {
+      "newKey": "x",
+      "text": "Only X and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "x x\nstn x st\nx x xx"
+    },
+    {
+      "type": "intro",
+      "key": ".",
+      "finger": "RR",
+      "text": "This key belongs to your right ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press . to continue"
+    },
+    {
+      "newKey": ".",
+      "text": "Only . and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": ".x .x\n.xt sn .x\nx. .x x.x."
+    },
+    {
+      "type": "intro",
+      "key": ",",
+      "finger": "RM",
+      "text": "This key belongs to your right middle finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press , to continue"
+    },
+    {
+      "newKey": ",",
+      "text": "Only , and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "x,. .x,\n.,n txs .,\nx. .x x.x."
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RP",
+      "text": "This key belongs to your right little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press ' to continue"
+    },
+    {
+      "newKey": "'",
+      "text": "Only ' and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "t.n ,'s t.\n'. .' '.'.\n''' ,,, xxxx ..."
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "x'",
+        "x.",
+        ",,",
+        ".,",
+        "''",
+        ",'",
+        "xx",
+        "',",
+        "..",
+        "x,"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "x.x.x. .x.x.x\nx'n.t, t'x,n.\nrx' .sn rx"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "don't relax maximum exercise\nthey're you're express experience\nthat's there's examine i'm"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "fair",
+        "earl",
+        "hasn't",
+        "alas",
+        "beside",
+        "poor",
+        "rural",
+        "corner",
+        "feels",
+        "talks"
+      ]
+    },
+    {
+      "text": "Now the weight is on X, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "quick boat gold change\ngreen file march guides\nheld maximum grease silver"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": ",,,, xxx ''' ...\nx.x.x. .x.x.x\n,x'. ,x'."
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "longer rich wind up\nnatural birth cloud window\ngives may produce cat"
+    }
+  ]
+}

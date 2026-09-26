@@ -20,8 +20,11 @@ export const DEFAULTS = Object.freeze({
   leftHandOnly: false,
   animatedHands: true,
   letterCase: 'uppercase',
+  // 'auto' = theo bố cục (AZERTY, QWERTZ… vẽ 105 phím; US vẽ 104). Xem shapedLayout() ở keyboard.js.
+  keyboardShape: 'auto',
   keyboardId: 1
 });
+const SHAPES = ['auto', 'ansi', 'iso'];
 
 // Day la ES module nen no doc `globalThis`, khong phai bien cuc bo cua IIFE. `i18n/ui.<lang>.js`
 // la script thuong va script thuong luon chay TRUOC module co defer, nen thu tu an toan — nhung
@@ -36,6 +39,10 @@ const LABELS_VI = {
   letterCase: 'Kiểu chữ trên phím',
   uppercase: 'IN HOA',
   lowercase: 'in thường',
+  keyboardShape: 'Kiểu bàn phím',
+  shapeAuto: 'Theo bố cục',
+  shapeAnsi: '104 phím (Shift trái dài)',
+  shapeIso: '105 phím (có phím cạnh Shift trái)',
   layout: 'Bố cục bàn phím',
   save: 'Lưu',
   cancel: 'Huỷ',
@@ -70,6 +77,7 @@ export function normalizedPreferences(source = {}) {
     leftHandOnly: 'leftHandOnly' in source ? Boolean(source.leftHandOnly) : DEFAULTS.leftHandOnly,
     animatedHands: 'animatedHands' in source ? Boolean(source.animatedHands) : DEFAULTS.animatedHands,
     letterCase: source.letterCase === 'lowercase' ? 'lowercase' : 'uppercase',
+    keyboardShape: SHAPES.includes(source.keyboardShape) ? source.keyboardShape : DEFAULTS.keyboardShape,
     keyboardId: Number.isFinite(Number(source.keyboardId)) ? Number(source.keyboardId) : DEFAULTS.keyboardId
   };
   // Hai công tắc một-tay loại trừ nhau; bản ghi hỏng không được phép bật cả hai.
@@ -77,11 +85,44 @@ export function normalizedPreferences(source = {}) {
   return next;
 }
 
+// Bo cuc MA KHOA HOC NAY DAY, khi nguoi dung chua tu chon gi. `DEFAULTS.keyboardId` la 1
+// (US Standard) va dung cho khoa tieng Anh lan tieng Viet — ca hai day tren US QWERTY. Nhung
+// giao trinh tieng Tay Ban Nha sinh ra tu bo cuc 175: bai 4 cua no day chu `n` co dau ngã, va
+// phim do khong ton tai tren bo cuc 1. De nguyen thi bai hoc bao bam mot phim ma ban phim tren
+// man hinh khong co.
+// Lua chon da luu van thang: doi ban phim trong Cai dat la mot quyet dinh co y thuc, va khoa
+// hoc khong duoc quyen ghi de len no o lan vao bai sau.
+function curriculumKeyboardId() {
+  const value = Number(globalThis.TypingEaseCurriculum?.keyboardId);
+  return Number.isFinite(value) && value > 0 ? value : null;
+}
+
+// Ca HO bo cuc ma khoa nay dung duoc (data/curriculum.*.js → `layouts`): nhung bo cuc giai ra
+// cung mot chuoi phim. Lua chon da luu van thang — NHUNG CHI TRONG HO. Truoc day nguoi da chon
+// AZERTY vao khoa BEPO se thay ban phim AZERTY trong khi bai day vi tri BEPO; nguoi da chon bo
+// cuc "Vietnamese" go dau truc tiep vao khoa Telex se thay mot ban phim ma khoa khong day. Lua
+// chon ngoai ho khong bi xoa: no van dung o khoa cua chinh no, chi khong duoc ve o day.
+function curriculumLayouts() {
+  const list = globalThis.TypingEaseCurriculum?.layouts;
+  if (!Array.isArray(list) || !list.length) return null;
+  const ids = list.map(Number).filter(value => Number.isFinite(value) && value > 0);
+  return ids.length ? ids : null;
+}
+
 export function loadKeyboardPreferences() {
   const saved = stored();
-  if (saved) return normalizedPreferences(saved);
+  if (saved) {
+    const value = normalizedPreferences(saved);
+    const family = curriculumLayouts();
+    if (family && !family.includes(value.keyboardId)) {
+      return { ...value, keyboardId: curriculumKeyboardId() || family[0] };
+    }
+    return value;
+  }
+  const keyboardId = curriculumKeyboardId();
+  const base = keyboardId ? { keyboardId } : {};
   const legacy = legacyAnimatedHands();
-  return legacy === null ? { ...DEFAULTS } : normalizedPreferences({ animatedHands: legacy });
+  return normalizedPreferences(legacy === null ? base : { ...base, animatedHands: legacy });
 }
 
 export function saveKeyboardPreferences(next) {
@@ -168,8 +209,12 @@ export function openKeyboardSettings({ root = document.body, layouts = [], onSav
     toggleRow(LABELS.animatedHands, 'kb-animated-hands', 'animated_hands', current.animatedHands),
     selectRow(LABELS.letterCase, 'kb-letter-case', 'keyboard_letter_case',
       [{ value: 'uppercase', label: LABELS.uppercase }, { value: 'lowercase', label: LABELS.lowercase }], current.letterCase),
+    selectRow(LABELS.keyboardShape, 'kb-shape', 'keyboard_shape',
+      [{ value: 'auto', label: LABELS.shapeAuto }, { value: 'ansi', label: LABELS.shapeAnsi }, { value: 'iso', label: LABELS.shapeIso }], current.keyboardShape),
+    // Trong mot khoa hoc, chi nhung bo cuc cua ho khoa do — xem curriculumLayouts().
     selectRow(LABELS.layout, 'kb-layout', 'keyboard_id',
       layouts.filter(layout => layout.type !== 'keypad')
+        .filter(layout => !curriculumLayouts() || curriculumLayouts().includes(Number(layout.keyboard_id)))
         .map(layout => ({ value: layout.keyboard_id, label: layout.name })), current.keyboardId)
   );
 
@@ -235,6 +280,7 @@ export function openKeyboardSettings({ root = document.body, layouts = [], onSav
       leftHandOnly: form.elements.left_hand_only.checked,
       animatedHands: form.elements.animated_hands.checked,
       letterCase: form.elements.keyboard_letter_case.value,
+      keyboardShape: form.elements.keyboard_shape?.value,
       keyboardId: Number(form.elements.keyboard_id?.value) || DEFAULTS.keyboardId
     });
     form.elements.right_hand_only.checked = next.rightHandOnly;

@@ -1,0 +1,219 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "Accenti e numeri",
+  "summary": "La riga dei numeri, su due livelli: è, é, à e ç senza Shift, i numeri con Shift.",
+  "newKeys": [
+    "&",
+    "\"",
+    "'",
+    "(",
+    "ç",
+    "è",
+    ")",
+    "£",
+    "à",
+    "é",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "m",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "z",
+    "c",
+    "n",
+    ",",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "w",
+    ":",
+    ";",
+    "ù",
+    "shift",
+    "enter",
+    ".",
+    "&",
+    "\"",
+    "'",
+    "(",
+    "ç",
+    "è",
+    ")",
+    "£",
+    "à",
+    "é",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Sul Mac italiano la riga dei numeri ha due livelli: senza Shift dà è, é, à e ç, con Shift i numeri. È qui che arriva è, probabilmente la parola più frequente dell’italiano scritto — ed è la riga dove si sbaglia di più in tutto il corso.",
+  "congrats": "Adesso è, perché e città si scrivono per intero. La riga dei numeri è quella che costa di più: torna a questa lezione ogni tanto.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "LP",
+      "text": "La riga dei numeri ha due livelli: senza Shift è, é, à e ç, con Shift i numeri. Ogni dito sale in linea retta e scende allo stesso modo.",
+      "hint": "Premi & per continuare"
+    },
+    {
+      "newKeys": [
+        "&",
+        "é"
+      ],
+      "text": "I tasti & e é si premono con il mignolo sinistro e con lo stesso dito dell'altra mano. Sali, premi e torna alla riga di riposo.",
+      "type": "block",
+      "content": "é& &é é&é&\nééé &&&&\n&é&é&é é&é&é&"
+    },
+    {
+      "newKeys": [
+        "\"",
+        "à"
+      ],
+      "text": "I tasti \" e à si premono con l'anulare sinistro e con lo stesso dito dell'altra mano. Sali, premi e torna alla riga di riposo.",
+      "type": "block",
+      "content": "df\" àj df\n\"à à\" \"à\"à\n\"\"\" àààà"
+    },
+    {
+      "seconds": 20,
+      "text": "Una raffica corta con i numeri che hai imparato.",
+      "type": "burst",
+      "tokens": [
+        "éé",
+        "àé",
+        "é\"",
+        "&é",
+        "à&",
+        "\"é",
+        "\"\"",
+        "\"à",
+        "é&",
+        "éà"
+      ]
+    },
+    {
+      "newKeys": [
+        "'",
+        "£"
+      ],
+      "text": "I tasti ' e £ si premono con il medio sinistro e con lo stesso dito dell'altra mano. Sali, premi e torna alla riga di riposo.",
+      "type": "block",
+      "content": "'£'£'£ £'£'£'\n£' '£\nd£' jf d£"
+    },
+    {
+      "newKeys": [
+        "(",
+        ")"
+      ],
+      "text": "I tasti ( e ) si premono con l'indice sinistro e con lo stesso dito dell'altra mano. Sali, premi e torna alla riga di riposo.",
+      "type": "block",
+      "content": "() ()\nfj( )d fj\n)( () )()("
+    },
+    {
+      "newKeys": [
+        "ç",
+        "è"
+      ],
+      "text": "I due che restano sono degli indici, che ormai raggiungono più tasti di ogni altro dito.",
+      "type": "block",
+      "content": "çèçèçè èçèçèç\nçè çè\nfjè çd fj"
+    },
+    {
+      "newKeys": [
+        "1",
+        "2",
+        "3",
+        "4",
+        "5",
+        "6",
+        "7",
+        "8",
+        "9",
+        "0"
+      ],
+      "text": "Gli stessi tasti con Shift: è lì che stanno i numeri su questa tastiera.",
+      "type": "block",
+      "content": "38 24 67 15 90\n09 65 21 87 34\n70 96 58 41 32"
+    },
+    {
+      "text": "Tutta la riga, in gruppi. Non abbassare lo sguardo per cercare il 6.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jà) çd' jà\nç( (ç ç(ç(\n(((( ààà \"\"\"\" çççç )))) ''' éééé £££ èèèè &&&&"
+    },
+    {
+      "seconds": 30,
+      "text": "Tutti e dieci, mescolati. All'inizio qui si sbaglia molto; è normale.",
+      "type": "burst",
+      "tokens": [
+        "&à",
+        "''",
+        "'(",
+        "&&",
+        "\"ç",
+        "'\"",
+        "\"£",
+        "&ç",
+        "&'",
+        "&è",
+        "&\"",
+        "&é",
+        "\"&",
+        "'£"
+      ]
+    },
+    {
+      "text": "Torniamo un momento alle parole, perché le mani si ricordino dove abitano.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "amici alzare musica fiera\nla voce riso dell'acqua\npaese canta tesi tutti"
+    },
+    {
+      "text": "Di nuovo frasi, ormai con tutta la tastiera a disposizione.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "La mia casa ha una finestra molto grande.\nIl gatto dorme sul divano.\nIl cane corre nel giardino dietro casa."
+    }
+  ]
+}

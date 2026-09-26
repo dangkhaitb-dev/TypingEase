@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift dan Enter",
+  "summary": "Huruf kapital dengan kelingking seberang, dan pindah baris.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Sampai sini semuanya ditulis dengan huruf kecil. Shift mengubahnya, dan ada satu aturan yang sebaiknya dipelajari dengan benar sejak awal: Shift ditekan kelingking tangan yang berlawanan dengan hurufnya. Dengan kelingking di sisi yang sama, tangan akan terpelintir dan akhirnya kamu melihat papan ketik.",
+  "congrats": "Dengan Shift dan Enter kamu bisa menulis teks utuh persis seperti menulis di luar sini.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Huruf kapital dibuat dengan kelingking tangan yang berlawanan dengan hurufnya. Tahan Shift, tekan hurufnya, lepaskan. Jangan pernah dengan kelingking yang sedang mengetik.",
+      "hint": "Tahan Shift dan tekan satu huruf untuk lanjut"
+    },
+    {
+      "newKey": "shift",
+      "text": "Huruf kapital dan huruf kecil bergantian. Kelingking turun dan naik; tangan yang lain tidak berpindah.",
+      "type": "block",
+      "content": "Pp Jj Zz Ee\nCc Dd Qq Gg\nTt Uu Kk Rr\nXx Mm Ff Bb"
+    },
+    {
+      "text": "Kata dengan huruf kapital di depan, seperti nama orang.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lancar jas bahasa sedih\ntugas saksi bola haluan\ntokoh pasti tiga sebentar"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter milik kelingking kanan, di sebelah kanan baris dasar. Ini tombol terbesar yang harus dijangkau jari itu.",
+      "hint": "Tekan Enter untuk lanjut"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Satu baris, Enter, baris berikutnya. Kelingking keluar dan kembali tanpa menyeret tangan.",
+      "type": "block",
+      "content": "Siti\nSurabaya\nDewi\nMaya\nBudi\nHendra"
+    },
+    {
+      "text": "Kalimat dengan huruf kapital di awal dan titik di akhir. Ini sudah mirip menulis sungguhan.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Waktu terasa cepat kalau kita bekerja dengan tenang.\nKereta datang tepat pukul tujuh pagi.\nHari ini cuaca cerah dan angin terasa sejuk."
+    },
+    {
+      "seconds": 25,
+      "text": "Rentetan untuk memantapkan isi pelajaran ini.",
+      "type": "burst",
+      "tokens": [
+        "lincah",
+        "indah",
+        "lewat",
+        "kedelai",
+        "pukul",
+        "kaldu",
+        "cepat",
+        "diam",
+        "rusa",
+        "menulis",
+        "khas",
+        "piring"
+      ]
+    },
+    {
+      "text": "Lima per baris, dengan kelingking bekerja ke dua arah.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sampah celana garis cepat kamus\nkuat wortel tiruan piring kaldu\nkaca waduk wajah nyanyi mungkin"
+    },
+    {
+      "text": "Sebagai penutup, kalimat utuh. Shift, huruf, lepas — tanpa berhenti untuk berpikir.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Kucing itu tidur di atas meja kayu.\nSaya belajar mengetik tanpa melihat papan ketik.\nRumah baru itu punya pintu berwarna hijau."
+    }
+  ]
+}

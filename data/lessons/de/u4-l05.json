@@ -1,0 +1,171 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "*, Apostroph, Semikolon und Doppelpunkt",
+  "summary": "Neu in dieser Lektion: *, Apostroph, Semikolon und Doppelpunkt.",
+  "newKeys": [
+    "*",
+    "'",
+    ";",
+    ":"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ö",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ä",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "ß",
+    "´",
+    "ü",
+    "+",
+    "#",
+    "°",
+    "!",
+    "\"",
+    "§",
+    "$",
+    "%",
+    "&",
+    "/",
+    "(",
+    ")",
+    "=",
+    "?",
+    "<",
+    ">",
+    "*",
+    "'",
+    ";",
+    ":"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: *, Apostroph, Semikolon und Doppelpunkt. Jedes davon entsteht aus Shift und einer Taste, die deine Finger schon kennen — Shift mit dem kleinen Finger der anderen Hand.",
+  "congrats": "*, Apostroph, Semikolon und Doppelpunkt: jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RP",
+      "text": "*: Dafür ist der rechte kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke *, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Zuerst * für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "** * *wild* *kupfer* *ass*\n** * *fad* *vase* *buch*\n** * *hell* *maus* *wärme*"
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RP",
+      "text": "Apostroph: Dafür ist der rechte kleine Finger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke ', um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "'",
+      "text": "Zuerst Apostroph für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "'' ' 'mythos' 'morgen' 'es'\n'' ' 'vier' 'kopie' 'baby'\n'' ' 'grün' 'äpfel' 'dir'"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RM",
+      "text": "Semikolon: Dafür ist der rechte Mittelfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke ;, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "Zuerst Semikolon für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": ";; ; hand; quelle; weiß;\n;; ; kinder; stimme; zelt;\n;; ; bruder; wo; jagd;"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RR",
+      "text": "Doppelpunkt: Dafür ist der rechte Ringfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke :, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "Zuerst Doppelpunkt für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": ":: : in: meine: holz:\n:: : des: salsa: süden:\n:: : still: sauber: versuch:"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "'reise'",
+        "'nach'",
+        "*ort*",
+        "pilz:",
+        "*dies*",
+        "'park'",
+        "'fuß'",
+        "spielen;",
+        "hitze;",
+        "*machen*"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "außer; 'höfe' 'länder' *nach*\n*stück* *denn* *offen* gitarre:\n'gießen' nehmen: keil; *des*"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "*sprache* ihre 'sie' vorne pinguin:\nnuss: spur *fünf* text *vater*\n'wann' blume zylinder; box 'bäume'"
+    }
+  ]
+}

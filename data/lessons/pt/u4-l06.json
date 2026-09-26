@@ -1,0 +1,172 @@
+{
+  "id": "u4-l06",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 33,
+  "slug": "symbols-6",
+  "title": "{, }, < e >",
+  "summary": "Nesta lição: {, }, < e >.",
+  "newKeys": [
+    "{",
+    "}",
+    "<",
+    ">"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "~",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ";",
+    "-",
+    "=",
+    "´",
+    "[",
+    "]",
+    "'",
+    "\"",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "\\",
+    "|",
+    "{",
+    "}",
+    "<",
+    ">"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas que o curso ainda não usou: {, }, < e >. Todas saem com Shift e uma tecla que os seus dedos já conhecem — Shift com o mindinho da outra mão.",
+  "congrats": "{, }, < e >: agora debaixo dos seus dedos. O sinal sai tão fácil quanto a letra ao lado.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "Quem aperta { é o mindinho direito, com Shift na outra mão.",
+      "hint": "Aperte { para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "Primeiro { sozinho, e depois onde ele realmente aparece.",
+      "content": "{{ { {maçãs {ruga {com\n{{ { {sapatos {fechado {seca\n{{ { {alas {todo {quinze"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "Quem aperta } é o mindinho direito, com Shift na outra mão.",
+      "hint": "Aperte } para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "Primeiro } sozinho, e depois onde ele realmente aparece.",
+      "content": "}} } {muito} {guias} {estrada}\n}} } {seguro} {luta} {ter}\n}} } {praticar} {tardes} {galho}"
+    },
+    {
+      "type": "intro",
+      "key": "<",
+      "finger": "RM",
+      "text": "Quem aperta < é o dedo médio direito, com Shift na outra mão.",
+      "hint": "Aperte < para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "<",
+      "text": "Primeiro < sozinho, e depois onde ele realmente aparece.",
+      "content": "<< < <nariz <rápida <sacode\n<< < <antigo <foco <batata\n<< < <por <cuidado <roupas"
+    },
+    {
+      "type": "intro",
+      "key": ">",
+      "finger": "RR",
+      "text": "Quem aperta > é o anelar direito, com Shift na outra mão.",
+      "hint": "Aperte > para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": ">",
+      "text": "Primeiro > sozinho, e depois onde ele realmente aparece.",
+      "content": ">> > <maçãs> <vender> <viagens>\n>> > <largas> <bairro> <antiga>\n>> > <cidadão> <listas> <tarefa>"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Uma rajada de trechos curtos com estes caracteres.",
+      "tokens": [
+        "{eles}",
+        "<lixo>",
+        "{deles}",
+        "{sugerir}",
+        "<ruas>",
+        "<batatas>",
+        "{sede}",
+        "{tinta}",
+        "<pequena>",
+        "{depois}"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tudo o que esta lição trouxe, misturado.",
+      "content": "<lote> {animais} {livro} <semana>\n<rápida> <puxar> <fale> {vinte}\n<serve> {senhor} <coisa> {passagem}"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Palavras de novo, com os sinais no lugar.",
+      "content": "{sucos} nunca {palavra} pior {caminhão}\n<ideais> delas {coisa} pessoa {levar}\n<rasgar> quando <vidas> fiz {estudos}"
+    }
+  ]
+}

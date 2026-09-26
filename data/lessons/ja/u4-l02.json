@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "%, &, アポストロフィ と (",
+  "summary": "このレッスンのキー：%, &, アポストロフィ と (",
+  "newKeys": [
+    "%",
+    "&",
+    "'",
+    "("
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    ":",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "^",
+    "@",
+    "[",
+    "]",
+    "!",
+    "\"",
+    "#",
+    "$",
+    "%",
+    "&",
+    "'",
+    "("
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "この講座でまだ使っていないキーです：%, &, アポストロフィ と (。どれも、指がすでに知っているキーを Shift と一緒に押します。Shift は反対の手の小指で押してください。",
+  "congrats": "%, &, アポストロフィ と (も指が覚えました。記号も、となりの文字と同じように出てきます。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "% は左手の人差し指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "% を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "まず % だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "%% % 59% 19% 28%\n%% % 80% 2% 78%\n%% % 42% 18% 61%"
+    },
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "& は右手の人差し指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "& を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "まず & だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "&& & okuru & neko kirei & mondai yuujin & chuui\n&& & saisho & shikashi kippari & aizu keitai & kaiwa\n&& & ha-to & kaishi taishi & wareru kaichou & soko"
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RI",
+      "text": "アポストロフィ は右手の人差し指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "' を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "'",
+      "text": "まず アポストロフィ だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "'' ' 'nashi' 'tenpura' 'ne-mu'\n'' ' 'bunshou' 'shachou' 'nagai'\n'' ' 'hizuke' 'hitori' 'chuusha'"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RM",
+      "text": "( は右手の中指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "( を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "まず ( だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "(( ( (ki (matsu (iwau\n(( ( (karada (narabu (yorokobu\n(( ( (rizumu (mochiron (mimi"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "これらの文字を含む短いかたまりの連打です。",
+      "tokens": [
+        "(soko",
+        "'arimasu'",
+        "34%",
+        "33%",
+        "(shizenn",
+        "53%",
+        "satou&yuka",
+        "11%",
+        "'ko-to'",
+        "'tayasui'"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "このレッスンで出てきたものを、すべて混ぜて打ちます。",
+      "content": "89% 24% 'chuui' 29%\n(pannya 'ki' 'kaisuu' (yomu\n48% (ta-oru (akeru 'chizu'"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "もう一度単語です。記号はそれぞれ使われる位置にあります。",
+      "content": "shimeru & ka-ra- sentaku 9% dasu kappu & jitsu\n85% suki heya & tebukuro nigai kyuuri & fureru\nkitai & hontou tatsu 'kaiwa' miru 70%"
+    }
+  ]
+}

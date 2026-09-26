@@ -1,0 +1,172 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "Ü, !, £ et Ö",
+  "summary": "Au programme : Ü, !, £ et Ö.",
+  "newKeys": [
+    "ü",
+    "!",
+    "£",
+    "ö"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "é",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "à",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "+",
+    "\"",
+    "*",
+    "ç",
+    "%",
+    "&",
+    "/",
+    "(",
+    ")",
+    "=",
+    "-",
+    "'",
+    "^",
+    "è",
+    "¨",
+    "$",
+    "§",
+    "°",
+    "?",
+    "<",
+    ">",
+    "ü",
+    "!",
+    "£",
+    "ö"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Des touches que le cours n'a pas encore utilisées : Ü, !, £ et Ö. Chacune se fait avec Maj et une touche que tes doigts connaissent déjà — Maj à l'auriculaire de l'autre main.",
+  "congrats": "Ü, !, £ et Ö : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "ü",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe Ü, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur Ü pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "ü",
+      "text": "D'abord Ü sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "üü ü üüü üüü üüü\nüü ü üüü üüü üüü\nüü ü üüü üüü üüü"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe !, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ! pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "D'abord ! sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "!! ! mugir! ça! rue!\n!! ! réponses! voile! motifs!\n!! ! peu! guide! exemple!"
+    },
+    {
+      "type": "intro",
+      "key": "£",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe £, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur £ pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "£",
+      "text": "D'abord £ sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "££ £ £89 £10 £71\n££ £ £78 £88 £17\n££ £ £45 £74 £25"
+    },
+    {
+      "type": "intro",
+      "key": "ö",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe Ö, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur Ö pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "ö",
+      "text": "D'abord Ö sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "öö ö ööö ööö ööö\nöö ö ööö ööö ööö\nöö ö ööö ööö ööö"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Une série de petits morceaux avec ces caractères.",
+      "tokens": [
+        "üüü",
+        "garçon!",
+        "somme!",
+        "gifle!",
+        "août!",
+        "ööö",
+        "lime!",
+        "£78",
+        "£37",
+        "alors!"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tout ce que cette leçon a apporté, mélangé.",
+      "content": "üüü listes! £93 üüü\nööö £26 ööö £40\n£22 üüü ööö tel!"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Des mots à nouveau, avec les signes à leur place.",
+      "content": "£13 la ööö mère £54\nüüü parties üüü d'accord ööö\n£65 te ööö jours ööö"
+    }
+  ]
+}

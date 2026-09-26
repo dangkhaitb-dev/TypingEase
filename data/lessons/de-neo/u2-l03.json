@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "Ä und B",
+  "summary": "Neue Tasten: Ä und B. Der Finger geht raus, tippt und kommt zurück.",
+  "newKeys": [
+    "ä",
+    "b"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h",
+    "w",
+    "k",
+    "f",
+    "v",
+    "ä",
+    "b"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Neu in dieser Lektion: Ä und B. Dafür sind der linke Mittelfinger und der rechte Zeigefinger zuständig. Die Bewegung ist immer dieselbe — raus, tippen, zurück — und der Rückweg ist der Teil, der geübt wird: bleibt der Finger draußen, geht der nächste Buchstabe daneben.",
+  "congrats": "Wieder ein paar Tasten mehr unter den Fingern. Wenn Ä und B ohne Suchen kommen, hat die Lektion ihre Arbeit getan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "ä",
+      "finger": "LM",
+      "text": "Für diese Taste ist der linke Mittelfinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke Ä, um weiterzugehen"
+    },
+    {
+      "newKey": "ä",
+      "text": "Nur Ä und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "ääää ääää\nä ä\nneä a ne"
+    },
+    {
+      "type": "intro",
+      "key": "b",
+      "finger": "RI",
+      "text": "Für diese Taste ist der rechte Zeigefinger zuständig. Such sie ohne hinzusehen, tippe einmal und lass den Finger zurückgehen. Der Rückweg zählt genauso viel wie der Anschlag.",
+      "hint": "Drücke B, um weiterzugehen"
+    },
+    {
+      "newKey": "b",
+      "text": "Nur B und das, was du schon kannst. Langsam, und nach jedem Anschlag geht der Finger zurück in die Grundstellung.",
+      "type": "block",
+      "content": "äbäbäb bäbäbä\nbä bä\nnaä be na"
+    },
+    {
+      "seconds": 20,
+      "text": "Kurze Gruppen, eine nach der anderen. Geh bis zum Ende durch, auch wenn dir eine danebengeht.",
+      "type": "burst",
+      "tokens": [
+        "ääää",
+        "bbb",
+        "bä",
+        "ääbä",
+        "äbbb",
+        "äbb",
+        "bää",
+        "bbää",
+        "bäää",
+        "bäbb"
+      ]
+    },
+    {
+      "text": "Die neuen Tasten gemischt mit den alten — so kommen sie später auch in Wörtern vor.",
+      "type": "block",
+      "content": "bä äb bäbä\nbbb äää nnn eee\näbäb bäbä"
+    },
+    {
+      "text": "Echte Wörter mit den neuen Tasten. Schreib das Wort in einem Zug, nicht Buchstabe für Buchstabe.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "brief hände erklären hängen\nbild lächeln abend bilder\nbutter bäcker während kälte"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine Runde kurzer Wörter mit den neuen Tasten darin.",
+      "type": "burst",
+      "tokens": [
+        "eile",
+        "kann",
+        "bringen",
+        "stelle",
+        "vorher",
+        "rock",
+        "aber",
+        "liege",
+        "haus",
+        "kein"
+      ]
+    },
+    {
+      "text": "Jetzt mit dem Schwerpunkt auf Ä — die Taste, die du bisher am seltensten getroffen hast.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "flagge nicht was offen\nlesen lag hängen total\nnatur viele dass viel"
+    },
+    {
+      "text": "Kurz zurück zu den Mustern, um zu prüfen, ob die Finger noch in die Grundstellung zurückfinden.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "bbbb äää\näbäb bäbä\nbä bä"
+    },
+    {
+      "text": "Alles gemischt, was du hast. Achte darauf, wie viele Wörter schon ohne Nachdenken kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "blatt er hinter gold\nhotel krise kleider bein\nneu freude kunst dass"
+    }
+  ]
+}

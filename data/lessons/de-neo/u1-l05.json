@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Wiederholung",
+  "summary": "Keine neue Taste. Alles Bisherige, dichter und schneller.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Diese Lektion bringt nichts Neues bei. Jetzt zeigt sich, ob das Bisherige ohne Nachdenken kommt, und das ist etwas anderes, als zu wissen, wo jede Taste liegt.",
+  "congrats": "Nichts Neues und trotzdem schneller. Genau das sollte passieren.",
+  "screens": [
+    {
+      "text": "Zum Anfang einzelne Wörter. Ohne Eile: Tempo kommt aus Genauigkeit, nie umgekehrt.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "natur ein ende neun\nidee tier unter eine\ndir denn nein drei"
+    },
+    {
+      "seconds": 25,
+      "text": "Eine kurze Runde. Mach die Liste zu Ende, auch wenn dir eins durchrutscht.",
+      "type": "burst",
+      "tokens": [
+        "und",
+        "eure",
+        "rede",
+        "neun",
+        "die",
+        "dir",
+        "euer",
+        "idee",
+        "dann",
+        "nein",
+        "tier",
+        "ein"
+      ]
+    },
+    {
+      "text": "Fünf Wörter pro Zeile. Lass die Augen den Fingern vorausgehen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "an dir eier rad und\nrede ei eure denn neu\nunten tier nein in der"
+    },
+    {
+      "text": "Noch einmal Muster, um zu prüfen, ob die Finger weiter in die Grundstellung zurückkehren.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "rau eit ra\nrn nr rnrn\naaa nnnn rrrr eeee"
+    },
+    {
+      "text": "Kurze Wörter in gutem Tempo. Die sollten inzwischen fast von allein kommen.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tier nur denn rad\nunten nein euer unter\nund ein er eine"
+    },
+    {
+      "seconds": 30,
+      "text": "Mehr Zeit und mehr Wörter. Halte dasselbe Tempo von Anfang bis Ende.",
+      "type": "burst",
+      "tokens": [
+        "dauer",
+        "eine",
+        "unter",
+        "an",
+        "tier",
+        "da",
+        "in",
+        "eier",
+        "neu",
+        "rad",
+        "die",
+        "euer",
+        "dann",
+        "natur"
+      ]
+    },
+    {
+      "text": "Ganze Sätze. Hier zeigt sich, ob die Hand von allein zurückfindet.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dann der neu ein\nnur unten tier dir\nin ei euer an"
+    },
+    {
+      "text": "Der letzte Durchgang. Wenn du bis hierhin nicht auf die Tastatur gesehen hast, ist die Lektion erledigt.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "drei rad eier unten einer\neine da dauer er natur\ntier der eure ein neun"
+    }
+  ]
+}

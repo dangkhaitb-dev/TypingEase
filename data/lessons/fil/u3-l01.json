@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "Ang hanay ng mga numero",
+  "summary": "Lahat ng sampung numero, diretsong umaakyat ang bawat daliri.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Nasa itaas ng lahat ng natipa mo ang hanay ng mga numero, at dito pinakamalayo ang abot ng mga daliri. Mas madalas magkamali rito kaysa saanman sa kurso, at inaayos ito sa parehong paraan ng lahat: dahan-dahan muna.",
+  "congrats": "Ang hanay ng mga numero ang pinakamahirap at pinakabihirang sanayin pagkatapos. Balikan ang araling ito paminsan-minsan.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "Nasa itaas ng itaas na hanay ang hanay ng mga numero. Diretsong umaakyat ang bawat daliri at diretsong bumababa. Ito ang pinakamalalayong abot sa kurso.",
+      "hint": "Pindutin ang 1 para magpatuloy"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "Ang 1 at 0 ay para sa kaliwang hinliliit at sa kapares nito sa kabilang kamay. Akyat, pindot, balik sa gitnang hanay.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "Ang 2 at 9 ay para sa kaliwang palasingsingan at sa kapares nito sa kabilang kamay. Akyat, pindot, balik sa gitnang hanay.",
+      "type": "block",
+      "content": "df2 9j df\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "Isang maikling bugso gamit ang mga numerong mayroon ka na.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "Ang 3 at 8 ay para sa kaliwang hinlalato at sa kapares nito sa kabilang kamay. Akyat, pindot, balik sa gitnang hanay.",
+      "type": "block",
+      "content": "383838 838383\n83 38\nd83 jf d8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "Ang 4 at 7 ay para sa kaliwang hintuturo at sa kapares nito sa kabilang kamay. Akyat, pindot, balik sa gitnang hanay.",
+      "type": "block",
+      "content": "47 47\nfj4 7d fj\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "Ang dalawang natitira ay para sa mga hintuturo, na mas maraming key nang naaabot kaysa sa ibang daliri.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nfj6 5d fj"
+    },
+    {
+      "text": "Ang buong hanay, sa mga grupo. Huwag yumuko para hanapin ang 6.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "Lahat ng sampu, magkakahalo. Madalas magkamali rito sa simula; normal iyon.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Balik sa mga salita sandali, para maalala ng mga kamay kung saan sila nakatira.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sibuyas kahit gusto nagsasanay\ndumating luto nina sariling\nlarawan titigil letra kusina"
+    },
+    {
+      "text": "Mga pangungusap ulit, magagamit na ang buong keyboard.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Maglakad tayo sa parke mamayang hapon.\nNagluluto ang tatay ko ng hapunan tuwing sabado.\nNaglalaro ang mga bata sa bakuran ng paaralan."
+    }
+  ]
+}

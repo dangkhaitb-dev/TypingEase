@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Ò, V, W e il trattino",
+  "summary": "Tasti nuovi: Ò, V, W e il trattino. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "ò",
+    "v",
+    "w",
+    "-"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "à",
+    "l",
+    "x",
+    "q",
+    "ò",
+    "v",
+    "w",
+    "-"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: Ò, V, W e il trattino. Si premono con il mignolo sinistro, l'anulare destro, il medio destro e il mignolo destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se Ò, V, W e il trattino ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "ò",
+      "finger": "LP",
+      "text": "Questo tasto lo prende il mignolo sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi Ò per continuare"
+    },
+    {
+      "newKey": "ò",
+      "text": "Solo Ò e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "ò ò\neuh ò eu\nò ò òò"
+    },
+    {
+      "type": "intro",
+      "key": "v",
+      "finger": "RR",
+      "text": "Questo tasto lo prende l'anulare destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi V per continuare"
+    },
+    {
+      "newKey": "v",
+      "text": "Solo V e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "vò vò\nvòu eh vò\nòv vò òvòv"
+    },
+    {
+      "type": "intro",
+      "key": "w",
+      "finger": "RM",
+      "text": "Questo tasto lo prende il medio destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi W per continuare"
+    },
+    {
+      "newKey": "w",
+      "text": "Solo W e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "òwv vòw\nvwh uòe vw\nòv vò òvòv"
+    },
+    {
+      "type": "intro",
+      "key": "-",
+      "finger": "RP",
+      "text": "Questo tasto lo prende il mignolo destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi - per continuare"
+    },
+    {
+      "newKey": "-",
+      "text": "Solo - e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "uvh w-e uv\n-v v- -v-v\n--- www òòòò vvv"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "ò-",
+        "òv",
+        "ww",
+        "vw",
+        "--",
+        "w-",
+        "òò",
+        "-w",
+        "vv",
+        "òw"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "òvòvòv vòvòvò\nò-hvuw u-òwhv\noò- veh oò"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "vetro visita veloce vita\nbeve verso web vento\nverde attività novità tavolo"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "pochi",
+        "valore",
+        "amici",
+        "quattro",
+        "qua",
+        "buono",
+        "collina",
+        "falsa",
+        "la",
+        "voce"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su Ò, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "parole portare alto naturale\nmio saga mela sera\ne verrò larghe uguale"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "wwww òòò --- vvv\nòvòvòv vòvòvò\nwò-v wò-v"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "meglio extra cioccolata prato\nsono pomodoro corsa vostro\nmomento tavolo nostro notte"
+    }
+  ]
+}

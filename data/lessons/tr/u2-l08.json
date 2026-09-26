@@ -1,0 +1,170 @@
+{
+  "id": "u2-l08",
+  "unit": "u2",
+  "group": "reach",
+  "order": 18,
+  "slug": "z-period-comma-quote",
+  "title": "Z, Ç, Ö ve İ",
+  "summary": "Yeni tuşlar: Z, Ç, Ö ve İ. Parmak çıkar, basar ve döner.",
+  "newKeys": [
+    "z",
+    "ç",
+    "ö",
+    "i"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş",
+    "g",
+    "h",
+    "e",
+    "ı",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    "ç",
+    "ö",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu dersteki yeni tuşlar: Z, Ç, Ö ve İ. Bunlara sol serçe parmak, sağ yüzük parmağı, sağ orta parmak ve sağ serçe parmak basar. Hareket hep aynı — çık, bas, dön — ve çalışılan kısım dönüştür, çünkü dışarıda kalan parmak bir sonraki harfi kaçırtır.",
+  "congrats": "Parmaklarının altında yeni tuşlar. Z, Ç, Ö ve İ artık aramadan çıkıyorsa ders işini yaptı.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "z",
+      "finger": "LP",
+      "text": "Bu tuşa sol serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Z tuşuna bas"
+    },
+    {
+      "newKey": "z",
+      "text": "Yalnızca Z ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "z z\ndfj z df\nz z zz"
+    },
+    {
+      "type": "intro",
+      "key": "ç",
+      "finger": "RR",
+      "text": "Bu tuşa sağ yüzük parmağı basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Ç tuşuna bas"
+    },
+    {
+      "newKey": "ç",
+      "text": "Yalnızca Ç ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "çz çz\nçzf dj çz\nzç çz zçzç"
+    },
+    {
+      "type": "intro",
+      "key": "ö",
+      "finger": "RM",
+      "text": "Bu tuşa sağ orta parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için Ö tuşuna bas"
+    },
+    {
+      "newKey": "ö",
+      "text": "Yalnızca Ö ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "zöç çzö\nçöj fzd çö\nzç çz zçzç"
+    },
+    {
+      "type": "intro",
+      "key": "i",
+      "finger": "RP",
+      "text": "Bu tuşa sağ serçe parmak basar. Bakmadan bul, bir kez bas ve parmağın yerine dönsün. Dönüş, basış kadar önemlidir.",
+      "hint": "Devam etmek için İ tuşuna bas"
+    },
+    {
+      "newKey": "i",
+      "text": "Yalnızca İ ve bildiklerin. Yavaşça; her basıştan sonra parmak temel sıraya dönsün.",
+      "type": "block",
+      "content": "fçj öid fç\niç çi içiç\niii ööö zzzz ççç"
+    },
+    {
+      "seconds": 20,
+      "text": "Kısa gruplar, art arda. Kaçırdığın olsa da sonuna kadar git.",
+      "type": "burst",
+      "tokens": [
+        "zi",
+        "zç",
+        "öö",
+        "çö",
+        "ii",
+        "öi",
+        "zz",
+        "iö",
+        "çç",
+        "zö"
+      ]
+    },
+    {
+      "text": "Yeni tuşlar eskilerle karışık, kelimelerde karşına çıkacakları gibi.",
+      "type": "block",
+      "content": "zçzçzç çzçzçz\nzijçfö fizöjç\nszi çdj sz"
+    },
+    {
+      "text": "Yeni tuşlarla gerçek kelimeler. Kelimeyi harf harf değil, tek hamlede yaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hepsi saniye kim özel\nbahçede bitir işte yeşil\nyönet bazen hepimiz içmek"
+    },
+    {
+      "seconds": 25,
+      "text": "İçinde yeni tuşlar olan kısa kelimelerden bir seri.",
+      "type": "burst",
+      "tokens": [
+        "mum",
+        "bebek",
+        "uzun",
+        "saniye",
+        "pek",
+        "ses",
+        "davul",
+        "an",
+        "kur",
+        "moda"
+      ]
+    },
+    {
+      "text": "Şimdi ağırlık Z tuşunda; en az bastığın tuş o.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tablo çift hayatta nerede\nvarsa az masal hedef\nbizim hazır kurs kırk"
+    },
+    {
+      "text": "Bir süre kalıplara dönüyoruz; parmakların hâlâ yerine döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "öööö zzz iii ççç\nzçzçzç çzçzçz\nöziç öziç"
+    },
+    {
+      "text": "Elindeki her şey, karışık. Kaç kelimenin artık düşünmeden çıktığına bak.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "toprak sınav aile bitti\nböyle sevmek isim emek\nbaşka balık pasta sekiz"
+    }
+  ]
+}

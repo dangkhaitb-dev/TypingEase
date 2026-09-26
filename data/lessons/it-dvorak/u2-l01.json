@@ -1,0 +1,128 @@
+{
+  "id": "u2-l01",
+  "unit": "u2",
+  "group": "start",
+  "order": 11,
+  "slug": "t-y",
+  "title": "Y e F",
+  "summary": "Tasti nuovi: Y e F. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "y",
+    "f"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: Y e F. Si premono con l'indice sinistro e l'indice destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se Y e F ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "LI",
+      "text": "Questo tasto lo prende l'indice sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi Y per continuare"
+    },
+    {
+      "newKey": "y",
+      "text": "Solo Y e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "yuh e yu\ny y yy\nyyyy"
+    },
+    {
+      "type": "intro",
+      "key": "f",
+      "finger": "RI",
+      "text": "Questo tasto lo prende l'indice destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi F per continuare"
+    },
+    {
+      "newKey": "f",
+      "text": "Solo F e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "hfe uy hf\nyf fy yfyf\nfff yyy"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "yyf",
+        "yyff",
+        "yyy",
+        "fyyf",
+        "yyyy",
+        "yyfy",
+        "yyyf",
+        "yfy",
+        "yfyf",
+        "fyf"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "fy yf fyfy\nyyyy hhh uuu fff\nyfyf fyfy"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "una diga gite gatto\noggi stadio attesa antico\nnotte non estate poco"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "da",
+        "paese",
+        "donna",
+        "uno",
+        "canta",
+        "estate",
+        "dea",
+        "giada",
+        "pesce",
+        "nonno"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su F, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "punto poco pioggia gatto\npasso pesce pochi in\ntutto secondo uno cane"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "fy yf\nhye fu hy\nyf fy yfyf"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yoga nonno nei un\nchi poco che uno\ngiusti contento canto tutto"
+    }
+  ]
+}

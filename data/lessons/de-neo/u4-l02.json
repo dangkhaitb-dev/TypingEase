@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "«, $, € und „",
+  "summary": "Neu in dieser Lektion: «, $, € und „.",
+  "newKeys": [
+    "«",
+    "$",
+    "€",
+    "„"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "n",
+    "a",
+    "r",
+    "i",
+    "t",
+    "u",
+    "d",
+    "o",
+    "s",
+    "l",
+    "g",
+    "c",
+    "h",
+    "w",
+    "k",
+    "f",
+    "v",
+    "ä",
+    "b",
+    "m",
+    "p",
+    "x",
+    "q",
+    "z",
+    "ö",
+    "ü",
+    ".",
+    ",",
+    "y",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "j",
+    "-",
+    "`",
+    "ß",
+    "´",
+    "\\",
+    "°",
+    "§",
+    "ℓ",
+    "»",
+    "«",
+    "$",
+    "€",
+    "„"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasten, die der Kurs noch nicht benutzt hat: «, $, € und „. Jedes davon entsteht aus Shift und einer Taste, die deine Finger schon kennen — Shift mit dem kleinen Finger der anderen Hand.",
+  "congrats": "«, $, € und „: jetzt unter deinen Fingern. Das Zeichen kommt so leicht wie der Buchstabe daneben.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "«",
+      "finger": "LI",
+      "text": "«: Dafür ist der linke Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke «, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "«",
+      "text": "Zuerst « für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "«« « «quer» «öl» «quelle»\n«« « «marke» «blume» «pferd»\n«« « «wie» «zucker» «qualität»"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "RI",
+      "text": "$: Dafür ist der rechte Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke $, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Zuerst $ für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "$$ $ $37 $39 $95\n$$ $ $79 $47 $27\n$$ $ $86 $53 $36"
+    },
+    {
+      "type": "intro",
+      "key": "€",
+      "finger": "RI",
+      "text": "€: Dafür ist der rechte Zeigefinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke €, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "€",
+      "text": "Zuerst € für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "€€ € 47€ 64€ 83€\n€€ € 8€ 77€ 42€\n€€ € 3€ 79€ 58€"
+    },
+    {
+      "type": "intro",
+      "key": "„",
+      "finger": "RM",
+      "text": "„: Dafür ist der rechte Mittelfinger zuständig, mit Shift von der anderen Hand.",
+      "hint": "Drücke „, um weiterzugehen"
+    },
+    {
+      "type": "block",
+      "newKey": "„",
+      "text": "Zuerst „ für sich, dann dort, wo das Zeichen wirklich vorkommt.",
+      "content": "„„ „ „„„ „„„ „„„\n„„ „ „„„ „„„ „„„\n„„ „ „„„ „„„ „„„"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Eine Runde kurzer Stücke mit diesen Zeichen.",
+      "tokens": [
+        "51€",
+        "$28",
+        "«ein»",
+        "$51",
+        "$44",
+        "2€",
+        "„„„",
+        "$22",
+        "84€",
+        "93€"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles aus dieser Lektion, gemischt.",
+      "content": "„„„ $57 „„„ 39€\n„„„ „„„ $26 „„„\n«fleißig» $87 «letzte» 86€"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Wieder Wörter, mit den Zeichen an ihrem Platz.",
+      "content": "$3 nadel „„„ flagge „„„\n3€ nacht „„„ müssen «kuss»\n„„„ feld „„„ jetzt $28"
+    }
+  ]
+}

@@ -1,0 +1,119 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "Q et M",
+  "summary": "Nouvelles touches : Q et M. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "q",
+    "m"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : Q et M. Elles se tapent avec l'auriculaire gauche et l'auriculaire droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si Q et M sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur Q pour continuer"
+    },
+    {
+      "newKey": "q",
+      "text": "Seulement Q et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "q q\nfjq d fj\nq q qq"
+    },
+    {
+      "type": "intro",
+      "key": "m",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur M pour continuer"
+    },
+    {
+      "newKey": "m",
+      "text": "Seulement M et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "qmqm mqmq\nqm mq\nmdf jq md"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "mqqq",
+        "qqm",
+        "qqq",
+        "qmmq",
+        "mqmm",
+        "mmqq",
+        "qmm",
+        "qqmm",
+        "mqmq",
+        "qmqq"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "qm mq qmqm\nqqq mmmm ffff jjj\nqmqm mqmq"
+    },
+    {
+      "text": "Encore les deux nouvelles touches. Il n'y a pas encore de mots à écrire avec, et c'est normal.",
+      "type": "block",
+      "content": "qm mq\nmjd fq mj\nmq qm mqmq"
+    },
+    {
+      "seconds": 25,
+      "text": "Des groupes un peu plus longs. Se dépêcher n'aide pas encore.",
+      "type": "burst",
+      "tokens": [
+        "qmq",
+        "qmmq",
+        "mqqq",
+        "mmqq",
+        "qqqm",
+        "qqmm",
+        "qmqq",
+        "mqm",
+        "mmqm",
+        "mmq",
+        "qqmq",
+        "mqmm"
+      ]
+    },
+    {
+      "text": "Tout ce que tu as, en groupes courts. Regarde l'écran, pas tes mains.",
+      "type": "block",
+      "content": "jq qj jqjq\njjj dddd qqq mmm ffff\nqmqm mqmq"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "qmqmqm mqmqmq\nqm mq\njmq df jm"
+    },
+    {
+      "text": "Une dernière série avec tout ce qui a été vu jusqu'ici.",
+      "type": "block",
+      "content": "kd dk kdkd\njjjj dddd kkk ffff\nfjfjfj jfjfjf"
+    }
+  ]
+}

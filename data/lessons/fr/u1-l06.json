@@ -1,0 +1,106 @@
+{
+  "id": "u1-l06",
+  "unit": "u1",
+  "group": "reach",
+  "order": 6,
+  "slug": "review-u1-6",
+  "title": "Révision",
+  "summary": "Aucune touche nouvelle. Tout ce qui précède, plus vite et plus longtemps.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "e",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Cette leçon n'apprend rien de neuf. C'est le moment de vérifier que ce qui précède sort sans y penser, ce qui n'est pas la même chose que savoir où sont les touches.",
+  "congrats": "Rien de neuf et pourtant plus rapide. C'est exactement ce qui devait arriver.",
+  "screens": [
+    {
+      "text": "Pour commencer, des mots isolés. Sans se presser : la vitesse vient de la précision, jamais l'inverse.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "des lis skis ses\ndis ils lime mes\nfilles fils ski mime"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série courte. Termine la liste même si tu en laisses passer.",
+      "type": "burst",
+      "tokens": [
+        "mimes",
+        "les",
+        "lime",
+        "mes",
+        "mil",
+        "dise",
+        "ils",
+        "lisse",
+        "messe",
+        "mille",
+        "midi",
+        "ses"
+      ]
+    },
+    {
+      "text": "Cinq mots par ligne. Laisse les yeux passer devant les doigts.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "me de skis les elle\nlis mil ifs se mime\nmise des if lime fil"
+    },
+    {
+      "text": "Des motifs à nouveau, pour vérifier que les doigts retournent à la rangée de repos.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "jf fj jfjf\nkkk fff jjjj ddd\nfjfjfj jfjfjf"
+    },
+    {
+      "text": "Des mots courts, à bon rythme. Ceux-là devraient presque sortir seuls.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "des ski le fille\nse ifs dis mille\nmime sel fil elle"
+    },
+    {
+      "seconds": 30,
+      "text": "Plus de temps et plus de mots. Garde le même rythme du début à la fin.",
+      "type": "burst",
+      "tokens": [
+        "demi",
+        "il",
+        "lis",
+        "filles",
+        "si",
+        "dise",
+        "de",
+        "ifs",
+        "sel",
+        "dis",
+        "ses",
+        "lime",
+        "elles",
+        "fils"
+      ]
+    },
+    {
+      "text": "Des phrases entières. C'est là qu'on voit si la main revient toute seule.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "mil si il mes\nifs ses dis je\nlis des limes skis"
+    },
+    {
+      "text": "La dernière série. Si tu es arrivé jusqu'ici sans regarder le clavier, la leçon est faite.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "limes mille ils le ski\nifs mises les if dis\nelles je demis skis mes"
+    }
+  ]
+}

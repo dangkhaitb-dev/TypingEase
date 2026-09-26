@@ -1,0 +1,136 @@
+{
+  "id": "u2-l06",
+  "unit": "u2",
+  "group": "reach",
+  "order": 16,
+  "slug": "q-p",
+  "title": "Q and semicolon",
+  "summary": "Two new keys: Q and semicolon. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "q",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "d",
+    "h",
+    "f",
+    "u",
+    "p",
+    "l",
+    "g",
+    "j",
+    "y",
+    "w",
+    "c",
+    "k",
+    "m",
+    "v",
+    "q",
+    ";"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: Q and semicolon. They belong to your left little finger and your right little finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If Q and semicolon already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "q",
+      "finger": "LP",
+      "text": "This key belongs to your left little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press Q to continue"
+    },
+    {
+      "newKey": "q",
+      "text": "Only Q and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "qst n qs\nq q qq\nqqqq"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RP",
+      "text": "This key belongs to your right little finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press ; to continue"
+    },
+    {
+      "newKey": ";",
+      "text": "Only ; and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "q;q; ;q;q\nq; ;q\nntq s; nt"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        ";qq",
+        "q;q;",
+        ";;qq",
+        ";;q",
+        ";qq;",
+        ";q;;",
+        "q;q",
+        "q;;",
+        "qqqq",
+        "qqq;"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "tttt nnnn qqqq ;;;\nq;q;q; ;q;q;q\ntnq; ;qnt"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "okay east choose sort\njust trades rules could\nfive study red drives"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "stood",
+        "tried",
+        "place",
+        "loved",
+        "tree",
+        "nice",
+        "lunch",
+        "grow",
+        "end",
+        "die"
+      ]
+    },
+    {
+      "text": "Now the weight is on Q, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "aid speed lad years\nlures heels walk period\nunder fresh grades tests"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "q;q;q; ;q;q;q\nq; ;q\n;tq ns ;t"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "flak gash prove wind\nrisks file word eight\nsell wool cycle flakes"
+    }
+  ]
+}

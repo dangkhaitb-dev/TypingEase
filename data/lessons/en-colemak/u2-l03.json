@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "C and K",
+  "summary": "Two new keys: C and K. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "c",
+    "k"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "d",
+    "h",
+    "f",
+    "u",
+    "p",
+    "l",
+    "g",
+    "j",
+    "y",
+    "w",
+    "c",
+    "k"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: C and K. They belong to your left middle finger and your right index finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If C and K already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "c",
+      "finger": "LM",
+      "text": "This key belongs to your left middle finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press C to continue"
+    },
+    {
+      "newKey": "c",
+      "text": "Only C and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "cccc cccc\nc c\nntc s nt"
+    },
+    {
+      "type": "intro",
+      "key": "k",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press K to continue"
+    },
+    {
+      "newKey": "k",
+      "text": "Only K and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "ckckck kckckc\nkc kc\nnsc kt ns"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "cccc",
+        "kkk",
+        "kc",
+        "cckc",
+        "ckkk",
+        "ckk",
+        "kcc",
+        "kkcc",
+        "kccc",
+        "kckk"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "kc ck kckc\nkkk ccc nnn ttt\nckck kckc"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "chair kept function since\nweeks sky course looks\nwalk clearly thanks places"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "popular",
+        "shale",
+        "ends",
+        "sale",
+        "dishes",
+        "train",
+        "happy",
+        "off",
+        "gal",
+        "goods"
+      ]
+    },
+    {
+      "text": "Now the weight is on C, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "gals wheel others threw\nplenty course coast of\nwool appear care push"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kkkk ccc\nckck kckc\nkc kc"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lead egg parts hope\nlost drier regards down\nchair shred path as"
+    }
+  ]
+}

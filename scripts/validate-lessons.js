@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /*
  * scripts/validate-lessons.js — kiểm tra nội dung giáo trình (PLAN.md C4/C5).
- * Chạy: node scripts/validate-lessons.js [--lang vi] [--quiet]
+ * Chạy: node scripts/validate-lessons.js [--lang vi|fr|fr-bepo…] [--quiet]
  * Không cần cài gói. Exit code 1 nếu có lỗi.
  *
  * Kiểm:
@@ -35,10 +35,19 @@ const path = require('path');
 const ROOT = path.resolve(__dirname, '..');
 require(path.join(ROOT, 'telex-match.js'));
 const TELEX = globalThis.TypingEaseTelex;
+require(path.join(ROOT, 'hangul-match.js'));
+const HANGUL = globalThis.TypingEaseHangul;
+// Bài `inputMode: 'hangul'` (tiếng Hàn 2-set): một âm tiết là nhiều phím jamo — "한" = ㅎ ㅏ ㄴ.
+// Đặt theo từng bài trong vòng lặp bài học bên dưới.
+let hangulMode = false;
+// Viết thường THEO NGÔN NGỮ của khoá: 'İ'.toLowerCase() là 'i̇' (hai ký tự), nên chữ İ của tiếng Thổ
+// Nhĩ Kỳ từng bị báo là "phím chưa dạy" dù Shift + i đã dạy. Đặt khi nạp chỉ mục.
+let courseLang = 'en';
+const lowerOf = text => String(text).toLocaleLowerCase(courseLang);
 const SCREEN_TYPES = ['intro', 'block', 'standard', 'burst', 'test'];
 const DICTATIONS = ['letters', 'words', 'sentence'];
 const FINGERS = ['LP', 'LR', 'LM', 'LI', 'LT', 'RT', 'RI', 'RM', 'RR', 'RP'];
-const INPUT_MODES = ['ascii', 'telex'];
+const INPUT_MODES = ['ascii', 'telex', 'hangul'];
 const LINEBREAKS = ['space', 'enter'];
 /* Bàn phím US: ký hiệu -> phím vật lý phải giữ Shift để gõ ra nó (DECISIONS.md bổ sung 9). */
 const SHIFT_MAP = {
@@ -85,8 +94,10 @@ function telexTokens(character) {
 }
 
 function usesKey(screen, key, telexMode) {
-  const content = typeof screen.content === 'string' ? screen.content : '';
-  if (key === 'shift') return /\p{Lu}/u.test(content);
+  const raw = typeof screen.content === 'string' ? screen.content : '';
+  const content = hangulMode ? [...raw].map(character => HANGUL.keysFor(character).join('')).join('') : raw;
+  // Chữ không phân hoa/thường (Ả Rập, Devanagari…): màn dạy tầng Shift mang `shifted: true`.
+  if (key === 'shift') return /\p{Lu}/u.test(content) || (screen.shifted === true && content.trim().length > 0);
   if (key === 'enter') return screen.linebreak === 'enter' && content.includes('\n');
   if (telexMode && [...content].some(character => {
     const need = telexTokens(character);
@@ -121,7 +132,14 @@ function loadCurriculum() {
 
 function checkCurriculumShape(curriculum) {
   where = 'curriculum: ';
-  if (curriculum.lang !== lang) fail(`lang = ${show(curriculum.lang)}, đợi ${show(lang)}`);
+  // `--lang` nhận cả mã KHOÁ của một họ (`fr-bepo`): file là curriculum.fr-bepo.js, còn
+  // `curriculum.lang` vẫn là 'fr' và `curriculum.course` mới là 'fr-bepo'.
+  const own = curriculum.course || curriculum.lang;
+  if (own !== lang) fail(`course = ${show(own)}, đợi ${show(lang)}`);
+  courseLang = curriculum.lang || 'en';
+  if (curriculum.course && !curriculum.course.startsWith(curriculum.lang)) {
+    fail(`course ${show(curriculum.course)} không thuộc ngôn ngữ ${show(curriculum.lang)}`);
+  }
   if (!Array.isArray(curriculum.units) || !curriculum.units.length) fail('units phải là mảng không rỗng');
   if (!isPlainObject(curriculum.lessons)) fail('lessons phải là object');
   if (!Array.isArray(curriculum.sequence) || !curriculum.sequence.length) fail('sequence phải là mảng không rỗng');
@@ -202,6 +220,22 @@ function checkFormatting(label, value) {
     if (line !== line.trim()) fail(`${label}: dòng ${i + 1} có khoảng trắng ở đầu hoặc cuối (${JSON.stringify(line)})`);
     if (!line.trim()) fail(`${label}: dòng ${i + 1} rỗng`);
   });
+}
+
+/* Dấu tổ hợp (sau khi NFD tách ra) → phím chết gõ ra nó. Cùng bảng mà keyboard.js dùng để tô
+   sáng phím chết và mà scripts/lib/content.js dùng để lọc kho từ; chép lại ở đây vì validator
+   cố ý KHÔNG dùng chung mã với bên sinh — hai phép tính độc lập, và bên này là bên gác. */
+const DEAD_FOR = new Map([
+  ['\u0301', '\u00b4'], ['\u0300', '`'], ['\u0302', '^'], ['\u0303', '~'], ['\u0308', '\u00a8']
+]);
+
+function deadKeyParts(character) {
+  const parts = [...String(character).normalize('NFD')];
+  if (parts.length < 2) return null;
+  const mark = parts.find(part => DEAD_FOR.has(part));
+  if (!mark) return null;
+  const base = parts.filter(part => part !== mark).join('').normalize('NFC');
+  return base.length === 1 ? { dead: DEAD_FOR.get(mark), base } : null;
 }
 
 function checkScreen(screen, index, allowed, lessonNewKeys, context) {
@@ -292,11 +326,22 @@ function checkScreen(screen, index, allowed, lessonNewKeys, context) {
       if (character === '\n' || character === ' ') continue;
       if (allowed.has(character)) continue;
       /* Chữ HOA hợp lệ khi bài đã dạy cả Shift lẫn phím chữ thường tương ứng. */
-      const lower = character.toLowerCase();
+      const lower = lowerOf(character);
       if (lower !== character && allowed.has('shift') && allowed.has(lower)) continue;
       /* Ký hiệu ở tầng Shift: hợp lệ khi đã dạy Shift và phím vật lý nằm dưới nó. */
       const physical = SHIFT_MAP[character];
       if (physical && allowed.has('shift') && allowed.has(physical)) continue;
+      /* Chữ ghép qua PHÍM CHẾT: hợp lệ khi đã dạy cả phím chết lẫn chữ gốc. Trên bàn phím Tây
+         Ban Nha `á` là ´ rồi a — hai lần bấm, hai phím, cả hai phải đã được dạy. Không có luật
+         này thì kho từ có dấu của những ngôn ngữ dùng phím chết không bao giờ dùng được. */
+      const composed = deadKeyParts(character);
+      if (composed && allowed.has(composed.dead)) {
+        const base = composed.base;
+        if (allowed.has(base)) continue;
+        if (lowerOf(base) !== base && allowed.has('shift') && allowed.has(lowerOf(base))) continue;
+      }
+      if (hangulMode && HANGUL.isSyllable(character)
+        && HANGUL.keysFor(character).every(key => allowed.has(key))) continue;
       const need = telexMode ? telexTokens(character) : null;
       if (need) {
         const missing = [];
@@ -367,6 +412,7 @@ function checkLesson(id, entry, taught, place, telexTaught) {
   if (newKeys.join(',') !== (entry.newKeys || []).join(',')) fail(`newKeys ${JSON.stringify(newKeys)} khác chỉ mục ${JSON.stringify(entry.newKeys)}`);
 
   /* 4. keysSoFar phải bằng tập luỹ tiến */
+  const taughtBefore = new Set(taught);
   newKeys.forEach(key => taught.add(key));
   const expected = [...taught].sort();
   const declared = [...new Set(Array.isArray(lesson.keysSoFar) ? lesson.keysSoFar : [])].sort();
@@ -383,8 +429,11 @@ function checkLesson(id, entry, taught, place, telexTaught) {
      Bài telex có thêm một tập riêng: dấu thanh và token tạo dấu chỉ tính là "đã dạy" khi một bài
      telex trước đó dạy chúng — chứ không phải vì chữ cái s, f, w đã có từ Unit 1. */
   const telexMode = lesson.inputMode === 'telex';
+  hangulMode = lesson.inputMode === 'hangul';
   if (telexMode) newKeys.forEach(key => telexTaught.add(key));
-  const allowed = new Set([...taught].filter(key => !newKeys.includes(key)));
+  // Một chữ có thể nằm trên HAI phím (bố cục Hebrew phiên âm có א י ו פ ở hai chỗ): nếu nó đã dạy
+  // ở bài trước thì vẫn được phép, dù bài này khai nó là phím mới trên ô thứ hai.
+  const allowed = new Set([...taught].filter(key => !newKeys.includes(key) || taughtBefore.has(key)));
   allowed.add(' ');
   const allowedTelex = new Set([...telexTaught].filter(key => !newKeys.includes(key)));
   const lessonNewKeys = { introducedBy: new Map() };

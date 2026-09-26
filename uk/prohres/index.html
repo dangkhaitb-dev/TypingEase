@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Твій прогрес у сліпому друку | TypingEase</title>
+    <meta name="description" content="Подивись, як іде навчання сліпого друку: оцінка за кожен урок, найкраща швидкість і точність, теплова карта клавіш із помилками, серія днів поспіль і денна ціль." />
+    <link rel="canonical" href="https://typingease.site/uk/prohres/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/uk.mjs, progress trong
+         i18n/ui.uk.js và bai-hoc/config.uk.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="Головна навігація">
+        <a href="/uk/">Практика</a>
+        <a data-route="lessons" href="/uk/uroky/">Курс</a>
+        <a class="active" href="/uk/prohres/">Прогрес</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="Обрати мову й клавіатуру">Головна</a><a class="secondary-button" data-route="learn" href="/uk/vchytysia/">Навчатися далі <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> Як у тебе справи</p>
+        <h1>Твій прогрес у сліпому друку</h1>
+        <p class="prog-intro">Усі цифри на цій сторінці зберігаються лише на цьому пристрої й нікуди не надсилаються. Пройди ще один урок — і вони оновляться.</p>
+        <nav class="prog-courses" id="prog-courses" aria-label="Курс">
+          <a href="/uk/prohres/?course=uk" data-course="uk" aria-current="page">стандартна</a>
+          <a href="/uk/prohres/?course=uk-fonetyka" data-course="uk-fonetyka">фонетична</a>
+        </nav>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 0 днів поспіль</span>
+          <span id="strip-today">Сьогодні 0 хвилин</span>
+          <span id="strip-level">Рівень: Перші кроки</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="Огляд">
+        <div><span>Пройдено уроків</span><strong id="sum-lessons">0 / 34</strong></div>
+        <div><span>Зібрано зірок</span><strong id="sum-stars">0</strong></div>
+        <div><span>Найкраща швидкість, сл/хв</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>Найкраща точність</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> Досягнення</p>
+            <h2 id="badges-title">Значки</h2>
+            <p>Кожен значок прив’язаний до справжньої цифри з таблиці нижче — здобути його можна лише одним способом: друкувати.</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">Ціль на сьогодні</p>
+          <h3 id="daily-goal-title">0 / 10 хвилин</h3>
+          <p id="daily-goal-status">🔥 0 днів поспіль</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">Рекорд: 0 днів</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="Обери денну ціль">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 хв</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 хв</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 хв</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 хв</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">Твій тренер</p><h3 id="coach-title">Де ти зараз</h3></div>
+          <span class="coach-level" id="coach-level">Перші кроки</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="Останній прогрес" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">Ще 2 уроки — і можна буде побудувати тренд.</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">Пройди один урок, і ця сторінка зрозуміє, де ти зараз.</p>
+        <a class="coach-action" id="coach-action" href="/uk/vchytysia/">Почати урок 1 →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> Клавіша за клавішею</p>
+          <h3 id="heat-title">Теплова карта клавіатури</h3>
+          <p>Зелені клавіші ти натискаєш чисто, жовті — через раз, а червоні забирають у тебе швидкість. Клавіша отримує колір лише тоді, коли ти надрукував її достатньо разів, щоб про неї можна було щось сказати.</p>
+          <p class="heat-empty" id="heat-empty">Даних поки замало — пройди кілька уроків і повертайся.</p>
+          <div class="heat-legend" id="heat-legend" aria-label="Точність за клавішами" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="Курс · уроків: {n}"><i></i> Курс · уроків: 34</p>
+            <h2 id="results-title">Оцінка за кожен урок</h2>
+            <p>Твоє найкраще коло в кожному уроці, збережене на цьому пристрої.</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">Очистити історію</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>Урок</th><th>Пройдено екранів</th><th>Зірки</th><th>Найкраща швидкість</th><th>Точність</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Не зупиняйся</p>
+          <h2 id="prog-explore-title">Що робити далі</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/uk/uroky/">
+            <h3>Увесь курс</h3>
+            <p>Усі розділи по черзі. Повернися до уроку, який хочеш пройти ще раз, або відкрий наступний розділ раніше.</p>
+            <span>Переглянути курс <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>Друкуй на своїй клавіатурі</h3>
+            <p>ЙЦУКЕН, фонетична, QWERTY, AZERTY, JIS — 119 справжніх розкладок, і курс іде за тією, яку ти обереш.</p>
+            <span>Усі розкладки <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>Трохи повільніше — і зайдеш набагато далі.</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/uk/about/">Про нас</a><span aria-hidden="true"> · </span><a href="/uk/terms/">Умови користування</a><span aria-hidden="true"> · </span><a href="/uk/privacy/">Політика конфіденційності</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.uk.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.uk.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"uk":{"learn":"/uk/vchytysia/","lessons":"/uk/uroky/"},"uk-fonetyka":{"learn":"/uk/fonetyka/vchytysia/","lessons":"/uk/fonetyka/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "uk";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

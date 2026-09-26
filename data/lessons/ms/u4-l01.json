@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, ! dan @",
+  "summary": "Dalam pelajaran ini: `, ~, ! dan @.",
+  "newKeys": [
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kekunci yang belum digunakan dalam kursus ini: `, ~, ! dan @. Sebahagiannya perlu Shift, ditekan oleh kelingking tangan yang sebelah lagi; selebihnya ada kekunci sendiri yang belum pernah digunakan dalam kursus.",
+  "congrats": "`, ~, ! dan @: kini di bawah jari anda. Simbol keluar semudah huruf di sebelahnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "` ditekan oleh jari kelingking kiri.",
+      "hint": "Tekan ` untuk meneruskan"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "` seorang diri dahulu, kemudian di tempat ia benar-benar digunakan.",
+      "content": "`` ` `kilat` `punya` `ikan`\n`` ` `jarang` `makanan` `cepat`\n`` ` `wajah` `cukup` `terus`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "~ seorang diri dahulu, kemudian di tempat ia benar-benar digunakan.",
+      "content": "~~ ~ ~41 ~60 ~49\n~~ ~ ~70 ~19 ~29\n~~ ~ ~90 ~34 ~12"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "! ditekan oleh jari kelingking kiri, dengan Shift di tangan yang sebelah lagi.",
+      "hint": "Tekan ! untuk meneruskan"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "! seorang diri dahulu, kemudian di tempat ia benar-benar digunakan.",
+      "content": "!! ! kawan! keluar! tanah!\n!! ! umur! khas! cincin!\n!! ! mahu! gigi! kedai!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "@ ditekan oleh jari manis kiri, dengan Shift di tangan yang sebelah lagi.",
+      "hint": "Tekan @ untuk meneruskan"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "@ seorang diri dahulu, kemudian di tempat ia benar-benar digunakan.",
+      "content": "@@ @ hadir@belakang hidup@ozon cari@radio\n@@ @ teksi@kosa baharu@kedai kuat@ajak\n@@ @ jeli@idea muka@ceria tinggal@mimpi"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Satu pecutan cebisan pendek yang mengandungi aksara ini.",
+      "tokens": [
+        "tukar!",
+        "lembut!",
+        "projek!",
+        "`gunung`",
+        "kawal!",
+        "utara!",
+        "`lekas`",
+        "papar!",
+        "~72",
+        "kanan@tanam"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Semua yang ada dalam pelajaran ini, bercampur.",
+      "content": "~38 lagunya@lagu dahaga! tadi!\n`jambatan` ~94 fasal! kawan@bandar\n~29 ~20 gigi! ~89"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Perkataan semula, dengan simbol di tempatnya.",
+      "content": "jadual! video kopi@keluar rehat ~89\n~32 tiada ~46 saudara teksi@ia\n~52 sebelum `fail` teman `variasi`"
+    }
+  ]
+}

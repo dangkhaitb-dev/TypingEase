@@ -1,0 +1,181 @@
+{
+  "id": "u3-l01",
+  "unit": "u3",
+  "group": "numbers-symbols",
+  "order": 22,
+  "slug": "number-row",
+  "title": "The number row",
+  "summary": "All ten numbers, each finger going straight up.",
+  "newKeys": [
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g",
+    "y",
+    "f",
+    "r",
+    ",",
+    "j",
+    "b",
+    "m",
+    "k",
+    "'",
+    "l",
+    "x",
+    "q",
+    ";",
+    "v",
+    "w",
+    "-",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "The number row is above everything you have typed so far, and it is the only row where the fingers reach up instead of down. More goes wrong here than anywhere else in the course, and it gets fixed the same way as everything else: slowly at first.",
+  "congrats": "The number row is the hardest one and the least practised afterwards. Come back to this lesson now and then.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "1",
+      "finger": "LP",
+      "text": "The number row sits above the top row. Each finger goes straight up and straight back down. These are the longest reaches in the course.",
+      "hint": "Press 1 to continue"
+    },
+    {
+      "newKeys": [
+        "1",
+        "0"
+      ],
+      "text": "1 and 0 belong to your left little finger and its partner on the other hand. Up, press, back to the home row.",
+      "type": "block",
+      "content": "01 10 0101\n000 1111\n101010 010101"
+    },
+    {
+      "newKeys": [
+        "2",
+        "9"
+      ],
+      "text": "2 and 9 belong to your left ring finger and its partner on the other hand. Up, press, back to the home row.",
+      "type": "block",
+      "content": "eu2 9h eu\n29 92 2929\n222 9999"
+    },
+    {
+      "seconds": 20,
+      "text": "A short burst with the numbers you have so far.",
+      "type": "burst",
+      "tokens": [
+        "00",
+        "90",
+        "02",
+        "10",
+        "91",
+        "20",
+        "22",
+        "29",
+        "01",
+        "09"
+      ]
+    },
+    {
+      "newKeys": [
+        "3",
+        "8"
+      ],
+      "text": "3 and 8 belong to your left middle finger and its partner on the other hand. Up, press, back to the home row.",
+      "type": "block",
+      "content": "383838 838383\n83 38\ne83 hu e8"
+    },
+    {
+      "newKeys": [
+        "4",
+        "7"
+      ],
+      "text": "4 and 7 belong to your left index finger and its partner on the other hand. Up, press, back to the home row.",
+      "type": "block",
+      "content": "47 47\nuh4 7e uh\n74 47 7474"
+    },
+    {
+      "newKeys": [
+        "5",
+        "6"
+      ],
+      "text": "The two that are left go to the index fingers, which already reach more keys than any other finger.",
+      "type": "block",
+      "content": "565656 656565\n56 56\nuh6 5e uh"
+    },
+    {
+      "text": "The whole row, in groups. Do not look down to find the 6.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "53 35 5353\n666 0000 5555 8888 222 1111 777 4444 999 333\n121212 212121"
+    },
+    {
+      "seconds": 30,
+      "text": "All ten, mixed. People miss a lot here at first; that is normal.",
+      "type": "burst",
+      "tokens": [
+        "23",
+        "16",
+        "22",
+        "30",
+        "39",
+        "15",
+        "36",
+        "38",
+        "27",
+        "33",
+        "31",
+        "25",
+        "10",
+        "19"
+      ]
+    },
+    {
+      "text": "Back to words for a moment, so your hands remember where they live.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "white dark surprise tiny\neach daily us drill\ntrust learns start took"
+    },
+    {
+      "text": "Sentences again, now with the whole keyboard available.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "We're going to read the whole page.\nThey are still here.\nThe water is cold today."
+    }
+  ]
+}

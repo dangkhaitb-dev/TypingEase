@@ -1,0 +1,132 @@
+{
+  "id": "u2-l03",
+  "unit": "u2",
+  "group": "start",
+  "order": 13,
+  "slug": "c-n",
+  "title": "X et l'apostrophe",
+  "summary": "Nouvelles touches : X et l'apostrophe. Le doigt sort, frappe et revient.",
+  "newKeys": [
+    "x",
+    "'"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d",
+    "o",
+    "v",
+    "è",
+    "^",
+    "l",
+    "é",
+    "x",
+    "'"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Nouvelles touches dans cette leçon : X et l'apostrophe. Elles se tapent avec le majeur gauche et l'index droit. Le mouvement est toujours le même — sortir, frapper, revenir — et c'est le retour qui s'entraîne, parce qu'un doigt resté dehors fait rater la lettre suivante.",
+  "congrats": "De nouvelles touches sous les doigts. Si X et l'apostrophe sortent déjà sans les chercher, la leçon a fait son travail.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "x",
+      "finger": "LM",
+      "text": "C'est le majeur gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur X pour continuer"
+    },
+    {
+      "newKey": "x",
+      "text": "Seulement X et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "xxxx xxxx\nx x\ntex i te"
+    },
+    {
+      "type": "intro",
+      "key": "'",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur ' pour continuer"
+    },
+    {
+      "newKey": "'",
+      "text": "Seulement ' et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "x'x'x' 'x'x'x\n'x 'x\ntix 'e ti"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "xxxx",
+        "'''",
+        "'x",
+        "xx'x",
+        "x'''",
+        "x''",
+        "'xx",
+        "''xx",
+        "'xxx",
+        "'x''"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "'x x' 'x'x\n''' xxx ttt eee\nx'x' 'x'x"
+    },
+    {
+      "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "exact s'il d'accord n'a\ndix n'a n'est l'école\ntaxi texte l'école d'accord"
+    },
+    {
+      "seconds": 25,
+      "text": "Une série de mots courts contenant les nouvelles touches.",
+      "type": "burst",
+      "tokens": [
+        "côté",
+        "doses",
+        "petits",
+        "dites",
+        "donc",
+        "rêves",
+        "île",
+        "rôle",
+        "propose",
+        "roses"
+      ]
+    },
+    {
+      "text": "Maintenant avec le poids sur X, celle que tu as le moins frappée.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "lutte petite part propose\nréponse lui travaux par\npasser espèces elles espèce"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "'''' xxx\nx'x' 'x'x\n'x 'x"
+    },
+    {
+      "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "l'autre dos écoles devenir\nvoile lourde ton succès\npersonne non père le"
+    }
+  ]
+}

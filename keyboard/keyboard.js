@@ -46,7 +46,8 @@ function keyCode(value) {
 
 function displayKey(value, letterCase) {
   const key = keyValue(value);
-  return /^[a-z]$/.test(key) && letterCase === "uppercase" ? key.toUpperCase() : key;
+  // Theo ngôn ngữ trang: trên bàn phím Thổ Nhĩ Kỳ phím `i` in hoa là `İ`, còn `ı` mới là `I`.
+  return /^[a-z]$/.test(key) && letterCase === "uppercase" ? key.toLocaleUpperCase(globalThis.document?.documentElement?.lang || "en") : key;
 }
 
 function deadCharacter(value) {
@@ -65,6 +66,14 @@ function entryDeadCharacter(entry, targetDiacritic = null) {
   return "";
 }
 
+// `'ß'.toUpperCase()` la 'SS'. `.key { text-transform: uppercase }` vi the ve phim ß cua ban
+// phim Duc thanh hai chu S — dung theo chinh ta cu, sai voi mot nhan phim, vi phim do in ra
+// dung mot ky tu ß. Danh dau nhung phim nhu the de CSS tat text-transform rieng cho chung.
+const changesLength = value => {
+  const text = keyValue(value);
+  return text.length === 1 && text.toUpperCase().length !== text.length;
+};
+
 function classForKey(entry) {
   const labels = keyValue(entry.main).split(" ").filter(Boolean);
   const code = keyCode(entry.main);
@@ -78,6 +87,7 @@ function classForKey(entry) {
   if (/^[a-z]$/i.test(keyValue(entry.main))) classes.push("key--letter");
   const dead = entryDeadCharacter(entry);
   if (dead) classes.push(`key-${dead.charCodeAt(0)}-dead`);
+  if (changesLength(entry.main) || changesLength(entry.shifted)) classes.push("key--nocase");
   return classes.join(" ");
 }
 
@@ -321,6 +331,7 @@ export function applyRootKeyboardPreferences(root, preferences, layout = null) {
     const previous = board.__ntKeyboardOptions?.preferences;
     const needsRebuild = (layout && Number(board.__ntKeyboardLayout?.keyboard_id) !== Number(layout.keyboard_id)) ||
       previous?.letterCase !== preferences.letterCase ||
+      previous?.keyboardShape !== preferences.keyboardShape ||
       previous?.animatedHands !== preferences.animatedHands;
     if (needsRebuild) {
       refreshKeyboardLayout(board, { layout, preferences });
@@ -565,15 +576,51 @@ export function refreshKeyboardLayout(board, { layout, preferences }) {
   return board;
 }
 
-export function createKeyboard({ activeKey, preferences, layout, falling = false, onSettings }) {
+// 104 hay 105 phím. Bố cục ISO (xem scripts/add-iso-key.js) mang sẵn ô IntlBackslash cạnh Shift
+// trái; `keyboardShape` cho người học nói bàn phím THẬT của họ là kiểu nào:
+//   'auto' — theo bố cục (mặc định);
+//   'ansi' — bỏ ô đó đi, Shift trái dài lại như bàn phím Mỹ;
+//   'iso'  — thêm ô đó vào bố cục vốn vẽ theo kiểu Mỹ. Windows in ra \ | ở đó với bố cục US,
+//            nên ô mới là bản sao phím Backslash, giao cho ngón út trái.
+// Dữ liệu bố cục không bị sửa: đây là bản sao chỉ dùng để vẽ.
+const ISO_KEY_WIDTH = 45;
+export function shapedLayout(layout, shape = "auto") {
+  if (!layout?.structure || layout.type === "keypad" || shape === "auto" || !shape) return layout;
+  const row = layout.structure.findIndex((keys) => keys.some((key) => key.hardware === "ShiftLeft"));
+  if (row < 0) return layout;
+  const keys = layout.structure[row];
+  const has = keys.some((key) => key.hardware === "IntlBackslash");
+  const shiftAt = keys.findIndex((key) => key.hardware === "ShiftLeft");
+  const shift = keys[shiftAt];
+  let next = null;
+  if (shape === "ansi" && has) {
+    next = keys.filter((key) => key.hardware !== "IntlBackslash")
+      .map((key) => (key === shift ? { ...key, width: String(Number(key.width || 63) + ISO_KEY_WIDTH) } : key));
+  } else if (shape === "iso" && !has) {
+    const backslash = layout.structure.flat().find((key) => key.hardware === "Backslash");
+    if (!backslash) return layout;
+    next = [...keys];
+    next[shiftAt] = { ...shift, width: String(Number(shift.width || 108) - ISO_KEY_WIDTH) };
+    next.splice(shiftAt + 1, 0, { main: backslash.main, shifted: backslash.shifted, finger: 1, hardware: "IntlBackslash" });
+  }
+  if (!next) return layout;
+  const structure = layout.structure.map((keys, index) => (index === row ? next : keys));
+  return { ...layout, structure };
+}
+
+export function createKeyboard({ activeKey, preferences, layout: sourceLayout, falling = false, onSettings }) {
+  const layout = shapedLayout(sourceLayout, preferences?.keyboardShape);
   const board = element("div", "nt-player-keyboard keyboard keyboard--a keyboard--c keyboard--full keyboard--hands");
   const isKeypad = layout?.type === "keypad";
   board.classList.toggle("keyboard--numpad", isKeypad);
   board.classList.toggle("is-falling", falling);
   board.classList.toggle("keyboard--hasSettings", !isKeypad);
   board.__ntKeyboardLayout = layout;
-  board.__ntKeyboardOptions = { activeKey, preferences, layout, falling, onSettings };
-  board.setAttribute("aria-label", isKeypad ? "Bàn phím số trên màn hình" : "Bàn phím trên màn hình");
+  board.__ntKeyboardOptions = { activeKey, preferences, layout: sourceLayout, falling, onSettings };
+  // Nhan tro nang theo ngon ngu trang (i18n/ui.<lang>.js → keyboard.boardAria / keypadAria); tieng
+  // Viet la mac dinh. Truoc day chuoi nay chot cung, va moi trang khong phai tieng Viet doc no ra.
+  const aria = globalThis.TypingEaseUI?.keyboard || {};
+  board.setAttribute("aria-label", isKeypad ? (aria.keypadAria || "Bàn phím số trên màn hình") : (aria.boardAria || "Bàn phím trên màn hình"));
   if (!isKeypad) appendSettings(board, onSettings);
   if (falling) board.append(element("div", "keyboard-overlay"));
   let entryIndex = 0;
@@ -581,6 +628,16 @@ export function createKeyboard({ activeKey, preferences, layout, falling = false
     const row = element("div", "keyboard-row");
     for (const entry of rowData) {
       const key = element("div", classForKey(entry));
+      // The finger this key belongs to, straight from the layout data. The colour tiers in
+      // keyboard.css assign `--fk` through `.key-<charcode>` selectors, which is how the source
+      // did it and which works perfectly for the Latin layouts it shipped with — and not at all
+      // for the other 100. An Arabic or Devanagari board matches none of those codes, so every
+      // key came out white and the one thing the colours exist to teach, which finger owns which
+      // key, was missing from exactly the layouts a learner is least likely to already know.
+      // The character codes stay authoritative where they match; this is the data the rest can
+      // be coloured from. Emitted for every layout so the mapping lives in one place, and read
+      // today only by landing.css.
+      if (Number.isFinite(Number(entry.finger))) key.dataset.finger = String(Number(entry.finger));
       // The flattened structure index is the stable identity `highlightKey` resolves to;
       // several layouts omit `hardware`, so it cannot be used as the key identity.
       key.dataset.entry = String(entryIndex);

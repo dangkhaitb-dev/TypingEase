@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "T and N and the space bar",
+  "summary": "The two keys with bumps, the space bar, and the habit of not looking down.",
+  "newKeys": [
+    "t",
+    "n",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "The keys with a small bump are where everything starts. Both index fingers rest there and do not wander; the rest of the course is measured from that position. Start by placing both hands and looking only at the screen.",
+  "congrats": "Your hands are in place. From here on, everything is a key you reach from this position and let go of again.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "LI",
+      "text": "This key belongs to your left index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press T to continue"
+    },
+    {
+      "newKey": "t",
+      "text": "Only T and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "t t tt\ntttt\ntttttt tttttt"
+    },
+    {
+      "type": "intro",
+      "key": "n",
+      "finger": "RI",
+      "text": "This key belongs to your right index finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press N to continue"
+    },
+    {
+      "newKey": "n",
+      "text": "Only N and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "nt nt\nnt tn ntnt\ntn nt tntn"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "The space bar belongs to your right thumb. The thumbs do nothing else, which is why you never have to look for it.",
+      "hint": "Press the space bar to continue"
+    },
+    {
+      "newKey": " ",
+      "text": "Short groups with spaces between them. The right thumb goes down and up; every other finger stays put.",
+      "type": "block",
+      "content": "nt nt\ntn nt tntn\nnnnn tttt"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "ttn",
+        "tt",
+        "tttt",
+        "tnn",
+        "ttnn",
+        "ntt",
+        "tnt",
+        "nttn",
+        "tn",
+        "tntt"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "tn tn\ntn nt tntn\ntttt nnnn"
+    },
+    {
+      "text": "The two new keys once more. There are no words to write with them yet, and that is expected.",
+      "type": "block",
+      "content": "tn nt\nnt nt\nnt tn ntnt"
+    },
+    {
+      "seconds": 25,
+      "text": "Slightly longer groups. Hurrying does not help yet.",
+      "type": "burst",
+      "tokens": [
+        "tntn",
+        "tt",
+        "tnt",
+        "nnt",
+        "ttnt",
+        "tnnn",
+        "tn",
+        "nntt",
+        "ntnn",
+        "ntn",
+        "ntt",
+        "nttn"
+      ]
+    },
+    {
+      "text": "Everything you have so far, in short groups. Eyes on the screen, not on your hands.",
+      "type": "block",
+      "content": "tntn ntnt\nnt nt\ntn nt tntn"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "nt nt\ntn nt tntn\ntttt nnnn"
+    },
+    {
+      "text": "One last round with everything learned up to here.",
+      "type": "block",
+      "content": "tntntn ntntnt\nnt nt\ntn tn"
+    }
+  ]
+}

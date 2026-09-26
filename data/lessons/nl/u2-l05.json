@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Herhaling",
+  "summary": "Geen nieuwe toetsen. Alles van hiervoor, langer achter elkaar en sneller.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "+",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Deze les leert je niets nieuws. Het is het moment om te controleren dat wat je hiervoor hebt geleerd vanzelf gaat, en dat is iets anders dan weten waar elke toets zit.",
+  "congrats": "Niets nieuws en toch sneller. Dat is precies wat er moest gebeuren.",
+  "screens": [
+    {
+      "text": "We beginnen met losse woorden. Zonder haast: snelheid komt uit nauwkeurigheid, nooit andersom.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "feest ik stroom kunst\nkomt dinsdag oefenen hemel\nonder haar rug voet"
+    },
+    {
+      "seconds": 25,
+      "text": "Een korte reeks. Maak de lijst af, ook als er eentje misgaat.",
+      "type": "burst",
+      "tokens": [
+        "maar",
+        "das",
+        "nog",
+        "winter",
+        "lak",
+        "lucifer",
+        "klimmen",
+        "meestal",
+        "taal",
+        "wereld",
+        "of",
+        "nooit"
+      ]
+    },
+    {
+      "text": "Vijf woorden per regel. Laat je ogen vooruitlopen op je vingers.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "af gala jaar gewoon het\nsluis haalde tot vijftien gaaf\nweg tong schrijven schoen ruim"
+    },
+    {
+      "text": "Weer de patronen, om te controleren dat de vingers naar de thuisrij teruggaan.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Korte woorden, in een goed tempo. Deze zouden bijna vanzelf moeten gaan.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sterk kwam ding heten\nmaand fiets nacht hoed\nvraag oom uw kool"
+    },
+    {
+      "seconds": 30,
+      "text": "Meer tijd en meer woorden. Houd hetzelfde tempo van begin tot eind.",
+      "type": "burst",
+      "tokens": [
+        "fout",
+        "kunnen",
+        "graag",
+        "vrouw",
+        "honderd",
+        "elk",
+        "sterk",
+        "ruig",
+        "hals",
+        "eik",
+        "trein",
+        "drama",
+        "stoel",
+        "glimlach"
+      ]
+    },
+    {
+      "text": "Hele zinnen. Hier zie je of de hand vanzelf naar zijn plek teruggaat.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "de reis is duur\nin de winter wordt het vroeg donker\ndie jas is erg duur"
+    },
+    {
+      "text": "De laatste ronde. Ben je hier gekomen zonder naar het toetsenbord te kijken, dan is de les klaar.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "maar genoeg kunst etalage weet\ndrama tuinen derde maart als\nme deftig lucifers even kaart"
+    }
+  ]
+}

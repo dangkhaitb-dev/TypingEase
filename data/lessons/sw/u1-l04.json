@@ -1,0 +1,120 @@
+{
+  "id": "u1-l04",
+  "unit": "u1",
+  "group": "start",
+  "order": 4,
+  "slug": "a-semicolon",
+  "title": "A na nukta mkato",
+  "summary": "Vitufe vipya: A na nukta mkato. Kidole kinatoka, kinabonyeza na kurudi.",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Vitufe vipya katika somo hili: A na nukta mkato. Vinabonyezwa na kidole kidogo cha kushoto na kidole kidogo cha kulia. Mwendo ni uleule kila mara — toka, bonyeza na rudi — na kurudi ndiko kunakofanyiwa mazoezi, kwa sababu kidole kikibaki nje, herufi inayofuata inakosewa.",
+  "congrats": "Vitufe zaidi chini ya vidole vyako. Kama A na nukta mkato vinakuja bila kuvitafuta, somo limefanya kazi yake.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "a",
+      "finger": "LP",
+      "text": "Kitufe hiki ni cha kidole kidogo cha kushoto. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza A ili kuendelea"
+    },
+    {
+      "newKey": "a",
+      "text": "A tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "a a\nfja d fj\na a aa"
+    },
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "RP",
+      "text": "Kitufe hiki ni cha kidole kidogo cha kulia. Kitafute bila kutazama, kibonyeze mara moja, kisha acha kidole kirudi mahali pake. Kurudi ni muhimu kama kubonyeza.",
+      "hint": "Bonyeza ; ili kuendelea"
+    },
+    {
+      "newKey": ";",
+      "text": "; tu na vile unavyovijua tayari. Polepole, na kidole kirudi kwenye safu ya msingi baada ya kila mbonyezo.",
+      "type": "block",
+      "content": "a;a; ;a;a\na; ;a\n;df ja ;d"
+    },
+    {
+      "seconds": 20,
+      "text": "Vikundi vifupi, kimoja baada ya kingine. Endelea hadi mwisho hata ukikosea kimoja.",
+      "type": "burst",
+      "tokens": [
+        ";aaa",
+        "aa;",
+        "aaa",
+        "a;;a",
+        ";a;;",
+        ";;aa",
+        "a;;",
+        "aa;;",
+        ";a;a",
+        "a;aa"
+      ]
+    },
+    {
+      "text": "Vitufe vipya vikichanganywa na vya zamani, jinsi vitakavyotokea ndani ya maneno.",
+      "type": "block",
+      "content": "a; ;a a;a;\naaa ;;;; ffff jjj\na;a; ;a;a"
+    },
+    {
+      "text": "Maneno halisi yenye vitufe vipya. Andika kila neno kwa mkupuo mmoja, si herufi kwa herufi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "saa lala kaka jalada\nala kasa ada kaa\nkaa ala jaa falsafa"
+    },
+    {
+      "seconds": 25,
+      "text": "Mfululizo wa maneno mafupi yenye vitufe vipya.",
+      "type": "burst",
+      "tokens": [
+        "falsafa",
+        "saa",
+        "lala",
+        "kaka",
+        "sasa",
+        "jalada",
+        "ala",
+        "la",
+        "kasa",
+        "ada"
+      ]
+    },
+    {
+      "text": "Sasa uzito uko kwenye A, kitufe ulichobonyeza mara chache zaidi.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaa kaka jalada jaa\nlala ada la kasa\nsaa dada sasa ala"
+    },
+    {
+      "text": "Turudi kwenye mifumo kwa muda, kuhakikisha vidole bado vinapata njia ya kurudi.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "a;a;a; ;a;a;a\na; ;a\nj;a df j;"
+    },
+    {
+      "text": "Kila ulicho nacho, kimechanganywa. Angalia ni maneno mangapi tayari yanakuja bila kufikiri.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "saa sasa jaa kasa\nada lala faa saa\nla saa kaa lala"
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Repaso",
+  "summary": "Ninguna tecla nueva. Todo lo anterior, más seguido y más rápido.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Esta lección no enseña nada nuevo. Es el momento de comprobar que lo anterior sale sin pensarlo, que es distinto de saber dónde está cada tecla.",
+  "congrats": "Nada nuevo y aun así más rápido. Eso es exactamente lo que debía pasar.",
+  "screens": [
+    {
+      "text": "Para empezar, palabras sueltas. Sin prisa: la velocidad sale de la precisión, nunca al revés.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "guardia gafas vecinos cortas\nvientos manos un verdades\noeste dijes lejos ver"
+    },
+    {
+      "seconds": 25,
+      "text": "Una ráfaga corta. Termina la lista aunque se te escape alguna.",
+      "type": "burst",
+      "tokens": [
+        "centros",
+        "hijas",
+        "comidas",
+        "llegar",
+        "mañana",
+        "ciudad",
+        "humilde",
+        "gente",
+        "sur",
+        "idea",
+        "sueño",
+        "gustar"
+      ]
+    },
+    {
+      "text": "Cinco palabras por línea. Deja que los ojos vayan por delante de los dedos.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "al haga hilos cartas grandes\nniñas ruedas ayudas regla comidas\nhagas tierra ciencia comer unas"
+    },
+    {
+      "text": "Patrones otra vez, para comprobar que los dedos siguen volviendo a la fila de reposo.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ldj sak ld\nfj jf fjfj\nkkk jjj ffff ddd"
+    },
+    {
+      "text": "Palabras cortas, a buen ritmo. Estas deberían salir ya casi solas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "hasta mundo daño caña\nmismo jugar unas toros\nmanos verde oreja dedo"
+    },
+    {
+      "seconds": 30,
+      "text": "Más tiempo y más palabras. Mantén el mismo ritmo de principio a fin.",
+      "type": "burst",
+      "tokens": [
+        "trece",
+        "mejor",
+        "toro",
+        "mas",
+        "meses",
+        "sola",
+        "once",
+        "hasta",
+        "nueva",
+        "sur",
+        "ayudar",
+        "juguetes",
+        "daño",
+        "ala"
+      ]
+    },
+    {
+      "text": "Frases completas. Aquí es donde se nota si la mano vuelve sola a su sitio.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "el tren llega a las siete de la mañana\nla ventana de mi cuarto da a la calle\nhace mucho calor en el mes de agosto"
+    },
+    {
+      "text": "La última tanda. Si has llegado hasta aquí sin mirar el teclado, la lección está hecha.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "señora sueldos corta solas traes\nfelices nada guarda medio a\nmañana comunes madres sugerir grandes"
+    }
+  ]
+}

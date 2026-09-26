@@ -1,0 +1,150 @@
+{
+  "id": "u4-l01",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 28,
+  "slug": "symbols-1",
+  "title": "`, ~, ! en @",
+  "summary": "In deze les: `, ~, ! en @.",
+  "newKeys": [
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Toetsen die de cursus nog niet heeft gebruikt: `, ~, ! en @. Voor sommige heb je Shift nodig, met de pink van de andere hand; de andere hebben een eigen toets die de cursus nog niet had gebruikt.",
+  "congrats": "`, ~, ! en @: nu onder je vingers. Het teken komt er net zo makkelijk uit als de letter ernaast.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "`",
+      "finger": "LP",
+      "text": "` typ je met de linkerpink.",
+      "hint": "Druk op ` om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "`",
+      "text": "Eerst alleen `, daarna op de plek waar je het echt gebruikt.",
+      "content": "`` ` `rijk` `punt` `rood`\n`` ` `blij` `elke` `lopen`\n`` ` `januari` `garage` `hand`"
+    },
+    {
+      "type": "block",
+      "newKey": "~",
+      "text": "Eerst alleen ~, daarna op de plek waar je het echt gebruikt.",
+      "content": "~~ ~ ~83 ~28 ~29\n~~ ~ ~47 ~87 ~22\n~~ ~ ~36 ~92 ~46"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "LP",
+      "text": "! typ je met de linkerpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op ! om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "Eerst alleen !, daarna op de plek waar je het echt gebruikt.",
+      "content": "!! ! garage! baby's! doen!\n!! ! zijn! deze! zoon!\n!! ! zaal! breed! verkeer!"
+    },
+    {
+      "type": "intro",
+      "key": "@",
+      "finger": "LR",
+      "text": "@ typ je met de linkerringvinger, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op @ om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "@",
+      "text": "Eerst alleen @, daarna op de plek waar je het echt gebruikt.",
+      "content": "@@ @ koekje@pakken slaap@ruim mevrouw@kamperen\n@@ @ muziek@nummer kapot@sterk rib@weet\n@@ @ zitten@grond rijk@onder type@thuis"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Een reeks korte stukjes met deze tekens.",
+      "tokens": [
+        "eerder!",
+        "~64",
+        "hemel!",
+        "wind@goed",
+        "~98",
+        "~7",
+        "meer!",
+        "traag@bomen",
+        "tegel!",
+        "kruk!"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Alles van deze les, door elkaar.",
+      "content": "`reis` gevonden! ~69 ~36\n~25 nieuwe! `opa` ~69\n~42 ~13 `ja` taxi's!"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Weer woorden, met de tekens op hun plek.",
+      "content": "~28 boven `held` stad goede@verhaal\nzitten@pen soort `zak` zullen hoe!\n~57 werk `zaal` krant stoel@dromen"
+    }
+  ]
+}

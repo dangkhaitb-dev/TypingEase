@@ -1,0 +1,161 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "#, $, % dan ^",
+  "summary": "Di pelajaran ini: #, $, % dan ^.",
+  "newKeys": [
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tombol yang belum dipakai kursus ini: #, $, % dan ^. Semuanya keluar dengan Shift ditambah tombol yang sudah dikenal jarimu — Shift ditekan kelingking tangan yang lain.",
+  "congrats": "#, $, % dan ^: sekarang sudah di bawah jarimu. Shift dengan tangan yang lain, dan simbol keluar semudah huruf di sebelahnya.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "#",
+      "finger": "LM",
+      "text": "# ditekan dengan jari tengah kiri, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan # untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "#",
+      "text": "Pertama # saja, lalu di tempat ia memang dipakai.",
+      "content": "## # #16 #32 #83\n## # #73 #73 #37\n## # #24 #84 #67"
+    },
+    {
+      "type": "intro",
+      "key": "$",
+      "finger": "LI",
+      "text": "$ ditekan dengan telunjuk kiri, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan $ untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "$",
+      "text": "Pertama $ saja, lalu di tempat ia memang dipakai.",
+      "content": "$$ $ $81 $28 $14\n$$ $ $24 $45 $88\n$$ $ $83 $71 $60"
+    },
+    {
+      "type": "intro",
+      "key": "%",
+      "finger": "LI",
+      "text": "% ditekan dengan telunjuk kiri, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan % untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "%",
+      "text": "Pertama % saja, lalu di tempat ia memang dipakai.",
+      "content": "%% % 7% 8% 95%\n%% % 62% 14% 94%\n%% % 29% 12% 74%"
+    },
+    {
+      "type": "intro",
+      "key": "^",
+      "finger": "RI",
+      "text": "^ ditekan dengan telunjuk kanan, sambil tangan yang lain menahan Shift.",
+      "hint": "Tekan ^ untuk lanjut"
+    },
+    {
+      "type": "block",
+      "newKey": "^",
+      "text": "Pertama ^ saja, lalu di tempat ia memang dipakai.",
+      "content": "^^ ^ 20^3 77^3 8^1\n^^ ^ 96^3 23^2 29^2\n^^ ^ 71^2 90^1 22^3"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Rentetan potongan pendek yang berisi karakter-karakter ini.",
+      "tokens": [
+        "$94",
+        "62%",
+        "$31",
+        "49%",
+        "53^1",
+        "$97",
+        "#61",
+        "30^3",
+        "#10",
+        "5^2"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Semua isi pelajaran ini, dicampur.",
+      "content": "31% $77 $60 #74\n17% 55% $62 $47\n$8 #56 $96 68%"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Kata-kata lagi, dengan simbol di tempatnya.",
+      "content": "96^1 halal #62 cocok #67\n15^3 raja 34^2 banyak $28\n67^2 manis 29^1 kaca 2%"
+    }
+  ]
+}

@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Kemajuan mengetikmu | TypingEase</title>
+    <meta name="description" content="Lihat perkembangan mengetikmu: nilai setiap pelajaran, KPM dan ketepatan terbaikmu, peta panas tombol yang sering salah, hari berturut-turutmu, dan target harianmu." />
+    <link rel="canonical" href="https://typingease.site/id/kemajuan/" />
+    <!-- Trang sinh bằng scripts/build-progress-pages.mjs từ tien-do/text/id.mjs, progress trong
+         i18n/ui.id.js và bai-hoc/config.id.mjs. Sửa ở đó rồi chạy lại, đừng sửa tay. -->
+    <!-- noindex (Đợt 0 chống spam, 2026-09-25): mọi con số ở đây nằm trong localStorage của người
+         học, nên Google chỉ thấy 27 bản trạng thái trống cùng một khuôn — đúng dạng trang cửa ngõ.
+         "follow" để liên kết trong trang vẫn được đi theo. Không có hreflang: trang noindex không
+         thuộc cụm hreflang nào. -->
+    <meta name="robots" content="noindex, follow" />
+    <link rel="icon" href="/favicon.ico" sizes="any" />
+    <link rel="icon" type="image/png" sizes="48x48" href="/assets/favicon-48x48.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/assets/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/assets/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;600;700;800&family=DM+Mono:wght@400;500&family=Roboto+Mono:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/tokens.css" />
+    <link rel="stylesheet" href="/base.css" />
+    <link rel="stylesheet" href="/keyboard/keyboard.css" />
+    <link rel="stylesheet" href="/tien-do/progress.css" />
+  </head>
+  <body class="progress-page">
+    <header class="topbar">
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <nav aria-label="Navigasi utama">
+        <a href="/id/">Latihan</a>
+        <a data-route="lessons" href="/id/pelajaran/">Kursus</a>
+        <a class="active" href="/id/kemajuan/">Kemajuan</a>
+      </nav>
+      <div class="header-actions"><a class="home-switch" href="/" title="Pilih bahasa dan papan ketik">Beranda</a><a class="secondary-button" data-route="learn" href="/id/belajar/">Terus belajar <span>→</span></a></div>
+    </header>
+
+    <main class="progress-main">
+      <section class="prog-head">
+        <p class="eyebrow"><i></i> Sejauh mana kamu</p>
+        <h1>Kemajuan mengetikmu</h1>
+        <p class="prog-intro">Semua angka di halaman ini disimpan di perangkat ini dan tidak dikirim ke mana pun. Selesaikan satu pelajaran lagi dan angkanya ikut diperbarui.</p>
+        <div class="status-strip" id="status-strip">
+          <span id="strip-streak">🔥 0 hari berturut-turut</span>
+          <span id="strip-today">0 menit hari ini</span>
+          <span id="strip-level">Tingkat: Baru mulai</span>
+        </div>
+      </section>
+
+      <section class="prog-summary" aria-label="Ringkasan">
+        <div><span>Pelajaran selesai</span><strong id="sum-lessons">0 / 35</strong></div>
+        <div><span>Bintang terkumpul</span><strong id="sum-stars">0</strong></div>
+        <div><span>KPM terbaik</span><strong id="sum-wpm">0 WPM</strong></div>
+        <div><span>Ketepatan terbaik</span><strong id="sum-accuracy">--%</strong></div>
+      </section>
+      <p class="prog-legacy" id="prog-legacy" hidden></p>
+
+      <section class="badges" id="badges" aria-labelledby="badges-title">
+        <div class="badges-heading">
+          <div>
+            <p class="eyebrow"><i></i> Pencapaian</p>
+            <h2 id="badges-title">Lencana</h2>
+            <p>Setiap lencana terikat pada angka nyata di tabel di bawah — satu-satunya cara membukanya adalah dengan mengetik.</p>
+          </div>
+          <span class="badges-count" id="badges-count">0 / 9</span>
+        </div>
+        <ul class="badge-grid" id="badge-grid"></ul>
+      </section>
+
+      <section class="daily-goal" aria-labelledby="daily-goal-title">
+        <div class="daily-goal-copy">
+          <p id="daily-goal-kicker">Target hari ini</p>
+          <h3 id="daily-goal-title">0 / 10 menit</h3>
+          <p id="daily-goal-status">🔥 0 hari berturut-turut</p>
+        </div>
+        <div class="daily-goal-progress">
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <p id="daily-best-streak">Terbaik: 0 hari</p>
+        </div>
+        <div class="daily-goal-options" role="group" aria-label="Pilih target harian">
+          <button type="button" data-daily-goal="5" aria-pressed="false">5 menit</button>
+          <button type="button" data-daily-goal="10" aria-pressed="true" class="selected">10 menit</button>
+          <button type="button" data-daily-goal="15" aria-pressed="false">15 menit</button>
+          <button type="button" data-daily-goal="20" aria-pressed="false">20 menit</button>
+        </div>
+      </section>
+
+      <section class="coach" id="coach" aria-labelledby="coach-title">
+        <div class="coach-head">
+          <div><p class="coach-kicker" id="coach-kicker">Pelatihmu</p><h3 id="coach-title">Posisimu sekarang</h3></div>
+          <span class="coach-level" id="coach-level">Baru mulai</span>
+        </div>
+        <div class="coach-body">
+          <div class="coach-stats" id="coach-stats"></div>
+          <svg class="coach-trend" id="coach-trend" viewBox="0 0 200 52" preserveAspectRatio="none" role="img" aria-label="Kemajuan terbaru" hidden></svg>
+          <p class="coach-trend-hint" id="coach-trend-hint">2 pelajaran lagi dan trennya sudah bisa digambar.</p>
+        </div>
+        <p class="coach-target" id="coach-target"></p>
+        <div class="coach-keys" id="coach-keys"></div>
+        <p class="coach-advice" id="coach-advice" aria-live="polite">Selesaikan satu pelajaran dan halaman ini akan tahu posisimu.</p>
+        <a class="coach-action" id="coach-action" href="/id/belajar/">Mulai pelajaran 1 →</a>
+      </section>
+
+      <section class="keyboard-lab" aria-labelledby="heat-title">
+        <div class="keyboard-copy">
+          <p class="eyebrow"><i></i> Tombol demi tombol</p>
+          <h3 id="heat-title">Peta panas papan ketik</h3>
+          <p>Tombol hijau kamu tekan dengan mantap, tombol kuning kadang kena kadang meleset, dan tombol merah sedang memperlambatmu. Sebuah tombol baru diberi warna setelah cukup sering kamu ketik sehingga warnanya berarti.</p>
+          <p class="heat-empty" id="heat-empty">Datanya belum cukup — selesaikan beberapa pelajaran lalu kembali lagi.</p>
+          <div class="heat-legend" id="heat-legend" aria-label="Ketepatan per tombol" hidden></div>
+        </div>
+        <div class="keyboard-demo heat-board" id="heat-board"></div>
+      </section>
+
+      <section class="results" id="bang-xep-hang" aria-labelledby="results-title">
+        <div class="results-heading">
+          <div>
+            <p class="eyebrow" id="results-kicker" data-template="Kursus {n} pelajaran"><i></i> Kursus 35 pelajaran</p>
+            <h2 id="results-title">Nilai setiap pelajaran</h2>
+            <p>Putaran terbaikmu di setiap pelajaran, tersimpan di perangkat ini.</p>
+          </div>
+          <button class="clear-results" id="clear-results" type="button">Hapus riwayat</button>
+        </div>
+        <div class="results-table-wrap">
+          <table class="results-table">
+            <thead><tr><th>Pelajaran</th><th>Layar selesai</th><th>Bintang</th><th>KPM terbaik</th><th>Ketepatan</th></tr></thead>
+            <tbody id="results-body"></tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="explore" aria-labelledby="prog-explore-title">
+        <div class="explore-heading">
+          <p class="eyebrow"><i></i> Terus melangkah</p>
+          <h2 id="prog-explore-title">Langkah berikutnya</h2>
+        </div>
+        <div class="explore-grid">
+          <a class="explore-card" data-route="lessons" href="/id/pelajaran/">
+            <h3>Kursus lengkap</h3>
+            <p>Semua unit secara berurutan. Kembali ke pelajaran yang ingin kamu ulangi, atau buka unit berikutnya lebih awal.</p>
+            <span>Lihat kursus <b aria-hidden="true">→</b></span>
+          </a>
+          <a class="explore-card" href="/">
+            <h3>Mengetik di papan ketikmu sendiri</h3>
+            <p>QWERTY, AZERTY, QWERTZ, Dewanagari, Arab, JIS — 119 tata letak sungguhan, dan kursus mengikuti yang kamu pilih.</p>
+            <span>Lihat tata letaknya <b aria-hidden="true">→</b></span>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <a class="brand" href="/">Typing<span>Ease</span></a>
+      <p>Sedikit lebih pelan, dan kamu akan sampai jauh lebih jauh.</p>
+      <span>© 2024 TypingEase</span>
+      <!-- legal --><p class="footer-legal"><a href="/id/about/">Tentang</a><span aria-hidden="true"> · </span><a href="/id/terms/">Ketentuan Layanan</a><span aria-hidden="true"> · </span><a href="/id/privacy/">Kebijakan Privasi</a></p><!-- /legal -->
+    </footer>
+
+    <!-- Thứ tự là luật: ui.id.js trước tiên (mọi bảng chữ đã phủ khi script chạy), rồi chọn khoá
+         và nạp data/curriculum.<khoá>.js TRƯỚC progress-store.js và badges.js — cả hai đọc tên kho
+         localStorage từ TypingEaseCurriculum ngay lúc nạp. -->
+    <script src="/i18n/ui.id.js"></script>
+    <script>
+      (function () {
+        var COURSES = {"id":{"learn":"/id/belajar/","lessons":"/id/pelajaran/"}};
+        var wanted = new URLSearchParams(location.search).get('course');
+        var id = Object.prototype.hasOwnProperty.call(COURSES, wanted) ? wanted : "id";
+        var routes = window.TypingEaseUI && window.TypingEaseUI.routes;
+        if (routes) { routes.learn = COURSES[id].learn; routes.lessons = COURSES[id].lessons; }
+        document.documentElement.setAttribute('data-course', id);
+        document.write('<script src="/data/curriculum.' + id + '.js"><\/script>');
+        document.addEventListener('DOMContentLoaded', function () {
+          document.querySelectorAll('[data-route]').forEach(function (link) { link.href = COURSES[id][link.dataset.route]; });
+          document.querySelectorAll('#prog-courses a').forEach(function (link) {
+            if (link.dataset.course === id) link.setAttribute('aria-current', 'page'); else link.removeAttribute('aria-current');
+          });
+          var kicker = document.getElementById('results-kicker'), curriculum = window.TypingEaseCurriculum;
+          if (kicker && curriculum) kicker.innerHTML = '<i></i> ' + kicker.dataset.template.replace('{n}', curriculum.sequence.length);
+        });
+      })();
+    </script>
+    <script src="/profile.js"></script>
+    <script src="/progress-store.js"></script>
+    <script src="/badges.js"></script>
+    <script src="/keyboard/ready.js"></script>
+    <script type="module" src="/keyboard/boot.js"></script>
+    <script src="/tien-do/progress-page.js"></script>
+    <script src="/menu.js" defer></script>
+    <script src="/sw-register.js"></script>
+  </body>
+</html>

@@ -1,0 +1,171 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "{, }, | と コロン",
+  "summary": "このレッスンのキー：{, }, | と コロン",
+  "newKeys": [
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "'",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "/",
+    "-",
+    "=",
+    "[",
+    "]",
+    "\\",
+    "`",
+    "~",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "^",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "{",
+    "}",
+    "|",
+    ":"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "この講座でまだ使っていないキーです：{, }, | と コロン。どれも、指がすでに知っているキーを Shift と一緒に押します。Shift は反対の手の小指で押してください。",
+  "congrats": "{, }, | と コロンも指が覚えました。記号も、となりの文字と同じように出てきます。",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "{",
+      "finger": "RP",
+      "text": "{ は右手の小指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "{ を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "{",
+      "text": "まず { だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "{{ { {kitai {iki {ginkou\n{{ { {toshi {kippu {jippunn\n{{ { {hizashi {kubi {warui"
+    },
+    {
+      "type": "intro",
+      "key": "}",
+      "finger": "RP",
+      "text": "} は右手の小指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "} を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "}",
+      "text": "まず } だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "}} } {dekiru} {aka} {kibou}\n}} } {sakasa} {taiiku} {kaisuu}\n}} } {kusa} {deru} {gakusei}"
+    },
+    {
+      "type": "intro",
+      "key": "|",
+      "finger": "RP",
+      "text": "| は右手の小指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": "| を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": "|",
+      "text": "まず | だけを打ち、次に実際に使われる形で打ちます。",
+      "content": "|| | kouenn|hachi mamoru|kirei konnya|sagaru\n|| | tsugi|ni are|kikai kiru|musubu\n|| | kome|kubi hakase|pannya kuni|hi-ta-"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RP",
+      "text": "コロン は右手の小指で押します。Shift は反対の手で押します。押したら、指はすぐにホームポジションへ戻してください。",
+      "hint": ": を押して次へ"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "まず コロン だけを打ち、次に実際に使われる形で打ちます。",
+      "content": ":: : anime: koe: mijikai:\n:: : sumu: beru: atama:\n:: : ninjinn: kyuuri: ima:"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "これらの文字を含む短いかたまりの連打です。",
+      "tokens": [
+        "{shi}",
+        "{katakana}",
+        "keikaku:",
+        "{yureru}",
+        "{chikaku}",
+        "{junbi}",
+        "to|nezumi",
+        "mainichi:",
+        "ningenn:",
+        "tetsu:"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "このレッスンで出てきたものを、すべて混ぜて打ちます。",
+      "content": "{atsui} manabu|kinou {tatemono} {sukoshi}\noyatsu|uru {tomaru} {otagai} {kyuuri}\n{yomu} kowai: {ureshii} {yasumi}"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "もう一度単語です。記号はそれぞれ使われる位置にあります。",
+      "content": "{hiroi} nagai kotoshi|tokoroga hiroi {akeru}\nhakkiri: nana amai|hajimete sentaku konnya|jitaku\nkaishi: nedann michi|hiji ashi au|haha"
+    }
+  ]
+}

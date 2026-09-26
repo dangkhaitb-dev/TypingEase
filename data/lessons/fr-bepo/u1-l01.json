@@ -1,0 +1,127 @@
+{
+  "id": "u1-l01",
+  "unit": "u1",
+  "group": "start",
+  "order": 1,
+  "slug": "f-j",
+  "title": "E et T, plus la barre d'espace",
+  "summary": "Les deux touches à repère, la barre d'espace, et l'habitude de ne pas regarder en bas.",
+  "newKeys": [
+    "e",
+    "t",
+    " "
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Les touches qui portent un petit repère sont le point de départ. Les deux index s'y posent et n'en bougent plus ; tout le reste du cours se mesure depuis cette position. Commence par poser les deux mains et par ne regarder que l'écran.",
+  "congrats": "Les mains sont posées. À partir d'ici, tout est une touche qu'on atteint depuis cette position et qu'on relâche.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "e",
+      "finger": "LI",
+      "text": "C'est l'index gauche qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur E pour continuer"
+    },
+    {
+      "newKey": "e",
+      "text": "Seulement E et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "e e ee\neeee\neeeeee eeeeee"
+    },
+    {
+      "type": "intro",
+      "key": "t",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe cette touche. Trouve-la sans regarder, appuie une fois, et laisse le doigt revenir à sa place. Le retour compte autant que la frappe.",
+      "hint": "Appuie sur T pour continuer"
+    },
+    {
+      "newKey": "t",
+      "text": "Seulement T et ce que tu connais déjà. Lentement, et que le doigt revienne à la rangée de repos après chaque frappe.",
+      "type": "block",
+      "content": "te te\nte et tete\net te etet"
+    },
+    {
+      "type": "intro",
+      "key": " ",
+      "finger": "RT",
+      "text": "La barre d'espace appartient au pouce droit. Les pouces ne font rien d'autre, et c'est pour ça qu'on n'a jamais à la chercher.",
+      "hint": "Appuie sur la barre d'espace pour continuer"
+    },
+    {
+      "newKey": " ",
+      "text": "Des groupes courts séparés par des espaces. Le pouce droit descend et remonte ; les autres doigts ne bougent pas de leur touche.",
+      "type": "block",
+      "content": "te te\net te etet\ntttt eeee"
+    },
+    {
+      "seconds": 20,
+      "text": "Des groupes courts, l'un après l'autre. Va jusqu'au bout même si tu en rates.",
+      "type": "burst",
+      "tokens": [
+        "eet",
+        "ee",
+        "eeee",
+        "ett",
+        "eett",
+        "tee",
+        "ete",
+        "teet",
+        "et",
+        "etee"
+      ]
+    },
+    {
+      "text": "Les nouvelles touches mélangées aux anciennes, comme elles apparaîtront dans les mots.",
+      "type": "block",
+      "content": "et et\net te etet\neeee tttt"
+    },
+    {
+      "text": "Encore les deux nouvelles touches. Il n'y a pas encore de mots à écrire avec, et c'est normal.",
+      "type": "block",
+      "content": "et te\nte te\nte et tete"
+    },
+    {
+      "seconds": 25,
+      "text": "Des groupes un peu plus longs. Se dépêcher n'aide pas encore.",
+      "type": "burst",
+      "tokens": [
+        "etet",
+        "ee",
+        "ete",
+        "tte",
+        "eete",
+        "ettt",
+        "et",
+        "ttee",
+        "tett",
+        "tet",
+        "tee",
+        "teet"
+      ]
+    },
+    {
+      "text": "Tout ce que tu as, en groupes courts. Regarde l'écran, pas tes mains.",
+      "type": "block",
+      "content": "etet tete\nte te\net te etet"
+    },
+    {
+      "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "te te\net te etet\neeee tttt"
+    },
+    {
+      "text": "Une dernière série avec tout ce qui a été vu jusqu'ici.",
+      "type": "block",
+      "content": "etetet tetete\nte te\net et"
+    }
+  ]
+}

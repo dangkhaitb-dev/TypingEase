@@ -1,0 +1,165 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "*, (, ) e _",
+  "summary": "Nesta lição: *, (, ) e _.",
+  "newKeys": [
+    "*",
+    "(",
+    ")",
+    "_"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ç",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "~",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    ";",
+    "-",
+    "=",
+    "´",
+    "[",
+    "]",
+    "'",
+    "\"",
+    "!",
+    "@",
+    "#",
+    "$",
+    "%",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Teclas que o curso ainda não usou: *, (, ) e _. Todas saem com Shift e uma tecla que os seus dedos já conhecem — Shift com o mindinho da outra mão.",
+  "congrats": "*, (, ) e _: agora debaixo dos seus dedos. O sinal sai tão fácil quanto a letra ao lado.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "Quem aperta * é o dedo médio direito, com Shift na outra mão.",
+      "hint": "Aperte * para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Primeiro * sozinho, e depois onde ele realmente aparece.",
+      "content": "** * *cursos* *esquerda* *trocar*\n** * *gelada* *difíceis* *espera*\n** * *filho* *prazer* *sapatos*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "Quem aperta ( é o anelar direito, com Shift na outra mão.",
+      "hint": "Aperte ( para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Primeiro ( sozinho, e depois onde ele realmente aparece.",
+      "content": "(( ( (pó (cadeira (atual\n(( ( (escura (mala (meninas\n(( ( (tia (casa (pergunta"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RP",
+      "text": "Quem aperta ) é o mindinho direito, com Shift na outra mão.",
+      "hint": "Aperte ) para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "Primeiro ) sozinho, e depois onde ele realmente aparece.",
+      "content": ")) ) (goiaba) (verão) (irmão)\n)) ) (medo) (sorte) (aja)\n)) ) (uva) (saúde) (estrelas)"
+    },
+    {
+      "type": "intro",
+      "key": "_",
+      "finger": "RP",
+      "text": "Quem aperta _ é o mindinho direito, com Shift na outra mão.",
+      "hint": "Aperte _ para continuar"
+    },
+    {
+      "type": "block",
+      "newKey": "_",
+      "text": "Primeiro _ sozinho, e depois onde ele realmente aparece.",
+      "content": "__ _ criança_países rua_braços autor_sabão\n__ _ folhas_baixo este_cidadão cama_siglas\n__ _ nome_queixo grupo_blusa orelha_visita"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Uma rajada de trechos curtos com estes caracteres.",
+      "tokens": [
+        "(velas)",
+        "*corre*",
+        "*saias*",
+        "(frase)",
+        "(passo)",
+        "*dono*",
+        "(canto)",
+        "*atleta*",
+        "esta_das",
+        "valor_chapéu"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tudo o que esta lição trouxe, misturado.",
+      "content": "(seda) museu_fala sinal_açúcar (tarde)\ntudo_educação (cedo) saber_batatas pouco_palavras\n(como) (abacate) *questão* *amigo*"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Palavras de novo, com os sinais no lugar.",
+      "content": "branca_mas sabor baixo_pequenos pouca *alga*\n*aprender* algum *facas* pipoca (pronta)\n(seja) problema *começo* voar ruim_tios"
+    }
+  ]
+}

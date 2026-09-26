@@ -1,0 +1,126 @@
+{
+  "id": "u1-l08",
+  "unit": "u1",
+  "group": "reach",
+  "order": 8,
+  "slug": "r-u",
+  "title": "P e G",
+  "summary": "Tasti nuovi: P e G. Il dito esce, preme e rientra.",
+  "newKeys": [
+    "p",
+    "g"
+  ],
+  "keysSoFar": [
+    " ",
+    "u",
+    "h",
+    "e",
+    "t",
+    "o",
+    "n",
+    "a",
+    "s",
+    "i",
+    "d",
+    ".",
+    "c",
+    "p",
+    "g"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tasti nuovi in questa lezione: P e G. Si premono con l'indice sinistro e l'indice destro. Il movimento è sempre lo stesso — uscire, premere e rientrare — e il rientro è la parte che si allena, perché se il dito resta fuori la lettera dopo esce storta.",
+  "congrats": "Altri tasti sotto le dita. Se P e G ti escono senza cercarli, la lezione ha fatto il suo lavoro.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "p",
+      "finger": "LI",
+      "text": "Questo tasto lo prende l'indice sinistro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi P per continuare"
+    },
+    {
+      "newKey": "p",
+      "text": "Solo P e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "uhp e uh\np p pp\nppp"
+    },
+    {
+      "type": "intro",
+      "key": "g",
+      "finger": "RI",
+      "text": "Questo tasto lo prende l'indice destro. Cercalo senza guardare, premi una volta e lascia che il dito torni al suo posto. Il rientro conta quanto la pressione.",
+      "hint": "Premi G per continuare"
+    },
+    {
+      "newKey": "g",
+      "text": "Solo G e quello che già conosci. Piano, e il dito torna alla riga di riposo dopo ogni pressione.",
+      "type": "block",
+      "content": "gp gp\nphg ue ph\npg gp pgpg"
+    },
+    {
+      "seconds": 20,
+      "text": "Gruppi corti, uno dopo l'altro. Arriva in fondo anche se ne sbagli qualcuno.",
+      "type": "burst",
+      "tokens": [
+        "ppg",
+        "pgpg",
+        "ppp",
+        "pggp",
+        "gpg",
+        "pp",
+        "gggp",
+        "gppg",
+        "ppgg",
+        "gpgg"
+      ]
+    },
+    {
+      "text": "I tasti nuovi mescolati ai precedenti, che è come li troverai dentro le parole.",
+      "type": "block",
+      "content": "up pu upup\npppp hhhh uuuu ggg\npgpg gpgp"
+    },
+    {
+      "text": "Parole vere con i tasti nuovi. Scrivi la parola intera di seguito, non lettera per lettera.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "gatto poco guida giada\npunto piatto pieno giusti\npochi gusto pane gita"
+    },
+    {
+      "seconds": 25,
+      "text": "Una raffica di parole corte con dentro i tasti nuovi.",
+      "type": "burst",
+      "tokens": [
+        "piatto",
+        "sono",
+        "cosa",
+        "donna",
+        "dea",
+        "piano",
+        "nido",
+        "ghiaia",
+        "gatto",
+        "stanco"
+      ]
+    },
+    {
+      "text": "Adesso con il peso su P, il tasto che hai premuto meno volte.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "cena idea anno piede\ntesta secondo notte cosa\npenna canta piano chi"
+    },
+    {
+      "text": "Torniamo un momento agli schemi, per verificare che le dita continuino a rientrare al loro posto.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ppp gggg\npgpgpg gpgpgp\ngp gp"
+    },
+    {
+      "text": "Tutto quello che hai, mescolato. Guarda quante parole ti vengono già senza pensarci.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ad pieno tutti guida\ngite gioia contento sono\nsaga penna ho giada"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Repaso",
+  "summary": "Ninguna tecla nueva. Todo lo anterior, más seguido y más rápido.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Esta lección no enseña nada nuevo. Es el momento de comprobar que lo anterior sale sin pensarlo, que es distinto de saber dónde está cada tecla.",
+  "congrats": "Nada nuevo y aun así más rápido. Eso es exactamente lo que debía pasar.",
+  "screens": [
+    {
+      "text": "Para empezar, palabras sueltas. Sin prisa: la velocidad sale de la precisión, nunca al revés.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "saladas falsas fallas dada\nal faldas fallas asada\nasada sal dadas asadas"
+    },
+    {
+      "seconds": 25,
+      "text": "Una ráfaga corta. Termina la lista aunque se te escape alguna.",
+      "type": "burst",
+      "tokens": [
+        "asada",
+        "salada",
+        "saladas",
+        "salas",
+        "ala",
+        "sala",
+        "salsa",
+        "fallas",
+        "falda",
+        "falsas",
+        "la",
+        "alas"
+      ]
+    },
+    {
+      "text": "Cinco palabras por línea. Deja que los ojos vayan por delante de los dedos.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "falsa sal ala salsa salas\nla falda falsa sal dadas\nsalada falla dadas sal sala"
+    },
+    {
+      "text": "Patrones otra vez, para comprobar que los dedos siguen volviendo a la fila de reposo.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Palabras cortas, a buen ritmo. Estas deberían salir ya casi solas.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "ala falsa dadas las\nala dadas falsa salas\nfalla alas falda la"
+    },
+    {
+      "seconds": 30,
+      "text": "Más tiempo y más palabras. Mantén el mismo ritmo de principio a fin.",
+      "type": "burst",
+      "tokens": [
+        "dadas",
+        "asadas",
+        "a",
+        "dada",
+        "sala",
+        "salas",
+        "falla",
+        "alas",
+        "falsa",
+        "ala",
+        "sal",
+        "falsas",
+        "salada",
+        "las"
+      ]
+    },
+    {
+      "text": "Frases completas. Aquí es donde se nota si la mano vuelve sola a su sitio.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "dada la salada saladas\nfalsas salada falla faldas\nsal salsa la alas"
+    },
+    {
+      "text": "La última tanda. Si has llegado hasta aquí sin mirar el teclado, la lección está hecha.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "falda sala ala falla asada\nasada a ala las saladas\nfaldas las falda falsas falla"
+    }
+  ]
+}

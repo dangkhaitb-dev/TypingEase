@@ -1,0 +1,104 @@
+{
+  "id": "u1-l05",
+  "unit": "u1",
+  "group": "start",
+  "order": 5,
+  "slug": "review-u1-5",
+  "title": "Tekrar",
+  "summary": "Yeni tuş yok. Öncekilerin hepsi, daha seri ve daha hızlı.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ş"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Bu ders yeni bir şey öğretmiyor. Öncekilerin düşünmeden çıktığını görme zamanı; bu, tuşların nerede olduğunu bilmekle aynı şey değil.",
+  "congrats": "Yeni bir şey yok ama daha hızlı. Olması gereken tam da buydu.",
+  "screens": [
+    {
+      "text": "Başlangıç için tek tek kelimeler. Acele yok: hız doğruluktan gelir, tersi olmaz.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "sakla ada sakal kalk\nad aşk adada kala\ndal kalfa kasada kaş"
+    },
+    {
+      "seconds": 25,
+      "text": "Kısa bir seri. Kaçırdığın olsa da listeyi bitir.",
+      "type": "burst",
+      "tokens": [
+        "kasa",
+        "kas",
+        "sal",
+        "kalk",
+        "al",
+        "dal",
+        "laf",
+        "ad",
+        "kalas",
+        "kasada",
+        "aşk",
+        "ada"
+      ]
+    },
+    {
+      "text": "Satırda beş kelime. Gözlerin parmaklarının önünden gitsin.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "şaka dal saf fal kasa\nsal ak kas kalfa salla\nşakak aşk kasada kafa as"
+    },
+    {
+      "text": "Yine kalıplar; parmakların temel sıraya döndüğünü görmek için.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "kda fsl kd\nkj jk kjkj\nddd jjjj kkkk ffff"
+    },
+    {
+      "text": "Kısa kelimeler, iyi bir ritimle. Bunlar artık neredeyse kendiliğinden çıkmalı.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaş dalda kalfa fal\nşakak kala saf sakal\naşk şaka as ada"
+    },
+    {
+      "seconds": 30,
+      "text": "Daha uzun süre, daha çok kelime. Baştan sona aynı ritmi koru.",
+      "type": "burst",
+      "tokens": [
+        "şal",
+        "kala",
+        "adada",
+        "şaka",
+        "aşk",
+        "a",
+        "kafa",
+        "saf",
+        "salla",
+        "fal",
+        "al",
+        "laf",
+        "kalas",
+        "sakla"
+      ]
+    },
+    {
+      "text": "Satır satır, durmadan. Elin kendiliğinden yerine dönüyor mu, burada anlaşılır.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kalas as salla ada\nkafada şakak aşk dal\nkafa ak laf şaka"
+    },
+    {
+      "text": "Son tur. Buraya klavyeye bakmadan geldiysen ders tamam.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "kaş fal saf şakak dalda\nkala a şal da sakla\naşk as kas ada kalk"
+    }
+  ]
+}

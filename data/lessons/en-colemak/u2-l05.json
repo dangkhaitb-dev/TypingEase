@@ -1,0 +1,118 @@
+{
+  "id": "u2-l05",
+  "unit": "u2",
+  "group": "start",
+  "order": 15,
+  "slug": "review-u2-15",
+  "title": "Review",
+  "summary": "No new keys. Everything so far, longer and faster.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "d",
+    "h",
+    "f",
+    "u",
+    "p",
+    "l",
+    "g",
+    "j",
+    "y",
+    "w",
+    "c",
+    "k",
+    "m",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "This lesson teaches nothing new. It is the moment to check that what came before comes out without thinking, which is not the same as knowing where each key is.",
+  "congrats": "Nothing new, and faster anyway. That is exactly what was supposed to happen.",
+  "screens": [
+    {
+      "text": "Single words to start. No rush: speed comes out of accuracy, never the other way round.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "tree less son voices\nshot day end own\nclock reef rid kind"
+    },
+    {
+      "seconds": 25,
+      "text": "A short burst. Finish the list even if one gets away from you.",
+      "type": "burst",
+      "tokens": [
+        "shoe",
+        "rushed",
+        "divide",
+        "old",
+        "class",
+        "latest",
+        "first",
+        "seal",
+        "sugar",
+        "natural",
+        "leak",
+        "check"
+      ]
+    },
+    {
+      "text": "Five words to a line. Let your eyes run ahead of your fingers.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "alas deals early value talks\nruler they however there taste\nideas only mind tiny eat"
+    },
+    {
+      "text": "Patterns again, to check the fingers keep returning to the home row.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "isn rae is\ntn nt tntn\neee nnn tttt sss"
+    },
+    {
+      "text": "Short words at a good pace. These should almost type themselves by now.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "rooms know apart place\nfew old look near\nsea track clock no"
+    },
+    {
+      "seconds": 30,
+      "text": "More time and more words. Hold the same rhythm from start to finish.",
+      "type": "burst",
+      "tokens": [
+        "stops",
+        "neat",
+        "east",
+        "thus",
+        "flows",
+        "ran",
+        "spring",
+        "practice",
+        "fade",
+        "under",
+        "lunch",
+        "fairly",
+        "as",
+        "give"
+      ]
+    },
+    {
+      "text": "Whole sentences. This is where you find out whether the hand goes home on its own.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "we go to the old house\nno one can teach you to care\nshe can hear the clock in the hall"
+    },
+    {
+      "text": "The last round. If you got here without looking at the keyboard, the lesson is done.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "several night voice world stood\nwarm island trails down add\nlevel worth wind type true"
+    }
+  ]
+}

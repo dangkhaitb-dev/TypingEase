@@ -1,0 +1,125 @@
+{
+  "id": "u2-l09",
+  "unit": "u2",
+  "group": "reach",
+  "order": 19,
+  "slug": "shift-and-enter",
+  "title": "Shift y Enter",
+  "summary": "Mayúsculas con el meñique contrario, y el salto de línea.",
+  "newKeys": [
+    "shift",
+    "enter"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ñ",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "{",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Hasta aquí todo se ha escrito en minúsculas. Shift lo cambia, y tiene una regla que conviene aprender bien desde el principio: lo pulsa el meñique de la mano contraria a la letra. Con el meñique del mismo lado, la mano se tuerce y acabas mirando el teclado.",
+  "congrats": "Con Shift y Enter puedes escribir un texto entero tal y como se escribe fuera de aquí.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "shift",
+      "finger": "LP",
+      "text": "Las mayúsculas se hacen con el meñique de la mano contraria a la letra. Mantén Shift, pulsa la letra, suelta. Nunca con el mismo meñique que escribe.",
+      "hint": "Mantén Shift y pulsa una letra para continuar"
+    },
+    {
+      "newKey": "shift",
+      "text": "Mayúsculas y minúsculas alternando. El meñique baja y sube; la otra mano no se mueve de sitio.",
+      "type": "block",
+      "content": "Ññ Pp Jj Zz\nEe Cc Dd Qq\nGg Tt Uu Kk\nRr Xx Mm Ff"
+    },
+    {
+      "text": "Palabras con mayúscula al principio, como los nombres propios.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "señora salsa trabaja de\ngustar idea libres gafas\noreja palabras juguetes explicar"
+    },
+    {
+      "type": "intro",
+      "key": "enter",
+      "finger": "RP",
+      "text": "Enter es del meñique derecho, a la derecha de la fila de reposo. Es la tecla más grande que ese dedo tiene que alcanzar.",
+      "hint": "Pulsa Enter para continuar"
+    },
+    {
+      "newKey": "enter",
+      "linebreak": "enter",
+      "text": "Una línea, Enter, otra línea. El meñique sale y vuelve sin arrastrar la mano.",
+      "type": "block",
+      "content": "Ana\nMiguel\nPablo\nValencia\nQuito\nElena"
+    },
+    {
+      "text": "Frases con mayúscula inicial y punto final. Ya se parece a escribir de verdad.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Hace mucho calor en el mes de agosto.\nElla escribe cartas a sus amigos.\nLa ventana de mi cuarto da a la calle."
+    },
+    {
+      "seconds": 25,
+      "text": "Una ráfaga para asentar lo de esta lección.",
+      "type": "burst",
+      "tokens": [
+        "blanca",
+        "estas",
+        "sur",
+        "que",
+        "primera",
+        "trece",
+        "largo",
+        "primero",
+        "cuenta",
+        "luz",
+        "misma",
+        "lugares"
+      ]
+    },
+    {
+      "text": "Cinco por línea, con el meñique trabajando en las dos direcciones.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "bajas cuerdas rueda queda puede\nlo toro solas primera esta\ntrece trabajo cantar minuto tiempos"
+    },
+    {
+      "text": "Para cerrar, frases enteras. Shift, letra, suelta — sin pararse a pensarlo.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Mi madre trabaja en el centro de la ciudad.\nVamos a caminar por el parque esta tarde.\nNecesito comprar papel y dos libros."
+    }
+  ]
+}

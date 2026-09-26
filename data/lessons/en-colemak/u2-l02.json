@@ -1,0 +1,130 @@
+{
+  "id": "u2-l02",
+  "unit": "u2",
+  "group": "start",
+  "order": 12,
+  "slug": "o-w",
+  "title": "Y and W",
+  "summary": "Two new keys: Y and W. The finger goes out, presses, and comes back.",
+  "newKeys": [
+    "y",
+    "w"
+  ],
+  "keysSoFar": [
+    " ",
+    "t",
+    "n",
+    "s",
+    "e",
+    "r",
+    "i",
+    "a",
+    "o",
+    "d",
+    "h",
+    "f",
+    "u",
+    "p",
+    "l",
+    "g",
+    "j",
+    "y",
+    "w"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Two new keys in this lesson: Y and W. They belong to your right ring finger and your left ring finger. The movement is always the same — out, press, back — and the way back is the part being trained, because a finger left out of place spoils the next letter.",
+  "congrats": "Two more keys under your fingers. If Y and W already come without searching, the lesson has done its job.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "y",
+      "finger": "RR",
+      "text": "This key belongs to your right ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press Y to continue"
+    },
+    {
+      "newKey": "y",
+      "text": "Only Y and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "y y yy\nyyyy\nyyyyyy yyyyyy"
+    },
+    {
+      "type": "intro",
+      "key": "w",
+      "finger": "LR",
+      "text": "This key belongs to your left ring finger. Find it without looking, press it once, and let the finger return. The way back matters as much as the press.",
+      "hint": "Press W to continue"
+    },
+    {
+      "newKey": "w",
+      "text": "Only W and what you already know. Slowly, and bring the finger back to the home row after every press.",
+      "type": "block",
+      "content": "ywyw wywy\nyw wy\nwst yn ws"
+    },
+    {
+      "seconds": 20,
+      "text": "Short groups, one after another. Keep going to the end even if you miss one.",
+      "type": "burst",
+      "tokens": [
+        "yyw",
+        "wyyw",
+        "yyy",
+        "wy",
+        "wwwy",
+        "ww",
+        "wwww",
+        "yww",
+        "wyy",
+        "ywyw"
+      ]
+    },
+    {
+      "text": "The new keys mixed with the old ones, which is how they will turn up inside words.",
+      "type": "block",
+      "content": "tsy enr ts\nny yn nyny\nyyy www ttt nnnn"
+    },
+    {
+      "text": "Real words with the new keys. Type each word in one go, not letter by letter.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "yeast toward west worth\nyou few walls weigh\nsnow salty allows glow"
+    },
+    {
+      "seconds": 25,
+      "text": "A burst of short words with the new keys in them.",
+      "type": "burst",
+      "tokens": [
+        "ideal",
+        "horse",
+        "well",
+        "sight",
+        "soil",
+        "shot",
+        "hers",
+        "answer",
+        "south",
+        "general"
+      ]
+    },
+    {
+      "text": "Now the weight is on Y, the one you have pressed least.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "plan hardly gladly trail\nwithout old lists ages\nroot feeds world safely"
+    },
+    {
+      "text": "Back to patterns for a moment, to check that the fingers still find their way home.",
+      "dictation": "letters",
+      "type": "standard",
+      "content": "ywywyw wywywy\nyw wy\nwys tn wy"
+    },
+    {
+      "text": "Everything you have, mixed together. Notice how many words already come without thinking.",
+      "dictation": "words",
+      "type": "standard",
+      "content": "slight wise little west\nslowly eight fire onto\nplays set deals glow"
+    }
+  ]
+}
