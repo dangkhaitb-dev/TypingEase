@@ -4,7 +4,6 @@
  * Đợt 2: `live: false` — đã soạn sẵn, chưa xuất bản.
  */
 export default {
-  live: false,
   slug: 'typetest',
   title: 'Typetest: meet je typsnelheid online | TypingEase',
   description: 'Gratis typetest in je browser: typ 1, 5 of 10 minuten en zie je woorden per minuut (WPM), nauwkeurigheid en fouten. Zonder account.',

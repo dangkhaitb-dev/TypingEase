@@ -20,7 +20,7 @@ window.TypingEaseUI = {
     home: '/tr/',
     lessons: '/tr/dersler/',
     learn: '/tr/ogren/',
-    test: null,
+    test: '/tr/klavye-hiz-testi/',
     progress: '/tr/ilerleme/',
     free: null,
     weak: null,

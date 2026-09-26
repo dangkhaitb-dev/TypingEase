@@ -20,7 +20,7 @@ export default {
     curriculumScript: '/data/curriculum.tr.js',
     ui: '/i18n/ui.tr.js',
     routes: {
-      home: '/tr/', lessons: '/tr/dersler/', learn: '/tr/ogren/', test: null,
+      home: '/tr/', lessons: '/tr/dersler/', learn: '/tr/ogren/', test: '/tr/klavye-hiz-testi/',
       progress: '/tr/ilerleme/', free: null, weak: null, guide: null, wpm: null
     },
     s: {

@@ -2,7 +2,6 @@
  * woorden komen uit data/words/nl.js, dezelfde woordenlijst als de cursus op de Nederlandse
  * indeling (198, QWERTY). é typ je met de dode toets ´, ë ï ö ü met de dode toets ¨. */
 export default {
-  live: false,
   slug: 'typespelletjes',
   title: 'Gratis typespelletjes op je eigen toetsenbord | TypingEase',
   description: 'Drie gratis typespelletjes: Woordregen, Spookrace en Toetsenjacht. Oefen blind typen op je eigen toetsenbordindeling in de browser, zonder account.',

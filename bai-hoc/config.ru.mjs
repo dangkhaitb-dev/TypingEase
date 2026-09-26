@@ -28,7 +28,7 @@ export default {
     curriculumScript: '/data/curriculum.ru.js',
     ui: '/i18n/ui.ru.js',
     routes: {
-      home: '/ru/', lessons: '/ru/uroki/', learn: '/ru/uchitsya/', test: null,
+      home: '/ru/', lessons: '/ru/uroki/', learn: '/ru/uchitsya/', test: '/ru/test-skorosti-pechati/',
       progress: '/ru/progress/', free: null, weak: null, guide: null, wpm: null
     },
     s: {

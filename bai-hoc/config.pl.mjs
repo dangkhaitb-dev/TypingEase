@@ -27,7 +27,7 @@ export default {
     curriculumScript: '/data/curriculum.pl.js',
     ui: '/i18n/ui.pl.js',
     routes: {
-      home: '/pl/', lessons: '/pl/lekcje/', learn: '/pl/nauka/', test: null,
+      home: '/pl/', lessons: '/pl/lekcje/', learn: '/pl/nauka/', test: '/pl/test-pisania/',
       progress: '/pl/postepy/', free: null, weak: null, guide: null, wpm: null
     },
     s: {

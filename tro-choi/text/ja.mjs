@@ -3,7 +3,6 @@
  * ASCII như player, nên người học TẮT IME (半角英数) — giống bài 1 của khoá. Không có trang kiểm tra
  * tốc độ tiếng Nhật, nên {test} rơi về trang khoá học. */
 export default {
-  live: false,
   slug: 'typing-games',
   title: 'ローマ字で遊ぶ無料タイピングゲーム | TypingEase',
   description: '無料のタイピングゲーム3種：ワードレイン、ペースカーとの競走、キーハント。自分のJISキーボードでローマ字のブラインドタッチを練習。登録不要です。',

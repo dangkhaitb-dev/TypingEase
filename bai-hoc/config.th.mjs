@@ -18,7 +18,7 @@ export default {
     ui: '/i18n/ui.th.js',
     routes: {
       home: '/th/', lessons: '/th/bot-rian/', learn: '/th/rian/', test: null,
-      progress: '/th/khwam-kuebna/', free: null, weak: null, guide: null, wpm: null
+      progress: '/th/khwam-kuebna/', games: '/th/kem-fuek-phim/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `หลักสูตรพิมพ์สัมผัสภาษาไทย: ${c.sequence.length} บทเรียน | TypingEase`,
@@ -29,7 +29,7 @@ export default {
         h1: (c, f) => `หลักสูตรพิมพ์สัมผัส · ${f.name} · ${c.sequence.length} บทเรียน`
       },
       description: c => `หลักสูตรพิมพ์สัมผัสภาษาไทยฟรีบนแป้นพิมพ์เกษมณี: ${c.units.length} หน่วย ${c.sequence.length} บทเรียน ตั้งแต่แถวเหย้า ฟ ห ก ด ่ า ส ว ไปจนถึงเลขไทย เครื่องหมาย และข้อความยาว`,
-      nav: r => [[r.home, 'ฝึกพิมพ์'], [r.lessons, 'บทเรียน'], [r.progress, 'ความก้าวหน้า'], [r.test, 'ทดสอบ']],
+      nav: r => [[r.home, 'ฝึกพิมพ์'], [r.lessons, 'บทเรียน'], [r.progress, 'ความก้าวหน้า'], [r.test, 'ทดสอบ'], [r.games, 'เกม']],
       navAria: 'เมนูหลัก',
       enter: 'เริ่ม',
       eyebrow: 'หลักสูตรของ TypingEase',

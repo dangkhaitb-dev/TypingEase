@@ -2,7 +2,6 @@
  * data/words/it.js, la stessa banca del corso /it/ (QWERTY italiana: ò e à hanno un tasto proprio).
  * L'italiano non ha ancora una pagina di test: {test} ricade sul corso. */
 export default {
-  live: false,
   slug: 'giochi-di-dattilografia',
   title: 'Giochi di dattilografia gratis sulla tastiera | TypingEase',
   description: 'Tre giochi di dattilografia gratis: Pioggia di parole, Corsa fantasma e Caccia ai tasti. Esercitati sulla tua vera tastiera, nel browser e senza account.',

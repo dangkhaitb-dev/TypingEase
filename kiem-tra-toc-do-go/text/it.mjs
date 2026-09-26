@@ -3,7 +3,6 @@
  * `{lessons}` = số bài của khoá chính tiếng Ý, `{course}` = URL trang lộ trình của khoá đó.
  */
 export default {
-  live: false,
   slug: 'test-di-battitura',
   title: 'Test di battitura: velocità in PPM e precisione | TypingEase',
   description: 'Test di battitura gratis nel browser: scrivi per 1, 5 o 10 minuti e vedi parole al minuto, precisione ed errori. Senza registrazione.',

@@ -1718,3 +1718,20 @@ văn test + kho từ game, đúng luật typeableWith (phím chính/Shift/AltGr,
 - tro-choi/games.js: lọc kho từ theo bố cục ĐANG CHỌN (ký tự chính/Shift/AltGr, chữ hoa, dấu ghép bằng
   phím chết ´ ` ^ ~ ¨ ¸); không lọc vi (Telex) và ko (bộ gõ ghép); còn < 60 từ thì giữ nguyên kho.
 - 110/110 PASS. sw.js v20.
+
+---
+
+# 2026-09-26 — Đợt 2: bật 5 trang test + 5 trang trò chơi
+
+Chủ site chọn "bật 1 đợt ngay" thay vì đợi 1–2 tuần. Vẫn giữ nhịp tung dần (chống nội dung hàng loạt):
+đợt này 10 trang, 16 ngôn ngữ test và 16 ngôn ngữ game vẫn `live: false`.
+- Test: it /it/test-di-battitura/, nl /nl/typetest/, pl /pl/test-pisania/, ru /ru/test-skorosti-pechati/,
+  tr /tr/klavye-hiz-testi/.
+- Trò chơi: ko /ko/taja-geim/, ja /ja/typing-games/, th /th/kem-fuek-phim/, it /it/giochi-di-dattilografia/,
+  nl /nl/typespelletjes/.
+- Mỗi trang: bỏ `live: false`; routes.test/games ở ui.<L>.js (chỉ test), bai-hoc/config.<L>.mjs (+ nav),
+  landing-i18n.js (routes + nhãn nav); thêm link vào menu /<L>/index.html; sitemap. Chạy lại generate.mjs
+  cho 8 ngôn ngữ, family/progress/test/game/legal/tasters/seo-head — mọi `--check` khớp.
+- e2e 11h/11i không còn danh sách cứng: đọc slug từ kiem-tra-toc-do-go/text và tro-choi/text, lấy URL có
+  trong sitemap. Đợt sau chỉ cần bật, test tự phủ.
+- sw.js v21.

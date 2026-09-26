@@ -941,10 +941,15 @@ test('11j trang pháp lý: chân trang mọi trang nhà trỏ tới 3 trang số
 
 // Trang tro choi (scripts/build-game-pages.mjs, tro-choi/games.js): ca ba tro choi that su choi duoc
 // bang ban phim that — Mua chu pha duoc tu, Dua voi bong ve dich, San phim nhan phim theo vi tri.
+// Trang test / tro choi da bat cua moi ngon ngu: doc slug tu file chu cua may sinh, roi chi giu URL co trong sitemap.
+const generatedPages = (dir, sitemap) => fs.readdirSync(path.join(__dirname, '..', dir, 'text')).filter(file => file.endsWith('.mjs'))
+  .map(file => [file.replace('.mjs', ''), /slug: '([^']+)'/.exec(fs.readFileSync(path.join(__dirname, '..', dir, 'text', file), 'utf8'))])
+  .filter(([, slug]) => slug).map(([lang, slug]) => `/${lang}/${slug[1]}/`)
+  .filter(url => sitemap.includes(`<loc>https://typingease.site${url}</loc>`));
+
 test('11i trò chơi: Mưa chữ phá được từ, Đua về đích, Săn phím tính điểm', async page => {
   const sitemap = await (await page.request.get(`${BASE}/sitemap.xml`)).text();
-  const gamePages = ['/en/typing-games/', '/tro-choi/', ...['/es/juegos-de-mecanografia/', '/pt/jogos-de-digitacao/', '/fr/jeux-de-dactylographie/', '/de/tippspiele/']
-    .filter(url => sitemap.includes(`https://typingease.site${url}`))];
+  const gamePages = ['/en/typing-games/', '/tro-choi/', ...generatedPages('tro-choi', sitemap).filter(url => url !== '/en/typing-games/')];
   for (const url of gamePages) {
     await page.goto(`${BASE}${url}`, { waitUntil: 'networkidle' });
     await page.click('[data-act="rain-start"]');
@@ -978,8 +983,8 @@ test('11i trò chơi: Mưa chữ phá được từ, Đua về đích, Săn phí
 // ngon ngu do, va bai 10 phut noi them doan van khi nguoi go toi gan cuoi.
 test('11h trang test tốc độ theo ngôn ngữ: gõ thật ra kết quả, bài dài nối thêm văn bản', async page => {
   const body = await (await page.request.get(`${BASE}/sitemap.xml`)).text();
-  const tests = [...body.matchAll(/<loc>https:\/\/typingease\.site(\/[a-z-]+\/(?:test-de-mecanografia|teste-de-digitacao|test-de-frappe|tipptest)\/)<\/loc>/g)].map(m => m[1]);
-  assert.ok(tests.length >= 4, `sitemap chỉ có ${tests.length} trang test theo ngôn ngữ`);
+  const tests = generatedPages('kiem-tra-toc-do-go', body);
+  assert.ok(tests.length >= 9, `sitemap chỉ có ${tests.length} trang test theo ngôn ngữ`);
   for (const url of tests) {
     await page.goto(`${BASE}${url}`, { waitUntil: 'networkidle' });
     const durations = await page.$$eval('[data-duration]', buttons => buttons.map(button => Number(button.dataset.duration)));

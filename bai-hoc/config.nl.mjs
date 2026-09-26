@@ -24,7 +24,7 @@ export default {
   routes: {
     home: '/nl/', lessons: '/nl/lessen/', learn: '/nl/leren/',
     // Năm trang này chưa có bản tiếng Hà Lan. `null` là tín hiệu BỎ liên kết.
-    test: null, progress: '/nl/voortgang/', free: null, weak: null, guide: null, wpm: null
+    test: '/nl/typetest/', progress: '/nl/voortgang/', games: '/nl/typespelletjes/', free: null, weak: null, guide: null, wpm: null
   },
 
   s: {
@@ -36,7 +36,7 @@ export default {
       h1: (c, f) => `Typecursus · ${f.name} · ${c.sequence.length} lessen`
     },
     description: c => `Gratis typecursus voor typen met tien vingers: ${c.units.length} units en ${c.sequence.length} lessen op het Nederlandse toetsenbord, van de thuisrij tot cijfers, tekens en lange teksten.`,
-    nav: r => [[r.home, 'Oefenen'], [r.lessons, 'Cursus'], [r.progress, 'Voortgang'], [r.test, 'Snelheidstest']],
+    nav: r => [[r.home, 'Oefenen'], [r.lessons, 'Cursus'], [r.progress, 'Voortgang'], [r.test, 'Snelheidstest'], [r.games, 'Spelletjes']],
     navAria: 'Hoofdnavigatie',
     enter: 'Beginnen',
     eyebrow: 'De cursus van TypingEase',

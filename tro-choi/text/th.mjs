@@ -3,7 +3,6 @@
  * hành (Kedmanee/Pattachote), theo thứ tự lôgic Unicode: nguyên âm đứng trước gõ TRƯỚC phụ âm, dấu
  * thanh gõ SAU. Không có trang kiểm tra tốc độ tiếng Thái, nên {test} rơi về trang khoá học. */
 export default {
-  live: false,
   slug: 'kem-fuek-phim',
   title: 'เกมฝึกพิมพ์ฟรี บนแป้นพิมพ์ไทยของคุณเอง | TypingEase',
   description: 'เกมฝึกพิมพ์ฟรีสามเกม: ฝนคำ แข่งกับรถนำ และล่าแป้น ฝึกพิมพ์สัมผัสภาษาไทยบนแป้นเกษมณีหรือปัตตะโชติในเบราว์เซอร์ ไม่ต้องสมัครสมาชิก',

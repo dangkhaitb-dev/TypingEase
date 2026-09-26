@@ -21,7 +21,7 @@ window.TypingEaseUI = {
     lessons: '/pl/lekcje/',
     learn: '/pl/nauka/',
     // Chưa có các trang này bằng tiếng Ba Lan. `null` = bỏ liên kết.
-    test: null,
+    test: '/pl/test-pisania/',
     progress: '/pl/postepy/',
     free: null,
     weak: null,

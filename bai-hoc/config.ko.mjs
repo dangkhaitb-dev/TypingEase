@@ -18,7 +18,7 @@ export default {
     ui: '/i18n/ui.ko.js',
     routes: {
       home: '/ko/', lessons: '/ko/gangui/', learn: '/ko/baeugi/', test: null,
-      progress: '/ko/jindo/', free: null, weak: null, guide: null, wpm: null
+      progress: '/ko/jindo/', games: '/ko/taja-geim/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `한글 타자 연습 강의: ${c.sequence.length}개 과 | TypingEase`,
@@ -28,7 +28,7 @@ export default {
         h1: (c, f) => `한글 타자 연습 · ${f.name} · ${c.sequence.length}개 과`
       },
       description: c => `${c.units.length}개 단원, ${c.sequence.length}개 과로 이루어진 무료 한글 타자 연습 강의. 두벌식 자판으로 기본 자리부터 된소리, 숫자, 기호, 긴 글까지 배워요.`,
-      nav: r => [[r.home, '연습'], [r.lessons, '강의'], [r.progress, '진도'], [r.test, '시험']],
+      nav: r => [[r.home, '연습'], [r.lessons, '강의'], [r.progress, '진도'], [r.test, '시험'], [r.games, '게임']],
       navAria: '주 메뉴',
       enter: '시작하기',
       eyebrow: 'TypingEase 강의',

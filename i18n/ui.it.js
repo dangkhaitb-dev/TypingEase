@@ -24,7 +24,7 @@ window.TypingEaseUI = {
     learn: '/it/imparare/',
     // Chưa có năm trang này bằng tiếng Ý. `null` là tín hiệu BỎ liên kết, không phải trỏ sang
     // bản tiếng Anh hay tiếng Việt — xem cách `R.weak` bị chặn trong player.js.
-    test: null,
+    test: '/it/test-di-battitura/',
     progress: '/it/progressi/',
     free: null,
     weak: null,

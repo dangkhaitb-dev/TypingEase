@@ -27,7 +27,7 @@ export default {
     home: '/it/', lessons: '/it/lezioni/', learn: '/it/imparare/',
     // Năm trang này chưa có bản tiếng Ý. `null` là tín hiệu BỎ liên kết: generate.mjs lọc mọi
     // hàng có href rỗng khỏi nav, sidebar, explore và footer.
-    test: null, progress: '/it/progressi/', free: null, weak: null, guide: null, wpm: null
+    test: '/it/test-di-battitura/', progress: '/it/progressi/', games: '/it/giochi-di-dattilografia/', free: null, weak: null, guide: null, wpm: null
   },
 
   s: {
@@ -39,7 +39,7 @@ export default {
       h1: (c, f) => `Corso di dattilografia · ${f.name} · ${c.sequence.length} lezioni`
     },
     description: c => `Corso di dattilografia online e gratuito in italiano: ${c.units.length} unità e ${c.sequence.length} lezioni, dalla riga di riposo ai numeri e ai testi lunghi, con Ò e À al loro posto.`,
-    nav: r => [[r.home, 'Esercitati'], [r.lessons, 'Corso'], [r.progress, 'Progressi'], [r.test, 'Prova di velocità']],
+    nav: r => [[r.home, 'Esercitati'], [r.lessons, 'Corso'], [r.progress, 'Progressi'], [r.test, 'Prova di velocità'], [r.games, 'Giochi']],
     navAria: 'Navigazione principale',
     enter: 'Comincia',
     eyebrow: 'Il corso di TypingEase',

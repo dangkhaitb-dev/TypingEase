@@ -19,7 +19,7 @@ window.TypingEaseUI = {
     lessons: '/ru/uroki/',
     learn: '/ru/uchitsya/',
     // Chưa có các trang này bằng tiếng Nga. `null` là tín hiệu BỎ liên kết.
-    test: null,
+    test: '/ru/test-skorosti-pechati/',
     progress: '/ru/progress/',
     free: null,
     weak: null,

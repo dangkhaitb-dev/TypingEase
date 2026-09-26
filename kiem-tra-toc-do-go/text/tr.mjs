@@ -5,7 +5,6 @@
  * khoá đó. Khoá F klavye (/tr/f/) được nhắc bằng liên kết viết tay.
  */
 export default {
-  live: false,
   slug: 'klavye-hiz-testi',
   title: 'Klavye hız testi: KDK ve doğruluk ölç | TypingEase',
   description: 'Ücretsiz klavye hız testi: tarayıcında 1, 5 ya da 10 dakika yaz, dakikada kaç kelime (KDK) yazdığını, doğruluğunu ve hatalarını gör. Üyelik yok.',

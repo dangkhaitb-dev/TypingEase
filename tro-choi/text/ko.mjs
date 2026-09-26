@@ -4,7 +4,6 @@
  * tiết rồi mới xoá từ. Săn phím đọc event.code nên bộ gõ bật hay tắt đều được. Không có trang kiểm
  * tra tốc độ tiếng Hàn, nên {test} rơi về trang khoá học. */
 export default {
-  live: false,
   slug: 'taja-geim',
   title: '무료 타자 게임: 두벌식 한글 연습 | TypingEase',
   description: '무료 타자 게임 세 가지: 낱말 비, 페이스카 경주, 키 찾기. 브라우저에서 내 두벌식 자판으로 한글 타자를 연습해요. 가입은 필요 없어요.',

@@ -21,7 +21,7 @@ export default {
     ui: '/i18n/ui.ja.js',
     routes: {
       home: '/ja/', lessons: '/ja/renshu/', learn: '/ja/manabu/', test: null,
-      progress: '/ja/shinchoku/', free: null, weak: null, guide: null, wpm: null
+      progress: '/ja/shinchoku/', games: '/ja/typing-games/', free: null, weak: null, guide: null, wpm: null
     },
     s: {
       title: c => `タッチタイピング練習：全${c.sequence.length}レッスン | TypingEase`,
@@ -32,7 +32,7 @@ export default {
         h1: (c, f) => `タッチタイピング講座 · ${f.name} · 全 ${c.sequence.length} レッスン`
       },
       description: c => `JIS配列で学ぶ無料のタッチタイピング練習です。ローマ字入力の打鍵を${c.units.length}ユニット・${c.sequence.length}レッスンで、ホームポジションから数字、記号、長い文章まで。`,
-      nav: r => [[r.home, '練習'], [r.lessons, 'コース'], [r.progress, '進み具合'], [r.test, 'テスト']],
+      nav: r => [[r.home, '練習'], [r.lessons, 'コース'], [r.progress, '進み具合'], [r.test, 'テスト'], [r.games, 'ゲーム']],
       navAria: 'メインメニュー',
       enter: '始める',
       eyebrow: 'TypingEase の講座',

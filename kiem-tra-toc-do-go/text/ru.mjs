@@ -7,7 +7,6 @@ const rules = new Intl.PluralRules('ru-RU');
 const word = (n, one, few, many) => ({ one, few }[rules.select(n)] || many);
 
 export default {
-  live: false,
   slug: 'test-skorosti-pechati',
   title: 'Тест скорости печати онлайн: сл/мин и точность | TypingEase',
   description: 'Бесплатный тест скорости печати в браузере: печатай 1, 5 или 10 минут на клавиатуре ЙЦУКЕН и смотри скорость, точность и ошибки. Без регистрации.',

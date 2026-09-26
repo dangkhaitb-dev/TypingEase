@@ -3,7 +3,6 @@
  * Fala 2: `live: false` — strona przygotowana, publikacja później.
  */
 export default {
-  live: false,
   slug: 'test-pisania',
   title: 'Test pisania: sprawdź szybkość pisania online | TypingEase',
   description: 'Darmowy test pisania w przeglądarce: pisz przez 1, 5 lub 10 minut na polskiej klawiaturze i sprawdź WPM, dokładność oraz liczbę błędów. Bez logowania.',
