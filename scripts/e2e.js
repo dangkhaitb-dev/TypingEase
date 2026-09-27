@@ -130,6 +130,7 @@ async function openPlayer(page, hash) {
 // --- tests -------------------------------------------------------------------------------------
 const tests = [];
 const test = (name, options, fn) => tests.push(typeof options === 'function' ? { name, fn: options, options: {} } : { name, fn, options });
+test.skip = () => {};
 
 test('1 player load: 60 phím, bàn tay 3D, phím + ngón đầu screen', async page => {
   await openPlayer(page, 'u1-l01/2');
@@ -334,7 +335,7 @@ test('7b trang chủ /vi/ 1366x768: lộ trình vẫn lọt màn hình đầu', 
 // Trang dau `/` la ban tieng Anh, va hero cua no NGUOC HAN voi /vi/: o day ban phim la diem
 // chinh, khong phai thu phai don di. Phep do canh dung loi hua cua no — chon ngon ngu thi ban
 // phim doi theo, va nut vao hoc tro vao khoa tieng Anh chu khong phai khoa tieng Viet.
-test('7c trang đầu /: bộ chọn ngôn ngữ dựng bàn phím thật, đổi ngôn ngữ là đổi phím', async page => {
+test.skip('7c legacy picker rewrites the landing page in place', async page => {
   await page.goto(`${BASE}/`, { waitUntil: 'networkidle' });
   assert.strictEqual(await page.evaluate(() => document.documentElement.lang), 'en');
   await page.waitForSelector('#kb-preview .keyboard-key');
@@ -423,6 +424,30 @@ test('7c trang đầu /: bộ chọn ngôn ngữ dựng bàn phím thật, đổ
   await page.waitForSelector('#kb-preview .keyboard-key');
   assert.strictEqual(await page.evaluate(() => document.querySelector('#pick-language').value), 'ar',
     'lựa chọn ngôn ngữ phải được nhớ giữa hai lần vào');
+});
+
+test('7c / remains English and the picker uses canonical language homes', async page => {
+  await page.addInitScript(() => {
+    localStorage.setItem('typingease-language-v1', JSON.stringify({ code: 'vi', keyboardId: 1 }));
+  });
+  await page.goto(BASE + '/', { waitUntil: 'networkidle' });
+  await page.waitForSelector('#kb-preview .keyboard-key');
+  assert.strictEqual(await page.evaluate(() => document.documentElement.lang), 'en');
+  assert.strictEqual(await page.locator('#pick-language').inputValue(), 'en');
+
+  await Promise.all([
+    page.waitForURL(url => new URL(url).pathname === '/ar/'),
+    page.selectOption('#pick-language', 'ar')
+  ]);
+  assert.strictEqual(await page.evaluate(() => document.documentElement.lang), 'ar');
+
+  await page.goto(BASE + '/', { waitUntil: 'networkidle' });
+  assert.strictEqual(await page.evaluate(() => document.documentElement.lang), 'en');
+  await Promise.all([
+    page.waitForURL(url => new URL(url).pathname === '/fr/'),
+    page.selectOption('#pick-language', 'fr')
+  ]);
+  assert.strictEqual(await page.evaluate(() => document.documentElement.lang), 'fr');
 });
 
 test('8a responsive 1024: bàn phím đầy đủ + tay', { viewport: { width: 1024, height: 900 } }, async page => {
@@ -801,11 +826,11 @@ const REDIRECTS = {
   '/en/': { to: '/', lang: 'en' },
   '/ja/': { to: '/ja/', lang: 'ja' },
   // Tu 2026-09-25 (Dot 0 SEO) cac URL cu ve trang CUNG ngon ngu, khong con sang ban tieng Viet.
-  '/en/what-is-wpm/': { to: '/en/typing-test/', lang: 'en' },
+  '/en/what-is-wpm/': { to: '/what-is-wpm/', lang: 'en' },
   '/ja/what-is-wpm/': { to: '/ja/', lang: 'ja' },
   '/ja/touch-typing/': { to: '/ja/', lang: 'ja' },
-  '/en/how-to-type-faster/': { to: '/en/typing-test/', lang: 'en' },
-  '/en/average-typing-speed/': { to: '/en/typing-test/', lang: 'en' }
+  '/en/how-to-type-faster/': { to: '/how-to-type-faster/', lang: 'en' },
+  '/en/average-typing-speed/': { to: '/average-typing-speed/', lang: 'en' }
 };
 // /ja/ nay là trang nhà của khoá tiếng Nhật (không còn chuyển hướng); vẫn giữ để chắc nó sống.
 test('11b URL en/ja cũ không rơi vào 404', async page => {
@@ -839,7 +864,8 @@ test('11c trang tiếng Việt trỏ về /vi/, không trỏ về /', async page
 // khac duoi /en/ la trang chuyen huong ve bai tieng Viet, nen mot nguoi hoc tieng Anh bam vao
 // "Typing test" la roi thang sang mot trang ho khong doc duoc. Phep do nay chan dung lop loi do:
 // khong trang tieng Anh nao duoc tro sang duong dan tieng Viet, tru dung nut doi ngon ngu.
-const EN_PAGES = ['/', '/en/lessons/', '/en/typing-test/', '/en/progress/', '/en/practice/', '/en/touch-typing/'];
+const EN_PAGES = ['/', '/en/lessons/', '/en/typing-test/', '/en/progress/', '/en/practice/', '/en/touch-typing/',
+  '/what-is-wpm/', '/average-typing-speed/', '/how-to-type-faster/'];
 const VI_PATHS = ['/vi/', '/hoc/', '/bai-hoc/', '/tien-do/', '/luyen-tu-do/', '/luyen-phim-yeu/',
   '/kiem-tra-toc-do-go/', '/cach-go-10-ngon/', '/cach-tang-wpm/', '/wpm-la-gi/', '/wpm-bao-nhieu-la-nhanh/'];
 test('11d trang tiếng Anh không trỏ sang trang tiếng Việt', async page => {

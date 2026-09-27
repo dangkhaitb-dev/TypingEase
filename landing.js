@@ -138,24 +138,8 @@
     } catch { /* private window, blocked storage — the picker still works, it just forgets */ }
   }
 
-  // `zh-TW` has to beat `zh`, so the full tag is tried before its base. Everything is compared
-  // lowercase because browsers are inconsistent about the case of the region subtag.
-  function detected() {
-    const tags = Array.isArray(global.navigator?.languages) && global.navigator.languages.length
-      ? global.navigator.languages
-      : [global.navigator?.language].filter(Boolean);
-    for (const tag of tags) {
-      const full = String(tag).toLowerCase();
-      if (byCode.has(full)) return full;
-      const base = full.split('-')[0];
-      if (byCode.has(base)) return base;
-    }
-    return '';
-  }
-
   const saved = stored();
-  const hinted = detected();
-  let current = byCode.get(saved?.code) || byCode.get(hinted) || byCode.get(catalogue.fallback) || LANGUAGES[0];
+  let current = byCode.get(catalogue.fallback) || LANGUAGES[0];
   let currentLayoutId = null;
 
   /* --- the two selects ------------------------------------------------------------------ */
@@ -438,13 +422,18 @@
 
     fillLanguages();
     renderGrid(catalog);
-    currentLayoutId = fillLayouts(current, catalog, saved?.keyboardId);
+    currentLayoutId = fillLayouts(current, catalog, saved?.code === 'en' ? saved.keyboardId : null);
     renderCta(current, currentLayoutId, catalog);
     if (currentLayoutId) await renderPreview(NT, current, currentLayoutId);
 
     const select = async (code, keyboardId) => {
       const entry = byCode.get(code);
       if (!entry) return;
+      if (entry.code !== 'en') {
+        remember(entry.code, keyboardId || entry.layouts?.[0]);
+        global.location.assign(`/${entry.code}/`);
+        return;
+      }
       current = entry;
       applyLanguage(entry);
       fillLanguages();

@@ -25,12 +25,11 @@ export default {
     // `null` = the page does not exist in English yet, and every list below filters nulls out
     // rather than linking at a redirect stub that lands on a Vietnamese article. Same table,
     // same meaning, as `routes` in i18n/ui.en.js — keep the two in step.
-    // Still null: `weak` (no English weak-key drill page) and `wpm`
-    // (/en/how-to-type-faster/ is a redirect stub to the Vietnamese article, not a page).
+    // Still null: `weak` (no English weak-key drill page).
     routes: {
       home: '/', lessons: '/en/lessons/', learn: '/en/learn/', test: '/en/typing-test/',
       progress: '/en/progress/', free: '/en/practice/', weak: null, games: '/en/typing-games/',
-      guide: '/en/touch-typing/', wpm: null
+      guide: '/en/touch-typing/', wpm: '/how-to-type-faster/'
     },
     s: {
       title: c => `Learn touch typing: a free ${c.sequence.length}-lesson course | TypingEase`,
