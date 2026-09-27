@@ -23,7 +23,7 @@ const units = n => `${n} ${form(n, 'część', 'części', 'części')}`;
 export default {
     out: path.join(root, 'pl', 'lekcje', 'index.html'),
     url: 'https://typingease.site/pl/lekcje/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.pl.js',
     ui: '/i18n/ui.pl.js',
     routes: {
@@ -71,6 +71,6 @@ export default {
       footerAria: 'Zasoby TypingEase',
       footerLinks: r => [[r.home, 'Ćwicz'], [r.lessons, 'Kurs'], [r.progress, 'Postępy']],
       footerTag: 'Pisz trochę wolniej, a zajdziesz dużo dalej.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

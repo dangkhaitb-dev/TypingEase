@@ -14,7 +14,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'fil', 'aralin', 'index.html'),
     url: 'https://typingease.site/fil/aralin/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.fil.js',
     ui: '/i18n/ui.fil.js',
     routes: {
@@ -56,6 +56,6 @@ export default {
       footerAria: 'Mga gamit ng TypingEase',
       footerLinks: r => [[r.home, 'Magsanay'], [r.lessons, 'Kurso'], [r.progress, 'Pag-unlad']],
       footerTag: 'Bagalan nang kaunti, at mas malayo ang mararating mo.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

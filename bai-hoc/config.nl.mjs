@@ -17,7 +17,7 @@ export default {
   out: path.join(root, 'nl', 'lessen', 'index.html'),
   url: 'https://typingease.site/nl/lessen/',
   // `alt` chỉ còn là di sản: hreflang nay dựng từ bảng ALTERNATES trong generate.mjs.
-  alt: 'https://typingease.site/en/lessons/',
+  alt: 'https://typingease.site/lessons/',
   curriculumScript: '/data/curriculum.nl.js',
   ui: '/i18n/ui.nl.js',
 
@@ -64,7 +64,7 @@ export default {
     footerLinks: r => [[r.lessons, 'Cursus'], [r.learn, 'Lessen'], [r.progress, 'Voortgang'], [r.test, 'Snelheidstest']],
     footerTag: 'Typ iets langzamer, en je komt veel verder.',
     switches: [
-      ['EN', '/en/lessons/', 'en', 'English version'],
+      ['EN', '/lessons/', 'en', 'English version'],
       ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']
     ]
   }

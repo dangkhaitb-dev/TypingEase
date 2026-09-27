@@ -15,7 +15,7 @@ export default {
     out: path.join(root, 'zh', 'kecheng', 'index.html'),
     url: 'https://typingease.site/zh/kecheng/',
     // `alt` chi con la di san: hreflang nay dung tu bang ALTERNATES trong generate.mjs.
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.zh.js',
     ui: '/i18n/ui.zh.js',
     routes: {
@@ -59,6 +59,6 @@ export default {
       footerAria: 'TypingEase 资源',
       footerLinks: r => [[r.home, '练习'], [r.lessons, '课程'], [r.progress, '进度']],
       footerTag: '慢一点，你会走得更远。',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

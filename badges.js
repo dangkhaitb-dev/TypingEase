@@ -47,7 +47,7 @@
 
   // Lop phu ngon ngu dat NGAY DAY chu khong o tung noi tieu thu. `TypingEaseUI.badges` da nam
   // trong i18n/ui.en.js tu dau ma khong file nao doc — nen huy hieu van hien tieng Viet tren
-  // khoa tieng Anh, ca o bang /en/progress/ lan o thong bao "New badge" ma player.js bat ra
+  // khoa tieng Anh, ca o bang /progress/ lan o thong bao "New badge" ma player.js bat ra
   // giua bai. Sua o mot cho thi ca hai cho cung dung; sua o bang thi chi bang dung.
   // Chi `title` va `hint` duoc phu: `icon`, `rules`, `requires` va `id` la co che, khong phai chu.
   const LIST = LIST_VI.map(badge => ({ ...badge, ...(global.TypingEaseUI?.badges?.[badge.id] || {}),

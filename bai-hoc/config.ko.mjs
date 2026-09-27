@@ -13,7 +13,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'ko', 'gangui', 'index.html'),
     url: 'https://typingease.site/ko/gangui/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.ko.js',
     ui: '/i18n/ui.ko.js',
     routes: {
@@ -55,6 +55,6 @@ export default {
       footerAria: 'TypingEase 자료',
       footerLinks: r => [[r.home, '연습'], [r.lessons, '강의'], [r.progress, '진도']],
       footerTag: '조금 천천히 가면 훨씬 멀리 가요.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

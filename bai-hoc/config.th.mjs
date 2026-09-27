@@ -13,7 +13,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'th', 'bot-rian', 'index.html'),
     url: 'https://typingease.site/th/bot-rian/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.th.js',
     ui: '/i18n/ui.th.js',
     routes: {
@@ -56,6 +56,6 @@ export default {
       footerAria: 'แหล่งเรียนรู้ของ TypingEase',
       footerLinks: r => [[r.home, 'ฝึกพิมพ์'], [r.lessons, 'บทเรียน'], [r.progress, 'ความก้าวหน้า']],
       footerTag: 'ช้าลงอีกนิด แล้วจะไปได้ไกลกว่าเดิมมาก',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

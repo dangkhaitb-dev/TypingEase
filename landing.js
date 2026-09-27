@@ -75,7 +75,7 @@
     const code = TEXT[entry?.code] ? entry.code : 'en';
     L = TEXT[code] || L;
     const R = L.routes || {};
-    const course = ready(entry) && TEXT[entry.code] ? entry.course.roadmap : (TEXT.en && byCode.get('en')?.course?.roadmap) || '/en/lessons/';
+    const course = ready(entry) && TEXT[entry.code] ? entry.course.roadmap : (TEXT.en && byCode.get('en')?.course?.roadmap) || '/lessons/';
     doc.documentElement.lang = code;
     // Ả Rập, Ba Tư, Urdu, Hebrew đọc từ phải sang trái: cả trang lật theo, không chỉ từng câu.
     doc.documentElement.dir = code !== 'en' && entry?.dir === 'rtl' ? 'rtl' : 'ltr';
@@ -262,7 +262,7 @@
         + 'are still being written. The keyboard above is the real layout, key for key, and its '
         + `eight home-row keys are ready to practise now${onOther && layoutName(catalog, first)
           ? ` (on ${escapeHtml(layoutName(catalog, first))})` : ''}. `
-        + 'Or <a href="/en/learn/">start the English course</a> — it teaches the same habits.';
+        + 'Or <a href="/learn/">start the English course</a> — it teaches the same habits.';
       return;
     }
 

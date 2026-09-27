@@ -172,17 +172,17 @@ window.TypingEaseCurriculum = {
 `;
 }
 
-// Trang player: bản sao /en/learn/ với mã khoá, canonical, nút quay về và chỉ mục. Nút quay về
+// Trang player: bản sao /learn/ với mã khoá, canonical, nút quay về và chỉ mục. Nút quay về
 // dẫn tới trang đầu — nơi người học vừa chọn ngôn ngữ này — vì khoá này chưa có trang lộ trình.
 function playerPage(code, entry, slug = entry.code) {
-  let html = fs.readFileSync(path.join(ROOT, 'en', 'learn', 'index.html'), 'utf8').replace(/\r\n/g, '\n');
+  let html = fs.readFileSync(path.join(ROOT, 'learn', 'index.html'), 'utf8').replace(/\r\n/g, '\n');
   const swap = (from, to) => {
-    if (!html.includes(from)) throw new Error(`en/learn/index.html không còn "${from}"`);
+    if (!html.includes(from)) throw new Error(`learn/index.html không còn "${from}"`);
     html = html.split(from).join(to);
   };
   swap('<html lang="en">', `<html lang="en" data-course="${code}">`);
-  swap('<link rel="canonical" href="https://typingease.site/en/learn/" />', `<link rel="canonical" href="https://typingease.site/try/${slug}/" />`);
-  swap('href="/en/lessons/" id="pt-back">← Roadmap</a>', 'href="/#languages" id="pt-back">← Keyboards</a>');
+  swap('<link rel="canonical" href="https://typingease.site/learn/" />', `<link rel="canonical" href="https://typingease.site/try/${slug}/" />`);
+  swap('href="/lessons/" id="pt-back">← Roadmap</a>', 'href="/#languages" id="pt-back">← Keyboards</a>');
   swap('<script src="/data/curriculum.en.js"></script>', `<script src="/data/curriculum.${code}.js"></script>`);
   html = html.replace('<head>\n', `<head>\n    <!-- SINH TỰ ĐỘNG bằng scripts/build-tasters.js từ en/learn/index.html. Sửa trang gốc rồi chạy lại. -->\n`);
   return html;

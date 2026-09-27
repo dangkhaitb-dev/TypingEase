@@ -19,7 +19,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'bai-hoc', 'index.html'),
     url: 'https://typingease.site/bai-hoc/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.vi.js',
     ui: null,
     routes: {
@@ -58,6 +58,6 @@ export default {
       footerAria: 'Tài nguyên TypingEase',
       footerLinks: r => [[r.lessons, 'Lộ trình'], [r.progress, 'Tiến độ'], [r.free, 'Luyện tự do'], [r.games, 'Trò chơi gõ phím'], [r.guide, 'Cách gõ 10 ngón']],
       footerTag: 'Gõ chậm một chút, rồi bạn sẽ đi rất xa.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['ES', '/es/lecciones/', 'es', 'Versión en español']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['ES', '/es/lecciones/', 'es', 'Versión en español']]
     }
 };

@@ -15,7 +15,7 @@ export default {
     out: path.join(root, 'id', 'pelajaran', 'index.html'),
     url: 'https://typingease.site/id/pelajaran/',
     // `alt` chi con la di san: hreflang nay dung tu bang ALTERNATES trong generate.mjs.
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.id.js',
     ui: '/i18n/ui.id.js',
     routes: {
@@ -59,6 +59,6 @@ export default {
       footerAria: 'Sumber TypingEase',
       footerLinks: r => [[r.home, 'Latihan'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan']],
       footerTag: 'Sedikit lebih pelan, dan kamu akan sampai jauh lebih jauh.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

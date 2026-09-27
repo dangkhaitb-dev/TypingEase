@@ -17,24 +17,24 @@
 window.TypingEaseUI = {
   lang: 'en',
 
-  /* Absolute, because /en/learn/ sits two directories deep and a relative link written for
+  /* Absolute, because /learn/ sits two directories deep and a relative link written for
      /hoc/ would resolve to /en/luyen-phim-yeu/ — right depth, wrong name, silent 404. */
   routes: {
     // `/`, not `/en/`: English is what a visitor gets by default, so it lives at the root and
     // `/en/index.html` is now a redirect for the URL that used to be here. The course and the
     // article pages stay under /en/ — those are real pages with real content.
     home: '/',
-    lessons: '/en/lessons/',
-    learn: '/en/learn/',
-    test: '/en/typing-test/',
-    progress: '/en/progress/',
-    free: '/en/practice/',
+    lessons: '/lessons/',
+    learn: '/learn/',
+    test: '/typing-test/',
+    progress: '/progress/',
+    free: '/practice/',
     // No English weak-key page in this phase. `null` is the signal to omit the button
     // entirely rather than link somewhere that does not exist — see how player.js guards
     // `R.weak`, and note that `R.progress` and `R.test` are guarded the same way now, so
     // turning any future page off again is one line here and nothing else.
     weak: null,
-    guide: '/en/touch-typing/'
+    guide: '/touch-typing/'
   },
 
   /* script.js — the `homeUi` table, shared by BOTH home pages. `shortcuts` is a fixed list of
@@ -207,7 +207,7 @@ window.TypingEaseUI = {
     unlockNow: 'Open this unit now'
   },
 
-  /* kiem-tra-toc-do-go/typing-test.js — the `T` table on /en/typing-test/: the passage itself,
+  /* kiem-tra-toc-do-go/typing-test.js — the `T` table on /typing-test/: the passage itself,
      the status line above the box, the comparison with the previous run and every string the
      progress chart writes. Stat labels, duration buttons and the article around the tool are
      plain HTML and already arrive in English.
@@ -254,7 +254,7 @@ window.TypingEaseUI = {
 
   /* tien-do/progress-page.js — the `S_VI` table: every string the progress page writes at
      runtime (coach, heat map legend, badge meta, streak, lesson table). Static copy lives in
-     en/progress/index.html and already arrives in English. `progress: '/en/progress/'` in
+     en/progress/index.html and already arrives in English. `progress: '/progress/'` in
      `routes` above is what turns the badge link in player.js back on. */
   progress: {
     // profile.js buckets a learner at 0/20/35/50/70 WPM; these are the labels for those five.
@@ -296,7 +296,7 @@ window.TypingEaseUI = {
   },
 
   /* luyen-tu-do/free-page.js — the free-practice page: its sample passages and the four
-     feedback lines the script writes under the input. Everything else on /en/practice/ is
+     feedback lines the script writes under the input. Everything else on /practice/ is
      static English in the markup.
 
      The samples are written here rather than generated from data/words/en.js. That file is a

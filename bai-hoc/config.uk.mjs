@@ -29,7 +29,7 @@ const units = n => `${n} ${plural(n, 'розділ', 'розділи', 'розд
 export default {
     out: path.join(root, 'uk', 'uroky', 'index.html'),
     url: 'https://typingease.site/uk/uroky/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.uk.js',
     ui: '/i18n/ui.uk.js',
     routes: {
@@ -72,6 +72,6 @@ export default {
       footerAria: 'Ресурси TypingEase',
       footerLinks: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогрес']],
       footerTag: 'Трохи повільніше — і зайдеш набагато далі.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

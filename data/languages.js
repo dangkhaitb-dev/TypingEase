@@ -79,13 +79,13 @@ window.TypingEaseLanguages = {
       // layouts. Dvorak/Colemak/Workman are not languages, so this is the only place they
       // sensibly live: a choice an English typist makes, not a country they come from.
       layouts: [1, 120, 128, 123, 125, 129, 131, 132, 133],
-      course: { status: 'ready', href: '/en/learn/', roadmap: '/en/lessons/', lessons: 34, units: 4 },
+      course: { status: 'ready', href: '/learn/', roadmap: '/lessons/', lessons: 34, units: 4 },
       courses: [
-        { id: 'en', lessons: 34, units: 4, name: 'QWERTY', keyboard: 'the QWERTY keyboard', layouts: [1, 120, 128, 123, 125], href: '/en/learn/', roadmap: '/en/lessons/', handwritten: true },
-        { id: 'en-dvorak', lessons: 35, units: 4, name: 'Dvorak', keyboard: 'the Dvorak layout', layouts: [129], href: '/en/dvorak/learn/', roadmap: '/en/dvorak/' },
-        { id: 'en-colemak', lessons: 35, units: 4, name: 'Colemak', keyboard: 'the Colemak layout', layouts: [131], href: '/en/colemak/learn/', roadmap: '/en/colemak/' },
-        { id: 'en-colemak-dh', lessons: 35, units: 4, name: 'Colemak-DH', keyboard: 'the Colemak-DH layout', layouts: [132], href: '/en/colemak-dh/learn/', roadmap: '/en/colemak-dh/' },
-        { id: 'en-workman', lessons: 35, units: 4, name: 'Workman', keyboard: 'the Workman layout', layouts: [133], href: '/en/workman/learn/', roadmap: '/en/workman/' }
+        { id: 'en', lessons: 34, units: 4, name: 'QWERTY', keyboard: 'the QWERTY keyboard', layouts: [1, 120, 128, 123, 125], href: '/learn/', roadmap: '/lessons/', handwritten: true },
+        { id: 'en-dvorak', lessons: 35, units: 4, name: 'Dvorak', keyboard: 'the Dvorak layout', layouts: [129], href: '/dvorak/learn/', roadmap: '/dvorak/' },
+        { id: 'en-colemak', lessons: 35, units: 4, name: 'Colemak', keyboard: 'the Colemak layout', layouts: [131], href: '/colemak/learn/', roadmap: '/colemak/' },
+        { id: 'en-colemak-dh', lessons: 35, units: 4, name: 'Colemak-DH', keyboard: 'the Colemak-DH layout', layouts: [132], href: '/colemak-dh/learn/', roadmap: '/colemak-dh/' },
+        { id: 'en-workman', lessons: 35, units: 4, name: 'Workman', keyboard: 'the Workman layout', layouts: [133], href: '/workman/learn/', roadmap: '/workman/' }
       ]
     },
     {

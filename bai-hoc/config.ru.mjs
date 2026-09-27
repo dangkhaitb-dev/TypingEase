@@ -24,7 +24,7 @@ const units = c => plural(c.units.length, 'раздел', 'раздела', 'р�
 export default {
     out: path.join(root, 'ru', 'uroki', 'index.html'),
     url: 'https://typingease.site/ru/uroki/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.ru.js',
     ui: '/i18n/ui.ru.js',
     routes: {
@@ -67,6 +67,6 @@ export default {
       footerAria: 'Материалы TypingEase',
       footerLinks: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогресс']],
       footerTag: 'Чуть медленнее сейчас — гораздо дальше потом.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

@@ -413,7 +413,7 @@ test.skip('7c legacy picker rewrites the landing page in place', async page => {
   const ossHref = await page.evaluate(() => document.querySelector('#hero-go').getAttribute('href'));
   assert.ok(/\/fr\/apprendre\/$/.test(ossHref), `French (OSS) thuộc họ AZERTY, nút lại trỏ ${ossHref}`);
   const cards = await page.evaluate(() => [...document.querySelectorAll('#lang-grid a.lang-chip')].map(a => a.getAttribute('href')));
-  for (const href of ['/fr/bepo/', '/en/dvorak/', '/de/neo/', '/en/lessons/', '/bai-hoc/']) {
+  for (const href of ['/fr/bepo/', '/dvorak/', '/de/neo/', '/lessons/', '/bai-hoc/']) {
     assert.ok(cards.includes(href), `lưới thiếu thẻ khoá ${href}`);
   }
   assert.strictEqual(await page.locator('#course').count(), 0, 'trang đầu không còn lộ trình tiếng Anh');
@@ -714,7 +714,7 @@ test('16 resize 1440→1024→1440: giữ phím đích, canvas vẽ lại', asyn
 // chon Dvorak trong khoa QWERTY la ve mot ban phim ma bai hoc khong day. Khoa tieng Anh co nam bo
 // cuc cung ho (US, UK x2, Canada, US Intl) nen la noi thu doi bo cuc; khoa tieng Viet chi co US.
 test('17 cài đặt bàn phím: đổi bố cục trong họ và dựng lại board', async page => {
-  await page.goto(`${BASE}/en/learn/#u1-l01/2`, { waitUntil: 'networkidle' });
+  await page.goto(`${BASE}/learn/#u1-l01/2`, { waitUntil: 'networkidle' });
   await page.waitForFunction(() => window.TypingEasePlayer && !['loading'].includes(window.TypingEasePlayer.getState().state));
   await page.waitForFunction(() => document.querySelector('#board .nt-player-keyboard'), null, { timeout: 15000 });
   await sleep(150);
@@ -805,7 +805,7 @@ test('17c Alt+K mở Cài đặt bàn phím ngay giữa lúc gõ', async page =>
 });
 
 for (const route of ['/tien-do/', '/luyen-tu-do/', '/bai-hoc/', '/kiem-tra-toc-do-go/', '/luyen-phim-yeu/',
-  '/vi/', '/en/lessons/', '/en/typing-test/', '/en/progress/', '/en/practice/', '/en/touch-typing/',
+  '/vi/', '/lessons/', '/typing-test/', '/progress/', '/practice/', '/touch-typing/',
   '/es/', '/es/lecciones/']) {
   test(`10 ${route} load không lỗi JS`, async page => {
     const response = await page.goto(`${BASE}${route}`, { waitUntil: 'networkidle' });
@@ -820,10 +820,25 @@ for (const route of ['/tien-do/', '/luyen-tu-do/', '/bai-hoc/', '/kiem-tra-toc-d
 // người dùng sang trang tiếng Việt tương ứng chứ không rơi vào 404.
 // `/en/` va `/ja/` tung la trang chu cua hai ban ngon ngu da bo, roi thanh trang chuyen huong ve
 // ban tieng Viet. Nay `/` LA ban tieng Anh, nen chung ve do va trang dich noi tieng Anh.
-// `/en/typing-test/` KHONG con o day: no da thanh trang that. Khi mot URL trong bang nay duoc
+// `/typing-test/` KHONG con o day: no da thanh trang that. Khi mot URL trong bang nay duoc
 // viet thanh trang that thi phai go khoi bang — de lai la test se doi no chuyen huong, va se do.
 const REDIRECTS = {
   '/en/': { to: '/', lang: 'en' },
+  '/en/lessons/': { to: '/lessons/', lang: 'en' },
+  '/en/learn/': { to: '/learn/', lang: 'en' },
+  '/en/dvorak/': { to: '/dvorak/', lang: 'en' },
+  '/en/dvorak/learn/': { to: '/dvorak/learn/', lang: 'en' },
+  '/en/colemak/': { to: '/colemak/', lang: 'en' },
+  '/en/colemak/learn/': { to: '/colemak/learn/', lang: 'en' },
+  '/en/colemak-dh/': { to: '/colemak-dh/', lang: 'en' },
+  '/en/colemak-dh/learn/': { to: '/colemak-dh/learn/', lang: 'en' },
+  '/en/workman/': { to: '/workman/', lang: 'en' },
+  '/en/workman/learn/': { to: '/workman/learn/', lang: 'en' },
+  '/en/typing-test/': { to: '/typing-test/', lang: 'en' },
+  '/en/typing-games/': { to: '/typing-games/', lang: 'en' },
+  '/en/practice/': { to: '/practice/', lang: 'en' },
+  '/en/progress/': { to: '/progress/', lang: 'en' },
+  '/en/touch-typing/': { to: '/touch-typing/', lang: 'en' },
   '/ja/': { to: '/ja/', lang: 'ja' },
   // Tu 2026-09-25 (Dot 0 SEO) cac URL cu ve trang CUNG ngon ngu, khong con sang ban tieng Viet.
   '/en/what-is-wpm/': { to: '/what-is-wpm/', lang: 'en' },
@@ -860,11 +875,11 @@ test('11c trang tiếng Việt trỏ về /vi/, không trỏ về /', async page
   }
 });
 
-// Trang tieng Anh phai o lai trong the gioi tieng Anh. Truoc day `/en/typing-test/` va ba URL
+// Trang tieng Anh phai o lai trong the gioi tieng Anh. Truoc day `/typing-test/` va ba URL
 // khac duoi /en/ la trang chuyen huong ve bai tieng Viet, nen mot nguoi hoc tieng Anh bam vao
 // "Typing test" la roi thang sang mot trang ho khong doc duoc. Phep do nay chan dung lop loi do:
 // khong trang tieng Anh nao duoc tro sang duong dan tieng Viet, tru dung nut doi ngon ngu.
-const EN_PAGES = ['/', '/en/lessons/', '/en/typing-test/', '/en/progress/', '/en/practice/', '/en/touch-typing/',
+const EN_PAGES = ['/', '/lessons/', '/typing-test/', '/progress/', '/practice/', '/touch-typing/',
   '/what-is-wpm/', '/average-typing-speed/', '/how-to-type-faster/'];
 const VI_PATHS = ['/vi/', '/hoc/', '/bai-hoc/', '/tien-do/', '/luyen-tu-do/', '/luyen-phim-yeu/',
   '/kiem-tra-toc-do-go/', '/cach-go-10-ngon/', '/cach-tang-wpm/', '/wpm-la-gi/', '/wpm-bao-nhieu-la-nhanh/'];
@@ -974,7 +989,7 @@ const generatedPages = (dir, sitemap) => fs.readdirSync(path.join(__dirname, '..
 
 test('11i trò chơi: Mưa chữ phá được từ, Đua về đích, Săn phím tính điểm', async page => {
   const sitemap = await (await page.request.get(`${BASE}/sitemap.xml`)).text();
-  const gamePages = ['/en/typing-games/', '/tro-choi/', ...generatedPages('tro-choi', sitemap).filter(url => url !== '/en/typing-games/')];
+  const gamePages = ['/typing-games/', '/tro-choi/', ...generatedPages('tro-choi', sitemap).filter(url => url !== '/typing-games/')];
   for (const url of gamePages) {
     await page.goto(`${BASE}${url}`, { waitUntil: 'networkidle' });
     await page.click('[data-act="rain-start"]');
@@ -1052,7 +1067,7 @@ test('11g SEO: lastmod, canonical, OG, JSON-LD sạch, tiến độ noindex, hre
   }
   const catalogue = loadGlobal('data/languages.js').TypingEaseLanguages.list;
   const listed = new Set(entries.map(([, url]) => url));
-  for (const progress of ['/tien-do/', '/en/progress/', '/fr/progres/', '/ja/shinchoku/']) {
+  for (const progress of ['/tien-do/', '/progress/', '/fr/progres/', '/ja/shinchoku/']) {
     assert.ok(!listed.has(progress), `${progress}: trang tiến độ không được nằm trong sitemap`);
     assert.ok(/<meta name="robots" content="noindex, follow"/.test(await html(progress)), `${progress}: phải noindex, follow`);
   }
@@ -1083,7 +1098,7 @@ function loadGlobal(file) {
   return scope;
 }
 
-// MOI HO, khong chi ho mac dinh: /fr/bepo/apprendre/ phai ve BEPO, /en/dvorak/learn/ phai ve
+// MOI HO, khong chi ho mac dinh: /fr/bepo/apprendre/ phai ve BEPO, /dvorak/learn/ phai ve
 // Dvorak. Doc thang tu `courses` cua data/languages.js, nen them mot ho la no tu duoc kiem.
 function tier2Courses() {
   const list = loadGlobal('data/languages.js').TypingEaseLanguages.list;
@@ -1205,10 +1220,10 @@ test('22b kiểu bàn phím: ansi bỏ phím "<" của AZERTY, iso thêm phím c
   assert.strictEqual(ansi.probe, 0, `ansi vẫn còn phím "<": ${ansi.row.join(' ')}`);
   assert.strictEqual(ansi.row[ansi.shiftAt + 1], 'w', 'ngay sau Shift trái là w');
 
-  await openCourse(page, '/en/learn/', 'u1-l01/1', { keyboardId: 1, keyboardShape: 'auto' });
+  await openCourse(page, '/learn/', 'u1-l01/1', { keyboardId: 1, keyboardShape: 'auto' });
   const plain = await shiftRow(page, '\\');
   assert.strictEqual(plain.row[plain.shiftAt + 1], 'z', `US auto: ${plain.row.join(' ')}`);
-  await openCourse(page, '/en/learn/', 'u1-l01/1', { keyboardId: 1, keyboardShape: 'iso' });
+  await openCourse(page, '/learn/', 'u1-l01/1', { keyboardId: 1, keyboardShape: 'iso' });
   const iso = await shiftRow(page, '\\');
   assert.strictEqual(iso.total, plain.total + 1, `iso: ${plain.total} → ${iso.total} phím`);
   assert.strictEqual(iso.probeInRow, iso.shiftAt + 1, `iso: hàng Shift ${iso.row.join(' ')}`);
@@ -1285,7 +1300,7 @@ test('22e tư thế: w của AZERTY (KeyZ) trùng tư thế z của US', async p
   await openCourse(page, '/fr/apprendre/', 'u1-l01/1');
   const azerty = await handSlots(page, 'w');
   const less = await handSlots(page, '<');
-  await openCourse(page, '/en/learn/', 'u1-l01/1', { keyboardId: 1 });
+  await openCourse(page, '/learn/', 'u1-l01/1', { keyboardId: 1 });
   const us = await handSlots(page, 'z');
   assert.deepStrictEqual(azerty, us, `w AZERTY ${JSON.stringify(azerty)} ≠ z US ${JSON.stringify(us)}`);
   assert.notDeepStrictEqual(less.left, azerty.left, 'phím "<" không được mượn tư thế của w');

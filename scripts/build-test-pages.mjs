@@ -12,7 +12,7 @@
  * trang cho mỗi thời lượng: năm trang "test 1/2/3/5/10 phút" giống nhau trừ cái đồng hồ là đúng dạng
  * trang cửa ngõ mà Google phạt.
  *
- * /kiem-tra-toc-do-go/ (vi) và /en/typing-test/ (en) viết tay; máy sinh chỉ thay khối hreflang của
+ * /kiem-tra-toc-do-go/ (vi) và /typing-test/ (en) viết tay; máy sinh chỉ thay khối hreflang của
  * chúng để cả cụm khai hai chiều. Khối chia sẻ + JSON-LD (WebApplication) in bằng scripts/lib/seo-head.mjs.
  */
 import fs from 'node:fs';
@@ -71,8 +71,8 @@ for (const entry of LANGUAGES) {
   if (PREVIEW && T.live !== false) continue;
   enabled.push({ entry, T, url: `/${entry.code}/${T.slug}/` });
 }
-const cluster = [['vi', '/kiem-tra-toc-do-go/'], ['en', '/en/typing-test/'],
-  ...enabled.map(({ entry, url }) => [htmlLang(entry.code), url]), ['x-default', '/en/typing-test/']];
+const cluster = [['vi', '/kiem-tra-toc-do-go/'], ['en', '/typing-test/'],
+  ...enabled.map(({ entry, url }) => [htmlLang(entry.code), url]), ['x-default', '/typing-test/']];
 const alternates = indent => cluster.map(([code, url]) => `${indent}<link rel="alternate" hreflang="${code}" href="${ORIGIN}${url}" />`).join('\n');
 
 function page({ entry, T, url }) {
@@ -251,7 +251,7 @@ function loadConfig(lang) { return configs.get(lang); }
 
 const outputs = enabled.map(item => ({ file: PREVIEW ? path.join(root, '_preview-test', item.entry.code, 'index.html') : path.join(root, item.entry.code, item.T.slug, 'index.html'), html: page(item) }));
 // Hai trang viết tay: chỉ thay khối hreflang.
-for (const rel of PREVIEW ? [] : ['kiem-tra-toc-do-go/index.html', 'en/typing-test/index.html']) {
+for (const rel of PREVIEW ? [] : ['kiem-tra-toc-do-go/index.html', 'typing-test/index.html']) {
   const file = path.join(root, rel);
   const current = fs.readFileSync(file, 'utf8');
   const run = /([ \t]*)<link rel="alternate" hreflang="[^"]+" href="[^"]+" \/>(\r?\n)(?:[ \t]*<link rel="alternate" hreflang="[^"]+" href="[^"]+" \/>\r?\n)*/.exec(current);

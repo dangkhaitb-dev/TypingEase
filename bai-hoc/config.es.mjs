@@ -19,7 +19,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'es', 'lecciones', 'index.html'),
     url: 'https://typingease.site/es/lecciones/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.es.js',
     ui: '/i18n/ui.es.js',
     // `null` = trang do chua co ban tieng Tay Ban Nha. Moi danh sach ben duoi loc null ra, nen
@@ -65,6 +65,6 @@ export default {
       footerAria: 'Recursos de TypingEase',
       footerLinks: r => [[r.home, 'Practicar'], [r.lessons, 'Curso'], [r.progress, 'Progreso'], [r.test, 'Test de mecanografía'], [r.games, 'Juegos de mecanografía']],
       footerTag: 'Ve un poco más despacio y llegarás mucho más lejos.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'B\u1ea3n ti\u1ebfng Vi\u1ec7t']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'B\u1ea3n ti\u1ebfng Vi\u1ec7t']]
     }
 };

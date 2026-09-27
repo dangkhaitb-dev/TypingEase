@@ -18,7 +18,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
   out: path.join(root, 'fr', 'lecons', 'index.html'),
   url: 'https://typingease.site/fr/lecons/',
-  alt: 'https://typingease.site/en/lessons/',
+  alt: 'https://typingease.site/lessons/',
   curriculumScript: '/data/curriculum.fr.js',
   ui: '/i18n/ui.fr.js',
   routes: {
@@ -61,6 +61,6 @@ export default {
     footerAria: 'Ressources TypingEase',
     footerLinks: r => [[r.home, 'Pratiquer'], [r.lessons, 'Cours'], [r.progress, 'Progrès'], [r.test, 'Test de frappe'], [r.games, 'Jeux de dactylographie']],
     footerTag: 'Va un peu plus lentement, et tu iras beaucoup plus loin.',
-    switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+    switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
   }
 };

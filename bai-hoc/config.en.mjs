@@ -17,8 +17,8 @@ import { fileURLToPath } from 'node:url';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 
 export default {
-    out: path.join(root, 'en', 'lessons', 'index.html'),
-    url: 'https://typingease.site/en/lessons/',
+    out: path.join(root, 'lessons', 'index.html'),
+    url: 'https://typingease.site/lessons/',
     alt: 'https://typingease.site/bai-hoc/',
     curriculumScript: '/data/curriculum.en.js',
     ui: '/i18n/ui.en.js',
@@ -27,9 +27,9 @@ export default {
     // same meaning, as `routes` in i18n/ui.en.js — keep the two in step.
     // Still null: `weak` (no English weak-key drill page).
     routes: {
-      home: '/', lessons: '/en/lessons/', learn: '/en/learn/', test: '/en/typing-test/',
-      progress: '/en/progress/', free: '/en/practice/', weak: null, games: '/en/typing-games/',
-      guide: '/en/touch-typing/', wpm: '/how-to-type-faster/'
+      home: '/', lessons: '/lessons/', learn: '/learn/', test: '/typing-test/',
+      progress: '/progress/', free: '/practice/', weak: null, games: '/typing-games/',
+      guide: '/touch-typing/', wpm: '/how-to-type-faster/'
     },
     s: {
       title: c => `Learn touch typing: a free ${c.sequence.length}-lesson course | TypingEase`,

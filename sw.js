@@ -33,7 +33,7 @@
  * v10: Đợt 0 SEO — thẻ chia sẻ, JSON-LD, tiêu đề/mô tả mới, trang tiến độ noindex.
  * v11: Đợt 1 SEO — trang test tốc độ es/pt/fr/de, công cụ test 15 giây–10 phút nhiều đoạn văn.
  * v12: giữ chỗ chống xê dịch (CLS) ở trang đầu và trang nhà; breadcrumb JSON-LD; câu thời lượng test mới.
- * v13: trang trò chơi gõ phím (/tro-choi/, /en/typing-games/), tro-choi/games.js + games.css.
+ * v13: trang trò chơi gõ phím (/tro-choi/, /typing-games/), tro-choi/games.js + games.css.
  * v14: hình minh hoạ SVG cho trang trò chơi (thẻ, hướng dẫn ba bước, cảnh Mưa chữ, xe đua).
  * v15: trang trò chơi es/pt/fr/de; đua RTL, font cho chữ không Latin trong trò chơi.
  * v16: trang Giới thiệu / Điều khoản / Quyền riêng tư cho 27 ngôn ngữ, dòng pháp lý ở chân mọi trang.

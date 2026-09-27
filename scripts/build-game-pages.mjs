@@ -45,7 +45,7 @@ for (const entry of LANGUAGES) {
   const T = (await import(pathToFileURL(file).href)).default;
   if (T.live === false && !PREVIEW) { waiting.push(entry.code); continue; }
   if (PREVIEW && T.live !== false) continue;
-  enabled.push({ entry, T, url: T.url || `/${entry.code}/${T.slug}/` });
+  enabled.push({ entry, T, url: T.url || (entry.code === 'en' ? '/' + T.slug + '/' : '/' + entry.code + '/' + T.slug + '/') });
 }
 const cluster = [...enabled.map(({ entry, url }) => [htmlLang(entry.code), url]),
   ['x-default', (enabled.find(item => item.entry.code === 'en') || enabled[0])?.url]];

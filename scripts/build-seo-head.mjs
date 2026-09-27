@@ -63,7 +63,7 @@ for (const [, url] of homes) {
 }
 
 /* ---------- 1. khối chia sẻ + JSON-LD ---------- */
-const TOOL = new Set(['/en/typing-test/', '/kiem-tra-toc-do-go/']);
+const TOOL = new Set(['/typing-test/', '/kiem-tra-toc-do-go/']);
 const pick = (html, re) => (re.exec(html) || [])[1];
 const unescape = text => String(text).replace(/&quot;/g, '"').replace(/&#39;/g, "'").replace(/&lt;/g, '<').replace(/&gt;/g, '>').replace(/&amp;/g, '&');
 let blocks = 0;

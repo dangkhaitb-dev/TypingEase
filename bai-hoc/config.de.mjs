@@ -21,7 +21,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
   out: path.join(root, 'de', 'lektionen', 'index.html'),
   url: 'https://typingease.site/de/lektionen/',
-  alt: 'https://typingease.site/en/lessons/',
+  alt: 'https://typingease.site/lessons/',
   curriculumScript: '/data/curriculum.de.js',
   ui: '/i18n/ui.de.js',
 
@@ -70,7 +70,7 @@ export default {
     // Mọi ngôn ngữ KHÁC, chứ không phải một cái: với bốn bản thì "một nút đổi ngôn ngữ" không
     // còn trả lời được "đổi sang cái nào".
     switches: [
-      ['EN', '/en/lessons/', 'en', 'English version'],
+      ['EN', '/lessons/', 'en', 'English version'],
       ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']
     ]
   }

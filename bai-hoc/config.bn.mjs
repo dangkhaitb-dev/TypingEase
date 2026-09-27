@@ -16,7 +16,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'bn', 'path', 'index.html'),
     url: 'https://typingease.site/bn/path/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.bn.js',
     ui: '/i18n/ui.bn.js',
     routes: {

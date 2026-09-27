@@ -19,7 +19,7 @@ export default {
   url: 'https://typingease.site/it/lezioni/',
   // `alt` chỉ còn là di sản: hreflang nay dựng từ bảng ALTERNATES trong generate.mjs. Giữ lại
   // để mọi config cùng một hình dạng.
-  alt: 'https://typingease.site/en/lessons/',
+  alt: 'https://typingease.site/lessons/',
   curriculumScript: '/data/curriculum.it.js',
   ui: '/i18n/ui.it.js',
 
@@ -69,7 +69,7 @@ export default {
     // Mọi ngôn ngữ KHÁC, chứ không phải một cái: với bốn bản thì "một nút đổi ngôn ngữ" không
     // còn trả lời được "đổi sang cái nào".
     switches: [
-      ['EN', '/en/lessons/', 'en', 'English version'],
+      ['EN', '/lessons/', 'en', 'English version'],
       ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']
     ]
   }

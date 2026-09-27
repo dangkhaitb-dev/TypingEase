@@ -64,7 +64,7 @@ if (family && curriculum.course !== code) throw new Error(`curriculum.course = $
 // x-default trỏ về bản tiếng Anh vì `/` là tiếng Anh.
 const ALTERNATES = {
   vi: 'https://typingease.site/bai-hoc/',
-  en: 'https://typingease.site/en/lessons/',
+  en: 'https://typingease.site/lessons/',
   es: 'https://typingease.site/es/lecciones/',
   fr: 'https://typingease.site/fr/lecons/',
   de: 'https://typingease.site/de/lektionen/',

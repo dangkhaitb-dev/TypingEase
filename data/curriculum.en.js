@@ -32,7 +32,7 @@ window.TypingEaseCurriculum = {
   course: 'en',
   // Every layout this course is correct on: the handwritten lessons teach the US key positions,
   // and these four put the same letters in the same places. keyboard/preferences.js refuses to
-  // draw a saved layout outside this list here — Dvorak has its own course at /en/dvorak/.
+  // draw a saved layout outside this list here — Dvorak has its own course at /dvorak/.
   layouts: [1, 120, 128, 123, 125],
   // Its own store. Lesson ids repeat across languages, so one shared key would mean two
   // courses overwriting each other's progress, unlocks and "continue" pointer.

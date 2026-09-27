@@ -60,7 +60,7 @@ async function page(entry) {
   const UI = loadWindow(`i18n/ui.${lang}.js`).TypingEaseUI;
   if (!UI.progress) throw new Error(`i18n/ui.${lang}.js chưa có bảng \`progress\``);
   const P = UI.progress;
-  const url = `/${lang}/${T.slug}/`;
+  const url = lang === 'en' ? '/' + T.slug + '/' : '/' + lang + '/' + T.slug + '/';
   const routes = { ...config.routes, progress: url };
   if (UI.routes?.progress !== url) throw new Error(`i18n/ui.${lang}.js: routes.progress phải là ${url} (đang là ${UI.routes?.progress})`);
   if (config.routes.progress !== url) throw new Error(`bai-hoc/config.${lang}.mjs: routes.progress phải là ${url} (đang là ${config.routes.progress})`);
@@ -273,7 +273,7 @@ ${[5, 10, 15, 20].map(n => `          <button type="button" data-daily-goal="${n
   </body>
 </html>
 `;
-  return { file: path.join(root, lang, T.slug, 'index.html'), html, url };
+  return { file: path.join(root, ...url.split('/').filter(Boolean), 'index.html'), html, url };
 }
 
 const outputs = [];

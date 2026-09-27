@@ -18,7 +18,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'ar', 'durus', 'index.html'),
     url: 'https://typingease.site/ar/durus/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.ar.js',
     ui: '/i18n/ui.ar.js',
     routes: {
@@ -61,6 +61,6 @@ export default {
       footerAria: 'موارد TypingEase',
       footerLinks: r => [[r.home, 'تدرب'], [r.lessons, 'الدورة'], [r.progress, 'التقدم']],
       footerTag: 'اكتب أبطأ قليلا، تصل أبعد بكثير.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

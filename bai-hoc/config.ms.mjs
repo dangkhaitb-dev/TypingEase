@@ -17,7 +17,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'ms', 'pelajaran', 'index.html'),
     url: 'https://typingease.site/ms/pelajaran/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.ms.js',
     ui: '/i18n/ui.ms.js',
     routes: {
@@ -61,6 +61,6 @@ export default {
       footerAria: 'Sumber TypingEase',
       footerLinks: r => [[r.home, 'Berlatih'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan']],
       footerTag: 'Perlahan sedikit, dan anda akan pergi lebih jauh.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

@@ -16,7 +16,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'tr', 'dersler', 'index.html'),
     url: 'https://typingease.site/tr/dersler/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.tr.js',
     ui: '/i18n/ui.tr.js',
     routes: {
@@ -59,6 +59,6 @@ export default {
       footerAria: 'TypingEase kaynakları',
       footerLinks: r => [[r.home, 'Pratik'], [r.lessons, 'Kurs'], [r.progress, 'İlerleme']],
       footerTag: 'Biraz daha yavaş git, çok daha uzağa varırsın.',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };

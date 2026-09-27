@@ -17,7 +17,7 @@ export default {
   out: path.join(root, 'pt', 'licoes', 'index.html'),
   url: 'https://typingease.site/pt/licoes/',
   // `alt` chỉ còn là di sản: hreflang nay dựng từ bảng ALTERNATES trong generate.mjs.
-  alt: 'https://typingease.site/en/lessons/',
+  alt: 'https://typingease.site/lessons/',
   curriculumScript: '/data/curriculum.pt.js',
   ui: '/i18n/ui.pt.js',
 
@@ -64,7 +64,7 @@ export default {
     footerLinks: r => [[r.lessons, 'Curso'], [r.learn, 'Lições'], [r.progress, 'Progresso'], [r.test, 'Teste de velocidade'], [r.games, 'Jogos de digitação']],
     footerTag: 'Vá um pouco mais devagar e você vai chegar muito mais longe.',
     switches: [
-      ['EN', '/en/lessons/', 'en', 'English version'],
+      ['EN', '/lessons/', 'en', 'English version'],
       ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']
     ]
   }

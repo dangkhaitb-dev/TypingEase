@@ -36,7 +36,7 @@ window.TypingEaseLandingText = {
     freeTitle: 'Free practice', freeText: 'Paste your own text and type it your own way.',
     nav: { games: 'Games', practice: 'Practice', course: 'Course', progress: 'Progress', test: 'Typing test', free: 'Free practice', guide: 'How to touch type' },
     footerTag: 'Go a little slower, and you will get a lot further.',
-    routes: { games: '/en/typing-games/', progress: '/en/progress/', test: '/en/typing-test/', free: '/en/practice/', guide: '/en/touch-typing/' }
+    routes: { games: '/typing-games/', progress: '/progress/', test: '/typing-test/', free: '/practice/', guide: '/touch-typing/' }
   },
 
   vi: {

@@ -16,7 +16,7 @@ const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 export default {
     out: path.join(root, 'ja', 'renshu', 'index.html'),
     url: 'https://typingease.site/ja/renshu/',
-    alt: 'https://typingease.site/en/lessons/',
+    alt: 'https://typingease.site/lessons/',
     curriculumScript: '/data/curriculum.ja.js',
     ui: '/i18n/ui.ja.js',
     routes: {
@@ -59,6 +59,6 @@ export default {
       footerAria: 'TypingEase の資料',
       footerLinks: r => [[r.home, '練習'], [r.lessons, 'コース'], [r.progress, '進み具合']],
       footerTag: '少しゆっくり打つほど、遠くまで行けます。',
-      switches: [['EN', '/en/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
+      switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
 };
