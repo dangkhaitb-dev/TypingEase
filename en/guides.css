@@ -1,0 +1,49 @@
+/* Long-form English guides. Reuse the site's reading layout and color tokens. */
+.guide-main article p,.guide-main article li{font-size:16px;line-height:1.85}
+.guide-main .article-lead{font-size:18px}
+.guide-main article a:not(.primary-button){color:var(--green-dark);text-decoration:underline;text-underline-offset:3px}
+.guide-main article a:hover{color:var(--ink)}
+.guide-main article h3{margin-top:27px;font-size:19px;line-height:1.5}
+.guide-main section{scroll-margin-top:24px}
+.guide-main .guide-meta{margin-top:22px;font-size:12px;color:var(--ink-soft);line-height:1.8}
+.guide-toc{display:block;margin-bottom:44px;padding:24px 28px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface-soft)}
+.guide-toc h2{font-size:18px;margin:0 0 12px;letter-spacing:0}
+.guide-toc ol{margin:0;padding-left:22px}
+.guide-toc li{padding:3px 0}
+.guide-main .guide-toc li{font-size:14px;line-height:1.7}
+.guide-formula,.guide-drill{margin:22px 0;padding:22px;border:1px solid var(--border-soft);border-radius:var(--r);background:var(--surface-soft);font:500 17px/1.8 "DM Mono",monospace;overflow-wrap:anywhere}
+.guide-main code{font-size:.94em;background:var(--surface-soft);padding:2px 5px;border-radius:var(--r-sm);overflow-wrap:anywhere}
+.guide-table-wrap{margin:22px 0;max-width:100%}
+.guide-main .wpm-table{margin:0}
+.guide-main .wpm-table caption{text-align:left;font-size:13px;line-height:1.6;color:var(--ink-soft);padding-bottom:12px}
+.guide-main .wpm-table th{font-size:13px}
+.guide-main .wpm-table td{font-size:14px}
+.guide-main .wpm-table th:first-child,.guide-main .wpm-table td:first-child{width:29%}
+.guide-plan li{padding-bottom:12px}
+.guide-faq h3{padding-top:20px;border-top:1px solid var(--line)}
+.guide-related{padding-top:16px}
+.guide-related h2{font-size:23px}
+.guide-related>div{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.guide-main .guide-related>div>a{display:block;padding:20px;border:1px solid var(--line);border-radius:var(--r);text-decoration:none;background:var(--surface)}
+.guide-related strong{display:block;line-height:1.5}
+.guide-related span{display:block;margin-top:9px;font-size:13px;line-height:1.7;color:var(--ink-soft)}
+.guide-related>p{margin-top:20px}
+.guide-skip{position:absolute;top:8px;left:12px;z-index:100;padding:12px 18px;background:var(--surface);color:var(--green-dark);border:2px solid var(--green);transform:translateY(-160%)}
+.guide-skip:focus{transform:translateY(0)}
+.guide-main a:focus-visible,.guide-skip:focus-visible{outline:2px solid var(--green);outline-offset:4px}
+@media(max-width:600px){
+  .guide-main .article-hero h1{font-size:35px;letter-spacing:-1.4px;overflow-wrap:anywhere}
+  .guide-main .article-lead{font-size:17px}
+  .guide-toc{padding:20px}
+  .guide-formula,.guide-drill{font-size:15px;padding:18px}
+  .guide-related>div{grid-template-columns:1fr}
+  .guide-main .wpm-table th,.guide-main .wpm-table td{padding:10px 8px;font-size:12px}
+}
+@media print{
+  .topbar,.guide-toc,.article-cta,.guide-related,.article-footer,.guide-skip{display:none}
+  .guide-main{max-width:none;padding:0}
+  .guide-main .article-hero h1{font-size:30px}
+  .guide-main article p,.guide-main article li{font-size:11pt}
+  .guide-main h2,.guide-main h3{break-after:avoid}
+  .guide-main table,.guide-formula,.guide-drill{break-inside:avoid}
+}
