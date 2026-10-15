@@ -12,6 +12,12 @@
   // mở lâu, người dùng quay lại, và trong lúc đó đã có deploy: khi ấy JS đang chạy trong tab là
   // bản cũ thật. Trình duyệt không tự kiểm tra lại sw.js cho tab đang mở, nên ta tự gọi `update()`
   // mỗi lần tab hiện trở lại, cách nhau ít nhất 15 phút.
+  // Analytics đi nhờ file này vì nó có mặt trên mọi trang (xem analytics.js). Chèn trước dòng
+  // kiểm tra service worker: trình duyệt không có service worker vẫn phải được đếm.
+  const analytics = global.document.createElement('script');
+  analytics.src = '/analytics.js';
+  global.document.head.appendChild(analytics);
+
   if (!('serviceWorker' in global.navigator)) return;
   const GRACE_MS = 10000;           // cập nhật tìm thấy trong 10 s đầu = kiểm tra lúc nạp, bỏ qua
   const RECHECK_MS = 15 * 60000;

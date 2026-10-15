@@ -256,6 +256,7 @@ function endTest() {
   input.disabled = true;
   showResult(metrics, consistency);
   saveHistory({ duration: selectedDuration, wpm: metrics.wpm, accuracy: metrics.accuracy, errors: metrics.errors, consistency, timestamp: Date.now() });
+  window.TypingEaseAnalytics?.track('test_complete', { seconds: selectedDuration, wpm: metrics.wpm, accuracy: metrics.accuracy, errors: metrics.errors, consistency });
   messageElement.textContent = fill(selectedDuration >= 60 && T.finishedMinutes ? T.finishedMinutes : T.finished, { seconds: selectedDuration, minutes: selectedDuration / 60, wpm: metrics.wpm, accuracy: metrics.accuracy ?? '--', errors: metrics.errors });
   updateDurationUi();
 }

@@ -962,6 +962,7 @@
     const stars = record?.stars || runLog.reduce((sum, entry) => sum + entry.stars, 0);
     const maxStars = record?.maxStars || runLog.length * STARS;
     store.completeLesson(lesson.id, { seconds: totals.seconds, wpm, accuracy });
+    window.TypingEaseAnalytics?.track('lesson_complete', { lesson_id: lesson.id, seconds: totals.seconds, wpm, accuracy, stars });
 
     const unit = unitOf(lesson.id);
     if (unit) {
