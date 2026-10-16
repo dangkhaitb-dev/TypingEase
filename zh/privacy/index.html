@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>隐私政策 | TypingEase</title>
-    <meta name="description" content="TypingEase 没有账号、没有 Cookie、没有数据分析，也没有广告。你的打字进度保存在你自己的浏览器里。这里具体说明存了什么、存在哪里。" />
+    <meta name="description" content="TypingEase 没有账号，也没有广告。你的打字进度保存在你自己的浏览器里，只有在你允许时才会使用分析 Cookie。这里具体说明收集了什么、存储了什么。" />
     <link rel="canonical" href="https://typingease.site/zh/privacy/" />
     <!-- Trang sinh bằng scripts/build-legal-pages.mjs từ phap-ly/text/zh.mjs. Sửa ở đó rồi chạy lại. -->
     <meta name="robots" content="noindex, follow" />
@@ -42,8 +42,8 @@
         <header class="article-hero">
           <p class="eyebrow"><i></i> 法律信息</p>
           <h1>隐私政策</h1>
-          <p class="article-lead">简单来说：我们不收集你的个人数据。你的课程和成绩保存在你自己的浏览器中，从不发送给我们。</p>
-          <p class="legal-meta">最后更新: <time datetime="2026-09-26">2026年9月26日</time><br />本文为译文。如与英文版本有出入，以英文版本为准。 <a class="inline-link" href="/privacy/" hreflang="en" lang="en">English</a></p>
+          <p class="article-lead">简单来说：我们从不问你是谁，你输入的内容留在你的浏览器里。只有在你允许的情况下，我们才会收集匿名使用统计，用来改进网站。</p>
+          <p class="legal-meta">最后更新: <time datetime="2026-10-16">2026年10月16日</time><br />本文为译文。如与英文版本有出入，以英文版本为准。 <a class="inline-link" href="/privacy/" hreflang="en" lang="en">English</a></p>
         </header>
 
         <section>
@@ -52,33 +52,38 @@
         </section>
 
         <section>
-          <h2>2. 我们不收集什么</h2>
-          <ul><li>没有账号、姓名、电子邮件地址或密码：本服务无需注册。</li><li>TypingEase 不设置任何 Cookie。</li><li>没有数据分析、广告或跟踪脚本，也不出售或共享数据。</li><li>你在课程、测试和游戏中输入的内容在你的浏览器中处理，不会发送给我们。</li></ul>
+          <h2>2. 我们收集什么</h2>
+          <p>只有当你在 Cookie 横幅中选择“允许”时，本网站才会使用 Google Analytics（通过 Google Firebase）收集匿名使用统计：</p><ul><li>你打开的页面，以及你使用了哪些按钮和设置（按按钮识别，而不是按你输入的任何内容）；</li><li>课程和打字测试的结果：课程、时长、速度、准确率和错误数；</li><li>页面语言，以及 Google Analytics 自行推断的一般技术信息，例如设备类型、浏览器、屏幕尺寸和大致所在的国家或城市。</li></ul><p>这能让我们知道哪些课程有效、学习者在哪里卡住。这些信息不会让我们识别出你：本网站没有账号，Google Analytics 也不会存储你的 IP 地址。</p><p>无论你是否允许，我们都从不收集：</p><ul><li>姓名、电子邮件地址或密码：本服务无需注册；</li><li>你在课程、测试和游戏中输入的内容，这些内容在你的浏览器中处理，不会发送给我们；</li><li>用于广告的数据：我们不展示广告，也不出售或共享数据。</li></ul>
         </section>
 
         <section>
-          <h2>3. 你的设备上存储了什么</h2>
-          <p>为了记住你的进度，本网站会使用你自己设备上浏览器的本地存储（localStorage）。其中保存你的课程进度和星星、徽章、打字测试记录、游戏最高分、每日目标和连续天数、键盘和声音设置，以及你选择的语言。本网站还会安装一个 service worker，用来保存网站自身页面和文件的副本，使网站加载更快并能离线使用。</p><p>这些信息从不离开你的设备。你可以随时用进度页面上的“清除记录”按钮删除它们，或者在浏览器设置中清除 typingease.site 的网站数据。</p>
+          <h2>3. Cookie 与你的选择</h2>
+          <p>你第一次访问时，会有一个横幅询问你是否允许分析 Cookie。</p><ul><li><b>拒绝。</b>不加载任何分析功能，也不设置任何 Cookie。网站照常运行，毫无差别。</li><li><b>允许。</b>Google Analytics 会设置 <code>_ga</code> 和 <code>_ga_*</code> 这两类 Cookie，其中保存一个随机标识符，最长两年，以便统计重复访问。</li></ul><p>你的选择本身保存在浏览器的本地存储中，而不是 Cookie 中。你可以随时更改；如果你撤回同意，数据分析即会停止，相关 Cookie 也会被删除。</p><p><button type="button" class="secondary-button" data-cookie-settings>Cookie 设置</button></p>
         </section>
 
         <section>
-          <h2>4. 第三方</h2>
-          <ul><li><b>托管。</b>本网站托管在 Cloudflare Pages 上。与任何网站托管服务商一样，Cloudflare 会处理你的 IP 地址、浏览器类型等技术数据，以传送页面并保护网站免遭滥用。请参阅 Cloudflare 的隐私政策。</li><li><b>字体。</b>页面从 Google Fonts 加载字体，因此你的浏览器会向 Google 的服务器发送请求，其中包括你的 IP 地址。请参阅 Google 的隐私政策。</li></ul><p>我们不会从这些服务商处获取个人数据供我们自己使用。</p>
+          <h2>4. 你的设备上存储了什么</h2>
+          <p>为了记住你的进度，本网站会使用你自己设备上浏览器的本地存储（localStorage）。其中保存你的课程进度和星星、徽章、打字测试记录、游戏最高分、每日目标和连续天数、键盘和声音设置、你选择的语言，以及你的 Cookie 选择。本网站还会安装一个 service worker，用来保存网站自身页面和文件的副本，使网站加载更快并能离线使用。</p><p>这些信息从不离开你的设备。你可以随时用进度页面上的“清除记录”按钮删除它们，或者在浏览器设置中清除 typingease.site 的网站数据。</p>
         </section>
 
         <section>
-          <h2>5. 儿童</h2>
-          <p>任何年龄的学习者都可以使用本服务，本服务不收集任何人的个人数据，包括儿童。</p>
+          <h2>5. 第三方</h2>
+          <ul><li><b>托管。</b>本网站托管在 Cloudflare Pages 上。与任何网站托管服务商一样，Cloudflare 会处理你的 IP 地址、浏览器类型等技术数据，以传送页面并保护网站免遭滥用。请参阅 Cloudflare 的隐私政策。</li><li><b>字体。</b>页面从 Google Fonts 加载字体，因此你的浏览器会向 Google 的服务器发送请求，其中包括你的 IP 地址。请参阅 Google 的隐私政策。</li><li><b>数据分析。</b>只有在你同意的情况下，使用统计才会由 Google LLC 旗下的服务 Google Analytics 处理，它可能在你所在国家或地区以外的服务器上处理这些数据。请参阅 Google 的隐私政策以及“Google 如何使用来自使用其服务的网站的信息”。</li></ul><p>我们不会从这些服务商处获取个人数据，也不会将它们的数据用于广告。</p>
         </section>
 
         <section>
-          <h2>6. 你的权利</h2>
-          <p>由于我们不持有任何关于你的个人数据，我们这边没有可供访问、更正或删除的内容；你设备上的数据如上文所述由你掌控。如果你有疑问或请求，请通过上面的地址联系我们。</p>
+          <h2>6. 儿童</h2>
+          <p>任何年龄的学习者都可以使用本服务。本服务不向任何人（包括儿童）索取个人数据，而且只有在使用该设备的人允许之后，数据分析才会运行。</p>
         </section>
 
         <section>
-          <h2>7. 本政策的变更</h2>
-          <p>如果本网站处理数据的方式发生变化，例如我们将来加入数据分析，我们会在变更生效之前更新本页面及其日期。</p>
+          <h2>7. 你的权利</h2>
+          <p>我们不持有任何能让我们知道你是谁的数据，你设备上的数据如上文所述由你掌控。你可以随时通过上方的“Cookie 设置”按钮撤回对数据分析的同意；已经收集的使用统计由 Google Analytics 保留有限的时间，最长不超过 14 个月，之后删除。如果你有疑问或请求，请通过上面的地址联系我们。</p>
+        </section>
+
+        <section>
+          <h2>8. 本政策的变更</h2>
+          <p>如果本网站处理数据的方式发生变化，我们会在变更生效之前更新本页面及其日期。</p>
         </section>
       </article>
     </main>

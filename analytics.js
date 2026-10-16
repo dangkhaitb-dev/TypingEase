@@ -1,35 +1,66 @@
-(function (global) {
-  // Firebase Analytics (GA4) cho typingease.site.
-  //
-  // Dùng thẳng gtag.js thay vì Firebase JS SDK: trên web, Firebase Analytics CHÍNH LÀ gtag.js bọc
-  // thêm một lớp, còn site này tĩnh, không có bundler — nạp cả SDK chỉ để gọi gtag là phí. Dữ liệu
-  // vẫn vào đúng property gắn với project Firebase `typingease-75e4f` (qua measurement ID).
-  //
-  // Không nhúng trực tiếp vào từng trang: sw-register.js đã có mặt trên mọi trang không phải trang
-  // chuyển hướng, và nó chèn file này — một chỗ duy nhất thay vì sửa 300 trang và 10 máy sinh.
-  //
-  // Chỉ chạy trên tên miền thật: e2e, preview và localhost không được làm bẩn số liệu.
-  //
-  // Sự kiện tuỳ chỉnh: gọi `TypingEaseAnalytics.track(tên, { ... })`. Hàm luôn tồn tại (kể cả khi
-  // không track) nên nơi gọi không phải kiểm tra gì; `language` được gắn tự động.
-  const MEASUREMENT_ID = 'G-5E3FSNW2WL';
-  const ENABLED = /(^|\.)typingease\.site$/.test(global.location.hostname);
-  const lang = () => (global.document.documentElement.lang || 'en').toLowerCase();
+// Firebase Analytics (GA4) cho typingease.site — điểm vào, nạp dạng ES module.
+//
+// Cấu trúc giống solprompter: firebase/firebase-init.js khởi tạo app + Analytics bằng Firebase SDK
+// (page_view tự gửi lúc khởi tạo), firebase/button-click-analytics.js tự track mọi nút bấm, và
+// analytics CHỈ bật sau khi người dùng bấm "Cho phép" ở banner cookie (cookie-banner.js). Chưa chọn
+// hoặc từ chối thì không tải SDK, không đặt cookie. Đồng ý / rút lại có hiệu lực ngay, không cần
+// tải lại trang; rút lại thì tắt thu thập và xoá cookie `_ga*`.
+//
+// Không nhúng trực tiếp vào từng trang: sw-register.js đã có mặt trên mọi trang không phải trang
+// chuyển hướng, và nó chèn file này — một chỗ duy nhất thay vì sửa 300 trang và 10 máy sinh.
+//
+// Chỉ chạy trên tên miền thật: e2e, preview và localhost không được làm bẩn số liệu (không banner,
+// không SDK). Xem banner ở localhost: `TypingEaseConsent.show()`.
+//
+// Sự kiện tuỳ chỉnh: gọi `TypingEaseAnalytics.track(tên, { ... })`. sw-register.js dựng sẵn bản
+// tạm xếp hàng sự kiện, nên gọi trước khi module này chạy xong cũng không mất; sự kiện tới khi
+// người dùng chưa chọn được giữ lại tới lúc họ chọn. `language` được gắn tự động.
+import { CONSENT_EVENT, getAnalyticsConsent, isAnalyticsGranted } from './cookie-consent.js';
+import { initCookieBanner } from './cookie-banner.js';
+import { initializeFirebase, clearAnalyticsCookies } from './firebase/firebase-init.js';
+import { initButtonClickTracking } from './firebase/button-click-analytics.js';
 
-  global.TypingEaseAnalytics = {
+const ENABLED = /(^|\.)typingease\.site$/.test(window.location.hostname);
+const lang = () => (document.documentElement.lang || 'en').toLowerCase();
+const queued = window.TypingEaseAnalytics?.queue || [];
+
+initCookieBanner({ show: ENABLED });
+
+if (!ENABLED) {
+  window.TypingEaseAnalytics = { track() {} };
+} else {
+  let client = null;
+  let stopClicks = null;
+  // Sự kiện chờ người dùng chọn; null = không giữ nữa (đã từ chối, hoặc đã gửi hết).
+  let pending = getAnalyticsConsent() === 'denied' ? null : [...queued];
+
+  const send = (name, params) => void client.then(ready => {
+    if (ready && isAnalyticsGranted()) ready.logEvent(ready.analytics, name, { language: lang(), ...params });
+  });
+
+  const start = () => {
+    if (client) void client.then(ready => ready?.setEnabled(true));
+    else client = initializeFirebase({ contentGroup: lang() });
+    pending?.forEach(([name, params]) => send(name, params));
+    pending = null;
+    stopClicks ??= initButtonClickTracking();
+  };
+
+  const stop = () => {
+    pending = null;
+    stopClicks?.();
+    stopClicks = null;
+    if (client) void client.then(ready => ready?.setEnabled(false));
+    clearAnalyticsCookies();
+  };
+
+  window.TypingEaseAnalytics = {
     track(name, params) {
-      if (ENABLED) global.gtag('event', name, { language: lang(), ...params });
+      // Đồng ý ở tab khác thì trang này chưa start — start luôn ở lần track đầu.
+      if (isAnalyticsGranted()) { if (!stopClicks) start(); send(name, params); }
+      else if (pending && pending.length < 20) pending.push([name, params]);
     }
   };
-  if (!ENABLED) return;
-
-  global.dataLayer = global.dataLayer || [];
-  global.gtag = function () { global.dataLayer.push(arguments); };
-  global.gtag('js', new Date());
-  global.gtag('config', MEASUREMENT_ID, { content_group: lang() });
-
-  const script = global.document.createElement('script');
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${MEASUREMENT_ID}`;
-  global.document.head.appendChild(script);
-})(window);
+  window.addEventListener(CONSENT_EVENT, event => (event.detail?.consent === 'granted' ? start() : stop()));
+  if (isAnalyticsGranted()) start();
+}

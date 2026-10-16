@@ -14,7 +14,11 @@
   // mỗi lần tab hiện trở lại, cách nhau ít nhất 15 phút.
   // Analytics đi nhờ file này vì nó có mặt trên mọi trang (xem analytics.js). Chèn trước dòng
   // kiểm tra service worker: trình duyệt không có service worker vẫn phải được đếm.
+  // analytics.js là module nên chạy sau; bản tạm này xếp hàng sự kiện tới trước để nó gửi bù.
+  const queue = [];
+  global.TypingEaseAnalytics = { queue, track: (name, params) => { if (queue.length < 20) queue.push([name, params]); } };
   const analytics = global.document.createElement('script');
+  analytics.type = 'module';
   analytics.src = '/analytics.js';
   global.document.head.appendChild(analytics);
 
