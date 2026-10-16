@@ -946,8 +946,9 @@ test('11k menu điện thoại: nút ☰ mở menu trên cùng, Esc và bấm ra
     await page.click('.menu-toggle');
     const links = await page.$$eval('.topbar > nav a', items => items.filter(a => a.offsetParent).length);
     assert.ok(links >= 3, `${url}: menu mở ra chỉ có ${links} liên kết`);
-    const box = await page.$eval('.topbar > nav', nav => nav.getBoundingClientRect().width);
-    assert.ok(box >= 380, `${url}: menu thả xuống phải rộng hết màn hình (${box}px)`);
+    // Menu thả xuống là một thẻ cách mép màn hình 12px mỗi bên (docs/design-system.md), không tràn ra ngoài.
+    const box = await page.$eval('.topbar > nav', nav => { const r = nav.getBoundingClientRect(); return { width: r.width, left: r.left, right: innerWidth - r.right }; });
+    assert.ok(box.width >= 360 && box.left >= 0 && box.right >= 0, `${url}: menu thả xuống phải gần hết bề ngang và nằm trong màn hình (${JSON.stringify(box)})`);
     await page.keyboard.press('Escape');
     assert.ok(!(await page.isVisible('.topbar > nav')), `${url}: Esc không đóng menu`);
     await page.click('.menu-toggle');

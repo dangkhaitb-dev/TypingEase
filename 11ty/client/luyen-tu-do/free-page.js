@@ -133,7 +133,9 @@
     const typed = input.value;
     sampleEl.innerHTML = [...target].map((char, index) => {
       const state = index < typed.length ? (typed[index] === char ? '' : 'wrong') : index === typed.length ? 'current' : '';
-      return `<span class="${state}">${char === ' ' ? '&nbsp;' : escapeHtml(char)}</span>`;
+      // Dấu cách thường (đoạn mẫu đã gộp mọi khoảng trắng về một dấu cách): `&nbsp;` cấm xuống
+      // dòng giữa hai từ, nên trên điện thoại câu bị ngắt giữa chữ.
+      return `<span class="${state}">${escapeHtml(char)}</span>`;
     }).join('');
     const correct = [...typed].filter((char, index) => char === target[index]).length;
     const percent = typed.length ? Math.round(correct / typed.length * 100) : null;

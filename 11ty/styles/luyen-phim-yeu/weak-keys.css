@@ -1,48 +1,52 @@
 /* luyen-phim-yeu/weak-keys.css — công cụ luyện phím yếu.
-   Nạp sau tokens.css / base.css / ../cach-go-10-ngon/article.css (trang này mượn khung bài viết). */
+   Nạp sau tokens.css / base.css / ../cach-go-10-ngon/article.css (trang này mượn khung bài viết).
 
-.weak-tool{margin-bottom:48px;padding:28px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface)}
+   Kiểu typekute: thẻ trắng viền 2px cạnh đáy 4px; phím yếu là những keycap; đoạn luyện Roboto Mono cỡ
+   lớn với con trỏ xanh — cùng cách đánh dấu với trang kiểm tra tốc độ (kiem-tra-toc-do-go/test.css). */
+
+.weak-tool{margin-bottom:48px;padding:28px;border:var(--border-w) solid var(--border);border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-edge)}
+.weak-tool .eyebrow{margin-bottom:12px}
 .weak-tool h2{margin-bottom:10px}
-.weak-status,.weak-note{color:var(--muted);font-size:14px}
-.weak-empty{padding:18px 0 2px}
+.weak-tool h3{margin-top:22px}
+.weak-status,.weak-note{color:var(--text-muted);font-size:14px}
+.weak-empty{padding:16px 0 2px}
 
 /* ---------- danh sách phím yếu ---------- */
-.weak-key-list{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
-.weak-key{display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid var(--border-soft);border-radius:var(--r);background:var(--surface-soft);color:var(--green)}
-.weak-key b{font:700 18px "DM Mono",monospace}
-.weak-key span{font-size:12px}
+.weak-key-list{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 18px}
+.weak-key{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:2px;min-width:72px;padding:10px 14px 8px;border:var(--border-w) solid var(--border);border-radius:var(--r);background:var(--surface);box-shadow:var(--shadow-edge);color:var(--ink-900)}
+.weak-key b{font:700 24px/1.1 var(--font-mono)}
+.weak-key span{color:var(--error-700);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.06em;text-transform:uppercase}
 
 /* ---------- khu gõ thử ---------- */
-.weak-drill{margin-top:25px;padding-top:25px;border-top:1px solid var(--line)}
-.weak-prompt{margin:14px 0;padding:18px;border-radius:var(--r);background:var(--surface-soft);color:var(--ink);font:500 16px/1.9 "DM Mono",monospace;letter-spacing:.02em;overflow-wrap:anywhere}
+.weak-drill{margin-top:24px;padding-top:6px;border-top:var(--border-w) solid var(--ink-200)}
+/* Chữ chưa gõ nhạt (ink-600), đã gõ đúng đậm (ink-900), gõ sai đỏ trên nền hồng; con trỏ là vạch xanh. */
+.weak-prompt{margin:14px 0 18px;padding:16px 18px;border:var(--border-w) solid var(--ink-200);border-radius:var(--r-lg);background:var(--primary-50);color:var(--ink-600);font:400 20px/1.8 var(--font-mono);overflow-wrap:anywhere}
 .weak-prompt span{white-space:pre-wrap}
-.weak-prompt .current{border-radius:3px;background:var(--lime);color:var(--ink)}
-/* Nền/chữ đỏ của ký tự sai đậm hơn --danger hẳn một bậc để đọc được trên nền hồng; giữ literal. */
-.weak-prompt .incorrect{border-radius:3px;background:#ffe0df;color:#a53531}
-.weak-prompt .correct{color:var(--ok)}
-.weak-drill label{display:block;margin:0 0 8px;font-size:var(--fs-sm);font-weight:700}
-.weak-drill textarea{box-sizing:border-box;width:100%;min-height:104px;padding:13px 14px;border:1px solid var(--border-soft);border-radius:var(--r);resize:vertical;color:var(--ink);font:500 15px/1.7 "DM Mono",monospace}
-/* Cần rule riêng cho :focus vì `.weak-drill textarea` (0,1,1) ngang điểm với `textarea:focus`
-   của base.css nhưng nạp sau, nên nó sẽ nuốt mất border-color xanh. Vòng sáng lấy từ
-   --shadow-focus của base.css, thay cho outline lime tự chế trước đây. */
-.weak-drill textarea:focus{border-color:var(--green)}
-.weak-feedback{min-height:24px;margin:10px 0;color:var(--muted);font-size:var(--fs-sm)}
+.weak-prompt .correct{color:var(--ink-900)}
+.weak-prompt .incorrect{border-radius:3px;background:var(--error-100);color:var(--error-700);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.weak-prompt .current{position:relative;color:var(--ink-900)}
+.weak-prompt .current::before{content:"";position:absolute;inset-block:.2em;inset-inline-start:-1px;width:3px;border-radius:2px;background:var(--primary-500);animation:weak-caret 1s var(--ease) infinite}
+@keyframes weak-caret{0%,55%{opacity:1}75%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.weak-prompt .current::before{animation:none}}
+.weak-drill label{display:block;margin:0 0 8px;color:var(--text-muted);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.weak-drill textarea{box-sizing:border-box;width:100%;min-height:104px;margin-top:0;padding:13px 14px;resize:vertical;font:400 16px/1.7 var(--font-mono)}
+.weak-drill textarea:disabled{background:var(--primary-50)}
+.weak-feedback{min-height:24px;margin:10px 0;color:var(--text-muted);font-size:var(--fs-sm);font-weight:600}
 
 /* ---------- chỉ số & kết quả ---------- */
-.weak-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:9px;margin:15px 0}
-.weak-metric{padding:12px 8px;border-radius:var(--r);background:var(--surface-soft);text-align:center}
-.weak-metric span{display:block;color:var(--muted);font-size:var(--fs-xs)}
-.weak-metric b{display:block;margin-top:4px;color:var(--green);font:700 16px "DM Mono",monospace}
-.weak-result{margin-top:22px;padding:20px;border-radius:var(--r);background:var(--cream)}
-.weak-result h3{margin-bottom:4px}
+.weak-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px;margin:14px 0}
+.weak-metric{padding:12px 10px;border:var(--border-w) solid var(--ink-200);border-radius:var(--r);background:var(--primary-50);text-align:center}
+.weak-metric span{display:block;color:var(--text-muted);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.06em;text-transform:uppercase}
+.weak-metric b{display:block;margin-top:4px;color:var(--ink-900);font:700 20px/1.2 var(--font-mono)}
+.weak-result{margin-top:22px;padding:20px 22px;border:var(--border-w) solid var(--primary-200);border-radius:var(--r-lg);background:var(--primary-50)}
+.weak-result h3{margin:0 0 4px;color:var(--primary-700)}
+.weak-result .weak-metric{border-color:var(--border);background:var(--surface);box-shadow:0 3px 0 var(--ink-300)}
 .weak-actions{display:flex;align-items:center;gap:18px;flex-wrap:wrap;margin-top:18px}
-.weak-actions .primary-button{border:0;cursor:pointer}
 
-/* ---------- đáp ứng ----------
-   Một ngưỡng 900px, trùng base.css và article.css (bản cũ dùng 750px). */
+/* ---------- đáp ứng ---------- */
 @media (max-width:900px){
-  .weak-tool{padding:20px}
-  .weak-prompt{padding:14px;font-size:14px}
+  .weak-tool{padding:20px 18px;border-radius:var(--r-lg)}
+  .weak-prompt{padding:14px;font-size:17px}
   .weak-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}
   .weak-actions{align-items:flex-start;flex-direction:column;gap:12px}
 }

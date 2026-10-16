@@ -1,110 +1,149 @@
-/* kiem-tra-toc-do-go/test.css — trang kiểm tra tốc độ gõ. Nạp sau tokens.css và base.css.
+/* kiem-tra-toc-do-go/test.css — trang kiểm tra tốc độ gõ (/typing-test/, /kiem-tra-toc-do-go/ và các bản
+   dịch). Nạp sau tokens.css và base.css. trò chơi (tro-choi/games.css) cũng nạp file này để mượn khung
+   trang .test-main / .test-hero / .faq / .test-cta.
 
-   Gộp test-upgrade.css vào đây (2026-09-16): hai file cùng nạp trên đúng trang này và cùng khai
-   báo .test-stats (4 cột ở file này, 5 cột ở file kia) — tách ra chỉ tạo bẫy đọc nhầm. Giá trị
-   giữ lại là giá trị cuối cùng từng có hiệu lực, giao diện không đổi.
+   Giao diện theo typekute (docs/design-system.md): màn gõ kiểu monkeytype — bộ chọn thời lượng là một
+   nhóm phân đoạn xám, đồng hồ to màu xanh, đoạn văn Roboto Mono cỡ lớn với con trỏ xanh; mọi khối nổi là
+   "keycap" (viền 2px, cạnh đáy 4px). Chỉ dùng thuộc tính logic (inline/block) để trang tiếng Ả Rập,
+   Ba Tư, Urdu, Hebrew tự lật đúng. */
 
-   Đã xoá các bản sao của .breadcrumb / .home-link / footer: base.css có sẵn bản nền y hệt. */
-
-.test-header{border-bottom:1px solid var(--line)}
+.test-header{border-bottom:var(--border-w) solid var(--ink-200)}
 .test-main{max-width:var(--w-read);margin:0 auto;padding:30px var(--pad-x) 82px}
+/* Breadcrumb: cùng kiểu với trang bài viết (cach-go-10-ngon/article.css) — nhãn in hoa nhỏ, link là viên
+   thuốc xanh. Phải ghi đè kiểu mục menu mà base.css tô cho mọi `nav a` (breadcrumb cũng là <nav>). */
+.test-main .breadcrumb{flex-wrap:wrap;gap:6px 10px;margin:0 0 36px;color:var(--ink-600);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.test-main .breadcrumb a{display:inline-block;min-height:0;border:0;letter-spacing:inherit;font-size:inherit;padding:4px 10px;margin-inline-start:-10px;border-radius:var(--r-pill);color:var(--primary-700);font-weight:900}
+.test-main .breadcrumb a:hover{background:var(--primary-100);color:var(--primary-700)}
+.test-main .breadcrumb span[aria-hidden]{color:var(--ink-400);font-size:var(--fs-sm)}
 
 /* ---------- hero ---------- */
-.test-hero{padding-bottom:34px;margin-bottom:28px;border-bottom:1px solid var(--line)}
+.test-hero{padding-bottom:30px;margin-bottom:28px;border-bottom:var(--border-w) solid var(--ink-200)}
 .test-hero .eyebrow{margin-bottom:14px}
-.test-hero h1{font-size:47px;line-height:1.15;letter-spacing:-2.4px;margin-bottom:17px}
-.test-hero>p:not(.eyebrow){max-width:670px;color:var(--muted);font-size:16px;line-height:1.75;margin:0}
+.test-hero h1{font-size:var(--fs-h1);line-height:1.12;letter-spacing:-1.2px;margin-bottom:16px}
+.test-hero>p:not(.eyebrow){max-width:670px;color:var(--text-muted);font-size:16px;line-height:1.75;margin:0}
 
 /* ---------- thân bài ----------
-   base.css chưa có kiểu cho <article>, nên bốn rule dưới đây vẫn phải nằm ở file trang.
-   Chúng gần trùng với article.css (chỉ lệch margin-bottom của h2: 14 vs 15px) — chỗ đúng của
-   chúng là base.css, nhưng file đó do người khác giữ trong đợt này. */
-article section:not(.typing-test){margin:46px 0}
-article h2{font-size:var(--fs-h2);letter-spacing:-1.1px;line-height:1.3;margin:0 0 14px}
+   base.css chưa có kiểu cho <article>, nên các rule dưới đây vẫn phải nằm ở file trang. */
+article>section:not(.typing-test){margin:46px 0}
+article h2{font-size:var(--fs-h2);letter-spacing:-.6px;line-height:1.25;margin:0 0 14px}
 article p,article li{font-size:var(--fs-body);line-height:1.8}
 article p{margin:0 0 15px}
-article ul{margin:0;padding-left:22px}
+article ul{margin:0;padding-inline-start:22px}
 article li{margin:7px 0}
+article li::marker{color:var(--primary-500)}
 
 /* ---------- công cụ gõ thử ---------- */
-.typing-test{padding:27px 30px 24px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);box-shadow:var(--shadow-lift)}
-.test-heading{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;margin-bottom:20px}
-.test-heading h2{font-size:22px;margin:0}
-.test-heading p{max-width:220px;margin:3px 0 0;color:var(--muted);font-size:var(--fs-xs);line-height:1.5;text-align:right}
+.typing-test{padding:26px 28px 24px;border:var(--border-w) solid var(--border);border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-edge)}
+.test-heading{display:flex;justify-content:space-between;align-items:center;gap:18px;margin-bottom:18px}
+.test-heading h2{font-size:22px;letter-spacing:-.3px;margin:0}
+.test-heading p{max-width:260px;margin:0;color:var(--text-muted);font-size:var(--fs-xs);font-weight:700;line-height:1.5;text-align:end}
 
-/* Bộ chọn thời lượng (từ test-upgrade.css). */
-.duration-picker{display:grid;grid-template-columns:repeat(auto-fit,minmax(84px,1fr));gap:7px;margin:-4px 0 18px}
-.duration-picker button{min-height:38px;border:1px solid var(--border-soft);border-radius:var(--r-sm);background:var(--surface);color:var(--muted);font-size:var(--fs-xs);font-weight:800}
-/* #e5f5df = nền "đang chọn" dùng chung với /tien-do/; ngả vàng hơn --surface-tint nên giữ literal. */
-.duration-picker button.selected{border-color:var(--green);background:#e5f5df;color:var(--green)}
-.duration-picker button:disabled{cursor:not-allowed;opacity:.58}
+/* Bộ chọn thời lượng: nhóm phân đoạn kiểu typekute — rãnh xám, đoạn đang chọn là mặt trắng chữ xanh
+   có cạnh đáy nhỏ như một phím đang nổi. Trong lúc đang gõ, cả nhóm mờ đi (typing-test.js khoá nút). */
+.duration-picker{display:flex;flex-wrap:wrap;gap:2px;margin:0 0 20px;padding:4px;border-radius:var(--r);background:var(--ink-200);transition:opacity var(--dur) var(--ease)}
+.duration-picker button{flex:1 1 auto;min-height:36px;padding:6px 10px;border:0;border-radius:var(--r-sm);background:transparent;color:var(--ink-600);font-size:var(--fs-xs);font-weight:800;line-height:1.2;white-space:nowrap;transition:background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.duration-picker button:hover:not(:disabled){color:var(--primary-700)}
+.duration-picker button.selected{background:var(--surface);color:var(--primary-700);box-shadow:0 2px 0 var(--ink-300)}
+.duration-picker button:focus-visible{box-shadow:var(--shadow-focus)}
+.duration-picker button:disabled{cursor:not-allowed}
+.duration-picker:has(button:disabled){opacity:.45}
 
-/* 5 cột: giá trị của test-upgrade.css, là cái thực sự có hiệu lực trước khi gộp. */
-.test-stats{display:grid;grid-template-columns:repeat(5,1fr);gap:8px;padding:13px 0;margin-bottom:20px;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
-.test-stats span{display:block;color:var(--muted);font-size:10px}
-.test-stats strong{display:block;margin-top:3px;font-size:21px;letter-spacing:-1px}
-.test-stats small{font-size:10px;color:var(--green);letter-spacing:0;margin-left:2px}
+/* Chỉ số trực tiếp: nhãn in hoa nhỏ, số Roboto Mono; đồng hồ (ô đầu) to và xanh như typekute. */
+.test-stats{display:grid;grid-template-columns:1.3fr repeat(4,1fr);align-items:end;gap:8px;padding:0 2px 16px;margin-bottom:6px;border-bottom:var(--border-w) solid var(--ink-200)}
+.test-stats span{display:block;color:var(--text-muted);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.test-stats strong{display:block;margin-top:4px;color:var(--ink-900);font:700 24px/1.1 var(--font-mono);font-variant-numeric:tabular-nums;letter-spacing:-.5px}
+.test-stats div:first-child strong{color:var(--primary-600);font-size:40px;letter-spacing:-1.5px}
+.test-stats small{margin-inline-start:2px;color:var(--text-muted);font:700 13px var(--font-body);letter-spacing:0}
 
-/* Năm dòng cố định: bài 10 phút có vài nghìn ký tự, typing-test.js cuộn để dòng đang gõ luôn là dòng thứ
+/* Bốn dòng cố định: bài 10 phút có vài nghìn ký tự, typing-test.js cuộn để dòng đang gõ luôn là dòng thứ
    hai. Khoảng đệm trên/dưới là VIỀN trong suốt chứ không phải padding: viền không cuộn theo chữ, nên
-   không lộ nửa dòng phía trên. */
-.test-prompt{position:relative;box-sizing:border-box;height:calc(1.85em * 5 + 34px);overflow:hidden;margin:0 0 14px;padding:0 17px;border-block:17px solid transparent;border-radius:var(--r);background:var(--surface-soft);color:var(--ink);font:15px/1.85 "DM Mono",monospace;white-space:pre-wrap;overflow-wrap:break-word}
-.test-prompt .current{background:var(--lime);color:var(--green);border-radius:2px}
-.test-prompt .wrong{color:var(--danger);text-decoration:underline;text-decoration-thickness:2px}
-label{display:block;color:var(--muted);font-size:var(--fs-xs);font-weight:700;margin-bottom:7px}
-textarea{min-height:112px;font:14px/1.7 "DM Mono",monospace}
-.test-actions{display:flex;align-items:center;gap:15px;margin-top:13px}
-.test-actions .primary-button{padding:10px 14px}
-.test-actions .primary-button span{font-size:16px;margin-left:8px}
-.test-actions p{margin:0;color:var(--muted);font-size:10px;line-height:1.5}
+   không lộ nửa dòng phía trên. Chữ chưa gõ nhạt (ink-600), đã gõ đậm (ink-900): typing-test.js chỉ đánh
+   dấu ký tự sai và ký tự đang gõ, nên "chưa gõ" là mọi ký tự đứng SAU .current. */
+.test-prompt{position:relative;box-sizing:border-box;height:calc(1.75em * 4 + 28px);overflow:hidden;margin:0 0 16px;padding:0 4px;border-block:14px solid transparent;color:var(--ink-900);font:400 22px/1.75 var(--font-mono);white-space:pre-wrap;overflow-wrap:break-word}
+.test-prompt .current~span{color:var(--ink-600)}
+.test-prompt .wrong{border-radius:3px;background:var(--error-100);color:var(--error-700);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+/* Con trỏ: vạch xanh đứng trước ký tự cần gõ. Mỗi phím gõ vẽ lại đoạn văn nên nhịp nhấp nháy bắt đầu
+   lại từ "sáng" — giống monkeytype, con trỏ không tắt giữa lúc đang gõ. */
+.test-prompt .current{position:relative}
+.test-prompt .current::before{content:"";position:absolute;inset-block:.2em;inset-inline-start:-1px;width:3px;border-radius:2px;background:var(--primary-500);animation:test-caret 1s var(--ease) infinite}
+@keyframes test-caret{0%,55%{opacity:1}75%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.test-prompt .current::before{animation:none}}
 
-/* ---------- ô kết quả (từ test-upgrade.css) ---------- */
-.test-result{margin-top:19px;padding:18px;border:1px solid var(--border-soft);border-radius:var(--r);background:var(--surface-soft)}
+/* Nhãn ô gõ: chữ in hoa nhỏ như mọi nhãn của hệ thống. */
+.typing-test label,.test-course{color:var(--text-muted);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
+.typing-test label:not(.test-course){display:block;margin-bottom:0}
+#typing-input{min-height:104px;font:16px/1.7 var(--font-mono)}
+.test-actions{display:flex;align-items:center;gap:16px;margin-top:16px}
+.test-actions .primary-button{flex:none}
+.test-actions .primary-button span{font-size:17px;margin-inline-start:2px}
+.test-actions p{margin:0;color:var(--text-muted);font-size:var(--fs-xs);line-height:1.5}
+
+/* ---------- ô kết quả ----------
+   Số WPM to Roboto Mono xanh; ba ô phụ là những phím trắng nhỏ. */
+.test-result{margin-top:20px;padding:20px 22px 22px;border:var(--border-w) solid var(--primary-200);border-radius:var(--r-lg);background:var(--primary-50)}
 .test-result[hidden]{display:none}
-.test-result>p:first-child{margin:0 0 4px;color:var(--muted);font-size:var(--fs-xs);font-weight:800}
-.test-result>strong{display:block;color:var(--green);font-size:30px;letter-spacing:-1.5px}
-.result-details{display:grid;grid-template-columns:repeat(3,1fr);gap:8px;margin-top:14px;padding-top:13px;border-top:1px solid var(--line)}
-.result-details span{color:var(--muted);font-size:10px}
-.result-details b{display:block;margin-top:3px;color:var(--ink);font-size:14px}
-/* Ba !important cũ ở đây là thừa: .result-comparison (0,1,0) vốn đã thắng `article p` (0,0,2). */
-.result-comparison{margin:14px 0 0;color:var(--green);font-size:12px;font-weight:800}
+.test-result>p:first-child{margin:0 0 2px;color:var(--primary-700);font-size:var(--fs-2xs);font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+.test-result>strong{display:block;color:var(--primary-700);font:700 52px/1.1 var(--font-mono);letter-spacing:-2px}
+.result-details{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:16px}
+.result-details span{padding:10px 12px;border:var(--border-w) solid var(--border);border-radius:var(--r);background:var(--surface);color:var(--text-muted);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 3px 0 var(--ink-300)}
+.result-details b{display:block;margin-top:4px;color:var(--ink-900);font:700 20px/1.2 var(--font-mono);letter-spacing:-.4px;text-transform:none}
+.result-comparison{display:inline-block;margin:16px 0 0;padding:5px 12px;border-radius:var(--r-pill);background:var(--primary-100);color:var(--primary-700);font-size:var(--fs-xs);font-weight:800}
 .result-comparison[hidden]{display:none}
 
 /* ---------- FAQ & CTA ---------- */
-.faq{border-top:1px solid var(--line)}
-details{padding:15px 0;border-bottom:1px solid var(--line)}
-summary{cursor:pointer;color:var(--ink);font-size:var(--fs-body);font-weight:700}
-details p{margin:10px 0 0;color:var(--muted);font-size:14px}
-.test-cta{padding:31px;border-radius:var(--r);background:var(--cream)}
-.test-cta .eyebrow{margin-bottom:10px}
+.faq{display:grid;gap:10px}
+details{padding:0;border:var(--border-w) solid var(--border);border-radius:var(--r-lg);background:var(--surface);box-shadow:0 3px 0 var(--ink-300)}
+summary{display:flex;align-items:center;justify-content:space-between;gap:12px;padding:15px 18px;cursor:pointer;color:var(--ink-900);font-size:var(--fs-body);font-weight:800;list-style:none}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";flex:none;display:inline-grid;place-items:center;width:26px;height:26px;border-radius:var(--r-sm);background:var(--primary-100);color:var(--primary-700);font-size:18px;font-weight:900;line-height:1}
+details[open] summary::after{content:"−"}
+summary:hover{color:var(--primary-700)}
+summary:focus-visible{border-radius:var(--r-lg);box-shadow:var(--shadow-focus)}
+details p{margin:0;padding:0 18px 16px;color:var(--text-muted);font-size:14px}
+.test-cta{padding:32px 34px;border:var(--border-w) solid var(--primary-300);border-radius:var(--r-xl);background:var(--primary-100);box-shadow:0 var(--edge) 0 var(--primary-300)}
+.test-cta .eyebrow{margin-bottom:10px;color:var(--primary-700)}
 .test-cta h2{margin-bottom:10px}
-.test-cta p:not(.eyebrow){color:var(--muted)}
-.test-cta .primary-button{display:inline-block;margin-top:4px;text-decoration:none}
+.test-cta p:not(.eyebrow){color:var(--ink-700)}
+.test-cta .primary-button{margin-top:4px}
+
+/* Liên kết trong bài của trang test/trò chơi. */
+.test-main .inline-link{color:var(--primary-600);font-weight:800;text-decoration:underline;text-decoration-color:var(--primary-300);text-decoration-thickness:2px;text-underline-offset:3px}
+.test-main .inline-link:hover{color:var(--primary-700);text-decoration-color:currentColor}
+
+/* Roboto Mono chỉ có chữ Latin/Cyrillic: chữ Ả Rập, Ba Tư, Urdu, Hebrew, Devanagari, Bengali, Thái, CJK,
+   Hàn rơi về font dự phòng theo TỪNG ký tự (mỗi ký tự một <span>) và nét nối bị ngắt. Dùng font không
+   đơn cách cho các hệ chữ đó. */
+:is(:lang(ar),:lang(fa),:lang(ur),:lang(he),:lang(hi),:lang(bn),:lang(th),:lang(zh),:lang(ja),:lang(ko)) :is(.test-prompt,#typing-input){font-family:var(--font-body);letter-spacing:0}
+/* Ô chọn bàn phím (chỉ ở ngôn ngữ mà các kiểu bàn phím gõ được bộ đoạn văn khác nhau). */
+.test-course{display:flex;align-items:center;gap:10px;margin:-6px 0 16px}
+.test-course select{min-height:38px;padding:0 10px;border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);color:var(--ink-900);font:700 var(--fs-sm) var(--font-body);letter-spacing:0;text-transform:none;box-shadow:0 2px 0 var(--ink-300)}
 
 /* ---------- đáp ứng ----------
-   Một ngưỡng duy nhất, trùng ngưỡng 900px của base.css (bản cũ dùng 750px ở cả hai file). */
+   Hai ngưỡng chung của base.css: 900px và 620px. */
 @media (max-width:900px){
-  .test-header{height:68px}
-  .test-main{padding:25px 20px 60px}
-  /* base.css để breadcrumb cách 44px; trên màn hẹp khối hero cần sát hơn. */
-  .breadcrumb{margin-bottom:30px}
-  .test-hero h1{font-size:36px;letter-spacing:-1.8px}
-  .typing-test{padding:21px 17px}
+  .test-main{padding:22px 20px 60px}
+  .test-main .breadcrumb{margin-bottom:26px}
+  .test-hero h1{font-size:36px;letter-spacing:-1px}
+  .typing-test{padding:20px 16px;border-radius:var(--r-lg)}
   .test-heading{display:block}
-  .test-heading p{text-align:left;margin-top:7px}
-  .duration-picker{grid-template-columns:repeat(4,1fr)}
-  .test-stats{grid-template-columns:repeat(2,1fr);gap:14px}
-  .test-stats div:last-child{grid-column:span 2}
-  .test-prompt{font-size:13px}
-  .test-actions{align-items:flex-start;flex-direction:column}
-  .result-details{grid-template-columns:1fr;gap:10px}
-  .test-result>strong{font-size:27px}
+  .test-heading p{max-width:none;margin-top:6px;text-align:start}
+  .test-stats{grid-template-columns:repeat(4,1fr);row-gap:14px}
+  .test-stats div:first-child{grid-column:1 / -1}
+  .test-stats div:first-child strong{font-size:44px}
+  .test-stats strong{font-size:20px}
+  .test-prompt{font-size:18px}
+  .test-actions{align-items:flex-start;flex-direction:column;gap:10px}
+  .test-result>strong{font-size:42px}
 }
-/* Liên kết trong bài của trang test/trò chơi: trước đây chỉ khai ở cach-go-10-ngon/article.css, nên ở đây ra màu xanh mặc định. */
-.test-main .inline-link{color:var(--green);font-weight:700;text-decoration:underline;text-decoration-color:var(--border-soft);text-underline-offset:3px}
-/* DM Mono chỉ có chữ Latin: chữ Ả Rập, Ba Tư, Urdu, Hebrew, Devanagari, Bengali, Thái, CJK, Hàn rơi về font
-   dự phòng theo TỪNG ký tự (mỗi ký tự một <span>) và nét nối bị ngắt. Dùng font không đơn cách cho các hệ chữ đó. */
-:is(:lang(ar),:lang(fa),:lang(ur),:lang(he),:lang(hi),:lang(bn),:lang(th),:lang(zh),:lang(ja),:lang(ko)) :is(.test-prompt,#typing-input){font-family:"Be Vietnam Pro",system-ui,sans-serif;letter-spacing:0}
-/* Ô chọn bàn phím (chỉ ở ngôn ngữ mà các kiểu bàn phím gõ được bộ đoạn văn khác nhau). */
-.test-course{display:flex;align-items:center;gap:8px;margin:-4px 0 14px;color:var(--muted);font-size:var(--fs-xs);font-weight:700}
-.test-course select{min-height:34px;padding:0 10px;border:1px solid var(--border-soft);border-radius:var(--r-sm);background:var(--surface);color:var(--ink);font:inherit}
+@media (max-width:620px){
+  .test-hero h1{font-size:32px}
+  /* Điện thoại: lưới 4 cột đều nhau thay cho hàng co giãn (hàng cuối 2–3 nút bị kéo dài trông lệch). */
+  .duration-picker{display:grid;grid-template-columns:repeat(4,1fr)}
+  .duration-picker button{padding:6px 2px;font-size:11px;white-space:normal}
+  .test-stats span{font-size:10px;letter-spacing:.05em}
+  .test-prompt{font-size:17px}
+  .result-details{grid-template-columns:1fr;gap:8px}
+  .result-details span{display:flex;align-items:baseline;justify-content:space-between}
+  .result-details b{margin:0}
+  .test-cta{padding:22px 18px}
+}

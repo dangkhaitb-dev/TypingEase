@@ -1,134 +1,157 @@
-/* home.css — trang chu: hero ngan (nut "Bat dau Bai 1" cho nguoi moi / continue card cho
-   nguoi quay lai) + lo trinh, loi tat va khoi kham pha.
+/* home.css — trang chu cac ngon ngu (/vi/, /fr/, /de/, /ar/…) va phan dung chung voi landing `/`:
+   hero ngan (nut "Bat dau Bai 1" cho nguoi moi / continue card cho nguoi quay lai) + lo trinh,
+   loi tat va khoi kham pha.
    Nap SAU tokens.css + base.css nen co the ghi de cac rule 0,1,0 cua base.css.
-   Trang chu KHONG con o go thu, ban phim hay ban tay — keyboard/keyboard.css khong duoc nap o day. */
+   Trang chu KHONG con o go thu, ban phim hay ban tay — keyboard/keyboard.css khong duoc nap o day.
+
+   Kieu typekute (docs/design-system.md): moi thu noi len la mot "phim" — mat trang/xanh, vien 2px,
+   canh day 4px dam hon; tieu de Unit la mot "course banner" gradient xanh. Chi dung thuoc tinh
+   logic (inline-start/end) de /ar/ (RTL) tu lat dung chieu. */
 
 /* ---------- Hero mot cot, co tinh thap de tieu de Unit 1 cua .home-roadmap lot man hinh dau ---------- */
-.hero{grid-template-columns:1fr;min-height:auto;padding:48px var(--pad-x) 28px}
+.hero{grid-template-columns:1fr;min-height:auto;padding:52px var(--pad-x) 32px}
 /* 860px la be rong cot chu cua hero, khong phai container trang — nen giu rieng, khong dung --w-page. */
-.hero>.hero-copy{max-width:860px;margin:0 auto;padding-left:0;padding-right:0;text-align:center}
-.hero>.hero-copy>h1{margin-bottom:12px;font-size:var(--fs-h1);letter-spacing:-2.4px}
-.hero>.hero-copy>.intro{max-width:620px;margin:0 auto 20px}
-@media(min-width:901px){
-  .hero{align-items:start}
-  .hero>.hero-copy{padding-left:0}
-  .en-site .hero>.hero-copy{padding-left:0}
-}
-@media(max-width:900px){.hero{padding:34px 20px 24px}.hero>.hero-copy>.intro{margin-bottom:18px}}
+.hero>.hero-copy{max-width:860px;margin:0 auto;padding-inline:0;text-align:center}
+.hero>.hero-copy>h1{margin-bottom:14px;font-size:52px;font-weight:900;line-height:1.08;letter-spacing:-1.4px}
+.hero>.hero-copy>.intro{max-width:620px;margin:0 auto 24px;color:var(--text-muted);font-size:17px;font-weight:600;line-height:1.6}
+@media(min-width:901px){.hero{align-items:start}}
+@media(max-width:900px){.hero{padding:34px 20px 24px}.hero>.hero-copy>h1{font-size:var(--fs-h1)}.hero>.hero-copy>.intro{margin-bottom:20px}}
 
 /* ---------- Khoi bat dau (nguoi moi) ---------- */
 #hero-start{display:grid;justify-items:center;gap:14px;width:100%}
 body.is-returning #hero-start{display:none}
-/* Bong xanh dam cua nut CTA chinh — dam hon --shadow-lift nhieu nen giu literal (xem bao cao). */
-#hero-go{padding:16px 26px;border-radius:var(--r);font-size:16px;box-shadow:var(--shadow-cta);
-  text-decoration:none;display:inline-block}
-.hero-note{margin:0;color:var(--muted);font-size:var(--fs-sm);line-height:1.65;text-align:center}
+/* CTA chinh = nut keycap chinh cua base.css, chi to hon. */
+#hero-go{display:inline-flex;min-height:58px;padding:15px 28px;border-radius:var(--r);font-size:17px;font-weight:900;letter-spacing:.01em;text-decoration:none}
+.hero-note{margin:0;color:var(--text-muted);font-size:var(--fs-sm);font-weight:600;line-height:1.65;text-align:center}
 @media(max-width:620px){
-  #hero-start{gap:11px}
-  #hero-go{padding:14px 18px;font-size:var(--fs-body)}
-  .hero-note{font-size:12px}
+  .hero>.hero-copy>h1{font-size:36px;letter-spacing:-1px}
+  .hero>.hero-copy>.intro{font-size:var(--fs-body)}
+  #hero-start{gap:12px}
+  #hero-go{min-height:52px;padding:13px 18px;font-size:var(--fs-body)}
+  .hero-note{font-size:var(--fs-xs)}
 }
 
-/* ---------- Continue card (nguoi quay lai) ---------- */
-.continue-card{display:none;width:100%;max-width:640px;margin:0 auto;padding:20px 22px;border:1px solid var(--border-soft);border-radius:var(--r);background:var(--surface);box-shadow:var(--shadow-lift);text-align:left;cursor:pointer}
-.continue-card:not([hidden]){display:grid;gap:10px}
-.continue-card:hover{border-color:var(--border-hover);box-shadow:0 14px 34px #174c3916}
+/* ---------- Continue card (nguoi quay lai) — the trang keycap lon ---------- */
+.continue-card{display:none;width:100%;max-width:640px;margin:0 auto;padding:22px 24px;border:var(--border-w) solid var(--border);border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-edge);text-align:start;cursor:pointer;transition:border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.continue-card:not([hidden]){display:grid;gap:12px}
+.continue-card:hover{border-color:var(--primary-300);box-shadow:0 var(--edge) 0 var(--primary-300)}
 .continue-top{display:flex;align-items:center;justify-content:space-between;gap:12px}
-.continue-kicker{margin:0;color:var(--green);font-size:10px;font-weight:800;letter-spacing:1.3px}
-.continue-streak{padding:4px 10px;border:1px solid var(--border-soft);border-radius:var(--r-pill);background:var(--surface-soft);color:var(--green);font-size:10px;font-weight:800;white-space:nowrap}
-.continue-name{margin:0;color:var(--ink);font-size:22px;font-weight:800;letter-spacing:-.8px;line-height:1.25}
-.continue-track{height:8px;overflow:hidden;border-radius:var(--r-pill);background:var(--line)}
-.continue-track i{display:block;width:var(--continue-progress,0%);height:100%;border-radius:inherit;background:var(--green)}
-.continue-count{margin:0;color:var(--muted);font-size:var(--fs-xs)}
-.continue-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:3px}
-.continue-go{padding:14px 20px;border-radius:var(--r);font-size:var(--fs-body);box-shadow:var(--shadow-cta)}
-.continue-redo{border:1px solid var(--border-soft);border-radius:var(--r);padding:11px 13px;background:var(--surface);color:var(--green);font-size:12px;font-weight:700}
+.continue-kicker{margin:0;color:var(--primary-600);font-size:var(--fs-xs);font-weight:900;letter-spacing:.1em;text-transform:uppercase}
+/* Chuoi ngay = diem nhan lime duy nhat cua man hinh (10%). */
+.continue-streak{padding:4px 10px;border:var(--border-w) solid var(--accent-600);border-radius:var(--r-pill);background:var(--accent-100);color:var(--accent-800);font-size:var(--fs-2xs);font-weight:900;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap}
+.continue-name{margin:0;color:var(--ink-900);font-size:24px;font-weight:900;letter-spacing:-.4px;line-height:1.25}
+.continue-track{height:12px;overflow:hidden;border-radius:var(--r-pill);background:var(--ink-200)}
+.continue-track i{display:block;width:var(--continue-progress,0%);height:100%;border-radius:inherit;background:var(--primary-500)}
+.continue-count{margin:0;color:var(--text-muted);font:500 var(--fs-xs) var(--font-mono)}
+.continue-actions{display:flex;flex-wrap:wrap;align-items:center;gap:10px 14px;margin-top:4px}
+.continue-go{min-height:50px;padding:12px 22px;font-size:var(--fs-body)}
+/* `.continue-redo` la <a> — nut phu keycap. */
+.continue-redo{display:inline-flex;align-items:center;min-height:46px;padding:10px 14px;border:var(--border-w) solid var(--border);border-radius:var(--r);background:var(--surface);color:var(--primary-700);font:inherit;font-size:var(--fs-sm);font-weight:800;text-decoration:none;box-shadow:var(--shadow-edge);transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.continue-redo:hover{background:var(--primary-50)}
+.continue-redo:active{transform:translateY(2px);box-shadow:0 2px 0 var(--ink-300)}
 .continue-redo[hidden]{display:none}
-.continue-map{border-bottom:1px solid var(--border-soft);color:var(--muted);font-size:12px;font-weight:700;text-decoration:none}
-.continue-map:hover,.continue-map:focus-visible{color:var(--green)}
-.continue-coach{margin:3px 0 0;padding-top:11px;border-top:1px dashed var(--line);color:var(--muted);font-size:12px;line-height:1.65}
+.continue-map{color:var(--primary-700);font-size:var(--fs-sm);font-weight:800;text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px;text-decoration-color:var(--primary-300)}
+.continue-map:hover,.continue-map:focus-visible{text-decoration-color:currentColor}
+.continue-coach{margin:2px 0 0;padding-top:12px;border-top:var(--border-w) dashed var(--ink-200);color:var(--text-muted);font-size:var(--fs-sm);line-height:1.65}
 .continue-coach[hidden]{display:none}
-.continue-coach b{color:var(--green)}
+.continue-coach b{color:var(--primary-700)}
+.continue-legacy{margin:0;color:var(--ink-700);font-size:var(--fs-xs);font-weight:700;line-height:1.6}
+.continue-legacy[hidden]{display:none}
 @media(max-width:620px){
-  .continue-card{padding:17px 16px}
-  .continue-name{font-size:19px}
+  .continue-card{padding:18px 16px;border-radius:var(--r-lg)}
+  .continue-name{font-size:20px}
   .continue-actions>*{width:100%}
   .continue-go,.continue-redo{justify-content:center;text-align:center}
-  .continue-map{text-align:center;border-bottom:0;text-decoration:underline;text-underline-offset:3px}
+  .continue-map{text-align:center}
 }
 
-/* ---------- Tinh chinh sau khi xem anh that ---------- */
-@media(max-width:620px){.hero>.hero-copy>h1{font-size:34px;letter-spacing:-1.6px}}
-
 /* =============================================================================================
-   Phase 3 — trang chu chi con 4 khoi. Roadmap rail, 3 loi tat va vai tinh chinh cho continue card.
+   Lo trinh (unit dang hoc), loi tat, kham pha.
    ============================================================================================= */
 
-/* `.continue-redo` gio la <a> chu khong con la <button>, nen can them 3 thuoc tinh nay. */
-.continue-redo{display:inline-flex;align-items:center;text-decoration:none;font:inherit;font-size:12px;font-weight:700}
-/* #8a7a3f la nau-vang canh bao "ban ghi cu" — vai tro rieng, khong map vao token xanh nao. */
-.continue-legacy{margin:0;color:#8a7a3f;font-size:var(--fs-xs);line-height:1.6}
-.continue-legacy[hidden]{display:none}
+/* ---------- Unit dang hoc: tieu de la "course banner" kieu typekute ---------- */
+.home-roadmap{max-width:var(--w-page);margin:0 auto;padding:28px 0 46px}
+.home-roadmap .section-heading{position:relative;overflow:hidden;align-items:center;gap:20px;margin-bottom:18px;padding:22px 26px;border-radius:var(--r-lg);background:linear-gradient(100deg,var(--primary-700),var(--primary-600));box-shadow:0 5px 0 var(--primary-800)}
+/* Vong tron sang mo o goc cuoi banner, nhu typekute. Chi la trang tri. */
+.home-roadmap .section-heading::after{content:"";position:absolute;top:-80px;inset-inline-end:-50px;width:240px;height:240px;border-radius:50%;background:color-mix(in srgb,var(--white) 9%,transparent);pointer-events:none}
+.home-roadmap .section-heading>*{position:relative;z-index:1;min-width:0}
+.home-roadmap .eyebrow{margin-bottom:8px;color:var(--primary-100)}
+.home-roadmap h2{color:var(--white);font-size:30px;letter-spacing:-.5px}
+.roadmap-aside{flex:0 0 auto;display:grid;justify-items:end;gap:8px;text-align:end}
+.roadmap-count{margin:0;padding:4px 10px;border-radius:var(--r-pill);background:color-mix(in srgb,var(--white) 16%,transparent);color:var(--white);font:700 var(--fs-xs) var(--font-mono);white-space:nowrap}
+.roadmap-all{display:inline-flex;align-items:center;min-height:40px;padding:8px 14px;border-radius:var(--r);background:var(--white);color:var(--primary-700);font-size:var(--fs-xs);font-weight:900;letter-spacing:.06em;text-transform:uppercase;text-decoration:none;white-space:nowrap;box-shadow:0 3px 0 var(--primary-800);transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.roadmap-all:hover{background:var(--primary-50)}
+.roadmap-all:active{transform:translateY(2px);box-shadow:0 1px 0 var(--primary-800)}
+.roadmap-all:focus-visible{box-shadow:var(--shadow-focus)}
+.roadmap-summary{margin:0 0 18px;max-width:680px;color:var(--text-muted);font-size:var(--fs-body);line-height:1.7}
 
-/* ---------- Unit dang hoc ---------- */
-.home-roadmap{background:var(--cream);padding:52px max(var(--pad-x),calc((100% - var(--w-page))/2)) 46px}
-.home-roadmap .section-heading{margin-bottom:14px}
-.home-roadmap .eyebrow{margin-bottom:10px}
-.roadmap-aside{flex:0 0 auto;display:grid;justify-items:end;gap:5px;text-align:right}
-.roadmap-count{margin:0;color:var(--green);font:800 12px "DM Mono",monospace;white-space:nowrap}
-.roadmap-all{color:var(--green);font-size:12px;font-weight:800;text-decoration:none;white-space:nowrap}
-.roadmap-all:hover,.roadmap-all:focus-visible{text-decoration:underline;text-underline-offset:3px}
-.roadmap-summary{margin:0 0 18px;max-width:640px;color:var(--muted);font-size:var(--fs-sm);line-height:1.7}
-
-.unit-rail{display:grid;grid-template-columns:repeat(auto-fill,minmax(165px,1fr));gap:8px}
-.rail-chip{display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;gap:2px 9px;
-  min-height:62px;padding:11px 12px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);
-  color:var(--ink);text-decoration:none}
-.rail-chip b{grid-row:1/span 2;align-self:center;color:var(--green);font-size:17px;font-weight:400}
-.rail-chip span{font-size:12px;font-weight:700;line-height:1.35;letter-spacing:-.2px;overflow-wrap:anywhere}
-.rail-chip em{font-style:normal;font-size:10px;font-weight:800;color:var(--green)}
+/* ---------- Bai trong unit: luoi the keycap trang ---------- */
+.unit-rail{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:12px;counter-reset:lesson}
+.rail-chip{counter-increment:lesson;display:grid;grid-template-columns:auto minmax(0,1fr);grid-template-rows:auto auto;align-items:center;align-content:center;gap:2px 10px;min-height:68px;padding:12px;border:var(--border-w) solid var(--border);border-radius:var(--r);background:var(--surface);box-shadow:var(--shadow-edge);color:var(--ink-900);text-decoration:none;transition:border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+/* So bai = "number badge" cua spec. script.js ghi ①…⑫ roi 13, 14… — hai kieu so trong mot luoi;
+   badge ve lai bang counter de moi o cung mot kieu. Chu goc van con cho trinh doc man hinh. */
+.rail-chip b{grid-row:1/span 2;display:grid;place-items:center;width:34px;height:34px;border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);box-shadow:0 3px 0 var(--ink-300);color:var(--primary-700);font-size:0;font-weight:900}
+.rail-chip b::before{content:counter(lesson);font-size:14px}
+.rail-chip span{font-size:var(--fs-sm);font-weight:800;line-height:1.3;overflow-wrap:anywhere}
+.rail-chip em{font-style:normal;font-size:var(--fs-2xs);font-weight:900;letter-spacing:.06em;text-transform:uppercase;color:var(--primary-600)}
 .rail-chip em:empty{display:none}
-a.rail-chip:hover,a.rail-chip:focus-visible{border-color:var(--green);background:var(--surface-tint);outline:none}
-.rail-chip.is-done{background:var(--surface-soft);border-color:var(--border-soft)}
-/* #e9f7df la nen ngả lime (khong phai xanh la) danh rieng cho unit dang hoc — giu literal. */
-.rail-chip.is-current{border-color:var(--green);background:#e9f7df;box-shadow:var(--shadow-focus)}
-/* #8ea69a / #a3b8ac la hai bac chu "chua mo khoa", nhat hon --muted nhieu — giu literal. */
-.rail-chip.is-soon{border-style:dashed;background:var(--surface-soft);color:#8ea69a;cursor:not-allowed}
-.rail-chip.is-soon b,.rail-chip.is-soon em{color:#a3b8ac}
-.rail-chip.is-soon span{font-weight:600}
+/* Without a status line the title is alone beside the badge: centre it on the badge. */
+.rail-chip:has(em:empty) span,.rail-chip:not(:has(em)) span{grid-row:1/span 2}
+a.rail-chip:hover{border-color:var(--primary-300);background:var(--primary-50);box-shadow:0 var(--edge) 0 var(--primary-300)}
+a.rail-chip:active{transform:translateY(2px);box-shadow:0 2px 0 var(--primary-300)}
+a.rail-chip:focus-visible{box-shadow:var(--shadow-focus),var(--shadow-edge)}
+.rail-chip.is-done b{border-color:var(--primary-300);background:var(--primary-100);box-shadow:0 3px 0 var(--primary-300)}
+/* Bai dang hoc = "selected item": mat primary-100, vien + canh xanh, badge dac xanh. */
+.rail-chip.is-current{border-color:var(--primary-600);background:var(--primary-100);box-shadow:0 var(--edge) 0 var(--primary-600)}
+.rail-chip.is-current b{border-color:var(--primary-700);background:var(--primary-600);box-shadow:0 3px 0 var(--primary-700);color:var(--white)}
+a.rail-chip.is-current:hover{border-color:var(--primary-600);background:var(--primary-100);box-shadow:0 var(--edge) 0 var(--primary-600)}
+.rail-chip.is-soon{border-style:dashed;background:var(--ink-100);box-shadow:none;color:var(--ink-600);cursor:not-allowed}
+.rail-chip.is-soon b{border-style:dashed;background:transparent;box-shadow:none;color:var(--ink-500)}
+.rail-chip.is-soon em{color:var(--ink-600)}
+.rail-chip.is-soon span{font-weight:700}
 
-.rail-note{margin:12px 0 0;color:var(--muted);font-size:var(--fs-xs);line-height:1.6}
+.rail-note{margin:14px 0 0;color:var(--text-muted);font-size:var(--fs-xs);line-height:1.6}
 .rail-note[hidden]{display:none}
-.unit-teasers{display:flex;flex-wrap:wrap;gap:8px 10px;margin:16px 0 0;padding:0;list-style:none}
-.unit-teasers a{display:inline-flex;align-items:center;padding:8px 12px;border:1px solid var(--line);border-radius:var(--r-pill);
-  background:var(--surface);color:var(--ink-soft);font-size:var(--fs-xs);font-weight:700;text-decoration:none}
-.unit-teasers a:hover,.unit-teasers a:focus-visible{border-color:var(--green);color:var(--green);outline:none}
+.unit-teasers{display:flex;flex-wrap:wrap;gap:10px;margin:20px 0 0;padding:0;list-style:none}
+.unit-teasers a{display:inline-flex;align-items:center;min-height:38px;padding:7px 13px;border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);box-shadow:0 3px 0 var(--ink-300);color:var(--ink-700);font-size:var(--fs-xs);font-weight:800;text-decoration:none;transition:border-color var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.unit-teasers a:hover{border-color:var(--primary-300);background:var(--primary-50);color:var(--primary-700)}
+.unit-teasers a:focus-visible{box-shadow:var(--shadow-focus)}
 
-/* ---------- 3 loi tat ---------- */
-.home-shortcuts{max-width:var(--w-page);margin:0 auto;padding:46px 0 34px}
-.shortcuts-title{margin:0 0 18px;font-size:24px;letter-spacing:-1.2px}
-.shortcut-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
-.shortcut-card{display:grid;gap:7px;padding:20px 21px;border:1px solid var(--line);border-radius:var(--r);background:var(--surface);
-  text-decoration:none;box-shadow:var(--shadow-card);transition:border-color .18s ease,transform .18s ease}
-.shortcut-card:hover,.shortcut-card:focus-visible{border-color:var(--border-hover);transform:translateY(-2px);outline:none}
-.shortcut-card b{display:grid;place-items:center;width:34px;height:34px;border-radius:var(--r);background:#e9f7df;color:var(--green);font-size:16px}
-.sc-title{color:var(--ink);font-size:16px;font-weight:800;letter-spacing:-.5px}
-.sc-text{color:var(--muted);font-size:12px;line-height:1.65}
+/* ---------- Loi tat: the keycap kieu "rail card" cua typekute (o icon primary-100 + nhan + mui ten) ---------- */
+.home-shortcuts{max-width:var(--w-page);margin:0 auto;padding:40px 0 40px}
+.shortcuts-title{margin:0 0 18px;font-size:26px;letter-spacing:-.5px}
+.shortcut-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.shortcut-card{display:grid;grid-template-columns:48px minmax(0,1fr) auto;grid-template-rows:auto auto;align-items:center;gap:3px 14px;padding:18px 18px 18px 18px;border:var(--border-w) solid var(--border);border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow-edge);text-decoration:none;transition:border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease)}
+.shortcut-card::after{content:"→";grid-column:3;grid-row:1/span 2;color:var(--ink-500);font-size:20px;font-weight:800;transition:color var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease)}
+[dir="rtl"] .shortcut-card::after{content:"←"}
+.shortcut-card:hover{border-color:var(--primary-300);box-shadow:0 var(--edge) 0 var(--primary-300)}
+.shortcut-card:hover::after{color:var(--primary-600)}
+.shortcut-card:active{transform:translateY(2px);box-shadow:0 2px 0 var(--primary-300)}
+.shortcut-card:focus-visible{box-shadow:var(--shadow-focus),var(--shadow-edge)}
+.shortcut-card b{grid-row:1/span 2;align-self:start;display:grid;place-items:center;width:48px;height:48px;border-radius:var(--r);background:var(--primary-100);color:var(--primary-700);font-size:21px;font-weight:400}
+.sc-title{align-self:end;color:var(--ink-900);font-size:17px;font-weight:900;letter-spacing:-.2px;line-height:1.25}
+.sc-text{align-self:start;color:var(--text-muted);font-size:var(--fs-sm);line-height:1.55}
 
 @media(max-width:900px){
-  .home-shortcuts{margin:0 24px;padding:36px 0 26px}
+  .home-roadmap{margin:0 var(--pad-x)}
+  .home-shortcuts{margin:0 var(--pad-x);padding:36px 0 30px}
   .shortcut-grid{grid-template-columns:1fr 1fr}
   .shortcut-card:last-child{grid-column:span 2}
 }
 @media(max-width:620px){
-  .home-roadmap{padding:34px 20px 32px}
-  .home-roadmap .section-heading{align-items:flex-start;flex-direction:column;gap:10px}
-  .roadmap-aside{justify-items:start;text-align:left}
-  .unit-rail{grid-template-columns:1fr 1fr;gap:7px}
-  .rail-chip{min-height:0;padding:10px}
-  .home-shortcuts{margin:0 20px;padding:28px 0 20px}
-  .shortcuts-title{font-size:21px}
-  .shortcut-grid{grid-template-columns:1fr}
+  .home-roadmap{margin:0 16px;padding:20px 0 32px}
+  .home-roadmap .section-heading{align-items:stretch;flex-direction:column;gap:14px;padding:18px}
+  .home-roadmap h2{font-size:24px}
+  .roadmap-aside{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:10px;text-align:start}
+  .unit-rail{grid-template-columns:1fr 1fr;gap:10px}
+  .rail-chip{grid-template-columns:auto minmax(0,1fr);min-height:0;padding:10px;gap:2px 8px}
+  .rail-chip b{width:30px;height:30px}
+  .rail-chip b::before{font-size:13px}
+  .rail-chip span{font-size:var(--fs-xs)}
+  .home-shortcuts{margin:0 16px;padding:28px 0 22px}
+  .shortcuts-title{font-size:22px}
+  .shortcut-grid{grid-template-columns:1fr;gap:12px}
+  .shortcut-card{padding:14px}
   .shortcut-card:last-child{grid-column:auto}
 }
 
@@ -136,6 +159,10 @@ a.rail-chip:hover,a.rail-chip:focus-visible{border-color:var(--green);background
    vào màn hình đầu, rồi bị đẩy xuống (CLS 0,065 trên /fr/). Giữ phần chính cao ít nhất một màn hình. */
 body > main{min-height:100vh}
 /* Lộ trình (unit-rail + unit-teasers) cũng vẽ sau: giữ chỗ bằng chiều cao đo được của unit 1 (10 bài). */
-.unit-rail:empty{min-height:132px}
-.unit-teasers:empty{min-height:33px}
-@media (max-width:640px){.unit-rail:empty{min-height:258px}.unit-teasers:empty{min-height:115px}}
+.unit-rail:empty{min-height:160px}
+.unit-teasers:empty{min-height:38px}
+@media (max-width:640px){.unit-rail:empty{min-height:300px}.unit-teasers:empty{min-height:130px}}
+
+/* Letter-spacing pulls the letters of a cursive script apart; uppercase labels keep it only for
+   the scripts that have case. */
+:lang(ar,fa,ur,he) :is(.roadmap-all,.continue-kicker,.continue-streak,.rail-chip em){letter-spacing:0}

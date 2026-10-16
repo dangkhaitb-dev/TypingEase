@@ -408,6 +408,17 @@
     }
   }
 
+  // Thẻ của khoá mà bộ chọn đang trỏ tới mang aria-current: CSS tô nó như mục đang chọn, trình đọc
+  // màn hình đọc "hiện tại". Bố cục không thuộc khoá nào (Jawi…) thì không thẻ nào được đánh dấu.
+  function markSelected(entry, keyboardId) {
+    if (!grid) return;
+    const family = ready(entry) ? familiesOf(entry).find(item => item.layouts.includes(Number(keyboardId))) : null;
+    for (const card of grid.querySelectorAll('a.is-course')) {
+      if (family && card.dataset.course === family.id) card.setAttribute('aria-current', 'true');
+      else card.removeAttribute('aria-current');
+    }
+  }
+
   /* --- wiring ---------------------------------------------------------------------------- */
 
   applyLanguage(current);
@@ -428,6 +439,7 @@
     renderGrid(catalog);
     currentLayoutId = fillLayouts(current, catalog, saved?.code === 'en' ? saved.keyboardId : null);
     renderCta(current, currentLayoutId, catalog);
+    markSelected(current, currentLayoutId);
     if (currentLayoutId) await renderPreview(NT, current, currentLayoutId);
 
     const select = async (code, keyboardId) => {
@@ -445,6 +457,7 @@
       languageSelect.value = code;
       currentLayoutId = fillLayouts(entry, catalog, keyboardId);
       renderCta(entry, currentLayoutId, catalog);
+      markSelected(entry, currentLayoutId);
       remember(entry.code, currentLayoutId);
       if (currentLayoutId) await renderPreview(NT, entry, currentLayoutId);
     };
@@ -456,6 +469,7 @@
       remember(current.code, currentLayoutId);
       // The layout decides the course, so the button has to move with it.
       renderCta(current, currentLayoutId, catalog);
+      markSelected(current, currentLayoutId);
       renderPreview(NT, current, currentLayoutId);
     });
 

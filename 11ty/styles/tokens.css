@@ -1,44 +1,96 @@
 /* tokens.css — bảng token dùng chung cho TOÀN BỘ site. Nạp đầu tiên, trước mọi CSS khác.
-   Vì sao tách riêng: trước đây 193 mã màu nằm rải rác trong 14 file CSS, mỗi trang tự chế một
-   sắc "xanh nhạt" khác nhau. Gom về một chỗ để đổi một lần là cả site đổi theo.
-   QUY ƯỚC: không trang nào được khai báo màu mới — thiếu token thì thêm vào đây. */
+   QUY ƯỚC: không trang nào được khai báo màu mới — thiếu token thì thêm vào đây.
+
+   Hệ thống theo cách của typekute (docs/design-system.md), giữ màu thương hiệu TypingEase:
+   - Hai màu thương hiệu, mỗi màu một thang 50–900: XANH LÁ (primary, #157a55 của logo) và LIME
+     (accent, #c8f05a). Mỗi "phím" nổi (nút, thẻ, số bài) là MẶT màu sáng trên CẠNH ĐÁY 4px đậm hơn
+     một-hai bậc, như một keycap.
+   - Tỉ lệ 60/30/10: 60% trung tính (canvas, thẻ trắng, viền, chữ), 30% xanh lá (mọi thứ bấm được
+     hoặc "bạn đang ở đây"), 10% lime (một điểm nhấn mỗi màn hình: chuỗi ngày, phím mới, huy hiệu).
+   - Bậc 500 KHÔNG BAO GIỜ là màu chữ (xanh 500 chỉ 3,5:1 trên nền trắng, lime 500 là 1,3:1). Chữ
+     dùng 600/700 của xanh, 700/800 của lime, hoặc thang ink.
+   - Trung tính ngả xanh lá (ink), để xám không bao giờ trông "ấm" cạnh màu thương hiệu.
+   - Bóng có màu (xanh/ink), không bao giờ rgba(0,0,0,…). */
 :root{
-  /* Màu thương hiệu — giá trị đã chốt ở PLAN.md, không đổi. */
-  --green:#157a55; --lime:#c8f05a; --ink:#15352b; --muted:#6e8179;
-  --line:#deebe5; --cream:#f6faf7;
+  /* ===== Thang thương hiệu ===== */
+  --primary-50:#f2f9f5; --primary-100:#e1f2e8; --primary-200:#c3e5d1; --primary-300:#97d1b1;
+  --primary-400:#5fb48a;
+  --primary-500:#2a9a6c;   /* mặt: tô, thanh tiến độ, icon — không làm chữ */
+  --primary-600:#157a55;   /* màu logo: mặt nút dưới chữ trắng (5,3:1), link, chữ đang chọn */
+  --primary-700:#0f6244;   /* cạnh nút, chữ link khi rê chuột (7,4:1) */
+  --primary-800:#0b4d35; --primary-900:#083a28;
 
-  /* Bề mặt & viền — thay cho 9 sắc "xanh nhạt nền" và 11 biến thể "viền xanh nhạt" đếm được
-     trong bản cũ. --surface-tint là nền hover/nhấn nhẹ, --border-soft là viền đậm hơn --line. */
-  --surface:#fff; --surface-soft:#f6faf7; --surface-tint:#eef8f1;
-  --border-soft:#cfe1d8;
+  --accent-50:#f8fde9; --accent-100:#eefbc8; --accent-200:#e2f79f; --accent-300:#d6f47d;
+  --accent-500:#c8f05a;    /* mặt lime: điểm nhấn, dấu, vạch — không làm chữ */
+  --accent-600:#a9d43a;    /* cạnh của mặt lime */
+  --accent-700:#5c7a12;    /* chữ lime trên nền trắng (4,9:1) */
+  --accent-800:#4d660c;    /* chữ lime trên --accent-100 */
 
-  /* Trạng thái. Ba biến này trước đây chỉ khai báo trong player.css nên các trang không nạp
-     player.css thấy undefined. (--key-bg của bàn phím cũ đã bỏ cùng keyboard.css cũ: bàn phím
-     bây giờ mang bảng màu riêng trong keyboard/keyboard.css.) */
-  --star:#f4b400; --danger:#d35757; --ok:#2f8f68;
+  /* ===== Trung tính (ngả xanh lá) ===== */
+  --ink-900:#15352b;       /* tiêu đề */
+  --ink-800:#2a4a3f;       /* chữ thân */
+  --ink-700:#3f5d52;
+  --ink-600:#5b7369;       /* chữ phụ (5,1:1) */
+  --ink-500:#8a9f96;       /* placeholder, chú thích nhỏ, tắt — không làm chữ thân */
+  --ink-400:#b7c7bf;
+  --ink-300:#d5e3dc;       /* viền */
+  --ink-200:#e5eee9;       /* vạch chia, rãnh trống của thanh tiến độ */
+  --ink-100:#f0f5f2;
 
-  /* Độ rộng — --w-page cho khối full-width, --w-read cho cột chữ dài dễ đọc. */
-  --w-page:1120px; --w-read:760px; --pad-x:24px;
+  /* ===== Ngữ nghĩa — giữ đúng việc của mình, không thay màu thương hiệu =====
+     Đúng/hoàn thành dùng chính xanh thương hiệu; đỏ = gõ sai/thất bại; vàng = sao, thành tích. */
+  --success:#2a9a6c; --success-100:#e1f2e8; --success-700:#0f6244;
+  --error:#e5484d; --error-100:#fde7e8; --error-700:#b8384a;
+  --gold-100:#fff3d6; --gold-500:#ffc95c; --gold-700:#d9a23a; --gold-800:#8a6100;
 
-  /* Bậc phụ, thêm sau khi token-hoá 14 file: mỗi cái đều xuất hiện ở ÍT NHẤT 3 file khác nhau với
-     cùng một vai trò — đó là lý do chúng xứng đáng có tên, còn những màu chỉ dùng một chỗ thì không. */
-  --border-hover:#8fc9af;   /* viền khi rê chuột, đậm hơn --border-soft một bậc */
-  --muted-soft:#90a39a;     /* chữ chú thích 9-11px, nhạt hơn --muted */
-  --ink-soft:#5f786d;       /* chữ phụ, đậm hơn --muted nhưng chưa tới --ink */
-  --green-dark:#0f6244;     /* --green khi rê chuột */
-  --surface-active:#e5f5df; /* nền nút/pill đang được chọn — ngả lime, không phải bạc hà */
+  /* ===== Bề mặt ===== */
+  --white:#fff;
+  --canvas:var(--primary-50);    /* nền trang */
+  --surface:#fff;                /* thẻ */
+  --text:var(--ink-800);
+  --text-muted:var(--ink-600);
+  --border:var(--ink-300);
+  --link:var(--primary-600);
+  --focus:var(--primary-900);
 
-  /* Hình khối — gom 18 giá trị border-radius và 17 box-shadow của bản cũ về 3 + 4. */
-  --r-sm:6px; --r:10px; --r-pill:999px;
-  --shadow-card:0 3px 14px #244b3d08;
-  --shadow-lift:0 10px 24px #174c3912;
-  --shadow-focus:0 0 0 3px #157a5518;
-  --shadow-cta:0 7px 14px #157a5520;  /* bóng XANH của nút chính, khác hẳn bóng xám của thẻ */
-
-  /* Chữ — 42 font-size rút về 7 bậc. */
+  /* ===== Chữ ===== */
+  --font-body:"Nunito",ui-rounded,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+  --font-mono:"Roboto Mono",ui-monospace,Menlo,Consolas,monospace;
   --fs-h1:44px; --fs-h2:28px; --fs-h3:18px;
-  --fs-body:15px; --fs-sm:13px; --fs-xs:11px; --fs-2xs:10px;
+  --fs-body:15px; --fs-sm:13px; --fs-xs:12px; --fs-2xs:11px;
 
-  /* Nhịp dọc giữa các section lớn. */
+  /* ===== Hình khối ===== */
+  --r-sm:10px; --r:14px; --r-lg:18px; --r-xl:24px; --r-pill:999px;
+  --edge:4px;                    /* cạnh đáy của mọi "phím" nổi */
+  --border-w:2px;                /* viền thẻ và nút phụ */
+  --shadow-button:0 var(--edge) 0 var(--primary-700);
+  --shadow-button-accent:0 var(--edge) 0 var(--accent-600);
+  --shadow-edge:0 var(--edge) 0 var(--ink-300);   /* cạnh xám của thẻ/nút trắng */
+  --shadow-card:0 var(--edge) 0 rgba(15,98,68,.10),0 12px 24px rgba(21,53,43,.06);
+  --shadow-lift:0 6px 0 rgba(15,98,68,.12),0 18px 32px rgba(21,53,43,.10);
+  --shadow-focus:0 0 0 3px var(--white),0 0 0 6px var(--focus);
+
+  /* ===== Chuyển động ===== */
+  --dur-fast:150ms; --dur:200ms; --ease:cubic-bezier(.2,.8,.2,1);
+
+  /* ===== Độ rộng & nhịp ===== */
+  --w-page:1120px; --w-read:760px; --pad-x:24px;
   --gap-section:64px;
+
+  /* ===== Tên cũ — trỏ về thang mới để CSS chưa chuyển vẫn đúng màu. Code mới dùng tên ở trên. ===== */
+  --green:var(--primary-600); --green-dark:var(--primary-700); --lime:var(--accent-500);
+  --ink:var(--ink-900); --muted:var(--ink-600); --muted-soft:var(--ink-500); --ink-soft:var(--ink-700);
+  --line:var(--ink-200); --border-soft:var(--ink-300); --border-hover:var(--primary-300);
+  --cream:var(--primary-50); --surface-soft:var(--primary-50); --surface-tint:var(--primary-100);
+  --surface-active:var(--primary-100);
+  --star:var(--gold-500); --danger:var(--error); --ok:var(--success);
+  --shadow-cta:var(--shadow-button);
+}
+
+@media (prefers-reduced-motion:reduce){
+  :root{--dur-fast:1ms;--dur:1ms;--ease:linear}
+}
+
+@media (forced-colors:active){
+  :root{--focus:Highlight;--ink-900:CanvasText;--ink-800:CanvasText;--ink-600:CanvasText;--canvas:Canvas;--surface:Canvas;--border:ButtonText;--ink-300:ButtonText}
 }
