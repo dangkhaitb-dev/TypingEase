@@ -1,0 +1,31 @@
+{
+  "name": "typingease",
+  "version": "0.1.0",
+  "private": true,
+  "description": "TypingEase static site built with Eleventy templates and Vite.",
+  "engines": {
+    "node": ">=20.11.0"
+  },
+  "scripts": {
+    "dev": "node tooling/build/dev.mjs",
+    "stage": "eleventy --quiet",
+    "build": "eleventy --quiet && vite build --config vite.config.mjs",
+    "build:clean": "npm run clean && npm run build",
+    "preview": "vite preview --config vite.config.mjs",
+    "clean": "node tooling/build/clean.mjs",
+    "check": "npm run check:data && npm run test",
+    "check:data": "node tooling/data/stamp-data.mjs --check && node tooling/data/sync-catalogue.mjs --check && node tooling/data/build-tasters.mjs --check && node tooling/data/build-course.js --check && node tooling/data/build-unit-symbols.js --check",
+    "test": "node tooling/test/validate-lessons.js --quiet && node tooling/test/test-telex.js && node tooling/test/test-hangul.js && node tooling/test/check-words-en.js",
+    "test:e2e": "node tooling/test/e2e.js",
+    "test:offline": "node tooling/test/offline-check.js",
+    "data:stamp": "node tooling/data/stamp-data.mjs",
+    "data:sync": "node tooling/data/sync-catalogue.mjs",
+    "data:tasters": "node tooling/data/build-tasters.mjs",
+    "data:import": "node tooling/data/import-typekute.mjs",
+    "sitemap:lastmod": "node tooling/data/sitemap-lastmod.mjs"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "3.1.6",
+    "vite": "6.4.3"
+  }
+}

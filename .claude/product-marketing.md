@@ -19,21 +19,26 @@ questions. Facts only; the repo rules in DECISIONS.md ("QUY TẮC CHUNG") win ov
   each language, and for the Vietnamese tool pages (kiểm tra tốc độ gõ, luyện gõ 10 ngón).
 
 ## Hard constraints (from the repo rules)
-- Static vanilla HTML/CSS/JS. NO framework, NO build step, NO new dependency, no server code.
+- Static site built with Eleventy + Vite (since 2026-10-16, see README.md): vanilla browser JS,
+  no framework, no server code; `npm run build` writes `dist/`, deployed to GitHub Pages by
+  `.github/workflows/deploy.yml`. Don't add dependencies without a reason.
 - Keep existing URLs, sitemap entries, canonical and hreflang working. Redirect pages are
-  `meta refresh` stubs (GitHub-Pages-style static hosting, `CNAME` present) — no server redirects,
+  `meta refresh` stubs (GitHub Pages static hosting, `CNAME` present) — no server redirects,
   no custom HTTP headers.
-- Many pages are GENERATED — edit the generator/data, never the output by hand:
-  - course roadmaps `/<lang>/<roadmap>/`: `bai-hoc/generate.mjs` + `bai-hoc/config.<lang>.mjs`
-    (hreflang table `ALTERNATES` lives in generate.mjs)
-  - family players + family roadmaps: `scripts/build-family-pages.js`
-  - progress pages `/<lang>/<slug>/`: `scripts/build-progress-pages.mjs` + `tien-do/text/<lang>.mjs`
-  - taster pages `/try/…`: `scripts/build-tasters.js`
-  - landing `/` text per language: `landing-i18n.js` (runtime), HTML source is English
-  Each has `--check`; run it after changing the generator.
-- After any change: verify in real Chrome (playwright-core at C:/Users/KHAI/node_modules), console
-  clean, and run `scripts/e2e.js` (test 11e checks every sitemap URL is live and indexable; 11b/11c/
-  11d/11f check redirects and cross-language links). Do not commit or push unless asked.
+- Many pages are GENERATED at build time — edit the page module or its content, never `dist/`:
+  - course roadmaps (default + family) `/<lang>/<roadmap>/`: `tooling/pages/roadmaps.mjs` +
+    `content/roadmaps/config.<lang>.mjs` (hreflang table `ALTERNATES` lives in roadmaps.mjs)
+  - family players: `tooling/pages/families.mjs` (copied from the language's hand-written player)
+  - typing tests / games / progress / legal: `tooling/pages/{typing-tests,games,progress,legal}.mjs`
+    + `content/{typing-test,games,progress,legal}/<lang>.mjs`
+  - taster pages `/try/…`: `tooling/pages/tasters.mjs` (data: `npm run data:tasters`)
+  - share tags, JSON-LD, hreflang of homes and test hubs, legal footer: `tooling/build/transforms.mjs`
+  - landing `/` text per language: `11ty/client/landing-i18n.js` (runtime), HTML source is English
+  Hand-written pages live in `11ty/site/<url>/index.html`. `npm run check` verifies the data.
+- After any change: `npm run build`, verify in a real browser (desktop + mobile), console clean, and
+  run `npm run test:e2e` against `npm run preview` (test 11e checks every sitemap URL is live and
+  indexable; 11b/11c/11d/11f check redirects and cross-language links). Do not commit or push unless asked.
+- Visual style: `docs/design-system.md` (typekute keycap style, TypingEase green/lime).
 
 ## URL structure
 - `/` English landing + live keyboard/language picker (x-default). `/vi/` Vietnamese home.
