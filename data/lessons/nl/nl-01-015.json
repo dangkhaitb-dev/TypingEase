@@ -1,0 +1,105 @@
+{
+  "id": "nl-01-015",
+  "unit": "u1",
+  "group": "g1",
+  "order": 15,
+  "slug": "nl-01-015",
+  "title": "Accentletters ö, ü, ú",
+  "summary": "Leer de nieuwe toetsen ö, ü, ú en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen ö, ü, ú en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-015",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op p voor ö. Ga daarna terug naar de basispositie.",
+      "content": "ööö ppöp öppö pö ööö öööö öööp pö pööö ppö"
+    },
+    {
+      "type": "standard",
+      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op y voor ü. Ga daarna terug naar de basispositie.",
+      "content": "üüü üüü üüü üüüü üüüü üüü üyü üyü üy üüüü"
+    },
+    {
+      "type": "standard",
+      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op u voor ú. Ga daarna terug naar de basispositie.",
+      "content": "uúu úú úúú úúú úúúú úu úú úúú úúúu úuu úú"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "úúú üúir ïïr úöéú úútö úö ööü niïú úüöú üi öéö ütú éüö rüúú"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "üüö eneö eúüa úú úéü rúöö nö üöï aú úúúú öúë üöü ööös ün"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ööi üüe sr öúü üöúú üss rüúe üüú úúi ëaü eéëú úaü úüe öú"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "öúö iëe úëö söü úú öü üéöú ööï nú üú üüúï éiö üöö úö öúü"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "úiü üúa öaúü üörü eöü üt öüúú éúúö öaüa öúü ör ïseï üúö üsï"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "de coördinator regelt de reünie voor de coöperatie"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "het vacuüm in de coördinatie maakt de reünie moeilijk"
+    }
+  ]
+}

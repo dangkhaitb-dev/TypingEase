@@ -1,0 +1,93 @@
+{
+  "id": "br-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 29,
+  "slug": "br-02-004",
+  "title": "Algarismos: 0",
+  "summary": "Aprenda a tecla 0 e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprenda a tecla 0 e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-02-004",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Localize 0 e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "0f0 f00 f000 00f 00 0f ff0 000f f0 ff00 000 0000",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "00e 0000 000 00 e0 e000 0e00 0e0 00e0 0e 000e"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "000 0900 009 0000 090 0009 900 00g 0990 0999 0099 00"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "00c0 00 0000 000 c00 000c c0 0c c000 0c00 0c0"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "90 0000 09 000 9099 90f 009 00 900 0009 090"
+    }
+  ]
+}

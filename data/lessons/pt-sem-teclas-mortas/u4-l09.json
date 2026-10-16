@@ -3,9 +3,9 @@
   "unit": "u4",
   "group": "finish",
   "order": 36,
-  "slug": "test-u4",
-  "title": "Teste da unidade 4",
-  "summary": "Um teste cronometrado com todas as teclas do teclado.",
+  "slug": "review-u4",
+  "title": "Todos os sinais juntos",
+  "summary": "Todos os sinais da unidade, misturados com palavras e números.",
   "newKeys": [],
   "keysSoFar": [
     " ",
@@ -78,20 +78,66 @@
     "^",
     "<",
     ">",
-    ":"
+    ":",
+    "/",
+    "?"
   ],
   "minAccuracy": 80,
-  "estMinutes": 2,
+  "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Um teste cronometrado com tudo, sinais incluídos.",
-  "congrats": "Esse era o teclado inteiro. Não sobrou nele nenhuma tecla que este curso não tenha ensinado a você.",
+  "intro": "Nenhuma tecla nova. Todos os caracteres da unidade, misturados com palavras e números.",
+  "congrats": "Todas as teclas deste teclado já tiveram a sua vez.",
   "screens": [
     {
-      "type": "test",
+      "type": "standard",
       "dictation": "words",
-      "seconds": 120,
-      "text": "Palavras, números e sinais. O mesmo ritmo do começo ao fim.",
-      "content": "9^1 cuidado fez & melancia quinta sacola! fale\n(quartos) regular pouco_costa antigo 56% leis\nforma_palavra abraços (data) rua luz@roxo linha\n(mapa) alga {uvas} entre $36 igual"
+      "text": "Os sinais, no mesmo ritmo das letras em volta deles.",
+      "content": "#32 uvas asa & grupo abraços <grau>\nmelhores/tanta oito certeza_caderno extra <falei>\nestudo|conversa brisa <cabelo> jaqueta ponte_tarefa"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Mantenha o ritmo também nos sinais; são teclas como as outras.",
+      "content": "<vem> bota (tanta) branca leve!\n{escola} começa 31^3 melancia fase|porque\n10% rios sobrinha|livro forma $95"
+    },
+    {
+      "type": "burst",
+      "seconds": 30,
+      "text": "Uma rajada de trechos curtos com estes caracteres.",
+      "tokens": [
+        "<volta>",
+        "muitos\\parte",
+        "aprender?",
+        "viva/fora",
+        "$25",
+        "*palavras*",
+        "começo@mensagem",
+        "zona@ninho",
+        "*muito*",
+        "{chave}",
+        "com:",
+        "dessa|ruga",
+        "(conta)",
+        "melancia?"
+      ]
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Mantenha o ritmo também nos sinais; são teclas como as outras.",
+      "content": "80% leis <dez> primeira #58\nfaça\\quente certeza peso/lados peso 73^3\n51 + 36 chinelo estas_quero pimenta (rio)"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Mantenha o ritmo também nos sinais; são teclas como as outras.",
+      "content": "¨¨¨ chave {baixo} explicar tardes:\n84 + 51 noites 9^1 corte filhas?\nassadas? preços encontro_olhar fica #84"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Mantenha o ritmo também nos sinais; são teclas como as outras.",
+      "content": "sino/falha saber 15 + 38 estas escreve|mas\n`palavras` nove ameixa|sino salgada momento|mesmo\ncenoura & nuvens natureza programa_cima motor lugar!"
     }
   ]
 }

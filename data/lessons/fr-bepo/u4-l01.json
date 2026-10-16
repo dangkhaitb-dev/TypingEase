@@ -4,13 +4,12 @@
   "group": "symbols",
   "order": 28,
   "slug": "symbols-1",
-  "title": "$, #, ° et le point-virgule",
-  "summary": "Au programme : $, #, ° et le point-virgule.",
+  "title": "$, # et °",
+  "summary": "Au programme : $, # et °.",
   "newKeys": [
     "$",
     "#",
-    "°",
-    ";"
+    "°"
   ],
   "keysSoFar": [
     " ",
@@ -29,7 +28,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -74,14 +72,13 @@
     "ç",
     "$",
     "#",
-    "°",
-    ";"
+    "°"
   ],
   "minAccuracy": 80,
   "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Des touches que le cours n'a pas encore utilisées : $, #, ° et le point-virgule. Certaines demandent Maj, avec l'auriculaire de l'autre main ; les autres ont leur propre touche, que le cours n'avait pas encore utilisée.",
-  "congrats": "$, #, ° et le point-virgule : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "intro": "Des touches que le cours n'a pas encore utilisées : $, # et °. Certaines demandent Maj, avec l'auriculaire de l'autre main ; les autres ont leur propre touche, que le cours n'avait pas encore utilisée.",
+  "congrats": "$, # et ° : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
   "screens": [
     {
       "type": "intro",
@@ -116,45 +113,32 @@
       "content": "°° ° 28° 97° 70°\n°° ° 85° 38° 78°\n°° ° 59° 70° 17°"
     },
     {
-      "type": "intro",
-      "key": ";",
-      "finger": "LI",
-      "text": "C'est l'index gauche qui frappe le point-virgule, avec Maj tenue par l'autre main.",
-      "hint": "Appuie sur ; pour continuer"
-    },
-    {
-      "type": "block",
-      "newKey": ";",
-      "text": "D'abord le point-virgule sans rien autour, puis là où on s'en sert vraiment.",
-      "content": ";; ; son; notre; vite;\n;; ; projets; surgir; mûre;\n;; ; mesure; jures; succès;"
-    },
-    {
       "type": "burst",
       "seconds": 25,
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
-        "demi;",
-        "$11",
-        "$86",
-        "#19",
-        "idées;",
-        "6°",
-        "grands;",
-        "#86",
-        "bien;",
-        "#5"
+        "#42",
+        "#62",
+        "$98",
+        "$12",
+        "91°",
+        "$15",
+        "$3",
+        "41°",
+        "$87",
+        "67°"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "35° #46 $88 32°\nelle; 51° voit; #25\ntoi; textes; taxis; $48"
+      "content": "$86 #30 83° #41\n$64 #49 #4 57°\n$81 $71 #91 #26"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "51° surgir $81 luttes #18\n$39 titre 30° idem #50\nkiwis; soleil $53 rues lumières;"
+      "content": "$87 mot 71° progrès 19°\n#53 voir $24 kiwis $26\n$15 histoire $59 terme $46"
     }
   ]
 }

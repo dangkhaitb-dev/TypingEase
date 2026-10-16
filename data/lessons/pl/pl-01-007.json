@@ -1,0 +1,99 @@
+{
+  "id": "pl-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "pl-01-007",
+  "title": "Klawisze y, u, i",
+  "summary": "Poznaj klawisze y, u, i i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "y",
+    "u",
+    "i"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze y, u, i i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-007",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "Ćwiczenie klawisza: y.",
+      "content": "yyyy yyyy yyyy yyyy yyyy yyyy yyyy yyyy y",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Ćwiczenie klawisza: u.",
+      "content": "uuuu uuuu uuuu uuuu uuuu uuuu uuuu u",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Ćwiczenie klawisza: i.",
+      "content": "iiii iiii iiii iiii iiii iiii iiii ii",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "iyyi yy yii yyu iiu uuy iii uuu yuyu iiyy yyit uii uu iiyi uy iiyu"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "ii yu ui iiw iiiy yy iyi uu iiu iii yyui"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "yyuu yyu ii uui yyui kki iiiu uuyi yi iu yiiy iuy"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "iuy yuyy uyui uyy uy yi iu iiyy yiu iuu iii fiy iy iyu uiui"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "tu jest stary las wtedy wiatr wieje kilka lat dalej"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "tu jest wiele sal ale kilka jest dalej kiedy wiatr wieje"
+    }
+  ]
+}

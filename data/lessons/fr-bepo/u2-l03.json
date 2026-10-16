@@ -27,7 +27,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -98,23 +97,23 @@
       "text": "Une série de mots courts contenant les nouvelles touches.",
       "type": "burst",
       "tokens": [
-        "côté",
-        "doses",
-        "petits",
-        "dites",
-        "donc",
-        "rêves",
-        "île",
-        "rôle",
-        "propose",
-        "roses"
+        "vote",
+        "entrée",
+        "devoirs",
+        "des",
+        "venir",
+        "ton",
+        "un",
+        "vivre",
+        "père",
+        "suite"
       ]
     },
     {
       "text": "Maintenant avec le poids sur X, celle que tu as le moins frappée.",
       "dictation": "words",
       "type": "standard",
-      "content": "lutte petite part propose\nréponse lui travaux par\npasser espèces elles espèce"
+      "content": "titres plans vivent papiers\naprès dure vieux voiles\navoir élèves il élève"
     },
     {
       "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
@@ -126,7 +125,7 @@
       "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
       "dictation": "words",
       "type": "standard",
-      "content": "l'autre dos écoles devenir\nvoile lourde ton succès\npersonne non père le"
+      "content": "soirées lutte travaux venir\nvous tout lourde père\nplaces routes tant le"
     }
   ]
 }

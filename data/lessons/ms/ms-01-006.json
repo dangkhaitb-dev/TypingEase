@@ -1,0 +1,84 @@
+{
+  "id": "ms-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "ms-01-006",
+  "title": "Huruf: g, h",
+  "summary": "Kenalkan q v x z; semakan keluar C01 huruf kecil dan bar ruang.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Kenalkan q v x z; semakan keluar C01 huruf kecil dan bar ruang.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-006",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "ggff ggfg gg fggg fg gggg gggf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "hfh hhh ffhh hfhh fh ff hhfh ffh fhh hhff hhhh hh",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jfjh fjgj hhff hfhj jgh jh ff jj hgj gf jhhh hgf fg fjf"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "hj gg ggf jh jhgf hgfh jghj hf ggh fg hgf jfg gg ghj jhh"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "hjg jhg ghgf fhgh fjhf gfff fgjh jfh jf hh hff hj jfff"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jgjj jjgh jhg gh ghhh hggj gfg jhj hg fgf hgj hf ghf jf"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "adakah kakak sahaja gajah gagah salah agak gagal hal"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "dahaga sahaja salah gagal adakah gajah gagah agak asal"
+    }
+  ]
+}

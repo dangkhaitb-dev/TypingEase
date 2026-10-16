@@ -4,10 +4,13 @@
   "group": "symbols",
   "order": 29,
   "slug": "symbols-2",
-  "title": "Les deux-points",
-  "summary": "Au programme : les deux-points.",
+  "title": "Le point-virgule, Ê, les deux-points et !",
+  "summary": "Au programme : le point-virgule, Ê, les deux-points et !.",
   "newKeys": [
-    ":"
+    ";",
+    "ê",
+    ":",
+    "!"
   ],
   "keysSoFar": [
     " ",
@@ -26,7 +29,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -73,14 +75,42 @@
     "#",
     "°",
     ";",
-    ":"
+    "ê",
+    ":",
+    "!"
   ],
   "minAccuracy": 80,
   "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Des touches que le cours n'a pas encore utilisées : les deux-points. Chacune se fait avec Maj et une touche que tes doigts connaissent déjà — Maj à l'auriculaire de l'autre main.",
-  "congrats": "les deux-points : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "intro": "Des touches que le cours n'a pas encore utilisées : le point-virgule, Ê, les deux-points et !. Certaines demandent Maj, avec l'auriculaire de l'autre main ; les autres ont leur propre touche, que le cours n'avait pas encore utilisée.",
+  "congrats": "le point-virgule, Ê, les deux-points et ! : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
   "screens": [
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "LI",
+      "text": "C'est l'index gauche qui frappe le point-virgule, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ; pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "D'abord le point-virgule sans rien autour, puis là où on s'en sert vraiment.",
+      "content": ";; ; suite; outils; deux;\n;; ; telles; dites; grands;\n;; ; jours; glisses; item;"
+    },
+    {
+      "type": "intro",
+      "key": "ê",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe Ê.",
+      "hint": "Appuie sur Ê pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "ê",
+      "text": "D'abord Ê sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "êê ê bête prêt prête\nêê ê forêts arrêt rêves\nêê ê bêtes tête être"
+    },
     {
       "type": "intro",
       "key": ":",
@@ -92,35 +122,48 @@
       "type": "block",
       "newKey": ":",
       "text": "D'abord les deux-points sans rien autour, puis là où on s'en sert vraiment.",
-      "content": ":: : utiles: encore: français:\n:: : gestes: utiles: bases:\n:: : lourde: sur: juillet:"
+      "content": ":: : il: routes: rigide:\n:: : gifles: propose: plan:\n:: : décider: glisse: glisses:"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe !, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ! pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "D'abord ! sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "!! ! dernière! forte! bord!\n!! ! sortes! bête! moment!\n!! ! idée! cent! morte!"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
-        "bras:",
-        "vient:",
-        "prêt:",
-        "dite:",
-        "ils:",
-        "musiques:",
-        "bureau:",
-        "n'est:",
-        "rue:",
-        "somme:"
+        "motif:",
+        "fête",
+        "mettre:",
+        "venir:",
+        "vous!",
+        "item;",
+        "cent;",
+        "tête!",
+        "gifle;",
+        "son:"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "lourde: bruits: continue: points:\nmoi: moments: beau: détail:\nelles: le: arrêts: mise:"
+      "content": "être têtes! passe: être\nbras! préférer! vendredi! vie:\nbouche; four: vote: filles;"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "exact: contes lime: côtés porte:\nvilles: elles exacte: s'il arrêts:\nkiwi: vitesse ça: autres moments:"
+      "content": "leçons; donc s'il: milieu pas;\nfête liste dose! plan lumières!\nforêts jamais nouvelle; joli dites!"
     }
   ]
 }

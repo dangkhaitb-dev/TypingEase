@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-12-002",
+  "unit": "u12",
+  "group": "g1",
+  "order": 118,
+  "slug": "zh-tw-12-002",
+  "title": "邀請朋友參加活動",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-002",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小華：\n下週六晚上七點，我們樂團要在河濱公園的露天舞台表演，想邀請你一起來聽。這是我們第一次公開演出，大家都很緊張，也很期待。如果你能來，我們一定會更有信心！\n阿傑",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "活動名稱：河濱秋夜音樂會\n時間：十月二十一日星期六晚上七點\n地點：河濱公園露天舞台\n費用：免費入場\n備註：現場沒有座位，建議自備野餐墊；晚上風大，請多帶一件外套。\n聯絡人：阿傑，有問題歡迎隨時傳訊息詢問",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小華：「我很想去，可是那天下午要上課，可能會晚到。」\n阿傑：「沒關係，我們排在第三個表演，大概七點半才上台。」\n小華：「太好了，那我下課就直接過去。要幫你們帶什麼嗎？」\n阿傑：「帶你的笑容和掌聲就夠了！」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

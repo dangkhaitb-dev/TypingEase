@@ -68,9 +68,7 @@
     "=",
     "-",
     "'",
-    "^",
     "è",
-    "¨",
     "$",
     "§",
     "°",
@@ -112,7 +110,7 @@
       "type": "block",
       "newKey": "!",
       "text": "D'abord ! sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "!! ! mugir! ça! rue!\n!! ! réponses! voile! motifs!\n!! ! peu! guide! exemple!"
+      "content": "!! ! humides! dix! gifles!\n!! ! très! onze! soi!\n!! ! voile! durs! points!"
     },
     {
       "type": "intro",
@@ -146,27 +144,27 @@
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
         "üüü",
-        "garçon!",
-        "somme!",
-        "gifle!",
-        "août!",
+        "taxis!",
+        "mort!",
+        "ski!",
+        "l'année!",
         "ööö",
-        "lime!",
+        "selle!",
         "£78",
         "£37",
-        "alors!"
+        "part!"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "üüü listes! £93 üüü\nööö £26 ööö £40\n£22 üüü ööö tel!"
+      "content": "üüü style! £93 üüü\nööö £26 ööö £40\n£22 üüü ööö site!"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "£13 la ööö mère £54\nüüü parties üüü d'accord ööö\n£65 te ööö jours ööö"
+      "content": "£13 voit ööö besoins £54\nüüü villes üüü derrière ööö\n£65 dessus ööö jolie ööö"
     }
   ]
 }

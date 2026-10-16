@@ -1,0 +1,55 @@
+{
+  "id": "vi-01-031",
+  "unit": "u1",
+  "group": "g1",
+  "order": 31,
+  "slug": "vi-01-031",
+  "title": "Ôn tập từ và câu",
+  "summary": "Gõ các từ và câu ngắn dùng mọi phím chữ và dấu Telex đã học.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Gõ các từ và câu ngắn dùng mọi phím chữ và dấu Telex đã học.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-031",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ các từ và câu ngắn, chỉ dùng những phím đã học.",
+      "content": "chợ thợ vợ mưa nữa sữa cửa rửa lửa đũa rừng núi biển đảo nghỉ bạn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ và câu ngắn, chỉ dùng những phím đã học.",
+      "content": "nên đeo găng tay khi rửa xe giặt đôi găng rồi cất vào giỏ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ và câu ngắn, chỉ dùng những phím đã học.",
+      "content": "tiếng cười trong nhà khiến tôi muốn trở về",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ và câu ngắn, chỉ dùng những phím đã học.",
+      "content": "mùi vỏ bưởi phơi nắng thoang thoảng quanh chiếc giỏ tre cũ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ và câu ngắn, chỉ dùng những phím đã học.",
+      "content": "hoa giấy bao quanh cổng cành cao rung trong gió",
+      "inputMode": "telex"
+    }
+  ]
+}

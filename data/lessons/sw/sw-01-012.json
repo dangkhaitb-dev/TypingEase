@@ -1,0 +1,113 @@
+{
+  "id": "sw-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "sw-01-012",
+  "title": "Herufi: v, b, n",
+  "summary": "Kuandika z c na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Kuandika z c na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-012",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "vff fvf vvf vf vfv ffv vvvf vvv vv fvfv fvv vvvv fv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "bbb bbbb fbfb bbf bbbf bb bfb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "nfnfn nnn nn nnnn nnf fnnf nnnf nnfn nfnn nf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "fjb bn vjn bvbf nf jj vbfb bfv nb bnn ffnf nj bnvn bn nb"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "vf jbjn nbff jb fvb bj nvbj bf jvv ffn bfvn fjj fv bfjj"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jjbv jfn jnf vffb fb nff nj jv nnj bj fvnf bnv vb nb jfj"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "bfj jb bfvf bn vb fv njbn jbnj fjvf vnf bvvn nfbv bjvn"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "fb bvfv jjv bbnf fv nvn vf bfjv vjnf vf bn fnbn jfv jbj"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "baba na bibi hula ndizi kabla ya chakula asubuhi"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "binti huvaa viatu na nguo nzuri baada ya jioni"
+    }
+  ]
+}

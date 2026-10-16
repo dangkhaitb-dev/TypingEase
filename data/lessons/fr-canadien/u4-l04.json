@@ -41,7 +41,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -57,8 +56,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<",
     "#",
     "|",
@@ -92,7 +89,7 @@
       "type": "block",
       "newKey": "_",
       "text": "D'abord _ sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "__ _ mots_société fêtes_humide dis_wagons\n__ _ prêt_histoire diriger_bruit musique_dessus\n__ _ gel_envies telles_tire terme_décembre"
+      "content": "__ _ styles_bureaux exact_milieu ifs_plupart\n__ _ ou_dose humide_avec figures_grises\n__ _ mises_nuit te_mugir utiles_blanche"
     },
     {
       "type": "intro",
@@ -112,28 +109,28 @@
       "seconds": 25,
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
-        "sociétés_papiers",
-        "soirées_dessus",
-        "suite_luttes",
+        "bras_vote",
+        "beau_grises",
+        "mur_suite",
         "93+38",
-        "petits_telle",
-        "hôtel_frères",
-        "salles_sous",
-        "portes_ils",
-        "luttes_ton",
+        "villes_te",
+        "journée_temps",
+        "pour_triste",
+        "envie_si",
+        "suite_tous",
         "14+4"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "81 + 56 84+82 32+88 quant_wagons\nsorte_prêt 74+23 partie_luge novembre_exact\n86 + 21 blanc_été vivent_travaux coûts_joli"
+      "content": "81 + 56 84+82 32+88 pas_plupart\nterme_ou 74+23 onze_hisses centre_jamais\n86 + 21 personne_point encore_ma préférer_telles"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "8 + 63 grands 65 + 4 mesure 45 + 52\nvote_sel moment sommes_dix travaux 83 + 73\n28 + 91 salle douze_liste des 70 + 51"
+      "content": "8 + 63 devient 65 + 4 guides 45 + 52\nnom_fil vendredi modes_aller ma 83 + 73\n28 + 91 pour jolies_site des 70 + 51"
     }
   ]
 }

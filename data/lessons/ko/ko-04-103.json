@@ -1,0 +1,49 @@
+{
+  "id": "ko-04-103",
+  "unit": "u4",
+  "group": "g1",
+  "order": 62,
+  "slug": "ko-04-103",
+  "title": "짧은 문장 연결",
+  "summary": "짧은 문장 연결을 정확하게 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "hangul",
+  "intro": "짧은 문장 연결을 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-04-103",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "오늘은 친구와 함께 시립 도서관에 가요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "읽고 싶은 동화책을 한 권 천천히 골라요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "햇살 드는 창가에 앉아 조용히 책을 읽어요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "책을 다 읽고 나서 친구와 생각을 나눠요",
+      "inputMode": "hangul"
+    }
+  ]
+}

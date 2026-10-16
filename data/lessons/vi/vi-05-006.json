@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-006",
+  "unit": "u5",
+  "group": "g2",
+  "order": 75,
+  "slug": "vi-05-006",
+  "title": "Liên kết thời gian",
+  "summary": "Tổ chức văn bản theo dòng chảy thời gian từ sáng sớm đến tối muộn, rèn luyện sự chuyển tiếp mượt mà.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Tổ chức văn bản theo dòng chảy thời gian từ sáng sớm đến tối muộn, rèn luyện sự chuyển tiếp mượt mà.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ cụm từ chỉ dòng chảy thời gian từ bình minh rực rỡ đến trưa nắng.",
+      "content": "Từ lúc mặt trời vừa ló rạng nơi chân trời xa đến khi ánh nắng trưa chiếu gay gắt trên mái ngói, gian hàng luôn giữ vững nhịp điệu phục vụ khách chu đáo.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn dài hoàn chỉnh theo dõi trọn vẹn chu kỳ hoạt động trong một ngày lao động.",
+      "content": "Dòng thời gian trôi qua êm ả qua từng bóng nắng trên mặt đường lát đá hoa cương. Gần trưa, người bán thu dọn quầy hàng, kiểm kê rau quả và ghi lại những món đã hết.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Liên kết các mốc thời gian trong ngày với sự biến chuyển của các hoạt động bán hàng.",
+      "content": "Buổi sáng là thời điểm đắt khách nhất với các đơn đặt hàng rau xanh và trái cây tươi cho bữa cơm gia đình. Nhân viên kiểm tra từng giỏ hàng, ghi đủ số lượng rồi chuyển hàng đến quầy thu ngân.",
+      "inputMode": "telex"
+    }
+  ]
+}

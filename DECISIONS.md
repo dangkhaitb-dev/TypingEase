@@ -1758,3 +1758,39 @@ Chủ site yêu cầu bật luôn đợt 4 và 5 rồi deploy. Test + trò chơi
 file chữ nào `live: false`. Cách chống spam từ nay dựa vào chất lượng từng trang (nội dung riêng mỗi
 ngôn ngữ, một trang mỗi ngôn ngữ, không trang theo thời lượng), vì không còn tung dần được nữa.
 sw.js v23.
+
+---
+
+# DỮ LIỆU KHOÁ HỌC TỪ TYPEKUTE + TẢI CÓ CACHE (2026-10-16)
+
+- **Nguồn**: 26 khoá mặc định (ar bn de en es fa fil fr hi id it ja ko ms nl pl pt ru sw th tr uk ur vi
+  zh zh-tw) nhập từ bản build của typekute (`../typing/typekute/dist/curriculum`) bằng
+  `node scripts/import-typekute.mjs [--course xx]`. Lệnh này tự sinh lại trang lộ trình và chạy
+  `scripts/stamp-data.mjs`. `pt` lấy pack `br` (pt-BR). Họ bàn phím (dvorak, bépo, neo…) và `he`
+  typekute không có → giữ bài cũ; `build-course.js` tự bỏ qua khoá đã nhập.
+- **Tiến độ**: khoá nhập dùng `typingease-progress-<code>-v4` (vi: `typingease-progress-v4`) và
+  `typingease-badges-…-v2`. Kho cũ không xoá (cùng tinh thần quyết định 5).
+- **Tải dữ liệu theo cách typekute**: `data-cache.js` (nạp trước `player.js`). URL bài có
+  `?v=<sha256-16>` lấy từ `curriculum.lessonUrls`; Cache API `typingease-data-v1` chỉ lưu khi băm
+  khớp; gộp request trùng; lệch phiên bản → tải lại trang một lần khi không ai đang gõ; tải trước
+  unit hiện tại + unit sau lúc rảnh. Thẻ `<script src="/data/curriculum.<code>.js?v=…">` cũng được
+  băm, SW phục vụ cache-first; SW không đụng `/data/lessons/` và không xoá bucket `typingease-data-*`.
+- **Đổi bài hay chỉ mục bằng tay ⇒ phải chạy `node scripts/stamp-data.mjs`** (`--check` để kiểm).
+- **Chế độ gõ mới** của player: `ime` (ja/zh/zh-tw chữ Hán/kana — chỉ chấm chữ đã chốt sau
+  `compositionend`) và `position` (screen chú âm, gõ theo vị trí phím). `validate-lessons.js` chỉ
+  kiểm cấu trúc với khoá nhập từ typekute.
+- **Theo sát typekute ở tầng nhập liệu** (bổ sung cùng ngày):
+  - Nội dung bài định dạng như `formatSourceContent` của typekute. Profile `latin-direct-v1`
+    (en/id/ms/sw) là "legacy": `↵` là Enter, ngoặc cong thành thẳng, xuống dòng thường gõ bằng
+    dấu cách, bài block nối dòng. Các profile khác: NFC, mỗi `\n` là một Enter.
+  - Mọi lượt soạn của bộ gõ (IME, phím chết) chỉ được chấm trên chữ đã chốt. Telex/Hangul giữ
+    bộ so khớp riêng.
+  - `matchUnit` của typekute: chữ toàn khổ/U+3000 = ASCII, chữ số Ả Rập/Ba Tư = chữ số ASCII.
+  - Chữ gõ vào được chuẩn hoá NFC.
+  - Lượt soạn bị trình duyệt tự kết thúc (mất focus) mang cách đọc thô thì bị bỏ, không chấm.
+  - `alignCandidateCommit`: chốt cách đọc thay chữ Hán là một lỗi tại chỗ, không trượt dây chuyền.
+  - Screen ASCII trong khoá IME hiện `imeAsciiHint`; gõ Latin trần trên screen IME hiện
+    `imeOffHint` (chữ lấy từ bundle i18n của typekute).
+- **Chưa làm**: bàn phím vẽ trên màn hình (`data/keyboards/`) cũ hơn `layouts.json` của typekute
+  (thiếu lớp `shiftalt`, ₴, ’…). Đồng bộ lại làm `build-course.js` hỏng ở de-neo, ar-azerty và
+  lệch bài các khoá họ khác — cần quyết định riêng.

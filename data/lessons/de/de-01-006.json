@@ -1,0 +1,96 @@
+{
+  "id": "de-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "de-01-006",
+  "title": "Tasten e, r, t",
+  "summary": "Lerne die neuen Tasten e, r, t und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "e",
+    "r",
+    "t"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten e, r, t und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-006",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Taste üben: e.",
+      "content": "eeee eeee eeee eeee eeee eeee eeee eeee eeee eee",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "Taste üben: r.",
+      "content": "rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrr",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "Taste üben: t.",
+      "content": "tttt tttt tttt tttt tttt tttt tttt tttt tttt",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "re tetr rtt rre grtt eee ggre gg tgg ggr ee eg gtt"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "rtr trgr egg gg gegg gr gt tgtg tgt et etr ett tee"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "eteg egr tg tttt rrg gr eege trrg rgre gg trr rt"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "tre eet eee ege rrtt ee ttet rrrr rre tret rt gge tt ett rr"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "er hat es gesagt das war alles wer hatte es gelegt"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "wer sagt das es war alles da was er hatte"
+    }
+  ]
+}

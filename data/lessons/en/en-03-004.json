@@ -1,0 +1,108 @@
+{
+  "id": "en-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 24,
+  "slug": "en-03-004",
+  "title": "G, H, I",
+  "summary": "Type paired and code-style US symbols, including backtick and tilde, with each side of a pair present.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Type paired and code-style US symbols, including backtick and tilde, with each side of a pair present.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-03-004",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Hold Shift with the little finger of your right hand and press g to type G. Release Shift before the next key.",
+      "content": "GffG GGf fGG fGGG GG GGGf GGGG",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Hold Shift with the little finger of your left hand and press h to type H. Release Shift before the next key.",
+      "content": "HH HjH HjHH HHH jjH jH HHHH jj jjj HHHj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Hold Shift with the little finger of your left hand and press i to type I. Release Shift before the next key.",
+      "content": "II IfII If IfI IIII III fIII",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "IIGG HGHI HGGG HG HI zG HHG IGI HGG IIGH HIH GH"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "GH HH IHHG 1HI IGG HHHI GIHH GHHI HHIH HGH GHII II HGI HHHH"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "ms-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "ms-01-009",
+  "title": "Huruf: u, i, o",
+  "summary": "Huruf: u, i, o. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "newKeys": [
+    "u",
+    "i",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Huruf: u, i, o. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-009",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "ufufu ufuu uuuu uufu uu uuf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "ifiii iif ifii iii fi ifi ii iifi",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "ofo oo fo oof fof of foo ooof ofoo ffoo oooo ooo",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "uiio ofu joi of ui ojfu ouu oi jf ii uiu offi uoj oo uuf"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "foii uou ui ijuf iu uffu jio uuij foi fu uoj oo fiij fj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "uj ou ijj jj ujof ouui ifjf fifi jjf ffii ufuj ou oofo"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jj uoif ff iufo uuof ojfi iuo fuj ooju fouo ujuo fi ji"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "oujf uui ofo ij ooji fufi ifjj uou uiju ffof juuu jfu"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "guru ada di kelas itu saya ke sekolah dulu"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "hari itu saya sudah tidur kita tidak ke sekolah"
+    }
+  ]
+}

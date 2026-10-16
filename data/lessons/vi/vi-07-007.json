@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-007",
+  "unit": "u7",
+  "group": "g2",
+  "order": 102,
+  "slug": "vi-07-007",
+  "title": "Lượt đối thoại ngắn",
+  "summary": "Xây dựng năng lực \"Short Speaker Turns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Hội thoại trực tiếp giữa các nhân vật, rèn luyện kỹ năng gõ dấu gạch đầu dòng và dấu hai chấm.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Short Speaker Turns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Hội thoại trực tiếp giữa các nhân vật, rèn luyện kỹ năng gõ dấu gạch đầu dòng và dấu hai chấm.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Mở đầu có dẫn dắt cùng cuộc trao đổi ngắn giữa trưởng phòng và nhân viên.",
+      "content": "Cuộc trao đổi ngắn giữa trưởng phòng và nhân viên: - Minh đã chuẩn bị xong hồ sơ mời thầu chưa? - Dạ em đã hoàn tất toàn bộ các mục chính và đang in đóng tập thành ba bản hoàn chỉnh ạ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua đối thoại trong buổi giao ban kỹ thuật.",
+      "content": "Đối thoại trong buổi giao ban kỹ thuật: - Hệ thống sao lưu đêm qua có ghi nhận lỗi nào không? - Báo cáo anh, toàn bộ cơ sở dữ liệu đã được nhân bản sang máy chủ phụ an toàn lúc ba giờ sáng. - Rất tốt, các bạn nhớ tiếp tục theo dõi dung lượng ổ đĩa lưu trữ trong ngày hôm nay nhé. Hai bên lần lượt nêu ý kiến, xác nhận thông tin cần thiết rồi thống nhất bước xử lý tiếp theo.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua hội thoại tại quầy giao dịch.",
+      "content": "Hội thoại tại quầy giao dịch: - Chào chị, em muốn tìm hiểu gói bảo hiểm sức khỏe cho gia đình. - Vâng, em xin gửi chị cuốn sổ tay tóm tắt quyền lợi. Chị có thể tham khảo bảng so sánh giữa gói tiêu chuẩn và gói nâng cao ở trang bốn này ạ. - Thủ tục tham gia có mất nhiều thời gian không? - Rất nhanh ạ, chị chỉ cần điền phiếu này và hệ thống sẽ gửi mã xác nhận qua tin nhắn ngay.",
+      "inputMode": "telex"
+    }
+  ]
+}

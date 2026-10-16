@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-006",
+  "unit": "u7",
+  "group": "g2",
+  "order": 101,
+  "slug": "vi-07-006",
+  "title": "Tài liệu tham chiếu",
+  "summary": "Xây dựng năng lực \"Many References\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập văn bản tham chiếu có trích dẫn nguồn, mã hiệu tài liệu và ghi chú chân trang.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Many References\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập văn bản tham chiếu có trích dẫn nguồn, mã hiệu tài liệu và ghi chú chân trang.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp bài học với bảng tra cứu mã số hàng hóa.",
+      "content": "Bảng tra cứu mã số hàng hóa: mã SP01 áp dụng cho gạo nàng thơm đóng gói năm kilôgam; mã SP02 áp dụng cho đậu phộng rang muối hũ ba trăm gram; mã SP03 là trà sen cao cấp sấy khô.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên tài liệu tham chiếu tiêu chuẩn an toàn thực phẩm.",
+      "content": "Tài liệu tham chiếu tiêu chuẩn an toàn thực phẩm: sản phẩm phải có nguồn gốc xuất xứ rõ ràng từ các vùng trồng trọt đạt chứng nhận canh tác an toàn sinh học; hàm lượng vi sinh vật và dư lượng thuốc bảo vệ thực vật phải tuyệt đối tuân thủ theo quy chuẩn kỹ thuật quốc gia hiện hành.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên sổ tay tra cứu quy định phòng chống cháy nổ tại cơ sở kinh doanh.",
+      "content": "Sổ tay tra cứu quy định phòng chống cháy nổ tại cơ sở kinh doanh: điều một không được để các vật liệu dễ bắt lửa gần các bảng điện và nguồn nhiệt; điều hai luôn giữ lối thoát hiểm thông thoáng, không chứa đồ đạc cản trở lối đi; điều ba kiểm tra áp suất bình bọt mỗi tháng một lần và ghi chép nhật ký theo dõi; điều bốn toàn bộ cán bộ công nhân viên phải được tập huấn kỹ năng thoát hiểm và diễn tập cứu hỏa hằng năm, có sổ.",
+      "inputMode": "telex"
+    }
+  ]
+}

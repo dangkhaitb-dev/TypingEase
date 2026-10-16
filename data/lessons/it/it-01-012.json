@@ -1,0 +1,101 @@
+{
+  "id": "it-01-012",
+  "unit": "u1",
+  "group": "g2",
+  "order": 11,
+  "slug": "it-01-012",
+  "title": "P, È, É",
+  "summary": "Impara i tasti p, è, é e usali con i tasti già studiati.",
+  "newKeys": [
+    "p"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti p, è, é e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-012",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Trova p e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "pp ppp fp pff ppf ppff ffpf pppf fpff pfpp pf pppp",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Trova è e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "èèèj èèjè èèj èj jj èèèè èè èèè jjèè"
+    },
+    {
+      "type": "standard",
+      "text": "Tieni premuto Maiusc e premi è per scrivere é. Poi torna alla posizione di base.",
+      "content": "ffé ééé éééé éé fff ff fffé féf éééf ééf"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "uèp èèèp ééèé èèéè éèup èèè éé éè ppp èééé éééé pppé puè ppèé"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "péa pè éèèè èap pp éèp èè éaép èèp èèè èèèè ppèè"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "pppp éé èép ééè pè ppéé ppé éépé èé péèé pp éééé pé èèèé ééèè èè pppé éék"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ppèè èéèp èèèé pp èè éèèè èèè ppjè èé éé éèé éép pèè ppèé ppéé èèp èèèp"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "pèé éépp éèè éé ééè éép èèpé éééé èè lèéè éééè"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "il papà è alla porta la pasta è sopra il piatto"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "poi il papà apre la porta della sala per tutti"
+    }
+  ]
+}

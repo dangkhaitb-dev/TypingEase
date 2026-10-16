@@ -1,0 +1,85 @@
+{
+  "id": "ja-01-104",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "ja-01-104",
+  "title": "G・H・K",
+  "summary": "G、H、K を既習キーと組み合わせて打つ。",
+  "newKeys": [
+    "g",
+    "h",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "G、H、K を既習キーと組み合わせて打つ。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-104",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "gg ggg gggg gg gg ggg gggg gg gg ggg gggg gg gg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "hh gh hg hhh hhgg ggh hh gh hg hhh hhgg ggh hh gh",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "ggh hhg gkkg hkk ggkk ggh hhg gkkg hkk ggkk ggh",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "hakg hh hhkh khh hgg ggkg agg kkg kgg hakg hh hhkh khh hgg ggkg agg kkg kgg"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "kkg gggh hhh gag kkkh kk gk gggk kkg gggh hhh gag kkkh kk gk gggk kkg gggh"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "kggk hh ghgk hfg ghhg kk kggk hh ghgk hfg ghhg kk kggk hh ghgk hfg ghhg kk"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "kk ggk hh hk kkkk hgh hhg kg fhkk kk ggk hh hk kkkk hgh hhg kg fhkk kk ggk"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "aag hhg gk kkkk kk kgh gg ggg aag hhg gk kkkk kk kgh gg ggg aag hhg gk kkkk"
+    }
+  ]
+}

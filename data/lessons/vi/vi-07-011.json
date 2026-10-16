@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-011",
+  "unit": "u7",
+  "group": "g3",
+  "order": 106,
+  "slug": "vi-07-011",
+  "title": "Đoạn văn hướng dẫn",
+  "summary": "Xây dựng năng lực \"Instruction Passage\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tài liệu hướng dẫn hoàn chỉnh với các điều khoản quy định chi tiết và lưu ý an toàn.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Instruction Passage\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tài liệu hướng dẫn hoàn chỉnh với các điều khoản quy định chi tiết và lưu ý an toàn.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Mở đầu có dẫn dắt cùng tài liệu hướng dẫn an toàn lao động trong phòng thí nghiệm hóa chất.",
+      "content": "Tài liệu hướng dẫn an toàn lao động trong phòng thí nghiệm hóa chất: người làm việc bắt buộc phải mặc áo choàng bảo hộ, đeo kính chắn giọt bắn và đi găng tay cao su kháng hóa chất chuyên dụng trong suốt thời gian pha chế dung dịch.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua hướng dẫn chi tiết quy trình bảo mật thông tin nội bộ.",
+      "content": "Hướng dẫn chi tiết quy trình bảo mật thông tin nội bộ: thứ nhất, mỗi nhân viên tự đặt mật khẩu dài tối thiểu mười hai ký tự, kết hợp chữ hoa, chữ thường, chữ số và ký hiệu đặc biệt; thứ hai, tuyệt đối không chia sẻ tài khoản đăng nhập cho người khác; thứ ba, luôn khóa màn hình máy tính mỗi khi rời khỏi bàn làm việc; thứ tư, không tự ý sao chép tài liệu mật sang thẻ nhớ cá nhân.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua quy trình vận hành máy móc thiết bị trong xưởng may công nghiệp.",
+      "content": "Quy trình vận hành máy móc thiết bị trong xưởng may công nghiệp: trước khi bật công tắc nguồn điện, công nhân phải kiểm tra kỹ hệ thống dây dẫn, chân vịt và dầu bôi trơn máy may. Tuyệt đối không để tóc dài buông xõa hoặc đeo vòng tay kim loại khi đang điều khiển thiết bị may tốc độ cao. Khi phát hiện tiếng kêu lạ từ động cơ, phải lập tức ngắt cầu dao và báo ngay cho kỹ thuật viên cơ điện.",
+      "inputMode": "telex"
+    }
+  ]
+}

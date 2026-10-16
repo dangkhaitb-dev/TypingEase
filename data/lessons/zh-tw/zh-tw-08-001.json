@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-001",
+  "unit": "u8",
+  "group": "g1",
+  "order": 73,
+  "slug": "zh-tw-08-001",
+  "title": "早晨出門的節奏",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-001",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "每天早上六點半，我準時起床。先喝一杯溫開水，再到陽台做五分鐘伸展操。洗完臉以後，我會看一下今天的行程，把要帶的東西放在門口，出門就不會手忙腳亂。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "七點鐘，我吃完早餐，把碗盤放進水槽。接著檢查錢包、手機和鑰匙，背上背包走向公車站。路上我會聽一段新聞，了解今天的天氣和交通狀況，必要時就提早改搭捷運。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "有一次我睡過頭，連早餐都來不及吃，還差點錯過公車。從那天起，我前一晚就把衣服和背包準備好，也把鬧鐘調早十分鐘。現在早上的節奏穩定多了，出門時的心情也輕鬆許多。",
+      "inputMode": "ime"
+    }
+  ]
+}

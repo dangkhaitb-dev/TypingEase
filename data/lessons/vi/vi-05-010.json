@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-010",
+  "unit": "u5",
+  "group": "g3",
+  "order": 79,
+  "slug": "vi-05-010",
+  "title": "Chuỗi hai màn kết nối",
+  "summary": "Hai màn câu chuyện gắn kết chặt chẽ về nội dung, dung lượng văn bản tăng đáng kể, thử thách khả năng duy trì mạch gõ.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Hai màn câu chuyện gắn kết chặt chẽ về nội dung, dung lượng văn bản tăng đáng kể, thử thách khả năng duy trì mạch gõ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ chuỗi câu liên kết chặt chẽ về cách bài trí sản phẩm và bảng giá rõ ràng.",
+      "content": "Từng nhóm sản phẩm được phân loại theo xuất xứ và công dụng để khách hàng dễ dàng tìm kiếm và lựa chọn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn dài hoàn thiện chuỗi chuẩn bị với nhiều chi tiết điều phối chuyên nghiệp.",
+      "content": "Khi mọi góc nhỏ trong gian hàng đã được lau chùi sạch sẽ và ánh đèn vàng ấm áp được bật sáng lung linh, Minh mới tập hợp các thành viên lại để dặn dò chu đáo lần cuối.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt đầu chuỗi chuẩn bị quy mô lớn cho gian hàng đón đợt khách cuối tuần.",
+      "content": "Công tác chuẩn bị cho hai ngày cao điểm cuối tuần được khởi động từ đầu buổi chiều thứ Sáu. Cả đội ngũ cùng tập trung rà soát lại từng khâu trong quy trình phục vụ khách hàng chu đáo.",
+      "inputMode": "telex"
+    }
+  ]
+}

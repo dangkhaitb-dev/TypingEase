@@ -1,0 +1,91 @@
+{
+  "id": "zh-03-005",
+  "unit": "u3",
+  "group": "g1",
+  "order": 29,
+  "slug": "zh-03-005",
+  "title": "标点键位组合五",
+  "summary": "练习标点、字母与数字的组合输入，并保持节奏稳定。",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "练习标点、字母与数字的组合输入，并保持节奏稳定。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-03-005",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再输入字母、数字和标点；中文模式下这些标点会变成全角。",
+      "content": "q9; b.4 v-g7 ',w ;; uzz/ ,h.z c;.- /1 i;yx ;g ;k-;"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再输入字母、数字和标点；中文模式下这些标点会变成全角。",
+      "content": "'t ,ega /h os; n' '3b6 s. q,2t e' 5;g, t'n ,, ;w,;"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再输入字母、数字和标点；中文模式下这些标点会变成全角。",
+      "content": "l/l6 ob. 45'q k'p -h t3;- ;w h.z .x .-;/ 1,a .x9"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再输入字母、数字和标点；中文模式下这些标点会变成全角。",
+      "content": ".b9c 9lo, 6c; w--, r5;/ /ff or/ a;d qd4; ;2 -ui"
+    }
+  ]
+}

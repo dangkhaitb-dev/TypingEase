@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-001",
+  "unit": "u6",
+  "group": "g1",
+  "order": 51,
+  "slug": "zh-tw-06-001",
+  "title": "確認借書時間",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-001",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "小林，你借的那本書下週一到期，記得按時歸還。如果還沒看完，也可以先續借。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "圖書館週日休館，如果要續借，請在週六中午以前上網辦理。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我週六下午會去圖書館。如果你沒空，可以把書交給我，我幫你一起還。",
+      "inputMode": "ime"
+    }
+  ]
+}

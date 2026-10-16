@@ -1,0 +1,79 @@
+{
+  "id": "es-03-007",
+  "unit": "u3",
+  "group": "g1",
+  "order": 27,
+  "slug": "es-03-007",
+  "title": "Ü mayúscula",
+  "summary": "Aprende Ü con Mayús, la tecla ´ y la u, y practícala en palabras en mayúsculas.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ascii",
+  "intro": "Aprende Ü con Mayús, la tecla ´ y la u, y practícala en palabras en mayúsculas.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-007",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Pulsa Mayús y la tecla ´, suéltalas, mantén Mayús y escribe u: así sale Ü.",
+      "content": "ÜÜÜÜÜ ÜÜfÜÜ jÜÜÜ ÜÜÜÜÜ ÜÜfÜÜ"
+    },
+    {
+      "type": "standard",
+      "text": "Alterna Ü, ü y las teclas ya conocidas.",
+      "content": "üüüüü Üü üfdüÜ Üü üÜa Üej füfe ÜÜüüü ej üüs ÜÜü saüü jüÜdÜ ÜÜÜe"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "AGÜERO CIGÜEÑA DESAGÜE AVERIGÜÉ PINGÜINO"
+    }
+  ]
+}

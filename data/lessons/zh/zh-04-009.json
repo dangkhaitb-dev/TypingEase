@@ -1,0 +1,91 @@
+{
+  "id": "zh-04-009",
+  "unit": "u4",
+  "group": "g1",
+  "order": 41,
+  "slug": "zh-04-009",
+  "title": "全键盘组合九",
+  "summary": "复习全键盘键位与符号，并稳定完成混合输入。",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "复习全键盘键位与符号，并稳定完成混合输入。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-04-009",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "17w 3lf- 0.x 'sa ,ru ;u sl]8 z` 8t nc eq=d 2g f148"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "ooo li cc 30 -t ooo -t 30 cc li cc li ooo -t 30 -t 30"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "u1; \\f5 kpg- 4sby 4]xz -7in g.] e- t\\;h aeed `d"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "22 st9 oo op //c 22 //c op oo st9 oo st9 22 //c op //c"
+    }
+  ]
+}

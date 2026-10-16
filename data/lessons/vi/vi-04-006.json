@@ -1,0 +1,55 @@
+{
+  "id": "vi-04-006",
+  "unit": "u4",
+  "group": "g3",
+  "order": 68,
+  "slug": "vi-04-006",
+  "title": "Tổng kết nền tảng",
+  "summary": "Bài đánh giá toàn diện năng lực gõ mười ngón tiếng Việt sau khi hoàn thành Phase 1 Nền tảng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "telex",
+  "intro": "Bài đánh giá toàn diện năng lực gõ mười ngón tiếng Việt sau khi hoàn thành Phase 1 Nền tảng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-04-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tổng kết: gõ câu hoàn chỉnh dùng mọi phím đã học.",
+      "content": "Uống nước nhớ nguồn. Ăn quả nhớ kẻ trồng cây. Học đi đôi với hành.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Tổng kết: gõ câu hoàn chỉnh dùng mọi phím đã học.",
+      "content": "Việt Nam là dải đất hình chữ S với bờ biển dài hơn 3.260 km.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Tổng kết: gõ câu hoàn chỉnh dùng mọi phím đã học.",
+      "content": "Người Việt Nam luôn cần cù trong lao động và giàu lòng yêu thương.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Tổng kết: gõ câu hoàn chỉnh dùng mọi phím đã học.",
+      "content": "Năm 2026, chúng ta tự hào phát triển đất nước ngày càng giàu đẹp, văn minh.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Tổng kết: gõ câu hoàn chỉnh dùng mọi phím đã học.",
+      "content": "Chúc mừng bạn đã làm chủ bàn phím tiếng Việt và hoàn thành Giai đoạn 1!",
+      "inputMode": "telex"
+    }
+  ]
+}

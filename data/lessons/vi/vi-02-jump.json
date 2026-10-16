@@ -1,0 +1,49 @@
+{
+  "id": "vi-02-jump",
+  "unit": "u2",
+  "group": "g5",
+  "order": 37,
+  "slug": "vi-02-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Kiểm tra: gõ số kèm từ mà không nhìn bàn phím.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-02-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ số kèm từ mà không nhìn bàn phím.",
+      "content": "12 tờ giấy 23 cuốn sách 32 bát cơm 12 cái bàn 12 quả trứng 22 quả cam",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ số kèm từ mà không nhìn bàn phím.",
+      "content": "36 cái ghế 21 ngôi nhà 5 tờ giấy 42 ngôi nhà 62 ly nước 36 con cá",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ số kèm từ mà không nhìn bàn phím.",
+      "content": "98 ly nước 76 người bạn 71 bát cơm 39 cuốn sách 42 quả trứng 59 đôi giày",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ số kèm từ mà không nhìn bàn phím.",
+      "content": "89 người bạn 7 quả cam 60 bó rau 61 ngôi nhà 46 quả cam 66 cái bàn",
+      "inputMode": "telex"
+    }
+  ]
+}

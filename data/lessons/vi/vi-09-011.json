@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-011",
+  "unit": "u9",
+  "group": "g3",
+  "order": 131,
+  "slug": "vi-09-011",
+  "title": "Chuyển đổi chữ và số",
+  "summary": "Xây dựng năng lực \"Letter-Number Shifts\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Luyện phản xạ chuyển đổi cực nhanh giữa hàng phím chữ cái và hàng phím số.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Letter-Number Shifts\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Luyện phản xạ chuyển đổi cực nhanh giữa hàng phím chữ cái và hàng phím số.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi mốc thời gian và địa điểm xen số: ngày 15 tháng 08 năm 2026.",
+      "content": "ngày 15 tháng 08 năm 2026 lúc 09 giờ 30 phút tại phòng họp số 03 tầng 12 tòa nhà trung tâm hội nghị 22/09/2026 14 giờ 15 tại hội trường A tầng 5",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với đơn hàng số 458 gồm số lượng, đơn giá và ngày giao.",
+      "content": "đơn hàng số 458 gồm 25 bộ máy tính xách tay với đơn giá 18 triệu đồng một chiếc được giao vào ngày 22 tháng 09 năm 2026 cho đại diện phòng kỹ thuật. Bảng theo dõi ghi ngày nhận, mã PO-7712 và số lượng còn trong kho sau mỗi đợt giao: 12 máy để bảo hành, 9 máy đã xuất. Phiếu nhập số 459 ngày 24/09 nhận thêm 8 màn hình 24 inch, đơn giá 3,2 triệu, kệ B4 còn 14 chiếc chờ lắp đặt cho ca đêm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về sự chuyển đổi liên tục giữa chữ và số.",
+      "content": "Sự kết hợp liên tục giữa chữ cái tiếng Việt và các con số đòi hỏi sự linh hoạt tuyệt đối của các ngón tay giữa các hàng phím khác nhau. Kỹ năng chuyển đổi nhịp nhàng giữa chữ và số là yêu cầu bắt buộc đối với nhân viên kế toán, quản trị kho và biên tập viên dữ liệu số trong các cơ quan hiện đại. Gõ thử: phòng K12 nhận 36 thùng, kệ A7 còn 108 mã, phiếu 22B. Ca chiều xuất 14 lô, mã C09, tổng 275 kiện.",
+      "inputMode": "telex"
+    }
+  ]
+}

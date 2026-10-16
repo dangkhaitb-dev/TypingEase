@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-012",
+  "unit": "u7",
+  "group": "g3",
+  "order": 107,
+  "slug": "vi-07-012",
+  "title": "Văn bản tài liệu tổng hợp",
+  "summary": "Xây dựng năng lực \"Combined Document\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Văn bản hành chính thực tế kết hợp giữa bảng biểu, điều khoản pháp lý và thông tin liên hệ đa dạng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Combined Document\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Văn bản hành chính thực tế kết hợp giữa bảng biểu, điều khoản pháp lý và thông tin liên hệ đa dạng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động bài học với văn bản tài liệu tổng hợp quy định quản lý tài chính nội bộ.",
+      "content": "Văn bản tài liệu tổng hợp quy định quản lý tài chính nội bộ: các khoản chi tiêu từ năm triệu đồng trở lên phải có hóa đơn tài chính điện tử hợp pháp kèm tờ trình phê duyệt của trưởng bộ phận có thẩm quyền trước khi thanh toán.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với quy định tổng hợp về thanh toán chế độ công tác phí.",
+      "content": "Quy định tổng hợp về thanh toán chế độ công tác phí: cán bộ đi công tác ngoài phạm vi tỉnh phải nộp đầy đủ vé máy bay hoặc vé tàu hỏa, hóa đơn lưu trú khách sạn có thông tin mã số thuế của công ty và giấy đi đường có đóng dấu xác nhận của nơi đến. Khoản chi tiêu phụ cấp lưu trú được thanh toán khoán theo đúng định mức quy định tại quy chế chi tiêu nội bộ đã được hội đồng quản trị thông qua.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với quy chế quản lý và sử dụng tài sản công.",
+      "content": "Quy chế quản lý và sử dụng tài sản công: toàn bộ trang thiết bị máy móc và cơ sở vật chất văn phòng đều thuộc sở hữu chung của công ty và được giao cho các đơn vị sử dụng đúng mục đích phục vụ công việc hàng ngày. Nghiêm cấm mọi hành vi tự ý chiếm dụng hoặc mang tài sản ra ngoài cơ quan khi chưa có văn bản đồng ý của lãnh đạo. Mỗi khoản chi cần kèm ngày lập, mục đích sử dụng và chữ ký xác nhận của người có thẩm quyền.",
+      "inputMode": "telex"
+    }
+  ]
+}

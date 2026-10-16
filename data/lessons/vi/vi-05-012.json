@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-012",
+  "unit": "u5",
+  "group": "g3",
+  "order": 81,
+  "slug": "vi-05-012",
+  "title": "Ngày hoạt động bốn màn",
+  "summary": "Bài học đỉnh cao của C05 tái hiện trọn vẹn diễn biến một ngày, văn bản dài với nhiều đoạn văn kết nối ý sâu sắc.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Bài học đỉnh cao của C05 tái hiện trọn vẹn diễn biến một ngày, văn bản dài với nhiều đoạn văn kết nối ý sâu sắc.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Hoàn thành các công việc vệ sinh sạp hàng và kiểm toán tài chính trong ngày.",
+      "content": "Sàn gian hàng được rửa sạch bóng và lau khô ráo để bảo đảm vệ sinh môi trường chung của khu thương xá ven sông. Minh xếp lại bàn ghế, đưa các thùng hàng về kho rồi kiểm tra cửa trước khi ra về.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Khép lại ngày bán hàng thành công khi bóng chiều tà dần buông trên cảng.",
+      "content": "Phiên chợ cuối tuần khép lại khi ánh nắng chiều dần tắt trên các nóc nhà cổ kính ven cảng. Minh cẩn thận hạ bạt che và sắp xếp các dụng cụ vào đúng ngăn tủ bảo quản an toàn cho ngày làm việc mới.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn khép lại hành trình một ngày của Minh và Tuấn.",
+      "content": "Bước ra khỏi cánh cổng lớn của khu chợ cảng, Minh và Tuấn cùng thong thả đi dạo trên con đường quen thuộc dẫn về xóm nhỏ ven sông. Hai người ghé qua tiệm sách, chọn món quà nhỏ rồi tiếp tục men theo bờ nước.",
+      "inputMode": "telex"
+    }
+  ]
+}

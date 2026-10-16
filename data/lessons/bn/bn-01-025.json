@@ -1,0 +1,55 @@
+{
+  "id": "bn-01-025",
+  "unit": "u1",
+  "group": "g1",
+  "order": 18,
+  "slug": "bn-01-025",
+  "title": "কী অনুশীলন · ঢ",
+  "summary": "Introduce committed targets কো কৌ; review কে কৈ. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets কো কৌ; review কে কৈ. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-01-025",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "ঢ টাইপ করতে শিফট চেপে ধরে বাঁ হাতের মধ্যমা দিয়ে E কী চাপুন (ড-এর কী)।",
+      "content": "ঢব ঢব কঢব ঢব ঢব কঢব ঢব ঢব কঢব ঢব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ককঢক ঢঢকক ঢক কঢঢ ককক কঢ ঢঢকক ঢকক ঢঢক কক কক বকক"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ককঢ কককঢ কককঢ কক কককক ঢঢ ঢঢক কঢ ককক ককঢঢ কঢকক ঢঢঢক ঢঢঢ কককক"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঢঢকক ঢঢক ঢঢঢ ককক ঢঢকব কককঢ কককক কক ককঢঢ কককক ককঢক কক ঢঢ কককক কঢ"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "ঢাকনা ঢেকে ঢেউ ঢাকের ঢাকা ঢুকে ঢাকার ঢুকতে ঢাকনার ঢাক ঢের ঢোকার ঢোকে ঢংঢং"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "বিদ্যুৎ বন্ধুরা পাথর ধাপ রাখব থাকুন অন্ধকার খাতার ধরন রাখো দেখার স্থির মুখে ধাপে থাকার মাথা স্থানে ধরতে বন্ধুকে"
+    }
+  ]
+}

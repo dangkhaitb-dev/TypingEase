@@ -1,0 +1,105 @@
+{
+  "id": "de-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "de-01-009",
+  "title": "Tasten x, c, v",
+  "summary": "Lerne die neuen Tasten x, c, v und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "x",
+    "c",
+    "v"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten x, c, v und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-009",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Taste üben: x.",
+      "content": "xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Taste üben: c.",
+      "content": "cccc cccc cccc cccc cccc cccc cccc cccc cccc c",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Taste üben: v.",
+      "content": "vvvv vvvv vvvv vvvv vvvv vvvv vvvv vv",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "vvcc xxxv vvx ccvv xvcc vdcx ccv xxvv ccxv vv ccxc cxcc ccvc"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ffcz fvdz xcv zzx ff xf zfcd fvvz xfzz fx xff vdf"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "dfxx vd dvd zd fv cfvz dv ccc vcc fdx zv vvf cv vccd"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ccx cc cccf vvx ccvv ccxc xx vvxv vxcc cxc vv ccvx"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "ich sah es auch doch du hast es viel zu oft gesagt"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "auch du hast viel gesagt ich sah es dort"
+    }
+  ]
+}

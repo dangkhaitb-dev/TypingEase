@@ -1,0 +1,119 @@
+{
+  "id": "zh-06-jump",
+  "unit": "u6",
+  "group": "g2",
+  "order": 65,
+  "slug": "zh-06-jump",
+  "title": "跳过前面部分",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ime",
+  "intro": "用真实中文句子练习连贯、准确的输入。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-06-jump",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "下午四点下山，五点以前回到城里，一起去吃晚饭。如果那天下雨，我们就改到下个周末再去。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "最后放进烤箱烤四十分钟，拿出来放凉就可以吃了。如果想更好看，还可以在上面放几颗草莓。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "上车以后找到自己的座位，放好行李，就可以休息了。大约五个小时以后，火车就能到上海了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "办完卡以后设置好密码，再下载手机银行试一试。以后交电费和水费，就不用再跑去银行了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "晚上七点客人到齐以后，大家一起唱歌、切蛋糕。最后大家一起拍一张照片，留作纪念。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "一个月以后，我已经能在水里游二十五米了。下个月我还想学怎么在深水里游泳。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "参观结束以后，在门口的小店买了几张明信片留作纪念。回家以后，我把今天拍的照片整理了一下。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "出发那天早上六点起床，七点准时打车去机场。到了机场先去托运行李，然后再过安检。",
+      "inputMode": "ime"
+    }
+  ]
+}

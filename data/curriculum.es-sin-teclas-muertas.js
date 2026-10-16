@@ -160,3 +160,43 @@ window.TypingEaseCurriculum = {
     hint: "Apoya los índices en las dos teclas con relieve y escribe lo que veas, sin mirar el teclado."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/es-sin-teclas-muertas/u1-l01.json?v=8e93c61dfe752c8e",
+  "u1-l02": "/data/lessons/es-sin-teclas-muertas/u1-l02.json?v=a576d8c71d0f182f",
+  "u1-l03": "/data/lessons/es-sin-teclas-muertas/u1-l03.json?v=29844364fd8f619c",
+  "u1-l04": "/data/lessons/es-sin-teclas-muertas/u1-l04.json?v=178bb81ac00a5a82",
+  "u1-l05": "/data/lessons/es-sin-teclas-muertas/u1-l05.json?v=9d1065bc222493c4",
+  "u1-l06": "/data/lessons/es-sin-teclas-muertas/u1-l06.json?v=e816a15b701d41a3",
+  "u1-l07": "/data/lessons/es-sin-teclas-muertas/u1-l07.json?v=564f7692509b5a48",
+  "u1-l08": "/data/lessons/es-sin-teclas-muertas/u1-l08.json?v=cffdbce91e38a894",
+  "u1-l09": "/data/lessons/es-sin-teclas-muertas/u1-l09.json?v=7051a363ff88a85f",
+  "u1-l10": "/data/lessons/es-sin-teclas-muertas/u1-l10.json?v=fc65390d5ea7484e",
+  "u2-l01": "/data/lessons/es-sin-teclas-muertas/u2-l01.json?v=1c4360646a30c9a9",
+  "u2-l02": "/data/lessons/es-sin-teclas-muertas/u2-l02.json?v=c24746e7bb9d674d",
+  "u2-l03": "/data/lessons/es-sin-teclas-muertas/u2-l03.json?v=82f5e27d71d31914",
+  "u2-l04": "/data/lessons/es-sin-teclas-muertas/u2-l04.json?v=f0536e90656fa929",
+  "u2-l05": "/data/lessons/es-sin-teclas-muertas/u2-l05.json?v=879ebcf698d6cf6b",
+  "u2-l06": "/data/lessons/es-sin-teclas-muertas/u2-l06.json?v=ad57c3c640ca0970",
+  "u2-l07": "/data/lessons/es-sin-teclas-muertas/u2-l07.json?v=d3e957cf6225459a",
+  "u2-l08": "/data/lessons/es-sin-teclas-muertas/u2-l08.json?v=678fdcb47f6a3ef0",
+  "u2-l09": "/data/lessons/es-sin-teclas-muertas/u2-l09.json?v=e81bd112ed9b981d",
+  "u2-l10": "/data/lessons/es-sin-teclas-muertas/u2-l10.json?v=f5fa2becf180f487",
+  "u2-l11": "/data/lessons/es-sin-teclas-muertas/u2-l11.json?v=a54df4706dd527f4",
+  "u3-l01": "/data/lessons/es-sin-teclas-muertas/u3-l01.json?v=252315876e7effd3",
+  "u3-l02": "/data/lessons/es-sin-teclas-muertas/u3-l02.json?v=909b75f29c93a67a",
+  "u3-l03": "/data/lessons/es-sin-teclas-muertas/u3-l03.json?v=6ead1981e1b80f9b",
+  "u3-l04": "/data/lessons/es-sin-teclas-muertas/u3-l04.json?v=93356b29fff12caa",
+  "u3-l05": "/data/lessons/es-sin-teclas-muertas/u3-l05.json?v=5cf100bd7508aac4",
+  "u3-l06": "/data/lessons/es-sin-teclas-muertas/u3-l06.json?v=5e5b8a104fc1c530",
+  "u4-l01": "/data/lessons/es-sin-teclas-muertas/u4-l01.json?v=7b1d7e6fd6c8a23d",
+  "u4-l02": "/data/lessons/es-sin-teclas-muertas/u4-l02.json?v=4a1757929376b604",
+  "u4-l03": "/data/lessons/es-sin-teclas-muertas/u4-l03.json?v=4496bdfe5a26e345",
+  "u4-l04": "/data/lessons/es-sin-teclas-muertas/u4-l04.json?v=8b27e7a670cd978b",
+  "u4-l05": "/data/lessons/es-sin-teclas-muertas/u4-l05.json?v=3a40580ef3835dde",
+  "u4-l06": "/data/lessons/es-sin-teclas-muertas/u4-l06.json?v=759267496ec3bcd2",
+  "u4-l07": "/data/lessons/es-sin-teclas-muertas/u4-l07.json?v=9c5835e7dee430b6",
+  "u4-l08": "/data/lessons/es-sin-teclas-muertas/u4-l08.json?v=b056b2ded50bfbe3"
+};
+/* </auto:lesson-urls> */

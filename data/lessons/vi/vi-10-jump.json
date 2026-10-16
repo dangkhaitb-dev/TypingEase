@@ -1,0 +1,73 @@
+{
+  "id": "vi-10-jump",
+  "unit": "u10",
+  "group": "g4",
+  "order": 147,
+  "slug": "vi-10-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 46,
+  "inputMode": "telex",
+  "intro": "Gõ trọn đoạn văn về cách phân biệt các cặp từ có âm vị gần giống nhau.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về cách phân biệt các cặp từ có âm vị gần giống nhau.",
+      "content": "Việc phân biệt các cặp từ có âm vị gần tương đồng như s và x đòi hỏi sự tập trung cao độ và hiểu biết sâu sắc về ngữ nghĩa của từ vựng tiếng Việt. Khi gõ phím với độ chính xác cao, người viết không chỉ thể hiện sự tôn trọng đối với người đọc mà còn giữ gìn sự trong sáng của tiếng mẹ đẻ trong từng trang viết.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về nguy cơ gõ thiếu hoặc thừa ở các từ có âm tiết lặp.",
+      "content": "Các từ ngữ có cấu trúc âm tiết lặp lại thường dễ khiến người gõ bị phân tâm dẫn đến việc gõ thiếu hoặc thừa một ký tự thành phần. Để khắc phục triệt để lỗi này, người học cần duy trì nhịp thở đều đặn và rèn luyện thói quen kiểm tra trực quan ngay khi ký tự vừa xuất hiện trên màn hình soạn thảo văn bản.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về lỗi đảo ngược ký tự khi tăng tốc độ gõ.",
+      "content": "Lỗi gõ đảo ngược thứ tự các ký tự liền kề là một trong những lỗi phổ biến nhất khi người học tăng tốc độ gõ phím. Bằng việc luyện tập có chủ đích trên các cặp âm đảo ngược, các ngón tay sẽ hình thành phản xạ dứt khoát và kiểm soát hoàn hảo thứ tự nhả phím của từng ngón tay riêng biệt trên bàn phím máy tính.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn yêu cầu không chấp nhận bất kỳ lỗi sai nào.",
+      "content": "Bài tập câu chính xác tuyệt đối không chấp nhận bất kỳ một lỗi sai nào dù là nhỏ nhất. Người học cần giữ cho tâm trí hoàn toàn thanh thản, tập trung tối đa mọi giác quan vào văn bản gốc và gõ từng từ với nhịp độ chắc chắn. Đây là bài kiểm tra bản lĩnh và tính kỷ luật nghề nghiệp của một chuyên viên văn phòng xuất sắc.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về hệ thống toán tử toán học và logic thường dùng.",
+      "content": "Hệ thống các toán tử toán học và logic như cộng, trừ, nhân, chia, lớn hơn, nhỏ hơn hoặc bằng là các ký hiệu thường xuyên xuất hiện trong các tài liệu kỹ thuật, báo cáo phân tích tài chính và thuật toán máy tính. Việc gõ chính xác các ký hiệu này kết hợp với dấu ngoặc đơn đòi hỏi sự phối hợp khéo léo của ngón út hai bàn tay. Khi chép một biểu thức, hãy giữ nguyên thứ tự và dấu ngoặc, sau đó đối chiếu từng toán tử với ý nghĩa của nó trước khi tính. Khi ghi lời giải, hãy nêu dữ liệu đầu vào, thứ tự phép tính và điều kiện để người đọc kiểm tra từng bước. Cách làm ấy giúp phát hiện lỗi sớm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về mật độ dấu câu trong danh mục tài liệu tham khảo.",
+      "content": "Các đoạn văn bản trích dẫn danh mục và tài liệu tham khảo thường có mật độ dấu câu phức hợp rất cao: dấu ngoặc đơn, ngoặc kép, chấm phẩy, hai chấm và dấu gạch ngang. Việc kiểm soát hoàn hảo khoảng cách trước và sau mỗi dấu câu là tiêu chuẩn khắt khe để đánh giá một văn bản được trình bày đúng chuẩn mực học thuật quốc tế. Ví dụ: (1) Nguyễn, 2024; (2) \"Quy tắc dấu câu\" - xem mục 3.2; (3) Trần (2025c).",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về tầm quan trọng của việc nhập liệu chính xác hóa đơn.",
+      "content": "Nhập liệu chính xác các thông tin trên hóa đơn tài chính và biên lai thanh toán là kỹ năng sống còn trong công tác kế toán doanh nghiệp. Chỉ cần sai sót một chữ số trong mã số thuế hoặc số tiền thanh toán đều có thể gây ra những phiền hà pháp lý phức tạp và làm chậm trễ tiến độ quyết toán thuế của công ty. Học viên cần kiểm tra kỹ từng ký tự trước khi xác nhận hoàn thành.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn thông báo kết luận thanh tra về chấp hành quy định an toàn thông tin.",
+      "content": "Thông báo kết luận thanh tra chuyên đề về việc chấp hành quy định an toàn thông tin tại các chi nhánh trực thuộc: đoàn thanh tra ghi nhận 95% cơ sở đã ban hành đầy đủ quy trình bảo mật nội bộ và trang bị tường lửa thế hệ mới; tuy nhiên vẫn còn 5% đơn vị chưa thực hiện nghiêm túc việc đổi mật khẩu định kỳ 90 ngày một lần theo khuyến nghị của cơ quan chức năng. Ban lãnh đạo yêu cầu thủ trưởng các đơn vị có thiếu sót phải lập tức chấn chỉnh, hoàn thành báo cáo khắc phục gửi về thường trực ban chỉ đạo trước 17 giờ ngày 30 tháng 09 năm 2026.",
+      "inputMode": "telex"
+    }
+  ]
+}

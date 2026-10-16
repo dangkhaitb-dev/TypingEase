@@ -4,11 +4,13 @@
   "group": "symbols",
   "order": 32,
   "slug": "symbols-5",
-  "title": "Ź i _",
-  "summary": "W programie: Ź i _.",
+  "title": "<, >, Ń i Ć",
+  "summary": "W programie: <, >, Ń i Ć.",
   "newKeys": [
-    "ź",
-    "_"
+    "<",
+    ">",
+    "ń",
+    "ć"
   ],
   "keysSoFar": [
     " ",
@@ -63,10 +65,11 @@
     "ż",
     "ś",
     "ó",
+    "·",
     "!",
     "\"",
     "#",
-    "$",
+    "¤",
     "%",
     "&",
     "/",
@@ -78,69 +81,86 @@
     "<",
     ">",
     "ń",
-    "ć",
-    "ź",
-    "_"
+    "ć"
   ],
   "minAccuracy": 80,
   "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Klawisze, których kurs jeszcze nie używał: Ź i _. Każdy z nich to Shift i klawisz, który twoje palce już znają — Shift małym palcem drugiej ręki.",
-  "congrats": "Ź i _: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
+  "intro": "Klawisze, których kurs jeszcze nie używał: <, >, Ń i Ć. Niektóre wymagają Shiftu, małym palcem drugiej ręki; pozostałe mają własny klawisz, którego kurs jeszcze nie używał.",
+  "congrats": "<, >, Ń i Ć: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
   "screens": [
     {
       "type": "intro",
-      "key": "ź",
-      "finger": "RP",
-      "text": "Ten znak — Ź — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
-      "hint": "Naciśnij Ź, aby przejść dalej"
+      "key": "<",
+      "finger": "LP",
+      "text": "Ten znak — < — naciska lewy mały palec.",
+      "hint": "Naciśnij <, aby przejść dalej"
     },
     {
       "type": "block",
-      "newKey": "ź",
-      "text": "Najpierw sam Ź, potem tam, gdzie naprawdę się go używa.",
-      "content": "źź ź późno późno źle\nźź ź późno późno źle\nźź ź źle późno źle"
+      "newKey": "<",
+      "text": "Najpierw sam <, potem tam, gdzie naprawdę się go używa.",
+      "content": "<< < <lekki <winda <krzesło\n<< < <gotowy <los <robota\n<< < <nasz <pan <tempo"
+    },
+    {
+      "type": "block",
+      "newKey": ">",
+      "text": "Najpierw sam >, potem tam, gdzie naprawdę się go używa.",
+      "content": ">> > <gry> <kto> <błąd>\n>> > <obrazy> <kurs> <śnieg>\n>> > <byłam> <pole> <miara>"
     },
     {
       "type": "intro",
-      "key": "_",
+      "key": "ń",
       "finger": "RP",
-      "text": "Ten znak — _ — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
-      "hint": "Naciśnij _, aby przejść dalej"
+      "text": "Ten znak — Ń — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij Ń, aby przejść dalej"
     },
     {
       "type": "block",
-      "newKey": "_",
-      "text": "Najpierw sam _, potem tam, gdzie naprawdę się go używa.",
-      "content": "__ _ kule_szkolny dąb_biel raj_która\n__ _ szkoły_plany miejsca_miesiąc mocno_raz\n__ _ mleko_kable kurtka_szkoda jesień_zamknij"
+      "newKey": "ń",
+      "text": "Najpierw sam Ń, potem tam, gdzie naprawdę się go używa.",
+      "content": "ńń ń uczeń dłoń kończy\nńń ń jesień słońce dzień\nńń ń tańczy uczeń kończy"
+    },
+    {
+      "type": "intro",
+      "key": "ć",
+      "finger": "RP",
+      "text": "Ten znak — Ć — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij Ć, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "ć",
+      "text": "Najpierw sam Ć, potem tam, gdzie naprawdę się go używa.",
+      "content": "ćć ć być sześć sześć\nćć ć sześć być pięć\nćć ć sześć sześć pięć"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Seria krótkich kawałków z tymi znakami.",
       "tokens": [
-        "źle",
-        "zdania_kury",
-        "jezioro_morza",
-        "pianino_plecaki",
-        "złoty_krzesło",
-        "samo_kiedy",
-        "jeden_tory",
-        "zegary_kura",
-        "późno",
-        "jajko_klej"
+        "jesień",
+        "tańczy",
+        "miłość",
+        "<ekrany>",
+        "dłoń",
+        "<mogę>",
+        "być",
+        "<dym>",
+        "<suchy>",
+        "koń"
       ]
     },
     {
       "type": "block",
       "text": "Wszystko, co przyniosła ta lekcja, wymieszane.",
-      "content": "źle piszemy_gdy późno źle\npóźno prawo_kolegi późno źle\npóźno późno źle późno"
+      "content": "<listy> <morze> <wola> jesień\n<drugie> <okna> mieć <imiona>\n<pies> pięć <jutro> słońce"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Znowu słowa, ze znakami na swoich miejscach.",
-      "content": "obie_osoby park późno czysty nasza_światło\npatrzy_pusty błędów późno cichy sok_szkoły\nźle wcześnie lalka_farba ciasno mu_podróż"
+      "content": "<cukier> twoje tańczy szare sześć\nsłońce wszędzie <plecak> cichy mieć\nmieć był miłość lalka dłoń"
     }
   ]
 }

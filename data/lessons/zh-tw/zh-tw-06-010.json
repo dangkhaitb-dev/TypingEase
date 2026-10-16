@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-010",
+  "unit": "u6",
+  "group": "g1",
+  "order": 60,
+  "slug": "zh-tw-06-010",
+  "title": "寫一則完整留言",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-010",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "爸爸，我今天放學後要去同學家討論報告，大概晚上七點回家，晚餐不用等我。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我已經把早上的碗洗好，也把垃圾拿出去了。冰箱裡還有昨天剩下的湯，你回家後可以熱來吃，記得關好瓦斯。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "如果有事找我，可以打我的手機，或打給同學的媽媽，電話我寫在冰箱上的便條紙裡。我會在八點以前到家。謝謝爸爸！",
+      "inputMode": "ime"
+    }
+  ]
+}

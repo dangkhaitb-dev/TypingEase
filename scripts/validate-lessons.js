@@ -462,6 +462,57 @@ function checkLesson(id, entry, taught, place, telexTaught) {
 /* ---------- chạy ---------- */
 
 const curriculum = loadCurriculum();
+
+/* ---------- khoá nhập từ typekute: chỉ kiểm cấu trúc ----------
+   Các luật sư phạm ở trên (mỗi phím phải được một screen `block` giới thiệu trước khi dùng, telex
+   dạy theo thứ tự…) là hợp đồng của giáo trình VIẾT TAY. Giáo trình typekute có thứ tự và chuẩn
+   của riêng nó (docs/standards/curriculum-standards.md bên typekute), nên ở đây chỉ kiểm những gì
+   player cần để chạy: chỉ mục ↔ file khớp nhau, screen hợp lệ, URL đã băm và băm đúng. */
+if (curriculum?.source?.product === 'typekute') {
+  const crypto = require('crypto');
+  const MODES = ['ascii', 'telex', 'hangul', 'ime', 'position'];
+  const sequence = curriculum.sequence || [];
+  const flat = (curriculum.units || []).flatMap(unit => unit.groups.flatMap(group => group.lessons));
+  if (flat.join(',') !== sequence.join(',')) fail('sequence không khớp thứ tự units → groups → lessons');
+  if (!curriculum.lessonUrls) fail('thiếu lessonUrls — chạy: node scripts/stamp-data.mjs');
+  let screens = 0;
+  for (const id of sequence) {
+    where = `${id}: `;
+    const entry = curriculum.lessons?.[id];
+    if (!entry) { fail('không có trong lessons'); continue; }
+    const file = path.join(ROOT, 'data', 'lessons', lang, `${id}.json`);
+    if (!fs.existsSync(file)) { fail('thiếu file bài'); continue; }
+    const bytes = fs.readFileSync(file);
+    let lesson;
+    try { lesson = JSON.parse(bytes); } catch (error) { fail(`JSON hỏng: ${error.message}`); continue; }
+    REQUIRED_LESSON_FIELDS.filter(field => !(field in lesson)).forEach(field => fail(`thiếu trường ${field}`));
+    if (lesson.id !== id) fail(`id = ${show(lesson.id)}`);
+    if (!MODES.includes(lesson.inputMode)) fail(`inputMode = ${show(lesson.inputMode)}`);
+    if (lesson.screens.length !== entry.screens) fail(`chỉ mục ghi ${entry.screens} screen, file có ${lesson.screens.length}`);
+    lesson.screens.forEach((screen, at) => {
+      if (!['block', 'standard'].includes(screen.type)) fail(`screen ${at + 1}: type ${show(screen.type)}`);
+      if (typeof screen.content !== 'string' || !screen.content.trim()) fail(`screen ${at + 1}: content rỗng`);
+      if (screen.inputMode !== undefined && !MODES.includes(screen.inputMode)) fail(`screen ${at + 1}: inputMode ${show(screen.inputMode)}`);
+    });
+    const url = curriculum.lessonUrls?.[id] || '';
+    const hash = crypto.createHash('sha256').update(bytes).digest('hex').slice(0, 16);
+    if (url && url !== `/data/lessons/${lang}/${id}.json?v=${hash}`) fail(`lessonUrls lệch băm — chạy: node scripts/stamp-data.mjs`);
+    screens += lesson.screens.length;
+  }
+  where = '';
+  const files = fs.existsSync(path.join(ROOT, 'data', 'lessons', lang)) ? fs.readdirSync(path.join(ROOT, 'data', 'lessons', lang)) : [];
+  files.filter(name => name.endsWith('.json') && !curriculum.lessons[name.slice(0, -5)])
+    .forEach(name => fail(`file lạc data/lessons/${lang}/${name}`));
+  if (errors.length) {
+    console.log(`\nLỖI (${errors.length}):`);
+    errors.slice(0, 50).forEach(message => console.log(`  x ${message}`));
+    console.log('\nKẾT QUẢ: FAIL\n');
+    process.exit(1);
+  }
+  console.log(`\nGiáo trình ${lang} (typekute ${curriculum.source.pack}) — ${sequence.length} bài, ${screens} screen.`);
+  console.log('\nKẾT QUẢ: PASS — không có lỗi.\n');
+  process.exit(0);
+}
 let plan = null;
 if (curriculum) plan = checkCurriculumShape(curriculum);
 

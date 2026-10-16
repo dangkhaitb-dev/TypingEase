@@ -1,0 +1,109 @@
+{
+  "id": "ja-01-108",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "ja-01-108",
+  "title": "O・P・Z",
+  "summary": "O、P、Z を既習キーと交互に打つ。",
+  "newKeys": [
+    "o",
+    "p",
+    "z"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "ime",
+  "intro": "O、P、Z を既習キーと交互に打つ。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-108",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "oo oooo ooo oo oo oooo ooo oo oo oooo ooo oo oo",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "op ppp opo pp popo ooop op ppp opo pp popo ooop op",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "pp pzzz zzoz oo pp pzzz zzoz oo pp pzzz zzoz oo pp",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "op oo pp oooz ooeo zzpo op oo pp oooz ooeo zzpo op oo pp oooz ooeo zzpo op"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "zo ooz zzz ooo zqop zzhp zz ppo pp oo zo ooz zzz ooo zqop zzhp zz ppo pp oo"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "pppz ooo zzp pzp ppho oogo zz pppz ooo zzp pzp ppho oogo zz pppz ooo zzp"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "ozgo zozp pz pozz zopz pp zzo oozo oz ozgo zozp pz pozz zopz pp zzo oozo oz"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "oop op ooz zyoz pk zp oz oop op ooz zyoz pk zp oz oop op ooz zyoz pk zp oz"
+    },
+    {
+      "type": "standard",
+      "text": "既習のキーだけで、かなの文を入力します。",
+      "content": "あおいそらがきれいですおとうとはうさぎがすきですぞうはおおきいです",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "小さい「っ」は次の子音を二度打ちます。かなの文を入力します。",
+      "content": "かっぱはきゅうりがすきですぱぱはうたがすきですよるはほしがきれい",
+      "inputMode": "ime"
+    }
+  ]
+}

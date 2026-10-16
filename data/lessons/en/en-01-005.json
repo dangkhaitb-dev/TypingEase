@@ -1,0 +1,70 @@
+{
+  "id": "en-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "en-01-005",
+  "title": "L",
+  "summary": "Locate T, L and S; use changing transitions and controlled English, then record a fresh per-key check.",
+  "newKeys": [
+    "l"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Locate T, L and S; use changing transitions and controlled English, then record a fresh per-key check.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-005",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Find l and return to the home position. Type each target carefully.",
+      "content": "llll llff lll fff ll ffl llfl lllf lf fll ffll lfl",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "klkk lkkl llll llkl lkl lll lk ldl lllk klk llk ll kl dlll"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "llll lll ll gl lg lgll llg gll glll lgl llgl"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "llll lkl kkl llk kllk lk lkk ll kk lll kl kkll"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "glad lad all fall hall glass flask salad dad shall add"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "all lads fall dad has a flask a glad lass has a salad"
+    }
+  ]
+}

@@ -1,0 +1,107 @@
+{
+  "id": "tr-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 22,
+  "slug": "tr-03-002",
+  "title": "Büyük harfler A B C",
+  "summary": "A, B, C tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "A",
+    "B",
+    "C"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "A, B, C tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-03-002",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "A",
+      "text": "Shift tuşunu basılı tut ve a tuşuna bas: A.",
+      "content": "AAAA AAA AA AA AA AA AA AA",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "B",
+      "text": "Shift tuşunu basılı tut ve b tuşuna bas: B.",
+      "content": "BB BBBB BBB BB BB BB BB BB",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "C",
+      "text": "Shift tuşunu basılı tut ve c tuşuna bas: C.",
+      "content": "CCC CCCC CC CC CC CC CC CC",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "CCAA AA ACB CCsC CCA ABA BBCA ACCC AAAC CCBB CCCB AACA"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "BBBC Bx AABB ABAB CCAx AACA CCAB CA CBBC CB ABA BAB AABA AA"
+    }
+  ]
+}

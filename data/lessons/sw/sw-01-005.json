@@ -1,0 +1,77 @@
+{
+  "id": "sw-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "sw-01-005",
+  "title": "Herufi: a, ;",
+  "summary": "Kuandika o u na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Kuandika o u na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-005",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "affaa fa aff aaa aaaa aaf aaaf afaa faa aa af",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": ";f; f;;; ;;;; f;; ;;f ;; ;;; f; ;;;f fff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "fja aaf f; a;fj fj;a jaj; ;aa ff a;;a a;;j jfa ffff a;aj j; jf afja fj fa"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "ja ;f ff jff a;; f;;a ;j;j aa;; jfjf jaa jf"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "fa;a afsj aj ja;f faa af ;fj ;;a fjj aa ;a jja; ;j;j afa"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "faaf ff ;aa ;f; f; k;k af fa jak jj ;; ;jf ;;;a aja; ;kaa faf a; ;aa;"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "dada kaka sasa saa daladala kaa ada ala jalada la"
+    }
+  ]
+}

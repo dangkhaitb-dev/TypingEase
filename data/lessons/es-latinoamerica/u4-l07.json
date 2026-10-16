@@ -57,7 +57,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}",
     "|",
@@ -100,7 +99,7 @@
       "type": "block",
       "newKey": ":",
       "text": "Primero los dos puntos, sin nada alrededor, y después donde de verdad se usa.",
-      "content": ":: : muy: rápido: como:\n:: : estar: viento: cielos:\n:: : queda: momentos: tiempo:"
+      "content": ":: : cantar: escribe: canta:\n:: : salidas: menos: rojas:\n:: : come: once: pocas:"
     },
     {
       "type": "intro",
@@ -113,35 +112,35 @@
       "type": "block",
       "newKey": "_",
       "text": "Primero _, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "__ _ pregunta_están canta_verdes otros_sigla\n__ _ azules_ella saladas_parte ideal_estudia\n__ _ sede_bajas daño_sabes mismas_mares"
+      "content": "__ _ ventanas_libres cuanto_menos alturas_dije\n__ _ libro_hada asadas_viene seda_tarde\n__ _ hielos_palabra nuevo_precios corta_sueños"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Una ráfaga de trozos cortos con estos caracteres.",
       "tokens": [
-        "vida:",
-        "según:",
-        "punto_dueño",
-        "vecino_oreja",
-        "siete:",
-        "sabes:",
-        "iguales_este",
-        "hadas:",
-        "dada_alas",
-        "idea_guardar"
+        "me:",
+        "cambiar:",
+        "vamos_nuestra",
+        "mundos_solas",
+        "usadas:",
+        "proyecto:",
+        "lugar_salir",
+        "gafas:",
+        "asadas_ala",
+        "esa_ruedas"
       ]
     },
     {
       "type": "block",
       "text": "Todo lo de esta lección, mezclado.",
-      "content": "trabajo_día menos_ángulo hadas: vientos:\npuertas: solas_otro ayudas_no voz:\ntrabajo_unos libros: último_fuego mismas:"
+      "content": "todas_cambios años_fuerza gafas: mejor:\nvientos: llevas_altura gente_largas blancas:\ntodas_oreja persona: debes_lo corto:"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Otra vez palabras, con los signos en su sitio.",
-      "content": "líneas: paz cortas_adiós casa ciencias_razón\nsiempre_mundos valor salsa: llegada quiere:\nllega_cuenta ala qué_árbol oreja alga:"
+      "content": "luces: bajas cosas_sabes rojo antes_baja\nmano_mañana mucho faldas: aires comidas:\nsur_toro salas mes_examen sola haga:"
     }
   ]
 }

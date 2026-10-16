@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-004",
+  "unit": "u5",
+  "group": "g1",
+  "order": 43,
+  "slug": "zh-tw-05-004",
+  "title": "公車晚到的集合安排",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-004",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "公車比平常晚了十分鐘，我很擔心趕不上集合時間。我在車上一直看著手錶。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我傳訊息給班長，說明公車誤點，請大家不用在車站等我。班長很快就回覆說知道了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "到了車站，同學們還在等我。班長笑著說：「沒關係，我們一起出發吧。」",
+      "inputMode": "ime"
+    }
+  ]
+}

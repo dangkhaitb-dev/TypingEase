@@ -57,7 +57,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}",
     "|",
@@ -94,41 +93,41 @@
       "type": "block",
       "newKey": "<",
       "text": "Primero <, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "<< < <escribir <luces <les\n<< < <texto <partes <última\n<< < <trece <hallé <gota"
+      "content": "<< < <aquel <blanca <hadas\n<< < <campos <venir <recibir\n<< < <centros <sede <fuegos"
     },
     {
       "type": "block",
       "newKey": ">",
       "text": "Primero >, sin nada alrededor, y después donde de verdad se usa.",
-      "content": ">> > <cuando> <sueldos> <ángulos>\n>> > <cámaras> <edad> <hombro>\n>> > <bueno> <viento> <fuerza>"
+      "content": ">> > <oro> <trabajos> <fuerzas>\n>> > <zona> <ella> <pequeña>\n>> > <parte> <menos> <brazos>"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Una ráfaga de trozos cortos con estos caracteres.",
       "tokens": [
-        "<ayuda>",
-        "<campos>",
-        "<edades>",
-        "<faldas>",
-        "<zona>",
-        "<toda>",
-        "<niños>",
-        "<ciencias>",
-        "<su>",
-        "<por>"
+        "<estar>",
+        "<poca>",
+        "<ellas>",
+        "<falda>",
+        "<buenos>",
+        "<ayudas>",
+        "<cielos>",
+        "<nadie>",
+        "<fallas>",
+        "<vida>"
       ]
     },
     {
       "type": "block",
       "text": "Todo lo de esta lección, mezclado.",
-      "content": "<aires> <ideales> <trabajos> <recibe>\n<halla> <usada> <falla> <quieres>\n<juguetes> <halla> <estas> <planta>"
+      "content": "<su> <sede> <otro> <queda>\n<alga> <llegar> <hilo> <comer>\n<esta> <alga> <salida> <siempre>"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Otra vez palabras, con los signos en su sitio.",
-      "content": "<verdes> esperar <ciudad> mundos <páginas>\n<cortas> poco <seguro> cabeza <estación>\n<el> bajas <guardia> voz <poco>"
+      "content": "<muchas> por <ojo> mañana <paz>\n<casa> ver <solo> boca <comunes>\n<hallas> palabra <reglas> blancas <ver>"
     }
   ]
 }

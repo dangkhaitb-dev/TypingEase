@@ -1,0 +1,112 @@
+{
+  "id": "en-01-013",
+  "unit": "u1",
+  "group": "g3",
+  "order": 12,
+  "slug": "en-01-013",
+  "title": "V, B, N",
+  "summary": "Learn v, b, n, then practise with the keys you already know.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "ascii",
+  "intro": "Learn v, b, n, then practise with the keys you already know.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-013",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Find v and return to the home position. Type each target carefully.",
+      "content": "vvf vv ff fvv vfvv vvvv fff fvff vvfv fvfv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Find b and return to the home position. Type each target carefully.",
+      "content": "bjb bbb bb bj bjb bjbb bbj jjbb bbbj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Find n and return to the home position. Type each target carefully.",
+      "content": "nnnn nnf nn nf nnn fnn fn nnnf fnnn nfn nnfn nfnn",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "nb vvnn bnn bvb vn vv by nvbv vvn yn nvb bvnv vvn vnv vvn vnb"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "bn nn bnb nub vvvb bukn nv nvb vnnv vb bb bvvk bvbn vnn bvvn uv vbbb"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "bv bt vnt nnb vb nnv nb bbbn vvnn bvbb bbn bb nn tv nvvb bn vbvb nbv nnn"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "nq bnvb bv bbv vq nv bn bq bnn bbn vbb vbvb vb nbv nb nbn bv"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "vn nbb xnbn bbv vbn nvbv nvbn bn bvn nb vvv bv bbnv vbnb nvnn vvbb nbn"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "we can bring a new book to the bus and then buy a cake"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "seven boys have blue bikes by the river and the bus"
+    }
+  ]
+}

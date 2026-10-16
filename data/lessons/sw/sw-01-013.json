@@ -1,0 +1,88 @@
+{
+  "id": "sw-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "sw-01-013",
+  "title": "Herufi: m",
+  "summary": "Kutofautisha ch na sh kama mifuatano ya herufi mbili.",
+  "newKeys": [
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Kutofautisha ch na sh kama mifuatano ya herufi mbili.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-013",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "mm mmf mfmf mmff mfm mmm mmmm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jfjf jf ffm fm jf fmjj jf fmf mf mjj mjj mjfm mmj jmf ff"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "mjfj jmf mmfj mjf mj jjfm jm fjfj mjfm jm ffj fjj ff mj"
+    },
+    {
+      "type": "standard",
+      "text": "Andika maandishi haya ya Kiswahili kwa vibonye ulivyojifunza.",
+      "content": "watoto wanasoma vitabu nyumbani kabla ya kwenda shuleni"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jmf jj jjfj jfj jmf jmjj jffm jfj jjmm ffj jj jjf fm fm"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "mimi na mama tunakula mchele na maharage nyumbani"
+    }
+  ]
+}

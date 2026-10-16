@@ -1,0 +1,112 @@
+{
+  "id": "br-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "br-01-013",
+  "title": "V, B, N",
+  "summary": "Aprenda as teclas v, b, n e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas v, b, n e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-013",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Localize v e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "vvvf vfvv vvvv vv vvfv ffvv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Localize b e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "jbb bbjb bbb jbbb bb bjb bbbb bj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Localize n e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "nn nfnf nffn nnn fnn nnnf nfnn ffnn fn fnnn nf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "bnnb bb nv nnb nvvv nn nnv nnnn nvbn bf nb vv vn bvnn nvv nbn fvn"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "bvvv pxnb inin xib inin biv vbnx nxnn bxvv bbp vbnb inv"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "nnx nbn ib ix nv bvn nnvb vbii bvb nn xib vbbv ibnv vi"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "bbb bnn bbnn bbvb bb bnvb nnnb vn vbv blvb nvv vbnn bbn vnb bvb bn bnb vb"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "nn bvv bn nnnn vb wbn nbnv vv bnnn nvn bbnv vn nnv"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a vida na vila foi boa e ela viu o livro novo"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "o rapaz viu a bola na rua e brinca na vila"
+    }
+  ]
+}

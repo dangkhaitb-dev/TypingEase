@@ -1,0 +1,103 @@
+{
+  "id": "fil-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 22,
+  "slug": "fil-03-002",
+  "title": "Malalaking titik: A, B, C",
+  "summary": "Malalaking titik: A, B, C. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "A",
+    "B",
+    "C"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Malalaking titik: A, B, C. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-03-002",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "A",
+      "text": "Pindutin nang matagal ang Shift gamit ang hinliliit ng kabilang kamay, saka pindutin ang a para i-type ang A. Ibalik ang mga daliri sa panimulang posisyon.",
+      "content": "ff AAAA ffA fAfA AAfA fA AAf ffAA AAAf AAA AA",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "B",
+      "text": "Pindutin nang matagal ang Shift gamit ang hinliliit ng kabilang kamay, saka pindutin ang b para i-type ang B. Ibalik ang mga daliri sa panimulang posisyon.",
+      "content": "BBf fBBB BBB BB BBBB BBfB BBBf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "C",
+      "text": "Pindutin nang matagal ang Shift gamit ang hinliliit ng kabilang kamay, saka pindutin ang c para i-type ang C. Ibalik ang mga daliri sa panimulang posisyon.",
+      "content": "CCC fffC fC CCfC CCff Cf CCCf fCC CCCC CC CCf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "ff jj jAf AB CC CCCf jjfC jjf Bj fjjB jjj BA BCCA fCC jC"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "BBf jjC ffj ffC BBff BBA fAjB jC jjAB jj jjf Af ffCf jfjC ff BBj jj4"
+    }
+  ]
+}

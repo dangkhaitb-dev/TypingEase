@@ -1,0 +1,91 @@
+{
+  "id": "zh-03-006",
+  "unit": "u3",
+  "group": "g1",
+  "order": 30,
+  "slug": "zh-03-006",
+  "title": "符号键 ` 和 =",
+  "summary": "学习 ` 和 = 键，并与已学键位混合练习。",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "学习 ` 和 = 键，并与已学键位混合练习。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-03-006",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，找到 ` 键，反复输入。",
+      "content": "```` ```` ```` ```` ```` ```` ````"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，找到 = 键，反复输入。",
+      "content": "==== ==== ==== ==== ==== ==== ===="
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再按显示顺序输入 ` 和 = 符号。",
+      "content": "``f j== `d` === f`f ``f f`f === `d` j== `d` j== ``f f`f"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再按显示顺序输入 ` 和 = 符号。",
+      "content": "`=` =`= ``== f`=j ==`` j=`f `f= =j` ``f= ==j` `=`= f==`"
+    }
+  ]
+}

@@ -1,0 +1,100 @@
+{
+  "id": "fr-01-011",
+  "unit": "u1",
+  "group": "g2",
+  "order": 10,
+  "slug": "fr-01-011",
+  "title": "w, x, c",
+  "summary": "Apprenez w, x, c et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "w",
+    "x",
+    "c"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Apprenez w, x, c et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-011",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "Repérez w sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "wwww fwww ffww www wwwf ffwf ff ww",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Repérez x sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "ffxf xx xfx fx fff xxxx xxx ffx ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Repérez c sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "ccf fcc cfcf cccc cfc cc ccfc ccc fccc fc",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "cwxf xw fxfw cxx xf fc cf wcwx fcx fww wcf wxwx xx cf wf"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "xwj ccww cwx wxj xx jw jcww cx jj wxwc jw jxw wccx wc wx"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le taxi roule sur la rue et croise la classe sur le quai"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le kiwi le litchi le cacao le cake le taxi le chat"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "xc fccc wf xf xx fc xwcx xxcw wfx fcxx fc ccwx ww wxf fw"
+    }
+  ]
+}

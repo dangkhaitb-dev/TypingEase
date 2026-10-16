@@ -1,0 +1,106 @@
+{
+  "id": "fil-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "fil-01-009",
+  "title": "Mga titik: u, i, o",
+  "summary": "Mga titik: u, i, o. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "u",
+    "i",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Mga titik: u, i, o. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-009",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "uffu uuf uf uu ufu uufu uuu ffu uuuu",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "if ff fffi iiif iii iiii ii iif fff iiff ifi fiif",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "oofo ffo ooo ffoo oooo oo fffo fo ooof fff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "ofj juu iu ff jiij uujj ii jf iio of fjff iuu uf iuu fui"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "uf of jfi oou uuji iooo ji fjif fiji juo ffuu ofof jif"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jjfj juof ff uu iiui joiu ufj fijj uufo fi jjou jiu jo"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fujj iuuj jij iio uiui ufuj ff ioj ui ou ffii uu ifj oj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fif fuo jj uf ff ujo fijf iuuo uiji ojj ifi ujju joo ii"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "ako ay sa klase ikaw ay sa sala at siya ay sa kalsada"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "ito ay aso ko dito sa kalsada ilaw sulat salita oras"
+    }
+  ]
+}

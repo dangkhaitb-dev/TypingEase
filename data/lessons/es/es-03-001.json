@@ -1,0 +1,88 @@
+{
+  "id": "es-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 21,
+  "slug": "es-03-001",
+  "title": "Primera práctica con Mayús",
+  "summary": "Aprende a usar la tecla Mayús para escribir mayúsculas.",
+  "newKeys": [
+    "shift"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Aprende a usar la tecla Mayús para escribir mayúsculas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-001",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "shift",
+      "text": "Mantén pulsada Mayús con el meñique de la mano contraria, escribe la mayúscula y suelta Mayús.",
+      "content": "FJAS DGFF AJGD SFJA GDFA FJAS",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Pulsa Mayús para cada letra y suéltala antes de la siguiente.",
+      "content": "FDSJ AGFF JGDA SAFD FJGS DJAF GDSF FJAS DGFF"
+    },
+    {
+      "type": "standard",
+      "text": "Cambia de letra con calma: Mayús, letra, soltar Mayús.",
+      "content": "ASJF DGFA FJSD GAFJ DSFG AJFD GJSA FJAS DGFF"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe las mayúsculas con un ritmo regular y sin mirar el teclado.",
+      "content": "FJDA SGAF DJGF ASFD GJFS DAFJ SGJD FJAS DGFF"
+    }
+  ]
+}

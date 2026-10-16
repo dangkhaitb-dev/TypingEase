@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-006",
+  "unit": "u8",
+  "group": "g1",
+  "order": 78,
+  "slug": "zh-tw-08-006",
+  "title": "週末分段整理",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-006",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "這個週末，我決定把房間好好整理一次。為了不讓自己太累，我把工作分成三段：星期六上午整理衣櫃，下午整理書桌，星期天再清理床底下和地板。這樣每段都不會太久。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "整理衣櫃時，我把衣服分成三堆：常穿的、很少穿的和已經穿不下的。穿不下的衣服洗乾淨後裝進袋子，準備捐給社區的二手衣回收箱。衣櫃空出不少位置，換季的衣服終於放得下了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "星期天下午，最後一段工作也完成了。我從床底下找到兩本以為弄丟的書，還有一本舊相簿。看著乾淨整齊的房間，我覺得很有成就感，也發現把大工作拆成小段落，做起來就不會那麼辛苦。",
+      "inputMode": "ime"
+    }
+  ]
+}

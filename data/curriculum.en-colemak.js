@@ -160,3 +160,43 @@ window.TypingEaseCurriculum = {
     hint: "Rest your index fingers on the two keys with bumps and type what you see, without looking at the keyboard."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/en-colemak/u1-l01.json?v=efd6503c29e7f2a4",
+  "u1-l02": "/data/lessons/en-colemak/u1-l02.json?v=43be8c849e9a7ce3",
+  "u1-l03": "/data/lessons/en-colemak/u1-l03.json?v=43b81214b86d962f",
+  "u1-l04": "/data/lessons/en-colemak/u1-l04.json?v=5ba79711b261fcb0",
+  "u1-l05": "/data/lessons/en-colemak/u1-l05.json?v=f2f67217eba4156e",
+  "u1-l06": "/data/lessons/en-colemak/u1-l06.json?v=6ff332a4da99fb55",
+  "u1-l07": "/data/lessons/en-colemak/u1-l07.json?v=f700f7e0fa4cd24e",
+  "u1-l08": "/data/lessons/en-colemak/u1-l08.json?v=8fc376e79595b5f2",
+  "u1-l09": "/data/lessons/en-colemak/u1-l09.json?v=4608970ebdba5a78",
+  "u1-l10": "/data/lessons/en-colemak/u1-l10.json?v=cd2972ab9eae8e91",
+  "u2-l01": "/data/lessons/en-colemak/u2-l01.json?v=f7fe294d084a3b5c",
+  "u2-l02": "/data/lessons/en-colemak/u2-l02.json?v=562a6dc8306e25bf",
+  "u2-l03": "/data/lessons/en-colemak/u2-l03.json?v=f0693f2973ef00de",
+  "u2-l04": "/data/lessons/en-colemak/u2-l04.json?v=7845cf93dbaadc5c",
+  "u2-l05": "/data/lessons/en-colemak/u2-l05.json?v=65c9d578a963f9e6",
+  "u2-l06": "/data/lessons/en-colemak/u2-l06.json?v=c16c4118ebf23ac6",
+  "u2-l07": "/data/lessons/en-colemak/u2-l07.json?v=99226673a4d665e7",
+  "u2-l08": "/data/lessons/en-colemak/u2-l08.json?v=d04981023e44aad2",
+  "u2-l09": "/data/lessons/en-colemak/u2-l09.json?v=a32b465c7e9c7c5c",
+  "u2-l10": "/data/lessons/en-colemak/u2-l10.json?v=3e59960ebe2bafe1",
+  "u2-l11": "/data/lessons/en-colemak/u2-l11.json?v=e17bc5ce5e4fe938",
+  "u3-l01": "/data/lessons/en-colemak/u3-l01.json?v=72da5657c82a60a6",
+  "u3-l02": "/data/lessons/en-colemak/u3-l02.json?v=138e6c82eb1115a1",
+  "u3-l03": "/data/lessons/en-colemak/u3-l03.json?v=c55a162e88771e63",
+  "u3-l04": "/data/lessons/en-colemak/u3-l04.json?v=988722b14029d6ba",
+  "u3-l05": "/data/lessons/en-colemak/u3-l05.json?v=2baa706c3999b7c5",
+  "u3-l06": "/data/lessons/en-colemak/u3-l06.json?v=401276231279ec1b",
+  "u4-l01": "/data/lessons/en-colemak/u4-l01.json?v=315fa0614a32f473",
+  "u4-l02": "/data/lessons/en-colemak/u4-l02.json?v=8ccc4b648b53691c",
+  "u4-l03": "/data/lessons/en-colemak/u4-l03.json?v=3bb866164d7ad9c9",
+  "u4-l04": "/data/lessons/en-colemak/u4-l04.json?v=ef988996d9a76bdb",
+  "u4-l05": "/data/lessons/en-colemak/u4-l05.json?v=990cb7a737a2cc0c",
+  "u4-l06": "/data/lessons/en-colemak/u4-l06.json?v=307df0dba34b6da6",
+  "u4-l07": "/data/lessons/en-colemak/u4-l07.json?v=ca1721ccfb3f3acd",
+  "u4-l08": "/data/lessons/en-colemak/u4-l08.json?v=17f58b13ffdadf03"
+};
+/* </auto:lesson-urls> */

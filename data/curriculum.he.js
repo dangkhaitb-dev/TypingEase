@@ -162,3 +162,43 @@ window.TypingEaseCurriculum = {
     hint: "הניחו את האצבעות המורות על שני המקשים המסומנים והקלידו את מה שאתם רואים, בלי להסתכל על המקלדת."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/he/u1-l01.json?v=74ed13d43e34f9b0",
+  "u1-l02": "/data/lessons/he/u1-l02.json?v=d5f0781e35194cd6",
+  "u1-l03": "/data/lessons/he/u1-l03.json?v=f8719da62ac16d3f",
+  "u1-l04": "/data/lessons/he/u1-l04.json?v=7554d8c100a32562",
+  "u1-l05": "/data/lessons/he/u1-l05.json?v=79cffacfcd468edd",
+  "u1-l06": "/data/lessons/he/u1-l06.json?v=facc826c68216c5b",
+  "u1-l07": "/data/lessons/he/u1-l07.json?v=5b5394a1f1525519",
+  "u1-l08": "/data/lessons/he/u1-l08.json?v=46afe7d348de8979",
+  "u1-l09": "/data/lessons/he/u1-l09.json?v=650d287b03a152b8",
+  "u1-l10": "/data/lessons/he/u1-l10.json?v=884f30e40a8a148b",
+  "u2-l01": "/data/lessons/he/u2-l01.json?v=45bfb7c44d6c9d1f",
+  "u2-l02": "/data/lessons/he/u2-l02.json?v=00fd0dec7f32af11",
+  "u2-l03": "/data/lessons/he/u2-l03.json?v=65ac5c554e55046f",
+  "u2-l04": "/data/lessons/he/u2-l04.json?v=4ece22dbafe7ec2c",
+  "u2-l05": "/data/lessons/he/u2-l05.json?v=1966a68369945d64",
+  "u2-l06": "/data/lessons/he/u2-l06.json?v=49120b4f82b3733c",
+  "u2-l07": "/data/lessons/he/u2-l07.json?v=6b1ed06ce488b859",
+  "u2-l08": "/data/lessons/he/u2-l08.json?v=ab0d20ebda028ba1",
+  "u2-l09": "/data/lessons/he/u2-l09.json?v=ef2a57ce00cf143c",
+  "u2-l10": "/data/lessons/he/u2-l10.json?v=13e52a46f9b6e8a0",
+  "u2-l11": "/data/lessons/he/u2-l11.json?v=da07645fb79d1297",
+  "u3-l01": "/data/lessons/he/u3-l01.json?v=5a5647f178ca4a63",
+  "u3-l02": "/data/lessons/he/u3-l02.json?v=e2ceb781311e9942",
+  "u3-l03": "/data/lessons/he/u3-l03.json?v=c801e5d0acb13773",
+  "u3-l04": "/data/lessons/he/u3-l04.json?v=fb8d6c2d4e5a87fa",
+  "u3-l05": "/data/lessons/he/u3-l05.json?v=f6d3b8701b891874",
+  "u3-l06": "/data/lessons/he/u3-l06.json?v=e98b463a90f36c05",
+  "u4-l01": "/data/lessons/he/u4-l01.json?v=fee39e098129b1f8",
+  "u4-l02": "/data/lessons/he/u4-l02.json?v=e9be7226425b671d",
+  "u4-l03": "/data/lessons/he/u4-l03.json?v=d541a7d7060d6e6c",
+  "u4-l04": "/data/lessons/he/u4-l04.json?v=0617a510482b7953",
+  "u4-l05": "/data/lessons/he/u4-l05.json?v=853f36bea2944cb1",
+  "u4-l06": "/data/lessons/he/u4-l06.json?v=c18d7bdd70185db5",
+  "u4-l07": "/data/lessons/he/u4-l07.json?v=1963c7582e56b873",
+  "u4-l08": "/data/lessons/he/u4-l08.json?v=c53119cdd0ca86a1"
+};
+/* </auto:lesson-urls> */

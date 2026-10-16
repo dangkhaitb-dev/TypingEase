@@ -1,0 +1,105 @@
+{
+  "id": "de-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 26,
+  "slug": "de-03-003",
+  "title": "Großbuchstaben D E F",
+  "summary": "Lerne die neuen Tasten D, E, F und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten D, E, F und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-03-003",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Halte Shift mit dem kleinen Finger der rechten Hand gedrückt und tippe d: So entsteht D. Lasse danach Shift los.",
+      "content": "DDD DDDD DD DD DD DD DD DD",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Halte Shift mit dem kleinen Finger der rechten Hand gedrückt und tippe e: So entsteht E. Lasse danach Shift los.",
+      "content": "EEEE EEE EE EE EE EE EE EE",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Halte Shift mit dem kleinen Finger der rechten Hand gedrückt und tippe f: So entsteht F. Lasse danach Shift los.",
+      "content": "FF FFF FFFF FF FF FF FF FF",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "EEFF FF FFEF DDD FFFF FDD DED DEFF EEF uDE DEEF DDF EE DEF DD DFE EEEF FFE"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "DDF EE EEEE DDDF EFEF kEDE DkD EED FF DD kkD FFFF EEDF"
+    }
+  ]
+}

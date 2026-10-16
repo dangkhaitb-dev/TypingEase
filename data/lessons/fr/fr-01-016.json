@@ -1,0 +1,84 @@
+{
+  "id": "fr-01-016",
+  "unit": "u1",
+  "group": "g3",
+  "order": 15,
+  "slug": "fr-01-016",
+  "title": "â : la touche morte circonflexe",
+  "summary": "Appuyez sur la touche morte ^, relâchez-la, puis tapez a pour obtenir â.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Appuyez sur la touche morte ^, relâchez-la, puis tapez a pour obtenir â.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-016",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Appuyez sur la touche morte ^, relâchez-la, puis tapez a pour obtenir â.",
+      "content": "ââaââ ââââ ââââ âââf ââââ âââââ"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez â et les touches déjà apprises, puis revenez aux repères.",
+      "content": "ffâd jeâââ sâf âs âjââ âââs sâ ââeâ eââej âââd fââââ ââe âââe"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "Le gâteau de la boulangère est un régal du dimanche"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez â et les touches déjà apprises, puis revenez aux repères.",
+      "content": "ddââ âââ âe ad ea âââd ââââââ jââââ jâ âââââ âj âââa"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "Mon frère passe à la gare pour acheter un gâteau"
+    }
+  ]
+}

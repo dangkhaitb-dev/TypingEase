@@ -1,0 +1,118 @@
+{
+  "id": "tr-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 17,
+  "slug": "tr-02-004",
+  "title": "Rakamlar 7 8 9",
+  "summary": "7, 8, 9 tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "7",
+    "8",
+    "9"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "7, 8, 9 tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-02-004",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "7",
+      "text": "Tuş alıştırması: 7.",
+      "content": "7777 77 777 77 77 77 77 77",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "8",
+      "text": "Tuş alıştırması: 8.",
+      "content": "88 8888 888 88 88 88 88 88",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "9",
+      "text": "Tuş alıştırması: 9.",
+      "content": "999 99 9999 99 99 99 99 99",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "7799 99 7898 9i89 9887 7788 7778 8889 779 977 9779 7879"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "a7 7888 997 8879 799a 879 777 9877 9979 799 8897 9999 99 88 9988 887 79"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "7897 999 997v 88v7 779 v8 98 89v7 888 7989 777 99 9977 7778 97 8887"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ıı9 ı7 77 79 998 8899 9978 97 7778 7797 88 78 888 979 8889 899 779"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "977 9979 788 997 987 79d9 d979 98 8977 7d 77 879 97 7779 797 87 888"
+    }
+  ]
+}

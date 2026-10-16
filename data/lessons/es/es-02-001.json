@@ -1,0 +1,106 @@
+{
+  "id": "es-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 16,
+  "slug": "es-02-001",
+  "title": "Números: 1, 2, 3",
+  "summary": "Aprender 1, 2, 3 en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Aprender 1, 2, 3 en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-02-001",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Localiza 1 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "11 111 11ff ff11 1f1 11f1 ff fff 1111",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Localiza 2 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "2222 222 j2 jjj jj jj2 22j2 j22 222j 2j22 22jj 22",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Localiza 3 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ff33 33ff 333f 33 3333 f3 f333",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "3j 331 3312 11 322 3331 213 33 1132 333 131"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ss 111 cc 11 xx 33 e1 3ñ33 23f l233 1111 22w 232 123 y3 212 m121 113 231"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "221 22 112 1133 231 33 332 33j3 222 323 3312 3333 333 13 2213 321 23"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "2312 2233 212 2223 22j 2211 3322 2322 1123 3323 331 22 223 32"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "3311 3113 2212 2332 13 332 3213 222 2221 233 2131 33 f1"
+    }
+  ]
+}

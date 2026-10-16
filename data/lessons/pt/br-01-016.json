@@ -1,0 +1,84 @@
+{
+  "id": "br-01-016",
+  "unit": "u1",
+  "group": "g1",
+  "order": 23,
+  "slug": "br-01-016",
+  "title": "Tecla morta: acento grave",
+  "summary": "Pratique a tecla morta do acento grave com a vogal à que você já aprendeu.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Pratique a tecla morta do acento grave com a vogal à que você já aprendeu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-016",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Aperte Shift + a tecla ´ (à direita do P), solte e aperte a barra de espaço: aparece `.",
+      "content": "` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` ` `"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte Shift + a tecla ´ (à direita do P), solte e depois aperte a vogal: aparece a vogal com acento grave.",
+      "content": "aa aa ààaà aa aaà aaàa àaaà àaà aàa àà aaa ààà"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte Shift + a tecla ´ (à direita do P) e depois a vogal: à.",
+      "content": "aaà ààa ààa aàa ààà aaa aààà àà àààà àà àaàà ààaà àà àaà"
+    },
+    {
+      "type": "standard",
+      "text": "Alterne vogais com acento e vogais simples.",
+      "content": "oà àààà àào àà àààà àààà oàà àà ààoà àa àà àà ààa ààà àà àaà"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a aula é às nove e a festa é à noite na escola"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "ele vai à praia às oito e volta à tarde para casa"
+    }
+  ]
+}

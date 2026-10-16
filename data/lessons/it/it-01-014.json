@@ -1,0 +1,110 @@
+{
+  "id": "it-01-014",
+  "unit": "u1",
+  "group": "g3",
+  "order": 13,
+  "slug": "it-01-014",
+  "title": "Z, X, C",
+  "summary": "Impara i tasti z, x, c e usali con i tasti già studiati.",
+  "newKeys": [
+    "z",
+    "x",
+    "c"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti z, x, c e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-014",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "Trova z e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "zzz fzz zzzz zf ffff zzzf fff zz zzff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Trova x e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "xxx xx xxjx xxxj jjjx xjxj xj jj xjxx xxj jjxx",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Trova c e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ff cfcf cfc ccf cc cccf cffc fcc ffc fffc ffff ccc",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "zca xts caz tzx sca àzt xca tsz azx càs ztc xas"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "xzxx xx cc fz ccc xxx xczz xxzx xxz zxc xxxc ccx"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "xxz cxxx zzcc cz ccc ccxc czzc ccx zz cx zzc jjz xz cccx czcc cc xxx"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "cxèx cccx ccx xxxc zx zzzx xzx xxcz xx cccc zzcc zzx"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "zzzx xczz zz ccz eec cc xxz cccc zzcz ccc cccx cczc xc zccx zxcz xz ccx xx"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "ciao zio che caldo è oggi la luce è chiara"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "la zuppa è calda e la pizza è sopra la sedia"
+    }
+  ]
+}

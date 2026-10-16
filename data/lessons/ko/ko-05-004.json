@@ -1,0 +1,43 @@
+{
+  "id": "ko-05-004",
+  "unit": "u5",
+  "group": "g1",
+  "order": 70,
+  "slug": "ko-05-004",
+  "title": "버스가 늦은 까닭",
+  "summary": "버스가 늦게 도착한 상황과 그에 따른 행동을 차례로 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "버스가 늦게 도착한 상황과 그에 따른 행동을 차례로 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-05-004",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "아침에 타려던 버스가 평소보다 이십 분이나 늦게 왔습니다. 정류장에는 기다리다 지친 사람들이 길게 줄을 서 있었고 모두 시계를 보았습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "버스 기사님은 앞 사거리에서 작은 사고가 나서 길이 한동안 막혔다고 설명했습니다. 다행히 다친 사람은 없다고 해서 모두 마음을 놓았습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "회사에 조금 늦을 것 같아서 팀장님께 미리 문자를 보냈습니다. 다음부터는 집을 나서기 전에 교통 앱으로 버스 도착 시간을 먼저 확인하려고 합니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

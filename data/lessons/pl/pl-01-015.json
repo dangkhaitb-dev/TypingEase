@@ -1,0 +1,83 @@
+{
+  "id": "pl-01-015",
+  "unit": "u1",
+  "group": "g1",
+  "order": 14,
+  "slug": "pl-01-015",
+  "title": "Powtórka",
+  "summary": "Powtórz wszystkie litery w krótkich zdaniach.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "ą",
+    "ć",
+    "ę",
+    "ł",
+    "ń",
+    "ó",
+    "ś",
+    "ź",
+    "ż"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Powtórz wszystkie litery w krótkich zdaniach.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-015",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Przepisz polski tekst, używając poznanych klawiszy.",
+      "content": "dziś grupa zwiedza muzeum i zapisuje krótkie notatki"
+    },
+    {
+      "type": "standard",
+      "text": "Przepisz polski tekst, używając poznanych klawiszy.",
+      "content": "autobus przyjeżdża punktualnie i jedzie dalej na nowy rynek"
+    },
+    {
+      "type": "standard",
+      "text": "Przepisz polski tekst, używając poznanych klawiszy.",
+      "content": "stary pociąg jedzie przez zieloną dolinę i staje przy małej stacji"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "wczoraj mój brat poszedł na spacer i kupił nowy płaszcz"
+    }
+  ]
+}

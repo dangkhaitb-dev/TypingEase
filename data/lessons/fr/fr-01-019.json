@@ -1,0 +1,84 @@
+{
+  "id": "fr-01-019",
+  "unit": "u1",
+  "group": "g3",
+  "order": 18,
+  "slug": "fr-01-019",
+  "title": "ë : la touche morte tréma",
+  "summary": "Maintenez Maj, appuyez sur la touche ^ pour choisir ¨, relâchez, puis tapez e pour obtenir ë.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Maintenez Maj, appuyez sur la touche ^ pour choisir ¨, relâchez, puis tapez e pour obtenir ë.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-019",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Maintenez Maj, appuyez sur la touche ^ pour choisir ¨, relâchez, puis tapez e pour obtenir ë.",
+      "content": "ëeëeë eëëë ëëe ëëeëë ëfëfë fëëë"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez ë et les touches déjà apprises, puis revenez aux repères.",
+      "content": "ëëfë dë aë ëea ëë aë ëëëd ajëëë ëëëës ës ëëëëë"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "Noël est une belle fête pour toute la famille"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez ë et les touches déjà apprises, puis revenez aux repères.",
+      "content": "ëëfë ëëe ëëëë ëëëe ësëfë ad ëëë ëj jë ëëëëë ëëf"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "La fête de Noël réunit les frères et les amis"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "id": "vi-04-004",
+  "unit": "u4",
+  "group": "g2",
+  "order": 66,
+  "slug": "vi-04-004",
+  "title": "Số và chữ trong câu",
+  "summary": "Phối hợp linh hoạt giữa hàng phím chữ, hàng phím số và các dấu phân cách trong văn bản.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "telex",
+  "intro": "Phối hợp linh hoạt giữa hàng phím chữ, hàng phím số và các dấu phân cách trong văn bản.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-04-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ câu có số, ngày tháng, giờ và số tiền.",
+      "content": "Ngày Quốc khánh Việt Nam là ngày 02/09/1945 tại quảng trường Ba Đình.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có số, ngày tháng, giờ và số tiền.",
+      "content": "Buổi hội thảo trực tuyến sẽ bắt đầu vào lúc 08:30 sáng thứ Hai.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có số, ngày tháng, giờ và số tiền.",
+      "content": "Cửa hàng ở số 45 phố Tràng Tiền, liên hệ qua số 0912345678.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có số, ngày tháng, giờ và số tiền.",
+      "content": "Vé vào cổng có giá 50.000đ và suất ăn nhẹ trị giá 35.000đ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có số, ngày tháng, giờ và số tiền.",
+      "content": "Hóa đơn tiền điện tháng 5 là 450.000đ, nộp trước 17:00 ngày 15/06.",
+      "inputMode": "telex"
+    }
+  ]
+}

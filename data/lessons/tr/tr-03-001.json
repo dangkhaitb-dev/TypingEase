@@ -1,0 +1,90 @@
+{
+  "id": "tr-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 21,
+  "slug": "tr-03-001",
+  "title": "Shift tuşu: tekrar",
+  "summary": "Shift ile büyük harf yazmayı tekrar et; her harften sonra tuşu bırak.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Shift ile büyük harf yazmayı tekrar et; her harften sonra tuşu bırak.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-03-001",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "text": "Shift ile büyük harf çalış; her harften sonra tuşu bırak.",
+      "content": "FFJ JFF FJJ JFJ FJF JJJ FFF JFJ FJJ FJFJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Shift ile büyük harf çalış; her harften sonra tuşu bırak.",
+      "content": "LLT RR HH AA HR FFLD TT SSF FFG YYD JS WWSA FF SS QQ SSLW JG YDDW LLV"
+    },
+    {
+      "type": "standard",
+      "text": "Shift ile büyük harf çalış; her harften sonra tuşu bırak.",
+      "content": "AFVL RRJ YYT XBK VVW AAGD TJFB VVDK DDE FFXR rrOK ZYPA QQAJ SSR NZHS FF"
+    },
+    {
+      "type": "standard",
+      "text": "Shift ile büyük harf çalış; her harften sonra tuşu bırak.",
+      "content": "SN VV YYB SSFA LI DN FFFF PP WTJJ SWL DD FF JJJ YY"
+    }
+  ]
+}

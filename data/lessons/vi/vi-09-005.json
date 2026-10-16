@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-005",
+  "unit": "u9",
+  "group": "g2",
+  "order": 127,
+  "slug": "vi-09-005",
+  "title": "Cụm từ quen thuộc",
+  "summary": "Xây dựng năng lực \"Common Phrases\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Đẩy cao thông lượng trên các cụm thành ngữ và từ ghép tiếng Việt quen thuộc.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Common Phrases\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Đẩy cao thông lượng trên các cụm thành ngữ và từ ghép tiếng Việt quen thuộc.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi thành ngữ: học đi đôi với hành, lao động là vinh quang.",
+      "content": "học đi đôi với hành lao động là vinh quang đoàn kết là sức mạnh tương lai tươi sáng cần cù thì bù siêng năng mới nên thợ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ về tinh thần trách nhiệm và ý chí vươn lên.",
+      "content": "tinh thần trách nhiệm cao lòng say mê nghề nghiệp ý chí vươn lên không ngừng học hỏi trau dồi kiến thức mới để bắt kịp xu thế phát triển chung. Những lời nhắc quen thuộc trở nên hữu ích khi được đặt vào một công việc cụ thể: giữ kỷ luật giờ giấc, hoàn thành đúng hạn và giúp đồng nghiệp khi kẹt việc. Người gõ chú ý từng dấu thanh trong từ ghép dài như trách nhiệm hay say mê nghề, mắt đọc trước một cụm rồi tay theo sau cho đều.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về thành ngữ, tục ngữ quen thuộc của người Việt.",
+      "content": "Những câu thành ngữ, tục ngữ quen thuộc đã in sâu vào tiềm thức của mỗi người Việt Nam, tạo điều kiện thuận lợi nhất để tăng tốc độ gõ phím. Khi não bộ đã thuộc lòng cấu trúc câu từ, mọi nguồn lực tập trung có thể dành trọn vẹn cho việc duy trì nhịp gõ đều đặn và uyển chuyển trên từng phím bấm. Người gõ chú ý từng dấu thanh trong từ ghép và giữ nhịp đều ở các cụm dài.",
+      "inputMode": "telex"
+    }
+  ]
+}

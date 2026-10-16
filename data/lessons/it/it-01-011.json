@@ -1,0 +1,70 @@
+{
+  "id": "it-01-011",
+  "unit": "u1",
+  "group": "g2",
+  "order": 10,
+  "slug": "it-01-011",
+  "title": "Maiusc: esercizio con lettere già note",
+  "summary": "Usare Maiusc insieme a lettere già studiate per scrivere le maiuscole.",
+  "newKeys": [
+    "shift"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Usare Maiusc insieme a lettere già studiate per scrivere le maiuscole.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-011",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "shift",
+      "text": "Tieni premuto Maiusc mentre digiti le lettere maiuscole indicate.",
+      "content": "FFJ FJFF JJFJ FJ FJFF JJJF FFJJ JFJF FFFJ JJFF FJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Tieni premuto Maiusc mentre digiti le lettere maiuscole indicate.",
+      "content": "JFJF FFFJ JJFF FJFF JJFJ FJ JJJF FFJJ FJFF JFJF FFJ"
+    },
+    {
+      "type": "standard",
+      "text": "Tieni premuto Maiusc mentre digiti le lettere maiuscole indicate.",
+      "content": "JJFF FJFF JFJF FFFJ FJ JJJF FFJJ JJFJ FJFF FFFJ JJ"
+    },
+    {
+      "type": "standard",
+      "text": "Tieni premuto Maiusc mentre digiti le lettere maiuscole indicate.",
+      "content": "FJFF JJJF FFJJ JFJF FFFJ JJFJ FJFF JJFF FJ FFFJ JJFJ"
+    }
+  ]
+}

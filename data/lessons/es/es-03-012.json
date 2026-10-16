@@ -1,0 +1,111 @@
+{
+  "id": "es-03-012",
+  "unit": "u3",
+  "group": "g1",
+  "order": 32,
+  "slug": "es-03-012",
+  "title": "Mayúsculas: J, K, L",
+  "summary": "Aprender J, K, L en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "J",
+    "K",
+    "L"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprender J, K, L en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-012",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "J",
+      "text": "Mantén pulsada Mayús con el meñique de la mano izquierda y pulsa la tecla j para escribir J. Suelta Mayús antes de la siguiente tecla.",
+      "content": "fJ JJ ffJ JJfJ JJJ ffJf JJJf JJf fJJJ ff fJJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "K",
+      "text": "Mantén pulsada Mayús con el meñique de la mano izquierda y pulsa la tecla k para escribir K. Suelta Mayús antes de la siguiente tecla.",
+      "content": "jKjj KKjK jjj KK jj KKK KKj jjK KKKj jKj Kjjj jK",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "L",
+      "text": "Mantén pulsada Mayús con el meñique de la mano izquierda y pulsa la tecla l para escribir L. Suelta Mayús antes de la siguiente tecla.",
+      "content": "LL ff fLLL LLff fLLf LLLL LLfL LLL ffL",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "LLJL KLJ KKLK JJJL JJK JJLL LLLL JLLJ KK 0LK JL LLL LLKL KJL LJ LL"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "mL KJ AzLL JJ 9LL KKLK xfJx LHL JJL JJJ JLCJ hJ 6KL6 LJLK"
+    }
+  ]
+}

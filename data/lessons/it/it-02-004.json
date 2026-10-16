@@ -1,0 +1,93 @@
+{
+  "id": "it-02-004",
+  "unit": "u2",
+  "group": "g2",
+  "order": 22,
+  "slug": "it-02-004",
+  "title": "Cifre: 0",
+  "summary": "Impara il tasto 0 e usalo con i tasti già studiati.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Impara il tasto 0 e usalo con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-02-004",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Trova 0 e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "f0 f00 ff0f 0f f000 fff0 0000 ff ff0 00f 00 000",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "00 0000 00ì ìì 000ì 00ì0 ì000 ì00 ìì0 000"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "0f 909 000 0000 00 0990 0099 009 90 0090 900"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "e000 ee 000 00 0000 00e0 000e 0e00 ee0 0e ee00"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "0000 9900 00 00f0 90 0900 009 000 0090 9f 09 000f"
+    }
+  ]
+}

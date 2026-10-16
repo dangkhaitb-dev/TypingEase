@@ -1,0 +1,85 @@
+{
+  "id": "it-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "it-01-004",
+  "title": "G, H, K",
+  "summary": "Impara i tasti g, h, k e usali con i tasti già studiati.",
+  "newKeys": [
+    "g",
+    "h",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti g, h, k e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-004",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Trova g e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ffgg gggg gg ff fgg ggfg fg ggf gggf ggg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Trova h e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "hhhh hhh jhh hh jj hhjh hhj hj jjj jjjh jhjh hhhj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Trova k e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ffk kkff fk kkkk kk ffkk fff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "kfa ghj hsd kja fgh ajk dgk shf gka jdh ksa hfg"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "gkg hhhg kh kkgh ghg gghj hh hhhh ggk hkhg hhk kkkg gkhh hhg gg kk"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "kk kgkk hkkh kgk ggkk hkhk ggk hgh ggh hgk hh gkkh kgg gkh fk gg hk gggk"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ghak jsfk adgh kfsj hgda jkfs sadk fghj kajd hsfg dkgj ajhk"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "kkk hkk hhh gk kh hhgg kg kkkk ghk gghk hkg kkgk kkkh hhg gfgk khg ggh kk"
+    }
+  ]
+}

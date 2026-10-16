@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-005",
+  "unit": "u6",
+  "group": "g2",
+  "order": 87,
+  "slug": "vi-06-005",
+  "title": "Địa điểm và số lượng",
+  "summary": "Xây dựng năng lực \"Places and Amounts\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng cường các thông tin về địa điểm cụ thể và số lượng hàng hóa/vật phẩm, nâng cao mật độ chi tiết thực tế.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Places and Amounts\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng cường các thông tin về địa điểm cụ thể và số lượng hàng hóa/vật phẩm, nâng cao mật độ chi tiết thực tế.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ trọn thông báo điều chỉnh kế hoạch đào tạo nhân viên mới.",
+      "content": "Thông báo điều chỉnh kế hoạch đào tạo nhân viên mới: khóa học kỹ năng giao tiếp sẽ bắt đầu muộn hơn một ngày so với lịch ban đầu.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Làm quen chủ đề qua cập nhật kế hoạch công tác.",
+      "content": "Cập nhật kế hoạch công tác: chuyển lịch khảo sát địa điểm từ thứ Ba sang sáng thứ Sáu do thời tiết mưa lớn kéo dài tại khu vực miền núi.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn bản cập nhật tiến độ dự án quý ba.",
+      "content": "Bản cập nhật tiến độ dự án quý ba: do nhu cầu mở rộng quy mô kinh doanh, ban quản lý quyết định bổ sung thêm hai nhân sự chuyên trách mảng truyền thông kỹ thuật số.",
+      "inputMode": "telex"
+    }
+  ]
+}

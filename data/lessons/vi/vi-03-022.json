@@ -1,0 +1,54 @@
+{
+  "id": "vi-03-022",
+  "unit": "u3",
+  "group": "g1",
+  "order": 48,
+  "slug": "vi-03-022",
+  "title": "Phím Caps Lock",
+  "summary": "Học dùng Caps Lock để gõ liền các chữ hoa.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "telex",
+  "intro": "Học dùng Caps Lock để gõ liền các chữ hoa.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-022",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Nhấn Caps Lock bằng ngón út trái để gõ liền các chữ hoa. Nhấn lần nữa để về chữ thường.",
+      "content": "FFFF jjjj JJJJ ffff GGGG kkkk KKKK"
+    },
+    {
+      "type": "standard",
+      "text": "Bật Caps Lock, gõ tên từng thành phố bằng chữ hoa rồi tắt đi.",
+      "content": "HÀ NỘI HUẾ ĐÀ NẴNG CẦN THƠ HẢI PHÒNG VINH",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bật Caps Lock trước tên viết hoa hoàn toàn, tắt ngay sau khi gõ xong.",
+      "content": "Thành phố HUẾ và ĐÀ NẴNG đều nằm ở miền Trung",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dùng Caps Lock cho phần tên viết hoa hoàn toàn trong câu.",
+      "content": "Đội CLB HÀ NỘI thi đấu với đội CLB HUẾ hôm nay",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ cả dòng bằng Caps Lock, không giữ Shift.",
+      "content": "SÀI GÒN NHA TRANG ĐÀ LẠT VŨNG TÀU QUY NHƠN HẢI DƯƠNG",
+      "inputMode": "telex"
+    }
+  ]
+}

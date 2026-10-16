@@ -38,7 +38,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -54,8 +53,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<"
   ],
   "minAccuracy": 80,
@@ -69,7 +66,7 @@
       "seconds": 180,
       "text": "Aucune touche nouvelle. Écris à un rythme que tu peux tenir jusqu'au bout.",
       "dictation": "sentence",
-      "content": "Tous les jours je passe devant cette boutique.\nElle travaille dans un bureau près de la place.\nIl lit une lettre devant la porte.\nLa petite fille joue dans le jardin."
+      "content": "La porte du jardin reste ouverte toute la journée.\nNous parlons de ce projet depuis longtemps.\nIl lit une lettre devant la porte.\nLa petite fille joue dans le jardin."
     }
   ]
 }

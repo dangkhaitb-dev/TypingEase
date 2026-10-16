@@ -1,0 +1,53 @@
+{
+  "id": "ko-04-101",
+  "unit": "u4",
+  "group": "g1",
+  "order": 60,
+  "slug": "ko-04-101",
+  "title": "Enter와 줄바꿈",
+  "summary": "Enter로 줄을 바꾸며 짧은 한글 목록을 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "hangul",
+  "intro": "Enter로 줄을 바꾸며 짧은 한글 목록을 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-04-101",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Enter를 눌러 줄을 바꾸며 짧은 목록을 입력합니다.",
+      "content": "안녕하세요\n감사합니다\n잘 지내요\n또 만나요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Enter를 눌러 줄을 바꾸며 짧은 목록을 입력합니다.",
+      "content": "가방을 챙겨요\n신발을 신어요\n학교에 가요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Enter를 눌러 줄을 바꾸며 짧은 목록을 입력합니다.",
+      "content": "물을 마셔요\n창문을 열어요\n바람을 느껴요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Enter를 눌러 줄을 바꾸며 짧은 목록을 입력합니다.",
+      "content": "책을 펼쳐요\n한 장씩 읽어요\n생각을 적어요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-002",
+  "unit": "u7",
+  "group": "g1",
+  "order": 63,
+  "slug": "zh-tw-07-002",
+  "title": "解釋物品放置",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-002",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "媽媽問：「剪刀放在哪裡？」我說：「在書桌左邊的抽屜，就在筆筒旁邊。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "媽媽又問：「那膠帶呢？」我說：「膠帶和信封一起放在櫃子的第二層。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我說：「用完以後請放回原位，下次大家要找的時候，就不會找不到了。」",
+      "inputMode": "ime"
+    }
+  ]
+}

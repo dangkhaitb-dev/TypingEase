@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-008",
+  "unit": "u11",
+  "group": "g2",
+  "order": 153,
+  "slug": "vi-11-008",
+  "title": "Điều kiện biến chuyển",
+  "summary": "Xây dựng năng lực \"Changing Conditions\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 250 âm tiết, xử lý văn bản dài có diễn biến thời tiết thay đổi phức tạp.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 17,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Changing Conditions\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 250 âm tiết, xử lý văn bản dài có diễn biến thời tiết thay đổi phức tạp.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về việc tạm dừng hành trình leo núi vì thời tiết.",
+      "content": "Điều kiện thời tiết đổi bất ngờ buộc đoàn leo núi tạm dừng để trú ẩn an toàn. Trưởng đoàn kiểm tra lều gió, nước uống và tín hiệu máy bộ đàm trước khi cho mọi người ngồi yên. Bản đồ giấy được trải dưới mái tạm để đánh dấu vị trí hiện tại so với điểm về. Chỉ khi mưa giảm và gió ổn định, đoàn mới tính lại giờ tiếp tục hành trình.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về biến đổi thời tiết thung lũng ven sông lúc chuyển mùa.",
+      "content": "Ở thung lũng ven sông những ngày chuyển mùa, thời tiết có thể đổi trong vòng một giờ. Sáng còn nắng nhẹ, chiều đã có gió mạnh và mưa cục bộ trên các nhánh sông nhỏ. Đoàn công tác theo dõi mực nước và tránh đóng trại sát bờ khi có cảnh báo lũ quét. Kế hoạch ngày được viết linh hoạt theo từng mốc thời tiết thay vì bám cứng một lộ trình duy nhất. Nếu lối mòn trơn trượt, người dẫn đoàn chọn tuyến thấp và báo giờ về cho trạm trực.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về mưa dông và sạt lở trên đường mòn.",
+      "content": "Áp thấp nhiệt đới gây mưa dông mạnh kèm gió lốc, làm sạt lở vài đoạn đường mòn trên sườn núi. Đội tiền trạm đánh dấu vùng nguy hiểm bằng dây phản quang và dẫn đoàn đi đường vòng. Máy ảnh hiện trường ghi lại hiện trạng để gửi về trung tâm cứu hộ khu vực. Mọi thành viên được yêu cầu giữ khoảng cách hai mét khi đi qua chỗ đất mềm. Đoàn kiểm tra dự báo mới nhất, gia cố lều và chỉ tiếp tục hành trình khi đường đi an toàn. Trời vẫn mưa.",
+      "inputMode": "telex"
+    }
+  ]
+}

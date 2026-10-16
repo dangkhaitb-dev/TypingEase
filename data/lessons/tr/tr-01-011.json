@@ -1,0 +1,111 @@
+{
+  "id": "tr-01-011",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "tr-01-011",
+  "title": "Tuşlar v, b, n",
+  "summary": "v, b, n tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "v, b, n tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-011",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Tuş alıştırması: v.",
+      "content": "vvvv vvvv vvvv vvvv vvvv vvvv vvvv vv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Tuş alıştırması: b.",
+      "content": "bbbb bbbb bbbb bbbb bbbb bbbb bbbb bbbb bbbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Tuş alıştırması: n.",
+      "content": "nnnn nnnn nnnn nnnn nnnn nnnn nnnn nnnn nnn",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "vvnn nnzn vvbv vz vvb nbv bnnv bz nnz nn nnbn nv vv bb vvn vvv nb nvn nnv"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "vvns bv nsvv vv nnnn nsbv nnvn nnnv nnn bbvb vvnv vvb bnvv nv"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "bbnb vvb ll nnvb bbvn lnbb vbbn lbn nnvv bbn nbnb vnv nv vv vvnn nnnb nnnn"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "bbn vvvb vv bbnb bbb bnvb rr bb nn bvb nbb"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "bu kitap yeni ve güzel baba bugün bir bardak aldı"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "anne sütü dolu nasıl bina ve ev bana bir kitap verdi"
+    }
+  ]
+}

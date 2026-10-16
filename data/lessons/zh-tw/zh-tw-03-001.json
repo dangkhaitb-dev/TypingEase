@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 30,
+  "slug": "zh-tw-03-001",
+  "title": "逗號、句號與頓號",
+  "summary": "Narrow committed-output lesson: ， 。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: ， 。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-03-001",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "提交中文後，按 Shift 加逗號鍵輸入「，」、Shift 加句號鍵輸入「。」，按 ' 鍵輸入「、」。",
+      "content": "雨停了，我們一起到巷口買早餐。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "提交中文後，按 Shift 加逗號鍵輸入「，」、Shift 加句號鍵輸入「。」，按 ' 鍵輸入「、」。",
+      "content": "書包裡有課本、鉛筆和一本筆記本。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "提交中文後，按 Shift 加逗號鍵輸入「，」、Shift 加句號鍵輸入「。」，按 ' 鍵輸入「、」。",
+      "content": "我先收好課本，再把鉛筆放回筆袋。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "提交中文後，按 Shift 加逗號鍵輸入「，」、Shift 加句號鍵輸入「。」，按 ' 鍵輸入「、」。",
+      "content": "下課後，我們去操場跑步、打球和聊天。",
+      "inputMode": "ime"
+    }
+  ]
+}

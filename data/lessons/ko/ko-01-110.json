@@ -1,0 +1,73 @@
+{
+  "id": "ko-01-110",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "ko-01-110",
+  "title": "모음 ㅡ · ㅣ",
+  "summary": "모음 ㅡ·ㅣ를 익히고 앞서 배운 모음과 섞어 칩니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "hangul",
+  "intro": "모음 ㅡ·ㅣ를 익히고 앞서 배운 모음과 섞어 칩니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-110",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅡㅡㅡ ㅡㅡㅡ ㅡㅡ ㅡㅡㅡ ㅡㅡ ㅡㅡㅡ ㅡㅡ ㅡㅡㅡ ㅡㅡㅡ ㅡㅡㅡ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅣㅣㅣ ㅣㅣㅣ ㅣㅣ ㅣㅣㅣ ㅣㅣ ㅣㅣㅣ ㅣㅣ ㅣㅣㅣ ㅣㅣㅣ ㅣㅣㅣ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅡㅡ ㅣㅡ ㅣㅡ ㅡㅡㅡㅡ ㅣㅣㅣㅣ ㅣㅡㅡ ㅣㅣ ㅎ ㅡㅡ ㅣ ㅡㅡ ㅣ ㅡㅡ ㅎ ㅣㅣ ㅣㅡㅡ ㅣㅣㅣㅣ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅣㅣㅡ ㅣㅣㅣㅕ ㅣㅣ ㅣㅣㅣ ㅡ ㅣㅡㅡ ㅣㅣㅡ ㅣㅡㅡ ㅡ ㅣㅣㅣ ㅣㅣ ㅣㅣㅣㅕ ㅣㅣ ㅣㅣㅣㅕ ㅣㅣㅡ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄷㄷ ㅣ ㅣㅡㅡㄷ ㅡ ㅣㅡㅡ ㅣㅣ ㄷㄷ ㅣㅡ ㅣㅣㄷ ㄷㄷ ㅣㅣㄷ ㅣㅡ ㄷㄷ ㅣㅣ ㅣㅡㅡ ㅡ ㅣㅡㅡㄷ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅈㅈ ㅈ ㅣㅣㅈ ㅡㅡㅡ ㅣ ㅣㅣ ㅡ ㅣㅣ ㅡㅡ ㅣㅣㅡ ㅣ ㅈㅈ ㅣ ㅣㅣㅡ ㅡㅡ ㅣㅣ ㅡ ㅣㅣ ㅣ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로만 만든 진짜 낱말을 입력해 보세요.",
+      "content": "기차 다리 머리 치마 고기 비누 커피 기타 나무",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로만 만든 짧은 문장을 입력해 보세요.",
+      "content": "나는 아침에 우유를 마신다 기차가 역에 도착한다",
+      "inputMode": "hangul"
+    }
+  ]
+}

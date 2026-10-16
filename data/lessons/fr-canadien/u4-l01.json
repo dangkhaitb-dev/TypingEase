@@ -43,7 +43,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -59,8 +58,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<",
     "#",
     "|",
@@ -90,7 +87,7 @@
       "type": "block",
       "newKey": "|",
       "text": "D'abord | sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "|| | brûler|plutôt heures|continue vivent|mêmes\n|| | rue|vivre contre|wagon route|porte\n|| | vitesse|textes heures|bonne listes|tu"
+      "content": "|| | février|entrée huit|groupes mondes|bateau\n|| | gel|monde lourde|plupart moi|ouvre\n|| | donc|alors huit|partie tir|humides"
     },
     {
       "type": "intro",
@@ -103,7 +100,7 @@
       "type": "block",
       "newKey": "!",
       "text": "D'abord ! sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "!! ! style! bras! textes!\n!! ! il! huit! dos!\n!! ! aussi! huile! rêves!"
+      "content": "!! ! juger! peut! assez!\n!! ! je! jures! styles!\n!! ! voit! rues! été!"
     },
     {
       "type": "intro",
@@ -116,7 +113,7 @@
       "type": "block",
       "newKey": "\"",
       "text": "D'abord \" sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "\"\" \" \"textes\" \"rose\" \"gels\"\n\"\" \" \"août\" \"ainsi\" \"détail\"\n\"\" \" \"avoir\" \"paroles\" \"sûr\""
+      "content": "\"\" \" \"assez\" \"lettre\" \"messe\"\n\"\" \" \"complet\" \"voici\" \"table\"\n\"\" \" \"vient\" \"votes\" \"précis\""
     },
     {
       "type": "burst",
@@ -124,27 +121,27 @@
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
         "#8",
-        "\"belles\"",
-        "mes|mêmes",
-        "somme|glisse",
-        "derrière|était",
-        "quant|hôtels",
-        "fille|passe",
-        "\"mettre\"",
-        "fleur|novembre",
-        "ouvrir|guides"
+        "\"paroles\"",
+        "me|bateau",
+        "mode|demis",
+        "salle|point",
+        "par|journée",
+        "luge|nouveau",
+        "\"suites\"",
+        "huit|centre",
+        "content|dur"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "#77 même|humides \"sociétés\" surgir|guides\nvoile! #42 \"sorte\" grands!\n\"vendredi\" #5 #93 élèves|mêmes"
+      "content": "#77 banques|sud \"bureaux\" rigides|dur\ncontes! #42 \"mot\" devient!\n\"centre\" #5 #93 propose|bateau"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "#84 passer dure! tant novembre!\n#84 jamais #7 rôle #92\ndiriger|rigides fêtes bouche|île dîner #54"
+      "content": "#84 vivent gifles! ta centre!\n#84 devenir #7 décide #92\nhumide|guide exacte petite|détails générale #54"
     }
   ]
 }

@@ -1,0 +1,45 @@
+{
+  "id": "bn-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 46,
+  "slug": "bn-03-001",
+  "title": "কারচিহ্ন পুনরালোচনা: কা কি কু",
+  "summary": "Introduce committed targets ।; review ক আ  . Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets ।; review ক আ  . Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-03-001",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "বকিকাকা কাকাকুকা কাকুকু কিকি কুকু কুকুকা কুকুকু কিকা কিকিকা কাকা কিকিকাকি কিকুকা"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "কুকুকা কাকু কাকাকুকু কাকাকুকা কিকিকুকা কুকিকা কিকিকু কুকা ৪৪কি কিকাকাকি কুকাকি কাকুকু কুকিকিকু কুকুকু কুকু"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "কিকাকি কাকু কাকা কুকুকি কিকিকু কুকাকা কাকাকিকু কুকিকু কিকিকি কাকাকাকু কুকু কুকুককা কাকাকি কিকি কাকাকা"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "কিকা কুকাকিকি কাকুকি কুকাকুকা কাকাককু কিকুকি কুকি কিকি কাকিকিকু কিকিকা"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-009",
+  "unit": "u5",
+  "group": "g1",
+  "order": 48,
+  "slug": "zh-tw-05-009",
+  "title": "公園裡的相遇",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-009",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "傍晚我到公園散步，在湖邊遇見好久不見的小學同學。我們都嚇了一跳，接著開心地打招呼。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我們沿著步道慢慢走，聊起以前在學校的趣事。她說自己現在在醫院工作，每天都很忙，卻覺得很有意義。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "天色漸漸暗了，路燈一盞盞亮起來。我們交換了電話號碼，約好下個週末一起去吃她推薦的那家麵店。",
+      "inputMode": "ime"
+    }
+  ]
+}

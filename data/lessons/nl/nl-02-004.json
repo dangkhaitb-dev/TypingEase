@@ -1,0 +1,114 @@
+{
+  "id": "nl-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 20,
+  "slug": "nl-02-004",
+  "title": "Cijfers 7 8 9",
+  "summary": "Leer de nieuwe toetsen 7, 8, 9 en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "7",
+    "8",
+    "9"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen 7, 8, 9 en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-02-004",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "7",
+      "text": "Toets oefenen: 7.",
+      "content": "77 777 7777 77 77 77 77 77",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "8",
+      "text": "Toets oefenen: 8.",
+      "content": "888 8888 88 88 88 88 88 88",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "9",
+      "text": "Toets oefenen: 9.",
+      "content": "9999 999 99 99 99 99 99 99",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "777 9889 99 88 89 778 8978 97 889 7777 77 8977 8v 9997"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "78 479 9988 997 88 99 8979 77 7877 7778 5899 999 998 8878 798 888 887 8897"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "7888 77 889 8798 9977 89 7799 997 999 998 jj79 7779"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "7779 18 799 89 999 889 778 978 98 11 79 77 99 8819 887 9797"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "8997 779 77 88 999 7879 gg 8898 997 899 7797 7787 99 998 89 g8 8888 7789"
+    }
+  ]
+}

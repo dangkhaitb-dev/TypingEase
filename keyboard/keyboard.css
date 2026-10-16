@@ -212,6 +212,16 @@
   --fk: var(--fng-thumb); --fk-line: var(--fng-thumb-line); --fk-ink: var(--fng-thumb-ink);
 }
 
+/* Màu ngón theo PHÂN NGÓN CỦA LAYOUT (`key--fng-<1..10>`, keyboard.js gắn từ `entry.finger`). Khối
+   `key-<mã ký tự>` ở tầng 2 chỉ khớp ký tự của QWERTY Mỹ: bàn phím Kirin, Ả Rập, Thái, Devanagari,
+   Hangul, chú âm không phím nào có màu, còn AZERTY/QWERTZ/Thổ Nhĩ Kỳ tô sai ngón. Đứng SAU khối đó
+   nên thắng nó ở mọi phím có dữ liệu ngón. */
+.keyboard:not(.keyboard--numpad) :is(.key--fng-1, .key--fng-10) { --fk: var(--fng-pinky); --fk-line: var(--fng-pinky-line); --fk-ink: var(--fng-pinky-ink); }
+.keyboard:not(.keyboard--numpad) :is(.key--fng-2, .key--fng-9) { --fk: var(--fng-ring); --fk-line: var(--fng-ring-line); --fk-ink: var(--fng-ring-ink); }
+.keyboard:not(.keyboard--numpad) :is(.key--fng-3, .key--fng-8) { --fk: var(--fng-middle); --fk-line: var(--fng-middle-line); --fk-ink: var(--fng-middle-ink); }
+.keyboard:not(.keyboard--numpad) :is(.key--fng-4, .key--fng-7) { --fk: var(--fng-index); --fk-line: var(--fng-index-line); --fk-ink: var(--fng-index-ink); }
+.keyboard:not(.keyboard--numpad) :is(.key--fng-5, .key--fng-6) { --fk: var(--fng-thumb); --fk-line: var(--fng-thumb-line); --fk-ink: var(--fng-thumb-ink); }
+
 /* Lúc nghỉ mọi phím đều trắng trơn: màu ở trên mới chỉ được GÁN, chưa được tô. Màu chỉ hiện ra
    trên phím đang phải bấm — và trong hai giây "nhá màu" lúc mở màn. */
 .keyboard--full .key--a {
@@ -223,9 +233,10 @@
   transition: background-color .12s ease, color .12s ease, box-shadow .12s ease;
 }
 .keyboard--full .key--a .key-label { font-weight: 600; }
-/* Gờ định vị dưới F và J — `:after` đã bị tỉ lệ vuông chiếm chỗ. */
-.keyboard--full .key-102:before,
-.keyboard--full .key-106:before {
+/* Gờ định vị dưới hai phím ở VỊ TRÍ F và J (`key--homing`, keyboard.js gắn theo ô vật lý KeyF/KeyJ)
+   — trước đây theo mã ký tự `f`/`j`, nên Dvorak hay Ả Rập có gờ ở sai phím hoặc không có gờ.
+   `:after` đã bị tỉ lệ vuông chiếm chỗ. */
+.keyboard--full .key--homing:before {
   content: "";
   position: absolute;
   left: 50%;
@@ -508,3 +519,205 @@
 /* Trang tiếng Ả Rập/Ba Tư/Urdu/Hebrew mang dir="rtl", nhưng bàn phím là VỊ TRÍ VẬT LÝ: phím Tab vẫn
    ở bên trái, hàng số vẫn chạy 1 → 0. Không khoá hướng ở đây thì cả bàn phím bị lật gương. */
 [dir="rtl"] .keyboard, [dir="rtl"] .player-board, [dir="rtl"] .kb-preview { direction: ltr; }
+
+/* ===== 9. Đồng bộ typekute 2026-10 ============================================================
+   Rule cho DOM mà keyboard.js bản mới sinh ra, chép từ typekute 11ty/styles/player.css (giữ nguyên
+   phạm vi `.nt-player-keyboard`): lưới phím vật lý (`keyboard--physical`, đơn vị phím chuẩn qua
+   `--nt-keyboard-units`, Enter ISO cao hai hàng), nhãn AltGr/Shift+AltGr (`key-altgr`), chữ Latin
+   ở góc phím chữ không Latin (`key-latin`), mặt phím JIS/chú âm (`key--keycap`), nhãn giữ nguyên
+   chữ (`key-label--as-is`: é, ß, µ không bị in hoa), phím điều khiển gọn, và dòng báo chế độ IME. */
+.nt-player-keyboard.keyboard--physical > .keyboard-row > .key { flex-basis: auto; }
+.nt-player-keyboard .key-label--as-is { text-transform: none; }
+/* Falling screens dim the page behind a fixed scrim; source keeps the keyboard rows and
+   the hand overlay above it (`.keyboard.is-falling .keyboard-row{z-index:9999}
+`). */
+.nt-player-page .nt-player-keyboard.is-falling .keyboard-row { position: relative; z-index: 9999; }
+/* AltGr legends (keyboard.js `altGrLegends`): level 3 beside the main legend, level 4
+   (Shift+AltGr) beside the shifted one, in the key's right corners. Below 500 px the
+   legacy board already drops the shifted legend, so the AltGr ones go with it. */
+/* keyboard.js `mainLegend`: legends a keycap prints exactly as they are. */
+.nt-player-keyboard .key-label--as-is,
+.nt-player-keyboard .key-altgr { text-transform: none; }
+/* The legacy player sheet registers Roboto Mono as the keyboard font. It has no
+   coverage for several scripts, so a keycap such as Thai ◌ุ is present in the
+   DOM but paints blank. This rule is `!important` because Practices mounts that
+   legacy sheet after this one inside its shadow root. */
+.nt-player-keyboard.keyboard--native-script .key-label,
+.nt-player-keyboard.keyboard--native-script .key-altgr {
+  font-family: system-ui, sans-serif !important;
+  font-variant-ligatures: normal;
+}
+.nt-player-keyboard .key-altgr { display: none; }
+@media screen and (min-width: 500px) {
+  .nt-player-keyboard .key-altgr {
+    display: block;
+    position: absolute;
+    right: 3px;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1;
+    opacity: .78;
+    pointer-events: none;
+  }
+  .nt-player-keyboard .key-altgr--shiftalt { top: 3px; }
+  .nt-player-keyboard .key-altgr--alt { bottom: 3px; }
+}
+/* JIS and Taiwan keycaps (keyboard.js `printedEntry`), printed as on the physical cap and
+   the same for every input mode: ASCII on the left (the Shift legend above), the native
+   legends on the right (small kana or 注音 above). A narrow board prints only the legend
+   of the mode being typed. */
+@media screen and (min-width: 500px) {
+  .nt-player-keyboard.keyboard--physical .key--keycap .key-label {
+    inset: 0;
+    width: auto;
+    height: auto;
+    padding: 3px 4px;
+    font-size: 11px;
+    justify-content: flex-start;
+    align-items: flex-end;
+  }
+  .nt-player-keyboard.keyboard--physical .key--keycap div.key-label:first-of-type { align-items: flex-start; }
+  .nt-player-keyboard .key--keycap .key-altgr { right: 4px; font-size: 12px; opacity: 1; }
+}
+/* Latin letter printed in the top-left corner of non-Latin letter keys (keyboard.js
+   `latinLegend`), as on Cyrillic, Arabic, Thai, Devanagari, Hangul and kana keycaps. */
+.nt-player-keyboard .key-latin { display: none; }
+@media screen and (min-width: 500px) {
+  .nt-player-keyboard .key-latin {
+    display: block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    font-family: roboto-mono, "Roboto Mono", monospace;
+    font-size: 9px;
+    font-weight: 500;
+    line-height: 1;
+    opacity: .6;
+    pointer-events: none;
+    text-transform: uppercase;
+  }
+}
+/* All typing rows share switch pitches. Wide keys own exact unit spans; no row
+   independently stretches its caps to fill the board. These rules are also used
+   by Practices inside its shadow root. */
+.nt-player-keyboard.keyboard--physical {
+  --nt-keyboard-row-gap: clamp(2px, .45vw, 5px);
+  --nt-keyboard-cap-gap: clamp(2px, .45vw, 5px);
+  container-type: inline-size;
+}
+.nt-player-keyboard.keyboard--physical > .keyboard-row {
+  display: grid;
+  grid-template-columns: repeat(calc(var(--nt-keyboard-units, 15) * 4), minmax(0, 1fr));
+  grid-template-rows: minmax(0, 1fr);
+  justify-content: normal;
+  flex: none;
+  gap: 0;
+  width: 100%;
+  height: calc(100cqw / var(--nt-keyboard-units, 15) - var(--nt-keyboard-cap-gap));
+  min-height: 0;
+  aspect-ratio: auto;
+  max-height: none;
+  margin: 0 0 var(--nt-keyboard-row-gap);
+  position: relative;
+}
+.nt-player-keyboard.keyboard--physical > .keyboard-row:last-of-type { margin-bottom: 0; }
+.nt-player-keyboard.keyboard--physical > .keyboard-row > .key {
+  min-width: 0;
+  width: auto;
+  max-width: none;
+  height: 100%;
+  min-height: 0;
+  max-height: none;
+  margin: 0 var(--nt-keyboard-cap-gap) 0 0;
+  flex: none;
+}
+.nt-player-keyboard.keyboard--physical > .keyboard-row > .key--physical-spacer { visibility: hidden; }
+.nt-player-keyboard.keyboard--physical > .keyboard-row > .key--tall {
+  height: calc(200% + var(--nt-keyboard-row-gap));
+  z-index: 2;
+}
+.nt-player-keyboard.keyboard--physical .key-label,
+.nt-player-keyboard.keyboard--physical.keyboard--letter-case-lowercase .key--letter .key-label {
+  font-size: min(14px, calc((100cqw / var(--nt-keyboard-units, 15) - var(--nt-keyboard-cap-gap)) * .65));
+  line-height: 1;
+}
+@media screen and (max-width: 499.98px) {
+  .nt-player-keyboard.keyboard--physical .key--keycap-latin .key-altgr { display: none; }
+  .nt-player-keyboard.keyboard--physical :is(.key--keycap-lower .key-altgr--alt, .key--keycap-upper .key-altgr--shiftalt) { display: inline; font-size: 12px; opacity: 1; }
+  .nt-player-keyboard.keyboard--physical :is(.key--keycap-lower, .key--keycap-upper).key--keycap .key-label { font-size: 0; }
+}
+/* Functional legends remain readable inside narrow JIS caps on phones. */
+.nt-player-keyboard.keyboard--physical .key--special .key-label {
+  display: flex;
+  left: 2px;
+  right: 2px;
+  width: calc(100% - 4px);
+  justify-content: center;
+  height: 100%;
+  bottom: auto;
+  align-items: center;
+  font-size: min(10px, calc((100cqw / var(--nt-keyboard-units, 15) * var(--nt-key-label-units, 1) - var(--nt-keyboard-cap-gap) - 4px) / var(--nt-key-label-length, 1)));
+}
+.nt-player-keyboard.keyboard--jis [data-hardware="Backspace"] .key-label--0 { display: none; }
+.nt-player-keyboard.keyboard--physical .key--special .key-label--0 {
+  font-size: inherit;
+}
+@media (max-width: 499px) {
+  .nt-player-keyboard.keyboard--physical [data-hardware="ShiftLeft"] .key-label--0,
+  .nt-player-keyboard.keyboard--physical [data-hardware="ShiftRight"] .key-label--0 { display: none; }
+  .nt-player-keyboard.keyboard--physical .key--special .key-label {
+    left: 1px;
+    right: 1px;
+    width: calc(100% - 2px);
+    justify-content: center;
+  }
+}
+.nt-player-keyboard.keyboard--full .key--a.key--iso-enter {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+  z-index: 2;
+}
+.nt-player-keyboard .key--iso-enter .key-label--0 { display: none; }
+@container (max-width: 400px) {
+  .nt-player-keyboard.keyboard--physical .key--compact-control .key-label {
+    font-size: min(12px, calc((100cqw / var(--nt-keyboard-units, 15) - var(--nt-keyboard-cap-gap)) * .65));
+  }
+  .nt-player-keyboard.keyboard--physical .key--compact-control .key-label--control-word { display: none; }
+  .nt-player-keyboard.keyboard--physical .key--compact-control .key-label--control-symbol {
+    display: block;
+    margin-left: 0;
+  }
+}
+.nt-player-keyboard .key--iso-enter::before {
+  content: "";
+  position: absolute;
+  box-sizing: border-box;
+  right: 0;
+  /* Width includes the cap gap, so the top is precisely 1.5u, not 1.5x
+     the visible lower cap. */
+  width: calc(100% + (100% + var(--nt-keyboard-cap-gap)) * var(--nt-iso-enter-overhang, .2));
+  bottom: calc(100% - 1px);
+  height: calc(100% + var(--nt-keyboard-row-gap) + 1px);
+  border-radius: 7px 7px 0 7px;
+  border-top: inherit;
+  background: inherit;
+  pointer-events: none;
+}
+.nt-player-keyboard .key-active-level:not([hidden]) {
+  position: absolute;
+  inset: 2px;
+  display: grid;
+  place-items: center;
+  background: inherit;
+  border-radius: inherit;
+  font: inherit;
+  text-transform: none;
+  pointer-events: none;
+}
+.nt-player-keyboard .keyboard-mode-notice:not([hidden]) {
+  position: absolute;
+  left: 12px;
+  top: 2px;
+  font: 600 10px system-ui, sans-serif;
+  color: var(--nt-ink-800, #3d4757);
+}

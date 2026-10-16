@@ -1,0 +1,70 @@
+{
+  "id": "ko-02-101",
+  "unit": "u2",
+  "group": "g1",
+  "order": 42,
+  "slug": "ko-02-101",
+  "title": "숫자 1 · 2 · 3",
+  "summary": "숫자열의 1·2·3을 한 키씩 익힙니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "hangul",
+  "intro": "숫자열의 1·2·3을 한 키씩 익힙니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-02-101",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "111 111 11 111 11 111 11 111 111 111"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "222 222 22 222 22 222 22 222 222 222"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "333 333 33 333 33 333 33 333 333 333"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "33 1331 12 32 ㅓㅓ11 333 222 33 222 333 ㅓㅓ11 32 12 1331",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅐ1ㅐ ㅐ21 1323 2213 11 ㅐㅐ13 133 ㅐ1ㅐ 133 ㅐㅐ13 11 2213 1323",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "11 2222 1123 22 22ㄱ1 11 22ㄱ1 22 1123 2222 1123 2222 11",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "21 1111 ㅕ23 2233 2131 11ㅕ 21 11ㅕ 2131 2233 ㅕ23 1111 ㅕ23",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅑ212 331 223 332ㅎ 1312 ㅑ212 1312 332ㅎ 223 331 223 331",
+      "inputMode": "hangul"
+    }
+  ]
+}

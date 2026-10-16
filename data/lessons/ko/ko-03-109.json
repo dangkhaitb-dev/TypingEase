@@ -1,0 +1,52 @@
+{
+  "id": "ko-03-109",
+  "unit": "u3",
+  "group": "g1",
+  "order": 50,
+  "slug": "ko-03-109",
+  "title": "기호 ~ · # · ^",
+  "summary": "기호 ~ · # · ^를 정확하게 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "기호 ~ · # · ^를 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-03-109",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 ` 키를 눌러 ~를 입력합니다.",
+      "content": "~~ ~1 1~ ~~ ~~ ~~ 1~ ~1 1~ ~1 ~~ ~~"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 숫자 3 키를 눌러 #를 입력합니다.",
+      "content": "## #1 1# ## ## ## 1# #1 1# #1 ## ##"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 숫자 6 키를 눌러 ^를 입력합니다.",
+      "content": "^^ ^1 1^ ^^ ^^ ^^ 1^ ^1 1^ ^1 ^^ ^^"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "오늘 빵집 할인~ 오늘도 좋은 하루 보내요~",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "2^4는 16이에요~ 오늘의 #수학 연습 문제를 풀어요",
+      "inputMode": "hangul"
+    }
+  ]
+}

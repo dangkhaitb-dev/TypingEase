@@ -1,0 +1,79 @@
+{
+  "id": "ja-01-101",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "ja-01-101",
+  "title": "F・J・スペース",
+  "summary": "F と J を基準にし、スペースで練習のまとまりを区切る。",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "F と J を基準にし、スペースで練習のまとまりを区切る。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-101",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "ffff ffff ffff ffff ff ffff ffff ffff ffff ff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "fjf jfjf jf jfj fjfj fj fjf jfjf jf jfj fjfj fj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "親指でスペースキーを押し、文字のまとまりを区切ります。",
+      "content": "fjf jfj fjf jfj fjf jfj fjf jfj fjf jfj fjf jfj",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "ffjf fjf jj fjff jjjj jjf ffjf fjf jj fjff jjjj jjf ffjf fjf jj fjff jjjj"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "fff jjf ff jj ffj fjj fjf jjj jfj fff jjf ff jj ffj fjj fjf jjj jfj fff jjf"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "jj fjff jjfj jfjj ffjj jjj jjjj jj fjff jjfj jfjj ffjj jjj jjjj jj fjff"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "ff jjj jf jjfj jjf fff fffj ff jjj jf jjfj jjf fff fffj ff jjj jf jjfj jjf"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "jjf jj jjjf fffj jfff jjf jj jjjf fffj jfff jjf jj jjjf fffj jfff jjf jj"
+    }
+  ]
+}

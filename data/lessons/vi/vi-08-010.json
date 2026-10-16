@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-010",
+  "unit": "u8",
+  "group": "g3",
+  "order": 120,
+  "slug": "vi-08-010",
+  "title": "Nhịp gõ đoạn ngắn",
+  "summary": "Xây dựng năng lực \"Short Rhythm\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Hợp nhất kỹ năng nhịp điệu trong một đoạn văn ngắn hoàn chỉnh.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Short Rhythm\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Hợp nhất kỹ năng nhịp điệu trong một đoạn văn ngắn hoàn chỉnh.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi nhắc nhịp: giữ nhịp đều đặn, không hấp tấp, không ngắt quãng.",
+      "content": "giữ nhịp gõ đều đặn từng phút từng giây, không hấp tấp vội vàng, không ngắt quãng giữa chừng để đạt hiệu quả cao nhất trong từng bài thực hành hằng ngày. Thở đều, vai hạ, mắt đọc trước rồi tay theo sau.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn ngắn yêu cầu kiểm soát tốc độ từ chữ đầu đến chữ cuối.",
+      "content": "Đoạn văn ngắn đòi hỏi người học phải kiểm soát chặt chẽ tốc độ ngay từ những từ ngữ đầu tiên cho đến khi kết thúc dấu chấm câu cuối cùng. Sự kiên trì và tính kỷ luật bản thân trong từng buổi học chính là nền tảng vững chắc nhất giúp nâng cao năng suất công việc và định hình một phong cách thao tác bàn phím chuyên nghiệp, tự tin trong mọi môi trường làm việc hiện đại đầy tính cạnh tranh.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ về hơi thở và tư thế ngồi gõ đúng cách.",
+      "content": "duy trì hơi thở nhịp nhàng kết hợp với tư thế ngồi thẳng lưng khoa học, hai bàn chân đặt vững chãi trên sàn nhà và thả lỏng hoàn toàn hai bờ vai trong suốt quá trình rèn luyện kỹ năng đánh máy nhanh và chuẩn xác. Hãy quan sát trước một cụm từ và chỉ tăng tốc khi độ chính xác đã ổn định, cổ tay không gồng cứng. Màn hình ngang mắt, ghế tì hết lưng, khuỷu tay sát sườn để lực gõ nhẹ mà vẫn dứt điểm.",
+      "inputMode": "telex"
+    }
+  ]
+}

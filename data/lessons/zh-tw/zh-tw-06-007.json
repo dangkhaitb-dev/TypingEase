@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-007",
+  "unit": "u6",
+  "group": "g1",
+  "order": 57,
+  "slug": "zh-tw-06-007",
+  "title": "回覆活動邀請",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-007",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "謝謝你邀請我參加週六的烤肉活動！我很樂意參加，也想帶一盒水果和大家分享。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我週六上午還要上課，大概中午十二點以後才能到。如果需要幫忙準備東西，請告訴我，我可以提早出門。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "請問活動地點附近有停車位嗎？我打算騎機車去。如果不好停車，我就改搭公車。期待週六和大家見面！",
+      "inputMode": "ime"
+    }
+  ]
+}

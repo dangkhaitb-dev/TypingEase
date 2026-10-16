@@ -162,3 +162,44 @@ window.TypingEaseCurriculum = {
     hint: "দুই তর্জনী চিহ্ন-দেওয়া দুটি কী-তে রাখুন, আর কিবোর্ডের দিকে না তাকিয়ে যা দেখছেন তা লিখুন।"
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/bn-probhat/u1-l01.json?v=dc001b52a0fc9d98",
+  "u1-l02": "/data/lessons/bn-probhat/u1-l02.json?v=0e4492abd122a851",
+  "u1-l03": "/data/lessons/bn-probhat/u1-l03.json?v=90d9831b616b45c2",
+  "u1-l04": "/data/lessons/bn-probhat/u1-l04.json?v=687f3c4c672246cd",
+  "u1-l05": "/data/lessons/bn-probhat/u1-l05.json?v=d77c0993de4c95f7",
+  "u1-l06": "/data/lessons/bn-probhat/u1-l06.json?v=5c88f887d8198ea6",
+  "u1-l07": "/data/lessons/bn-probhat/u1-l07.json?v=6a891dfa3b181054",
+  "u1-l08": "/data/lessons/bn-probhat/u1-l08.json?v=b641082b88fae1ca",
+  "u1-l09": "/data/lessons/bn-probhat/u1-l09.json?v=52faae9f340f5104",
+  "u1-l10": "/data/lessons/bn-probhat/u1-l10.json?v=00c37751b20f3c79",
+  "u2-l01": "/data/lessons/bn-probhat/u2-l01.json?v=3f24d955fdce4db7",
+  "u2-l02": "/data/lessons/bn-probhat/u2-l02.json?v=0f5daaf3aab55eec",
+  "u2-l03": "/data/lessons/bn-probhat/u2-l03.json?v=584bd4eb8aaa4b01",
+  "u2-l04": "/data/lessons/bn-probhat/u2-l04.json?v=5105362ee7ccc99f",
+  "u2-l05": "/data/lessons/bn-probhat/u2-l05.json?v=0ae0880e7b015255",
+  "u2-l06": "/data/lessons/bn-probhat/u2-l06.json?v=a82c8badbab84906",
+  "u2-l07": "/data/lessons/bn-probhat/u2-l07.json?v=4a6a9a379d47b9e4",
+  "u2-l08": "/data/lessons/bn-probhat/u2-l08.json?v=16ab6575d9fbb73d",
+  "u2-l09": "/data/lessons/bn-probhat/u2-l09.json?v=8cb6f69f5d2898b4",
+  "u2-l10": "/data/lessons/bn-probhat/u2-l10.json?v=5c6b5869c8514f19",
+  "u2-l11": "/data/lessons/bn-probhat/u2-l11.json?v=2767b7f800ab0ae4",
+  "u3-l01": "/data/lessons/bn-probhat/u3-l01.json?v=88111524f47d3b72",
+  "u3-l02": "/data/lessons/bn-probhat/u3-l02.json?v=1db29f7c7ea0cb52",
+  "u3-l03": "/data/lessons/bn-probhat/u3-l03.json?v=1b9e0b0818ea997b",
+  "u3-l04": "/data/lessons/bn-probhat/u3-l04.json?v=0c67e4498f098b08",
+  "u3-l05": "/data/lessons/bn-probhat/u3-l05.json?v=fcdae19db6446f68",
+  "u3-l06": "/data/lessons/bn-probhat/u3-l06.json?v=666d3fb87c96ba0d",
+  "u4-l01": "/data/lessons/bn-probhat/u4-l01.json?v=066a1d336315aaf6",
+  "u4-l02": "/data/lessons/bn-probhat/u4-l02.json?v=6f6dcce3ccbe7ac6",
+  "u4-l03": "/data/lessons/bn-probhat/u4-l03.json?v=37ed2c22d7a2d64b",
+  "u4-l04": "/data/lessons/bn-probhat/u4-l04.json?v=dffa4e30566dce25",
+  "u4-l05": "/data/lessons/bn-probhat/u4-l05.json?v=9f324fb0f22336bd",
+  "u4-l06": "/data/lessons/bn-probhat/u4-l06.json?v=0cd8d3f0ec5a465a",
+  "u4-l07": "/data/lessons/bn-probhat/u4-l07.json?v=7e421a149277f75c",
+  "u4-l08": "/data/lessons/bn-probhat/u4-l08.json?v=92871274c4f744b6",
+  "u4-l09": "/data/lessons/bn-probhat/u4-l09.json?v=da15bdb10a9bc86f"
+};
+/* </auto:lesson-urls> */

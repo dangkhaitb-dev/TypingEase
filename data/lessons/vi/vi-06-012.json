@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-012",
+  "unit": "u6",
+  "group": "g3",
+  "order": 94,
+  "slug": "vi-06-012",
+  "title": "Cập nhật hành động tiếp theo",
+  "summary": "Xây dựng năng lực \"Next-Action Updates\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Văn bản cập nhật tổng hợp với đầy đủ các ràng buộc thực tế, trách nhiệm cá nhân và thời hạn hoàn thành.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Next-Action Updates\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Văn bản cập nhật tổng hợp với đầy đủ các ràng buộc thực tế, trách nhiệm cá nhân và thời hạn hoàn thành.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với cập nhật các đầu mối trách nhiệm và thời hạn hoàn thành công việc.",
+      "content": "Cập nhật các đầu mối trách nhiệm và thời hạn hoàn thành công việc: phòng công nghệ thông tin bàn giao máy chủ mới trước ngày hai mươi.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với văn bản cập nhật tổng hợp các hành động tiếp theo trong chiến lược phát triển.",
+      "content": "Văn bản cập nhật tổng hợp các hành động tiếp theo trong chiến lược phát triển: ban điều hành họp với các phòng ban vào thứ Sáu để rà soát tiến độ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Khởi động bài học với kế hoạch hành động tiếp theo cho toàn công ty.",
+      "content": "Kế hoạch hành động tiếp theo cho toàn công ty: đẩy mạnh chuyển đổi số trong công tác quản lý tài liệu, nâng cao kỹ năng sử dụng công nghệ mới và xây dựng môi trường làm việc sáng tạo, chuyên nghiệp cho mọi thành viên.",
+      "inputMode": "telex"
+    }
+  ]
+}

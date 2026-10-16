@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-008",
+  "unit": "u8",
+  "group": "g2",
+  "order": 115,
+  "slug": "vi-08-008",
+  "title": "Biến đổi từ dài",
+  "summary": "Xây dựng năng lực \"Long-Word Changes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thử thách phản xạ với các từ tiếng Việt đa âm tiết và từ có kết cấu phụ âm phức tạp (nghiêng, khuỷu, ngoằn).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Long-Word Changes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thử thách phản xạ với các từ tiếng Việt đa âm tiết và từ có kết cấu phụ âm phức tạp (nghiêng, khuỷu, ngoằn).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Rèn phản xạ dứt điểm trên chuỗi luyện nghiêng, ngoằn, khoèo, khuỷu, thoăn.",
+      "content": "nghiêng nghiêng ngoằn ngoằn khoèo khoèo khuỷu khuỷu thoăn thoắt khúc quanh nguệch ngoạc nghiền ngẫm khướu kêu khoan thai thảng thốt nhoèn mực khuya khoắt nghẹn ngào ngoẹo cổ khom lưng khuỳnh chân thoáng đãng khúc cua nguầy nguậy nghiến răng khướt mồ hôi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ nhiều phụ âm ghép: thoăn thoắt, ngoằn ngoèo, khúc khuỷu.",
+      "content": "bước chân thoăn thoắt ngõ nhỏ ngoằn ngoèo tay khuỷu khúc khuỷu nghiêng ngả bóng chiều tà dần buông dòng suối quanh co uốn khúc bờ tre rủ bóng nghiêng mình lối mòn thoai thoải sườn đồi gió lùa khe hẹp nguệch ngoạc vệt rêu tảng đá nhấp nhô cánh cò nghiêng cánh sương khuya khoắt lạnh thôn xóm thưa thớt bờ sông khúc quanh",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về những từ tiếng Việt nhiều âm tiết và phụ âm ghép phức tạp.",
+      "content": "Những từ tiếng Việt có cấu trúc âm tiết dài và nhiều phụ âm ghép phức tạp thường đòi hỏi sự chú ý đặc biệt từ phía người gõ để tránh việc gõ sót dấu thanh hoặc bấm nhầm vào các phím liền kề. Bằng việc kiên trì luyện tập qua các bài tập chuyên sâu có chủ đích, học viên sẽ từng bước chinh phục những từ ngữ khó nhất một cách tự tin, điêu luyện và chuẩn xác tuyệt đối trong mọi tình huống giao tiếp.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -66,13 +66,13 @@ window.TypingEaseCurriculum = {
       id: 'u4',
       index: 4,
       title: "Tutti gli altri tasti",
-      summary: "I 22 caratteri di questa tastiera che il corso non ha ancora usato, ognuno scritto dove si usa davvero.",
+      summary: "I 24 caratteri di questa tastiera che il corso non ha ancora usato, ognuno scritto dove si usa davvero.",
       minAccuracy: 80,
       locked: true,
       unlockAfter: 'u3-l06',
       groups: [
-        { id: 'symbols', title: "I tasti che mancano", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05', 'u4-l06'] },
-        { id: 'finish', title: "Chiudi l'unità", lessons: ['u4-l07', 'u4-l08'] }
+        { id: 'symbols', title: "I tasti che mancano", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05', 'u4-l06', 'u4-l07'] },
+        { id: 'finish', title: "Chiudi l'unità", lessons: ['u4-l08', 'u4-l09'] }
       ]
     }
   ],
@@ -109,10 +109,11 @@ window.TypingEaseCurriculum = {
     'u4-l02': { title: "£, $, % e &", newKeys: ["£","$","%","&"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l03': { title: "/, (, ) e =", newKeys: ["/","(",")","="], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l04': { title: "? e ^", newKeys: ["?","^"], screens: 7, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l05': { title: "°, il punto e virgola, i due punti e Ç", newKeys: ["°",";",":","ç"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l06': { title: "É, *, § e _", newKeys: ["é","*","§","_"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l07': { title: "Tutti i segni insieme", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
-    'u4-l08': { title: "Prova dell'unità 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
+    'u4-l05': { title: "°, il punto e virgola e i due punti", newKeys: ["°",";",":"], screens: 9, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l06': { title: "<, > e Ç", newKeys: ["<",">","ç"], screens: 8, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l07': { title: "É, *, § e _", newKeys: ["é","*","§","_"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l08': { title: "Tutti i segni insieme", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
+    'u4-l09': { title: "Prova dell'unità 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
   },
 
   sequence: [
@@ -150,7 +151,8 @@ window.TypingEaseCurriculum = {
     'u4-l05',
     'u4-l06',
     'u4-l07',
-    'u4-l08'
+    'u4-l08',
+    'u4-l09'
   ],
 
   starter: {
@@ -160,3 +162,44 @@ window.TypingEaseCurriculum = {
     hint: "Appoggia gli indici sui due tasti con il rilievo e scrivi quello che vedi, senza guardare la tastiera."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/it-dvorak/u1-l01.json?v=cc55d5f2a24cfa4b",
+  "u1-l02": "/data/lessons/it-dvorak/u1-l02.json?v=21b3d5b95ae16e90",
+  "u1-l03": "/data/lessons/it-dvorak/u1-l03.json?v=45e990031231c055",
+  "u1-l04": "/data/lessons/it-dvorak/u1-l04.json?v=26c6a569ba4628d4",
+  "u1-l05": "/data/lessons/it-dvorak/u1-l05.json?v=08e344d85432ace2",
+  "u1-l06": "/data/lessons/it-dvorak/u1-l06.json?v=c7c477eb4543aa7f",
+  "u1-l07": "/data/lessons/it-dvorak/u1-l07.json?v=76e33e307c1cb4e6",
+  "u1-l08": "/data/lessons/it-dvorak/u1-l08.json?v=ba85fd24d5208842",
+  "u1-l09": "/data/lessons/it-dvorak/u1-l09.json?v=54556f22fab65986",
+  "u1-l10": "/data/lessons/it-dvorak/u1-l10.json?v=523833d8aae81c73",
+  "u2-l01": "/data/lessons/it-dvorak/u2-l01.json?v=9112a3f9bb05ce14",
+  "u2-l02": "/data/lessons/it-dvorak/u2-l02.json?v=22c0e15a273f7cc4",
+  "u2-l03": "/data/lessons/it-dvorak/u2-l03.json?v=06d17636378cecef",
+  "u2-l04": "/data/lessons/it-dvorak/u2-l04.json?v=afc23dcc949e4b39",
+  "u2-l05": "/data/lessons/it-dvorak/u2-l05.json?v=fb7a449362008bfa",
+  "u2-l06": "/data/lessons/it-dvorak/u2-l06.json?v=5d7153fa1d915aef",
+  "u2-l07": "/data/lessons/it-dvorak/u2-l07.json?v=91fdc5b3149522fa",
+  "u2-l08": "/data/lessons/it-dvorak/u2-l08.json?v=56a24b8b81f577a1",
+  "u2-l09": "/data/lessons/it-dvorak/u2-l09.json?v=f984eb5068e56d2a",
+  "u2-l10": "/data/lessons/it-dvorak/u2-l10.json?v=049af8d27429b157",
+  "u2-l11": "/data/lessons/it-dvorak/u2-l11.json?v=12b33aeed27d4716",
+  "u3-l01": "/data/lessons/it-dvorak/u3-l01.json?v=122186436e10d1a9",
+  "u3-l02": "/data/lessons/it-dvorak/u3-l02.json?v=02db58d9868420ff",
+  "u3-l03": "/data/lessons/it-dvorak/u3-l03.json?v=5507dfe548c5fe06",
+  "u3-l04": "/data/lessons/it-dvorak/u3-l04.json?v=3adee1ae77511acb",
+  "u3-l05": "/data/lessons/it-dvorak/u3-l05.json?v=033a3602bf42795b",
+  "u3-l06": "/data/lessons/it-dvorak/u3-l06.json?v=f65610795c8c8159",
+  "u4-l01": "/data/lessons/it-dvorak/u4-l01.json?v=bcc41f29fde2ed27",
+  "u4-l02": "/data/lessons/it-dvorak/u4-l02.json?v=c109de9921e69c9c",
+  "u4-l03": "/data/lessons/it-dvorak/u4-l03.json?v=4e335658238c4bb2",
+  "u4-l04": "/data/lessons/it-dvorak/u4-l04.json?v=01eb86ce5b4782bd",
+  "u4-l05": "/data/lessons/it-dvorak/u4-l05.json?v=47631c3d55981e03",
+  "u4-l06": "/data/lessons/it-dvorak/u4-l06.json?v=0d73f4786548db19",
+  "u4-l07": "/data/lessons/it-dvorak/u4-l07.json?v=3e7dbc37d6b164a9",
+  "u4-l08": "/data/lessons/it-dvorak/u4-l08.json?v=3124144f6c47d5d5",
+  "u4-l09": "/data/lessons/it-dvorak/u4-l09.json?v=08d17a5ec581ad77"
+};
+/* </auto:lesson-urls> */

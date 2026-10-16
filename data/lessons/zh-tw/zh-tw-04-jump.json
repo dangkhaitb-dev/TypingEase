@@ -1,0 +1,51 @@
+{
+  "id": "zh-tw-04-jump",
+  "unit": "u4",
+  "group": "g2",
+  "order": 39,
+  "slug": "zh-tw-04-jump",
+  "title": "快速進行",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以詞組確認候選字，提交後再輸入數字或標點，最後檢查整句。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-04-jump",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以詞組確認候選字，提交後再輸入數字或標點，最後檢查整句。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "下午4點整理完書桌，我再記下明天的行程。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先確認留言用詞，再切模式輸入時間；回中文模式完成句子。",
+      "content": "我先買麵包；你帶2瓶水，我們在車站會合。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先完成每句的候選字與標點，按 Enter 換行後繼續記錄。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "時間：下午2點\n地點：圖書館（請帶筆記）。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "逐句確認選字，提交後才切換模式或換行，最後核對整段。",
+      "content": "今天：完成3頁筆記。\n明天：早上9點再一起討論。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

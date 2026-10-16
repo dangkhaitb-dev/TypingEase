@@ -1,0 +1,94 @@
+{
+  "id": "it-01-jump",
+  "unit": "u1",
+  "group": "g4",
+  "order": 18,
+  "slug": "it-01-jump",
+  "title": "Salta avanti",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Mantieni un ritmo costante e torna alla posizione di base tra i gruppi.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-jump",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Mantieni un ritmo costante e torna alla posizione di base tra i gruppi.",
+      "content": "ffjj ffjff jjf fj ffj jjjj jf jf jjfff jffjj fjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "kkk hkk hhh gk kh hhgg kg kkkk ghk gghk hkg kkgk kkkh hhg gfgk khg ggh kk"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "ha la salsa là dalla sala alla falla ha la falda"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "alle tre sarà la festa e la sera sarà tarda"
+    },
+    {
+      "type": "standard",
+      "text": "Tieni premuto Maiusc mentre digiti le lettere maiuscole indicate.",
+      "content": "FJFF JJJF FFJJ JFJF FFFJ JJFJ FJFF JJFF FJ FFFJ JJFJ"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "il papà è più alto di lei e guarda la sala"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "la mamma e il mio amico sono molto bravi"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni frase con attenzione, usando qualsiasi tasto che conosci.",
+      "content": "la città è già così piena di gente quando arriva il treno"
+    }
+  ]
+}

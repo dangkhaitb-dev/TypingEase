@@ -1,0 +1,112 @@
+{
+  "id": "ja-01-109",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "ja-01-109",
+  "title": "X・C・V",
+  "summary": "X、C、V を安定した指運びで打つ。",
+  "newKeys": [
+    "x",
+    "c",
+    "v"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "ime",
+  "intro": "X、C、V を安定した指運びで打つ。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-109",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "xxx xxxx xx xx xxx xxxx xx xx xxx xxxx xx xx xxx",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "ccc xxcx xx ccxc cc cccx ccc xxcx xx ccxc cc cccx",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "xx xxx vvx vv vcxc cx cc xx xxx vvx vv vcxc cx cc",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "xrcf ccc vvxv ccx ccvx vvv cccv vvc xrcf ccc vvxv ccx ccvx vvv cccv vvc"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "fxxc vvv ccxc cyx cxvx vvxv vvx fxxc vvv ccxc cyx cxvx vvxv vvx fxxc vvv"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "xxcx zzv xvc ccvv xx xxcx zzv xvc ccvv xx xxcx zzv xvc ccvv xx xxcx zzv xvc"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "cv vvxx vv xx uuxc cccc ccx vuxu cc cv vvxx vv xx uuxc cccc ccx vuxu cc cv"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "xv vc xx vvxx cx vvvx cc vg xxcx xv vc xx vvxx cx vvvx cc vg xxcx xv vc xx"
+    },
+    {
+      "type": "standard",
+      "text": "「ち」は ti のほか c を使った chi でも、「ちゃ」は cha でも入力できます。かなの文を入力します。",
+      "content": "うちでこうちゃをいれてきゅうけいをするおちゃはあつい",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "「ち」は ti のほか c を使った chi でも、「ちゃ」は cha でも入力できます。かなの文を入力します。",
+      "content": "ちずをひろげてちかてつでいくちきゅうはひろいほしです",
+      "inputMode": "ime"
+    }
+  ]
+}

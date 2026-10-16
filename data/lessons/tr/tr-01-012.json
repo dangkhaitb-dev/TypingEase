@@ -1,0 +1,114 @@
+{
+  "id": "tr-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "tr-01-012",
+  "title": "Tuşlar m, ö, ç",
+  "summary": "m, ö, ç tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "m",
+    "ö",
+    "ç"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "m, ö, ç tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-012",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Tuş alıştırması: m.",
+      "content": "mmm mmmm mm mm mm mm mm mm",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ö",
+      "text": "Tuş alıştırması: ö.",
+      "content": "ööö öö öööö öö öö öö öö öö",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ç",
+      "text": "Tuş alıştırması: ç.",
+      "content": "ççç çççç çç çç çç çç çç çç",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ööçm öçöö göç ççm öçm ööç ög möçö ömm çmm çööö gç ggmm möö"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ömö çmmm mçm möön mmmö mö çç ççn mm mçç mmçm"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ömm çö çöö mç çm çmmö mmöm mö ğöğç çç öömç öç ömç ççç mm"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "çööm ööç çm mm çö mç öm ömmç çmç mmö öççö öçöö mçö öçj mö mj öm"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "çocuklar masada çay içiyor annem çok güzel çay yaptı"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "öğle yemeği mutlu çocuk masa çok ömür göz için"
+    }
+  ]
+}

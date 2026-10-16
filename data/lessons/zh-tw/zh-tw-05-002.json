@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-002",
+  "unit": "u5",
+  "group": "g1",
+  "order": 41,
+  "slug": "zh-tw-05-002",
+  "title": "忘帶雨傘後的安排",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-002",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "走到半路，我才發現忘了帶雨傘，天空已經開始下起小雨。路上的行人紛紛加快腳步。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我先躲進便利商店，傳訊息告訴媽媽，再買一件輕便雨衣。店員還給了我一個塑膠袋，讓我把書包包好。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "穿上雨衣後，我沿著騎樓走到學校。下次出門前，我一定先看天氣預報。",
+      "inputMode": "ime"
+    }
+  ]
+}

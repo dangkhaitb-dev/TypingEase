@@ -59,7 +59,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}",
     "|",
@@ -100,7 +99,7 @@
       "type": "block",
       "newKey": "*",
       "text": "Primero *, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "** * *acción* *textos* *después*\n** * *muchas* *zapato* *muchas*\n** * *cosas* *lugar* *plazas*"
+      "content": "** * *azul* *tiempo* *cambios*\n** * *año* *buena* *año*\n** * *gotas* *añade* *hombre*"
     },
     {
       "type": "intro",
@@ -113,7 +112,7 @@
       "type": "block",
       "newKey": "]",
       "text": "Primero ], sin nada alrededor, y después donde de verdad se usa.",
-      "content": "]] ] hijas] esperar] oreja]\n]] ] cambio] tarde] mucho]\n]] ] adiós] cabeza] usada]"
+      "content": "]] ] ideas] por] sola]\n]] ] plazas] juega] corta]\n]] ] sabes] bocas] llegar]"
     },
     {
       "type": "intro",
@@ -126,7 +125,7 @@
       "type": "block",
       "newKey": "[",
       "text": "Primero [, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "[[ [ [ojo] [árbol] [mucha]\n[[ [ [mesa] [los] [empezar]\n[[ [ [destaca] [siempre] [mesa]"
+      "content": "[[ [ [hijos] [examen] [año]\n[[ [ [señora] [ayuda] [beber]\n[[ [ [juguete] [mano] [señora]"
     },
     {
       "type": "intro",
@@ -139,35 +138,35 @@
       "type": "block",
       "newKey": ";",
       "text": "Primero el punto y coma, sin nada alrededor, y después donde de verdad se usa.",
-      "content": ";; ; llegar; oreja; una;\n;; ; nadie; mares; nuestra;\n;; ; mismas; hombres; exacto;"
+      "content": ";; ; aire; sola; segura;\n;; ; reloj; sueños; con;\n;; ; corta; mares; esperar;"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Una ráfaga de trozos cortos con estos caracteres.",
       "tokens": [
-        "*césped*",
-        "sede;",
-        "[médico]",
-        "[canta]",
-        "ayudar;",
-        "viene;",
-        "teléfono;",
-        "*danza*",
-        "[figura]",
-        "hombres;"
+        "*zapato*",
+        "lejos;",
+        "[cabeza]",
+        "[cuanto]",
+        "estar;",
+        "mismo;",
+        "extraña;",
+        "*nuevas*",
+        "[guardia]",
+        "mares;"
       ]
     },
     {
       "type": "block",
       "text": "Todo lo de esta lección, mezclado.",
-      "content": "pequeño; examen; mis; quiere;\n*oreja* libros; [ayuda] *única*\n*muy* [también] [está] [uña]"
+      "content": "nombres; campo; conocer; comidas;\n*sola* persona; [estar] *escribir*\n*cantar* [manos] [libre] [ideal]"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Otra vez palabras, con los signos en su sitio.",
-      "content": "[sur] ayudar [usar] ver *corto*\n[brazos] algas [antes] además [empezar]\n[usadas] camino llevas; fuertes [cuentas]"
+      "content": "[seña] estar [igual] mi *cosa*\n[puerta] galas [relojes] sabe [beber]\n[llegada] medio tierras; figura [toros]"
     }
   ]
 }

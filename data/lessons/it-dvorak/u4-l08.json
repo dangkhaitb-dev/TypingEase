@@ -3,9 +3,9 @@
   "unit": "u4",
   "group": "finish",
   "order": 35,
-  "slug": "test-u4",
-  "title": "Prova dell'unità 4",
-  "summary": "Una prova a tempo con tutti i tasti della tastiera.",
+  "slug": "review-u4",
+  "title": "Tutti i segni insieme",
+  "summary": "Tutti i segni dell'unità, mescolati a parole e numeri.",
   "newKeys": [],
   "keysSoFar": [
     " ",
@@ -74,6 +74,8 @@
     "°",
     ";",
     ":",
+    "<",
+    ">",
     "ç",
     "é",
     "*",
@@ -81,17 +83,61 @@
     "_"
   ],
   "minAccuracy": 80,
-  "estMinutes": 2,
+  "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Una prova a tempo con tutto, segni compresi.",
-  "congrats": "Questa era la tastiera intera. Non c'è più un tasto che questo corso non ti abbia insegnato.",
+  "intro": "Nessun tasto nuovo. Tutti i caratteri dell'unità, mescolati a parole e numeri.",
+  "congrats": "Ogni tasto di questa tastiera ha avuto il suo turno.",
   "screens": [
     {
-      "type": "test",
+      "type": "standard",
       "dictation": "words",
-      "seconds": 120,
-      "text": "Parole, numeri e segni. Lo stesso ritmo dall’inizio alla fine.",
-      "content": "pieno? cantare *ferie* fuori \"vestito\" cena\n(caldo) delle ééé sale lei/più cantare\nleggere: studio 60^1 treno 76^2 bisogno\nuomo\\mucca starà quindici! zia bagno/porto fila"
+      "text": "I segni allo stesso ritmo delle lettere intorno.",
+      "content": "tutto & così verdi lì|nome sei ççç\n<sedile> l'amica <contare> canta §89\n§95 mare (l'aria) vedere (dare)"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Tieni il ritmo anche sui segni; sono tasti come gli altri.",
+      "content": "starò|ragazzi andrà ççç vicino 55 = 7\n$98 tardi fax! persona £54\n45 = 98 dal sua & chiudere fiera $16"
+    },
+    {
+      "type": "burst",
+      "seconds": 30,
+      "text": "Una raffica di pezzi brevi con questi caratteri.",
+      "tokens": [
+        "ççç",
+        "10°",
+        "ééé",
+        "£28",
+        "25%",
+        "$65",
+        "\"torta\"",
+        "73=72",
+        "tastiera|watt",
+        "44°",
+        "figure\\farò",
+        "contento/la",
+        "tè:",
+        "67^2"
+      ]
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Tieni il ritmo anche sui segni; sono tasti come gli altri.",
+      "content": "§84 gara parte? colore burro & sabbia\n(quasi) mercato voce: piede 97^3\nççç portare falò: vivere dirà?"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Tieni il ritmo anche sui segni; sono tasti come gli altri.",
+      "content": "ééé ridere paese/il parte azzurro/visita\nlatte & amico ideale (mia) banco avrò!\n§51 voglio 36% gite (cena)"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Tieni il ritmo anche sui segni; sono tasti come gli altri.",
+      "content": "<stazione> terzo §7 non forza_visita\n\"nel\" natura £45 stanza (dei)\nééé festa comune/bocca ride £26"
     }
   ]
 }

@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-026",
+  "unit": "u1",
+  "group": "g1",
+  "order": 26,
+  "slug": "vi-01-026",
+  "title": "Luyện phím · ỉ ở ủ",
+  "summary": "Học cách gõ ỉ (i r), ở (o w r), ủ (u r) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ỉ (i r), ở (o w r), ủ (u r) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-026",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu hỏi: gõ r sau nguyên âm. i r → ỉ. Ví dụ: chỉnh = c h i r n h.",
+      "content": "mỉm tỉ đỉnh mỉm vỉa nhỉ xỉ bỉ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ o w r để ra ở: o w ra ơ, r thêm dấu hỏi. Ví dụ: khởi = k h o w r i.",
+      "content": "khởi bởi bưởi ở hở dở hở chở dở",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu hỏi: gõ r sau nguyên âm. u r → ủ. Ví dụ: ngủ = n g u r.",
+      "content": "ngủ rủ củ ngủ đủ rủ ủ ngủ tủ rủi chủ ngủ chủ phủ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ỉ, ở, ủ. Nhớ: ỉ = i r, ở = o w r, ủ = u r.",
+      "content": "khởi thở hưởng phủ thủy ngủ bé xuống cơ rủi chỉnh thật xe",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ỉ, ở, ủ. Nhớ: ỉ = i r, ở = o w r, ủ = u r.",
+      "content": "mỉm tỉnh xưởng kết nào vở sủa vào khởi rủi nhờ bỉ chiều dịu hở giấy",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ỉ, ở, ủ.",
+      "content": "vườn quê củ nghỉ chỉ phủ quanh cháu vườn quay còn vỉa ngủ ta đoạn tỉ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ỉ, ở, ủ.",
+      "content": "biết chọn thưởng lấy vị vỉa xe điều hủy và lan một bớt",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các câu ngắn, chỉ dùng những phím đã học.",
+      "content": "ghi món đồ cần mua vào điện thoại ngay khi nhận ra nó sắp hết",
+      "inputMode": "telex"
+    }
+  ]
+}

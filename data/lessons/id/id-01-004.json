@@ -1,0 +1,70 @@
+{
+  "id": "id-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "id-01-004",
+  "title": "Huruf: s, l",
+  "summary": "Gõ n dan bedakan posisinya dalam drill tertutup.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Gõ n dan bedakan posisinya dalam drill tertutup.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-004",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "sfss fsf ffs fs ssfs sss ss ssf ssss sf sfs fssf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "llll lllf flfl lf lflf fl ll lll lfl",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jfl llsj ll jjf ff jls flls ljl lls ll sjs sl jss lfs fj"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "sfls fj ssff lj sj llj lss ssl ff jj sf fj jfs lj js sl ll"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jf lj fl sfs sf ffs ljs ljfs ljlf sj flf jsjs ff jlfl sl"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "fls lsj slff lf lfl fl jl jfjl lfll jfj jj fjls lj ss fs"
+    }
+  ]
+}

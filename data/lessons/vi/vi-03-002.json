@@ -1,0 +1,55 @@
+{
+  "id": "vi-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 39,
+  "slug": "vi-03-002",
+  "title": "Luyện phím · A Ă Q",
+  "summary": "Luyện phím Shift trái kết hợp các phím tay phải Y, U, I, O, P, H, J, K, L, B, N, M để gõ chữ hoa.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "telex",
+  "intro": "Luyện phím Shift trái kết hợp các phím tay phải Y, U, I, O, P, H, J, K, L, B, N, M để gõ chữ hoa.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ a (ngón út trái) để ra A. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Ai Ảnh Ánh A Ánh A Anh Ánh Áo Anh Ánh",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ a, rồi gõ w để ra Ă (Shift + a, w).",
+      "content": "Ă Ăn Ăn cơm Ă Ăn no Ăn quả Ă Ăn bánh Ăn cá",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ q (ngón út trái) để ra Q. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Q Quê Quân Quen Quả Qua Q Quế",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý A, Ă, Q. Giữ Shift bằng ngón út của tay kia.",
+      "content": "nước Quang Quân Ai Qua Ăn Ánh một Quang Áo Quá Quả An Ảnh",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có A, Ă, Q mà không nhìn bàn phím.",
+      "content": "Đôi Ảnh Ăn Ăn Quang Đêm Ánh Đỏ số đèn Quầy dấu qua",
+      "inputMode": "telex"
+    }
+  ]
+}

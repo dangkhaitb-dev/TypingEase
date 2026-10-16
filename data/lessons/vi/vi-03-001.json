@@ -1,0 +1,61 @@
+{
+  "id": "vi-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 38,
+  "slug": "vi-03-001",
+  "title": "Luyện phím · Shift Đ",
+  "summary": "Luyện phím Shift phải kết hợp các phím tay trái Q, W, E, R, T, A, S, D, F, G, Z, X, C, V để gõ chữ hoa.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Luyện phím Shift phải kết hợp các phím tay trái Q, W, E, R, T, A, S, D, F, G, Z, X, C, V để gõ chữ hoa.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím Shift: giữ Shift bằng ngón út của tay kia, rồi gõ chữ để ra chữ hoa. Ví dụ: Shift + h → H.",
+      "content": "Hà Nam Hà Mai Linh Minh Lan Nam Minh Hoa Tú Bình",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ d, rồi gõ d thêm một lần để ra Đ (Shift + d, d).",
+      "content": "Đọc Đạt Đi Đạt Đ Đào Đ Đức Đọc Đầu Đến Đã",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý Đ. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Đối Đối Định Độ Đó Đổi Đức Đỏ Điểm Đọc Đo cuối Đàn Đình Động",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý Đ. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Đêm Đừng sách Đức Điện Đề Đến nhà Địa Đĩa và lên gỗ Đọc Đoạn Định Đủ Đọc",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý Đ. Giữ Shift bằng ngón út của tay kia.",
+      "content": "nhẹ Đã Đêm Đáng Đất Đồng độ Đường Đỏ khiến cửa Động Đoạn sân Đặt Đá",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có Đ mà không nhìn bàn phím.",
+      "content": "Đá Đó Đêm Điều dưới cả Đặt Điểm Đừng thời Điện Đánh",
+      "inputMode": "telex"
+    }
+  ]
+}

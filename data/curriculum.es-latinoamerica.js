@@ -100,7 +100,7 @@ window.TypingEaseCurriculum = {
     'u2-l10': { title: "Teclas flojas", newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: true },
     'u2-l11': { title: "Prueba de la unidad 2", newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: true },
     'u3-l01': { title: "La fila de números", newKeys: ["1","2","3","4","5","6","7","8","9","0"], screens: 11, estMinutes: 6, kind: 'keys', ready: true },
-    'u3-l02': { title: "La columna exterior", newKeys: ["-","'","¿","´","+","}"], screens: 9, estMinutes: 6, kind: 'keys', ready: true },
+    'u3-l02': { title: "La columna exterior", newKeys: ["-","'","¿","+","}"], screens: 9, estMinutes: 6, kind: 'keys', ready: true },
     'u3-l03': { title: "Direcciones, enlaces y números", newKeys: [], screens: 8, estMinutes: 5, kind: 'review', ready: true },
     'u3-l04': { title: "Textos y ritmo 1", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
     'u3-l05': { title: "Textos y ritmo 2", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
@@ -162,3 +162,44 @@ window.TypingEaseCurriculum = {
     hint: "Apoya los índices en las dos teclas con relieve y escribe lo que veas, sin mirar el teclado."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/es-latinoamerica/u1-l01.json?v=8e93c61dfe752c8e",
+  "u1-l02": "/data/lessons/es-latinoamerica/u1-l02.json?v=a576d8c71d0f182f",
+  "u1-l03": "/data/lessons/es-latinoamerica/u1-l03.json?v=29844364fd8f619c",
+  "u1-l04": "/data/lessons/es-latinoamerica/u1-l04.json?v=178bb81ac00a5a82",
+  "u1-l05": "/data/lessons/es-latinoamerica/u1-l05.json?v=9d1065bc222493c4",
+  "u1-l06": "/data/lessons/es-latinoamerica/u1-l06.json?v=e816a15b701d41a3",
+  "u1-l07": "/data/lessons/es-latinoamerica/u1-l07.json?v=564f7692509b5a48",
+  "u1-l08": "/data/lessons/es-latinoamerica/u1-l08.json?v=cffdbce91e38a894",
+  "u1-l09": "/data/lessons/es-latinoamerica/u1-l09.json?v=7051a363ff88a85f",
+  "u1-l10": "/data/lessons/es-latinoamerica/u1-l10.json?v=fc65390d5ea7484e",
+  "u2-l01": "/data/lessons/es-latinoamerica/u2-l01.json?v=1c4360646a30c9a9",
+  "u2-l02": "/data/lessons/es-latinoamerica/u2-l02.json?v=c24746e7bb9d674d",
+  "u2-l03": "/data/lessons/es-latinoamerica/u2-l03.json?v=82f5e27d71d31914",
+  "u2-l04": "/data/lessons/es-latinoamerica/u2-l04.json?v=f0536e90656fa929",
+  "u2-l05": "/data/lessons/es-latinoamerica/u2-l05.json?v=879ebcf698d6cf6b",
+  "u2-l06": "/data/lessons/es-latinoamerica/u2-l06.json?v=ad57c3c640ca0970",
+  "u2-l07": "/data/lessons/es-latinoamerica/u2-l07.json?v=d3e957cf6225459a",
+  "u2-l08": "/data/lessons/es-latinoamerica/u2-l08.json?v=a789a13e425ebece",
+  "u2-l09": "/data/lessons/es-latinoamerica/u2-l09.json?v=39ee756c8a84293f",
+  "u2-l10": "/data/lessons/es-latinoamerica/u2-l10.json?v=e3c21ac8fb500820",
+  "u2-l11": "/data/lessons/es-latinoamerica/u2-l11.json?v=90d3082c8e901c99",
+  "u3-l01": "/data/lessons/es-latinoamerica/u3-l01.json?v=09a3ad7324fcd0f4",
+  "u3-l02": "/data/lessons/es-latinoamerica/u3-l02.json?v=9d10a5f15467e705",
+  "u3-l03": "/data/lessons/es-latinoamerica/u3-l03.json?v=61d2fc6a2ed3d986",
+  "u3-l04": "/data/lessons/es-latinoamerica/u3-l04.json?v=9c55ca45b9677ed2",
+  "u3-l05": "/data/lessons/es-latinoamerica/u3-l05.json?v=302bbd6b7db4a977",
+  "u3-l06": "/data/lessons/es-latinoamerica/u3-l06.json?v=85b7432bc1f0b8bb",
+  "u4-l01": "/data/lessons/es-latinoamerica/u4-l01.json?v=cc764679db32a665",
+  "u4-l02": "/data/lessons/es-latinoamerica/u4-l02.json?v=69a4fecd75457df8",
+  "u4-l03": "/data/lessons/es-latinoamerica/u4-l03.json?v=1a3f54ad6696966b",
+  "u4-l04": "/data/lessons/es-latinoamerica/u4-l04.json?v=1ccb83e51ab7c941",
+  "u4-l05": "/data/lessons/es-latinoamerica/u4-l05.json?v=7f93f6526c89a5fb",
+  "u4-l06": "/data/lessons/es-latinoamerica/u4-l06.json?v=a7aa8e75e0aaa168",
+  "u4-l07": "/data/lessons/es-latinoamerica/u4-l07.json?v=ab706c949acdf783",
+  "u4-l08": "/data/lessons/es-latinoamerica/u4-l08.json?v=ed12a0a13e332694",
+  "u4-l09": "/data/lessons/es-latinoamerica/u4-l09.json?v=1ebba0edbb41ef1c"
+};
+/* </auto:lesson-urls> */

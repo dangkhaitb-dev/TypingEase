@@ -1,0 +1,79 @@
+{
+  "id": "en-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "en-01-001",
+  "title": "F, J home keys and Space",
+  "summary": "Locate J, F and Space; use changing transitions and familiar-key review, then record a fresh per-key check.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Locate J, F and Space; use changing transitions and familiar-key review, then record a fresh per-key check.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-001",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Find f and return to the home position. Type each target carefully.",
+      "content": "ffff ffff ffff ffff ffff ffff ffff ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Find j and return to the home position. Type each target carefully.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj jj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Press the Space bar with your thumb between the letter groups, then return to the home position.",
+      "content": "f j f j f j f j f j f j f j f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "fj fjjfj jf jjf jf fjff fj jf ff fjf fj fj jjj"
+    },
+    {
+      "type": "standard",
+      "text": "Keep a steady rhythm and return to the home position between groups.",
+      "content": "jf ffjff jj fff fffjf fffj jjf ffj jjff fffj fj fffjf ffjj"
+    },
+    {
+      "type": "standard",
+      "text": "Type each group calmly without looking at the keyboard.",
+      "content": "fj ffjj jjjj fjjj fjffj fjfjj jfjff fjf ffjf fjjf jfjj jfjf jjj"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "jf fjjj jjf ffjff ffffj jfj jjj jjjj ffjfj jfffj ffjj jjj jjff"
+    },
+    {
+      "type": "standard",
+      "text": "Keep a steady rhythm and return to the home position between groups.",
+      "content": "ff jjfff jjfff fj jfj fj jjf fjjjj fjfj ffjff fffj fffff jjjf"
+    }
+  ]
+}

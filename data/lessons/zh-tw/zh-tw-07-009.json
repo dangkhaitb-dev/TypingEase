@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-009",
+  "unit": "u7",
+  "group": "g1",
+  "order": 70,
+  "slug": "zh-tw-07-009",
+  "title": "比較兩種做法",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-009",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "要去機場，我們有兩種做法：搭捷運或叫計程車。哥哥說：「搭捷運比較便宜，也不怕塞車。」我說：「可是我們有兩個大行李箱，轉車會很麻煩。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "媽媽算了一下：搭捷運四個人要花兩百多元，計程車大約八百元。計程車雖然貴，卻可以直接送到門口。爸爸說：「如果早上塞車，坐計程車也不一定比較快。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我們最後決定：去程人多、行李重，就叫計程車；回程只剩小背包，就搭捷運。媽媽說：「每種做法都有優點和缺點，看清楚情況再選擇，才是最好的辦法。」大家都同意這個安排。",
+      "inputMode": "ime"
+    }
+  ]
+}

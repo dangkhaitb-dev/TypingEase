@@ -1,0 +1,54 @@
+{
+  "id": "vi-03-005",
+  "unit": "u3",
+  "group": "g1",
+  "order": 42,
+  "slug": "vi-03-005",
+  "title": "Luyện phím · F G I",
+  "summary": "Luyện phím Shift kết hợp hàng phím số để gõ các ký hiệu @, #, $, %, &, *, (, ).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Luyện phím Shift kết hợp hàng phím số để gõ các ký hiệu @, #, $, %, &, *, (, ).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ f (ngón trỏ trái) để ra F. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Fk fF Fj Fn F Fm Fl fF jF F Ff Fm Ff FF Fm FF"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ g (ngón trỏ trái) để ra G. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Giờ Ghi Gỗ Gió Gia Giờ Gian Ghi G Gỗ G Ghế Giữ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ i (ngón giữa phải) để ra I. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Il Ít I jI Ik jI Ít Im Ik Ít I",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý F, G, I. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Ghế Im Giữ Ít Gom Im cho Gặp Bữa Ghế Giữa Gõ fF dấu Ghi Gõ Gõ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có F, G, I mà không nhìn bàn phím.",
+      "content": "ánh Ảnh jF Chỗ Giữa Đỏ con tiếng Gọi Ít Giữ Gia Gió Giấy Ghi Ff Dụng cho",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "tr-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 14,
+  "slug": "tr-02-001",
+  "title": "Shift tuşu",
+  "summary": "Shift tuşunu öğren: Shift basılıyken harfe basarak büyük harf yaz.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Shift tuşunu öğren: Shift basılıyken harfe basarak büyük harf yaz.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-02-001",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift tuşunu basılı tut ve harfe bas; büyük harf yazılır. Her harften sonra Shift tuşunu bırak.",
+      "content": "FJ FJF JFJ FF JJ FJJ JFF FJJF JJFF FJFJ"
+    },
+    {
+      "type": "standard",
+      "text": "Her ismin ilk harfini Shift tuşuyla büyük yaz.",
+      "content": "Ali Ayşe Ece Deniz Işık İpek Ömer Şule Çağla"
+    },
+    {
+      "type": "standard",
+      "text": "Şehir adlarının ilk harfini Shift tuşuyla büyük yaz.",
+      "content": "Ankara İzmir Bursa Adana Konya Sivas Çorum Van"
+    },
+    {
+      "type": "standard",
+      "text": "Kişi adlarını büyük harfle başlatarak yaz.",
+      "content": "Ali okula gitti Ece evde kaldı Deniz bahçede oynadı"
+    }
+  ]
+}

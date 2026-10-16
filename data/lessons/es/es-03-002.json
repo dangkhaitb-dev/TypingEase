@@ -1,0 +1,94 @@
+{
+  "id": "es-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 22,
+  "slug": "es-03-002",
+  "title": "Tecla muerta ´: á y é",
+  "summary": "Aprende á y é: pulsa la tecla muerta ´ y después la vocal.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Aprende á y é: pulsa la tecla muerta ´ y después la vocal.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-002",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Pulsa la tecla ´ (a la derecha de la P), suéltala y escribe a: así sale á.",
+      "content": "ááááá áááá ááááá áááá áááá aááá"
+    },
+    {
+      "type": "standard",
+      "text": "Pulsa la tecla ´ (a la derecha de la P), suéltala y escribe e: así sale é.",
+      "content": "eééé ééééé éée éée eééé eééé"
+    },
+    {
+      "type": "standard",
+      "text": "Alterna las teclas nuevas con las que ya conoces y vuelve a la posición de referencia.",
+      "content": "eááéá ááe éáéá éééa éáááé jéáé seaáá éáej ááééé áé ádj ééá éae áé"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "mamá está en casa y papá viene después del trabajo"
+    },
+    {
+      "type": "standard",
+      "text": "Alterna las teclas nuevas con las que ya conoces y vuelve a la posición de referencia.",
+      "content": "éáééé ááéé ééés áááaá sá aáéá ééáéé éé éáéá éééd ééáé"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "el café está caliente y el té también está listo"
+    }
+  ]
+}

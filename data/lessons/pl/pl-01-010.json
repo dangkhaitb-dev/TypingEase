@@ -1,0 +1,108 @@
+{
+  "id": "pl-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "pl-01-010",
+  "title": "Klawisze b, n, m",
+  "summary": "Poznaj klawisze b, n, m i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "b",
+    "n",
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze b, n, m i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-010",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Ćwiczenie klawisza: b.",
+      "content": "bbbb bbbb bbbb bbbb bbbb bbbb bbbb bbbb bbbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Ćwiczenie klawisza: n.",
+      "content": "nnnn nnnn nnnn nnnn nnnn nnnn nnnn nnnn nnn",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Ćwiczenie klawisza: m.",
+      "content": "mmmm mmmm mmmm mmmm mmmm mmmm mmmm mmmm mm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "vvb mb bmn mm nnnb bb mmb nn mmmm bbnb nnb bnm mmmn mmn"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "vnn bnm mm nbbn bmm nn bmmb bbbb bm bbb nmm mb nn mbb bbn nnvn nmnn"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "cmnn nn nnnn nmcb mbnb mbmn mb mn mmmn bmmn mnmm mmn mc cm mbnn bbnn"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "bbb mmb bmb bn mb mmz bmmn mz mbn mm nmzm onb bbmn nb nbbn"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "mama ma dom nie mam czasu ale on jest obok"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "nie wiem czy to dobre ale ja mam tylko dwa banany"
+    }
+  ]
+}

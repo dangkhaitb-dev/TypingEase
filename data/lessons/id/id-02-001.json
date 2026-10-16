@@ -1,0 +1,107 @@
+{
+  "id": "id-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 15,
+  "slug": "id-02-001",
+  "title": "Angka: 1, 2, 3",
+  "summary": "Gõ angka 1, 2, dan 3 dalam urutan yang berubah.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Gõ angka 1, 2, dan 3 dalam urutan yang berubah.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-02-001",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "1f11f 111 1ff 11f f111 f11 1111 11",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "2f22 2f 222 f222 2ff 22f2 22f f2f 22 2222 2f2",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "3333 f33 333 f3 3f33 f333 3ff 33 333f 33f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "f2 jt3 fj2 j32 1f f3 13 j2f t33 2j1j jj 3fj2 ff23 2t3 333 f2f"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "1j fj jfj 3jfj f31 1333 jf f323 j3 1jf fj1f fjfj 1331 j2f3 1jj2"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "f222 2jj ff j31 1j33 3f j2 3231 k1j f33 222 31f2 jf fkk 2ff1 f11f j3 11k1"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "2j1 1j23 21ff j3 f1 jjf 3ff jf1 32 j2jf j1f jf2"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "2f 11 fj 22 3j1 32f3 ffj f3jf 2jj j2fj j13 f23 3f 3j32 1f jf2 1j3"
+    }
+  ]
+}

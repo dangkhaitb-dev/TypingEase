@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-05-jump",
+  "unit": "u5",
+  "group": "g2",
+  "order": 50,
+  "slug": "zh-tw-05-jump",
+  "title": "快速進行",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ime",
+  "intro": "以自然情境句子練習連續輸入。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-jump",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "媽媽提醒我今天會變冷，我多帶了一件外套。穿好鞋子後，我和家人說再見就出門了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "穿上雨衣後，我沿著騎樓走到學校。下次出門前，我一定先看天氣預報。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "到了車站，同學們還在等我。班長笑著說：「沒關係，我們一起出發吧。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我把盆栽移到通風的位置，改成土乾了才澆水。過了一個星期，薄荷又長出新芽，房間裡也多了一股清香。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "七點整，菜都上桌了。我們一起說了聲「開動」，邊吃邊分享今天發生的事。吃完飯後，我和哥哥一起洗碗。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "最後，我在床頭櫃的抽屜裡找到那本書。我把書用紙袋裝好，隔天親手還給同學，並謝謝她願意借給我。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "天色漸漸暗了，路燈一盞盞亮起來。我們交換了電話號碼，約好下個週末一起去吃她推薦的那家麵店。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "回到家時，天剛好全黑。媽媽在門口等我，說下次出門要先說好回家的時間。我點點頭，答應以後會更注意。",
+      "inputMode": "ime"
+    }
+  ]
+}

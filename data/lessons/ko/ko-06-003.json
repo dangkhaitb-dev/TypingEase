@@ -1,0 +1,43 @@
+{
+  "id": "ko-06-003",
+  "unit": "u6",
+  "group": "g1",
+  "order": 80,
+  "slug": "ko-06-003",
+  "title": "필요한 자료를 부탁해요",
+  "summary": "필요한 자료를 구체적으로 요청하고 전달 방법을 정합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "필요한 자료를 구체적으로 요청하고 전달 방법을 정합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-06-003",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "내일 회의에 쓸 지난달 판매 자료를 보내 주실 수 있을까요? 오늘 퇴근 전까지만 받으면 충분할 것 같습니다. 부탁드립니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "보내 주신 파일은 잘 받았습니다. 그런데 셋째 주 숫자가 비어 있어서 그 부분만 한 번 더 확인해 주시겠어요?",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "고쳐 주신 자료 덕분에 내일 발표 준비를 모두 마쳤습니다. 바쁘신데도 이렇게 빨리 도와주셔서 정말 감사합니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

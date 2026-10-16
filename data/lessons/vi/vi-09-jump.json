@@ -1,0 +1,73 @@
+{
+  "id": "vi-09-jump",
+  "unit": "u9",
+  "group": "g4",
+  "order": 134,
+  "slug": "vi-09-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 47,
+  "inputMode": "telex",
+  "intro": "Vận dụng tốc độ vào đoạn văn về phản xạ gõ theo khối từ ngữ quen thuộc.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về phản xạ gõ theo khối từ ngữ quen thuộc.",
+      "content": "Các cụm từ cố định thường gặp trong đời sống và văn phòng giúp người gõ rèn luyện phản xạ theo khối từ ngữ thay vì gõ từng chữ cái riêng rẽ. Đọc trước cả cụm từ cho phép bàn tay thực hiện chuỗi thao tác liên hoàn với tốc độ vượt trội và độ chuẩn xác tuyệt đối. Mỗi cụm từ được đọc trọn trước khi chuyển sang cụm tiếp theo trên màn hình.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ về sự nhanh nhẹn và tiến bộ mỗi ngày.",
+      "content": "đi lại nhanh nhẹn vào ra sớm muộn trở về đúng giờ làm việc chăm chỉ tiến bộ từng ngày nâng cao hiệu suất. Mỗi lượt gõ giữ nhịp đều, mắt theo dòng chữ và ngón tay trở về vị trí quen thuộc sau mỗi lần chạm phím. Người học tăng tốc từ từ, ưu tiên độ chính xác rồi mới rút ngắn khoảng nghỉ giữa các từ. Khi nhịp tay ổn định, hãy chuyển từ cụm ngắn sang câu dài và giữ thao tác nhẹ nhàng đến hết dòng. Sau mỗi lượt, nghỉ ngắn, thả lỏng bàn tay rồi bắt đầu lại với tư thế thoải mái.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về nhịp điệu của từ láy đôi trong tiếng Việt.",
+      "content": "Những từ ngữ láy đôi trong tiếng Việt có cấu trúc âm điệu nhịp nhàng giúp ngón tay di chuyển mượt mà trên bàn phím. Khi luyện gõ các từ láy lặp lại, người gõ sẽ làm chủ được sự luân chuyển giữa các ngón tay cùng bàn tay mà không bị vấp váp. Hãy chú ý tiếng đầu và tiếng sau, giữ khoảng cách đều giữa các cụm, rồi đọc lại toàn câu để phát hiện lỗi dấu. Sự tập trung giúp người học nhận ra nhịp điệu của từ và gõ chính xác hơn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về thành ngữ, tục ngữ quen thuộc của người Việt.",
+      "content": "Những câu thành ngữ, tục ngữ quen thuộc đã in sâu vào tiềm thức của mỗi người Việt Nam, tạo điều kiện thuận lợi nhất để tăng tốc độ gõ phím. Khi não bộ đã thuộc lòng cấu trúc câu từ, mọi nguồn lực tập trung có thể dành trọn vẹn cho việc duy trì nhịp gõ đều đặn và uyển chuyển trên từng phím bấm. Người gõ chú ý từng dấu thanh trong từ ghép và giữ nhịp đều ở các cụm dài.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về tính linh hoạt khi cấu trúc câu thay đổi.",
+      "content": "Bài tập biến thể cấu trúc câu thử thách tính linh hoạt của phản xạ gõ phím khi người học phải liên tục điều chỉnh nhịp điệu theo những thay đổi bất ngờ trong câu chữ. Đây là bước đệm quan trọng giúp chuyển giao từ việc gõ máy rập khuôn sang khả năng thích ứng linh hoạt với mọi văn bản thực tế trong cuộc sống. Câu ngắn cắt nhịp; câu dài kéo chữ; câu hỏi dừng ở dấu hỏi. Người học kiểm tra lại dòng vừa gõ rồi sửa chỗ lệch dấu.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về thử thách của hàng phím số trên cùng.",
+      "content": "Hàng phím số trên cùng thường là thử thách lớn đối với người luyện gõ mười ngón do cự ly vươn tay khá xa so với hàng cơ sở. Việc luyện tập các nhóm số tốc độ cao giúp các ngón tay làm quen với quỹ đạo chuyển động vươn lên và thu về dứt khoát, bảo đảm gõ đúng con số mà không cần cúi đầu nhìn xuống bàn phím. Khi gặp dãy 135 hay 246, ngón tay trở về hàng giữa ngay sau mỗi nhóm ba chữ số 908.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về sự chuyển đổi liên tục giữa chữ và số.",
+      "content": "Sự kết hợp liên tục giữa chữ cái tiếng Việt và các con số đòi hỏi sự linh hoạt tuyệt đối của các ngón tay giữa các hàng phím khác nhau. Kỹ năng chuyển đổi nhịp nhàng giữa chữ và số là yêu cầu bắt buộc đối với nhân viên kế toán, quản trị kho và biên tập viên dữ liệu số trong các cơ quan hiện đại. Gõ thử: phòng K12 nhận 36 thùng, kệ A7 còn 108 mã, phiếu 22B. Ca chiều xuất 14 lô, mã C09, tổng 275 kiện.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về việc làm chủ tổ hợp phím trong ngữ cảnh mới.",
+      "content": "Nhiệm vụ chuyển giao tốc độ sang ngữ cảnh mới đòi hỏi sự tự tin và khả năng làm chủ hoàn toàn các tổ hợp phím tiếng Việt. Bằng việc thực hành thường xuyên trên nhiều thể loại tài liệu phong phú, học viên sẽ không còn cảm giác bỡ ngỡ trước bất kỳ định dạng văn bản phức tạp nào và luôn duy trì được tốc độ gõ ấn tượng. Thử chuyển từ tin nhắn sang biên bản, rồi sang bảng số liệu, mà không đổi tư thế tay.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-008",
+  "unit": "u5",
+  "group": "g1",
+  "order": 47,
+  "slug": "zh-tw-05-008",
+  "title": "打掃後的客廳",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-008",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "週六上午，我們全家一起打掃客廳。爸爸擦窗戶，我負責整理雜誌，把舊報紙綁好拿去回收。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "媽媽用吸塵器清理地毯，弟弟把玩具收進箱子。大家分工合作，不到一個小時，客廳就變得乾乾淨淨。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "打掃完以後，陽光從擦亮的窗戶照進來，整個客廳顯得特別明亮。我們泡了一壺茶，坐在沙發上好好休息。",
+      "inputMode": "ime"
+    }
+  ]
+}

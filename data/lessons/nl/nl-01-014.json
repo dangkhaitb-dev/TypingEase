@@ -1,0 +1,80 @@
+{
+  "id": "nl-01-014",
+  "unit": "u1",
+  "group": "g1",
+  "order": 16,
+  "slug": "nl-01-014",
+  "title": "Herhaling",
+  "summary": "Herhaal alle letters in korte zinnen.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Herhaal alle letters in korte zinnen.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-014",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Typ de Nederlandse tekst met de toetsen die je al hebt geleerd.",
+      "content": "een helder plan helpt het team rustig en precies samen te werken"
+    },
+    {
+      "type": "standard",
+      "text": "Typ de Nederlandse tekst met de toetsen die je al hebt geleerd.",
+      "content": "vandaag bezoekt de groep het museum en maakt korte aantekeningen"
+    },
+    {
+      "type": "standard",
+      "text": "Typ de Nederlandse tekst met de toetsen die je al hebt geleerd.",
+      "content": "de bus komt op tijd aan en rijdt later verder naar de nieuwe markt"
+    },
+    {
+      "type": "standard",
+      "text": "Typ de zinnen zorgvuldig met de toetsen die je al hebt geleerd.",
+      "content": "twee à drie ideeën voor het café vóór de reünie"
+    },
+    {
+      "type": "standard",
+      "text": "Typ de zinnen zorgvuldig met de toetsen die je al hebt geleerd.",
+      "content": "één coördinator is geïnteresseerd in de crème en de chèque"
+    }
+  ]
+}

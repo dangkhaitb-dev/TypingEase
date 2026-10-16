@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-006",
+  "unit": "u8",
+  "group": "g2",
+  "order": 116,
+  "slug": "vi-08-006",
+  "title": "Biến đổi nhịp điệu",
+  "summary": "Xây dựng năng lực \"Changing Cadence\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thử thách học viên chuyển đổi linh hoạt giữa các câu ngắn dồn dập và câu dài uyển chuyển.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Changing Cadence\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thử thách học viên chuyển đổi linh hoạt giữa các câu ngắn dồn dập và câu dài uyển chuyển.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi cụm từ đổi nhịp: bước đi thong thả, nhịp nhàng đều tay, lướt nhanh.",
+      "content": "bước đi thong thả nhịp nhàng đều tay gõ phím nhẹ nhàng lướt nhanh chuyển đổi linh hoạt nhịp bước khoan thai tăng tốc đột ngột rồi chậm lại êm ái dứt khoát",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về sự phối hợp giữa mắt quan sát và bàn tay khi đánh máy mười ngón.",
+      "content": "Kỹ năng đánh máy mười ngón đòi hỏi sự phối hợp nhịp nhàng giữa đôi mắt quan sát và đôi bàn tay khéo léo lướt nhẹ trên bàn phím. Khi người học duy trì được sự tập trung cao độ và hoàn toàn không nhìn xuống các phím bấm, từng thao tác gõ sẽ tự nhiên vang lên như những nốt nhạc trầm bổng du dương trên phím đàn piano.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ về chuyển nhịp và giữ độ chính xác khi gõ.",
+      "content": "chuyển nhịp linh hoạt giữ vững độ chính xác không vấp váp nhả phím dứt khoát tập trung cao độ điều hòa hơi thở phối hợp hài hòa hai bàn tay. Người học đổi nhịp theo tín hiệu, thả lỏng cổ tay và giữ lực gõ đều rồi tăng tốc ở cụm ngắn, chậm lại ở câu dài để chữ không lệch hàng. Khi gặp câu dồn dập thì gõ gọn; khi gặp câu uyển chuyển thì kéo đều từng nhịp, vai không gồng.",
+      "inputMode": "telex"
+    }
+  ]
+}

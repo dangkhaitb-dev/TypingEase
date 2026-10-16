@@ -54,7 +54,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}"
   ],
@@ -68,32 +67,32 @@
       "text": "Para empezar, palabras sueltas. Sin prisa: la velocidad sale de la precisión, nunca al revés.",
       "dictation": "words",
       "type": "standard",
-      "content": "gusta boca palabras razón\nlugar quedar hombro comidas\ncuando halla traes filas"
+      "content": "figuras padres venir buenas\nniñas come preguntas medio\nrelojes alga gusta idea"
     },
     {
       "seconds": 25,
       "text": "Una ráfaga corta. Termina la lista aunque se te escape alguna.",
       "type": "burst",
       "tokens": [
-        "alas",
-        "me",
-        "sigla",
-        "paz",
-        "partes",
-        "hija",
-        "campos",
-        "sueño",
-        "están",
-        "minuto",
-        "comunes",
-        "esperar"
+        "cartas",
+        "empieza",
+        "buenos",
+        "alga",
+        "hombres",
+        "y",
+        "blanca",
+        "minutos",
+        "toda",
+        "explica",
+        "comida",
+        "blancas"
       ]
     },
     {
       "text": "Cinco palabras por línea. Deja que los ojos vayan por delante de los dedos.",
       "dictation": "words",
       "type": "standard",
-      "content": "carta épocas niño única músicas\ngrande meses salir beber mas\nextraño más falsa otros hija"
+      "content": "cuando luz casas debes examen\nduda doce grandes pueblo ciencias\ntiempo conoce salsa alturas ideas"
     },
     {
       "text": "Patrones otra vez, para comprobar que los dedos siguen volviendo a la fila de reposo.",
@@ -105,40 +104,40 @@
       "text": "Palabras cortas, a buen ritmo. Estas deberían salir ya casi solas.",
       "dictation": "words",
       "type": "standard",
-      "content": "idea feliz hallé debes\ngusta busca mares veces\noro con allí otra"
+      "content": "esa idea sedes buena\neste parte mis mundo\nfuego oro sabes o"
     },
     {
       "seconds": 30,
       "text": "Más tiempo y más palabras. Mantén el mismo ritmo de principio a fin.",
       "type": "burst",
       "tokens": [
-        "conoce",
-        "señas",
-        "quedar",
-        "rojo",
-        "grandes",
-        "cambios",
-        "mundo",
-        "águila",
-        "años",
+        "juguetes",
+        "juegos",
+        "padre",
+        "halla",
+        "doce",
+        "fuerza",
+        "este",
+        "danza",
+        "voces",
         "mucho",
-        "gente",
-        "aquí",
-        "engaño",
-        "otras"
+        "punto",
+        "pueblo",
+        "precio",
+        "plaza"
       ]
     },
     {
       "text": "Frases completas. Aquí es donde se nota si la mano vuelve sola a su sitio.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Todos los días camino hasta la plaza.\nLos niños juegan en el jardín de la escuela.\nElla escribe cartas a sus amigos."
+      "content": "El tren llega a las siete de la mañana.\nQuiero aprender a escribir sin mirar el teclado.\nMi madre trabaja en el centro de la ciudad."
     },
     {
       "text": "La última tanda. Si has llegado hasta aquí sin mirar el teclado, la lección está hecha.",
       "dictation": "words",
       "type": "standard",
-      "content": "dueño hijas once iguales momento\nhielo fuerza todo trae haga\ncentro hombres lugares selva sueños"
+      "content": "nuestro idea nueva dudas engaño\nisla boca ayuda fuerte dadas\nun madre añade hilos noches"
     }
   ]
 }

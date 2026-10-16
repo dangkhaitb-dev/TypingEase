@@ -1,0 +1,53 @@
+{
+  "id": "vi-03-015",
+  "unit": "u3",
+  "group": "g1",
+  "order": 55,
+  "slug": "vi-03-015",
+  "title": "Luyện phím · % & (",
+  "summary": "Học các dấu % & ( và luyện gõ từ kèm dấu câu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Học các dấu % & ( và luyện gõ từ kèm dấu câu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-015",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím 5 (ngón trỏ trái, hàng số) để ra %.",
+      "content": "18% 38% 67% 34% 34% 75% 7% 28%"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím 7 (ngón trỏ phải, hàng số) để ra &.",
+      "content": "A&B A&B A&B A&B A&B A&B A&B A&B A&B"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím 9 (ngón áp út phải, hàng số) để ra (.",
+      "content": "(hơn (giữ (có (sau (bạn (một (sau (con",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ kèm dấu % & (.",
+      "content": "để 31% 24% hỏi (của đồ cô&dùng học các (nhé Lan&Mai Lan&Mai (phần A&B",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ kèm dấu % & ( mà không nhìn bàn phím.",
+      "content": "A&B 92% 93% lúc (bị (người A&B (đầu những 24% Lan&Mai",
+      "inputMode": "telex"
+    }
+  ]
+}

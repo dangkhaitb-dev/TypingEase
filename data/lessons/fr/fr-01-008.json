@@ -1,0 +1,93 @@
+{
+  "id": "fr-01-008",
+  "unit": "u1",
+  "group": "g2",
+  "order": 7,
+  "slug": "fr-01-008",
+  "title": "r, t, y",
+  "summary": "Apprenez r, t, y et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "r",
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Apprenez r, t, y et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-008",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "Repérez r sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "rrrr ff rrrf rfrr ffrr rfrf rf ffr rrf rr rrr",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "Repérez t sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "tftt ftt tf ft tttf ff tt ttt ttft tttt",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "Repérez y sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "yyyf ffyy yfy yyy fy yy yfyy",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ty yy yfty frt tf ytfy rr trr yf rf yr yffr fftf rr yf tr"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "yj trr yr yjyt yt rrtj rtj tytr rtyy tt jr ryj tjt tjrr"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le sel de la salle le gel de la gare la dalle large"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "la salle de la gare est large et la dame garde le gel"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ftf yrtr fytr rr ftt ftt rty yyt ft rfy frff fttf fyrr"
+    }
+  ]
+}

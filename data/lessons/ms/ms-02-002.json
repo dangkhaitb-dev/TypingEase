@@ -1,0 +1,110 @@
+{
+  "id": "ms-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 16,
+  "slug": "ms-02-002",
+  "title": "Angka: 4, 5, 6",
+  "summary": "Lengkapkan digit; tarikh tanpa tanda sempang atau garis condong.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Lengkapkan digit; tarikh tanpa tanda sempang atau garis condong.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-02-002",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "444 ff44 4f 4444 f4ff f4 4f44 f444 4ff 44f 44",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "555 55f f555 5555 ff5f 55ff 55",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "6f66 666f 6f6f f6 66 6f6 666 6f 6666",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "ff6 4j jf 5f4 j5 56f f5 f6 ff 44 jj 646j 6j j6 f4"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "j44f ff 4bff 546 5445 fj 4f6 455f 4fj j4fj f6ff b5 f6 j5 4564 5j 6j 4fj6"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "f6 ffj4 5j6 4ff5 j4 4j j5 f4j fj4 rjf 6f 46r6 5j jf ff 46jf jj5 6f4 fj j6"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "j;6j 454 jf 4f4j ff56 j6 4j 4f6 445f j4 ff f556 j46 4jj ff5 5j j4j 445 fff"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "6j46 46j jjf f6 645 4jfj jjjf j4 fjfy jj f6f"
+    }
+  ]
+}

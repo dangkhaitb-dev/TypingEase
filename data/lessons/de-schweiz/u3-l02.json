@@ -9,9 +9,7 @@
   "newKeys": [
     "-",
     "'",
-    "^",
     "ü",
-    "¨",
     "$"
   ],
   "keysSoFar": [
@@ -60,9 +58,7 @@
     "0",
     "-",
     "'",
-    "^",
     "ü",
-    "¨",
     "$"
   ],
   "minAccuracy": 80,
@@ -89,74 +85,65 @@
     },
     {
       "newKeys": [
-        "^",
-        "ü"
+        "ü",
+        "$"
       ],
-      "text": "Jetzt ^ und ü. Der kleine Finger geht nach außen und kommt zurück; die Hand bleibt, wo sie ist.",
+      "text": "Jetzt ü und $. Der kleine Finger geht nach außen und kommt zurück; die Hand bleibt, wo sie ist.",
       "type": "block",
-      "content": "ü^ ^ü\n^fj üd ^f\n^ü ü^ ^ü^ü"
+      "content": "$ü ü$\nüfj $d üf\nü$ $ü ü$ü$"
     },
     {
       "seconds": 20,
       "text": "Eine Runde mit dem, was du aus dieser Spalte schon hast.",
       "type": "burst",
       "tokens": [
-        "ü'",
-        "'^",
-        "''",
-        "ü-",
-        "'-",
-        "-ü",
-        "ü^",
-        "-'",
+        "$'",
         "'ü",
-        "üü"
+        "''",
+        "$-",
+        "'-",
+        "-$",
+        "$ü",
+        "-'",
+        "'$",
+        "$$"
       ]
-    },
-    {
-      "newKeys": [
-        "¨",
-        "$"
-      ],
-      "text": "Jetzt ¨ und $. Der kleine Finger geht nach außen und kommt zurück; die Hand bleibt, wo sie ist.",
-      "type": "block",
-      "content": "¨$ ¨$\n¨fd $j ¨f\n¨$ $¨ ¨$¨$"
     },
     {
       "text": "Alle sechs zusammen. Hier verdreht sich das Handgelenk am schnellsten, wenn der Finger nicht zurückkehrt.",
       "type": "block",
-      "content": "f^- d$' f^\n$¨ ¨$ $¨$¨\n$$$$ ^^^^ ''' --- üüü ¨¨¨¨"
+      "content": "-'$ü -ü$'\nü-j $d' ü-\n$- -$ $-$-"
     },
     {
       "seconds": 25,
       "text": "Wieder Wörter, damit die Hand nach so viel Rand locker wird.",
       "type": "burst",
       "tokens": [
-        "eile",
-        "oper",
-        "kuh",
-        "dort",
-        "sprechen",
-        "dynamik",
-        "lachen",
-        "diese",
-        "hand",
-        "bringen",
-        "quote",
-        "lächeln"
+        "jacke",
+        "tor",
+        "sei",
+        "zurück",
+        "dann",
+        "geben",
+        "wahl",
+        "dir",
+        "los",
+        "richtig",
+        "stücke",
+        "zahl"
       ]
     },
     {
       "text": "Zurück zu den Wörtern, jetzt mit der ganzen Tastatur — Ü eingeschlossen.",
       "dictation": "words",
       "type": "standard",
-      "content": "butter fad wort sprechen\ner höfe berühmt tag\nleute tier programm länder"
+      "content": "ein mensch wärme essen\ngut glücklich zucker seil\nvogel kinder yacht kopie"
     },
     {
       "text": "Ganze Sätze zum Abschluss der Tastenlektionen.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Mein Bruder arbeitet in einem kleinen Betrieb.\nMeine Schwester wohnt in einer kleinen Stadt.\nDer Lehrer erklärt die Aufgabe noch einmal."
+      "content": "Die Katze schläft den ganzen Tag auf dem Sofa.\nDer Lehrer erklärt die Aufgabe noch einmal.\nDie Kinder spielen im Garten hinter dem Haus."
     }
   ]
 }

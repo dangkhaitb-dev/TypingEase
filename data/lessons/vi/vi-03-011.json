@@ -1,0 +1,55 @@
+{
+  "id": "vi-03-011",
+  "unit": "u3",
+  "group": "g1",
+  "order": 51,
+  "slug": "vi-03-011",
+  "title": "Luyện phím · ; ' ,",
+  "summary": "Học các dấu ; ' , và luyện gõ từ kèm dấu câu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Học các dấu ; ' , và luyện gõ từ kèm dấu câu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím ;: ngón út phải, hàng cơ sở. Gõ ; xen với các phím đã học.",
+      "content": "con; còn; một; lại; ghi; để; hơn;",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Phím ': ngón út phải, hàng cơ sở. Gõ ' xen với các phím đã học.",
+      "content": "'và' 'và' 'để' 'và' 'và' 'để'",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Phím ,: ngón giữa phải, hàng dưới. Gõ , xen với các phím đã học.",
+      "content": "hơn, đi, để, cho, giữ, một, có,",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ kèm dấu ; ' ,.",
+      "content": "ghi, 'lên' lại, khách; con; phòng; qua sáng; thấy; ghi những dùng 'cả'",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ kèm dấu ; ' , mà không nhìn bàn phím.",
+      "content": "đổi; rồi dưới, và nhóm, 'hỏi' 'cần' thêm mỗi; đồ; học, qua, 'ăn' rồi",
+      "inputMode": "telex"
+    }
+  ]
+}

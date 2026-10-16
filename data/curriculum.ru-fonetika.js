@@ -158,3 +158,42 @@ window.TypingEaseCurriculum = {
     hint: "Положи указательные пальцы на две клавиши с выступом и набирай то, что видишь, не глядя на клавиатуру."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/ru-fonetika/u1-l01.json?v=92639bd037715c63",
+  "u1-l02": "/data/lessons/ru-fonetika/u1-l02.json?v=9fd6814210189b69",
+  "u1-l03": "/data/lessons/ru-fonetika/u1-l03.json?v=6cab8f2397a523d5",
+  "u1-l04": "/data/lessons/ru-fonetika/u1-l04.json?v=ccf9eaa19fae5427",
+  "u1-l05": "/data/lessons/ru-fonetika/u1-l05.json?v=afae8e4c2ec9b55a",
+  "u1-l06": "/data/lessons/ru-fonetika/u1-l06.json?v=784ffbce3def279c",
+  "u1-l07": "/data/lessons/ru-fonetika/u1-l07.json?v=c8e4879cfeec0104",
+  "u1-l08": "/data/lessons/ru-fonetika/u1-l08.json?v=d014d3b54d609075",
+  "u1-l09": "/data/lessons/ru-fonetika/u1-l09.json?v=9ebe084e45bd6657",
+  "u1-l10": "/data/lessons/ru-fonetika/u1-l10.json?v=17041eae8e9612ec",
+  "u2-l01": "/data/lessons/ru-fonetika/u2-l01.json?v=c31dadcb22a754e1",
+  "u2-l02": "/data/lessons/ru-fonetika/u2-l02.json?v=d3eb239f7a11c7d0",
+  "u2-l03": "/data/lessons/ru-fonetika/u2-l03.json?v=189b84cc3aee6baf",
+  "u2-l04": "/data/lessons/ru-fonetika/u2-l04.json?v=f8fa7b4d4ce92ed4",
+  "u2-l05": "/data/lessons/ru-fonetika/u2-l05.json?v=a3af907fa76163b5",
+  "u2-l06": "/data/lessons/ru-fonetika/u2-l06.json?v=afc787b860282fe6",
+  "u2-l07": "/data/lessons/ru-fonetika/u2-l07.json?v=30c02cafbc5d7ab4",
+  "u2-l08": "/data/lessons/ru-fonetika/u2-l08.json?v=8b0312fbc06ed6a6",
+  "u2-l09": "/data/lessons/ru-fonetika/u2-l09.json?v=51be6bba17399419",
+  "u2-l10": "/data/lessons/ru-fonetika/u2-l10.json?v=4356be10b777efd2",
+  "u2-l11": "/data/lessons/ru-fonetika/u2-l11.json?v=5ffe673792072697",
+  "u3-l01": "/data/lessons/ru-fonetika/u3-l01.json?v=a1b24bb38d9a22f9",
+  "u3-l02": "/data/lessons/ru-fonetika/u3-l02.json?v=20879be4f74a653e",
+  "u3-l03": "/data/lessons/ru-fonetika/u3-l03.json?v=fbeb21414c5d8f4a",
+  "u3-l04": "/data/lessons/ru-fonetika/u3-l04.json?v=298c53b5e5375e96",
+  "u3-l05": "/data/lessons/ru-fonetika/u3-l05.json?v=d130aad0281e5fcc",
+  "u3-l06": "/data/lessons/ru-fonetika/u3-l06.json?v=03444dfc1b10fe8a",
+  "u4-l01": "/data/lessons/ru-fonetika/u4-l01.json?v=44ff810c7df2ef71",
+  "u4-l02": "/data/lessons/ru-fonetika/u4-l02.json?v=51bb4d00ded888c7",
+  "u4-l03": "/data/lessons/ru-fonetika/u4-l03.json?v=a7b19e34ad32fc7b",
+  "u4-l04": "/data/lessons/ru-fonetika/u4-l04.json?v=69065b26f42ab7a6",
+  "u4-l05": "/data/lessons/ru-fonetika/u4-l05.json?v=51f0d5a9167b3a56",
+  "u4-l06": "/data/lessons/ru-fonetika/u4-l06.json?v=62ec1b9f4a8e6fac",
+  "u4-l07": "/data/lessons/ru-fonetika/u4-l07.json?v=a1804b08151e90c3"
+};
+/* </auto:lesson-urls> */

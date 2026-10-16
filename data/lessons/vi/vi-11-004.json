@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-004",
+  "unit": "u11",
+  "group": "g1",
+  "order": 148,
+  "slug": "vi-11-004",
+  "title": "Ca trực thư viện",
+  "summary": "Xây dựng năng lực \"Library Shift\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 155 âm tiết, thử thách sức bền ngón tay qua ca trực thư viện với nhiều chi tiết đầu sách.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 17,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Library Shift\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 155 âm tiết, thử thách sức bền ngón tay qua ca trực thư viện với nhiều chi tiết đầu sách.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về hướng dẫn tra cứu danh mục điện tử.",
+      "content": "Thủ thư hướng dẫn bạn đọc mở hệ thống tra cứu danh mục điện tử trên máy công cộng. Họ gõ từ khóa, lọc theo năm xuất bản rồi ghi mã giá sách trước khi vào kho. Với tài liệu hạn chế, thủ thư kiểm tra thẻ độc giả và thời hạn mượn trước khi cấp phiếu. Quy trình ngắn này giúp giảm thời gian tìm kiếm và tránh lấy nhầm bản.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về ca trực chiều tại thư viện tỉnh.",
+      "content": "Ca trực chiều tại thư viện tỉnh ghi nhận lượng độc giả tra cứu tài liệu khoa học kỹ thuật tăng rõ. Máy tra cứu danh mục chạy liên tục trong khi thủ thư hỗ trợ xếp hàng ngắn. Nhiều sinh viên đến sau giờ học để mượn giáo trình và tạp chí chuyên ngành. Sổ thống kê cuối ca ghi lại số lượt và các yêu cầu chưa giải quyết để bàn giao ca tối.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ sức bền qua đoạn văn liên tục về ca trực thư viện buổi chiều muộn.",
+      "content": "Ca trực thư viện vào buổi chiều muộn luôn đòi hỏi sự cẩn trọng, nhẫn nại và tinh thần phục vụ tận tâm từ người cán bộ thủ thư. Từng tập sách cũ được độc giả hoàn trả sau giờ đọc phải được kiểm tra kỹ lưỡng hiện trạng trang bìa, quét mã vạch điện tử để cập nhật dữ liệu lưu thông vào hệ thống quản lý tập trung của thư viện. Sau đó, những cuốn sách này được phân loại cẩn thận theo bảng mã phân loại thập phân quốc tế và xếp lên xe đẩy chuyên dụng để vận chuyển về đúng vị trí giá sách ban đầu trong kho lưu trữ rộng lớn.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -38,7 +38,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter"
   ],
@@ -53,7 +52,7 @@
       "seconds": 60,
       "text": "Aucune touche nouvelle. Écris à un rythme que tu peux tenir jusqu'au bout.",
       "dictation": "sentence",
-      "content": "Nous avons besoin de deux personnes de plus.\nMon frère habite dans une grande ville du sud.\nChaque personne avance à son propre rythme.\nLe train arrive à la gare dans une heure."
+      "content": "Le livre que je cherche est sur la table.\nNous parlons de ce projet depuis longtemps.\nLa petite fille joue dans le jardin.\nLa musique venait de la salle du fond."
     }
   ]
 }

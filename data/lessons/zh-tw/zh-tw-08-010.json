@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-010",
+  "unit": "u8",
+  "group": "g1",
+  "order": 82,
+  "slug": "zh-tw-08-010",
+  "title": "從早到晚順暢完成",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-010",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "今天是我第一次自己規劃全家的出遊行程。早上八點，我們準時從家裡出發，搭火車到海邊的小鎮。因為前一天已經查好班次，也買好來回車票，所以一路上都很順利。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "中午，我們在老街吃了當地有名的魚丸湯和炒米粉。下午去海邊散步撿貝殼，弟弟還堆了一座沙堡。三點左右開始起風，我依照原本的計畫，帶大家到附近的博物館參觀，避開了海邊的強風。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "傍晚，我們買了一些名產當作伴手禮，搭上六點的火車回家。在車上，爸爸說今天的行程安排得很好，每個地方都玩得很盡興，也不會太累。從早到晚都順順利利，讓我很有成就感，也開始期待下一次的旅行。",
+      "inputMode": "ime"
+    }
+  ]
+}

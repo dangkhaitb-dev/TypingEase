@@ -1,0 +1,109 @@
+{
+  "id": "en-02-002",
+  "unit": "u2",
+  "group": "g2",
+  "order": 17,
+  "slug": "en-02-002",
+  "title": "4, 5, 6",
+  "summary": "Locate Digits 4–6 on the US number row, then read mixed-length numeric groups using only introduced digits and Space.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Locate Digits 4–6 on the US number row, then read mixed-length numeric groups using only introduced digits and Space.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-02-002",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Find 4 and return to the home position. Type each target carefully.",
+      "content": "4f 44f4 f4f 444 f4 4444 4f4 44f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Find 5 and return to the home position. Type each target carefully.",
+      "content": "555 5555 j5j j5 jj5j 5j5 55 j555 j55 j5j5 555j 5jj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Find 6 and return to the home position. Type each target carefully.",
+      "content": "66 f6 666 6666 6f ff ff66 66f 6f6 f6f6 f666 6ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "65 46 5554 665 555 56 564 55 4445 54 645 64 5664 66 6665 f564 566 5f45"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "66 46 444 4y 645y 4654 6566 455 556 y4y 6456 6445 666 545 445 45"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "f444 55 4656 5455 5544 5f5 464f 656 445 65 6444 6554 4555"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "466 644 56 6564 6a4 6666 54 656 64 666 6456"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "46 55 45 546 556 545 456 644 5664 4v 566 5v 5554 5544 65 5545 5655"
+    }
+  ]
+}

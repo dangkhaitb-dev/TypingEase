@@ -27,7 +27,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -93,30 +92,30 @@
       "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
       "dictation": "words",
       "type": "standard",
-      "content": "résultat espèce vin route\nexplique personne n'est souvent\nélèves texte contre taxis"
+      "content": "années élèves contre tous\npasse place derrière vient\nquand porte contes autres"
     },
     {
       "seconds": 25,
       "text": "Une série de mots courts contenant les nouvelles touches.",
       "type": "burst",
       "tokens": [
-        "centre",
-        "août",
-        "liste",
-        "dose",
+        "écoles",
+        "dessus",
+        "papiers",
         "s'il",
-        "vivent",
-        "lourde",
-        "utile",
-        "tout",
-        "dessus"
+        "propose",
+        "il",
+        "sur",
+        "ainsi",
+        "a",
+        "luttes"
       ]
     },
     {
       "text": "Maintenant avec le poids sur Q, celle que tu as le moins frappée.",
       "dictation": "words",
       "type": "standard",
-      "content": "exact coût îles tes\ndite quant dit selle\nsuccès avant passe voile"
+      "content": "passe l'autre qu'elle russe\nte petits tu sel\npère sa appel voit"
     },
     {
       "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
@@ -128,7 +127,7 @@
       "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
       "dictation": "words",
       "type": "standard",
-      "content": "telle année derrière été\nroutes part suites titres\nos toi content tête"
+      "content": "titre travail taxi proposer\ntous nouveau dite tirs\nluttes dos court société"
     }
   ]
 }

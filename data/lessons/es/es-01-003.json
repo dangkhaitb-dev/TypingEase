@@ -1,0 +1,82 @@
+{
+  "id": "es-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "es-01-003",
+  "title": "A, S, D",
+  "summary": "Aprender a, s, d en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Aprender a, s, d en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-003",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Localiza a y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ff ffa ffaf fa aa aaa aaff aaaf aaaa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Localiza s y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "js jjss jjs sjj ssjs ssj sj ss sss ssss jj sssj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Localiza d y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ffdd ddf ddd dddd ddfd ddff ffd dd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "jj fjf ss fdf ddf ddd aa aafa ddss ff jjdj fafd sa sdfs ssss"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ss aass ssa ffsd sss sd aasd ddds aasa ssd"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "dds add aad aass aadd fss ssas ds dddd ss ddd aa aaaa dasd dd"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "jj fjs js saa ddaf jss djj jfj jjj ssdd dsfd ss dds das da aaad asa sadd"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "jsas sfss dd fa ss fds add ads sd aa saaa ssd"
+    }
+  ]
+}

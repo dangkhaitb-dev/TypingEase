@@ -1,0 +1,78 @@
+{
+  "id": "br-01-025",
+  "unit": "u1",
+  "group": "g1",
+  "order": 17,
+  "slug": "br-01-025",
+  "title": "Primeiro uso de Shift",
+  "summary": "Aprenda a tecla Shift: segure-a para digitar uma letra maiúscula e solte em seguida.",
+  "newKeys": [
+    "shift"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Aprenda a tecla Shift: segure-a para digitar uma letra maiúscula e solte em seguida.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-025",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "shift",
+      "text": "Segure o Shift do lado oposto da mão e digite a letra maiúscula. Solte o Shift em seguida.",
+      "content": "FFFJ JJFA ASSD DGGF FJAF JGDS",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite as maiúsculas segurando o Shift do lado oposto.",
+      "content": "FJAF JGDS SDJF GAFJ DGSF FJAD SGDF FJGS AJDF"
+    },
+    {
+      "type": "standard",
+      "text": "Digite as maiúsculas segurando o Shift do lado oposto.",
+      "content": "JGFD ASJF DFGJ FASD GJAF SDGF FJDA AGSF DJFG"
+    },
+    {
+      "type": "standard",
+      "text": "Digite as maiúsculas segurando o Shift do lado oposto.",
+      "content": "FDJA SGJF DAFG JGSD FJAS DGJF ASGD FJDG GSAF"
+    }
+  ]
+}

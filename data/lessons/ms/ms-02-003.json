@@ -1,0 +1,113 @@
+{
+  "id": "ms-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 17,
+  "slug": "ms-02-003",
+  "title": "Angka: 7, 8, 9",
+  "summary": "Angka: 7, 8, 9. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "newKeys": [
+    "7",
+    "8",
+    "9"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Angka: 7, 8, 9. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-02-003",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "7",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "7f7 7f f777 ff7 7f77 77f 777f fff7 f7 f77 777 77",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "8",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "88 f888 f8 888f 8888 f88f f88 88f 8f88 888 8f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "9",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "9f f99 9999 99 999 99f fff 9f99 9f9",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "f8fj 7j78 jf99 jj9 9f8 fj9 fj j7 8f7f 78j jf ff f99 8j98 89 7f9 jjj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "7f f7j jjjj 9jj jff 8fj 979j jj7j ff 7fj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "j99 tjf 7f 9j77 fj tjt7 f89 8jff f9f7 79 7fjj 7fjf f8ff 9998 f8 77f 9879"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jx 7xj8 97j f99j fjj9 j8 7j j7f 87 97 8j8 f797 7778 ffjj f7f j7j 87f"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fj8 f9f jf8j 7f8 79fj j7f f7 87 j9 788 8jf ff 79 j889 8j79 jo 89 9f 7f"
+    }
+  ]
+}

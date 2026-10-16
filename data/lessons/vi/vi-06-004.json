@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-004",
+  "unit": "u6",
+  "group": "g1",
+  "order": 86,
+  "slug": "vi-06-004",
+  "title": "Thời gian và lịch trình",
+  "summary": "Xây dựng năng lực \"Times and Schedules\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Đưa các mốc thời gian cụ thể (giờ, phút, thứ, ngày) vào văn bản, rèn luyện việc chuyển đổi giữa phím chữ và phím số.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Times and Schedules\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Đưa các mốc thời gian cụ thể (giờ, phút, thứ, ngày) vào văn bản, rèn luyện việc chuyển đổi giữa phím chữ và phím số.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động bài học với ghi nhớ cuộc họp giao ban đầu tuần.",
+      "content": "Ghi nhớ cuộc họp giao ban đầu tuần: tập trung tối ưu hóa quy trình chăm sóc khách hàng và nâng cao chất lượng phản hồi trực tuyến.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với nội dung tóm tắt buổi làm việc với khách hàng.",
+      "content": "Nội dung tóm tắt buổi làm việc với khách hàng: đối tác đồng ý với khung thời gian triển khai mà chúng ta đã đề xuất trong bản kế hoạch tổng thể.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với biên bản cuộc họp nội bộ.",
+      "content": "Biên bản cuộc họp nội bộ: trưởng phòng ghi nhận những nỗ lực vượt bậc của toàn đội trong việc hoàn thành giai đoạn thử nghiệm đầu tiên. Thư ký ghi rõ giờ bắt đầu, thời lượng từng mục và người chịu trách nhiệm theo dõi.",
+      "inputMode": "telex"
+    }
+  ]
+}

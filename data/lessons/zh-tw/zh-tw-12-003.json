@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-12-003",
+  "unit": "u12",
+  "group": "g1",
+  "order": 119,
+  "slug": "zh-tw-12-003",
+  "title": "說明臨時請假",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-003",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "主管您好：\n我今天早上發燒到三十八度，看過醫生後，醫生建議我在家休息兩天，因此想請今天和明天的病假。手上的工作已經整理好，請小林先協助處理。造成不便，非常抱歉。\n陳明",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "員工請假單\n姓名：陳明\n部門：業務部\n假別：病假\n日期：十二月四日至十二月五日，共兩天\n事由：發燒就醫，需要在家休養\n代理人：林小雨\n附件：醫院診斷證明一份\n申請日期：十二月四日\n主管簽核：同意，請好好休息",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小林：「聽說你生病了，還好嗎？」\n陳明：「好多了，只是還有點累。今天下午的客戶電話要麻煩你接了。」\n小林：「沒問題。相關的資料放在哪裡？」\n陳明：「在共用資料夾的『十二月客戶』裡。真的很謝謝你幫忙。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

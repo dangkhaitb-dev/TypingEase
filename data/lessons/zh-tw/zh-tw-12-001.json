@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-12-001",
+  "unit": "u12",
+  "group": "g1",
+  "order": 117,
+  "slug": "zh-tw-12-001",
+  "title": "通知行程變更",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-001",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "各位同學：\n原定十一月五日星期六的戶外教學，因為颱風可能接近，決定延期一週，改在十一月十二日星期六舉行。集合時間和地點都不變，一樣是早上八點在學校大門口集合。\n班長",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "各位家長您好：\n由於遊覽車公司臨時調度，戶外教學的出發時間由早上八點半提前到八點，回程時間不變。請提醒孩子提早出門，並記得攜帶雨具和水壺。若有任何問題，請在本週五以前聯絡導師。\n三年二班導師\n謝謝各位家長的配合。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小明：「戶外教學是不是改時間了？」\n班長：「對，改到十一月十二日，早上八點集合。」\n小明：「那原本繳的錢需要再繳一次嗎？」\n班長：「不用，費用不變。如果那天不能參加，要在星期三以前告訴老師，才能辦理退費。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

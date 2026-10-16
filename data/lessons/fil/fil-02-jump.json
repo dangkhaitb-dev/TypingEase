@@ -1,0 +1,89 @@
+{
+  "id": "fil-02-jump",
+  "unit": "u2",
+  "group": "g2",
+  "order": 20,
+  "slug": "fil-02-jump",
+  "title": "Tumalon nang direkta",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-02-jump",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "vvf3 221 ff ff13 f1f 33 2212 333 jj1j fjf 333j 332 j2 1f13 11 ffj fff3"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "6f44 ff f4 4f6f fff6 66f jj6j 556 fj 66j 55 jj6f 66 4j jj 6j6"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jj9j j9f fjjf 77f 88jj 89 f98 888j 9f 8887 fj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jjj 000f 0p ffj 0jj0 f000 jj0j jj0 00j0 00 jjf"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+      "content": "may 6 aklat at 8 lapis si kuya at may 10 papel pa sa bag"
+    }
+  ]
+}

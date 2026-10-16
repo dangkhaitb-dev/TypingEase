@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-025",
+  "unit": "u1",
+  "group": "g1",
+  "order": 25,
+  "slug": "vi-01-025",
+  "title": "Luyện phím · ẹ ọ ệ",
+  "summary": "Học cách gõ ẹ (e j), ọ (o j), ệ (e e j) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ẹ (e j), ọ (o j), ệ (e e j) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-025",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu nặng: gõ j sau nguyên âm. e j → ẹ. Ví dụ: hẹn = h e j n.",
+      "content": "ẹ hẹn dẹp hẹn nhẹ kẹo vẹn ẹ kẹt nhẹ kẹp dẹp mẹ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu nặng: gõ j sau nguyên âm. o j → ọ. Ví dụ: gọi = g o j i.",
+      "content": "gọi học mọc gọn lọ gọi họp lọ đọc ọ cọ mọc gọi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ e e j để ra ệ: e e ra ê, j thêm dấu nặng. Ví dụ: kệ = k e e j.",
+      "content": "kệ vệ huệ tệp rệt lệ dệt huệ rệt huệ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ẹ, ọ, ệ. Nhớ: ẹ = e j, ọ = o j, ệ = e e j.",
+      "content": "đệm điện đọng chiếc quyện họa viện biệt học đọc lưu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ẹ, ọ, ệ. Nhớ: ẹ = e j, ọ = o j, ệ = e e j.",
+      "content": "đơn kế lệ gọi đọng nhắc mềm hẹn bước vọng dọn gọn tối nghệ nhiệt bác",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ẹ, ọ, ệ.",
+      "content": "trả đọng làng cả vị vệ ban gom bảo lên đất vọng đôi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ẹ, ọ, ệ.",
+      "content": "nghiệm cơm khi kiện thấy thiện cho kiện mọc hẹp sát thiệp đọc nhạc",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ẹ, ọ, ệ mà không nhìn bàn phím.",
+      "content": "bản liệu trọng hiệu phát họp học quanh như cao mẹ một nhớ bệnh ăn",
+      "inputMode": "telex"
+    }
+  ]
+}

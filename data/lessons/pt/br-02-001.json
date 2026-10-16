@@ -1,0 +1,107 @@
+{
+  "id": "br-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 26,
+  "slug": "br-02-001",
+  "title": "Algarismos: 1, 2, 3",
+  "summary": "Aprenda as teclas 1, 2, 3 e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas 1, 2, 3 e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-02-001",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Localize 1 e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "111f f1 11 1f ff 111 11f f11 1f11",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Localize 2 e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "2j2 jjj2 j2 2j22 j222 222 2222 22",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Localize 3 e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "3f3f ff 3333 33 3f33 333 33f 3f f3f 33f3 ff3",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "13 133 3z13 21 1z 2333 231 132 z31 z332 33 23 2233"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "233 122 323 21 213 3112 3111 221 13 2321 3232 22f 23 2231 2312 1323"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "332 2vbx x23 b1 2v1 2v2 bx1 33x 23v 22 vvv2 32 213 3231 b331 v21"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "22 222 233 311 332 13 2221 2123 3212 3223 3321 3r 1212 12 32 21 2322 1231"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "21 22b x1 1xv2 x1b 2v bb22 312v 2x v3v3 122 2b2 v2x2"
+    }
+  ]
+}

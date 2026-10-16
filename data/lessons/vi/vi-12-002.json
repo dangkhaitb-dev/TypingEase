@@ -1,0 +1,43 @@
+{
+  "id": "vi-12-002",
+  "unit": "u12",
+  "group": "g1",
+  "order": 164,
+  "slug": "vi-12-002",
+  "title": "Đoạn mở đầu bất ngờ",
+  "summary": "Xây dựng năng lực \"Unexpected Openings\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thử thách phản xạ đọc - gõ trước các cấu trúc mở đầu câu đảo ngữ hoặc trạng từ bất ngờ.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Unexpected Openings\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thử thách phản xạ đọc - gõ trước các cấu trúc mở đầu câu đảo ngữ hoặc trạng từ bất ngờ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với đoạn mở đầu bất ngờ về tiếng nổ lớn từ phòng thí nghiệm.",
+      "content": "Bất thình lình, một tiếng nổ lớn vang lên từ phía phòng thí nghiệm khiến toàn bộ các kỹ sư và chuyên viên nghiên cứu đều phải giật mình dừng tay.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng kỹ năng vào đoạn văn mở đầu bằng mệnh đề nhượng bộ về người nông dân.",
+      "content": "Dù cho bầu trời có âm u và giông bão có bất ngờ kéo tới đe dọa mùa màng, những người nông dân kiên cường của vùng đất bazan màu mỡ vẫn không hề nản lòng buông xuôi tay cày. Họ khẩn trương chằng chống lại các giàn che nông sản, khơi thông dòng mương thoát nước quanh luống rau và kiên nhẫn chờ đón ánh nắng vàng ấm áp của ngày mai.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về nhóm sáng tạo trẻ đi lên từ một bản vẽ phác thảo.",
+      "content": "Không ai có thể ngờ rằng, từ một bản vẽ phác thảo đơn sơ trên trang giấy nháp cũ, nhóm sáng tạo trẻ đã biến nó thành một ứng dụng di động hữu ích thu hút hơn một triệu người dùng tải về chỉ sau đúng một tuần ra mắt chính thức. Nhóm nghiên cứu tạm dừng để kiểm tra thiết bị, ghi nhận nguyên nhân và bảo đảm mọi người ở khu vực an toàn.",
+      "inputMode": "telex"
+    }
+  ]
+}

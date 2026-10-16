@@ -24,7 +24,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -78,32 +77,32 @@
       "text": "Pour commencer, des mots isolés. Sans se presser : la vitesse vient de la précision, jamais l'inverse.",
       "dictation": "words",
       "type": "standard",
-      "content": "gestes père taxis système\nfleur kiwis idées salles\nensuite mime dose dur"
+      "content": "telle belle point leçon\nmesure bases baisse premier\nun midi geste glisses"
     },
     {
       "seconds": 25,
       "text": "Une série courte. Termine la liste même si tu en laisses passer.",
       "type": "burst",
       "tokens": [
-        "baisse",
-        "guide",
-        "alors",
-        "dites",
-        "deux",
-        "titre",
-        "forte",
-        "qu'il",
-        "outils",
-        "villes",
-        "leçons",
-        "gel"
+        "espèce",
+        "luttes",
+        "sont",
+        "elle",
+        "mime",
+        "voir",
+        "zeste",
+        "jures",
+        "un",
+        "ses",
+        "bon",
+        "votes"
       ]
     },
     {
       "text": "Cinq mots par ligne. Laisse les yeux passer devant les doigts.",
       "dictation": "words",
       "type": "standard",
-      "content": "votes rôle souvent arrêt rêves\nlourd petite sites première bientôt\nsa préfère pas if tout"
+      "content": "centre succès commencer réponse préférer\nheures ma juger bords votes\nfrançaise veut ils gros hisses"
     },
     {
       "text": "Des motifs à nouveau, pour vérifier que les doigts retournent à la rangée de repos.",
@@ -115,27 +114,27 @@
       "text": "Des mots courts, à bon rythme. Ceux-là devraient presque sortir seuls.",
       "dictation": "words",
       "type": "standard",
-      "content": "gels sur mugir fête\njoli n'est tant table\nson cent côte jour"
+      "content": "demi gel huit été\ntelle bord par avant\nfours douze frère rose"
     },
     {
       "seconds": 30,
       "text": "Plus de temps et plus de mots. Garde le même rythme du début à la fin.",
       "type": "burst",
       "tokens": [
-        "surgir",
-        "rues",
-        "lime",
-        "brûler",
-        "hisse",
-        "mort",
-        "moi",
-        "dis",
-        "avant",
+        "tir",
+        "exact",
+        "travaux",
+        "contes",
+        "musiques",
         "progrès",
-        "bas",
-        "mode",
-        "première",
-        "leçons"
+        "plans",
+        "autres",
+        "murs",
+        "systèmes",
+        "bateau",
+        "proposer",
+        "des",
+        "soirée"
       ]
     },
     {
@@ -148,7 +147,7 @@
       "text": "La dernière série. Si tu es arrivé jusqu'ici sans regarder le clavier, la leçon est faite.",
       "dictation": "words",
       "type": "standard",
-      "content": "nouvelle dur envies lisse personne\ndures progrès mois jolies sel\nvie travaux fleurs huit nouveau"
+      "content": "vie hisse vins fleurs novembre\nrue frères termes tristes fils\ncontes papiers mesure guide dit"
     }
   ]
 }

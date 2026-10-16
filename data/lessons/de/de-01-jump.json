@@ -1,0 +1,94 @@
+{
+  "id": "de-01-jump",
+  "unit": "u1",
+  "group": "g2",
+  "order": 16,
+  "slug": "de-01-jump",
+  "title": "Springe voran",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Tippe jede Gruppe ruhig und kehre danach zur Grundstellung zurück.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-jump",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tippe jede Gruppe ruhig und kehre danach zur Grundstellung zurück.",
+      "content": "jjff fffjf jjfjj jjf ffff ffjf jff jfjj fjfj jjf fjff"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "hh jkh jj gkg hhkg kgk kjk gj kg hjg jg jh gjkg ggk"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "wer sagt das es war alles da was er hatte"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "so oft wie du es sagst ist es gut sie hat es so gesagt"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "wenn du nicht kommst bin ich allein dort und warte"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "es ist heiß draußen und du bist so groß wie er"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle zwischen â, ê und den geübten Tasten.",
+      "content": "dêf âêêêâ êêê ââêê âââ êêaê ââââ âj ââêsê âjâsâ"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "wir können später über alles reden wenn du nicht mehr müde bist"
+    }
+  ]
+}

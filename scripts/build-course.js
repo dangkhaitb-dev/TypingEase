@@ -110,6 +110,15 @@ const FAMILY = (() => {
   return found;
 })();
 const CODE = FAMILY.id;
+// Khoá đã nhập từ typekute (scripts/import-typekute.mjs) không còn là đầu ra của script này:
+// sinh lại sẽ ghi đè cả giáo trình đã nhập bằng giáo trình cũ. Bỏ qua, thoát 0 để vòng --all chạy tiếp.
+{
+  const target = path.join(ROOT, 'data', `curriculum.${CODE}.js`);
+  if (fs.existsSync(target) && fs.readFileSync(target, 'utf8').includes("product: 'typekute'")) {
+    console.log(`${CODE}: bỏ qua — khoá nhập từ typekute (node scripts/import-typekute.mjs --course ${CODE})`);
+    process.exit(0);
+  }
+}
 const IS_DEFAULT = CODE === LANG;
 const SLUG = IS_DEFAULT ? null : CODE.slice(LANG.length + 1);
 
@@ -248,9 +257,17 @@ const plainValue = value => {
 };
 
 // Một ô phím vật lý → ký tự nó in ra, ngón giữ nó, và tên hiển thị.
-function slot(hardware, by = BY_HARDWARE) {
+// Ô KHÔNG dạy được như một chữ trả về null khi `optional`: phím bổ trợ (Neo đặt Mod3 ở Backslash
+// và CapsLock — `main` là object `{ key: 'Mod3' }` kèm `modifierRole`), hoặc ô in ra nhiều ký tự
+// (lam-alef `لا` ở KeyB của Arabic AZERTY). Từ typekute layouts.json bản 2026-10 trở đi mới có.
+function teachable(entry) {
+  if (!entry || entry.modifierRole || (entry.main && typeof entry.main === 'object')) return false;
+  return plainValue(entry.main).length === 1;
+}
+function slot(hardware, by = BY_HARDWARE, { optional = false } = {}) {
   const entry = by.get(hardware);
   if (!entry) throw new Error(`bố cục ${by.id} không có ô ${hardware}`);
+  if (optional && !teachable(entry)) return null;
   const main = plainValue(entry.main);
   if (!main || main.length !== 1) {
     throw new Error(`ô ${hardware} của bố cục ${by.id} in ra "${main}" — không phải một ký tự đơn`);
@@ -350,7 +367,8 @@ function resolve(by = BY_HARDWARE) {
     if (!step.hw) return { ...step, slots: [], newKeys: [] };
     // Ký tự vô hình (ZWNJ/ZWJ — ô KeyQ của Bolnagri) không phải thứ để dạy như một phím: một dòng
     // luyện toàn ký tự không nhìn thấy là một dòng không ai đọc được.
-    const slots = step.hw.map(at).filter(item => !/\p{Cf}/u.test(item.key));
+    const slots = step.hw.map(hardware => slot(hardware, by, { optional: true }))
+      .filter(item => item && !/\p{Cf}/u.test(item.key));
     const newKeys = slots.map(s => s.key);
     if (step.kind === 'first') newKeys.push(' ');
     return { ...step, slots, newKeys };
@@ -1114,8 +1132,12 @@ function main() {
       else { fs.unlinkSync(file); written += 1; }
     }
   }
+  // Khối `lessonUrls` ở cuối chỉ mục do scripts/stamp-data.mjs viết, không phải script này: so
+  // sánh phần còn lại, và nhắc chạy stamp sau khi ghi (mã băm của bài đổi theo nội dung).
+  const STAMP = '/* <auto:lesson-urls>';
+  const unstamped = text => (text && text.includes(STAMP) ? text.slice(0, text.indexOf(STAMP)).replace(/\s*$/, '\n') : text);
   for (const [file, text] of wanted) {
-    const current = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;
+    const current = fs.existsSync(file) ? unstamped(fs.readFileSync(file, 'utf8')) : null;
     if (current === text) continue;
     if (CHECK) { drift += 1; console.error(`LỆCH  ${path.relative(ROOT, file).split(path.sep).join('/')}`); }
     else { fs.writeFileSync(file, text); written += 1; }
@@ -1133,6 +1155,7 @@ function main() {
       + (result.symbols.skipped.length ? ` · bỏ qua phím chết ${result.symbols.skipped.join('')}` : ''));
   }
   console.log(`      ${written} file đã ghi`);
+  if (written) console.log('      → chạy tiếp: node scripts/stamp-data.mjs (băm lại URL bài học)');
 }
 
 try { main(); } catch (error) { console.error(`\nLỖI: ${error.message}\n`); process.exit(1); }

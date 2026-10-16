@@ -1,0 +1,79 @@
+{
+  "id": "de-02-006",
+  "unit": "u2",
+  "group": "g1",
+  "order": 22,
+  "slug": "de-02-006",
+  "title": "Wiederholung: Ziffern",
+  "summary": "Wiederhole Buchstaben und Ziffern in kurzen Sätzen.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Wiederhole Buchstaben und Ziffern in kurzen Sätzen.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-02-006",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tippe den deutschen Text mit den bereits gelernten Tasten.",
+      "content": "ich habe 3 oder 4 gefunden und du hast 5 davon geschafft"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe den deutschen Text mit den bereits gelernten Tasten.",
+      "content": "wir sind zu zweit und brauchen noch 2 oder 3 weitere"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe den deutschen Text mit den bereits gelernten Tasten.",
+      "content": "von 10 bis 20 ist alles leicht aber ab 30 wird es schwer"
+    }
+  ]
+}

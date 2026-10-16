@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-022",
+  "unit": "u1",
+  "group": "g1",
+  "order": 22,
+  "slug": "vi-01-022",
+  "title": "Luyện phím · ý ì ỏ",
+  "summary": "Học cách gõ ý (y s), ì (i f), ỏ (o r) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ý (y s), ì (i f), ỏ (o r) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-022",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu sắc: gõ s sau nguyên âm. y s → ý. Ví dụ: buýt = b u y s t.",
+      "content": "ý buýt quýt lý buýt quýt quý ký",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu huyền: gõ f sau nguyên âm. i f → ì. Ví dụ: dì = d i f.",
+      "content": "dì mì dì thì xì rì trì vì bì ì xì chì dì mì chì",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu hỏi: gõ r sau nguyên âm. o r → ỏ. Ví dụ: hỏi = h o r i.",
+      "content": "hỏi sỏi cỏ ỏ sỏi bỏ sỏi vỏ nhỏ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ý, ì, ỏ. Nhớ: ý = y s, ì = i f, ỏ = o r.",
+      "content": "vì thỏ trì yên quýt tỏa bằng ký đem giúp biết tỏi tình dây vỏ tỏi trỏ dì",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ý, ì, ỏ. Nhớ: ý = y s, ì = i f, ỏ = o r.",
+      "content": "cháu kìa là mỏi thỏa lại mỏi bì tìm cánh thìa tỏa kìa tỏa",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ý, ì, ỏ.",
+      "content": "thỏa treo dì bìa đi đang ảnh trì hàng ven bàn đang",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ý, ì, ỏ.",
+      "content": "nhỏ cỏ lý hình đạp tiếp chì hành trống ta dễ sỏi giỏ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các câu ngắn, chỉ dùng những phím đã học.",
+      "content": "chú ý dao sắc nên nằm trong khay có nắp lưỡi quay vào trong",
+      "inputMode": "telex"
+    }
+  ]
+}

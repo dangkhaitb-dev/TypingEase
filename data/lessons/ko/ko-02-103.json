@@ -1,0 +1,70 @@
+{
+  "id": "ko-02-103",
+  "unit": "u2",
+  "group": "g1",
+  "order": 44,
+  "slug": "ko-02-103",
+  "title": "숫자 7 · 8 · 9",
+  "summary": "숫자열의 7·8·9를 한 키씩 익힙니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "hangul",
+  "intro": "숫자열의 7·8·9를 한 키씩 익힙니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-02-103",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "777 777 77 777 77 777 77 777 777 777"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "888 888 88 888 88 888 88 888 888 888"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "999 999 99 999 99 999 99 999 999 999"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "9987 99 8887 77 89 9ㅠ 9987 9ㅠ 89 77 8887 99 8887 99 9987",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "998 89 88ㅐ7 779 88 9999 79 998 79 9999 88 779 88ㅐ7 89",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "9999 ㅜ79 998 4889 9987 9999 9987 4889 998 ㅜ79 998 ㅜ79",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "88 99 7798 ㄱㄱ9 ㄱ7 ㄱㄱ7 7787 88 7787 ㄱㄱ7 ㄱ7 ㄱㄱ9 7798 99",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "78 7989 7797 77 799 9798 989ㅕ 78 989ㅕ 9798 799 77 7797",
+      "inputMode": "hangul"
+    }
+  ]
+}

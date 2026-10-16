@@ -1,0 +1,65 @@
+{
+  "id": "vi-01-002",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "vi-01-002",
+  "title": "Luyện phím · a s d",
+  "summary": "Học phím vươn hàng trên U (ngón trỏ phải), R (ngón trỏ trái) và phím K (ngón giữa phải).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Học phím vươn hàng trên U (ngón trỏ phải), R (ngón trỏ trái) và phím K (ngón giữa phải).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím a: ngón út trái, hàng cơ sở. Trong Telex, gõ a hai lần sẽ ra â, nên mỗi cụm chỉ có một chữ a.",
+      "content": "fa a ja a ja fa a fa ja a fa ja fa ja"
+    },
+    {
+      "type": "standard",
+      "text": "Phím s: ngón áp út trái, hàng cơ sở. Trong Telex, s gõ sau nguyên âm sẽ thành dấu sắc, nên bài này không đặt s sau nguyên âm.",
+      "content": "ssj ss sss ss ss sss sss ssf sjs"
+    },
+    {
+      "type": "standard",
+      "text": "Phím d: ngón giữa trái, hàng cơ sở. Trong Telex, gõ d hai lần sẽ ra đ, nên mỗi cụm chỉ có một chữ d.",
+      "content": "jd jdj fdf jd djf djj fd jd dff dfj"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp a s d với các phím đã học.",
+      "content": "jffa dj fsds js sjja ffjd dsa ffd jja dj jss jds djfs sdf jsf fa fsfa"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp a s d với các phím đã học.",
+      "content": "sa jfa fdf jss jfa jsf ssfj fd ssa sdf sfsj dj df sjfa jsj"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp a s d với các phím đã học.",
+      "content": "df jdjj fad fa jda jjja sf sd ja ssd sfj jdja ssj ds sf"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp a s d với các phím đã học.",
+      "content": "js ds jjjs sjj fda jsd dj fjfd fdf fd df jsff dja ja"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại a s d trong các cụm mới, giữ nhịp đều.",
+      "content": "jsfd jfs fs jjsj sd ad fssj jfa djj sj sa sjad dssf sfj ds"
+    }
+  ]
+}

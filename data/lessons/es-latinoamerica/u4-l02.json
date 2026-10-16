@@ -59,7 +59,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}",
     "|",
@@ -127,7 +126,7 @@
       "type": "block",
       "newKey": "&",
       "text": "Primero &, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "&& & unas & sedas pequeño & muchas zapato & no\n&& & qué & hallas dije & niños hijas & alga\n&& & fuego & oeste niña & meses faldas & tierra"
+      "content": "&& & oreja & hielo nombre & año buena & largas\n&& & mes & algas filas & cielos idea & haga\n&& & lo & grupos sedes & catorce alas & juegas"
     },
     {
       "type": "burst",
@@ -139,23 +138,23 @@
         "48%",
         "#24",
         "62%",
-        "antes&dedos",
+        "relojes&todos",
         "9%",
         "#17",
         "#84",
-        "reglas&valores"
+        "duda&mucha"
       ]
     },
     {
       "type": "block",
       "text": "Todo lo de esta lección, mezclado.",
-      "content": "$18 42% #17 acciones&oeste\n$49 $45 bajo&roja #32\n56% ojos&césped 94% todas&salada"
+      "content": "$18 42% #17 felices&grupos\n$49 $45 puntos&dedos #32\n56% hijo&zapato 94% ayudas&asada"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Otra vez palabras, con los signos en su sitio.",
-      "content": "$18 cuentas $55 madres 63%\n79% verde 47% padre 69%\norejas & medios hallas pueblos & mi grandes 48%"
+      "content": "$18 gota $55 cañas 63%\n79% muchas 47% valores 69%\nsolas & danza algas viajes & ciencia dudas 48%"
     }
   ]
 }

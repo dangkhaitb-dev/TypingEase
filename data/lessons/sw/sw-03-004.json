@@ -1,0 +1,109 @@
+{
+  "id": "sw-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 25,
+  "slug": "sw-03-004",
+  "title": "Herufi kubwa: G, H, I",
+  "summary": "Kuandika G na H kwa Shift na kurudia herufi ndogo na kubwa zilizotangulia.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Kuandika G na H kwa Shift na kurudia herufi ndogo na kubwa zilizotangulia.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-03-004",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Shikilia Shift kwa kidole kidogo cha mkono wa upande mwingine, kisha bonyeza g ili kuandika G. Rudisha vidole kwenye nafasi ya mwanzo.",
+      "content": "GGG GfG GGGG ffGG GGfG Gf fGG fG GG GGGf fGGf ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Shikilia Shift kwa kidole kidogo cha mkono wa upande mwingine, kisha bonyeza h ili kuandika H. Rudisha vidole kwenye nafasi ya mwanzo.",
+      "content": "HfH HHHH fHHf HH Hf HHHf HHH",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Shikilia Shift kwa kidole kidogo cha mkono wa upande mwingine, kisha bonyeza i ili kuandika I. Rudisha vidole kwenye nafasi ya mwanzo.",
+      "content": "IIIf IfII If ffII IfI fI III II",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "Iff jHI Hj fjH HjG jI jjf GHfI jHe efj fHj jf fj fff fjIf ef GHf Hf jfe"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "Ijfj HfIG fjj ffG IjGG jGf IHj GG jf fH fIGj If jjf IjG IIjf jH jj"
+    }
+  ]
+}

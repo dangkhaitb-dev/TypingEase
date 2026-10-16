@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-06-jump",
+  "unit": "u6",
+  "group": "g2",
+  "order": 61,
+  "slug": "zh-tw-06-jump",
+  "title": "快速進行",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ime",
+  "intro": "以自然情境句子練習連續輸入。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-jump",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我週六下午會去圖書館。如果你沒空，可以把書交給我，我幫你一起還。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "如果找不到人，請直接打電話給我。我會穿藍色外套，背一個黑色背包。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "如果需要付款，錢放在書桌第一個抽屜。簽收以後，請把包裹放在我房間門口就好，我回家再自己拆。謝謝妳！",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "另外，下週三要校外教學，請把家長同意書帶回家簽名，最晚星期五交給班長。有問題可以直接問老師。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我今天下午要去拜訪客戶，可能比較晚才能回覆訊息。如果有任何問題，請直接打我的手機。真的很謝謝你幫忙！",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "請問活動地點附近有停車位嗎？我打算騎機車去。如果不好停車，我就改搭公車。期待週六和大家見面！",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "第三，如果有廠商來電，請記下對方的姓名和電話，我回來後再聯絡。遇到緊急狀況，可以傳訊息給我。辛苦你了！",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "如果有事找我，可以打我的手機，或打給同學的媽媽，電話我寫在冰箱上的便條紙裡。我會在八點以前到家。謝謝爸爸！",
+      "inputMode": "ime"
+    }
+  ]
+}

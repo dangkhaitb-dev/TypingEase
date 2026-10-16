@@ -1,0 +1,93 @@
+{
+  "id": "br-01-021",
+  "unit": "u1",
+  "group": "g1",
+  "order": 15,
+  "slug": "br-01-021",
+  "title": "Vogais com acento: ó, ú",
+  "summary": "Aprenda as teclas ó, ú e pratique com as teclas já estudadas.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas ó, ú e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-021",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Aperte ´ (tecla morta), solte e aperte o: aparece ó. Depois volte à posição inicial.",
+      "content": "óóóó óóó fófó fó óó óófó óóóf"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte ´ (tecla morta), solte e aperte u: aparece ú. Depois volte à posição inicial.",
+      "content": "úúú új úújj úú jj úúúú úúj úúúj"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "úóúú úúú éú óóú éómn óúúé úónn múúó úmóó múú óóóé né"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "úóó úóúú úúóú óúóó úúúó úó úúú óó hó óóú óóó óóúú úú úúó óú óóúó óúó úóú"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "óú úóó óó óúúó óóúú óúú úóúó úúú úóú úúó óúóú úúóó óúó úúúú fóúó"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "vóóó úóó úú úóú óúó óóóú óúú úóúó óóó óó óúóó"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a avó só gosta da música do último dia da semana"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "o número é útil para a avó e para o professor"
+    }
+  ]
+}

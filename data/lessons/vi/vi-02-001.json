@@ -1,0 +1,68 @@
+{
+  "id": "vi-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 33,
+  "slug": "vi-02-001",
+  "title": "Luyện phím · 1 2 3",
+  "summary": "Làm quen vị trí các phím số 1, 2 và 3 do các ngón tay trái phụ trách trên hàng số; luyện vươn ngón và phối hợp phím Space.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Làm quen vị trí các phím số 1, 2 và 3 do các ngón tay trái phụ trách trên hàng số; luyện vươn ngón và phối hợp phím Space.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-02-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím 1: ngón út trái, hàng số. Gõ 1 xen với các phím đã học.",
+      "content": "11 1j 111 1j 1 111 f1 1 11 1j 11"
+    },
+    {
+      "type": "standard",
+      "text": "Phím 2: ngón áp út trái, hàng số. Gõ 2 xen với các phím đã học.",
+      "content": "222 f2 22 2 22 122 2 122 22 122 222"
+    },
+    {
+      "type": "standard",
+      "text": "Phím 3: ngón giữa trái, hàng số. Gõ 3 xen với các phím đã học.",
+      "content": "33 333 f3 133 33 133 3 133 33 3 3j 33 3 33 3"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các nhóm số có 1 2 3. Giữ ngón tay trên hàng cơ sở sau mỗi lần với lên hàng số.",
+      "content": "32 23 113 13 333 1223 1122 22 1 113 1132 313 3 323 131"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các nhóm số có 1 2 3. Giữ ngón tay trên hàng cơ sở sau mỗi lần với lên hàng số.",
+      "content": "12 211 112 23 1 2 33 33 333 1 221 12 321 3213 2 31 123 3 23 132 1 32 22"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ số kèm từ, ví dụ: 12 quả cam.",
+      "content": "31 cái ghế 2 ly nước 3 bát cơm 3 cái ghế 2 người bạn 2 cái bàn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ số kèm từ, ví dụ: 12 quả cam.",
+      "content": "33 cái bàn 12 quả cam 32 quả trứng 12 chiếc xe 23 cuốn sách 32 bát cơm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ số kèm từ mà không nhìn bàn phím.",
+      "content": "12 tờ giấy 23 cuốn sách 32 bát cơm 12 cái bàn 12 quả trứng 22 quả cam",
+      "inputMode": "telex"
+    }
+  ]
+}

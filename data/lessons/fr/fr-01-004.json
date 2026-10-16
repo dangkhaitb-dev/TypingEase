@@ -1,0 +1,70 @@
+{
+  "id": "fr-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "fr-01-004",
+  "title": "S et L",
+  "summary": "Apprenez s, l et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Apprenez s, l et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-004",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Repérez s sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "ffs sssf ssff sf sff sfs ss ff ssss fs fss sss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Repérez l sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "llfl fl llf lfff llll lll ffll llff ll ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ls ffss fs lfll lfsf ssfs lsf sff ffl lss flls fs lsfl"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ll jjll slj jll sjj lljj sjj jlsj ls jss sjjs sjss jsl"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "slf sf ls fsff sff lsff fsff sf flss ssl flfl llf sf ll"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "llss jjl jls js ljj lsjj ljsl jsl jsl jss jjlj sj jjsj"
+    }
+  ]
+}

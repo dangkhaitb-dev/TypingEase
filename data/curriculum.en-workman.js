@@ -160,3 +160,43 @@ window.TypingEaseCurriculum = {
     hint: "Rest your index fingers on the two keys with bumps and type what you see, without looking at the keyboard."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/en-workman/u1-l01.json?v=efd6503c29e7f2a4",
+  "u1-l02": "/data/lessons/en-workman/u1-l02.json?v=2ae35fb07bc2c9c9",
+  "u1-l03": "/data/lessons/en-workman/u1-l03.json?v=1bfae063ab63c511",
+  "u1-l04": "/data/lessons/en-workman/u1-l04.json?v=7d8642c244b3c13c",
+  "u1-l05": "/data/lessons/en-workman/u1-l05.json?v=3bf41fd912a3b3b5",
+  "u1-l06": "/data/lessons/en-workman/u1-l06.json?v=5b0fdbc1b4e365a8",
+  "u1-l07": "/data/lessons/en-workman/u1-l07.json?v=72200b5044e2213d",
+  "u1-l08": "/data/lessons/en-workman/u1-l08.json?v=e5bf2b4111dd5f2f",
+  "u1-l09": "/data/lessons/en-workman/u1-l09.json?v=d25f570bc993cf3a",
+  "u1-l10": "/data/lessons/en-workman/u1-l10.json?v=946542fea0ba743c",
+  "u2-l01": "/data/lessons/en-workman/u2-l01.json?v=11261172b356e4c8",
+  "u2-l02": "/data/lessons/en-workman/u2-l02.json?v=ae98ccda35aee79a",
+  "u2-l03": "/data/lessons/en-workman/u2-l03.json?v=b1823b25ba37b4ed",
+  "u2-l04": "/data/lessons/en-workman/u2-l04.json?v=2289a3c3360ecf95",
+  "u2-l05": "/data/lessons/en-workman/u2-l05.json?v=8975e4fb3735d9b5",
+  "u2-l06": "/data/lessons/en-workman/u2-l06.json?v=aaf429b42b2c5cce",
+  "u2-l07": "/data/lessons/en-workman/u2-l07.json?v=632765702ff672f1",
+  "u2-l08": "/data/lessons/en-workman/u2-l08.json?v=ad464042dd504906",
+  "u2-l09": "/data/lessons/en-workman/u2-l09.json?v=f5e5dbfa2a97dc1b",
+  "u2-l10": "/data/lessons/en-workman/u2-l10.json?v=5f929382b572a6a9",
+  "u2-l11": "/data/lessons/en-workman/u2-l11.json?v=0c55a695ea39d4c9",
+  "u3-l01": "/data/lessons/en-workman/u3-l01.json?v=c94bde4ea09c6569",
+  "u3-l02": "/data/lessons/en-workman/u3-l02.json?v=114c4ba864824f9f",
+  "u3-l03": "/data/lessons/en-workman/u3-l03.json?v=a7c534f3bb43a039",
+  "u3-l04": "/data/lessons/en-workman/u3-l04.json?v=d0c1bd8ee0d77daa",
+  "u3-l05": "/data/lessons/en-workman/u3-l05.json?v=852ef91c85a969b6",
+  "u3-l06": "/data/lessons/en-workman/u3-l06.json?v=bac3a9f130523254",
+  "u4-l01": "/data/lessons/en-workman/u4-l01.json?v=5ade2934a3b73c0e",
+  "u4-l02": "/data/lessons/en-workman/u4-l02.json?v=25135f5c476d905b",
+  "u4-l03": "/data/lessons/en-workman/u4-l03.json?v=6f8eda44bdb8f725",
+  "u4-l04": "/data/lessons/en-workman/u4-l04.json?v=e93a08358b0d0c9e",
+  "u4-l05": "/data/lessons/en-workman/u4-l05.json?v=9ff82edaecffdb20",
+  "u4-l06": "/data/lessons/en-workman/u4-l06.json?v=19efd4741cd6ca2c",
+  "u4-l07": "/data/lessons/en-workman/u4-l07.json?v=9567d8825f6fcae6",
+  "u4-l08": "/data/lessons/en-workman/u4-l08.json?v=3bc13359f94567e3"
+};
+/* </auto:lesson-urls> */

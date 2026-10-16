@@ -1,0 +1,49 @@
+{
+  "id": "vi-03-023",
+  "unit": "u3",
+  "group": "g1",
+  "order": 49,
+  "slug": "vi-03-023",
+  "title": "Chữ hoa có dấu: A Ă Â E Ê",
+  "summary": "Luyện gõ chữ hoa A, Ă, Â, E, Ê kèm các dấu thanh.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "telex",
+  "intro": "Luyện gõ chữ hoa A, Ă, Â, E, Ê kèm các dấu thanh.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-023",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa có Â, Ă và dấu. Dùng Caps Lock hoặc Shift.",
+      "content": "ÂU ẤN ẨM CẦN MẪU NHẬT ĂN BẰNG NẮNG ẴM KHẲNG NẶNG",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa có A và dấu. Dùng Caps Lock hoặc Shift.",
+      "content": "GIÀ LÃO BẠN GIÁ CẢM LÃI HÀ NỘI ĐÀ NẴNG LẠI",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa có E và dấu. Dùng Caps Lock hoặc Shift.",
+      "content": "ÈO UỘT CHÈ BÉ CÁI KÉO CHIA SẺ SẼ LẼ MẸ CON",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa có Ê và dấu. Dùng Caps Lock hoặc Shift.",
+      "content": "ÊM ĐỀ KẾT BỂ LỄ KỆ SÁCH BẾP HẾT BỆNH NHÂN",
+      "inputMode": "telex"
+    }
+  ]
+}

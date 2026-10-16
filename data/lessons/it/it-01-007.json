@@ -1,0 +1,56 @@
+{
+  "id": "it-01-007",
+  "unit": "u1",
+  "group": "g2",
+  "order": 6,
+  "slug": "it-01-007",
+  "title": "Frasi con la fila centrale",
+  "summary": "Digita frasi brevi con i tasti della fila centrale e le vocali accentate.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Digita frasi brevi con i tasti della fila centrale e le vocali accentate.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-007",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Digita ogni gruppo con tutti i tasti della fila centrale, à e ò comprese, e torna alla posizione di base prima del successivo.",
+      "content": "jà fds hlòg kàs dfa lhgk sò àkdf glh jsd kòfl hg dsj"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "salsa falsa alga gas là alla dalla sala falda salda"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "falda falsa alla sala dalla salda alga salsa"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "ha la salsa là dalla sala alla falla ha la falda"
+    }
+  ]
+}

@@ -1,0 +1,87 @@
+{
+  "id": "es-01-014",
+  "unit": "u1",
+  "group": "g2",
+  "order": 13,
+  "slug": "es-01-014",
+  "title": "M",
+  "summary": "Aprender m en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Aprender m en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-014",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Localiza m y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ffm fmmm ffmm mmfm mm mmm fff mmf mf mmmm mmmf fmf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "mm ñm mñ ññmm ññ ñmm mmñm mmmñ ññm mñm ñmñ mmm mmmm"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "mmmm nn mmjm mn mnnm mmn nnmn mnm nnmm mmm mm mnmm mnn nnnn nmmm"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "mmtm mmt mtmm tt ttm ttmm tm tmmm tmm mmmt mt mm mmmm mmm"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "mis amigos juegan con la pelota en el patio"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "mi amigo me da una mesa muy bonita y una taza"
+    }
+  ]
+}

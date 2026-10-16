@@ -1,0 +1,110 @@
+{
+  "id": "sw-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 17,
+  "slug": "sw-02-002",
+  "title": "Nambari: 4, 5, 6",
+  "summary": "Kuandika 4, 5, 6 katika mchanganyiko wa nambari na maneno.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Kuandika 4, 5, 6 katika mchanganyiko wa nambari na maneno.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-02-002",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "44ff 44 4f4f 4f44 f444 444 44f4 44f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "5f55 555f 5555 55 f5 5f5 55f ff5 f555 555 5f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "666f f666 66f 6666 666 66",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "fj 5ff6 j56f 54 4f64 jfjj f6 55 6j4 jff 6j65 55ff jjff 56ff 5fj 64j5 4454"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jj6 jm f4j 4f 5fff 456f fjj 46 f55f 5f 65 44f5 mf4 544j 5j6 j6jf f6"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "zf6 jj zf64 fj jf5f f6 5j6j j5 f6jj 5fjf 5f 64f f6j 5f4 fjz 6j5 54 6j 4f 46"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "6ffj jj4 5f ff6 54 jj5 5j 44 f5 j55 56 j4fj 54f6 j5 4446 fj4"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jff jj f4 jf4 64j 55 j5 56f6 ff55 ij 5fj fjf 4jjj 55f 45jj 6646 6j jj4"
+    }
+  ]
+}

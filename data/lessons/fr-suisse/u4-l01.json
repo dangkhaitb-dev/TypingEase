@@ -67,9 +67,7 @@
     "=",
     "-",
     "'",
-    "^",
     "è",
-    "¨",
     "$",
     "§",
     "°",
@@ -111,21 +109,21 @@
       "type": "block",
       "newKey": "?",
       "text": "D'abord ? sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "?? ? père? porte? sa?\n?? ? sûr? incendie? rose?\n?? ? dose? leçon? nouvelle?"
+      "content": "?? ? besoin? peu? vote?\n?? ? d'abord? court? gestes?\n?? ? juillet? exemple? vies?"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
-        "bonnes?",
+        "petits?",
         "60°",
-        "commence?",
-        "l'école?",
+        "noms?",
+        "dernière?",
         "§28",
         "§98",
-        "tant?",
-        "tout?",
+        "parole?",
+        "gros?",
         "§31",
         "§77"
       ]
@@ -133,13 +131,13 @@
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "lisse? 85° 9° §80\n§17 monde? §80 devient?\nsalles? 86° court? §83"
+      "content": "fleurs? 85° 9° §80\n§17 routes? §80 connu?\nprendre? 86° histoire? §83"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "9° première 95° vins 92°\ncontrôle? partie §96 bateau §8\n§4 encore 90° if §48"
+      "content": "9° blanche 95° mondes 92°\naccès? villes §96 tant §8\n§4 outils 90° ils §48"
     }
   ]
 }

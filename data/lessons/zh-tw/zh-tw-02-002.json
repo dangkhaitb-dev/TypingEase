@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 26,
+  "slug": "zh-tw-02-002",
+  "title": "時間與行程",
+  "summary": "Narrow committed-output lesson: 3 4 5",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 3 4 5",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-02-002",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "數字用英數模式輸入，點與分回中文模式輸入。",
+      "content": "早上7點30分我們在校門口一起集合",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "數字用英數模式輸入，點與分回中文模式輸入。",
+      "content": "上午8點45分上課請先把課本準備好",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "數字用英數模式輸入，點與分回中文模式輸入。",
+      "content": "下午2點15分開會請提早10分鐘到場",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "數字用英數模式輸入，點與分回中文模式輸入。",
+      "content": "晚上6點50分出發預計7點20分到家",
+      "inputMode": "ime"
+    }
+  ]
+}

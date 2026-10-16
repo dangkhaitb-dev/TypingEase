@@ -1,0 +1,79 @@
+{
+  "id": "nl-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "nl-01-001",
+  "title": "Toetsen f, j en de spatiebalk",
+  "summary": "Leer de toetsen f en j en de spatiebalk en oefen ze samen.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Leer de toetsen f en j en de spatiebalk en oefen ze samen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-001",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Toets oefenen: f.",
+      "content": "ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Toets oefenen: j.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Druk met je duim op de spatiebalk tussen de groepjes.",
+      "content": "f j fj jf fj jf fj jf fj jf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "fjj fjfj ff jfj ffff ff fjf jjjj jj ffj ffff jf fff ffff fj jjj jjjj"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "fjf fffj fj ffj jfjj ff fff jjff ff jjj ffff jf jff jfjj ff jjf jfjf"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ffj fjjj jj jjj fffj fj jff jfff jf jjj fjjf jj fff fjjf jf jfj fjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "jff fjjj ff ffj fffj jf jff fjfj jf jff jjfj fj fjj fff"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    }
+  ]
+}

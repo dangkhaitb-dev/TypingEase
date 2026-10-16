@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-006",
+  "unit": "u10",
+  "group": "g2",
+  "order": 140,
+  "slug": "vi-10-006",
+  "title": "Câu chính xác tuyệt đối",
+  "summary": "Xây dựng năng lực \"Exact Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thực hành các câu văn đòi hỏi tính chính xác tuyệt đối 100% không được phép có lỗi sai.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Exact Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thực hành các câu văn đòi hỏi tính chính xác tuyệt đối 100% không được phép có lỗi sai.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên câu nói về yêu cầu chính xác của công tác văn thư và kế toán.",
+      "content": "Sự chính xác tuyệt đối là yêu cầu danh dự hàng đầu của người làm công tác văn thư lưu trữ và kế toán tài chính doanh nghiệp.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với câu cảnh báo hậu quả của một sai sót nhỏ trong văn bản pháp lý.",
+      "content": "Một sai sót nhỏ về con số hoặc dấu câu trong văn bản pháp lý có thể dẫn đến những hậu quả nghiêm trọng và khó lường. Do đó, người soạn thảo văn bản phải luôn rèn luyện tính cẩn trọng, tỉ mỉ và tinh thần trách nhiệm cao độ trong từng thao tác gõ phím hằng ngày. Trước khi gửi, hãy kiểm tra lại.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn yêu cầu không chấp nhận bất kỳ lỗi sai nào.",
+      "content": "Bài tập câu chính xác tuyệt đối không chấp nhận bất kỳ một lỗi sai nào dù là nhỏ nhất. Người học cần giữ cho tâm trí hoàn toàn thanh thản, tập trung tối đa mọi giác quan vào văn bản gốc và gõ từng từ với nhịp độ chắc chắn. Đây là bài kiểm tra bản lĩnh và tính kỷ luật nghề nghiệp của một chuyên viên văn phòng xuất sắc.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -41,7 +41,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter"
   ],
@@ -68,7 +67,7 @@
       "text": "Des mots avec une majuscule au début, comme les noms propres.",
       "dictation": "words",
       "type": "standard",
-      "content": "onze il boire mise\ntelle gels bords selle\nfours plupart item pères"
+      "content": "encore si base limes\ntires ski bonnes sel\nmodes appel titre besoin"
     },
     {
       "type": "intro",
@@ -88,38 +87,38 @@
       "text": "Des phrases avec majuscule au début et point à la fin. Ça commence à ressembler à écrire pour de vrai.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Le train arrive à la gare dans une heure.\nMon frère habite dans une grande ville du sud.\nLe livre que je cherche est sur la table."
+      "content": "Le temps passe vite quand le travail avance bien.\nLa musique venait de la salle du fond.\nTous les jours je passe devant cette boutique."
     },
     {
       "seconds": 25,
       "text": "Une série pour fixer ce que fait cette leçon.",
       "type": "burst",
       "tokens": [
-        "parties",
-        "vies",
-        "diriger",
-        "me",
-        "sa",
-        "mère",
-        "bureau",
-        "huit",
-        "passe",
-        "moi",
-        "nuits",
-        "vote"
+        "glisses",
+        "jures",
+        "groupe",
+        "envies",
+        "vins",
+        "hisse",
+        "belle",
+        "veut",
+        "salles",
+        "ou",
+        "figure",
+        "cent"
       ]
     },
     {
       "text": "Cinq par ligne, avec l'auriculaire qui travaille dans les deux sens.",
       "dictation": "words",
       "type": "standard",
-      "content": "taxi encore humide bonnes jamais\nsujet forte jolie projet sites\nvient fort mou nuit devoirs"
+      "content": "moments mon rigide autres peu\nluttes sous sujet personnes tes\ncentres jolie noms vieux portes"
     },
     {
       "text": "Pour finir, des phrases entières. Maj, lettre, relâche — sans s'arrêter pour y penser.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Nous avons besoin de deux personnes de plus.\nTous les jours je passe devant cette boutique.\nLa petite fille joue dans le jardin."
+      "content": "La petite fille joue dans le jardin.\nElle a pris le premier train du matin.\nNous partons demain matin pour la campagne."
     }
   ]
 }

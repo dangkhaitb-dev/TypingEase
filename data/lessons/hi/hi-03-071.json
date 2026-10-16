@@ -1,0 +1,50 @@
+{
+  "id": "hi-03-071",
+  "unit": "u3",
+  "group": "g3",
+  "order": 131,
+  "slug": "hi-03-071",
+  "title": "Shift और AltGr: < > ?",
+  "summary": "Shift और AltGr की संयुक्त परत का अभ्यास करें।",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Shift और AltGr की संयुक्त परत का अभ्यास करें।",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "hi",
+    "lesson": "hi-03-071",
+    "revision": "hi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "< के लिए AltGr और Shift दोनों दबाए रखकर नीचे की पंक्ति की , कुंजी दबाएँ (दाएँ हाथ की मध्यमा)।",
+      "content": "< << <र र< < << <र र< < << <र र<"
+    },
+    {
+      "type": "standard",
+      "text": "> के लिए AltGr और Shift दोनों दबाए रखकर नीचे की पंक्ति की . कुंजी दबाएँ (दाएँ हाथ की अनामिका)।",
+      "content": "> >> >र र> > >> >र र> > >> >र र>"
+    },
+    {
+      "type": "standard",
+      "text": "? के लिए AltGr और Shift दोनों दबाए रखकर नीचे की पंक्ति की / कुंजी दबाएँ (दाएँ हाथ की छोटी उँगली)।",
+      "content": "? ?? ?र र? ? ?? ?र र? ? ?? ?र र?"
+    },
+    {
+      "type": "standard",
+      "text": "Shift और AltGr से चिह्नों का सटीक अभ्यास करें।",
+      "content": "< << र< > >> र> ? ?? र? < << र< > >> र> ? ?? र? < <<"
+    },
+    {
+      "type": "standard",
+      "text": "Shift और AltGr से चिह्नों का सटीक अभ्यास करें।",
+      "content": "?<र <>र >?र ?र<> <र>? >र?< <?> ><? ?>< <<> >>? ??< <>?"
+    }
+  ]
+}

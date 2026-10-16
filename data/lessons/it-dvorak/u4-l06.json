@@ -4,13 +4,12 @@
   "group": "symbols",
   "order": 33,
   "slug": "symbols-6",
-  "title": "É, *, § e _",
-  "summary": "In questa lezione: É, *, § e _.",
+  "title": "<, > e Ç",
+  "summary": "In questa lezione: <, > e Ç.",
   "newKeys": [
-    "é",
-    "*",
-    "§",
-    "_"
+    "<",
+    ">",
+    "ç"
   ],
   "keysSoFar": [
     " ",
@@ -79,97 +78,75 @@
     "°",
     ";",
     ":",
-    "ç",
-    "é",
-    "*",
-    "§",
-    "_"
+    "<",
+    ">",
+    "ç"
   ],
   "minAccuracy": 80,
   "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Tasti che il corso non ha ancora usato: É, *, § e _. Ognuno si ottiene con Shift e un tasto che le tue dita conoscono già — Shift con il mignolo dell'altra mano.",
-  "congrats": "É, *, § e _: ora sotto le tue dita. Il segno esce facile come la lettera accanto.",
+  "intro": "Tasti che il corso non ha ancora usato: <, > e Ç. Alcuni vogliono Shift, con il mignolo dell'altra mano; gli altri hanno un tasto tutto loro, che il corso non aveva ancora usato.",
+  "congrats": "<, > e Ç: ora sotto le tue dita. Il segno esce facile come la lettera accanto.",
   "screens": [
     {
       "type": "intro",
-      "key": "é",
-      "finger": "RP",
-      "text": "È il mignolo destro a premere É, con Shift tenuto dall'altra mano.",
-      "hint": "Premi É per continuare"
+      "key": "<",
+      "finger": "LP",
+      "text": "È il mignolo sinistro a premere <.",
+      "hint": "Premi < per continuare"
     },
     {
       "type": "block",
-      "newKey": "é",
-      "text": "Prima É e basta, poi dove si usa davvero.",
-      "content": "éé é benché perché benché\néé é ventitré poiché poiché\néé é poiché poiché perché"
+      "newKey": "<",
+      "text": "Prima < e basta, poi dove si usa davvero.",
+      "content": "<< < <cinque <legale <breve\n<< < <zio <chi <tale\n<< < <otto <altro <della"
+    },
+    {
+      "type": "block",
+      "newKey": ">",
+      "text": "Prima > e basta, poi dove si usa davvero.",
+      "content": ">> > <l'amica> <sala> <radio>\n>> > <punto> <porto> <l'idea>\n>> > <ali> <gas> <qualità>"
     },
     {
       "type": "intro",
-      "key": "*",
-      "finger": "RP",
-      "text": "È il mignolo destro a premere *, con Shift tenuto dall'altra mano.",
-      "hint": "Premi * per continuare"
+      "key": "ç",
+      "finger": "LP",
+      "text": "È il mignolo sinistro a premere Ç, con Shift tenuto dall'altra mano.",
+      "hint": "Premi Ç per continuare"
     },
     {
       "type": "block",
-      "newKey": "*",
-      "text": "Prima * e basta, poi dove si usa davvero.",
-      "content": "** * *l'arte* *sala* *studio*\n** * *pesce* *portare* *un'ora*\n** * *ali* *gas* *attività*"
-    },
-    {
-      "type": "intro",
-      "key": "§",
-      "finger": "RP",
-      "text": "È il mignolo destro a premere §, con Shift tenuto dall'altra mano.",
-      "hint": "Premi § per continuare"
-    },
-    {
-      "type": "block",
-      "newKey": "§",
-      "text": "Prima § e basta, poi dove si usa davvero.",
-      "content": "§§ § §76 §22 §87\n§§ § §40 §34 §61\n§§ § §95 §53 §69"
-    },
-    {
-      "type": "intro",
-      "key": "_",
-      "finger": "RP",
-      "text": "È il mignolo destro a premere _, con Shift tenuto dall'altra mano.",
-      "hint": "Premi _ per continuare"
-    },
-    {
-      "type": "block",
-      "newKey": "_",
-      "text": "Prima _ e basta, poi dove si usa davvero.",
-      "content": "__ _ yoga_pulire l'uomo_tagliare canto_ala\n__ _ contento_sua la_l'uomo altro_cucina\n__ _ lunedì_l'estate paese_ciò delle_radio"
+      "newKey": "ç",
+      "text": "Prima Ç e basta, poi dove si usa davvero.",
+      "content": "çç ç ççç ççç ççç\nçç ç ççç ççç ççç\nçç ç ççç ççç ççç"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Una raffica di pezzi brevi con questi caratteri.",
       "tokens": [
-        "*pizza*",
-        "§18",
-        "*serie*",
-        "§15",
-        "ventitré",
-        "benché",
-        "*piano*",
-        "*bambino*",
-        "li_mela",
-        "*dea*"
+        "ççç",
+        "<alzare>",
+        "<teatro>",
+        "<l'occhio>",
+        "<partire>",
+        "<pensiero>",
+        "<canta>",
+        "<crescere>",
+        "<la>",
+        "<natura>"
       ]
     },
     {
       "type": "block",
       "text": "Tutto quello di questa lezione, mescolato.",
-      "content": "banca_taglia §70 §21 *banco*\n*vincere* §4 burro_colore §4\n§34 ventitré *ridere* pochi_realtà"
+      "content": "ççç ççç ççç <delle>\n<noi> ççç ççç <ancora>\n<primo> <dura> ççç <pulito>"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Di nuovo parole, con i segni al loro posto.",
-      "content": "§20 diga *dura* gara §47\nbenché racconto §64 cammino *bene*\n§90 l'albero perché torta §93"
+      "content": "<pulire> casa ççç banca <motore>\n<dea> zaino ççç tirare ççç\nççç pioggia <secondo> breve <vestito>"
     }
   ]
 }

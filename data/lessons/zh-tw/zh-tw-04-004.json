@@ -1,0 +1,50 @@
+{
+  "id": "zh-tw-04-004",
+  "unit": "u4",
+  "group": "g1",
+  "order": 38,
+  "slug": "zh-tw-04-004",
+  "title": "短段與模式切換總複習",
+  "summary": "在短段與兩行紀錄中整合選字、時間、中英切換和標點邊界。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "在短段與兩行紀錄中整合選字、時間、中英切換和標點邊界。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-04-004",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "逐句確認選字，提交後才切換模式或換行，最後核對整段。",
+      "content": "今天降雨機率只有10%，我們下午去公園散步。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "逐句確認選字，提交後才切換模式或換行，最後核對整段。",
+      "content": "早上8點，雨停了。哥哥帶著筆記去學校。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "逐句確認選字，提交後才切換模式或換行，最後核對整段。",
+      "content": "檔案編號：02（第2版），請先存好再關閉。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "逐句確認選字，提交後才切換模式或換行，最後核對整段。",
+      "content": "今天：完成3頁筆記。\n明天：早上9點再一起討論。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

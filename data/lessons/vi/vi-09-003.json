@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-003",
+  "unit": "u9",
+  "group": "g1",
+  "order": 123,
+  "slug": "vi-09-003",
+  "title": "Mẫu đổi tay liên tục",
+  "summary": "Xây dựng năng lực \"Hand-Switch Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tối ưu hóa throughput thông qua việc hoán đổi ngón tay giữa tay trái và tay phải liên tục.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Hand-Switch Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tối ưu hóa throughput thông qua việc hoán đổi ngón tay giữa tay trái và tay phải liên tục.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi cụm từ về đổi tay: tay trái, tay phải, đổi bên, luân phiên.",
+      "content": "tay trái tay phải đổi bên luân phiên nhịp nhàng đều tay tiến bước tiên phong ngón trỏ xen kẽ chuỗi phím liền mạch đều đặn không lệch hàng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về vai trò của luân phiên hai tay.",
+      "content": "Sự luân phiên giữa hai bàn tay là yếu tố then chốt giúp nâng cao tốc độ gõ phím lên mức tối đa. Khi một tay đang nhấn phím thì tay kia đã chuẩn bị sẵn sàng ở vị trí phím tiếp theo, giúp loại bỏ hoàn toàn các khoảng thời gian chết giữa hai thao tác gõ. Khi tay trái dừng ở hàng cơ sở, tay phải chuẩn bị cho ký tự mở đầu của từ sau.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ mô tả sự phối hợp giữa hai bàn tay khi gõ.",
+      "content": "bàn tay trái giữ nhịp bàn tay phải lướt nhanh hai bên phối hợp nhịp nhàng tạo nên dòng chảy ký tự liên tục trên màn hình máy tính. Tay trái và tay phải thay phiên giữ nhịp, tránh để một bên gõ liên tiếp quá lâu. Khi ngón trỏ vừa rời phím ở hàng giữa, ngón kế tiếp đã sẵn sàng trên vị trí mới; mắt đọc trước cụm từ để hai bàn tay chuyển động liên tục, nhẹ nhàng và chính xác. Ngón út đỡ hàng ngoài, ngón cái chỉ việc nhấn cách.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -3,9 +3,9 @@
   "unit": "u4",
   "group": "finish",
   "order": 34,
-  "slug": "test-u4",
-  "title": "Test z części 4",
-  "summary": "Test na czas ze wszystkimi klawiszami klawiatury.",
+  "slug": "review-u4",
+  "title": "Wszystkie znaki razem",
+  "summary": "Wszystkie znaki tej części, wymieszane ze słowami i liczbami.",
   "newKeys": [],
   "keysSoFar": [
     " ",
@@ -60,10 +60,11 @@
     "ż",
     "ś",
     "ó",
+    "·",
     "!",
     "\"",
     "#",
-    "$",
+    "¤",
     "%",
     "&",
     "/",
@@ -80,17 +81,61 @@
     "_"
   ],
   "minAccuracy": 80,
-  "estMinutes": 2,
+  "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Test na czas ze wszystkim, znaki też.",
-  "congrats": "To była cała klawiatura. Nie został na niej żaden klawisz, którego ten kurs by nie przećwiczył.",
+  "intro": "Żadnych nowych klawiszy. Wszystkie znaki tej części, wymieszane ze słowami i liczbami.",
+  "congrats": "Każdy klawisz tej klawiatury miał swoją kolej.",
   "screens": [
     {
-      "type": "test",
+      "type": "standard",
       "dictation": "words",
-      "seconds": 120,
-      "text": "Słowa, liczby i znaki. Jedno tempo od początku do końca.",
-      "content": "#54 torby <ręce> leki <pierwszy> gdy\nbanan/zdjęcie lis <świeży> ogniska (sen) rodzina\nźźź filmy $42 piecze (już) rok\n<biel> stacja (list) pilot \"suchy\" wody"
+      "text": "Znaki w tym samym tempie co litery wokół nich.",
+      "content": "(jest) nogi 75% córka (flagi)\n(bok) lekcja gala & imiona pokoje <szuka>\nwięc_kolana zdanie źźź śmiech <ser>"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Trzymaj rytm także na znakach; to klawisze jak wszystkie inne.",
+      "content": "gotowa! licznik pora! powoli \"figury\"\n\"zima\" wiedza rada? nagroda 90 = 19\n<kolory> minuty *czysta* modny 21%"
+    },
+    {
+      "type": "burst",
+      "seconds": 30,
+      "text": "Seria krótkich kawałków z tymi znakami.",
+      "tokens": [
+        "farby_wody",
+        "sieje_kubki",
+        "śpi?",
+        "\"piszę\"",
+        "¤¤¤",
+        "ććć",
+        "<zawsze>",
+        "źźź",
+        "<kuchni>",
+        "91%",
+        "\"problem\"",
+        "*kopia*",
+        "\"torba\"",
+        "22=36"
+      ]
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Trzymaj rytm także na znakach; to klawisze jak wszystkie inne.",
+      "content": "(lubi) towar \"próba\" kasza ććć\nńńń suchy (zero) rakiety pan/niskie\nwraca & nad domek ¤¤¤ ktoś ···"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Trzymaj rytm także na znakach; to klawisze jak wszystkie inne.",
+      "content": "¤¤¤ żart źźź taki ¤¤¤\n··· patrzy 46 = 9 ciasto 21%\n<pole> lis (rzeczy) lipiec ¤¤¤"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Trzymaj rytm także na znakach; to klawisze jak wszystkie inne.",
+      "content": "\"czysta\" wiesz *kupuje* jutro grudka?\n<także> ktoś (matka) kable ććć\nszafy & torby film 60% wyrazy #62"
     }
   ]
 }

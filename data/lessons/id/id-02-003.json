@@ -1,0 +1,113 @@
+{
+  "id": "id-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 17,
+  "slug": "id-02-003",
+  "title": "Angka: 7, 8, 9",
+  "summary": "Gõ angka 7, 8, 9, dan 0 dalam urutan yang berubah.",
+  "newKeys": [
+    "7",
+    "8",
+    "9"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Gõ angka 7, 8, 9, dan 0 dalam urutan yang berubah.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-02-003",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "7",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "7f ff77 f7f 777f f777 77 f7 7777 77f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "8",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "88f f888 f8 8f 8888 8f88 888f 88 888 f8f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "9",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "9ff 9999 999f 9f99 99 9f9 999",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jf 7fjf 889 88 ff 779j f8 fj jf7 99f f9 87j j8 f7j ffjf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "o8 8j8 f998 97 97j 797 79j7 fjf 99 7fjj 7798"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "fj7 ff9 8lf 78 9798 fjj 8fj j9jj 8f j7f 88f8"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "8f 78 9j 7j8j f8 f985 ffj fj f5 7jf jf7 fj7 j9j 9j5 9f 797 f9j7 7jj fj8"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "f978 ff 79 ff8 799j jjff fjfj jj9f 8f97 9978 9j88 77fj j9jf fj7f fjj j98f"
+    }
+  ]
+}

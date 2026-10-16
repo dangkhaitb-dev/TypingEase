@@ -1,0 +1,65 @@
+{
+  "id": "vi-01-008",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "vi-01-008",
+  "title": "Luyện phím · x c v",
+  "summary": "Học phím W (ngón áp út trái hàng trên) — phím nền tảng quan trọng cho bộ gõ Telex tiếng Việt.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Học phím W (ngón áp út trái hàng trên) — phím nền tảng quan trọng cho bộ gõ Telex tiếng Việt.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím x: ngón áp út trái, hàng dưới. Trong Telex, x gõ sau nguyên âm sẽ thành dấu ngã, nên bài này không đặt x sau nguyên âm.",
+      "content": "xx xx jxxx fxx jxxx jxxx xxf jxxx xxx jxxx xxx"
+    },
+    {
+      "type": "standard",
+      "text": "Phím c: ngón giữa trái, hàng dưới. Gõ c xen với hai phím mốc f, j.",
+      "content": "ccf ccc cccj ccj cccf cfc cfc cfc fccc fcc jcc"
+    },
+    {
+      "type": "standard",
+      "text": "Phím v: ngón trỏ trái, hàng dưới. Gõ v xen với hai phím mốc f, j.",
+      "content": "vfv jvv vvv vvv jvv vvj vfv jvv vv jvvv vvv"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp x c v với các phím đã học.",
+      "content": "jxtp vh ch qkv jlve vac sc ptx zhjv pev vp vhsa csuu"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp x c v với các phím đã học.",
+      "content": "cgz fv csq kv cy ccol vui hx qxd jpc ec ljic hve vy"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "hoa va da vui sao cho trai di kia hoa tre vai xa kho xoay"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "khay dao sai go ga ly khay hai che kia dao que lau do du sao"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại x c v trong các cụm mới, giữ nhịp đều.",
+      "content": "xpqj cz jx xlgd zsvf cq slv zv gcsz dc av skcg kvig xcea jzcu vff jev"
+    }
+  ]
+}

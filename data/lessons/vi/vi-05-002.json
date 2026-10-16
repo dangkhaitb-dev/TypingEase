@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-002",
+  "unit": "u5",
+  "group": "g1",
+  "order": 71,
+  "slug": "vi-05-002",
+  "title": "Hai nhân vật",
+  "summary": "Theo dõi sự tương tác và đối thoại giữa hai nhân vật, duy trì tính ổn định khi chuyển đổi chủ ngữ.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Theo dõi sự tương tác và đối thoại giữa hai nhân vật, duy trì tính ổn định khi chuyển đổi chủ ngữ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện gõ câu văn giới thiệu hai nhân vật cùng làm việc bên gian hàng.",
+      "content": "Tuấn đến phụ Minh dọn dẹp gian hàng số mười hai. Cả hai cùng kiểm tra sổ sách nhập kho trước khi bày hàng ra kệ gỗ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Phối hợp nhịp gõ miêu tả hành động phối hợp giữa hai người bạn.",
+      "content": "Tuấn nâng thùng gỗ đựng táo đỏ đặt lên bàn cân, trong khi Minh ghi chép cẩn thận từng con số vào sổ theo dõi. Họ vừa làm việc vừa trò chuyện rôm rả về chuyến xe chở trái cây từ miệt vườn về trong đêm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn hoàn chỉnh về sự ăn ý giữa hai nhân vật trong phiên chợ sáng.",
+      "content": "Mặt trời lên cao chiếu ánh nắng vàng qua mái bạt của gian hàng nhỏ. Tuấn nhanh tay lau sạch mặt bàn gỗ, trong khi Minh xếp từng khay quả tươi vừa hái. Khách bắt đầu ghé qua sạp hỏi thăm giá cả nông sản đầu mùa.",
+      "inputMode": "telex"
+    }
+  ]
+}

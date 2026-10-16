@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-009",
+  "unit": "u5",
+  "group": "g3",
+  "order": 78,
+  "slug": "vi-05-009",
+  "title": "Kết thúc trọn vẹn",
+  "summary": "Hoàn thiện câu chuyện với phần kết đầy đủ, kết hợp các đoạn văn ngắn có cấu trúc mở - thân - kết hoàn chỉnh.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Hoàn thiện câu chuyện với phần kết đầy đủ, kết hợp các đoạn văn ngắn có cấu trúc mở - thân - kết hoàn chỉnh.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn kết bài trọn vẹn khẳng định sự nỗ lực và thành quả mỹ mãn của hội chợ.",
+      "content": "Phiên hội chợ buổi chiều diễn ra thành công ngoài mong đợi với doanh số bán hàng đạt mức kỷ lục trong tuần.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Cơn mưa tạnh hẳn và ánh nắng mặt trời lại bừng sáng trên khắp bến cảng.",
+      "content": "Cơn mưa dông qua đi nhanh chóng trả lại bầu trời xanh ngắt và bầu không khí trong lành. Mặt trời chiếu rọi làm bốc hơi những giọt nước đọng trên lối đi lát sỏi ven bờ hồ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hội chợ nhanh chóng dọn dẹp sạch sẽ và mở cửa đón khách trở lại.",
+      "content": "Mọi người khẩn trương quét dọn nước đọng trên lối đi, sắp xếp lại bàn ghế và bày lại những kệ quả rực rỡ sắc màu tươi tắn. Sau khi chốt sổ, cả nhóm thu gom bảng hiệu và cất dụng cụ vào kho của bến cảng.",
+      "inputMode": "telex"
+    }
+  ]
+}

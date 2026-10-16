@@ -40,12 +40,19 @@
  * v18: nút ☰ menu trên điện thoại (menu.js, vào PRECACHE).
  * v19: trang test viết sẵn cho 21 ngôn ngữ (chưa bật); typing-test.js gõ theo vị trí phím (Chú âm), font cho chữ không Latin.
  * v20: trang test chọn đoạn văn theo kiểu bàn phím (Hindi Bolnagri), trò chơi lọc từ theo bố cục đang chọn.
+ * v24: dữ liệu khoá học nhập từ typekute và tải theo cách của typekute (data-cache.js): bài học
+ *      có URL băm `?v=<sha256-16>` và nằm trong bucket riêng `typingease-data-v1` do trang tự
+ *      quản (kiểm băm rồi mới lưu). Service worker KHÔNG đụng vào bài học — không lưu lần hai,
+ *      và activate KHÔNG xoá bucket `typingease-data-*`. Chỉ mục `data/curriculum.*.js?v=` bất
+ *      biến theo URL nên đi cache-trước.
+ * v25: bàn phím + bàn tay đồng bộ từ typekute (layout 122 bố cục, lưới phím vật lý, nhãn AltGr,
+ *      mô hình tay GLB 140 KB thay glTF 944 KB) — quét sạch keyboard.js/hands-3d.js/model cũ.
  * v17: chân trang ba cột — dòng pháp lý ở giữa, bỏ hàng liên kết lộ trình/bài học.
  *
- * Bàn tay 3D (three.js ~690 KB, model 967 KB, texture) KHÔNG nằm trong PRECACHE: chúng chỉ tải
+ * Bàn tay 3D (three.js ~690 KB, model GLB ~140 KB, texture) KHÔNG nằm trong PRECACHE: chúng chỉ tải
  * khi người học thật sự bật bàn tay, và cache lối-đi-thật ở dưới sẽ giữ lại sau lần đầu.
  */
-const VERSION = 'v23';
+const VERSION = 'v25';
 const SHELL = `typingease-shell-${VERSION}`;
 const RUNTIME = `typingease-runtime-${VERSION}`;
 
@@ -61,7 +68,7 @@ const RUNTIME = `typingease-runtime-${VERSION}`;
 // trang còn lại — bộ chọn, lộ trình, nút vào học — vẫn dùng được.
 const PRECACHE = [
   '/', '/tokens.css', '/base.css', '/home.css', '/landing.css',
-  '/script.js', '/landing-i18n.js', '/landing.js', '/menu.js', '/profile.js', '/progress-store.js',
+  '/script.js', '/data-cache.js', '/landing-i18n.js', '/landing.js', '/menu.js', '/profile.js', '/progress-store.js',
   '/data/curriculum.en.js', '/data/languages.js', '/favicon.ico'
 ];
 
@@ -77,8 +84,10 @@ self.addEventListener('install', event => {
 
 self.addEventListener('activate', event => {
   const keep = [SHELL, RUNTIME];
+  // `typingease-data-*` thuộc về data-cache.js (trang tự dọn schema cũ) — không phải của SW.
+  const owned = name => !name.startsWith('typingease-data-');
   event.waitUntil(caches.keys()
-    .then(names => Promise.all(names.filter(name => !keep.includes(name)).map(name => caches.delete(name))))
+    .then(names => Promise.all(names.filter(name => owned(name) && !keep.includes(name)).map(name => caches.delete(name))))
     .then(() => self.clients.claim()));
 });
 
@@ -139,6 +148,12 @@ self.addEventListener('fetch', event => {
 
   if (FONT_HOSTS.includes(url.hostname)) { event.respondWith(cacheFirst(request)); return; }
   if (url.origin !== self.location.origin) return;
+
+  // URL băm nội dung (scripts/stamp-data.mjs): bài học để data-cache.js tự lo; chỉ mục thì bất biến
+  // theo URL nên cache-trước là đúng, như font.
+  const hashed = /^[a-f0-9]{16}$/.test(url.searchParams.get('v') || '');
+  if (hashed && url.pathname.startsWith('/data/lessons/')) return;
+  if (hashed && /^\/data\/curriculum\.[a-z0-9-]+\.js$/.test(url.pathname)) { event.respondWith(cacheFirst(request)); return; }
 
   event.respondWith(networkFirst(request, { navigate: request.mode === 'navigate' }));
 });

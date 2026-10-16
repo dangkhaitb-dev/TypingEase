@@ -1,0 +1,65 @@
+{
+  "id": "vi-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "vi-01-009",
+  "title": "Luyện phím · b n m",
+  "summary": "Học phím X (ngón áp út trái hàng dưới) — phím dùng cho dấu ngã trong Telex.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Học phím X (ngón áp út trái hàng dưới) — phím dùng cho dấu ngã trong Telex.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím b: ngón trỏ trái, hàng dưới. Gõ b xen với hai phím mốc f, j.",
+      "content": "bb jbb bb bbbj jbbb fbbb bb jbb bb bfb"
+    },
+    {
+      "type": "standard",
+      "text": "Phím n: ngón trỏ phải, hàng dưới. Gõ n xen với hai phím mốc f, j.",
+      "content": "nnn jnnn nn nfn jnnn fnn nfn nnnf nn"
+    },
+    {
+      "type": "standard",
+      "text": "Phím m: ngón trỏ phải, hàng dưới. Gõ m xen với hai phím mốc f, j.",
+      "content": "mjm mjm mmm mmj jmmm mmf mmm mm mmm mmm mmf mm"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp b n m với các phím đã học.",
+      "content": "rfb nd mz sb zlsm deb qmdg ne xb rrmt yn hflm dcmz bvi"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp b n m với các phím đã học.",
+      "content": "mfqx znp crfb hgng adb lnik ven fmv aqb fn xny mi kqmz rn pbl"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "khi rau xa hoa mang nhanh cho quanh sau xe nghe trang anh hay giao"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "con cho chung gian hoa trong tin ba gom sau cho nhanh tay cao chi ghi"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại b n m trong các cụm mới, giữ nhịp đều.",
+      "content": "unkk hbx hm kdn abv gln nkx ni bk ab brf vm brzz xm"
+    }
+  ]
+}

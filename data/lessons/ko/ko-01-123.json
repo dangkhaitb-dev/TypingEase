@@ -1,0 +1,43 @@
+{
+  "id": "ko-01-123",
+  "unit": "u1",
+  "group": "g1",
+  "order": 24,
+  "slug": "ko-01-123",
+  "title": "자모 조합 복습 12",
+  "summary": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-123",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "냉장고에서 차가운 우유를 꺼내 마셔요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "식탁 위에 숟가락과 젓가락을 놓아요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "다 먹은 그릇은 개수대에서 깨끗이 씻어요",
+      "inputMode": "hangul"
+    }
+  ]
+}

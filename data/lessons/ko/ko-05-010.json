@@ -1,0 +1,43 @@
+{
+  "id": "ko-05-010",
+  "unit": "u5",
+  "group": "g1",
+  "order": 76,
+  "slug": "ko-05-010",
+  "title": "준비가 만든 여유",
+  "summary": "여러 사건의 원인과 결과를 하나의 흐름으로 묶어 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "여러 사건의 원인과 결과를 하나의 흐름으로 묶어 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-05-010",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "중요한 발표가 있는 날이라 전날 밤에 입을 옷과 가방을 미리 챙겨 두었습니다. 발표 자료도 처음부터 끝까지 한 번 더 소리 내어 읽었습니다. 그리고 일찍 잤습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "아침에 지하철이 잠시 멈췄지만 일찍 나온 덕분에 서두를 필요가 없었습니다. 회의실에 먼저 도착해 화면 연결과 마이크도 미리 확인했습니다. 모두 문제없었습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "발표 중에 예상하지 못한 질문이 나왔지만 차분하게 답할 수 있었습니다. 준비하는 데 들인 시간만큼 마음에도 여유가 생긴 것 같아 뿌듯했습니다. 다음에도 그렇게 할 거예요.",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "vi-03-012",
+  "unit": "u3",
+  "group": "g1",
+  "order": 52,
+  "slug": "vi-03-012",
+  "title": "Luyện phím · . / -",
+  "summary": "Học các dấu . / - và luyện gõ từ kèm dấu câu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "telex",
+  "intro": "Học các dấu . / - và luyện gõ từ kèm dấu câu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím .: ngón áp út phải, hàng dưới. Gõ . xen với các phím đã học.",
+      "content": "khi. con. sau. để. nhỏ. của.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Phím /: ngón út phải, hàng dưới. Gõ / xen với các phím đã học.",
+      "content": "a/b x/y b/a y/x a/x b/y x/a y/b"
+    },
+    {
+      "type": "standard",
+      "text": "Phím -: ngón út phải, hàng số. Gõ - xen với các phím đã học.",
+      "content": "a-b x-y b-a y-x a-x b-y x-a y-b"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ kèm dấu . / -.",
+      "content": "vì người giữ. người/phòng đồ. hàng/rõ người. bạn cạnh. nghe/các cần/đọc",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có dấu gạch nối -, đúng chính tả và dấu câu.",
+      "content": "Tuyến Hà Nội-Huế mất 12-14 giờ, vé giá 30-50 nghìn.",
+      "inputMode": "telex"
+    }
+  ]
+}

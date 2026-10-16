@@ -1,0 +1,84 @@
+{
+  "id": "it-01-017",
+  "unit": "u1",
+  "group": "g3",
+  "order": 16,
+  "slug": "it-01-017",
+  "title": "Ì",
+  "summary": "Impara il tasto ì e usalo con i tasti già studiati.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Impara il tasto ì e usalo con i tasti già studiati.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-017",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Trova ì e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ffìf fìf ìììf ìì ìff ffì ìììì"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ìììì ìì lì llì ìlì ll lììì ìl ììlì ììì lì"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ìììm mm ììì mììm mìjì mmì ììjm ììm mììì mmìì ìì mmjì ìììì"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ìììì ìì ììfì ìfì fìì ììf fììì fì ffìì ììì"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "così la mamma ha detto sì e lui è lì con lei"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "sì lui è lì mi dice così e poi sorride la sera"
+    }
+  ]
+}

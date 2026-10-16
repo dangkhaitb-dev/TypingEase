@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-021",
+  "unit": "u1",
+  "group": "g1",
+  "order": 21,
+  "slug": "vi-01-021",
+  "title": "Luyện phím · ằ ẻ ĩ",
+  "summary": "Học cách gõ ằ (a w f), ẻ (e r), ĩ (i x) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ằ (a w f), ẻ (e r), ĩ (i x) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-021",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ a w f để ra ằ: a w ra ă, f thêm dấu huyền. Ví dụ: chằng = c h a w f n g.",
+      "content": "rằng ằ rằng bằng rằng ằ rằng bằng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu hỏi: gõ r sau nguyên âm. e r → ẻ. Ví dụ: bẻ = b e r.",
+      "content": "ẻ bẻ vẻ trẻ sẻ kẻo lẻ vẻ rẻ bẻ kẻo",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu ngã: gõ x sau nguyên âm. i x → ĩ. Ví dụ: nghĩa = n g h i x a.",
+      "content": "đĩa ĩ sĩ lĩnh ĩ lĩnh tĩnh sĩ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ằ, ẻ, ĩ. Nhớ: ằ = a w f, ẻ = e r, ĩ = i x.",
+      "content": "dẻo bếp tăng lẻ kẻo nghĩ trẻ kẻ theo bẻ lĩnh rằng nghĩa sĩ nhà",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ằ, ẻ, ĩ. Nhớ: ằ = a w f, ẻ = e r, ĩ = i x.",
+      "content": "nhằm bến mẻ hằng lằn mẻ im chằng trẻ lẻ trẻ liên bằng dừng rẻ cách ngoằn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ằ, ẻ, ĩ.",
+      "content": "cuốn bẻ rằng hằng sĩ không hằng bị ngoằn hẻm xanh nhiên vui dẻo cách trẻ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ằ, ẻ, ĩ.",
+      "content": "loại ánh tranh trách sáng bị hằng sơ lúc tĩnh nhân",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ằ, ẻ, ĩ mà không nhìn bàn phím.",
+      "content": "đĩa nhau im trẻo lẻ lối xếp thu hằng bằng khi trẻ câu rẻ",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -103,6 +103,9 @@
     badgeAll: 'Xem tất cả huy hiệu →',
     imeNote: 'Hình như bộ gõ tiếng Việt chưa bật: bạn đang gõ ra chuỗi Telex thô. Bật Unikey hoặc EVKey ở kiểu gõ Telex, hoặc chuyển bài này sang gõ không dấu.',
     imeNoteButton: 'Gõ không dấu',
+    // Hai câu của typekute (player.imeOffHint / player.imeAsciiHint).
+    imeOffHint: 'Các chữ này cần bộ gõ tiếng Trung hoặc tiếng Nhật: hãy bật bộ gõ (Ctrl+Space hoặc 🌐), gõ cách đọc rồi chọn chữ.',
+    imeAsciiHint: 'Hãy chuyển bộ gõ sang chế độ tiếng Anh (Shift) cho bài này.',
     asciiNote: 'Bài này đang ở chế độ gõ KHÔNG DẤU. Bật bộ gõ tiếng Việt rồi bấm nút bên cạnh để quay lại bản có dấu.',
     asciiNoteButton: 'Gõ có dấu',
     shiftFinger: 'ngón út tay đối diện',
@@ -281,7 +284,13 @@
     if ((isPhone() || touchQuery.matches) && !mobileNoteDismissed && state !== 'loading' && state !== 'error')
       rows.push(`<p class="player-note is-info"><span>ⓘ ${T.mobileNote}</span>`
         + `<button type="button" class="note-close" id="note-close">${T.mobileNoteClose}</button></p>`);
-    if (imeNoteVisible && !asciiFallback)
+    if (imeNoteVisible && !asciiFallback && root.dataset.inputMode === 'ime')
+      rows.push(`<p class="player-note is-warn"><span>⚠ ${T.imeOffHint}</span></p>`);
+    // typekute: screen chữ ASCII trong khoá cần bộ gõ (phím f j, số…) gõ với bộ gõ ở chế độ tiếng
+    // Anh — ở chế độ Nhật/Trung, bộ gõ biến `f` `7` thành một lượt chọn chữ.
+    if (state === 'typing' && root.dataset.inputMode === 'ascii' && (curriculum?.features || []).includes('ime'))
+      rows.push(`<p class="player-note is-info" data-ime-ascii-hint><span>ⓘ ${T.imeAsciiHint}</span></p>`);
+    else if (imeNoteVisible && !asciiFallback)
       rows.push(`<p class="player-note is-warn"><span>⚠ ${T.imeNote}</span>`
         + `<button type="button" class="note-close" id="note-ascii">${T.imeNoteButton}</button></p>`);
     // Khoa go theo vi tri phim (Chu am): bo go dang BAT thi phim bi bo go nuot mat. Chi bao, khong
@@ -361,28 +370,54 @@
   const FIXTURE_BASE = './_fixture/';
   const lessonCache = new Map();
 
-  async function fetchJson(path) {
-    const response = await fetch(path, { cache: 'no-cache' });
-    if (!response.ok) throw new Error(`${response.status} ${path}`);
-    return response.json();
+  // Tải dữ liệu đi qua data-cache.js (cách của typekute): URL đã băm từ `curriculum.lessonUrls`,
+  // Cache API có kiểm SHA-256, gộp request trùng, tải lại trang một lần khi lệch phiên bản.
+  // Chỉ mục chưa băm (chạy `node scripts/stamp-data.mjs`) thì rơi về URL trần, chỉ đi mạng.
+  const data = global.TypingEaseData;
+  const lessonUrl = id => curriculum?.lessonUrls?.[id] || `${DATA_BASE}${id}.json`;
+
+  async function fetchJson(url, options) {
+    if (!data) {
+      const response = await fetch(url, { cache: 'no-cache' });
+      if (!response.ok) throw new Error(`${response.status} ${url}`);
+      return response.json();
+    }
+    try {
+      return await data.fetchJsonOnce(url, options);
+    } catch (error) {
+      // Đã tải lại trang một lần vì lệch phiên bản mà vẫn lệch: lấy bản mới nhất, không cache.
+      if (error instanceof data.DataVersionDriftError && data.driftReloadUsed()) return data.fetchLatestJson(url);
+      throw error;
+    }
   }
 
-  async function loadLesson(id) {
+  async function loadLesson(id, options) {
     if (lessonCache.has(id)) return lessonCache.get(id);
     // Ask the index first so a lesson that exists for real never triggers a fixture 404, and a
     // lesson that only exists as a fixture never triggers a data 404.
     const known = Boolean(indexEntry(id)) && !curriculum?.fixture;
-    const order = known ? [DATA_BASE, FIXTURE_BASE] : [FIXTURE_BASE, DATA_BASE];
-    let data = null, from = '';
-    for (const base of order) {
-      try { data = await fetchJson(`${base}${id}.json`); from = base; break; } catch { /* try the next */ }
+    const sources = [[lessonUrl(id), false], [`${FIXTURE_BASE}${id}.json`, true]];
+    if (!known) sources.reverse();
+    let result = null;
+    for (const [url, fixture] of sources) {
+      try { result = { data: normalizeLesson(await fetchJson(url, options), id), fixture }; break; } catch { /* try the next */ }
     }
-    const result = data ? { data: normalizeLesson(data, id), fixture: from === FIXTURE_BASE } : null;
     if (result) lessonCache.set(id, result);
     return result;
   }
 
   const prefetch = id => { if (id && !lessonCache.has(id)) loadLesson(id).catch(() => {}); };
+
+  // Tải trước lúc rảnh cả unit đang học và unit kế tiếp (typekute: lessonPrefetchPlan) — đi hết
+  // một unit rồi mất mạng vẫn học tiếp được.
+  function prefetchAround(id) {
+    if (!data || !curriculum?.lessonUrls) return;
+    const units = unitList();
+    const at = units.findIndex(unit => unit === unitOf(id));
+    if (at < 0) return;
+    units.slice(at, at + 2).forEach(unit => data.prefetch(`${COURSE}:${unit.id}`,
+      unitLessonIds(unit).filter(isReady).map(lessonId => curriculum.lessonUrls[lessonId])));
+  }
 
   // Content lines are joined by one keystroke, and `linebreak` picks which one: "space" (the
   // default, where the line break is presentation only) or "enter", where the newline is a real
@@ -405,6 +440,13 @@
     return { target, breaks };
   }
 
+  // ascii    : so từng ký tự gõ ra với chữ cần gõ (mọi bảng chữ gõ thẳng: Latin, Kirin, Ả Rập, Thái…)
+  // telex    : tiếng Việt có dấu, chấm theo âm tiết (telex-match.js)
+  // hangul   : tiếng Hàn 2-set (hangul-match.js)
+  // ime      : chữ phải qua bộ gõ (Nhật, Trung): chỉ chấm phần ĐÃ CHỐT, phần đang soạn để chờ
+  // position : gõ theo vị trí phím với bộ gõ tắt (chú âm Đài Loan) — xem positionalCharacter()
+  const INPUT_MODES = ['ascii', 'telex', 'hangul', 'ime', 'position'];
+
   function normalizeLesson(raw, id) {
     const screens = (Array.isArray(raw.screens) ? raw.screens : []).filter(screen => screen && typeof screen === 'object');
     return {
@@ -416,7 +458,8 @@
       keysSoFar: Array.isArray(raw.keysSoFar) ? raw.keysSoFar : [],
       minAccuracy: Number.isFinite(Number(raw.minAccuracy)) ? Number(raw.minAccuracy) : DEFAULT_MIN_ACCURACY,
       estMinutes: Number(raw.estMinutes) || 0,
-      inputMode: raw.inputMode === 'telex' || raw.inputMode === 'hangul' ? raw.inputMode : 'ascii',
+      inputMode: INPUT_MODES.includes(raw.inputMode) ? raw.inputMode : 'ascii',
+      kind: raw.kind || indexEntry(id)?.kind || '',
       intro: raw.intro || '',
       congrats: raw.congrats || '',
       screens
@@ -513,7 +556,8 @@
     const flush = () => { if (word) { html += `<span class="w">${word}</span>`; word = ''; } };
     [...run.target].forEach((character, position) => {
       const status = position < typed.length
-        ? (run.telex && run.view ? (run.view.states[position] || 'bad') : (typed[position] === character ? 'ok' : 'bad'))
+        ? (run.telex && run.view ? (run.view.states[position] || 'bad')
+          : imePending(position) ? 'pending' : (sameUnit(typed[position], character) ? 'ok' : 'bad'))
         : position === typed.length ? 'cur' : '';
       if (run.breaks.has(position)) {
         word += `<span class="ch brk ${status}">${character === '\n' ? '⏎' : '␣'}</span>`;
@@ -578,7 +622,13 @@
   }
 
   // --- screen lifecycle -----------------------------------------------------------------------
+  // Một lượt gõ đang chạy giữ data-cache khỏi tải lại trang khi phát hiện lệch phiên bản dữ liệu.
+  function endDataSession() {
+    if (run?.session) { run.session = false; data?.endSession(); }
+  }
+
   function clearRun() {
+    endDataSession();
     clearInterval(clockTimer);
     clockTimer = null;
     run = null;
@@ -595,11 +645,15 @@
     // Telex is Phase 4. All that exists here is the seam: the mode is resolved per screen
     // (screen overrides lesson) and published on the root, so the composition-aware matcher of
     // PLAN.md C6 can hook in without touching anything else. Until then every mode types ascii.
-    const composed = mode => mode === 'telex' || mode === 'hangul';
-    root.dataset.inputMode = composed(screen.inputMode) ? screen.inputMode
-      : screen.inputMode !== 'ascii' && composed(lesson.inputMode) ? lesson.inputMode : 'ascii';
+    // Screen thắng bài; screen của khoá nhập từ typekute luôn tự khai chế độ khi khác ascii, nên
+    // chế độ của bài chỉ còn là mặc định cho các khoá viết tay cũ.
+    const special = mode => INPUT_MODES.includes(mode) && mode !== 'ascii';
+    root.dataset.inputMode = special(screen.inputMode) ? screen.inputMode
+      : screen.inputMode !== 'ascii' && (lesson.inputMode === 'telex' || lesson.inputMode === 'hangul') ? lesson.inputMode : 'ascii';
+    if ((curriculum?.features || []).includes('ime')) imeNoteVisible = false;
     if (screen.type === 'intro') enterIntro(screen);
     else enterTyping(screen);
+    renderNotes();
     renderChrome();
     focusInput();
   }
@@ -617,7 +671,7 @@
     // A telex screen is matched by TypingEaseTelex (composition-aware, error per syllable);
     // with the fallback on, the very same text is stripped of its diacritics and typed as ascii.
     composer = root.dataset.inputMode === 'hangul' ? hangul : telex;
-    const telexMode = root.dataset.inputMode !== 'ascii' && !!composer;
+    const telexMode = (root.dataset.inputMode === 'telex' || root.dataset.inputMode === 'hangul') && !!composer;
     const plain = text => (telexMode && asciiFallback && composer ? composer.toAscii(text) : text);
     const content = plain(screen.type === 'burst'
       ? ''
@@ -634,7 +688,11 @@
       target: '', breaks: new Set(),
       startedAt: null, endedAt: null, seen: 0, lastKeyAt: null,
       typed: 0, correct: 0, errors: 0, keyMs: {}, timedOut: false,
-      telex: telexMode && !asciiFallback, view: null, scored: []
+      telex: telexMode && !asciiFallback, view: null, scored: [],
+      // typekute (software-keyboard.js, settleComposition): mọi lượt soạn của bộ gõ — IME có danh
+      // sách chọn chữ (Nhật, Trung), phím chết (´ + e → é) — chỉ được chấm trên chữ nó CHỐT.
+      // Telex/Hangul có bộ so khớp riêng (composer) nên không đi đường này.
+      settle: !(telexMode && !asciiFallback), ime: root.dataset.inputMode === 'ime', imeFrom: -1, rawHits: 0
     };
     NT?.markKeys(board, Array.isArray(screen.newKeys) && screen.newKeys.length ? screen.newKeys : (screen.newKey || ''));
     if (screen.type === 'burst') setBurstToken();
@@ -656,6 +714,7 @@
 
   function startRun() {
     run.startedAt = Date.now();
+    if (data && !run.session) { run.session = true; data.beginSession(); }
     if (run.limit) {
       clearInterval(clockTimer);
       clockTimer = setInterval(() => {
@@ -665,13 +724,28 @@
     }
   }
 
+  // typekute matchUnit/foldUnit: bàn phím bản địa gõ ra DẠNG RIÊNG của ký tự thường — hàng số
+  // Ả Rập cho ١ (ar) / ۱ (fa, ur), IME Nhật/Trung chốt dấu cách ý văn (U+3000) và chữ toàn khổ
+  // (２, Ｂ). Chúng được tính là đúng ký tự ASCII cùng giá trị (và ngược lại).
+  function foldUnit(unit) {
+    if (typeof unit !== 'string' || unit.length !== 1) return unit;
+    const code = unit.charCodeAt(0);
+    if (code >= 0x660 && code <= 0x669) return String.fromCharCode(code - 0x630);
+    if (code >= 0x6f0 && code <= 0x6f9) return String.fromCharCode(code - 0x6c0);
+    if (code === 0x3000) return ' ';
+    if (code >= 0xff01 && code <= 0xff5e) return String.fromCharCode(code - 0xfee0);
+    return unit;
+  }
+  const sameUnit = (typed, expected) => typed === expected
+    || (typeof typed === 'string' && typeof expected === 'string' && foldUnit(typed) === foldUnit(expected));
+
   function trackKeystrokes(value) {
     const now = Date.now();
     if (value.length < run.seen) { run.seen = value.length; run.lastKeyAt = now; return; }
     const single = value.length - run.seen === 1;
     for (let position = run.seen; position < value.length; position += 1) {
       const expected = run.target[position];
-      const correct = value[position] === expected;
+      const correct = sameUnit(value[position], expected);
       const elapsed = single && run.lastKeyAt ? now - run.lastKeyAt : null;
       profile?.recordKeystroke(expected, correct, elapsed);
       run.typed += 1;
@@ -747,7 +821,7 @@
     if (!grew || !board) return;
     const position = value.length - 1;
     const verdict = run.telex && run.view ? (run.view.states[position] || 'bad')
-      : value[position] === run.target[position] ? 'ok' : 'bad';
+      : sameUnit(value[position], run.target[position]) ? 'ok' : 'bad';
     // Phím đầu tiên bắt đầu cho lớp màu ngón mờ dần đi, đúng như bản gốc.
     board.classList.add('nt-keyboard-peek-started');
     if (verdict === 'ok') NT.pressKey(board);
@@ -755,8 +829,93 @@
     if (verdict !== 'pending') sound?.click(verdict);
   }
 
+  // --- IME (Nhật, Trung) ----------------------------------------------------------------------
+  // Trong lúc bộ gõ đang soạn, ô nhập chứa chữ CHƯA chốt ("kenngaku" hay "けんがく" trên đường tới
+  // "見学"). Chấm phần đó là chấm sai: nó chỉ là đường đi. Vì vậy mọi thứ từ `imeFrom` trở đi được
+  // vẽ là "đang soạn" và không ghi điểm; chữ chỉ được chấm khi `compositionend` chốt nó vào ô.
+  // Giống typekute (ime-key-capture.js): thời gian từng phím trong một lượt soạn không được tính,
+  // vì phím vật lý (romaji, pinyin) không phải là ký tự cần gõ.
+  let composing = false;
+  let lastPreedit = '';
+  const imePending = position => Boolean(run?.settle && composing && run.imeFrom >= 0 && position >= run.imeFrom);
+
+  input.addEventListener('compositionstart', () => {
+    composing = true;
+    lastPreedit = '';
+    if (run?.settle) run.imeFrom = Math.min(input.selectionStart ?? input.value.length, input.value.length);
+  });
+  input.addEventListener('compositionupdate', event => { lastPreedit = String(event.data || ''); });
+  input.addEventListener('compositionend', event => {
+    composing = false;
+    const from = run?.imeFrom ?? -1;
+    if (run) run.imeFrom = -1;
+    // typekute: trình duyệt tự kết thúc lượt soạn khi ô mất focus (Cmd+Tab, bấm chuột, popup) và
+    // để lại CÁCH ĐỌC chưa chuyển ("da jia", "ㄉㄚ", "iede"). Trình soạn thảo bỏ chữ đó; ở đây
+    // cũng vậy — nó chưa bao giờ được gõ. Một ký hiệu chú âm đứng một mình có thể chính là chữ
+    // cần gõ (bài luyện phím chú âm), nên chỉ chuỗi dài hơn một ký hiệu mới bị coi là cách đọc.
+    const text = String(event.data || '');
+    const reading = /[A-Za-z]/.test(text) || (/[\u3100-\u312f\u31a0-\u31bf]/.test(text) && [...text].length > 1);
+    if (run?.ime && !event.isTrusted && text && text === lastPreedit && reading && from >= 0
+      && input.value.slice(from, from + text.length) === text) {
+      input.value = input.value.slice(0, from) + input.value.slice(from + text.length);
+    }
+    lastPreedit = '';
+    alignCommitInField(from);
+    // Chrome bắn `input` TRƯỚC compositionend, Firefox bắn sau: gọi ở đây để chắc chắn phần vừa
+    // chốt được chấm; onInput gọi hai lần cũng không sao (trackKeystrokes đi theo `run.seen`).
+    // Chốt rỗng (Esc trong bộ gõ) là huỷ: ô đã tự bỏ chữ đang soạn, onInput chỉ vẽ lại.
+    if (state === 'typing' || state === 'intro') onInput();
+  });
+
+  // typekute word-lesson.js alignCandidateCommit: người học Nhật chốt CÁCH ĐỌC thay vì chuyển sang
+  // chữ Hán (いえ cho 家, としょ cho 図書) mắc MỘT lỗi chuyển chữ (変換ミス), không phải một chuỗi
+  // lỗi trượt dây chuyền: cách đọc được gập vào đúng chữ Hán nó thay, phần đuôi khớp (いえで cho
+  // 家で) giữ chỗ của nó. Trả về các đơn vị để gõ — `…` lấp những chữ Hán mà cách đọc đã phủ.
+  const HAN = /\p{Script=Han}/u;
+  const KANA = /^[\p{Script=Hiragana}\p{Script=Katakana}\u30fc]$/u;
+  function alignCandidateCommit(targetUnits, position, units) {
+    const n = units.length;
+    if (n < 2 || !HAN.test(targetUnits[position] ?? '')) return units;
+    if (units.every((unit, index) => unit === targetUnits[position + index])) return units;
+    let run = 0;
+    while (HAN.test(targetUnits[position + run] ?? '')) run += 1;
+    for (let tail = n - 1; tail >= 0; tail -= 1) {
+      const reading = units.slice(0, n - tail);
+      const rest = units.slice(n - tail);
+      if (!reading.every(unit => KANA.test(unit))) continue;
+      for (let covered = Math.min(run, reading.length); covered >= 1; covered -= 1) {
+        if (rest.every((unit, index) => unit === targetUnits[position + covered + index])) {
+          return [reading.join(''), ...Array(covered - 1).fill('\u2026'), ...rest];
+        }
+      }
+    }
+    return units;
+  }
+
+  // Áp lên ô nhập: mỗi đơn vị chiếm đúng MỘT ô của bài, nên cách đọc gập lại thành ký tự đầu của nó
+  // (vẫn sai so với chữ Hán) và các ô phủ thêm thành `…`.
+  function alignCommitInField(from) {
+    if (!run?.ime || from < 0 || from > input.value.length) return;
+    const committed = Array.from(input.value.slice(from));
+    if (committed.length < 2) return;
+    const aligned = alignCandidateCommit(Array.from(run.target), Array.from(input.value.slice(0, from)).length, committed);
+    if (aligned === committed) return;
+    input.value = input.value.slice(0, from) + aligned.map(unit => Array.from(unit)[0]).join('');
+  }
+
+  // Bộ gõ đang TẮT trên một screen cần bộ gõ: chữ cái Latin trần xuất hiện đúng chỗ chữ Nhật/Trung.
+  function noticeRawIme(value) {
+    if (!run?.ime || imeNoteVisible) return;
+    for (let position = run.seen; position < value.length; position += 1) {
+      const expected = run.target[position] || '';
+      if (/[a-z]/i.test(value[position]) && /[^\x00-\x7F]/.test(expected)) run.rawHits += 1;
+    }
+    if (run.rawHits >= 3) { imeNoteVisible = true; renderNotes(); }
+  }
+
   function onInput() {
     if (state === 'intro') {
+      if (composing) return;
       const typed = input.value;
       input.value = '';
       if (!run.found && typed && typed.toLowerCase().includes(run.target.toLowerCase())) {
@@ -766,15 +925,25 @@
       }
       return;
     }
-    if (state !== 'typing' || !run) { input.value = ''; return; }
+    if (state !== 'typing' || !run) { if (!composing) input.value = ''; return; }
+    if (run.settle && composing) {
+      // Đang soạn: không cắt ô (cắt giữa lượt soạn làm hỏng bộ gõ), không chấm, chỉ vẽ lại.
+      if (!run.startedAt && input.value.length) startRun();
+      if (run.type === 'burst') renderBurstToken(); else paintPrompt();
+      return;
+    }
     if (/[\uFB50-\uFDFF\uFE70-\uFEFF]/.test(input.value)) input.value = unpresent(input.value);
+    // typekute normalizeInput: chữ gõ vào về NFC (e + dấu kết hợp → é), để so được với bài. Không
+    // áp cho Telex/Hangul: bộ so khớp của chúng tự đọc dạng đang soạn.
+    if (!run.telex && input.value.normalize('NFC') !== input.value) input.value = input.value.normalize('NFC');
     // Ascii runs stop the field at the length of the target. A telex run leaves a little slack:
     // a typist whose IME is off produces LONGER text ("mas" for "má"), and cutting it off would
     // hide the very evidence that says the IME is off.
     const limit = run.telex ? run.target.length + 16 : run.target.length;
     if (input.value.length > limit) input.value = input.value.slice(0, limit);
     if (!run.startedAt && input.value.length) startRun();
-    if (run.telex) scoreTelex(input.value); else trackKeystrokes(input.value);
+    if (run.telex) scoreTelex(input.value);
+    else { noticeRawIme(input.value); trackKeystrokes(input.value); }
     reactToKeystroke(input.value);
     if (run.type === 'burst') renderBurstToken(); else paintPrompt();
     updateLive();
@@ -784,7 +953,7 @@
     if (run.type === 'burst') {
       const clean = run.telex && composer
         ? composer.compare(input.value, run.target).complete
-        : [...input.value].every((character, position) => character === run.target[position]);
+        : [...input.value].every((character, position) => sameUnit(character, run.target[position]));
       if (clean) run.tokensDone += 1;
       run.tokenIndex += 1;
       setBurstToken();
@@ -809,6 +978,7 @@
     if (state !== 'typing' || !run) return;
     clearInterval(clockTimer);
     clockTimer = null;
+    endDataSession();
     run.endedAt = Date.now();
     const seconds = run.startedAt ? Math.max(1, Math.round((run.endedAt - run.startedAt) / 1000)) : 0;
     const accuracy = run.typed ? Math.round(run.correct / run.typed * 100) : 0;
@@ -897,7 +1067,8 @@
     const typed = input.value;
     tokenEl.innerHTML = [...run.target].map((character, position) => {
       const status = position < typed.length
-        ? (run.telex && run.view ? (run.view.states[position] || 'bad') : (typed[position] === character ? 'ok' : 'bad'))
+        ? (run.telex && run.view ? (run.view.states[position] || 'bad')
+          : imePending(position) ? 'pending' : (sameUnit(typed[position], character) ? 'ok' : 'bad'))
         : position === typed.length ? 'cur' : '';
       return `<span class="ch ${status}">${escapeHtml(character === ' ' ? '␣' : character)}</span>`;
     }).join('');
@@ -966,9 +1137,11 @@
 
     const unit = unitOf(lesson.id);
     if (unit) {
-      const ids = unitLessonIds(unit);
+      // Bài "học vượt" (kind 'jump', từ typekute) không bắt buộc để xong unit — nhưng xong nó thì
+      // coi như đã vượt qua cả unit và mở unit sau.
+      const ids = unitLessonIds(unit).filter(id => indexEntry(id)?.kind !== 'jump');
       const done = ids.filter(id => store.getLesson(id)?.completedAt).length;
-      if (done >= ids.length) {
+      if (done >= ids.length || lesson.kind === 'jump') {
         const at = unitList().findIndex(item => item.id === unit.id);
         const following = unitList()[at + 1];
         if (following) store.unlock(following.id);
@@ -1097,6 +1270,7 @@
     enterScreen(target.screen - 1);
     renderNotes();
     prefetch(nextLessonId(lesson.id));
+    prefetchAround(lesson.id);
   }
 
   function renderNotReady(lessonId) {
@@ -1172,8 +1346,10 @@
   // khoa dat o KeyA (ㄇ). Tra cuu theo `event.code`, khong theo `event.key`, nen dung voi moi bo cuc
   // he dieu hanh dang bat. Phim dang soan bo go (`isComposing`, key "Process") thi de nguyen.
   let positionMap = null;
+  // Cả khoá (`typeByPosition`) hoặc từng screen (`inputMode: 'position'`, ký hiệu chú âm của typekute).
+  const positionMode = () => Boolean(curriculum?.typeByPosition || root.dataset.inputMode === 'position');
   function positionalCharacter(event) {
-    if (!curriculum?.typeByPosition || event.isComposing || event.key === 'Process') return null;
+    if (!positionMode() || event.isComposing || event.key === 'Process') return null;
     if (event.ctrlKey || event.metaKey || event.altKey) return null;
     const layout = NT?.layout?.();
     if (!layout?.structure) return null;
@@ -1191,7 +1367,7 @@
   }
   input.addEventListener('keydown', event => {
     if (state !== 'typing' && state !== 'intro') return;
-    if (curriculum?.typeByPosition && (event.isComposing || event.key === 'Process') && !positionNoteVisible) {
+    if (positionMode() && (event.isComposing || event.key === 'Process') && !positionNoteVisible) {
       positionNoteVisible = true;
       renderNotes();
     }
@@ -1203,10 +1379,24 @@
     onInput();
   });
 
+  // typekute rtl-bidi-engine.js isPersianZwnj: nửa khoảng cách (ZWNJ, U+200C, "نیم‌فاصله") của tiếng
+  // Ba Tư gõ bằng Shift+Space — bố cục Persian chuẩn đặt nó ở đó, nhưng nhiều bàn phím/hệ điều hành
+  // vẫn ra dấu cách thường. Đúng chỗ bài cần ZWNJ thì Shift+Space chèn ZWNJ.
+  input.addEventListener('keydown', event => {
+    if (state !== 'typing' || !run || event.isComposing || composing) return;
+    if (!event.shiftKey || event.ctrlKey || event.metaKey || event.altKey) return;
+    if (event.code !== 'Space' && event.key !== ' ') return;
+    if (run.target[input.value.length] !== '‌') return;
+    event.preventDefault();
+    const start = input.selectionStart ?? input.value.length, end = input.selectionEnd ?? start;
+    input.setRangeText('‌', start, end, 'end');
+    onInput();
+  });
+
   input.addEventListener('keydown', event => {
     // Enter is a navigation key, except on a `linebreak: "enter"` screen at the exact position
     // where the target carries a newline — there it has to reach the textarea as a character.
-    if (event.key !== 'Enter') return;
+    if (event.key !== 'Enter' || event.isComposing || composing) return;
     const expected = state === 'typing' && run ? run.target[input.value.length] : '';
     if (expected !== '\n') event.preventDefault();
   });
@@ -1233,6 +1423,8 @@
       if (shortcut === 'r' && lesson) { event.preventDefault(); openLesson(lesson.id, 1); return; }
     }
     if (event.metaKey || event.ctrlKey || event.altKey) return;
+    // Enter/Escape trong lúc bộ gõ đang soạn là của bộ gõ (chốt / huỷ chữ), không phải của trang.
+    if (event.isComposing || composing) return;
     // Shift and Enter never arrive in the textarea as characters, so the intro screen that
     // teaches one waits for the key press itself instead of for typed text.
     if (state === 'intro' && run && !run.found && NAMED_INTRO_KEYS.includes(run.target)

@@ -51,6 +51,12 @@ function loadGlobal(file) {
   return window;
 }
 const curriculum = loadGlobal(path.join('data', 'curriculum.en.js')).TypingEaseCurriculum;
+// Khoá tiếng Anh nay nhập từ typekute (scripts/import-typekute.mjs); các công thức ở
+// scripts/lessons-en/ không còn là nguồn của nó. Chạy script này sẽ ghi đè bài đã nhập.
+if (curriculum.source?.product === 'typekute') {
+  console.error('data/curriculum.en.js đến từ typekute — dùng: node scripts/import-typekute.mjs --course en');
+  process.exit(1);
+}
 const BANK = loadGlobal(path.join('data', 'words', 'en.js')).TypingEaseWords.en;
 
 /* ---------- tập phím cho phép ---------- */

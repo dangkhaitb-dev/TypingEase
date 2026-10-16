@@ -1,0 +1,55 @@
+{
+  "id": "zh-tw-01-019",
+  "unit": "u1",
+  "group": "g1",
+  "order": 20,
+  "slug": "zh-tw-01-019",
+  "title": "切換注音與英數模式",
+  "summary": "Narrow committed-output lesson: 有 月",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 有 月",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-019",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先輸入注音選字，遇到數字按中英切換鍵切到英數模式，打完數字再切回注音模式。",
+      "content": "蘋果3個牛奶2瓶麵包1個",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音選字，遇到數字按中英切換鍵切到英數模式，打完數字再切回注音模式。",
+      "content": "我家有2個哥哥和3個姐姐還有1隻小狗",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音選字，遇到數字按中英切換鍵切到英數模式，打完數字再切回注音模式。",
+      "content": "星期3下午2點我們在教室見面然後一起吃飯",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音選字，遇到數字按中英切換鍵切到英數模式，打完數字再切回注音模式。",
+      "content": "我今天在超市買了3個蘋果和2瓶牛奶",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音選字，遇到數字按中英切換鍵切到英數模式，打完數字再切回注音模式。",
+      "content": "我的手機號碼是0912345678請打給我",
+      "inputMode": "ime"
+    }
+  ]
+}

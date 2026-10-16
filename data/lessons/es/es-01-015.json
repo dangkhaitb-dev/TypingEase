@@ -1,0 +1,78 @@
+{
+  "id": "es-01-015",
+  "unit": "u1",
+  "group": "g2",
+  "order": 14,
+  "slug": "es-01-015",
+  "title": "Repaso final: letras y ñ",
+  "summary": "Escribe palabras reales y frases cortas con todas las letras que has aprendido.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Escribe palabras reales y frases cortas con todas las letras que has aprendido.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-015",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Escribe cada frase con cuidado, usando cualquier letra que ya conoces.",
+      "content": "el niño pequeño come una manzana en el parque"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada frase con cuidado, usando cualquier letra que ya conoces.",
+      "content": "mi amigo tiene un perro y una gata muy bonita"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada frase con cuidado, usando cualquier letra que ya conoces.",
+      "content": "mañana vamos a la playa con toda la familia"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada frase con cuidado, usando cualquier letra que ya conoces.",
+      "content": "la maestra escribe el texto en la pizarra"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada frase con cuidado, usando cualquier letra que ya conoces.",
+      "content": "el zorro y el pez juegan junto a un puente"
+    }
+  ]
+}

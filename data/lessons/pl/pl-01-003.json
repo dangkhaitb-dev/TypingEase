@@ -1,0 +1,82 @@
+{
+  "id": "pl-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "pl-01-003",
+  "title": "Klawisze a, s, d",
+  "summary": "Poznaj klawisze a, s, d i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze a, s, d i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-003",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Ćwiczenie klawisza: a.",
+      "content": "aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Ćwiczenie klawisza: s.",
+      "content": "ssss ssss ssss ssss ssss ssss ssss ssss ssss ssss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Ćwiczenie klawisza: d.",
+      "content": "dddd dddd dddd dddd dddd dddd dddd dddd dddd dd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "dsd aaaa ddd adda dd dda aa sa aajs ddsd aad da ssa ss"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "ssd sds ssaa ad adsa ass dda dad ja ddad sdas addd ddd ssad aa dsa dsds aad"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "ssss ad asdd adsj dsss addd sad aaaa aads ss dssd ssa sa ssda ssd sdss"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "aa aaad aad ddf dasf sass ssds ss asds dsas ds"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "sa sss ss asa dsd addd sjd dd dasa asad dsad sdss ad sas dda dsa ddas"
+    }
+  ]
+}

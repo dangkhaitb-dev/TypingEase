@@ -1,0 +1,113 @@
+{
+  "id": "tr-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 24,
+  "slug": "tr-03-004",
+  "title": "Büyük harfler G H I",
+  "summary": "G, H, I tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "G, H, I tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-03-004",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Shift tuşunu basılı tut ve g tuşuna bas: G.",
+      "content": "GG GGGG GGG GG GG GG GG GG",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Shift tuşunu basılı tut ve h tuşuna bas: H.",
+      "content": "HH HHHH HHH HH HH HH HH HH",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Shift tuşunu basılı tut ve ı tuşuna bas: I (noktasız büyük ı).",
+      "content": "III II IIII II II II II II",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "HbI IHGG II HHGH IH IGI IIGH GI HIGH GH HHG GGH"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "HGII II GIGG IGIH GGHI HGaG aI IIH GG GGG GGGG HH HHG GGIH GHI HHGH"
+    }
+  ]
+}

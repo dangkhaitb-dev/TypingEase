@@ -1,0 +1,93 @@
+{
+  "id": "de-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "de-01-005",
+  "title": "Tasten l, q, w",
+  "summary": "Lerne die neuen Tasten l, q, w und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "l",
+    "q",
+    "w"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten l, q, w und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-005",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Taste üben: l.",
+      "content": "llll llll llll llll llll llll llll llll l",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "Taste üben: q.",
+      "content": "qqqq qqqq qqqq qqqq qqqq qqqq qqqq qqqq qqqq qq",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "Taste üben: w.",
+      "content": "wwww wwww wwww wwww wwww wwww wwww www",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "wlww qq ww wwwl kkq qwwq lq qqql wwl wwqk wll"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "lql qwq qqjw lllw wwlj llw lw wwql wl ww llq ljq qw ll lll wwl qqqw qq lwjq"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "lww ddw qq wwwl wqq ll lll wll wwl wwq qqq lwl qwq qlql wwqw lwlw"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "lll wlg wqw ll lwl lww lqlw qll qqq wqq qq ww"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "wwq lllw qqwq wq wwl sl ww llqw lwqw wwww"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "ja das half als sah da lass was lag sag falls dass"
+    }
+  ]
+}

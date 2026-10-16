@@ -1,0 +1,54 @@
+{
+  "id": "fa-01-018",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "fa-01-018",
+  "title": "کلید Shift",
+  "summary": "با نگه داشتن Shift، حرف دوم روی کلید را بنویسید: Shift + ت = ـ",
+  "newKeys": [],
+  "keysSoFar": [
+    "ب",
+    "ت",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "با نگه داشتن Shift، حرف دوم روی کلید را بنویسید: Shift + ت = ـ",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fa",
+    "lesson": "fa-01-018",
+    "revision": "fa-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift را نگه دارید و کلید ت را بزنید تا کشیده (ـ) نوشته شود.",
+      "content": "بـت تـب ـتـ ـبـ بـت تـب ـتـ ـبـ بـتـ تـبـ"
+    },
+    {
+      "type": "standard",
+      "text": "کشیده (ـ) را با Shift + ت و حروف ب، ت را بدون Shift بزنید.",
+      "content": "بـب تـت بـتـ تـبـ ـبـت ـتـب ببـ تتـ بـبـ تـتـ بـتب"
+    },
+    {
+      "type": "standard",
+      "text": "کشیده (ـ) را با Shift + ت و حروف ب، ت را بدون Shift بزنید.",
+      "content": "تـبت بـتب ـبـب ـتـت بتـ تبـ بـبت تـتب ـبت ـتب بـ تـ"
+    },
+    {
+      "type": "standard",
+      "text": "کشیده (ـ) را با Shift + ت و حروف ب، ت را بدون Shift بزنید.",
+      "content": "بـتـب تـبـت بـب تـت ـبـ ـتـ ببـت تتـب بـتت تـبب ـبـت"
+    },
+    {
+      "type": "standard",
+      "text": "کشیده (ـ) را با Shift + ت و حروف ب، ت را بدون Shift بزنید.",
+      "content": "تـت بـب تـبـ بـتـ ـتب ـبت بتـب تبـت ـبـبـ ـتـتـ بـت تـب"
+    }
+  ]
+}

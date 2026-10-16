@@ -1,0 +1,70 @@
+{
+  "id": "ko-02-102",
+  "unit": "u2",
+  "group": "g1",
+  "order": 43,
+  "slug": "ko-02-102",
+  "title": "숫자 4 · 5 · 6",
+  "summary": "숫자열의 4·5·6을 한 키씩 익힙니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "hangul",
+  "intro": "숫자열의 4·5·6을 한 키씩 익힙니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-02-102",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "444 444 44 444 44 444 44 444 444 444"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "555 555 55 555 55 555 55 555 555 555"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "666 666 66 666 66 666 66 666 666 666"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "4544 556 44 4464 ㅜㅜ45 4544 ㅜㅜ45 4464 44 556 44 556 4544",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "444 4464 566 6ㅑ5 44 655 444 655 44 6ㅑ5 566 4464 566 4464",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "5666 6564 6ㅜ54 55 4ㅜ 554 44 5666 44 554 4ㅜ 55 6ㅜ54 6564",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "6454 665 44 ㅐㅐ 55 5564 65 445 6454 445 65 5564 55 ㅐㅐ 44",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "6665 6664 44 6666 455ㄹ 6665 455ㄹ 6666 44 6664 44 6664",
+      "inputMode": "hangul"
+    }
+  ]
+}

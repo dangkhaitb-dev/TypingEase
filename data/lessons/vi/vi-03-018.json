@@ -1,0 +1,50 @@
+{
+  "id": "vi-03-018",
+  "unit": "u3",
+  "group": "g2",
+  "order": 59,
+  "slug": "vi-03-018",
+  "title": "Luyện phím · # * _",
+  "summary": "Luyện các ký hiệu # * _ với phím đã học.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Luyện các ký hiệu # * _ với phím đã học.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-018",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím 3 (ngón giữa trái, hàng số) để ra #.",
+      "content": "#f f# #j j# ## f#j j#f #f f# #j"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím 8 (ngón giữa phải, hàng số) để ra *.",
+      "content": "*f f* *j j* ** f*j j*f *f f* *j"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím - (ngón út phải, hàng số) để ra _.",
+      "content": "_f f_ _j j_ __ f_j j_f _f f_ _j"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp # * _ với chữ và số đã học.",
+      "content": "#1 2* 3_ #4 5* 6_ #7 8* 9_ #0 1* 2_ 3# 4* 5_"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại các ký hiệu # * _ trong cụm mới, giữ nhịp đều.",
+      "content": "a_1 b_2 c_3 x*2 y*3 z*4 #6 #7 #8 a*b b*c c*a"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "ko-02-jump",
+  "unit": "u2",
+  "group": "g2",
+  "order": 45,
+  "slug": "ko-02-jump",
+  "title": "앞으로 건너뛰기",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-02-jump",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅑ212 331 223 332ㅎ 1312 ㅑ212 1312 332ㅎ 223 331 223 331",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "6665 6664 44 6666 455ㄹ 6665 455ㄹ 6666 44 6664 44 6664",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "78 7989 7797 77 799 9798 989ㅕ 78 989ㅕ 9798 799 77 7797",
+      "inputMode": "hangul"
+    }
+  ]
+}

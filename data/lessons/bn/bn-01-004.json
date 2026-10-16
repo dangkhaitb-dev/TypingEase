@@ -1,0 +1,70 @@
+{
+  "id": "bn-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "bn-01-004",
+  "title": "কী অনুশীলন · দ ঙ য",
+  "summary": "Introduce committed targets ও ঔ; review অ আ ই ঈ উ ঊ ঋ এ ঐ. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets ও ঔ; review অ আ ই ঈ উ ঊ ঋ এ ঐ. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-01-004",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "দ টাইপ করতে ডান হাতের অনামিকা দিয়ে L কী চাপুন।",
+      "content": "কদব দব দব কদব দব দব কদব দব দব কদব"
+    },
+    {
+      "type": "standard",
+      "text": "ঙ টাইপ করতে বাঁ হাতের কড়ে আঙুল দিয়ে Q কী চাপুন।",
+      "content": "ঙব ঙব কঙব ঙব ঙব কঙব ঙব ঙব কঙব ঙব"
+    },
+    {
+      "type": "standard",
+      "text": "য টাইপ করতে বাঁ হাতের অনামিকা দিয়ে W কী চাপুন।",
+      "content": "যব কযব যব যব কযব যব যব কযব যব যব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "যঙঙ্ব দিতি যযৃকা যয্বদ দিঙি যকি যাবিতদ ঙতা ঙিতঙাদ দবব্ক তঙযাযি দদ্তবু যকযুতৃ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঙদযয ঙযদ দদদদ দয যয যযদদ দদঙ দঙঙ ঙঙযঙ দদব ঙঙ ঙঙঙ ঙঙয"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঙদদ ঙযযদ যয দদদয কদ দদ দদযদ যঙযদ যযদ ঙঙয দদযয দদঙ যঙদ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঙযঙয ককঙদ দযযদ দদয ঙয যঙযয যযঙ ঙদঙঙ দদদয দদ যয ঙঙ দঙঙ দদদ দদদদ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঙঙয ঙদযয ঙঙদ ঙদ ঙদদ দঙ দদ যদয ঙয যঙ ঙঙদয দদঙদ যযযদ দদযয ঙঙঙৃ যয দযদয কৃকৃ ঙযঙ"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "দাদি দাদু দিক দিদি যুক্ত ভাঙা যদি বাদ কাদা যাব বাক্য বক্তব্য যুক্তি দাদা যত বুদবুদ ভাঙতি ব্যাঙ দিত দাবা দাবি"
+    }
+  ]
+}

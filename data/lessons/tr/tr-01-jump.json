@@ -1,0 +1,99 @@
+{
+  "id": "tr-01-jump",
+  "unit": "u1",
+  "group": "g5",
+  "order": 13,
+  "slug": "tr-01-jump",
+  "title": "Atla",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-jump",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "fjff ffj jff fjj fj jjf ff fjj fjj fjf jfj jffj jfjj jf"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "daha kasa saha hak ada as da kahkaha sahaf kasada"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "ilgili kişi ilk dakikada kasada dal sal ada iki"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "kedi yerde yatar her saat tatil rahat tarih geri"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "okulda kuş uyudu ders ışık yol oda kutu dolu sokak"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "dizi ceket cadde koz zil kuzu tuz yazı gece"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "anne sütü dolu nasıl bina ve ev bana bir kitap verdi"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "annem akşam yemeği için güzel bir çorba yaptı ve biz hepsini yedik"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-002",
+  "unit": "u9",
+  "group": "g1",
+  "order": 125,
+  "slug": "vi-09-002",
+  "title": "Mẫu ký tự lặp lại",
+  "summary": "Xây dựng năng lực \"Repeated Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Gia tăng tốc độ gõ trên các mẫu lặp và tổ hợp phím có nhịp điệu lặp lại theo nhịp 2-2 hoặc 3-3.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Repeated Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Gia tăng tốc độ gõ trên các mẫu lặp và tổ hợp phím có nhịp điệu lặp lại theo nhịp 2-2 hoặc 3-3.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi từ láy: nho nhỏ, xinh xinh, rộn ràng, lấp lánh.",
+      "content": "nho nhỏ xinh xinh rộn ràng phấp phới lấp lánh xanh xao nhè nhẹ lao xao nhấp nhô ríu rít náo nức lung linh rì rào",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ láy giàu hình ảnh: tiếng cười ròn rã, ánh mắt lấp lánh.",
+      "content": "tiếng cười giòn giã ánh mắt lấp lánh nụ cười rạng rỡ bước chân thoăn thoắt nắng vàng rực rỡ muôn hoa khoe sắc tươi vui. Buổi sớm, chim ríu ran trên cành, làn gió mát lay nhẹ tán lá và con đường nhỏ sáng lên sau cơn mưa. Người qua phố chào nhau, mở cửa hàng, sắp hoa tươi và bắt đầu một ngày mới đầy năng lượng. Những âm thanh thân quen hòa cùng nhịp bước chân, tạo nên khung cảnh rộn ràng mà vẫn bình yên.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về nhịp điệu của từ láy đôi trong tiếng Việt.",
+      "content": "Những từ ngữ láy đôi trong tiếng Việt có cấu trúc âm điệu nhịp nhàng giúp ngón tay di chuyển mượt mà trên bàn phím. Khi luyện gõ các từ láy lặp lại, người gõ sẽ làm chủ được sự luân chuyển giữa các ngón tay cùng bàn tay mà không bị vấp váp. Hãy chú ý tiếng đầu và tiếng sau, giữ khoảng cách đều giữa các cụm, rồi đọc lại toàn câu để phát hiện lỗi dấu. Sự tập trung giúp người học nhận ra nhịp điệu của từ và gõ chính xác hơn.",
+      "inputMode": "telex"
+    }
+  ]
+}

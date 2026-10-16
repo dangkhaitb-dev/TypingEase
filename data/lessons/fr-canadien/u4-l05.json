@@ -43,7 +43,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -59,8 +58,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<",
     "#",
     "|",
@@ -98,13 +95,13 @@
       "type": "block",
       "newKey": "«",
       "text": "D'abord « sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "«« « «continue «soleil «bateau\n«« « «mises «pâte «gris\n«« « «âge «nos «bases"
+      "content": "«« « «groupe «roses «grande\n«« « «lime «idées «mesure\n«« « «était «four «plan"
     },
     {
       "type": "block",
       "newKey": "»",
       "text": "D'abord » sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "»» » «âge» «rigides» «mon»\n»» » «jours» «midi» «exemple»\n»» » «peu» «humides» «demis»"
+      "content": "»» » «était» «guide» «jour»\n»» » «juillet» «mil» «aussi»\n»» » «vite» «sud» «mimes»"
     },
     {
       "type": "intro",
@@ -117,7 +114,7 @@
       "type": "block",
       "newKey": ">",
       "text": "D'abord > sans rien autour, puis là où on s'en sert vraiment.",
-      "content": ">> > <belle> <élève> <aller>\n>> > <tirs> <maître> <nuit>\n>> > <moment> <jure> <projet>"
+      "content": ">> > <parole> <proposer> <venir>\n>> > <surgir> <société> <toujours>\n>> > <vendredi> <glisses> <devoir>"
     },
     {
       "type": "intro",
@@ -130,35 +127,35 @@
       "type": "block",
       "newKey": ":",
       "text": "D'abord les deux-points sans rien autour, puis là où on s'en sert vraiment.",
-      "content": ":: : moment: ville: bien:\n:: : vient: plutôt: peu:\n:: : la: blanche: plupart:"
+      "content": ":: : novembre: courte: part:\n:: : ton: entrée: vite:\n:: : centres: premier: vivent:"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
-        "<rigides>",
-        "«dose»",
-        "«tables»",
-        "<avoir>",
-        "après:",
-        "«motifs»",
-        "«jour»",
-        "<terme>",
-        "«passe»",
-        "«grise»"
+        "<guide>",
+        "«lettres»",
+        "«plus»",
+        "<vient>",
+        "porte:",
+        "«os»",
+        "«geste»",
+        "<utiles>",
+        "«nouveau»",
+        "«huile»"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "murs: succès: «voici» «banques»\n«mes» <zeste> «tant» pâte:\n<lime> <contes> messe: soi:"
+      "content": "grise: bords: «conte» «grand»\n«me» <jolie> «sa» idées:\n<mille> <sotte> lime: listes:"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "bruit: toi idées: tirs gros:\nsalle: te le: gris <zestes>\n<tous> prix wagons: préfère «gestes»"
+      "content": "avec: liste bon: surgir tel:\npar: heure le: mesure <jolie>\n<gestes> novembre plupart: taxi «tire»"
     }
   ]
 }

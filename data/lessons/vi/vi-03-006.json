@@ -1,0 +1,55 @@
+{
+  "id": "vi-03-006",
+  "unit": "u3",
+  "group": "g1",
+  "order": 43,
+  "slug": "vi-03-006",
+  "title": "Luyện phím · K L M",
+  "summary": "Học cách dùng phím Enter xuống dòng, phối hợp thành thục phím Shift chữ hoa, dấu câu và ký hiệu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Học cách dùng phím Enter xuống dòng, phối hợp thành thục phím Shift chữ hoa, dấu câu và ký hiệu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ k (ngón giữa phải) để ra K. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Khi Kể K Kiên Khi Kể K Kiên Khi Kể K Kiên",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ l (ngón áp út phải) để ra L. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Long An Lan Lên Là Long Gia Lai Lúc Đà Lạt Làm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ m (ngón trỏ phải) để ra M. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Mình Mai Mưa Mới Mỗi Mới Cà Mau Mình Mỗi Minh",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý K, L, M. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Một Mềm Liệu Làm Mở Kiểm hiện Lau Lớn Lớn Giờ Linh",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có K, L, M mà không nhìn bàn phím.",
+      "content": "lúc Gia Lai câu Mềm Kể Kiểm nhà Mềm Lúc Bảo sân Mây xanh Màu Khu",
+      "inputMode": "telex"
+    }
+  ]
+}

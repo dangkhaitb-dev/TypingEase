@@ -43,7 +43,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -59,8 +58,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<",
     "#",
     "|",
@@ -88,7 +85,7 @@
       "type": "block",
       "newKey": "/",
       "text": "D'abord / sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "// / ifs/générale banques/maîtres forêts/triste\n// / salles/voiles vins/humide dise/musique\n// / gifle/goûts août/sont systèmes/appel"
+      "content": "// / il/bureau grand/sociétés texte/tir\n// / pour/contes son/milieu elle/figure\n// / idem/résultat complet/sortes besoins/venir"
     },
     {
       "type": "intro",
@@ -127,7 +124,7 @@
       "type": "block",
       "newKey": "?",
       "text": "D'abord ? sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "?? ? châteaux? ensuite? île?\n?? ? gel? beau? dures?\n?? ? juger? progrès? ton?"
+      "content": "?? ? années? zeste? détails?\n?? ? mises? place? glisse?\n?? ? musiques? bouche? tous?"
     },
     {
       "type": "burst",
@@ -138,24 +135,24 @@
         "$64",
         "$44",
         "89%",
-        "table/cent",
+        "plus/fort",
         "47%",
         "$30",
-        "exacte/exemple",
-        "on/gels",
-        "théâtre?"
+        "ainsi/appels",
+        "tout/messe",
+        "idée?"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "novembre? 13% frères? 18%\n$58 $48 85% dite?\nâge/outils $25 $23 25%"
+      "content": "centre? 13% temps? 18%\n$58 $48 85% fleur?\nétait/soi $25 $23 25%"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "doses/diriger être exemples/parole points 78%\n$53 coût 7% juillet $88\n78% par 76% somme $84"
+      "content": "lutte/humide banque papier/votes ouvrir 78%\n$53 résultat 7% titre $88\n78% connue 76% modes $84"
     }
   ]
 }

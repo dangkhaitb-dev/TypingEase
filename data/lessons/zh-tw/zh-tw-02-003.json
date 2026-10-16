@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 27,
+  "slug": "zh-tw-02-003",
+  "title": "價格與數量",
+  "summary": "Narrow committed-output lesson: 6 7",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 6 7",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-02-003",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先提交商品名稱，再輸入半形數量與金額，注意不要多按空格。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "這本筆記本售價35元我要買2本給弟弟",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先提交商品名稱，再輸入半形數量與金額，注意不要多按空格。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "一盒牛奶28元我買了3盒一共付84元",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先提交商品名稱，再輸入半形數量與金額，注意不要多按空格。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "一個便當75元加一碗湯20元一共是95元",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先提交商品名稱，再輸入半形數量與金額，注意不要多按空格。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "書包原價680元今天特價只要590元",
+      "inputMode": "ime"
+    }
+  ]
+}

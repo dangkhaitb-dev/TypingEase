@@ -1,0 +1,120 @@
+{
+  "id": "pl-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 18,
+  "slug": "pl-02-003",
+  "title": "Cyfry 4 5 6",
+  "summary": "Poznaj klawisze 4, 5, 6 i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "ą",
+    "ć",
+    "ę",
+    "ł",
+    "ń",
+    "ó",
+    "ś",
+    "ź",
+    "ż",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze 4, 5, 6 i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-02-003",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Ćwiczenie klawisza: 4.",
+      "content": "444 4444 44 44 44 44 44 44",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Ćwiczenie klawisza: 5.",
+      "content": "555 55 5555 55 55 55 55 55",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Ćwiczenie klawisza: 6.",
+      "content": "666 6666 66 66 66 66 66 66",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "5s6 665 4455 555 64s 556 55 64 66 66s6 6456 5664 sss 5566 44 4544 4665"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "555 445 ee5 4466 446 46 4454 556 65 6655 5545 665 44 66 6554"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "44 44 55 44 546 6464 m5 545 m454 644m 446 554 555 4554 64 m556 65 4465"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "6654 55 44 ć556 446 56 4464 554 5565 56ć 666 4656"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "6ó5 54 644 5555 46 5645 4ó55 65 64 6445 554 44 4654 666 46 6665 4565"
+    }
+  ]
+}

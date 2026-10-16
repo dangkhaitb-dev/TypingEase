@@ -1,0 +1,105 @@
+{
+  "id": "es-03-010",
+  "unit": "u3",
+  "group": "g1",
+  "order": 30,
+  "slug": "es-03-010",
+  "title": "Mayúsculas: D, E, F",
+  "summary": "Aprender D, E, F en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprender D, E, F en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-010",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Mantén pulsada Mayús con el meñique de la mano derecha y pulsa la tecla d para escribir D. Suelta Mayús antes de la siguiente tecla.",
+      "content": "DD DDf DDD DDfD ffD fDfD fDDD DfD ffDD DDDf DDDD",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Mantén pulsada Mayús con el meñique de la mano derecha y pulsa la tecla e para escribir E. Suelta Mayús antes de la siguiente tecla.",
+      "content": "EEEE EEE jjjj EE EEjE jEE",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Mantén pulsada Mayús con el meñique de la mano derecha y pulsa la tecla f para escribir F. Suelta Mayús antes de la siguiente tecla.",
+      "content": "fF FfFF FFF FffF ffF FFfF FFf ff FFFF FF",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "yy DFcE DD EFED yF EDE pF xEE aEDE FEE FEDE EE F9DD FzlE EEF Dyy EED FDE"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "uF kEF 5vv DD FEDE EEE FDFF EE EF4 FFF rr aE8F FEDD"
+    }
+  ]
+}

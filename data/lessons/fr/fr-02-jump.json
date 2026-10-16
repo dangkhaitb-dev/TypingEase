@@ -1,0 +1,94 @@
+{
+  "id": "fr-02-jump",
+  "unit": "u2",
+  "group": "g3",
+  "order": 28,
+  "slug": "fr-02-jump",
+  "title": "Sauter en avant",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-02-jump",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "f31 22f fff 11f2 22ff 3f ff1 2221 ff ff11 2213 3311 113f f1f1 11"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "55f 444 654 446 44 ff4 f44 66ff 554f 55 56f"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "97 777f 7f ff 99f r8f f9f ff9 8f 778r f7 88r8 f87f fff 88f7 7997 f7f"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "000 jj0 j00j ff 0000 0j00 jjj0 0jj0 f00j j0j j0 000j 00 0jj"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le colis 509 pèse 3 kilos et le colis 642 pèse 7 kilos"
+    }
+  ]
+}

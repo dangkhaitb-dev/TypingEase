@@ -1,0 +1,99 @@
+{
+  "id": "es-01-008",
+  "unit": "u1",
+  "group": "g2",
+  "order": 7,
+  "slug": "es-01-008",
+  "title": "Q, W, E",
+  "summary": "Aprender q, w, e en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "q",
+    "w",
+    "e"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Aprender q, w, e en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-008",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "Localiza q y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "qq qqqf ff qqf qfqf qf qqqq fqff ffq qqq",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "Localiza w y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ww jjww wwj www jw jjjw wwww wj wjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Localiza e y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "eeee eef ffe fff ffee fe fef feee ef efe eeef ee",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "qwq ee qq aeq wwww sw qw wq ffq we wqw ff wwq feee ww qwwe eq kk qwee"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "qweq wwwe ee wwew kk wwkw ww qq qk www wqq eww eew kkw eeeq qqwq weww qqw"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "we ee eee ewq ew eewq eewe eqee qew eq ww qeq jjqw"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "qq ewww www wef eewq ww wwqe ee ewqe wqq wwf eeww"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "eeq qqe jjwe ewq ee wqe wwq qwqw eew eeeq eeee eqe"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "ella sale de la sala seda feas leñas jefes dejes sed fe"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "el jefe les da leña a ellas ella lee la saga de las hadas"
+    }
+  ]
+}

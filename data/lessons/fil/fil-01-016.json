@@ -1,0 +1,74 @@
+{
+  "id": "fil-01-016",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "fil-01-016",
+  "title": "Pagbabalik-aral",
+  "summary": "Pagbabalik-aral. I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Pagbabalik-aral. I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-016",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+      "content": "umuulan kaya nagdala ng payong ang lola papunta sa simbahan"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+      "content": "nagbabasa ng aklat ang mga bata bago maglaro sa labas"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+      "content": "si ana at ben ay pupunta sa palengke upang bumili ng gulay"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat pangungusap nang maingat gamit ang mga key na natutuhan na.",
+      "content": "mabait ang guro namin at lagi siyang nagbibigay ng payo"
+    }
+  ]
+}

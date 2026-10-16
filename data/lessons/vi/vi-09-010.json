@@ -1,0 +1,42 @@
+{
+  "id": "vi-09-010",
+  "unit": "u9",
+  "group": "g3",
+  "order": 130,
+  "slug": "vi-09-010",
+  "title": "Nhóm số tốc độ",
+  "summary": "Xây dựng năng lực \"Digit Groups\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng tốc độ phản xạ trên các dãy số và nhóm số thường gặp trong thực tế (mã bưu chính, điện thoại).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Digit Groups\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng tốc độ phản xạ trên các dãy số và nhóm số thường gặp trong thực tế (mã bưu chính, điện thoại).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ nhanh và dứt khoát các nhóm số 12, 34, 56, 78, 90.",
+      "content": "12 34 56 78 90 135 246 357 468 579 102 304 506 708 900 813 924 036 147 258 369 480 591 602 713 824 935 046 157 268"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với câu số liệu tăng trưởng năm 2026 xen kẽ chữ và số.",
+      "content": "năm 2026 tăng trưởng 15 phần trăm với tổng doanh thu đạt 850 tỷ đồng cùng 120 dự án mới được cấp phép đầu tư xây dựng trên toàn địa bàn. Người nhập liệu đối chiếu từng nhóm ba chữ số trước khi xác nhận tổng tiền; khi chuyển từ chữ sang số, ngón tay trở về hàng cơ sở để giữ tư thế ổn định, ví dụ 275 hay 640. Số liệu quý sau ghi 18 phần trăm, 910 tỷ đồng và 136 giấy phép, mỗi cột một nhóm, không dán lại cột cũ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về thử thách của hàng phím số trên cùng.",
+      "content": "Hàng phím số trên cùng thường là thử thách lớn đối với người luyện gõ mười ngón do cự ly vươn tay khá xa so với hàng cơ sở. Việc luyện tập các nhóm số tốc độ cao giúp các ngón tay làm quen với quỹ đạo chuyển động vươn lên và thu về dứt khoát, bảo đảm gõ đúng con số mà không cần cúi đầu nhìn xuống bàn phím. Khi gặp dãy 135 hay 246, ngón tay trở về hàng giữa ngay sau mỗi nhóm ba chữ số 908.",
+      "inputMode": "telex"
+    }
+  ]
+}

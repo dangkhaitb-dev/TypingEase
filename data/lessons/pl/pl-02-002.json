@@ -1,0 +1,117 @@
+{
+  "id": "pl-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 17,
+  "slug": "pl-02-002",
+  "title": "Cyfry 1 2 3",
+  "summary": "Poznaj klawisze 1, 2, 3 i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "ą",
+    "ć",
+    "ę",
+    "ł",
+    "ń",
+    "ó",
+    "ś",
+    "ź",
+    "ż",
+    "shift",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze 1, 2, 3 i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-02-002",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Ćwiczenie klawisza: 1.",
+      "content": "111 11 1111 11 11 11 11 11",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Ćwiczenie klawisza: 2.",
+      "content": "222 22 2222 22 22 22 22 22",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Ćwiczenie klawisza: 3.",
+      "content": "3333 33 333 33 33 33 33 33",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "22 3121 3321 3311 1111 33t 1231 31 1121 223 2223 33 311 2233 331 11"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "32 13 h232 22 1211 323 2222 231 133 3321 223 222 132 33"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "2231 3232 333 łłł 32 22 221 33 111 1122 23 1132 331 223 11 211"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "231 22 112 2213 222 113 321 3123 2221 c132 111 212 333 11 3311 1112"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "112 2222 332 113 2131 132x 3323 2313 11 331 2311 2132 1323 313 xx 22 33"
+    }
+  ]
+}

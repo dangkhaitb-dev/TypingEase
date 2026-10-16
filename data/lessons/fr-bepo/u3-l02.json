@@ -31,7 +31,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -142,25 +141,25 @@
       "text": "Des mots à nouveau, pour détendre la main après tout ce bord.",
       "type": "burst",
       "tokens": [
+        "geste",
+        "dise",
+        "monde",
+        "incendie",
+        "qu'elle",
         "lumières",
-        "élèves",
-        "complète",
-        "l'eau",
-        "point",
-        "sur",
-        "résultat",
-        "bruits",
-        "forêt",
-        "bureau",
-        "mon",
-        "sel"
+        "j'ai",
+        "table",
+        "dix",
+        "forte",
+        "mises",
+        "nuits"
       ]
     },
     {
       "text": "Retour aux mots, avec le clavier entier disponible — f, z, w et ç compris.",
       "dictation": "words",
       "type": "standard",
-      "content": "complet française continuer mères\nhuiles sommes zeste item\njolie luttes banques même"
+      "content": "déjà wagons cours exemple\ndurs tout motif tirs\ntriste utile quant décider"
     },
     {
       "text": "Des phrases entières pour terminer les leçons de touches.",

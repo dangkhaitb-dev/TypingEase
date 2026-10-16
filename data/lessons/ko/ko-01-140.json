@@ -1,0 +1,61 @@
+{
+  "id": "ko-01-140",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "ko-01-140",
+  "title": "Shift 모음 ㅒ · ㅖ",
+  "summary": "Shift를 누른 채 ㅐ·ㅔ 키를 눌러 ㅒ와 ㅖ를 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "Shift를 누른 채 ㅐ·ㅔ 키를 눌러 ㅒ와 ㅖ를 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-140",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 ㅐ 키를 눌러 ㅒ를 입력합니다.",
+      "content": "ㅒㅒ ㅐㅒ ㅒㅐ ㅒㅒㅒ ㅐㅐㅒ ㅒㅒ ㅐㅐㅒ ㅒㅒㅒ ㅒㅐ ㅐㅒ ㅒㅐ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 ㅔ 키를 눌러 ㅖ를 입력합니다.",
+      "content": "ㅖㅖ ㅔㅖ ㅖㅔ ㅒㅖ ㅖㅒ ㅔㅔㅖ ㅖㅖ ㅔㅔㅖ ㅖㅒ ㅒㅖ ㅖㅔ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "ㅒ와 ㅖ가 들어간 낱말을 입력합니다.",
+      "content": "얘기 걔 쟤 예 계단 시계 얘들아 차례 지혜",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "얘들아 계단 옆 시계를 같이 봐 벌써 세 시야",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 ㅐ·ㅔ 키를 눌러 ㅒ와 ㅖ를 번갈아 입력합니다.",
+      "content": "ㅒㅖ ㅖㅒ ㅖㅖ ㅔㅖ ㅐㅒ ㅖㅔ ㅒㅒ ㅖㅖㅖ ㅒㅖ ㅔㅖ ㅖㅒ ㅖㅔ ㅒㅐ ㅖㅔ ㅖㅖ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 ㅔ 키를 눌러 ㅖ가 들어간 문장을 입력합니다.",
+      "content": "세계 지도를 보며 여행 계획을 세워요",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "vi-08-jump",
+  "unit": "u8",
+  "group": "g4",
+  "order": 121,
+  "slug": "vi-08-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 40,
+  "inputMode": "telex",
+  "intro": "Gõ trọn đoạn văn tả buổi sáng sớm nơi khu phố nhỏ ven sông.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn tả buổi sáng sớm nơi khu phố nhỏ ven sông.",
+      "content": "Mỗi buổi sáng sớm, tiếng chuông đồng hồ báo thức vang lên đều đặn đánh thức cả khu phố nhỏ ven sông. Mọi người thức dậy với tinh thần sảng khoái, tập thể dục nhẹ nhàng và chuẩn bị cho một ngày làm việc mới đầy hứng khởi và niềm tin tươi sáng trong lòng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn tả hàng cây xanh đung đưa bên mặt hồ phẳng lặng.",
+      "content": "Những cành cây xanh đung đưa nhịp nhàng theo từng đợt gió mát rượi thổi từ phía mặt hồ phẳng lặng như gương. Đàn chim nhỏ ríu rít chuyền cành kiếm mồi trong ánh bình minh chan hòa, tạo nên một bức tranh thiên nhiên tươi đẹp tràn đầy sức sống mới cho vạn vật cỏ cây hoa lá ven bờ sông.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn tả tiếng chuông chùa ngân nga trong buổi chiều tà.",
+      "content": "Tiếng chuông chùa ngân nga trầm ấm lan tỏa khắp không gian tĩnh mịch của buổi chiều tà nơi xóm đạo ven sông. Những luồng gió bấc đầu mùa se lạnh thổi qua các ô cửa sổ gỗ, báo hiệu một mùa đông lạnh giá đang dần gõ cửa từng nếp nhà đơn sơ ven triền đồi ngút ngàn cây xanh tốt tươi quanh năm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn hoài niệm về mái trường xưa dưới hàng phượng vĩ.",
+      "content": "Mái trường xưa thân thương nằm nép mình yên ả dưới những hàng cây phượng vĩ cổ thụ rợp bóng mát quanh năm. Nơi đây đã từng ngày nuôi dưỡng biết bao thế hệ học trò trưởng thành với những ước mơ cao đẹp, sẵn sàng bay xa trên con đường lập thân và cống hiến tài năng dựng xây đất nước quê hương ngày một giàu đẹp hơn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về những từ tiếng Việt nhiều âm tiết và phụ âm ghép phức tạp.",
+      "content": "Những từ tiếng Việt có cấu trúc âm tiết dài và nhiều phụ âm ghép phức tạp thường đòi hỏi sự chú ý đặc biệt từ phía người gõ để tránh việc gõ sót dấu thanh hoặc bấm nhầm vào các phím liền kề. Bằng việc kiên trì luyện tập qua các bài tập chuyên sâu có chủ đích, học viên sẽ từng bước chinh phục những từ ngữ khó nhất một cách tự tin, điêu luyện và chuẩn xác tuyệt đối trong mọi tình huống giao tiếp.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn cỡ vừa về thói quen cần có khi bài thực hành dài lên.",
+      "content": "Khi bước vào giai đoạn rèn luyện các đoạn văn bản có độ dài cỡ vừa, người học cần chủ động tập thói quen đọc đón đầu dòng chữ phía trước một vài từ. Kỹ năng quan sát tinh tế này cho phép não bộ có đủ thời gian chuẩn bị sẵn chuỗi thao tác cơ bắp kế tiếp, từ đó loại bỏ hoàn toàn các khoảng dừng ngập ngừng không đáng có và đem lại một nhịp gõ liền mạch, êm ái và thanh thoát tựa như dòng chảy tự nhiên của con suối mát.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn tổng kết hành trình chinh phục kỹ năng gõ mười ngón.",
+      "content": "Hành trình chinh phục nghệ thuật gõ phím mười ngón là một quá trình rèn luyện bền bỉ đòi hỏi sự kết hợp hài hòa giữa sự chuẩn xác của cơ bắp và sự tĩnh lặng của tâm trí. Khi từng đầu ngón tay lướt đi thoăn thoắt trên các hàng phím mà không cần bất kỳ sự suy nghĩ gượng gạo nào, chữ viết sẽ tuôn trào trên trang giấy tựa như dòng suối trong vắt chảy qua kẽ đá.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ về hơi thở và tư thế ngồi gõ đúng cách.",
+      "content": "duy trì hơi thở nhịp nhàng kết hợp với tư thế ngồi thẳng lưng khoa học, hai bàn chân đặt vững chãi trên sàn nhà và thả lỏng hoàn toàn hai bờ vai trong suốt quá trình rèn luyện kỹ năng đánh máy nhanh và chuẩn xác. Hãy quan sát trước một cụm từ và chỉ tăng tốc khi độ chính xác đã ổn định, cổ tay không gồng cứng. Màn hình ngang mắt, ghế tì hết lưng, khuỷu tay sát sườn để lực gõ nhẹ mà vẫn dứt điểm.",
+      "inputMode": "telex"
+    }
+  ]
+}

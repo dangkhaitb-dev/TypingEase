@@ -1,0 +1,49 @@
+{
+  "id": "vi-12-012",
+  "unit": "u12",
+  "group": "g3",
+  "order": 172,
+  "slug": "vi-12-012",
+  "title": "Thông báo hóa đơn & đối tác",
+  "summary": "Xây dựng năng lực \"Agenda, Notice, Invoices, and Vendor Codes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 4 màn hình đỉnh cao của C12: tổng hợp toàn diện nghị trình hội nghị, thông báo nội bộ, hóa đơn thanh toán và mã số nhà cung cấp.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 26,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Agenda, Notice, Invoices, and Vendor Codes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 4 màn hình đỉnh cao của C12: tổng hợp toàn diện nghị trình hội nghị, thông báo nội bộ, hóa đơn thanh toán và mã số nhà cung cấp.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với nghị trình phiên họp tổng kết năm 2026 và phương hướng năm 2027.",
+      "content": "Nghị trình phiên họp tổng kết công tác năm 2026 và phương hướng nhiệm vụ năm 2027: Phần thứ nhất tuyên bố lý do và giới thiệu đại biểu; phần thứ hai trình bày báo cáo tổng kết thi đua; phần thứ ba thảo luận và đóng góp ý kiến; phần thứ tư trao tặng các danh hiệu thi đua cao quý.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với thông báo nội bộ về việc công khai bảng đối chiếu công nợ nhà cung cấp.",
+      "content": "Thông báo nội bộ về việc công khai bảng đối chiếu công nợ nhà cung cấp: Kế toán trưởng yêu cầu toàn bộ các bộ phận mua hàng khẩn trương rà soát lại các hóa đơn giá trị gia tăng còn tồn đọng chưa thanh toán, liên hệ các đối tác để chốt biên bản xác nhận số dư và hoàn tất thủ tục thanh toán trước ngày hai mươi lăm tháng mười hai. Đối tác kiểm tra số hóa đơn, thời hạn thanh toán và thông tin tài khoản trước khi ký xác nhận.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng kỹ năng vào bảng mã số nhà cung ứng và danh mục nhà thầu được chứng nhận.",
+      "content": "Bảng mã số nhà cung ứng và quy định danh mục nhà thầu được chứng nhận năm 2026: Doanh nghiệp phân phối văn phòng phẩm Sao Mai mã VN-HN-0092; Công ty vận tải đường bộ Miền Bắc mã VN-QN-0145; Đơn vị cung cấp dịch vụ bảo trì thiết bị tin học mã VN-DN-0382; Nhà xuất bản tài liệu đào tạo mã VN-HCM-0511; Xưởng in bao bì Thành Đạt mã VN-BD-0674. Mọi đơn đặt hàng từ năm mươi triệu đồng trở lên chỉ được phát hành cho nhà thầu có mã còn hiệu lực trong danh mục này. Đề nghị hai bên lưu bản sao chứng từ để tiện tra cứu khi cần đối soát.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn phiếu yêu cầu phê duyệt thanh toán chi phí tiếp khách quý bốn.",
+      "content": "Phiếu yêu cầu phê duyệt thanh toán chi phí tiếp khách và hội nghị khách hàng quý bốn: Đề nghị phòng tài chính kế toán xuất séc ngân hàng hoặc chuyển khoản thanh toán hóa đơn giá trị gia tăng số không không ba tư năm sáu do nhà khách thanh niên phát hành, số tiền phải thanh toán là mười hai triệu tám trăm nghìn đồng chẵn, hạn thanh toán ngày mai. Hồ sơ kèm theo gồm bản gốc hóa đơn, bảng kê chi tiết suất ăn và giấy đề nghị thanh toán có chữ ký của trưởng phòng hành chính. Khoản chi đã nằm trong dự toán tiếp khách được ban giám đốc phê duyệt từ đầu quý, mã ngân sách TK-642-04.",
+      "inputMode": "telex"
+    }
+  ]
+}

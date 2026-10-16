@@ -1,0 +1,82 @@
+{
+  "id": "de-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "de-01-003",
+  "title": "Tasten a, s, d",
+  "summary": "Lerne die neuen Tasten a, s, d und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten a, s, d und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-003",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Taste üben: a.",
+      "content": "aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Taste üben: s.",
+      "content": "ssss ssss ssss ssss ssss ssss ssss ssss ssss ssss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Taste üben: d.",
+      "content": "dddd dddd dddd dddd dddd dddd dddd dddd dddd dd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ada fsa aaa assa sd ss dsaa adad dss sada dda ddss dd aa das"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "af sd as aad sa asa aaa ddsa ddda dasa aa dds ssss ffa aasa dd ddd ss"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "sass ddja ddaa ddad daa aaa ssd as dd aa ssa ss sas aasa asd"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "dj daj sdfj dds fsj dsjj dssd ffj jj ssfa sdad fsfs"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "dfa jad af djs aj jfdf adaj fsd jj asf fjfa fjf jsad"
+    }
+  ]
+}

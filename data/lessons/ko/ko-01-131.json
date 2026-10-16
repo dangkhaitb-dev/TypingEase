@@ -1,0 +1,43 @@
+{
+  "id": "ko-01-131",
+  "unit": "u1",
+  "group": "g1",
+  "order": 32,
+  "slug": "ko-01-131",
+  "title": "자모 조합 복습 20",
+  "summary": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-131",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "고양이가 햇살 드는 창가에서 낮잠을 자요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "오후 햇볕이 따뜻해서 나도 졸음이 와요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "배고픈 고양이 밥그릇에 사료를 가득 채워요",
+      "inputMode": "hangul"
+    }
+  ]
+}

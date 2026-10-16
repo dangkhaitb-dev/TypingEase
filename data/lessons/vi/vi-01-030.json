@@ -1,0 +1,55 @@
+{
+  "id": "vi-01-030",
+  "unit": "u1",
+  "group": "g1",
+  "order": 30,
+  "slug": "vi-01-030",
+  "title": "Luyện phím · ợ",
+  "summary": "Học cách gõ ợ (o w j) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ợ (o w j) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-030",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ o w j để ra ợ: o w ra ơ, j thêm dấu nặng. Ví dụ: gợi = g o w j i.",
+      "content": "gợi thợ vợ chợ sợi trợ chợ vợ sợ hợp ợ hợp thợ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ợ. Nhớ: ợ = o w j.",
+      "content": "nợ sợi bản nợ trang xuống lại họ lợi lượng tra sợ chợ sông vượt chiều",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ợ. Nhớ: ợ = o w j.",
+      "content": "lượng như trợ mượn đợi thợ lợi vượt nhà muốn hạt chợt nợ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ợ.",
+      "content": "lợn tượng cây nhưng lượt gượng mùi phượng lợi tiếng tài thợ nhanh sợi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ợ mà không nhìn bàn phím.",
+      "content": "sợ vượt mượn hợp đúng trượt riêng sợi tiết vợ dưới chợt rợp thơm ngày",
+      "inputMode": "telex"
+    }
+  ]
+}

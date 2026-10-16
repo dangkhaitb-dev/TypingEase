@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-07-jump",
+  "unit": "u7",
+  "group": "g2",
+  "order": 72,
+  "slug": "zh-tw-07-jump",
+  "title": "快速進行",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ime",
+  "intro": "以自然情境句子練習連續輸入。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-jump",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "店員告訴我：「往回走兩個路口，再右轉就到了。」我照著走，很快就找到了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我說：「用完以後請放回原位，下次大家要找的時候，就不會找不到了。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "最後把雞蛋剝殼切半，和吐司一起放在盤子上。這樣，一份簡單的早餐就完成了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我又說：「動物園是終點站，不用擔心坐過站。等車子停好，再起身下車就好。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "姐姐點頭說：「好，星期六我們在家看電影，星期天早上七點出發去爬山。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "比賽結束後，校長頒發獎狀，還請大家一起把操場的垃圾撿乾淨。回家的路上，我和同學討論明年要參加哪些項目。我說：「我想試試跳遠。」她笑著說：「那我們從下星期開始一起練習吧！」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我們最後決定：去程人多、行李重，就叫計程車；回程只剩小背包，就搭捷運。媽媽說：「每種做法都有優點和缺點，看清楚情況再選擇，才是最好的辦法。」大家都同意這個安排。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "老師也說：「把事情說清楚，是尊重別人的時間。」如果是重要的事，最好請對方回覆確認，例如回一句「收到，明天見」。說話和寫訊息時多想一下，就能少掉很多誤會。",
+      "inputMode": "ime"
+    }
+  ]
+}

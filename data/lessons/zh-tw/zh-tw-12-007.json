@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-12-007",
+  "unit": "u12",
+  "group": "g1",
+  "order": 123,
+  "slug": "zh-tw-12-007",
+  "title": "回覆服務進度",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-007",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "顧客您好：\n感謝您的來信。您送修的洗衣機已經檢查完畢，問題出在排水馬達，需要更換新的零件。零件預計三天後到貨，到貨後我們會在一個工作天內完成修理，並主動通知您。\n客服中心",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "維修進度通知\n案件編號：2031\n產品：滾筒洗衣機\n目前狀態：等待零件\n預計完成：十二月十五日\n維修費用：保固期內免費\n服務時間：週一至週五上午九點到下午六點\n客服中心\n如有疑問，歡迎來電詢問，我們將盡快為您處理。\n感謝您耐心等候，祝您生活愉快。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "顧客：「請問我的洗衣機什麼時候能修好？」\n客服：「零件明天會到，師傅後天上午就能到府更換。」\n顧客：「後天上午我在家，沒問題。大概要修多久？」\n客服：「大約一個小時。師傅出發前，會先打電話給您確認。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

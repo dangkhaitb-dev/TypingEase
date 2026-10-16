@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-008",
+  "unit": "u5",
+  "group": "g2",
+  "order": 77,
+  "slug": "vi-05-008",
+  "title": "Bước ngoặt tình huống",
+  "summary": "Tình huống có diễn biến bất ngờ đòi hỏi sự tập trung nhận thức cao hơn, nhịp gõ thay đổi theo cấu trúc ngữ pháp câu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Tình huống có diễn biến bất ngờ đòi hỏi sự tập trung nhận thức cao hơn, nhịp gõ thay đổi theo cấu trúc ngữ pháp câu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phản ứng nhanh nhạy của các tiểu thương trước tình huống thời tiết chuyển biến xấu.",
+      "content": "Mọi người lập tức ngừng việc bán hàng để cùng nhau gia cố lại các khung sắt và căng dây chằng giữ mái che chắc chắn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Một cơn dông bất chợt ập đến đe dọa các gian hàng ngoài trời tại hội chợ.",
+      "content": "Đám mây đen kịt từ biển bất ngờ kéo tới che kín cả bầu trời trong xanh. Những đợt gió mạnh bắt đầu giật liên hồi làm rung lắc dữ dội các mái bạt che mưa.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn thử thách mô tả cao trào ứng phó với bão và tinh thần đoàn kết của tập thể.",
+      "content": "Cơn mưa rào trút xuống xối xả kéo theo từng luồng gió giật mạnh làm nghiêng ngả những chậu cây cảnh ven đường. Nhờ có phương án chuẩn bị chủ động từ sớm, toàn bộ hệ thống điện ngoài trời đã được ngắt an toàn.",
+      "inputMode": "telex"
+    }
+  ]
+}

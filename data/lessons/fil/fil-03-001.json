@@ -1,0 +1,89 @@
+{
+  "id": "fil-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 21,
+  "slug": "fil-03-001",
+  "title": "Paggamit ng Shift",
+  "summary": "Hawakan ang Shift habang pinipindot ang titik upang makabuo ng malaking titik.",
+  "newKeys": [
+    "shift"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Hawakan ang Shift habang pinipindot ang titik upang makabuo ng malaking titik.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-03-001",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "shift",
+      "text": "Hawakan ang Shift habang pinipindot ang titik upang makabuo ng malaking titik.",
+      "content": "FFJ FJFF JJFJ FJ FJFF JJJF FFJJ JFJF FFFJ JJFF FJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Hawakan ang Shift habang pinipindot ang titik upang makabuo ng malaking titik.",
+      "content": "JFJF FFFJ JJFF FJFF JJFJ FJ JJJF FFJJ FJFF JFJF FFJ"
+    },
+    {
+      "type": "standard",
+      "text": "Hawakan ang Shift habang pinipindot ang titik upang makabuo ng malaking titik.",
+      "content": "JJFF FJFF JFJF FFFJ FJ JJJF FFJJ JJFJ FJFF FFFJ JJ"
+    },
+    {
+      "type": "standard",
+      "text": "Hawakan ang Shift habang pinipindot ang titik upang makabuo ng malaking titik.",
+      "content": "FJFF JJJF FFJJ JFJF FFFJ JJFJ FJFF JJFF FJ FFFJ JJFJ"
+    }
+  ]
+}

@@ -72,6 +72,8 @@ window.TypingEaseUI = {
   /* player.js — bảng `T`. Không có khoá Telex: khoá tiếng Nhật không bao giờ đặt inputMode
      "telex". */
   player: {
+    imeOffHint: "この文字は日本語入力が必要です。入力モードをオンにして（Ctrl+スペース または 🌐）、読みを入力してから変換してください。",
+    imeAsciiHint: "この練習では、入力モードを英数に切り替えてから入力してください（英数キー・半角/全角キー、または Shift）。",
     loading: 'レッスンを読み込んでいます…',
     missingTitle: 'このレッスンにはまだ内容がありません',
     missingBody: '<code>{path}</code> から何も読み込めませんでした。レッスンはまだ準備中です。あとでもう一度試すか、コースから別のレッスンを選んでください。',

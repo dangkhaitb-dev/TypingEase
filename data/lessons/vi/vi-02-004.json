@@ -1,0 +1,52 @@
+{
+  "id": "vi-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 36,
+  "slug": "vi-02-004",
+  "title": "Luyện phím · 0",
+  "summary": "Luyện tập phối hợp toàn diện 10 chữ số từ 0 đến 9 kết hợp với các chữ cái thường a–z đã học và phím Space.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Luyện tập phối hợp toàn diện 10 chữ số từ 0 đến 9 kết hợp với các chữ cái thường a–z đã học và phím Space.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-02-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím 0: ngón út phải, hàng số. Gõ 0 xen với các phím đã học.",
+      "content": "0j 00 0j 500 0 0j 00 500 0 000 0j"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các nhóm số có 0. Giữ ngón tay trên hàng cơ sở sau mỗi lần với lên hàng số.",
+      "content": "6607 06 08 07 0751 403 2595 0 4863 0 063 304 9090 9914"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các nhóm số có 0. Giữ ngón tay trên hàng cơ sở sau mỗi lần với lên hàng số.",
+      "content": "818 9228 17 6582 173 338 85 0 4826 9390 1330 0 45 756 681 01 681 54 046"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ số kèm từ, ví dụ: 12 quả cam.",
+      "content": "30 chiếc xe 8 quả cam 9 tờ giấy 13 quả cam 44 quả trứng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ số kèm từ mà không nhìn bàn phím.",
+      "content": "89 người bạn 7 quả cam 60 bó rau 61 ngôi nhà 46 quả cam 66 cái bàn",
+      "inputMode": "telex"
+    }
+  ]
+}

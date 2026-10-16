@@ -1,0 +1,91 @@
+{
+  "id": "ja-01-106",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "ja-01-106",
+  "title": "E・R・T",
+  "summary": "E、R、T を一定のリズムで打つ。",
+  "newKeys": [
+    "e",
+    "r",
+    "t"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "E、R、T を一定のリズムで打つ。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-106",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "eee ee eeee ee eee ee eeee ee eee ee eeee ee eee",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "rrr rr ee eeee eerr eer rrr rr ee eeee eerr eer",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "tte rter ttrt eet ttee tte rter ttrt eet ttee tte",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "kkt er tt rrtr ttet tert rr kkt er tt rrtr ttet tert rr kkt er tt rrtr ttet"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "qrr rrt rtt tre ttr tr eere ttt reet qrr rrt rtt tre ttr tr eere ttt reet"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "rea eeer rrtt ee eete et rrr rea eeer rrtt ee eete et rrr rea eeer rrtt ee"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "eer rer rr ret rrt aee tt ttr eee er eer rer rr ret rrt aee tt ttr eee er"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "rret tere rrr jet ttrt rrtr rret tere rrr jet ttrt rrtr rret tere rrr jet"
+    }
+  ]
+}

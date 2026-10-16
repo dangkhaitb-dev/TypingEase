@@ -1,0 +1,43 @@
+{
+  "id": "ko-05-009",
+  "unit": "u5",
+  "group": "g1",
+  "order": 75,
+  "slug": "ko-05-009",
+  "title": "길이 막힌 저녁",
+  "summary": "교통 상황을 확인하고 약속 장소를 바꾸는 과정을 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "교통 상황을 확인하고 약속 장소를 바꾸는 과정을 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-05-009",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "퇴근길에 큰길로 들어서자 차들이 거의 움직이지 않았습니다. 라디오에서는 앞쪽 도로에서 밤까지 공사가 진행된다는 소식이 흘러나왔습니다. 한숨이 나왔습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "평소에는 집까지 삼십 분이면 가는데 오늘은 한 시간이 넘게 걸릴 것 같았습니다. 그래서 가족에게 저녁을 먼저 먹으라고 연락했습니다. 배가 고팠습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "다음 골목에서 차를 돌려 강변을 따라 난 길로 갔습니다. 조금 돌아가기는 했지만 막히지 않아서 생각보다 일찍 집에 도착할 수 있었습니다. 다들 반겨 주었습니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

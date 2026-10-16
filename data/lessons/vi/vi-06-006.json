@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-006",
+  "unit": "u6",
+  "group": "g2",
+  "order": 88,
+  "slug": "vi-06-006",
+  "title": "Kế hoạch nhiều chi tiết",
+  "summary": "Xây dựng năng lực \"Multi-Detail Plans\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Soạn thảo kế hoạch hoàn chỉnh gồm thời gian, địa điểm, người phụ trách và chi phí dự tính.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Multi-Detail Plans\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Soạn thảo kế hoạch hoàn chỉnh gồm thời gian, địa điểm, người phụ trách và chi phí dự tính.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên lộ trình triển khai sự kiện khách hàng.",
+      "content": "Lộ trình triển khai sự kiện khách hàng: buổi sáng dành cho công tác chuẩn bị sân khấu, kiểm tra hệ thống âm thanh ánh sáng và đón tiếp đại biểu.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp bài học với kế hoạch tuần chi tiết.",
+      "content": "Kế hoạch tuần chi tiết: thứ Hai duyệt ý tưởng, thứ Ba quay dựng video, thứ Tư hoàn thiện bài viết và thứ Năm bắt đầu chiến dịch truyền thông diện rộng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên bản kế hoạch hành động chi tiết tháng này.",
+      "content": "Bản kế hoạch hành động chi tiết tháng này: tuần đầu tiên tập trung hoàn thiện tài liệu hướng dẫn sử dụng và kiểm tra tính tương thích trên các nền tảng di động.",
+      "inputMode": "telex"
+    }
+  ]
+}

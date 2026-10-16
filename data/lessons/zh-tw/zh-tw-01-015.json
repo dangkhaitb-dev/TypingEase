@@ -1,0 +1,71 @@
+{
+  "id": "zh-tw-01-015",
+  "unit": "u1",
+  "group": "g1",
+  "order": 16,
+  "slug": "zh-tw-01-015",
+  "title": "注音符號組 15",
+  "summary": "Narrow committed-output lesson: 日 書",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 日 書",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-015",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 `，並以已學按鍵定位。",
+      "content": "``` ``` `` ````` ` ``` `` ` ```` ``` `` ```"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 =，並以已學按鍵定位。",
+      "content": "=== == ===== = === == = ==== === =="
+    },
+    {
+      "type": "standard",
+      "text": "在注音模式按 ' 鍵會輸入 、，並以已學按鍵定位。",
+      "content": "、、、 、、 、、、、、 、 、、、 、、 、 、、、、 、、、 、、",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "`=、 =、` 、`= ``== 、、= `=` ==、 `、= 、`= =、` ``、 ==`",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "、、` ``= =、、 `=` 、=、 ==` ``、 =、= `、、 =`` 、、=",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "` `` == 、、 `= =` 、` `、 =、 、= ```= ===` 、、、 `== `",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用 ' 鍵輸入頓號，把幾種水果連成一串。",
+      "content": "蘋果、香蕉、葡萄、西瓜、橘子、芒果",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "遇到頓號按 ' 鍵，其餘照注音輸入選字。",
+      "content": "早餐有牛奶、麵包、雞蛋、豆漿和水果",
+      "inputMode": "ime"
+    }
+  ]
+}

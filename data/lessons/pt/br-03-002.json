@@ -1,0 +1,102 @@
+{
+  "id": "br-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 31,
+  "slug": "br-03-002",
+  "title": "Maiúsculas: A, B, C",
+  "summary": "Aprenda as teclas A, B, C e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "A",
+    "B",
+    "C"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas A, B, C e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-03-002",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "A",
+      "text": "Segure Shift e aperte a para digitar A. Depois volte à posição inicial.",
+      "content": "AffA AA AfA ff AAA AAAf AAAA AAf fA Aff fAAA",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "B",
+      "text": "Segure Shift e aperte b para digitar B. Depois volte à posição inicial.",
+      "content": "BBBB jBB BBB jB BjBB BB BBj BjB Bjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "C",
+      "text": "Segure Shift e aperte c para digitar C. Depois volte à posição inicial.",
+      "content": "CCCC fC CfCC CCf fCCC CC ff CCCf fCfC ffCf fCC Cf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "AdCC BACC CBAC BCA CCC AC BACA CCA AB CAAC CC CABC AA BCC CA CBB BA CCCB"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "CA 88A7 8A7A 78 ACA5 C8B BC C7B 7AAA AA CB8 7B BBA CCCC AC8C"
+    }
+  ]
+}

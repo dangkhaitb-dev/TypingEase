@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-003",
+  "unit": "u6",
+  "group": "g1",
+  "order": 85,
+  "slug": "vi-06-003",
+  "title": "Ghi chú kèm yêu cầu",
+  "summary": "Xây dựng năng lực \"Notes With a Request\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thêm mục đích yêu cầu hành động vào ghi chú, kết hợp các từ chỉ bổn phận và thời hạn.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Notes With a Request\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thêm mục đích yêu cầu hành động vào ghi chú, kết hợp các từ chỉ bổn phận và thời hạn.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua nhắc nhở nhóm phát triển phần mềm.",
+      "content": "Nhắc nhở nhóm phát triển phần mềm: buổi đánh giá mã nguồn tuần này sẽ diễn ra vào lúc mười lăm giờ ba mươi tại phòng họp trung tâm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Mở đầu có dẫn dắt cùng lời nhắc việc quan trọng.",
+      "content": "Lời nhắc việc quan trọng: kiểm tra hạn thanh toán hóa đơn dịch vụ điện nước của văn phòng và liên hệ nhà cung cấp để nhận biên lai hợp lệ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua lời nhắc công việc cuối tuần.",
+      "content": "Lời nhắc công việc cuối tuần: toàn thể nhân viên lưu ý sao lưu toàn bộ dữ liệu quan trọng lên máy chủ đám mây của công ty trước khi ra về. Tắt hết các thiết bị điện không cần thiết và khóa cửa sổ văn phòng cẩn thận.",
+      "inputMode": "telex"
+    }
+  ]
+}

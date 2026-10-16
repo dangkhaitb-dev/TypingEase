@@ -1,12 +1,15 @@
 {
   "id": "u4-l06",
   "unit": "u4",
-  "group": "finish",
+  "group": "symbols",
   "order": 33,
-  "slug": "review-u4",
-  "title": "Wszystkie znaki razem",
-  "summary": "Wszystkie znaki tej części, wymieszane ze słowami i liczbami.",
-  "newKeys": [],
+  "slug": "symbols-6",
+  "title": "Ź i _",
+  "summary": "W programie: Ź i _.",
+  "newKeys": [
+    "ź",
+    "_"
+  ],
   "keysSoFar": [
     " ",
     "f",
@@ -60,10 +63,11 @@
     "ż",
     "ś",
     "ó",
+    "·",
     "!",
     "\"",
     "#",
-    "$",
+    "¤",
     "%",
     "&",
     "/",
@@ -82,59 +86,62 @@
   "minAccuracy": 80,
   "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Żadnych nowych klawiszy. Wszystkie znaki tej części, wymieszane ze słowami i liczbami.",
-  "congrats": "Każdy klawisz tej klawiatury miał swoją kolej.",
+  "intro": "Klawisze, których kurs jeszcze nie używał: Ź i _. Każdy z nich to Shift i klawisz, który twoje palce już znają — Shift małym palcem drugiej ręki.",
+  "congrats": "Ź i _: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
   "screens": [
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Znaki w tym samym tempie co litery wokół nich.",
-      "content": "(jest) nogi znam & córka marchew pola!\nlekcja? dzieci imiona! pokoje <szuka>\nwięc_kolana zdanie <śmiech> już \"kiedyś\""
+      "type": "intro",
+      "key": "ź",
+      "finger": "RP",
+      "text": "Ten znak — Ź — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij Ź, aby przejść dalej"
     },
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Trzymaj rytm także na znakach; to klawisze jak wszystkie inne.",
-      "content": "$34 kura (powoli) stare \"sufit\"\n(wiedza) osoby \"nagroda\" kupiec <okres>\n<kolory> minuty *czysta* modny kwiaty & pora"
+      "type": "block",
+      "newKey": "ź",
+      "text": "Najpierw sam Ź, potem tam, gdzie naprawdę się go używa.",
+      "content": "źź ź późno źle późno\nźź ź późno źle źle\nźź ź źle źle źle"
+    },
+    {
+      "type": "intro",
+      "key": "_",
+      "finger": "RP",
+      "text": "Ten znak — _ — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij _, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "_",
+      "text": "Najpierw sam _, potem tam, gdzie naprawdę się go używa.",
+      "content": "__ _ praca_dal nowy_zdanie kasza_im\n__ _ robimy_metro wtorek_prezent rower_laska\n__ _ prąd_wieczory mydło_sklepy muzeum_biały"
     },
     {
       "type": "burst",
-      "seconds": 30,
+      "seconds": 25,
       "text": "Seria krótkich kawałków z tymi znakami.",
       "tokens": [
-        "78%",
-        "<zawsze>",
-        "<cyfra>",
-        "<kuchni>",
-        "91%",
-        "#61",
-        "*kopia*",
-        "#63",
-        "22=36",
-        "<coś>",
-        "wolny/suchy",
-        "komin!",
-        "\"miejsce\"",
-        "\"błędy\""
+        "smutna_coś",
+        "źle",
+        "późno",
+        "chleb_sklejka",
+        "kwiat_robot",
+        "metr_wasz",
+        "mokro_dzień",
+        "ładnie_pociąg",
+        "turysta_kwiat",
+        "mocno_notatki"
       ]
     },
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Trzymaj rytm także na znakach; to klawisze jak wszystkie inne.",
-      "content": "*towar* turystka kasza_jeszcze wszyscy (prace)\n*rakiety* rama (niskie) niebo $32\n(kolegi) ktoś niego! żart źźź"
+      "type": "block",
+      "text": "Wszystko, co przyniosła ta lekcja, wymieszane.",
+      "content": "źle późno klej_foto późno\nkomin_kurtka źle źle szybki_dużo\nsala_słońce morze_kupiec późno późno"
     },
     {
       "type": "standard",
       "dictation": "words",
-      "text": "Trzymaj rytm także na znakach; to klawisze jak wszystkie inne.",
-      "content": "\"stolik\" hala 57 = 46 rada 31%\n$91 pole samolot! rzeczy 24 = 12\nńńń wiesz *kupuje* jutro grudka?"
-    },
-    {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Trzymaj rytm także na znakach; to klawisze jak wszystkie inne.",
-      "content": "<także> ktoś 39 = 62 razy szafy/torby\n(taniec) herbata ććć twoje *która*\n*wody* mój kubki! herbata jakie_piszę"
+      "text": "Znowu słowa, ze znakami na swoich miejscach.",
+      "content": "sklepy_pięć pomidor twoje_proste figury późno\nkara_języki fryzjer późno poranek ciepła_gdzie\nźle się źle wolny rzeczy_rysuje"
     }
   ]
 }

@@ -3,9 +3,9 @@
   "unit": "u4",
   "group": "finish",
   "order": 35,
-  "slug": "test-u4",
-  "title": "Test van unit 4",
-  "summary": "Een test op tijd met alle toetsen van het toetsenbord.",
+  "slug": "review-u4",
+  "title": "Alle tekens samen",
+  "summary": "Alle tekens van deze unit, gemengd met woorden en cijfers.",
   "newKeys": [],
   "keysSoFar": [
     " ",
@@ -71,27 +71,71 @@
     ")",
     "_",
     "+",
+    "<",
+    ">",
     "{",
     "}",
     "|",
     ":",
     "\"",
-    "<",
-    ">",
     "?"
   ],
   "minAccuracy": 80,
-  "estMinutes": 2,
+  "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Een test op tijd met alles, tekens inbegrepen.",
-  "congrats": "Dit was het hele toetsenbord. Er is geen toets meer die deze cursus je niet heeft geleerd.",
+  "intro": "Geen nieuwe toetsen. Alle tekens van deze unit, gemengd met woorden en cijfers.",
+  "congrats": "Elke toets van dit toetsenbord is aan de beurt geweest.",
   "screens": [
     {
-      "type": "test",
+      "type": "standard",
       "dictation": "words",
-      "seconds": 120,
-      "text": "Woorden, cijfers en tekens. Hetzelfde tempo van begin tot eind.",
-      "content": "~93 uil <salsa> kind 61 + 7 kracht\nhangen & zes klaar <huis> groot 33 + 87 kijkje\n#88 zuid huis_sneeuw wie 14 + 24 pinda\n$10 sok hand! examen ~21 luxe"
+      "text": "De tekens in hetzelfde tempo als de letters eromheen.",
+      "content": "~46 lelijk #37 heide lezen & januari\n$50 zaal \"haar\" kijkje 73 + 65\n(papa) sla <taxi's> zolder (gebeurt)"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Houd het tempo ook bij de tekens; het zijn toetsen zoals alle andere.",
+      "content": "$82 eerst cijfer & alfa buiten $15\n97^3 die (sok) gala {liter}\n(haar) in zeep@meneer humor $63"
+    },
+    {
+      "type": "burst",
+      "seconds": 30,
+      "text": "Een reeks korte stukjes met deze tekens.",
+      "tokens": [
+        "~6",
+        "markt_opnieuw",
+        "{raar}",
+        "lied@heb",
+        "dertien_extra",
+        "54+55",
+        "sjaal@dertig",
+        "water&reiger",
+        "(toppen)",
+        "~91",
+        "~97",
+        "leven:",
+        "ze?",
+        "druk_tachtig"
+      ]
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Houd het tempo ook bij de tekens; het zijn toetsen zoals alle andere.",
+      "content": "$30 bus #52 kennen tot|drie\ngezellig|deur lijf ~64 peer #65\nniets? wit pas@ballen vier #90"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Houd het tempo ook bij de tekens; het zijn toetsen zoals alle andere.",
+      "content": "16^2 werk winter@oude sluis dagjes@berg\n{april} vroeg uit! nieuwe 79%\nniets & wereld klimmen 25 + 93 herfst `kort`"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Houd het tempo ook bij de tekens; het zijn toetsen zoals alle andere.",
+      "content": "$62 zeggen 83 + 55 geur (trap)\n`sjaal` test $47 af {prijs}\ntot|piano's snel tuin & moestuin slaap {ski}"
     }
   ]
 }

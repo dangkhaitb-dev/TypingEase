@@ -1,0 +1,100 @@
+{
+  "id": "id-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "id-01-007",
+  "title": "Huruf: q, w, e",
+  "summary": "Gõ o dan bedakan dengan vokal yang sudah dipelajari.",
+  "newKeys": [
+    "q",
+    "w",
+    "e"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Gõ o dan bedakan dengan vokal yang sudah dipelajari.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-007",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "qfq qq qffq qfqf fqq fqqq qqqq",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "wfww wwww www fwww wwfw fw ww wwf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "efe eeee eefe eef ee effe efe eeff eeef",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "qje wj eqq wqeq jj qjfq ejw ejw fqw jeeq eq wqj fe qeqf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "ej qwfe wq ewe wjj fwqe jqj fj ffqf we wq qfeq fjf fjfw"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "qqwe wqj ejej jejw ef jqww eejw ee jeje weqe jw qww ee"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "wqww fe wf ff ej wjff eeqe qjqq jq ffww qf jw jqef jj ee"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "wfe jq ffw wqej jfj qqw ej wj fwfe ff efje wwjq qwe ejq"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "ada gelas ke kelas jadwal sejak selasa wajah jelas"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "kelas selasa ada jadwal gelas jelas kawah wajah sejak"
+    }
+  ]
+}

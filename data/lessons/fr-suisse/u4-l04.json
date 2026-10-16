@@ -68,9 +68,7 @@
     "=",
     "-",
     "'",
-    "^",
     "è",
-    "¨",
     "$",
     "§",
     "°",
@@ -116,7 +114,7 @@
       "type": "block",
       "newKey": ";",
       "text": "D'abord le point-virgule sans rien autour, puis là où on s'en sert vraiment.",
-      "content": ";; ; items; avoir; bêtes;\n;; ; envies; ouvrir; projet;\n;; ; villes; vins; mêmes;"
+      "content": ";; ; tire; vivent; règle;\n;; ; vins; vies; avoir;\n;; ; contre; monde; décider;"
     },
     {
       "type": "intro",
@@ -129,7 +127,7 @@
       "type": "block",
       "newKey": ":",
       "text": "D'abord les deux-points sans rien autour, puis là où on s'en sert vraiment.",
-      "content": ":: : bon: âges: tel:\n:: : père: propose: problème:\n:: : vivre: précis: fleurs:"
+      "content": ":: : petit: espèces: site:\n:: : explique: avant: bord:\n:: : seconde: leçons: mesure:"
     },
     {
       "type": "intro",
@@ -142,7 +140,7 @@
       "type": "block",
       "newKey": "_",
       "text": "D'abord _ sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "__ _ quant_général vie_points pères_détail\n__ _ court_connue côte_four travaux_plus\n__ _ gris_mou théâtre_contrôle châteaux_bêtes"
+      "content": "__ _ personne_wagons cent_plus besoin_ou\n__ _ histoire_court décembre_jolies papier_voici\n__ _ heure_dos système_accès modèle_règle"
     },
     {
       "type": "burst",
@@ -150,27 +148,27 @@
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
         "äää",
-        "ton;",
-        "vertu_âges",
-        "bouche;",
-        "sur_humide",
-        "soirée_voile",
-        "moments_somme",
-        "somme;",
-        "outil:",
-        "guide:"
+        "motifs;",
+        "nuits_espèces",
+        "travail;",
+        "glisses_grise",
+        "baisse_incendie",
+        "appels_fours",
+        "fours;",
+        "sortes:",
+        "jure:"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "exacte: vivent; seconde: contre;\nstyles_mesure projets_travaux bêtes_points n'a_idées\nsoirée; ça_beau ou: bon:"
+      "content": "salles: monsieur; dont: nos;\nsuites_lui aller_papier règle_plus soirées_bateau\nbaisse; taxi_grand bonne: petit:"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "rêves: sûr journée: tous règles_cours\ndernière; vite bête: mère prix;\ns'il; lourd voir: suite huit_mise"
+      "content": "préférer: d'abord bateau: os année_soleil\nboire; contes résultat: belle aller;\nidée; heures ensuite: lisse guide_limes"
     }
   ]
 }

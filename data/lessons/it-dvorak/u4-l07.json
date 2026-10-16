@@ -1,12 +1,17 @@
 {
   "id": "u4-l07",
   "unit": "u4",
-  "group": "finish",
+  "group": "symbols",
   "order": 34,
-  "slug": "review-u4",
-  "title": "Tutti i segni insieme",
-  "summary": "Tutti i segni dell'unità, mescolati a parole e numeri.",
-  "newKeys": [],
+  "slug": "symbols-7",
+  "title": "É, *, § e _",
+  "summary": "In questa lezione: É, *, § e _.",
+  "newKeys": [
+    "é",
+    "*",
+    "§",
+    "_"
+  ],
   "keysSoFar": [
     " ",
     "u",
@@ -74,6 +79,8 @@
     "°",
     ";",
     ":",
+    "<",
+    ">",
     "ç",
     "é",
     "*",
@@ -83,59 +90,88 @@
   "minAccuracy": 80,
   "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Nessun tasto nuovo. Tutti i caratteri dell'unità, mescolati a parole e numeri.",
-  "congrats": "Ogni tasto di questa tastiera ha avuto il suo turno.",
+  "intro": "Tasti che il corso non ha ancora usato: É, *, § e _. Ognuno si ottiene con Shift e un tasto che le tue dita conoscono già — Shift con il mignolo dell'altra mano.",
+  "congrats": "É, *, § e _: ora sotto le tue dita. Il segno esce facile come la lettera accanto.",
   "screens": [
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "I segni allo stesso ritmo delle lettere intorno.",
-      "content": "tutto & così verdi lì|nome sei ççç\nsedile_l'amica l'ora (canta) balcone §82\nççç mare (l'aria) vedere (dare)"
+      "type": "intro",
+      "key": "é",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere É, con Shift tenuto dall'altra mano.",
+      "hint": "Premi É per continuare"
     },
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Tieni il ritmo anche sui segni; sono tasti come gli altri.",
-      "content": "starò\\ragazzi andrà ççç vicino (migliore)\nteatrale|verrà tardi fax! persona £54\n(certo) tè olio\\sua chiudere \"tesi\""
+      "type": "block",
+      "newKey": "é",
+      "text": "Prima É e basta, poi dove si usa davvero.",
+      "content": "éé é ventitré perché poiché\néé é perché poiché perché\néé é affinché affinché ventitré"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere *, con Shift tenuto dall'altra mano.",
+      "hint": "Premi * per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "Prima * e basta, poi dove si usa davvero.",
+      "content": "** * *letti* *uomini* *voce*\n** * *gusto* *lei* *extra*\n** * *larga* *bambino* *agire*"
+    },
+    {
+      "type": "intro",
+      "key": "§",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere §, con Shift tenuto dall'altra mano.",
+      "hint": "Premi § per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "§",
+      "text": "Prima § e basta, poi dove si usa davvero.",
+      "content": "§§ § §79 §2 §7\n§§ § §25 §18 §46\n§§ § §93 §93 §98"
+    },
+    {
+      "type": "intro",
+      "key": "_",
+      "finger": "RP",
+      "text": "È il mignolo destro a premere _, con Shift tenuto dall'altra mano.",
+      "hint": "Premi _ per continuare"
+    },
+    {
+      "type": "block",
+      "newKey": "_",
+      "text": "Prima _ e basta, poi dove si usa davvero.",
+      "content": "__ _ dare_pieno dal_radio ragazza_mi\n__ _ benché_come strada_figure novità_corso\n__ _ stazione_farà secondo_canto poiché_natura"
     },
     {
       "type": "burst",
-      "seconds": 30,
+      "seconds": 25,
       "text": "Una raffica di pezzi brevi con questi caratteri.",
       "tokens": [
-        "\"tigre\"",
-        "ççç",
-        "10^3",
-        "£28",
-        "$25",
-        "$65",
-        "\"torta\"",
-        "(quanto)",
-        "il:",
-        "$35",
-        "44^1",
-        "farò!",
-        "contento&la",
-        "tè;"
+        "ventitré",
+        "§10",
+        "§51",
+        "poiché",
+        "alta_prato",
+        "benché_figure",
+        "*ferie*",
+        "taxi_gusto",
+        "affinché",
+        "*solo*"
       ]
     },
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Tieni il ritmo anche sui segni; sono tasti come gli altri.",
-      "content": "\"balcone\" mezzo \"mare\" parte (altro)\nééé sabbia (quasi) mercato voce;\n57° giovedì ççç così piccolo;"
+      "type": "block",
+      "text": "Tutto quello di questa lezione, mescolato.",
+      "content": "poiché *balcone* *dentro* §26\nventitré inverno_figure *figlia* §35\npoiché §39 §59 §10"
     },
     {
       "type": "standard",
       "dictation": "words",
-      "text": "Tieni il ritmo anche sui segni; sono tasti come gli altri.",
-      "content": "vivere\\mano dirà ridere: nel il;\n34° azzurro sotto? latte 8^2\n78 = 11 avrò ééé mio 28^2"
-    },
-    {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Tieni il ritmo anche sui segni; sono tasti come gli altri.",
-      "content": "$39 cena §85 terzo ééé\nnon|lezione forza dura? nel (larghe)\n(stanza) certo quando|festa dietro 77^1"
+      "text": "Di nuovo parole, con i segni al loro posto.",
+      "content": "§68 lì bene_al questo cammino_banca\n§13 falda §40 attività bosco_mucca\n§32 radio galla_davvero mondo §66"
     }
   ]
 }

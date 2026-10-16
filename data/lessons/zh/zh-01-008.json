@@ -1,0 +1,112 @@
+{
+  "id": "zh-01-008",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "zh-01-008",
+  "title": "键位练习：p、z、x",
+  "summary": "按顺序学习 p、z、x，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "p",
+    "z",
+    "x"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ime",
+  "intro": "按顺序学习 p、z、x，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-008",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "找到 p 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "pppp pppp pppp pppp pppp pppp pppp",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "找到 z 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "zzzz zzzz zzzz zzzz zzzz zzzz zzzz",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "找到 x 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "xxxx xxxx xxxx xxxx xxxx xxxx xxxx",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "xxx zzx iiz xpzp ii zxi xxx zxi ii xpzp iiz zzx iiz zzx"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "xp ppp pppz pg zpz xp zpz pg pppz ppp pppz ppp xp zpz"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "zzpp xzpp xxzx ppz' zzpp ppz' xxzx xzpp xxzx xzpp zzpp"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "pex zzp ppzx zpp xxdx pz pex pz xxdx zpp ppzx zzp ppzx"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "zzz pp 'zp zzpz ppz zzz ppz zzpz 'zp pp 'zp pp zzz ppz"
+    },
+    {
+      "type": "standard",
+      "text": "输入拼音，按空格选字，提交句子。",
+      "content": "大家都在学习老师说学习是好事",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "输入拼音，按空格选字，提交句子。",
+      "content": "老师下课了大家都在做作业他也在做",
+      "inputMode": "ime"
+    }
+  ]
+}

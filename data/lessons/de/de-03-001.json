@@ -1,0 +1,85 @@
+{
+  "id": "de-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 24,
+  "slug": "de-03-001",
+  "title": "Shift wiederholen",
+  "summary": "Halte Shift gedrückt, tippe den Großbuchstaben und lasse Shift danach los.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Halte Shift gedrückt, tippe den Großbuchstaben und lasse Shift danach los.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-03-001",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "text": "Halte Shift mit dem kleinen Finger der anderen Hand gedrückt, tippe den Großbuchstaben und lasse Shift danach los.",
+      "content": "FFJJ AASS DDGG FJAF JGDS FADG JFSA GDFJ AFDS",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Halte Shift für jeden Großbuchstaben gedrückt und lasse ihn nach dem Tippen wieder los.",
+      "content": "FJGD ASDF GJFA DGSF FJAD SGDF AJGF DSFA FJAF"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle zwischen den Großbuchstaben: Shift halten, Buchstaben tippen, Shift loslassen.",
+      "content": "JAFD SGJF DAFG FJSD GJAF SDGF FJDA AGSF FJAF"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe die Großbuchstaben im ruhigen Rhythmus und halte Shift immer, bis der Buchstabe getippt ist.",
+      "content": "FDJS AGJF DASG FJDG GSFA DJFG AFJS GDFA FJAF"
+    }
+  ]
+}

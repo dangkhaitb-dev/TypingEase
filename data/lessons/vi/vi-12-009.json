@@ -1,0 +1,53 @@
+{
+  "id": "vi-12-009",
+  "unit": "u12",
+  "group": "g3",
+  "order": 169,
+  "slug": "vi-12-009",
+  "title": "Hướng dẫn và bước tiếp theo",
+  "summary": "Xây dựng năng lực \"Instructions and Next-Action Updates\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 4 màn hình nhập tài liệu hướng dẫn công việc kèm danh sách việc cần làm ngay.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 20,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Instructions and Next-Action Updates\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 4 màn hình nhập tài liệu hướng dẫn công việc kèm danh sách việc cần làm ngay.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ quy trình kiểm soát chất lượng theo từng bước, mỗi bước một dòng.",
+      "content": "QUY TRÌNH KIỂM SOÁT CHẤT LƯỢNG\nBước 1: Kiểm tra độ ẩm và tình trạng bao bì của từng lô hàng.\nBước 2: Đối chiếu dư lượng hóa chất với tiêu chuẩn của nước nhập khẩu.\nBước 3: Lập biên bản, niêm phong lô đạt yêu cầu và báo cáo lô cần xử lý.",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ công văn nội bộ có căn cứ, yêu cầu và thời hạn, giữ đúng cách xuống dòng.",
+      "content": "CÔNG VĂN NỘI BỘ, Hướng dẫn hành động tiếp theo\nCăn cứ kết quả kiểm kê quý này, Giám đốc yêu cầu các đơn vị thực hiện ngay các việc sau.\nMột, hoàn thiện quy trình nhập xuất trên phần mềm trước ngày mười lăm tháng này.\nHai, báo cáo rủi ro thiếu hàng theo mẫu đính kèm và gửi về văn phòng điều hành.\nBa, cần cử đầu mối liên lạc ca đêm để xử lý sự cố hệ thống trong vòng ba mươi phút.",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ tài liệu hướng dẫn phần mềm theo từng bước, mỗi bước một dòng.",
+      "content": "TÀI LIỆU HƯỚNG DẪN: Phần mềm quản lý kho thông minh\nBước 1: Mở ứng dụng trên thiết bị di động chuyên dụng và đăng nhập bằng tài khoản kho.\nBước 2: Quét mã vạch trên bao bì sản phẩm rồi đối chiếu tên hàng hiện trên màn hình.\nBước 3: Nhập số lượng thực tế, chọn vị trí kệ, rồi bấm Xác nhận nhập kho.\nBước 4: In phiếu nhập và lưu mã phiếu vào nhật ký ca trước khi chuyển pallet.",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ danh sách việc cần làm, mỗi việc có bộ phận phụ trách và thời hạn.",
+      "content": "DANH SÁCH HÀNH ĐỘNG: Tuần tới\n1) Phòng công nghệ thông tin: vá lỗi đồng bộ tồn kho trước thứ Tư 17:00.\n2) Phòng kho: đối chiếu tồn thực tế với hệ thống ở ba kệ ưu tiên và gửi ảnh biên bản.\n3) Phòng mua hàng: xác nhận đơn bổ sung thiếu hàng và cập nhật ngày về dự kiến.\n4) Điều phối ca: phổ biến danh sách này trong họp sáng thứ Hai và đánh dấu hoàn thành trên bảng chung.",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    }
+  ]
+}

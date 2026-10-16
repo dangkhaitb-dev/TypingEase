@@ -1,0 +1,50 @@
+{
+  "id": "zh-tw-03-jump",
+  "unit": "u3",
+  "group": "g2",
+  "order": 34,
+  "slug": "zh-tw-03-jump",
+  "title": "快速進行",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "提交中文後，按 Shift 加逗號鍵輸入「，」、Shift 加句號鍵輸入「。」，按 ' 鍵輸入「、」。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-03-jump",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "提交中文後，按 Shift 加逗號鍵輸入「，」、Shift 加句號鍵輸入「。」，按 ' 鍵輸入「、」。",
+      "content": "下課後，我們去操場跑步、打球和聊天。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "全形：；？！都要按 Shift：分別加 ; ' / 1 鍵。完成選字後再加入標點。",
+      "content": "我負責買菜；你煮飯，晚餐就能準時開動。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "按 [ ] 輸入「」，Shift 加 [ ] 輸入『』，Shift 加 9 0 輸入（）。「」在外層，『』在內層。",
+      "content": "哥哥問：「你說的『明天』是星期六嗎？」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先提交中文再切英數；按 Shift 輸入半形符號，再切回中文。換行前先提交候選字。",
+      "content": "訂單編號：019\n備註：下午4點在校門口取貨。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

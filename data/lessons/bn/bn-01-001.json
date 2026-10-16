@@ -1,0 +1,65 @@
+{
+  "id": "bn-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "bn-01-001",
+  "title": "কী অনুশীলন · ব ক স্পেস",
+  "summary": "Introduce committed targets   অ আ ই; review none. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets   অ আ ই; review none. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-01-001",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "ব টাইপ করতে বাঁ হাতের তর্জনী দিয়ে F কী চাপুন।",
+      "content": "ব বব ববব বব ব ববব বব ব বব ববব বব ববব ব"
+    },
+    {
+      "type": "standard",
+      "text": "ক টাইপ করতে ডান হাতের তর্জনী দিয়ে J কী চাপুন।",
+      "content": "ক কক ককক কক ক ককক কক ক কক ককক কক ককক ক"
+    },
+    {
+      "type": "standard",
+      "text": "স্পেস বার বুড়ো আঙুল দিয়ে চাপুন। প্রতিটি অক্ষরগুচ্ছের পরে একবার স্পেস দিন।",
+      "content": "বক কব ববক কবক বব কক বকব কবব বক কব ববক কক"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "কক ববব ককবক বককক ববক ককব বকক কবব বব বককব বববব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "কককক ববব কবক বব কবকব বককক কক ককক ববকব বববব ককবক কককব বকব বকবক কব বক"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ককব বকক বকবব বক বববব কক বকবক কববব ককবক কববক বব বকব বককব ববব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ববব বকব বববক বব ববকব বক কককব বককব ককবক বককক ববক বকক ববকক কক ককব কব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "বকব ববক ককবক কববক কব কবকক বককক কক কবব বক ববব কবক বব কককক"
+    }
+  ]
+}

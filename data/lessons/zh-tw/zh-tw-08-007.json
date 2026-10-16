@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-007",
+  "unit": "u8",
+  "group": "g1",
+  "order": 79,
+  "slug": "zh-tw-08-007",
+  "title": "安排一天的時間",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-007",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "暑假開始後，我常常一整天都在滑手機，到了晚上才發現什麼事都沒做。於是我拿出一張紙，把一天分成上午、下午和晚上三個時段，在每個時段寫下一件想完成的事情。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "上午頭腦最清楚，我安排自己讀一個小時的書，再寫半小時的日記。下午天氣熱，我就待在家裡練吉他，或者幫忙做家事。傍晚比較涼快時，我會出門跑步三十分鐘，順便到市場買菜。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "晚上吃完飯後，我才給自己一個小時看影片或和朋友聊天，然後在十一點以前上床睡覺。照著這個安排過了兩個星期，我讀完了兩本書，跑步也越來越輕鬆。原來時間只要好好分配，其實比想像中還多。",
+      "inputMode": "ime"
+    }
+  ]
+}

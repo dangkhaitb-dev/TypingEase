@@ -40,7 +40,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -56,8 +55,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<",
     "#",
     "|",
@@ -96,7 +93,7 @@
       "type": "block",
       "newKey": "'",
       "text": "D'abord l'apostrophe sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "'' ' l'autre jusqu'à n'est\n'' ' n'est l'eau l'autre\n'' ' qu'il l'école l'année"
+      "content": "'' ' s'il d'abord n'est\n'' ' n'est l'eau l'autre\n'' ' n'est l'école l'année"
     },
     {
       "type": "burst",
@@ -104,27 +101,27 @@
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
         "qu'il",
-        "l'année",
-        "qu'elle",
-        "jusqu'à",
-        "n'est",
+        "l'autre",
         "d'abord",
+        "n'est",
+        "l'année",
         "c'est",
         "n'a",
         "d'accord",
-        "l'eau"
+        "l'eau",
+        "j'ai"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "s'il s'il qu'on j'ai\njusqu'à l'année jusqu'à qu'elle\nj'ai jusqu'à qu'elle d'accord"
+      "content": "j'ai qu'on j'ai d'abord\nl'autre d'abord qu'elle d'accord\nd'abord qu'elle d'accord qu'il"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "qu'il rêve d'abord se c'est\nl'eau goûts l'autre motif qu'on\nl'année îles n'est selle s'il"
+      "content": "c'est proposer d'accord les qu'elle\nd'accord ouvrir s'il j'ai l'année\nn'a dur l'autre souvent qu'elle"
     }
   ]
 }

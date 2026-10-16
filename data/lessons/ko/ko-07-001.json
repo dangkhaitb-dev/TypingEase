@@ -1,0 +1,43 @@
+{
+  "id": "ko-07-001",
+  "unit": "u7",
+  "group": "g1",
+  "order": 89,
+  "slug": "ko-07-001",
+  "title": "핵심을 정리해 전하기",
+  "summary": "배운 내용과 회의 자료의 핵심을 간결한 문장으로 정리합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "배운 내용과 회의 자료의 핵심을 간결한 문장으로 정리합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-07-001",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "긴 회의가 끝나면 결정된 내용과 아직 정하지 못한 내용을 먼저 나누어 적습니다. 그러면 정리가 빨라집니다. 작은 메모로 시작해요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "전할 내용은 세 문장 안으로 줄여 봅니다. 무엇을 정했는지, 누가 맡는지, 언제까지인지를 먼저 씁니다. 나머지는 아래에 덧붙입니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "보내기 전에 처음 읽는 사람의 입장에서 다시 읽어 봅니다. 핵심이 첫 줄에 보이면 그대로 보냅니다. 어색하면 한 번 더 고칩니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

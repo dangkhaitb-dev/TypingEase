@@ -1,0 +1,108 @@
+{
+  "id": "de-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 27,
+  "slug": "de-03-004",
+  "title": "Großbuchstaben G H I",
+  "summary": "Lerne die neuen Tasten G, H, I und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten G, H, I und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-03-004",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Halte Shift mit dem kleinen Finger der rechten Hand gedrückt und tippe g: So entsteht G. Lasse danach Shift los.",
+      "content": "GGG GG GGGG GG GG GG GG GG",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Halte Shift mit dem kleinen Finger der linken Hand gedrückt und tippe h: So entsteht H. Lasse danach Shift los.",
+      "content": "HH HHHH HHH HH HH HH HH HH",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Halte Shift mit dem kleinen Finger der linken Hand gedrückt und tippe i: So entsteht I. Lasse danach Shift los.",
+      "content": "III IIII II II II II II II",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "IGG GG HH GGGH IIHH GG1I GGI GGG HIH HHG GGHH II GH I11I"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "HGGH IG IIH HHII IIHG GGII GG HHG II GHHl lI HIH IIG IGHI"
+    }
+  ]
+}

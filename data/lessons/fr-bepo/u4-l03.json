@@ -4,10 +4,9 @@
   "group": "symbols",
   "order": 30,
   "slug": "symbols-3",
-  "title": "! et ?",
-  "summary": "Au programme : ! et ?.",
+  "title": "?",
+  "summary": "Au programme : ?.",
   "newKeys": [
-    "!",
     "?"
   ],
   "keysSoFar": [
@@ -27,7 +26,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -74,6 +72,7 @@
     "#",
     "°",
     ";",
+    "ê",
     ":",
     "!",
     "?"
@@ -81,22 +80,9 @@
   "minAccuracy": 80,
   "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Des touches que le cours n'a pas encore utilisées : ! et ?. Chacune se fait avec Maj et une touche que tes doigts connaissent déjà — Maj à l'auriculaire de l'autre main.",
-  "congrats": "! et ? : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "intro": "Des touches que le cours n'a pas encore utilisées : ?. Chacune se fait avec Maj et une touche que tes doigts connaissent déjà — Maj à l'auriculaire de l'autre main.",
+  "congrats": "? : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
   "screens": [
-    {
-      "type": "intro",
-      "key": "!",
-      "finger": "RI",
-      "text": "C'est l'index droit qui frappe !, avec Maj tenue par l'autre main.",
-      "hint": "Appuie sur ! pour continuer"
-    },
-    {
-      "type": "block",
-      "newKey": "!",
-      "text": "D'abord ! sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "!! ! figures! ensuite! qu'on!\n!! ! roses! vient! bases!\n!! ! devoir! salle! maître!"
-    },
     {
       "type": "intro",
       "key": "?",
@@ -108,35 +94,35 @@
       "type": "block",
       "newKey": "?",
       "text": "D'abord ? sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "?? ? devoir? brûler? dise?\n?? ? qu'on? mort? jures?\n?? ? rose? huile? jolie?"
+      "content": "?? ? huiles? nom? préfère?\n?? ? terme? centre? points?\n?? ? veut? assez? fêtes?"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
-        "monsieur?",
-        "encore!",
-        "voiles?",
-        "bords?",
+        "ancêtre?",
+        "préfère?",
+        "dure?",
+        "jure?",
         "réponse?",
-        "vieux!",
-        "deux?",
-        "termes?",
-        "petit?",
-        "papier?"
+        "centre?",
+        "quand?",
+        "lumière?",
+        "nouveau?",
+        "nos?"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "voile! dessus? précis! tous?\noutil! paroles! vendredi? appels?\nélèves! lettres! brûler! papiers!"
+      "content": "générale? vivre? l'eau? places?\nensuite? la? vite? baisse?\nelles? continue? porte? bateaux?"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "forêt! monsieur telle! journées résultat?\nmime? partie jures! préférer français!\nfour? mon russe? août juillet!"
+      "content": "mil? blanc style? item dos?\njures? célèbre midi? tires arrêts?\npetit? lime messe? dure tes?"
     }
   ]
 }

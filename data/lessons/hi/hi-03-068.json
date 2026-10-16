@@ -1,0 +1,40 @@
+{
+  "id": "hi-03-068",
+  "unit": "u3",
+  "group": "g3",
+  "order": 128,
+  "slug": "hi-03-068",
+  "title": "/",
+  "summary": "/ का सटीक और सहज अभ्यास करें।",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "/ का सटीक और सहज अभ्यास करें।",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "hi",
+    "lesson": "hi-03-068",
+    "revision": "hi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "/ के लिए दाईं AltGr दबाए रखकर नीचे की पंक्ति की / कुंजी दबाएँ (दाएँ हाथ की छोटी उँगली)।",
+      "content": "/ // /// //// / // /// //// / //"
+    },
+    {
+      "type": "standard",
+      "text": "पहले सीखी कुंजियों से सटीकता बनाए रखें।",
+      "content": "// /// //// / // /// //// / // /// //// / // /// ////"
+    },
+    {
+      "type": "standard",
+      "text": "पहले सीखी कुंजियों से सटीकता बनाए रखें।",
+      "content": "/ // /// //// / // /// //// / // /// //// / // /// //// / // /// ////"
+    }
+  ]
+}

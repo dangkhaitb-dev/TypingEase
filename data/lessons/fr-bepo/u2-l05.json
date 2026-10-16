@@ -24,7 +24,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -42,32 +41,32 @@
       "text": "Pour commencer, des mots isolés. Sans se presser : la vitesse vient de la précision, jamais l'inverse.",
       "dictation": "words",
       "type": "standard",
-      "content": "donc sud plutôt était\ncôté n'est personnes tête\nplus telles tel qu'on"
+      "content": "une dures près proposer\nprécise derrière places société\ndevoirs titres tires détail"
     },
     {
       "seconds": 25,
       "text": "Une série courte. Termine la liste même si tu en laisses passer.",
       "type": "burst",
       "tokens": [
-        "content",
-        "dessus",
-        "sûre",
-        "court",
-        "qu'on",
-        "durs",
-        "côte",
-        "devient",
+        "site",
+        "route",
+        "ses",
+        "vote",
+        "précis",
+        "écoles",
+        "russe",
         "soirée",
-        "devoirs",
-        "tel",
-        "place"
+        "autres",
+        "très",
+        "petits",
+        "encore"
       ]
     },
     {
       "text": "Cinq mots par ligne. Laisse les yeux passer devant les doigts.",
       "dictation": "words",
       "type": "standard",
-      "content": "des dur lettre textes un\ndose routes voir outil îles\ndure second taxi dîner prendre"
+      "content": "des rues utile porte sotte\nlistes sort connu qu'elle sur\nnuit autres l'eau plans été"
     },
     {
       "text": "Des motifs à nouveau, pour vérifier que les doigts retournent à la rangée de repos.",
@@ -79,40 +78,40 @@
       "text": "Des mots courts, à bon rythme. Ceux-là devraient presque sortir seuls.",
       "dictation": "words",
       "type": "standard",
-      "content": "vie qu'on élève était\nn'est donc aussi place\nprête coût ta ouvre"
+      "content": "donc été porte autre\ntaxi un par ville\nélève qu'il vertu voir"
     },
     {
       "seconds": 30,
       "text": "Plus de temps et plus de mots. Garde le même rythme du début à la fin.",
       "type": "burst",
       "tokens": [
-        "précise",
-        "portes",
-        "une",
-        "content",
-        "taxi",
-        "explique",
-        "telle",
-        "dîner",
-        "sous",
-        "points",
-        "ouvre",
-        "après",
+        "sa",
+        "l'année",
+        "sud",
+        "dites",
+        "élève",
+        "nouveau",
+        "vitesse",
+        "détails",
+        "dessus",
         "travail",
-        "elle"
+        "texte",
+        "ses",
+        "tu",
+        "courte"
       ]
     },
     {
       "text": "Des phrases entières. C'est là qu'on voit si la main revient toute seule.",
       "dictation": "words",
       "type": "standard",
-      "content": "petite tant rues dernières\nsoirées rêves ouvre précis\nautre ils durs petit"
+      "content": "peu prendre lis dix\nexact espèce ville école\navant il dure plans"
     },
     {
       "text": "La dernière série. Si tu es arrivé jusqu'ici sans regarder le clavier, la leçon est faite.",
       "dictation": "words",
       "type": "standard",
-      "content": "élèves papier était ouvre villes\ncoût petits court qu'il de\nélève envie août accès dont"
+      "content": "quand part proposer ville vin\ns'il peu un idée de\ntant villes l'année pères on"
     }
   ]
 }

@@ -1,0 +1,72 @@
+{
+  "id": "fr-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "fr-01-005",
+  "title": "Q et M",
+  "summary": "Apprenez q, m et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "q",
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Apprenez q, m et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-005",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "Repérez q sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "fffq qfqq qqqq qf fq qqff fff ffqq qq ff qqfq qqq",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Repérez m sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "ffm fmmf ffmm mffm fff mmmm mmm mmmf mm fmm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ff qm ffmm fq mqfm fqm qm fmmf fmf qqm qqf mm fmf mm qqf"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "jm mj qq mmqj mq jm qqm mj qjmq mjmm jq mqqj qq mj jmj jq"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "mmfq mqmq fmf ffm qq mm ffq qfmm fq fmqm qq qm mmf qqfm"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "mjm jqm jj qmqm mq qmq qmqq qmjj mq jjm qjj mj qjj jj mm"
+    }
+  ]
+}

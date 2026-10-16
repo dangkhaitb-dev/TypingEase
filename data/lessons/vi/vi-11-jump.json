@@ -1,0 +1,73 @@
+{
+  "id": "vi-11-jump",
+  "unit": "u11",
+  "group": "g4",
+  "order": 160,
+  "slug": "vi-11-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 51,
+  "inputMode": "telex",
+  "intro": "Giữ sức bền qua đoạn văn liên tục về ca trực thư viện buổi chiều muộn.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ sức bền qua đoạn văn liên tục về ca trực thư viện buổi chiều muộn.",
+      "content": "Ca trực thư viện vào buổi chiều muộn luôn đòi hỏi sự cẩn trọng, nhẫn nại và tinh thần phục vụ tận tâm từ người cán bộ thủ thư. Từng tập sách cũ được độc giả hoàn trả sau giờ đọc phải được kiểm tra kỹ lưỡng hiện trạng trang bìa, quét mã vạch điện tử để cập nhật dữ liệu lưu thông vào hệ thống quản lý tập trung của thư viện. Sau đó, những cuốn sách này được phân loại cẩn thận theo bảng mã phân loại thập phân quốc tế và xếp lên xe đẩy chuyên dụng để vận chuyển về đúng vị trí giá sách ban đầu trong kho lưu trữ rộng lớn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ sức bền qua bản tin tình nguyện tuần này với nhiều câu chuyện dấn thân.",
+      "content": "Bản tin cập nhật hoạt động tình nguyện tuần này mang đến nhiều câu chuyện xúc động về tinh thần dấn thân vì cộng đồng của tuổi trẻ địa phương. Tại các xã vùng sâu vùng xa, các đội hình thanh niên tình nguyện đã hoàn thành việc lắp đặt hệ thống đèn đường năng lượng mặt trời cho hơn ba cây số đường liên thôn, thắp sáng những lối đi tối tăm vốn tiềm ẩn nhiều nguy cơ mất an toàn giao thông vào ban đêm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về khuôn viên thư viện hòa với thiên nhiên.",
+      "content": "Khuôn viên thư viện được thiết kế hòa hợp với cỏ cây hoa lá xung quanh. Ghế đá thấp đặt dưới tán bằng lăng để độc giả đọc ngoài trời khi nắng dịu. Lối đi lát đá tránh làm xói đất sau mưa, đồng thời giữ vẻ mộc mạc của thung lũng. Ban quản lý nhắc khách không bẻ cành và bỏ rác đúng thùng phân loại gần cổng. Độc giả có thể chọn góc đọc ngoài trời hoặc tìm tài liệu trong phòng yên tĩnh. Thủ thư hướng dẫn tra cứu mục lục, ghi mã sách và mượn đúng quy trình để mỗi chuyến ghé thăm thư viện đều thuận tiện.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về mưa dông và sạt lở trên đường mòn.",
+      "content": "Áp thấp nhiệt đới gây mưa dông mạnh kèm gió lốc, làm sạt lở vài đoạn đường mòn trên sườn núi. Đội tiền trạm đánh dấu vùng nguy hiểm bằng dây phản quang và dẫn đoàn đi đường vòng. Máy ảnh hiện trường ghi lại hiện trạng để gửi về trung tâm cứu hộ khu vực. Mọi thành viên được yêu cầu giữ khoảng cách hai mét khi đi qua chỗ đất mềm. Đoàn kiểm tra dự báo mới nhất, gia cố lều và chỉ tiếp tục hành trình khi đường đi an toàn. Trời vẫn mưa.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn thông báo liên tục gắn dự báo thời tiết với lộ trình đoàn khảo sát.",
+      "content": "Đài khí tượng cảnh báo mưa rào rải rác trên các đỉnh núi trong bốn mươi tám giờ tới. Ban chỉ huy đoàn khảo sát địa chất điều chỉnh lộ trình, ưu tiên các đoạn đường đã cứng hóa và có điểm trú tạm. Máy đo hiện trường được bọc túi chống nước, còn nhật ký hành trình ghi rõ giờ xuất phát và giờ dự kiến về trạm. Mọi thành viên kiểm tra đèn pin, bộ đàm và nước uống trước khi xe rời sân tập kết. Người phụ trách kiểm tra bản đồ và bộ đàm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về quy trình phân loại tài liệu cổ trên giá chuyên dụng.",
+      "content": "Quy trình phân loại tài liệu lưu trữ cổ bắt đầu bằng kiểm tra tình trạng giấy và dấu mục lục. Các bản mỏng được đặt trong hộp giấy trung tính trước khi xếp lên giá chuyên dụng theo niên đại. Cán bộ ghi chú nhiệt độ và độ ẩm phòng kho hai lần mỗi ngày vào sổ điện tử. Khi có độc giả đặc biệt, phiếu mượn tại chỗ phải được trưởng ca ký trước khi mở hộp.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về thiết kế cảnh quan lối vào hoa viên.",
+      "content": "Các kỹ sư cảnh quan kết hợp tạo hình cây cảnh truyền thống với đường đi tiếp cận cho xe lăn. Đèn thấp hai bên lối được chỉnh góc để không chói mắt người đi bộ ban đêm. Hệ thống tưới nhỏ giọt chạy theo lịch để giữ độ ẩm mà không làm ướt lối chính. Mỗi tuần, tổ bảo dưỡng ghi nhật ký sâu bệnh và thay chậu héo trước cuối tuần. Nhân viên hướng dẫn khách xếp hàng theo lối riêng, giữ vé sẵn trong tay và nhường đường cho người cần hỗ trợ. Cổng mở đúng giờ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn kế hoạch liên tục về vận động tài trợ điểm trường vùng cao.",
+      "content": "Ban vận động trình bày kế hoạch xây điểm trường nhỏ trên sườn núi cho trẻ em dân tộc thiểu số còn đi học xa. Ngân sách dự kiến gồm phần khung gỗ, tôn lợp và bộ bàn ghế thấp phù hợp học sinh tiểu học. Các mạnh thường quân được mời xem ảnh hiện trạng đường đất đỏ và lịch thi công tránh mùa mưa. Nếu đủ kinh phí trong quý này, lớp học tạm sẽ mở trước kỳ khai giảng để các em không phải nghỉ giữa chừng. Dự toán được duyệt.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "br-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "br-01-010",
+  "title": "U, I, O",
+  "summary": "Aprenda as teclas u, i, o e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "u",
+    "i",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas u, i, o e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-010",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Localize u e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "uuu ufuu uu uufu ff ffuu fu ufu ffu uf uuuu uuf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Localize i e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "iiii ij iijj jii iji iij ii iii",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Localize o e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "foof oo foff ofof off of oooo fooo oof foo ofo",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "ouoo oo ooo ii uooi oouu ou uo udi iio ouoi oii oou iooo id ooio"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "iii fii uui oii oiio uiuu iiof iooi ii uuu oiiu iu if ou uou iuii ouou oo"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "uio uo oiu uu oooo iiu ooo ouo io uiou oii oo ooor uiuu ou oi"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "ri roo touu quq oi iito qtro oo tuu riur qur ioot oq truu iri"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "ooi uoo jui iiju ouoo uii uuio ii uo oiio ooo oooo ou oi uio"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "hoje o sol saiu tarde e ela falou isso a todos"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "ele disse que o outro jogo foi o que ela quis"
+    }
+  ]
+}

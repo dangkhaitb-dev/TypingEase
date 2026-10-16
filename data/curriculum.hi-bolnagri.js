@@ -162,3 +162,44 @@ window.TypingEaseCurriculum = {
     hint: "दोनों तर्जनियाँ उभार वाली कुंजियों पर रखें और जो दिख रहा है उसे कीबोर्ड देखे बिना लिखें।"
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/hi-bolnagri/u1-l01.json?v=6658b1f3528b6d53",
+  "u1-l02": "/data/lessons/hi-bolnagri/u1-l02.json?v=8ca64bc9490d6807",
+  "u1-l03": "/data/lessons/hi-bolnagri/u1-l03.json?v=b8625b21ab4d29b8",
+  "u1-l04": "/data/lessons/hi-bolnagri/u1-l04.json?v=bc015c23a044ecb9",
+  "u1-l05": "/data/lessons/hi-bolnagri/u1-l05.json?v=cd68a42c66a4bbde",
+  "u1-l06": "/data/lessons/hi-bolnagri/u1-l06.json?v=ab66a6e3efad88b1",
+  "u1-l07": "/data/lessons/hi-bolnagri/u1-l07.json?v=ec61a0cda75f0193",
+  "u1-l08": "/data/lessons/hi-bolnagri/u1-l08.json?v=b304ad9288ec7346",
+  "u1-l09": "/data/lessons/hi-bolnagri/u1-l09.json?v=b36743712f5ef529",
+  "u1-l10": "/data/lessons/hi-bolnagri/u1-l10.json?v=a35a37920f91e8c1",
+  "u2-l01": "/data/lessons/hi-bolnagri/u2-l01.json?v=797182edc77e21df",
+  "u2-l02": "/data/lessons/hi-bolnagri/u2-l02.json?v=962c5edeffd6e36e",
+  "u2-l03": "/data/lessons/hi-bolnagri/u2-l03.json?v=a1cf8a4f578bba5c",
+  "u2-l04": "/data/lessons/hi-bolnagri/u2-l04.json?v=37ccb80c98e2c5ec",
+  "u2-l05": "/data/lessons/hi-bolnagri/u2-l05.json?v=bd90e93538c34e5a",
+  "u2-l06": "/data/lessons/hi-bolnagri/u2-l06.json?v=cbfc1c813f2ea5f0",
+  "u2-l07": "/data/lessons/hi-bolnagri/u2-l07.json?v=3c39d09a77766e54",
+  "u2-l08": "/data/lessons/hi-bolnagri/u2-l08.json?v=c622f507a45025ec",
+  "u2-l09": "/data/lessons/hi-bolnagri/u2-l09.json?v=81ff2b94bc81b8a7",
+  "u2-l10": "/data/lessons/hi-bolnagri/u2-l10.json?v=8aacc234e67855fc",
+  "u2-l11": "/data/lessons/hi-bolnagri/u2-l11.json?v=b90551350f2e1ccf",
+  "u3-l01": "/data/lessons/hi-bolnagri/u3-l01.json?v=73ad0370eaeb4864",
+  "u3-l02": "/data/lessons/hi-bolnagri/u3-l02.json?v=74af3a33f55620b1",
+  "u3-l03": "/data/lessons/hi-bolnagri/u3-l03.json?v=ffec317b432159d0",
+  "u3-l04": "/data/lessons/hi-bolnagri/u3-l04.json?v=34e5f7be3e59400a",
+  "u3-l05": "/data/lessons/hi-bolnagri/u3-l05.json?v=16ae50019ae53a2b",
+  "u3-l06": "/data/lessons/hi-bolnagri/u3-l06.json?v=888b934bbda08660",
+  "u4-l01": "/data/lessons/hi-bolnagri/u4-l01.json?v=2fbe57f3b0ca1738",
+  "u4-l02": "/data/lessons/hi-bolnagri/u4-l02.json?v=a3243411184990c3",
+  "u4-l03": "/data/lessons/hi-bolnagri/u4-l03.json?v=f7fbe0a322402fed",
+  "u4-l04": "/data/lessons/hi-bolnagri/u4-l04.json?v=8fb3b7df74f513e5",
+  "u4-l05": "/data/lessons/hi-bolnagri/u4-l05.json?v=15d0b96efff8c9c8",
+  "u4-l06": "/data/lessons/hi-bolnagri/u4-l06.json?v=9096f326db8634ab",
+  "u4-l07": "/data/lessons/hi-bolnagri/u4-l07.json?v=d42f4bb50e094a68",
+  "u4-l08": "/data/lessons/hi-bolnagri/u4-l08.json?v=92bd7fc35d353538",
+  "u4-l09": "/data/lessons/hi-bolnagri/u4-l09.json?v=c5d11ba2ed06b687"
+};
+/* </auto:lesson-urls> */

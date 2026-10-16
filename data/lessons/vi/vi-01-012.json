@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "vi-01-012",
+  "title": "Luyện phím · ư ă đ",
+  "summary": "Học các nguyên âm đúp â, ê và ô; luyện gõ từ vựng tiếng Việt thanh ngang.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Học các nguyên âm đúp â, ê và ô; luyện gõ từ vựng tiếng Việt thanh ngang.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ u w để ra ư. Phím w: ngón áp út trái, hàng trên. Ví dụ: như = n h u w.",
+      "content": "như ưu sư xưa thư mưa ưu dư như hư cư",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ a w để ra ă. Phím w: ngón áp út trái, hàng trên. Ví dụ: căn = c a w n.",
+      "content": "căn ăn khăn căn năm tăm lăm văn xăm năm răm văn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ d hai lần (d d) để ra đ. Ví dụ: đi, đâu, đơn.",
+      "content": "đưa đơn đôi đu đo đi đêm đo đi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ư, ă, đ. Nhớ: ư = u w, ă = a w, đ = d d.",
+      "content": "khoa mương du đem thưa năng căn giao thưa che đưa bơ dư cư mương đo trân",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ư, ă, đ. Nhớ: ư = u w, ă = a w, đ = d d.",
+      "content": "chăm đo lương rưng rương chăn trưng thơm in đem găng thân",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ư, ă, đ.",
+      "content": "tre đa đôi tan đang cư khoai huy bưu ưu trăng găng giai phi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ư, ă, đ.",
+      "content": "thư thương đem đun gô gương xây bay va veo duyên răng hai",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ư, ă, đ mà không nhìn bàn phím.",
+      "content": "sô tư đăng dê văn sương sư đâu như đơ trưng khăn yên đeo",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "pl-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "pl-01-001",
+  "title": "Klawisze f, j i spacja",
+  "summary": "Poznaj klawisze f, j i spację i ćwicz je razem.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze f, j i spację i ćwicz je razem.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-001",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Ćwiczenie klawisza: f.",
+      "content": "ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Ćwiczenie klawisza: j.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Naciskaj spację kciukiem, aby oddzielić grupy liter.",
+      "content": "f j fj jf fj jf fj jf fj jf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "jjj fffj ff fff jffj jf jjj jfjj jj fff jjjj jf fff jfff f"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "jff jfjj jj jff jffj jj jfj jjjf jf jff jjff jj jff fjjf fj jfj fjff ff fff"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "fjf ffff fj jjj fjjf ff jfj jfjf jj jjj ffff jf ffj fjff ff jfj fj"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "jff jjfj jj jff jfjf fj jjj fjjj jj jfj jfjf ff fff fjfj jf fjf fjfj"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    }
+  ]
+}

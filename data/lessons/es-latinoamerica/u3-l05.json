@@ -54,7 +54,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}"
   ],
@@ -68,57 +67,57 @@
       "text": "Sigue leyendo por delante de lo que escribes. Si te paras a mirar, pierdes más tiempo que corrigiendo.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Necesito comprar papel y dos libros.\nMi madre trabaja en el centro de la ciudad.\nEl tren llega a las siete de la mañana."
+      "content": "Cada persona tiene su propio ritmo.\nEl tren llega a las siete de la mañana.\nEl niño lee un libro en la sala."
     },
     {
       "text": "Sigue leyendo por delante de lo que escribes. Si te paras a mirar, pierdes más tiempo que corrigiendo.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "No tengo tiempo para ese viaje.\nVamos a caminar por el parque esta tarde.\nEl libro que busco no está en la mesa."
+      "content": "La ciudad cambia mucho durante el verano.\nEl gato duerme sobre la mesa de madera.\nLa ventana de mi cuarto da a la calle."
     },
     {
       "text": "Sigue leyendo por delante de lo que escribes. Si te paras a mirar, pierdes más tiempo que corrigiendo.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "La ciudad cambia mucho durante el verano.\nEl gato duerme sobre la mesa de madera.\nEl tiempo pasa rápido cuando trabajas bien."
+      "content": "Ella escribe cartas a sus amigos.\nMi madre trabaja en el centro de la ciudad.\nQuiero aprender a escribir sin mirar el teclado."
     },
     {
       "text": "Sigue leyendo por delante de lo que escribes. Si te paras a mirar, pierdes más tiempo que corrigiendo.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "La ventana de mi cuarto da a la calle.\nLos niños juegan en el jardín de la escuela.\nElla escribe cartas a sus amigos."
+      "content": "Mi padre prepara la comida los domingos.\nNecesito comprar papel y dos libros.\nLa casa nueva tiene una puerta verde."
     },
     {
       "text": "Sigue leyendo por delante de lo que escribes. Si te paras a mirar, pierdes más tiempo que corrigiendo.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "El niño lee un libro en la sala.\nQuiero aprender a escribir sin mirar el teclado.\nLa casa nueva tiene una puerta verde."
+      "content": "Hace mucho calor en el mes de agosto.\nNo tengo tiempo para ese viaje.\nVamos a caminar por el parque esta tarde."
     },
     {
       "text": "Sigue leyendo por delante de lo que escribes. Si te paras a mirar, pierdes más tiempo que corrigiendo.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Cada persona tiene su propio ritmo.\nTodos los días camino hasta la plaza.\nMi padre prepara la comida los domingos."
+      "content": "Mi madre trabaja en el centro de la ciudad.\nNecesito comprar papel y dos libros.\nMi padre prepara la comida los domingos."
     },
     {
       "seconds": 30,
       "text": "Una última ráfaga larga para terminar.",
       "type": "burst",
       "tokens": [
-        "qué",
-        "hombres",
-        "hijo",
-        "dudas",
-        "engaño",
-        "cielos",
-        "hijas",
-        "por",
-        "oro",
-        "comienza",
-        "ciencia",
-        "largo",
-        "están",
-        "toros"
+        "casas",
+        "ojo",
+        "pueblos",
+        "pero",
+        "personas",
+        "centro",
+        "nombre",
+        "traes",
+        "medios",
+        "papeles",
+        "vez",
+        "espera",
+        "altura",
+        "añade"
       ]
     }
   ]

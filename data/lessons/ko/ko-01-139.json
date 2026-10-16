@@ -1,0 +1,43 @@
+{
+  "id": "ko-01-139",
+  "unit": "u1",
+  "group": "g1",
+  "order": 40,
+  "slug": "ko-01-139",
+  "title": "받침과 낱말 복습 6",
+  "summary": "받침이 있는 낱말이 들어간 문장을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "받침이 있는 낱말이 들어간 문장을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-139",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "베란다 옷걸이에 비에 젖은 옷을 걸어 말려요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "밤늦게까지 읽던 책을 덮고 방의 불을 꺼요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "가족과 함께 맛있는 저녁을 준비해요",
+      "inputMode": "hangul"
+    }
+  ]
+}

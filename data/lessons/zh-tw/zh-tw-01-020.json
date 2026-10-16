@@ -1,0 +1,55 @@
+{
+  "id": "zh-tw-01-020",
+  "unit": "u1",
+  "group": "g1",
+  "order": 15,
+  "slug": "zh-tw-01-020",
+  "title": "注音輸入、選字與提交",
+  "summary": "Narrow committed-output lesson: 學",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 學",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-020",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "輸入讀音，選擇正確候選字，再確認提交。",
+      "content": "我們今天在學校見面",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "輸入讀音，選擇正確候選字，再確認提交。",
+      "content": "今天晚上我在家整理書桌和書架",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "輸入讀音，選擇正確候選字，再確認提交。",
+      "content": "哥哥帶著筆記和課本到學校上課",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "輸入讀音，選擇正確候選字，再確認提交。",
+      "content": "雨停以後我們一起到巷口買早餐",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "輸入讀音，選擇正確候選字，再確認提交。",
+      "content": "弟弟每天早上起床後都喝一杯熱牛奶",
+      "inputMode": "ime"
+    }
+  ]
+}

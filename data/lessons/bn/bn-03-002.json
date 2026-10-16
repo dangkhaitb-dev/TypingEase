@@ -1,0 +1,40 @@
+{
+  "id": "bn-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 47,
+  "slug": "bn-03-002",
+  "title": "কী অনুশীলন · ।",
+  "summary": "Introduce committed targets , ?; review 0 1 2 3 4 5 6 7 8 9 ।. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets , ?; review 0 1 2 3 4 5 6 7 8 9 ।. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-03-002",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "। টাইপ করতে শিফট চেপে ধরে বাঁ হাতের তর্জনী দিয়ে G কী চাপুন (হসন্তের কী)।",
+      "content": "ক।ব ।ব ।ব ক।ব ।ব ।ব ক।ব ।ব ।ব ক।ব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "।ব কক। বক ।।ব ।ক। ববক। কক ।। ববব ব।।। বব ।।।ব ।।।"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ককব ।।। ববব ।।ব ।ব। ব।বক কক।ব ।ববক ব।। ব।ক ।।ক ।ব।। ।ব ।। ককব। বব বববব"
+    }
+  ]
+}

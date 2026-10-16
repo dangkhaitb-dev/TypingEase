@@ -27,7 +27,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -68,7 +67,7 @@
       "text": "Des mots avec une majuscule au début, comme les noms propres.",
       "dictation": "words",
       "type": "standard",
-      "content": "avoir ils jusqu'à gels\ndoses dures l'autre mises\nensuite déjà modes théâtre"
+      "content": "ouvrir il soirées demis\nsujets rue journées mime\nune deux terme système"
     },
     {
       "type": "intro",
@@ -95,25 +94,25 @@
       "text": "Une série pour fixer ce que fait cette leçon.",
       "type": "burst",
       "tokens": [
-        "vins",
-        "qu'il",
-        "mes",
-        "part",
-        "tant",
-        "sûre",
-        "gels",
-        "salles",
-        "contre",
-        "item",
-        "mettre",
-        "dures"
+        "année",
+        "elle",
+        "sont",
+        "te",
+        "courte",
+        "moments",
+        "plan",
+        "outils",
+        "contes",
+        "grand",
+        "geste",
+        "russe"
       ]
     },
     {
       "text": "Cinq par ligne, avec l'auriculaire qui travaille dans les deux sens.",
       "dictation": "words",
       "type": "standard",
-      "content": "décembre a suites réponse après\nsoleil centres un dernières sujets\npremier donc par salle modèle"
+      "content": "pères vote russe textes tables\nmois noms morte belle lettres\nma nom somme ville prendre"
     },
     {
       "text": "Pour finir, des phrases entières. Maj, lettre, relâche — sans s'arrêter pour y penser.",

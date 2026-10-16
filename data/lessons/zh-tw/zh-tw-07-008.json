@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-008",
+  "unit": "u7",
+  "group": "g1",
+  "order": 69,
+  "slug": "zh-tw-07-008",
+  "title": "說明工作交接",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-008",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "主管說：「小陳下週調到新部門，他的工作由你接手。」下午，小陳把資料一份一份交給我，說：「這是客戶名單，這是本月的訂單紀錄，有不清楚的地方隨時問我。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "他接著說明每天的流程：「早上先確認新訂單，中午前把出貨單交給倉庫，下午再回覆客戶的問題。」我一邊聽一邊做筆記，把重要的步驟用紅筆標出來，免得之後忘記。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "最後，他打開電腦，示範怎麼使用公司的訂單系統。我試著操作一次，卻忘了存檔。他提醒我：「每次改完資料，一定要先存檔再關掉。」交接完成後，我把筆記整理好，貼在桌上方便查看。",
+      "inputMode": "ime"
+    }
+  ]
+}

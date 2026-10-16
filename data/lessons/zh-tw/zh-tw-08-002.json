@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-002",
+  "unit": "u8",
+  "group": "g1",
+  "order": 74,
+  "slug": "zh-tw-08-002",
+  "title": "午休前的安排",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-002",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "上午的課結束後，我先把課本收進抽屜，再去洗手準備吃午餐。今天的便當是媽媽做的，有青菜、滷蛋和一塊雞腿。吃飯時，我和同學聊著下午的體育課要比什麼。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "吃完午餐，我把便當盒洗乾淨，順便把桌面擦一擦。離午休還有十分鐘，我利用這段時間複習早上的英文單字，把不熟的字寫在小卡片上，下課時可以再拿出來看。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "午休鐘聲響起，教室的燈關了，大家趴在桌上休息。我閉上眼睛，想起下午要交的作業已經放在書包裡，就安心多了。短短二十分鐘的午睡，讓我下午上課更有精神，也不容易打瞌睡。",
+      "inputMode": "ime"
+    }
+  ]
+}

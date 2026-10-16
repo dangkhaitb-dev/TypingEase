@@ -1,0 +1,110 @@
+{
+  "id": "de-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 19,
+  "slug": "de-02-003",
+  "title": "Ziffern 4 5 6",
+  "summary": "Lerne die neuen Tasten 4, 5, 6 und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten 4, 5, 6 und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-02-003",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Taste üben: 4.",
+      "content": "44 444 4444 44 44 44 44 44",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Taste üben: 5.",
+      "content": "5555 55 555 55 55 55 55 55",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Taste üben: 6.",
+      "content": "666 66 6666 66 66 66 66 66",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "46 ll 666 646 554 5564 6655 6546 4544 66 l54 44 ll66 4444 5565 556"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "5554 jj6 44 445 6666 4456 56 6454 554 66 6446 565 444"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "4ß 665 4444 56 6455 4ß5 46 545 66 65 6654 464 55 45 444 5545 4455"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "l4l4 654 ßl66 l6l4 ßj 4j j5 4ß ß6l5 j64 4ßß l6jj"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "6544 6456 5554 445 555 465 45 444 4455 65 446a 55"
+    }
+  ]
+}

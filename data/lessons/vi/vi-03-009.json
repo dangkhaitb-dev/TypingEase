@@ -1,0 +1,55 @@
+{
+  "id": "vi-03-009",
+  "unit": "u3",
+  "group": "g1",
+  "order": 46,
+  "slug": "vi-03-009",
+  "title": "Luyện phím · U V Ư",
+  "summary": "Gõ chữ hoa U, V, Ư bằng Shift và luyện các từ viết hoa.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Gõ chữ hoa U, V, Ư bằng Shift và luyện các từ viết hoa.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ u (ngón trỏ phải) để ra U. Giữ Shift bằng ngón út của tay kia.",
+      "content": "U Út Uông Bí Út Uyên U Uyên U Út Uyên U Út U",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ v (ngón trỏ trái) để ra V. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Vừa Việt Vài Vừa Vì Về Và Vào Vinh Việt Vì",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ u, rồi gõ w để ra Ư (Shift + u, w). Phím w: ngón áp út trái, hàng trên.",
+      "content": "Ước Ư Ước Ừ Ước Ừ Ưu Ừ Ước Ư Ừ Ước Ưu Ư Ưu Ừ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý U, V, Ư. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Vườn Tài Ưu Vườn lá Út Việt hãy Vòng Vinh Ưu Vừa Uyên Út Ước Lòng Vài",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có U, V, Ư mà không nhìn bàn phím.",
+      "content": "vào bộ Thợ Với Mặt Việc Ừ Tiền đất Nấu màu Uông Bí giúp",
+      "inputMode": "telex"
+    }
+  ]
+}

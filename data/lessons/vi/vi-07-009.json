@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-009",
+  "unit": "u7",
+  "group": "g3",
+  "order": 104,
+  "slug": "vi-07-009",
+  "title": "Hội thoại dấu câu dày",
+  "summary": "Xây dựng năng lực \"Punctuation-Dense Dialogue\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Hội thoại chứa mật độ dấu câu dày đặc (ngoặc kép, chấm phẩy, chấm than, hỏi chấm), thử thách phản xạ gõ ký hiệu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Punctuation-Dense Dialogue\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Hội thoại chứa mật độ dấu câu dày đặc (ngoặc kép, chấm phẩy, chấm than, hỏi chấm), thử thách phản xạ gõ ký hiệu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Làm quen chủ đề qua hội thoại có dấu câu dày đặc.",
+      "content": "Hội thoại có dấu câu dày đặc: - Bạn đã kiểm tra mã số thuế của khách hàng chưa? - Rồi chứ! Tôi đã đối chiếu trên cổng thông tin quốc gia: doanh nghiệp đang hoạt động bình thường, không có nợ đọng thuế môn bài hay thuế thu nhập.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đối thoại tuyển dụng nhân sự cấp cao.",
+      "content": "Đối thoại tuyển dụng nhân sự cấp cao: - Xin bạn hãy giới thiệu thế mạnh nổi bật nhất của mình trong công việc? - Tôi có ba năm kinh nghiệm quản trị hệ thống cơ sở dữ liệu lớn; thế mạnh lớn nhất là xử lý sự cố nhanh chóng dưới áp lực cao! - Nếu gặp bất đồng quan điểm kỹ thuật với đồng nghiệp, bạn giải quyết ra sao? - Tôi sẽ lắng nghe, đối chiếu dữ liệu rồi cùng nhóm tìm cách.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn cuộc trao đổi chuyên môn về an ninh mạng.",
+      "content": "Cuộc trao đổi chuyên môn về an ninh mạng: - Cảnh báo: phát hiện lưu lượng truy cập bất thường từ địa chỉ mạng lạ! - Hãy cô lập ngay máy chủ đó; đồng thời kích hoạt tường lửa cấp hai! - Đã xong! Hệ thống đã chặn toàn bộ các kết nối đáng ngờ và gửi cảnh báo đỏ đến điện thoại của trưởng bộ phận an ninh thông tin. Người đối thoại nhắc lại dữ kiện, hỏi rõ mốc thời gian và chốt câu trả lời bằng giọng bình tĩnh.",
+      "inputMode": "telex"
+    }
+  ]
+}

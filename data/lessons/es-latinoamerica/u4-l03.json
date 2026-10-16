@@ -59,7 +59,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}",
     "|",
@@ -92,7 +91,7 @@
       "type": "block",
       "newKey": "/",
       "text": "Primero /, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "// / un/alas quedar/según campos/mas\n// / siempre/zapato tiempos/comer fuertes/trece\n// / alturas/plazas trabajo/bueno cañas/salas"
+      "content": "// / seguro/ala come/cambiar poco/conoce\n// / mano/buena pocas/momentos figura/centros\n// / siete/hombre todas/pueden noche/salas"
     },
     {
       "type": "intro",
@@ -105,7 +104,7 @@
       "type": "block",
       "newKey": "(",
       "text": "Primero (, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "(( ( (fuerte (luces (mano\n(( ( (trabajos (sola (hijas\n(( ( (oeste (texto (filas"
+      "content": "(( ( (humilde (blanca (sueños\n(( ( (otro (llevar (ideas\n(( ( (grupos (campos (idea"
     },
     {
       "type": "intro",
@@ -118,7 +117,7 @@
       "type": "block",
       "newKey": ")",
       "text": "Primero ), sin nada alrededor, y después donde de verdad se usa.",
-      "content": ")) ) (ciudad) (ojo) (bueno)\n)) ) (última) (ella) (plazas)\n)) ) (grupos) (pueden) (único)"
+      "content": ")) ) (ojo) (hijos) (pueden)\n)) ) (recibir) (el) (hombres)\n)) ) (traer) (verdades) (recibe)"
     },
     {
       "type": "intro",
@@ -140,26 +139,26 @@
       "tokens": [
         "64=42",
         "9=32",
-        "(páginas)",
-        "(lo)",
-        "(jugar)",
-        "(épocas)",
-        "lo/toro",
-        "exacta/tierra",
-        "(idea)",
-        "(mismas)"
+        "(paz)",
+        "(juguetes)",
+        "(seguir)",
+        "(voces)",
+        "juguete/juegos",
+        "espera/jugar",
+        "(esa)",
+        "(corto)"
       ]
     },
     {
       "type": "block",
       "text": "Todo lo de esta lección, mezclado.",
-      "content": "(uñas) (saber) zona/iguales salada/última\n84 = 88 largas/números 35=45 89=43\ndije/sede (máquinas) (paz) (sola)"
+      "content": "(ideales) (precios) buenos/lugar asada/recibir\n84 = 88 otras/extraño 35=45 89=43\nfila/hielos (razones) (blanco) (llevar)"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Otra vez palabras, con los signos en su sitio.",
-      "content": "67 = 79 viene (aquella) grande (espera)\n(juegas) llegada (ángulo) empezar (destaca)\n(única) vale gente/seda explica (ese)"
+      "content": "67 = 79 como (para) duda (pero)\n(guardar) aires (cabezas) beber (juguete)\n(escribir) mismas usar/hielo tiempos (les)"
     }
   ]
 }

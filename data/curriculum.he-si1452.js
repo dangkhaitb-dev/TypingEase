@@ -68,13 +68,13 @@ window.TypingEaseCurriculum = {
       id: 'u4',
       index: 4,
       title: "כל שאר המקשים",
-      summary: "17 התווים של המקלדת הזו שהקורס עוד לא השתמש בהם, כל אחד במקום שבו כותבים אותו באמת.",
+      summary: "21 התווים של המקלדת הזו שהקורס עוד לא השתמש בהם, כל אחד במקום שבו כותבים אותו באמת.",
       minAccuracy: 80,
       locked: true,
       unlockAfter: 'u3-l06',
       groups: [
-        { id: 'symbols', title: "המקשים שנשארו", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05'] },
-        { id: 'finish', title: "סיום היחידה", lessons: ['u4-l06', 'u4-l07'] }
+        { id: 'symbols', title: "המקשים שנשארו", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05', 'u4-l06'] },
+        { id: 'finish', title: "סיום היחידה", lessons: ['u4-l07', 'u4-l08'] }
       ]
     }
   ],
@@ -111,9 +111,10 @@ window.TypingEaseCurriculum = {
     'u4-l02': { title: "#, $, % ו־^", newKeys: ["#","$","%","^"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l03': { title: "&, *, ) ו־(", newKeys: ["&","*",")","("], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l04': { title: "_ ו־+", newKeys: ["_","+"], screens: 7, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l05': { title: "}, { ו־|", newKeys: ["}","{","|"], screens: 9, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l06': { title: "כל הסימנים יחד", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
-    'u4-l07': { title: "מבחן יחידה 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
+    'u4-l05': { title: "}, {, | ו־מירכאות", newKeys: ["}","{","|","\""], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l06': { title: ">, < ו־סימן שאלה", newKeys: [">","<","?"], screens: 9, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l07': { title: "כל הסימנים יחד", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
+    'u4-l08': { title: "מבחן יחידה 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
   },
 
   sequence: [
@@ -150,7 +151,8 @@ window.TypingEaseCurriculum = {
     'u4-l04',
     'u4-l05',
     'u4-l06',
-    'u4-l07'
+    'u4-l07',
+    'u4-l08'
   ],
 
   starter: {
@@ -160,3 +162,43 @@ window.TypingEaseCurriculum = {
     hint: "הניחו את האצבעות המורות על שני המקשים המסומנים והקלידו את מה שאתם רואים, בלי להסתכל על המקלדת."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/he-si1452/u1-l01.json?v=74ed13d43e34f9b0",
+  "u1-l02": "/data/lessons/he-si1452/u1-l02.json?v=d5f0781e35194cd6",
+  "u1-l03": "/data/lessons/he-si1452/u1-l03.json?v=f8719da62ac16d3f",
+  "u1-l04": "/data/lessons/he-si1452/u1-l04.json?v=7554d8c100a32562",
+  "u1-l05": "/data/lessons/he-si1452/u1-l05.json?v=79cffacfcd468edd",
+  "u1-l06": "/data/lessons/he-si1452/u1-l06.json?v=facc826c68216c5b",
+  "u1-l07": "/data/lessons/he-si1452/u1-l07.json?v=45c52e35a3763ecd",
+  "u1-l08": "/data/lessons/he-si1452/u1-l08.json?v=4f569522e220b6dc",
+  "u1-l09": "/data/lessons/he-si1452/u1-l09.json?v=371c90e329c0f5eb",
+  "u1-l10": "/data/lessons/he-si1452/u1-l10.json?v=d87f76afae0652b7",
+  "u2-l01": "/data/lessons/he-si1452/u2-l01.json?v=1d1135c4c612989f",
+  "u2-l02": "/data/lessons/he-si1452/u2-l02.json?v=e26443bd58cbdc2b",
+  "u2-l03": "/data/lessons/he-si1452/u2-l03.json?v=3cc4fbfd31072375",
+  "u2-l04": "/data/lessons/he-si1452/u2-l04.json?v=6a68364cf7ffd59d",
+  "u2-l05": "/data/lessons/he-si1452/u2-l05.json?v=ce7a945da2704a54",
+  "u2-l06": "/data/lessons/he-si1452/u2-l06.json?v=568d43c01aa85260",
+  "u2-l07": "/data/lessons/he-si1452/u2-l07.json?v=bd5cd46124184756",
+  "u2-l08": "/data/lessons/he-si1452/u2-l08.json?v=42024db8a824d650",
+  "u2-l09": "/data/lessons/he-si1452/u2-l09.json?v=1fe84638039eace7",
+  "u2-l10": "/data/lessons/he-si1452/u2-l10.json?v=c9523ed73115d73c",
+  "u2-l11": "/data/lessons/he-si1452/u2-l11.json?v=4329cfba6f766bcb",
+  "u3-l01": "/data/lessons/he-si1452/u3-l01.json?v=5c3ed0ca1847b708",
+  "u3-l02": "/data/lessons/he-si1452/u3-l02.json?v=e83f1f7baf030f01",
+  "u3-l03": "/data/lessons/he-si1452/u3-l03.json?v=704651ab00ab523f",
+  "u3-l04": "/data/lessons/he-si1452/u3-l04.json?v=9df62e29ddd81f73",
+  "u3-l05": "/data/lessons/he-si1452/u3-l05.json?v=c88c991f25b55998",
+  "u3-l06": "/data/lessons/he-si1452/u3-l06.json?v=c3fbfae8074e1e6f",
+  "u4-l01": "/data/lessons/he-si1452/u4-l01.json?v=f95b58cc461623f9",
+  "u4-l02": "/data/lessons/he-si1452/u4-l02.json?v=430502cd4f676467",
+  "u4-l03": "/data/lessons/he-si1452/u4-l03.json?v=569c902e90807aa3",
+  "u4-l04": "/data/lessons/he-si1452/u4-l04.json?v=b501485304321216",
+  "u4-l05": "/data/lessons/he-si1452/u4-l05.json?v=a6612392305c5661",
+  "u4-l06": "/data/lessons/he-si1452/u4-l06.json?v=754ee8440e957b4f",
+  "u4-l07": "/data/lessons/he-si1452/u4-l07.json?v=e913f36682d61bb4",
+  "u4-l08": "/data/lessons/he-si1452/u4-l08.json?v=aea259055dd92bb7"
+};
+/* </auto:lesson-urls> */

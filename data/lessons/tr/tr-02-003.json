@@ -1,0 +1,115 @@
+{
+  "id": "tr-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 16,
+  "slug": "tr-02-003",
+  "title": "Rakamlar 4 5 6",
+  "summary": "4, 5, 6 tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "4, 5, 6 tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-02-003",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Tuş alıştırması: 4.",
+      "content": "444 4444 44 44 44 44 44 44",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Tuş alıştırması: 5.",
+      "content": "555 55 5555 55 55 55 55 55",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Tuş alıştırması: 6.",
+      "content": "666 66 6666 66 66 66 66 66",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "4454 5654 66 4444 446j j645 46 445 556 45 44 6646 444 6645 55 666 665 6554"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "66 555 56 44 ll55 54 664 545 6645 445 565 446 46 4l6 5556 556 55"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "üü56 665 65 4ü5 666 554 4566 6466 445 4466 664 55 6465"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "66 646 64 555 mm45 4455 664 56 4456 6664 656 6544 55 554 5556 5m5 4544"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "665 44 555 5454 55 6o 546 oo6 54 654 666 66 46 664 6645 5555 oo"
+    }
+  ]
+}

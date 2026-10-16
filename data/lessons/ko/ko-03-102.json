@@ -1,0 +1,51 @@
+{
+  "id": "ko-03-102",
+  "unit": "u3",
+  "group": "g1",
+  "order": 47,
+  "slug": "ko-03-102",
+  "title": "기본 문장부호 . · , · -",
+  "summary": "점·쉼표·붙임표의 위치를 한 키씩 익힙니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "점·쉼표·붙임표의 위치를 한 키씩 익힙니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-03-102",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "... ... .. ... .. ... .. ... ... ..."
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": ",,, ,,, ,, ,,, ,, ,,, ,, ,,, ,,, ,,,"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "--- --- -- --- -- --- -- --- --- ---"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": ",, ,8., ..-. ,,. ., ,, ., ,,. ..-. ,8., ..-. ,8., ,, .,"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "..-. -.,- ,- --, ,,., .,- ,,ㅜ ..-. ,,ㅜ .,- ,,., --, ,-",
+      "inputMode": "hangul"
+    }
+  ]
+}

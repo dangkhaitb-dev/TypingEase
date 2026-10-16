@@ -1,0 +1,52 @@
+{
+  "id": "ko-03-112",
+  "unit": "u3",
+  "group": "g1",
+  "order": 53,
+  "slug": "ko-03-112",
+  "title": "기호 | · < · >",
+  "summary": "기호 | · < · >를 정확하게 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "기호 | · < · >를 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-03-112",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 \\ 키를 눌러 |를 입력합니다.",
+      "content": "|| |1 1| || || || 1| |1 1| |1 || ||"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 , 키를 눌러 <를 입력합니다.",
+      "content": "<< <1 1< << << << 1< <1 1< <1 << <<"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 . 키를 눌러 >를 입력합니다.",
+      "content": ">> >1 1> >> >> >> 1> >1 1> >1 >> >>"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "메모장에 이름|번호를 한 줄로 나란히 적어요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "번호|점수 표에서 8>6과 3<7을 다시 확인해요",
+      "inputMode": "hangul"
+    }
+  ]
+}

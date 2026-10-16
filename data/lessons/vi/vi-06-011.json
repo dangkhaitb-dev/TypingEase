@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-011",
+  "unit": "u6",
+  "group": "g3",
+  "order": 93,
+  "slug": "vi-06-011",
+  "title": "Tiến độ kèm số liệu",
+  "summary": "Xây dựng năng lực \"Progress With Facts\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Báo cáo tiến độ chi tiết kết hợp tỷ lệ hoàn thành, số lượng đã làm và việc còn tồn đọng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Progress With Facts\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Báo cáo tiến độ chi tiết kết hợp tỷ lệ hoàn thành, số lượng đã làm và việc còn tồn đọng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua thống kê tình hình tuyển dụng và đào tạo nhân sự sáu tháng đầu năm.",
+      "content": "Báo cáo tuyển dụng sáu tháng đầu năm: công ty nhận hơn năm trăm hồ sơ, tổ chức ba mươi vòng phỏng vấn và tuyển hai mươi tư nhân sự cho phòng kỹ thuật và kinh doanh.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Mở đầu có dẫn dắt cùng báo cáo tiến độ quý hai kèm số liệu cụ thể.",
+      "content": "Báo cáo tiến độ quý hai kèm số liệu cụ thể: bộ phận bán hàng đã ký kết thành công bốn mươi lăm hợp đồng thương mại lớn, đạt tổng doanh thu hơn mười hai tỷ đồng và tăng trưởng hai mươi phần trăm so với cùng kỳ năm trước.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua báo cáo tổng kết chiến dịch tiếp thị mùa hè kèm số liệu đối soát.",
+      "content": "Báo cáo tổng kết chiến dịch tiếp thị mùa hè kèm số liệu đối soát: sau bốn tuần triển khai liên tục trên các nền tảng số, chiến dịch đã tiếp cận được hơn hai triệu lượt người xem quan tâm.",
+      "inputMode": "telex"
+    }
+  ]
+}

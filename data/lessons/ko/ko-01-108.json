@@ -1,0 +1,85 @@
+{
+  "id": "ko-01-108",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "ko-01-108",
+  "title": "모음 ㅔ · ㅕ · ㅗ",
+  "summary": "모음 ㅔ·ㅕ·ㅗ를 한 키씩 익히고 리듬을 만듭니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "hangul",
+  "intro": "모음 ㅔ·ㅕ·ㅗ를 한 키씩 익히고 리듬을 만듭니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-108",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅔㅔㅔ ㅔㅔㅔ ㅔㅔ ㅔㅔㅔ ㅔㅔ ㅔㅔㅔ ㅔㅔ ㅔㅔㅔ ㅔㅔㅔ ㅔㅔㅔ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅕㅕㅕ ㅕㅕㅕ ㅕㅕ ㅕㅕㅕ ㅕㅕ ㅕㅕㅕ ㅕㅕ ㅕㅕㅕ ㅕㅕㅕ ㅕㅕㅕ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅗㅗㅗ ㅗㅗㅗ ㅗㅗ ㅗㅗㅗ ㅗㅗ ㅗㅗㅗ ㅗㅗ ㅗㅗㅗ ㅗㅗㅗ ㅗㅗㅗ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅕㅕㅕㅔ ㅔㅕㅕㅗ ㄹㄹ ㅔ ㅕㅔㅕ ㅕㅕㅔㅗ ㅕㅗㅗ ㅕㅕㅕㅔ ㅕㅗㅗ ㅕㅕㅔㅗ ㅕㅔㅕ ㅔ ㄹㄹ ㅔㅕㅕㅗ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅔㅗㅔ ㅕㅔㅗ ㅐㅐㅕㅔ ㅔㅔㅕㅕ ㅔㅔㅔㅕ ㅔㅗㅔ ㅔㅔㅔㅕ ㅔㅔㅕㅕ ㅐㅐㅕㅔ ㅕㅔㅗ ㅐㅐㅕㅔ ㅕㅔㅗ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅔㅗㅔㅗ ㅔㅔㅌ ㅕㅗㅔ ㅌㅌ ㅗㅔㅗㅔ ㅔㅔ ㅔㅗㅔㅗ ㅔㅔ ㅗㅔㅗㅔ ㅌㅌ ㅕㅗㅔ ㅔㅔㅌ ㅕㅗㅔ ㅔㅔㅌ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅕㅕㄷ ㅕ ㅗㅗㅔㅗ ㅗㅔㄹ ㅔ ㅔㅔㅕㅕ ㅔㅔ ㅗㅗㅔ ㅗㅗㅕ ㅕㅕㄷ ㅗㅗㅕ ㅗㅗㅔ ㅔㅔ ㅔㅔㅕㅕ ㅔ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅕㅕ ㅔㅕㅕㅔ ㅔㅗ ㅕㅕㅔㅗ ㅗ ㅐㄴ ㅔ ㅔㅔㅔㅕ ㅔㅔ ㅕㅕ ㅔㅔ ㅔㅔㅔㅕ ㅔ ㅐㄴ ㅗ ㅕㅕㅔㅗ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로만 만든 진짜 낱말을 입력해 보세요.",
+      "content": "고래 노래 오다 보다 세다 모레 여자 여행 번호",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로만 만든 짧은 문장을 입력해 보세요.",
+      "content": "고래가 바다에 간다 새가 바다로 날아간다",
+      "inputMode": "hangul"
+    }
+  ]
+}

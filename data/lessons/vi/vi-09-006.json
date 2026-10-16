@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-006",
+  "unit": "u9",
+  "group": "g2",
+  "order": 129,
+  "slug": "vi-09-006",
+  "title": "Chuỗi cụm từ nối tiếp",
+  "summary": "Xây dựng năng lực \"Consecutive Phrases\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Rèn luyện khả năng duy trì tốc độ cao khi gõ một chuỗi gồm nhiều cụm từ nối tiếp nhau.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Consecutive Phrases\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Rèn luyện khả năng duy trì tốc độ cao khi gõ một chuỗi gồm nhiều cụm từ nối tiếp nhau.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi cụm từ quản trị: mục tiêu rõ ràng, kế hoạch chi tiết, hành động quyết liệt.",
+      "content": "mục tiêu rõ ràng kế hoạch chi tiết hành động quyết liệt đánh giá thường xuyên cải tiến liên tục phối hợp đồng bộ phản hồi kịp thời hoàn thiện sản phẩm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về việc giữ tập trung qua chuỗi cụm từ nối tiếp.",
+      "content": "Chuỗi cụm từ liên tiếp đòi hỏi người học phải duy trì trạng thái tập trung liên tục mà không được lơ là dù chỉ một giây. Việc kết nối mượt mà giữa cụm từ này với cụm từ tiếp theo thông qua phím Space là kỹ năng then chốt giúp xây dựng phản xạ đánh máy tốc độ cao trong môi trường làm việc chuyên nghiệp. Chuỗi ý nối tiếp cần được giữ rõ bằng khoảng cách, dấu câu và một nhịp gõ đều.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ về lập kế hoạch và theo dõi tiến độ.",
+      "content": "xác định mục tiêu cụ thể lập kế hoạch hành động phân công trách nhiệm rõ ràng theo dõi tiến độ chặt chẽ báo cáo kết quả kịp thời và rút ra bài học kinh nghiệm sâu sắc. Người học nối các cụm theo thứ tự, giữ khoảng nghỉ ngắn và chuyển sang ý kế tiếp thật liền mạch: giao việc, kiểm tra mốc, chỉnh hạn, rồi chốt báo cáo cuối tuần. Chuỗi ý nối tiếp được giữ rõ bằng khoảng cách và dấu phẩy, không dán lại cụm đã gõ.",
+      "inputMode": "telex"
+    }
+  ]
+}

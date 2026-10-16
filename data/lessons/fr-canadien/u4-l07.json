@@ -38,7 +38,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -54,8 +53,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<",
     "#",
     "|",
@@ -87,32 +84,32 @@
       "type": "standard",
       "dictation": "words",
       "text": "Les signes au même rythme que les lettres qui les entourent.",
-      "content": "24 + 41 tes \"devient\" belles sorte:\n7 + 24 ancêtre \"ski\" père #43\n'russe' bientôt #4 dessus #67"
+      "content": "24 + 41 heures \"sont\" personne mot:\n7 + 24 était \"mimes\" prix #43\n'musiques' entrée #4 rigide #67"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Garde le rythme à travers les signes ; ce sont des touches comme les autres.",
-      "content": "$36 lime voile|jamais lutte #50\ntristes! bas 'sujet' blanc complet/cours\ncôtés! dernière (coût) ski «théâtre»"
+      "content": "$36 sel contes|devenir dites #50\ntirs! plans 'titre' personne belles/mort\nsoirée! salle (résultat) mise «écoles»"
     },
     {
       "type": "burst",
       "seconds": 30,
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
-        "«où»",
-        "<histoire>",
-        "(soi)",
-        "(mondes)",
+        "«autre»",
+        "<roses>",
+        "(liste)",
+        "(motif)",
         "32%",
         "$32",
-        "site|gestes",
+        "jus|tire",
         "76+74",
-        "\"rêve\"",
-        "<huiles>",
+        "\"kiwis\"",
+        "<sur>",
         "#53",
-        "système:",
-        "(mesure)",
+        "besoin:",
+        "(guides)",
         "53%"
       ]
     },
@@ -120,19 +117,19 @@
       "type": "standard",
       "dictation": "words",
       "text": "Garde le rythme à travers les signes ; ce sont des touches comme les autres.",
-      "content": "(fort) si 42% prêt novembre/systèmes\n<lettre> année tel & textes huit 'prendre'\n'rôles' connue «tir» besoins 14%"
+      "content": "(mots) je 42% ou centre/besoins\n<dit> portes tu & assez luge 'vieux'\n'décider' sommes «dessus» parole 14%"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Garde le rythme à travers les signes ; ce sont des touches comme les autres.",
-      "content": "je? motifs <des> grise (paroles)\n(élèves) connue 'tous' entrée (centres)\n*telle* grands avoir|si vivre *conte*"
+      "content": "ses? joli <des> huile (vertu)\n(propose) sommes 'gestes' beau (lourde)\n*te* devient vient|je monde *forte*"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Garde le rythme à travers les signes ; ce sont des touches comme les autres.",
-      "content": "\"somme\" devenir lumières & mille terme <la>\n'vendredi' papiers où|quand bateaux 82%\nmodèles! toi (contre) dures lourde_nuit"
+      "content": "\"modes\" cent quant & dise utiles <centres>\n'centres' vote autres|pas grands 82%\nexplique! liste (groupe) glisse dose_toujours"
     }
   ]
 }

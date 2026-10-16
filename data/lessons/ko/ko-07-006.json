@@ -1,0 +1,43 @@
+{
+  "id": "ko-07-006",
+  "unit": "u7",
+  "group": "g1",
+  "order": 94,
+  "slug": "ko-07-006",
+  "title": "동네 공간을 소개해요",
+  "summary": "장소의 특징과 이용 방법을 이어서 설명합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "장소의 특징과 이용 방법을 이어서 설명합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-07-006",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "우리 동네에는 오래된 우체국을 고쳐 만든 작은 마을 도서관이 있습니다. 높은 천장과 커다란 창문이 그대로 남아 있어서 실내가 아주 밝습니다. 입구에는 오래된 우체통도 있어요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "일층에는 어린이 책이 모여 있고 이층에는 조용히 공부할 수 있는 책상이 놓여 있습니다. 창가 자리는 오후 햇빛이 좋아서 늘 인기가 많습니다. 물과 차는 일층에서 마실 수 있어요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "주말마다 동네 주민이 직접 진행하는 그림책 읽기 모임도 열립니다. 누구나 무료로 참여할 수 있으니 시간이 되시면 아이와 함께 들러 보세요. 월요일은 쉬는 날이니 참고해 주세요.",
+      "inputMode": "hangul"
+    }
+  ]
+}

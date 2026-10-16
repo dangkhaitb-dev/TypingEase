@@ -1,0 +1,108 @@
+{
+  "id": "de-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "de-01-010",
+  "title": "Tasten b, n, m",
+  "summary": "Lerne die neuen Tasten b, n, m und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "b",
+    "n",
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten b, n, m und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-010",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Taste üben: b.",
+      "content": "bbbb bbbb bbbb bbbb bbbb bbbb bbbb bbbb bbbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Taste üben: n.",
+      "content": "nnnn nnnn nnnn nnnn nnnn nnnn nnnn nnnn nnn",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Taste üben: m.",
+      "content": "mmmm mmmm mmmm mmmm mmmm mmmm mmmm mmmm mm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "mmkn bk hnnh mn hhm hn nmk nmhk km mhh hbb hk bm"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "mnbn nnnn bm mmm nm mn mkm bmb nnm mm bb nn mnnb bnm mmb nnn nnmm"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "hb nmbm bmkh mb mmm bm nnn kmk hmb kh nkk bmn nhh"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "kkm mmm bbm nb nnnm mbkb nk nhn bn bm khkk nnb hhn"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "ich bin heute mit dir da und wir sind nun hier"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "wenn du nicht kommst bin ich allein dort und warte"
+    }
+  ]
+}

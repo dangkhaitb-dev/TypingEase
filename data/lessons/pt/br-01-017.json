@@ -1,0 +1,84 @@
+{
+  "id": "br-01-017",
+  "unit": "u1",
+  "group": "g1",
+  "order": 19,
+  "slug": "br-01-017",
+  "title": "Tecla morta: circunflexo",
+  "summary": "Pratique a tecla morta do circunflexo com as vogais â, ê, ô que você já aprendeu.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Pratique a tecla morta do circunflexo com as vogais â, ê, ô que você já aprendeu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-017",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Aperte Shift + a tecla ~ (à direita do Ç), solte e aperte a barra de espaço: aparece ^.",
+      "content": "^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^ ^"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte Shift + a tecla ~ (à direita do Ç), solte e depois aperte a vogal: aparece a vogal com circunflexo.",
+      "content": "âê ââêê êâ êââê êêâ êâ âêâ êêâê êâ êê êââ êê"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte Shift + a tecla ~ (à direita do Ç) e depois uma vogal: â, ê, ô.",
+      "content": "êââô âêâê âêêâ ôôêô êâ âôâê ôôê êââ âôâ ôôêô ôê ôêê ôê"
+    },
+    {
+      "type": "standard",
+      "text": "Alterne vogais com acento e vogais simples.",
+      "content": "êâ êâê âêeâ ââê êê ôêô êôôô aêâo âo êâa ââôê ôâ êoeâ aê êê aââ"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "o avô viu você jogar tênis com o bebê na praia"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "você pôs o ônibus em cena no mês passado na escola"
+    }
+  ]
+}

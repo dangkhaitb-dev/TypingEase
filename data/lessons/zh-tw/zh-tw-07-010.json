@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-010",
+  "unit": "u7",
+  "group": "g1",
+  "order": 71,
+  "slug": "zh-tw-07-010",
+  "title": "把事情說清楚",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-010",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "早上我傳訊息給同學：「明天見。」結果她以為是在學校見面，我卻在車站等了半小時。後來我們才發現，原來是我沒有把地點說清楚。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "這次之後，我約人時都會寫清楚時間、地點和要帶的東西，例如：「明天早上九點，在火車站大廳的服務台前面見，記得帶身分證。」這樣對方一看就懂，不必再問。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "老師也說：「把事情說清楚，是尊重別人的時間。」如果是重要的事，最好請對方回覆確認，例如回一句「收到，明天見」。說話和寫訊息時多想一下，就能少掉很多誤會。",
+      "inputMode": "ime"
+    }
+  ]
+}

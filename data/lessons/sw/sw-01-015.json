@@ -1,0 +1,74 @@
+{
+  "id": "sw-01-015",
+  "unit": "u1",
+  "group": "g1",
+  "order": 14,
+  "slug": "sw-01-015",
+  "title": "Marudio ya maneno na jozi",
+  "summary": "Kutofautisha th, dh na gh na kurudia jozi na herufi zote za C01.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kutofautisha th, dh na gh na kurudia jozi na herufi zote za C01.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-015",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Andika maneno haya; ch, sh na ny ni herufi mbili kila moja.",
+      "content": "chakula chai shamba shule nyama nyumba nyanya mchele"
+    },
+    {
+      "type": "standard",
+      "text": "Andika sentensi hii; angalia ch, sh na ny.",
+      "content": "shangazi alipika nyama na wali kisha tukanywa chai pamoja"
+    },
+    {
+      "type": "standard",
+      "text": "Andika maneno haya; th, dh na gh ni herufi mbili kila moja.",
+      "content": "theluji dhidi ghaibu thabiti dhana ghali"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "thamani ghali dhahabu shule chumba chakula nyanya shamba"
+    }
+  ]
+}

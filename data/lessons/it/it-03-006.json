@@ -1,0 +1,111 @@
+{
+  "id": "it-03-006",
+  "unit": "u3",
+  "group": "g1",
+  "order": 29,
+  "slug": "it-03-006",
+  "title": "Maiuscole: J, K, L",
+  "summary": "Impara i tasti J, K, L e usali con i tasti già studiati.",
+  "newKeys": [
+    "J",
+    "K",
+    "L"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti J, K, L e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-03-006",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "J",
+      "text": "Tieni premuto Maiusc e premi j per scrivere J. Poi torna alla posizione di base.",
+      "content": "JJJ JJ ff ffJJ fJ JJJf fJJf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "K",
+      "text": "Tieni premuto Maiusc e premi k per scrivere K. Poi torna alla posizione di base.",
+      "content": "jjK jKjK jj KKj jKK KjjK KK KKK KKKK",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "L",
+      "text": "Tieni premuto Maiusc e premi l per scrivere L. Poi torna alla posizione di base.",
+      "content": "LLL LLff Lf LLLL ffLL LL ffL",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "JLLL LJL JJL LLa JLL JLJ JJ LJJ LLKL LLL aa KJaJ LJLK LL"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "LLLL LJvJ JLL vKLK JKLK LLK LLJK vLJ JJK LKK LJK JJL KKKJ LLJ JJ"
+    }
+  ]
+}

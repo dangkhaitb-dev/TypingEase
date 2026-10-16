@@ -1,0 +1,79 @@
+{
+  "id": "it-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "it-01-001",
+  "title": "F e J e la barra spaziatrice",
+  "summary": "Impara f e j con gli indici e la barra spaziatrice con il pollice.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Impara f e j con gli indici e la barra spaziatrice con il pollice.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-001",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Trova f e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ffff ffff ffff ffff ffff ffff ffff ffff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Trova j e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Premi la barra spaziatrice con il pollice tra i gruppi di lettere, poi torna alla posizione di base.",
+      "content": "j f j f j f j f j f j f j f j f j f j f j f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Scrivi ogni gruppo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "fjfj jf jjfj jf fjfj jfjf jfjjf fjfj fff fff ffjj"
+    },
+    {
+      "type": "standard",
+      "text": "Mantieni un ritmo costante e torna alla posizione di base tra i gruppi.",
+      "content": "jffj jfjj jjjf jj fjjjf fff jfff ffjj jfjj ffjjf jjjj ff fjf"
+    },
+    {
+      "type": "standard",
+      "text": "Scrivi ogni gruppo con calma e senza guardare la tastiera.",
+      "content": "ffjj fjj jjf jjjjjf ff ffj jjjff fff ffjfj fjjf ffjff fffjf"
+    },
+    {
+      "type": "standard",
+      "text": "Scrivi ogni gruppo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "jjjj jjfj jf fjjj fjf ffj fffj jff fff jfjfj ffj"
+    },
+    {
+      "type": "standard",
+      "text": "Mantieni un ritmo costante e torna alla posizione di base tra i gruppi.",
+      "content": "ffjj ffjff jjf fj ffj jjjj jf jf jjfff jffjj fjjf"
+    }
+  ]
+}

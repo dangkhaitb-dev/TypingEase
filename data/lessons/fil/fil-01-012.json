@@ -1,0 +1,113 @@
+{
+  "id": "fil-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "fil-01-012",
+  "title": "Mga titik: v, b, n",
+  "summary": "Mga titik: v, b, n. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Mga titik: v, b, n. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-012",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "vfv vvff vvf vvfv vvv vv vvvv ffv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "bb fbbb ffbb ffb fbb bbfb ff bbf bbbb bbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "fnfn ff fnn ffn nnn nnnn nnfn nn nnf nfnf ffnn",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "vnbb vbbf jb bj fnf nvbj ff bvfv vbbf vbvv bjj vfj ffb"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fnbb njj fbv jfvv vjnb jjnj nf jnv jj bfvn fbj bjjn bv"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "nv bn vn bn ffn jnff jvj vjn bj vbnj vfbb vvnn vnnn vbf"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "vn bvnn jfj vnfv fbb njvn nbj jb jvv vfnn ffnv fb bf vn"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "bbj jb fvnv jbf ff bf vf nvnb bnn bfb nvjn bff bfj vjfb"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "ang bata ay nasa bahay at ang nanay ay sa kusina"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "bukas bibili ang nanay ng kanin sa bayan"
+    }
+  ]
+}

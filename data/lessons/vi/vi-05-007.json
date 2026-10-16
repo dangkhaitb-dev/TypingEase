@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-007",
+  "unit": "u5",
+  "group": "g2",
+  "order": 76,
+  "slug": "vi-05-007",
+  "title": "Mở đầu và diễn biến",
+  "summary": "Cấu trúc bài văn rõ ràng gồm đoạn mở đầu và diễn biến, tăng tải âm tiết và thử thách duy trì nhịp gõ qua nhiều câu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Cấu trúc bài văn rõ ràng gồm đoạn mở đầu và diễn biến, tăng tải âm tiết và thử thách duy trì nhịp gõ qua nhiều câu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Diễn biến ngày đầu hội chợ với lượng du khách đông đảo đổ về tham quan.",
+      "content": "Ngay từ lúc lễ khai mạc vừa kết thúc, từng đoàn khách tham quan đã đổ về các lối đi dẫn vào hội chợ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn phát triển đầy đủ từ lễ khai mạc đến các hoạt động nhộn nhịp trong hội chợ.",
+      "content": "Hội chợ năm nay có quy mô lớn với sự tham gia của hơn năm mươi đơn vị nông nghiệp trong vùng. Minh và các bạn tại gian hàng số mười hai đã chuẩn bị sẵn sàng các tờ giới thiệu nguồn gốc từng sản phẩm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Khai mạc tuần lễ hội chợ cảng biển với nhiều hoạt động giao thương sôi nổi.",
+      "content": "Tuần lễ hội chợ thương mại bến cảng chính thức khai mạc vào sáng nay. Hàng trăm gian hàng được trang trí rực rỡ sắc màu dọc theo quảng trường trung tâm.",
+      "inputMode": "telex"
+    }
+  ]
+}

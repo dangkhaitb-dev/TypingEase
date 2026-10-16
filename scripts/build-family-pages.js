@@ -36,12 +36,15 @@ const rel = file => path.relative(ROOT, file).split(path.sep).join('/');
 let drift = 0, written = 0;
 function emit(file, text) {
   const current = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;
-  if (current === text) return;
+  if (unstamped(current) === unstamped(text)) return;
   if (CHECK) { drift += 1; console.error(`LỆCH  ${rel(file)}`); return; }
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, text);
   written += 1;
 }
+
+// Phần do scripts/stamp-data.mjs viết (`?v=` trên thẻ chỉ mục) không phải đầu ra của script này.
+const unstamped = text => (text == null ? text : text.replace(/(data\/curriculum\.[a-z0-9-]+\.js)\?v=[a-f0-9]+/g, '$1'));
 
 function replaceOnce(text, from, to, where) {
   const count = text.split(from).length - 1;
@@ -60,8 +63,11 @@ function playerPage(entry, base, family) {
   html = replaceOnce(html, `<link rel="canonical" href="${SITE}${base.href}" />`,
     `<link rel="canonical" href="${SITE}${family.href}" />`, where);
   html = replaceOnce(html, `href="${base.roadmap}" id="pt-back"`, `href="${family.roadmap}" id="pt-back"`, where);
-  html = replaceOnce(html, `<script src="/data/curriculum.${base.id}.js"></script>`,
-    `<script src="/data/curriculum.${family.id}.js"></script>`, where);
+  // Thẻ chỉ mục của trang gốc mang mã băm `?v=…` (scripts/stamp-data.mjs): bản sao trỏ sang chỉ
+  // mục của họ này, chưa băm — chạy stamp-data.mjs sau khi ghi.
+  const baseIndex = new RegExp(`<script src="/data/curriculum\\.${base.id.replace(/-/g, '\\-')}\\.js(?:\\?v=[a-f0-9]+)?"></script>`);
+  if (!baseIndex.test(html)) throw new Error(`${where}: không thấy thẻ <script> của data/curriculum.${base.id}.js trong trang gốc`);
+  html = html.replace(baseIndex, `<script src="/data/curriculum.${family.id}.js"></script>`);
   // Dấu vết: ai mở file này để sửa phải biết nó bị ghi đè ở lần chạy sau.
   html = html.replace('<head>\n', `<head>\n    <!-- SINH TỰ ĐỘNG bằng scripts/build-family-pages.js từ ${rel(fileFor(base.href))}. Sửa trang gốc rồi chạy lại. -->\n`);
   return html;
@@ -80,7 +86,7 @@ for (const entry of LANGUAGES) {
       { cwd: ROOT, encoding: 'utf8' });
     if (run.status !== 0) throw new Error(`generate.mjs --course ${family.id}: ${run.stderr}`);
     const after = fs.readFileSync(out, 'utf8');
-    if (before !== after) {
+    if (unstamped(before) !== unstamped(after)) {
       if (CHECK) {
         drift += 1;
         console.error(`LỆCH  ${rel(out)}`);

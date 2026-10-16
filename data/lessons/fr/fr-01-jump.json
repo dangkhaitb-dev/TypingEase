@@ -1,0 +1,99 @@
+{
+  "id": "fr-01-jump",
+  "unit": "u1",
+  "group": "g4",
+  "order": 22,
+  "slug": "fr-01-jump",
+  "title": "Sauter en avant",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Tapez chaque groupe calmement, puis revenez aux repères avant le suivant.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-jump",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tapez chaque groupe calmement, puis revenez aux repères avant le suivant.",
+      "content": "jfj fjfj jjfj jjff jjfff ffjfj jfff jjf fff jffjj jjjff fj"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "mjm jqm jj qmqm mq qmq qmqq qmjj mq jjm qjj mj qjj jj mm"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ftf yrtr fytr rr ftt ftt rty yyt ft rfy frff fttf fyrr"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "xc fccc wf xf xx fc xwcx xxcw wfx fcxx fc ccwx ww wxf fw"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ffff çç ççé fnf èèç ffé ff èèèf çççè ççéf ççfè éé éfèé"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "Mon frère passe à la gare pour acheter un gâteau"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "La fête de Noël réunit les frères et les amis"
+    },
+    {
+      "type": "standard",
+      "text": "Tape chaque mot avec soin, uniquement avec les touches que tu connais déjà.",
+      "content": "le garçon ouvre la boîte à Noël et mange du maïs mûr"
+    }
+  ]
+}

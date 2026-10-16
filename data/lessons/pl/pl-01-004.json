@@ -1,0 +1,90 @@
+{
+  "id": "pl-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "pl-01-004",
+  "title": "Klawisze g, h, k",
+  "summary": "Poznaj klawisze g, h, k i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "g",
+    "h",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze g, h, k i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-004",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Ćwiczenie klawisza: g.",
+      "content": "gggg gggg gggg gggg gggg gggg gggg gggg gggg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Ćwiczenie klawisza: h.",
+      "content": "hhhh hhhh hhhh hhhh hhhh hhhh hhhh h",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Ćwiczenie klawisza: k.",
+      "content": "kkkk kkkk kkkk kkkk kkkk kkkk kkkk kkkk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "hghg gg hhkg hhgh ggg gh hgf kgkh hhg hh kh kkh gkgg kkg khhh kkhk hf"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "kkhg gg hh kk jh hhhg kkk hhkg khkh kkj gh ghgh ggkg gkg hkg kkh ggg"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "kkh kgk khkg hggk gkk gg ghkh gdhk gdkg kg gh khgk gk hggh khkk kgh"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "kkkk kkh gkhh hhkk hhgk hgk hhhk ggsk ggkk gshg hk hhk hkk gkk kk hgkh"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "gk kg hhhk gg ggkk hhh hhg hj kkh jjk kkk kk hhhh hhkk kkkg ggg hh"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "jak kajak kask jaka kasa jajka daj sad jad ha as"
+    }
+  ]
+}

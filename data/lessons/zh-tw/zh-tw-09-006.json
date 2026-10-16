@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-09-006",
+  "unit": "u9",
+  "group": "g1",
+  "order": 89,
+  "slug": "zh-tw-09-006",
+  "title": "寫信分享近況",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-09-006",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "親愛的小美：\n好久沒有寫信給妳了，最近好嗎？我上個月搬到新的公寓，離公司只要走路十分鐘，每天早上都可以多睡半小時。新家雖然不大，但是陽光很好，我在陽台種了幾盆香草。\n小芳",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "親愛的小美：\n上次妳說想學做麵包，我最近也開始學了。第一次做的麵包又硬又扁，第二次總算比較像樣。週末如果妳有空，歡迎來我家，我們可以一起試試新的食譜，再一起喝個下午茶。妳最近工作忙嗎？記得多休息，別太累了。期待妳的回信。\n小芳",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "親愛的小美：\n收到妳寄來的明信片，真的很開心！照片裡的海好藍，看得出來妳的旅行很愉快。我這邊一切都好，工作雖然忙，同事們都很照顧我。下個月我會回老家一趟，到時候再約妳出來吃飯，好好聊一聊。也幫我向妳的家人問好。\n祝妳平安\n小芳",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

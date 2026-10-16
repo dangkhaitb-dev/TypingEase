@@ -1,0 +1,79 @@
+{
+  "id": "fr-01-022",
+  "unit": "u1",
+  "group": "g3",
+  "order": 21,
+  "slug": "fr-01-022",
+  "title": "Révision des lettres et des accents",
+  "summary": "Reliez les mots et les phrases avec toutes les touches déjà apprises.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Reliez les mots et les phrases avec toutes les touches déjà apprises.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-022",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le vent froid du matin agite les arbres près de la rivière"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le pêcheur prépare son bateau et quitte le port à midi"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "la fête commence à midi et le dîner est prêt pour tous"
+    },
+    {
+      "type": "standard",
+      "text": "Tape chaque mot avec soin, uniquement avec les touches que tu connais déjà.",
+      "content": "le garçon ouvre la boîte à Noël et mange du maïs mûr"
+    }
+  ]
+}

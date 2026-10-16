@@ -1,0 +1,107 @@
+{
+  "id": "fr-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 29,
+  "slug": "fr-03-001",
+  "title": "Majuscules : A, E, I",
+  "summary": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+  "newKeys": [
+    "A",
+    "E",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "E",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-03-001",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "A",
+      "text": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+      "content": "fff AA AAfA AAAA AAf AAA AAAf ff Af",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+      "content": "Ef EEff EEf ff EEEf ffE EEE EE fEEE fEEf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+      "content": "II fI fIII IffI IIII ffII fff IIf If III IIIf ffI",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ffI fI fE EE If ffAE EAff AIyA ffA AEEf IA IIy"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ffff AAE EE AIf II ff IfA AA ffEA fff fAA ffE"
+    }
+  ]
+}

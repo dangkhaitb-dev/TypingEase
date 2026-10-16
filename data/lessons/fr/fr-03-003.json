@@ -1,0 +1,103 @@
+{
+  "id": "fr-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 31,
+  "slug": "fr-03-003",
+  "title": "Majuscules : Q, S",
+  "summary": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+  "newKeys": [
+    "Q",
+    "S"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "E",
+    "I",
+    "O",
+    "U",
+    "Q",
+    "S"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-03-003",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "Q",
+      "text": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+      "content": "ff QQQQ Qf fQQf QQQ QQ QQf QQQf QfQQ",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "S",
+      "text": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+      "content": "ffSS SSS SfS SSSS fSfS SSSf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "fSQ fQQS fQ ffQ QQS SS SSQS QQ ffQQ QQf SfSQ fSS SSQQ QQQ ffQf ff"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "jjQS SQSQ SSjj jj jQ QQj jSS QSS SQ jQSj yy SSSQ QjS QS SSQQ SSS"
+    }
+  ]
+}

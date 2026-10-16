@@ -1,0 +1,111 @@
+{
+  "id": "en-03-005",
+  "unit": "u3",
+  "group": "g1",
+  "order": 25,
+  "slug": "en-03-005",
+  "title": "J, K, L",
+  "summary": "Learn J, K, L, then practise with the keys you already know.",
+  "newKeys": [
+    "J",
+    "K",
+    "L"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Learn J, K, L, then practise with the keys you already know.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-03-005",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "J",
+      "text": "Hold Shift with the little finger of your left hand and press j to type J. Release Shift before the next key.",
+      "content": "Jff fJfJ JJf JJJ JJ Jff JJff fJ ffJJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "K",
+      "text": "Hold Shift with the little finger of your left hand and press k to type K. Release Shift before the next key.",
+      "content": "KKK KjjK KK KKKK jKKK KKKj jjj KKj jjK KKjK jKK jK",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "L",
+      "text": "Hold Shift with the little finger of your left hand and press l to type L. Release Shift before the next key.",
+      "content": "LLfL LLf fLL Lf ffLf LLL LL LLLf LLLL ff Lff fLfL",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "KK JJ JKLJ LJnL nKJK JJKJ LK LJKK KLK KL KKKK"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "KKL KK KJK JL KLJ JJJK LJ Kb KJ JKJJ KLL KL bKK LKJ KbJJ KJKL LLL JK"
+    }
+  ]
+}

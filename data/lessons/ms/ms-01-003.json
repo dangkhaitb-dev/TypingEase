@@ -1,0 +1,68 @@
+{
+  "id": "ms-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "ms-01-003",
+  "title": "Huruf: d, k",
+  "summary": "Tambah t m r g; latihan jujukan ng sebagai dua huruf.",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Tambah t m r g; latihan jujukan ng sebagai dua huruf.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-003",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "dfddd dffd dff dddf dd ddd df ddff ddf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "kk kkfk fkkf kkkf ffkk fkkk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "ddjk ff kdfj fdk kjk fddf ffk kjdf ffjk dkdd kjj df jk"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fdf kd fj fk kddk kkf dkf dfj fd jk kkf ffj dj jdkf dk fd"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "kkf kddj jkdd dkk fddd fdk jk kj kjk dj ddk jjdk ff jkf"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "df ddj dk dd ddjd fkk jj jjfj kkd kf kfd jf kkdd dkkd kk"
+    }
+  ]
+}

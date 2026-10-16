@@ -42,3 +42,9 @@ window.TypingEaseCurriculum = {
     hint: 'Rest your index fingers on the two keys with bumps and type what you see, without looking at the keyboard.'
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/ms-119-taster/u1-l01.json?v=01c8c4b034fa4141"
+};
+/* </auto:lesson-urls> */

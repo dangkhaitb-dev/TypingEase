@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-004",
+  "unit": "u7",
+  "group": "g1",
+  "order": 99,
+  "slug": "vi-07-004",
+  "title": "Lịch trực và thời khóa biểu",
+  "summary": "Xây dựng năng lực \"Named Tools\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Văn bản hướng dẫn sử dụng công cụ, thiết bị với các thuật ngữ chuyên môn và thông số kỹ thuật.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Named Tools\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Văn bản hướng dẫn sử dụng công cụ, thiết bị với các thuật ngữ chuyên môn và thông số kỹ thuật.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động bài học với lịch trực kỹ thuật hệ thống máy chủ.",
+      "content": "Lịch trực kỹ thuật hệ thống máy chủ: ca sáng từ sáu giờ đến mười bốn giờ do kỹ sư Tuấn trực ban; ca chiều từ mười bốn giờ đến hai mươi hai giờ do kỹ sư Nam đảm nhiệm theo dõi liên tục.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với thời khóa biểu các lớp đào tạo kỹ năng mềm tháng sáu.",
+      "content": "Thời khóa biểu các lớp đào tạo kỹ năng mềm tháng sáu: lớp kỹ năng thuyết trình học vào tối thứ Ba và thứ Năm từ mười tám giờ ba mươi đến hai mươi giờ ba mươi; lớp tư duy phản biện học vào sáng thứ Bảy từ chín giờ đến hết buổi, kết thúc lúc mười một giờ rưỡi tại phòng đào tạo số một.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với bảng phân bổ thời gian biểu của hội thảo công nghệ thông tin.",
+      "content": "Bảng phân bổ thời gian biểu của hội thảo công nghệ thông tin: tám giờ đến chín giờ đón tiếp đại biểu và phát tài liệu hội nghị; chín giờ đến mười giờ mười lăm báo cáo tham luận về ứng dụng trí tuệ nhân tạo trong tự động hóa quy trình; mười giờ hai mươi đến mười giờ ba mươi lăm nghỉ giải lao dùng tiệc trà; mười giờ bốn mươi đến mười hai giờ phiên thảo luận bàn tròn và trả lời câu hỏi trực tiếp từ phía các chuyên gia đầu ngành.",
+      "inputMode": "telex"
+    }
+  ]
+}

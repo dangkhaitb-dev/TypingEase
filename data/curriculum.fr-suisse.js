@@ -103,7 +103,7 @@ window.TypingEaseCurriculum = {
     'u2-l10': { title: "Touches faibles", newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: true },
     'u2-l11': { title: "Test de l'unité 2", newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: true },
     'u3-l01': { title: "Les chiffres et leurs signes", newKeys: ["1","2","3","4","5","6","7","8","9","0","+","\"","*","ç","%","&","/","(",")","="], screens: 12, estMinutes: 6, kind: 'keys', ready: true },
-    'u3-l02': { title: "La colonne de droite", newKeys: ["-","'","^","è","¨","$"], screens: 9, estMinutes: 6, kind: 'keys', ready: true },
+    'u3-l02': { title: "La colonne de droite", newKeys: ["-","'","è","$"], screens: 8, estMinutes: 6, kind: 'keys', ready: true },
     'u3-l03': { title: "Adresses, liens et chiffres", newKeys: [], screens: 8, estMinutes: 5, kind: 'review', ready: true },
     'u3-l04': { title: "Textes et rythme 1", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
     'u3-l05': { title: "Textes et rythme 2", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
@@ -159,3 +159,41 @@ window.TypingEaseCurriculum = {
     hint: "Pose les index sur les deux touches à repère et écris ce que tu vois, sans regarder le clavier."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/fr-suisse/u1-l01.json?v=c5c7765b22c0674d",
+  "u1-l02": "/data/lessons/fr-suisse/u1-l02.json?v=05dd09bab975165b",
+  "u1-l03": "/data/lessons/fr-suisse/u1-l03.json?v=aa2e027c69c2cf32",
+  "u1-l04": "/data/lessons/fr-suisse/u1-l04.json?v=adaab96f58dd49ea",
+  "u1-l05": "/data/lessons/fr-suisse/u1-l05.json?v=567484f80e1117a9",
+  "u1-l06": "/data/lessons/fr-suisse/u1-l06.json?v=29d0ef3e932a2ad4",
+  "u1-l07": "/data/lessons/fr-suisse/u1-l07.json?v=1e23208df8ecc4c8",
+  "u1-l08": "/data/lessons/fr-suisse/u1-l08.json?v=97521f6d0e44feac",
+  "u1-l09": "/data/lessons/fr-suisse/u1-l09.json?v=2ed92356d47070da",
+  "u1-l10": "/data/lessons/fr-suisse/u1-l10.json?v=d82e0773dcf62f9e",
+  "u2-l01": "/data/lessons/fr-suisse/u2-l01.json?v=2667b002c7051626",
+  "u2-l02": "/data/lessons/fr-suisse/u2-l02.json?v=bb5d94b8f21f6d6b",
+  "u2-l03": "/data/lessons/fr-suisse/u2-l03.json?v=f2d18ed44856e5a8",
+  "u2-l04": "/data/lessons/fr-suisse/u2-l04.json?v=440dd6aed5e900dd",
+  "u2-l05": "/data/lessons/fr-suisse/u2-l05.json?v=87254061c11569fd",
+  "u2-l06": "/data/lessons/fr-suisse/u2-l06.json?v=7ba4dc2d260cc45a",
+  "u2-l07": "/data/lessons/fr-suisse/u2-l07.json?v=f9268acf9e6ca16a",
+  "u2-l08": "/data/lessons/fr-suisse/u2-l08.json?v=7feb8c74af28a044",
+  "u2-l09": "/data/lessons/fr-suisse/u2-l09.json?v=4c34c06cd13dfdd7",
+  "u2-l10": "/data/lessons/fr-suisse/u2-l10.json?v=afe79cebdeca3df5",
+  "u2-l11": "/data/lessons/fr-suisse/u2-l11.json?v=62cd2a8e66f701be",
+  "u3-l01": "/data/lessons/fr-suisse/u3-l01.json?v=c5605a9010b3a8a4",
+  "u3-l02": "/data/lessons/fr-suisse/u3-l02.json?v=311ab29aea28067c",
+  "u3-l03": "/data/lessons/fr-suisse/u3-l03.json?v=131c80b74ba39de9",
+  "u3-l04": "/data/lessons/fr-suisse/u3-l04.json?v=57fa74532125a4f6",
+  "u3-l05": "/data/lessons/fr-suisse/u3-l05.json?v=3b359752715549f3",
+  "u3-l06": "/data/lessons/fr-suisse/u3-l06.json?v=3a2103aab07575f6",
+  "u4-l01": "/data/lessons/fr-suisse/u4-l01.json?v=75313d9da64611c9",
+  "u4-l02": "/data/lessons/fr-suisse/u4-l02.json?v=6d6403308f840c6b",
+  "u4-l03": "/data/lessons/fr-suisse/u4-l03.json?v=8b983e63f45f997d",
+  "u4-l04": "/data/lessons/fr-suisse/u4-l04.json?v=a6ea7cd39356335d",
+  "u4-l05": "/data/lessons/fr-suisse/u4-l05.json?v=0aef4b74dfe1c5a9",
+  "u4-l06": "/data/lessons/fr-suisse/u4-l06.json?v=d373a09326c0fa58"
+};
+/* </auto:lesson-urls> */

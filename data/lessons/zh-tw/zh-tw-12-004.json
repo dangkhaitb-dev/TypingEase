@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-12-004",
+  "unit": "u12",
+  "group": "g1",
+  "order": 120,
+  "slug": "zh-tw-12-004",
+  "title": "歸還借來的物品",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-004",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小美：\n上個月跟妳借的露營帳篷，我已經洗乾淨、晾乾了。檢查的時候發現有一根營柱有點彎，我已經拿去修好了。這個週末我想把帳篷送到妳家，請問星期六下午方便嗎？\n小芳",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "歸還清單\n帳篷：一頂，已清洗晾乾\n營柱：四根，其中一根已修理\n營釘：十二支，全部齊全\n收納袋：一個\n歸還日期：十一月十八日星期六\n備註：謝謝妳借我這麼好用的帳篷！\n歸還人：小芳\n收件人：小美，星期六下午三點當面交還",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小美：「星期六下午我在家，妳什麼時候來都可以。」\n小芳：「那我三點左右到。營柱彎了的事真的很抱歉。」\n小美：「沒關係，妳還幫我修好了，我才要謝謝妳呢。」\n小芳：「我還帶了一盒餅乾，謝謝妳借我帳篷。」\n小美：「那我泡茶等妳。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

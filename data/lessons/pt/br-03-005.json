@@ -1,0 +1,111 @@
+{
+  "id": "br-03-005",
+  "unit": "u3",
+  "group": "g1",
+  "order": 34,
+  "slug": "br-03-005",
+  "title": "Maiúsculas: J, K, L",
+  "summary": "Aprenda as teclas J, K, L e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "J",
+    "K",
+    "L"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas J, K, L e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-03-005",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "J",
+      "text": "Segure Shift e aperte j para digitar J. Depois volte à posição inicial.",
+      "content": "fJf JJJf fJJf JfJ fJfJ ff fffJ JJJ JJJJ fJJJ Jf JJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "K",
+      "text": "Segure Shift e aperte k para digitar K. Depois volte à posição inicial.",
+      "content": "jKj KKj jjKK KKKK KKjK KK jKK jjK KKK jKjK jK",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "L",
+      "text": "Segure Shift e aperte l para digitar L. Depois volte à posição inicial.",
+      "content": "fLf ff fLLL fL LLLL LfL LL LLLf LffL ffL fffL",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "LKJL LJL JLKJ JjJJ JL JJJ LJ JJ JLLJ LL KL JLJK JLK KLJK"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "IJ JLK DLIL LKF LKLJ KIJL KJ KI LKFK JFID IKLL JKDK KIL KK JL"
+    }
+  ]
+}

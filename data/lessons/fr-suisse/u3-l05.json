@@ -63,9 +63,7 @@
     "=",
     "-",
     "'",
-    "^",
     "è",
-    "¨",
     "$"
   ],
   "minAccuracy": 80,
@@ -115,20 +113,20 @@
       "text": "Une dernière longue série pour finir.",
       "type": "burst",
       "tokens": [
-        "vite",
+        "expliquer",
+        "avec",
+        "vieux",
+        "appel",
+        "notre",
+        "messe",
+        "suites",
+        "routes",
         "quant",
-        "avoir",
-        "continue",
-        "petite",
-        "maîtres",
-        "se",
-        "qu'elle",
-        "année",
-        "utiles",
-        "banque",
-        "aller",
-        "ensuite",
-        "commence"
+        "forte",
+        "sotte",
+        "nouveau",
+        "vient",
+        "mot"
       ]
     }
   ]

@@ -1,0 +1,79 @@
+{
+  "id": "tr-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "tr-01-001",
+  "title": "Tuşlar f, j ve boşluk",
+  "summary": "İşaret parmaklarını f ve j tuşlarına yerleştir, sonra baş parmağınla boşluk tuşuna bas.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "İşaret parmaklarını f ve j tuşlarına yerleştir, sonra baş parmağınla boşluk tuşuna bas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-001",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Tuş alıştırması: f.",
+      "content": "ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Tuş alıştırması: j.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Başparmağınla boşluk tuşuna bas; kelimeleri bu tuşla ayır.",
+      "content": "f j fj jf fj jf fj jf fj jf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "jfj fjff jj jff fjjf jj jfj jfjf jj jjf fjff jf ffj fjff jf fff jjj"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "jff jjfj ff jfj jjjj jj jjf jfjj fj fjj fjjj fj fff fffj jj jj"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "fjf fffj fj jff jfff ff ffj jjjf fj fjf jffj fj jjf fjfj f"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ffj ffjf jj jff jjff ff fjj ffff jj fjf jfjj ff jff jjff jj jfj fjjj"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "fjff ffj jff fjj fj jjf ff fjj fjj fjf jfj jffj jfjj jf"
+    }
+  ]
+}

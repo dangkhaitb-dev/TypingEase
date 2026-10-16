@@ -1,0 +1,73 @@
+{
+  "id": "vi-04-001",
+  "unit": "u4",
+  "group": "g1",
+  "order": 63,
+  "slug": "vi-04-001",
+  "title": "Từ đơn tiếng Việt",
+  "summary": "Luyện gõ các từ đơn chuẩn tiếng Việt phong phú, phối hợp thuần thục phụ âm, nguyên âm và thanh điệu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Luyện gõ các từ đơn chuẩn tiếng Việt phong phú, phối hợp thuần thục phụ âm, nguyên âm và thanh điệu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-04-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+      "content": "hoa mai sơn ca sen xanh tươi sáng bóng bình yên",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+      "content": "cỏ ngõ lá rễ bão lũ hạt gạo ruộng đồng bến đỗ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+      "content": "nước suối chuối tiêu thuyền nan hương thơm tuyết hoa",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+      "content": "sách bút mực thước phấn bảng chim hót vang trời mây",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+      "content": "nhà bàn ghế cửa đèn quạt gối chăn nồi bát đũa thìa",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+      "content": "nắng ấm ban mai gió mát trăng rằm đất lành chim đậu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+      "content": "mưa nắng gió mây sấm chớp sương bão lũ trời đất biển",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+      "content": "đi chạy nhảy ngồi đứng nằm ăn uống ngủ thức đọc viết",
+      "inputMode": "telex"
+    }
+  ]
+}

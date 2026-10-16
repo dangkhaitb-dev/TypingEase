@@ -1,0 +1,92 @@
+{
+  "id": "es-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 19,
+  "slug": "es-02-004",
+  "title": "Números: 0",
+  "summary": "Aprender 0 en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprender 0 en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-02-004",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Localiza 0 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "00f0 0f f000 00f 000 00 ff 0000",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "00 f00 ff 000f 00f f0 00f0 0f f000 0f0 ff0 0000 000"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "9900 0900 0009 90 00 009 0090 099 9909 99 0000 000"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "04 0040 0400 004 040 4000 4400 440 0004 40 400 0000 00 000"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "99 9099 009 0900 0000 000 00 990 99c0 9000 0009 0090"
+    }
+  ]
+}

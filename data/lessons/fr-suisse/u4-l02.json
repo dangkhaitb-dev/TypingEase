@@ -66,9 +66,7 @@
     "=",
     "-",
     "'",
-    "^",
     "è",
-    "¨",
     "$",
     "§",
     "°",
@@ -93,41 +91,41 @@
       "type": "block",
       "newKey": "<",
       "text": "D'abord < sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "<< < <ifs <groupes <forêts\n<< < <sortes <surgir <journée\n<< < <histoire <aussi <détail"
+      "content": "<< < <ils <fours <société\n<< < <mode <humide <bateau\n<< < <jours <ouvrir <ou"
     },
     {
       "type": "block",
       "newKey": ">",
       "text": "D'abord > sans rien autour, puis là où on s'en sert vraiment.",
-      "content": ">> > <élèves> <passe> <gel>\n>> > <années> <utiles> <ouvre>\n>> > <salle> <soirée> <jus>"
+      "content": ">> > <bruit> <plans> <demi>\n>> > <bureaux> <dites> <vite>\n>> > <premier> <baisse> <musiques>"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
-        "<conte>",
-        "<première>",
-        "<mime>",
-        "<sud>",
-        "<avoir>",
-        "<suite>",
-        "<triste>",
-        "<têtes>",
-        "<très>",
-        "<détails>"
+        "<route>",
+        "<blanche>",
+        "<midi>",
+        "<huile>",
+        "<vivent>",
+        "<lourd>",
+        "<styles>",
+        "<détails>",
+        "<tables>",
+        "<wagon>"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "<côte> <très> <outils> <place>\n<sites> <prix> <décider> <rue>\n<projets> <tirs> <journée> <bien>"
+      "content": "<décembre> <table> <sortes> <vitesse>\n<juger> <aller> <ou> <gifles>\n<aller> <tu> <bateau> <petit>"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "<qu'il> bruit <l'école> leçon <guide>\n<veut> devoirs <terme> proposer <motifs>\n<bâtiment> mort <ifs> papier <prix>"
+      "content": "<problème> autres <dernière> exemple <durs>\n<centre> venir <lutte> avec <soi>\n<système> roses <if> envie <aller>"
     }
   ]
 }

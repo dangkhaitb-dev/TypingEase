@@ -1,0 +1,94 @@
+{
+  "id": "br-01-023",
+  "unit": "u1",
+  "group": "g1",
+  "order": 20,
+  "slug": "br-01-023",
+  "title": "Vogais com tilde",
+  "summary": "Aprenda as teclas ã, õ e pratique com as teclas já estudadas.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas ã, õ e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-023",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Aperte ~ (tecla morta), solte e aperte a: aparece ã. Depois volte à posição inicial.",
+      "content": "ãããf ãf ãããã ããf ããã ãã ããff"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte ~ (tecla morta), solte e aperte o: aparece õ. Depois volte à posição inicial.",
+      "content": "jõõj õõõ õõõj jjõj õõj õõõõ jõõ õj õõ jõõõ õõjõ"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "âõãã õõõ êããã êõõ ôõã ãõãã õãõô êãõ õââ ãôêõ õõââ"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "õõ õêõã õãã ãã õõã ãõõõ ãõõ õõõ ããã õã ãõãã õããõ õõãã ãõã ãõãõ ãõ õãõ õõãõ"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "õõ ãã mããã õõõõ ãõãõ ãõ ããã õõõ õãõã õã õãõ ãõã õãã"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "õãõ õõã ããeã ãõõã ãõã ãõ õããã õõãõ ãõãã õããõ õã ãã ãããã õõõõ õõãã ãõõõ õãã"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a mãe põe o pão na mesa e o irmão come limão"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "meu coração está com a mãe no avião de volta"
+    }
+  ]
+}

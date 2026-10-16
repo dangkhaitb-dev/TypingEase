@@ -54,7 +54,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}"
   ],
@@ -69,7 +68,7 @@
       "seconds": 180,
       "text": "Sin teclas nuevas. Escribe a un ritmo que puedas sostener hasta el final.",
       "dictation": "sentence",
-      "content": "Los niños juegan en el jardín de la escuela.\nNo tengo tiempo para ese viaje.\nQuiero aprender a escribir sin mirar el teclado.\nLa música de la radio es muy buena."
+      "content": "Hace mucho calor en el mes de agosto.\nMi padre prepara la comida los domingos.\nNo tengo tiempo para ese viaje.\nEl niño lee un libro en la sala."
     }
   ]
 }

@@ -1,0 +1,43 @@
+{
+  "id": "vi-12-001",
+  "unit": "u12",
+  "group": "g1",
+  "order": 161,
+  "slug": "vi-12-001",
+  "title": "Đoạn mở đầu quen thuộc",
+  "summary": "Xây dựng năng lực \"Familiar Openings\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bắt đầu với các câu mở đầu quen thuộc để ổn định tâm lý trước khi bước vào giai đoạn chuyển giao hiệu suất.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Familiar Openings\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bắt đầu với các câu mở đầu quen thuộc để ổn định tâm lý trước khi bước vào giai đoạn chuyển giao hiệu suất.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với đoạn mở đầu cổ tích về hai người bạn ở ngôi làng ven núi.",
+      "content": "Ngày xửa ngày xưa, tại một ngôi làng nhỏ ven chân núi xanh tươi, có hai người bạn cùng nhau chăm chỉ học nghề rèn sắt truyền thống.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về việc xây dựng thói quen tốt từ những việc nhỏ.",
+      "content": "Bắt đầu từ những việc nhỏ bé nhất mỗi sớm mai, chúng ta cùng nhau xây dựng nên những thói quen tốt đẹp. Sự kiên trì và lòng nhẫn nại chính là chiếc chìa khóa vạn năng mở ra cánh cửa thành công rực rỡ trong tương lai phía trước.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng kỹ năng vào diễn văn chào mừng buổi lễ tốt nghiệp khóa đào tạo.",
+      "content": "Chào mừng quý vị đại biểu và toàn thể các bạn học viên đã có mặt đông đủ trong buổi lễ tốt nghiệp khóa đào tạo kỹ năng công nghệ số hôm nay. Chặng đường vừa qua tuy có nhiều khó khăn và thử thách cam go nhưng sự nỗ lực không ngừng nghỉ của tất cả chúng ta đã đem lại những thành quả vô cùng ngọt ngào và đáng tự hào.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "zh-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "zh-01-001",
+  "title": "键位练习：f、j、空格",
+  "summary": "按顺序学习 f、j、空格，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "按顺序学习 f、j、空格，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-001",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "找到 f 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "ffff ffff ffff ffff ffff ffff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "找到 j 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "用拇指按空格键，在字母之间输入空格。",
+      "content": "f j f j ff jj fj jf f j f j f jf fj",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "jj fjf ff jf jjf jffj jj jffj jjf jf ff fjf ff fjf jj"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "fff ff jff jj jfj fff jfj jj jff ff jff ff fff jfj jj"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ffj fjj fj ff jjf jff ffj jff jjf ff fj fjj fj fjj ffj"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "jjj ffjj jj ffj jfjf fjf jjj fjf jfjf ffj jj ffjj jj ffjj"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "fjfj fjff jff jjfj ffff fjfj ffff jjfj jff fjff jff fjff"
+    }
+  ]
+}

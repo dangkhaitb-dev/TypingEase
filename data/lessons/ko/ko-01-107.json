@@ -1,0 +1,73 @@
+{
+  "id": "ko-01-107",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "ko-01-107",
+  "title": "모음 ㅏ · ㅐ · ㅑ",
+  "summary": "모음 ㅏ·ㅐ·ㅑ를 한 키씩 익히고 리듬을 만듭니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "hangul",
+  "intro": "모음 ㅏ·ㅐ·ㅑ를 한 키씩 익히고 리듬을 만듭니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-107",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅏㅏㅏ ㅏㅏㅏ ㅏㅏ ㅏㅏㅏ ㅏㅏ ㅏㅏㅏ ㅏㅏ ㅏㅏㅏ ㅏㅏㅏ ㅏㅏㅏ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅐㅐㅐ ㅐㅐㅐ ㅐㅐ ㅐㅐㅐ ㅐㅐ ㅐㅐㅐ ㅐㅐ ㅐㅐㅐ ㅐㅐㅐ ㅐㅐㅐ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅑㅑㅑ ㅑㅑㅑ ㅑㅑ ㅑㅑㅑ ㅑㅑ ㅑㅑㅑ ㅑㅑ ㅑㅑㅑ ㅑㅑㅑ ㅑㅑㅑ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅑㅑ ㅑㅑㅐ ㅑㅑㅏㅏ ㅏㅏㅐ ㅓㅑㅐ ㅏㅏ ㅑㅐㅏㅐ ㅐㅐ ㅑㅑ ㅐㅐ ㅑㅐㅏㅐ ㅏㅏ ㅓㅑㅐ ㅏㅏㅐ ㅑㅑㅏㅏ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅑㅏㅏ ㅐㅎ ㅏㅏ ㅐㅐ ㅐㅐㅑㅏ ㅐㅏㅑㅋ ㅑㅑ ㅑㅏㅏ ㅑㅑ ㅐㅏㅑㅋ ㅐㅐㅑㅏ ㅐㅐ ㅏㅏ ㅐㅎ ㅏㅏ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅏㅏㅐㅑ ㅐㅐ ㅍ ㅑㅑㅏ ㅐㅐㅏㅐ ㅑㅑㅏ ㅏㅏㅐ ㅑㅑ ㅏㅏㅐㅑ ㅑㅑ ㅏㅏㅐ ㅑㅑㅏ ㅐㅐㅏㅐ ㅑㅑㅏ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅐㅏㅏ ㅐㅐㅑ ㅐㅐ ㅏㅏㅑㅐ ㅐㅊㄱ ㅏ ㅏㅏ ㅑㅑㅑ ㅐㅏㅏ ㅑㅑㅑ ㅏㅏ ㅏ ㅐㅊㄱ ㅏㅏㅑㅐ ㅐㅐ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅑㅑㅑㅑ ㅐㅐㄷㄴ ㅏㅑㅏ ㅏㅐㅏ ㅏㅏㅐ ㅏㅏ ㅏㅏㅏ ㅑㅑㅑㅑ ㅏㅏㅏ ㅏㅏ ㅏㅏㅐ ㅏㅐㅏ ㅏㅑㅏ ㅐㅐㄷㄴ",
+      "inputMode": "hangul"
+    }
+  ]
+}

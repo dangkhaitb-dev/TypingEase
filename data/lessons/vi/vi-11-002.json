@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-002",
+  "unit": "u11",
+  "group": "g1",
+  "order": 150,
+  "slug": "vi-11-002",
+  "title": "Cập nhật tình nguyện",
+  "summary": "Xây dựng năng lực \"Volunteer Updates\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng độ dài lên 115 âm tiết, duy trì phong độ qua các câu văn miêu tả hoạt động thiện nguyện.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 17,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Volunteer Updates\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng độ dài lên 115 âm tiết, duy trì phong độ qua các câu văn miêu tả hoạt động thiện nguyện.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về kết quả thu gom rác nhựa.",
+      "content": "Chiến dịch thu gom rác thải nhựa dọc bờ biển đã hoàn thành vượt mức kế hoạch đề ra. Hơn năm tấn rác được phân loại tại chỗ rồi chuyển đến nhà máy tái chế đủ điều kiện an toàn. Tình nguyện viên ghi nhật ký theo ca để ban điều phối đối chiếu với mục tiêu tuần. Buổi tổng kết ngắn trên bãi cát nhắc mọi người giữ nguyên quy tắc phân loại cho đợt sau.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn bản tin liên tục về chiến dịch tình nguyện tháng chín. Đọc và gõ liền mạch cả đoạn.",
+      "content": "Bản tin tình nguyện tháng chín mở đầu bằng con số hơn ba trăm lượt bạn trẻ đã đăng ký tham gia. Chiến dịch làm sạch bãi biển diễn ra suốt hai cuối tuần, chia theo ca sáng và ca chiều để tránh nắng gắt. Mỗi nhóm nhận một đoạn bờ cát, túi đựng rác phân loại và bảng hướng dẫn an toàn ngắn. Khi mặt trời nghiêng bóng, số liệu thu gom được ghi lại để gửi về ban điều phối cộng đồng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ sức bền qua bản tin tình nguyện tuần này với nhiều câu chuyện dấn thân.",
+      "content": "Bản tin cập nhật hoạt động tình nguyện tuần này mang đến nhiều câu chuyện xúc động về tinh thần dấn thân vì cộng đồng của tuổi trẻ địa phương. Tại các xã vùng sâu vùng xa, các đội hình thanh niên tình nguyện đã hoàn thành việc lắp đặt hệ thống đèn đường năng lượng mặt trời cho hơn ba cây số đường liên thôn, thắp sáng những lối đi tối tăm vốn tiềm ẩn nhiều nguy cơ mất an toàn giao thông vào ban đêm.",
+      "inputMode": "telex"
+    }
+  ]
+}

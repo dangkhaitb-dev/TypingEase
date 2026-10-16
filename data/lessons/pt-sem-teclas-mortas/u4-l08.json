@@ -1,12 +1,15 @@
 {
   "id": "u4-l08",
   "unit": "u4",
-  "group": "finish",
+  "group": "symbols",
   "order": 35,
-  "slug": "review-u4",
-  "title": "Todos os sinais juntos",
-  "summary": "Todos os sinais da unidade, misturados com palavras e números.",
-  "newKeys": [],
+  "slug": "symbols-8",
+  "title": "/ e ?",
+  "summary": "Nesta lição: / e ?.",
+  "newKeys": [
+    "/",
+    "?"
+  ],
   "keysSoFar": [
     " ",
     "f",
@@ -78,64 +81,62 @@
     "^",
     "<",
     ">",
-    ":"
+    ":",
+    "/",
+    "?"
   ],
   "minAccuracy": 80,
   "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Nenhuma tecla nova. Todos os caracteres da unidade, misturados com palavras e números.",
-  "congrats": "Todas as teclas deste teclado já tiveram a sua vez.",
+  "intro": "Teclas que o curso ainda não usou: / e ?. Algumas precisam de Shift, com o mindinho da outra mão; as outras têm tecla própria, que o curso ainda não tinha usado.",
+  "congrats": "/ e ?: agora debaixo dos seus dedos. O sinal sai tão fácil quanto a letra ao lado.",
   "screens": [
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Os sinais, no mesmo ritmo das letras em volta deles.",
-      "content": "#32 uvas ¨¨¨ asa abraços\\bons\n#94 melhores *oito* agenda caderno:\n<queijo> falei 31^2 brisa cabelo|jaqueta"
+      "type": "intro",
+      "key": "/",
+      "finger": "RP",
+      "text": "Quem aperta / é o mindinho direito.",
+      "hint": "Aperte / para continuar"
     },
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Mantenha o ritmo também nos sinais; são teclas como as outras.",
-      "content": "(ponte) tarefa vem|bota grandes *branca*\nleve! mala *começa* toma ¨¨¨\nmelancia: preço porque! gatas rios!"
+      "type": "block",
+      "newKey": "/",
+      "text": "Primeiro / sozinho, e depois onde ele realmente aparece.",
+      "content": "// / barata/filho neta/sorriso abrir/se\n// / cor/paz pronto/eu saco/dias\n// / segura/abacate cadeiras/vento semana/fora"
+    },
+    {
+      "type": "block",
+      "newKey": "?",
+      "text": "Primeiro ? sozinho, e depois onde ele realmente aparece.",
+      "content": "?? ? cidade? sala? frio?\n?? ? curta? menino? corpo?\n?? ? conta? contar? uvas?"
     },
     {
       "type": "burst",
-      "seconds": 30,
+      "seconds": 25,
       "text": "Uma rajada de trechos curtos com estes caracteres.",
       "tokens": [
-        "¨¨¨",
-        "(nuvens)",
-        "caneta:",
-        "69^2",
-        "lugar!",
-        "volta|prato",
-        "parte_traz",
-        "azuis\\viva",
-        "$25",
-        "palavras&sua",
-        "{mensagem}",
-        "zona@ninho",
-        "muito&ruim",
-        "89+61"
+        "corpo/centro",
+        "notas/sonho",
+        "dada/gesto",
+        "zonas/abacaxi",
+        "sim/nossas",
+        "grade/abre",
+        "haja?",
+        "sempre?",
+        "desse/lagos",
+        "conta/dona"
       ]
     },
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Mantenha o ritmo também nos sinais; são teclas como as outras.",
-      "content": "88^2 forma $95 luta leis\\braço\nprimeira: ligar 74 + 3 quente abelha:\n27^3 morango 68^2 leste chinelo & canetas"
+      "type": "block",
+      "text": "Tudo o que esta lição trouxe, misturado.",
+      "content": "servir? madeira? voltar/esse sutil/agenda\ntempo/camas arroz/depois cabeça/molhado trabalho/cidades\nela? menos/frase escura/banco estava/fundo"
     },
     {
       "type": "standard",
       "dictation": "words",
-      "text": "Mantenha o ritmo também nos sinais; são teclas como as outras.",
-      "content": "$71 pimenta *rio* hoje 63 + 84\n<embaixo> tardes banco_chinelo noites {essas}\n37% vozes prazer! assadas cachorro\\encontro"
-    },
-    {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Mantenha o ritmo também nos sinais; são teclas como as outras.",
-      "content": "¨¨¨ fica #84 exato (falha)\n<alcança> fugir *estas* comprar {mas}\n83 + 58 simples <sino> salgada momento\\mesmo"
+      "text": "Palavras de novo, com os sinais no lugar.",
+      "content": "via? todos jarra? ganha boca/batatas\nfotos? vinte escolas/pontos sorriso pouca/dançar\nsalas? olhar gala? carta segunda/venda"
     }
   ]
 }

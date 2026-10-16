@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-010",
+  "unit": "u10",
+  "group": "g3",
+  "order": 143,
+  "slug": "vi-10-010",
+  "title": "Trích dẫn danh sách và dấu câu",
+  "summary": "Xây dựng năng lực \"Quotes, Lists, and Punctuation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Kiểm soát độ chính xác của các đoạn văn trích dẫn có danh sách dấu câu phức hợp.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Quotes, Lists, and Punctuation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Kiểm soát độ chính xác của các đoạn văn trích dẫn có danh sách dấu câu phức hợp.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ nhanh và dứt khoát danh mục tài liệu tham khảo.",
+      "content": "Danh mục tài liệu tham khảo: Tài liệu thứ nhất Giáo trình Tin học đại cương, NXB Giáo dục, 2025; Tài liệu thứ hai Sổ tay Kỹ năng văn phòng hiện đại, NXB Khoa học Xã hội, 2026.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp bài học với trích dẫn quy định pháp luật.",
+      "content": "Trích dẫn quy định pháp luật: Căn cứ khoản 2 Điều 15 Luật Giao dịch điện tử năm 2023: \"Thông điệp dữ liệu có giá trị pháp lý như văn bản gốc nếu bảo đảm được tính toàn vẹn của thông tin và có thể truy cập để tham chiếu khi cần thiết\"; việc lưu trữ phải tuân thủ quy chuẩn bảo mật. Người lập hồ sơ ghi rõ ngày tiếp nhận, người phụ trách và vị trí lưu bản điện tử.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về mật độ dấu câu trong danh mục tài liệu tham khảo.",
+      "content": "Các đoạn văn bản trích dẫn danh mục và tài liệu tham khảo thường có mật độ dấu câu phức hợp rất cao: dấu ngoặc đơn, ngoặc kép, chấm phẩy, hai chấm và dấu gạch ngang. Việc kiểm soát hoàn hảo khoảng cách trước và sau mỗi dấu câu là tiêu chuẩn khắt khe để đánh giá một văn bản được trình bày đúng chuẩn mực học thuật quốc tế. Ví dụ: (1) Nguyễn, 2024; (2) \"Quy tắc dấu câu\" - xem mục 3.2; (3) Trần (2025c).",
+      "inputMode": "telex"
+    }
+  ]
+}

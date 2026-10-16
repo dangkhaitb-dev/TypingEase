@@ -38,7 +38,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -54,8 +53,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<"
   ],
   "minAccuracy": 80,
@@ -68,32 +65,32 @@
       "text": "Pour commencer, des mots isolés. Sans se presser : la vitesse vient de la précision, jamais l'inverse.",
       "dictation": "words",
       "type": "standard",
-      "content": "mettre était beau réponses\nhumides bords mères proposer\ndont limes os rue"
+      "content": "suites passe parties bruits\nsud premier travail envies\nsorte sel tel gel"
     },
     {
       "seconds": 25,
       "text": "Une série courte. Termine la liste même si tu en laisses passer.",
       "type": "burst",
       "tokens": [
-        "travail",
-        "tel",
-        "jours",
-        "système",
         "heure",
-        "luges",
-        "bonnes",
-        "huit",
-        "style",
-        "huile",
-        "ou",
-        "dite"
+        "fleur",
+        "table",
+        "devoir",
+        "te",
+        "termes",
+        "si",
+        "ensuite",
+        "besoins",
+        "place",
+        "mes",
+        "autre"
       ]
     },
     {
       "text": "Cinq mots par ligne. Laisse les yeux passer devant les doigts.",
       "dictation": "words",
       "type": "standard",
-      "content": "vies rôle voit arrêts âge\ndessus aller dites élève ouvrir\ngénéral envie if modes sur"
+      "content": "une décider nos wagon années\ngrises vient fleurs proposer content\nbureau nuit si luttes gifle"
     },
     {
       "text": "Des motifs à nouveau, pour vérifier que les doigts retournent à la rangée de repos.",
@@ -105,40 +102,40 @@
       "text": "Des mots courts, à bon rythme. Ceux-là devraient presque sortir seuls.",
       "dictation": "words",
       "type": "standard",
-      "content": "gel rue murs fêtes\ndos idée assez bon\noutil cours côte mou"
+      "content": "mises demis luges bases\ntirs tant votes a\nmoi four boire sujet"
     },
     {
       "seconds": 30,
       "text": "Plus de temps et plus de mots. Garde le même rythme du début à la fin.",
       "type": "burst",
       "tokens": [
-        "wagons",
-        "détails",
-        "problème",
-        "titre",
-        "dont",
-        "histoires",
-        "ifs",
-        "assez",
-        "donc",
-        "sont",
-        "heure",
-        "autre",
-        "entrée",
-        "un"
+        "table",
+        "conte",
+        "centre",
+        "banque",
+        "décide",
+        "nouvelle",
+        "gestes",
+        "moments",
+        "grand",
+        "avant",
+        "baisse",
+        "aussi",
+        "un",
+        "humides"
       ]
     },
     {
       "text": "Des phrases entières. C'est là qu'on voit si la main revient toute seule.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Le train arrive à la gare dans une heure.\nLa porte du jardin reste ouverte toute la journée.\nJe préfère écrire sans regarder le clavier."
+      "content": "Tous les jours je passe devant cette boutique.\nNous parlons de ce projet depuis longtemps.\nLe temps passe vite quand le travail avance bien."
     },
     {
       "text": "La dernière série. Si tu es arrivé jusqu'ici sans regarder le clavier, la leçon est faite.",
       "dictation": "words",
       "type": "standard",
-      "content": "villes rues devenir mugir peut\ndur espèces rose mots mille\ncommence passe humides milieu tir"
+      "content": "dont gel conte rigides vies\ngifle explique items style dise\ngroupes nouveau sud durs donc"
     }
   ]
 }

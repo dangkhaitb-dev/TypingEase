@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-008",
+  "unit": "u6",
+  "group": "g1",
+  "order": 58,
+  "slug": "zh-tw-06-008",
+  "title": "分享修理進度",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-008",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我的筆記型電腦送修已經三天了。今天店家打電話來，說螢幕需要換新的零件。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "新的零件要從外地寄過來，大概需要五個工作天。店員說零件一到，當天就能換好，換完會再打電話通知我。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "修理費用比我想的還高一點，不過還在保固期內，可以打八折。這幾天我先借用哥哥的電腦，完成學校的報告。",
+      "inputMode": "ime"
+    }
+  ]
+}

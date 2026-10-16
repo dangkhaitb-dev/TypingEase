@@ -1,0 +1,61 @@
+{
+  "id": "vi-04-jump",
+  "unit": "u4",
+  "group": "g4",
+  "order": 69,
+  "slug": "vi-04-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-04-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt, chú ý dấu thanh của từng từ.",
+      "content": "đi chạy nhảy ngồi đứng nằm ăn uống ngủ thức đọc viết",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ ghép hai tiếng, nhấn Space giữa hai tiếng.",
+      "content": "yêu thương đùm bọc sẻ chia gắn bó nghĩa tình thủy chung",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu ngắn: viết hoa chữ đầu câu và kết thúc bằng dấu chấm.",
+      "content": "Gió heo may thổi nhẹ qua từng hàng cây bên bờ hồ yên ả.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có số, ngày tháng, giờ và số tiền.",
+      "content": "Hóa đơn tiền điện tháng 5 là 450.000đ, nộp trước 17:00 ngày 15/06.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có dấu hai chấm, dấu hỏi, dấu chấm than và ngoặc kép.",
+      "content": "Bác Hồ từng căn dặn: \"Không có gì quý hơn độc lập, tự do.\"",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Tổng kết: gõ câu hoàn chỉnh dùng mọi phím đã học.",
+      "content": "Chúc mừng bạn đã làm chủ bàn phím tiếng Việt và hoàn thành Giai đoạn 1!",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -138,6 +138,11 @@ ${unit.groups.map(group => `        { id: '${group.id}', title: ${JSON.stringify
   const sequenceBody = result.lessons.length ? `    , ${result.lessons.map(lesson => `'${lesson.id}'`).join(', ')}` : '';
 
   let source = fs.readFileSync(path.join(ROOT, curriculumFile), 'utf8');
+  // Khoá nhập từ typekute đã có đủ ký hiệu trong giáo trình của nó, và không còn các khối auto:symbols.
+  if (source.includes("product: 'typekute'")) {
+    console.log(`${code}: bỏ qua — khoá nhập từ typekute (scripts/import-typekute.mjs)`);
+    return;
+  }
   source = replaceBlock(source, 'units', unitBody, curriculumFile);
   source = replaceBlock(source, 'lessons', lessonBody, curriculumFile);
   source = replaceBlock(source, 'sequence', sequenceBody, curriculumFile);

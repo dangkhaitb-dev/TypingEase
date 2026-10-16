@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-005",
+  "unit": "u7",
+  "group": "g2",
+  "order": 100,
+  "slug": "vi-07-005",
+  "title": "Phiếu và biểu mẫu",
+  "summary": "Xây dựng năng lực \"Time and Cycles\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Mô tả các chu kỳ hoạt động và lịch bảo trì định kỳ, đòi hỏi độ chính xác cao về số liệu thời gian.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Time and Cycles\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Mô tả các chu kỳ hoạt động và lịch bảo trì định kỳ, đòi hỏi độ chính xác cao về số liệu thời gian.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Làm quen chủ đề qua phiếu yêu cầu cấp phát văn phòng phẩm.",
+      "content": "Phiếu yêu cầu cấp phát văn phòng phẩm: người đề xuất Nguyễn Minh Anh, phòng kinh doanh; mục đích sử dụng phục vụ công tác in ấn hồ sơ thầu dự án mở rộng nhà máy chế biến nông sản.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn giấy đề nghị tạm ứng kinh phí công tác.",
+      "content": "Giấy đề nghị tạm ứng kinh phí công tác: họ và tên cán bộ Trần Quốc Bảo, chức vụ chuyên viên thị trường; số tiền xin tạm ứng mười lăm triệu đồng chẵn; lý do chi trả chi phí vé máy bay, tiền phòng khách sạn và phụ cấp lưu trú trong chuyến công tác tại các tỉnh miền Trung.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn biểu mẫu bàn giao tài sản cố định.",
+      "content": "Biểu mẫu bàn giao tài sản cố định: đại diện bên giao đồng chí Vũ Đức Huy, quản lý kho; đại diện bên nhận đồng chí Đặng Lan Hương, trưởng phòng hành chính; số lượng bàn giao gồm ba bộ máy tính trạm, hai máy in mạng đa chức năng và sáu ghế xoay văn phòng có đệm lưới. Tình trạng kỹ thuật toàn bộ thiết bị đều đang hoạt động tốt, có đầy đủ tem niêm phong và phiếu bảo hành chính hãng kèm theo.",
+      "inputMode": "telex"
+    }
+  ]
+}

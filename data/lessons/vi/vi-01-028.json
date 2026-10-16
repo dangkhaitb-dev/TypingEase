@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-028",
+  "unit": "u1",
+  "group": "g1",
+  "order": 28,
+  "slug": "vi-01-028",
+  "title": "Luyện phím · ụ ặ ữ",
+  "summary": "Học cách gõ ụ (u j), ặ (a w j), ữ (u w x) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ụ (u j), ặ (a w j), ữ (u w x) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-028",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu nặng: gõ j sau nguyên âm. u j → ụ. Ví dụ: vụn = v u j n.",
+      "content": "vụn tụ lục cụm vụn mục bụi tục tụ ụ dụ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ a w j để ra ặ: a w ra ă, j thêm dấu nặng. Ví dụ: gặt = g a w j t.",
+      "content": "gặt mặc đặt vặt ặ đặc mặt mặc vặt lặp",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ u w x để ra ữ: u w ra ư, x thêm dấu ngã. Ví dụ: nữa = n u w x a.",
+      "content": "nữa sữa nữ dữ chữ hữu ngữ giữ bữa",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ụ, ặ, ữ. Nhớ: ụ = u j, ặ = a w j, ữ = u w x.",
+      "content": "vụng gom hữu chữa trục là tủ rụng kết rặng đặn giặt sữa",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ụ, ặ, ữ. Nhớ: ụ = u j, ặ = a w j, ữ = u w x.",
+      "content": "hữu mua đứng chờ giữ dục mục nhóm vụng bữa hoặc ngữ nặng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ụ, ặ, ữ.",
+      "content": "nhớ chưa điện ban rau mở chú ngặt nhé chiều bán quanh thức",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ụ, ặ, ữ.",
+      "content": "hoặc ngặt ngoặc đã nhau nặn dục trữ ngoặc quanh của vụt khiến",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các câu ngắn, chỉ dùng những phím đã học.",
+      "content": "hãy bê khay bằng hai tay giữ vật dưới tầm mắt",
+      "inputMode": "telex"
+    }
+  ]
+}

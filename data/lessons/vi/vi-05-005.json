@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-005",
+  "unit": "u5",
+  "group": "g2",
+  "order": 74,
+  "slug": "vi-05-005",
+  "title": "Chuyển biến bối cảnh",
+  "summary": "Chuyển đổi không gian kể chuyện sang đường phố bến cảng, làm quen với từ ngữ miêu tả địa điểm mới.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Chuyển đổi không gian kể chuyện sang đường phố bến cảng, làm quen với từ ngữ miêu tả địa điểm mới.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn chuyển cảnh sống động với nhiều chi tiết kiến trúc và hoạt động giao thương.",
+      "content": "Khu phố cảng hôm nay dường như khoác lên mình diện mạo tươi sáng hơn thường lệ với những dãy cờ nhiều màu treo dọc lối đi.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Chuyển không gian từ góc chợ nhỏ ra tuyến phố bến cảng rộng lớn.",
+      "content": "Con đường ven cảng trải dài tấp nập xe cộ và dòng người qua lại. Tiếng còi tàu vang vọng từng hồi từ ngoài vịnh xa báo hiệu chuyến tàu hàng vừa cập cảng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu văn miêu tả không khí nhộn nhịp của dãy phố thương mại ven biển.",
+      "content": "Dọc theo dãy phố cảng, các cửa hàng bách hóa và quán ăn sáng mở rộng cửa đón khách vào mua sắm. Mùi cà phê rang xay thơm nồng hòa quyện cùng vị mặn mòi của gió biển tạo nên phong vị đặc trưng cho cả góc phố.",
+      "inputMode": "telex"
+    }
+  ]
+}

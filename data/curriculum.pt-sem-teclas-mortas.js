@@ -66,13 +66,13 @@ window.TypingEaseCurriculum = {
       id: 'u4',
       index: 4,
       title: "Todas as outras teclas",
-      summary: "Os 22 caracteres deste teclado que o curso ainda não usou, cada um digitado onde ele realmente aparece.",
+      summary: "Os 24 caracteres deste teclado que o curso ainda não usou, cada um digitado onde ele realmente aparece.",
       minAccuracy: 80,
       locked: true,
       unlockAfter: 'u3-l06',
       groups: [
-        { id: 'symbols', title: "As teclas que faltam", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05', 'u4-l06', 'u4-l07'] },
-        { id: 'finish', title: "Feche a unidade", lessons: ['u4-l08', 'u4-l09'] }
+        { id: 'symbols', title: "As teclas que faltam", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05', 'u4-l06', 'u4-l07', 'u4-l08'] },
+        { id: 'finish', title: "Feche a unidade", lessons: ['u4-l09', 'u4-l10'] }
       ]
     }
   ],
@@ -112,8 +112,9 @@ window.TypingEaseCurriculum = {
     'u4-l05': { title: "\\ e |", newKeys: ["\\","|"], screens: 6, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l06': { title: "`, {, } e ^", newKeys: ["`","{","}","^"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l07': { title: "<, > e os dois-pontos", newKeys: ["<",">",":"], screens: 9, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l08': { title: "Todos os sinais juntos", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
-    'u4-l09': { title: "Teste da unidade 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
+    'u4-l08': { title: "/ e ?", newKeys: ["/","?"], screens: 6, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l09': { title: "Todos os sinais juntos", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
+    'u4-l10': { title: "Teste da unidade 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
   },
 
   sequence: [
@@ -152,7 +153,8 @@ window.TypingEaseCurriculum = {
     'u4-l06',
     'u4-l07',
     'u4-l08',
-    'u4-l09'
+    'u4-l09',
+    'u4-l10'
   ],
 
   starter: {
@@ -162,3 +164,45 @@ window.TypingEaseCurriculum = {
     hint: "Apoie os indicadores nas duas teclas com relevo e escreva o que você vê, sem olhar para o teclado."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/pt-sem-teclas-mortas/u1-l01.json?v=3503619e33e7a7c3",
+  "u1-l02": "/data/lessons/pt-sem-teclas-mortas/u1-l02.json?v=52227667428b0e13",
+  "u1-l03": "/data/lessons/pt-sem-teclas-mortas/u1-l03.json?v=bd67ae781c1beddf",
+  "u1-l04": "/data/lessons/pt-sem-teclas-mortas/u1-l04.json?v=9529d9c0402b33b3",
+  "u1-l05": "/data/lessons/pt-sem-teclas-mortas/u1-l05.json?v=a0d864044d9053b4",
+  "u1-l06": "/data/lessons/pt-sem-teclas-mortas/u1-l06.json?v=19c03b83e68b8d81",
+  "u1-l07": "/data/lessons/pt-sem-teclas-mortas/u1-l07.json?v=63ea33fa3ba4a114",
+  "u1-l08": "/data/lessons/pt-sem-teclas-mortas/u1-l08.json?v=32d1dbf86508989e",
+  "u1-l09": "/data/lessons/pt-sem-teclas-mortas/u1-l09.json?v=23083d8fa5665555",
+  "u1-l10": "/data/lessons/pt-sem-teclas-mortas/u1-l10.json?v=9e3cf02860ffe7be",
+  "u2-l01": "/data/lessons/pt-sem-teclas-mortas/u2-l01.json?v=dcc381d2bbefa0a4",
+  "u2-l02": "/data/lessons/pt-sem-teclas-mortas/u2-l02.json?v=8d67d20be28ca4b1",
+  "u2-l03": "/data/lessons/pt-sem-teclas-mortas/u2-l03.json?v=6d1634b6118910a6",
+  "u2-l04": "/data/lessons/pt-sem-teclas-mortas/u2-l04.json?v=102ff86793e764bd",
+  "u2-l05": "/data/lessons/pt-sem-teclas-mortas/u2-l05.json?v=80ff6e534c52b46b",
+  "u2-l06": "/data/lessons/pt-sem-teclas-mortas/u2-l06.json?v=7737f9194cfacca0",
+  "u2-l07": "/data/lessons/pt-sem-teclas-mortas/u2-l07.json?v=561542e79e998382",
+  "u2-l08": "/data/lessons/pt-sem-teclas-mortas/u2-l08.json?v=8be784828df6d18e",
+  "u2-l09": "/data/lessons/pt-sem-teclas-mortas/u2-l09.json?v=8e0dbcadfaff7c10",
+  "u2-l10": "/data/lessons/pt-sem-teclas-mortas/u2-l10.json?v=ac5976754eaf1de5",
+  "u2-l11": "/data/lessons/pt-sem-teclas-mortas/u2-l11.json?v=bb4ffc0378fbb50e",
+  "u3-l01": "/data/lessons/pt-sem-teclas-mortas/u3-l01.json?v=bda746d5bbfe68a2",
+  "u3-l02": "/data/lessons/pt-sem-teclas-mortas/u3-l02.json?v=200675273b152fe8",
+  "u3-l03": "/data/lessons/pt-sem-teclas-mortas/u3-l03.json?v=708df530511e2c15",
+  "u3-l04": "/data/lessons/pt-sem-teclas-mortas/u3-l04.json?v=c340feda679329b7",
+  "u3-l05": "/data/lessons/pt-sem-teclas-mortas/u3-l05.json?v=2136bb8cdc1ac9ff",
+  "u3-l06": "/data/lessons/pt-sem-teclas-mortas/u3-l06.json?v=d0a3cf8470154b70",
+  "u4-l01": "/data/lessons/pt-sem-teclas-mortas/u4-l01.json?v=4701fe5a2e17ccf1",
+  "u4-l02": "/data/lessons/pt-sem-teclas-mortas/u4-l02.json?v=cbc4afa9cac21076",
+  "u4-l03": "/data/lessons/pt-sem-teclas-mortas/u4-l03.json?v=b17d7393c08cdbf9",
+  "u4-l04": "/data/lessons/pt-sem-teclas-mortas/u4-l04.json?v=cc7ed5ca9c54c5b5",
+  "u4-l05": "/data/lessons/pt-sem-teclas-mortas/u4-l05.json?v=19f13a99d2a433ec",
+  "u4-l06": "/data/lessons/pt-sem-teclas-mortas/u4-l06.json?v=440c96c49c1273f5",
+  "u4-l07": "/data/lessons/pt-sem-teclas-mortas/u4-l07.json?v=40cc29e03a466cac",
+  "u4-l08": "/data/lessons/pt-sem-teclas-mortas/u4-l08.json?v=5cd45ee5b664b5f1",
+  "u4-l09": "/data/lessons/pt-sem-teclas-mortas/u4-l09.json?v=c60c31d4acc05883",
+  "u4-l10": "/data/lessons/pt-sem-teclas-mortas/u4-l10.json?v=0af126e6c56d6a59"
+};
+/* </auto:lesson-urls> */

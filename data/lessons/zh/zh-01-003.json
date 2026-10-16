@@ -1,0 +1,85 @@
+{
+  "id": "zh-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "zh-01-003",
+  "title": "键位练习：g、h、k",
+  "summary": "按顺序学习 g、h、k，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "g",
+    "h",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "按顺序学习 g、h、k，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-003",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "找到 g 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "gggg gggg gggg gggg gggg gggg gggg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "找到 h 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "hhhh hhhh hhhh hhhh hhhh hhhh hhhh",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "找到 k 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "kkkk kkkk kkkk kkkk kkkk kkkk kkkk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "gkhg kk hhk kkf ga gkhg ga kkf hhk kk hhk kk gkhg ga kkf"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ggsk kk gks gg kkg hhg ggsk hhg kkg gg gks kk gks kk ggsk"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "hh kkgh kkhk dgg hhkk hfg hh hfg hhkk dgg kkhk kkgh kkhk"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "gk skkk kkgh gg gsg kk gk kk gsg gg kkgh skkk kkgh skkk"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "hhgh ahg hh ggk ggh hhgh ggh ggk hh ahg hh ahg hhgh ggh"
+    }
+  ]
+}

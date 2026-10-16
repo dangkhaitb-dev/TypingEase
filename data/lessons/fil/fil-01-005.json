@@ -1,0 +1,82 @@
+{
+  "id": "fil-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "fil-01-005",
+  "title": "Mga titik: a, ;",
+  "summary": "Mga titik: a, ;. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Mga titik: a, ;. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-005",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "fa faa faaf aaaf aa aaa ffaa ff afaa aaaa aaf aafa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": ";f;; ;;;; ;f ff;; ff; ;;ff ;;;f ;; ;;;",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "ff;f aaf fffa fa;a jjjj ;; aa jf ajf ;ffa aaa; ;;a fjja"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": ";;a aa; ff;j fff js jjfa aaf ff ffff ;;fs ;fff ffj; ffjf aaa ;;"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "ffaj ;a fja j;f; a; jjfa ff ;;af jja aa;a aa jjj ;j;;"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fff aaj; ;; jj fa; jj; ajfa aa jjjj aa;j jf;f fafj jjja ff; ffj; aa; ff jf"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "kalsada saka kasal alak lakas dala sa sala ka sa"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "dasal sa sala ka saka kasal sa kalsada lakas alak dala"
+    }
+  ]
+}

@@ -79,9 +79,9 @@ window.TypingEaseLanguages = {
       // layouts. Dvorak/Colemak/Workman are not languages, so this is the only place they
       // sensibly live: a choice an English typist makes, not a country they come from.
       layouts: [1, 120, 128, 123, 125, 129, 131, 132, 133],
-      course: { status: 'ready', href: '/learn/', roadmap: '/lessons/', lessons: 34, units: 4 },
+      course: { status: 'ready', href: '/learn/', roadmap: '/lessons/', lessons: 156, units: 12 },
       courses: [
-        { id: 'en', lessons: 34, units: 4, name: 'QWERTY', keyboard: 'the QWERTY keyboard', layouts: [1, 120, 128, 123, 125], href: '/learn/', roadmap: '/lessons/', handwritten: true },
+        { id: 'en', lessons: 156, units: 12, name: 'QWERTY', keyboard: 'the QWERTY keyboard', layouts: [1, 120, 128, 123, 125], href: '/learn/', roadmap: '/lessons/', handwritten: true },
         { id: 'en-dvorak', lessons: 35, units: 4, name: 'Dvorak', keyboard: 'the Dvorak layout', layouts: [129], href: '/dvorak/learn/', roadmap: '/dvorak/' },
         { id: 'en-colemak', lessons: 35, units: 4, name: 'Colemak', keyboard: 'the Colemak layout', layouts: [131], href: '/colemak/learn/', roadmap: '/colemak/' },
         { id: 'en-colemak-dh', lessons: 35, units: 4, name: 'Colemak-DH', keyboard: 'the Colemak-DH layout', layouts: [132], href: '/colemak-dh/learn/', roadmap: '/colemak-dh/' },
@@ -95,9 +95,9 @@ window.TypingEaseLanguages = {
       // sinh ra từ chính bố cục đó nên bài 4 dạy "A y Ñ". Đổi sang 174 (Latin America) thì bài học
       // vẫn đúng, vì nó cũng đặt ñ ở đó.
       layouts: [175, 174, 176, 177],
-      course: { status: 'ready', href: '/es/aprender/', roadmap: '/es/lecciones/', lessons: 35, units: 4 },
+      course: { status: 'ready', href: '/es/aprender/', roadmap: '/es/lecciones/', lessons: 148, units: 12 },
       courses: [
-        { id: 'es', lessons: 35, units: 4, name: 'España', keyboard: 'el teclado español', layouts: [175, 176], href: '/es/aprender/', roadmap: '/es/lecciones/' },
+        { id: 'es', lessons: 148, units: 12, name: 'España', keyboard: 'el teclado español', layouts: [175, 176], href: '/es/aprender/', roadmap: '/es/lecciones/' },
         { id: 'es-latinoamerica', lessons: 36, units: 4, name: 'Latinoamérica', keyboard: 'el teclado latinoamericano', layouts: [174], href: '/es/latinoamerica/aprender/', roadmap: '/es/latinoamerica/' },
         { id: 'es-sin-teclas-muertas', lessons: 35, units: 4, name: 'Latinoamérica, sin teclas muertas', short: 'Latino (sin teclas muertas)', keyboard: 'el teclado latinoamericano sin teclas muertas', layouts: [177], href: '/es/sin-teclas-muertas/aprender/', roadmap: '/es/sin-teclas-muertas/' }
       ]
@@ -108,9 +108,9 @@ window.TypingEaseLanguages = {
       // 188 trước, và giáo trình sinh ra từ chính nó: ö nằm ngay hàng cơ sở nên bài 4 dạy "A und Ö",
       // còn ü thì KHÔNG ở ô nào kế hoạch dạy — xem đầu data/words/de.js.
       layouts: [188, 189, 193, 190],
-      course: { status: 'ready', href: '/de/lernen/', roadmap: '/de/lektionen/', lessons: 35, units: 4 },
+      course: { status: 'ready', href: '/de/lernen/', roadmap: '/de/lektionen/', lessons: 141, units: 12 },
       courses: [
-        { id: 'de', lessons: 35, units: 4, name: 'QWERTZ', keyboard: 'die deutsche QWERTZ-Tastatur', layouts: [188, 189], href: '/de/lernen/', roadmap: '/de/lektionen/' },
+        { id: 'de', lessons: 141, units: 12, name: 'QWERTZ', keyboard: 'die deutsche QWERTZ-Tastatur', layouts: [188, 189], href: '/de/lernen/', roadmap: '/de/lektionen/' },
         { id: 'de-schweiz', lessons: 36, units: 4, name: 'Schweiz', keyboard: 'die Schweizer Tastatur', layouts: [193], href: '/de/schweiz/lernen/', roadmap: '/de/schweiz/' },
         { id: 'de-neo', lessons: 33, units: 4, name: 'Neo', keyboard: 'die Neo-Tastatur', layouts: [190], href: '/de/neo/lernen/', roadmap: '/de/neo/' }
       ]
@@ -121,11 +121,11 @@ window.TypingEaseLanguages = {
       // 194 trước: ò ở hàng cơ sở, à ở bài dấu câu, còn dấu nháy — thứ tiếng Ý cần cho `l'acqua` —
       // chỉ tới ở u3-l02.
       layouts: [194, 195, 196, 197],
-      course: { status: 'ready', href: '/it/imparare/', roadmap: '/it/lezioni/', lessons: 36, units: 4 },
+      course: { status: 'ready', href: '/it/imparare/', roadmap: '/it/lezioni/', lessons: 142, units: 12 },
       courses: [
-        { id: 'it', lessons: 36, units: 4, name: 'QWERTY', keyboard: 'la tastiera italiana', layouts: [194, 195], href: '/it/imparare/', roadmap: '/it/lezioni/' },
+        { id: 'it', lessons: 142, units: 12, name: 'QWERTY', keyboard: 'la tastiera italiana', layouts: [194, 195], href: '/it/imparare/', roadmap: '/it/lezioni/' },
         { id: 'it-mac', lessons: 33, units: 4, name: 'Mac', keyboard: 'la tastiera italiana del Mac', layouts: [196], href: '/it/mac/imparare/', roadmap: '/it/mac/' },
-        { id: 'it-dvorak', lessons: 35, units: 4, name: 'Dvorak', keyboard: 'la tastiera Dvorak italiana', layouts: [197], href: '/it/dvorak/imparare/', roadmap: '/it/dvorak/' }
+        { id: 'it-dvorak', lessons: 36, units: 4, name: 'Dvorak', keyboard: 'la tastiera Dvorak italiana', layouts: [197], href: '/it/dvorak/imparare/', roadmap: '/it/dvorak/' }
       ]
     },
     {
@@ -135,9 +135,9 @@ window.TypingEaseLanguages = {
       // hàng cơ sở không có nguyên âm nào, dấu chấm là Maj + ô `;`, và hàng số không Maj in ra
       // é è ç à chứ không phải chữ số — xem đầu data/courses/fr.js.
       layouts: [181, 183, 186, 187, 184],
-      course: { status: 'ready', href: '/fr/apprendre/', roadmap: '/fr/lecons/', lessons: 33, units: 4 },
+      course: { status: 'ready', href: '/fr/apprendre/', roadmap: '/fr/lecons/', lessons: 157, units: 12 },
       courses: [
-        { id: 'fr', lessons: 33, units: 4, name: 'AZERTY', keyboard: 'le clavier AZERTY', layouts: [181, 183], href: '/fr/apprendre/', roadmap: '/fr/lecons/' },
+        { id: 'fr', lessons: 157, units: 12, name: 'AZERTY', keyboard: 'le clavier AZERTY', layouts: [181, 183], href: '/fr/apprendre/', roadmap: '/fr/lecons/' },
         { id: 'fr-canadien', lessons: 35, units: 4, name: 'Canada', keyboard: 'le clavier canadien français', layouts: [186], href: '/fr/canadien/apprendre/', roadmap: '/fr/canadien/' },
         { id: 'fr-suisse', lessons: 33, units: 4, name: 'Suisse', keyboard: 'le clavier suisse romand', layouts: [187], href: '/fr/suisse/apprendre/', roadmap: '/fr/suisse/' },
         { id: 'fr-bepo', lessons: 32, units: 4, name: 'BÉPO', keyboard: 'le clavier BÉPO', layouts: [184], href: '/fr/bepo/apprendre/', roadmap: '/fr/bepo/' }
@@ -150,102 +150,102 @@ window.TypingEaseLanguages = {
       // the tone marks from keys of their own, which is a different course nobody has written.
       // Listing them here drew those boards under Telex lessons that never use their keys.
       layouts: [1],
-      course: { status: 'ready', href: '/hoc/', roadmap: '/bai-hoc/', lessons: 43, units: 5 },
+      course: { status: 'ready', href: '/hoc/', roadmap: '/bai-hoc/', lessons: 173, units: 12 },
       courses: [
-        { id: 'vi', lessons: 43, units: 5, name: 'US', keyboard: 'bàn phím US', layouts: [1], href: '/hoc/', roadmap: '/bai-hoc/', handwritten: true }
+        { id: 'vi', lessons: 173, units: 12, name: 'US', keyboard: 'bàn phím US', layouts: [1], href: '/hoc/', roadmap: '/bai-hoc/', handwritten: true }
       ]
     },
 
     /* ---- keyboard now, course later --------------------------------------------------- */
-    { code: 'ar', native: 'العربية', english: 'Arabic', script: 'arabic', dir: 'rtl', layouts: [110, 141], course: { status: 'ready', href: '/ar/taallam/', roadmap: '/ar/durus/', lessons: 40, units: 4 },
+    { code: 'ar', native: 'العربية', english: 'Arabic', script: 'arabic', dir: 'rtl', layouts: [110, 141], course: { status: 'ready', href: '/ar/taallam/', roadmap: '/ar/durus/', lessons: 152, units: 12 },
       courses: [
-        { id: 'ar', lessons: 40, units: 4, name: 'القياسية', keyboard: 'لوحة المفاتيح العربية القياسية', layouts: [110], href: '/ar/taallam/', roadmap: '/ar/durus/' },
-        { id: 'ar-azerty', lessons: 37, units: 4, name: 'AZERTY', keyboard: 'لوحة المفاتيح العربية AZERTY', layouts: [141], href: '/ar/azerty/taallam/', roadmap: '/ar/azerty/' }
+        { id: 'ar', lessons: 152, units: 12, name: 'القياسية', keyboard: 'لوحة المفاتيح العربية القياسية', layouts: [110], href: '/ar/taallam/', roadmap: '/ar/durus/' },
+        { id: 'ar-azerty', lessons: 36, units: 4, name: 'AZERTY', keyboard: 'لوحة المفاتيح العربية AZERTY', layouts: [141], href: '/ar/azerty/taallam/', roadmap: '/ar/azerty/' }
       ] },
-    { code: 'bn', native: 'বাংলা', english: 'Bangla', script: 'bengali', dir: 'ltr', layouts: [107, 138], course: { status: 'ready', href: '/bn/shikhun/', roadmap: '/bn/path/', lessons: 37, units: 4 },
+    { code: 'bn', native: 'বাংলা', english: 'Bangla', script: 'bengali', dir: 'ltr', layouts: [107, 138], course: { status: 'ready', href: '/bn/shikhun/', roadmap: '/bn/path/', lessons: 155, units: 12 },
       courses: [
-        { id: 'bn', lessons: 37, units: 4, name: 'জাতীয়', keyboard: 'জাতীয় কিবোর্ড', layouts: [107], href: '/bn/shikhun/', roadmap: '/bn/path/' },
+        { id: 'bn', lessons: 155, units: 12, name: 'জাতীয়', keyboard: 'জাতীয় কিবোর্ড', layouts: [107], href: '/bn/shikhun/', roadmap: '/bn/path/' },
         { id: 'bn-probhat', lessons: 36, units: 4, name: 'প্রভাত', keyboard: 'প্রভাত কিবোর্ড', layouts: [138], href: '/bn/probhat/shikhun/', roadmap: '/bn/probhat/' }
       ] },
     // Khoá tiếng Trung dạy gõ BÍNH ÂM trên QWERTY (bố cục 217) — đúng cách người dùng thật gõ qua bộ gõ.
     // Bố cục 18 là dữ liệu kiểu cũ không có `hardware`: không sinh được khoá hay bài nếm thử.
-    { code: 'zh', native: '中文（简体）', english: 'Chinese (Simplified)', script: 'han', dir: 'ltr', layouts: [217], course: { status: 'ready', href: '/zh/xuexi/', roadmap: '/zh/kecheng/', lessons: 35, units: 4 },
-      courses: [{ id: 'zh', lessons: 35, units: 4, name: '拼音', keyboard: '拼音 QWERTY 键盘', layouts: [217], href: '/zh/xuexi/', roadmap: '/zh/kecheng/' }] },
-    { code: 'zh-tw', native: '中文（繁體）', english: 'Chinese (Traditional)', script: 'han', dir: 'ltr', layouts: [215], course: { status: 'ready', href: '/zh-tw/xuexi/', roadmap: '/zh-tw/kecheng/', lessons: 31, units: 4 },
-      courses: [{ id: 'zh-tw', lessons: 31, units: 4, name: '注音', keyboard: '注音鍵盤', layouts: [215], href: '/zh-tw/xuexi/', roadmap: '/zh-tw/kecheng/' }] },
-    { code: 'nl', native: 'Nederlands', english: 'Dutch', script: 'latin', dir: 'ltr', layouts: [198, 101, 199], course: { status: 'ready', href: '/nl/leren/', roadmap: '/nl/lessen/', lessons: 36, units: 4 },
+    { code: 'zh', native: '中文（简体）', english: 'Chinese (Simplified)', script: 'han', dir: 'ltr', layouts: [217], course: { status: 'ready', href: '/zh/xuexi/', roadmap: '/zh/kecheng/', lessons: 131, units: 12 },
+      courses: [{ id: 'zh', lessons: 131, units: 12, name: '拼音', keyboard: '拼音 QWERTY 键盘', layouts: [217], href: '/zh/xuexi/', roadmap: '/zh/kecheng/' }] },
+    { code: 'zh-tw', native: '中文（繁體）', english: 'Chinese (Traditional)', script: 'han', dir: 'ltr', layouts: [215], course: { status: 'ready', href: '/zh-tw/xuexi/', roadmap: '/zh-tw/kecheng/', lessons: 127, units: 12 },
+      courses: [{ id: 'zh-tw', lessons: 127, units: 12, name: '注音', keyboard: '注音鍵盤', layouts: [215], href: '/zh-tw/xuexi/', roadmap: '/zh-tw/kecheng/' }] },
+    { code: 'nl', native: 'Nederlands', english: 'Dutch', script: 'latin', dir: 'ltr', layouts: [198, 101, 199], course: { status: 'ready', href: '/nl/leren/', roadmap: '/nl/lessen/', lessons: 146, units: 12 },
       courses: [
-        { id: 'nl', lessons: 36, units: 4, name: 'standaard', keyboard: 'het standaard Nederlandse toetsenbord', layouts: [198, 101], href: '/nl/leren/', roadmap: '/nl/lessen/' },
-        { id: 'nl-mac', lessons: 35, units: 4, name: 'Mac', keyboard: 'het Nederlandse Mac-toetsenbord', layouts: [199], href: '/nl/mac/leren/', roadmap: '/nl/mac/' }
+        { id: 'nl', lessons: 146, units: 12, name: 'standaard', keyboard: 'het standaard Nederlandse toetsenbord', layouts: [198, 101], href: '/nl/leren/', roadmap: '/nl/lessen/' },
+        { id: 'nl-mac', lessons: 36, units: 4, name: 'Mac', keyboard: 'het Nederlandse Mac-toetsenbord', layouts: [199], href: '/nl/mac/leren/', roadmap: '/nl/mac/' }
       ] },
-    { code: 'fil', native: 'Filipino', english: 'Filipino', script: 'latin', dir: 'ltr', layouts: [117], course: { status: 'ready', href: '/fil/matuto/', roadmap: '/fil/aralin/', lessons: 35, units: 4 },
-      courses: [{ id: 'fil', lessons: 35, units: 4, name: 'QWERTY', keyboard: 'ang QWERTY na keyboard', layouts: [117], href: '/fil/matuto/', roadmap: '/fil/aralin/' }] },
+    { code: 'fil', native: 'Filipino', english: 'Filipino', script: 'latin', dir: 'ltr', layouts: [117], course: { status: 'ready', href: '/fil/matuto/', roadmap: '/fil/aralin/', lessons: 138, units: 12 },
+      courses: [{ id: 'fil', lessons: 138, units: 12, name: 'QWERTY', keyboard: 'ang QWERTY na keyboard', layouts: [117], href: '/fil/matuto/', roadmap: '/fil/aralin/' }] },
     { code: 'he', native: 'עברית', english: 'Hebrew', script: 'hebrew', dir: 'rtl', layouts: [142, 143, 144], course: { status: 'ready', href: '/he/lilmod/', roadmap: '/he/shiurim/', lessons: 35, units: 4 },
       courses: [
         { id: 'he', lessons: 35, units: 4, name: 'תקני', keyboard: 'המקלדת העברית התקנית', layouts: [142], href: '/he/lilmod/', roadmap: '/he/shiurim/' },
-        { id: 'he-si1452', lessons: 34, units: 4, name: 'SI-1452', keyboard: 'מקלדת SI-1452', layouts: [143], href: '/he/si1452/lilmod/', roadmap: '/he/si1452/' },
+        { id: 'he-si1452', lessons: 35, units: 4, name: 'SI-1452', keyboard: 'מקלדת SI-1452', layouts: [143], href: '/he/si1452/lilmod/', roadmap: '/he/si1452/' },
         { id: 'he-fonetit', lessons: 35, units: 4, name: 'פונטית', keyboard: 'מקלדת עברית פונטית', layouts: [144], href: '/he/fonetit/lilmod/', roadmap: '/he/fonetit/' }
       ] },
-    { code: 'hi', native: 'हिन्दी', english: 'Hindi', script: 'devanagari', dir: 'ltr', layouts: [106, 137], course: { status: 'ready', href: '/hi/seekhen/', roadmap: '/hi/path/', lessons: 36, units: 4 },
+    { code: 'hi', native: 'हिन्दी', english: 'Hindi', script: 'devanagari', dir: 'ltr', layouts: [106, 137], course: { status: 'ready', href: '/hi/seekhen/', roadmap: '/hi/path/', lessons: 228, units: 12 },
       courses: [
-        { id: 'hi', lessons: 36, units: 4, name: 'इनस्क्रिप्ट', keyboard: 'इनस्क्रिप्ट कीबोर्ड', layouts: [106], href: '/hi/seekhen/', roadmap: '/hi/path/' },
+        { id: 'hi', lessons: 228, units: 12, name: 'इनस्क्रिप्ट', keyboard: 'इनस्क्रिप्ट कीबोर्ड', layouts: [106], href: '/hi/seekhen/', roadmap: '/hi/path/' },
         { id: 'hi-bolnagri', lessons: 36, units: 4, name: 'बोलनागरी', keyboard: 'बोलनागरी फ़ोनेटिक कीबोर्ड', layouts: [137], href: '/hi/bolnagri/seekhen/', roadmap: '/hi/bolnagri/' }
       ] },
-    { code: 'id', native: 'Bahasa Indonesia', english: 'Indonesian', script: 'latin', dir: 'ltr', layouts: [115], course: { status: 'ready', href: '/id/belajar/', roadmap: '/id/pelajaran/', lessons: 35, units: 4 },
-      courses: [{ id: 'id', lessons: 35, units: 4, name: 'QWERTY', keyboard: 'papan ketik QWERTY', layouts: [115], href: '/id/belajar/', roadmap: '/id/pelajaran/' }] },
+    { code: 'id', native: 'Bahasa Indonesia', english: 'Indonesian', script: 'latin', dir: 'ltr', layouts: [115], course: { status: 'ready', href: '/id/belajar/', roadmap: '/id/pelajaran/', lessons: 137, units: 12 },
+      courses: [{ id: 'id', lessons: 137, units: 12, name: 'QWERTY', keyboard: 'papan ketik QWERTY', layouts: [115], href: '/id/belajar/', roadmap: '/id/pelajaran/' }] },
     // Khoá tiếng Nhật dạy gõ ROMAJI — đúng cách người dùng thật gõ qua bộ gõ kana-kanji.
-    { code: 'ja', native: '日本語', english: 'Japanese', script: 'japanese', dir: 'ltr', layouts: [216, 19], course: { status: 'ready', href: '/ja/manabu/', roadmap: '/ja/renshu/', lessons: 36, units: 4 },
+    { code: 'ja', native: '日本語', english: 'Japanese', script: 'japanese', dir: 'ltr', layouts: [216, 19], course: { status: 'ready', href: '/ja/manabu/', roadmap: '/ja/renshu/', lessons: 135, units: 12 },
       courses: [
-        { id: 'ja', lessons: 36, units: 4, name: 'JIS', keyboard: 'JIS配列のキーボード', layouts: [216], href: '/ja/manabu/', roadmap: '/ja/renshu/' },
+        { id: 'ja', lessons: 135, units: 12, name: 'JIS', keyboard: 'JIS配列のキーボード', layouts: [216], href: '/ja/manabu/', roadmap: '/ja/renshu/' },
         { id: 'ja-us', lessons: 35, units: 4, name: 'US配列', keyboard: 'US配列のキーボード', layouts: [19], href: '/ja/us/manabu/', roadmap: '/ja/us/' }
       ] },
     // Khoá tiếng Hàn gõ qua bộ gõ 2-set: player chấm bằng hangul-match.js (jamo → âm tiết).
-    { code: 'ko', native: '한국어', english: 'Korean', script: 'hangul', dir: 'ltr', layouts: [214], course: { status: 'ready', href: '/ko/baeugi/', roadmap: '/ko/gangui/', lessons: 35, units: 4 },
-      courses: [{ id: 'ko', lessons: 35, units: 4, name: '두벌식', keyboard: '두벌식 자판', layouts: [214], href: '/ko/baeugi/', roadmap: '/ko/gangui/' }] },
+    { code: 'ko', native: '한국어', english: 'Korean', script: 'hangul', dir: 'ltr', layouts: [214], course: { status: 'ready', href: '/ko/baeugi/', roadmap: '/ko/gangui/', lessons: 154, units: 12 },
+      courses: [{ id: 'ko', lessons: 154, units: 12, name: '두벌식', keyboard: '두벌식 자판', layouts: [214], href: '/ko/baeugi/', roadmap: '/ko/gangui/' }] },
     // 119 (Jawi, chữ Ả Rập) không thuộc khoá nào: khoá tiếng Mã Lai là chữ Latin. Nó vẫn nằm trong
     // bộ chọn, và landing.js dẫn nó tới bài nếm thử riêng thay vì một khoá dạy bàn phím khác.
-    { code: 'ms', native: 'Bahasa Melayu', english: 'Malay', script: 'latin', dir: 'ltr', layouts: [116, 119], course: { status: 'ready', href: '/ms/belajar/', roadmap: '/ms/pelajaran/', lessons: 35, units: 4 },
-      courses: [{ id: 'ms', lessons: 35, units: 4, name: 'QWERTY', keyboard: 'papan kekunci QWERTY', layouts: [116], href: '/ms/belajar/', roadmap: '/ms/pelajaran/' }] },
-    { code: 'fa', native: 'فارسی', english: 'Persian', script: 'arabic', dir: 'rtl', layouts: [109, 140], course: { status: 'ready', href: '/fa/amoozesh/', roadmap: '/fa/darsha/', lessons: 40, units: 4 },
+    { code: 'ms', native: 'Bahasa Melayu', english: 'Malay', script: 'latin', dir: 'ltr', layouts: [116, 119], course: { status: 'ready', href: '/ms/belajar/', roadmap: '/ms/pelajaran/', lessons: 137, units: 12 },
+      courses: [{ id: 'ms', lessons: 137, units: 12, name: 'QWERTY', keyboard: 'papan kekunci QWERTY', layouts: [116], href: '/ms/belajar/', roadmap: '/ms/pelajaran/' }] },
+    { code: 'fa', native: 'فارسی', english: 'Persian', script: 'arabic', dir: 'rtl', layouts: [109, 140], course: { status: 'ready', href: '/fa/amoozesh/', roadmap: '/fa/darsha/', lessons: 155, units: 12 },
       courses: [
-        { id: 'fa', lessons: 40, units: 4, name: 'استاندارد', keyboard: 'صفحه\u200cکلید استاندارد فارسی', layouts: [109], href: '/fa/amoozesh/', roadmap: '/fa/darsha/' },
-        { id: 'fa-windows', lessons: 40, units: 4, name: 'ویندوز', keyboard: 'صفحه\u200cکلید فارسی ویندوز', layouts: [140], href: '/fa/windows/amoozesh/', roadmap: '/fa/windows/' }
+        { id: 'fa', lessons: 155, units: 12, name: 'استاندارد', keyboard: 'صفحه\u200cکلید استاندارد فارسی', layouts: [109], href: '/fa/amoozesh/', roadmap: '/fa/darsha/' },
+        { id: 'fa-windows', lessons: 39, units: 4, name: 'ویندوز', keyboard: 'صفحه\u200cکلید فارسی ویندوز', layouts: [140], href: '/fa/windows/amoozesh/', roadmap: '/fa/windows/' }
       ] },
-    { code: 'pl', native: 'Polski', english: 'Polish', script: 'latin', dir: 'ltr', layouts: [102, 201, 200], course: { status: 'ready', href: '/pl/nauka/', roadmap: '/pl/lekcje/', lessons: 35, units: 4 },
+    { code: 'pl', native: 'Polski', english: 'Polish', script: 'latin', dir: 'ltr', layouts: [102, 201, 200], course: { status: 'ready', href: '/pl/nauka/', roadmap: '/pl/lekcje/', lessons: 143, units: 12 },
       courses: [
-        { id: 'pl', lessons: 35, units: 4, name: 'programisty', keyboard: 'klawiatura polska programisty', layouts: [102, 201], href: '/pl/nauka/', roadmap: '/pl/lekcje/' },
-        { id: 'pl-qwertz', lessons: 34, units: 4, name: 'QWERTZ', keyboard: 'klawiatura polska QWERTZ', layouts: [200], href: '/pl/qwertz/nauka/', roadmap: '/pl/qwertz/' }
+        { id: 'pl', lessons: 143, units: 12, name: 'programisty', keyboard: 'klawiatura polska programisty', layouts: [102, 201], href: '/pl/nauka/', roadmap: '/pl/lekcje/' },
+        { id: 'pl-qwertz', lessons: 35, units: 4, name: 'QWERTZ', keyboard: 'klawiatura polska QWERTZ', layouts: [200], href: '/pl/qwertz/nauka/', roadmap: '/pl/qwertz/' }
       ] },
-    { code: 'pt', native: 'Português', english: 'Portuguese', script: 'latin', dir: 'ltr', layouts: [178, 179], course: { status: 'ready', href: '/pt/aprender/', roadmap: '/pt/licoes/', lessons: 36, units: 4 },
+    { code: 'pt', native: 'Português', english: 'Portuguese', script: 'latin', dir: 'ltr', layouts: [178, 179], course: { status: 'ready', href: '/pt/aprender/', roadmap: '/pt/licoes/', lessons: 154, units: 12 },
       courses: [
-        { id: 'pt', lessons: 36, units: 4, name: 'ABNT2', keyboard: 'o teclado brasileiro ABNT2', layouts: [178], href: '/pt/aprender/', roadmap: '/pt/licoes/' },
-        { id: 'pt-sem-teclas-mortas', lessons: 36, units: 4, name: 'ABNT2 sem teclas mortas', keyboard: 'o teclado ABNT2 sem teclas mortas', layouts: [179], href: '/pt/sem-teclas-mortas/aprender/', roadmap: '/pt/sem-teclas-mortas/' }
+        { id: 'pt', lessons: 154, units: 12, name: 'ABNT2', keyboard: 'o teclado brasileiro ABNT2', layouts: [178], href: '/pt/aprender/', roadmap: '/pt/licoes/' },
+        { id: 'pt-sem-teclas-mortas', lessons: 37, units: 4, name: 'ABNT2 sem teclas mortas', keyboard: 'o teclado ABNT2 sem teclas mortas', layouts: [179], href: '/pt/sem-teclas-mortas/aprender/', roadmap: '/pt/sem-teclas-mortas/' }
       ] },
-    { code: 'ru', native: 'Русский', english: 'Russian', script: 'cyrillic', dir: 'ltr', layouts: [103, 134], course: { status: 'ready', href: '/ru/uchitsya/', roadmap: '/ru/uroki/', lessons: 34, units: 4 },
+    { code: 'ru', native: 'Русский', english: 'Russian', script: 'cyrillic', dir: 'ltr', layouts: [103, 134], course: { status: 'ready', href: '/ru/uchitsya/', roadmap: '/ru/uroki/', lessons: 133, units: 12 },
       courses: [
-        { id: 'ru', lessons: 34, units: 4, name: 'ЙЦУКЕН', keyboard: 'стандартная русская раскладка ЙЦУКЕН', layouts: [103], href: '/ru/uchitsya/', roadmap: '/ru/uroki/' },
+        { id: 'ru', lessons: 133, units: 12, name: 'ЙЦУКЕН', keyboard: 'стандартная русская раскладка ЙЦУКЕН', layouts: [103], href: '/ru/uchitsya/', roadmap: '/ru/uroki/' },
         { id: 'ru-fonetika', lessons: 34, units: 4, name: 'фонетическая', keyboard: 'фонетическая раскладка', layouts: [134], href: '/ru/fonetika/uchitsya/', roadmap: '/ru/fonetika/' }
       ] },
-    { code: 'sw', native: 'Kiswahili', english: 'Swahili', script: 'latin', dir: 'ltr', layouts: [118], course: { status: 'ready', href: '/sw/jifunze/', roadmap: '/sw/masomo/', lessons: 35, units: 4 },
-      courses: [{ id: 'sw', lessons: 35, units: 4, name: 'QWERTY', keyboard: 'kibodi ya QWERTY', layouts: [118], href: '/sw/jifunze/', roadmap: '/sw/masomo/' }] },
-    { code: 'th', native: 'ไทย', english: 'Thai', script: 'thai', dir: 'ltr', layouts: [105, 136], course: { status: 'ready', href: '/th/rian/', roadmap: '/th/bot-rian/', lessons: 36, units: 4 },
+    { code: 'sw', native: 'Kiswahili', english: 'Swahili', script: 'latin', dir: 'ltr', layouts: [118], course: { status: 'ready', href: '/sw/jifunze/', roadmap: '/sw/masomo/', lessons: 138, units: 12 },
+      courses: [{ id: 'sw', lessons: 138, units: 12, name: 'QWERTY', keyboard: 'kibodi ya QWERTY', layouts: [118], href: '/sw/jifunze/', roadmap: '/sw/masomo/' }] },
+    { code: 'th', native: 'ไทย', english: 'Thai', script: 'thai', dir: 'ltr', layouts: [105, 136], course: { status: 'ready', href: '/th/rian/', roadmap: '/th/bot-rian/', lessons: 170, units: 12 },
       courses: [
-        { id: 'th', lessons: 36, units: 4, name: 'เกษมณี', keyboard: 'แป้นพิมพ์เกษมณี', layouts: [105], href: '/th/rian/', roadmap: '/th/bot-rian/' },
+        { id: 'th', lessons: 170, units: 12, name: 'เกษมณี', keyboard: 'แป้นพิมพ์เกษมณี', layouts: [105], href: '/th/rian/', roadmap: '/th/bot-rian/' },
         { id: 'th-pattachote', lessons: 39, units: 4, name: 'ปัตตะโชติ', keyboard: 'แป้นพิมพ์ปัตตะโชติ', layouts: [136], href: '/th/pattachote/rian/', roadmap: '/th/pattachote/' }
       ] },
-    { code: 'tr', native: 'Türkçe', english: 'Turkish', script: 'latin', dir: 'ltr', layouts: [204, 205], course: { status: 'ready', href: '/tr/ogren/', roadmap: '/tr/dersler/', lessons: 34, units: 4 },
+    { code: 'tr', native: 'Türkçe', english: 'Turkish', script: 'latin', dir: 'ltr', layouts: [204, 205], course: { status: 'ready', href: '/tr/ogren/', roadmap: '/tr/dersler/', lessons: 140, units: 12 },
       courses: [
-        { id: 'tr', lessons: 34, units: 4, name: 'Q', keyboard: 'Türkçe Q klavye', layouts: [204], href: '/tr/ogren/', roadmap: '/tr/dersler/' },
+        { id: 'tr', lessons: 140, units: 12, name: 'Q', keyboard: 'Türkçe Q klavye', layouts: [204], href: '/tr/ogren/', roadmap: '/tr/dersler/' },
         { id: 'tr-f', lessons: 34, units: 4, name: 'F', keyboard: 'Türkçe F klavye', layouts: [205], href: '/tr/f/ogren/', roadmap: '/tr/f/' }
       ] },
-    { code: 'uk', native: 'Українська', english: 'Ukrainian', script: 'cyrillic', dir: 'ltr', layouts: [104, 135], course: { status: 'ready', href: '/uk/vchytysia/', roadmap: '/uk/uroky/', lessons: 34, units: 4 },
+    { code: 'uk', native: 'Українська', english: 'Ukrainian', script: 'cyrillic', dir: 'ltr', layouts: [104, 135], course: { status: 'ready', href: '/uk/vchytysia/', roadmap: '/uk/uroky/', lessons: 134, units: 12 },
       courses: [
-        { id: 'uk', lessons: 34, units: 4, name: 'стандартна', keyboard: 'стандартна українська розкладка', layouts: [104], href: '/uk/vchytysia/', roadmap: '/uk/uroky/' },
+        { id: 'uk', lessons: 134, units: 12, name: 'стандартна', keyboard: 'стандартна українська розкладка', layouts: [104], href: '/uk/vchytysia/', roadmap: '/uk/uroky/' },
         { id: 'uk-fonetyka', lessons: 31, units: 4, name: 'фонетична', keyboard: 'фонетична розкладка', layouts: [135], href: '/uk/fonetyka/vchytysia/', roadmap: '/uk/fonetyka/' }
       ] },
-    { code: 'ur', native: 'اردو', english: 'Urdu', script: 'arabic', dir: 'rtl', layouts: [108, 139], course: { status: 'ready', href: '/ur/seekhein/', roadmap: '/ur/asbaq/', lessons: 40, units: 4 },
+    { code: 'ur', native: 'اردو', english: 'Urdu', script: 'arabic', dir: 'rtl', layouts: [108, 139], course: { status: 'ready', href: '/ur/seekhein/', roadmap: '/ur/asbaq/', lessons: 152, units: 12 },
       courses: [
-        { id: 'ur', lessons: 40, units: 4, name: 'صوتی', keyboard: 'صوتی اردو کی بورڈ', layouts: [108], href: '/ur/seekhein/', roadmap: '/ur/asbaq/' },
+        { id: 'ur', lessons: 152, units: 12, name: 'صوتی', keyboard: 'صوتی اردو کی بورڈ', layouts: [108], href: '/ur/seekhein/', roadmap: '/ur/asbaq/' },
         { id: 'ur-crulp', lessons: 40, units: 4, name: 'CRULP', keyboard: 'اردو کی بورڈ CRULP', layouts: [139], href: '/ur/crulp/seekhein/', roadmap: '/ur/crulp/' }
       ] }
   ]

@@ -1,0 +1,108 @@
+{
+  "id": "it-03-005",
+  "unit": "u3",
+  "group": "g1",
+  "order": 28,
+  "slug": "it-03-005",
+  "title": "Maiuscole: G, H, I",
+  "summary": "Impara i tasti G, H, I e usali con i tasti già studiati.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti G, H, I e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-03-005",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Tieni premuto Maiusc e premi g per scrivere G. Poi torna alla posizione di base.",
+      "content": "fG GGGf GG ff GGGG GfGf GGG fGGf GfGG ffG GGfG",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Tieni premuto Maiusc e premi h per scrivere H. Poi torna alla posizione di base.",
+      "content": "HHHH jjH HHH HjHH jHH HjHj HH jHHH",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Tieni premuto Maiusc e premi i per scrivere I. Poi torna alla posizione di base.",
+      "content": "II IIII IIIf fI ffIf IfIf III",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "GHf IjG fHI GId Haj IG3 fGH deI HjG Ifa GdH aIj"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "HGj fIH ade GHj Ifa HI3 jHG feI GjH Ida HfG jGI"
+    }
+  ]
+}

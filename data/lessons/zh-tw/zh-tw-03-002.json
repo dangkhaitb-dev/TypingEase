@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 31,
+  "slug": "zh-tw-03-002",
+  "title": "冒號、分號與問嘆號",
+  "summary": "Narrow committed-output lesson: ？",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: ？",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-03-002",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "全形：；？！都要按 Shift：分別加 ; ' / 1 鍵。完成選字後再加入標點。",
+      "content": "明天要帶什麼？請先看老師的通知。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "全形：；？！都要按 Shift：分別加 ; ' / 1 鍵。完成選字後再加入標點。",
+      "content": "請準備：課本、鉛筆和一個空水壺。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "全形：；？！都要按 Shift：分別加 ; ' / 1 鍵。完成選字後再加入標點。",
+      "content": "快下雨了！大家先把窗戶關好再出門。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "全形：；？！都要按 Shift：分別加 ; ' / 1 鍵。完成選字後再加入標點。",
+      "content": "我負責買菜；你煮飯，晚餐就能準時開動。",
+      "inputMode": "ime"
+    }
+  ]
+}

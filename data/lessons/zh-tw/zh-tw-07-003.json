@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-003",
+  "unit": "u7",
+  "group": "g1",
+  "order": 64,
+  "slug": "zh-tw-07-003",
+  "title": "回答借書問題",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-003",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "同學問：「一次可以借幾本書？」我回答：「最多可以借五本，雜誌不能外借。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "他又問：「可以借多久？」我說：「一般的書可以借兩個星期，新書只能借一週。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "他問：「如果看不完怎麼辦？」我說：「只要沒有人預約，就可以上網續借一次。」",
+      "inputMode": "ime"
+    }
+  ]
+}

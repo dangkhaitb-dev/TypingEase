@@ -1,0 +1,79 @@
+{
+  "id": "br-01-026",
+  "unit": "u1",
+  "group": "g1",
+  "order": 24,
+  "slug": "br-01-026",
+  "title": "Revisão: letras e acentos",
+  "summary": "Digite palavras reais e frases curtas com todas as letras, o ç e os acentos aprendidos.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Digite palavras reais e frases curtas com todas as letras, o ç e os acentos aprendidos.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-026",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Digite cada frase com atenção, usando qualquer tecla que você já conhece.",
+      "content": "a minha avó faz um bolo de maçã para a família"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada frase com atenção, usando qualquer tecla que você já conhece.",
+      "content": "o pássaro canta de manhã no jardim da escola"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada frase com atenção, usando qualquer tecla que você já conhece.",
+      "content": "você já viu a lição que o professor escreveu"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada frase com atenção, usando qualquer tecla que você já conhece.",
+      "content": "amanhã vamos à praia com os nossos irmãos"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada frase com atenção, usando qualquer tecla que você já conhece.",
+      "content": "o menino comprou três pães e um café quente"
+    }
+  ]
+}

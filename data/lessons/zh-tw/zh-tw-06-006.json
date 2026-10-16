@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-006",
+  "unit": "u6",
+  "group": "g1",
+  "order": 56,
+  "slug": "zh-tw-06-006",
+  "title": "請同事協助準備",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-006",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "小王，明天上午十點的會議需要投影機，可以麻煩你先幫我借好嗎？我九點半會到會議室。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "另外，請幫我影印二十份會議資料，檔案已經寄到你的信箱。印好以後，放在會議室的桌上就可以了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我今天下午要去拜訪客戶，可能比較晚才能回覆訊息。如果有任何問題，請直接打我的手機。真的很謝謝你幫忙！",
+      "inputMode": "ime"
+    }
+  ]
+}

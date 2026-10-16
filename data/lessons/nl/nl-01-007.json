@@ -1,0 +1,104 @@
+{
+  "id": "nl-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "nl-01-007",
+  "title": "Toetsen y, u, i",
+  "summary": "Leer de nieuwe toetsen y, u, i en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "y",
+    "u",
+    "i"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen y, u, i en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-007",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "Toets oefenen: y.",
+      "content": "yyyy yyyy yyyy yyyy yyyy yyyy yyyy yyyy y",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Toets oefenen: u.",
+      "content": "uuuu uuuu uuuu uuuu uuuu uuuu uuuu u",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Toets oefenen: i.",
+      "content": "iiii iiii iiii iiii iiii iiii iiii ii",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "yyui uuuu yyu uii iii uuiy ii uuu iy uuy uiwu iiii yy uyi uyu uu uiyy iiu"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "iiuy uyui ik yik uuyi yu iiiu iiu uuuu yy"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "aai iiu uu iiiu iyii uui yyuu uuyu iuy yyy uyy iiyu iii"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "uiyu ii uu uuit iiu yyy yui uuyu uui yyt uyy yyyi ui tt yyu iuu"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "iiuu iyu yu iyi iiii uus ii yy iiy yyi yyy iiui uu is yuu uuui yyiy iu iui"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "ik kijk uit het huis hij is dik het ijs is wit"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "hij weet dat het ijs weer wit is het uur is stil"
+    }
+  ]
+}

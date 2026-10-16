@@ -1,0 +1,98 @@
+{
+  "id": "de-01-011",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "de-01-011",
+  "title": "Tasten ä, ö, ü",
+  "summary": "Lerne die neuen Tasten ä, ö, ü und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten ä, ö, ü und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-011",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Taste üben: ä.",
+      "content": "ää ääää äää ää ää ää ää ää"
+    },
+    {
+      "type": "standard",
+      "text": "Taste üben: ö.",
+      "content": "öö öööö ööö öö öö öö öö öö"
+    },
+    {
+      "type": "standard",
+      "text": "Taste üben: ü.",
+      "content": "üüüü üüü üü üü üü üü üü üü"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "äääü üüöö äöä äää öüää ääüü üo öö ää ööäo ääü ööä äü öä üü üäöä ääüä"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "öäö äü öööü ääüü üü ääör üäüö äöä öö äää äöää üüüö ööö üüä öüä örü ääöü"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "üöäö aa öööü ööäö äää ööää ääö äüä aöü öö äö öüü öü äü ää öä äääö"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ööö üüäü üüü öäüä üüüä üü äää öü ööää bbäü öö üäö ää ööüä ööü"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "wir können später über alles reden was du für uns tust"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "es wäre schön wenn du früh zurückkommen könntest"
+    }
+  ]
+}

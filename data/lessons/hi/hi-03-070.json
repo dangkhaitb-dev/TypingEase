@@ -1,0 +1,65 @@
+{
+  "id": "hi-03-070",
+  "unit": "u3",
+  "group": "g3",
+  "order": 130,
+  "slug": "hi-03-070",
+  "title": "Shift और AltGr: _ | ॐ",
+  "summary": "Shift और AltGr की संयुक्त परत का अभ्यास करें।",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Shift और AltGr की संयुक्त परत का अभ्यास करें।",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "hi",
+    "lesson": "hi-03-070",
+    "revision": "hi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "_ के लिए AltGr और Shift दोनों दबाए रखकर अंकों की पंक्ति की - कुंजी दबाएँ (दाएँ हाथ की छोटी उँगली)।",
+      "content": "_ __ _र र_ _ __ _र र_ _ __ _र र_"
+    },
+    {
+      "type": "standard",
+      "text": "| के लिए AltGr और Shift दोनों दबाए रखकर ऊपर की पंक्ति की \\ कुंजी दबाएँ (दाएँ हाथ की छोटी उँगली)।",
+      "content": "| || |र र| | || |र र| | || |र र|"
+    },
+    {
+      "type": "standard",
+      "text": "ॐ के लिए AltGr और Shift दोनों दबाए रखकर नीचे की पंक्ति की X कुंजी दबाएँ (बाएँ हाथ की अनामिका)।",
+      "content": "ॐ ॐॐ ॐर रॐ ॐ ॐॐ ॐर रॐ ॐ ॐॐ ॐर रॐ"
+    },
+    {
+      "type": "standard",
+      "text": "Shift और AltGr से चिह्नों का सटीक अभ्यास करें।",
+      "content": "_ __ र_ | || र| ॐ ॐॐ रॐ _ __ र_ | || र| ॐ ॐॐ रॐ _ __"
+    },
+    {
+      "type": "standard",
+      "text": "Shift और AltGr से चिह्नों का सटीक अभ्यास करें।",
+      "content": "_र र| ॐर _| |ॐ ॐ_ र_ |र रॐ _ॐ ॐ| |_ _र| |रॐ ॐर_ _|ॐ"
+    },
+    {
+      "type": "standard",
+      "text": "Shift और AltGr से चिह्नों का सटीक अभ्यास करें।",
+      "content": "|_ ॐ| _ॐ _रॐ ॐर| |र_ __ || ॐॐ र_| र|ॐ रॐ_ ॐ_| |ॐ_ _|ॐ"
+    },
+    {
+      "type": "standard",
+      "text": "Shift और AltGr से चिह्नों का सटीक अभ्यास करें।",
+      "content": "_|र |ॐर ॐ_र _र_ |र| ॐरॐ ॐ|_ |_ॐ _ॐ| _| ॐ_ |ॐ _ॐ |_ ॐ|"
+    },
+    {
+      "type": "standard",
+      "text": "Shift और AltGr से चिह्नों का सटीक अभ्यास करें।",
+      "content": "ॐ_र _|र |ॐर ॐर_| _र|ॐ |रॐ_ _ॐ| |_ॐ ॐ|_ __| ||ॐ ॐॐ_ _|ॐ"
+    }
+  ]
+}

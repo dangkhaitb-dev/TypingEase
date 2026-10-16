@@ -43,7 +43,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -59,8 +58,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<",
     "#",
     "|",
@@ -92,7 +89,7 @@
       "type": "block",
       "newKey": "&",
       "text": "D'abord & sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "&& & surgir & mode vies & terme glisse & point\n&& & contrôle & fêtes parole & route vous & jure\n&& & zeste & frères humides & mimes tu & bruit"
+      "content": "&& & rigide & lutte une & utiles demi & nouvelle\n&& & décider & exact votes & mois nos & glisses\n&& & jolie & travaux sud & selle humides & avec"
     },
     {
       "type": "intro",
@@ -105,7 +102,7 @@
       "type": "block",
       "newKey": "*",
       "text": "D'abord * sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "** * *style* *très* *tant*\n** * *terme* *listes* *dit*\n** * *journées* *voit* *fête*"
+      "content": "** * *juger* *points* *sa*\n** * *utiles* *tir* *heures*\n** * *bonne* *non* *exact*"
     },
     {
       "type": "intro",
@@ -118,7 +115,7 @@
       "type": "block",
       "newKey": "(",
       "text": "D'abord ( sans rien autour, puis là où on s'en sert vraiment.",
-      "content": "(( ( (belle (progrès (plan\n(( ( (base (gifles (me\n(( ( (bateaux (figures (envies"
+      "content": "(( ( (paroles (bouche (monsieur\n(( ( (places (demi (les\n(( ( (grands (dures (nuit"
     },
     {
       "type": "intro",
@@ -131,35 +128,35 @@
       "type": "block",
       "newKey": ")",
       "text": "D'abord ) sans rien autour, puis là où on s'en sert vraiment.",
-      "content": ")) ) (très) (kiwi) (nouveau)\n)) ) (les) (titres) (dur)\n)) ) (mot) (os) (brûler)"
+      "content": ")) ) (porte) (passer) (encore)\n)) ) (le) (lisse) (gifles)\n)) ) (style) (telle) (février)"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Une série de petits morceaux avec ces caractères.",
       "tokens": [
-        "soirées&cours",
-        "(forte)",
-        "(vous)",
-        "coût&jamais",
-        "aller&monde",
-        "*joli*",
-        "*avoir*",
-        "(nom)",
-        "lumière&petit",
-        "plus&demi"
+        "beau&mort",
+        "(dos)",
+        "(nos)",
+        "résultat&devenir",
+        "venir&sotte",
+        "*telles*",
+        "*vient*",
+        "(four)",
+        "quand&ville",
+        "vies&mime"
       ]
     },
     {
       "type": "block",
       "text": "Tout ce que cette leçon a apporté, mélangé.",
-      "content": "triste & bord *les* histoire&cent février&gros\n*filles* *était* petits&tes (lourde)\n*prête* *filles* (gels) *russe*"
+      "content": "tir & prendre *les* dose&fort bord&tel\n*luges* *point* villes&heures (dose)\n*wagon* *luges* (messe) *musiques*"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Des mots à nouveau, avec les signes à leur place.",
-      "content": "bêtes & porte détails *pas* réponse *précis*\n*vitesse* ouvre soirée & bâtiment beau mimes & bêtes\n(musique) bases (tous) ses lui & si"
+      "content": "kiwi & ouvrir table *connu* bras *belles*\n*donc* content bonnes & écoles place lis & kiwi\n(figures) plan (gestes) se jure & ses"
     }
   ]
 }

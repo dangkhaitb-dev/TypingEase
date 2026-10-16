@@ -1,0 +1,107 @@
+{
+  "id": "de-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 18,
+  "slug": "de-02-002",
+  "title": "Ziffern 1 2 3",
+  "summary": "Lerne die neuen Tasten 1, 2, 3 und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten 1, 2, 3 und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-02-002",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Taste üben: 1.",
+      "content": "11 1111 111 11 11 11 11 11",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Taste üben: 2.",
+      "content": "222 22 2222 22 22 22 22 22",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Taste üben: 3.",
+      "content": "3333 333 33 33 33 33 33 33",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "2223 12 33 3331 111 113 1312 13 331 2221 332 3321 221 23p1 2222 11"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "1112 32 113 33 312 22 31 11 112 3232 331 3313 1122 211n"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "1133 2231 dd3 2212 2213 22 1213 333 21 33 11 12 3332 111"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "113 3312 222 111 212 11 333 ee21 21 3311 33 1222 2123 2211"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "3b2 12 11 2223 132 1212 2131 2121 13 211 33 22 b1b 23 111 2211 213"
+    }
+  ]
+}

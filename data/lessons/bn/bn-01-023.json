@@ -1,0 +1,60 @@
+{
+  "id": "bn-01-023",
+  "unit": "u1",
+  "group": "g1",
+  "order": 16,
+  "slug": "bn-01-023",
+  "title": "কী অনুশীলন · খ থ",
+  "summary": "Introduce committed targets কৃ; review কূ কু. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets কৃ; review কূ কু. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-01-023",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "খ টাইপ করতে শিফট চেপে ধরে ডান হাতের তর্জনী দিয়ে J কী চাপুন (ক-এর কী)।",
+      "content": "কখব খব খব কখব খব খব কখব খব খব কখব"
+    },
+    {
+      "type": "standard",
+      "text": "থ টাইপ করতে শিফট চেপে ধরে ডান হাতের মধ্যমা দিয়ে K কী চাপুন (ত-এর কী)।",
+      "content": "থব কথব থব থব কথব থব থব কথব থব থব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ৎথ ৎৎৎৎ থখৎৎ থবৎ ৎখখথ ৎখ বৎৎ থথথ খখথ থৎখৎ থখথৎ ৎবৎথ খখ ৎৎখথ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "খিহুতো থূখখি থথীথু খতূ ৎৎথাঁ হখোঁ ৎথ থৃৎখো ৎখৎ খথতথ খত হেহোথৃ থেৎ থোথ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "থথখথ খখ খথথ থখথ ৎৎ ৎউখ থথ ৎৎৎ ৎৎউ ৎৎথথ খথ খখখখ থৎথখ ৎথখৎ খৎখ থথথথ থথখ খখৎৎ"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "রাখুন দেখে থেকে কথা থাকে দেখা রাখা পথ খাবার থাকা দেখুন রেখে উৎসবের পথে তারিখ খুঁজে পথের খবর রেখা রাখে"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "প্রথম খাতা তথ্য সেখানে দেখতে চোখে কখনো খাবারের পাখির থেমে অর্থ খরচ স্থান প্রথমে দেখি রাখতে যখন নথি অতিথি"
+    }
+  ]
+}

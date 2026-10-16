@@ -9,10 +9,7 @@
   "newKeys": [
     "j",
     "-",
-    "`",
-    "ß",
-    "´",
-    "\\"
+    "ß"
   ],
   "keysSoFar": [
     " ",
@@ -60,10 +57,7 @@
     "0",
     "j",
     "-",
-    "`",
-    "ß",
-    "´",
-    "\\"
+    "ß"
   ],
   "minAccuracy": 80,
   "estMinutes": 6,
@@ -89,74 +83,64 @@
     },
     {
       "newKeys": [
-        "`",
         "ß"
       ],
-      "text": "Jetzt ` und ß. Der kleine Finger geht nach außen und kommt zurück; die Hand bleibt, wo sie ist.",
+      "text": "Jetzt ß. Der kleine Finger geht nach außen und kommt zurück; die Hand bleibt, wo sie ist.",
       "type": "block",
-      "content": "ß` `ß\n`en ßa `e\n`ß ß` `ß`ß"
+      "content": "ß ß\nßan e ßa\nß ß ßß"
     },
     {
       "seconds": 20,
       "text": "Eine Runde mit dem, was du aus dieser Spalte schon hast.",
       "type": "burst",
       "tokens": [
-        "ß-",
-        "-`",
-        "--",
-        "ßj",
-        "-j",
-        "jß",
-        "ß`",
-        "j-",
+        "-j-",
         "-ß",
-        "ßß"
+        "jß",
+        "---",
+        "jj",
+        "jjj",
+        "ßß",
+        "--j",
+        "j-j",
+        "jjß"
       ]
-    },
-    {
-      "newKeys": [
-        "´",
-        "\\"
-      ],
-      "text": "Jetzt ´ und \\. Der kleine Finger geht nach außen und kommt zurück; die Hand bleibt, wo sie ist.",
-      "type": "block",
-      "content": "´\\ ´\\\n´ea \\n ´e\n´\\ \\´ ´\\´\\"
     },
     {
       "text": "Alle sechs zusammen. Hier verdreht sich das Handgelenk am schnellsten, wenn der Finger nicht zurückkehrt.",
       "type": "block",
-      "content": "e`j a\\- e`\n\\´ ´\\ \\´\\´\n\\\\\\\\ ```` --- jjj ßßß ´´´´"
+      "content": "jß- ßj-\nn-j ßae n-\n-j j- -j-j"
     },
     {
       "seconds": 25,
       "text": "Wieder Wörter, damit die Hand nach so viel Rand locker wird.",
       "type": "burst",
       "tokens": [
-        "traum",
-        "euer",
-        "bücher",
-        "minute",
-        "mehr",
-        "buch",
-        "schnell",
-        "hals",
-        "prüfen",
-        "direkt",
-        "bitte",
-        "programm"
+        "stadt",
+        "warm",
+        "dir",
+        "zurück",
+        "maß",
+        "flagge",
+        "kind",
+        "müde",
+        "glas",
+        "apfel",
+        "je",
+        "bühne"
       ]
     },
     {
       "text": "Zurück zu den Wörtern, jetzt mit der ganzen Tastatur — ß eingeschlossen.",
       "dictation": "words",
       "type": "standard",
-      "content": "wäsche lass nacht bilder\nuhr wo stoß still\nzusage sagt springen typ"
+      "content": "wann nehmen zylinder morgen\nstufe jäger mitte hase\npaar essen berühmt bekannt"
     },
     {
       "text": "Ganze Sätze zum Abschluss der Tastenlektionen.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Mein Bruder arbeitet in einem kleinen Betrieb.\nMeine Schwester wohnt in einer kleinen Stadt.\nDer Lehrer erklärt die Aufgabe noch einmal."
+      "content": "Die Katze schläft den ganzen Tag auf dem Sofa.\nDer Lehrer erklärt die Aufgabe noch einmal.\nDie Kinder spielen im Garten hinter dem Haus."
     }
   ]
 }

@@ -183,15 +183,28 @@ function playerPage(code, entry, slug = entry.code) {
   swap('<html lang="en">', `<html lang="en" data-course="${code}">`);
   swap('<link rel="canonical" href="https://typingease.site/learn/" />', `<link rel="canonical" href="https://typingease.site/try/${slug}/" />`);
   swap('href="/lessons/" id="pt-back">← Roadmap</a>', 'href="/#languages" id="pt-back">← Keyboards</a>');
-  swap('<script src="/data/curriculum.en.js"></script>', `<script src="/data/curriculum.${code}.js"></script>`);
+  // Thẻ chỉ mục mang mã băm (`?v=…`, scripts/stamp-data.mjs); bản sao trỏ sang chỉ mục của khoá
+  // này, chưa băm — stamp-data.mjs băm nó ở lần chạy sau.
+  const enIndex = /<script src="\/data\/curriculum\.en\.js(?:\?v=[a-f0-9]+)?"><\/script>/;
+  if (!enIndex.test(html)) throw new Error('learn/index.html không còn thẻ <script> của data/curriculum.en.js');
+  html = html.replace(enIndex, `<script src="/data/curriculum.${code}.js"></script>`);
   html = html.replace('<head>\n', `<head>\n    <!-- SINH TỰ ĐỘNG bằng scripts/build-tasters.js từ en/learn/index.html. Sửa trang gốc rồi chạy lại. -->\n`);
   return html;
 }
 
 let drift = 0, written = 0;
+// Phần do scripts/stamp-data.mjs viết (khối `lessonUrls`, `?v=` trên thẻ chỉ mục) không phải đầu
+// ra của script này: bỏ qua khi so sánh, và băm lại sau khi ghi.
+const STAMP = '/* <auto:lesson-urls>';
+const unstamped = text => {
+  if (text == null) return text;
+  const at = text.indexOf(STAMP);
+  const body = at >= 0 ? text.slice(0, at).replace(/\s*$/, '\n') : text;
+  return body.replace(/(data\/curriculum\.[a-z0-9-]+\.js)\?v=[a-f0-9]+/g, '$1');
+};
 function emit(file, text) {
   const current = fs.existsSync(file) ? fs.readFileSync(file, 'utf8') : null;
-  if (current === text) return;
+  if (unstamped(current) === unstamped(text)) return;
   if (CHECK) { drift += 1; console.error(`LỆCH  ${path.relative(ROOT, file).split(path.sep).join('/')}`); return; }
   fs.mkdirSync(path.dirname(file), { recursive: true });
   fs.writeFileSync(file, text);

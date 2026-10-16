@@ -1,0 +1,75 @@
+{
+  "id": "bn-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "bn-01-009",
+  "title": "কী অনুশীলন · স ম ঈ",
+  "summary": "Introduce committed targets ট ঠ; review none. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets ট ঠ; review none. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-01-009",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "স টাইপ করতে ডান হাতের তর্জনী দিয়ে N কী চাপুন।",
+      "content": "কসব সব সব কসব সব সব কসব সব সব কসব"
+    },
+    {
+      "type": "standard",
+      "text": "ম টাইপ করতে ডান হাতের তর্জনী দিয়ে M কী চাপুন।",
+      "content": "মব মব কমব মব মব কমব মব মব কমব মব"
+    },
+    {
+      "type": "standard",
+      "text": "ঈ টাইপ করতে শিফট ও অল্টজিআর দুটোই চেপে ধরে বাঁ হাতের মধ্যমা দিয়ে D কী চাপুন (ই-কারের কী)।",
+      "content": "ঈব কঈব ঈব ঈব কঈব ঈব ঈব কঈব ঈব ঈব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঈঈমস মমসম মঈম মসস ঈঈসঈ সঙঈ সসসঈ মম সস মমসঈ মমস ঙমস"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঈঈস সঈ ঈঈমঈ হহ ঈঈঈ সম মমস সসঈ মমম মম ঈঈ সঈম মমহ সস ঈসসস"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "কম সঈঈ সস কক সসসম মঈস মসমঈ মমম মমস সঈস মঈ ঈঈ সসঈম ঈম ঈঈমম সসসঈ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "মমসস সসঈঈ ঈমঈঈ মমম মঈম ঈঈ ঈসম ঈঈমঈ ঈমঈ ঈঈম ঈঈম মমস মমমম ঈঈঈম"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "মঈঈঈ ঈঈব ঈঈমম মমম মঈঈস মমমঈ মমস মসসঈ সসম মঈঈম মমসঈ ববঈ"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "সঙ্গে মনে নাম বসে সহজ সাহায্য জিনিস নরম কমে গরম মাটির স্মৃতি মতো সাদা সব সামনে সবার মিতা কম গ্রামের"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "কিন্তু গান কাজে করার নিরাপদ তাকে রঙিন নোট তারা রঙের চিহ্ন হতে হিসাব রাস্তা বাতাস মন বাতাসে কোনো তুমি তিনি"
+    }
+  ]
+}

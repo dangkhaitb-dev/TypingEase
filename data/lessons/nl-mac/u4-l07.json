@@ -1,12 +1,15 @@
 {
   "id": "u4-l07",
   "unit": "u4",
-  "group": "finish",
+  "group": "symbols",
   "order": 34,
-  "slug": "review-u4",
-  "title": "Alle tekens samen",
-  "summary": "Alle tekens van deze unit, gemengd met woorden en cijfers.",
-  "newKeys": [],
+  "slug": "symbols-7",
+  "title": "\" en ?",
+  "summary": "In deze les: \" en ?.",
+  "newKeys": [
+    "\"",
+    "?"
+  ],
   "keysSoFar": [
     " ",
     "f",
@@ -71,71 +74,74 @@
     ")",
     "_",
     "+",
+    "<",
+    ">",
     "{",
     "}",
     "|",
     ":",
     "\"",
-    "<",
-    ">",
     "?"
   ],
   "minAccuracy": 80,
   "estMinutes": 5,
   "inputMode": "ascii",
-  "intro": "Geen nieuwe toetsen. Alle tekens van deze unit, gemengd met woorden en cijfers.",
-  "congrats": "Elke toets van dit toetsenbord is aan de beurt geweest.",
+  "intro": "Toetsen die de cursus nog niet heeft gebruikt: \" en ?. Je krijgt ze allemaal met Shift en een toets die je vingers al kennen — Shift met de pink van de andere hand.",
+  "congrats": "\" en ?: nu onder je vingers. Het teken komt er net zo makkelijk uit als de letter ernaast.",
   "screens": [
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "De tekens in hetzelfde tempo als de letters eromheen.",
-      "content": "~46 lelijk #37 heide lezen & januari\n$50 zaal \"haar\" kijkje 73 + 65\n(papa) sla <taxi's> zolder (gebeurt)"
+      "type": "intro",
+      "key": "\"",
+      "finger": "RP",
+      "text": "\" typ je met de rechterpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op \" om verder te gaan"
     },
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Houd het tempo ook bij de tekens; het zijn toetsen zoals alle andere.",
-      "content": "$82 eerst cijfer & alfa buiten $15\n97^3 die (sok) gala {liter}\n(haar) in zeep@meneer humor $63"
+      "type": "block",
+      "newKey": "\"",
+      "text": "Eerst alleen \", daarna op de plek waar je het echt gebruikt.",
+      "content": "\"\" \" \"richting\" \"peer\" \"reis\"\n\"\" \" \"en\" \"hoeveel\" \"klant\"\n\"\" \" \"landen\" \"fris\" \"moeilijk\""
+    },
+    {
+      "type": "intro",
+      "key": "?",
+      "finger": "RP",
+      "text": "? typ je met de rechterpink, terwijl de andere hand Shift vasthoudt.",
+      "hint": "Druk op ? om verder te gaan"
+    },
+    {
+      "type": "block",
+      "newKey": "?",
+      "text": "Eerst alleen ?, daarna op de plek waar je het echt gebruikt.",
+      "content": "?? ? hoed? etalage? vriezer?\n?? ? naam? woning? alles?\n?? ? lade? weinig? morgen?"
     },
     {
       "type": "burst",
-      "seconds": 30,
+      "seconds": 25,
       "text": "Een reeks korte stukjes met deze tekens.",
       "tokens": [
-        "~6",
-        "markt_opnieuw",
-        "{raar}",
-        "lied@heb",
-        "dertien_extra",
-        "54+55",
-        "sjaal@dertig",
-        "water&reiger",
-        "(toppen)",
-        "~91",
-        "~97",
-        "leven:",
-        "ze?",
-        "druk_tachtig"
+        "stad?",
+        "handig?",
+        "grote?",
+        "zijn?",
+        "\"uien\"",
+        "lucht?",
+        "\"tas\"",
+        "wijd?",
+        "weekdag?",
+        "kip?"
       ]
     },
     {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Houd het tempo ook bij de tekens; het zijn toetsen zoals alle andere.",
-      "content": "$30 bus #52 kennen tot|drie\ngezellig|deur lijf ~64 peer #65\nniets? wit pas@ballen vier #90"
+      "type": "block",
+      "text": "Alles van deze les, door elkaar.",
+      "content": "\"richting\" appel? sloot? toe?\n\"klein\" leven? kruid? elk?\nschoen? \"man\" \"zilver\" \"kruk\""
     },
     {
       "type": "standard",
       "dictation": "words",
-      "text": "Houd het tempo ook bij de tekens; het zijn toetsen zoals alle andere.",
-      "content": "16^2 werk winter@oude sluis dagjes@berg\n{april} vroeg uit! nieuwe 79%\nniets & wereld klimmen 25 + 93 herfst `kort`"
-    },
-    {
-      "type": "standard",
-      "dictation": "words",
-      "text": "Houd het tempo ook bij de tekens; het zijn toetsen zoals alle andere.",
-      "content": "$62 zeggen 83 + 55 geur (trap)\n`sjaal` test $47 af {prijs}\ntot|piano's snel tuin & moestuin slaap {ski}"
+      "text": "Weer woorden, met de tekens op hun plek.",
+      "content": "oefenen? openen groot? koud half?\n\"jarig\" ezel \"boven\" vakantie \"zwemles\"\ngrond? landen april? geef \"moment\""
     }
   ]
 }

@@ -162,3 +162,43 @@ window.TypingEaseCurriculum = {
     hint: "הניחו את האצבעות המורות על שני המקשים המסומנים והקלידו את מה שאתם רואים, בלי להסתכל על המקלדת."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/he-fonetit/u1-l01.json?v=37c602879b31a366",
+  "u1-l02": "/data/lessons/he-fonetit/u1-l02.json?v=476dfa52161d1002",
+  "u1-l03": "/data/lessons/he-fonetit/u1-l03.json?v=438303a8ab359b89",
+  "u1-l04": "/data/lessons/he-fonetit/u1-l04.json?v=c69c0ca6f7ce19aa",
+  "u1-l05": "/data/lessons/he-fonetit/u1-l05.json?v=6fb53f1b883b87e2",
+  "u1-l06": "/data/lessons/he-fonetit/u1-l06.json?v=d34ac9a6099fa2de",
+  "u1-l07": "/data/lessons/he-fonetit/u1-l07.json?v=04aba5cdd7b4a359",
+  "u1-l08": "/data/lessons/he-fonetit/u1-l08.json?v=16c229d8b49d5365",
+  "u1-l09": "/data/lessons/he-fonetit/u1-l09.json?v=c6bc154b32f2630b",
+  "u1-l10": "/data/lessons/he-fonetit/u1-l10.json?v=711ed7c141a8b539",
+  "u2-l01": "/data/lessons/he-fonetit/u2-l01.json?v=a6e5b23afe6aab63",
+  "u2-l02": "/data/lessons/he-fonetit/u2-l02.json?v=e44a5ab95cbd3292",
+  "u2-l03": "/data/lessons/he-fonetit/u2-l03.json?v=064bb723e3a7feeb",
+  "u2-l04": "/data/lessons/he-fonetit/u2-l04.json?v=9d704a1a3cb3255c",
+  "u2-l05": "/data/lessons/he-fonetit/u2-l05.json?v=3ebfc6800dedf5ab",
+  "u2-l06": "/data/lessons/he-fonetit/u2-l06.json?v=59c29ea7224419f2",
+  "u2-l07": "/data/lessons/he-fonetit/u2-l07.json?v=a193c2bb51a22db4",
+  "u2-l08": "/data/lessons/he-fonetit/u2-l08.json?v=3d2dfdb1de5988f8",
+  "u2-l09": "/data/lessons/he-fonetit/u2-l09.json?v=1bd8622b882ea127",
+  "u2-l10": "/data/lessons/he-fonetit/u2-l10.json?v=96fd60bce0ef0ae1",
+  "u2-l11": "/data/lessons/he-fonetit/u2-l11.json?v=5566ed423c375bc7",
+  "u3-l01": "/data/lessons/he-fonetit/u3-l01.json?v=3914d4bd032ef99e",
+  "u3-l02": "/data/lessons/he-fonetit/u3-l02.json?v=d64b54972774e471",
+  "u3-l03": "/data/lessons/he-fonetit/u3-l03.json?v=473f1ac2c413c11a",
+  "u3-l04": "/data/lessons/he-fonetit/u3-l04.json?v=0ca549c87ca1d6e0",
+  "u3-l05": "/data/lessons/he-fonetit/u3-l05.json?v=b8cccb9fcb2937cf",
+  "u3-l06": "/data/lessons/he-fonetit/u3-l06.json?v=05c24bb47f751875",
+  "u4-l01": "/data/lessons/he-fonetit/u4-l01.json?v=3af663c4c7f59bc0",
+  "u4-l02": "/data/lessons/he-fonetit/u4-l02.json?v=0cb5d32f178389e1",
+  "u4-l03": "/data/lessons/he-fonetit/u4-l03.json?v=3d0a448a370af0d2",
+  "u4-l04": "/data/lessons/he-fonetit/u4-l04.json?v=6e9ce9b073153440",
+  "u4-l05": "/data/lessons/he-fonetit/u4-l05.json?v=695c3474e9a7be9c",
+  "u4-l06": "/data/lessons/he-fonetit/u4-l06.json?v=25ff75f8ad671486",
+  "u4-l07": "/data/lessons/he-fonetit/u4-l07.json?v=b65d0c8393822d88",
+  "u4-l08": "/data/lessons/he-fonetit/u4-l08.json?v=8a376ecabd079426"
+};
+/* </auto:lesson-urls> */

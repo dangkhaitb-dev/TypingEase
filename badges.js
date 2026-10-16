@@ -67,7 +67,10 @@
     };
     // Unit coi là xong khi mọi bài ĐÃ CÓ NỘI DUNG của nó xong — bài `ready:false` không chặn.
     const units = (curriculum.units || []).filter(unit => {
-      const ids = unit.groups.flatMap(group => group.lessons).filter(id => curriculum.lessons[id]?.ready);
+      // Bài "học vượt" (kind 'jump') thay được cả unit: xong nó là xong unit, nhưng không bắt buộc.
+      const all = unit.groups.flatMap(group => group.lessons).filter(id => curriculum.lessons[id]?.ready);
+      if (all.some(id => curriculum.lessons[id]?.kind === 'jump' && isDone(id))) return true;
+      const ids = all.filter(id => curriculum.lessons[id]?.kind !== 'jump');
       return ids.length > 0 && ids.every(isDone);
     }).length;
     const attempts = profile.getState().attempts || [];

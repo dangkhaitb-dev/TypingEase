@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "zh-tw-01-006",
+  "title": "注音符號組 6",
+  "summary": "Narrow committed-output lesson: 你",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "position",
+  "intro": "Narrow committed-output lesson: 你",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-006",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄔ，並以已學按鍵定位。",
+      "content": "ㄔㄔㄔ ㄔㄨ ㄔㄑㄔ ㄔㄜ ㄨㄔㄔ ㄔㄑ ㄔㄔㄔㄔ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄗ，並以已學按鍵定位。",
+      "content": "ㄗㄗㄗ ㄗㄨ ㄗㄑㄗ ㄗㄠ ㄨㄗㄗ ㄗㄑ ㄗㄗㄗㄗ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄧ，並以已學按鍵定位。",
+      "content": "ㄧㄧㄧ ㄐㄧ ㄧㄑㄧ ㄑㄧ ㄨㄧㄧ ㄑㄧ ㄧㄧㄧㄧ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄔㄗㄗ ㄧㄜㄧㄤ ㄧㄧㄗ ㄕㄜㄧㄗ ㄔㄗㄗ ㄗㄤ ㄔㄗㄗ ㄗㄤ ㄔㄗㄗ ㄕㄜㄧㄗ ㄧㄧㄗ ㄧㄜㄧㄤ ㄧㄧㄗ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄧㄨ ㄗㄗㄗㄗ ㄔㄔㄑㄍ ㄔㄧㄘㄔ ㄊㄤ ㄧㄧㄗ ㄧㄨ ㄧㄧㄗ ㄊㄤ ㄔㄧㄘㄔ ㄔㄔㄑㄍ ㄗㄗㄗㄗ ㄔㄔㄑㄍ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄔㄤ ㄧㄧㄧ ㄐㄐ ㄗㄗ ㄔㄔㄔㄎ ㄗㄔ ㄔㄤ ㄗㄔ ㄔㄔㄔㄎ ㄗㄗ ㄐㄐ ㄧㄧㄧ ㄐㄐ ㄧㄧㄧ ㄔㄤ ㄗㄔ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄗㄎㄋㄋ ㄧㄠ ㄎㄎㄧㄧ ㄔㄧㄧㄧ ㄧㄧ ㄍㄕ ㄗㄎㄋㄋ ㄍㄕ ㄧㄧ ㄔㄧㄧㄧ ㄎㄎㄧㄧ ㄧㄠ ㄎㄎㄧㄧ ㄧㄠ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄤㄤ ㄠㄗ ㄜㄔㄔㄧ ㄧㄎㄎ ㄔㄊㄊㄊ ㄔㄗㄗㄗ ㄤㄤ ㄔㄗㄗㄗ ㄔㄊㄊㄊ ㄧㄎㄎ ㄜㄔㄔㄧ ㄠㄗ ㄜㄔㄔㄧ",
+      "inputMode": "position"
+    }
+  ]
+}

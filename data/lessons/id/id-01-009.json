@@ -1,0 +1,106 @@
+{
+  "id": "id-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "id-01-009",
+  "title": "Huruf: u, i, o",
+  "summary": "Gõ b dan h dalam drill posisi tertutup.",
+  "newKeys": [
+    "u",
+    "i",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Gõ b dan h dalam drill posisi tertutup.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-009",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "uuu fu uuuf uufu ffuu ffu fuu uu ufu",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "iif iii ifi fiii ifii fii iiii iifi ii",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "offof fo of ooo ofo ofoo oo oooo ooof",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "iu ji fo fufi ffuf fjf fo oou ijof uioo fij fuj ff ji ou"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "ji ojju ujuo jf foij ffj jo fu ji iiji ufu oojf oio oou"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "ijju ffu ui jifo fuoj ffi oifo uioj iji fofo ioo uj jf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jjof uii oifu uf ifif fu jjfo jij uouu ju ojo ufu uo io"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "ouii iiu jif ouj uf jj jif uuf ji uj jj uji ji uji ouj ij"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "guru ada di kelas itu aku juga ke sekolah dulu"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "aku sudah tidur di sore hari kita tidak ke sekolah"
+    }
+  ]
+}

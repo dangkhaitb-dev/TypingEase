@@ -1,0 +1,103 @@
+{
+  "id": "ms-01-008",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "ms-01-008",
+  "title": "Huruf: r, t, y",
+  "summary": "Huruf: r, t, y. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "newKeys": [
+    "r",
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Huruf: r, t, y. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-008",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "rrf frrf rrrr frrr frr rrrf rr rrr",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "tft tf ff ftt tttt tft tftt ttft fttt ttt tt",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "yfyy yf fyfy yyfy yy yyy fyyy fy yfy yyf yyyy fyy",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "ry rrf ff yyt rjy yr yt jfyt yyj jtjy tfft jjt yrj rr rt"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "yry rjf rtff yyjt rrf fr jr tt rr yjtt jftj fj fj jff jf"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jyyr ftjr jt jr ttf ry fy jty ryyr ffr yfff ffty frr ry"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jtrr rf tjtf yytt ytr fy ryy yjrj trr tff tyrt yrf fjt"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "rffr jt tyj rt tf jtrj rr rfjr tjyf yy yyf ttj tfj yr jj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "ayah kata kereta saya ada dekat kelas setelah salat"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "kereta kerja setelah terasa agar atas dekat saya kata"
+    }
+  ]
+}

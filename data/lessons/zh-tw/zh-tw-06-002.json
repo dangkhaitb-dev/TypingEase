@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-002",
+  "unit": "u6",
+  "group": "g1",
+  "order": 52,
+  "slug": "zh-tw-06-002",
+  "title": "約定碰面地點",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-002",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "明天早上九點，我們在捷運站一號出口碰面。請大家記得帶悠遊卡和水。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "出口旁邊有一家麵包店，先到的人可以在店門口等。肚子餓的話，也可以先買個麵包當早餐。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "如果找不到人，請直接打電話給我。我會穿藍色外套，背一個黑色背包。",
+      "inputMode": "ime"
+    }
+  ]
+}

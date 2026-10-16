@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-008",
+  "unit": "u8",
+  "group": "g1",
+  "order": 80,
+  "slug": "zh-tw-08-008",
+  "title": "依序說明做法",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-008",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "想泡一杯好喝的綠茶，有幾個步驟要注意。首先，把水燒開後放涼一下，大約八十度就可以。水太燙的話，茶葉會被燙壞，喝起來又苦又澀，失去原本的清香。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "接著，先用熱水把茶壺和茶杯燙一遍，讓它們變得溫熱。然後放進一小匙茶葉，倒入熱水，蓋上蓋子等兩分鐘。時間到了就把茶倒出來，不要讓茶葉一直泡在水裡，否則味道會越來越濃。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "最後，把茶倒進杯子裡，先聞一聞茶香，再小口慢慢喝。同一份茶葉可以泡三到四次，每次都比上一次多泡三十秒。只要照著這些步驟一步一步來，就算是第一次泡茶的人，也能泡出一杯香氣十足的綠茶。",
+      "inputMode": "ime"
+    }
+  ]
+}

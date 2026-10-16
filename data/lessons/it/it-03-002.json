@@ -1,0 +1,84 @@
+{
+  "id": "it-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 25,
+  "slug": "it-03-002",
+  "title": "Maiusc sulla fila centrale",
+  "summary": "Usa Maiusc con le lettere della fila centrale: A S D F G H J K L.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Usa Maiusc con le lettere della fila centrale: A S D F G H J K L.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-03-002",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tieni premuto Maiusc con la mano opposta e digita A, S, D, F.",
+      "content": "FF DFSF SSAA FAS SA FFA FAD SA AF DF SSA SAS AA FFSD FD FFD"
+    },
+    {
+      "type": "standard",
+      "text": "Tieni premuto Maiusc con la mano opposta e digita G, H, J, K, L.",
+      "content": "HG KHGJ HJ JL LK GLGL JKH GL LGJL JHK LHJ HKG LGK LJL KHJ"
+    },
+    {
+      "type": "standard",
+      "text": "Alterna lettere maiuscole e minuscole della fila centrale: Maiusc solo per le maiuscole.",
+      "content": "Ad Sa Df Gs Hj Kl Ag Sh Dj Fk Gl Ha Js Kd Lf As Dg Fh"
+    },
+    {
+      "type": "standard",
+      "text": "Scrivi nomi di persona con la maiuscola iniziale.",
+      "content": "Anna Sara Dino Gaia Fabio Lia Ada Dario Gina Alda Sandro"
+    }
+  ]
+}

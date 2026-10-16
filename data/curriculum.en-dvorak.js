@@ -160,3 +160,43 @@ window.TypingEaseCurriculum = {
     hint: "Rest your index fingers on the two keys with bumps and type what you see, without looking at the keyboard."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/en-dvorak/u1-l01.json?v=1b51ad327ebb0f7d",
+  "u1-l02": "/data/lessons/en-dvorak/u1-l02.json?v=85d4f570fe5a8183",
+  "u1-l03": "/data/lessons/en-dvorak/u1-l03.json?v=c48ba9ae8cf98b0c",
+  "u1-l04": "/data/lessons/en-dvorak/u1-l04.json?v=11824a4c40e4e6b8",
+  "u1-l05": "/data/lessons/en-dvorak/u1-l05.json?v=ccf2a6640929f6d1",
+  "u1-l06": "/data/lessons/en-dvorak/u1-l06.json?v=c54b13b75d79348f",
+  "u1-l07": "/data/lessons/en-dvorak/u1-l07.json?v=7fc474aa95025c07",
+  "u1-l08": "/data/lessons/en-dvorak/u1-l08.json?v=86e96f3e84e12b17",
+  "u1-l09": "/data/lessons/en-dvorak/u1-l09.json?v=b77caeeaeac543af",
+  "u1-l10": "/data/lessons/en-dvorak/u1-l10.json?v=1e6e741ed8fb0af8",
+  "u2-l01": "/data/lessons/en-dvorak/u2-l01.json?v=8a478cfb5326a19d",
+  "u2-l02": "/data/lessons/en-dvorak/u2-l02.json?v=bd0ba6c3266d634e",
+  "u2-l03": "/data/lessons/en-dvorak/u2-l03.json?v=b3d9a99b1e3b23d4",
+  "u2-l04": "/data/lessons/en-dvorak/u2-l04.json?v=bc9262a048df812c",
+  "u2-l05": "/data/lessons/en-dvorak/u2-l05.json?v=623fec6fb3d3dd30",
+  "u2-l06": "/data/lessons/en-dvorak/u2-l06.json?v=930a36a04b06aef2",
+  "u2-l07": "/data/lessons/en-dvorak/u2-l07.json?v=2d49db06475fd923",
+  "u2-l08": "/data/lessons/en-dvorak/u2-l08.json?v=22804c5e13977cfa",
+  "u2-l09": "/data/lessons/en-dvorak/u2-l09.json?v=4bc17d41db12e625",
+  "u2-l10": "/data/lessons/en-dvorak/u2-l10.json?v=1045ce877ca5eb04",
+  "u2-l11": "/data/lessons/en-dvorak/u2-l11.json?v=010f0d1137c9ef28",
+  "u3-l01": "/data/lessons/en-dvorak/u3-l01.json?v=941f1d44ae0cbaec",
+  "u3-l02": "/data/lessons/en-dvorak/u3-l02.json?v=7f54cae6d894927e",
+  "u3-l03": "/data/lessons/en-dvorak/u3-l03.json?v=3a1e1562074c8a51",
+  "u3-l04": "/data/lessons/en-dvorak/u3-l04.json?v=a76c66d73218d628",
+  "u3-l05": "/data/lessons/en-dvorak/u3-l05.json?v=448f61a036bbc180",
+  "u3-l06": "/data/lessons/en-dvorak/u3-l06.json?v=91b3c92c9c3f413e",
+  "u4-l01": "/data/lessons/en-dvorak/u4-l01.json?v=6e1509d28838db6d",
+  "u4-l02": "/data/lessons/en-dvorak/u4-l02.json?v=ede4d952b8988f1c",
+  "u4-l03": "/data/lessons/en-dvorak/u4-l03.json?v=24b2266267edd02f",
+  "u4-l04": "/data/lessons/en-dvorak/u4-l04.json?v=1337b03754555391",
+  "u4-l05": "/data/lessons/en-dvorak/u4-l05.json?v=a8c0ad135eaeb155",
+  "u4-l06": "/data/lessons/en-dvorak/u4-l06.json?v=017b5856aa64758a",
+  "u4-l07": "/data/lessons/en-dvorak/u4-l07.json?v=114418fc218fa988",
+  "u4-l08": "/data/lessons/en-dvorak/u4-l08.json?v=c0d4f399d6fc2682"
+};
+/* </auto:lesson-urls> */

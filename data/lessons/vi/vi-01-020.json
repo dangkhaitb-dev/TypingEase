@@ -1,0 +1,79 @@
+{
+  "id": "vi-01-020",
+  "unit": "u1",
+  "group": "g1",
+  "order": 20,
+  "slug": "vi-01-020",
+  "title": "Luyện phím · ừ õ ũ",
+  "summary": "Học cách gõ ừ (u w f), õ (o x), ũ (u x) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ừ (u w f), õ (o x), ũ (u x) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-020",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ u w f để ra ừ: u w ra ư, f thêm dấu huyền. Ví dụ: rừng = r u w f n g.",
+      "content": "rừng ừ dừa đừng trừ vừa ừ rừng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu ngã: gõ x sau nguyên âm. o x → õ. Ví dụ: gõ = g o x.",
+      "content": "gõ dõi rõ lõi õ võng lõi ngõ rõ dõi ngõ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu ngã: gõ x sau nguyên âm. u x → ũ. Ví dụ: lũng = l u x n g.",
+      "content": "lũng hũ cũ lũng ũ gũi lũ vũng hũ mũi cũng lũng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ừ, õ, ũ. Nhớ: ừ = u w f, õ = o x, ũ = u x.",
+      "content": "vừa gũi mũ rừng anh trừ hũ bác lõi lũng nhõm cùng từ gõ hai chừng dõi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ừ, õ, ũ. Nhớ: ừ = u w f, õ = o x, ũ = u x.",
+      "content": "dõi dành dừa tốt thừa đừng cùng từ que gừng hũ dùng trừ ngũ ngõ từng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ừ, õ, ũ.",
+      "content": "trung ngừng dừa dùng đừng cũ vải ca khiến xa chị túi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ừ, õ, ũ.",
+      "content": "chung vừa tay tiêu đây thừa chừa trũng nhiên rừng kho cũ chân quán từng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các câu ngắn, chỉ dùng những phím đã học.",
+      "content": "mưa đến cả nhà chạy gom áo quần trên dây",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có õ (o x). Nhớ: õ = o x.",
+      "content": "rõ gõ mõ lõi sõi cõi dõi bõ lõm cõng nõn mõm",
+      "inputMode": "telex"
+    }
+  ]
+}

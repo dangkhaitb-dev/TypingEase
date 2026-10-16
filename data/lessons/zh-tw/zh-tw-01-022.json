@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-01-022",
+  "unit": "u1",
+  "group": "g1",
+  "order": 22,
+  "slug": "zh-tw-01-022",
+  "title": "哥哥的校園筆記",
+  "summary": "Narrow committed-output lesson: 午 後",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 午 後",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-022",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "哥哥帶著筆記到學校，和同學一起讀書。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "下課後，哥哥在圖書館整理今天的筆記。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "哥哥把討論重點寫進筆記，再交給老師。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "校園裡的花開了，同學們都在樹下拍照！",
+      "inputMode": "ime"
+    }
+  ]
+}

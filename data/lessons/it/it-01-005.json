@@ -1,0 +1,90 @@
+{
+  "id": "it-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "it-01-005",
+  "title": "L, Ò, À",
+  "summary": "Impara i tasti l, ò, à e usali con i tasti già studiati.",
+  "newKeys": [
+    "l"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti l, ò, à e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-005",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Trova l e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "lllf fl llf lll ff llll ll ffl",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Trova ò e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "jjòj òjò òòjò òòò òjòò òò òj òòòj jjj òòòò jjò"
+    },
+    {
+      "type": "standard",
+      "text": "Trova à e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ààà àf ààfà àà àààf ààf ffà àààà"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "làf òsa adf sàl fdò aàs làd fsà dsò òal sfà dlò"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "òad flà sàò dàf òsl afà dòa slò àfd òàs fàl dsà"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "òò ààkà àà ààl ààà òòàl òààò àààà llà àààk ààòà là òòl àlàà àlò àààò ll ààò"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "lasò dàòf fsàl òdas alfò sàdl òfas ldàs aòfl sdàf òlas fàds"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "àlà lòà àòòò òàò llàl ll ààlà llò llà llòf òà llàò àà ààòà òò"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "ha la salsa dalla sala alla falda ha là alga salda"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "falda sala salsa falsa là alga alla dalla salda"
+    }
+  ]
+}

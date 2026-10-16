@@ -1,0 +1,74 @@
+{
+  "id": "fr-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "fr-01-006",
+  "title": "G et H",
+  "summary": "Apprenez g, h et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Apprenez g, h et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-006",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Repérez g sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "fgg ggg ggfg ffgg gggg ff ffg gg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Repérez h sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "hhfh fffh hhhh hfh hhhf hhff hh fh hhh",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ff gff ggff fhgf fh fg hff ffgg ggh ggfh fhgf gh hhf fh"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "jhh jgjg gj jgj hh ghhh jh gjhh gjh jjgj gjg gj hhg ghh"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ggfg hh fghg fggg hf gf fh fg fh gffh ggh gfhf hg gfh hh"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "gjg hjg jjh jjhh hh hhgj jghj ggj jjgh hhjh jgj hgh gg"
+    }
+  ]
+}

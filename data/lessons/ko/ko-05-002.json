@@ -1,0 +1,43 @@
+{
+  "id": "ko-05-002",
+  "unit": "u5",
+  "group": "g1",
+  "order": 68,
+  "slug": "ko-05-002",
+  "title": "생각을 나누어 정리하기",
+  "summary": "복잡한 내용을 나누고 관점을 비교하며 차분히 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "hangul",
+  "intro": "복잡한 내용을 나누고 관점을 비교하며 차분히 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-05-002",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "할 말이 많을 때는 먼저 종이에 떠오르는 생각을 하나씩 적어 봅니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "적어 둔 생각을 비슷한 것끼리 묶어 보면 정말 중요한 내용이 눈에 들어옵니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "묶은 내용마다 짧은 제목을 붙여 두면 다른 사람에게 설명하기가 훨씬 쉬워집니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

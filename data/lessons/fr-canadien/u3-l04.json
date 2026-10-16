@@ -38,7 +38,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -54,8 +53,6 @@
     "é",
     "-",
     "=",
-    "^",
-    "¸",
     "<"
   ],
   "minAccuracy": 80,
@@ -68,57 +65,57 @@
       "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Je préfère écrire sans regarder le clavier.\nNous avons besoin de deux personnes de plus.\nLa porte du jardin reste ouverte toute la journée."
+      "content": "Nous avons besoin de deux personnes de plus.\nLe livre que je cherche est sur la table.\nIl lit une lettre devant la porte."
     },
     {
       "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Le livre que je cherche est sur la table.\nLe train arrive à la gare dans une heure.\nNous partons demain matin pour la campagne."
+      "content": "Nous parlons de ce projet depuis longtemps.\nLa petite fille joue dans le jardin.\nTous les jours je passe devant cette boutique."
     },
     {
       "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Elle a pris le premier train du matin.\nLa musique venait de la salle du fond.\nElle travaille dans un bureau près de la place."
+      "content": "La musique venait de la salle du fond.\nLe temps passe vite quand le travail avance bien.\nNous partons demain matin pour la campagne."
     },
     {
       "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Le temps passe vite quand le travail avance bien.\nNous parlons de ce projet depuis longtemps.\nIl fait très beau depuis le début de la semaine."
+      "content": "La porte du jardin reste ouverte toute la journée.\nElle a pris le premier train du matin.\nIl lit une lettre devant la porte."
     },
     {
       "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Tous les jours je passe devant cette boutique.\nIl lit une lettre devant la porte.\nChaque personne avance à son propre rythme."
+      "content": "La porte du jardin reste ouverte toute la journée.\nLe temps passe vite quand le travail avance bien.\nLa musique venait de la salle du fond."
     },
     {
       "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "La petite fille joue dans le jardin.\nMon frère habite dans une grande ville du sud.\nLe temps passe vite quand le travail avance bien."
+      "content": "La petite fille joue dans le jardin.\nTous les jours je passe devant cette boutique.\nElle a pris le premier train du matin."
     },
     {
       "seconds": 30,
       "text": "Une dernière longue série pour finir.",
       "type": "burst",
       "tokens": [
-        "arrêts",
-        "décider",
+        "limes",
+        "monde",
+        "mille",
+        "bases",
+        "ta",
         "musique",
-        "liste",
-        "dit",
-        "vient",
-        "courte",
-        "août",
-        "nouveau",
-        "petite",
-        "autres",
-        "lumières",
-        "têtes",
-        "année"
+        "devoir",
+        "jure",
+        "mime",
+        "lourd",
+        "voile",
+        "sujet",
+        "site",
+        "banques"
       ]
     }
   ]

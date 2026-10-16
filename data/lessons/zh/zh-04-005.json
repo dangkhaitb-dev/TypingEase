@@ -1,0 +1,91 @@
+{
+  "id": "zh-04-005",
+  "unit": "u4",
+  "group": "g1",
+  "order": 37,
+  "slug": "zh-04-005",
+  "title": "全键盘组合五",
+  "summary": "复习全键盘键位与符号，并稳定完成混合输入。",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "复习全键盘键位与符号，并稳定完成混合输入。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-04-005",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "akk ffde qdl fr8a aa kdss akk kdss aa fr8a qdl ffde qdl"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "daw eee; qqaf ff daw ff qqaf eee; qqaf eee; daw ff daw"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "aqaj ef; ke ddis ff wwaj aqaj wwaj ff ddis ke ef; ke ef;"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "aa llkf ddfa ;dq ;;se rrw aa rrw ;;se ;dq ddfa llkf ddfa"
+    }
+  ]
+}

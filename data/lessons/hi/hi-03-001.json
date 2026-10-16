@@ -1,0 +1,40 @@
+{
+  "id": "hi-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 61,
+  "slug": "hi-03-001",
+  "title": "-",
+  "summary": "- का सटीक और सहज अभ्यास करें।",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "- का सटीक और सहज अभ्यास करें।",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "hi",
+    "lesson": "hi-03-001",
+    "revision": "hi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "- अंकों की पंक्ति की - कुंजी पर है। इसे दाएँ हाथ की छोटी उँगली से दबाएँ।",
+      "content": "- -- --- ---- - -- --- ---- - --"
+    },
+    {
+      "type": "standard",
+      "text": "पहले सीखी कुंजियों से सटीकता बनाए रखें।",
+      "content": "-- --- ---- - -- --- ---- - -- --- ---- - -- --- ----"
+    },
+    {
+      "type": "standard",
+      "text": "पहले सीखी कुंजियों से सटीकता बनाए रखें।",
+      "content": "- -- --- ---- - -- --- ---- - -- --- ---- - -- --- ---- - -- --- ----"
+    }
+  ]
+}

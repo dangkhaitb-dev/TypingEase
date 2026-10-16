@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-001",
+  "unit": "u5",
+  "group": "g1",
+  "order": 70,
+  "slug": "vi-05-001",
+  "title": "Tình huống khởi đầu",
+  "summary": "Khởi đầu khóa học với cảnh đơn một tình huống, luyện sự kết nối giữa các câu văn ngắn có quan hệ nhân quả rõ ràng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Khởi đầu khóa học với cảnh đơn một tình huống, luyện sự kết nối giữa các câu văn ngắn có quan hệ nhân quả rõ ràng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện gõ câu ngắn mở đầu tình huống với nhịp điệu nhẹ nhàng ven hồ.",
+      "content": "Minh đi dạo dọc bờ hồ trước giờ mở cửa. Không khí ban mai tĩnh lặng và mát mẻ. Sương sớm đọng trên từng nhánh cỏ ven hồ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Nối tiếp hành động dạo bước và chuẩn bị mở gian hàng tại bến cảng.",
+      "content": "Minh rảo bước trên con đường lát đá ven hồ. Anh ngắm nhìn mặt nước êm đềm trước khi phiên chợ sáng bắt đầu họp. Những con thuyền chài đầu tiên đã cập bến mang theo tôm cá tươi ngon.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn kết nối hoàn chỉnh về sự chuẩn bị của gian hàng số mười hai.",
+      "content": "Minh bước nhanh qua cây cầu gỗ nhỏ để vào khu chợ ven sông. Sạp hàng số mười hai của anh mở cửa đón đợt hàng mới giao về từ đêm qua. Tiếng sóng vỗ nhè nhẹ vào mạn thuyền tạo nên âm thanh thân thuộc của buổi sớm mai.",
+      "inputMode": "telex"
+    }
+  ]
+}

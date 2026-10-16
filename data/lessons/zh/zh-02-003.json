@@ -1,0 +1,91 @@
+{
+  "id": "zh-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 22,
+  "slug": "zh-02-003",
+  "title": "数字键位组合二",
+  "summary": "练习字母与数字键位的组合输入，并保持节奏稳定。",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "练习字母与数字键位的组合输入，并保持节奏稳定。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-02-003",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再输入字母和数字。",
+      "content": "0h xd9 3p89 5j2 68t o84 e2k yv5 8a 4p9s u5m1 oh5c"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再输入字母和数字。",
+      "content": "y0 0l 92sk a2 2; 66zm 6ze 3u z6u6 142 qmk7 77u 2k"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再输入字母和数字。",
+      "content": "t1n js8 f9p 9v s5u qtm3 2l5 zh6h y8 9h w5i 4;b 30t"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，再输入字母和数字。",
+      "content": "4t68 zs9 oy53 y0 qsz4 l4 9u66 n13 79g v2 k4 517"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-009",
+  "unit": "u8",
+  "group": "g3",
+  "order": 119,
+  "slug": "vi-08-009",
+  "title": "Biến đổi dấu câu",
+  "summary": "Xây dựng năng lực \"Punctuation Changes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Duy trì cadence khi cấu trúc câu thay đổi liên tục các dấu ngắt nghỉ và trích dẫn.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Punctuation Changes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Duy trì cadence khi cấu trúc câu thay đổi liên tục các dấu ngắt nghỉ và trích dẫn.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi từ xen dày dấu câu: sách, vở; bút, mực: phấn, bảng!",
+      "content": "sách, vở; bút, mực: phấn, bảng! hoa, quả; chim, muông: trời, mây! trăng, sao; gió, mưa: ngày, đêm! kim, chỉ; giấy, kéo: thước, eke! sông, núi; phố, phường: làng, xã! sớm, tối; xuân, hạ: thu, đông!",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn bàn về vai trò của dấu câu trong văn bản hành chính.",
+      "content": "Trong văn bản học thuật và hành chính chuyên nghiệp, hệ thống dấu câu giữ vai trò vô cùng cốt lõi: chúng không chỉ giúp định hình nhịp điệu đọc hiểu của câu văn mà còn phân tách mạch lạc các vế câu phức hợp, làm sáng tỏ ý tứ của người viết. Việc làm chủ toàn diện các dấu câu và phím chuyển chữ hoa là minh chứng rõ nét cho trình độ thao tác bàn phím chuẩn mực của người cán bộ văn phòng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ gọi tên công dụng của từng dấu câu.",
+      "content": "dấu phẩy ngắt nhịp; dấu chấm kết thúc câu: dấu hai chấm giải thích chi tiết! dấu ngoặc kép trích dẫn lời nói chính xác, dấu chấm than biểu lộ cảm xúc dạt dào. Mỗi dấu câu cắt một nhịp; người viết chọn dấu đúng để câu văn rõ nghĩa, mạch lạc, ví dụ danh sách dùng chấm phẩy còn lời nhắc dùng chấm than. Dấu hỏi dừng ý; dấu gạch ngang chen chú thích; ngoặc đơn gom phần phụ.",
+      "inputMode": "telex"
+    }
+  ]
+}

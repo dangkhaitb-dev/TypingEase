@@ -1,0 +1,43 @@
+{
+  "id": "ko-01-113",
+  "unit": "u1",
+  "group": "g1",
+  "order": 14,
+  "slug": "ko-01-113",
+  "title": "자모 조합 복습 2",
+  "summary": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-113",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "따뜻한 차 한 잔이 하루를 밝게 해요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "새로운 길을 따라 친구와 천천히 걸어요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "친구와 함께 마당에 작은 나무를 심어요",
+      "inputMode": "hangul"
+    }
+  ]
+}

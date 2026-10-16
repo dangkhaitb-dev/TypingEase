@@ -1,0 +1,80 @@
+{
+  "id": "es-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "es-01-005",
+  "title": "L, Ñ",
+  "summary": "Aprender l, ñ en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "l"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Aprender l, ñ en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-005",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Localiza l y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "lll ff llfl llf llff fll llll",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Localiza ñ y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "jjññ jñjñ ñññj ññj ñññ ññjñ ññ jjñ ññjj"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ll lñl ñññ llññ ññlj ññ lllñ llll lll ññl ñññl ñlj lññl llñ lññ"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "llll llñl lñl ñlñ lñ ll ñl lllñ ññhl lññl lll ññ llñ"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ñññl ñl ñf ñlñ ll lll ññlñ llñ ññf ññ ññll lñl"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "llñl lll ññll ññ llñ lñ llññ ñll jjlñ ll llll lllñ ññlñ llj lññ ñññ"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "la sala la falda la salsa las alas la sal"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "ala sal alas saña daña dañas faldas salsa sala las"
+    }
+  ]
+}

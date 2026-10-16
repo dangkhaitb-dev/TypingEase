@@ -1,0 +1,88 @@
+{
+  "id": "it-01-016",
+  "unit": "u1",
+  "group": "g3",
+  "order": 15,
+  "slug": "it-01-016",
+  "title": "M",
+  "summary": "Impara il tasto m e usalo con i tasti già studiati.",
+  "newKeys": [
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Impara il tasto m e usalo con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-016",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Trova m e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "fmfm ff mff ffmm mmm fff mm fm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "mm mms mmm mmmm ssmm mmms msmm smmm msm ss ms mmsm"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "mm mmm mnn nm mnmm mnm nmnm mmn mn nnmn nmmm mmà nn mmmn mmnm mmmm"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "mmr rm mm mmmm mmm rr rmm mrm mmrm mr rmmm"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "domani mi manda un libro con la mia amica"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "la mamma e il mio amico sono molto bravi"
+    }
+  ]
+}

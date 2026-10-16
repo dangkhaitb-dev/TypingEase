@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-010",
+  "unit": "u5",
+  "group": "g1",
+  "order": 49,
+  "slug": "zh-tw-05-010",
+  "title": "天黑前回家",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-010",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我和朋友在河邊騎腳踏車，玩得太開心，沒注意到太陽快下山了，便決定馬上回家。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "回家的路上，我打開車燈，騎得比平常更小心。經過路口時，我們停下來等紅燈，確認沒有車才通過。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "回到家時，天剛好全黑。媽媽在門口等我，說下次出門要先說好回家的時間。我點點頭，答應以後會更注意。",
+      "inputMode": "ime"
+    }
+  ]
+}

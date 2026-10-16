@@ -1,0 +1,102 @@
+{
+  "id": "en-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 22,
+  "slug": "en-03-002",
+  "title": "A, B, C",
+  "summary": "Use sentence punctuation in short, meaningful text without treating prose as a key-location drill.",
+  "newKeys": [
+    "A",
+    "B",
+    "C"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Use sentence punctuation in short, meaningful text without treating prose as a key-location drill.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-03-002",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "A",
+      "text": "Hold Shift with the little finger of your right hand and press a to type A. Release Shift before the next key.",
+      "content": "AAA AA AffA ff AfAA AAfA fAAA fA Aff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "B",
+      "text": "Hold Shift with the little finger of your right hand and press b to type B. Release Shift before the next key.",
+      "content": "BB BBB BjB BBjB jB BBj jBBj jjB BBBB jBj BjBB BjBj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "C",
+      "text": "Hold Shift with the little finger of your right hand and press c to type C. Release Shift before the next key.",
+      "content": "CCC CC CfC CfCC fC fCC Cf CCfC CCf Cff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "ACCA BAC BBA BBAB AC AB BBB BBC BAA CCBi BC ABBB ACBB BBBA BCBA"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "BB CBA BBB Bb ACBC BCBA CB BBC AB BC BCCC ACBA BBb ABCB BBBA BAA CCB CAA"
+    }
+  ]
+}

@@ -66,7 +66,7 @@ window.TypingEaseCurriculum = {
       id: 'u4',
       index: 4,
       title: "Toutes les autres touches",
-      summary: "Les 7 caractères de ce clavier que le cours n'a pas encore utilisés, chacun tapé là où il sert vraiment.",
+      summary: "Les 8 caractères de ce clavier que le cours n'a pas encore utilisés, chacun tapé là où il sert vraiment.",
       minAccuracy: 80,
       locked: true,
       unlockAfter: 'u3-l06',
@@ -88,7 +88,7 @@ window.TypingEaseCurriculum = {
     'u1-l08': { title: "O et V", newKeys: ["o","v"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u1-l09': { title: "Touches faibles", newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: true },
     'u1-l10': { title: "Test de l'unité 1", newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: true },
-    'u2-l01': { title: "È et ^", newKeys: ["è","^"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u2-l01': { title: "È", newKeys: ["è"], screens: 9, estMinutes: 5, kind: 'keys', ready: true },
     'u2-l02': { title: "L et É", newKeys: ["l","é"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u2-l03': { title: "X et l'apostrophe", newKeys: ["x","'"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u2-l04': { title: "Q et le point", newKeys: ["q","."], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
@@ -105,9 +105,9 @@ window.TypingEaseCurriculum = {
     'u3-l04': { title: "Textes et rythme 1", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
     'u3-l05': { title: "Textes et rythme 2", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
     'u3-l06': { title: "Test de l'unité 3", newKeys: [], screens: 1, estMinutes: 3, kind: 'test', seconds: 180, ready: true },
-    'u4-l01': { title: "$, #, ° et le point-virgule", newKeys: ["$","#","°",";"], screens: 10, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l02': { title: "Les deux-points", newKeys: [":"], screens: 5, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l03': { title: "! et ?", newKeys: ["!","?"], screens: 7, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l01': { title: "$, # et °", newKeys: ["$","#","°"], screens: 8, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l02': { title: "Le point-virgule, Ê, les deux-points et !", newKeys: [";","ê",":","!"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l03': { title: "?", newKeys: ["?"], screens: 5, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l04': { title: "Tous les signes ensemble", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
     'u4-l05': { title: "Test de l'unité 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
   },
@@ -154,3 +154,40 @@ window.TypingEaseCurriculum = {
     hint: "Pose les index sur les deux touches à repère et écris ce que tu vois, sans regarder le clavier."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/fr-bepo/u1-l01.json?v=6de2af678dbdbcc6",
+  "u1-l02": "/data/lessons/fr-bepo/u1-l02.json?v=a08609fd2046d80c",
+  "u1-l03": "/data/lessons/fr-bepo/u1-l03.json?v=d33e4ac998205bfe",
+  "u1-l04": "/data/lessons/fr-bepo/u1-l04.json?v=849c6c31a88192cf",
+  "u1-l05": "/data/lessons/fr-bepo/u1-l05.json?v=64fd886d037db499",
+  "u1-l06": "/data/lessons/fr-bepo/u1-l06.json?v=2482fe71da740978",
+  "u1-l07": "/data/lessons/fr-bepo/u1-l07.json?v=f2036cd74665f350",
+  "u1-l08": "/data/lessons/fr-bepo/u1-l08.json?v=7a3c9ba93acdd611",
+  "u1-l09": "/data/lessons/fr-bepo/u1-l09.json?v=96314dddbc3f5224",
+  "u1-l10": "/data/lessons/fr-bepo/u1-l10.json?v=11cdb019875ec11b",
+  "u2-l01": "/data/lessons/fr-bepo/u2-l01.json?v=2e8911ece52e8ff5",
+  "u2-l02": "/data/lessons/fr-bepo/u2-l02.json?v=6adc435de972c023",
+  "u2-l03": "/data/lessons/fr-bepo/u2-l03.json?v=b68e32419c47f85b",
+  "u2-l04": "/data/lessons/fr-bepo/u2-l04.json?v=9f70c87b1095c9cb",
+  "u2-l05": "/data/lessons/fr-bepo/u2-l05.json?v=2a3deefe3a8f694d",
+  "u2-l06": "/data/lessons/fr-bepo/u2-l06.json?v=8c6fdf59898fbf0b",
+  "u2-l07": "/data/lessons/fr-bepo/u2-l07.json?v=c3934d2e451171a6",
+  "u2-l08": "/data/lessons/fr-bepo/u2-l08.json?v=929001e35e6b06f8",
+  "u2-l09": "/data/lessons/fr-bepo/u2-l09.json?v=de23fc8910a682ea",
+  "u2-l10": "/data/lessons/fr-bepo/u2-l10.json?v=7b9bdbd2565c8074",
+  "u2-l11": "/data/lessons/fr-bepo/u2-l11.json?v=62ca3d3fd40a4b93",
+  "u3-l01": "/data/lessons/fr-bepo/u3-l01.json?v=f4da7603c9507944",
+  "u3-l02": "/data/lessons/fr-bepo/u3-l02.json?v=5314ea9d7fe8f799",
+  "u3-l03": "/data/lessons/fr-bepo/u3-l03.json?v=21e439305f48de95",
+  "u3-l04": "/data/lessons/fr-bepo/u3-l04.json?v=5bedc885591fb382",
+  "u3-l05": "/data/lessons/fr-bepo/u3-l05.json?v=13cb6d9275d5f6f9",
+  "u3-l06": "/data/lessons/fr-bepo/u3-l06.json?v=d61e5080c5b64232",
+  "u4-l01": "/data/lessons/fr-bepo/u4-l01.json?v=c87687b135a5ab98",
+  "u4-l02": "/data/lessons/fr-bepo/u4-l02.json?v=5852b4d21c2d3cf5",
+  "u4-l03": "/data/lessons/fr-bepo/u4-l03.json?v=e55fa9ee15f92962",
+  "u4-l04": "/data/lessons/fr-bepo/u4-l04.json?v=276b71d76d3e867d",
+  "u4-l05": "/data/lessons/fr-bepo/u4-l05.json?v=724bb7e02820c342"
+};
+/* </auto:lesson-urls> */

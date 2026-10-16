@@ -1,0 +1,73 @@
+{
+  "id": "ko-01-jump",
+  "unit": "u1",
+  "group": "g4",
+  "order": 41,
+  "slug": "ko-01-jump",
+  "title": "앞으로 건너뛰기",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "hangul",
+  "intro": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-jump",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄹㄹㄹ ㅓ ㄹㄹ ㄹㄹ ㅓㄹ ㅓㅓㄹ ㄹㄹ ㅓ ㅓㅓ ㄹㄹㄹ ㅓㅓ ㅓ ㄹㄹ ㅓㅓㄹ ㅓㄹ ㄹㄹ ㄹㄹ ㅓ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅑㅑㅑㅑ ㅐㅐㄷㄴ ㅏㅑㅏ ㅏㅐㅏ ㅏㅏㅐ ㅏㅏ ㅏㅏㅏ ㅑㅑㅑㅑ ㅏㅏㅏ ㅏㅏ ㅏㅏㅐ ㅏㅐㅏ ㅏㅑㅏ ㅐㅐㄷㄴ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 자음을 눌러 된소리를 입력합니다. 짧은 문장을 입력해 보세요.",
+      "content": "오빠가 토끼를 따라 간다 아빠가 쌀을 산다",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "맑은 시냇물이 졸졸 소리를 내며 흘러가요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "친구들과 눈사람을 만들며 신나게 놀아요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "꽃다발을 받은 어머니가 환하게 웃으셨어요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "마음에 남은 그림을 사진으로 찍어요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "가족과 함께 맛있는 저녁을 준비해요",
+      "inputMode": "hangul"
+    }
+  ]
+}

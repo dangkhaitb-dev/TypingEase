@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-003",
+  "unit": "u8",
+  "group": "g1",
+  "order": 111,
+  "slug": "vi-08-003",
+  "title": "Cụm từ kèm dấu câu",
+  "summary": "Xây dựng năng lực \"Phrases with Punctuation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Duy trì nhịp điệu khi chèn dấu phẩy, dấu chấm vào giữa các cụm từ mà không làm ngắt quãng luồng gõ.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Phrases with Punctuation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Duy trì nhịp điệu khi chèn dấu phẩy, dấu chấm vào giữa các cụm từ mà không làm ngắt quãng luồng gõ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động ngón tay với chuỗi luyện anh, nhanh, thanh, phanh, cành.",
+      "content": "anh anh anh nhanh nhanh nhanh thanh thanh thanh phanh phanh phanh cành cành cành chanh chanh chanh lanh lanh lanh rành rành rành nanh nanh nanh tranh tranh tranh",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ mang vần anh: nhanh nhẹn, thanh tao, cành cây, chanh chua.",
+      "content": "nhanh nhẹn thanh tao cành cây chanh chua trong xanh lanh chanh thanh bình rành mạch anh em tranh ảnh bánh canh vắng tanh lành mạnh hoàn thành rành rẽ nanh vuốt tranh luận mành mành nắng chiều canh chua thanh mát nanh sắc tranh cãi mành tre rủ bóng lành lạnh cuối thu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn tả hàng cây xanh đung đưa bên mặt hồ phẳng lặng.",
+      "content": "Những cành cây xanh đung đưa nhịp nhàng theo từng đợt gió mát rượi thổi từ phía mặt hồ phẳng lặng như gương. Đàn chim nhỏ ríu rít chuyền cành kiếm mồi trong ánh bình minh chan hòa, tạo nên một bức tranh thiên nhiên tươi đẹp tràn đầy sức sống mới cho vạn vật cỏ cây hoa lá ven bờ sông.",
+      "inputMode": "telex"
+    }
+  ]
+}

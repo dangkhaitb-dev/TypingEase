@@ -1,0 +1,113 @@
+{
+  "id": "id-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "id-01-012",
+  "title": "Huruf: v, b, n",
+  "summary": "Gõ f dan v dalam drill posisi untuk huruf serapan.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Gõ f dan v dalam drill posisi untuk huruf serapan.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-012",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "vvf vvvv vfv vv vf vvv fvf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "bfbbb bfb bbfb bffb fbb bb bbb bbf bf bbbf fb bbbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "nn nfnn fnnf nnf fn nfn nnnn nf fnnn nnnf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "vbb njnv jn vb vjf nf jfff nf nbb nf nvf fjjf bf vbj vbb"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "vj bjbn fnvb bbnf bff jj bvvf jnvb jnfj fvb fbj vv vfv"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "bjjb nvf vj jb vfn jf jbf vnf nv ffb bv jfj vjjb fbj bjv"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "fjjj jn bjff fjnf jjv jvbj fvj nb nnj fbf vf bjbf fv vv"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "fjj jj bj bj vvjv nbbn jfn ffnn vnjn fvv fj jv fvj vbfj"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "ibu dan ayah bangun pagi untuk kerja dengan baik"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "aku belajar baca buku dan bunga ada di kebun"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "zh-tw-01-010",
+  "title": "注音符號組 10",
+  "summary": "Narrow committed-output lesson: 家",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "position",
+  "intro": "Narrow committed-output lesson: 家",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-010",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄩ，並以已學按鍵定位。",
+      "content": "ㄩㄩㄩ ㄑㄩ ㄩㄑㄩ ㄐㄩ ㄨㄩㄩ ㄑㄩ ㄩㄩㄩㄩ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄝ，並以已學按鍵定位。",
+      "content": "ㄝㄝㄝ ㄑㄧㄝ ㄝㄑㄝ ㄨㄧㄝ ㄨㄝㄝ ㄑㄧㄝ ㄝㄝㄝㄝ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄡ，並以已學按鍵定位。",
+      "content": "ㄡㄡㄡ ㄇㄡ ㄡㄑㄡ ㄑㄡ ㄨㄡㄡ ㄨㄡ ㄡㄡㄡㄡ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄒㄩㄡ ㄝㄡㄏ ㄝㄈㄩ ㄡㄡㄝㄝ ㄡㄡㄖㄡ ㄡㄒㄡ ㄒㄩㄡ ㄡㄒㄡ ㄡㄡㄖㄡ ㄡㄡㄝㄝ ㄝㄈㄩ ㄝㄡㄏ ㄝㄈㄩ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄡㄡㄡ ㄡㄛㄣㄨ ㄩㄋㄋㄙ ㄝㄝㄜㄝ ㄝㄘㄘ ㄡㄡㄡ ㄝㄘㄘ ㄝㄝㄜㄝ ㄩㄋㄋㄙ ㄡㄛㄣㄨ ㄩㄋㄋㄙ ㄡㄛㄣㄨ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄡㄩㄩ ㄖㄩ ㄩㄡ ㄡㄘ ㄝㄩ ㄝㄝㄆ ㄡㄩㄩ ㄝㄝㄆ ㄝㄩ ㄡㄘ ㄩㄡ ㄖㄩ ㄩㄡ ㄖㄩ ㄡㄩㄩ ㄝㄝㄆ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄝㄝㄐ ㄡㄡ ㄩㄆ ㄝㄠ ㄡㄡㄑ ㄠㄣ ㄝㄝㄐ ㄠㄣ ㄡㄡㄑ ㄝㄠ ㄩㄆ ㄡㄡ ㄩㄆ ㄡㄡ ㄝㄝㄐ ㄠㄣ ㄡㄡㄑ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄡㄡㄝ ㄡㄝㄏㄏ ㄝㄡㄩ ㄨㄨ ㄩㄒㄛ ㄟㄟㄠㄩ ㄡㄡㄝ ㄟㄟㄠㄩ ㄩㄒㄛ ㄨㄨ ㄝㄡㄩ ㄡㄝㄏㄏ ㄝㄡㄩ",
+      "inputMode": "position"
+    }
+  ]
+}

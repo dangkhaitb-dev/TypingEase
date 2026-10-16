@@ -1,0 +1,93 @@
+{
+  "id": "de-02-005",
+  "unit": "u2",
+  "group": "g1",
+  "order": 21,
+  "slug": "de-02-005",
+  "title": "Ziffern 0",
+  "summary": "Lerne die neuen Tasten 0 und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten 0 und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-02-005",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Taste üben: 0.",
+      "content": "000 00 0000 00 00 00 00 00",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "0x0 xx00 xx0 xx x0 x00 000x x000 0x00 00x 0x 00x0 000 0000 00"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "e000 0e 0e00 00 0000 000 e00 00e 00e0 000e e0"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "0060 060 600 006 660 6000 0006 66 0000 00 000 0600 6600"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ü000 üü0 ü0 0ü00 00 0000 000 00ü0 00ü 0ü0 000ü ü00 0ü üü00"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-006",
+  "unit": "u11",
+  "group": "g2",
+  "order": 154,
+  "slug": "vi-11-006",
+  "title": "Thời tiết và lộ trình",
+  "summary": "Xây dựng năng lực \"Weather and Routes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 200 âm tiết, tương đương bài đọc trung bình trong EN C11, thử thách vượt qua ngưỡng mỏi cơ ban đầu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 17,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Weather and Routes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 200 âm tiết, tương đương bài đọc trung bình trong EN C11, thử thách vượt qua ngưỡng mỏi cơ ban đầu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn dự báo liên tục gắn khối không khí lạnh với điều kiện vùng núi.",
+      "content": "Khối không khí lạnh tăng cường kết hợp rãnh áp thấp nhiệt đới khiến vùng núi cao có sương mù dày và mưa phùn. Tầm nhìn trên đèo giảm vào sáng sớm, buộc đoàn khảo sát lùi giờ xuất phát. Ban chỉ huy chọn tuyến phụ có lan can và điểm trú đã khảo sát tuần trước. Máy đo hiện trường được bọc thêm lớp chống ẩm trước khi lên xe.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn thông báo liên tục từ ban chỉ huy tiền phương về lộ trình an toàn.",
+      "content": "Ban chỉ huy tiền phương gửi bản tin thời tiết và lộ trình đến toàn bộ thành viên đoàn khảo sát. Thông báo nêu rõ đoạn đường có nguy cơ trơn trượt, giờ dừng nghỉ bắt buộc và điểm liên lạc vô tuyến. Mỗi tổ trưởng xác nhận đã phổ biến nội dung trước khi xe rời sân. Nếu mưa tăng cấp, đoàn chuyển sang phương án trú tại trạm trung chuyển thay vì tiếp tục leo dốc. Khi mây tan, cả nhóm đánh dấu lối đi an toàn rồi mới tiếp tục khảo sát.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn thông báo liên tục gắn dự báo thời tiết với lộ trình đoàn khảo sát.",
+      "content": "Đài khí tượng cảnh báo mưa rào rải rác trên các đỉnh núi trong bốn mươi tám giờ tới. Ban chỉ huy đoàn khảo sát địa chất điều chỉnh lộ trình, ưu tiên các đoạn đường đã cứng hóa và có điểm trú tạm. Máy đo hiện trường được bọc túi chống nước, còn nhật ký hành trình ghi rõ giờ xuất phát và giờ dự kiến về trạm. Mọi thành viên kiểm tra đèn pin, bộ đàm và nước uống trước khi xe rời sân tập kết. Người phụ trách kiểm tra bản đồ và bộ đàm.",
+      "inputMode": "telex"
+    }
+  ]
+}

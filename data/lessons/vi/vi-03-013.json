@@ -1,0 +1,54 @@
+{
+  "id": "vi-03-013",
+  "unit": "u3",
+  "group": "g1",
+  "order": 53,
+  "slug": "vi-03-013",
+  "title": "Luyện phím · : \" ?",
+  "summary": "Học các dấu : \" ? và luyện gõ từ kèm dấu câu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Học các dấu : \" ? và luyện gõ từ kèm dấu câu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-013",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím ; (ngón út phải, hàng cơ sở) để ra :.",
+      "content": "tôi: giữ: nhà: còn: sau: ra: rồi: lại: nhà:",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím ' (ngón út phải, hàng cơ sở) để ra \".",
+      "content": "\"a\" \"b\" \"x\" \"y\" \"ba\" \"ya\" \"xa\" \"ab\""
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím / (ngón út phải, hàng dưới) để ra ?.",
+      "content": "hơn? rồi? cho? đi? một? khi? hơn?",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ kèm dấu : \" ?.",
+      "content": "hai? câu giữ: lại: cuối? một đổi? làm: câu \"cũng\" nhóm bên: cả: này cho:",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ kèm dấu : \" ? mà không nhìn bàn phím.",
+      "content": "học ghi? và học? được? qua để? đường? giữ mùi \"sáng\" làm đất?",
+      "inputMode": "telex"
+    }
+  ]
+}

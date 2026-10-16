@@ -1,0 +1,43 @@
+{
+  "id": "vi-12-005",
+  "unit": "u12",
+  "group": "g2",
+  "order": 165,
+  "slug": "vi-12-005",
+  "title": "Đoạn văn vừa và dài",
+  "summary": "Xây dựng năng lực \"Medium and Long Passages\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nâng cao khả năng chuyển giao giữa đoạn văn cỡ vừa và bài đọc dài có nhiều tình tiết.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Medium and Long Passages\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nâng cao khả năng chuyển giao giữa đoạn văn cỡ vừa và bài đọc dài có nhiều tình tiết.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với đoạn văn cỡ vừa tả nhịp sống hối hả nơi công trường.",
+      "content": "Đoạn văn cỡ vừa mở đầu bằng những chi tiết miêu tả sinh động về nhịp sống hối hả nơi công trường xây dựng cây cầu vượt biển dài nhất khu vực duyên hải miền Trung.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn tả cần cẩu đưa khối bê tông vào đúng vị trí thiết kế.",
+      "content": "Những khối bê tông cốt thép đồ sộ được các cần cẩu khổng lồ đưa vào đúng vị trí thiết kế với độ chính xác đến từng mi-li-mét dưới sự giám sát chặt chẽ của các chuyên gia tư vấn quốc tế. Từng mối hàn nối kim loại đều được kiểm tra siêu âm kỹ lưỡng để bảo đảm tính toàn vẹn kết cấu tuyệt đối.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng kỹ năng vào đoạn văn dài tái hiện lao động của công nhân và kỹ sư.",
+      "content": "Đoạn văn dài tổng hợp tái hiện bức tranh lao động anh dũng của hàng ngàn công nhân và kỹ sư ngày đêm bám sát công trường bất kể nắng mưa gió bão. Nhờ có tinh thần kỷ luật thép và sự phối hợp đồng bộ giữa các mũi thi công, công trình cầu vượt biển đã hoàn thành vượt tiến độ đề ra ba tháng, mở ra hành lang kinh tế ven biển huyết mạch và kết nối các trung tâm công nghiệp lớn với hệ thống cảng nước sâu quốc tế trong giai đoạn hội nhập mới.",
+      "inputMode": "telex"
+    }
+  ]
+}

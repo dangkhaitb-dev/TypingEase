@@ -155,3 +155,39 @@ window.TypingEaseCurriculum = {
     hint: "Поклади вказівні пальці на дві клавіші з рисками і пиши те, що бачиш, не дивлячись на клавіатуру."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/uk-fonetyka/u1-l01.json?v=dda60b7651e4e83f",
+  "u1-l02": "/data/lessons/uk-fonetyka/u1-l02.json?v=135d0c2adba0b48d",
+  "u1-l03": "/data/lessons/uk-fonetyka/u1-l03.json?v=0029b1f936cbb80a",
+  "u1-l04": "/data/lessons/uk-fonetyka/u1-l04.json?v=f6992c62a091a23b",
+  "u1-l05": "/data/lessons/uk-fonetyka/u1-l05.json?v=722a9622fa95df16",
+  "u1-l06": "/data/lessons/uk-fonetyka/u1-l06.json?v=69cebce819f2d27d",
+  "u1-l07": "/data/lessons/uk-fonetyka/u1-l07.json?v=fca2350f61b5f491",
+  "u1-l08": "/data/lessons/uk-fonetyka/u1-l08.json?v=436c5b10c01a778c",
+  "u1-l09": "/data/lessons/uk-fonetyka/u1-l09.json?v=5be6a550f8cfbb50",
+  "u1-l10": "/data/lessons/uk-fonetyka/u1-l10.json?v=a3d020271b852a70",
+  "u2-l01": "/data/lessons/uk-fonetyka/u2-l01.json?v=a7a59a5b50e9a571",
+  "u2-l02": "/data/lessons/uk-fonetyka/u2-l02.json?v=e59bc55680e7ed46",
+  "u2-l03": "/data/lessons/uk-fonetyka/u2-l03.json?v=1ccd9aa15e1a86c8",
+  "u2-l04": "/data/lessons/uk-fonetyka/u2-l04.json?v=0d9ff901841d8725",
+  "u2-l05": "/data/lessons/uk-fonetyka/u2-l05.json?v=b6fdbdf74e1abb42",
+  "u2-l06": "/data/lessons/uk-fonetyka/u2-l06.json?v=947aecb3a160dbf3",
+  "u2-l07": "/data/lessons/uk-fonetyka/u2-l07.json?v=8d8632216e276087",
+  "u2-l08": "/data/lessons/uk-fonetyka/u2-l08.json?v=e6c5ae52b46e2191",
+  "u2-l09": "/data/lessons/uk-fonetyka/u2-l09.json?v=2e29d9dadf01b332",
+  "u2-l10": "/data/lessons/uk-fonetyka/u2-l10.json?v=21c988627535411b",
+  "u2-l11": "/data/lessons/uk-fonetyka/u2-l11.json?v=c9097890830dfa69",
+  "u3-l01": "/data/lessons/uk-fonetyka/u3-l01.json?v=df00526d3a52f05f",
+  "u3-l02": "/data/lessons/uk-fonetyka/u3-l02.json?v=44189c238c8ed6b0",
+  "u3-l03": "/data/lessons/uk-fonetyka/u3-l03.json?v=fa837723d0db9e08",
+  "u3-l04": "/data/lessons/uk-fonetyka/u3-l04.json?v=854f1c8ca89bf652",
+  "u3-l05": "/data/lessons/uk-fonetyka/u3-l05.json?v=b03f0140fe1fcd6d",
+  "u3-l06": "/data/lessons/uk-fonetyka/u3-l06.json?v=826443c55ab7fef2",
+  "u4-l01": "/data/lessons/uk-fonetyka/u4-l01.json?v=0d333658aa290255",
+  "u4-l02": "/data/lessons/uk-fonetyka/u4-l02.json?v=6e35d161ef174730",
+  "u4-l03": "/data/lessons/uk-fonetyka/u4-l03.json?v=546ca82b465636b0",
+  "u4-l04": "/data/lessons/uk-fonetyka/u4-l04.json?v=ad30a40f9263a277"
+};
+/* </auto:lesson-urls> */

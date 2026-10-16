@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "zh-tw-01-013",
+  "title": "注音符號組 13",
+  "summary": "Narrow committed-output lesson: 中 吃",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "position",
+  "intro": "Narrow committed-output lesson: 中 吃",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-013",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "聲調 ˊ 放在注音的最後面：先輸入聲母與韻母，再按 ˊ。",
+      "content": "ㄇㄣˊ ㄖㄣˊ ㄇㄣˊ ㄇㄣˊ ㄖㄣˊ ㄇㄣˊ ㄖㄣˊ ㄇㄣˊ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "聲調 ˙ 放在注音的最後面：先輸入聲母與韻母，再按 ˙。",
+      "content": "ㄉㄜ˙ ㄌㄜ˙ ㄉㄜ˙ ㄉㄜ˙ ㄌㄜ˙ ㄉㄜ˙ ㄌㄜ˙ ㄉㄜ˙ ㄌㄜ˙",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄚ，並以已學按鍵定位。",
+      "content": "ㄚㄚㄚ ㄇㄚ ㄚㄑㄚ ㄑㄚ ㄨㄚㄚ ㄨㄚ ㄚㄚㄚㄚ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄇㄚ ㄇㄚ˙ ㄅㄚˊ ㄉㄚˋ ㄋㄚˇ ㄊㄚ ㄇㄚ ㄊㄚ ㄋㄚˇ ㄉㄚˋ ㄅㄚˊ ㄇㄚ˙ ㄅㄚˊ ㄇㄚ˙ ㄇㄚ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄏㄚ ㄐㄧㄚ ㄒㄧㄚˋ ㄉㄚˊ ㄓㄚˊ ㄌㄚ˙ ㄏㄚ ㄌㄚ˙ ㄓㄚˊ ㄉㄚˊ ㄒㄧㄚˋ ㄐㄧㄚ ㄒㄧㄚˋ ㄐㄧㄚ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄊㄚ ㄕㄨㄛ ㄏㄠˇ ㄌㄜ˙ ㄋㄚˋ ㄇㄚ˙ ㄊㄚ ㄇㄚ˙ ㄋㄚˋ ㄌㄜ˙ ㄏㄠˇ ㄕㄨㄛ ㄏㄠˇ ㄕㄨㄛ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄅㄚˋ ㄅㄚ˙ ㄏㄜˊ ㄇㄚ ㄇㄚ˙ ㄉㄚˋ ㄐㄧㄚ ㄅㄚˋ ㄐㄧㄚ ㄉㄚˋ ㄇㄚ˙ ㄇㄚ ㄏㄜˊ ㄅㄚ˙",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄋㄧˇ ㄇㄣ˙ ㄏㄠˇ ㄉㄚˋ ㄐㄧㄚ ㄗㄠˇ ㄋㄧˇ ㄗㄠˇ ㄐㄧㄚ ㄉㄚˋ ㄏㄠˇ ㄇㄣ˙ ㄏㄠˇ ㄇㄣ˙",
+      "inputMode": "position"
+    }
+  ]
+}

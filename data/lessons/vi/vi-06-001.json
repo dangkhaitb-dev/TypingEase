@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-001",
+  "unit": "u6",
+  "group": "g1",
+  "order": 83,
+  "slug": "vi-06-001",
+  "title": "Ghi chú một câu",
+  "summary": "Xây dựng năng lực \"One-Sentence Notes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Khởi đầu với các lời nhắn và ghi chú ngắn một câu rõ nghĩa, thiết lập thói quen viết tin nhắn thực tế.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"One-Sentence Notes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Khởi đầu với các lời nhắn và ghi chú ngắn một câu rõ nghĩa, thiết lập thói quen viết tin nhắn thực tế.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Làm quen chủ đề qua ghi chú nhanh buổi sáng.",
+      "content": "Ghi chú nhanh buổi sáng: kiểm tra lại danh sách tài liệu họp và gửi biên bản cho trưởng nhóm trước mười giờ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn nhật ký công việc đầu ngày.",
+      "content": "Nhật ký công việc đầu ngày: gửi thư xác nhận thời gian họp với đối tác vào lúc mười bốn giờ chiều. Chuẩn bị sẵn năm bộ tài liệu giới thiệu dự án mới kèm bảng dự toán chi phí.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn lời nhắn buổi sáng nhắc cả nhóm nộp bảng chấm công đúng hạn.",
+      "content": "Chào buổi sáng cả nhóm. Nhắc mọi người nộp lại bảng chấm công tuần qua trước mười hai giờ trưa nay. Phòng nhân sự cần tổng hợp số liệu để hoàn tất báo cáo lương tháng này đúng hẹn.",
+      "inputMode": "telex"
+    }
+  ]
+}

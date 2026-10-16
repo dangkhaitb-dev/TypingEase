@@ -1,0 +1,82 @@
+{
+  "id": "br-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "br-01-003",
+  "title": "A, S, D",
+  "summary": "Aprenda as teclas a, s, d e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas a, s, d e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-003",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Localize a e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "aaaf faf af ffa aaaa aaff aaa aa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Localize s e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "sjjs sssj ssss ssjs sjss jsss sss jj js ss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Localize d e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "dd ffd fddd df dddd fdfd dddf ddd dff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "ff jj js sfs asaf da jasf asds da assd jadd jjsd dj fdsj sd fsd"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "sss sdss ssaa sdds dj assd asa dssa sas da sasa sdd ssad"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "ff dd fsdj ffs dsa da sasa ss aafa sd aa ad ssaj dfd add jjaj"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "jsda dd jasd adas djd jd sajd ss ja da faj dfaa sdd sfs aa"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "aad ds aafd ssas dd ssdd sas adad dsa ada dddd dds sd"
+    }
+  ]
+}

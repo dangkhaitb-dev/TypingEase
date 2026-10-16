@@ -1,0 +1,105 @@
+{
+  "id": "ja-01-119",
+  "unit": "u1",
+  "group": "g1",
+  "order": 19,
+  "slug": "ja-01-119",
+  "title": "Shift で大文字",
+  "summary": "Shift を押しながら、既習の文字キーで大文字を打つ。",
+  "newKeys": [
+    "shift"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "^",
+    "¥",
+    "@",
+    "[",
+    ";",
+    ":",
+    "]",
+    ",",
+    ".",
+    "/",
+    "\\",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Shift を押しながら、既習の文字キーで大文字を打つ。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-119",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "shift",
+      "text": "打つキーと反対側の手の小指で Shift を押さえたまま文字キーを打ち、大文字を入力します。",
+      "content": "Ff Jj FJ JF Dd Kk DK KD Ss Ll SL LS Aa Gg Hh GH",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "最初の文字だけ Shift で大文字にし、続く文字は小文字で入力します。",
+      "content": "Ka Ki Ku Ke Ko Sa Su Se So Ta Te To Na Ni Nu Ne No Ha Hi Fu"
+    },
+    {
+      "type": "standard",
+      "text": "Shift を押したまま、二つの大文字を続けて入力します。",
+      "content": "FJ JF AS SA DK KD GH HG LA QW ER TY UI OP AL SK DJ FH GJ"
+    },
+    {
+      "type": "standard",
+      "text": "上段と下段の大文字を、Shift を押したまま入力します。",
+      "content": "ZX XC CV VB BN NM MZ QA WS ED RF TG YH UJ IK OL PZ XM CN VB"
+    },
+    {
+      "type": "standard",
+      "text": "英数入力のまま、先頭だけ大文字の地名を入力します。",
+      "content": "Tokyo Osaka Kyoto Nagoya Sapporo Sendai Fukuoka Kobe Nara Yokohama"
+    }
+  ]
+}

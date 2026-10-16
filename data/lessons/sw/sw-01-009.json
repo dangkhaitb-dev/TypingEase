@@ -1,0 +1,106 @@
+{
+  "id": "sw-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "sw-01-009",
+  "title": "Herufi: u, i, o",
+  "summary": "Kuandika t r na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "newKeys": [
+    "u",
+    "i",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Kuandika t r na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-009",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "uuuu fu uuu fuu ff fuuu uuff ufuu ufu uf uu",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "ifii ifi iii ffi fif fi ii iiii iiif",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "oooo ofo off ofoo ff of oo ooo",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jj ou jfu ff fuf uj iuf ouj fj jj ooio jff uf foof iuo fj"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "ijjf oifj fu ufo ffij ij jju uj iif jii fouj ufuo ff jo"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "iij jff iuju uj ujo fiu ufff fj jui if offf juju io iff"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "ijj ju ui uij jjo jji oui uffu jufo oi jfoi uf uoiu jii"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "ooji uuo uiui ofif oo jojj jiuj ojj ij ooj ofj fuj fju"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "kila siku rafiki yake huweka daftari katika kituo hiki"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "wakati wa jua watu wote hutoka katika kituo hiki"
+    }
+  ]
+}

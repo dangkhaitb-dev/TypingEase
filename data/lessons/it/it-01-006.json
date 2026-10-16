@@ -1,0 +1,56 @@
+{
+  "id": "it-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "it-01-006",
+  "title": "Parole con la fila centrale",
+  "summary": "Digita parole vere con i tasti della fila centrale.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Digita parole vere con i tasti della fila centrale.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-006",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Digita ogni gruppo con tutti i tasti della fila centrale, à e ò comprese, e torna alla posizione di base prima del successivo.",
+      "content": "fò dks lagh sàj hkf aòlg dkj fà gsò lkdj sfh ajà kld"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "sala salsa alga salda falsa falla falda gas ha sa fa"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "falda falla falsa salsa alga salda dalla alla sala là"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "alla sala ha la salsa là la falla dalla falda"
+    }
+  ]
+}

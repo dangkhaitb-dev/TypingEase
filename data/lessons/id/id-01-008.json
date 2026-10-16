@@ -1,0 +1,103 @@
+{
+  "id": "id-01-008",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "id-01-008",
+  "title": "Huruf: r, t, y",
+  "summary": "Gõ g dan p dalam drill posisi tertutup.",
+  "newKeys": [
+    "r",
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Gõ g dan p dalam drill posisi tertutup.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-008",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "rrrr rrf rrr rfr rr frrr frr rfrr ffr rrfr rrrf rf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "tftft ttt tft ttf tttf tttt tftt ftt ft tf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "yfyyy fyy ff yf yfff yy yyy fy yfy yyyy fyf yfyy",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "yj rfj tt tt fyy jf yry rjj fyy fyf fty ytyy ffy tr tr yt"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "ftr jyft jjyr frr rff yy jtj fjry jr jrr rft yjr yr jfj"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jjrf yf yf yy rfj yr jr ytfy yr ftrt jy tjf yt ft yj tf jt"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "rjrj tr jyrj jfr yyj ry fj fj fjrt tjrr fr ff rrjr rjrf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "ry tjr yrt rt tyf rr jryy jfjy ry jjy jty ryf tt ffrf yt"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "ayah kerja keras setelah salat saya kata agar jelas"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "terasa dekat kaya saya agar saat setelah atas kata"
+    }
+  ]
+}

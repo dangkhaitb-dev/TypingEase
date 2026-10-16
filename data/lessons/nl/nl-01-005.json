@@ -1,0 +1,98 @@
+{
+  "id": "nl-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "nl-01-005",
+  "title": "Toetsen l, q, w",
+  "summary": "Leer de nieuwe toetsen l, q, w en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "l",
+    "q",
+    "w"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen l, q, w en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-005",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Toets oefenen: l.",
+      "content": "llll llll llll llll llll llll llll llll l",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "Toets oefenen: q.",
+      "content": "qqqq qqqq qqqq qqqq qqqq qqqq qqqq qqqq qqqq qq",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "Toets oefenen: w.",
+      "content": "wwww wwww wwww wwww wwww wwww wwww www",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "llll lllq ll wq qq llq llw qqwl hl qqqh ql lll qqll lql qlw qlql"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "wq hw ww lllq qqql qqqq wwqq kqw wwww qqq ll qqww ql"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ql qqll qlqw qqqq qql wll lllw qqq lw qlq llll wwlw qsll wwq ll llwl qq"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "qw qqq qqww wq wwq ww llw wlw wwl wwj www qlqq lll"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "qlqw hl llql qql llww llqw klw llw lqq ww qq"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "dag wal glas klas slag slak was als lag al"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "als al lag was ja wak kwal wals glas slak dag"
+    }
+  ]
+}

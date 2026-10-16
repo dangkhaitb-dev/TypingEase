@@ -1,0 +1,109 @@
+{
+  "id": "es-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 17,
+  "slug": "es-02-002",
+  "title": "Números: 4, 5, 6",
+  "summary": "Aprender 4, 5, 6 en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Aprender 4, 5, 6 en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-02-002",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Localiza 4 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "444 4444 44f4 44 4f 44f ff44 4ff4 f4 ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Localiza 5 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "55j5 j55 555j 55 jj5 jj 5555",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Localiza 6 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "f6f fff f66 666f 666 66 ff66 ff6f ff 6ff6 6666 66f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "44 jj66 jj 4464 66 556 544 664 5564 4466 6654 6666"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "4456 44 445 66 566 666 556 554 5556 oo5 6454 5445 665o 4445 55 5655 555"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "6f65 555 66 4445 6444 46 564 666 646 55 6666 44 664"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "655 4446 5555 455 555 665 556 6446 jj6 4465 5544 55 664 5556 544 6654 54"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "6646 554 566 6656 5f6 4465 445 665 46 4565 55 4456 666 66 5556 664 ff 44"
+    }
+  ]
+}

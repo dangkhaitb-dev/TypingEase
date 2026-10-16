@@ -1,0 +1,50 @@
+{
+  "id": "vi-03-019",
+  "unit": "u3",
+  "group": "g2",
+  "order": 60,
+  "slug": "vi-03-019",
+  "title": "Luyện phím · + { }",
+  "summary": "Luyện các ký hiệu + { } với phím đã học.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Luyện các ký hiệu + { } với phím đã học.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-019",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím = (ngón út phải, hàng số) để ra +.",
+      "content": "+f f+ +j j+ ++ f+j j+f +f f+ +j"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím [ (ngón út phải, hàng trên) để ra {. Nếu bộ gõ Telex đổi { thành Ơ, hãy chuyển bộ gõ sang chế độ tiếng Anh khi gõ ký hiệu này.",
+      "content": "{f f{ {j j{ {{ f{j j{f {f f{ {j"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím ] (ngón út phải, hàng trên) để ra }. Nếu bộ gõ Telex đổi } thành Ư, hãy chuyển bộ gõ sang chế độ tiếng Anh khi gõ ký hiệu này.",
+      "content": "}f f} }j j} }} f}j j}f }f f} }j"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp + { } với chữ và số đã học. Nếu bộ gõ Telex đổi ngoặc thành ơ, ư, hãy chuyển sang chế độ tiếng Anh khi gõ ngoặc.",
+      "content": "+1 2{ 3} +4 5{ 6} +7 8{ 9} +0 1{ 2} 3+ 4{ 5}"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại các ký hiệu + { } trong cụm mới, giữ nhịp đều. Nếu bộ gõ Telex đổi ngoặc thành ơ, ư, hãy chuyển sang chế độ tiếng Anh khi gõ ngoặc.",
+      "content": "{a} {b} a+1 b+2 {x} {y} x+3 y+4 {z} z+5 a+b"
+    }
+  ]
+}

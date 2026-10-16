@@ -1,0 +1,89 @@
+{
+  "id": "es-03-008",
+  "unit": "u3",
+  "group": "g1",
+  "order": 28,
+  "slug": "es-03-008",
+  "title": "Repaso de la diéresis",
+  "summary": "Repasa ü y Ü en palabras y frases con las teclas ya aprendidas.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Repasa ü y Ü en palabras y frases con las teclas ya aprendidas.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-008",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Alterna ü y las teclas ya conocidas.",
+      "content": "ÜjaÜÜ ÜüÜÜ ÜÜüüÜ üfÜa süüÜ ÜÜ saü Üj ÜsÜeÜ ÜÜÜü üsÜ"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "la cigüeña y el pingüino viven lejos del mar"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "el lingüista habla dos idiomas y es bilingüe"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "no hay vergüenza en preguntar una duda al profesor"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "la antigüedad de la casa es de cien años"
+    }
+  ]
+}

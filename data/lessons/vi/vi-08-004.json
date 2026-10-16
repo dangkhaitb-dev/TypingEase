@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-004",
+  "unit": "u8",
+  "group": "g1",
+  "order": 112,
+  "slug": "vi-08-004",
+  "title": "Câu ngắn nhịp đều",
+  "summary": "Xây dựng năng lực \"Even Short Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thực hành các câu ngắn có cấu trúc âm tiết cân đối, tạo cảm giác gõ thư thái và ổn định.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Even Short Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thực hành các câu ngắn có cấu trúc âm tiết cân đối, tạo cảm giác gõ thư thái và ổn định.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Rèn phản xạ dứt điểm trên chuỗi luyện uông, luồng, buồng, vuông, chuông.",
+      "content": "uông uông uông luồng luồng luồng buồng buồng buồng vuông vuông vuông chuông chuông chuông muôn muôn muôn cuống cuống cuống buông buông buông ruộng ruộng ruộng chuồng chuồng chuồng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ mang vần uông: vuông vắn, luồng gió, buồng chuối, quả chuông.",
+      "content": "vuông vắn luồng gió buồng chuối quả chuông muôn phương nguồn cội cuống cuồng buông lỏng vướng bận sương mù luống cuống chuông chùa cuồn cuộn ruộng lúa chín vàng chuồng trâu ấm rạ thuồng luồng mặt nước cuống rạ ướt sương buông cần câu vướng cành tràm luồng khói bếp chiều muôn nhà thắp đèn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn tả tiếng chuông chùa ngân nga trong buổi chiều tà.",
+      "content": "Tiếng chuông chùa ngân nga trầm ấm lan tỏa khắp không gian tĩnh mịch của buổi chiều tà nơi xóm đạo ven sông. Những luồng gió bấc đầu mùa se lạnh thổi qua các ô cửa sổ gỗ, báo hiệu một mùa đông lạnh giá đang dần gõ cửa từng nếp nhà đơn sơ ven triền đồi ngút ngàn cây xanh tốt tươi quanh năm.",
+      "inputMode": "telex"
+    }
+  ]
+}

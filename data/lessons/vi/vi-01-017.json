@@ -1,0 +1,79 @@
+{
+  "id": "vi-01-017",
+  "unit": "u1",
+  "group": "g1",
+  "order": 17,
+  "slug": "vi-01-017",
+  "title": "Luyện phím · ả ã ạ",
+  "summary": "Học ba dấu thanh còn lại: hỏi phím r, ngã phím x, nặng phím j và phối hợp cả năm dấu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Học ba dấu thanh còn lại: hỏi phím r, ngã phím x, nặng phím j và phối hợp cả năm dấu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-017",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu hỏi: gõ r sau nguyên âm. a r → ả. Ví dụ: bảo = b a r o.",
+      "content": "bảo sả tả vải sả ảnh cảm xả sả bảo sả",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu ngã: gõ x sau nguyên âm. a x → ã. Ví dụ: giã = g i a x.",
+      "content": "ã giã rãi bãi dãy vã xã giã ã mã giã đã mãi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu nặng: gõ j sau nguyên âm. a j → ạ. Ví dụ: nạ = n a j.",
+      "content": "nạ dạ hạt xạ nạ đạp ạ tại xạ tại đạp ạ dạ tại",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ả, ã, ạ. Nhớ: ả = a r, ã = a x, ạ = a j.",
+      "content": "sạch quả thoại đoạn băng hạn yên hãy mạng áp đạp khô quả chia đảo",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ả, ã, ạ. Nhớ: ả = a r, ã = a x, ạ = a j.",
+      "content": "bạt nhau tăng giá này trạm khảo đối đảo tăng ngoại bạt",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ả, ã, ạ.",
+      "content": "sạch ngắn chúng mạch bên đem rãi mã cành giảm áp dạng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ả, ã, ạ.",
+      "content": "khoản cải mảng mô ngại nâu mạch mà con ảnh thả nhân",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ả, ã, ạ mà không nhìn bàn phím.",
+      "content": "khoản thả dạy thay lại khoảng cảm vạch nay gạch trả lưu cảm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ã (a x). Nhớ: ã = a x.",
+      "content": "ngã hãy mãi lãi bãi gãy dã lãnh hãng ngãi",
+      "inputMode": "telex"
+    }
+  ]
+}

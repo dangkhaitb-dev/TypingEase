@@ -1,0 +1,81 @@
+{
+  "id": "zh-tw-12-jump",
+  "unit": "u12",
+  "group": "g2",
+  "order": 127,
+  "slug": "zh-tw-12-jump",
+  "title": "快速進行",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "ime",
+  "intro": "依照格式輸入，每行結束時按 Enter 換行。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-jump",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小明：「戶外教學是不是改時間了？」\n班長：「對，改到十一月十二日，早上八點集合。」\n小明：「那原本繳的錢需要再繳一次嗎？」\n班長：「不用，費用不變。如果那天不能參加，要在星期三以前告訴老師，才能辦理退費。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小華：「我很想去，可是那天下午要上課，可能會晚到。」\n阿傑：「沒關係，我們排在第三個表演，大概七點半才上台。」\n小華：「太好了，那我下課就直接過去。要幫你們帶什麼嗎？」\n阿傑：「帶你的笑容和掌聲就夠了！」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小美：「星期六下午我在家，妳什麼時候來都可以。」\n小芳：「那我三點左右到。營柱彎了的事真的很抱歉。」\n小美：「沒關係，妳還幫我修好了，我才要謝謝妳呢。」\n小芳：「我還帶了一盒餅乾，謝謝妳借我帳篷。」\n小美：「那我泡茶等妳。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "會員：「請問可以帶小孩一起去嗎？」\n活動組：「可以，十二歲以下的兒童免費入館。」\n會員：「館內有地方可以吃午餐嗎？」\n活動組：「科學館一樓有餐廳，不過人比較多，也可以到旁邊的公園野餐。」\n會員：「好的，謝謝你。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小李：「我家附近的市場青菜比較便宜，我星期五下班去買。」\n小陳：「木炭我已經買好了，烤網還要再借一個。」\n我：「我問問樓下的鄰居，他上次說家裡有。」\n小王：「那我們星期六下午四點在河濱公園見！」\n小李：「好，到時候見！」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "顧客：「請問我的洗衣機什麼時候能修好？」\n客服：「零件明天會到，師傅後天上午就能到府更換。」\n顧客：「後天上午我在家，沒問題。大概要修多久？」\n客服：「大約一個小時。師傅出發前，會先打電話給您確認。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "經理：「報名頁面來得及在月底以前完成嗎？」\n資訊部：「可以，但我們需要行銷部先提供海報的圖片。」\n行銷部：「沒問題，我們十號以前就會交出來。」\n經理：「好，那就照這個順序進行。有任何問題，請隨時提出來。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "住戶：「請問停水的時候，電梯還能用嗎？」\n管理員：「電梯可以正常使用，只有自來水會停。」\n住戶：「那管理費可以用手機轉帳嗎？」\n管理員：「可以，帳號貼在一樓的公告欄上。轉帳以後，請把收據拿到管理室登記。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

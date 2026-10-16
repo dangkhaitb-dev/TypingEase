@@ -1,0 +1,101 @@
+{
+  "id": "fr-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 30,
+  "slug": "fr-03-002",
+  "title": "Majuscules : O, U",
+  "summary": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+  "newKeys": [
+    "O",
+    "U"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "E",
+    "I",
+    "O",
+    "U"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-03-002",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "O",
+      "text": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+      "content": "OO OOOO OfOO OfO OOOf ff ffOf Of OOO ffO",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "U",
+      "text": "Maintenez la touche Maj opposée à la main qui tape la lettre, puis relâchez-la pour revenir aux minuscules.",
+      "content": "fU Uf fff fUU UUUU UUf UfU UfUU UUU UU ffUU ffU",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "OOOU ff OUf fff UUO ttOU UOU fffU fUf fUOf UOOO ffOO tOU"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "UU UUj UUU OOOj jjO OO OOUj Ufjj UUjO Oj OOOU OOU OjOU"
+    }
+  ]
+}

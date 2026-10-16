@@ -1,0 +1,55 @@
+{
+  "id": "vi-04-003",
+  "unit": "u4",
+  "group": "g2",
+  "order": 65,
+  "slug": "vi-04-003",
+  "title": "Câu ngắn đời thường",
+  "summary": "Luyện gõ câu ngắn hoàn chỉnh, viết hoa chữ cái đầu và kết thúc bằng dấu chấm.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Luyện gõ câu ngắn hoàn chỉnh, viết hoa chữ cái đầu và kết thúc bằng dấu chấm.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-04-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ câu ngắn: viết hoa chữ đầu câu và kết thúc bằng dấu chấm.",
+      "content": "Buổi sáng thức dậy sớm tập thể dục để rèn luyện sức khỏe.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu ngắn: viết hoa chữ đầu câu và kết thúc bằng dấu chấm.",
+      "content": "Em chăm chỉ đọc sách và làm bài tập đầy đủ mỗi ngày.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu ngắn: viết hoa chữ đầu câu và kết thúc bằng dấu chấm.",
+      "content": "Mặt trời chiếu những tia nắng ấm áp xuống cánh đồng lúa chín.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu ngắn: viết hoa chữ đầu câu và kết thúc bằng dấu chấm.",
+      "content": "Mùa xuân đã về. Hoa đào nở rộ trên những sườn đồi xanh biếc.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu ngắn: viết hoa chữ đầu câu và kết thúc bằng dấu chấm.",
+      "content": "Gió heo may thổi nhẹ qua từng hàng cây bên bờ hồ yên ả.",
+      "inputMode": "telex"
+    }
+  ]
+}

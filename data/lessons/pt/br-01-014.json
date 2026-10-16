@@ -1,0 +1,87 @@
+{
+  "id": "br-01-014",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "br-01-014",
+  "title": "M",
+  "summary": "Aprenda a tecla m e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprenda a tecla m e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-014",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Localize m e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "fmm fmmm ffmm mmmm mmfm mm mmm fm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "mmkm mkmm mk mmm mmmm mm kmm mmmk mmk km"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "mn mnm nmnm nnm mnnn mmn nmmn mmj mnmn mm mmmm nm mmm"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "mxmm mx xmm mmm mmmm mm xmmm mmxm mmmx mmx"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "o meu amigo mora perto da minha casa na vila"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "minha amiga mora na vila e tem muito tempo"
+    }
+  ]
+}

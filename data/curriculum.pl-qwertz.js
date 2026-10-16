@@ -66,13 +66,13 @@ window.TypingEaseCurriculum = {
       id: 'u4',
       index: 4,
       title: "Wszystkie pozostałe klawisze",
-      summary: "Znaki tej klawiatury, których kurs jeszcze nie używał — jest ich 18 — każdy wpisywany tam, gdzie naprawdę się go używa.",
+      summary: "Znaki tej klawiatury, których kurs jeszcze nie używał — jest ich 19 — każdy wpisywany tam, gdzie naprawdę się go używa.",
       minAccuracy: 80,
       locked: true,
       unlockAfter: 'u3-l06',
       groups: [
-        { id: 'symbols', title: "Pozostałe klawisze", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05'] },
-        { id: 'finish', title: "Koniec części", lessons: ['u4-l06', 'u4-l07'] }
+        { id: 'symbols', title: "Pozostałe klawisze", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05', 'u4-l06'] },
+        { id: 'finish', title: "Koniec części", lessons: ['u4-l07', 'u4-l08'] }
       ]
     }
   ],
@@ -105,13 +105,14 @@ window.TypingEaseCurriculum = {
     'u3-l04': { title: "Teksty i tempo 1", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
     'u3-l05': { title: "Teksty i tempo 2", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
     'u3-l06': { title: "Test z części 3", newKeys: [], screens: 1, estMinutes: 3, kind: 'test', seconds: 180, ready: true },
-    'u4-l01': { title: "!, \", # i $", newKeys: ["!","\"","#","$"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l02': { title: "%, &, ukośnik i (", newKeys: ["%","&","/","("], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l03': { title: "), =, ? i *", newKeys: [")","=","?","*"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l04': { title: "<, >, Ń i Ć", newKeys: ["<",">","ń","ć"], screens: 10, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l05': { title: "Ź i _", newKeys: ["ź","_"], screens: 7, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l06': { title: "Wszystkie znaki razem", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
-    'u4-l07': { title: "Test z części 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
+    'u4-l01': { title: "·, !, \" i #", newKeys: ["·","!","\"","#"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l02': { title: "¤, %, & i ukośnik", newKeys: ["¤","%","&","/"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l03': { title: "(, ), = i ?", newKeys: ["(",")","=","?"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l04': { title: "*", newKeys: ["*"], screens: 5, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l05': { title: "<, >, Ń i Ć", newKeys: ["<",">","ń","ć"], screens: 10, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l06': { title: "Ź i _", newKeys: ["ź","_"], screens: 7, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l07': { title: "Wszystkie znaki razem", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
+    'u4-l08': { title: "Test z części 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
   },
 
   sequence: [
@@ -148,7 +149,8 @@ window.TypingEaseCurriculum = {
     'u4-l04',
     'u4-l05',
     'u4-l06',
-    'u4-l07'
+    'u4-l07',
+    'u4-l08'
   ],
 
   starter: {
@@ -158,3 +160,43 @@ window.TypingEaseCurriculum = {
     hint: "Połóż palce wskazujące na dwóch klawiszach z wypustkami i przepisz to, co widzisz, bez patrzenia na klawiaturę."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/pl-qwertz/u1-l01.json?v=332160a21f4b7fd8",
+  "u1-l02": "/data/lessons/pl-qwertz/u1-l02.json?v=4f3f6bcd6eee1db9",
+  "u1-l03": "/data/lessons/pl-qwertz/u1-l03.json?v=d3436905219f1531",
+  "u1-l04": "/data/lessons/pl-qwertz/u1-l04.json?v=507fafc80fd160db",
+  "u1-l05": "/data/lessons/pl-qwertz/u1-l05.json?v=dd575ddbcaab9fff",
+  "u1-l06": "/data/lessons/pl-qwertz/u1-l06.json?v=3f8c5003ea4d5a4f",
+  "u1-l07": "/data/lessons/pl-qwertz/u1-l07.json?v=e00dca4b5a8eb468",
+  "u1-l08": "/data/lessons/pl-qwertz/u1-l08.json?v=b16161bc4361916a",
+  "u1-l09": "/data/lessons/pl-qwertz/u1-l09.json?v=478f14b2219583d3",
+  "u1-l10": "/data/lessons/pl-qwertz/u1-l10.json?v=b19eaa8f51c10cda",
+  "u2-l01": "/data/lessons/pl-qwertz/u2-l01.json?v=a1bdc0fc44a7ae1c",
+  "u2-l02": "/data/lessons/pl-qwertz/u2-l02.json?v=41da431d2b1ac1f4",
+  "u2-l03": "/data/lessons/pl-qwertz/u2-l03.json?v=45a8a6b958ae59f7",
+  "u2-l04": "/data/lessons/pl-qwertz/u2-l04.json?v=1995111844852e15",
+  "u2-l05": "/data/lessons/pl-qwertz/u2-l05.json?v=de5f2ffeeee4c199",
+  "u2-l06": "/data/lessons/pl-qwertz/u2-l06.json?v=eeb1acffc2dc103d",
+  "u2-l07": "/data/lessons/pl-qwertz/u2-l07.json?v=dbe8a3b214413057",
+  "u2-l08": "/data/lessons/pl-qwertz/u2-l08.json?v=2913a891a314ebb5",
+  "u2-l09": "/data/lessons/pl-qwertz/u2-l09.json?v=27ad2f67b0233226",
+  "u2-l10": "/data/lessons/pl-qwertz/u2-l10.json?v=fe96d2725c930753",
+  "u2-l11": "/data/lessons/pl-qwertz/u2-l11.json?v=a0773e4605317bf4",
+  "u3-l01": "/data/lessons/pl-qwertz/u3-l01.json?v=916764949c3f8f63",
+  "u3-l02": "/data/lessons/pl-qwertz/u3-l02.json?v=d566e7dbfc410f3f",
+  "u3-l03": "/data/lessons/pl-qwertz/u3-l03.json?v=76671aace2c81d60",
+  "u3-l04": "/data/lessons/pl-qwertz/u3-l04.json?v=4b49f62d6253754a",
+  "u3-l05": "/data/lessons/pl-qwertz/u3-l05.json?v=8b4c5e296bcdeffe",
+  "u3-l06": "/data/lessons/pl-qwertz/u3-l06.json?v=35ba00327fd69d7f",
+  "u4-l01": "/data/lessons/pl-qwertz/u4-l01.json?v=e9da01819f963407",
+  "u4-l02": "/data/lessons/pl-qwertz/u4-l02.json?v=e1a18aeac1a0ca46",
+  "u4-l03": "/data/lessons/pl-qwertz/u4-l03.json?v=c4aae0b3bcaaebbc",
+  "u4-l04": "/data/lessons/pl-qwertz/u4-l04.json?v=ddd5e19f9d60df91",
+  "u4-l05": "/data/lessons/pl-qwertz/u4-l05.json?v=733e699b2c699761",
+  "u4-l06": "/data/lessons/pl-qwertz/u4-l06.json?v=a19c9a12cef0de54",
+  "u4-l07": "/data/lessons/pl-qwertz/u4-l07.json?v=2b32877c2a7970cf",
+  "u4-l08": "/data/lessons/pl-qwertz/u4-l08.json?v=0957f1e9241bf9fc"
+};
+/* </auto:lesson-urls> */

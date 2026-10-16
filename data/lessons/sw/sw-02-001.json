@@ -1,0 +1,107 @@
+{
+  "id": "sw-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 16,
+  "slug": "sw-02-001",
+  "title": "Nambari: 1, 2, 3",
+  "summary": "Kuandika 1, 2, 3 katika mchanganyiko wa nambari na maneno.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Kuandika 1, 2, 3 katika mchanganyiko wa nambari na maneno.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-02-001",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "11ff 1111 f111 f1 11 f11f 1f 111 1f1f 1f11",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "2ff 2f 222f 2f2 ff2 22 222 f22f f2",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "3f3 333f f3 333 f33 3333 f333",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "f3f 2f 112f 1jfj j3ff jf 1f 33 jfj j3f fj22 j1 j3jf"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "21 3f1 2jf1 113 ff 1f21 1f2 2j j21f 111j f33j"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "3j1f f331 33j 21 jfj ff j13 f121 33 ffj jfj2 33f 31ff"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "12fc 2f jj 13 1j1 c3 33 f2 13j jjjf j1j 11 2f21"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "j2 j22j jj 33p fff3 fj33 jj3f fj3 11f 2j12 32 f2 3p j1 fff jp3j jjj f213 31"
+    }
+  ]
+}

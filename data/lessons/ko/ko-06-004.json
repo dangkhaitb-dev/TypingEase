@@ -1,0 +1,43 @@
+{
+  "id": "ko-06-004",
+  "unit": "u6",
+  "group": "g1",
+  "order": 81,
+  "slug": "ko-06-004",
+  "title": "출발 전에 확인할 일",
+  "summary": "출발 전 확인과 이동 순서를 명확하게 이어 씁니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "출발 전 확인과 이동 순서를 명확하게 이어 씁니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-06-004",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "여행을 떠나기 전에는 가스 밸브를 잠그고 창문이 모두 닫혔는지 확인합니다. 베란다의 화분에도 물을 넉넉히 줍니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "지갑과 휴대 전화, 충전기와 신분증을 가방에 넣었는지 하나씩 살펴봅니다. 휴대 전화에 저장한 기차표도 다시 확인합니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "집을 나서기 전에는 전등과 콘센트를 끄고 현관문이 잘 잠겼는지 손으로 당겨 봅니다. 모두 확인했으니 이제 출발합니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

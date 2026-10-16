@@ -69,6 +69,8 @@ window.TypingEaseUI = {
 
   /* player.js — bảng `T`. Không có khoá Telex: khoá này không bao giờ đặt inputMode "telex". */
   player: {
+    imeOffHint: "这些文字需要中文输入法：请打开输入法（Ctrl+空格 或 🌐），输入拼音后选择汉字。",
+    imeAsciiHint: "本练习请先把输入法切换到英文模式（按 Shift），再输入字母和数字。",
     loading: '正在加载课程…',
     missingTitle: '这一课还没有内容',
     missingBody: '没有从 <code>{path}</code> 加载到任何内容。这一课还在编写中，稍后再试，或者在课程页选择别的课。',

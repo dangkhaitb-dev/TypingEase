@@ -1,0 +1,94 @@
+{
+  "id": "ja-01-107",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "ja-01-107",
+  "title": "Y・U・I",
+  "summary": "Y、U、I をホームポジションへ戻りながら打つ。",
+  "newKeys": [
+    "y",
+    "u",
+    "i"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Y、U、I をホームポジションへ戻りながら打つ。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-107",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "yyy yyyy yy yy yyy yyyy yy yy yyy yyyy yy yy yyy",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "yyu uuy yuuy uyyu uuyu yyu uuy yuuy uyyu uuyu yyu",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "yy iii uui ui yyi ii yy iii uui ui yyi ii yy iii",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "ii uu uuy iiii yyyi yii yy iiiu idu ii uu uuy iiii yyyi yii yy iiiu idu ii"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "iyy iu ruyi yyu yyi iii ygiu uuy iyy iu ruyi yyu yyi iii ygiu uuy iyy iu"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "yyii yyu eu iuey yuiy yyii yyu eu iuey yuiy yyii yyu eu iuey yuiy yyii yyu"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "uul uu uuy yuui uiii yyii yyyy yu ylu uul uu uuy yuui uiii yyii yyyy yu ylu"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "uuy yyuu yyui ii gi yii yi giiy iuiu uuy yyuu yyui ii gi yii yi giiy iuiu"
+    }
+  ]
+}

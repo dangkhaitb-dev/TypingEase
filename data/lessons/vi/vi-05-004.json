@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-004",
+  "unit": "u5",
+  "group": "g1",
+  "order": 73,
+  "slug": "vi-05-004",
+  "title": "Diễn biến tiếp nối",
+  "summary": "Xử lý các tình tiết diễn ra liên tục theo chuỗi thời gian, tăng mật độ từ vựng hành động.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Xử lý các tình tiết diễn ra liên tục theo chuỗi thời gian, tăng mật độ từ vựng hành động.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn hoàn chỉnh về công việc bổ sung nguồn hàng đầy đủ cho dịp cuối tuần.",
+      "content": "Công việc nhập hàng diễn ra khẩn trương nhờ có sự chuẩn bị chu đáo và phân công rõ ràng từ trước.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Nhịp gõ khẩn trương theo chuỗi hành động kiểm kê và vận chuyển hàng hóa.",
+      "content": "Bác tài xế mở bạt xe và hạ từng thùng gỗ xuống mặt đất một cách cẩn trọng. Minh kiểm tra nhãn mác, số lượng từng giỏ rau củ tươi vừa thu hoạch từ nông trại ngoại thành.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Chuyến xe chở hàng ngày thứ Sáu cập bến mang theo nhiều kiện nông sản mới.",
+      "content": "Chuyến xe tải chở hàng sáng thứ Sáu vừa đỗ trước cổng chợ. Minh nhanh chóng đối chiếu danh sách các kiện hàng cần bốc dỡ vào sạp. Bác tài nhận lại phiếu ký, còn Minh chuyển các thùng dễ vỡ vào khu vực khô ráo.",
+      "inputMode": "telex"
+    }
+  ]
+}

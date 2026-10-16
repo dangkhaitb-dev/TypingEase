@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-01-008",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "zh-tw-01-008",
+  "title": "注音符號組 8",
+  "summary": "Narrow committed-output lesson: 可",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "position",
+  "intro": "Narrow committed-output lesson: 可",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-008",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄈ，並以已學按鍵定位。",
+      "content": "ㄈㄈㄈ ㄈㄨ ㄈㄑㄈ ㄈㄟ ㄨㄈㄈ ㄈㄑ ㄈㄈㄈㄈ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄌ，並以已學按鍵定位。",
+      "content": "ㄌㄌㄌ ㄌㄠ ㄌㄑㄌ ㄌㄑ ㄨㄌㄌ ㄌㄨ ㄌㄌㄌㄌ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄏ，並以已學按鍵定位。",
+      "content": "ㄏㄏㄏ ㄏㄨ ㄏㄑㄏ ㄏㄜ ㄨㄏㄏ ㄏㄑ ㄏㄏㄏㄏ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄤㄋㄋㄐ ㄑㄑㄐ ㄔㄔ ㄏㄜㄕㄌ ㄋㄇ ㄇㄨㄎ ㄤㄋㄋㄐ ㄇㄨㄎ ㄋㄇ ㄏㄜㄕㄌ ㄔㄔ ㄑㄑㄐ ㄔㄔ ㄑㄑㄐ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄋㄋㄇ ㄤㄤ ㄗㄏ ㄎㄎㄋㄠ ㄌㄤ ㄋㄋㄇ ㄌㄤ ㄎㄎㄋㄠ ㄗㄏ ㄤㄤ ㄗㄏ ㄤㄤ ㄋㄋㄇ ㄌㄤ ㄎㄎㄋㄠ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄕㄕㄎㄍ ㄤㄤ ㄠㄜㄎㄐ ㄌㄌㄋ ㄐㄐㄈ ㄨㄨㄏ ㄕㄕㄎㄍ ㄨㄨㄏ ㄐㄐㄈ ㄌㄌㄋ ㄠㄜㄎㄐ ㄤㄤ ㄠㄜㄎㄐ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄏㄏ ㄆㄆㄇ ㄈㄌ ㄏㄤㄎㄨ ㄏㄤㄍㄑ ㄨㄨ ㄏㄏ ㄨㄨ ㄏㄤㄍㄑ ㄏㄤㄎㄨ ㄈㄌ ㄆㄆㄇ ㄈㄌ ㄆㄆㄇ ㄏㄏ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄕㄨㄘ ㄍㄘㄈㄐ ㄗㄗ ㄌㄌㄇ ㄌㄐㄋ ㄕㄨㄘ ㄌㄐㄋ ㄌㄌㄇ ㄗㄗ ㄍㄘㄈㄐ ㄗㄗ ㄍㄘㄈㄐ ㄕㄨㄘ ㄌㄐㄋ",
+      "inputMode": "position"
+    }
+  ]
+}

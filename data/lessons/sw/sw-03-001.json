@@ -1,0 +1,89 @@
+{
+  "id": "sw-03-001",
+  "unit": "u3",
+  "group": "g1",
+  "order": 22,
+  "slug": "sw-03-001",
+  "title": "Kutumia Shift",
+  "summary": "Kuandika A na B kwa Shift na kurudia herufi ndogo na kubwa zilizotangulia.",
+  "newKeys": [
+    "shift"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kuandika A na B kwa Shift na kurudia herufi ndogo na kubwa zilizotangulia.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-03-001",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "shift",
+      "text": "Shikilia Shift unapobonyeza herufi ili kuandika herufi kubwa.",
+      "content": "FFJ FJFF JJFJ FJ FJFF JJJF FFJJ JFJF FFFJ JJFF FJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Shikilia Shift unapobonyeza herufi ili kuandika herufi kubwa.",
+      "content": "JFJF FFFJ JJFF FJFF JJFJ FJ JJJF FFJJ FJFF JFJF FFJ"
+    },
+    {
+      "type": "standard",
+      "text": "Shikilia Shift unapobonyeza herufi ili kuandika herufi kubwa.",
+      "content": "JJFF FJFF JFJF FFFJ FJ JJJF FFJJ JJFJ FJFF FFFJ JJ"
+    },
+    {
+      "type": "standard",
+      "text": "Shikilia Shift unapobonyeza herufi ili kuandika herufi kubwa.",
+      "content": "FJFF JJJF FFJJ JFJF FFFJ JJFJ FJFF JJFF FJ FFFJ JJFJ"
+    }
+  ]
+}

@@ -29,7 +29,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -129,30 +128,30 @@
       "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
       "dictation": "words",
       "type": "standard",
-      "content": "mot guitare terme huiles\naujourd'hui déjà mesures rigides\nchâteau bâtiment mère demi"
+      "content": "items mugir diriger luge\nproblèmes premier grise milieu\nrègle règles grand messe"
     },
     {
       "seconds": 25,
       "text": "Une série de mots courts contenant les nouvelles touches.",
       "type": "burst",
       "tokens": [
-        "bonne",
-        "plus",
-        "ski",
-        "espèces",
-        "un",
-        "somme",
-        "célèbre",
-        "terme",
-        "idées",
-        "mères"
+        "bras",
+        "outil",
+        "mes",
+        "prendre",
+        "parties",
+        "appel",
+        "heure",
+        "grises",
+        "appels",
+        "soleil"
       ]
     },
     {
       "text": "Maintenant avec le poids sur H, celle que tu as le moins frappée.",
       "dictation": "words",
       "type": "standard",
-      "content": "ou journée soleil votes\navant se grands musique\nlis histoires suite titre"
+      "content": "tables bateau jour connue\ndevoirs elles plans musiques\nmimes histoire dites tire"
     },
     {
       "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
@@ -164,7 +163,7 @@
       "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
       "dictation": "words",
       "type": "standard",
-      "content": "prendre âges sûre écoles\nma dernières voici salles\njamais bateaux votes vous"
+      "content": "ma espèce d'abord deux\nvertu belle second prendre\npartie salles centres notre"
     }
   ]
 }

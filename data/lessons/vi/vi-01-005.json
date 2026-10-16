@@ -1,0 +1,65 @@
+{
+  "id": "vi-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "vi-01-005",
+  "title": "Luyện phím · e r t",
+  "summary": "Học phím T (ngón trỏ trái vươn lên giữa), S (ngón áp út trái) và L (ngón áp út phải).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Học phím T (ngón trỏ trái vươn lên giữa), S (ngón áp út trái) và L (ngón áp út phải).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím e: ngón giữa trái, hàng trên. Trong Telex, gõ e hai lần sẽ ra ê, nên mỗi cụm chỉ có một chữ e.",
+      "content": "se ke qel se e qeg keh leh qeq lek"
+    },
+    {
+      "type": "standard",
+      "text": "Phím r: ngón trỏ trái, hàng trên. Trong Telex, r gõ sau nguyên âm sẽ thành dấu hỏi, nên bài này không đặt r sau nguyên âm.",
+      "content": "rr rrr frr rfr jrrr rrrj rrrj rfr"
+    },
+    {
+      "type": "standard",
+      "text": "Phím t: ngón trỏ trái, hàng trên. Gõ t xen với hai phím mốc f, j.",
+      "content": "tjt tttj tttf ttf jttt tjt tt tttj fttt ftt"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp e r t với các phím đã học.",
+      "content": "tr tlak ead tjq el sqrl hqt kfeq rg de tfh dttq hrd eg tg"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp e r t với các phím đã học.",
+      "content": "rsk gsat hfqt keq qlhr tld qgr krg tak ae rqdq gt se"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "ra tra tha he ghe tra sa ghe tre ra tre ta he se la"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "da ghe la ga ta ga tra he ghe he ra khe tha la da tra ta se tre ra sa"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại e r t trong các cụm mới, giữ nhịp đều.",
+      "content": "lrk dgt hshr rr tll drs llt kjr rj grra ta ae rkl krdj tgle ggrq rqhq"
+    }
+  ]
+}

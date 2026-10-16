@@ -1,0 +1,73 @@
+{
+  "id": "vi-07-jump",
+  "unit": "u7",
+  "group": "g4",
+  "order": 108,
+  "slug": "vi-07-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 46,
+  "inputMode": "telex",
+  "intro": "Gõ trọn danh sách phân công trực ban tuần lễ an toàn lao động.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ trọn danh sách phân công trực ban tuần lễ an toàn lao động.",
+      "content": "Danh sách phân công trực ban tuần lễ an toàn lao động: đồng chí Nguyễn Văn An phụ trách kiểm tra thiết bị phòng cháy chữa cháy; đồng chí Trần Thị Mai kiểm tra tủ thuốc sơ cấp cứu y tế; đồng chí Lê Hoàng Nam chịu trách nhiệm rà soát hệ thống khóa an toàn toàn bộ các cửa sổ văn phòng trước giờ tan ca chiều.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua chương trình chi tiết tuần lễ giao lưu văn hóa doanh nghiệp.",
+      "content": "Chương trình chi tiết tuần lễ giao lưu văn hóa doanh nghiệp: ngày thứ nhất khai mạc giải chạy việt dã gây quỹ từ thiện; ngày thứ hai triển lãm ảnh nét đẹp lao động qua các thời kỳ; ngày thứ ba hội thi ẩm thực ba miền giữa các công đoàn cơ sở; ngày thứ tư tọa đàm chia sẻ kinh nghiệm cân bằng công việc và cuộc sống gia đình; ngày cuối cùng đêm hội âm nhạc tổng kết và trao thưởng thi đua.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với bảng phân bổ thời gian biểu của hội thảo công nghệ thông tin.",
+      "content": "Bảng phân bổ thời gian biểu của hội thảo công nghệ thông tin: tám giờ đến chín giờ đón tiếp đại biểu và phát tài liệu hội nghị; chín giờ đến mười giờ mười lăm báo cáo tham luận về ứng dụng trí tuệ nhân tạo trong tự động hóa quy trình; mười giờ hai mươi đến mười giờ ba mươi lăm nghỉ giải lao dùng tiệc trà; mười giờ bốn mươi đến mười hai giờ phiên thảo luận bàn tròn và trả lời câu hỏi trực tiếp từ phía các chuyên gia đầu ngành.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên sổ tay tra cứu quy định phòng chống cháy nổ tại cơ sở kinh doanh.",
+      "content": "Sổ tay tra cứu quy định phòng chống cháy nổ tại cơ sở kinh doanh: điều một không được để các vật liệu dễ bắt lửa gần các bảng điện và nguồn nhiệt; điều hai luôn giữ lối thoát hiểm thông thoáng, không chứa đồ đạc cản trở lối đi; điều ba kiểm tra áp suất bình bọt mỗi tháng một lần và ghi chép nhật ký theo dõi; điều bốn toàn bộ cán bộ công nhân viên phải được tập huấn kỹ năng thoát hiểm và diễn tập cứu hỏa hằng năm, có sổ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua hội thoại tại quầy giao dịch.",
+      "content": "Hội thoại tại quầy giao dịch: - Chào chị, em muốn tìm hiểu gói bảo hiểm sức khỏe cho gia đình. - Vâng, em xin gửi chị cuốn sổ tay tóm tắt quyền lợi. Chị có thể tham khảo bảng so sánh giữa gói tiêu chuẩn và gói nâng cao ở trang bốn này ạ. - Thủ tục tham gia có mất nhiều thời gian không? - Rất nhanh ạ, chị chỉ cần điền phiếu này và hệ thống sẽ gửi mã xác nhận qua tin nhắn ngay.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn cuộc trao đổi chuyên môn về an ninh mạng.",
+      "content": "Cuộc trao đổi chuyên môn về an ninh mạng: - Cảnh báo: phát hiện lưu lượng truy cập bất thường từ địa chỉ mạng lạ! - Hãy cô lập ngay máy chủ đó; đồng thời kích hoạt tường lửa cấp hai! - Đã xong! Hệ thống đã chặn toàn bộ các kết nối đáng ngờ và gửi cảnh báo đỏ đến điện thoại của trưởng bộ phận an ninh thông tin. Người đối thoại nhắc lại dữ kiện, hỏi rõ mốc thời gian và chốt câu trả lời bằng giọng bình tĩnh.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên thông báo chính thức về việc áp dụng quy chế văn hóa công sở mới.",
+      "content": "Thông báo chính thức về việc áp dụng quy chế văn hóa công sở mới: nhằm xây dựng môi trường làm việc văn minh, thân thiện và giàu tính chuyên nghiệp, công ty ban hành bộ quy tắc ứng xử nơi làm việc kể từ ngày đầu tháng tới. Quy chế bao gồm các quy định cụ thể về trang phục lịch sự, tác phong giao tiếp chuẩn mực với đồng nghiệp và đối tác, cũng như ý thức giữ gìn vệ sinh chung tại các không gian sinh hoạt tập thể.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với quy chế quản lý và sử dụng tài sản công.",
+      "content": "Quy chế quản lý và sử dụng tài sản công: toàn bộ trang thiết bị máy móc và cơ sở vật chất văn phòng đều thuộc sở hữu chung của công ty và được giao cho các đơn vị sử dụng đúng mục đích phục vụ công việc hàng ngày. Nghiêm cấm mọi hành vi tự ý chiếm dụng hoặc mang tài sản ra ngoài cơ quan khi chưa có văn bản đồng ý của lãnh đạo. Mỗi khoản chi cần kèm ngày lập, mục đích sử dụng và chữ ký xác nhận của người có thẩm quyền.",
+      "inputMode": "telex"
+    }
+  ]
+}

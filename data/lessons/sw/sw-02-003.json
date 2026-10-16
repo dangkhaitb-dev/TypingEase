@@ -1,0 +1,113 @@
+{
+  "id": "sw-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 18,
+  "slug": "sw-02-003",
+  "title": "Nambari: 7, 8, 9",
+  "summary": "Kuandika 7, 8, 9 katika mchanganyiko wa nambari na maneno.",
+  "newKeys": [
+    "7",
+    "8",
+    "9"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Kuandika 7, 8, 9 katika mchanganyiko wa nambari na maneno.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-02-003",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "7",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "7f77 77f7 7ff7 7777 f7 f777 7f 77 777 77f f77 f77f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "8",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "8ff88 f88f 888f f8f8 8ff8 88 8888 88ff 888",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "9",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "999f 9999 f99 f9 9f 999 99",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "999f 7e 9f8 8jjf 9fj f8 97fe f77j f99f 87e f78j fj9 j9f fj98 fje8 ff jjj j9"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "f9j7 j7 97j jjf9 9f78 f7 87 jf f9 78f7 9j9j j87"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "7f9 f788 j77 87ff f7 f98j 7f ffj7 9f 8j9 f779 jj9"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "ff jl 897j 777 f779 8j 97f 87 8jf jjl8 7j7 77 f77 ff97 lf fj"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "99j j7 2298 78ff ff8 j28j jjff 79j8 9f9 jf 8j9 987 fj f99j"
+    }
+  ]
+}

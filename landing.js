@@ -222,10 +222,14 @@
 
   // Where each course keeps its progress. It is the SAME rule scripts/build-course.js writes into
   // data/curriculum.<course>.js — `/` does not load 18 curricula just to read one key from each.
-  // The two handwritten courses predate the rule and keep the keys their learners already have.
-  const LEGACY_PROGRESS = { vi: 'typingease-progress-v3', en: 'typingease-progress-en-v3' };
+  // The default course of every language below is imported from typekute
+  // (scripts/import-typekute.mjs) and writes `-v4`; the rule there must match this one.
+  // Layout families (dvorak, bépo…) and Hebrew keep their generated lessons and their `-v1` keys.
+  const TYPEKUTE_COURSES = ['ar', 'bn', 'de', 'en', 'es', 'fa', 'fil', 'fr', 'hi', 'id', 'it', 'ja', 'ko', 'ms',
+    'nl', 'pl', 'pt', 'ru', 'sw', 'th', 'tr', 'uk', 'ur', 'vi', 'zh', 'zh-tw'];
   function progressKeyOf(entry, family) {
-    if (LEGACY_PROGRESS[family.id]) return LEGACY_PROGRESS[family.id];
+    if (family.id === 'vi') return 'typingease-progress-v4';
+    if (TYPEKUTE_COURSES.includes(family.id)) return `typingease-progress-${family.id}-v4`;
     return isDefaultFamily(entry, family) ? `typingease-progress-${entry.code}-v1` : `typingease-progress-${family.id}-v1`;
   }
 

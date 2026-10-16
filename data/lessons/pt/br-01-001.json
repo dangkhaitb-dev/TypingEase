@@ -1,0 +1,79 @@
+{
+  "id": "br-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "br-01-001",
+  "title": "F, J e espaço: posição inicial",
+  "summary": "Aprenda as teclas f, j e a barra de espaço e pratique as três juntas.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas f, j e a barra de espaço e pratique as três juntas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-001",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Localize f e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "ffff ffff ffff ffff ffff ffff ffff ffff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Localize j e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Aperte a barra de espaço com o polegar para separar os grupos de letras.",
+      "content": "j f j f j f j f j f j f j f j f j f j f j f j f j",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "jfj fjfj fj fjf jfjf jf jfj fjfj fj fjf jfjf jf jfj fjfj fj fjf jfjf"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "fjf jfjf jf jfj fjfj fj fjf jfjf jf jfj fjfj fj fjf jfjf jf jfj fjfj"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "jjfj ff jj jf fffj fjf fj ff ff fj fff fjjf jff fjj fjfj jjj jj"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "fjjf fj jjfj fjf jf jfj jjf jf fj ffj jj fff jj fjjf ff ff jjjj"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    }
+  ]
+}

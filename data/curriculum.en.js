@@ -1,184 +1,541 @@
-/* data/curriculum.en.js — English curriculum index, the sibling of data/curriculum.vi.js.
-   Loaded with <script src="/data/curriculum.en.js"></script>. NOT fetched.
-   Assigned to window.TypingEaseCurriculum, exactly like the Vietnamese one.
+/* data/curriculum.en.js — SINH TỰ ĐỘNG, ĐỪNG SỬA TAY.
+   Nguồn: typekute, pack `en` (en-adult-v1), qua scripts/import-typekute.mjs.
+   Chạy lại:  node scripts/import-typekute.mjs --course en && node scripts/stamp-data.mjs
 
-   Read this before touching lesson ids: `u3-l01` here and `u3-l01` in the Vietnamese
-   curriculum are DIFFERENT LESSONS. The two live in separate directories
-   (data/lessons/en/ and data/lessons/vi/) and separate progress stores, so nothing
-   collides — but grepping an id alone will find both, so always include the language.
-
-   Why three units and not four. The Vietnamese course spends Unit 3 on typing tone marks
-   with Telex, which English has no equivalent of. Dropping it and renumbering is why this
-   `u3` is the Vietnamese `u4`: a course that showed "Unit 1, Unit 2, Unit 4" would read as
-   a bug, and bai-hoc/generate.mjs prints `unit.index` literally.
-
-   The one key the Vietnamese course never teaches and English cannot do without is the
-   apostrophe. Without it there is no `don't`, `it's`, `you're` — and apostrophe-free
-   English is exactly what makes drill text read as though a machine wrote it. It is a
-   home-row key (right little finger, just right of `;`) and it is taught in u2-l08.
-   `"` then comes free through SHIFT_MAP in Unit 3, with no extra physical key.
-
-   `ready: false` everywhere for now: the index is the contract, the 27 lesson files are
-   written against it one unit at a time. The roadmap page already renders an unready
-   lesson as "coming soon" rather than a dead link, so units can be switched on as they
-   land. Check with: node scripts/validate-lessons.js --lang en
+   Nạp bằng <script src="/data/curriculum.en.js?v=…">, KHÔNG fetch: progress-store.js và
+   badges.js đọc progressKey/badgesKey ngay khi chạy. Đây là "gốc" của chuỗi băm — khối
+   `lessonUrls` ở cuối file (do stamp-data.mjs viết) mang URL đã băm của từng bài, và
+   data-cache.js chỉ lưu một bài vào Cache API khi SHA-256 của nó khớp mã băm đó.
 */
 window.TypingEaseCurriculum = {
-  lang: 'en',
-  // US Standard. Khai ro thay vi dua vao mac dinh cua keyboard/preferences.js: tu khi
-  // giao trinh quyet dinh ban phim, mot chi muc khong khai gi la mot chi muc im lang
-  // nhan bat cu thu gi mac dinh dang la.
+  lang: "en",
+  course: "en",
   keyboardId: 1,
-  course: 'en',
-  // Every layout this course is correct on: the handwritten lessons teach the US key positions,
-  // and these four put the same letters in the same places. keyboard/preferences.js refuses to
-  // draw a saved layout outside this list here — Dvorak has its own course at /dvorak/.
-  layouts: [1, 120, 128, 123, 125],
-  // Its own store. Lesson ids repeat across languages, so one shared key would mean two
-  // courses overwriting each other's progress, unlocks and "continue" pointer.
-  progressKey: 'typingease-progress-en-v3',
-  badgesKey: 'typingease-badges-en-v1',
-  // No Telex here, so badges.js hides the badge that requires it rather than showing a
-  // tenth award that can never be earned.
+  layouts: [1,120,128,123,125],
+  progressKey: "typingease-progress-en-v4",
+  badgesKey: "typingease-badges-en-v2",
   features: [],
+  source: { product: 'typekute', pack: "en", revision: "en-adult-v1" },
 
   units: [
     {
-      id: 'u1',
+      id: "u1",
       index: 1,
-      title: 'The home row',
-      summary: 'Eight keys under your fingers, then G H, E I, R U — enough to type real English words without looking down.',
+      title: "Letter Keys",
+      summary: "Learn the letter keys one group at a time, starting with the home keys and the Space bar.",
       minAccuracy: 80,
       locked: false,
       unlockAfter: null,
       groups: [
-        { id: 'start', title: 'Start here', lessons: ['u1-l01', 'u1-l02', 'u1-l03', 'u1-l04', 'u1-l05'] },
-        { id: 'reach', title: 'Reaching out', lessons: ['u1-l06', 'u1-l07', 'u1-l08'] },
-        { id: 'finish', title: 'Finish the unit', lessons: ['u1-l09', 'u1-l10'] }
+        { id: "g1", title: "First Steps", lessons: ["en-01-001","en-01-003","en-01-004","en-01-005"] },
+        { id: "g2", title: "Reaching Out", lessons: ["en-01-006","en-01-007","en-01-008","en-01-009","en-01-010"] },
+        { id: "g3", title: "Complete the Alphabet", lessons: ["en-01-011","en-01-012","en-01-013","en-01-014","en-01-015"] },
+        { id: "g4", title: "Jump ahead", lessons: ["en-01-jump"] }
       ]
     },
     {
-      id: 'u2',
+      id: "u2",
       index: 2,
-      title: 'The rest of the alphabet',
-      summary: 'Upper row, bottom row, punctuation and capitals — the whole alphabet, plus Shift and Enter.',
+      title: "Number Flow",
+      summary: "Practice every number on the top row before short mixed number strings.",
       minAccuracy: 80,
       locked: true,
-      unlockAfter: 'u1-l10',
+      unlockAfter: "en-01-015",
       groups: [
-        { id: 'start', title: 'Start here', lessons: ['u2-l01', 'u2-l02', 'u2-l03', 'u2-l04', 'u2-l05'] },
-        { id: 'reach', title: 'Reaching out', lessons: ['u2-l06', 'u2-l07', 'u2-l08', 'u2-l09'] },
-        { id: 'finish', title: 'Finish the unit', lessons: ['u2-l10', 'u2-l11'] }
+        { id: "g1", title: "Digits 1–3", lessons: ["en-02-001"] },
+        { id: "g2", title: "Digits 4–6", lessons: ["en-02-002"] },
+        { id: "g3", title: "Digits 7–0", lessons: ["en-02-003"] },
+        { id: "g4", title: "Number Combinations", lessons: ["en-02-004"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-02-jump"] }
       ]
     },
     {
-      id: 'u3',
+      id: "u3",
       index: 3,
-      title: 'Numbers, symbols and speed',
-      summary: 'The number row, everyday symbols, real addresses and links, then long paragraphs at full speed.',
+      title: "Capital & Symbol Control",
+      summary: "Use Shift, punctuation, and the supported US QWERTY symbols in short meaningful text.",
       minAccuracy: 80,
       locked: true,
-      unlockAfter: 'u2-l11',
+      unlockAfter: "en-02-004",
       groups: [
-        { id: 'numbers-symbols', title: 'Numbers and symbols', lessons: ['u3-l01', 'u3-l02', 'u3-l03'] },
-        { id: 'speed', title: 'Speed', lessons: ['u3-l04', 'u3-l05', 'u3-l06'] }
+        { id: "g1", title: "Capitals", lessons: ["en-03-001","en-03-002","en-03-003","en-03-004","en-03-005","en-03-006"] },
+        { id: "g2", title: "Sentence Punctuation", lessons: ["en-03-007","en-03-008","en-03-009","en-03-010","en-03-024","en-03-011","en-03-012"] },
+        { id: "g3", title: "Number Symbols", lessons: ["en-03-013","en-03-014","en-03-015","en-03-016","en-03-017","en-03-018"] },
+        { id: "g4", title: "Other Symbols", lessons: ["en-03-019","en-03-020","en-03-021","en-03-022","en-03-023"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-03-jump"] }
       ]
-    }
-    // Khối dưới đây do scripts/build-unit-symbols.js ghi (unit "mọi phím còn lại"). Đừng sửa tay.
-    // <auto:symbols:units>
-    , {
-      id: 'u4',
+    },
+    {
+      id: "u4",
       index: 4,
-      // Sinh bởi scripts/build-unit-symbols.js — đừng sửa tay trong khối này.
-      autoSymbols: true,
-      title: "Every other key",
-      summary: "The 19 characters this keyboard has that the course has not used yet — brackets, currency, the rest of the Shift layer — each typed where it is actually used.",
+      title: "Full Keyboard Flow",
+      summary: "Combine letters, capitals, digits, and punctuation in words, sentences, and short paragraphs.",
       minAccuracy: 80,
       locked: true,
-      unlockAfter: 'u3-l06',
+      unlockAfter: "en-03-023",
       groups: [
-        { id: 'symbols', title: "The remaining keys", lessons: ['u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05'] },
-        { id: 'finish', title: "Finish the unit", lessons: ['u4-l06', 'u4-l07'] }
+        { id: "g1", title: "Word Connections", lessons: ["en-04-001","en-04-002"] },
+        { id: "g2", title: "Mixed Sentences", lessons: ["en-04-003","en-04-004"] },
+        { id: "g3", title: "Short Paragraphs", lessons: ["en-04-005","en-04-006"] },
+        { id: "g4", title: "Jump ahead", lessons: ["en-04-jump"] }
+      ]
+    },
+    {
+      id: "u5",
+      index: 5,
+      title: "Connected Stories",
+      summary: "Type connected adult scenes with cause-and-effect links, then longer named scenes.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: "en-04-006",
+      groups: [
+        { id: "g1", title: "Short Scenes", lessons: ["en-05-001","en-05-002","en-05-003"] },
+        { id: "g2", title: "Connected Scenes", lessons: ["en-05-004","en-05-005","en-05-006"] },
+        { id: "g3", title: "Complete Short Stories", lessons: ["en-05-007","en-05-008","en-05-009"] },
+        { id: "g4", title: "Story Continuity", lessons: ["en-05-010","en-05-011","en-05-012"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-05-jump"] }
+      ]
+    },
+    {
+      id: "u6",
+      index: 6,
+      title: "Everyday Writing",
+      summary: "Type practical adult messages, plans, instructions, and updates with capitals, dates, and numbers when source provides them.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: "en-05-012",
+      groups: [
+        { id: "g1", title: "Messages", lessons: ["en-06-001","en-06-002","en-06-003"] },
+        { id: "g2", title: "Plans & Details", lessons: ["en-06-004","en-06-005","en-06-006"] },
+        { id: "g3", title: "Requests & Instructions", lessons: ["en-06-007","en-06-008","en-06-009"] },
+        { id: "g4", title: "Work Updates", lessons: ["en-06-010","en-06-011","en-06-012"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-06-jump"] }
+      ]
+    },
+    {
+      id: "u7",
+      index: 7,
+      title: "Real-World Text",
+      summary: "Type informational prose then named dialogue and mixed documents with denser punctuation.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: "en-06-012",
+      groups: [
+        { id: "g1", title: "Detailed Accounts", lessons: ["en-07-001","en-07-002","en-07-003"] },
+        { id: "g2", title: "Reference-heavy Text", lessons: ["en-07-004","en-07-005","en-07-006"] },
+        { id: "g3", title: "Dialogue", lessons: ["en-07-007","en-07-008","en-07-009"] },
+        { id: "g4", title: "Mixed Documents", lessons: ["en-07-010","en-07-011","en-07-012"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-07-jump"] }
+      ]
+    },
+    {
+      id: "u8",
+      index: 8,
+      title: "Smooth & Accurate Typing",
+      summary: "Hold a comfortable continuous rhythm from phrases to longer mixed passages.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: "en-07-012",
+      groups: [
+        { id: "g1", title: "Smooth Phrases", lessons: ["en-08-001","en-08-002","en-08-003"] },
+        { id: "g2", title: "Steady Sentences", lessons: ["en-08-004","en-08-005","en-08-006"] },
+        { id: "g3", title: "Transition Control", lessons: ["en-08-007","en-08-008","en-08-009"] },
+        { id: "g4", title: "Mixed Rhythm", lessons: ["en-08-010","en-08-011","en-08-012"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-08-jump"] }
+      ]
+    },
+    {
+      id: "u9",
+      index: 9,
+      title: "Speed Building",
+      summary: "Speed up familiar letter patterns, carry that pace into new sentences, then keep it on number groups, letter–number shifts, and workplace codes.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: "en-08-012",
+      groups: [
+        { id: "g1", title: "Short Patterns", lessons: ["en-09-001","en-09-002","en-09-003"] },
+        { id: "g2", title: "Fast Phrases", lessons: ["en-09-004","en-09-005","en-09-006"] },
+        { id: "g3", title: "Applied Pace", lessons: ["en-09-007","en-09-008","en-09-009"] },
+        { id: "g4", title: "Number and Symbol Speed", lessons: ["en-09-010","en-09-011","en-09-012"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-09-jump"] }
+      ]
+    },
+    {
+      id: "u10",
+      index: 10,
+      title: "Precision Control",
+      summary: "Reduce errors on near-words, reversals, and clusters, then on digits, operators, parentheses, quotes, and invoice-style codes.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: "en-09-012",
+      groups: [
+        { id: "g1", title: "Similar Patterns", lessons: ["en-10-001","en-10-002","en-10-003"] },
+        { id: "g2", title: "Difficult Transitions", lessons: ["en-10-004","en-10-005","en-10-006"] },
+        { id: "g3", title: "Numbers and Mathematical Symbols", lessons: ["en-10-007","en-10-008","en-10-009"] },
+        { id: "g4", title: "Exact Mixed Text", lessons: ["en-10-010","en-10-011","en-10-012"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-10-jump"] }
+      ]
+    },
+    {
+      id: "u11",
+      index: 11,
+      title: "Focused Endurance",
+      summary: "Sustain attention across related passages, then across long finance and percent text with more numbers.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: "en-10-012",
+      groups: [
+        { id: "g1", title: "Extended Passages", lessons: ["en-11-001","en-11-002","en-11-003"] },
+        { id: "g2", title: "Sustained Reading", lessons: ["en-11-004","en-11-005","en-11-006"] },
+        { id: "g3", title: "Long Practice Sets", lessons: ["en-11-007","en-11-008","en-11-009"] },
+        { id: "g4", title: "Numeric and Technical Endurance", lessons: ["en-11-010","en-11-011","en-11-012"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-11-jump"] }
+      ]
+    },
+    {
+      id: "u12",
+      index: 12,
+      title: "Performance Practice",
+      summary: "Adapt to changing openings, lengths, and rhythms, then to workplace schedules, instructions, invoices, and vendor codes.",
+      minAccuracy: 80,
+      locked: true,
+      unlockAfter: "en-11-012",
+      groups: [
+        { id: "g1", title: "Varied Openings", lessons: ["en-12-001","en-12-002","en-12-003"] },
+        { id: "g2", title: "Mixed Passages", lessons: ["en-12-004","en-12-005","en-12-006"] },
+        { id: "g3", title: "Combined Practice", lessons: ["en-12-007","en-12-008","en-12-009"] },
+        { id: "g4", title: "Real-World Performance Formats", lessons: ["en-12-010","en-12-011","en-12-012"] },
+        { id: "g5", title: "Jump ahead", lessons: ["en-12-jump"] }
       ]
     }
-    // </auto:symbols:units>
   ],
 
-  /* kind: keys | review | weak | test */
   lessons: {
-    // Unit 1 — the key order is the Vietnamese one unchanged, because it is not Vietnamese:
-    // it is index → middle → ring → little finger across the home row, then the same mirrored
-    // stretch on each row. By the end of this unit the learner has 8 of the 12 most common
-    // English letters (E A I S H R D L; T O N C are the four it misses), so there is nothing
-    // much to gain by reordering for letter frequency and a great deal to lose by breaking the
-    // row discipline. This line said 9 until 2026-09-22, when someone writing the English
-    // touch-typing guide tried to repeat the claim on a public page and could not make the
-    // count come out — worth remembering that a number in a comment gets quoted eventually.
-    'u1-l01': { title: 'F, J and the space bar', newKeys: ['f', 'j', ' '], screens: 10, estMinutes: 5, kind: 'keys', ready: true },
-    'u1-l02': { title: 'D and K', newKeys: ['d', 'k'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u1-l03': { title: 'S and L', newKeys: ['s', 'l'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u1-l04': { title: 'A and the semicolon', newKeys: ['a', ';'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u1-l05': { title: 'Home row review', newKeys: [], screens: 9, estMinutes: 5, kind: 'review', ready: true },
-    'u1-l06': { title: 'G and H', newKeys: ['g', 'h'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u1-l07': { title: 'E and I', newKeys: ['e', 'i'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u1-l08': { title: 'R and U', newKeys: ['r', 'u'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u1-l09': { title: 'Weak key drill', newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: true },
-    'u1-l10': { title: 'Unit 1 test', newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: true },
-
-    // Unit 2
-    'u2-l01': { title: 'T and Y', newKeys: ['t', 'y'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u2-l02': { title: 'O and W', newKeys: ['o', 'w'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u2-l03': { title: 'C and N', newKeys: ['c', 'n'], screens: 12, estMinutes: 5, kind: 'keys', ready: true },
-    'u2-l04': { title: 'M and V', newKeys: ['m', 'v'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u2-l05': { title: 'Twenty-key review', newKeys: [], screens: 9, estMinutes: 5, kind: 'review', ready: true },
-    'u2-l06': { title: 'Q and P', newKeys: ['q', 'p'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    'u2-l07': { title: 'B and X', newKeys: ['b', 'x'], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
-    // Four new keys, so one more screen than its Vietnamese counterpart: the validator
-    // requires every key in `newKeys` to be introduced by a `block` screen of its own.
-    'u2-l08': { title: 'Z, punctuation and the apostrophe', newKeys: ['z', '.', ',', "'"], screens: 12, estMinutes: 6, kind: 'keys', ready: true },
-    'u2-l09': { title: 'Shift and Enter', newKeys: ['shift', 'enter'], screens: 9, estMinutes: 5, kind: 'keys', ready: true },
-    'u2-l10': { title: 'Weak key drill', newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: true },
-    'u2-l11': { title: 'Unit 2 test', newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: true },
-
-    // Unit 3 — `/` and `-` are the only new physical keys. Every other symbol this unit uses
-    // (? ! @ # : _ " and the brackets) is Shift plus a key already taught, so it costs the
-    // learner a reach they already know rather than a new one.
-    'u3-l01': { title: 'The number row', newKeys: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '0'], screens: 12, estMinutes: 6, kind: 'keys', ready: true },
-    'u3-l02': { title: 'Everyday symbols', newKeys: ['/', '-'], screens: 10, estMinutes: 5, kind: 'keys', ready: true },
-    'u3-l03': { title: 'Addresses, links and passwords', newKeys: [], screens: 8, estMinutes: 5, kind: 'review', ready: true },
-    'u3-l04': { title: 'Paragraphs and pace 1', newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
-    'u3-l05': { title: 'Paragraphs and pace 2', newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
-    'u3-l06': { title: 'Final test', newKeys: [], screens: 1, estMinutes: 3, kind: 'test', seconds: 180, ready: true }
-    // Khối dưới đây do scripts/build-unit-symbols.js ghi (unit "mọi phím còn lại"). Đừng sửa tay.
-    // <auto:symbols:lessons>
-    , 'u4-l01': { title: "`, ~, $ and %", newKeys: ["`","~","$","%"], screens: 10, estMinutes: 5, kind: 'keys', ready: true }
-    , 'u4-l02': { title: "^, &, * and (", newKeys: ["^","&","*","("], screens: 11, estMinutes: 5, kind: 'keys', ready: true }
-    , 'u4-l03': { title: "), = and +", newKeys: [")","=","+"], screens: 8, estMinutes: 5, kind: 'keys', ready: true }
-    , 'u4-l04': { title: "[, {, ] and }", newKeys: ["[","{","]","}"], screens: 9, estMinutes: 5, kind: 'keys', ready: true }
-    , 'u4-l05': { title: "\\, |, < and >", newKeys: ["\\","|","<",">"], screens: 10, estMinutes: 5, kind: 'keys', ready: true }
-    , 'u4-l06': { title: "All the symbols together", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true }
-    , 'u4-l07': { title: "Unit 4 test", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
-    // </auto:symbols:lessons>
+    "en-01-001": {"title":"F, J home keys and Space","newKeys":["f","j"," "],"screens":8,"estMinutes":9,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-003": {"title":"A, S, D","newKeys":["a","s","d"],"screens":10,"estMinutes":12,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-004": {"title":"G, H, K","newKeys":["g","h","k"],"screens":10,"estMinutes":12,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-005": {"title":"L","newKeys":["l"],"screens":6,"estMinutes":7,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-006": {"title":"Home row words","newKeys":[],"screens":5,"estMinutes":6,"kind":"review","inputMode":"ascii","ready":true},
+    "en-01-007": {"title":"Home row phrases","newKeys":[],"screens":5,"estMinutes":6,"kind":"review","inputMode":"ascii","ready":true},
+    "en-01-008": {"title":"Q, W, E","newKeys":["q","w","e"],"screens":10,"estMinutes":12,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-009": {"title":"R, T, Y","newKeys":["r","t","y"],"screens":10,"estMinutes":12,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-010": {"title":"U, I, O","newKeys":["u","i","o"],"screens":10,"estMinutes":12,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-011": {"title":"P","newKeys":["p"],"screens":6,"estMinutes":7,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-012": {"title":"Z, X, C","newKeys":["z","x","c"],"screens":10,"estMinutes":12,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-013": {"title":"V, B, N","newKeys":["v","b","n"],"screens":10,"estMinutes":13,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-014": {"title":"M","newKeys":["m"],"screens":6,"estMinutes":7,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-01-015": {"title":"Review: all letter keys","newKeys":[],"screens":5,"estMinutes":6,"kind":"review","inputMode":"ascii","ready":true},
+    "en-01-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":9,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-02-001": {"title":"1, 2, 3","newKeys":["1","2","3"],"screens":8,"estMinutes":9,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-02-002": {"title":"4, 5, 6","newKeys":["4","5","6"],"screens":8,"estMinutes":10,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-02-003": {"title":"7, 8, 9","newKeys":["7","8","9"],"screens":8,"estMinutes":9,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-02-004": {"title":"0","newKeys":["0"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-02-jump": {"title":"Jump ahead","newKeys":[],"screens":4,"estMinutes":5,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-03-001": {"title":"Shift","newKeys":["shift"],"screens":4,"estMinutes":4,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-002": {"title":"A, B, C","newKeys":["A","B","C"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-003": {"title":"D, E, F","newKeys":["D","E","F"],"screens":5,"estMinutes":5,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-004": {"title":"G, H, I","newKeys":["G","H","I"],"screens":5,"estMinutes":5,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-005": {"title":"J, K, L","newKeys":["J","K","L"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-006": {"title":"M, N, O","newKeys":["M","N","O"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-007": {"title":"P, Q, R","newKeys":["P","Q","R"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-008": {"title":"S, T, U","newKeys":["S","T","U"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-009": {"title":"V, W, X","newKeys":["V","W","X"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-010": {"title":"Y, Z","newKeys":["Y","Z"],"screens":4,"estMinutes":4,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-024": {"title":"Caps Lock","newKeys":["capslock"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-011": {"title":"Period, comma, semicolon","newKeys":[".",",",";"],"screens":5,"estMinutes":5,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-012": {"title":":, !, ?","newKeys":[":","!","?"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-013": {"title":"', -, (","newKeys":["'","-","("],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-014": {"title":"), \", <","newKeys":[")","\"","<"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-015": {"title":">","newKeys":[">"],"screens":3,"estMinutes":3,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-016": {"title":"@, #, $","newKeys":["@","#","$"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-017": {"title":"%, /, _","newKeys":["%","/","_"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-018": {"title":"+, =, &","newKeys":["+","=","&"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-019": {"title":"*, ~, `","newKeys":["*"],"screens":5,"estMinutes":5,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-020": {"title":"[, ], {","newKeys":["[","]","{"],"screens":5,"estMinutes":6,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-021": {"title":"}, \\, |","newKeys":["}","\\","|"],"screens":5,"estMinutes":5,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-022": {"title":"^","newKeys":["^"],"screens":3,"estMinutes":4,"kind":"keys","inputMode":"ascii","ready":true},
+    "en-03-023": {"title":"Enter: new lines","newKeys":[],"screens":5,"estMinutes":5,"kind":"review","inputMode":"ascii","ready":true},
+    "en-03-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":10,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-04-001": {"title":"Short texts 1","newKeys":[],"screens":3,"estMinutes":4,"kind":"review","inputMode":"ascii","ready":true},
+    "en-04-002": {"title":"Short texts 2","newKeys":[],"screens":3,"estMinutes":4,"kind":"review","inputMode":"ascii","ready":true},
+    "en-04-003": {"title":"Short texts 3","newKeys":[],"screens":3,"estMinutes":4,"kind":"review","inputMode":"ascii","ready":true},
+    "en-04-004": {"title":"Short texts 4","newKeys":[],"screens":3,"estMinutes":4,"kind":"review","inputMode":"ascii","ready":true},
+    "en-04-005": {"title":"Short texts 5","newKeys":[],"screens":3,"estMinutes":4,"kind":"review","inputMode":"ascii","ready":true},
+    "en-04-006": {"title":"Short texts 6","newKeys":[],"screens":3,"estMinutes":4,"kind":"review","inputMode":"ascii","ready":true},
+    "en-04-jump": {"title":"Jump ahead","newKeys":[],"screens":6,"estMinutes":8,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-05-001": {"title":"Maya at the market","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-002": {"title":"Maya meets Jordan","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-003": {"title":"Stall 12 closes","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-004": {"title":"Restocking for the fair","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-005": {"title":"Crates to Harbor Street","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-006": {"title":"Tracking the day","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-007": {"title":"Planning the harvest fair","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-008": {"title":"The missing market key","newKeys":[],"screens":3,"estMinutes":12,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-009": {"title":"Opening in the storm","newKeys":[],"screens":3,"estMinutes":10,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-010": {"title":"Fair setup","newKeys":[],"screens":3,"estMinutes":9,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-011": {"title":"Saturday crowd","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-012": {"title":"Walking home","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-05-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":30,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-06-001": {"title":"One-Sentence Notes","newKeys":[],"screens":3,"estMinutes":6,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-002": {"title":"Connected Notes","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-003": {"title":"Notes With a Request","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-004": {"title":"Times and Schedules","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-005": {"title":"Places and Amounts","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-006": {"title":"Multi-Detail Plans","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-007": {"title":"Polite Requests","newKeys":[],"screens":3,"estMinutes":12,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-008": {"title":"Instructions","newKeys":[],"screens":3,"estMinutes":9,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-009": {"title":"Confirm and Change","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-010": {"title":"Short Status","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-011": {"title":"Progress With Facts","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-012": {"title":"Next steps","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-06-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":28,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-07-001": {"title":"Event Account","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-002": {"title":"Process Description","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-003": {"title":"Fact Explanation","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-004": {"title":"Named Tools","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-005": {"title":"Time and Cycles","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-006": {"title":"Policy: rooms and hours","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-007": {"title":"Short Speaker Turns","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-008": {"title":"Longer Speaker Turns","newKeys":[],"screens":3,"estMinutes":9,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-009": {"title":"Dialogue: folder and pickup","newKeys":[],"screens":3,"estMinutes":11,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-010": {"title":"Notice Passage","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-011": {"title":"Instruction Passage","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-012": {"title":"Combined Document","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-07-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":30,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-08-001": {"title":"Lake-path phrases","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-002": {"title":"Transition Phrases","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-003": {"title":"Phrases with Punctuation","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-004": {"title":"Even Short Sentences","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-005": {"title":"Light Compounds","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-006": {"title":"Changing Cadence","newKeys":[],"screens":3,"estMinutes":10,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-007": {"title":"Changing words","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-008": {"title":"Long-Word Changes","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-009": {"title":"Punctuation Changes","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-010": {"title":"Short Rhythm","newKeys":[],"screens":3,"estMinutes":10,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-011": {"title":"Medium Rhythm","newKeys":[],"screens":3,"estMinutes":7,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-012": {"title":"Mixed Passage","newKeys":[],"screens":3,"estMinutes":8,"kind":"review","inputMode":"ascii","ready":true},
+    "en-08-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":28,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-09-001": {"title":"Compact Patterns","newKeys":[],"screens":3,"estMinutes":14,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-002": {"title":"Dock label patterns","newKeys":[],"screens":3,"estMinutes":15,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-003": {"title":"Hand-Switch Patterns","newKeys":[],"screens":3,"estMinutes":17,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-004": {"title":"Short Phrases","newKeys":[],"screens":3,"estMinutes":17,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-005": {"title":"Dock shipment phrases","newKeys":[],"screens":3,"estMinutes":18,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-006": {"title":"Consecutive Phrases","newKeys":[],"screens":3,"estMinutes":19,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-007": {"title":"Same-Pattern Sentences","newKeys":[],"screens":3,"estMinutes":20,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-008": {"title":"Variant Sentences","newKeys":[],"screens":3,"estMinutes":21,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-009": {"title":"New Sentences","newKeys":[],"screens":3,"estMinutes":22,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-010": {"title":"Digit Groups","newKeys":[],"screens":3,"estMinutes":23,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-011": {"title":"Letter-Number Shifts","newKeys":[],"screens":3,"estMinutes":23,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-012": {"title":"Codes and IDs","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-09-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":53,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-10-001": {"title":"Near Words","newKeys":[],"screens":3,"estMinutes":25,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-002": {"title":"Reversed Patterns","newKeys":[],"screens":3,"estMinutes":25,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-003": {"title":"Double-letter records","newKeys":[],"screens":3,"estMinutes":21,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-004": {"title":"Finger Switches","newKeys":[],"screens":3,"estMinutes":16,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-005": {"title":"Consonant Clusters","newKeys":[],"screens":3,"estMinutes":17,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-006": {"title":"Exact Sentences","newKeys":[],"screens":3,"estMinutes":23,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-007": {"title":"Audit Data Tables","newKeys":[],"screens":3,"estMinutes":21,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-008": {"title":"Equations and Operators","newKeys":[],"screens":4,"estMinutes":22,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-009": {"title":"Receipts and Codes","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-010": {"title":"Quoted text and punctuation","newKeys":[],"screens":3,"estMinutes":23,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-011": {"title":"Shifted agenda text","newKeys":[],"screens":3,"estMinutes":23,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-012": {"title":"Fractions and forms","newKeys":[],"screens":6,"estMinutes":49,"kind":"review","inputMode":"ascii","ready":true},
+    "en-10-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":60,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-11-001": {"title":"Meal Preparation","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-002": {"title":"Volunteer Updates","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-003": {"title":"Trail and Library","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-004": {"title":"Library Shift","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-005": {"title":"Meal-Service Review","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-006": {"title":"Weather and Routes","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-007": {"title":"Visitor Support","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-008": {"title":"Changing Conditions","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-009": {"title":"Grant Planning","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-010": {"title":"Garden Accessibility","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-011": {"title":"Shelving Request","newKeys":[],"screens":3,"estMinutes":25,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-012": {"title":"Community Order","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-11-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":64,"kind":"jump","inputMode":"ascii","ready":true},
+    "en-12-001": {"title":"Familiar Openings","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-002": {"title":"Unexpected Openings","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-003": {"title":"Punctuation-Forward Openings","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-004": {"title":"Short and Medium Passages","newKeys":[],"screens":3,"estMinutes":23,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-005": {"title":"Medium and Long Passages","newKeys":[],"screens":3,"estMinutes":25,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-006": {"title":"Mixed Passage Chain","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-007": {"title":"Meeting Notes and Dialogue","newKeys":[],"screens":4,"estMinutes":32,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-008": {"title":"Schedules and Plans","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-009": {"title":"Delivery instructions","newKeys":[],"screens":4,"estMinutes":32,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-010": {"title":"Email and Subject Line","newKeys":[],"screens":3,"estMinutes":24,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-011": {"title":"Booking Confirmation","newKeys":[],"screens":3,"estMinutes":25,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-012": {"title":"Office packet","newKeys":[],"screens":4,"estMinutes":29,"kind":"review","inputMode":"ascii","ready":true},
+    "en-12-jump": {"title":"Jump ahead","newKeys":[],"screens":8,"estMinutes":61,"kind":"jump","inputMode":"ascii","ready":true}
   },
 
-  sequence: [
-    'u1-l01', 'u1-l02', 'u1-l03', 'u1-l04', 'u1-l05', 'u1-l06', 'u1-l07', 'u1-l08', 'u1-l09', 'u1-l10',
-    'u2-l01', 'u2-l02', 'u2-l03', 'u2-l04', 'u2-l05', 'u2-l06', 'u2-l07', 'u2-l08', 'u2-l09', 'u2-l10', 'u2-l11',
-    'u3-l01', 'u3-l02', 'u3-l03', 'u3-l04', 'u3-l05', 'u3-l06'
-    // Khối dưới đây do scripts/build-unit-symbols.js ghi (unit "mọi phím còn lại"). Đừng sửa tay.
-    // <auto:symbols:sequence>
-    , 'u4-l01', 'u4-l02', 'u4-l03', 'u4-l04', 'u4-l05', 'u4-l06', 'u4-l07'
-    // </auto:symbols:sequence>
-  ],
+  sequence: ["en-01-001","en-01-003","en-01-004","en-01-005","en-01-006","en-01-007","en-01-008","en-01-009","en-01-010","en-01-011","en-01-012","en-01-013","en-01-014","en-01-015","en-01-jump","en-02-001","en-02-002","en-02-003","en-02-004","en-02-jump","en-03-001","en-03-002","en-03-003","en-03-004","en-03-005","en-03-006","en-03-007","en-03-008","en-03-009","en-03-010","en-03-024","en-03-011","en-03-012","en-03-013","en-03-014","en-03-015","en-03-016","en-03-017","en-03-018","en-03-019","en-03-020","en-03-021","en-03-022","en-03-023","en-03-jump","en-04-001","en-04-002","en-04-003","en-04-004","en-04-005","en-04-006","en-04-jump","en-05-001","en-05-002","en-05-003","en-05-004","en-05-005","en-05-006","en-05-007","en-05-008","en-05-009","en-05-010","en-05-011","en-05-012","en-05-jump","en-06-001","en-06-002","en-06-003","en-06-004","en-06-005","en-06-006","en-06-007","en-06-008","en-06-009","en-06-010","en-06-011","en-06-012","en-06-jump","en-07-001","en-07-002","en-07-003","en-07-004","en-07-005","en-07-006","en-07-007","en-07-008","en-07-009","en-07-010","en-07-011","en-07-012","en-07-jump","en-08-001","en-08-002","en-08-003","en-08-004","en-08-005","en-08-006","en-08-007","en-08-008","en-08-009","en-08-010","en-08-011","en-08-012","en-08-jump","en-09-001","en-09-002","en-09-003","en-09-004","en-09-005","en-09-006","en-09-007","en-09-008","en-09-009","en-09-010","en-09-011","en-09-012","en-09-jump","en-10-001","en-10-002","en-10-003","en-10-004","en-10-005","en-10-006","en-10-007","en-10-008","en-10-009","en-10-010","en-10-011","en-10-012","en-10-jump","en-11-001","en-11-002","en-11-003","en-11-004","en-11-005","en-11-006","en-11-007","en-11-008","en-11-009","en-11-010","en-11-011","en-11-012","en-11-jump","en-12-001","en-12-002","en-12-003","en-12-004","en-12-005","en-12-006","en-12-007","en-12-008","en-12-009","en-12-010","en-12-011","en-12-012","en-12-jump"],
 
-  /* The taster line on the home page hero, inline so it needs no fetch. It must byte-match
-     the content of the screen it points at, so that a newcomer who types it gets that screen
-     credited. F comes before J here because "F and J" is how the lesson title reads in
-     English; the Vietnamese hero says the same thing in the opposite order. */
   starter: {
-    lessonId: 'u1-l01',
-    screen: 6,
-    content: 'fff jjj fff jjj fj jf',
-    hint: 'Rest both index fingers on F and J — the two keys with a raised bump — then type the letter that lights up.'
+    lessonId: "en-01-001",
+    screen: 1,
+    content: "ffff ffff ffff ffff ffff ffff",
+    hint: "Rest both index fingers on F and J — the two keys with a raised bump — then type the letter that lights up."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "en-01-001": "/data/lessons/en/en-01-001.json?v=8b0e720a2675eced",
+  "en-01-003": "/data/lessons/en/en-01-003.json?v=c43fd929e3526e2d",
+  "en-01-004": "/data/lessons/en/en-01-004.json?v=9f243eb64fbcacc8",
+  "en-01-005": "/data/lessons/en/en-01-005.json?v=92247fd16b2a0a69",
+  "en-01-006": "/data/lessons/en/en-01-006.json?v=45f70a7f6aaaa84d",
+  "en-01-007": "/data/lessons/en/en-01-007.json?v=bccfcad672869cca",
+  "en-01-008": "/data/lessons/en/en-01-008.json?v=caf5697211e4481f",
+  "en-01-009": "/data/lessons/en/en-01-009.json?v=49821e88c229b476",
+  "en-01-010": "/data/lessons/en/en-01-010.json?v=60ab5a14c3029f2e",
+  "en-01-011": "/data/lessons/en/en-01-011.json?v=720237be24d65f8a",
+  "en-01-012": "/data/lessons/en/en-01-012.json?v=78e1f6a09662d6a4",
+  "en-01-013": "/data/lessons/en/en-01-013.json?v=9953fe04ff3d0816",
+  "en-01-014": "/data/lessons/en/en-01-014.json?v=b7b54e3a30c4ccf6",
+  "en-01-015": "/data/lessons/en/en-01-015.json?v=5ee4c3929e5bd929",
+  "en-01-jump": "/data/lessons/en/en-01-jump.json?v=cc8b9952d0e95e8c",
+  "en-02-001": "/data/lessons/en/en-02-001.json?v=fefc4e38f55c1bc4",
+  "en-02-002": "/data/lessons/en/en-02-002.json?v=b2b1c16972027ecf",
+  "en-02-003": "/data/lessons/en/en-02-003.json?v=7f2a1821a412b8c3",
+  "en-02-004": "/data/lessons/en/en-02-004.json?v=5ef23b8d65c18cc3",
+  "en-02-jump": "/data/lessons/en/en-02-jump.json?v=ca64570c3b36466a",
+  "en-03-001": "/data/lessons/en/en-03-001.json?v=844195d7bc2d81f0",
+  "en-03-002": "/data/lessons/en/en-03-002.json?v=51f3bf647c15c04d",
+  "en-03-003": "/data/lessons/en/en-03-003.json?v=f02bb6423361d78a",
+  "en-03-004": "/data/lessons/en/en-03-004.json?v=c003303af85cd034",
+  "en-03-005": "/data/lessons/en/en-03-005.json?v=cb5130ae99297351",
+  "en-03-006": "/data/lessons/en/en-03-006.json?v=9086e5f5e8259633",
+  "en-03-007": "/data/lessons/en/en-03-007.json?v=73435ed5bb2165bd",
+  "en-03-008": "/data/lessons/en/en-03-008.json?v=cad103aac679e1b2",
+  "en-03-009": "/data/lessons/en/en-03-009.json?v=0d325a043909e1ef",
+  "en-03-010": "/data/lessons/en/en-03-010.json?v=d663b8f817845d46",
+  "en-03-011": "/data/lessons/en/en-03-011.json?v=552b43249595fddb",
+  "en-03-012": "/data/lessons/en/en-03-012.json?v=77ea99e32e3401af",
+  "en-03-013": "/data/lessons/en/en-03-013.json?v=92c2e01ca27f9793",
+  "en-03-014": "/data/lessons/en/en-03-014.json?v=68f8c51204b9089e",
+  "en-03-015": "/data/lessons/en/en-03-015.json?v=fdd15f0747c4f828",
+  "en-03-016": "/data/lessons/en/en-03-016.json?v=f25e3c80b2fdaadd",
+  "en-03-017": "/data/lessons/en/en-03-017.json?v=0687c5f475454825",
+  "en-03-018": "/data/lessons/en/en-03-018.json?v=53695aac1dd5cfac",
+  "en-03-019": "/data/lessons/en/en-03-019.json?v=61a4621d0de2f646",
+  "en-03-020": "/data/lessons/en/en-03-020.json?v=f57324fa117d26de",
+  "en-03-021": "/data/lessons/en/en-03-021.json?v=e6cc752b42d96966",
+  "en-03-022": "/data/lessons/en/en-03-022.json?v=148d51e81634507e",
+  "en-03-023": "/data/lessons/en/en-03-023.json?v=109106a9161b3717",
+  "en-03-024": "/data/lessons/en/en-03-024.json?v=68a623da86f4f080",
+  "en-03-jump": "/data/lessons/en/en-03-jump.json?v=b58b484a1bafc1a6",
+  "en-04-001": "/data/lessons/en/en-04-001.json?v=3a8ea5d215d77444",
+  "en-04-002": "/data/lessons/en/en-04-002.json?v=f337fe514ed70743",
+  "en-04-003": "/data/lessons/en/en-04-003.json?v=7e421ba41558a21d",
+  "en-04-004": "/data/lessons/en/en-04-004.json?v=73dd0d0831bd353e",
+  "en-04-005": "/data/lessons/en/en-04-005.json?v=eee7924d427145ad",
+  "en-04-006": "/data/lessons/en/en-04-006.json?v=456b9852376887de",
+  "en-04-jump": "/data/lessons/en/en-04-jump.json?v=4f864f1cfc8c1e60",
+  "en-05-001": "/data/lessons/en/en-05-001.json?v=f37d2add92e6925b",
+  "en-05-002": "/data/lessons/en/en-05-002.json?v=ddaeb781f5de806a",
+  "en-05-003": "/data/lessons/en/en-05-003.json?v=3f788e8a01b8de73",
+  "en-05-004": "/data/lessons/en/en-05-004.json?v=9fb6eb0ac9fadba7",
+  "en-05-005": "/data/lessons/en/en-05-005.json?v=8194dcd1c4231cf6",
+  "en-05-006": "/data/lessons/en/en-05-006.json?v=9eab7eacd45613ae",
+  "en-05-007": "/data/lessons/en/en-05-007.json?v=63c2190c6b8165c0",
+  "en-05-008": "/data/lessons/en/en-05-008.json?v=54b6298e73fd8cc2",
+  "en-05-009": "/data/lessons/en/en-05-009.json?v=59d572e118ddb2b7",
+  "en-05-010": "/data/lessons/en/en-05-010.json?v=f6f0041e0e7640d5",
+  "en-05-011": "/data/lessons/en/en-05-011.json?v=bfe69bdda013be5a",
+  "en-05-012": "/data/lessons/en/en-05-012.json?v=5a0a0846a497c62d",
+  "en-05-jump": "/data/lessons/en/en-05-jump.json?v=5f311a1b8e9be91b",
+  "en-06-001": "/data/lessons/en/en-06-001.json?v=30cdddf9d2d42288",
+  "en-06-002": "/data/lessons/en/en-06-002.json?v=e2f8b640a0076954",
+  "en-06-003": "/data/lessons/en/en-06-003.json?v=4bcb3b5e445674eb",
+  "en-06-004": "/data/lessons/en/en-06-004.json?v=45c6d308328059f0",
+  "en-06-005": "/data/lessons/en/en-06-005.json?v=1aa95e71d406ebf0",
+  "en-06-006": "/data/lessons/en/en-06-006.json?v=49c729e513051bab",
+  "en-06-007": "/data/lessons/en/en-06-007.json?v=c7da59f4e41e5303",
+  "en-06-008": "/data/lessons/en/en-06-008.json?v=d7e054fd055bb414",
+  "en-06-009": "/data/lessons/en/en-06-009.json?v=40ad5dc5ca95adb7",
+  "en-06-010": "/data/lessons/en/en-06-010.json?v=d7f922e7450bd0cc",
+  "en-06-011": "/data/lessons/en/en-06-011.json?v=50c6bc2ec333f13c",
+  "en-06-012": "/data/lessons/en/en-06-012.json?v=860d80a717707233",
+  "en-06-jump": "/data/lessons/en/en-06-jump.json?v=11a3c2ce60edec92",
+  "en-07-001": "/data/lessons/en/en-07-001.json?v=a607284652c72bca",
+  "en-07-002": "/data/lessons/en/en-07-002.json?v=15012db7095a9953",
+  "en-07-003": "/data/lessons/en/en-07-003.json?v=8ef1a2dc9b221db9",
+  "en-07-004": "/data/lessons/en/en-07-004.json?v=400f71969eba7ed6",
+  "en-07-005": "/data/lessons/en/en-07-005.json?v=190adb732451bbe0",
+  "en-07-006": "/data/lessons/en/en-07-006.json?v=4dacd07257bfcd3e",
+  "en-07-007": "/data/lessons/en/en-07-007.json?v=9097f20f7f2a1fc4",
+  "en-07-008": "/data/lessons/en/en-07-008.json?v=f5805ab090ca7f78",
+  "en-07-009": "/data/lessons/en/en-07-009.json?v=578aea023d80d373",
+  "en-07-010": "/data/lessons/en/en-07-010.json?v=300511c52ea26855",
+  "en-07-011": "/data/lessons/en/en-07-011.json?v=94738ed97f913c88",
+  "en-07-012": "/data/lessons/en/en-07-012.json?v=b7da2075ed841016",
+  "en-07-jump": "/data/lessons/en/en-07-jump.json?v=27e75af9794858f4",
+  "en-08-001": "/data/lessons/en/en-08-001.json?v=500b962318e9aa98",
+  "en-08-002": "/data/lessons/en/en-08-002.json?v=e3ab12fc5b1f6549",
+  "en-08-003": "/data/lessons/en/en-08-003.json?v=a4ad3e88e33a5b02",
+  "en-08-004": "/data/lessons/en/en-08-004.json?v=65676fad004f6f91",
+  "en-08-005": "/data/lessons/en/en-08-005.json?v=af54d25aaef0234e",
+  "en-08-006": "/data/lessons/en/en-08-006.json?v=f991a5a0978b1d7d",
+  "en-08-007": "/data/lessons/en/en-08-007.json?v=81845b3f44911ee8",
+  "en-08-008": "/data/lessons/en/en-08-008.json?v=dc8700e7c854788a",
+  "en-08-009": "/data/lessons/en/en-08-009.json?v=50bee6769287c49c",
+  "en-08-010": "/data/lessons/en/en-08-010.json?v=2c04a0d751dbdbcd",
+  "en-08-011": "/data/lessons/en/en-08-011.json?v=3baeae8b1f09d15f",
+  "en-08-012": "/data/lessons/en/en-08-012.json?v=2351548b43f058f3",
+  "en-08-jump": "/data/lessons/en/en-08-jump.json?v=d7417262c78ab213",
+  "en-09-001": "/data/lessons/en/en-09-001.json?v=9b58d1d2b5b37714",
+  "en-09-002": "/data/lessons/en/en-09-002.json?v=a20c1ac6e2365057",
+  "en-09-003": "/data/lessons/en/en-09-003.json?v=9f3ae1205310b129",
+  "en-09-004": "/data/lessons/en/en-09-004.json?v=e1947d575a08c232",
+  "en-09-005": "/data/lessons/en/en-09-005.json?v=28b1d216668c58bb",
+  "en-09-006": "/data/lessons/en/en-09-006.json?v=4d7f75b2ae6b5881",
+  "en-09-007": "/data/lessons/en/en-09-007.json?v=ac177469d8847bcd",
+  "en-09-008": "/data/lessons/en/en-09-008.json?v=b2d8f4caa6c5eeb2",
+  "en-09-009": "/data/lessons/en/en-09-009.json?v=d1c0fee3f526df82",
+  "en-09-010": "/data/lessons/en/en-09-010.json?v=a5652139a72eb2fe",
+  "en-09-011": "/data/lessons/en/en-09-011.json?v=7bd89c5d417b9d6a",
+  "en-09-012": "/data/lessons/en/en-09-012.json?v=ae7caeeb70c638e5",
+  "en-09-jump": "/data/lessons/en/en-09-jump.json?v=b57c69c12918eaf5",
+  "en-10-001": "/data/lessons/en/en-10-001.json?v=8240a6ab1213fc05",
+  "en-10-002": "/data/lessons/en/en-10-002.json?v=d426b85b8af45a92",
+  "en-10-003": "/data/lessons/en/en-10-003.json?v=e5fa9cbd74cf23bc",
+  "en-10-004": "/data/lessons/en/en-10-004.json?v=75d6521bd213d42f",
+  "en-10-005": "/data/lessons/en/en-10-005.json?v=c1a856888e41c905",
+  "en-10-006": "/data/lessons/en/en-10-006.json?v=ef7e6a9fced718a5",
+  "en-10-007": "/data/lessons/en/en-10-007.json?v=faa887895efbf3d6",
+  "en-10-008": "/data/lessons/en/en-10-008.json?v=9ec11e7c3b6767e5",
+  "en-10-009": "/data/lessons/en/en-10-009.json?v=7e03d9789d860d16",
+  "en-10-010": "/data/lessons/en/en-10-010.json?v=c984ae194cf26f4d",
+  "en-10-011": "/data/lessons/en/en-10-011.json?v=44410a5b122e2d49",
+  "en-10-012": "/data/lessons/en/en-10-012.json?v=30ea31b416a3f5fb",
+  "en-10-jump": "/data/lessons/en/en-10-jump.json?v=85ab6ed33061ef3d",
+  "en-11-001": "/data/lessons/en/en-11-001.json?v=67d95b16ed6dfccb",
+  "en-11-002": "/data/lessons/en/en-11-002.json?v=ace391ec84de44d1",
+  "en-11-003": "/data/lessons/en/en-11-003.json?v=dda92ea65d7a4584",
+  "en-11-004": "/data/lessons/en/en-11-004.json?v=83fb9429b775877b",
+  "en-11-005": "/data/lessons/en/en-11-005.json?v=0cec38c07558f44b",
+  "en-11-006": "/data/lessons/en/en-11-006.json?v=37ea6383ed25b72d",
+  "en-11-007": "/data/lessons/en/en-11-007.json?v=3864b34ca05841cd",
+  "en-11-008": "/data/lessons/en/en-11-008.json?v=3fd9747e280e4b0e",
+  "en-11-009": "/data/lessons/en/en-11-009.json?v=44c8ddb0b0a430d0",
+  "en-11-010": "/data/lessons/en/en-11-010.json?v=1445c2b2cab7d3d0",
+  "en-11-011": "/data/lessons/en/en-11-011.json?v=0239da344d9519e7",
+  "en-11-012": "/data/lessons/en/en-11-012.json?v=79f822161fd828ae",
+  "en-11-jump": "/data/lessons/en/en-11-jump.json?v=b310d1bc13c31f18",
+  "en-12-001": "/data/lessons/en/en-12-001.json?v=d3cfbf2c77a0cd27",
+  "en-12-002": "/data/lessons/en/en-12-002.json?v=594ac0cdacd58fb9",
+  "en-12-003": "/data/lessons/en/en-12-003.json?v=145a108174237226",
+  "en-12-004": "/data/lessons/en/en-12-004.json?v=680b3bd2b19203a8",
+  "en-12-005": "/data/lessons/en/en-12-005.json?v=a7109ab297230ae7",
+  "en-12-006": "/data/lessons/en/en-12-006.json?v=c9f182c7edc64359",
+  "en-12-007": "/data/lessons/en/en-12-007.json?v=8543f5d2bee39bf3",
+  "en-12-008": "/data/lessons/en/en-12-008.json?v=b8a8a5a570b9b9d9",
+  "en-12-009": "/data/lessons/en/en-12-009.json?v=03edb23d9c9997df",
+  "en-12-010": "/data/lessons/en/en-12-010.json?v=91d38c1cfe4a16a5",
+  "en-12-011": "/data/lessons/en/en-12-011.json?v=95e6360bf67df86a",
+  "en-12-012": "/data/lessons/en/en-12-012.json?v=89748c2baf158551",
+  "en-12-jump": "/data/lessons/en/en-12-jump.json?v=a865edfc8a2570e7"
+};
+/* </auto:lesson-urls> */

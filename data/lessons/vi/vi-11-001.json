@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-001",
+  "unit": "u11",
+  "group": "g1",
+  "order": 149,
+  "slug": "vi-11-001",
+  "title": "Chuẩn bị bữa ăn",
+  "summary": "Xây dựng năng lực \"Meal Preparation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học sức bền đầu tiên: đoạn văn liên tục 100 âm tiết về công việc tại bếp ăn cộng đồng, làm quen với áp lực duy trì chú ý.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 16,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Meal Preparation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học sức bền đầu tiên: đoạn văn liên tục 100 âm tiết về công việc tại bếp ăn cộng đồng, làm quen với áp lực duy trì chú ý.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Thực hành đoạn kể công việc sơ chế và chia suất ăn của tình nguyện viên.",
+      "content": "đội ngũ tình nguyện viên thức dậy từ bốn giờ ba mươi sáng để sơ chế rau củ, nấu cháo hạt sen và chia từng phần ăn ấm nóng vào các khay cơm chuyên dụng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về buổi chuẩn bị bữa sáng tại trung tâm dưỡng lão. Gõ hết đoạn, giữ nhịp ổn định; không phải chuỗi từ rời.",
+      "content": "Trời còn chưa sáng hẳn thì gian bếp của trung tâm dưỡng lão đã ấm mùi gạo mới. Các tình nguyện viên xếp hàng rửa rau, vo gạo và khuấy nồi cháo hạt sen trên bếp ga nhỏ. Từng khay cơm được chia đều rồi phủ khăn sạch để giữ hơi nóng trước khi mang lên phòng các cụ. Không ai vội vàng bỏ bước, vì mỗi phần ăn còn mang theo lời chào buổi sáng dịu dàng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ sức bền qua đoạn văn liên tục về bếp ăn từ thiện sáng cuối tuần.",
+      "content": "Bếp ăn từ thiện sáng nay rộn ràng tiếng cười nói của các bạn trẻ tham gia hoạt động thiện nguyện cuối tuần. Từng củ cà rốt, bắp cải xanh và mớ rau thơm tươi non được rửa sạch dưới vòi nước chảy xiết rồi thái lát mỏng đều tay. Nồi canh bí đỏ hầm sườn tỏa mùi thơm ngào ngạt khắp gian bếp nhỏ đơn sơ. Các tình nguyện viên chia nhau mỗi người một việc: người xới cơm nóng hổi vào từng hộp giấy thân thiện với môi trường, người cẩn thận đóng nắp và xếp vào các thùng giữ nhiệt để chuyển đến tận tay những bệnh nhân có hoàn cảnh khó khăn đang điều trị tại bệnh viện huyện.",
+      "inputMode": "telex"
+    }
+  ]
+}

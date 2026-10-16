@@ -27,7 +27,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é",
     "x",
@@ -95,30 +94,30 @@
       "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
       "dictation": "words",
       "type": "standard",
-      "content": "base célèbre bruit table\nj'ai bon jolie bras\nbonnes jolies banques d'abord"
+      "content": "beau bateaux bureaux bases\njournée projets jolie bureau\nbaisse bon bords bord"
     },
     {
       "seconds": 25,
       "text": "Une série de mots courts contenant les nouvelles touches.",
       "type": "burst",
       "tokens": [
-        "se",
-        "notre",
-        "tel",
-        "qu'on",
-        "contes",
-        "soirée",
-        "places",
-        "bruits",
-        "parties",
-        "doses"
+        "outils",
+        "court",
+        "vivent",
+        "dix",
+        "joli",
+        "rues",
+        "avec",
+        "texte",
+        "te",
+        "table"
       ]
     },
     {
       "text": "Maintenant avec le poids sur B, celle que tu as le moins frappée.",
       "dictation": "words",
       "type": "standard",
-      "content": "réponse côtés bruit lettres\nelles belles connue élève\nparaître jure sud tirs"
+      "content": "années accès bureaux tel\nelles belle content tant\nd'accord durs jures site"
     },
     {
       "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
@@ -130,7 +129,7 @@
       "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
       "dictation": "words",
       "type": "standard",
-      "content": "si il détail août\ntelles dur pas second\nrêve part autres tes"
+      "content": "je si textes d'abord\ntitres rues voiles contente\nespèce nouveau avant russe"
     }
   ]
 }

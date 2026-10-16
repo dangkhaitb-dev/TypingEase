@@ -1,10 +1,14 @@
-import * as THREE from '../vendor/three/three.module.min.js';
+// keyboard/hands-3d.js — bàn tay 3D, đồng bộ từ typekute (11ty/client/player/hands-3d.js, bản
+// 2026-10: mô hình GLB nén meshopt ~140 KB thay cho glTF 944 KB). Khác bản gốc: three.js nạp từ
+// vendor/three/, tài nguyên ở /assets/hands-3d/, và resolveFrame() lùi về clip gần nhất có thật.
+import { ACESFilmicToneMapping, AnimationClip, Clock, Color, DataTexture, DirectionalLight, DoubleSide, Group, HemisphereLight, MeshStandardMaterial, NeutralToneMapping, OrthographicCamera, PropertyBinding, Quaternion, RGBAFormat, SRGBColorSpace, Scene, TextureLoader, Vector3, WebGLRenderer } from '../vendor/three/three.module.min.js';
 import { GLTFLoader } from '../vendor/three/GLTFLoader.js';
 import { clone as cloneSkeleton } from '../vendor/three/SkeletonUtils.js';
-import { unpackHandGltf } from './gltf-unpack.js';
+import { MeshoptDecoder } from '../vendor/three/meshopt_decoder.module.js';
 import { resolveHandSlots } from './hands-pose-map.js';
+import { fetchStaticAsset } from './static-assets.js';
 
-const MODEL_URL = '/assets/hands-3d/hand-default.compressed.gltf';
+const MODEL_URL = '/assets/hands-3d/hand-default.glb';
 const APP_TEXTURE = '/assets/hands-3d/base-1';
 const HIGHLIGHT_ROOT = '/assets/hands-3d';
 const HIGHLIGHT_NAMES = ['index', 'middle', 'ring', 'pinky', 'thumb'];
@@ -33,7 +37,7 @@ function cubicEaseInOut(value) {
 
 function flipTexture(texture, color = false) {
   if (!texture) return null;
-  if (color) texture.colorSpace = THREE.SRGBColorSpace;
+  if (color) texture.colorSpace = SRGBColorSpace;
   texture.repeat.y = -1;
   texture.offset.y = 1;
   texture.needsUpdate = true;
@@ -42,7 +46,7 @@ function flipTexture(texture, color = false) {
 
 function transparentMap() {
   if (!transparentTexture) {
-    transparentTexture = new THREE.DataTexture(new Uint8Array([0, 0, 0, 0]), 1, 1, THREE.RGBAFormat);
+    transparentTexture = new DataTexture(new Uint8Array([0, 0, 0, 0]), 1, 1, RGBAFormat);
     transparentTexture.needsUpdate = true;
   }
   return transparentTexture;
@@ -50,7 +54,7 @@ function transparentMap() {
 
 function loadSurfaceTexture() {
   if (!surfaceTexturePromise) {
-    surfaceTexturePromise = new THREE.TextureLoader().loadAsync(`${APP_TEXTURE}.jpg`)
+    surfaceTexturePromise = loadCachedTexture(`${APP_TEXTURE}.jpg`)
       .then((texture) => flipTexture(texture, true))
       .catch(() => null);
   }
@@ -59,10 +63,9 @@ function loadSurfaceTexture() {
 
 function loadHighlightTextures() {
   if (!highlightTexturePromise) {
-    const loader = new THREE.TextureLoader();
     highlightTexturePromise = Promise.all(HIGHLIGHT_NAMES.flatMap((name) => [name, `${name}-full`]).map(async (name) => {
       try {
-        return [name, flipTexture(await loader.loadAsync(`${HIGHLIGHT_ROOT}/highlight-${name}.png`), true)];
+        return [name, flipTexture(await loadCachedTexture(`${HIGHLIGHT_ROOT}/highlight-${name}.png`), true)];
       } catch {
         return [name, null];
       }
@@ -71,21 +74,45 @@ function loadHighlightTextures() {
   return highlightTexturePromise;
 }
 
+async function loadCachedTexture(path) {
+  const response = await fetchStaticAsset(path);
+  const url = URL.createObjectURL(await response.blob());
+  try { return await new TextureLoader().loadAsync(url); }
+  finally { URL.revokeObjectURL(url); }
+}
+
 /**
- * The 967 KB compressed model unpacks to ~2.8 MB of glTF JSON, so it is fetched,
- * unpacked and parsed exactly once per page; both hands clone the parsed result.
- * `GLTFLoader.parse` accepts an already-parsed glTF object, which keeps the
- * unpacked JSON from being stringified and re-parsed on the way in.
+ * The model (built by tooling/hands/convert-model.mjs) stores every pose as one
+ * keyframe of a single `poses` clip, named in order by `extras.poses`. Split it
+ * back into one single-keyframe clip per pose name, which is what posing reads.
+ */
+function splitPoseClips(gltf) {
+  const definitions = gltf.parser?.json?.animations || [];
+  return gltf.animations.flatMap((clip, index) => {
+    const names = definitions[index]?.extras?.poses;
+    if (!Array.isArray(names)) return [clip];
+    return names.map((name, pose) => new AnimationClip(name, -1, clip.tracks.map((track) => {
+      const size = track.getValueSize();
+      return new track.constructor(track.name, [0], track.values.slice(pose * size, (pose + 1) * size));
+    })));
+  });
+}
+
+/**
+ * The meshopt-compressed GLB is fetched, decoded and parsed exactly once per
+ * page; both hands clone the parsed result.
  */
 function loadHandModel(url = MODEL_URL) {
   if (!handModelPromise) {
     handModelPromise = (async () => {
-      const response = await fetch(url);
+      const response = await fetchStaticAsset(url);
       if (!response.ok) throw new Error(`Hand: failed to fetch model "${url}" (${response.status})`);
-      const source = unpackHandGltf(await response.text());
+      const source = await response.arrayBuffer();
       const basePath = url.slice(0, url.lastIndexOf('/') + 1);
-      const loader = new GLTFLoader();
-      return new Promise((resolve, reject) => loader.parse(source, basePath, resolve, reject));
+      const loader = new GLTFLoader().setMeshoptDecoder(MeshoptDecoder);
+      const gltf = await loader.parseAsync(source, basePath);
+      gltf.animations = splitPoseClips(gltf);
+      return gltf;
     })();
     handModelPromise.catch(() => { handModelPromise = null; });
   }
@@ -95,14 +122,14 @@ function loadHandModel(url = MODEL_URL) {
 function addHighlightShader(material) {
   const uniforms = {
     highlightMap: { value: transparentMap() },
-    highlightColor: { value: new THREE.Color(0xffffff) },
+    highlightColor: { value: new Color(0xffffff) },
     highlightStrength: { value: 0 },
     highlightOpacity: { value: 0.95 },
     guideStrength: { value: 2 },
   };
   HIGHLIGHT_NAMES.forEach((name, index) => {
     uniforms[`highlightMap${index}`] = { value: transparentMap() };
-    uniforms[`highlightColor${index}`] = { value: new THREE.Color(HIGHLIGHT_COLORS[name]) };
+    uniforms[`highlightColor${index}`] = { value: new Color(HIGHLIGHT_COLORS[name]) };
   });
   material.userData.highlightUniforms = uniforms;
   material.onBeforeCompile = (shader) => {
@@ -149,13 +176,13 @@ function addHighlightShader(material) {
 }
 
 function makeHandMaterial(surface) {
-  const material = new THREE.MeshStandardMaterial({
+  const material = new MeshStandardMaterial({
     color: 0xffffff,
     roughness: 0.55,
     metalness: 0,
     toneMapped: false,
     map: surface || null,
-    side: THREE.DoubleSide,
+    side: DoubleSide,
   });
   addHighlightShader(material);
   material.needsUpdate = true;
@@ -165,7 +192,7 @@ function makeHandMaterial(surface) {
 class SourceHandModel {
   constructor({ side, frameTransitionDuration = FRAME_DURATION }) {
     this.side = side;
-    this.group = new THREE.Group();
+    this.group = new Group();
     this.frameTransitionDuration = frameTransitionDuration;
     this.frameTransitionEasing = cubicEaseInOut;
     this.clipByName = new Map();
@@ -183,8 +210,8 @@ class SourceHandModel {
     this.interpolantByTrack = new Map();
     this.fromPosition = this.fromQuaternion = this.fromScale = null;
     this.toPosition = this.toQuaternion = this.toScale = null;
-    this.scratchFrom = new THREE.Quaternion();
-    this.scratchTo = new THREE.Quaternion();
+    this.scratchFrom = new Quaternion();
+    this.scratchTo = new Quaternion();
     this.ready = this.load();
   }
 
@@ -291,7 +318,7 @@ class SourceHandModel {
   bindingFor(name) {
     let binding = this.bindingByTrack.get(name);
     if (binding !== undefined) return binding;
-    binding = new THREE.PropertyBinding(this.modelRoot, name);
+    binding = new PropertyBinding(this.modelRoot, name);
     if (!binding.node) binding = null;
     else binding.bind();
     this.bindingByTrack.set(name, binding);
@@ -409,28 +436,33 @@ class SourceTypingHands {
   constructor(container, { layout, animated = true } = {}) {
     this.container = container;
     this.layout = layout;
-    this.animated = animated;
-    this.scene = new THREE.Scene();
-    this.camera = new THREE.OrthographicCamera(-1.4, 1.4, 1.4, -1.4, 0.1, 1000);
+    // The renderer is created lazily, after the page's media preferences are in
+    // effect. Reduced motion keeps the useful finger highlight and hand display,
+    // but resolves a static home-row pose and snaps to it without a bone tween.
+    this.reducedMotion = Boolean(container.ownerDocument.defaultView
+      ?.matchMedia?.('(prefers-reduced-motion: reduce)').matches);
+    this.animated = Boolean(animated) && !this.reducedMotion;
+    this.scene = new Scene();
+    this.camera = new OrthographicCamera(-1.4, 1.4, 1.4, -1.4, 0.1, 1000);
     this.camera.position.set(0, 3, 0);
     this.camera.lookAt(0, 0, 0);
-    this.renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'low-power' });
-    this.renderer.outputColorSpace = THREE.SRGBColorSpace;
+    this.renderer = new WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'low-power' });
+    this.renderer.outputColorSpace = SRGBColorSpace;
     this.renderer.setPixelRatio(1);
-    this.renderer.toneMapping = THREE.NeutralToneMapping ?? THREE.ACESFilmicToneMapping;
+    this.renderer.toneMapping = NeutralToneMapping ?? ACESFilmicToneMapping;
     this.renderer.toneMappingExposure = 1.35;
     this.renderer.domElement.style.display = 'block';
     this.renderer.domElement.style.visibility = 'hidden';
     this.container.append(this.renderer.domElement);
-    this.clock = new THREE.Clock();
+    this.clock = new Clock();
     this.disposed = false;
     this.visible = true;
     this.hands = { leftOnly: false, rightOnly: false };
     this.pendingPose = null;
     this.highlightIntervals = [];
     this.lastHighlightAt = null;
-    this.adaptiveDuration = FRAME_DURATION;
-    this.adaptiveTarget = FRAME_DURATION;
+    this.adaptiveDuration = this.reducedMotion ? 0 : FRAME_DURATION;
+    this.adaptiveTarget = this.adaptiveDuration;
     this.adaptiveTransition = null;
     this.guideStrength = null;
     // The scene only changes on a pose, a tween step, a guide fade, a resize or a
@@ -444,8 +476,8 @@ class SourceTypingHands {
       this.render();
     };
     this.addProductLighting();
-    this.leftHand = new SourceHandModel({ side: 'left' });
-    this.rightHand = new SourceHandModel({ side: 'right' });
+    this.leftHand = new SourceHandModel({ side: 'left', frameTransitionDuration: this.adaptiveDuration });
+    this.rightHand = new SourceHandModel({ side: 'right', frameTransitionDuration: this.adaptiveDuration });
     this.scene.add(this.leftHand.group, this.rightHand.group);
     this.leftHand.group.scale.setScalar(HAND_SCALE);
     this.rightHand.group.scale.setScalar(HAND_SCALE);
@@ -493,19 +525,19 @@ class SourceTypingHands {
   }
 
   addProductLighting() {
-    const target = new THREE.Vector3(0, 0, HAND_DEPTH);
+    const target = new Vector3(0, 0, HAND_DEPTH);
     const extend = (x, y, z, distance) => {
-      const source = new THREE.Vector3(x, y, z);
-      const vector = new THREE.Vector3().subVectors(source, target);
+      const source = new Vector3(x, y, z);
+      const vector = new Vector3().subVectors(source, target);
       vector.setLength(vector.length() + distance);
       return target.clone().add(vector);
     };
-    this.scene.add(new THREE.HemisphereLight(0xffffff, 6320264, 1.22 * 1.5));
-    const key = new THREE.DirectionalLight(0xffffff, 1.52 * 1.5);
+    this.scene.add(new HemisphereLight(0xffffff, 6320264, 1.22 * 1.5));
+    const key = new DirectionalLight(0xffffff, 1.52 * 1.5);
     key.position.copy(extend(0, 0.8, -3, 1));
     key.target.position.copy(target);
     this.scene.add(key, key.target);
-    const fill = new THREE.DirectionalLight(12113151, 0.52 * 1.5);
+    const fill = new DirectionalLight(12113151, 0.52 * 1.5);
     fill.position.copy(extend(0, 0.45, 1.9, 1));
     fill.target.position.copy(target);
     this.scene.add(fill, fill.target);
@@ -537,8 +569,10 @@ class SourceTypingHands {
   }
 
   updateAdaptiveHandSpeed(delta) {
-    // Thêm so với bản gốc: "reduce motion" thì tay nhảy thẳng sang tư thế mới, không tween.
-    if (window.matchMedia?.('(prefers-reduced-motion: reduce)')?.matches) {
+    if (this.reducedMotion) {
+      this.adaptiveDuration = 0;
+      this.adaptiveTarget = 0;
+      this.adaptiveTransition = null;
       this.leftHand.frameTransitionDuration = 0;
       this.rightHand.frameTransitionDuration = 0;
       return;
@@ -587,6 +621,7 @@ class SourceTypingHands {
     const slots = resolveHandSlots({
       layout: this.layout,
       key: pose.key,
+      hardware: pose.hardware,
       side: pose.side,
       dominantHand: this.dominantHand(),
       animated: this.animated,

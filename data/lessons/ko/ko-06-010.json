@@ -1,0 +1,43 @@
+{
+  "id": "ko-06-010",
+  "unit": "u6",
+  "group": "g1",
+  "order": 87,
+  "slug": "ko-06-010",
+  "title": "하루 계획을 전해요",
+  "summary": "여러 일정과 준비 사항을 시간 순서대로 정리해 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "여러 일정과 준비 사항을 시간 순서대로 정리해 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-06-010",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "오늘은 오전에 은행에 들러 서류를 내고 열한 시쯤 사무실에 도착할 예정입니다. 그 전에 급한 일이 생기면 언제든 전화 주세요. 메시지도 괜찮습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "점심을 먹고 나서 두 시부터는 거래처와 회의가 있습니다. 회의는 한 시간 정도 걸릴 것 같고 끝나는 대로 결과를 바로 알려 드릴게요. 자료는 미리 보내 둘게요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "회의가 끝나면 내용을 보고서로 정리해서 다섯 시 전까지 공유하겠습니다. 오늘은 여섯 시에 퇴근하고 남은 일은 내일 아침에 다시 확인할게요. 오늘도 잘 부탁드려요.",
+      "inputMode": "hangul"
+    }
+  ]
+}

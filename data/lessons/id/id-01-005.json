@@ -1,0 +1,82 @@
+{
+  "id": "id-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "id-01-005",
+  "title": "Huruf: a, ;",
+  "summary": "Gõ t dan u dalam transisi dengan huruf yang sudah dipelajari.",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Gõ t dan u dalam transisi dengan huruf yang sudah dipelajari.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-005",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "aaa afaa aff faa aafa aaaa aa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": ";ff f;f; ;ff ;;;; ff; f;f ;;;f f;; ;f ;;f ;; ;;;",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "a; ;f s; fjf jff; jjja aaf; afj ja aj j;a"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "f;;j aaj; ja;j ;ja f;;f ;j;f ;a fjaf fa ff;f"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "faf fa f; a;;; faf; ;ffj aj jaaf fa; faj ;a; ffaj fj;f jj;; ;a jajf jj faa"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "ff j;f j;;j fff; jj; ja; af ;;j; ;d ;ja ;;fj a; jfaa f; ;aja ;;j"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "ada kakak ada salak ajak kakak saja asal lada kadal"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "dada alas salak kakak ada lada asal saja kasa ajak"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "bn-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 37,
+  "slug": "bn-02-002",
+  "title": "সংখ্যা ৩ ৪ ৫: প্রথম অনুশীলন",
+  "summary": "Introduce committed targets 3 4 5; review 0 1 2. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets 3 4 5; review 0 1 2. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-02-002",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "৩ টাইপ করতে বাঁ হাতের মধ্যমা দিয়ে ওপরের সারির 3 কী চাপুন।",
+      "content": "ক৩ব ৩ব ৩ব ক৩ব ৩ব ৩ব ক৩ব ৩ব ৩ব ক৩ব"
+    },
+    {
+      "type": "standard",
+      "text": "৪ টাইপ করতে বাঁ হাতের তর্জনী দিয়ে ওপরের সারির 4 কী চাপুন।",
+      "content": "৪ব ৪ব ক৪ব ৪ব ৪ব ক৪ব ৪ব ৪ব ক৪ব ৪ব"
+    },
+    {
+      "type": "standard",
+      "text": "৫ টাইপ করতে বাঁ হাতের তর্জনী দিয়ে ওপরের সারির 5 কী চাপুন।",
+      "content": "৫ব ক৫ব ৫ব ৫ব ক৫ব ৫ব ৫ব ক৫ব ৫ব ৫ব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "স৩মিচো ৪৫ ৫জচূ১ মমল সূম৩৫ ন৩ চ৪৪ লুমেজি ৪২৩৪ ৫৪ ৪৪১ ২৫ম ৪নমা"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "৫৫৫ ৫৪৪ ৫৫৪৩ ৩৪ ৪৪৫ ৫৪ ৫৫৩ ৩৪৫ ৩৫৫৩ ৫৫ ৪৩৪ ৪৪৫৪ ৪৪ ৩৩৫ ৪৩৫৪ ৩৩ ৫ক ৪৫৫ ৫৫৪"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "৪৪৫ ৩৩৪ ৫৫ ৩৫৪৪ ৪৪৩৪ ৪৪ ৫৪৩ ৪৫৩৪ ৪৪৪ ৫৫৩ ৩৩৩ ৫৫৫ ৩৪ ৪৪৪ ৫৩"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "৩৩৪৫ ৪৪৩৫ ৩৩৩ ৪৫৪ ৪৪৫ ৫৪ ৩৫ ৫৫৩ ৪৪৩ক ৫৪৫ ৫৫ ৫৩৩ ৪৩ ৩৩৩৫ ৪৪ ৩৩"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "৪৪৩৩ ৪৫ ৪৩৪ ৩৩ ৫৫৩৫ ৪৫৫ ৫৪৪৪ ৩৩৫ ৪৩ ৫৪ ৫৫৫৩ ৪৪ ৫৫ ৪৪৫৫ ৫৪৪ ৫৫৩ ৫৫৪ ৫৪৫ ৩৩৪"
+    }
+  ]
+}

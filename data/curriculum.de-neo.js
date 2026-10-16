@@ -66,7 +66,7 @@ window.TypingEaseCurriculum = {
       id: 'u4',
       index: 4,
       title: "Alle übrigen Tasten",
-      summary: "Die 14 Zeichen dieser Tastatur, die der Kurs noch nicht benutzt hat, jedes dort getippt, wo es im Text wirklich vorkommt.",
+      summary: "Die 13 Zeichen dieser Tastatur, die der Kurs noch nicht benutzt hat, jedes dort getippt, wo es im Text wirklich vorkommt.",
       minAccuracy: 80,
       locked: true,
       unlockAfter: 'u3-l06',
@@ -100,7 +100,7 @@ window.TypingEaseCurriculum = {
     'u2-l10': { title: "Schwache Tasten", newKeys: [], screens: 1, estMinutes: 2, kind: 'weak', seconds: 120, ready: true },
     'u2-l11': { title: "Test zu Einheit 2", newKeys: [], screens: 1, estMinutes: 1, kind: 'test', seconds: 60, ready: true },
     'u3-l01': { title: "Die Zahlenreihe", newKeys: ["1","2","3","4","5","6","7","8","9","0"], screens: 11, estMinutes: 6, kind: 'keys', ready: true },
-    'u3-l02': { title: "Die äußere Spalte", newKeys: ["j","-","`","ß","´","\\"], screens: 9, estMinutes: 6, kind: 'keys', ready: true },
+    'u3-l02': { title: "Die äußere Spalte", newKeys: ["j","-","ß"], screens: 8, estMinutes: 6, kind: 'keys', ready: true },
     'u3-l03': { title: "Adressen, Links und Zahlen", newKeys: [], screens: 8, estMinutes: 5, kind: 'review', ready: true },
     'u3-l04': { title: "Text und Tempo 1", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
     'u3-l05': { title: "Text und Tempo 2", newKeys: [], screens: 7, estMinutes: 6, kind: 'review', ready: true },
@@ -108,7 +108,7 @@ window.TypingEaseCurriculum = {
     'u4-l01': { title: "°, §, ℓ und »", newKeys: ["°","§","ℓ","»"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l02': { title: "«, $, € und „", newKeys: ["«","$","€","„"], screens: 11, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l03': { title: "“, ” und —", newKeys: ["“","”","—"], screens: 9, estMinutes: 5, kind: 'keys', ready: true },
-    'u4-l04': { title: "|, – und •", newKeys: ["|","–","•"], screens: 9, estMinutes: 5, kind: 'keys', ready: true },
+    'u4-l04': { title: "– und •", newKeys: ["–","•"], screens: 7, estMinutes: 5, kind: 'keys', ready: true },
     'u4-l05': { title: "Alle Zeichen zusammen", newKeys: [], screens: 6, estMinutes: 5, kind: 'review', ready: true },
     'u4-l06': { title: "Test zu Einheit 4", newKeys: [], screens: 1, estMinutes: 2, kind: 'test', seconds: 120, ready: true }
   },
@@ -156,3 +156,41 @@ window.TypingEaseCurriculum = {
     hint: "Leg die Zeigefinger auf die beiden Tasten mit der Erhebung und schreib, was du siehst, ohne auf die Tastatur zu sehen."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/de-neo/u1-l01.json?v=be8b023742d0c13d",
+  "u1-l02": "/data/lessons/de-neo/u1-l02.json?v=161bdb8bbdd61ec8",
+  "u1-l03": "/data/lessons/de-neo/u1-l03.json?v=5ffcaa514d81af72",
+  "u1-l04": "/data/lessons/de-neo/u1-l04.json?v=2ba964ea15f632c9",
+  "u1-l05": "/data/lessons/de-neo/u1-l05.json?v=836ceedf2222a22a",
+  "u1-l06": "/data/lessons/de-neo/u1-l06.json?v=e5ed71756f388c8e",
+  "u1-l07": "/data/lessons/de-neo/u1-l07.json?v=b3484c39e625ad3b",
+  "u1-l08": "/data/lessons/de-neo/u1-l08.json?v=d991c1ca26a060ff",
+  "u1-l09": "/data/lessons/de-neo/u1-l09.json?v=be58a878b01a96b9",
+  "u1-l10": "/data/lessons/de-neo/u1-l10.json?v=d3bc4ad0d2f41b28",
+  "u2-l01": "/data/lessons/de-neo/u2-l01.json?v=5700cc616d915ab4",
+  "u2-l02": "/data/lessons/de-neo/u2-l02.json?v=bf80732a7b27d27e",
+  "u2-l03": "/data/lessons/de-neo/u2-l03.json?v=c8756656a5fba39e",
+  "u2-l04": "/data/lessons/de-neo/u2-l04.json?v=89dd703c59f1dd5a",
+  "u2-l05": "/data/lessons/de-neo/u2-l05.json?v=26666e9bb0ae689d",
+  "u2-l06": "/data/lessons/de-neo/u2-l06.json?v=59911ccc8746fb37",
+  "u2-l07": "/data/lessons/de-neo/u2-l07.json?v=dd8144fa0eb1ee3d",
+  "u2-l08": "/data/lessons/de-neo/u2-l08.json?v=97172170f41b02a8",
+  "u2-l09": "/data/lessons/de-neo/u2-l09.json?v=69d8572dac06d798",
+  "u2-l10": "/data/lessons/de-neo/u2-l10.json?v=5a771af5bf143642",
+  "u2-l11": "/data/lessons/de-neo/u2-l11.json?v=f0ac151bc8b6dc04",
+  "u3-l01": "/data/lessons/de-neo/u3-l01.json?v=4740d1bc2c9d3da2",
+  "u3-l02": "/data/lessons/de-neo/u3-l02.json?v=8dfaee5857cc194d",
+  "u3-l03": "/data/lessons/de-neo/u3-l03.json?v=20d7439eada93fc0",
+  "u3-l04": "/data/lessons/de-neo/u3-l04.json?v=7150923867f584b5",
+  "u3-l05": "/data/lessons/de-neo/u3-l05.json?v=ec8ee64149171be9",
+  "u3-l06": "/data/lessons/de-neo/u3-l06.json?v=620dd2a12769668a",
+  "u4-l01": "/data/lessons/de-neo/u4-l01.json?v=91001c72515b1de5",
+  "u4-l02": "/data/lessons/de-neo/u4-l02.json?v=a925b21270860d51",
+  "u4-l03": "/data/lessons/de-neo/u4-l03.json?v=7f54661a991cd205",
+  "u4-l04": "/data/lessons/de-neo/u4-l04.json?v=d35682527af69ce8",
+  "u4-l05": "/data/lessons/de-neo/u4-l05.json?v=9c540022730c9c1e",
+  "u4-l06": "/data/lessons/de-neo/u4-l06.json?v=c6fc9fb0847f4c24"
+};
+/* </auto:lesson-urls> */

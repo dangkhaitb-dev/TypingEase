@@ -1,0 +1,43 @@
+{
+  "id": "ko-07-002",
+  "unit": "u7",
+  "group": "g1",
+  "order": 90,
+  "slug": "ko-07-002",
+  "title": "사실 확인과 의견 조율",
+  "summary": "정보를 확인하고 회의의 다른 의견을 해결책으로 연결합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "정보를 확인하고 회의의 다른 의견을 해결책으로 연결합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-07-002",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "행사 날짜를 두고 두 사람의 말이 달랐습니다. 우리는 먼저 처음 받은 안내 메일을 함께 찾아 읽어 보았습니다. 기억보다 기록이 정확하니까요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "메일에는 행사가 둘째 주 금요일이라고 적혀 있었습니다. 날짜는 사실로 확인되었으니 더 다툴 필요가 없었습니다. 우리는 웃으며 고개를 끄덕였어요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "다만 시작 시간은 각자 원하는 때가 달랐습니다. 서로의 사정을 들어 본 뒤 모두 올 수 있는 오후 세 시로 정했습니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

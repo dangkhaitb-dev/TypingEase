@@ -1,0 +1,113 @@
+{
+  "id": "fil-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 17,
+  "slug": "fil-02-003",
+  "title": "Mga bilang: 7, 8, 9",
+  "summary": "Mga bilang: 7, 8, 9. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "7",
+    "8",
+    "9"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Mga bilang: 7, 8, 9. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-02-003",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "7",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "777f 7f77 7777 77 ff7 777 7f7 7f 7ff ff7f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "8",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "ff 888 8f 8888 88f8 88 ff8f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "9",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "f99 ff9 999f 99 9999 99f 999 9ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jj 9787 f9j ffj7 77j 88 779j 9fj 88f 898 ffff ff 778j 99"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "77f9 fff 88ff 7j8 jjfj 99 j89j jj 7wf 797j ff9j 7f7j j7"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "f7 7fjf j9f9 897 99fj ff9 ff8j 99 9jf ff7j jj ffj jf 78 97 88 8jf jjj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fj n77 j9 777 ff 77 jjf f8 jjj jjfj fff 88 fjj jj97 nf7f"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jj9j j9f fjjf 77f 88jj 89 f98 888j 9f 8887 fj"
+    }
+  ]
+}

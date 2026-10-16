@@ -1,0 +1,117 @@
+{
+  "id": "zh-01-jump",
+  "unit": "u1",
+  "group": "g2",
+  "order": 20,
+  "slug": "zh-01-jump",
+  "title": "跳过前面部分",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ime",
+  "intro": "在已学键位范围内练习连续输入。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-jump",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "fjfj fjff jff jjfj ffff fjfj ffff jjfj jff fjff jff fjff"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": ";;' l'f; lll; ll'' ;;' ll'' lll; l'f; lll; l'f; ;;' ll''"
+    },
+    {
+      "type": "standard",
+      "text": "把已学的字母拼成真实的拼音音节来输入。",
+      "content": "ta te ye ya re he da ta le ke ye de ge ta ya re se ha ke"
+    },
+    {
+      "type": "standard",
+      "text": "输入拼音，按空格选字，提交句子。",
+      "content": "老师下课了大家都在做作业他也在做",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "输入拼音，按空格选字，提交句子。",
+      "content": "明天你有没有时间我们一起吃饭",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "输入拼音，按空格选字，提交句子。",
+      "content": "他每天晚上读书然后听音乐再睡觉",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "句号键 `.` 输入“。”，逗号键 `,` 输入“，”。输入拼音，按空格选字。",
+      "content": "他说明天会下雨，我们带上雨伞。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "综合练习：用已学的拼音、标点、Enter 和 Shift 输入完整句子。",
+      "content": "晚上好\n今天过得怎么样？\n很好，谢谢！\n明天见。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "en-01-jump",
+  "unit": "u1",
+  "group": "g4",
+  "order": 15,
+  "slug": "en-01-jump",
+  "title": "Jump ahead",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Keep a steady rhythm and return to the home position between groups.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-jump",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Keep a steady rhythm and return to the home position between groups.",
+      "content": "ff jjfff jjfff fj jfj fj jjf fjjjj fjfj ffjff fffj fffff jjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "ask dad has hash gas hags sag gash dash had jag"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "a glad lass has a salad all dads had a flask"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "we see dad he sells jewels she feels glad all week"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "they started after that hard year the sky was dry"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "please keep the paper at the top of the page"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "seven boys have blue bikes by the river and the bus"
+    },
+    {
+      "type": "standard",
+      "text": "Type each line carefully, using any letter key you have learned.",
+      "content": "every morning she walks to the bus stop with her dog"
+    }
+  ]
+}

@@ -1,0 +1,112 @@
+{
+  "id": "fr-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 23,
+  "slug": "fr-02-001",
+  "title": "Chiffres : 1, 2, 3",
+  "summary": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-02-001",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "ff11 11f 111f ffff f111 11 1111 111 ff1",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "222 22 2222 222f fff 2f22 22f2 2ff2 ff22 f222 ff2",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "3333 3f33 f33 33 33f ff 333",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "33f2 ff21 32f ff3 1f fff 22f3 1112 ff f32f 33f 11f 2ff2 33 ff2f rr2"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "2212 j1 32jj j3j jjj2 113f 22 jj 223j jjjj 223 33 31j1 11f 11"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "il reste 12 places dans le bus et 3 billets pour le train"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "la salle 21 compte 3 tables et la salle 12 en compte 2"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "f31 22f fff 11f2 22ff 3f ff1 2221 ff ff11 2213 3311 113f f1f1 11"
+    }
+  ]
+}

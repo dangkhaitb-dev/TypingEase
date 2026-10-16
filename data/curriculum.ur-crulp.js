@@ -172,3 +172,48 @@ window.TypingEaseCurriculum = {
     hint: "شہادت کی انگلیاں ابھرے ہوئے نشان والی دو کلیدوں پر رکھیں اور جو نظر آئے لکھیں، کی بورڈ دیکھے بغیر۔"
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/ur-crulp/u1-l01.json?v=299c41e95e40232f",
+  "u1-l02": "/data/lessons/ur-crulp/u1-l02.json?v=39574cc09f6245cd",
+  "u1-l03": "/data/lessons/ur-crulp/u1-l03.json?v=7af22acb4fee4f3f",
+  "u1-l04": "/data/lessons/ur-crulp/u1-l04.json?v=0e5e300498c452e8",
+  "u1-l05": "/data/lessons/ur-crulp/u1-l05.json?v=5562af03212a753c",
+  "u1-l06": "/data/lessons/ur-crulp/u1-l06.json?v=84d908340023e0d1",
+  "u1-l07": "/data/lessons/ur-crulp/u1-l07.json?v=098a4d5ce7a7dfd9",
+  "u1-l08": "/data/lessons/ur-crulp/u1-l08.json?v=daa059dae3a6daf6",
+  "u1-l09": "/data/lessons/ur-crulp/u1-l09.json?v=4aa92ecb60bfae09",
+  "u1-l10": "/data/lessons/ur-crulp/u1-l10.json?v=8cec7ccaf2bfc85b",
+  "u2-l01": "/data/lessons/ur-crulp/u2-l01.json?v=282fcdeb7c42f39c",
+  "u2-l02": "/data/lessons/ur-crulp/u2-l02.json?v=aab51223a62206bb",
+  "u2-l03": "/data/lessons/ur-crulp/u2-l03.json?v=feca154eb9e42234",
+  "u2-l04": "/data/lessons/ur-crulp/u2-l04.json?v=c331a412e829ede7",
+  "u2-l05": "/data/lessons/ur-crulp/u2-l05.json?v=fddafc7b2e5b88e0",
+  "u2-l06": "/data/lessons/ur-crulp/u2-l06.json?v=71c6504483cbe25f",
+  "u2-l07": "/data/lessons/ur-crulp/u2-l07.json?v=24c12483cd9e7e7a",
+  "u2-l08": "/data/lessons/ur-crulp/u2-l08.json?v=da70458f104e607e",
+  "u2-l09": "/data/lessons/ur-crulp/u2-l09.json?v=352f03f1cd0efb43",
+  "u2-l10": "/data/lessons/ur-crulp/u2-l10.json?v=cb81426efd94adb8",
+  "u2-l11": "/data/lessons/ur-crulp/u2-l11.json?v=289b453c392f2bbd",
+  "u3-l01": "/data/lessons/ur-crulp/u3-l01.json?v=5d88c32856f6621e",
+  "u3-l02": "/data/lessons/ur-crulp/u3-l02.json?v=95e38b4a2e497b6e",
+  "u3-l03": "/data/lessons/ur-crulp/u3-l03.json?v=416ba988cad02639",
+  "u3-l04": "/data/lessons/ur-crulp/u3-l04.json?v=e1dc7efa099ed238",
+  "u3-l05": "/data/lessons/ur-crulp/u3-l05.json?v=6d4c07bdb746045a",
+  "u3-l06": "/data/lessons/ur-crulp/u3-l06.json?v=7d1ad413a350e087",
+  "u4-l01": "/data/lessons/ur-crulp/u4-l01.json?v=195276a7f51e1664",
+  "u4-l02": "/data/lessons/ur-crulp/u4-l02.json?v=4ef5d49261381cb4",
+  "u4-l03": "/data/lessons/ur-crulp/u4-l03.json?v=61bb74234cc254d8",
+  "u4-l04": "/data/lessons/ur-crulp/u4-l04.json?v=16e2c3ccf8c8a5fb",
+  "u4-l05": "/data/lessons/ur-crulp/u4-l05.json?v=1714920992226966",
+  "u4-l06": "/data/lessons/ur-crulp/u4-l06.json?v=62f8b4fdd65928be",
+  "u4-l07": "/data/lessons/ur-crulp/u4-l07.json?v=4f04048d98a309f3",
+  "u4-l08": "/data/lessons/ur-crulp/u4-l08.json?v=3c4b79c1dd0a4d30",
+  "u4-l09": "/data/lessons/ur-crulp/u4-l09.json?v=df68f76832df73ff",
+  "u4-l10": "/data/lessons/ur-crulp/u4-l10.json?v=fcaf305f51931f8a",
+  "u4-l11": "/data/lessons/ur-crulp/u4-l11.json?v=7aa7162d373c89c1",
+  "u4-l12": "/data/lessons/ur-crulp/u4-l12.json?v=72dbc0f4ec7cf0e2",
+  "u4-l13": "/data/lessons/ur-crulp/u4-l13.json?v=07eee920eaea5ee2"
+};
+/* </auto:lesson-urls> */

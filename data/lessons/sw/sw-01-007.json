@@ -1,0 +1,100 @@
+{
+  "id": "sw-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "sw-01-007",
+  "title": "Herufi: q, w, e",
+  "summary": "Kuandika p b na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "newKeys": [
+    "q",
+    "w",
+    "e"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Kuandika p b na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-007",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "qfqff qfqq qq qqfq fqf qqq fqq qqqq qfqf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "wffw wwwf www wf wwfw fw fww fwww wwf wwww ww wfw",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "eff eef fee eeef ff eeff eeee ee fe eee ef feee",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "ff wjqe qq qjjf qjj ew fqwe ww jwef jwfw ww fejj jj wqf"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "qw jwe wqqq fq ejw fj fqfe ewqw je wjew wf wf fww qqf ef"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "eejj jwj jf qeeq jef jf jwj qjj wwj qf fqww qff qqjw wf"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "ejf fj jwjw eq efj jj fwq fe jqwq qq eeqw fqjq qq qfq ww"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jfe ff qq fjqq fqw ff qwe ejjw fw fw feww fw efe ww je ff"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "dada weka kahawa kwa kaka sawa kelele hewa fedha"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "kaka wake ladha kahawa sawa wala hafla ghala dawa"
+    }
+  ]
+}

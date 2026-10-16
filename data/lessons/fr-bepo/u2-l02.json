@@ -27,7 +27,6 @@
     "o",
     "v",
     "è",
-    "^",
     "l",
     "é"
   ],
@@ -89,30 +88,30 @@
       "text": "De vrais mots avec les nouvelles touches. Écris le mot entier d'un seul élan, pas lettre par lettre.",
       "dictation": "words",
       "type": "standard",
-      "content": "elles liste précise appel\nîles réponse paroles outils\nrésultats tel salles était"
+      "content": "elles lutte société plan\nprécise entrées aller soleil\ndétail utiles paroles plupart"
     },
     {
       "seconds": 25,
       "text": "Une série de mots courts contenant les nouvelles touches.",
       "type": "burst",
       "tokens": [
-        "papier",
-        "tes",
-        "parole",
-        "telle",
-        "parties",
-        "tant",
-        "vote",
-        "très",
-        "russe",
-        "envie"
+        "villes",
+        "content",
+        "voit",
+        "vivre",
+        "par",
+        "propose",
+        "détail",
+        "envie",
+        "sites",
+        "soirées"
       ]
     },
     {
       "text": "Maintenant avec le poids sur L, celle que tu as le moins frappée.",
       "dictation": "words",
       "type": "standard",
-      "content": "porte nouvelle voiles os\nvous ton sort outil\nnuit vote la villes"
+      "content": "aussi ville titre incendie\nsotte doses listes dont\noutils seconde villes outil"
     },
     {
       "text": "On revient aux motifs un moment, pour vérifier que les doigts reviennent toujours à leur place.",
@@ -124,7 +123,7 @@
       "text": "Tout ce que tu as, mélangé. Regarde combien de mots sortent déjà sans y penser.",
       "dictation": "words",
       "type": "standard",
-      "content": "votes sûr venir coût\npapiers vote tel autre\npères rêve durs aussi"
+      "content": "incendie accès continue précis\npour connue tires peut\npasse soirées dure par"
     }
   ]
 }

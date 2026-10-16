@@ -59,7 +59,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}",
     "|",
@@ -84,7 +83,7 @@
       "type": "block",
       "newKey": "|",
       "text": "Primero |, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "|| | águila|fuerzas noches|parte zapato|hallas\n|| | otros|máquinas valor|vecinos regla|verdades\n|| | caña|águila regla|cabezas baja|ciencia"
+      "content": "|| | grande|buscar en|viene buena|alga\n|| | altura|razones mucho|mesa uñas|como\n|| | nunca|grande uñas|brazo puntos|nadie"
     },
     {
       "type": "block",
@@ -103,7 +102,7 @@
       "type": "block",
       "newKey": "!",
       "text": "Primero !, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "!! ! faldas! verdades! espera!\n!! ! ahí! guardar! dada!\n!! ! hombros! campo! ellas!"
+      "content": "!! ! falda! como! pero!\n!! ! hombro! rueda! asadas!\n!! ! plaza! poco! el!"
     },
     {
       "type": "intro",
@@ -116,35 +115,35 @@
       "type": "block",
       "newKey": "\"",
       "text": "Primero \", sin nada alrededor, y después donde de verdad se usa.",
-      "content": "\"\" \" \"del\" \"cielo\" \"hasta\"\n\"\" \" \"nombre\" \"textos\" \"esta\"\n\"\" \" \"carta\" \"madres\" \"trabajo\""
+      "content": "\"\" \" \"hadas\" \"rojas\" \"fuerte\"\n\"\" \" \"madre\" \"tiempo\" \"salir\"\n\"\" \" \"cuanto\" \"cañas\" \"todas\""
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Una ráfaga de trozos cortos con estos caracteres.",
       "tokens": [
-        "\"ayudas\"",
+        "\"gente\"",
         "69°",
         "28°",
-        "\"escribir\"",
-        "países|llevas",
-        "adiós!",
-        "\"camino\"",
-        "mundos!",
-        "\"viene\"",
+        "\"quedar\"",
+        "debes|tierras",
+        "debe!",
+        "\"medio\"",
+        "señor!",
+        "\"mismo\"",
         "26°"
       ]
     },
     {
       "type": "block",
       "text": "Todo lo de esta lección, mezclado.",
-      "content": "primero! \"cómo\" \"mas\" \"cantar\"\nuña! falda! 32° \"quedar\"\n\"proyecto\" \"traer\" reloj|ideas \"salada\""
+      "content": "vecino! \"carta\" \"conocer\" \"cuando\"\nideal! alas! 32° \"que\"\n\"comida\" \"fuertes\" siglos|esa \"asada\""
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Otra vez palabras, con los signos en su sitio.",
-      "content": "trabajos! océanos 32° palabras unos|paz\n\"sala\" porque caminos|cámara guardar zapatos!\ntierras! corta 98° año otro!"
+      "content": "otro! comenzar 32° valor orejas|bajas\n\"sal\" meses medios|zapatos ruedas buenas!\njuegas! cosa 98° casa suerte!"
     }
   ]
 }

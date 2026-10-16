@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-005",
+  "unit": "u6",
+  "group": "g1",
+  "order": 55,
+  "slug": "zh-tw-06-005",
+  "title": "傳達老師的提醒",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-005",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "同學們，老師請我提醒大家：明天要交數學作業，還要帶美術課用的水彩和畫筆。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "下午的體育課改在室內上，請先換好運動服。如果身體不舒服，要先向老師說明，不要勉強參加。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "另外，下週三要校外教學，請把家長同意書帶回家簽名，最晚星期五交給班長。有問題可以直接問老師。",
+      "inputMode": "ime"
+    }
+  ]
+}

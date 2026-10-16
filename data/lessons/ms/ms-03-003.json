@@ -1,0 +1,106 @@
+{
+  "id": "ms-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 23,
+  "slug": "ms-03-003",
+  "title": "Huruf besar: D, E, F",
+  "summary": "Sempang untuk kata ganda; apostrof sebagai tanda berasingan.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Sempang untuk kata ganda; apostrof sebagai tanda berasingan.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-03-003",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Tahan Shift dengan jari kelingking di sebelah tangan yang bertentangan, kemudian tekan d untuk menaip D. Letakkan semula jari pada kekunci panduan.",
+      "content": "DfDDD DfD DDDf DD fDff Df DDD DDDD fDDf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Tahan Shift dengan jari kelingking di sebelah tangan yang bertentangan, kemudian tekan e untuk menaip E. Letakkan semula jari pada kekunci panduan.",
+      "content": "EfEfE Ef fEEE EE EEE fE EEEE fEE EEfE EfEE",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Tahan Shift dengan jari kelingking di sebelah tangan yang bertentangan, kemudian tekan f untuk menaip F. Letakkan semula jari pada kekunci panduan.",
+      "content": "FF ddF FFF dF FFFF dd dFFF FddF FFd dFd FdF",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "DfD qj ff fEF jjE jj FDfF fEj jffD DfjE jjj ffEf"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "FfFE fE fD jDFE jD Ff fF FjE fEj FjD fjj Dj E5fD fffF EFf FjfF"
+    }
+  ]
+}

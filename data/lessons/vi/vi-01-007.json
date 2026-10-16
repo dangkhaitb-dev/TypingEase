@@ -1,0 +1,65 @@
+{
+  "id": "vi-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "vi-01-007",
+  "title": "Luyện phím · o p z",
+  "summary": "Học phím V (ngón trỏ trái hàng dưới), H (ngón trỏ phải vươn cơ sở) và M (ngón trỏ phải hàng dưới).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Học phím V (ngón trỏ trái hàng dưới), H (ngón trỏ phải vươn cơ sở) và M (ngón trỏ phải hàng dưới).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím o: ngón áp út phải, hàng trên. Trong Telex, gõ o hai lần sẽ ra ô, nên mỗi cụm chỉ có một chữ o.",
+      "content": "tok sog lot dog ok goh dol sot jot gog dok joh"
+    },
+    {
+      "type": "standard",
+      "text": "Phím p: ngón út phải, hàng trên. Gõ p xen với hai phím mốc f, j.",
+      "content": "pjp pfp ppp pppj pp ppp pppf fpp pppf jpp pp"
+    },
+    {
+      "type": "standard",
+      "text": "Phím z: ngón út trái, hàng dưới. Trong Telex, z gõ sau nguyên âm dùng để xóa dấu, nên bài này không đặt z sau nguyên âm.",
+      "content": "zzz zzz zz jzzz fzzz zz jzz jzzz zz fzz zzz"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp o p z với các phím đã học.",
+      "content": "pyg dipk jzfy zd gklo oy pdfe peq psye hpk pkfo aqup"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp o p z với các phím đã học.",
+      "content": "do up jzuo fip iod zhk pk pg io payg yot zh rpd lgzl zt soq gkp"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "tra go tre khu duy ly gia ai duy lau sai khay quay"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "sau hay sao sau quay khi qua kia ly suy khu giao reo sai"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại o p z trong các cụm mới, giữ nhịp đều.",
+      "content": "zh ol hkpl lqz zq suo hzr zg ze sz fgp eo zf dfip zf gfo"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-003",
+  "unit": "u5",
+  "group": "g1",
+  "order": 72,
+  "slug": "vi-05-003",
+  "title": "Kết thúc ngắn gọn",
+  "summary": "Cấu trúc kết thúc cảnh ngắn, rèn luyện sự dứt khoát và giảm dần tốc độ về đích an toàn.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Cấu trúc kết thúc cảnh ngắn, rèn luyện sự dứt khoát và giảm dần tốc độ về đích an toàn.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Cảnh hoàng hôn buông xuống báo hiệu phiên chợ sắp khép lại.",
+      "content": "Hoàng hôn buông dần trên bến cảng vắng bóng thuyền bè. Minh và Tuấn bắt đầu dọn dẹp các khay hàng trống sau ngày dài bận rộn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn kết bài êm ả khép lại một ngày lao động chăm chỉ.",
+      "content": "Gió chiều thổi từ mặt hồ mang theo hơi nước mát lạnh làm dịu đi cái mệt mỏi của một ngày buôn bán tất bật. Minh khóa chốt cánh cửa gỗ sạp hàng cẩn thận, rồi cùng Tuấn thong thả bước ra đường lớn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Luyện gõ các câu miêu tả công việc thu dọn và kiểm tra cuối ngày.",
+      "content": "Những chiếc đèn dầu được thắp lên dọc theo lối đi nhỏ của khu chợ. Hai người bạn quét dọn mặt sàn, rửa sạch khay đựng quả và cất bàn cân vào góc trong. Cuối buổi, cả nhóm thu dọn dụng cụ và bàn giao phần việc còn lại.",
+      "inputMode": "telex"
+    }
+  ]
+}

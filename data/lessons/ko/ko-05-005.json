@@ -1,0 +1,43 @@
+{
+  "id": "ko-05-005",
+  "unit": "u5",
+  "group": "g1",
+  "order": 71,
+  "slug": "ko-05-005",
+  "title": "바람이 들어온 문",
+  "summary": "문을 닫은 이유와 달라진 주변 상황을 문장으로 이어 씁니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "문을 닫은 이유와 달라진 주변 상황을 문장으로 이어 씁니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-05-005",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "가족과 저녁을 먹는데 현관문 쪽에서 차가운 바람이 계속 들어왔습니다. 이상해서 가까이 가 보니 문이 조금 열린 채로 있었습니다. 바람이 꽤 찼습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "문을 꼭 닫아도 아래쪽 좁은 틈으로 바람이 자꾸 새어 들었습니다. 자세히 살펴보니 오래된 문풍지가 떨어져 나간 것이 원인이었습니다. 오래된 집이라 그렇습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "다음 날 동네 철물점에서 새 문풍지를 사 와 문틈을 꼼꼼히 막았습니다. 그날 밤에는 바람 소리 하나 없이 따뜻하게 푹 잠들 수 있었습니다. 참 다행이었습니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

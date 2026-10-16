@@ -1,0 +1,68 @@
+{
+  "id": "sw-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "sw-01-003",
+  "title": "Herufi: d, k",
+  "summary": "Kuandika l na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Kuandika l na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-003",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "dfdf ddf dfdd ddd dddf ddfd fddd dddd dd fd df fdf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "kk kkf fkkk fkk kkfk kfk kkkk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "fj jkf jff kdff kjf fj fd fkjj kf djfd fjj kfjj jdj jkf"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jkd kj kkdk kk dd fjj kffk fk dfkd fkj jjfd ffj dd dkff"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "djd kdfk ddf kkdk jd fj jddk kddk ff dkj kdjd jdff jjd"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "dj kkj dfjj jd dk fd kfd kdk dfk jjk jdjf fd kdfd ddk jf"
+    }
+  ]
+}

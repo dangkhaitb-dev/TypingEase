@@ -1,0 +1,91 @@
+{
+  "id": "zh-04-003",
+  "unit": "u4",
+  "group": "g1",
+  "order": 35,
+  "slug": "zh-04-003",
+  "title": "全键盘组合三",
+  "summary": "复习全键盘键位与符号，并稳定完成混合输入。",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "复习全键盘键位与符号，并稳定完成混合输入。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-04-003",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "rgjv .; mv[ 8qq 1v 3v cc/ 8py j;y '5r 4x `3m ;=ky"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "jll kkk cq '' qq jll qq '' cq kkk cq kkk jll qq '' qq"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "05x ;z i2ox p9;0 .s qzh s-7 h8 s7 9tg] 6y8 ];ao"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "vy, gc 0j- zz lll vy, lll zz 0j- gc 0j- gc vy, lll zz"
+    }
+  ]
+}

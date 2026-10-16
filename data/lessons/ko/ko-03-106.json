@@ -1,0 +1,46 @@
+{
+  "id": "ko-03-106",
+  "unit": "u3",
+  "group": "g1",
+  "order": 55,
+  "slug": "ko-03-106",
+  "title": "Shift 기호 ( · )",
+  "summary": "Shift를 누른 채 9와 0 키를 눌러 괄호를 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "Shift를 누른 채 9와 0 키를 눌러 괄호를 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-03-106",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 숫자 9 키를 눌러 (를 입력합니다.",
+      "content": "(( 9( (9 ((( 9(9 (( (( (( 9(9 ((( (9"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 숫자 0 키를 눌러 )를 입력합니다.",
+      "content": ")) 0) )0 ))) 0)0 )) )) )) 0)0 ))) )0"
+    },
+    {
+      "type": "standard",
+      "text": "새 기호와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "() (()) ()() (9) (0) )( (90) () (90) )( (0) (9) ()() (())"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 해당 키를 눌러 기호를 입력하고, 앞서 배운 키와 섞어 정확하게 입력합니다.",
+      "content": "내일 준비물(공책, 연필, 지우개)을 꼭 챙겨요",
+      "inputMode": "hangul"
+    }
+  ]
+}

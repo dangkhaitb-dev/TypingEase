@@ -57,7 +57,6 @@
     "-",
     "'",
     "¿",
-    "´",
     "+",
     "}",
     "|",
@@ -92,7 +91,7 @@
       "type": "block",
       "newKey": "?",
       "text": "Primero ?, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "?? ? ¿alturas? ¿hielos? ¿así?\n?? ? ¿todas? ¿razones? ¿texto?\n?? ? ¿dedo? ¿trabajo? ¿grande?"
+      "content": "?? ? ¿tarde? ¿islas? ¿trabaja?\n?? ? ¿suerte? ¿bajas? ¿campos?\n?? ? ¿todo? ¿todas? ¿duda?"
     },
     {
       "type": "intro",
@@ -105,35 +104,35 @@
       "type": "block",
       "newKey": "¡",
       "text": "Primero ¡, sin nada alrededor, y después donde de verdad se usa.",
-      "content": "¡¡ ¡ ¡selva! ¡ella! ¡altura!\n¡¡ ¡ ¡haga! ¡país! ¡buenos!\n¡¡ ¡ ¡niña! ¡comienza! ¡sueldo!"
+      "content": "¡¡ ¡ ¡seda! ¡hada! ¡siete!\n¡¡ ¡ ¡dadas! ¡debe! ¡partes!\n¡¡ ¡ ¡sedes! ¡busca! ¡trabajo!"
     },
     {
       "type": "burst",
       "seconds": 25,
       "text": "Una ráfaga de trozos cortos con estos caracteres.",
       "tokens": [
-        "¡hijos!",
-        "¿ayudar?",
-        "¡árbol!",
-        "¿papel?",
-        "¿estás?",
-        "¿comidas?",
-        "¿idea?",
-        "¿personas?",
-        "¿difícil?",
-        "¿jardines?"
+        "¡todos!",
+        "¿gente?",
+        "¡texto!",
+        "¿verdes?",
+        "¿trabajar?",
+        "¿momento?",
+        "¿esa?",
+        "¿ventana?",
+        "¿exacta?",
+        "¿empezar?"
       ]
     },
     {
       "type": "block",
       "text": "Todo lo de esta lección, mezclado.",
-      "content": "¡madres! ¿son? ¿idea? ¿oro?\n¡días! ¿ayudas? ¡paz! ¡isla!\n¡agosto! ¡poca! ¡fallas! ¡son!"
+      "content": "¡cañas! ¿orejas? ¿esa? ¿juego?\n¡cambio! ¿gente? ¡bajas! ¡ese!\n¡siglo! ¡vez! ¡hilos! ¡orejas!"
     },
     {
       "type": "standard",
       "dictation": "words",
       "text": "Otra vez palabras, con los signos en su sitio.",
-      "content": "¿página? ideales ¡difícil! debes ¡traes!\n¿usar? momentos ¡viaje! textos ¿ese?\n¡altura! medios ¡bueno! campos ¿que?"
+      "content": "¿paz? sedas ¡exacta! quieres ¡gustar!\n¿igual? once ¡mejores! campos ¿les?\n¡siete! daño ¡pueden! poca ¿minutos?"
     }
   ]
 }

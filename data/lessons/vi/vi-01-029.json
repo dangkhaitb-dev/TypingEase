@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-029",
+  "unit": "u1",
+  "group": "g1",
+  "order": 29,
+  "slug": "vi-01-029",
+  "title": "Luyện phím · í ẽ ử",
+  "summary": "Học cách gõ í (i s), ẽ (e x), ử (u w r) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Học cách gõ í (i s), ẽ (e x), ử (u w r) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-029",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu sắc: gõ s sau nguyên âm. i s → í. Ví dụ: trí = t r i s.",
+      "content": "trí bí khí trí ích tím trí bí ví trí",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu ngã: gõ x sau nguyên âm. e x → ẽ. Ví dụ: khẽ = k h e x.",
+      "content": "khẽ chẽ khẽ kẽ rẽ vẽ khẽ ẽ kẽ rẽ ẽ kẽ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ u w r để ra ử: u w ra ư, r thêm dấu hỏi. Ví dụ: lửa = l u w r a.",
+      "content": "lửa nửa tử thử ử rửa nửa rửa cửa thử sửa gửi cửi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có í, ẽ, ử. Nhớ: í = i s, ẽ = e x, ử = u w r.",
+      "content": "thí khích phím phí cất mang tín hửng đính ít hỏi sử",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có í, ẽ, ử. Nhớ: í = i s, ẽ = e x, ử = u w r.",
+      "content": "gió thửa hửng đích thí kích đích rẽ sử xích động đứng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý í, ẽ, ử.",
+      "content": "phích sông chạy phí kẽ bài tích phía công khí khích sửa",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý í, ẽ, ử.",
+      "content": "ngửi sát qua khô trích mái kính hạt ban họ sửa bớt nhà tím",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có í, ẽ, ử mà không nhìn bàn phím.",
+      "content": "góc ích bí trình phích sẽ này ven sẽ xích rẽ hít rít bớt lẽ",
+      "inputMode": "telex"
+    }
+  ]
+}

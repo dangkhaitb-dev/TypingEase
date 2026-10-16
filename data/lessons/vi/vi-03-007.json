@@ -1,0 +1,53 @@
+{
+  "id": "vi-03-007",
+  "unit": "u3",
+  "group": "g1",
+  "order": 44,
+  "slug": "vi-03-007",
+  "title": "Luyện phím · N O P",
+  "summary": "Gõ chữ hoa N, O, P bằng Shift và luyện các từ viết hoa.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Gõ chữ hoa N, O, P bằng Shift và luyện các từ viết hoa.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ n (ngón trỏ phải) để ra N. Giữ Shift bằng ngón út của tay kia.",
+      "content": "N N N Nga N N N N Nga N N N N Nga N"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ o (ngón áp út phải) để ra O. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Om fO Oanh Ol Om O jO On Oanh Ok Om"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ p (ngón út phải) để ra P. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Phải P P Phúc Hải Phủ Phúc Phải P P Phúc Hải Phủ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý N, O, P. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Nối Mưa Oanh Nhỏ Hải Phòng Long Định Giờ tập Hải Phòng Gia Phố Phương",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có N, O, P mà không nhìn bàn phím.",
+      "content": "Phòng Oanh Phía Ngoài ghi của Nhìn Nâu chậm Nóng Không",
+      "inputMode": "telex"
+    }
+  ]
+}

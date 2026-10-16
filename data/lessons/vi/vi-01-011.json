@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-011",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "vi-01-011",
+  "title": "Luyện phím · ê ô ơ",
+  "summary": "Học phím Z (ngón út trái hàng dưới) — phím dùng để xóa/hủy dấu trong Telex.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Học phím Z (ngón út trái hàng dưới) — phím dùng để xóa/hủy dấu trong Telex.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ e e để ra ê. Ví dụ: bê = b e e.",
+      "content": "bê hê kê dê lê nên lên ê tê lê lên êm lê",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ o o để ra ô. Ví dụ: lô = l o o.",
+      "content": "lô sô rô nô ô rô gô tô ô nô lô sô tô",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ o w để ra ơ. Phím w: ngón áp út trái, hàng trên. Ví dụ: ơn = o w n.",
+      "content": "ơn ơ rơi sơ ơn ơi hơn ơn nơi hơn tơ rơi nơi sơ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ê, ô, ơ. Nhớ: ê = e e, ô = o o, ơ = o w.",
+      "content": "tên dê me xiên mơ cơ yên sôi chuông tin tuy rêu tôn cơ quê",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ê, ô, ơ. Nhớ: ê = e e, ô = o o, ơ = o w.",
+      "content": "biên cơm yên tê nguyên trơn kênh ngô nghiêng kênh ông vô kêu chuyên anh",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ê, ô, ơ.",
+      "content": "xô vô yêu bao khoe nuôi khâu lên trông bên sông nơi can",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ê, ô, ơ.",
+      "content": "mô luôn khuyên nghi tên êm chuyên nhiên khoang sân kênh rơi hong hơi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ê, ô, ơ mà không nhìn bàn phím.",
+      "content": "liên rơi xanh loang thao bê hơn da tin tre hơi tôn cơ nhanh ru trên thơm",
+      "inputMode": "telex"
+    }
+  ]
+}

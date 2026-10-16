@@ -1,0 +1,79 @@
+{
+  "id": "nl-01-017",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "nl-01-017",
+  "title": "Shift-toets",
+  "summary": "Leer de Shift-toets: houd Shift ingedrukt voor een hoofdletter en laat daarna los.",
+  "newKeys": [
+    "shift"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Leer de Shift-toets: houd Shift ingedrukt voor een hoofdletter en laat daarna los.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-017",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "shift",
+      "text": "Houd de Shift-toets aan de andere kant ingedrukt en typ een hoofdletter. Laat Shift daarna los.",
+      "content": "FFJ JFF FJJ JFJ FJF JJJ FFF JFJ FJJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Typ hoofdletters met de Shift-toets aan de andere kant.",
+      "content": "JJ AS SAAS SFF AF JAA SJF JSF FF SF SSJA SJ ASSF SFSF FAS"
+    },
+    {
+      "type": "standard",
+      "text": "Typ hoofdletters met de Shift-toets aan de andere kant.",
+      "content": "FGD ASF JS AS FFDS FJF JS GA SSF DS DS ADJJ DGD JAFA GS GGSD"
+    },
+    {
+      "type": "standard",
+      "text": "Typ een hoofdletter gevolgd door een kleine letter.",
+      "content": "Fa Jd Sj Ag Df Gs Ja Fd Sa Dj Gf As Jg Fs Da Gj Jf Ad"
+    }
+  ]
+}

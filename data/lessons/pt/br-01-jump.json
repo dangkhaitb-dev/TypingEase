@@ -1,0 +1,94 @@
+{
+  "id": "br-01-jump",
+  "unit": "u1",
+  "group": "g2",
+  "order": 25,
+  "slug": "br-01-jump",
+  "title": "Pular etapas",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-jump",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a fada fala da sala as asas da fada a salsa salgada"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a rede da terra era reta ela fala da festa"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "cada dia o pai faz o texto da aula pouco a pouco"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "ela já sabe até a saída difícil do país onde mora"
+    },
+    {
+      "type": "standard",
+      "text": "Digite as maiúsculas segurando o Shift do lado oposto.",
+      "content": "FDJA SGJF DAFG JGSD FJAS DGJF ASGD FJDG GSAF"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "ele põe o pão na mão da mãe e o irmão sorri"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada frase com atenção, usando qualquer tecla que você já conhece.",
+      "content": "o menino comprou três pães e um café quente"
+    }
+  ]
+}

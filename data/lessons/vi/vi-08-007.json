@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-007",
+  "unit": "u8",
+  "group": "g2",
+  "order": 113,
+  "slug": "vi-08-007",
+  "title": "Chuyển đổi hàng phím",
+  "summary": "Xây dựng năng lực \"Row Changes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tập trung vào các từ tiếng Việt đòi hỏi ngón tay di chuyển liên tục giữa hàng phím trên, giữa và dưới.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Row Changes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tập trung vào các từ tiếng Việt đòi hỏi ngón tay di chuyển liên tục giữa hàng phím trên, giữa và dưới.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động ngón tay với chuỗi luyện quang, vinh, xuân, tươi, sáng.",
+      "content": "quang quang vinh vinh xuân xuân tươi tươi sáng sáng đẹp đẹp rực rực rỡ rỡ huy huy hoàng hoàng rạng rạng ngời ngời dương dương khung khung vươn vươn cuống cuống xương xương",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ chuyển hàng phím: mùa xuân, quang vinh, tươi đẹp, rực rỡ.",
+      "content": "mùa xuân quang vinh tươi đẹp rực rỡ sáng ngời hy vọng vươn lên tương lai tươi sáng rộng mở ngập tràn niềm tin phơi phới sắc hoa khoe sắc thắm nắng khung cửa vàng rực cành xuân vươn cao hương cốm mới thơm. Ngón tay nhảy từ hàng giữa lên hàng trên rồi xuống hàng dưới, giữ nhịp đều khi gặp từ dài như tương lai hay rực rỡ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn giải thích lợi ích của việc chuyển ngón giữa ba hàng phím.",
+      "content": "Việc chuyển đổi ngón tay liên tục giữa các hàng phím trên, giữa và dưới là bài tập quan trọng giúp tăng cường sự dẻo dai và tính linh hoạt của đôi bàn tay. Khi các đầu ngón tay lướt êm ái trên từng phím bấm mà không hề gượng gạo, người gõ sẽ cảm nhận được sự tự do và thanh thoát trong từng câu chữ được tạo ra trên trang giấy điện tử trắng ngần tinh khôi của buổi sớm mai.",
+      "inputMode": "telex"
+    }
+  ]
+}

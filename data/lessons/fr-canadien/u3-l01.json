@@ -49,7 +49,6 @@
     "z",
     ".",
     ",",
-    "`",
     "shift",
     "enter",
     "1",
@@ -169,13 +168,13 @@
       "text": "On revient aux mots un instant, pour que les mains se souviennent d'où elles habitent.",
       "dictation": "words",
       "type": "standard",
-      "content": "histoires blanche point espèces\ncentres tel systèmes heure\nutile voir derrière four"
+      "content": "sorte bon papier exact\ndonc tirs ou mesure\nsite continue banques doses"
     },
     {
       "text": "Des phrases à nouveau, avec le clavier entier disponible.",
       "dictation": "sentence",
       "type": "standard",
-      "content": "Elle a pris le premier train du matin.\nLe temps passe vite quand le travail avance bien.\nTous les jours je passe devant cette boutique."
+      "content": "Le temps passe vite quand le travail avance bien.\nTous les jours je passe devant cette boutique.\nNous parlons de ce projet depuis longtemps."
     }
   ]
 }

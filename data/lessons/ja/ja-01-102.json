@@ -1,0 +1,74 @@
+{
+  "id": "ja-01-102",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "ja-01-102",
+  "title": "日本語 IME の確定",
+  "summary": "ローマ字を入力し、候補を選んで確定する一連の IME 操作を練習する。",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ime",
+  "intro": "ローマ字を入力し、候補を選んで確定する一連の IME 操作を練習する。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-102",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "ローマ字でかなを入力し、表示を確かめて Enter で確定します。",
+      "content": "あさかささか あししかすし いえうえあい",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "読みを確かめ、変換せずにかなのまま確定します。",
+      "content": "あしたはあさからはれですあれはうさぎですすしがすきです",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "読みを確かめ、かなのまま確定します。",
+      "content": "さくらがさいているくうきがきれいですつきがあかるいです",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "読みを確かめ、かなのまま確定します。",
+      "content": "たけがはえているいしはかたいですうたがすきですかさはあかいです",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "読みを確かめ、かなのまま確定します。",
+      "content": "あきはけしきがいいですゆうひがさがるつきがあかい",
+      "inputMode": "ime"
+    }
+  ]
+}

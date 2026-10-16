@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-007",
+  "unit": "u10",
+  "group": "g2",
+  "order": 142,
+  "slug": "vi-10-007",
+  "title": "Bảng biểu dữ liệu soát lỗi",
+  "summary": "Xây dựng năng lực \"Audit Data Tables\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập bảng dữ liệu số liệu đối soát, rèn luyện sự cẩn trọng và kiểm soát sai sót từng con số.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Audit Data Tables\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập bảng dữ liệu số liệu đối soát, rèn luyện sự cẩn trọng và kiểm soát sai sót từng con số.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động ngón tay với bảng đối soát doanh thu quý ba.",
+      "content": "Bảng đối soát doanh thu quý ba: chỉ tiêu doanh số đạt 125 phần trăm, tỷ lệ thu hồi công nợ đạt 98 phẩy 5 phần trăm, mức tăng trưởng lợi nhuận ròng đạt 18 phần trăm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về kỹ năng kết hợp gõ chữ và thao tác bảng biểu số liệu.",
+      "content": "Bảng biểu dữ liệu số liệu đòi hỏi sự kết hợp nhuần nhuyễn giữa kỹ năng gõ chữ tiếng Việt và kỹ năng thao tác trên hàng phím số cùng các dấu toán học cơ bản. Việc duy trì độ chính xác một trăm phần trăm trên các bảng biểu này là thước đo chuẩn mực cho năng lực xử lý dữ liệu số hóa của người lao động trong thời đại số.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với báo cáo kiểm toán nội bộ đối chiếu danh mục hàng tồn kho.",
+      "content": "Báo cáo kiểm toán nội bộ xác nhận: toàn bộ 45 danh mục hàng tồn kho đều khớp với sổ sách kế toán; số dư tài khoản ngân hàng được đối chiếu chính xác đến từng đơn vị đồng; không có bất kỳ khoản chi phí phát sinh bất thường nào ngoài dự toán. Nhân viên rà lại tiêu đề cột, đơn vị đo và phần tổng cộng để phát hiện sai lệch trước khi lưu bảng.",
+      "inputMode": "telex"
+    }
+  ]
+}

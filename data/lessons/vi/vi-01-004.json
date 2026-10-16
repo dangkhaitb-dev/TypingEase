@@ -1,0 +1,65 @@
+{
+  "id": "vi-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "vi-01-004",
+  "title": "Luyện phím · l q",
+  "summary": "Học phím C (ngón giữa trái hàng dưới), G (ngón trỏ trái hàng cơ sở vươn vào) và N (ngón trỏ phải hàng dưới).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Học phím C (ngón giữa trái hàng dưới), G (ngón trỏ trái hàng cơ sở vươn vào) và N (ngón trỏ phải hàng dưới).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím l: ngón áp út phải, hàng cơ sở. Gõ l xen với hai phím mốc f, j.",
+      "content": "llf jlll lll llj lllj fll lllj jll lllj"
+    },
+    {
+      "type": "standard",
+      "text": "Phím q: ngón út trái, hàng trên. Gõ q xen với hai phím mốc f, j.",
+      "content": "jqq qqq qqq qqf fqq qqq qfq qjq jqqq qqqf"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp l q với các phím đã học.",
+      "content": "lhdk qf sl ljh dl fqgj al aqg gl qkh aq hkl aq lgg lff"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp l q với các phím đã học.",
+      "content": "lfs jl ffl hq sl fkq kjl ssq kq qj dsq lhja gl al glk hl hklg qf lfha"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp l q với các phím đã học.",
+      "content": "dl ll kjqj dl qhs qqq kl fq qkjj fhlf qak qfa gqq adl lgd lj qh gq gljj"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp l q với các phím đã học.",
+      "content": "qgf lh qad hlkf lg hq jlls jlal lg djl flgs aq ld kgl fq lhql sqdh"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp l q với các phím đã học.",
+      "content": "sgjl qd gslj sqq ffhq fsql qj lkkj fklj qd qqg dhqj dqf"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại l q trong các cụm mới, giữ nhịp đều.",
+      "content": "qa lgg klf sl qs jqka ssq lllg ls lg dl sfl gq qja gl dhhq ljk dgq qkfd"
+    }
+  ]
+}

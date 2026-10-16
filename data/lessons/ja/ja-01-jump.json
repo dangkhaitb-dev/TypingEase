@@ -1,0 +1,121 @@
+{
+  "id": "ja-01-jump",
+  "unit": "u1",
+  "group": "g2",
+  "order": 22,
+  "slug": "ja-01-jump",
+  "title": "先へ進む",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "^",
+    "¥",
+    "@",
+    "[",
+    ";",
+    ":",
+    "]",
+    ",",
+    ".",
+    "/",
+    "\\",
+    "shift",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ime",
+  "intro": "既習キーを短いまとまりで反復します。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-jump",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "jjf jj jjjf fffj jfff jjf jj jjjf fffj jfff jjf jj jjjf fffj jfff jjf jj"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "llll llww wql llg wll qq wwq llll llww wql llg wll qq wwq llll llww wql llg"
+    },
+    {
+      "type": "standard",
+      "text": "読みを確かめ、かなのまま確定します。",
+      "content": "あきはけしきがいいですゆうひがさがるつきがあかい",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "「ん」は n を二回打ちます。かなの文を入力します。",
+      "content": "えきまであるくとちいさなはなやがありますあかいはながならんでいます",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "665 556 55 464l 4456 5644 4666 44 444 665 556 55 464l 4456 5644 4666 44 444"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "¥¥[ [[[ [[ @z¥[ [[¥@ [[[¥ @@[ ¥¥[7 ¥¥[ [[[ [[ @z¥[ [[¥@ [[[¥ @@[ ¥¥[7 ¥¥[",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "\\\\\\ \\\\\\\\ \\\\ \\\\\\e \\\\e\\ \\e\\\\ \\e\\ \\\\\\ \\\\\\\\ \\\\ \\\\\\e \\\\e\\ \\e\\\\ \\e\\ \\\\\\ \\\\\\\\ \\\\"
+    },
+    {
+      "type": "standard",
+      "text": "かなと句読点で、自然な日本語の文を入力します。",
+      "content": "ゆうがた、いえにかえってから、かいものをかたづけました。",
+      "inputMode": "ime"
+    }
+  ]
+}

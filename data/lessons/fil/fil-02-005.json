@@ -1,0 +1,79 @@
+{
+  "id": "fil-02-005",
+  "unit": "u2",
+  "group": "g1",
+  "order": 19,
+  "slug": "fil-02-005",
+  "title": "Pagbabalik-aral",
+  "summary": "Pagbabalik-aral. I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Pagbabalik-aral. I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-02-005",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+      "content": "bumili si nanay ng 3 isda at 12 itlog sa palengke kaninang umaga"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+      "content": "ang bus bilang 45 ay aalis nang alas 7 at darating nang alas 9"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+      "content": "may 6 aklat at 8 lapis si kuya at may 10 papel pa sa bag"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "vi-01-018",
+  "unit": "u1",
+  "group": "g1",
+  "order": 18,
+  "slug": "vi-01-018",
+  "title": "Luyện phím · ị ồ ễ",
+  "summary": "Tổng kết toàn bộ kỹ năng gõ chữ tiếng Việt thường, dấu mũ, dấu móc và năm thanh điệu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Tổng kết toàn bộ kỹ năng gõ chữ tiếng Việt thường, dấu mũ, dấu móc và năm thanh điệu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-018",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu nặng: gõ j sau nguyên âm. i j → ị. Ví dụ: vịt = v i j t.",
+      "content": "vịt chị thị mịn địa kịp vịt kịp dịu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ o o f để ra ồ: o o ra ô, f thêm dấu huyền. Ví dụ: hồi = h o o f i.",
+      "content": "hồi đồi tồn mồi đồ hồ bồn rồi hồ ồn đồi gồm rồi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ e e x để ra ễ: e e ra ê, x thêm dấu ngã. Ví dụ: trễ = t r e e x.",
+      "content": "ễ trễ ễ miễn rễ diễn rễ ễ ễ trễ ễ miễn rễ diễn rễ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ị, ồ, ễ. Nhớ: ị = i j, ồ = o o f, ễ = e e x.",
+      "content": "rễ chuồn quầy chịu vồng nồm em buồng áo hàng đồi rễ nồm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ị, ồ, ễ. Nhớ: ị = i j, ồ = o o f, ễ = e e x.",
+      "content": "ta tiên chồi hồ hồng vồng cơn che mồi làng kho công vịnh đề",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ị, ồ, ễ.",
+      "content": "mùa kéo khoản dịu đơn nhà kho ngồi chân đang lịch mồi sách mịn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ị, ồ, ễ.",
+      "content": "rồi con mát mà sản hãy quen chuồn hương buồn đón đầu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ị, ồ, ễ mà không nhìn bàn phím.",
+      "content": "quên nguyễn luồng miễn giảm chuồn hồng khô mịn vị nhé",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ thật, chỉ dùng những phím đã học.",
+      "content": "lễ dễ lễ phép dễ dàng dễ chịu ễnh ương dễ lễ",
+      "inputMode": "telex"
+    }
+  ]
+}

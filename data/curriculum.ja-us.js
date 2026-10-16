@@ -163,3 +163,43 @@ window.TypingEaseCurriculum = {
     hint: "IME をオフ（半角英数）にして、突起のある2つのキーに人差し指を置き、キーボードを見ずに画面の文字を打ってください。"
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/ja-us/u1-l01.json?v=3f2e08be1cc2a5ba",
+  "u1-l02": "/data/lessons/ja-us/u1-l02.json?v=334cbc052da7e8db",
+  "u1-l03": "/data/lessons/ja-us/u1-l03.json?v=b6ce60ae9078fe6f",
+  "u1-l04": "/data/lessons/ja-us/u1-l04.json?v=f31b88d1de6844cc",
+  "u1-l05": "/data/lessons/ja-us/u1-l05.json?v=7c81c2b82089012c",
+  "u1-l06": "/data/lessons/ja-us/u1-l06.json?v=439606254437475f",
+  "u1-l07": "/data/lessons/ja-us/u1-l07.json?v=46064a813a08a1be",
+  "u1-l08": "/data/lessons/ja-us/u1-l08.json?v=bf7248a58a6186f9",
+  "u1-l09": "/data/lessons/ja-us/u1-l09.json?v=e7098c426375d41a",
+  "u1-l10": "/data/lessons/ja-us/u1-l10.json?v=8652bf98d2f0055e",
+  "u2-l01": "/data/lessons/ja-us/u2-l01.json?v=d256371c18a1ecdd",
+  "u2-l02": "/data/lessons/ja-us/u2-l02.json?v=783b33d7914751d3",
+  "u2-l03": "/data/lessons/ja-us/u2-l03.json?v=6f70a48d81acd940",
+  "u2-l04": "/data/lessons/ja-us/u2-l04.json?v=5612d28cedf0dbca",
+  "u2-l05": "/data/lessons/ja-us/u2-l05.json?v=9ee1bb0a97974235",
+  "u2-l06": "/data/lessons/ja-us/u2-l06.json?v=e343118dfdcd9a81",
+  "u2-l07": "/data/lessons/ja-us/u2-l07.json?v=996d2fcb3967fbe4",
+  "u2-l08": "/data/lessons/ja-us/u2-l08.json?v=8777e799dc1ee44a",
+  "u2-l09": "/data/lessons/ja-us/u2-l09.json?v=d14c4de6d79d89ee",
+  "u2-l10": "/data/lessons/ja-us/u2-l10.json?v=c421837bf4baef30",
+  "u2-l11": "/data/lessons/ja-us/u2-l11.json?v=9bd677bfc20c73df",
+  "u3-l01": "/data/lessons/ja-us/u3-l01.json?v=85ee5a6eb605d69b",
+  "u3-l02": "/data/lessons/ja-us/u3-l02.json?v=770150fa02e3d859",
+  "u3-l03": "/data/lessons/ja-us/u3-l03.json?v=58fbdb94c49bcd72",
+  "u3-l04": "/data/lessons/ja-us/u3-l04.json?v=409caa8d76e8ffb5",
+  "u3-l05": "/data/lessons/ja-us/u3-l05.json?v=cb773153e5f7bbf1",
+  "u3-l06": "/data/lessons/ja-us/u3-l06.json?v=c08549345cd748eb",
+  "u4-l01": "/data/lessons/ja-us/u4-l01.json?v=87ad3405ccabb234",
+  "u4-l02": "/data/lessons/ja-us/u4-l02.json?v=e4cf04c028f63017",
+  "u4-l03": "/data/lessons/ja-us/u4-l03.json?v=72a3b3e0b23ae28e",
+  "u4-l04": "/data/lessons/ja-us/u4-l04.json?v=c4b0cad70ae8a497",
+  "u4-l05": "/data/lessons/ja-us/u4-l05.json?v=a8ae03f8f9615508",
+  "u4-l06": "/data/lessons/ja-us/u4-l06.json?v=243acd6bdcb0a38e",
+  "u4-l07": "/data/lessons/ja-us/u4-l07.json?v=10e5e8c79baf5e6d",
+  "u4-l08": "/data/lessons/ja-us/u4-l08.json?v=5c880a0bbf0796c7"
+};
+/* </auto:lesson-urls> */

@@ -156,3 +156,41 @@ window.TypingEaseCurriculum = {
     hint: "Appoggia gli indici sui due tasti con il rilievo e scrivi quello che vedi, senza guardare la tastiera."
   }
 };
+
+/* <auto:lesson-urls> — SINH TỰ ĐỘNG bởi scripts/stamp-data.mjs, ĐỪNG SỬA TAY */
+window.TypingEaseCurriculum.lessonUrls = {
+  "u1-l01": "/data/lessons/it-mac/u1-l01.json?v=9e8a6f5484952558",
+  "u1-l02": "/data/lessons/it-mac/u1-l02.json?v=19d198084ad08cc1",
+  "u1-l03": "/data/lessons/it-mac/u1-l03.json?v=249977b9bcda597c",
+  "u1-l04": "/data/lessons/it-mac/u1-l04.json?v=a38454365d1d8e84",
+  "u1-l05": "/data/lessons/it-mac/u1-l05.json?v=b3478a72b0569920",
+  "u1-l06": "/data/lessons/it-mac/u1-l06.json?v=abc26fe7fb4f0309",
+  "u1-l07": "/data/lessons/it-mac/u1-l07.json?v=19968d2a038da391",
+  "u1-l08": "/data/lessons/it-mac/u1-l08.json?v=2ddffb38907a07ca",
+  "u1-l09": "/data/lessons/it-mac/u1-l09.json?v=39e2fc778d93bc87",
+  "u1-l10": "/data/lessons/it-mac/u1-l10.json?v=b829f20bfde691ae",
+  "u2-l01": "/data/lessons/it-mac/u2-l01.json?v=5624ef307c9c50b8",
+  "u2-l02": "/data/lessons/it-mac/u2-l02.json?v=3681731876fc39b4",
+  "u2-l03": "/data/lessons/it-mac/u2-l03.json?v=f7559eaba05386b8",
+  "u2-l04": "/data/lessons/it-mac/u2-l04.json?v=1040b9a89de3b389",
+  "u2-l05": "/data/lessons/it-mac/u2-l05.json?v=13b5f6772fb0a7e0",
+  "u2-l06": "/data/lessons/it-mac/u2-l06.json?v=e1f1f3974031eaa9",
+  "u2-l07": "/data/lessons/it-mac/u2-l07.json?v=7f3a9d9c76086d7d",
+  "u2-l08": "/data/lessons/it-mac/u2-l08.json?v=434dcd1d296b834e",
+  "u2-l09": "/data/lessons/it-mac/u2-l09.json?v=610478e87f887fc2",
+  "u2-l10": "/data/lessons/it-mac/u2-l10.json?v=de1e2ea308f2a697",
+  "u2-l11": "/data/lessons/it-mac/u2-l11.json?v=91eb3110466edf99",
+  "u3-l01": "/data/lessons/it-mac/u3-l01.json?v=fc143a568a1f8fdc",
+  "u3-l02": "/data/lessons/it-mac/u3-l02.json?v=0753568271f54bf8",
+  "u3-l03": "/data/lessons/it-mac/u3-l03.json?v=32f5f0f848f388e7",
+  "u3-l04": "/data/lessons/it-mac/u3-l04.json?v=74d8d09be0dc0931",
+  "u3-l05": "/data/lessons/it-mac/u3-l05.json?v=373f5abc2cf00276",
+  "u3-l06": "/data/lessons/it-mac/u3-l06.json?v=82130f50c66dd78d",
+  "u4-l01": "/data/lessons/it-mac/u4-l01.json?v=c62e63a0542c7600",
+  "u4-l02": "/data/lessons/it-mac/u4-l02.json?v=6639627f1d5b9b61",
+  "u4-l03": "/data/lessons/it-mac/u4-l03.json?v=b1f3e609099dfd5c",
+  "u4-l04": "/data/lessons/it-mac/u4-l04.json?v=1799e3f3addc933e",
+  "u4-l05": "/data/lessons/it-mac/u4-l05.json?v=d1790fe447cfaf07",
+  "u4-l06": "/data/lessons/it-mac/u4-l06.json?v=8c270e234f5015ad"
+};
+/* </auto:lesson-urls> */

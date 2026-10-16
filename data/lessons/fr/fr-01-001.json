@@ -1,0 +1,79 @@
+{
+  "id": "fr-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "fr-01-001",
+  "title": "Les repères f et j et la barre espace",
+  "summary": "Apprenez f et j avec les index et la barre espace avec le pouce.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Apprenez f et j avec les index et la barre espace avec le pouce.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-001",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Posez l’index gauche sur le petit relief de la touche f. Gardez la main détendue et répétez f sans regarder vos doigts.",
+      "content": "ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Posez l’index droit sur le petit relief de la touche j. Gardez l’index gauche sur f et répétez j avec un geste régulier.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Appuyez sur la barre espace avec le pouce entre les groupes de lettres, puis revenez aux repères f et j.",
+      "content": "f j ff jj f j ff jj f j ff jj f j f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "fjj jf jjf jjjfj jjj fjfj jjf fj jjf jfj jfjjf fjfjj jf jjf fj"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez chaque groupe calmement, puis revenez aux repères avant le suivant.",
+      "content": "fff jjf fffj jjff fj fjfjj jf jffj jjjjf jffj fjjj ffj"
+    },
+    {
+      "type": "standard",
+      "text": "Gardez un rythme régulier sans regarder le clavier.",
+      "content": "jjf ffjfj fjjfj jjf jfj jf fj ffffj jjfff ffjjj"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "fjj jjff jffj jfjjf jff fjj jf jjfjj fjj jjf fffj fjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez chaque groupe calmement, puis revenez aux repères avant le suivant.",
+      "content": "jfj fjfj jjfj jjff jjfff ffjfj jfff jjf fff jffjj jjjff fj"
+    }
+  ]
+}

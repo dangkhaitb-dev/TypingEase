@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-014",
+  "unit": "u1",
+  "group": "g1",
+  "order": 14,
+  "slug": "vi-01-014",
+  "title": "Luyện phím · è ó ò",
+  "summary": "Học chữ ă và phụ âm đ; phối hợp trong các từ không mang dấu thanh.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Học chữ ă và phụ âm đ; phối hợp trong các từ không mang dấu thanh.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-014",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu huyền: gõ f sau nguyên âm. e f → è. Ví dụ: đèo = d d e f o.",
+      "content": "đèo mèo đèo đèn rè bè đèo mè bèo mèo rè",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu sắc: gõ s sau nguyên âm. o s → ó. Ví dụ: góc = g o s c.",
+      "content": "góc xóm đó góc gió món hóa ó góc",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu huyền: gõ f sau nguyên âm. o f → ò. Ví dụ: đò = d d o f.",
+      "content": "đò dò sò đò vò lò vò đò dò bò còn ò cò còn vò bò",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có è, ó, ò. Nhớ: è = e f, ó = o s, ò = o f.",
+      "content": "hè xóm góp sóng hòa mòn chòi mua rào bát còn vàng bưng nên nón báo",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có è, ó, ò. Nhớ: è = e f, ó = o s, ò = o f.",
+      "content": "chèo mèo bó lòng tòa hòa ngói đèn bò sóc cói xóa gió già ai",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý è, ó, ò.",
+      "content": "hòm hay năng xóm còn tò khóa tên sóng nón vòng thang",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý è, ó, ò.",
+      "content": "xóa mò sót lâu nóng tò bèo sóc reo hòm rau ôm công thôi so",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có è, ó, ò mà không nhìn bàn phím.",
+      "content": "rèm kêu bay tòa ngói chóng hay sát đò sót sau cơ món ràng",
+      "inputMode": "telex"
+    }
+  ]
+}

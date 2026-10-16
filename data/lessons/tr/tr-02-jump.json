@@ -1,0 +1,99 @@
+{
+  "id": "tr-02-jump",
+  "unit": "u2",
+  "group": "g3",
+  "order": 20,
+  "slug": "tr-02-jump",
+  "title": "Atla",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Kişi adlarını büyük harfle başlatarak yaz.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-02-jump",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Kişi adlarını büyük harfle başlatarak yaz.",
+      "content": "Ali okula gitti Ece evde kaldı Deniz bahçede oynadı"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "222 22 33 2231 223 321 221 3111 112 1ö13 333"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "665 44 555 5454 55 6o 546 oo6 54 654 666 66 46 664 6645 5555 oo"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "977 9979 788 997 987 79d9 d979 98 8977 7d 77 879 97 7779 797 87 888"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ıı00 0ı ı00 0000 00 000 00ı 000ı ıı0 ı000 ıı"
+    },
+    {
+      "type": "standard",
+      "text": "Öğrendiğin tuşları kullanarak Türkçe metni yaz.",
+      "content": "pazardan 4 kilo elma ve 2 kilo armut ile 10 yumurta aldık"
+    }
+  ]
+}

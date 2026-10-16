@@ -1,0 +1,43 @@
+{
+  "id": "ko-05-008",
+  "unit": "u5",
+  "group": "g1",
+  "order": 74,
+  "slug": "ko-05-008",
+  "title": "두고 온 우산",
+  "summary": "우산을 두고 온 상황에서 원인을 찾아 해결하는 흐름을 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "우산을 두고 온 상황에서 원인을 찾아 해결하는 흐름을 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-05-008",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "카페에서 오랜만에 친구를 만나고 나오니 하늘이 다시 어두워졌습니다. 그제야 아끼는 우산을 의자 옆에 두고 온 것이 생각났습니다. 아차 싶었습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "급히 카페로 돌아갔지만 그 자리에는 벌써 다른 손님이 앉아 있었습니다. 점원에게 사정을 이야기하자 분실물 상자를 꺼내 보여 주었습니다. 가슴이 두근거렸습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "상자 안에 낯익은 파란 우산이 얌전히 들어 있었습니다. 고맙다고 인사하고 문을 나서는데 마침 굵은 빗방울이 하나둘 떨어지기 시작했습니다. 정말 다행이었습니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

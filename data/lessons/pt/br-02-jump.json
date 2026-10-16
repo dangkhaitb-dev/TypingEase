@@ -1,0 +1,84 @@
+{
+  "id": "br-02-jump",
+  "unit": "u2",
+  "group": "g2",
+  "order": 30,
+  "slug": "br-02-jump",
+  "title": "Pular etapas",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-02-jump",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "21 22b x1 1xv2 x1b 2v bb22 312v 2x v3v3 122 2b2 v2x2"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "566 6656 65 64 45 6n 666 665 4n56 54 6655 6456 66 6666 56 464"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "989 899 999 997 988 88 977q 77 7987 7q 788 99 798 797 q99 877 8779"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "90 0000 09 000 9099 90f 009 00 900 0009 090"
+    }
+  ]
+}

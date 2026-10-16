@@ -1,0 +1,54 @@
+{
+  "id": "vi-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 40,
+  "slug": "vi-03-003",
+  "title": "Luyện phím · J H B",
+  "summary": "Làm quen vị trí phím dấu chấm (.) và dấu phẩy (,) trên hàng dưới do tay phải phụ trách.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Làm quen vị trí phím dấu chấm (.) và dấu phẩy (,) trên hàng dưới do tay phải phụ trách.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ j (ngón trỏ phải) để ra J. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Jl jJ Jm Jn JJ Jk Jm Jf Jl JJ Jm JJ Jj Jf JJ"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ h (ngón trỏ phải) để ra H. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Hàng Hơn Hoa Hùng Hàng Hỏi Hàng Hiếu Hội An",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ b (ngón trỏ trái) để ra B. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Bà Bảng Buổi Bảng Bạn Bằng Bị Bên",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý J, H, B. Giữ Shift bằng ngón út của tay kia.",
+      "content": "phòng Hiệu Biết Quá Hai Hạt Bảo Hải Bớt Jf Họp Bến đọc Bánh Đọc",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có J, H, B mà không nhìn bàn phím.",
+      "content": "Hãy Hà lúc Bằng tay Họp sau Đo khoảng Hình Hôm Đặt Jl Bình Bình Hội An",
+      "inputMode": "telex"
+    }
+  ]
+}

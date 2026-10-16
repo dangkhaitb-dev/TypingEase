@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-003",
+  "unit": "u6",
+  "group": "g1",
+  "order": 53,
+  "slug": "zh-tw-06-003",
+  "title": "行程臨時調整",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-003",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "因為下午要開會，原本三點的約會改到五點。臨時更改時間，真的很抱歉。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "地點不變，還是在學校對面的咖啡店，請大家留意時間。我會先到店裡訂位。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "如果五點不方便，請在今天晚上以前告訴我，我們再一起找其他時間。",
+      "inputMode": "ime"
+    }
+  ]
+}

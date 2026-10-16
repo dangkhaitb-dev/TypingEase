@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-005",
+  "unit": "u8",
+  "group": "g2",
+  "order": 114,
+  "slug": "vi-08-005",
+  "title": "Câu ghép đơn giản",
+  "summary": "Xây dựng năng lực \"Light Compounds\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Mở rộng nhịp gõ sang câu ghép có hai vế tương phản hoặc tương hỗ.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Light Compounds\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Mở rộng nhịp gõ sang câu ghép có hai vế tương phản hoặc tương hỗ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ tập trung trên chuỗi luyện trường, thương, vương, đường, phương.",
+      "content": "trường trường trường thương thương thương vương vương vương đường đường đường phương phương phương gương gương gương nương nương nương sương sương sương lương lương lương hướng hướng hướng tưởng tưởng tưởng nướng nướng nướng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ mang vần ương: con đường, mái trường, quê hương, phương hướng.",
+      "content": "con đường mái trường quê hương phương hướng vấn vương thương yêu kiên cường vững vàng gương mẫu tương lai phương án rạng ngời đường hoàng nương dâu sương sớm lương thiện hướng thiện vương miện tưởng niệm tường rào vườn ươm thương thảo nương tựa gương soi đường mòn phương trời",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn hoài niệm về mái trường xưa dưới hàng phượng vĩ.",
+      "content": "Mái trường xưa thân thương nằm nép mình yên ả dưới những hàng cây phượng vĩ cổ thụ rợp bóng mát quanh năm. Nơi đây đã từng ngày nuôi dưỡng biết bao thế hệ học trò trưởng thành với những ước mơ cao đẹp, sẵn sàng bay xa trên con đường lập thân và cống hiến tài năng dựng xây đất nước quê hương ngày một giàu đẹp hơn.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,104 @@
+{
+  "id": "zh-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "zh-01-010",
+  "title": "键位练习：n、m",
+  "summary": "按顺序学习 n、m，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "n",
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ime",
+  "intro": "按顺序学习 n、m，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-010",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "找到 n 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "nnnn nnnn nnnn nnnn nnnn nnnn nnnn",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "找到 m 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "mmmm mmmm mmmm mmmm mmmm mmmm mmmm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "nmm mmm mmmm mmnn mm mbmn nmm mbmn mm mmnn mmmm mmm mmmm"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "mnn mmnm mmmm mnmv nnn mnn nnn mnmv mmmm mmnm mmmm mmnm"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "mmi nmnn mnn mn mmm mm mmi mm mmm mn mnn nmnn mnn nmnn"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "mmn nn mn;n mnn mmm mm mmn mm mmm mnn mn;n nn mn;n nn"
+    },
+    {
+      "type": "standard",
+      "text": "输入拼音，按空格选字，提交句子。",
+      "content": "你好我们都是好朋友我没有你的书",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "输入拼音，按空格选字，提交句子。",
+      "content": "明天你有没有时间我们一起吃饭",
+      "inputMode": "ime"
+    }
+  ]
+}

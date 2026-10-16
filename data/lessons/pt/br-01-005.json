@@ -1,0 +1,80 @@
+{
+  "id": "br-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "br-01-005",
+  "title": "L, Ç",
+  "summary": "Aprenda as teclas l, ç e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "l"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas l, ç e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-005",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Localize l e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "flll ll fllf lfl lfll lf lll",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Localize ç e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "jçç jççj jççç jjç çççj çç çççç ççj"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "çça çç hldç ççd hçl llçl dld çdç dd çh lçh hlç çdd"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "ldal çl hçh llç da lha ld ça lç lla hç dç laç hlçl aa"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "çllç gçlç çlçç lçl çç ççç lççl ll llçç lçlg ççlç"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "çççç çlll lll aç lççl lllç lçll lçç çll lç çç ll çl"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "sala salsa falsa alça alças faça laça salgada falha"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a fada fala da sala as asas da fada a salsa salgada"
+    }
+  ]
+}

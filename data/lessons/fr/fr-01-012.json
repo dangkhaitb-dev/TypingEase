@@ -1,0 +1,103 @@
+{
+  "id": "fr-01-012",
+  "unit": "u1",
+  "group": "g2",
+  "order": 11,
+  "slug": "fr-01-012",
+  "title": "v, b, n",
+  "summary": "Apprenez v, b, n et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Apprenez v, b, n et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-012",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Repérez v sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "vf vv fvv vvvv vvfv ffv ff vvv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Repérez b sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "bbfb fbb ffb bff ff ffbb bfb bbb fbbb fff bb bbbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Repérez n sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "nnf nnfn ffn nnn nffn nnnf fnn nn nnnn fnf ff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "vfvv nn bvvf fvnb nn bb nv vn ffb vf ffn bb fb bbn vvf fb"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "jnb bbnn vn vb jj vnn nvj bv jjbn vvnj jvnb nn nj vvj jv"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le vent pousse les nuages et le bateau avance vers le port"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le voisin ouvre un livre et regarde le ciel bleu"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "bnnn ff ffbb vvbn bvb nb bnfn nbbn ffnf nb vn ffn vbnn"
+    }
+  ]
+}

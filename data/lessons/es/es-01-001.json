@@ -1,0 +1,79 @@
+{
+  "id": "es-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "es-01-001",
+  "title": "F y J y la barra espaciadora",
+  "summary": "Aprende f y j con los índices y la barra espaciadora con el pulgar.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Aprende f y j con los índices y la barra espaciadora con el pulgar.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-001",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Localiza f y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ffff ffff ffff ffff ffff ffff ffff ffff ffff f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Localiza j y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjjj j",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Pulsa la barra espaciadora con el pulgar entre los grupos de letras y vuelve a la posición de referencia.",
+      "content": "j f j f j f j f j f j f j f j f j f j",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "jff jfjfj fjjf jfffj fj fjj fjff jfjf jff fj ff jffjj jfjf fjjj"
+    },
+    {
+      "type": "standard",
+      "text": "Mantén un ritmo constante y vuelve a la posición de referencia entre grupos.",
+      "content": "ffj fjff jff ffjf jffff jf jfff fj jf jf jjfjf fjf fffj jj"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada grupo con calma y sin mirar el teclado.",
+      "content": "jjj ffjf fffff jj jjf jjf fjf jf fjjff fff fff"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "jff jjf jf jfff jfjj fjfj ffj fjff ff jf ffj fjfj jjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Mantén un ritmo constante y vuelve a la posición de referencia entre grupos.",
+      "content": "fjf fjf jf fjf jjf fjf jjjj jfj jffj ffjjf fjffj fj ffj"
+    }
+  ]
+}
