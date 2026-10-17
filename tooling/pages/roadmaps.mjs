@@ -25,6 +25,7 @@ import paths from '../lib/paths.cjs';
 import { HOME_SWITCH } from '../lib/home-switch.mjs';
 import { seoHead } from '../lib/seo-head.mjs';
 import { legalFooter } from '../lib/legal.mjs';
+import { courseEditorial, courseIntroductions } from '../../content/roadmaps/editorial.en-vi.mjs';
 
 // Khoá là gì, nằm ở URL nào, gọi là gì — tất cả đọc từ content/data/languages.js (`courses`),
 // cùng nguồn với trang đầu và build-course.js.
@@ -185,7 +186,8 @@ async function roadmapPage(languages, lang, family) {
   if (family && curriculum.course !== code) throw new Error(`curriculum.${code}.js: course = ${curriculum.course}, đợi ${code}`);
 
   const config = familyConfig(await loadConfig(lang), lang, family);
-  const { s: S, routes: R } = config;
+  const S = !family && courseIntroductions[lang] ? { ...config.s, ...courseIntroductions[lang] } : config.s;
+  const R = config.routes;
   const order = new Map(curriculum.sequence.map((id, index) => [id, index + 1]));
   const page = { curriculum, S, R, order };
 
@@ -287,7 +289,7 @@ ${curriculum.units.map(unit => unitCard(page, unit)).join('\n')}
         </div>
       </div>
 
-      <section class="explore" aria-labelledby="cur-explore-title">
+${!family && (lang === 'en' || lang === 'vi') ? courseEditorial(lang, curriculum) + '\n\n' : ''}      <section class="explore" aria-labelledby="cur-explore-title">
         <div class="explore-heading">
           <p class="eyebrow"><i></i> ${esc(S.exploreEyebrow)}</p>
           <h2 id="cur-explore-title">${esc(S.exploreTitle)}</h2>

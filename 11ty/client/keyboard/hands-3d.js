@@ -32,6 +32,9 @@ const DERIVED_FRAMES = {
   'enter-right': { clip: 'home-row-7-right', shift: [-0.03, 0, 0.4] },
 };
 
+// Khớp ngón út (`pinky1`) ở tư thế nghỉ, chiếu lên canvas, tính theo phần bề ngang canvas.
+const REST_PINKY = { left: 0.2051, right: 0.744, top: 0.1443 };
+
 let transparentTexture = null;
 let surfaceTexturePromise = null;
 let highlightTexturePromise = null;
@@ -701,12 +704,38 @@ class SourceTypingHands {
     this.markDirty();
   }
 
+  /**
+   * Khung `.hands` tràn cố định 100px mỗi bên, nên cảnh 3D (tỉ lệ theo bề ngang canvas) chỉ khớp
+   * bàn phím ở đúng một bề rộng. Bàn phím ~760px thì tay to hơn hàng phím ~19%: tay phải trôi ra
+   * ngoài gần một phím và ngón út với Enter chạm vào `\`/Delete. Ở đây đo phím A và `;` thật trên
+   * DOM rồi đặt canvas sao cho khớp ngón út tư thế nghỉ rơi đúng vào hai phím đó.
+   */
+  calibration() {
+    const board = this.container.parentElement;
+    const keyA = board?.querySelector('[data-hardware="KeyA"]')?.getBoundingClientRect();
+    const keySemicolon = board?.querySelector('[data-hardware="Semicolon"]')?.getBoundingClientRect();
+    if (!keyA?.width || !keySemicolon?.width) return null;
+    const box = this.container.getBoundingClientRect();
+    const xA = keyA.left + keyA.width / 2 - box.left;
+    const xSemicolon = keySemicolon.left + keySemicolon.width / 2 - box.left;
+    const width = (xSemicolon - xA) / (REST_PINKY.right - REST_PINKY.left);
+    if (!(width > 0)) return null;
+    // Khớp ngón nằm hơi trên tâm phím (đầu ngón còn vươn thêm), như phép chiếu gốc.
+    const pitch = (xSemicolon - xA) / 9;
+    const y = keyA.top + keyA.height / 2 - box.top - 0.3 * pitch;
+    return { width, left: xA - REST_PINKY.left * width, top: y - REST_PINKY.top * width };
+  }
+
   /** Returns true when the drawing buffer or the projection actually changed. */
   resize(force = false) {
     if (!this.renderer) return false;
-    const width = this.container.clientWidth;
+    const fit = this.calibration();
+    const width = Math.round(fit ? fit.width : this.container.clientWidth);
     const height = width * 0.83333333;
     if (width < 1 || height < 1) return false;
+    const canvas = this.renderer.domElement;
+    canvas.style.marginLeft = fit ? `${fit.left}px` : '';
+    canvas.style.marginTop = fit ? `${fit.top}px` : '';
     if (!force && width === this.lastWidth) return false;
     this.lastWidth = width;
     const horizontal = 1.4 * (width / height);

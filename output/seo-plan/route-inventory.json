@@ -1,0 +1,1406 @@
+{
+  "ar": {
+    "home": {
+      "url": "/ar/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/ar/durus/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/ar/taallam/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/ar/ikhtibar-alkitaba/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/ar/taqaddum/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/ar/alaab-alkitaba/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "bn": {
+    "home": {
+      "url": "/bn/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/bn/path/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/bn/shikhun/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/bn/typing-test/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/bn/agragati/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/bn/typing-games/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "de": {
+    "home": {
+      "url": "/de/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/de/lektionen/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/de/lernen/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/de/tipptest/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/de/fortschritt/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/de/tippspiele/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "en": {
+    "home": {
+      "url": "/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/lessons/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/learn/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/typing-test/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/progress/",
+      "exists": true,
+      "noindex": true
+    },
+    "free": {
+      "url": "/practice/",
+      "exists": true,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "games": {
+      "url": "/typing-games/",
+      "exists": true,
+      "noindex": false
+    },
+    "guide": {
+      "url": "/touch-typing/",
+      "exists": true,
+      "noindex": false
+    },
+    "wpm": {
+      "url": "/how-to-type-faster/",
+      "exists": true,
+      "noindex": false
+    }
+  },
+  "es": {
+    "home": {
+      "url": "/es/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/es/lecciones/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/es/aprender/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/es/test-de-mecanografia/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/es/progreso/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/es/juegos-de-mecanografia/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "fa": {
+    "home": {
+      "url": "/fa/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/fa/darsha/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/fa/amoozesh/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/fa/test-tayp/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/fa/pishraft/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/fa/bazi-tayp/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "fil": {
+    "home": {
+      "url": "/fil/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/fil/aralin/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/fil/matuto/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/fil/typing-test/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/fil/pag-unlad/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/fil/laro-sa-pagta-type/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "fr": {
+    "home": {
+      "url": "/fr/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/fr/lecons/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/fr/apprendre/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/fr/test-de-frappe/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/fr/progres/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/fr/jeux-de-dactylographie/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "he": {
+    "home": {
+      "url": "/he/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/he/shiurim/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/he/lilmod/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/he/mivchan-hakldada/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/he/hitkadmut/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/he/mishakei-hakldada/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "hi": {
+    "home": {
+      "url": "/hi/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/hi/path/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/hi/seekhen/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/hi/typing-test/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/hi/pragati/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/hi/typing-games/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "id": {
+    "home": {
+      "url": "/id/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/id/pelajaran/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/id/belajar/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/id/tes-mengetik/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/id/kemajuan/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/id/game-mengetik/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "it": {
+    "home": {
+      "url": "/it/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/it/lezioni/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/it/imparare/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/it/test-di-battitura/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/it/progressi/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/it/giochi-di-dattilografia/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "ja": {
+    "home": {
+      "url": "/ja/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/ja/renshu/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/ja/manabu/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/ja/typing-test/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/ja/shinchoku/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/ja/typing-games/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "ko": {
+    "home": {
+      "url": "/ko/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/ko/gangui/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/ko/baeugi/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/ko/taja-teseuteu/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/ko/jindo/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/ko/taja-geim/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "ms": {
+    "home": {
+      "url": "/ms/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/ms/pelajaran/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/ms/belajar/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/ms/ujian-menaip/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/ms/kemajuan/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/ms/permainan-menaip/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "nl": {
+    "home": {
+      "url": "/nl/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/nl/lessen/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/nl/leren/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/nl/typetest/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/nl/voortgang/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/nl/typespelletjes/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "pl": {
+    "home": {
+      "url": "/pl/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/pl/lekcje/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/pl/nauka/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/pl/test-pisania/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/pl/postepy/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/pl/gry-do-pisania/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "pt": {
+    "home": {
+      "url": "/pt/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/pt/licoes/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/pt/aprender/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/pt/teste-de-digitacao/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/pt/progresso/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/pt/jogos-de-digitacao/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "ru": {
+    "home": {
+      "url": "/ru/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/ru/uroki/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/ru/uchitsya/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/ru/test-skorosti-pechati/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/ru/progress/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/ru/igry-dlya-pechati/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "sw": {
+    "home": {
+      "url": "/sw/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/sw/masomo/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/sw/jifunze/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/sw/jaribio-la-kuandika/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/sw/maendeleo/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/sw/michezo-ya-kuandika/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "th": {
+    "home": {
+      "url": "/th/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/th/bot-rian/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/th/rian/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/th/thotsop-phim/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/th/khwam-kuebna/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/th/kem-fuek-phim/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "tr": {
+    "home": {
+      "url": "/tr/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/tr/dersler/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/tr/ogren/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/tr/klavye-hiz-testi/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/tr/ilerleme/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/tr/klavye-oyunlari/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "uk": {
+    "home": {
+      "url": "/uk/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/uk/uroky/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/uk/vchytysia/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/uk/test-shvydkosti-druku/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/uk/prohres/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/uk/ihry-dlia-druku/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "ur": {
+    "home": {
+      "url": "/ur/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/ur/asbaq/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/ur/seekhein/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/ur/typing-test/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/ur/taraqqi/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/ur/typing-games/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "vi": {
+    "home": {
+      "url": "/vi/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/bai-hoc/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/hoc/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/kiem-tra-toc-do-go/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/tien-do/",
+      "exists": true,
+      "noindex": true
+    },
+    "free": {
+      "url": "/luyen-tu-do/",
+      "exists": true,
+      "noindex": false
+    },
+    "weak": {
+      "url": "/luyen-phim-yeu/",
+      "exists": true,
+      "noindex": false
+    },
+    "games": {
+      "url": "/tro-choi/",
+      "exists": true,
+      "noindex": false
+    },
+    "guide": {
+      "url": "/cach-go-10-ngon/",
+      "exists": true,
+      "noindex": false
+    },
+    "wpm": {
+      "url": "/cach-tang-wpm/",
+      "exists": true,
+      "noindex": false
+    }
+  },
+  "zh-tw": {
+    "home": {
+      "url": "/zh-tw/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/zh-tw/kecheng/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/zh-tw/xuexi/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/zh-tw/dazi-ceyan/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/zh-tw/jindu/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/zh-tw/dazi-youxi/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  },
+  "zh": {
+    "home": {
+      "url": "/zh/",
+      "exists": true,
+      "noindex": false
+    },
+    "lessons": {
+      "url": "/zh/kecheng/",
+      "exists": true,
+      "noindex": false
+    },
+    "learn": {
+      "url": "/zh/xuexi/",
+      "exists": true,
+      "noindex": true
+    },
+    "test": {
+      "url": "/zh/dazi-ceshi/",
+      "exists": true,
+      "noindex": false
+    },
+    "progress": {
+      "url": "/zh/jindu/",
+      "exists": true,
+      "noindex": true
+    },
+    "games": {
+      "url": "/zh/dazi-youxi/",
+      "exists": true,
+      "noindex": false
+    },
+    "free": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "weak": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "guide": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    },
+    "wpm": {
+      "url": null,
+      "exists": false,
+      "noindex": false
+    }
+  }
+}

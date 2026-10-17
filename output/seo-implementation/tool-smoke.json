@@ -1,0 +1,28 @@
+[
+  {
+    "value": "A good s",
+    "accuracy": "100%",
+    "errors": "0",
+    "reset": true,
+    "url": "/typing-test/"
+  },
+  {
+    "value": "Bà tôi c",
+    "accuracy": "100%",
+    "errors": "0",
+    "reset": true,
+    "url": "/kiem-tra-toc-do-go/"
+  },
+  {
+    "value": "a simple test.",
+    "feedback": "Finished. Pick another passage to keep going.",
+    "accuracy": "100%",
+    "url": "/practice/"
+  },
+  {
+    "value": "a simple test.",
+    "feedback": "Hoan thanh! Hay chon mot doan van moi de luyen tiep.",
+    "accuracy": "100%",
+    "url": "/luyen-tu-do/"
+  }
+]

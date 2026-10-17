@@ -158,3 +158,14 @@
   .lr-stars:empty+.lr-state{grid-column:2 / 4}
   .lesson-row a::after,.lesson-row .lr-link::after{grid-column:4;grid-row:1 / span 2;align-self:center}
 }
+
+/* Reading guidance beneath the default EN/VI lesson catalogue. */
+.course-editorial {
+  max-width: 72ch;
+  margin: 64px auto;
+  line-height: 1.65;
+}
+.course-editorial section + section { margin-top: 40px; }
+.course-editorial h2 { line-height: 1.25; margin-bottom: 20px; }
+.course-editorial h3 { line-height: 1.35; margin-top: 28px; }
+.course-editorial p { margin: 16px 0; }

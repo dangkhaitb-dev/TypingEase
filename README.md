@@ -29,6 +29,8 @@ npm run build:clean    # xoá .generated/ và dist/ rồi build lại
 | Trang viết tay (trang đầu, trang nhà từng ngôn ngữ, player, bài viết, công cụ) | `11ty/site/<đường dẫn URL>/index.html` |
 | Trang sinh từ dữ liệu (lộ trình, player của họ bàn phím, test, trò chơi, tiến độ, pháp lý, chuyển hướng) | `tooling/pages/<loại>.mjs` + chữ trong `content/` |
 | Chữ trang test / trò chơi / pháp lý / tiến độ | `content/typing-test/`, `content/games/`, `content/legal/`, `content/progress/` |
+| Nội dung SEO trang chủ EN/VI | `content/home/editorial.en-vi.mjs` (dữ liệu), `tooling/lib/home-seo-content.mjs` (render) |
+| Nội dung biên tập khóa học EN/VI | `content/roadmaps/editorial.en-vi.mjs` |
 | Cấu hình + chuỗi của trang lộ trình | `content/roadmaps/config.<lang>.mjs` |
 | Dữ liệu chạy ở trình duyệt (`/data/…`: khoá, bài, bàn phím, kho từ, `languages.js`) | `content/data/` |
 | JS trình duyệt (`/script.js`, `/player.js`, `/keyboard/…`, `/i18n/ui.<lang>.js`…) | `11ty/client/` (cùng đường dẫn URL) |

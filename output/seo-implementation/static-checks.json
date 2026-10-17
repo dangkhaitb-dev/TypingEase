@@ -1,0 +1,295 @@
+{
+  "pages": [
+    {
+      "url": "/",
+      "main_words": 1548,
+      "h1": [
+        "Learn to type free"
+      ],
+      "title": "Free typing lessons, practice and tests | TypingEase",
+      "description": "Learn touch typing with a visual keyboard, practise your own text or check your speed and accuracy. Free browser tools with no account needed.",
+      "canonical": [
+        "https://typingease.site/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    },
+    {
+      "url": "/vi/",
+      "main_words": 1817,
+      "h1": [
+        "Học gõ miễn phí"
+      ],
+      "title": "Luyện gõ 10 ngón miễn phí trên trình duyệt | TypingEase",
+      "description": "Luyện gõ 10 ngón với bàn phím hướng dẫn, bài học từng bước và luyện tự do. Kiểm tra WPM, độ chính xác ngay trên trình duyệt, không cần tài khoản.",
+      "canonical": [
+        "https://typingease.site/vi/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    },
+    {
+      "url": "/typing-test/",
+      "main_words": 1580,
+      "h1": [
+        "Typing test: check your speed and accuracy"
+      ],
+      "title": "Typing test: check WPM and accuracy | TypingEase",
+      "description": "Take a free English typing test from 15 seconds to 10 minutes. Check WPM, accuracy and errors, then choose what to practise next.",
+      "canonical": [
+        "https://typingease.site/typing-test/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    },
+    {
+      "url": "/kiem-tra-toc-do-go/",
+      "main_words": 1836,
+      "h1": [
+        "Test tốc độ gõ tiếng Việt"
+      ],
+      "title": "Test tốc độ gõ tiếng Việt: WPM và độ chính xác | TypingEase",
+      "description": "Test tốc độ gõ tiếng Việt từ 15 giây đến 10 phút. Xem WPM, độ chính xác và lỗi, hiểu cách tính rồi chọn bài luyện phù hợp.",
+      "canonical": [
+        "https://typingease.site/kiem-tra-toc-do-go/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    },
+    {
+      "url": "/practice/",
+      "main_words": 1715,
+      "h1": [
+        "Typing practice: choose what you need to work on"
+      ],
+      "title": "Typing practice with your own text | TypingEase",
+      "description": "Choose a sample or paste your own text for typing practice. Follow the keyboard guide, check accuracy and correct-position WPM, and review what needs work.",
+      "canonical": [
+        "https://typingease.site/practice/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    },
+    {
+      "url": "/luyen-tu-do/",
+      "main_words": 1912,
+      "h1": [
+        "Luyện gõ bàn phím với đoạn văn bạn chọn"
+      ],
+      "title": "Luyện gõ bàn phím với đoạn văn bạn chọn | TypingEase",
+      "description": "Luyện gõ bàn phím bằng đoạn mẫu không dấu hoặc văn bản bạn chọn. Xem WPM, độ chính xác và gợi ý phím để tập từng thao tác cụ thể.",
+      "canonical": [
+        "https://typingease.site/luyen-tu-do/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    },
+    {
+      "url": "/lessons/",
+      "main_words": 4294,
+      "h1": [
+        "Learn touch typing with a step-by-step typing tutor"
+      ],
+      "title": "Learn touch typing: a free 156-lesson course | TypingEase",
+      "description": "Learn touch typing in 156 free lessons over 12 units, from the home row to numbers, symbols and full paragraphs. Every lesson saves your progress.",
+      "canonical": [
+        "https://typingease.site/lessons/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    },
+    {
+      "url": "/bai-hoc/",
+      "main_words": 5380,
+      "h1": [
+        "Học gõ 10 ngón theo từng bài"
+      ],
+      "title": "Lộ trình luyện gõ 10 ngón · 173 bài | TypingEase",
+      "description": "Lộ trình luyện gõ 10 ngón đầy đủ: 12 unit, 173 bài từ hàng phím cơ sở đến tiếng Việt có dấu, số và ký hiệu. Xem tiến độ từng bài và học tiếp ngay.",
+      "canonical": [
+        "https://typingease.site/bai-hoc/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    },
+    {
+      "url": "/touch-typing/",
+      "main_words": 1718,
+      "h1": [
+        "Touch typing: finger placement and practice without looking down"
+      ],
+      "title": "Touch typing: finger placement and practice | TypingEase",
+      "description": "Learn touch typing on QWERTY: find the home keys, practise a small movement, handle capitals and choose a lesson for the part that slows you down.",
+      "canonical": [
+        "https://typingease.site/touch-typing/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    },
+    {
+      "url": "/cach-go-10-ngon/",
+      "main_words": 1673,
+      "h1": [
+        "Cách gõ 10 ngón: đặt tay và tập mà không nhìn bàn phím"
+      ],
+      "title": "Cách gõ 10 ngón: đặt tay và thực hành | TypingEase",
+      "description": "Hướng dẫn gõ 10 ngón trên QWERTY: đặt tay, tập một chuyển động nhỏ, xử lý lỗi và chọn bài thực hành theo chỗ bạn còn phải nhìn xuống.",
+      "canonical": [
+        "https://typingease.site/cach-go-10-ngon/"
+      ],
+      "executable_scripts_unchanged": true,
+      "removed_ids": [],
+      "duplicate_ids": [],
+      "broken_local_links": [],
+      "invalid_jsonld": []
+    }
+  ],
+  "changed_html": [
+    "/",
+    "/vi/",
+    "/dvorak/",
+    "/typing-test/",
+    "/kiem-tra-toc-do-go/",
+    "/colemak/",
+    "/touch-typing/",
+    "/colemak-dh/",
+    "/bai-hoc/",
+    "/lessons/",
+    "/cach-go-10-ngon/",
+    "/luyen-tu-do/",
+    "/practice/",
+    "/workman/",
+    "/tr/f/",
+    "/tr/dersler/",
+    "/th/pattachote/",
+    "/th/bot-rian/",
+    "/fa/darsha/",
+    "/fa/windows/",
+    "/es/lecciones/",
+    "/es/latinoamerica/",
+    "/es/sin-teclas-muertas/",
+    "/fr/bepo/",
+    "/fr/lecons/",
+    "/fr/suisse/",
+    "/fr/canadien/",
+    "/id/pelajaran/",
+    "/ko/gangui/",
+    "/de/lektionen/",
+    "/de/neo/",
+    "/de/schweiz/",
+    "/hi/path/",
+    "/hi/bolnagri/",
+    "/fil/aralin/",
+    "/bn/path/",
+    "/bn/probhat/",
+    "/nl/mac/",
+    "/nl/lessen/",
+    "/ar/azerty/",
+    "/ar/durus/",
+    "/zh-tw/kecheng/",
+    "/uk/fonetyka/",
+    "/uk/uroky/",
+    "/zh/kecheng/",
+    "/pt/licoes/",
+    "/pt/sem-teclas-mortas/",
+    "/ru/uroki/",
+    "/ru/fonetika/",
+    "/it/dvorak/",
+    "/it/mac/",
+    "/it/lezioni/",
+    "/ja/us/",
+    "/ja/renshu/",
+    "/ms/pelajaran/",
+    "/he/si1452/",
+    "/he/shiurim/",
+    "/he/fonetit/",
+    "/pl/lekcje/",
+    "/pl/qwertz/",
+    "/sw/masomo/",
+    "/ur/crulp/",
+    "/ur/asbaq/"
+  ],
+  "changed_outside_pilot": [
+    "/dvorak/",
+    "/colemak/",
+    "/colemak-dh/",
+    "/workman/",
+    "/tr/f/",
+    "/tr/dersler/",
+    "/th/pattachote/",
+    "/th/bot-rian/",
+    "/fa/darsha/",
+    "/fa/windows/",
+    "/es/lecciones/",
+    "/es/latinoamerica/",
+    "/es/sin-teclas-muertas/",
+    "/fr/bepo/",
+    "/fr/lecons/",
+    "/fr/suisse/",
+    "/fr/canadien/",
+    "/id/pelajaran/",
+    "/ko/gangui/",
+    "/de/lektionen/",
+    "/de/neo/",
+    "/de/schweiz/",
+    "/hi/path/",
+    "/hi/bolnagri/",
+    "/fil/aralin/",
+    "/bn/path/",
+    "/bn/probhat/",
+    "/nl/mac/",
+    "/nl/lessen/",
+    "/ar/azerty/",
+    "/ar/durus/",
+    "/zh-tw/kecheng/",
+    "/uk/fonetyka/",
+    "/uk/uroky/",
+    "/zh/kecheng/",
+    "/pt/licoes/",
+    "/pt/sem-teclas-mortas/",
+    "/ru/uroki/",
+    "/ru/fonetika/",
+    "/it/dvorak/",
+    "/it/mac/",
+    "/it/lezioni/",
+    "/ja/us/",
+    "/ja/renshu/",
+    "/ms/pelajaran/",
+    "/he/si1452/",
+    "/he/shiurim/",
+    "/he/fonetit/",
+    "/pl/lekcje/",
+    "/pl/qwertz/",
+    "/sw/masomo/",
+    "/ur/crulp/",
+    "/ur/asbaq/"
+  ],
+  "issue_count": 0
+}

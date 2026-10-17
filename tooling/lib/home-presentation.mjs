@@ -5,6 +5,7 @@ import { pathToFileURL } from 'node:url';
 import paths from './paths.cjs';
 import { productSections, productFooter, productHero } from './product-landing.mjs';
 import { COPY } from './product-landing.mjs';
+import { homeSeoContent } from './home-seo-content.mjs';
 
 const routesByLanguage = new Map();
 for (const file of fs.readdirSync(paths.contentFile('roadmaps'))) {
@@ -54,7 +55,11 @@ export function homePresentation(html) {
   html = html.replace(/<section class="hero"[\s\S]*?<\/section>/,hero);
   const start = html.indexOf('</section>',html.indexOf('product-home-hero'))+10;
   const end = html.indexOf('</main>',start);
-  const sections = adapt(productSections(copyLanguage)).replace('class="product-content"',`class="product-content" dir="${rtl?'rtl':'ltr'}"`).replace(`data-product-lang="${copyLanguage}"`,`data-product-lang="${locale}"`).replace(` lang="${copyLanguage}"`,` lang="${declaredLocale}"`);
+  const homepageSections = productSections(copyLanguage).replace(
+    '<section class="product-section product-faq">',
+    homeSeoContent(locale) + '<section class="product-section product-faq">'
+  );
+  const sections = adapt(homepageSections).replace('class="product-content"',`class="product-content" dir="${rtl?'rtl':'ltr'}"`).replace(`data-product-lang="${copyLanguage}"`,`data-product-lang="${locale}"`).replace(` lang="${copyLanguage}"`,` lang="${declaredLocale}"`);
   html = html.slice(0,start)+sections+html.slice(end);
   html = html.replace(/<footer[\s\S]*?<\/footer>/,old => adapt(productFooter(copyLanguage,old)).replace('<footer ',`<footer lang="${declaredLocale}" dir="${rtl?'rtl':'ltr'}" `));
   html = html.replace(/<script src="\/(?:home-demo|landing|landing-i18n)\.js"[^>]*><\/script>/g,'');
