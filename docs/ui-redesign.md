@@ -47,3 +47,5 @@ Language homepages share the EN product presentation (VI keeps its existing copy
 Latest correction: homepage header is absolute, so it scrolls away with the page. Hero photographs now use seven source Pexels images showing actual hands typing; sources and licenses are recorded in docs/hero-typing-sources.json.
 
 Hero photo selection retains five original context-rich stock photographs (learner, student, team, coworking, creative) and two new typing close-ups (light and overhead), preserving varied people, colors and framing.
+
+Final hero mix keeps four original photos (learner, team, coworking, creative) and three typing photos (light, overhead, outdoors); the blue-wall denim portrait is removed from the hero. Header logo44px desktop/38px mobile; hero logo88px desktop/48px mobile (40px at320px screens).
