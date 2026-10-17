@@ -77,7 +77,7 @@ window.TypingEaseUI = {
     noCurriculum: 'Hindi na-load ang talaan ng kurso (<code>data/curriculum.fil.js</code>).',
     fixtureNote: 'Gumagamit ng halimbawang laman mula sa <code>hoc/_fixture/</code> — wala pa sa <code>data/lessons/</code> ang totoong aralin.',
     screenOf: 'Screen {n} / {total}',
-    newKey: 'BAGONG KEY',
+    newKey: 'Bagong key',
     pressToContinue: 'Pindutin ang <b>{key}</b> para magpatuloy',
     enterToContinue: 'Pindutin ang <b>Enter</b> para magpatuloy',
     found: 'Iyan nga.',
@@ -99,7 +99,7 @@ window.TypingEaseUI = {
     redoScreen: 'Ulitin ang screen na ito',
     redoScreenAdvised: 'Ulitin ang screen na ito (inirerekomenda)',
     skipScreen: 'Laktawan',
-    lessonDone: 'TAPOS',
+    lessonDone: 'Tapos',
     learned: 'Kilala mo na ang {count} key:',
     statWpm: 'Bilis',
     statAccuracy: 'Katumpakan',
@@ -273,5 +273,8 @@ window.TypingEaseUI = {
     'clean-40': { title: 'Malinis na 40 WPM', hint: 'Isang ikot sa 40 WPM na may 95% katumpakan o higit pa.' },
     'clean-60': { title: 'Malinis na 60 WPM', hint: 'Isang ikot sa 60 WPM na may 95% katumpakan o higit pa.' },
     'typed-5000': { title: '5,000 key', hint: 'Magtipa ng limang libong pindot sa kabuuan.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'Babala!', body: 'Ang iyong Caps Lock ay naka-on', close: 'Isara ang Caps Lock warning' }
 };

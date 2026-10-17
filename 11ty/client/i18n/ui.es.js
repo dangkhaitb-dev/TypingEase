@@ -83,7 +83,7 @@ window.TypingEaseUI = {
     noCurriculum: 'No se ha cargado el índice del curso (<code>data/curriculum.es.js</code>).',
     fixtureNote: 'Funcionando con el contenido de ejemplo de <code>hoc/_fixture/</code> — la lección real aún no está en <code>data/lessons/</code>.',
     screenOf: 'Pantalla {n} / {total}',
-    newKey: 'TECLA NUEVA',
+    newKey: 'Tecla nueva',
     pressToContinue: 'Pulsa <b>{key}</b> para continuar',
     enterToContinue: 'Pulsa <b>Enter</b> para continuar',
     found: 'Esa es.',
@@ -105,7 +105,7 @@ window.TypingEaseUI = {
     redoScreen: 'Repetir esta pantalla',
     redoScreenAdvised: 'Repetir esta pantalla (recomendado)',
     skipScreen: 'Saltar',
-    lessonDone: 'COMPLETADA',
+    lessonDone: 'Completada',
     learned: 'Ya conoces {count} teclas:',
     statWpm: 'Velocidad',
     statAccuracy: 'Precisión',
@@ -280,5 +280,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 PPM limpias', hint: 'Una vuelta a 40 PPM con un 95% de precisión o más.' },
     'clean-60': { title: '60 PPM limpias', hint: 'Una vuelta a 60 PPM con un 95% de precisión o más.' },
     'typed-5000': { title: '5.000 teclas', hint: 'Escribe cinco mil pulsaciones en total.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: '¡Advertencia!', body: 'Tu Mayús está activado', close: 'Cerrar advertencia de Mayús' }
 };

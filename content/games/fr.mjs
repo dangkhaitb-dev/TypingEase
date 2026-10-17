@@ -1,6 +1,7 @@
 /* content/games/fr.mjs — page des jeux en français (tooling/pages/games.mjs). Les mots viennent de
  * data/words/fr.js, la même banque que le cours /fr/ (AZERTY : é è à ç ù ont leur propre touche). */
 export default {
+  worlds: {"rain": "Jardin des lucioles", "race": "Circuit au crépuscule", "keys": "Station spatiale"},
   slug: 'jeux-de-dactylographie',
   title: 'Jeux de dactylographie gratuits sur ton clavier | TypingEase',
   description: 'Trois jeux de dactylographie gratuits : Pluie de mots, Course fantôme et Chasse aux touches. Entraîne-toi sur ton vrai clavier, dans le navigateur.',

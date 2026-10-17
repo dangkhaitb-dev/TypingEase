@@ -32,7 +32,12 @@
   nav.addEventListener('click', event => { if (event.target.closest('a')) set(false); });
   document.addEventListener('click', event => { if (!bar.contains(event.target)) set(false); });
   document.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && bar.classList.contains('is-menu-open')) { set(false); button.focus(); }
-  });
+    if (event.key === 'Escape' && bar.classList.contains('is-menu-open')) {
+      event.preventDefault();
+      event.stopImmediatePropagation(); // Dismiss navigation without also pausing the lesson.
+      set(false);
+      button.focus();
+    }
+  }, true);
   window.matchMedia('(min-width: 901px)').addEventListener('change', event => { if (event.matches) set(false); });
 })();

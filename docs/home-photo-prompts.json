@@ -1,0 +1,18 @@
+{
+  "generator": "Built-in image_gen",
+  "purpose": "AI-generated illustrative editorial photographs; not customer portraits or testimonials.",
+  "prompts": [
+    {
+      "id": "learner",
+      "prompt": "Use case: photorealistic-natural. Asset: a photographic card for TypingEase, a minimal premium typing-learning website. Create a single natural, believable editorial photograph, landscape 4:3 framing. Person framed waist-up, face and keyboard both clearly visible, comfortable typing posture. Warm soft daylight, realistic skin texture, subtle film grain, gentle shallow depth of field, subdued neutral cream and sage-green palette. Candid and quietly happy, not posed stock-photo grin. No text, letters overlaid, watermarks, logos, UI, borders, montage or illustration. Keep face in upper middle and keyboard in bottom third, suitable for a centered crop. Subject: Vietnamese woman in her mid twenties with a short dark bob, cream cotton shirt, sitting at a bright oak desk by a large apartment window, gently smiling while concentrating on typing on a slim silver laptop. A softly blurred green plant in background. Camera slightly above laptop height, three-quarter front view. Natural anatomically correct hands resting on keyboard."
+    },
+    {
+      "id": "student",
+      "prompt": "Use case: photorealistic-natural. Asset: a photographic card for TypingEase, a minimal premium typing-learning website. Create a single natural, believable editorial photograph, landscape 4:3 framing. Person framed waist-up, face and keyboard both clearly visible, comfortable typing posture. Warm soft daylight, realistic skin texture, subtle film grain, gentle shallow depth of field, subdued neutral cream and sage-green palette. Candid and quietly happy, not posed stock-photo grin. No text, letters overlaid, watermarks, logos, UI, borders, montage or illustration. Keep face in upper middle and keyboard in bottom third, suitable for a centered crop. Subject: Vietnamese male university student in his early twenties with round thin glasses and navy cotton overshirt, studying and typing on a laptop in a bright quiet library. Blurred books and pale wooden shelves behind him. Three-quarter front camera angle, relaxed focused expression, softly lit face, natural anatomically correct hands."
+    },
+    {
+      "id": "creative",
+      "prompt": "Use case: photorealistic-natural. Asset: a photographic card for TypingEase, a minimal premium typing-learning website. Create a single natural, believable editorial photograph, landscape 4:3 framing. Person framed waist-up, face and keyboard both clearly visible, comfortable typing posture. Warm soft daylight, realistic skin texture, subtle film grain, gentle shallow depth of field, subdued neutral cream and sage-green palette. Candid and quietly happy, not posed stock-photo grin. No text, letters overlaid, watermarks, logos, UI, borders, montage or illustration. Keep face in upper middle and keyboard in bottom third, suitable for a centered crop. Subject: a woman in her early thirties with dark wavy shoulder-length hair, warm medium skin and an olive green linen shirt, working at a minimalist home studio desk on a slim silver laptop. Relaxed thoughtful expression, daylight through a curtain, softly blurred beige wall and pinboard behind her. Three-quarter front view, natural anatomically correct hands on keyboard."
+    }
+  ]
+}

@@ -280,5 +280,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 كلمة نظيفة', hint: 'جولة بسرعة 40 كلمة في الدقيقة ودقة 95% أو أكثر.' },
     'clean-60': { title: '60 كلمة نظيفة', hint: 'جولة بسرعة 60 كلمة في الدقيقة ودقة 95% أو أكثر.' },
     'typed-5000': { title: '5000 ضغطة', hint: 'اكتب خمسة آلاف ضغطة في المجموع.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'تحذير!', body: 'Caps Lock لديك قيد التشغيل', close: 'إغلاق تحذير Caps Lock' }
 };

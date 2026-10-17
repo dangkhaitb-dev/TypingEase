@@ -80,17 +80,37 @@
   /* ---------- chọn trò ---------- */
   const tabs = [...doc.querySelectorAll('[data-game-tab]')];
   const panels = [...doc.querySelectorAll('[data-game-panel]')];
-  let active = null;
-  function show(mode, focus = true) {
+  let active = null, lastGame = 'rain';
+  function show(mode, focus = true, navigate = true) {
+    mode = ['rain', 'race', 'keys'].includes(mode) ? mode : null;
+    const entering = mode && mode !== active;
     if (active && active !== mode) STOP[active]?.();
+    if (active) lastGame = active;
     active = mode;
-    tabs.forEach(tab => { const on = tab.dataset.gameTab === mode; tab.classList.toggle('selected', on); tab.setAttribute('aria-selected', String(on)); tab.tabIndex = on ? 0 : -1; });
+    $('.games-main').classList.toggle('is-playing', Boolean(mode));
+    $('.games-main').classList.toggle('is-keys', mode === 'keys');
+    $('.game-tabs').hidden = Boolean(mode);
+    $('.game-play-nav').hidden = !mode;
     panels.forEach(panel => { panel.hidden = panel.dataset.gamePanel !== mode; });
-    if (mode === 'keys') mountKeyboard();
-    try { global.history.replaceState(null, '', `#${mode}`); } catch { /* file:// */ }
-    if (focus) doc.querySelector(`[data-game-panel="${mode}"] .game-start`)?.focus();
+    if (mode) $('#game-play-title').textContent = doc.querySelector(`[data-game-tab="${mode}"] b`).textContent;
+    if (entering) {
+      if (mode === 'rain') rainStart();
+      if (mode === 'race') raceStart();
+      if (mode === 'keys') huntStart();
+    }
+    if (navigate) {
+      try { global.history.pushState(null, '', `${global.location.pathname}${global.location.search}${mode ? '#' + mode : ''}`); } catch { /* file:// */ }
+    }
+    if (focus) {
+      const target = mode === 'rain' ? rain.input : mode === 'race' ? race.input
+        : mode === 'keys' ? doc.querySelector('[data-act="keys-start"]')
+        : doc.querySelector(`[data-game-tab="${lastGame}"]`);
+      target?.focus({ preventScroll: true });
+      global.scrollTo({ top: 0, behavior: 'instant' });
+    }
   }
   tabs.forEach(tab => tab.addEventListener('click', () => show(tab.dataset.gameTab)));
+  global.addEventListener('hashchange', () => show(global.location.hash.slice(1), true, false));
   const STOP = {};
 
   /* ===================================================================== Mưa chữ */
@@ -104,6 +124,7 @@
     score: $('#rain-score'), level: $('#rain-level'), lives: $('#rain-lives'), best: $('#rain-best'),
     running: false, drops: [], raf: 0
   };
+  const rainWelcome = rain.overlay?.innerHTML;
   function rainPool(level) {
     const max = DIFFICULTY[level].maxLength;
     const pool = WORDS.filter(word => [...word].length >= 2 && [...word].length <= max);
@@ -114,17 +135,20 @@
     rain.level.textContent = String(rain.stage);
     rain.lives.textContent = '♥'.repeat(Math.max(0, rain.life)) + '♡'.repeat(Math.max(0, 3 - rain.life));
     rain.best.textContent = number(best.rain || 0);
+    $('#rain-progress-fill')?.style.setProperty('width', `${(rain.cleared % 8) / 8 * 100}%`);
   }
   function rainStart() {
     rainStop(false);
     const level = $('#rain-difficulty').value in DIFFICULTY ? $('#rain-difficulty').value : 'normal';
     Object.assign(rain, { level, pool: rainPool(level), drops: [], points: 0, stage: 1, life: 3, cleared: 0, chars: 0, submits: 0, hits: 0,
       speed: DIFFICULTY[level].speed, spawnEvery: DIFFICULTY[level].spawn, nextSpawn: 0, last: 0, startedAt: performance.now(), running: true });
-    rain.arena.querySelectorAll('.drop').forEach(node => node.remove());
+    rain.arena.querySelectorAll('.drop, .rain-particle, .rain-points').forEach(node => node.remove());
     rain.overlay.hidden = true;
+    $('.rain-companion')?.classList.remove('is-happy', 'is-sad');
+
     rain.input.disabled = false;
     rain.input.value = '';
-    rain.input.focus();
+    rain.input.focus({ preventScroll: true });
     rainHud();
     rain.raf = requestAnimationFrame(rainTick);
   }
@@ -134,6 +158,7 @@
     for (let i = 0; i < 6 && used.has(word); i += 1) word = pick(rain.pool);
     const el = doc.createElement('span');
     el.className = 'drop';
+    el.dataset.tone = String(Math.floor(Math.random() * 3));
     el.textContent = word;
     rain.arena.append(el);
     const width = rain.arena.clientWidth;
@@ -147,10 +172,11 @@
     const dt = rain.last ? Math.min(0.05, (now - rain.last) / 1000) : 0;
     rain.last = now;
     if (now >= rain.nextSpawn) { rainSpawn(); rain.nextSpawn = now + rain.spawnEvery; }
-    const floor = rain.arena.clientHeight - 30;
+    const floor = rain.arena.clientHeight - 135;
     for (const drop of [...rain.drops]) {
       drop.y += rain.speed * dt;
       drop.el.style.transform = `translate(${drop.x}px, ${drop.y}px)`;
+      drop.el.classList.toggle('is-danger', drop.y > floor - 85);
       if (drop.y >= floor) {
         rainRemove(drop, 'missed');
         rain.life -= 1;
@@ -163,8 +189,37 @@
   }
   function rainRemove(drop, how) {
     rain.drops = rain.drops.filter(item => item !== drop);
+    rainFeedback(drop, how);
     drop.el.classList.add(how === 'missed' ? 'is-missed' : 'is-cleared');
     setTimeout(() => drop.el.remove(), 260);
+  }
+  function rainFeedback(drop, how) {
+    const hit = how !== 'missed';
+    const companion = $('.rain-companion');
+    companion.classList.remove('is-happy', 'is-sad');
+    void companion.offsetWidth;
+    companion.classList.add(hit ? 'is-happy' : 'is-sad');
+    const x = drop.x + drop.el.offsetWidth / 2, y = drop.y + 16;
+    if (!global.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      for (let i = 0; i < 9; i += 1) {
+        const spark = doc.createElement('i');
+        spark.className = 'rain-particle';
+        spark.setAttribute('aria-hidden', 'true');
+        const angle = Math.PI * 2 * i / 9;
+        spark.style.cssText = `left:${x}px;top:${y}px;--dx:${Math.cos(angle) * 55}px;--dy:${Math.sin(angle) * 45}px;--spark:${hit ? ['#e6ffab', '#a9e8df', '#e9c9ff'][i % 3] : '#f2aca5'}`;
+        rain.arena.append(spark);
+        setTimeout(() => spark.remove(), 700);
+      }
+    }
+    if (hit) {
+      const label = doc.createElement('span');
+      label.className = 'rain-points';
+      label.setAttribute('aria-hidden', 'true');
+      label.textContent = `+${[...drop.word].length * rain.stage}`;
+      label.style.cssText = `left:${x}px;top:${y}px`;
+      rain.arena.append(label);
+      setTimeout(() => label.remove(), 900);
+    }
   }
   function rainMark() {
     const typed = rain.input.value.trim();
@@ -205,6 +260,7 @@
   function rainStop(hideOverlay = true) {
     rain.running = false;
     cancelAnimationFrame(rain.raf);
+    $('#rain-difficulty').disabled = false;
     if (hideOverlay) rain.input.disabled = true;
   }
   function rainEnd() {
@@ -228,7 +284,8 @@
   // Điện thoại: bàn phím ảo thường không gửi keydown có `key`, chỉ gửi input có dấu cách.
   rain.input?.addEventListener('input', () => { if (/\s$/.test(rain.input.value)) rainSubmit(); else rainMark(); });
   if (rain.input) bindPositional(rain.input, () => (/\s$/.test(rain.input.value) ? rainSubmit() : rainMark()));
-  STOP.rain = () => { if (rain.running) { rainStop(); rain.overlay.hidden = false; } };
+  $('#rain-difficulty')?.addEventListener('change', () => { if (active === 'rain') rainStart(); });
+  STOP.rain = () => { if (rain.running) { rainStop(); rain.overlay.innerHTML = rainWelcome; rain.overlay.hidden = false; } };
 
   /* ===================================================================== Đua với bóng */
   const race = {
@@ -270,11 +327,12 @@
     race.input.disabled = false;
     race.input.value = '';
     race.result.hidden = true;
+    $('.rally-world').classList.remove('is-finished');
     race.status.textContent = fill(T.raceReady, { wpm: race.ghostWpm });
     race.you.style.setProperty('--p', '0');
     race.ghost.style.setProperty('--p', '0');
     raceRender();
-    race.input.focus();
+    race.input.focus({ preventScroll: true });
   }
   function raceTick(now) {
     if (!race.running || !race.startedAt) return;
@@ -287,7 +345,7 @@
   }
   function raceInput() {
     if (!race.running) return;
-    if (!race.startedAt && race.input.value) { race.startedAt = performance.now(); race.status.textContent = T.raceGo; race.raf = requestAnimationFrame(raceTick); }
+    if (!race.startedAt && race.input.value) { race.startedAt = performance.now(); race.status.textContent = T.raceGo; $('.rally-world').classList.add('is-racing'); race.raf = requestAnimationFrame(raceTick); }
     const typed = race.input.value;
     if (typed.length > (race.lastLength || 0)) {
       race.keystrokes += 1;
@@ -300,6 +358,8 @@
     const done = correctPrefix();
     race.you.style.setProperty('--p', (done / race.text.length).toFixed(4));
     raceRender();
+    const current = race.prompt.querySelector('.current');
+    if (current) race.prompt.scrollTop = Math.max(0, current.offsetTop - 24);
     if (done >= race.text.length) raceEnd();
   }
   function raceEnd() {
@@ -307,6 +367,8 @@
     race.running = false;
     cancelAnimationFrame(race.raf);
     race.input.disabled = true;
+    $('.rally-world').classList.remove('is-racing');
+    $('.rally-world').classList.add('is-finished');
     const minutes = Math.max(1 / 60, (now - race.startedAt) / 60000);
     const wpm = Math.round(race.text.length / 5 / minutes);
     const accuracy = race.keystrokes ? Math.round((race.keystrokes - race.wrong) / race.keystrokes * 100) : 100;
@@ -322,7 +384,7 @@
     race.result.hidden = false;
     race.result.querySelector('button').focus();
   }
-  function raceStop() { race.running = false; cancelAnimationFrame(race.raf); race.lastLength = 0; }
+  function raceStop() { $('.rally-world').classList.remove('is-racing'); race.running = false; cancelAnimationFrame(race.raf); race.lastLength = 0; }
   race.input?.addEventListener('input', raceInput);
   race.input?.addEventListener('keydown', event => { if (event.key === 'Enter') event.preventDefault(); });
   if (race.input) bindPositional(race.input, raceInput);
@@ -379,13 +441,19 @@
     hunt.hits.textContent = number(hunt.score || 0);
     hunt.streak.textContent = number(hunt.run || 0);
     hunt.best.textContent = number(best.keys || 0);
+    $('#keys-energy').style.width = `${Math.max(0, hunt.left) / ROUND * 100}%`;
+    $('.orbit-world').classList.toggle('is-urgent', hunt.left <= 10);
   }
   async function huntStart() {
     await mountKeyboard();
+    if (active !== 'keys') return;
     huntLetters();
     if (!hunt.letters?.length) return;
     Object.assign(hunt, { running: true, score: 0, run: 0, bestRun: 0, misses: 0, left: ROUND, endsAt: performance.now() + ROUND * 1000 });
     hunt.result.hidden = true;
+    $('#panel-keys > .game-bar [data-act="keys-start"]').innerHTML = `${esc(T.again)} <span aria-hidden="true">↻</span>`;
+    $('.orbit-world').classList.remove('is-good', 'is-bad', 'is-urgent');
+    $('.orbit-world').classList.add('is-playing');
     huntNext();
     huntHud();
     clearInterval(hunt.timer);
@@ -397,6 +465,7 @@
   }
   function huntEnd() {
     hunt.running = false;
+    $('.orbit-world').classList.remove('is-playing');
     clearInterval(hunt.timer);
     if (hunt.board) global.NTKeyboard.setKeyboardState(hunt.board, '');
     hunt.target.textContent = '';
@@ -412,6 +481,13 @@
     hunt.result.hidden = false;
     hunt.result.querySelector('button').focus();
   }
+  function huntFeedback(ok) {
+    const world = $('.orbit-world');
+    world.classList.remove('is-good', 'is-bad');
+    void world.offsetWidth;
+    world.classList.add(ok ? 'is-good' : 'is-bad');
+    $('#keys-feedback').textContent = hunt.run >= 2 ? `+1 · ${hunt.run + 1}×` : '+1';
+  }
   doc.addEventListener('keydown', event => {
     if (active !== 'keys' || !hunt.running || event.ctrlKey || event.metaKey || event.altKey) return;
     if (event.key === 'Tab' || event.key === 'Escape') return;
@@ -419,11 +495,13 @@
     if (!character) return;
     event.preventDefault();
     if (character === hunt.current || character.toLowerCase() === String(hunt.current).toLowerCase()) {
+      huntFeedback(true);
       hunt.score += 1; hunt.run += 1; hunt.bestRun = Math.max(hunt.bestRun, hunt.run);
       global.NTKeyboard?.pressKey(hunt.board, character);
       sound?.click('ok', character);
       huntNext();
     } else {
+      huntFeedback(false);
       hunt.misses += 1; hunt.run = 0;
       global.NTKeyboard?.highlightErrorKey(hunt.board, character);
       sound?.click('bad');
@@ -432,21 +510,32 @@
   });
   STOP.keys = () => { if (hunt.running) huntEnd(); };
 
+  // Escape exits the immersive game unless a dialog owns keyboard focus.
+  doc.addEventListener('keydown', event => {
+    if (!active || event.key !== 'Escape' || event.defaultPrevented || composing(event)) return;
+    const dialogOpen = [...doc.querySelectorAll('dialog[open], [role="dialog"], [aria-modal="true"]')]
+      .some(node => node.getClientRects().length && getComputedStyle(node).visibility !== 'hidden');
+    if (dialogOpen) return;
+    event.preventDefault();
+    show(null);
+  });
+
   /* ---------- nút chung ---------- */
   doc.addEventListener('click', event => {
     const act = event.target.closest('[data-act]')?.dataset.act;
+    if (act === 'games-back') show(null);
     if (act === 'rain-start') rainStart();
     if (act === 'race-start') raceStart();
     if (act === 'keys-start') huntStart();
   });
-  race.pace?.addEventListener('change', () => { if (!race.startedAt) raceStart(); });
+  race.pace?.addEventListener('change', () => { if (active === 'race') raceStart(); });
   function esc(value) { return String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;'); }
 
   rain.best && (rain.best.textContent = number(best.rain || 0));
   hunt.best && (hunt.best.textContent = number(best.keys || 0));
   if (race.pace) paceOptions();
   const fromHash = String(global.location.hash || '').slice(1);
-  show(['rain', 'race', 'keys'].includes(fromHash) ? fromHash : 'rain', false);
   if (race.prompt) { race.text = raceText(); raceRender(); race.input.disabled = true; race.status.textContent = fill(T.raceReady, { wpm: raceGhostWpm() }); }
+  show(fromHash, false, false);
   global.TypingEaseGames = { rain, race, hunt, show };
 })(window);

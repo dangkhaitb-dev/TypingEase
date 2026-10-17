@@ -81,11 +81,19 @@
            Hero cố tình ngắn để lộ trình bài học lọt ngay màn hình đầu. -->
       <section class="hero" id="luyen-go">
         <div class="hero-copy">
-          <h1>Luyện gõ 10 ngón<br /><em>online miễn phí.</em></h1>
-          <p class="intro">Luyện gõ 10 ngón online miễn phí — bắt đầu ngay, không cần đăng ký.</p>
+          <h1>Luyện gõ 10 ngón.<br /><em>Nhẹ nhàng mỗi ngày.</em></h1>
+          <p class="intro">Từ những phím đầu tiên đến từng dòng trôi chảy.<br />Bắt đầu theo nhịp của bạn, hoàn toàn miễn phí.</p>
           <div class="hero-start" id="hero-start">
-            <a class="primary-button hero-go" id="hero-go" href="/hoc/">▶ Bắt đầu Bài 1 · Hàng phím cơ sở</a>
-            <p class="hero-note">Miễn phí, không cần đăng ký · 43 bài từ hàng phím cơ sở đến dấu tiếng Việt.</p>
+            <div class="home-composer" id="home-composer">
+              <div class="composer-heading"><span><i></i> Một phút cho đôi tay</span><button id="demo-reset" type="button" aria-label="Gõ lại đoạn mẫu" title="Gõ lại"><svg class="ui-symbol" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 10a8 8 0 1 0-1 8M20 4v6h-6"/></svg></button></div>
+              <p class="demo-target" id="demo-target">hom nay toi se go cham hon, deu hon va chinh xac hon.</p>
+              <label class="demo-label" for="demo-input">Gõ lại dòng trên để khởi động</label>
+              <textarea id="demo-input" rows="2" maxlength="160" spellcheck="false" autocapitalize="off" autocomplete="off" placeholder="Chạm vào đây và bắt đầu gõ…" aria-describedby="demo-target"></textarea>
+              <div class="composer-bar"><span class="composer-mode"><svg class="ui-symbol" viewBox="0 0 24 24" aria-hidden="true"><rect x="2" y="5" width="20" height="14" rx="3"/><path d="M6 9h.01M10 9h.01M14 9h.01M18 9h.01M7 15h10"/></svg> Gõ không dấu</span><output id="demo-count" for="demo-input">0 ký tự</output><a class="primary-button hero-go" id="hero-go" href="/hoc/">Bắt đầu bài học <span aria-hidden="true">↗</span></a></div>
+              <p class="demo-feedback" id="demo-feedback" role="status"></p>
+            </div>
+            <div class="demo-samples" role="group" aria-label="Chọn đoạn gõ thử"><span>Thử nhanh</span><button type="button" data-sample="home" aria-pressed="false">Hàng cơ sở</button><button type="button" data-sample="words" aria-pressed="false">Từ đơn</button><button type="button" data-sample="sentence" aria-pressed="true">Câu ngắn</button></div>
+            <p class="hero-note">Không cần tài khoản. Chỉ cần một chút thời gian mỗi ngày.</p>
           </div>
           <div class="continue-card" id="continue-card" hidden>
             <div class="continue-top"><p class="continue-kicker" id="continue-kicker">TIẾP TỤC</p><span class="continue-streak" id="continue-streak" hidden></span></div>
@@ -108,7 +116,8 @@
           <div class="roadmap-aside"><p class="roadmap-count" id="roadmap-count">0/10 bài ✓</p><a class="roadmap-all" id="roadmap-all" href="/bai-hoc/">Xem tất cả 43 bài →</a></div>
         </div>
         <p class="roadmap-summary" id="roadmap-summary">Tám phím hàng giữa, rồi G H, E I, R U — đủ để gõ từ tiếng Việt không dấu.</p>
-        <div class="unit-rail" id="unit-rail"></div>
+        <div class="unit-rail" id="unit-rail" data-expanded="false"></div>
+        <button class="roadmap-expand" id="roadmap-expand" type="button" aria-controls="unit-rail" aria-expanded="false" hidden>Xem toàn bộ unit</button>
         <p class="rail-note" id="rail-note" hidden></p>
         <ul class="unit-teasers" id="unit-teasers"></ul>
       </section>
@@ -163,6 +172,8 @@
     <script src="/data/curriculum.vi.js?v=8727f0d2d210348d"></script>
     <script src="/progress-store.js"></script>
     <script src="/script.js"></script>
+    <script src="/sound.js"></script>
+    <script src="/home-demo.js" defer></script>
     <script src="/menu.js" defer></script>
     <script src="/sw-register.js"></script>
   </body>

@@ -260,6 +260,7 @@ ${faq}
       ${legalFooter(lang)}</footer>
     <script src="/i18n/ui.${lang}.js"></script>
     <script src="/sound.js"></script>
+    <script src="/caps-lock.js"></script>
     <script src="/effects.js"></script>
 ${positionKeys}${courseScript}    <script src="/kiem-tra-toc-do-go/typing-test.js"></script>
     <script src="/menu.js" defer></script>

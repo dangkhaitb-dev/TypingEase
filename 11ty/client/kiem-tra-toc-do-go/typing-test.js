@@ -125,13 +125,62 @@ const sound = window.TypingEaseSound;
 const soundToggle = document.querySelector('#sound-toggle');
 let heardLength = 0;
 const syncSound = () => soundToggle?.setAttribute('aria-pressed', String(Boolean(sound?.isOn())));
-soundToggle?.addEventListener('click', () => { sound?.toggle(); syncSound(); input.focus(); });
+soundToggle?.addEventListener('click', () => { sound?.toggle(); syncSound(); input.focus({ preventScroll: true }); });
 document.addEventListener('keydown', event => {
   if (event.altKey && !event.ctrlKey && !event.metaKey && String(event.key).toLowerCase() === 's') {
     event.preventDefault(); sound?.toggle(); syncSound();
   }
 });
 syncSound();
+// Compact native selector keeps every translated duration and keyboard navigation.
+const durationPicker = document.querySelector('.duration-picker');
+const durationSelect = document.createElement('select');
+durationSelect.className = 'test-duration-select';
+durationSelect.setAttribute('aria-label', durationPicker.getAttribute('aria-label'));
+for (const button of durationButtons) {
+  durationSelect.add(new Option(button.textContent.trim(), button.dataset.duration));
+}
+durationSelect.value = String(selectedDuration);
+document.querySelector('.test-hero').append(durationSelect);
+durationPicker.hidden = true;
+// Keep a real textarea for native IME, mobile keyboards and accessibility, but
+// place it directly over the passage. The passage is the only visible typing surface.
+const typingSurface = document.createElement('div');
+typingSurface.className = 'test-typing-surface';
+promptElement.before(typingSurface);
+typingSurface.append(promptElement, input);
+input.setAttribute('aria-describedby', 'test-prompt');
+const focusHint = document.createElement('span');
+focusHint.className = 'test-focus-hint';
+focusHint.textContent = input.placeholder;
+focusHint.setAttribute('aria-hidden', 'true');
+typingSurface.append(focusHint);
+const moveInputCaretToEnd = () => input.setSelectionRange(input.value.length, input.value.length);
+input.addEventListener('focus', moveInputCaretToEnd);
+input.addEventListener('click', moveInputCaretToEnd);
+// This is a sequential test: invisible native navigation must not move the
+// insertion point away from the visible passage caret. Keep IME navigation intact.
+input.addEventListener('keydown', event => {
+  if (!event.isComposing && ['ArrowLeft', 'ArrowRight', 'ArrowUp', 'ArrowDown', 'Home', 'End'].includes(event.key)) {
+    event.preventDefault();
+    moveInputCaretToEnd();
+  }
+});
+let passageWidth = 0;
+new ResizeObserver(([entry]) => {
+  if (entry.contentRect.width === passageWidth) return;
+  passageWidth = entry.contentRect.width;
+  renderPrompt();
+}).observe(typingSurface);
+const actions = document.querySelector('.test-actions');
+restartButton.title = restartButton.textContent.trim();
+actions.append(document.querySelector('.test-stats'));
+if (soundToggle) actions.append(soundToggle);
+durationSelect.addEventListener('change', () => {
+  if (startedAt && !finished) return;
+  selectedDuration = Number(durationSelect.value);
+  resetTest();
+});
 function clickFor(value) {
   const index = value.length - 1;
   if (index >= 0 && value.length > heardLength) sound?.click(value[index] === passage[index] ? 'ok' : 'bad', value[index]);
@@ -221,6 +270,8 @@ function collectWpmSample(now = Date.now()) {
 
 function updateDurationUi() {
   const running = Boolean(startedAt && !finished);
+  durationSelect.disabled = running;
+  durationSelect.value = String(selectedDuration);
   titleElement.textContent = fill(selectedDuration >= 60 && T.titleMinutes ? T.titleMinutes : T.title, { seconds: selectedDuration, minutes: selectedDuration / 60 });
   durationButtons.forEach(button => {
     const selected = Number(button.dataset.duration) === selectedDuration;
@@ -279,6 +330,7 @@ function endTest() {
   const consistency = calculateConsistency();
   clearInterval(timer);
   finished = true;
+  input.closest('.typing-test').classList.remove('is-running');
   input.disabled = true;
   showResult(metrics, consistency);
   saveHistory({ duration: selectedDuration, wpm: metrics.wpm, accuracy: metrics.accuracy, errors: metrics.errors, consistency, timestamp: Date.now() });
@@ -300,6 +352,7 @@ function tick() {
 function beginTest() {
   if (startedAt || finished || !input.value) return;
   startedAt = Date.now();
+  input.closest('.typing-test').classList.add('is-running');
   messageElement.textContent = T.running;
   updateDurationUi();
   timer = setInterval(tick, 250);
@@ -309,6 +362,7 @@ function resetTest(focus = true) {
   clearInterval(timer);
   stopFireworks();
   startedAt = null;
+  input.closest('.typing-test').classList.remove('is-running');
   finished = false;
   wpmSamples = [];
   lastSampleSecond = 0;
@@ -326,7 +380,7 @@ function resetTest(focus = true) {
   messageElement.textContent = T.ready;
   updateDurationUi();
   renderPrompt();
-  if (focus) input.focus();
+  if (focus) input.focus({ preventScroll: true });
 }
 
 function localDay(timestamp) {
@@ -451,14 +505,20 @@ if (POSITION_KEYS) input.addEventListener('keydown', event => {
   input.setRangeText(character, start, end, 'end');
   input.dispatchEvent(new Event('input'));
 });
+// Caps Lock (caps-lock.js, như Test của typekute): chữ HOA không Shift đúng chỗ cần chữ thường.
+input.addEventListener('keydown', event => {
+  if (!finished) window.TypingEaseCapsLock?.observe(event, passage[input.value.length]);
+});
 input.addEventListener('input', () => {
   if (!finished) clickFor(input.value);
   beginTest();
   renderPrompt();
   updateMetrics();
 });
+promptElement.addEventListener('click', () => { if (!finished) input.focus({ preventScroll: true }); });
 restartButton.addEventListener('click', () => resetTest());
 progressRangeButtons.forEach(button => button.addEventListener('click', () => { progressRange = Number(button.dataset.progressRange); renderProgress(); }));
 progressMetricButtons.forEach(button => button.addEventListener('click', () => { progressMetric = button.dataset.progressMetric; renderProgress(); }));
-resetTest(false);
+// Desktop is ready on arrival; mobile opens its keyboard when the passage is tapped.
+resetTest(!window.matchMedia('(pointer: coarse)').matches);
 renderProgress();

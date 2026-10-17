@@ -68,7 +68,7 @@ const RUNTIME = `typingease-runtime-${VERSION}`;
 // trang còn lại — bộ chọn, lộ trình, nút vào học — vẫn dùng được.
 const PRECACHE = [
   '/', '/tokens.css', '/base.css', '/home.css', '/landing.css',
-  '/script.js', '/data-cache.js', '/landing-i18n.js', '/landing.js', '/menu.js', '/profile.js', '/progress-store.js',
+  '/script.js', '/data-cache.js', '/landing-i18n.js', '/landing.js', '/interface-icons.js', '/menu.js', '/profile.js', '/progress-store.js',
   '/data/curriculum.en.js', '/data/languages.js', '/favicon.ico'
 ];
 

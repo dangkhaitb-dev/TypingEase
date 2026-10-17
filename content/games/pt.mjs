@@ -1,6 +1,7 @@
 /* content/games/pt.mjs — página de jogos em português do Brasil (tooling/pages/games.mjs). As palavras
  * vêm de data/words/pt.js, o mesmo banco do curso /pt/ (ABNT2: ç própria, ~ e ´ como teclas mortas). */
 export default {
+  worlds: {"rain": "Jardim dos pirilampos", "race": "Circuito ao pôr do sol", "keys": "Estação espacial"},
   slug: 'jogos-de-digitacao',
   title: 'Jogos de digitação grátis no seu teclado | TypingEase',
   description: 'Três jogos de digitação grátis: Chuva de palavras, Corrida fantasma e Caça às teclas. Pratique no seu próprio teclado, no navegador, sem cadastro.',

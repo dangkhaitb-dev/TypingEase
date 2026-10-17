@@ -276,5 +276,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '正確に 40 WPM', hint: '正確さ 95% 以上で 40 WPM を出す。' },
     'clean-60': { title: '正確に 60 WPM', hint: '正確さ 95% 以上で 60 WPM を出す。' },
     'typed-5000': { title: '5,000 打鍵', hint: '合計で 5,000 回キーを押す。' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: '警告!', body: 'あなたの Caps Lock がオンになっています', close: 'Caps Lock 警告を閉じる' }
 };

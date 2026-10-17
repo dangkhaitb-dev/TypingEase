@@ -278,5 +278,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 الفاظ فی منٹ، صاف', hint: '95% یا زیادہ درستی کے ساتھ 40 الفاظ فی منٹ کا ایک چکر۔' },
     'clean-60': { title: '60 الفاظ فی منٹ، صاف', hint: '95% یا زیادہ درستی کے ساتھ 60 الفاظ فی منٹ کا ایک چکر۔' },
     'typed-5000': { title: '5,000 کلیدیں', hint: 'کل پانچ ہزار بار کلیدیں دبائیں۔' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'انتباہ!', body: 'آپ کا Caps Lock آن ہے', close: 'Caps Lock انتباہ بند کریں' }
 };

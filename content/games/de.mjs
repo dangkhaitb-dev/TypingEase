@@ -1,6 +1,7 @@
 /* content/games/de.mjs — deutsche Spieleseite (tooling/pages/games.mjs). Die Wörter kommen aus
  * data/words/de.js, derselben Bank wie der Kurs /de/ (QWERTZ, ä ö ß auf eigenen Tasten, alles klein). */
 export default {
+  worlds: {"rain": "Glühwürmchengarten", "race": "Rennstrecke im Abendrot", "keys": "Raumstation"},
   slug: 'tippspiele',
   title: 'Kostenlose Tippspiele auf deiner Tastatur | TypingEase',
   description: 'Drei kostenlose Tippspiele: Wörterregen, Geisterrennen und Tastenjagd. Übe das Zehnfingersystem auf deiner echten Tastatur im Browser, ohne Anmeldung.',

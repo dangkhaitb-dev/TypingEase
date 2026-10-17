@@ -277,5 +277,8 @@ window.TypingEaseUI = {
     'clean-40': { title: 'নির্ভুল ৪০ WPM', hint: '৯৫% বা তার বেশি নির্ভুলতায় ৪০ WPM-এ একবার।' },
     'clean-60': { title: 'নির্ভুল ৬০ WPM', hint: '৯৫% বা তার বেশি নির্ভুলতায় ৬০ WPM-এ একবার।' },
     'typed-5000': { title: '৫,০০০ কী', hint: 'মোট পাঁচ হাজার বার কী চাপুন।' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'সতর্কতা!', body: 'আপনার Caps Lock চালু আছে', close: 'Caps Lock সতর্কতা বন্ধ করুন' }
 };

@@ -274,5 +274,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '准确的 40 WPM', hint: '一次练习达到 40 WPM，准确率 95% 或以上。' },
     'clean-60': { title: '准确的 60 WPM', hint: '一次练习达到 60 WPM，准确率 95% 或以上。' },
     'typed-5000': { title: '5000 次按键', hint: '累计按键五千次。' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: '警告！', body: '你的大写锁定已打开', close: '关闭大写锁定警告' }
 };

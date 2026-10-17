@@ -278,5 +278,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '۴۰ کلمه در دقیقه، تمیز', hint: 'یک دور با ۴۰ کلمه در دقیقه و دقت ۹۵٪ یا بیشتر.' },
     'clean-60': { title: '۶۰ کلمه در دقیقه، تمیز', hint: 'یک دور با ۶۰ کلمه در دقیقه و دقت ۹۵٪ یا بیشتر.' },
     'typed-5000': { title: '۵۰۰۰ ضربه', hint: 'در مجموع پنج هزار ضربه بزنید.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'هشدار!', body: 'Caps Lock شما روشن است', close: 'بستن هشدار Caps Lock' }
 };

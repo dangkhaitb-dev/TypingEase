@@ -21,6 +21,8 @@ import { stampScripts, curriculumHash } from '../lib/stamp.mjs';
 import { seoHead, START, END, ORIGIN } from '../lib/seo-head.mjs';
 import { legalFooter, LEGAL_START, LEGAL_END } from '../lib/legal.mjs';
 import { hubTransform } from '../pages/typing-tests.mjs';
+import { siteHeader } from '../lib/site-header.mjs';
+import { homePresentation } from '../lib/home-presentation.mjs';
 
 /* ---------- which page is this ---------- */
 /** URL of a hand-written page (`/fr/apprendre/`), or null for a generated page / non-page input. */
@@ -139,11 +141,20 @@ function seoBlock(html, url) {
 }
 
 /* ---------- the chain ---------- */
+// Shared visual shell applies equally to generated routes and hand-written pages.
+function designShell(html) {
+  if (isRedirect(html) || !html.includes('/tokens.css') || html.includes('/design-system.css')) return html;
+  return html.replace('</head>', '    <link rel="stylesheet" href="/design-system.css" />\n  </head>')
+    .replace('</body>', '    <script src="/interface-icons.js" defer></script>\n  </body>');
+}
 export const TRANSFORMS = [
+  ['shared-header', siteHeader],
+  ['design-shell', designShell],
+  ['home-presentation', homePresentation],
   ['stamp-data', stampData],
   ['home-hreflang', handWritten(homeHreflang)],
   ['legal-footer', handWritten(legalLine)],
-  ['menu-button', handWritten(menuButton)],
+  ['menu-button', menuButton],
   ['seo-head', handWritten(seoBlock)],
   // hreflang of the two hand-written typing-test hubs (/typing-test/, /kiem-tra-toc-do-go/): one
   // line per language whose test page tooling/pages/typing-tests.mjs builds.

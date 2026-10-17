@@ -93,7 +93,7 @@ window.TypingEaseUI = {
     noCurriculum: 'The course index did not load (<code>data/curriculum.en.js</code>).',
     fixtureNote: 'Running on the sample content in <code>hoc/_fixture/</code> — the real lesson is not in <code>data/lessons/</code> yet.',
     screenOf: 'Screen {n} / {total}',
-    newKey: 'NEW KEY',
+    newKey: 'New key',
     pressToContinue: 'Press <b>{key}</b> to continue',
     enterToContinue: 'Press <b>Enter</b> to continue',
     found: 'That is the one.',
@@ -115,7 +115,7 @@ window.TypingEaseUI = {
     redoScreen: 'Repeat this screen',
     redoScreenAdvised: 'Repeat this screen (recommended)',
     skipScreen: 'Skip',
-    lessonDone: 'COMPLETE',
+    lessonDone: 'Complete',
     learned: 'You have learned {count} keys:',
     statWpm: 'Speed',
     statAccuracy: 'Accuracy',
@@ -338,5 +338,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 WPM clean', hint: 'One run at 40 WPM with 95% accuracy or better.' },
     'clean-60': { title: '60 WPM clean', hint: 'One run at 60 WPM with 95% accuracy or better.' },
     'typed-5000': { title: '5,000 keys', hint: 'Type five thousand keystrokes in total.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'Warning!', body: 'Your Caps Lock is on', close: 'Close Caps Lock warning' }
 };

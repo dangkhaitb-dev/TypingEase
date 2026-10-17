@@ -80,7 +80,7 @@ window.TypingEaseUI = {
     noCurriculum: 'Faharasa ya kozi haikupakiwa (<code>data/curriculum.sw.js</code>).',
     fixtureNote: 'Inatumia maudhui ya mfano kutoka <code>hoc/_fixture/</code> — somo halisi bado halipo katika <code>data/lessons/</code>.',
     screenOf: 'Skrini {n} / {total}',
-    newKey: 'KITUFE KIPYA',
+    newKey: 'Kitufe kipya',
     pressToContinue: 'Bonyeza <b>{key}</b> ili kuendelea',
     enterToContinue: 'Bonyeza <b>Enter</b> ili kuendelea',
     found: 'Ndicho hicho.',
@@ -102,7 +102,7 @@ window.TypingEaseUI = {
     redoScreen: 'Rudia skrini hii',
     redoScreenAdvised: 'Rudia skrini hii (inashauriwa)',
     skipScreen: 'Ruka',
-    lessonDone: 'IMEKAMILIKA',
+    lessonDone: 'Imekamilika',
     learned: 'Sasa unajua vitufe {count}:',
     statWpm: 'Kasi',
     statAccuracy: 'Usahihi',
@@ -278,5 +278,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 WPM safi', hint: 'Mzunguko mmoja wa 40 WPM kwa usahihi wa 95% au zaidi.' },
     'clean-60': { title: '60 WPM safi', hint: 'Mzunguko mmoja wa 60 WPM kwa usahihi wa 95% au zaidi.' },
     'typed-5000': { title: 'Vitufe 5,000', hint: 'Bonyeza vitufe elfu tano kwa jumla.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'Onyo!', body: 'Caps Lock yako imewashwa', close: 'Funga onyo la Caps Lock' }
 };

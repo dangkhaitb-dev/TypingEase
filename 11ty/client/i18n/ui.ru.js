@@ -76,7 +76,7 @@ window.TypingEaseUI = {
     noCurriculum: 'Не загрузилось оглавление курса (<code>data/curriculum.ru.js</code>).',
     fixtureNote: 'Работает на примерном содержимом из <code>hoc/_fixture/</code> — настоящего урока в <code>data/lessons/</code> еще нет.',
     screenOf: 'Экран {n} / {total}',
-    newKey: 'НОВАЯ КЛАВИША',
+    newKey: 'Новая клавиша',
     pressToContinue: 'Нажми <b>{key}</b>, чтобы продолжить',
     enterToContinue: 'Нажми <b>Enter</b>, чтобы продолжить',
     found: 'Она самая.',
@@ -98,7 +98,7 @@ window.TypingEaseUI = {
     redoScreen: 'Повторить этот экран',
     redoScreenAdvised: 'Повторить этот экран (рекомендуем)',
     skipScreen: 'Пропустить',
-    lessonDone: 'ГОТОВО',
+    lessonDone: 'Готово',
     learned: 'Ты уже знаешь клавиш: {count}',
     statWpm: 'Скорость',
     statAccuracy: 'Точность',
@@ -281,5 +281,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 сл/мин чисто', hint: 'Один проход на 40 слов в минуту с точностью от 95%.' },
     'clean-60': { title: '60 сл/мин чисто', hint: 'Один проход на 60 слов в минуту с точностью от 95%.' },
     'typed-5000': { title: '5000 нажатий', hint: 'Набери всего пять тысяч нажатий.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'Предупреждение!', body: 'Ваш Caps Lock включен', close: 'Закрыть предупреждение Caps Lock' }
 };

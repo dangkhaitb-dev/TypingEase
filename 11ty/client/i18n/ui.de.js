@@ -83,7 +83,7 @@ window.TypingEaseUI = {
     noCurriculum: 'Das Kursverzeichnis wurde nicht geladen (<code>data/curriculum.de.js</code>).',
     fixtureNote: 'Läuft mit dem Beispielinhalt aus <code>hoc/_fixture/</code> — die echte Lektion liegt noch nicht in <code>data/lessons/</code>.',
     screenOf: 'Bildschirm {n} / {total}',
-    newKey: 'NEUE TASTE',
+    newKey: 'Neue Taste',
     pressToContinue: 'Drücke <b>{key}</b>, um weiterzugehen',
     enterToContinue: 'Drücke <b>Enter</b>, um weiterzugehen',
     found: 'Das ist sie.',
@@ -105,7 +105,7 @@ window.TypingEaseUI = {
     redoScreen: 'Diesen Bildschirm wiederholen',
     redoScreenAdvised: 'Diesen Bildschirm wiederholen (empfohlen)',
     skipScreen: 'Überspringen',
-    lessonDone: 'GESCHAFFT',
+    lessonDone: 'Geschafft',
     learned: 'Du kennst jetzt {count} Tasten:',
     statWpm: 'Tempo',
     statAccuracy: 'Genauigkeit',
@@ -280,5 +280,8 @@ window.TypingEaseUI = {
     'clean-40': { title: 'Saubere 40 WPM', hint: 'Ein Durchgang mit 40 WPM bei mindestens 95% Genauigkeit.' },
     'clean-60': { title: 'Saubere 60 WPM', hint: 'Ein Durchgang mit 60 WPM bei mindestens 95% Genauigkeit.' },
     'typed-5000': { title: '5.000 Anschläge', hint: 'Schreib insgesamt fünftausend Anschläge.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'Warnung!', body: 'Deine Caps Lock ist an', close: 'Caps Lock Warnung schließen' }
 };

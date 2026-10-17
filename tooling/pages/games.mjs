@@ -21,7 +21,7 @@ import { pathToFileURL } from 'node:url';
 import { HOME_SWITCH } from '../lib/home-switch.mjs';
 import { seoHead, ORIGIN } from '../lib/seo-head.mjs';
 import { legalFooter } from '../lib/legal.mjs';
-import { THUMB, HOW, STEPS, CAR, RAIN_SCENE } from '../lib/game-art.mjs';
+import { THUMB, HOW, STEPS, RAIN_SCENE, RAIN_SPRITE, RACE_SCENE, RALLY_CAR, SPACE_SCENE, SPACE_BOT } from '../lib/game-art.mjs';
 import paths from '../lib/paths.cjs';
 
 const loadWindow = file => {
@@ -71,8 +71,8 @@ async function page({ entry, T, url }) {
   const nav = S.nav(routes).filter(([href]) => href)
     .map(([href, label]) => `<a${href === url ? ' class="active"' : ''} href="${href}">${esc(label)}</a>`).join('\n        ');
   const fillN = text => String(text).replace(/\{lessons\}/g, main.lessons).replace(/\{course\}/g, main.roadmap).replace(/\{test\}/g, routes.test || main.roadmap);
-  const tab = (mode, [name, blurb], first) =>
-    `<button type="button" role="tab" data-game-tab="${mode}" id="tab-${mode}" aria-controls="panel-${mode}" aria-selected="${first}"${first ? ' class="selected"' : ' tabindex="-1"'}>${THUMB[mode]}<b>${esc(name)}</b><span>${esc(blurb)}</span></button>`;
+  const tab = (mode, [name, blurb]) =>
+    `<button type="button" data-game-tab="${mode}" id="tab-${mode}" aria-controls="panel-${mode}">${THUMB[mode]}<b>${esc(name)}</b><span>${esc(blurb)}</span><i class="game-card-arrow" aria-hidden="true">${arrow}</i></button>`;
   // Hướng dẫn ba bước có hình, ngay đầu mỗi trò (chữ ở content/games/<lang>.mjs → `how`).
   if (!T.how || ['rain', 'race', 'keys'].some(mode => !Array.isArray(T.how[mode]) || T.how[mode].length !== 3))
     throw new Error(`content/games/${lang}.mjs: cần how.rain / how.race / how.keys, mỗi cái 3 câu`);
@@ -85,6 +85,9 @@ async function page({ entry, T, url }) {
   const faq = T.faq.map(([q, a]) => `            <details><summary>${esc(q)}</summary><p>${esc(a)}</p></details>`).join('\n');
   const game = { lang, locale: T.locale, typeByPosition: Boolean(T.typeByPosition), words, letters, text: T.runtime };
   const R = T.rain, C = T.race, K = T.keys;
+  for (const mode of ['rain', 'race', 'keys']) {
+    if (!T.worlds?.[mode]?.trim()) throw new Error(`content/games/${lang}.mjs: missing worlds.${mode}`);
+  }
 
   return `<!doctype html>
 <html lang="${htmlLang(lang)}"${dir === 'rtl' ? ' dir="rtl"' : ''}>
@@ -121,7 +124,7 @@ ${alternates}
       <div class="header-actions"><a class="home-switch" href="/" title="${esc(homeTitle)}">${esc(homeLabel)}</a></div>
     </header>
 
-    <main class="test-main">
+    <main class="test-main games-main">
       <nav class="breadcrumb" aria-label="${esc(T.breadcrumbAria)}">
         <a href="${routes.home}">${esc(T.homeCrumb)}</a><span aria-hidden="true">›</span><span>${esc(T.crumb)}</span>
       </nav>
@@ -134,13 +137,14 @@ ${alternates}
         </header>
 
         <section class="games" aria-label="${esc(T.tabsAria)}">
-          <div class="game-tabs" role="tablist" aria-label="${esc(T.tabsAria)}">
+          <div class="game-tabs" role="group" aria-label="${esc(T.tabsAria)}">
             ${tab('rain', T.modes.rain, true)}
             ${tab('race', T.modes.race, false)}
             ${tab('keys', T.modes.keys, false)}
           </div>
 
-          <div class="game-panel" data-game-panel="rain" id="panel-rain" role="tabpanel" aria-labelledby="tab-rain">
+          <div class="game-play-nav" hidden><button type="button" data-act="games-back" aria-keyshortcuts="Escape"><span aria-hidden="true">${dir === 'rtl' ? '→' : '←'}</span> ${esc(T.tabsAria)} <kbd class="game-exit-key" aria-hidden="true">Esc</kbd></button><h1 id="game-play-title"></h1></div>
+          <div class="game-panel" data-game-panel="rain" id="panel-rain" role="region" aria-labelledby="tab-rain" hidden>
             ${how('rain')}
             <div class="game-bar">
               <label>${esc(R.difficulty)} <select id="rain-difficulty"><option value="easy">${esc(R.easy)}</option><option value="normal" selected>${esc(R.normal)}</option><option value="hard">${esc(R.hard)}</option></select></label>
@@ -151,30 +155,39 @@ ${alternates}
                 <div>${esc(R.best)} <strong id="rain-best">0</strong></div>
               </div>
             </div>
-            <div class="rain-arena" id="rain-arena" aria-hidden="true">
+            <div class="rain-arena" id="rain-arena">
               ${RAIN_SCENE}
-              <div class="game-overlay" id="rain-overlay"><button class="primary-button game-start" type="button" data-act="rain-start">${esc(R.start)} <span>${arrow}</span></button><p class="game-hint">${esc(R.hint)}</p></div>
+              <div class="rain-companion" aria-hidden="true">${RAIN_SPRITE}</div>
+              <div class="rain-progress" aria-hidden="true"><span id="rain-progress-fill"></span></div>
+              <div class="game-overlay" id="rain-overlay"><div class="rain-welcome-art" aria-hidden="true">${RAIN_SPRITE}</div><p class="rain-world-label">${esc(T.worlds.rain)}</p><h2 class="rain-welcome-title">${esc(T.modes.rain[0])}</h2><p class="rain-welcome-copy">${esc(T.modes.rain[1])}</p><button class="primary-button game-start" type="button" data-act="rain-start">${esc(R.start)} <span>${arrow}</span></button><p class="game-hint">${esc(R.hint)}</p></div>
+            <div class="rain-input-wrap"><span class="rain-input-icon" aria-hidden="true">⌨</span><input class="game-input" id="rain-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="${esc(R.placeholder)}" placeholder="${esc(R.placeholder)}" disabled /><kbd aria-hidden="true">↵</kbd></div>
             </div>
-            <input class="game-input" id="rain-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="${esc(R.placeholder)}" placeholder="${esc(R.placeholder)}" disabled />
           </div>
 
-          <div class="game-panel" data-game-panel="race" id="panel-race" role="tabpanel" aria-labelledby="tab-race" hidden>
+          <div class="game-panel" data-game-panel="race" id="panel-race" role="region" aria-labelledby="tab-race" hidden>
             ${how('race')}
             <div class="game-bar">
               <label>${esc(C.pace)} <select id="race-pace"><option value="best" selected></option>${C.paces.map(wpm => `<option value="${wpm}">${esc(C.paceLabel(wpm))}</option>`).join('')}</select></label>
               <button class="primary-button game-start" type="button" data-act="race-start">${esc(C.start)} <span>${arrow}</span></button>
             </div>
+            <div class="rally-world">
+              ${RACE_SCENE}
+              <div class="world-caption"><span>${esc(T.worlds.race)}</span><h2>${esc(T.modes.race[0])}</h2></div>
+              <div class="rally-lights" aria-hidden="true"><i></i><i></i><i></i></div>
             <div class="race-track" aria-hidden="true">
-              <div class="race-lane you"><span id="race-you">${CAR('#157a55')}${esc(C.you)}</span></div>
-              <div class="race-lane ghost"><span id="race-ghost">${CAR('#9fb0a8')}${esc(C.ghost)}</span></div>
+              <div class="race-lane you"><span id="race-you">${RALLY_CAR('#d47b4e')}${esc(C.you)}</span></div>
+              <div class="race-lane ghost"><span id="race-ghost">${RALLY_CAR('#8199bc')}${esc(C.ghost)}</span></div>
             </div>
+            <div class="rally-console">
             <p class="race-prompt" id="race-prompt"></p>
             <input class="game-input" id="race-input" type="text" autocomplete="off" autocapitalize="off" spellcheck="false" aria-label="${esc(C.placeholder)}" placeholder="${esc(C.placeholder)}" disabled />
             <p class="race-status" id="race-status" aria-live="polite"></p>
+            </div>
+            </div>
             <div class="race-result" id="race-result" aria-live="polite" hidden></div>
           </div>
 
-          <div class="game-panel" data-game-panel="keys" id="panel-keys" role="tabpanel" aria-labelledby="tab-keys" hidden>
+          <div class="game-panel" data-game-panel="keys" id="panel-keys" role="region" aria-labelledby="tab-keys" hidden>
             ${how('keys')}
             <div class="game-bar">
               <button class="primary-button game-start" type="button" data-act="keys-start">${esc(K.start)} <span>${arrow}</span></button>
@@ -185,7 +198,14 @@ ${alternates}
                 <div>${esc(K.best)} <strong id="keys-best">0</strong></div>
               </div>
             </div>
-            <p class="keys-target" id="keys-target" aria-live="polite"></p>
+            ${SPACE_SCENE}
+            <div class="orbit-world">
+              <div class="world-caption"><span>${esc(T.worlds.keys)}</span><h2>${esc(T.modes.keys[0])}</h2></div>
+              <div class="orbit-target-ring"><p class="keys-target" id="keys-target" aria-live="polite"></p></div>
+              <div class="orbit-bot" aria-hidden="true">${SPACE_BOT}</div>
+              <div class="orbit-energy" aria-hidden="true"><span id="keys-energy"></span></div>
+              <div class="orbit-feedback" id="keys-feedback" aria-hidden="true"></div>
+            </div>
             <div class="keys-board keyboard-demo" id="keys-board"></div>
             <p class="game-hint">${esc(K.hint)}</p>
             <div class="keys-result" id="keys-result" aria-live="polite" hidden></div>

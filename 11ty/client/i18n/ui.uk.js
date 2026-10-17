@@ -95,7 +95,7 @@
       noCurriculum: 'Не завантажився зміст курсу (<code>data/curriculum.uk.js</code>).',
       fixtureNote: 'Працює на зразковому змісті з <code>hoc/_fixture/</code> — справжнього уроку ще немає в <code>data/lessons/</code>.',
       screenOf: 'Екран {n} / {total}',
-      newKey: 'НОВА КЛАВІША',
+      newKey: 'Нова клавіша',
       pressToContinue: 'Натисни <b>{key}</b>, щоб продовжити',
       enterToContinue: 'Натисни <b>Enter</b>, щоб продовжити',
       found: 'Саме вона.',
@@ -117,7 +117,7 @@
       redoScreen: 'Повторити цей екран',
       redoScreenAdvised: 'Повторити цей екран (радимо)',
       skipScreen: 'Пропустити',
-      lessonDone: 'ЗАВЕРШЕНО',
+      lessonDone: 'Завершено',
       learned: 'Ти вже знаєш клавіш: {count} —',
       statWpm: 'Швидкість',
       statAccuracy: 'Точність',
@@ -294,6 +294,9 @@
       'clean-40': { title: 'Чисті 40 сл/хв', hint: 'Коло на 40 слів за хвилину з точністю від 95%.' },
       'clean-60': { title: 'Чисті 60 сл/хв', hint: 'Коло на 60 слів за хвилину з точністю від 95%.' },
       'typed-5000': { title: '5000 натискань', hint: 'Надрукуй загалом п’ять тисяч натискань.' }
-    }
+    },
+
+    /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+    capsLock: { title: 'Увага!', body: 'Ваш Caps Lock увімкнено', close: 'Закрити попередження про Caps Lock' }
   };
 })();

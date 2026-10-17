@@ -1,6 +1,7 @@
 /* content/games/en.mjs — English typing-games page (tooling/pages/games.mjs). Words come from
  * data/words/en.js, the bank the English courses are built from. */
 export default {
+  worlds: {"rain": "Firefly garden", "race": "Sunset circuit", "keys": "Space station"},
   slug: 'typing-games',
   title: 'Free typing games on your own keyboard | TypingEase',
   description: 'Three free typing games: Word Rain, Ghost Race and Key Hunt. Practise touch typing on your real keyboard layout in the browser, no signup needed.',

@@ -1,6 +1,7 @@
 /* content/games/es.mjs — página de juegos en español (tooling/pages/games.mjs). Las palabras salen
  * de data/words/es.js, el mismo banco del curso /es/ (QWERTY español, ñ propia, tildes con tecla muerta). */
 export default {
+  worlds: {"rain": "Jardín de luciérnagas", "race": "Circuito al atardecer", "keys": "Estación espacial"},
   slug: 'juegos-de-mecanografia',
   title: 'Juegos de mecanografía gratis en tu teclado | TypingEase',
   description: 'Tres juegos de mecanografía gratis: Lluvia de palabras, Carrera fantasma y Caza de teclas. Practica en tu propio teclado, en el navegador y sin registro.',

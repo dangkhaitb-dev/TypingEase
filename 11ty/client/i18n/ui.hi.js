@@ -279,5 +279,8 @@ window.TypingEaseUI = {
     'clean-40': { title: 'साफ़ 40 WPM', hint: '95% या ज़्यादा सटीकता के साथ 40 WPM का एक दौर।' },
     'clean-60': { title: 'साफ़ 60 WPM', hint: '95% या ज़्यादा सटीकता के साथ 60 WPM का एक दौर।' },
     'typed-5000': { title: '5,000 कुंजियाँ', hint: 'कुल पाँच हज़ार बार कुंजियाँ दबाएँ।' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'चेतावनी!', body: 'आपका Caps Lock चालू है', close: 'Caps Lock चेतावनी बंद करें' }
 };

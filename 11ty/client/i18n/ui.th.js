@@ -277,5 +277,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 คำ/นาทีแบบแม่นยำ', hint: 'พิมพ์ได้ 40 คำต่อนาที ด้วยความแม่นยำ 95% ขึ้นไป' },
     'clean-60': { title: '60 คำ/นาทีแบบแม่นยำ', hint: 'พิมพ์ได้ 60 คำต่อนาที ด้วยความแม่นยำ 95% ขึ้นไป' },
     'typed-5000': { title: '5,000 แป้น', hint: 'กดแป้นรวมทั้งหมดห้าพันครั้ง' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'คำเตือน', body: 'Caps Lock ของคุณเปิดอยู่', close: 'ปิดการเตือน Caps Lock' }
 };

@@ -58,7 +58,7 @@
     noCurriculum: 'Chưa nạp được chỉ mục giáo trình (<code>data/curriculum.vi.js</code>).',
     fixtureNote: 'Đang dùng nội dung mẫu trong <code>hoc/_fixture/</code> — bài thật chưa có trong <code>data/lessons/</code>.',
     screenOf: 'Screen {n} / {total}',
-    newKey: 'PHÍM MỚI',
+    newKey: 'Phím mới',
     pressToContinue: 'Nhấn <b>{key}</b> để tiếp tục',
     enterToContinue: 'Nhấn <b>Enter</b> để tiếp tục',
     found: 'Đúng rồi!',
@@ -80,7 +80,7 @@
     redoScreen: 'Làm lại screen',
     redoScreenAdvised: 'Làm lại screen (khuyến nghị)',
     skipScreen: 'Bỏ qua',
-    lessonDone: 'HOÀN THÀNH',
+    lessonDone: 'Hoàn thành',
     learned: 'Bạn đã học {count} phím:',
     statWpm: 'Tốc độ',
     statAccuracy: 'Chính xác',
@@ -828,7 +828,6 @@
     board.classList.add('nt-keyboard-peek-started');
     if (verdict === 'ok') NT.pressKey(board);
     else if (verdict === 'bad') NT.highlightErrorKey(board, value[position]);
-    if (verdict !== 'pending') sound?.click(verdict, value[position]);
   }
 
   // --- IME (Nhật, Trung) ----------------------------------------------------------------------
@@ -1373,6 +1372,20 @@
     if (!slot) return null;
     return event.shiftKey ? slot.shifted : slot.main;
   }
+  // Tiếng gõ đi theo phím vật lý (sound.js key()), không theo ô nhập — xem chú thích ở đó. Phím sai
+  // bài im lặng; trên screen Telex/bộ gõ không biết đúng/sai trước khi soạn xong nên phím nào cũng kêu.
+  input.addEventListener('keydown', event => {
+    if (state !== 'typing' && state !== 'intro') return;
+    const expected = state === 'typing' && run && !run.telex && !run.settle ? run.target[input.value.length] : undefined;
+    const typed = positionalCharacter(event) || event.key;
+    sound?.key(event, expected === undefined ? null : char => !sameUnit(char, expected), typed);
+  });
+  // Gõ ra chữ HOA đúng chỗ cần chữ thường mà không giữ Shift → báo Caps Lock (caps-lock.js, như
+  // typekute). Phím đó vẫn là một lỗi bình thường; thẻ cảnh báo chỉ nói vì sao.
+  input.addEventListener('keydown', event => {
+    if (state !== 'typing' || !run) return;
+    global.TypingEaseCapsLock?.observe(event, run.target[input.value.length]);
+  });
   input.addEventListener('keydown', event => {
     if (state !== 'typing' && state !== 'intro') return;
     if (positionMode() && (event.isComposing || event.key === 'Process') && !positionNoteVisible) {

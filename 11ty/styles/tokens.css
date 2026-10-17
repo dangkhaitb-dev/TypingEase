@@ -37,11 +37,12 @@
   /* ===== Ngữ nghĩa ===== */
   --success:#1f9466; --success-100:#e3f2ea; --success-700:#0f6244;
   --error:#e30000; --error-100:#fff0ef; --error-700:#c4001a;
+  --led-on:#22c55e;               /* đèn Caps Lock trong thẻ cảnh báo (caps-lock.js) */
   --gold-100:#fff6dc; --gold-500:#ffcc00; --gold-700:#d8a500; --gold-800:#8a6100;
 
   /* ===== Bề mặt ===== */
   --white:#fff;
-  --canvas:#fbfbfd;              /* nền trang */
+  --canvas:#f5f5f7;              /* nền trang */
   --surface:#fff;                /* thẻ */
   --surface-alt:var(--ink-100);  /* thẻ/ô trên nền trắng */
   --text:var(--ink-900);
@@ -49,7 +50,7 @@
   --border:rgba(0,0,0,.08);      /* hairline quanh thẻ */
   --border-strong:var(--ink-300);/* viền ô nhập, nút phụ */
   --link:var(--primary-600);
-  --focus:rgba(21,122,85,.45);
+  --focus:rgba(21,122,85,.3);
   --glass:rgba(251,251,253,.72); /* header mờ */
 
   /* ===== Chữ ===== */
@@ -68,6 +69,8 @@
   --shadow-card:0 1px 2px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.04);
   --shadow-lift:0 2px 6px rgba(0,0,0,.05),0 14px 36px rgba(0,0,0,.09);
   --shadow-focus:0 0 0 4px var(--focus);
+  --shadow-focus-soft:0 0 0 4px var(--primary-100);  /* ô nhập lớn: vòng nhẹ cùng viền xanh */
+  --shadow-segment:0 3px 8px rgba(0,0,0,.12),0 1px 1px rgba(0,0,0,.04);  /* đoạn đang chọn của segmented control */
   --shadow-button:none;
   --shadow-button-accent:none;
   --shadow-edge:var(--shadow-sm);
@@ -77,7 +80,7 @@
   --press:scale(.98);
 
   /* ===== Độ rộng & nhịp ===== */
-  --w-page:1080px; --w-read:700px; --pad-x:22px;
+  --w-page:1120px; --w-read:700px; --pad-x:22px;
   --gap-section:96px;
 
   /* ===== Tên cũ — trỏ về thang mới ===== */

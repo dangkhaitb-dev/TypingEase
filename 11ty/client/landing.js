@@ -68,13 +68,15 @@
 
   function linksHtml(pairs) {
     return pairs.filter(([href]) => href)
-      .map(([href, label, active]) => `<a${active ? ' class="active"' : ''} href="${href}">${escapeHtml(label)}</a>`).join('');
+      .map(([href, label, active]) => `<a${active ? ' class="active" aria-current="page"' : ''} href="${href}">${escapeHtml(label)}</a>`).join('');
   }
 
   function applyLanguage(entry) {
     const code = TEXT[entry?.code] ? entry.code : 'en';
     L = TEXT[code] || L;
     const R = L.routes || {};
+    const headerLanguage = doc.querySelector('.site-language span');
+    if (headerLanguage) headerLanguage.textContent = code.toUpperCase();
     const course = ready(entry) && TEXT[entry.code] ? entry.course.roadmap : (TEXT.en && byCode.get('en')?.course?.roadmap) || '/lessons/';
     doc.documentElement.lang = code;
     // Ả Rập, Ba Tư, Urdu, Hebrew đọc từ phải sang trái: cả trang lật theo, không chỉ từng câu.

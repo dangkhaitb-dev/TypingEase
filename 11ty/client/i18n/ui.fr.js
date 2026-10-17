@@ -76,7 +76,7 @@ window.TypingEaseUI = {
     noCurriculum: "L'index du cours n'a pas été chargé (<code>data/curriculum.fr.js</code>).",
     fixtureNote: "Fonctionne avec le contenu d'exemple de <code>hoc/_fixture/</code> — la vraie leçon n'est pas encore dans <code>data/lessons/</code>.",
     screenOf: 'Écran {n} / {total}',
-    newKey: 'NOUVELLE TOUCHE',
+    newKey: 'Nouvelle touche',
     pressToContinue: 'Appuie sur <b>{key}</b> pour continuer',
     enterToContinue: 'Appuie sur <b>Entrée</b> pour continuer',
     found: "C'est celle-là.",
@@ -98,7 +98,7 @@ window.TypingEaseUI = {
     redoScreen: 'Refaire cet écran',
     redoScreenAdvised: 'Refaire cet écran (conseillé)',
     skipScreen: 'Passer',
-    lessonDone: 'TERMINÉE',
+    lessonDone: 'Terminée',
     learned: 'Tu connais maintenant {count} touches :',
     statWpm: 'Vitesse',
     statAccuracy: 'Précision',
@@ -272,5 +272,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 MPM propres', hint: 'Un passage à 40 MPM avec 95% de précision ou plus.' },
     'clean-60': { title: '60 MPM propres', hint: 'Un passage à 60 MPM avec 95% de précision ou plus.' },
     'typed-5000': { title: '5 000 touches', hint: 'Frappe cinq mille touches au total.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'Attention !', body: 'Votre Caps Lock est activé', close: 'Fermer l\'avertissement Caps Lock' }
 };

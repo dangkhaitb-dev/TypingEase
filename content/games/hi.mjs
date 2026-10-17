@@ -4,6 +4,7 @@
  * (InScript hoặc Bolnagri) — kho từ để nukta tách rời (ड + ़), đúng như InScript gõ ra. Key Hunt đọc
  * theo vị trí phím (event.code), nên hệ điều hành đang ở bố cục nào cũng được. Xưng "आप" như khoá học. */
 export default {
+  worlds: {"rain": "जुगनुओं का बगीचा", "race": "सूर्यास्त का रेस ट्रैक", "keys": "अंतरिक्ष स्टेशन"},
   slug: 'typing-games',
   title: 'मुफ़्त हिंदी टाइपिंग गेम, इनस्क्रिप्ट पर | TypingEase',
   description: 'तीन मुफ़्त हिंदी टाइपिंग गेम: शब्दों की बारिश, परछाईं की दौड़ और कुंजी की खोज। अपने इनस्क्रिप्ट कीबोर्ड पर ब्राउज़र में अभ्यास करें, बिना रजिस्ट्रेशन।',

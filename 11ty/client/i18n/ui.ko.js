@@ -278,5 +278,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '깔끔한 40 WPM', hint: '정확도 95% 이상으로 40 WPM을 한 번 내세요.' },
     'clean-60': { title: '깔끔한 60 WPM', hint: '정확도 95% 이상으로 60 WPM을 한 번 내세요.' },
     'typed-5000': { title: '5,000타', hint: '모두 합쳐 5,000번 키를 누르세요.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: '경고!', body: 'Caps Lock이 켜져 있습니다', close: 'Caps Lock 경고 닫기' }
 };

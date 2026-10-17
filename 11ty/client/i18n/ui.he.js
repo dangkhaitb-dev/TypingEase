@@ -278,5 +278,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 מילים לדקה, נקי', hint: 'סיבוב של 40 מילים לדקה בדיוק של 95% או יותר.' },
     'clean-60': { title: '60 מילים לדקה, נקי', hint: 'סיבוב של 60 מילים לדקה בדיוק של 95% או יותר.' },
     'typed-5000': { title: '5,000 הקשות', hint: 'הקלידו חמשת אלפים הקשות בסך הכול.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'אזהרה!', body: 'Caps Lock פועל אצלך', close: 'סגירת אזהרת Caps Lock' }
 };

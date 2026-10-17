@@ -63,7 +63,7 @@ body.is-returning #hero-start{display:grid}
    where they fade out once typing starts — they stay on here. keyboard.css scopes its own
    version of this to .player-page/.free-page, hence the copy. */
 .kb-preview .keyboard--full:not(.keyboard--numpad){--fng-peek:1}
-.kb-preview .keyboard--full:not(.keyboard--numpad) .key--a:not(.is-active):not(.is-wrong){background-color:color-mix(in srgb,var(--fk,var(--white)) 58%,var(--white));border-bottom-color:color-mix(in srgb,var(--fk-line,var(--ink-300)) 55%,var(--ink-300));color:color-mix(in srgb,var(--fk-ink,var(--ink-900)) 100%,var(--ink-900))}
+.kb-preview .keyboard--full:not(.keyboard--numpad) .key--a:not(.is-active):not(.is-wrong){--key-face:color-mix(in srgb,var(--fk,var(--white)) 32%,var(--white));--key-line:color-mix(in srgb,var(--fk-line,var(--ink-300)) 45%,var(--ink-300));color:var(--fk-ink,var(--ink-900))}
 
 /* Finger colours for the layouts keyboard.css cannot reach. Its `.key-<charcode>` tiers only
    match Latin characters, so a Hindi or Arabic board arrived almost entirely white — see the

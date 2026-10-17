@@ -344,14 +344,14 @@
   animation: ntFingerGuideFade 1.5s linear 2s both;
 }
 :is(.player-page, .free-page) .js-keyboard-holder .keyboard--full:not(.keyboard--numpad) .key--a:not(.is-active):not(.is-confirmed):not(.is-right):not(.is-wrong) {
-  --key-face: color-mix(in srgb, var(--fk, #fff) calc(var(--fng-peek) * 42%), var(--surface, #fff));
+  --key-face: color-mix(in srgb, var(--fk, #fff) calc(var(--fng-peek) * 32%), var(--surface, #fff));
   --key-line: color-mix(in srgb, var(--fk-line, rgba(0,0,0,.07)) calc(var(--fng-peek) * 35%), rgba(0, 0, 0, .07));
   color: color-mix(in srgb, var(--fk-ink, #1d1d1f) calc(var(--fng-peek) * 100%), var(--ink-800, #1d1d1f));
 }
 /* Phím mới của bài vẫn giữ lớp màu nhạt của nó sau khi màu ngón đã tắt (khối trên đặc hiệu hơn
    khối `.is-new` ở tầng 3, nên phải nhắc lại ở đây). */
 :is(.player-page, .free-page) .js-keyboard-holder .keyboard--full:not(.keyboard--numpad) .key--a.is-new:not(.is-active):not(.is-confirmed):not(.is-right):not(.is-wrong) {
-  --key-face: color-mix(in srgb, var(--fk, #fff) max(30%, calc(var(--fng-peek) * 42%)), var(--surface, #fff));
+  --key-face: color-mix(in srgb, var(--fk, #fff) max(30%, calc(var(--fng-peek) * 32%)), var(--surface, #fff));
   --key-line: color-mix(in srgb, var(--fk-line, rgba(0,0,0,.07)) 60%, transparent);
 }
 
@@ -372,7 +372,8 @@
 /* ===== 5. Bàn tay =============================================================================
    `.hands` được keyboard.js đặt inline `left:-100px; right:-100px; height:800px` để giữ đúng
    phép chiếu của cảnh 3D so với bàn phím; ở đây chỉ còn vị trí theo chiều dọc và lớp phủ. */
-.hands { position: absolute; pointer-events: none; height: 100%; left: 0; top: 3%; width: 100%; }
+/* Keep fingers above active caps (z-index: 1) and tall/ISO caps (z-index: 2). */
+.hands { position: absolute; z-index: 3; pointer-events: none; height: 100%; left: 0; top: 3%; width: 100%; }
 .hand { position: absolute; }
 .hand--left { left: -20.5%; top: -3%; width: 74.3%; }
 .hand--right { left: 33.3%; width: 84.2%; }
@@ -656,6 +657,7 @@
    the hand overlay above it (`.keyboard.is-falling .keyboard-row{z-index:9999}
 `). */
 .nt-player-page .nt-player-keyboard.is-falling .keyboard-row { position: relative; z-index: 9999; }
+.nt-player-page .nt-player-keyboard.is-falling .hands { z-index: 10000; }
 /* AltGr legends (keyboard.js `altGrLegends`): level 3 beside the main legend, level 4
    (Shift+AltGr) beside the shifted one, in the key's right corners. Below 500 px the
    legacy board already drops the shifted legend, so the AltGr ones go with it. */

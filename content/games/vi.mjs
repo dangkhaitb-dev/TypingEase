@@ -21,6 +21,7 @@ ngón tay bàn tay hàng phím dấu cách dấu chấm dấu phẩy chữ cái 
 `.trim().split(/\s+/);
 
 export default {
+  worlds: {"rain": "Khu vườn đom đóm", "race": "Đường đua hoàng hôn", "keys": "Trạm không gian"},
   url: '/tro-choi/',
   title: 'Trò chơi gõ phím 10 ngón miễn phí | TypingEase',
   description: 'Ba trò chơi luyện gõ phím 10 ngón miễn phí: Mưa chữ, Đua với bóng và Săn phím, trên đúng bàn phím của bạn, gõ tiếng Việt có dấu bằng Telex.',

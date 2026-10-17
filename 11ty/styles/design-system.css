@@ -1,0 +1,108 @@
+@font-face{font-family:BrandOutfit;src:url('/assets/fonts/outfit-600.ttf') format('truetype');font-weight:600;font-display:swap}
+@font-face{font-family:BrandAbhaya;src:url('/assets/fonts/abhaya-libre-800.ttf') format('truetype');font-weight:800;font-display:swap}
+/* Shared finishing layer. Loaded after page styles on every route by designShell.
+   Keep learning states, finger colours and data visualizations semantic. */
+:root{--surface-raised:#fff;--panel-line:rgba(29,29,31,.075);--shadow-panel:0 2px 8px rgba(29,29,31,.025),0 20px 60px rgba(29,29,31,.045)}
+html{scroll-padding-top:90px}
+body{font-optical-sizing:auto}
+::selection{background:var(--primary-100);color:var(--primary-900)}
+.topbar{height:64px;background:var(--glass);border-bottom-color:var(--panel-line)}
+.brand{font-size:20px;letter-spacing:-.055em;font-weight:650;white-space:nowrap}
+.brand span{color:var(--primary-600);font-weight:400}
+/* Compact original keyboard/caret signature, shared by every site header. */
+@font-face{font-family:"TypingEase Brand Sans";font-style:normal;font-weight:500;font-display:swap;src:url(/assets/fonts/outfit-500.ttf) format("truetype")}
+@font-face{font-family:"TypingEase Brand Serif";font-style:normal;font-weight:800;font-display:swap;src:url(/assets/fonts/abhaya-libre-800.ttf) format("truetype")}
+.site-header .brand-signature{display:inline-flex;align-items:center;gap:9px;color:var(--ink-900,#171719);text-decoration:none;letter-spacing:-.055em;flex-shrink:0}
+.site-header .brand-emblem{display:block;width:30px;height:30px;flex:none}
+.site-header .brand-wordmark{display:inline-flex;align-items:baseline;color:inherit;font-family:"TypingEase Brand Sans",Outfit,Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;font-size:21px;line-height:1;font-weight:500;letter-spacing:-.055em}
+.site-header .brand-wordmark em{color:inherit;font-family:"TypingEase Brand Serif","Abhaya Libre",Georgia,serif;font-size:26px;font-style:normal;font-weight:800;letter-spacing:-.06em;margin-inline-start:1px}
+@media(max-width:620px){.site-header .brand-signature{gap:7px}.site-header .brand-emblem{width:27px;height:27px}.site-header .brand-wordmark{font-size:19px}.site-header .brand-wordmark em{font-size:24px}}
+.topbar nav{gap:6px}
+.topbar nav a{font-size:12px;padding-inline:14px;font-weight:500}
+.topbar nav a.active{background:var(--surface);box-shadow:0 1px 5px rgba(0,0,0,.06);color:var(--primary-600)}
+h1{font-weight:650;letter-spacing:-.045em}
+h2{font-weight:600;letter-spacing:-.035em}
+h3{font-weight:600;letter-spacing:-.02em}
+:where(button,a,input,select,textarea):focus-visible{outline:3px solid var(--focus);outline-offset:4px}
+:where(button,a){touch-action:manipulation}
+.primary-button{background:var(--primary-600);box-shadow:0 2px 4px rgba(21,122,85,.12);gap:10px;font-weight:500}
+.secondary-button{background:var(--surface);border-color:var(--panel-line);color:var(--text)}
+.secondary-button:hover{background:var(--ink-200);color:var(--text);border-color:var(--border-strong)}
+:where(.primary-button,.secondary-button,.home-switch){transition:background-color var(--dur-fast),box-shadow var(--dur-fast),transform var(--dur-fast)}
+.hero,.landing-page .hero{padding-block:84px 80px}
+.hero>.hero-copy>h1{font-size:clamp(40px,5.3vw,68px);line-height:1.08;max-width:900px;margin-inline:auto;margin-bottom:22px}
+.hero h1 em{color:var(--ink-500)}
+.hero>.hero-copy>.intro,.landing-page .hero>.hero-copy>.intro{font-size:20px;line-height:1.55;max-width:590px;margin-bottom:38px}
+.landing-page #hero-start{max-width:840px;margin-inline:auto;gap:22px}
+.picker{max-width:780px;padding:20px 24px;background:var(--surface);border:1px solid var(--panel-line);border-radius:22px;box-shadow:var(--shadow-sm)}
+.picker-row{gap:24px}
+.picker-field>span{font-size:11px;font-weight:600;letter-spacing:.025em;color:var(--text-muted)}
+.picker-field select{min-height:44px;padding-block:10px;background-color:var(--surface-alt);border-color:transparent;border-radius:10px;font-size:15px}
+.kb-preview{margin-top:0;padding:22px;background:linear-gradient(160deg,var(--surface),var(--ink-200));border:1px solid var(--border-strong);border-radius:24px;box-shadow:0 2px 2px rgba(0,0,0,.06),0 24px 48px -24px rgba(0,0,0,.23)}
+.kb-preview .keyboard{background:transparent}
+.kb-preview .key:not(.is-active):not(.is-wrong){box-shadow:0 1px 2px rgba(0,0,0,.09);border-color:rgba(0,0,0,.08)}
+.picker-cta{margin-top:8px}
+.hero-note{font-size:12px;color:var(--text-muted)}
+.home-roadmap,.langs{background:transparent;box-shadow:none;clip-path:none;padding-block:72px 80px;border-top:1px solid var(--panel-line)}
+.home-roadmap .section-heading,.langs-heading{text-align:start;align-items:flex-start}
+.home-roadmap h2,.langs-heading h2{font-size:clamp(30px,4vw,42px)}
+.roadmap-summary{text-align:start;margin-inline:0;font-size:17px}
+.langs-heading{margin-bottom:30px}
+.lang-grid{gap:10px;grid-template-columns:repeat(6,minmax(0,1fr))}
+.lang-chip{height:66px;border:1px solid var(--panel-line);border-radius:16px;box-shadow:none;font-size:14px}
+.lang-chip[aria-current=true]{box-shadow:inset 0 0 0 1px var(--primary-600);background:var(--primary-50)}
+.lang-chip:hover{transform:translateY(-2px);box-shadow:var(--shadow-card)}
+:where(.shortcut-card,.explore-card,.continue-card,.typing-test,.free-board,.weak-tool,.game-panel,.coach,.daily-goal,.prog-summary){border:1px solid var(--panel-line);box-shadow:var(--shadow-panel);border-radius:24px}
+.shortcut-card{padding:32px;min-height:230px;transition:transform var(--dur),box-shadow var(--dur)}
+.shortcut-card:hover{transform:translateY(-3px);box-shadow:var(--shadow-lift)}
+.shortcut-card>b{display:grid;place-items:center;width:44px;height:44px;border-radius:13px;background:var(--primary-50);color:var(--primary-600);font-size:23px}
+.shortcut-card h3{font-size:23px}
+.rail-chip{border:1px solid var(--panel-line);box-shadow:none;border-radius:18px;padding:20px}
+.cur-head,.prog-head,.free-head{padding-block:64px 40px}
+.cur-head h1,.prog-head h1{font-size:clamp(36px,4.6vw,56px);font-weight:650;letter-spacing:-.04em}
+.cur-layout{gap:40px}
+.cur-side{background:var(--surface);padding:20px 12px;border:1px solid var(--panel-line);border-radius:20px;top:88px}
+.cur-main{gap:48px}
+.unit-head{margin-bottom:18px}
+.unit-card .unit-head h2{font-size:27px}
+.prog-summary{overflow:hidden}
+.prog-summary strong{font-weight:500;letter-spacing:-.045em;font-variant-numeric:tabular-nums}
+:where(.duration-picker,.game-tabs,.prog-courses){background:var(--ink-200);padding:4px;border-radius:12px}
+:where(.duration-picker,.game-tabs,.prog-courses) :is(button,a){border-radius:9px}
+.typing-test{padding:36px}
+.player-topbar{min-height:64px;background:var(--glass);padding-inline:28px}
+.pt-right{gap:6px}
+.pt-redo,.pt-toggle{width:40px;height:40px;border-radius:12px;background:var(--surface)}
+.pt-toggle[aria-pressed=false]{opacity:.65}
+.pt-title strong{font-size:15px;font-weight:600}
+.progress-segments{padding-top:20px;gap:5px}
+.progress-segments .seg{height:4px}
+footer{border-top:1px solid var(--panel-line);color:var(--text-muted);font-size:12px}
+.ui-symbol{width:1.15em;height:1.15em;display:inline-block;vertical-align:-.18em;flex-shrink:0;fill:none;stroke:currentColor;stroke-width:1.65;stroke-linecap:round;stroke-linejoin:round;pointer-events:none}
+.badge-icon,.badge-notice-icon{color:var(--primary-600)}
+.badge-icon .ui-symbol{width:30px;height:30px}
+@media(min-width:901px){.topbar nav a{min-height:32px}.landing-page .hero{padding-top:70px}.landing-page .hero>.hero-copy>h1{font-size:60px}.landing-page .hero>.hero-copy>.intro{font-size:18px;margin-bottom:30px}}
+@media(max-width:900px){.topbar{height:60px}.lang-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.hero,.landing-page .hero{padding-block:56px}.cur-layout{gap:24px}.cur-side{top:80px}.topbar.is-menu-open nav{border:1px solid var(--panel-line);box-shadow:var(--shadow-lift)}}
+@media(max-width:620px){.hero,.landing-page .hero{padding:42px 20px 48px}.hero>.hero-copy>h1{font-size:39px;line-height:1.13;letter-spacing:-.04em}.hero>.hero-copy>.intro,.landing-page .hero>.hero-copy>.intro{font-size:17px;margin-bottom:28px}.picker{padding:16px;border-radius:18px}.picker-row{gap:14px}.kb-preview{padding:9px;border-radius:14px}.home-roadmap,.langs{padding-block:44px}.lang-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.lang-chip{height:58px}.shortcut-card{padding:24px;min-height:180px}.cur-head,.prog-head,.free-head{padding-block:40px 28px}.cur-side{position:static}.typing-test{padding:24px 18px;border-radius:20px}.player-topbar{padding-inline:12px;gap:6px}.pt-right{gap:2px}.pt-redo,.pt-toggle{width:34px;height:36px}.pt-screen{margin-inline-end:2px}.hero-note{line-height:1.6}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}.shortcut-card:hover,.lang-chip:hover{transform:none}}
+@media(prefers-reduced-transparency:reduce){.topbar,.player-topbar{background:var(--canvas);backdrop-filter:none;-webkit-backdrop-filter:none}}
+@media(prefers-contrast:more){:root{--panel-line:var(--ink-600);--border:var(--ink-600)}.hero-note,.hero h1 em{color:var(--ink-700)}}
+/* The shared header has exactly the same geometry on every page. Page actions live in content. */
+.site-header{height:64px;min-height:64px;flex-shrink:0;grid-template-columns:minmax(120px,1fr) auto minmax(120px,1fr)}
+.site-header .site-language{display:inline-flex;align-items:center;justify-content:center;gap:7px;min-height:36px;padding:6px 10px;border-radius:12px;color:var(--ink-700);font-size:11px;font-weight:500;text-decoration:none}
+.site-language .ui-symbol{width:18px;height:18px}
+.site-language:hover{background:var(--ink-200)}
+.lesson-toolbar{position:relative;top:auto;min-height:64px;width:100%;padding-inline:max(var(--pad-x),calc((100% - var(--w-page))/2 + var(--pad-x)));background:transparent;border-bottom:1px solid var(--panel-line)}
+.shortcut-grid.shortcut-grid--two{grid-template-columns:repeat(2,minmax(0,1fr))}
+@media(max-width:1100px) and (min-width:901px){.site-header{grid-template-columns:auto minmax(0,1fr) auto;gap:12px}.site-header nav{gap:0}.site-header nav a{padding-inline:8px}}
+@media(max-width:900px){.site-header{height:60px;min-height:60px;display:flex;justify-content:space-between}.site-header .header-actions{gap:8px}.site-header .menu-toggle{width:40px;height:40px;min-height:40px;order:2}.site-header .site-language{order:1}.site-header.is-menu-open>nav{inset-inline:var(--pad-x)}.lesson-toolbar{padding-inline:var(--pad-x)}}
+@media(max-width:620px){.shortcut-grid.shortcut-grid--two{grid-template-columns:1fr}.lesson-toolbar{flex-wrap:wrap;padding:10px 16px;gap:10px}.lesson-toolbar .pt-back{font-size:12px}.lesson-toolbar .pt-title{text-align:end}.lesson-toolbar .pt-right{width:100%;justify-content:flex-end}.lesson-toolbar .pt-screen{margin-inline-end:auto}}
+
+/* Shared MiniMax-style navigation: plain links, generous horizontal space. */
+.site-header.topbar{background:#fafafb;border-bottom:1px solid #e5e6e8;backdrop-filter:none;-webkit-backdrop-filter:none;padding-inline:max(28px,calc((100% - 1360px)/2));grid-template-columns:1fr auto auto;gap:40px}
+.site-header.topbar nav{gap:24px;justify-self:end}
+.site-header.topbar nav a{padding:8px 0;border-radius:0;font-size:13px;font-weight:400;background:transparent;box-shadow:none}
+.site-header.topbar nav a.active{background:transparent;box-shadow:none;color:var(--primary-600);font-weight:500}
+.site-header.topbar .site-language{padding-inline:0;font-size:12px}
+@media(max-width:1100px){.site-header.topbar{gap:24px}.site-header.topbar nav{gap:18px}}
+@media(max-width:900px){.site-header.topbar{padding-inline:22px;gap:16px}.site-header.topbar.is-menu-open nav{background:#fafafb;padding:20px;border:1px solid #e5e6e8}.site-header.topbar nav a{padding:12px 0}}

@@ -78,7 +78,7 @@ window.TypingEaseUI = {
     noCurriculum: 'Indeks kursus tidak dapat dimuatkan (<code>data/curriculum.ms.js</code>).',
     fixtureNote: 'Menggunakan kandungan contoh daripada <code>hoc/_fixture/</code> — pelajaran sebenar belum ada dalam <code>data/lessons/</code>.',
     screenOf: 'Skrin {n} / {total}',
-    newKey: 'KEKUNCI BAHARU',
+    newKey: 'Kekunci baharu',
     pressToContinue: 'Tekan <b>{key}</b> untuk meneruskan',
     enterToContinue: 'Tekan <b>Enter</b> untuk meneruskan',
     found: 'Itulah dia.',
@@ -100,7 +100,7 @@ window.TypingEaseUI = {
     redoScreen: 'Ulang skrin ini',
     redoScreenAdvised: 'Ulang skrin ini (disyorkan)',
     skipScreen: 'Langkau',
-    lessonDone: 'SELESAI',
+    lessonDone: 'Selesai',
     learned: 'Anda sudah kenal {count} kekunci:',
     statWpm: 'Kelajuan',
     statAccuracy: 'Ketepatan',
@@ -276,5 +276,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 PSM bersih', hint: 'Satu pusingan pada 40 PSM dengan ketepatan 95% atau lebih.' },
     'clean-60': { title: '60 PSM bersih', hint: 'Satu pusingan pada 60 PSM dengan ketepatan 95% atau lebih.' },
     'typed-5000': { title: '5,000 kekunci', hint: 'Taip lima ribu tekanan kekunci secara keseluruhan.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'Amaran!', body: 'Caps Lock anda dihidupkan', close: 'Tutup amaran Caps Lock' }
 };

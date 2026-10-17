@@ -2,21 +2,16 @@
   // Âm thanh khi gõ — cùng bộ tiếng với typekute: tiếng phím thật (một sprite ~100 KB, mỗi phím một
   // đoạn), chuông theo số sao (star1–3) và tiếng "pop" của pháo hoa kỷ lục.
   //
-  // MẶC ĐỊNH TẮT (PLAN.md phase 5): người học thường mở site ở lớp, ở quán, ở văn phòng — tự dưng phát
-  // ra tiếng là một cách rất nhanh để họ đóng tab. typekute mặc định bật; TypingEase giữ quyết định cũ.
+  // MẶC ĐỊNH BẬT như typekute (chủ site yêu cầu, 2026-10-17 — thay quyết định "mặc định tắt" của PLAN.md
+  // phase 5). Ai đã tắt bằng nút loa thì lựa chọn đó được nhớ (`off`) và giữ nguyên.
   //
   // Phím đúng phát tiếng phím thật qua WebAudio (không trễ, chồng nhau được khi gõ nhanh). Sprite chỉ
-  // tải khi âm đang bật và người dùng đã chạm/gõ (AudioContext chỉ chạy sau một cử chỉ). Chưa tải xong
-  // thì dùng tiếng click tổng hợp. Phím SAI: typekute im lặng; TypingEase giữ một tiếng "bụp" trầm, khẽ,
-  // để vẫn phân biệt được đúng/sai mà không cần nhìn màn hình.
+  // tải khi âm đang bật và người dùng đã chạm/gõ (AudioContext chỉ chạy sau một cử chỉ); phím gõ trước
+  // khi tải xong thì im lặng. Phím SAI im lặng — y như typekute: chỉ phím đúng mới kêu.
   const KEY = 'typingease-sound-v1';
   const BASE = '/assets/sounds/';
-  const VOICES = {
-    ok: { type: 'triangle', from: 1180, to: 760, gain: 0.05, seconds: 0.035 },
-    bad: { type: 'square', from: 220, to: 150, gain: 0.035, seconds: 0.08 }
-  };
 
-  const read = () => { try { return global.localStorage.getItem(KEY) === 'on'; } catch { return false; } };
+  const read = () => { try { return global.localStorage.getItem(KEY) !== 'off'; } catch { return true; } };
   let enabled = read(), context = null, buffer = null, sprite = null, loading = null;
   const playing = new Set();
 
@@ -41,22 +36,6 @@
     return loading;
   }
 
-  function synth(voice) {
-    const ctx = audio();
-    if (!ctx) return;
-    const now = ctx.currentTime;
-    const oscillator = ctx.createOscillator(), gain = ctx.createGain();
-    oscillator.type = voice.type;
-    oscillator.frequency.setValueAtTime(voice.from, now);
-    oscillator.frequency.exponentialRampToValueAtTime(voice.to, now + voice.seconds);
-    gain.gain.setValueAtTime(0.0001, now);
-    gain.gain.exponentialRampToValueAtTime(voice.gain, now + 0.004);
-    gain.gain.exponentialRampToValueAtTime(0.0001, now + voice.seconds);
-    oscillator.connect(gain).connect(ctx.destination);
-    oscillator.start(now);
-    oscillator.stop(now + voice.seconds + 0.01);
-  }
-
   // Đoạn của sprite theo mã ký tự (cách của typekute: Enter 13, Backspace 8, còn lại charCode).
   function keySample(key) {
     const ctx = audio();
@@ -77,8 +56,8 @@
   function click(verdict, key) {
     if (!enabled) return;
     try {
-      if (verdict === 'bad') { synth(VOICES.bad); return; }
-      if (!keySample(key)) { synth(VOICES.ok); prepare(); }
+      if (verdict === 'bad') return;
+      if (!keySample(key)) prepare();
     } catch { /* thiết bị không có audio, cứ gõ tiếp */ }
   }
 
@@ -101,21 +80,46 @@
     return promise;
   }
 
+  // Tiếng theo PHÍM VẬT LÝ (keydown), không theo ô nhập: bộ gõ tiếng Việt/Nhật thay chữ tại chỗ
+  // ("a" → "â", key "Process"), độ dài ô không đổi nên tiếng theo `input` cứ mất lúc có lúc không.
+  // `wrong(char)` (tuỳ chọn) trả true khi ký tự gõ sai bài — phím sai im lặng như typekute. Phím đang
+  // soạn bộ gõ thì không biết đúng/sai nên luôn kêu, lấy tiếng theo vị trí phím (`event.code`).
+  function key(event, wrong, typed = event.key) {
+    if (!enabled || !event || event.repeat || event.metaKey || (event.ctrlKey && !event.altKey)) return;
+    const name = event.key;
+    if (name === 'Backspace' || name === 'Enter') { click('ok', name); return; }
+    if (event.isComposing || name === 'Process' || name === 'Unidentified' || event.keyCode === 229) {
+      const code = /^(?:Key|Digit)(.)$/.exec(event.code || '');
+      click('ok', code ? code[1].toLowerCase() : ' ');
+      return;
+    }
+    if (typeof typed !== 'string' || [...typed].length !== 1) return;   // Shift, mũi tên, phím chết…
+    let bad = false;
+    try { bad = Boolean(wrong?.(typed)); } catch { /* chấm lỗi thì cứ kêu */ }
+    click(bad ? 'bad' : 'ok', typed);
+  }
+
   function set(value) {
     enabled = Boolean(value);
     try { global.localStorage.setItem(KEY, enabled ? 'on' : 'off'); } catch { /* storage blocked */ }
-    if (enabled) { prepare(); click('ok', ' '); }   // nghe thử ngay: bật mà im lặng thì không ai biết đã bật chưa
+    // Nghe thử ngay: bật mà im lặng thì không ai biết đã bật chưa.
+    if (enabled) prepare()?.then(() => { if (enabled) click('ok', ' '); });
     else playing.forEach(clip => clip.pause());
     return enabled;
   }
 
-  // Giải mã sprite ở phím/chạm đầu tiên khi âm đang bật — không tải gì nếu người học không bật âm.
+  // Tải + giải mã sprite ngay khi trang rảnh (AudioContext tạo trước cử chỉ thì ở trạng thái chờ, vẫn
+  // giải mã được), để những phím đầu tiên đã có tiếng; cử chỉ đầu tiên đánh thức nó. Âm tắt thì không tải.
   const warm = () => { if (enabled) prepare(); };
-  global.addEventListener('keydown', warm, { once: true, capture: true });
-  global.addEventListener('pointerdown', warm, { once: true, capture: true });
+  const idle = global.requestIdleCallback || (callback => setTimeout(callback, 300));
+  if (document.readyState === 'complete') idle(warm);
+  else global.addEventListener('load', () => idle(warm), { once: true });
+  const wake = () => { if (enabled && context) audio(); };
+  global.addEventListener('keydown', wake, { capture: true });
+  global.addEventListener('pointerdown', wake, { capture: true });
 
   global.TypingEaseSound = {
-    KEY, isOn: () => enabled, set, toggle: () => set(!enabled), click,
+    KEY, isOn: () => enabled, set, toggle: () => set(!enabled), click, key,
     star: number => effect(`star${Math.min(3, Math.max(1, Number(number) || 1))}`, 1),
     effect
   };

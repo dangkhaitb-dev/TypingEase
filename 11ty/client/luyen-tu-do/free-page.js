@@ -183,6 +183,11 @@
     setTarget(next);
   });
 
+  // Caps Lock (caps-lock.js, như Practice của typekute): chữ HOA không Shift đúng chỗ cần chữ thường.
+  input.addEventListener('keydown', event => {
+    if (target) global.TypingEaseCapsLock?.observe(event, target[input.value.length]);
+  });
+
   input.addEventListener('input', () => {
     if (!target) return;
     if (input.value.length > target.length) input.value = input.value.slice(0, target.length);

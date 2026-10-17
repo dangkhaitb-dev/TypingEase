@@ -77,7 +77,7 @@ window.TypingEaseUI = {
     noCurriculum: 'Kursun dizini yüklenmedi (<code>data/curriculum.tr.js</code>).',
     fixtureNote: '<code>hoc/_fixture/</code> içindeki örnek içerikle çalışıyor — asıl ders henüz <code>data/lessons/</code> içinde değil.',
     screenOf: 'Ekran {n} / {total}',
-    newKey: 'YENİ TUŞ',
+    newKey: 'Yeni tuş',
     pressToContinue: 'Devam etmek için <b>{key}</b> tuşuna bas',
     enterToContinue: 'Devam etmek için <b>Enter</b> tuşuna bas',
     found: 'İşte bu.',
@@ -99,7 +99,7 @@ window.TypingEaseUI = {
     redoScreen: 'Bu ekranı tekrarla',
     redoScreenAdvised: 'Bu ekranı tekrarla (önerilir)',
     skipScreen: 'Atla',
-    lessonDone: 'TAMAMLANDI',
+    lessonDone: 'Tamamlandı',
     learned: 'Artık {count} tuş biliyorsun:',
     statWpm: 'Hız',
     statAccuracy: 'Doğruluk',
@@ -275,5 +275,8 @@ window.TypingEaseUI = {
     'clean-40': { title: 'Temiz 40 KDK', hint: '%95 ya da üstü doğrulukla 40 KDK\'lık bir tur.' },
     'clean-60': { title: 'Temiz 60 KDK', hint: '%95 ya da üstü doğrulukla 60 KDK\'lık bir tur.' },
     'typed-5000': { title: '5.000 tuş', hint: 'Toplamda beş bin tuşa bas.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'Uyarı!', body: 'Caps Lock\'un açık', close: 'Caps Lock uyarısını kapat' }
 };

@@ -83,7 +83,7 @@ window.TypingEaseUI = {
     noCurriculum: "Non è stato caricato l'indice del corso (<code>data/curriculum.it.js</code>).",
     fixtureNote: 'In funzione con il contenuto di esempio di <code>hoc/_fixture/</code> — la lezione vera non è ancora in <code>data/lessons/</code>.',
     screenOf: 'Schermata {n} / {total}',
-    newKey: 'TASTO NUOVO',
+    newKey: 'Tasto nuovo',
     pressToContinue: 'Premi <b>{key}</b> per continuare',
     enterToContinue: 'Premi <b>Invio</b> per continuare',
     found: 'Eccolo.',
@@ -105,7 +105,7 @@ window.TypingEaseUI = {
     redoScreen: 'Ripeti questa schermata',
     redoScreenAdvised: 'Ripeti questa schermata (consigliato)',
     skipScreen: 'Salta',
-    lessonDone: 'COMPLETATA',
+    lessonDone: 'Completata',
     learned: 'Conosci già {count} tasti:',
     statWpm: 'Velocità',
     statAccuracy: 'Precisione',
@@ -282,5 +282,8 @@ window.TypingEaseUI = {
     'clean-40': { title: '40 PPM pulite', hint: 'Un giro a 40 PPM con il 95% di precisione o più.' },
     'clean-60': { title: '60 PPM pulite', hint: 'Un giro a 60 PPM con il 95% di precisione o più.' },
     'typed-5000': { title: '5.000 battute', hint: 'Scrivi cinquemila battute in totale.' }
-  }
+  },
+
+  /* caps-lock.js — the Caps Lock warning card (typekute's wording). */
+  capsLock: { title: 'Avviso!', body: 'Il tuo Maiusc è attivato', close: 'Chiudi avviso Maiusc' }
 };

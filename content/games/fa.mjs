@@ -3,6 +3,7 @@
  * layout (no IME, no dead keys). Latin digits in the game counters (fa-IR-u-nu-latn), so they match the
  * numbers filled into the result lines. Addressed with شما, like data/courses/fa.js. */
 export default {
+  worlds: {"rain": "باغ کرم‌های شب‌تاب", "race": "پیست غروب", "keys": "ایستگاه فضایی"},
   slug: 'bazi-tayp',
   title: 'بازی تایپ رایگان روی صفحه‌کلید فارسی | TypingEase',
   description: 'سه بازی تایپ رایگان: باران کلمه، مسابقه با شبح و شکار کلید. تایپ ده‌انگشتی را روی صفحه‌کلید استاندارد فارسی در مرورگر تمرین کنید، بدون ثبت‌نام.',
