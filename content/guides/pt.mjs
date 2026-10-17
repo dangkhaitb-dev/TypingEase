@@ -15,17 +15,17 @@ export default {
   meta: 'TypingEase · 17 de outubro de 2026 · 7 min de leitura',
   sections: [
     { h2: 'O ABNT2 põe o ç e dois acentos no mesmo dedo',
-      html: `<p>Antes de falar em treino, vale olhar para o teclado com outros olhos. No ABNT2, a fileira do meio termina, do lado direito, com três teclas que o português usa o tempo todo, e todas ficam com o <b>mindinho direito</b>:</p>
+      html: `<p>Antes de falar em treino, vale olhar para o teclado com outros olhos. No ABNT2, o canto direito do teclado guarda três teclas que o português usa o tempo todo, e todas ficam com o <b>mindinho direito</b>:</p>
 <ul><li><b>Ç</b>, com tecla própria, logo depois do L.</li>
 <li><b>~</b>, à direita do Ç. É uma tecla morta: você aperta, nada aparece, e o til cai sobre a letra seguinte. Com Shift, a mesma tecla dá o circunflexo (^).</li>
 <li><b>´</b>, uma fileira acima, à direita do P. Também é tecla morta; com Shift, dá a crase (\`).</li></ul>
 <p>Some a isso o Enter, o Backspace, o hífen e a tecla da barra com o ponto de interrogação, perto do Shift direito, e o mindinho direito vira o dedo mais ocupado da mão.</p>
-<p>Agora repare na terminação <em>-ção</em>. O ç e o til estão lado a lado na fileira do meio, e os dois são do mesmo dedo. Ou seja: em <em>atenção</em>, <em>população</em> ou <em>informação</em>, o mindinho aperta duas teclas vizinhas seguidas, sem descanso, e só então a mão esquerda entra com o a. No plural <em>-ções</em> é igual, com o o e o e logo depois. É um dos movimentos mais repetidos do português escrito e um dos mais desconfortáveis do teclado.</p>
+<p>Agora repare na terminação <em>-ção</em>. O ç e o til estão lado a lado na fileira do meio, e os dois são do mesmo dedo. Ou seja: em <em>atenção</em>, <em>população</em> ou <em>informação</em>, o mindinho aperta duas teclas vizinhas seguidas, sem descanso, e só então a mão esquerda entra com o a. No plural <em>-ções</em> é igual, só que depois vêm o, e e s. É um dos movimentos mais repetidos do português escrito e um dos mais desconfortáveis do teclado.</p>
 <p>Não é defeito seu se você trava ali. É o desenho do ABNT2. A boa notícia é que um gesto tão repetido melhora rápido quando é treinado de propósito.</p>` },
 
     { h2: 'Onde o seu ritmo quebra: um diagnóstico de cinco minutos',
       html: `<p>Antes de tentar acelerar, descubra onde você perde tempo. Faça o <a class="inline-link" href="{test}">teste de digitação</a> de 1 minuto duas ou três vezes seguidas e, em vez de olhar só o número no final, preste atenção nos lugares em que a mão hesita. Quase sempre são estes:</p>
-<ul><li><b>Antes do til.</b> Você sabe que vem um <em>ã</em> e a mão para meio segundo para "procurar" o ~.</li>
+<ul><li><b>Antes do til.</b> Você sabe que vem um <em>ã</em> e a mão congela meio segundo procurando o ~.</li>
 <li><b>No circunflexo.</b> <em>Você</em>, <em>pôr</em>, <em>três</em>: o ^ pede Shift junto com o ~, e muita gente aperta os dois com a mesma mão.</li>
 <li><b>Na crase e no agudo.</b> <em>À</em> e <em>é</em> usam a mesma tecla, com e sem Shift. A dúvida entre os dois custa mais do que o movimento.</li>
 <li><b>Nas maiúsculas e na pontuação.</b> Ponto de interrogação, vírgula antes de "que", nomes próprios.</li></ul>
@@ -55,7 +55,7 @@ export default {
 <p>Num dia sem paciência para repetir frases, a <em>Chuva de palavras</em> dos <a class="inline-link" href="{games}">jogos de digitação</a> treina a mesma coisa de outro jeito: cada palavra tem de sair exatamente igual, com acento, e se três passarem o jogo acaba. Não substitui o treino calmo, mas obriga a decidir rápido.</p>` },
 
     { h2: 'O que o teste mostra e o que ele esconde',
-      html: `<p>O PPM do teste segue a convenção de sempre: cada cinco caracteres digitados, contando espaços e pontuação, valem uma palavra, e o total é dividido pelos minutos. Um <em>ã</em> conta como um caractere, embora custe dois toques. Por isso o seu número em português tende a ficar abaixo do que você faria num texto em inglês, e comparar com resultados de sites em inglês só desanima. Compare você com você, em português.</p>
+      html: `<p>O PPM do teste segue a convenção de sempre: cada cinco caracteres digitados, contando espaços e pontuação, valem uma palavra, e o total é dividido pelos minutos. Um <em>ã</em> conta como um caractere, embora custe dois toques. Por isso o mesmo texto sem acentos renderia um número um pouco maior, e comparar com resultados de sites em inglês só desanima. Compare você com você, em português.</p>
 <p>Para a comparação valer alguma coisa:</p>
 <ul><li><b>Sempre a mesma duração.</b> 1 minuto mede o pique; 5 ou 10 minutos mostram o ritmo que você aguenta. Misturar os dois no mesmo gráfico engana.</li>
 <li><b>Precisão antes do PPM.</b> Abaixo de 95%, o ganho de velocidade é emprestado: você paga depois, apagando.</li>
@@ -75,7 +75,7 @@ export default {
   ],
   faqTitle: 'Perguntas sobre digitar mais rápido',
   faq: [
-    ['Vale a pena trocar para um teclado americano para digitar mais rápido?', 'Para escrever em português, não. No teclado americano o ç e os acentos saem por combinações de teclas mortas, e você vai reaprender posições durante semanas. Use o teclado que você tem no trabalho ou na escola. Se você usa o ABNT2 configurado sem teclas mortas, há um curso só para essa configuração.'],
+    ['Vale a pena trocar para um teclado americano para digitar mais rápido?', 'Para escrever em português, não. No teclado americano, o ç e os acentos dependem do layout US Internacional e de outras combinações, e você vai reaprender posições durante semanas. Use o teclado que você tem no trabalho ou na escola. Se você usa o ABNT2 configurado sem teclas mortas, há um curso só para essa configuração.'],
     ['Treinar com textos em inglês ajuda?', 'Ajuda pouco. Fixa a posição dos dedos nas letras comuns, mas não treina o ç, o til nem o circunflexo, que é onde o português perde tempo. Frases reais em português rendem mais.'],
     ['Digito rápido, mas erro muito. O que faço?', 'Diminua o ritmo até os erros ficarem raros e mantenha assim por alguns dias. Parece retrocesso, mas apagar e corrigir custa mais tempo do que digitar um pouco mais devagar. Quando a precisão estabilizar, acelere aos poucos.'],
     ['Teclado mecânico deixa a digitação mais rápida?', 'Pode ser mais confortável, mas a velocidade vem dos dedos, não das chaves. O que conta é treinar no mesmo layout que você usa todo dia, seja de notebook ou de mesa.'],

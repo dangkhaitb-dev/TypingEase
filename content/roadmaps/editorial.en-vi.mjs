@@ -1,23 +1,23 @@
 // Editorial guidance for the default EN/VI courses only; other courses keep their own copy.
 const COPY = {
-  en: `<section><h2>Typing lessons: choose your starting level</h2>
-<p>The roadmap above is the place to choose your next exercise. The English course contains {{count}} lessons across {{units}} units. Start with an open lesson; later units unlock as you complete the earlier work. Use the lesson labels and the continue button to find your current starting point.</p>
-<p>If the home keys are unfamiliar, begin with the first lesson. If you already write comfortably but hesitate at numbers or capitals, read the unit descriptions before deciding what to practise. You do not have to turn every visit into a speed test. A lesson is a place to work on a movement; a test is a place to sample how several movements work together.</p>
+  en: `<section><h2>Where to start in the typing lessons</h2>
+<p>Pick your next exercise from the roadmap above. The English course contains {{count}} lessons across {{units}} units. Start with an open lesson; later units unlock as you complete the earlier work. The lesson labels and the continue button show where you left off.</p>
+<p>If the home keys are unfamiliar, begin with the first lesson. If you already write comfortably but hesitate at numbers or capitals, read the unit descriptions before deciding what to practise. You do not have to turn every visit into a speed test. A lesson is for working on one movement; a test samples how several movements work together.</p>
 </section>
 <section><h2>Learn touch typing on your keyboard layout</h2>
-<p>This is the English course associated with the site's standard QWERTY keyboard. Before a session, check that the layout selected for typing matches the keyboard you intend to practise. A familiar-looking key can produce a different character when the operating system uses another layout. Type a few of the displayed characters and resolve that mismatch before you interpret the result as a finger-placement problem.</p>
+<p>This is the English course for the standard QWERTY keyboard. Before a session, check that the layout selected for typing matches the keyboard you intend to practise. A familiar-looking key can produce a different character when the operating system uses another layout. Type a few of the displayed characters and sort out any mismatch before you blame your finger placement.</p>
 <p>The site also has separate keyboard-family courses. If you are learning a different arrangement, choose its course from the <a href="/">language and keyboard selection</a> rather than treating the QWERTY finger diagram as universal. The English text of an exercise and the arrangement of its keys are separate choices: changing the language you read does not by itself teach a different physical layout.</p>
-<p>A physical keyboard makes the finger-position exercises meaningful in a way that tapping an on-screen keyboard does not reproduce. If you move between a laptop and a separate keyboard, allow yourself to find the home position before comparing attempts. Practise on the device you need for writing, study or work; there is no requirement here to buy a particular keyboard before beginning.</p>
+<p>A physical keyboard makes the finger-position exercises meaningful in a way that tapping an on-screen keyboard does not reproduce. If you move between a laptop and a separate keyboard, allow yourself to find the home position before comparing attempts. Practise on the device you use for writing, study or work; you do not need to buy a particular keyboard to begin.</p>
 </section>
-<section><h2>Typing course: from letter keys to complete sentences</h2>
+<section><h2>How the course moves from letter keys to full sentences</h2>
 <h3>Build letter movements before combining everything</h3>
-<p>Letter Keys starts with groups of letters and the space bar. The aim is to find a repeatable movement and return to a useful starting position. Some exercises will feel very small. That is an opportunity to notice which finger you used, rather than an invitation to rush through material because the letters are familiar.</p>
-<p>Number Flow then brings attention to numbers. Capital & Symbol Control adds combinations involving capitals and symbols. Full Keyboard Flow combines more of the keyboard. Treat a new character as a new movement to inspect. If the next familiar letter goes wrong after a reach, practise returning to your position as well as reaching the destination.</p>
+<p>Letter Keys starts with groups of letters and the space bar. The aim is to find a repeatable movement and return to a useful starting position. Some exercises will feel tiny. Use them to notice which finger you used, rather than rushing because the letters look familiar.</p>
+<p>Number Flow then turns to the number row. Capital & Symbol Control adds combinations involving capitals and symbols. Full Keyboard Flow combines more of the keyboard. Treat a new character as a new movement to inspect. If the next familiar letter goes wrong after a reach, practise returning to your position as well as reaching the destination.</p>
 <h3>Move from isolated keys into connected text</h3>
 <p>Connected Stories and Everyday Writing shift the work towards sequences of words and everyday language. You now have to read ahead, keep your place and coordinate familiar keys without stopping at every boundary. A difficult word can reveal a transition that isolated letter drills did not expose. It is reasonable to revisit that transition before repeating the full passage.</p>
-<p>Real-World Text adds another context for applying those movements. Use the exercises to notice what changes when the text includes a less predictable combination of letters, punctuation or numbers.</p>
+<p>Real-World Text puts the same movements into less tidy material. Use it to notice what changes when the text includes a less predictable combination of letters, punctuation or numbers.</p>
 <h3>Separate pace, precision and sustained attention</h3>
-<p>Smooth & Accurate Typing, Speed Building and Precision Control give you different things to pay attention to. Do not assume that a speed-focused unit makes mistakes irrelevant. If you cannot tell why an attempt deteriorated, reduce the pace enough to observe whether you lost your place, reached for the wrong key or missed a capital.</p>
+<p>Smooth & Accurate Typing, Speed Building and Precision Control each ask you to watch something different. Do not assume that a speed-focused unit makes mistakes irrelevant. If you cannot tell why an attempt deteriorated, reduce the pace enough to observe whether you lost your place, reached for the wrong key or missed a capital.</p>
 <p>Focused Endurance and Performance Practice come later in the sequence. Longer or more demanding material may expose habits that a short familiar drill hides. Finishing the roadmap is not a promise of a particular WPM. What typing training of this kind gives you is a clearer understanding of which tasks you can do reliably and which still need focused work.</p>
 </section>
 <section><h2>How to practise a typing lesson</h2>
@@ -29,7 +29,7 @@ const COPY = {
 <section><h2>Track typing lessons and unlock the next unit</h2>
 <p>The player records lesson completion and uses it to determine access to later units. In the current implementation, completing the ordinary lessons in a unit opens the following unit. Completing a jump lesson also opens the next unit; jump lessons are not required in addition to every ordinary lesson. Follow the options actually shown in the player rather than assuming that a link in the catalogue overrides your progress state.</p>
 <p>A screen can have an accuracy requirement, and its displayed instructions and result are the place to check it. Do not treat a suggested practice target in an article as an extra software rule. Likewise, an unlocked unit means the course allows you to continue; it does not mean every movement in the earlier unit must now feel effortless.</p>
-<p>For your own decision, ask whether you can explain the remaining mistake. If a small number of unfamiliar transitions still cause pauses, you may want another attempt. If you are repeating without paying attention, choose a shorter focused task or return later. </p>
+<p>For your own decision, ask whether you can explain the remaining mistake. If a small number of unfamiliar transitions still cause pauses, you may want another attempt. If you are repeating without paying attention, choose a shorter focused task or come back later.</p>
 </section>
 <section><h2>Typing exercises for common mistakes</h2>
 <h3>You know the key but keep looking down</h3>
@@ -40,8 +40,8 @@ const COPY = {
 <p>Select connected text and read a small group ahead rather than staring only at the next character. Keep the material manageable. The <a href="/touch-typing/">finger-placement guide</a> explains how to isolate a movement; the <a href="/practice/">practice page</a> gives another place to work when you want to apply what you have learned outside the roadmap.</p>
 </section>
 <section><h2>Learning touch typing from the start</h2>
-<p>TypingEase favours intentional habits from the point when someone begins using a keyboard regularly. We want a typing beginner to receive more guidance than simply “find the right letter”: where to begin, how to choose a movement and how to check the result. That is the reason for offering a sequence rather than only a stopwatch.</p>
-<p>For someone starting to use a computer for schoolwork or independent learning, keyboard familiarity can be preparation for writing and finding information. The same principle applies to an adult revisiting an established habit: choose a task that matters, then practise a specific part of it without turning every session into a competition.</p>
+<p>A stopwatch can tell a typing beginner how fast they are; it cannot tell them what to do next. That is why this course is a sequence: where to begin, which movement to work on and how to check the result. Each lesson narrows the job to something you can actually observe.</p>
+<p>For someone starting to use a computer for schoolwork or independent learning, that structure turns an unfamiliar keyboard into a series of small steps they can finish. It works the same way for an adult revisiting an old habit, as long as each session has one specific aim and is not treated as a competition.</p>
 </section>
 <section><h2>Typing course questions</h2>
 <h3>Is every lesson about two new keys?</h3>
@@ -53,24 +53,24 @@ const COPY = {
 <h3>What should I do after choosing a lesson?</h3>
 <p>Open it, read its first instruction and locate the starting keys. You do not need to read the whole roadmap guide before practising. Return here when you need to choose a new focus or understand how the units fit together.</p>
 </section>`,
-  vi: `<section><h2>Bài học gõ 10 ngón: chọn mức bắt đầu</h2>
-<p>Danh sách phía trên là nơi để chọn bài thực hành. Khóa tiếng Việt có {{count}} bài trong {{units}} chặng. Chọn một bài đang mở để bắt đầu; các chặng tiếp theo được mở theo tiến độ hoàn thành của bạn.</p>
+  vi: `<section><h2>Nên bắt đầu từ bài học gõ 10 ngón nào?</h2>
+<p>Chọn bài thực hành ở danh sách phía trên. Khóa tiếng Việt có {{count}} bài trong {{units}} chặng. Chọn một bài đang mở để bắt đầu; các chặng tiếp theo được mở theo tiến độ hoàn thành của bạn.</p>
 <p>Nếu chưa quen hàng phím cơ sở, hãy bắt đầu ở bài đầu tiên. Nếu đã gõ được nhưng thường khựng ở số hoặc Shift, đọc mô tả chặng để biết phần nào cần chú ý. Bạn không cần biến mỗi lần ghé trang thành một bài thi tốc độ. Bài học là nơi sửa từng chuyển động; bài test giúp nhìn lại cách nhiều chuyển động phối hợp với nhau.</p>
 </section>
 <section><h2>Học gõ 10 ngón trên bàn phím QWERTY</h2>
 <p>Khóa này dùng bàn phím QWERTY và có nội dung tiếng Việt. Trước khi luyện, đối chiếu phím cần bấm với bàn phím đang dùng. Nếu bấm một phím nhưng máy hiện ký tự khác, hãy kiểm tra layout và chế độ nhập trước khi kết luận mình đặt ngón sai.</p>
-<p>Với tiếng Việt, việc tìm phím và việc ghép dấu cần được phân biệt. Đọc hướng dẫn ngay trong bài, đặc biệt khi chuyển từ chữ không dấu sang chữ có dấu. Đừng mặc định rằng tất cả màn hình đều yêu cầu cùng một cách bật hoặc tắt bộ gõ. Thử một từ ngắn để kiểm tra đầu vào sẽ giúp bạn tránh gõ lại cả đoạn vì chọn nhầm chế độ.</p>
+<p>Với tiếng Việt, cần tách việc tìm phím khỏi việc ghép dấu. Đọc hướng dẫn ngay trong bài, đặc biệt khi chuyển từ chữ không dấu sang chữ có dấu. Đừng mặc định rằng tất cả màn hình đều yêu cầu cùng một cách bật hoặc tắt bộ gõ. Thử một từ ngắn để kiểm tra đầu vào sẽ giúp bạn tránh gõ lại cả đoạn vì chọn nhầm chế độ.</p>
 <p>Bàn phím vật lý phù hợp với việc tập vị trí ngón tay. Gõ trên màn hình cảm ứng là một thao tác khác, nên không dùng kết quả ấy để so trực tiếp với bài đặt tay trên máy tính. Nếu đổi từ laptop sang bàn phím rời, dành một lượt ngắn tìm lại vị trí trước khi so điểm.</p>
 </section>
-<section><h2>Lộ trình luyện gõ: từ phím chữ đến đoạn văn</h2>
+<section><h2>Lộ trình luyện gõ đi từ phím chữ đến đoạn văn</h2>
 <h3>Từ phím chữ đến phối hợp bàn phím</h3>
-<p>Chặng Phím chữ giúp làm quen theo nhóm thay vì đưa ngay cả bàn phím vào một bài. Bạn có khoảng để xem mình dùng ngón nào và có trở về vị trí ban đầu không. Một chuỗi dễ đọc vẫn có thể là bài tập hữu ích nếu bạn dùng nó để quan sát chuyển động.</p>
-<p>Phím số, Phím Shift & Chữ hoa, rồi Phối hợp bàn phím đưa thêm yêu cầu vào việc gõ. Với phím mới, hãy tập cả đường đi lẫn đường về. Nếu gõ đúng số nhưng nhầm chữ ngay sau đó, vấn đề có thể nằm ở vị trí tay sau khi với lên, không chỉ ở phím số.</p>
+<p>Chặng Phím chữ cho bạn làm quen từng nhóm phím thay vì cả bàn phím ngay trong một bài. Nhờ vậy bạn có thời gian để xem mình dùng ngón nào và có trở về vị trí ban đầu không. Một chuỗi dễ đọc vẫn có thể là bài tập hữu ích nếu bạn dùng nó để quan sát chuyển động.</p>
+<p>Phím số, Phím Shift & Chữ hoa, rồi Phối hợp bàn phím lần lượt đặt thêm yêu cầu. Với phím mới, hãy tập cả đường đi lẫn đường về. Nếu gõ đúng số nhưng nhầm chữ ngay sau đó, vấn đề có thể nằm ở vị trí tay sau khi với lên, không chỉ ở phím số.</p>
 <h3>Gõ từ, câu và nội dung có ngữ cảnh</h3>
 <p>Từ vựng & liên kết chuyển sự chú ý sang các chuỗi có nghĩa. Bạn cần vừa đọc, vừa giữ chỗ trong câu, vừa phối hợp những phím đã quen. Nếu một từ làm bạn dừng nhiều lần, thử tìm cặp ký tự gây vướng trước khi gõ lại nguyên đoạn.</p>
 <p>Giao tiếp & công việc cùng Biểu mẫu & dữ liệu mở rộng ngữ cảnh thực hành. Hãy xem cách mình xử lý chữ hoa, số và dấu câu khi chúng xuất hiện giữa nội dung. Tên chặng mô tả bài luyện, không phải chứng nhận kỹ năng nghề nghiệp sau khi hoàn thành.</p>
 <h3>Giữ nhịp, xử lý lỗi rồi tăng yêu cầu</h3>
-<p>Luyện nhịp & sửa lỗi và Tăng tốc & phản xạ đặt những trọng tâm khác nhau. Khi tăng nhịp, vẫn cần nhìn xem lỗi phát sinh ở đâu. Gõ nhanh hơn nhưng không biết vì sao cả dòng sai sẽ khó giúp bạn chọn việc cần luyện tiếp.</p>
+<p>Luyện nhịp & sửa lỗi và Tăng tốc & phản xạ đặt những trọng tâm khác nhau. Khi tăng nhịp, vẫn cần nhìn xem lỗi phát sinh ở đâu. Gõ nhanh hơn mà không biết vì sao cả dòng sai thì bạn cũng khó chọn việc cần luyện tiếp.</p>
 <p>Chính tả & âm khó, Luyện sức bền, rồi Tổng hợp & tốt nghiệp tiếp tục đưa các kỹ năng vào nhiệm vụ rộng hơn. Một đoạn dài có thể bộc lộ chỗ mất tập trung mà bài ngắn không cho thấy. Hoàn thành lộ trình không kèm lời hứa đạt một mốc WPM cố định; điều hữu ích là biết mình đã gõ vững phần nào.</p>
 </section>
 <section><h2>Cách luyện một bài gõ 10 ngón</h2>
@@ -93,8 +93,8 @@ const COPY = {
 <p>Chọn nội dung có ngữ cảnh và đọc trước một nhóm ngắn. Nếu chưa rõ cách chia việc cho các ngón, xem <a href="/cach-go-10-ngon/">hướng dẫn đặt tay và gõ không nhìn bàn phím</a>. Khi muốn thực hành ngoài lộ trình, bạn có thể sang <a href="/luyen-tu-do/">trang luyện tự do</a> thay vì cứ mở lại bài đã thuộc.</p>
 </section>
 <section><h2>Học cách gõ ngay từ khi dùng máy tính</h2>
-<p>Người xây dựng TypingEase muốn người mới được hướng dẫn khi bắt đầu dùng bàn phím thường xuyên. Chỉ tìm đúng chữ là chưa đủ để hiểu mình đang gõ thế nào. Chúng tôi ưu tiên những việc có thể quan sát: chọn ngón, giữ vị trí, đọc phản hồi và sửa một điểm cụ thể.</p>
-<p>Với người bắt đầu dùng máy tính để học hoặc tự tìm tài liệu, sự quen thuộc với bàn phím là một phần chuẩn bị cho việc viết và làm bài. Mục tiêu ấy không cần biến thành cuộc thi với người khác. Người lớn đang muốn đổi một thói quen cũng có thể dùng cách tiếp cận này, bắt đầu từ công việc mình thật sự cần làm.</p>
+<p>Đồng hồ bấm giờ cho người mới biết mình gõ nhanh bao nhiêu, nhưng không nói được nên làm gì tiếp. Vì vậy khóa học này là một lộ trình: bắt đầu ở đâu, luyện chuyển động nào, kiểm tra kết quả ra sao. Mỗi bài thu việc cần làm lại thành điều bạn quan sát được: chọn ngón, giữ vị trí, đọc phản hồi và sửa một điểm cụ thể.</p>
+<p>Với người bắt đầu dùng máy tính để học hoặc tự tìm tài liệu, cách chia nhỏ ấy biến một bàn phím lạ thành chuỗi bước nhỏ có thể hoàn thành. Người lớn muốn đổi một thói quen cũ cũng có thể đi theo cách này, miễn mỗi buổi chỉ nhắm một mục tiêu cụ thể và không biến thành cuộc thi với ai.</p>
 </section>
 <section><h2>Câu hỏi về khóa học gõ 10 ngón</h2>
 <h3>Có phải bài nào cũng dạy hai phím mới?</h3>

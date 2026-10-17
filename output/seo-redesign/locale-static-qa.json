@@ -1,0 +1,752 @@
+[
+  {
+    "locale": "es",
+    "kind": "home",
+    "url": "/es/",
+    "issues": []
+  },
+  {
+    "locale": "es",
+    "kind": "lessons",
+    "url": "/es/lecciones/",
+    "issues": []
+  },
+  {
+    "locale": "es",
+    "kind": "test",
+    "url": "/es/test-de-mecanografia/",
+    "issues": []
+  },
+  {
+    "locale": "es",
+    "kind": "games",
+    "url": "/es/juegos-de-mecanografia/",
+    "issues": []
+  },
+  {
+    "locale": "es",
+    "kind": "wpm",
+    "url": "/es/escribir-mas-rapido/",
+    "issues": []
+  },
+  {
+    "locale": "pt",
+    "kind": "home",
+    "url": "/pt/",
+    "issues": []
+  },
+  {
+    "locale": "pt",
+    "kind": "lessons",
+    "url": "/pt/licoes/",
+    "issues": []
+  },
+  {
+    "locale": "pt",
+    "kind": "test",
+    "url": "/pt/teste-de-digitacao/",
+    "issues": []
+  },
+  {
+    "locale": "pt",
+    "kind": "games",
+    "url": "/pt/jogos-de-digitacao/",
+    "issues": []
+  },
+  {
+    "locale": "pt",
+    "kind": "wpm",
+    "url": "/pt/como-digitar-mais-rapido/",
+    "issues": []
+  },
+  {
+    "locale": "fr",
+    "kind": "home",
+    "url": "/fr/",
+    "issues": []
+  },
+  {
+    "locale": "fr",
+    "kind": "lessons",
+    "url": "/fr/lecons/",
+    "issues": []
+  },
+  {
+    "locale": "fr",
+    "kind": "test",
+    "url": "/fr/test-de-frappe/",
+    "issues": []
+  },
+  {
+    "locale": "fr",
+    "kind": "games",
+    "url": "/fr/jeux-de-dactylographie/",
+    "issues": []
+  },
+  {
+    "locale": "fr",
+    "kind": "wpm",
+    "url": "/fr/taper-plus-vite-au-clavier/",
+    "issues": []
+  },
+  {
+    "locale": "de",
+    "kind": "home",
+    "url": "/de/",
+    "issues": []
+  },
+  {
+    "locale": "de",
+    "kind": "lessons",
+    "url": "/de/lektionen/",
+    "issues": []
+  },
+  {
+    "locale": "de",
+    "kind": "test",
+    "url": "/de/tipptest/",
+    "issues": []
+  },
+  {
+    "locale": "de",
+    "kind": "games",
+    "url": "/de/tippspiele/",
+    "issues": []
+  },
+  {
+    "locale": "de",
+    "kind": "wpm",
+    "url": "/de/schneller-tippen/",
+    "issues": []
+  },
+  {
+    "locale": "it",
+    "kind": "home",
+    "url": "/it/",
+    "issues": []
+  },
+  {
+    "locale": "it",
+    "kind": "lessons",
+    "url": "/it/lezioni/",
+    "issues": []
+  },
+  {
+    "locale": "it",
+    "kind": "test",
+    "url": "/it/test-di-battitura/",
+    "issues": []
+  },
+  {
+    "locale": "it",
+    "kind": "games",
+    "url": "/it/giochi-di-dattilografia/",
+    "issues": []
+  },
+  {
+    "locale": "it",
+    "kind": "wpm",
+    "url": "/it/scrivere-piu-veloce/",
+    "issues": []
+  },
+  {
+    "locale": "nl",
+    "kind": "home",
+    "url": "/nl/",
+    "issues": []
+  },
+  {
+    "locale": "nl",
+    "kind": "lessons",
+    "url": "/nl/lessen/",
+    "issues": []
+  },
+  {
+    "locale": "nl",
+    "kind": "test",
+    "url": "/nl/typetest/",
+    "issues": []
+  },
+  {
+    "locale": "nl",
+    "kind": "games",
+    "url": "/nl/typespelletjes/",
+    "issues": []
+  },
+  {
+    "locale": "nl",
+    "kind": "wpm",
+    "url": "/nl/sneller-typen/",
+    "issues": []
+  },
+  {
+    "locale": "pl",
+    "kind": "home",
+    "url": "/pl/",
+    "issues": []
+  },
+  {
+    "locale": "pl",
+    "kind": "lessons",
+    "url": "/pl/lekcje/",
+    "issues": []
+  },
+  {
+    "locale": "pl",
+    "kind": "test",
+    "url": "/pl/test-pisania/",
+    "issues": []
+  },
+  {
+    "locale": "pl",
+    "kind": "games",
+    "url": "/pl/gry-do-pisania/",
+    "issues": []
+  },
+  {
+    "locale": "pl",
+    "kind": "wpm",
+    "url": "/pl/jak-szybko-pisac-na-klawiaturze/",
+    "issues": []
+  },
+  {
+    "locale": "tr",
+    "kind": "home",
+    "url": "/tr/",
+    "issues": []
+  },
+  {
+    "locale": "tr",
+    "kind": "lessons",
+    "url": "/tr/dersler/",
+    "issues": []
+  },
+  {
+    "locale": "tr",
+    "kind": "test",
+    "url": "/tr/klavye-hiz-testi/",
+    "issues": []
+  },
+  {
+    "locale": "tr",
+    "kind": "games",
+    "url": "/tr/klavye-oyunlari/",
+    "issues": []
+  },
+  {
+    "locale": "tr",
+    "kind": "wpm",
+    "url": "/tr/klavyede-hizli-yazma/",
+    "issues": []
+  },
+  {
+    "locale": "uk",
+    "kind": "home",
+    "url": "/uk/",
+    "issues": []
+  },
+  {
+    "locale": "uk",
+    "kind": "lessons",
+    "url": "/uk/uroky/",
+    "issues": []
+  },
+  {
+    "locale": "uk",
+    "kind": "test",
+    "url": "/uk/test-shvydkosti-druku/",
+    "issues": []
+  },
+  {
+    "locale": "uk",
+    "kind": "games",
+    "url": "/uk/ihry-dlia-druku/",
+    "issues": []
+  },
+  {
+    "locale": "uk",
+    "kind": "wpm",
+    "url": "/uk/yak-zbilshyty-shvydkist-druku/",
+    "issues": []
+  },
+  {
+    "locale": "ru",
+    "kind": "home",
+    "url": "/ru/",
+    "issues": []
+  },
+  {
+    "locale": "ru",
+    "kind": "lessons",
+    "url": "/ru/uroki/",
+    "issues": []
+  },
+  {
+    "locale": "ru",
+    "kind": "test",
+    "url": "/ru/test-skorosti-pechati/",
+    "issues": []
+  },
+  {
+    "locale": "ru",
+    "kind": "games",
+    "url": "/ru/igry-dlya-pechati/",
+    "issues": []
+  },
+  {
+    "locale": "ru",
+    "kind": "wpm",
+    "url": "/ru/kak-bystro-pechatat-na-klaviature/",
+    "issues": []
+  },
+  {
+    "locale": "ja",
+    "kind": "home",
+    "url": "/ja/",
+    "issues": []
+  },
+  {
+    "locale": "ja",
+    "kind": "lessons",
+    "url": "/ja/renshu/",
+    "issues": []
+  },
+  {
+    "locale": "ja",
+    "kind": "test",
+    "url": "/ja/typing-test/",
+    "issues": []
+  },
+  {
+    "locale": "ja",
+    "kind": "games",
+    "url": "/ja/typing-games/",
+    "issues": []
+  },
+  {
+    "locale": "ja",
+    "kind": "wpm",
+    "url": "/ja/hayaku-utsu-hoho/",
+    "issues": []
+  },
+  {
+    "locale": "ko",
+    "kind": "home",
+    "url": "/ko/",
+    "issues": []
+  },
+  {
+    "locale": "ko",
+    "kind": "lessons",
+    "url": "/ko/gangui/",
+    "issues": []
+  },
+  {
+    "locale": "ko",
+    "kind": "test",
+    "url": "/ko/taja-teseuteu/",
+    "issues": []
+  },
+  {
+    "locale": "ko",
+    "kind": "games",
+    "url": "/ko/taja-geim/",
+    "issues": []
+  },
+  {
+    "locale": "ko",
+    "kind": "wpm",
+    "url": "/ko/taja-sokdo-olligi/",
+    "issues": []
+  },
+  {
+    "locale": "zh",
+    "kind": "home",
+    "url": "/zh/",
+    "issues": []
+  },
+  {
+    "locale": "zh",
+    "kind": "lessons",
+    "url": "/zh/kecheng/",
+    "issues": []
+  },
+  {
+    "locale": "zh",
+    "kind": "test",
+    "url": "/zh/dazi-ceshi/",
+    "issues": []
+  },
+  {
+    "locale": "zh",
+    "kind": "games",
+    "url": "/zh/dazi-youxi/",
+    "issues": []
+  },
+  {
+    "locale": "zh",
+    "kind": "wpm",
+    "url": "/zh/tigao-dazi-sudu/",
+    "issues": []
+  },
+  {
+    "locale": "zh-tw",
+    "kind": "home",
+    "url": "/zh-tw/",
+    "issues": []
+  },
+  {
+    "locale": "zh-tw",
+    "kind": "lessons",
+    "url": "/zh-tw/kecheng/",
+    "issues": []
+  },
+  {
+    "locale": "zh-tw",
+    "kind": "test",
+    "url": "/zh-tw/dazi-ceyan/",
+    "issues": []
+  },
+  {
+    "locale": "zh-tw",
+    "kind": "games",
+    "url": "/zh-tw/dazi-youxi/",
+    "issues": []
+  },
+  {
+    "locale": "zh-tw",
+    "kind": "wpm",
+    "url": "/zh-tw/tisheng-dazi-sudu/",
+    "issues": []
+  },
+  {
+    "locale": "th",
+    "kind": "home",
+    "url": "/th/",
+    "issues": []
+  },
+  {
+    "locale": "th",
+    "kind": "lessons",
+    "url": "/th/bot-rian/",
+    "issues": []
+  },
+  {
+    "locale": "th",
+    "kind": "test",
+    "url": "/th/thotsop-phim/",
+    "issues": []
+  },
+  {
+    "locale": "th",
+    "kind": "games",
+    "url": "/th/kem-fuek-phim/",
+    "issues": []
+  },
+  {
+    "locale": "th",
+    "kind": "wpm",
+    "url": "/th/phim-hai-reo-khuen/",
+    "issues": []
+  },
+  {
+    "locale": "id",
+    "kind": "home",
+    "url": "/id/",
+    "issues": []
+  },
+  {
+    "locale": "id",
+    "kind": "lessons",
+    "url": "/id/pelajaran/",
+    "issues": []
+  },
+  {
+    "locale": "id",
+    "kind": "test",
+    "url": "/id/tes-mengetik/",
+    "issues": []
+  },
+  {
+    "locale": "id",
+    "kind": "games",
+    "url": "/id/game-mengetik/",
+    "issues": []
+  },
+  {
+    "locale": "id",
+    "kind": "wpm",
+    "url": "/id/cara-mengetik-cepat/",
+    "issues": []
+  },
+  {
+    "locale": "ms",
+    "kind": "home",
+    "url": "/ms/",
+    "issues": []
+  },
+  {
+    "locale": "ms",
+    "kind": "lessons",
+    "url": "/ms/pelajaran/",
+    "issues": []
+  },
+  {
+    "locale": "ms",
+    "kind": "test",
+    "url": "/ms/ujian-menaip/",
+    "issues": []
+  },
+  {
+    "locale": "ms",
+    "kind": "games",
+    "url": "/ms/permainan-menaip/",
+    "issues": []
+  },
+  {
+    "locale": "ms",
+    "kind": "wpm",
+    "url": "/ms/cara-menaip-dengan-cepat/",
+    "issues": []
+  },
+  {
+    "locale": "fil",
+    "kind": "home",
+    "url": "/fil/",
+    "issues": []
+  },
+  {
+    "locale": "fil",
+    "kind": "lessons",
+    "url": "/fil/aralin/",
+    "issues": []
+  },
+  {
+    "locale": "fil",
+    "kind": "test",
+    "url": "/fil/typing-test/",
+    "issues": []
+  },
+  {
+    "locale": "fil",
+    "kind": "games",
+    "url": "/fil/laro-sa-pagta-type/",
+    "issues": []
+  },
+  {
+    "locale": "fil",
+    "kind": "wpm",
+    "url": "/fil/how-to-type-faster/",
+    "issues": []
+  },
+  {
+    "locale": "hi",
+    "kind": "home",
+    "url": "/hi/",
+    "issues": []
+  },
+  {
+    "locale": "hi",
+    "kind": "lessons",
+    "url": "/hi/path/",
+    "issues": []
+  },
+  {
+    "locale": "hi",
+    "kind": "test",
+    "url": "/hi/typing-test/",
+    "issues": []
+  },
+  {
+    "locale": "hi",
+    "kind": "games",
+    "url": "/hi/typing-games/",
+    "issues": []
+  },
+  {
+    "locale": "hi",
+    "kind": "wpm",
+    "url": "/hi/typing-speed-kaise-badhaye/",
+    "issues": []
+  },
+  {
+    "locale": "bn",
+    "kind": "home",
+    "url": "/bn/",
+    "issues": []
+  },
+  {
+    "locale": "bn",
+    "kind": "lessons",
+    "url": "/bn/path/",
+    "issues": []
+  },
+  {
+    "locale": "bn",
+    "kind": "test",
+    "url": "/bn/typing-test/",
+    "issues": []
+  },
+  {
+    "locale": "bn",
+    "kind": "games",
+    "url": "/bn/typing-games/",
+    "issues": []
+  },
+  {
+    "locale": "bn",
+    "kind": "wpm",
+    "url": "/bn/typing-speed-barano/",
+    "issues": []
+  },
+  {
+    "locale": "ur",
+    "kind": "home",
+    "url": "/ur/",
+    "issues": []
+  },
+  {
+    "locale": "ur",
+    "kind": "lessons",
+    "url": "/ur/asbaq/",
+    "issues": []
+  },
+  {
+    "locale": "ur",
+    "kind": "test",
+    "url": "/ur/typing-test/",
+    "issues": []
+  },
+  {
+    "locale": "ur",
+    "kind": "games",
+    "url": "/ur/typing-games/",
+    "issues": []
+  },
+  {
+    "locale": "ur",
+    "kind": "wpm",
+    "url": "/ur/typing-ki-raftar-barhayen/",
+    "issues": []
+  },
+  {
+    "locale": "fa",
+    "kind": "home",
+    "url": "/fa/",
+    "issues": []
+  },
+  {
+    "locale": "fa",
+    "kind": "lessons",
+    "url": "/fa/darsha/",
+    "issues": []
+  },
+  {
+    "locale": "fa",
+    "kind": "test",
+    "url": "/fa/test-tayp/",
+    "issues": []
+  },
+  {
+    "locale": "fa",
+    "kind": "games",
+    "url": "/fa/bazi-tayp/",
+    "issues": []
+  },
+  {
+    "locale": "fa",
+    "kind": "wpm",
+    "url": "/fa/chegoone-sari-tayp-konim/",
+    "issues": []
+  },
+  {
+    "locale": "ar",
+    "kind": "home",
+    "url": "/ar/",
+    "issues": []
+  },
+  {
+    "locale": "ar",
+    "kind": "lessons",
+    "url": "/ar/durus/",
+    "issues": []
+  },
+  {
+    "locale": "ar",
+    "kind": "test",
+    "url": "/ar/ikhtibar-alkitaba/",
+    "issues": []
+  },
+  {
+    "locale": "ar",
+    "kind": "games",
+    "url": "/ar/alaab-alkitaba/",
+    "issues": []
+  },
+  {
+    "locale": "ar",
+    "kind": "wpm",
+    "url": "/ar/kayf-tazid-surat-alkitaba/",
+    "issues": []
+  },
+  {
+    "locale": "sw",
+    "kind": "home",
+    "url": "/sw/",
+    "issues": []
+  },
+  {
+    "locale": "sw",
+    "kind": "lessons",
+    "url": "/sw/masomo/",
+    "issues": []
+  },
+  {
+    "locale": "sw",
+    "kind": "test",
+    "url": "/sw/jaribio-la-kuandika/",
+    "issues": []
+  },
+  {
+    "locale": "sw",
+    "kind": "games",
+    "url": "/sw/michezo-ya-kuandika/",
+    "issues": []
+  },
+  {
+    "locale": "sw",
+    "kind": "wpm",
+    "url": "/sw/jinsi-ya-kuandika-haraka/",
+    "issues": []
+  },
+  {
+    "locale": "he",
+    "kind": "home",
+    "url": "/he/",
+    "issues": []
+  },
+  {
+    "locale": "he",
+    "kind": "lessons",
+    "url": "/he/shiurim/",
+    "issues": []
+  },
+  {
+    "locale": "he",
+    "kind": "test",
+    "url": "/he/mivchan-hakldada/",
+    "issues": []
+  },
+  {
+    "locale": "he",
+    "kind": "games",
+    "url": "/he/mishakei-hakldada/",
+    "issues": []
+  },
+  {
+    "locale": "he",
+    "kind": "wpm",
+    "url": "/he/eich-lehakid-maher-yoter/",
+    "issues": []
+  }
+]

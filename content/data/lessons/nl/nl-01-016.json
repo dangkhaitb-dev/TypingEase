@@ -4,10 +4,10 @@
   "group": "g1",
   "order": 11,
   "slug": "nl-01-016",
-  "title": "AltGr-toets",
-  "summary": "Leer de AltGr-toets en oefen hem met é en eerder geleerde letters.",
+  "title": "Dode toets ´: é",
+  "summary": "Oefen de dode toets ´ met é en eerder geleerde letters.",
   "newKeys": [
-    "altgr"
+    "´"
   ],
   "keysSoFar": [
     "f",
@@ -42,7 +42,7 @@
   "minAccuracy": 80,
   "estMinutes": 7,
   "inputMode": "ascii",
-  "intro": "Leer de AltGr-toets en oefen hem met é en eerder geleerde letters.",
+  "intro": "Oefen de dode toets ´ met é en eerder geleerde letters.",
   "congrats": "",
   "kind": "keys",
   "source": {
@@ -54,29 +54,29 @@
   "screens": [
     {
       "type": "block",
-      "newKey": "altgr",
-      "text": "Houd AltGr (rechts van de spatiebalk) met je rechterduim of -pink ingedrukt, druk op e voor é en laat beide toetsen los. Ga daarna terug naar de basispositie.",
+      "newKey": "´",
+      "text": "Druk op ´ (dode toets, twee plaatsen rechts van L), laat los en druk dan op e: je krijgt é. Ga daarna terug naar de basispositie.",
       "content": "é eé ée éé eé ée éé ee é éé eé",
       "dictation": "letters"
     },
     {
       "type": "standard",
-      "text": "Houd AltGr ingedrukt voor elke é en laat hem daarna los.",
+      "text": "Druk voor elke é eerst op ´ en daarna op e.",
       "content": "ésl ée ée éaéé aééé éété ééaé éaé sé éé ééér éiéé éé"
     },
     {
       "type": "standard",
-      "text": "Houd AltGr ingedrukt voor elke é en laat hem daarna los.",
+      "text": "Druk voor elke é eerst op ´ en daarna op e.",
       "content": "élé éé éé éélé ééé éé ét éé éé én éééé éééé ré teé"
     },
     {
       "type": "standard",
-      "text": "Houd AltGr ingedrukt voor elke é en laat hem daarna los.",
+      "text": "Druk voor elke é eerst op ´ en daarna op e.",
       "content": "éeé éléé reé ééé ét éééé él éés ééét iéé éé léé éé"
     },
     {
       "type": "standard",
-      "text": "Houd AltGr ingedrukt voor elke é en laat hem daarna los.",
+      "text": "Druk voor elke é eerst op ´ en daarna op e.",
       "content": "ésr éééé aéa éeé eééé néé ér éé laéi élné aéé éésé"
     },
     {

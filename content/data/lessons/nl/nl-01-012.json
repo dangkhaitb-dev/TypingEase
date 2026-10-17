@@ -52,17 +52,17 @@
   "screens": [
     {
       "type": "standard",
-      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op e voor é. Ga daarna terug naar de basispositie.",
+      "text": "Druk op ´ (dode toets, twee plaatsen rechts van L), laat los en druk dan op e: je krijgt é. Ga daarna terug naar de basispositie.",
       "content": "ééé éééé ééé ééé ééé ééeé eé éé ééeé eé ééé"
     },
     {
       "type": "standard",
-      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op a voor á. Ga daarna terug naar de basispositie.",
+      "text": "Druk op ´ (dode toets, twee plaatsen rechts van L), laat los en druk dan op a: je krijgt á. Ga daarna terug naar de basispositie.",
       "content": "ááá ááá áááá ááá aáá áá áa aáaá áá áá áá"
     },
     {
       "type": "standard",
-      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op o voor ó. Ga daarna terug naar de basispositie.",
+      "text": "Druk op ´ (dode toets, twee plaatsen rechts van L), laat los en druk dan op o: je krijgt ó. Ga daarna terug naar de basispositie.",
       "content": "óoo oóoó óo óoó óóo óóóó óóo óóó óóó óó óóó"
     },
     {

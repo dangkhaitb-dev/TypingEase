@@ -11,7 +11,8 @@
  *   - Dấu chấm nằm ở ô Slash (cạnh ю), dấu phẩy là Shift + chính ô đó. Kế hoạch dạy ô Slash ở bài
  *     cột ngoài u3-l02, nên dấu chấm tới ở đó; dấu phẩy tới ở unit ký hiệu. KHÔNG khai
  *     `shiftUnlocks: [',']`: nó sẽ dạy Shift + một ô mà ngón tay chưa từng bấm không Shift.
- *   - ї và ґ (và х) nằm ở cột ngoài ngón út phải, dạy ở u3-l02 cùng dấu chấm.
+ *   - ї và х nằm ở cột ngoài ngón út phải, dạy ở u3-l02 cùng dấu chấm. ґ trên bố cục 104 là AltGr + г
+ *     (chỉ bản "Ukrainian Enhanced" mới có ґ ở ô Backslash). Khoá uk chính nhập từ typekute dạy ґ ở uk-01-026.
  *   - Dấu nháy (м'ясо) nằm ở ô Backquote, ngoài kế hoạch — unit ký hiệu dạy nó.
  *
  * Không có phím chết nào; ~ ở tầng Shift của ô Backquote là ký tự thật, nên `symbolsLive` khai nó.

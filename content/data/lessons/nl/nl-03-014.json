@@ -5,7 +5,7 @@
   "order": 39,
   "slug": "nl-03-014",
   "title": "Euroteken €",
-  "summary": "Leer de nieuwe toets € (AltGr + 5) en oefen hem met eerder geleerde toetsen.",
+  "summary": "Leer de nieuwe toets € (AltGr + e) en oefen hem met eerder geleerde toetsen.",
   "newKeys": [
     "€"
   ],
@@ -80,7 +80,7 @@
   "minAccuracy": 80,
   "estMinutes": 3,
   "inputMode": "ascii",
-  "intro": "Leer de nieuwe toets € (AltGr + 5) en oefen hem met eerder geleerde toetsen.",
+  "intro": "Leer de nieuwe toets € (AltGr + e) en oefen hem met eerder geleerde toetsen.",
   "congrats": "",
   "kind": "keys",
   "source": {
@@ -93,7 +93,7 @@
     {
       "type": "block",
       "newKey": "€",
-      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op 5 voor €. Ga daarna terug naar de basispositie.",
+      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op e voor €. Ga daarna terug naar de basispositie.",
       "content": "€€f f€ €€€f f€€ €€€€ €€€ €f €€ ff€ €ff",
       "dictation": "letters"
     },

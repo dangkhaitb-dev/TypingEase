@@ -26,17 +26,17 @@ export default {
       html: `<p>C'è poi un problema meccanico vero, e sta tutto in un dito. Guarda dove sono le lettere che l'italiano usa di più fuori dall'alfabeto inglese:</p>
 <ul><li><b>ò</b> e <b>à</b>, sulla riga centrale, subito a destra della L. La ò è proprio il tasto di riposo del mignolo destro.</li>
 <li><b>è</b>, una riga sopra, a destra della P, e la <b>ù</b> ancora più in là, vicino all'Invio.</li>
-<li><b>l'apostrofo</b> e la <b>ì</b>, sulla riga dei numeri, a destra dello 0. Il punto interrogativo è lo stesso tasto dell'apostrofo, con Maiusc.</li></ul>
+<li><b>l'apostrofo</b> e la <b>ì</b>, sulla riga dei numeri, a destra dello 0. Il punto interrogativo si scrive con lo stesso tasto dell'apostrofo, più Maiusc.</li></ul>
 <p>Aggiungi Invio, Backspace e il trattino, e il mignolo destro si ritrova con più tasti di qualunque altro dito. È anche il dito più debole e più corto della mano.</p>
 <p>Nella pratica questo vuol dire due cose. La prima: dopo ogni accento o apostrofo il mignolo deve tornare sulla ò. Se resta lassù vicino all'apostrofo, la lettera successiva esce storta, e spesso è proprio una vocale. La seconda: parole come <em>c'è</em>, <em>dov'è</em> o <em>com'è</em> chiedono al mignolo due salti di fila, dall'apostrofo sulla riga dei numeri alla è sulla riga di sopra. Sono parole brevissime che scrivi decine di volte al giorno, e quasi nessuno le allena di proposito.</p>
 <p>Se usi un Mac, la tastiera italiana è disposta in modo molto diverso, a partire dalle cifre: c'è un corso apposta per la tastiera italiana del Mac, e uno per il Dvorak italiano.</p>` },
 
-    { h2: 'Come scrivere più veloce sulla tastiera: prima togli le esitazioni',
+    { h2: 'Per scrivere più veloce sulla tastiera, prima togli le esitazioni',
       html: `<p>Il consiglio classico è «prima la precisione, poi la velocità». Lo condivido, ma in italiano lo tradurrei in modo più concreto: <b>prima la sicurezza</b>. Un errore di battitura si corregge e basta; un'esitazione su <em>perché</em> si ripete identica ogni volta che la parola torna.</p>
 <p>Per questo non mi convince l'idea di allenarsi su testi inglesi o su liste di parole senza accenti. Lì le PPM salgono, ma stai allenando un ritmo che si spezza alla prima <em>è</em>. Meglio frasi italiane vere, anche se il numero all'inizio è più basso.</p>
 <p>Il punto di partenza è sapere dove ti fermi. Fai due o tre volte il <a class="inline-link" href="{test}">test di battitura</a> da un minuto e, invece di guardare solo il risultato, nota le parole su cui la mano rallenta. Se sono parole con l'accento acuto, il problema è l'ortografia. Se sono parole con l'apostrofo, è il mignolo. Se sono le maiuscole, è la gestione del Maiusc.</p>
-<p>Su quest'ultimo, un'abitudine che conviene prendere subito: il Maiusc si preme con la mano opposta a quella della lettera. Per la é e per il punto interrogativo, che stanno a destra, usa il Maiusc sinistro. Altrimenti il mignolo destro deve tenere giù un tasto e premerne un altro nello stesso momento, ed è lì che nascono gli <em>e</em> al posto di <em>é</em>.</p>
-<p>Fissato il problema principale, allenalo da solo per qualche giorno. Uno alla volta.</p>` },
+<p>Su quest'ultimo, un'abitudine che conviene prendere subito: il Maiusc si preme con la mano opposta a quella della lettera. Per la é e per il punto interrogativo, che stanno a destra, usa il Maiusc sinistro. Altrimenti il mignolo destro deve tenere giù un tasto e premerne un altro nello stesso momento, ed è lì che nascono le <em>e</em> al posto delle <em>é</em>.</p>
+<p>Individuato il problema principale, allenalo da solo per qualche giorno: uno alla volta.</p>` },
 
     { h2: 'Dieci minuti di esercizi di battitura con accenti e apostrofi',
       html: `<p>Questa è la sessione che farei io, costruita sulle esitazioni tipiche dell'italiano. Sono esercizi di battitura brevi e volutamente ripetitivi: lo scopo non è leggere frasi interessanti, è ripetere il passaggio difficile finché non diventa noioso.</p>
@@ -52,7 +52,7 @@ export default {
 <p>Se un giorno non hai voglia di ripetere frasi, la <em>Pioggia di parole</em> nei <a class="inline-link" href="{games}">giochi di dattilografia</a> allena la stessa cosa in un altro modo: ogni parola va scritta esattamente, accenti compresi, e se ne perdi tre la partita finisce. Non sostituisce l'allenamento calmo, ma ti costringe a decidere in fretta.</p>` },
 
     { h2: 'Leggere il test senza illudersi',
-      html: `<p>Il test misura la velocità come quasi tutti: cinque caratteri, spazi e punteggiatura compresi, valgono una parola, e il totale si divide per i minuti. Una <em>è</em> conta come un carattere, come qualunque altra lettera. Rispetto allo spagnolo o al portoghese l'italiano qui è avvantaggiato, perché un accento non costa due tasti. Ma confrontarti con i risultati di siti in inglese non ha comunque senso: testi diversi, parole diverse. Confrontati con te stesso, in italiano.</p>
+      html: `<p>Il test misura la velocità come quasi tutti gli altri: cinque caratteri, spazi e punteggiatura compresi, valgono una parola, e il totale si divide per i minuti. Una <em>è</em> conta come un carattere, come qualunque altra lettera. Rispetto allo spagnolo o al portoghese l'italiano qui è avvantaggiato, perché un accento non costa due tasti. Ma confrontarti con i risultati di siti in inglese non ha comunque senso: testi diversi, parole diverse. Confrontati con te stesso, in italiano.</p>
 <p>Perché il confronto valga qualcosa:</p>
 <ul><li><b>Sempre la stessa durata.</b> Un minuto misura la velocità di punta, cinque o dieci la tenuta. Mescolarli nello stesso grafico inganna.</li>
 <li><b>Prima la precisione, poi le PPM.</b> Sotto il 95%, la velocità in più è in prestito: la restituisci correggendo.</li>

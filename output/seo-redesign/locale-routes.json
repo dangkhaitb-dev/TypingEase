@@ -1,0 +1,377 @@
+[
+  {
+    "code": "es",
+    "routes": {
+      "home": "/es/",
+      "lessons": "/es/lecciones/",
+      "learn": "/es/aprender/",
+      "test": "/es/test-de-mecanografia/",
+      "progress": "/es/progreso/",
+      "games": "/es/juegos-de-mecanografia/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/es/escribir-mas-rapido/"
+    }
+  },
+  {
+    "code": "pt",
+    "routes": {
+      "home": "/pt/",
+      "lessons": "/pt/licoes/",
+      "learn": "/pt/aprender/",
+      "test": "/pt/teste-de-digitacao/",
+      "progress": "/pt/progresso/",
+      "games": "/pt/jogos-de-digitacao/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/pt/como-digitar-mais-rapido/"
+    }
+  },
+  {
+    "code": "fr",
+    "routes": {
+      "home": "/fr/",
+      "lessons": "/fr/lecons/",
+      "learn": "/fr/apprendre/",
+      "test": "/fr/test-de-frappe/",
+      "progress": "/fr/progres/",
+      "games": "/fr/jeux-de-dactylographie/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/fr/taper-plus-vite-au-clavier/"
+    }
+  },
+  {
+    "code": "de",
+    "routes": {
+      "home": "/de/",
+      "lessons": "/de/lektionen/",
+      "learn": "/de/lernen/",
+      "test": "/de/tipptest/",
+      "progress": "/de/fortschritt/",
+      "games": "/de/tippspiele/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/de/schneller-tippen/"
+    }
+  },
+  {
+    "code": "it",
+    "routes": {
+      "home": "/it/",
+      "lessons": "/it/lezioni/",
+      "learn": "/it/imparare/",
+      "test": "/it/test-di-battitura/",
+      "progress": "/it/progressi/",
+      "games": "/it/giochi-di-dattilografia/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/it/scrivere-piu-veloce/"
+    }
+  },
+  {
+    "code": "nl",
+    "routes": {
+      "home": "/nl/",
+      "lessons": "/nl/lessen/",
+      "learn": "/nl/leren/",
+      "test": "/nl/typetest/",
+      "progress": "/nl/voortgang/",
+      "games": "/nl/typespelletjes/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/nl/sneller-typen/"
+    }
+  },
+  {
+    "code": "pl",
+    "routes": {
+      "home": "/pl/",
+      "lessons": "/pl/lekcje/",
+      "learn": "/pl/nauka/",
+      "test": "/pl/test-pisania/",
+      "progress": "/pl/postepy/",
+      "games": "/pl/gry-do-pisania/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/pl/jak-szybko-pisac-na-klawiaturze/"
+    }
+  },
+  {
+    "code": "tr",
+    "routes": {
+      "home": "/tr/",
+      "lessons": "/tr/dersler/",
+      "learn": "/tr/ogren/",
+      "test": "/tr/klavye-hiz-testi/",
+      "progress": "/tr/ilerleme/",
+      "games": "/tr/klavye-oyunlari/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/tr/klavyede-hizli-yazma/"
+    }
+  },
+  {
+    "code": "uk",
+    "routes": {
+      "home": "/uk/",
+      "lessons": "/uk/uroky/",
+      "learn": "/uk/vchytysia/",
+      "test": "/uk/test-shvydkosti-druku/",
+      "progress": "/uk/prohres/",
+      "games": "/uk/ihry-dlia-druku/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/uk/yak-zbilshyty-shvydkist-druku/"
+    }
+  },
+  {
+    "code": "ru",
+    "routes": {
+      "home": "/ru/",
+      "lessons": "/ru/uroki/",
+      "learn": "/ru/uchitsya/",
+      "test": "/ru/test-skorosti-pechati/",
+      "progress": "/ru/progress/",
+      "games": "/ru/igry-dlya-pechati/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/ru/kak-bystro-pechatat-na-klaviature/"
+    }
+  },
+  {
+    "code": "ja",
+    "routes": {
+      "home": "/ja/",
+      "lessons": "/ja/renshu/",
+      "learn": "/ja/manabu/",
+      "test": "/ja/typing-test/",
+      "progress": "/ja/shinchoku/",
+      "games": "/ja/typing-games/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/ja/hayaku-utsu-hoho/"
+    }
+  },
+  {
+    "code": "ko",
+    "routes": {
+      "home": "/ko/",
+      "lessons": "/ko/gangui/",
+      "learn": "/ko/baeugi/",
+      "test": "/ko/taja-teseuteu/",
+      "progress": "/ko/jindo/",
+      "games": "/ko/taja-geim/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/ko/taja-sokdo-olligi/"
+    }
+  },
+  {
+    "code": "zh",
+    "routes": {
+      "home": "/zh/",
+      "lessons": "/zh/kecheng/",
+      "learn": "/zh/xuexi/",
+      "test": "/zh/dazi-ceshi/",
+      "progress": "/zh/jindu/",
+      "games": "/zh/dazi-youxi/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/zh/tigao-dazi-sudu/"
+    }
+  },
+  {
+    "code": "zh-tw",
+    "routes": {
+      "home": "/zh-tw/",
+      "lessons": "/zh-tw/kecheng/",
+      "learn": "/zh-tw/xuexi/",
+      "test": "/zh-tw/dazi-ceyan/",
+      "progress": "/zh-tw/jindu/",
+      "games": "/zh-tw/dazi-youxi/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/zh-tw/tisheng-dazi-sudu/"
+    }
+  },
+  {
+    "code": "th",
+    "routes": {
+      "home": "/th/",
+      "lessons": "/th/bot-rian/",
+      "learn": "/th/rian/",
+      "test": "/th/thotsop-phim/",
+      "progress": "/th/khwam-kuebna/",
+      "games": "/th/kem-fuek-phim/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/th/phim-hai-reo-khuen/"
+    }
+  },
+  {
+    "code": "id",
+    "routes": {
+      "home": "/id/",
+      "lessons": "/id/pelajaran/",
+      "learn": "/id/belajar/",
+      "test": "/id/tes-mengetik/",
+      "progress": "/id/kemajuan/",
+      "games": "/id/game-mengetik/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/id/cara-mengetik-cepat/"
+    }
+  },
+  {
+    "code": "ms",
+    "routes": {
+      "home": "/ms/",
+      "lessons": "/ms/pelajaran/",
+      "learn": "/ms/belajar/",
+      "test": "/ms/ujian-menaip/",
+      "progress": "/ms/kemajuan/",
+      "games": "/ms/permainan-menaip/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/ms/cara-menaip-dengan-cepat/"
+    }
+  },
+  {
+    "code": "fil",
+    "routes": {
+      "home": "/fil/",
+      "lessons": "/fil/aralin/",
+      "learn": "/fil/matuto/",
+      "test": "/fil/typing-test/",
+      "progress": "/fil/pag-unlad/",
+      "games": "/fil/laro-sa-pagta-type/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/fil/how-to-type-faster/"
+    }
+  },
+  {
+    "code": "hi",
+    "routes": {
+      "home": "/hi/",
+      "lessons": "/hi/path/",
+      "learn": "/hi/seekhen/",
+      "test": "/hi/typing-test/",
+      "progress": "/hi/pragati/",
+      "games": "/hi/typing-games/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/hi/typing-speed-kaise-badhaye/"
+    }
+  },
+  {
+    "code": "bn",
+    "routes": {
+      "home": "/bn/",
+      "lessons": "/bn/path/",
+      "learn": "/bn/shikhun/",
+      "test": "/bn/typing-test/",
+      "progress": "/bn/agragati/",
+      "games": "/bn/typing-games/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/bn/typing-speed-barano/"
+    }
+  },
+  {
+    "code": "ur",
+    "routes": {
+      "home": "/ur/",
+      "lessons": "/ur/asbaq/",
+      "learn": "/ur/seekhein/",
+      "test": "/ur/typing-test/",
+      "progress": "/ur/taraqqi/",
+      "games": "/ur/typing-games/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/ur/typing-ki-raftar-barhayen/"
+    }
+  },
+  {
+    "code": "fa",
+    "routes": {
+      "home": "/fa/",
+      "lessons": "/fa/darsha/",
+      "learn": "/fa/amoozesh/",
+      "test": "/fa/test-tayp/",
+      "progress": "/fa/pishraft/",
+      "games": "/fa/bazi-tayp/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/fa/chegoone-sari-tayp-konim/"
+    }
+  },
+  {
+    "code": "ar",
+    "routes": {
+      "home": "/ar/",
+      "lessons": "/ar/durus/",
+      "learn": "/ar/taallam/",
+      "test": "/ar/ikhtibar-alkitaba/",
+      "progress": "/ar/taqaddum/",
+      "games": "/ar/alaab-alkitaba/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/ar/kayf-tazid-surat-alkitaba/"
+    }
+  },
+  {
+    "code": "sw",
+    "routes": {
+      "home": "/sw/",
+      "lessons": "/sw/masomo/",
+      "learn": "/sw/jifunze/",
+      "test": "/sw/jaribio-la-kuandika/",
+      "progress": "/sw/maendeleo/",
+      "games": "/sw/michezo-ya-kuandika/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/sw/jinsi-ya-kuandika-haraka/"
+    }
+  },
+  {
+    "code": "he",
+    "routes": {
+      "home": "/he/",
+      "lessons": "/he/shiurim/",
+      "learn": "/he/lilmod/",
+      "test": "/he/mivchan-hakldada/",
+      "progress": "/he/hitkadmut/",
+      "games": "/he/mishakei-hakldada/",
+      "free": null,
+      "weak": null,
+      "guide": null,
+      "wpm": "/he/eich-lehakid-maher-yoter/"
+    }
+  }
+]

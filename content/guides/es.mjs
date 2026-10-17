@@ -18,32 +18,32 @@ export default {
       html: `<p>Casi todo el que quiere escribir más rápido empieza igual: aprieta los dientes y teclea más deprisa, a ver si sale. Yo empezaría al revés. Antes de cambiar nada, haz dos o tres veces el <a class="inline-link" href="{test}">test de mecanografía</a> con la misma duración, un minuto basta, y no te quedes solo con la cifra final. Fíjate en <em>dónde</em> te paras.</p>
 <p>En español los frenazos casi nunca están repartidos al azar. Se amontonan en unos pocos sitios, y suelen ser estos:</p>
 <ul><li><b>Las vocales con tilde.</b> Si notas una pausa mínima antes de cada <em>á</em> o <em>ó</em>, el problema no es la vocal: es la tecla muerta que va antes.</li>
-<li><b>La n y la ñ.</b> Están en la misma mano, separadas por tres dedos. Quien duda entre ellas acaba escribiendo <em>pequeno</em> o <em>anadir</em>.</li>
-<li><b>Mayúsculas y signos.</b> Abrir una pregunta con ¿ pide Mayúsculas más una tecla de la fila de números que casi nadie practica.</li>
+<li><b>La n y la ñ.</b> Están en la misma mano: una la pulsa el índice y la otra el meñique. Quien duda entre ellas acaba escribiendo <em>pequeno</em> o <em>anadir</em>.</li>
+<li><b>Mayúsculas y signos.</b> Abrir una pregunta con ¿ pide Mayús más una tecla de la fila de números que casi nadie practica.</li>
 <li><b>Palabras que no esperabas.</b> Nombres propios, cifras, una palabra larga que no escribes nunca.</li></ul>
 <p>Apunta solo la categoría que más se repite. Una. Si intentas arreglar las cuatro a la vez no arreglarás ninguna, y tampoco sabrás cuál te estaba costando más. El resto de esta guía da por hecho que ya tienes ese dato: no es lo mismo entrenar a alguien que se atasca en la tilde que a alguien que se pierde en las mayúsculas.</p>` },
 
     { h2: 'Tildes, eñe y ¿?: el peaje del teclado español',
-      html: `<p>El teclado de España tiene algo que el inglés no tiene: casi todo lo propio del idioma cae sobre el meñique derecho. La <b>ñ</b> tiene tecla propia, a la derecha de la L, en la fila central. A su derecha está la tecla del acento agudo, que es una <b>tecla muerta</b>: la pulsas, no aparece nada, y la tilde se coloca sobre la vocal que escribas después. Con Mayúsculas, esa misma tecla da la diéresis de <em>pingüino</em>. Los signos de apertura <b>¡</b> y <b>¿</b> están en la fila de los números, en la tecla a la derecha del apóstrofo, y el <b>?</b> de cierre sale del propio apóstrofo con Mayúsculas.</p>
+      html: `<p>El teclado de España tiene algo que el inglés no tiene: casi todo lo propio del idioma cae sobre el meñique derecho. La <b>ñ</b> tiene tecla propia, a la derecha de la L, en la fila central. A su derecha está la tecla del acento agudo, que es una <b>tecla muerta</b>: la pulsas, no aparece nada, y la tilde se coloca sobre la vocal que escribas después. Con Mayús, esa misma tecla da la diéresis de <em>pingüino</em>. Los signos de apertura <b>¡</b> y <b>¿</b> están en la fila de los números, en la tecla a la derecha del apóstrofo, y el <b>?</b> de cierre sale del propio apóstrofo con Mayús.</p>
 <p>Suma: el meñique derecho se ocupa de la ñ, de las tildes, de la diéresis, de los dos signos de interrogación, del guion, del Intro y del retroceso. Ningún otro dedo carga tanto.</p>
-<p>Hay un detalle que se ve poco. En <em>-ción</em>, una terminación que aparece por todas partes, la c va con la izquierda, pero después vienen i, tilde, o y n seguidas con la mano derecha: corazón, meñique, anular, índice. Cuatro pulsaciones encadenadas en la misma mano, con un salto hacia fuera y otro de vuelta. Por eso <em>información</em> o <em>atención</em> se atascan más que <em>mesa</em> o <em>camino</em>.</p>
-<p>Si tu teclado es latinoamericano, la tecla del acento está a la derecha de la P, no de la Ñ, y el gesto cambia. El sitio tiene un curso aparte para esa distribución; lo que sigue vale para las dos, pero los dedos exactos son los del teclado de España.</p>` },
+<p>Hay un detalle en el que casi nadie se fija. En <em>-ción</em>, una terminación que aparece por todas partes, la c va con la izquierda, pero después vienen i, tilde, o y n seguidas con la mano derecha: corazón, meñique, anular, índice. Cuatro pulsaciones encadenadas en la misma mano, con un salto hacia fuera y otro de vuelta. Por eso <em>información</em> o <em>atención</em> se atascan más que <em>mesa</em> o <em>camino</em>.</p>
+<p>Si tu teclado es latinoamericano, la tecla del acento está a la derecha de la P, no de la Ñ, y el gesto cambia. TypingEase tiene un curso aparte para esa distribución; lo que sigue vale para las dos, pero los dedos exactos son los del teclado de España.</p>` },
 
     { h2: 'Cómo escribir más rápido en el teclado sin pagarlo en erratas',
       html: `<p>La regla de «primero la precisión, luego la velocidad» la has leído mil veces. Estoy de acuerdo, pero le añado algo que casi nunca se dice: en español, precisión significa sobre todo <b>escribir las tildes</b>. Muchas webs de práctica usan listas de palabras en inglés o textos sin acentos, y ahí cualquiera sube sus palabras por minuto. Yo no practicaría así. Te acostumbras a un ritmo que se rompe en cuanto aparece <em>también</em>, y la mano aprende que la tilde es un estorbo en vez de una parte de la palabra.</p>
 <p>Por la misma razón, no me gusta el consejo de quitar las tildes en los mensajes «para ir más rápido». Cada <em>esta</em> escrito sin acento cuando querías decir <em>está</em> es una repetición del gesto equivocado.</p>
 <p>Lo que sí funciona es tratar la vocal con tilde como un solo movimiento, igual que un acorde de dos notas: meñique y vocal casi a la vez, sin pausa entre ellos. Al principio irás más lento. Es el precio de dejar de pensarla.</p>
 <p>Dos hábitos más de mecanografía al tacto que pagan mucho en este teclado:</p>
-<ul><li><b>Mayúsculas con la mano contraria.</b> Para ¿ y ?, que están a la derecha, la Mayúsculas la pulsa el meñique izquierdo. Si usas la derecha para todo, el meñique derecho tiene que hacer dos cosas a la vez.</li>
+<ul><li><b>Mayúsculas con la mano contraria.</b> Para ¿ y ?, que están a la derecha, el Mayús lo pulsa el meñique izquierdo. Si usas la derecha para todo, el meñique derecho tiene que hacer dos cosas a la vez.</li>
 <li><b>Vuelve a la fila central después de la ñ.</b> El meñique tiende a quedarse en la zona de la tilde, y la siguiente <em>a</em> o la siguiente <em>l</em> salen torcidas.</li></ul>` },
 
     { h2: 'Diez minutos con la -ción, la ñ y los signos de apertura',
-      html: `<p>Esta es la sesión que yo haría con el frenazo que apuntaste al principio. Son ejercicios de mecanografía cortos y repetitivos a propósito: la idea no es leer frases bonitas, sino repetir el gesto difícil hasta que deje de serlo.</p>
+      html: `<p>Esta es la sesión que yo haría para atacar el frenazo que apuntaste al principio. Son ejercicios de mecanografía cortos y repetitivos a propósito: la idea no es leer frases bonitas, sino repetir el gesto difícil hasta que deje de serlo.</p>
 <h3>Minutos 1 a 4: la terminación -ción</h3>
 <p>Escribe la frase despacio, sin errores, tres veces seguidas. Cuando salga limpia, sube un poco el ritmo, nunca tanto como para tener que borrar.</p>
 <div class="guide-drill">La canción de la estación sonó después de la reunión.</div>
 <h3>Minutos 5 a 7: ñ, n y los signos</h3>
-<p>Aquí trabajan el meñique derecho y la Mayúsculas izquierda. Si el ¿ te sale como ?, es que pulsaste la tecla del apóstrofo en lugar de la de al lado.</p>
+<p>Aquí trabajan el meñique derecho y el Mayús izquierdo. Si el ¿ te sale como ?, es que pulsaste la tecla del apóstrofo en lugar de la de al lado.</p>
 <div class="guide-drill">¿Quién añadió más leña? ¡Qué año tan pequeño!</div>
 <div class="guide-drill">Una peña sin pena, un moño sin mono, una caña sin cana.</div>
 <h3>Minutos 8 a 10: comprobar</h3>
@@ -71,7 +71,7 @@ export default {
   ],
   faqTitle: 'Preguntas sobre escribir más rápido',
   faq: [
-    ['¿Me conviene cambiar a un teclado sin teclas muertas para ir más rápido?', 'No por la velocidad. Cambiar de distribución obliga a reaprender posiciones, y durante semanas irás más lento. Usa la que tienes en el trabajo o en clase. El sitio tiene cursos para el teclado de España, el latinoamericano y el latinoamericano sin teclas muertas; elige el que coincida con tu teclado real.'],
+    ['¿Me conviene cambiar a un teclado sin teclas muertas para ir más rápido?', 'No por la velocidad. Cambiar de distribución obliga a reaprender posiciones, y durante semanas irás más lento. Usa la que tienes en el trabajo o en clase. TypingEase tiene cursos para el teclado de España, el latinoamericano y el latinoamericano sin teclas muertas; elige el que coincida con tu teclado real.'],
     ['¿Sirve practicar con textos en inglés?', 'Para la posición de los dedos, algo. Para escribir español, poco: no entrenan la tilde, la ñ ni los signos de apertura, que es justo donde se pierde el tiempo. Mejor frases reales en español.'],
     ['Escribo rápido pero con muchas erratas. ¿Qué hago?', 'Baja el ritmo hasta que los errores sean raros y mantenlo unos días. Parece retroceder, pero corregir cuesta más tiempo que teclear despacio. Cuando la precisión sea estable, sube poco a poco.'],
     ['¿Un teclado mecánico me hará escribir más rápido?', 'Puede resultar más cómodo, pero la velocidad depende de los dedos, no de los interruptores. Lo que sí importa es practicar con la misma distribución que usas cada día, sea de portátil o de sobremesa.'],

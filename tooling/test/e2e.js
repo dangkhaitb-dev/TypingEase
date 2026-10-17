@@ -8,7 +8,8 @@
  * Mặc định baseUrl = http://127.0.0.1:8765. Dữ liệu đọc thẳng từ repo (sitemap, chỉ mục khoá, bố cục,
  * file chữ của trang sinh) lấy từ nguồn: public/, content/ (tooling/lib/paths.cjs).
  * Tuỳ chọn:
- *   CHROME=<đường dẫn chrome.exe>   mặc định C:/Program Files/Google/Chrome/Application/chrome.exe
+ *   CHROME=<đường dẫn chrome>       mặc định C:/Program Files/Google/Chrome/Application/chrome.exe,
+ *                                   không có thì /Applications/Google Chrome.app/… (macOS)
  *   E2E_OUT=<thư mục>               nơi lưu screenshot khi FAIL (mặc định <tmp>/typingease-e2e)
  *   ONLY=<chuỗi>                    chỉ chạy test có tên chứa chuỗi này
  *
@@ -25,7 +26,9 @@ const { chromium } = require(process.env.PW || 'playwright-core');
 const REPO = require('../lib/paths.cjs');
 
 const BASE = (process.argv[2] || 'http://127.0.0.1:8765').replace(/\/$/, '');
-const CHROME = process.env.CHROME || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
+const CHROME = process.env.CHROME || ['C:/Program Files/Google/Chrome/Application/chrome.exe',
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome'].find(file => fs.existsSync(file))
+  || 'C:/Program Files/Google/Chrome/Application/chrome.exe';
 const OUT = process.env.E2E_OUT || path.join(os.tmpdir(), 'typingease-e2e');
 const ONLY = process.env.ONLY || '';
 const DESKTOP = { width: 1440, height: 1000 };
@@ -42,7 +45,9 @@ const FINGERS = {
   y: 'right-index', h: 'right-index', n: 'right-index', u: 'right-index', j: 'right-index', m: 'right-index',
   i: 'right-middle', k: 'right-middle', ',': 'right-middle',
   o: 'right-ring', l: 'right-ring', '.': 'right-ring',
-  p: 'right-pinky', ';': 'right-pinky', '/': 'right-pinky', ' ': 'thumb'
+  // Dấu cách: bố cục US nhập từ typekute (layouts/1.json) ghi `finger: 5` = "left-thumb" (bản cũ ghi
+  // 6 = "thumb"). Đây là tên ngón tô màu trên bàn phím; tay 3D vẫn bấm bằng ngón cái phải (test 13).
+  p: 'right-pinky', ';': 'right-pinky', '/': 'right-pinky', ' ': 'left-thumb'
 };
 
 // Ghi lại mọi class được THÊM vào phím trong `root`, kèm mốc thời gian, để bắt được các class chỉ
@@ -114,11 +119,16 @@ const playerState = page => page.evaluate(() => ({
   value: document.querySelector('#player-input').value
 }));
 
-const lessonJson = async (page, id) => {
-  const response = await page.request.get(`${BASE}/data/lessons/vi/${id}.json`);
-  assert.ok(response.ok(), `không tải được bài ${id}`);
+// Mã bài mang sẵn mã khoá: `vi-01-001` nằm ở data/lessons/vi/, `zh-tw-03-001` ở data/lessons/zh-tw/.
+// Khoá sinh tự động (fr-bepo, dvorak…) vẫn dùng mã `u1-l01` nên phải nói rõ khoá.
+const lessonJson = async (page, id, course = /^(.+)-\d{2}-(?:\d{3}|jump)$/.exec(id)?.[1] || 'vi') => {
+  const response = await page.request.get(`${BASE}/data/lessons/${course}/${id}.json`);
+  assert.ok(response.ok(), `không tải được bài ${course}/${id}`);
   return response.json();
 };
+// Số phím của một bố cục, đếm thẳng từ file bố cục — bàn phím trên màn hình phải vẽ đủ chừng ấy.
+const layoutKeyCount = id => JSON.parse(fs.readFileSync(REPO.dataFile('keyboards', 'layouts', `${id}.json`), 'utf8'))
+  .structure.reduce((sum, row) => sum + row.length, 0);
 // Cùng cách nối dòng của player.buildTarget: "space" (mặc định) hoặc "enter".
 const targetOf = screen => String(screen.content).split('\n').map(line => line.trim()).filter(Boolean)
   .join(screen.linebreak === 'enter' ? '\n' : ' ');
@@ -136,16 +146,20 @@ const tests = [];
 const test = (name, options, fn) => tests.push(typeof options === 'function' ? { name, fn: options, options: {} } : { name, fn, options });
 test.skip = () => {};
 
-test('1 player load: 60 phím, bàn tay 3D, phím + ngón đầu screen', async page => {
-  await openPlayer(page, 'u1-l01/2');
-  const lesson = await lessonJson(page, 'u1-l01');
+// Bài đầu của khoá tiếng Việt (vi-01-001, "f j Space"): màn 2 là "fjjj jfj jjjj…" — hai ngón trỏ
+// trên hàng cơ sở, xen dấu cách. Mọi kỳ vọng dưới đây suy từ chính file bài, không chép tay chữ.
+const FIRST = 'vi-01-001';
+
+test('1 player load: đủ phím của bố cục, bàn tay 3D, phím + ngón đầu screen', async page => {
+  await openPlayer(page, `${FIRST}/2`);
+  const lesson = await lessonJson(page, FIRST);
   const first = targetOf(lesson.screens[1])[0];
   const board = await boardState(page);
   const state = await playerState(page);
   assert.strictEqual(state.state, 'typing');
-  assert.strictEqual(state.screenLabel, 'Screen 2 / 10');
+  assert.strictEqual(state.screenLabel, `Screen 2 / ${lesson.screens.length}`);
   assert.strictEqual(board.holder, 'cell js-keyboard-holder well', 'ô chứa bàn phím');
-  assert.strictEqual(board.keys, 60, 'số phím');
+  assert.strictEqual(board.keys, layoutKeyCount(1), 'số phím = số ô của bố cục US (1.json)');
   assert.strictEqual(board.rows, 5, 'số hàng');
   assert.ok(board.hands, 'canvas bàn tay 3D đã dựng');
   assert.strictEqual(board.activeKey, first, 'phím active = ký tự đầu');
@@ -155,38 +169,44 @@ test('1 player load: 60 phím, bàn tay 3D, phím + ngón đầu screen', async 
 });
 
 test('2 gõ đúng: phím nhún (is-animating ≤150ms), highlight + ngón chuyển', async page => {
-  await openPlayer(page, 'u1-l01/6');   // "jjj fff jjj fff jf fj": ký tự thứ 4 là dấu cách, thứ 5 là f
+  await openPlayer(page, `${FIRST}/2`);
+  const target = targetOf((await lessonJson(page, FIRST)).screens[1]);
+  const [word, next] = [target.split(' ')[0], target.split(' ')[1][0]];   // "fjjj", rồi "j"
+  assert.ok(word.length >= 3 && /\S/.test(next), `màn 2 không còn hợp với test: "${target.slice(0, 20)}"`);
   await watchClasses(page, '#board');
-  await page.keyboard.type('jjj', { delay: 30 });
+  await page.keyboard.type(word, { delay: 30 });
   await sleep(60);
   let added = await addedClasses(page);
   const presses = added.added.filter(entry => entry.className === 'is-animating');
-  assert.ok(presses.length >= 3, `is-animating xuất hiện ${presses.length} lần, cần ≥3`);
-  assert.ok(presses.every(entry => entry.key === 'j'), 'phím nhún là phím vừa gõ (j)');
+  assert.ok(presses.length >= word.length, `is-animating xuất hiện ${presses.length} lần, cần ≥${word.length}`);
+  assert.ok(presses.every(entry => word.includes(entry.key)), `phím nhún là phím vừa gõ (${word}): ${presses.map(entry => entry.key).join('')}`);
+  for (const character of new Set(word)) assert.ok(presses.some(entry => entry.key === character), `phím ${character} không nhún`);
   const last = presses[presses.length - 1];
   assert.ok(added.inputAt !== null && last.at - added.inputAt <= 150, `nhún sau input ${Math.round(last.at - added.inputAt)}ms`);
   // `dataset.finger` lúc phím nhún đã là ngón của ký tự KẾ (paint chạy trước reactToKeystroke),
-  // nên phím cuối trong "jjj" ghi 'thumb' của dấu cách; chỉ cần có lần ghi đúng ngón trỏ phải.
-  assert.ok(presses.some(entry => entry.finger === 'right-index'), 'có lần ghi ngón trỏ phải khi gõ j');
+  // nên chỉ cần có lần ghi đúng ngón của một phím trong chữ vừa gõ.
+  assert.ok(presses.some(entry => [...word].some(character => entry.finger === FINGERS[character])), 'có lần ghi đúng ngón của phím vừa gõ');
   let board = await boardState(page);
-  assert.strictEqual(board.activeKey, ' ', 'sau jjj highlight sang dấu cách');
-  // Dấu cách là ngón cái; bản gốc không chia trái/phải cho nó (layout ghi finger 6 = "thumb").
-  assert.strictEqual(board.activeFinger, 'thumb', `ngón cái, thấy ${board.activeFinger}`);
+  assert.strictEqual(board.activeKey, ' ', `sau ${word} highlight sang dấu cách`);
+  // Dấu cách là ngón cái (xem FINGERS[' ']).
+  assert.strictEqual(board.activeFinger, FINGERS[' '], `ngón cái, thấy ${board.activeFinger}`);
   await page.keyboard.type(' ');
   await sleep(40);
   board = await boardState(page);
-  assert.strictEqual(board.activeKey, 'f');
-  assert.strictEqual(board.activeFinger, 'left-index');
-  assert.strictEqual(board.pose?.finger, 'left-index', 'tay đổi theo');
+  assert.strictEqual(board.activeKey, next);
+  assert.strictEqual(board.activeFinger, FINGERS[next]);
+  assert.strictEqual(board.pose?.finger, FINGERS[next], 'tay đổi theo');
   added = await addedClasses(page);
   assert.ok(!added.added.some(entry => entry.className === 'is-wrong'), 'không có phím nào nháy đỏ');
   const state = await playerState(page);
   assert.strictEqual(state.run.errors, 0);
-  assert.strictEqual(state.value, 'jjj ');
+  assert.strictEqual(state.value, `${word} `);
 });
 
 test('3 gõ sai: phím sai nháy đỏ, lỗi tăng, highlight đứng yên', async page => {
-  await openPlayer(page, 'u1-l01/2');   // toàn j
+  await openPlayer(page, `${FIRST}/2`);
+  const target = targetOf((await lessonJson(page, FIRST)).screens[1]);
+  assert.notStrictEqual(target[0], 'k', 'ký tự đầu phải khác k để k là phím sai');
   await watchClasses(page, '#board');
   await page.keyboard.type('k');
   await sleep(60);
@@ -198,18 +218,18 @@ test('3 gõ sai: phím sai nháy đỏ, lỗi tăng, highlight đứng yên', as
   const state = await playerState(page);
   assert.strictEqual(state.run.errors, 1, 'bộ đếm lỗi');
   assert.ok(/1 lỗi/.test(state.live), `live: ${state.live}`);
-  // Ký tự sai vẫn chiếm chỗ (như typing.com), nên highlight đi tiếp tới ký tự kế — vẫn là j.
+  // Ký tự sai vẫn chiếm chỗ (như typing.com), nên highlight đi tiếp tới ký tự kế của bài.
   const board = await boardState(page);
-  assert.strictEqual(board.activeKey, 'j');
-  assert.strictEqual(board.activeFinger, 'right-index');
+  assert.strictEqual(board.activeKey, target[1]);
+  assert.strictEqual(board.activeFinger, FINGERS[target[1]]);
   await sleep(300);
   const after = await page.evaluate(() => document.querySelectorAll('#board .key.is-wrong').length);
   assert.strictEqual(after, 0, 'is-wrong tự gỡ sau 250ms');
 });
 
 test('4 hết screen: bảng kết quả, Enter sang screen kế', async page => {
-  await openPlayer(page, 'u1-l01/2');
-  const lesson = await lessonJson(page, 'u1-l01');
+  await openPlayer(page, `${FIRST}/2`);
+  const lesson = await lessonJson(page, FIRST);
   const target = targetOf(lesson.screens[1]);
   await page.keyboard.type(target, { delay: 15 });
   await page.waitForFunction(() => window.TypingEasePlayer.getState().state === 'screen-result');
@@ -219,10 +239,12 @@ test('4 hết screen: bảng kết quả, Enter sang screen kế', async page =>
   assert.ok(/100% chính xác/.test(await page.locator('#stage .result-stats').textContent()));
   assert.strictEqual(await boardState(page).then(board => board.activeKey), null, 'không phím nào sáng ở bảng kết quả');
   await page.keyboard.press('Enter');
-  await page.waitForFunction(() => location.hash === '#u1-l01/3');
-  await page.waitForFunction(() => window.TypingEasePlayer.getState().state === 'intro');
+  await page.waitForFunction(id => location.hash === `#${id}/3`, FIRST);
+  // Màn 3 là màn gõ (khoá mới không còn màn giới thiệu "intro" giữa các màn gõ).
+  const expected = lesson.screens[2].type === 'intro' ? 'intro' : 'typing';
+  await page.waitForFunction(state => window.TypingEasePlayer.getState().state === state, expected);
   const state = await playerState(page);
-  assert.strictEqual(state.screenLabel, 'Screen 3 / 10');
+  assert.strictEqual(state.screenLabel, `Screen 3 / ${lesson.screens.length}`);
   assert.strictEqual(state.screenIndex, 2);
   // Thanh tiến độ ghi nhận screen 2 đã xong.
   const segs = await page.evaluate(() => [...document.querySelectorAll('#pt-progress .seg')].map(seg => seg.className.replace('seg ', '')));
@@ -230,63 +252,75 @@ test('4 hết screen: bảng kết quả, Enter sang screen kế', async page =>
   assert.strictEqual(segs[2], 'is-current');
 });
 
+// vi-03-022 màn 1: "FFFF jjjj JJJJ ffff …" — chữ hoa của tay trái, rồi của tay phải, rồi chữ thường.
+const SHIFT_LESSON = 'vi-03-022';
 test('5 shift: chữ hoa sáng Shift tay đối diện (active-mod)', async page => {
-  await openPlayer(page, 'u2-l09/2');   // "Aa Ss Dd Ff\nJj Kk Ll Hh…"
+  await openPlayer(page, `${SHIFT_LESSON}/1`);
+  const target = targetOf((await lessonJson(page, SHIFT_LESSON)).screens[0]);
+  const right = target.search(/[HJKLMNOPUIY]/);    // chữ hoa đầu tiên của tay phải
+  const lower = target.indexOf(' ', right) + 1;     // chữ (thường) ngay sau cụm đó
+  assert.ok(/^[QWERTASDFGZXCVB]/.test(target) && right > 0 && /[a-z]/.test(target[lower]), `màn không còn hợp với test: ${target}`);
   let board = await boardState(page);
-  assert.strictEqual(board.activeKey, 'a', 'A → phím a sáng');
-  assert.strictEqual(board.activeFinger, 'left-pinky');
+  assert.strictEqual(board.activeKey, target[0].toLowerCase(), `${target[0]} → phím ${target[0].toLowerCase()} sáng`);
+  assert.strictEqual(board.activeFinger, FINGERS[target[0].toLowerCase()]);
   // Nhãn phím lấy thẳng từ layout: Shift trái là "Shift ⇧", Shift phải là "⇧ Shift".
-  assert.deepStrictEqual(board.activeMod, ['⇧ Shift:r'], 'chữ A (tay trái) → Shift PHẢI');
-  await page.keyboard.type('Aa ');
+  assert.deepStrictEqual(board.activeMod, ['⇧ Shift:r'], `chữ ${target[0]} (tay trái) → Shift PHẢI`);
+  await page.keyboard.type(target.slice(0, right));
   await sleep(40);
   board = await boardState(page);
-  assert.strictEqual(board.activeKey, 's');
-  await page.keyboard.type('Ss Dd Ff ');
+  assert.strictEqual(board.activeKey, target[right].toLowerCase(), `${target[right]} → phím ${target[right].toLowerCase()}`);
+  assert.deepStrictEqual(board.activeMod, ['Shift ⇧:l'], `chữ ${target[right]} (tay phải) → Shift TRÁI`);
+  await page.keyboard.type(target.slice(right, lower));
   await sleep(40);
   board = await boardState(page);
-  assert.strictEqual(board.activeKey, 'j', 'J → phím j');
-  assert.deepStrictEqual(board.activeMod, ['Shift ⇧:l'], 'chữ J (tay phải) → Shift TRÁI');
-  await page.keyboard.type('J');
-  await sleep(40);
-  board = await boardState(page);
+  assert.strictEqual(board.activeKey, target[lower]);
   assert.deepStrictEqual(board.activeMod, [], 'chữ thường không cần Shift');
   const state = await playerState(page);
   assert.strictEqual(state.run.errors, 0);
 });
 
+// Telex: vi-01-013 màn 2 là "rà xà làm…" (bài dạy dấu huyền = phím f). Bảng dấu → phím của Telex.
+const TELEX_TONE = { '́': 's', '̀': 'f', '̉': 'r', '̃': 'x', '̣': 'j' };
 test('6 telex: ký tự đang compose là pending, không nháy đỏ, highlight theo phím dấu', async page => {
-  await openPlayer(page, 'u3-l01/2');   // "má cá bá lá…", inputMode telex
+  const id = 'vi-01-013';
+  await openPlayer(page, `${id}/2`);
+  const target = targetOf((await lessonJson(page, id)).screens[1]);
+  const [consonant, toned] = target;
+  const [base, mark] = toned.normalize('NFD');
+  const toneKey = TELEX_TONE[mark];
+  assert.ok(/[a-z]/.test(consonant) && toneKey && target[2] === ' ', `màn không còn hợp với test: ${target.slice(0, 20)}`);
   assert.strictEqual(await page.evaluate(() => document.querySelector('#player').dataset.inputMode), 'telex');
   await watchClasses(page, '#board');
   const input = page.locator('#player-input');
-  // Mô phỏng IME Telex: giá trị ô nhập đi qua m → ma → má (phím s bị IME nuốt, chỉ đổi chữ).
-  await page.keyboard.type('m');
+  // Mô phỏng IME Telex: giá trị ô nhập đi qua r → ra → rà (phím dấu bị IME nuốt, chỉ đổi chữ).
+  await page.keyboard.type(consonant);
   await sleep(30);
   let board = await boardState(page);
-  assert.strictEqual(board.activeKey, 'a', 'sau m → a');
-  await input.fill('ma');
+  assert.strictEqual(board.activeKey, base, `sau ${consonant} → ${base}`);
+  await input.fill(consonant + base);
   await sleep(30);
   let states = await page.evaluate(() => [...document.querySelectorAll('#prompt-lines .ch')].slice(0, 3).map(el => el.className));
-  assert.ok(/\bok\b/.test(states[0]), `m: ${states[0]}`);
-  assert.ok(/\bpending\b/.test(states[1]), `a đang compose phải pending: ${states[1]}`);
+  assert.ok(/\bok\b/.test(states[0]), `${consonant}: ${states[0]}`);
+  assert.ok(/\bpending\b/.test(states[1]), `${base} đang compose phải pending: ${states[1]}`);
   board = await boardState(page);
-  assert.strictEqual(board.activeKey, 's', 'đang compose á → highlight phím dấu sắc S');
-  assert.strictEqual(board.activeFinger, 'left-ring');
-  await input.fill('má');
+  assert.strictEqual(board.activeKey, toneKey, `đang compose ${toned} → highlight phím dấu ${toneKey.toUpperCase()}`);
+  assert.strictEqual(board.activeFinger, FINGERS[toneKey]);
+  await input.fill(consonant + toned);
   await sleep(30);
   states = await page.evaluate(() => [...document.querySelectorAll('#prompt-lines .ch')].slice(0, 3).map(el => el.className));
-  assert.ok(/\bok\b/.test(states[1]), `á sau khi compose xong phải ok: ${states[1]}`);
+  assert.ok(/\bok\b/.test(states[1]), `${toned} sau khi compose xong phải ok: ${states[1]}`);
   board = await boardState(page);
-  assert.strictEqual(board.activeKey, ' ', 'xong má → dấu cách');
+  assert.strictEqual(board.activeKey, ' ', `xong ${consonant}${toned} → dấu cách`);
   const added = await addedClasses(page);
   assert.ok(!added.added.some(entry => entry.className === 'is-wrong'), 'không có is-wrong trong lúc compose');
   const state = await playerState(page);
   assert.strictEqual(state.run.errors, 0, 'không lỗi');
   // Gõ sai thật trong telex vẫn báo lỗi theo âm tiết.
-  await input.fill('má x');
+  const wrong = target[3] === 'c' ? 'k' : 'c';
+  await input.fill(`${target.slice(0, 3)}${wrong}`);
   await sleep(30);
   const bad = await page.evaluate(() => [...document.querySelectorAll('#prompt-lines .ch')][3].className);
-  assert.ok(/\bbad\b/.test(bad), `x thay cho c phải bad: ${bad}`);
+  assert.ok(/\bbad\b/.test(bad), `${wrong} thay cho ${target[3]} phải bad: ${bad}`);
 });
 
 // Trang chủ không còn ô gõ thử: vào trang là thấy ngay lộ trình để chọn bài. Test này canh đúng
@@ -455,9 +489,12 @@ test('7c / remains English and the picker uses canonical language homes', async 
 });
 
 test('8a responsive 1024: bàn phím đầy đủ + tay', { viewport: { width: 1024, height: 900 } }, async page => {
-  await openPlayer(page, 'u1-l01/2');
+  await openPlayer(page, `${FIRST}/2`);
+  // Bàn tay là module + model tải sau bàn phím: chờ canvas tới (có hạn chót) thay vì đọc ngay.
+  await page.waitForFunction(() => document.querySelector('#board .nt-player-keyboard .hands canvas'), null, { timeout: 15000 })
+    .catch(() => {});
   const board = await boardState(page);
-  assert.strictEqual(board.keys, 60);
+  assert.strictEqual(board.keys, layoutKeyCount(1));
   assert.ok(board.hasNumberRow, 'còn hàng số');
   // player.js chỉ tắt tay ở ngưỡng điện thoại (620px) → 1024 vẫn có tay.
   assert.ok(board.hands && !board.handsHidden, 'tay hiện ở 1024px');
@@ -465,29 +502,33 @@ test('8a responsive 1024: bàn phím đầy đủ + tay', { viewport: { width: 1
   assert.ok(fits, 'không tràn ngang');
 });
 
-// Bàn phím của typekute không có bản compact: cùng 60 phím, chỉ co lại theo khung nhìn
+// Bàn phím của typekute không có bản compact: cùng số phím, chỉ co lại theo khung nhìn
 // (keyboard/keyboard.css, khối max-width:700px). Điện thoại chỉ khác ở chỗ tắt bàn tay.
 test('8b responsive 390 (phone): vẫn đủ phím, không tay, không tràn ngang', { viewport: { width: 390, height: 800 }, isMobile: true, hasTouch: true }, async page => {
-  await openPlayer(page, 'u1-l01/2');
+  await openPlayer(page, `${FIRST}/2`);
+  const first = targetOf((await lessonJson(page, FIRST)).screens[1])[0];
   const board = await boardState(page);
   assert.ok(board.hasNumberRow, 'vẫn có hàng số');
-  assert.strictEqual(board.keys, 60, 'vẫn đủ 60 phím');
+  assert.strictEqual(board.keys, layoutKeyCount(1), 'vẫn đủ phím của bố cục');
   assert.ok(!board.hands, 'không dựng canvas bàn tay');
   assert.ok(board.handsHidden, 'board mang class nt-player-hands-hidden');
-  assert.strictEqual(board.activeKey, 'j', 'phím đích vẫn sáng');
+  assert.strictEqual(board.activeKey, first, 'phím đích vẫn sáng');
   const fits = await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1);
   assert.ok(fits, 'không tràn ngang');
 });
 
 test('9 reduced motion: highlight vẫn chạy, không lỗi', { reducedMotion: 'reduce' }, async page => {
-  await openPlayer(page, 'u1-l01/6');
+  await openPlayer(page, `${FIRST}/2`);
+  const target = targetOf((await lessonJson(page, FIRST)).screens[1]);
+  const typed = target.slice(0, target.indexOf(' ') + 1);   // "fjjj "
+  const next = target[typed.length];
   assert.ok(await page.evaluate(() => matchMedia('(prefers-reduced-motion: reduce)').matches));
   await watchClasses(page, '#board');
-  await page.keyboard.type('jjj ', { delay: 20 });
+  await page.keyboard.type(typed, { delay: 20 });
   await sleep(50);
   const board = await boardState(page);
-  assert.strictEqual(board.activeKey, 'f');
-  assert.strictEqual(board.activeFinger, 'left-index');
+  assert.strictEqual(board.activeKey, next);
+  assert.strictEqual(board.activeFinger, FINGERS[next]);
   const added = await addedClasses(page);
   assert.ok(added.added.some(entry => entry.className === 'is-animating'), 'class vẫn gắn (CSS tắt animation)');
   const motion = await page.evaluate(() => {
@@ -528,32 +569,46 @@ const handsState = page => page.evaluate(() => {
   };
 });
 
-test('11 pose: ngón giữa trái với lên E rồi về D', async page => {
-  await openPlayer(page, 'u1-l07/2');   // "eeee dddd…": e hàng trên, d hàng cơ sở — cùng ngón
+// vi-01-005 màn 7: "da ghe la …" — d (hàng cơ sở) rồi e (hàng trên) của CÙNG ngón giữa trái.
+const REACH_LESSON = 'vi-01-005';
+const REACH_SCREEN = 7;
+const reachTarget = async page => {
+  const target = targetOf((await lessonJson(page, REACH_LESSON)).screens[REACH_SCREEN - 1]);
+  assert.ok(target[0] === 'd' && /^[^e]+e/.test(target), `màn không còn hợp với test: ${target.slice(0, 20)}`);
+  return { target, toE: target.indexOf('e') };
+};
+
+test('11 pose: ngón giữa trái ở D rồi với lên E', async page => {
+  await openPlayer(page, `${REACH_LESSON}/${REACH_SCREEN}`);
+  const { target, toE } = await reachTarget(page);
   await sleep(SETTLE_MS);
   let board = await boardState(page);
-  assert.strictEqual(board.activeKey, 'e');
+  assert.strictEqual(board.activeKey, 'd');
   assert.strictEqual(board.activeFinger, 'left-middle');
-  assert.strictEqual(board.pose?.key, 'e', 'renderer nhận phím e');
-  let slots = await handSlots(page, 'e');
+  assert.strictEqual(board.pose?.key, 'd', 'renderer nhận phím d');
+  let slots = await handSlots(page, 'd');
+  assert.strictEqual(slots.left.id, 'left-home-row-3', 'ở hàng cơ sở');
+
+  await page.keyboard.type(target.slice(0, toE), { delay: 20 });   // phím kế là e: hàng trên của chính ngón đó
+  await sleep(SETTLE_MS);
+  board = await boardState(page);
+  assert.strictEqual(board.activeKey, 'e');
+  assert.strictEqual(board.activeFinger, 'left-middle', 'vẫn ngón giữa trái');
+  slots = await handSlots(page, 'e');
   assert.strictEqual(slots.left.id, 'left-top-row-3', 'tay trái với lên hàng trên');
   assert.strictEqual(slots.left.highlight, 'middle', 'ngón giữa sáng');
   assert.strictEqual(slots.right.id, 'right-resting-hand', 'tay phải nghỉ');
-
-  await page.keyboard.type('eeee ', { delay: 20 });   // phím kế là d: hàng cơ sở của chính ngón đó
-  await sleep(SETTLE_MS);
-  board = await boardState(page);
-  assert.strictEqual(board.activeKey, 'd');
-  assert.strictEqual(board.activeFinger, 'left-middle', 'vẫn ngón giữa trái');
-  slots = await handSlots(page, 'd');
-  assert.strictEqual(slots.left.id, 'left-home-row-3', 'về hàng cơ sở');
   const hands = await handsState(page);
-  assert.strictEqual(hands.pose?.key, 'd', 'renderer đã nhận tư thế mới');
+  assert.strictEqual(hands.pose?.key, 'e', 'renderer đã nhận tư thế mới');
   assert.ok(hands.canvas && hands.canvas.w > 0, 'canvas có kích thước');
 });
 
+// Khoá tiếng Anh, en-03-002 màn 1: "AAA AA AffA …" — chữ hoa của tay trái, Shift của tay phải.
+// (Khoá tiếng Việt cũng dạy Shift, nhưng ở đó Shift không sáng — xem test 5.)
+const CAPS = { href: '/learn/', lesson: 'en-03-002' };
 test('12 Shift: chữ A sáng cả phím a lẫn Shift tay kia', async page => {
-  await openPlayer(page, 'u2-l09/2');   // "Aa Ss…"
+  await openCourse(page, CAPS.href, `${CAPS.lesson}/1`);
+  assert.strictEqual(targetOf((await lessonJson(page, CAPS.lesson)).screens[0])[0], 'A', 'màn bắt đầu bằng A');
   await sleep(SETTLE_MS);
   const board = await boardState(page);
   assert.strictEqual(board.activeKey, 'a');
@@ -562,25 +617,26 @@ test('12 Shift: chữ A sáng cả phím a lẫn Shift tay kia', async page => {
   const slots = await handSlots(page, 'A');
   assert.strictEqual(slots.left.id, 'left-home-row-5', 'tay trái ở A');
   assert.strictEqual(slots.left.highlight, 'pinky', 'ngón út sáng');
-  // Khác bản gốc typekute: nó chỉ tô sáng phím Shift chứ để tay kia nghỉ. Chủ site yêu cầu phím nào
-  // cũng phải thấy ngón di chuyển, và chính bài u2-l09 dạy "ngón út bên kia giữ Shift".
-  assert.strictEqual(slots.right.id, 'right-bottom-row-6', 'ngón út phải với tới Shift');
-  assert.strictEqual(slots.right.highlight, 'pinky', 'ngón út phải sáng');
-
-  // Chiều ngược lại: "?" là Shift + "/" của tay PHẢI, nên Shift phải giữ là của tay TRÁI.
   const question = await handSlots(page, '?');
   assert.strictEqual(question.right.id, 'right-bottom-row-5', 'tay phải ở phím /');
+
+  // Khác bản gốc typekute: nó chỉ tô sáng phím Shift chứ để tay kia nghỉ. Chủ site yêu cầu phím nào
+  // cũng phải thấy ngón di chuyển, và chính bài Shift dạy "ngón út bên kia giữ Shift"
+  // (docs/DECISIONS.md, 2026-09-18 khuya, "Đổi một hành vi của bản gốc").
+  assert.strictEqual(slots.right.id, 'right-bottom-row-6', 'ngón út phải với tới Shift');
+  assert.strictEqual(slots.right.highlight, 'pinky', 'ngón út phải sáng');
+  // Chiều ngược lại: "?" là Shift + "/" của tay PHẢI, nên Shift phải giữ là của tay TRÁI.
   assert.strictEqual(question.left.id, 'left-bottom-row-6', 'ngón út trái với tới Shift');
 });
 
 // Bốn lỗi rời nhau cùng cho một triệu chứng "bấm phím mà tay đứng im", nên kiểm cả bốn ở đây:
 //   1. bài học gọi tên viết thường ("shift"/"enter") mà layout ghi nhãn "Shift ⇧"/"Enter ⏎";
 //   2. phím rìa (Backspace) rơi ra ngoài dải chỉ số của kho tư thế;
-//   3. hàng Ctrl/Alt/Cmd chỉ có bảy ô nên công thức cột của hàng chữ cho ra chỉ số ngược hướng;
+//   3. hàng Ctrl/Alt/Cmd ít ô hơn nên công thức cột của hàng chữ cho ra chỉ số ngược hướng;
 //   4. bảng tư thế trỏ vào clip KHÔNG có trong file GLTF (`home-row-7-left`, `bottom-row-7-left`).
 // Lỗi 4 chỉ lộ ra ở renderer, nên phải hỏi chính mô hình xem clip nào được phát thật.
 test('12b mọi phím đều làm tay động, bằng clip có thật trong mô hình', async page => {
-  await openPlayer(page, 'u2-l09/1');
+  await openPlayer(page, `${FIRST}/1`);
   await page.waitForFunction(
     () => document.querySelector('#board .nt-player-keyboard')?.__ntHands?.renderer?.leftHand?.clipByName?.has('base'),
     null, { timeout: 30000 });
@@ -598,70 +654,89 @@ test('12b mọi phím đều làm tay động, bằng clip có thật trong mô 
         return original(frame);
       };
     }
-    // Mọi phím CÓ TRÊN BÀN PHÍM, lấy từ chính DOM chứ không phải danh sách chép tay.
-    const keys = [...board.querySelectorAll('.keyboard-key')]
-      .map(node => (node.dataset.values ?? '').split('')[0] || node.textContent.trim())
-      .filter(Boolean);
+    // Mọi phím CÓ TRÊN BÀN PHÍM: đếm từ chính DOM, còn tên + mã phím vật lý lấy từ bố cục đang vẽ.
+    // Phím đặc biệt đi theo NHÃN đầy đủ ("⇧ Shift") kèm mã `hardware` — ký tự đầu của nhãn ("⇧")
+    // không phải tên phím nào cả, và hai phím Shift chỉ phân biệt được bằng mã vật lý.
     const { resolveHandSlots } = await import('/keyboard/hands-pose-map.js');
     const layout = window.NTKeyboard.layout();
+    const keys = layout.structure.flat()
+      .map(entry => ({ key: String((entry.main && typeof entry.main === 'object' ? entry.main.key : entry.main) ?? ''), hardware: entry.hardware }))
+      .filter(entry => entry.key);
     const dead = [];
-    for (const key of keys) {
+    for (const { key, hardware } of keys) {
       played.length = 0;
       window.NTKeyboard.setKeyboardState(board, key);
       const moved = played.length > 0 && played.some(entry => !entry.resting);
-      const slots = resolveHandSlots({ layout, key, animated: true });
+      const slots = resolveHandSlots({ layout, key, hardware, animated: true });
       const lit = Boolean(slots.left?.entry?.highlight || slots.right?.entry?.highlight);
-      if (!moved && !lit) dead.push(key);
+      if (!moved && !lit) dead.push(`${key} (${hardware})`);
     }
-    return { count: keys.length, dead };
+    return { count: board.querySelectorAll('.keyboard-key').length, keys: keys.length, dead };
   });
 
   assert.ok(result.count >= 60, `đếm được ${result.count} phím`);
+  assert.strictEqual(result.keys, result.count, 'mỗi phím vẽ ra đều có trong bố cục đang kiểm');
   // Đủ cho một phím là tay DỊCH tới nó, HOẬC ngón phụ trách sáng lên. Phím cách và dấu chấm phẩy
   // rơi vào vế sau một cách có lý: tư thế NGHỈ vốn đã đặt ngón cái trên phím cách và ngón út trên
   // ";", nên dịch tay thêm mới là sai. Phím nào không có cả hai thì người học không nhận được gì.
   assert.deepStrictEqual(result.dead, [], 'không phím nào vừa đứng im vừa không sáng ngón');
 });
 
+// Màn dạy Shift/Enter (`type: "intro"`, `key: "shift"` / `"enter"` viết thường) chỉ còn ở các khoá
+// sinh tự động; khoá US-QWERTY trong số đó là khoá tiếng Nhật gõ romaji trên bàn phím US (bố cục 19).
 test('12c màn dạy Shift và Enter: sáng đúng phím và đúng ngón', async page => {
-  // Bu1-l09 truyền `key: "shift"` / `key: "enter"` viết thường; trước đây không phím nào sáng cả.
-  await openPlayer(page, 'u2-l09/1');
+  const href = '/ja/us/manabu/';
+  const lesson = await lessonJson(page, 'u2-l09', 'ja-us');
+  const shiftAt = lesson.screens.findIndex(screen => screen.type === 'intro' && screen.key === 'shift') + 1;
+  const enterAt = lesson.screens.findIndex(screen => screen.type === 'intro' && screen.key === 'enter') + 1;
+  assert.ok(shiftAt > 0 && enterAt > 0, 'u2-l09 phải còn màn dạy shift và enter');
+  await openCourse(page, href, `u2-l09/${shiftAt}`);
   let board = await boardState(page);
   assert.strictEqual(board.activeKey, 'Shift ⇧', 'Shift trái sáng');
   assert.deepStrictEqual(board.activeMod, ['⇧ Shift:r'], 'Shift phải cũng sáng — bài dạy dùng ngón út bên kia');
   assert.strictEqual(board.activeFinger, 'left-pinky');
-  let slots = await handSlots(page, 'shift');
-  assert.strictEqual(slots.left.id, 'left-bottom-row-6', 'ngón út trái tới Shift trái');
-  assert.strictEqual(slots.right.id, 'right-bottom-row-6', 'ngón út phải tới Shift phải');
+  const shift = await handSlots(page, 'shift');
+  assert.strictEqual(shift.left.id, 'left-bottom-row-6', 'ngón út trái tới Shift trái');
 
-  await openPlayer(page, 'u2-l09/3');
+  await openCourse(page, href, `u2-l09/${enterAt}`);
   board = await boardState(page);
   assert.strictEqual(board.activeKey, 'Enter ⏎', 'phím Enter sáng');
   assert.strictEqual(board.activeFinger, 'right-pinky', 'ngón út phải, đúng lời bài');
-  slots = await handSlots(page, 'enter');
-  assert.strictEqual(slots.right.id, 'right-home-row-7', 'tay phải với ngang tới Enter');
-  assert.strictEqual(slots.left.id, 'left-resting-hand', 'tay trái nghỉ');
+  const enter = await handSlots(page, 'enter');
+  // Ngón út phải đặt giữa phím Enter bằng clip riêng `right-enter` (commit d61c872), không còn
+  // mượn clip hàng cơ sở `right-home-row-7`.
+  assert.strictEqual(enter.right.id, 'right-enter', 'tay phải với ngang tới Enter');
+  assert.strictEqual(enter.right.highlight, 'pinky', 'ngón út phải sáng');
+  assert.strictEqual(enter.left.id, 'left-resting-hand', 'tay trái nghỉ');
+
+  // Gọi tên trần "shift" là chưa chỉ định bên: bàn phím sáng CẢ HAI Shift (đã kiểm ở trên), nên tay
+  // cũng phải đưa CẢ HAI ngón út tới (docs/DECISIONS.md, 2026-09-18 khuya, mục 1).
+  assert.strictEqual(shift.right.id, 'right-bottom-row-6', 'ngón út phải tới Shift phải');
 });
 
-test('13 Space: ngón cái phải, tay trái nghỉ', async page => {
-  await openPlayer(page, 'u1-l01/6');   // "jjj fff…"
-  await page.keyboard.type('jjj', { delay: 20 });
+// Phím cách: bố cục US nhập từ typekute ghi `finger: 5` (ngón cái TRÁI) và cả bàn phím lẫn bàn tay đi
+// theo đúng giá trị đó — tay trái nhận phím cách và sáng ngón cái, tay phải nghỉ.
+test('13 Space: ngón cái theo bố cục (trái), tay kia nghỉ', async page => {
+  await openPlayer(page, `${FIRST}/2`);   // "fjjj jfj…"
+  const target = targetOf((await lessonJson(page, FIRST)).screens[1]);
+  await page.keyboard.type(target.slice(0, target.indexOf(' ')), { delay: 20 });
   await sleep(SETTLE_MS);
   const board = await boardState(page);
   assert.strictEqual(board.activeKey, ' ');
-  assert.strictEqual(board.activeFinger, 'thumb');
+  assert.strictEqual(board.activeFinger, FINGERS[' ']);
   const slots = await handSlots(page, ' ');
-  assert.strictEqual(slots.right.id, 'space', 'tay phải giữ phím cách');
-  assert.strictEqual(slots.right.highlight, 'thumb');
-  assert.strictEqual(slots.left.id, 'left-resting-hand', 'tay trái nghỉ');
+  assert.strictEqual(slots.left.id, 'space', 'tay trái giữ phím cách');
+  assert.strictEqual(slots.left.highlight, 'thumb', 'ngón cái sáng');
+  assert.strictEqual(slots.right.id, 'right-resting-hand', 'tay phải nghỉ');
+  assert.strictEqual((await handsState(page)).pose?.key, ' ', 'renderer nhận phím cách');
 });
 
 test('14 tốc độ thích ứng: tween của tay ngắn lại khi gõ nhanh', async page => {
-  await openPlayer(page, 'u1-l01/8');   // standard "jjf jjf fjj fjj…"
+  await openPlayer(page, `${FIRST}/8`);
   await sleep(SETTLE_MS);
   const before = (await handsState(page)).duration;
   assert.ok(before === null || Math.abs(before - 0.275) < 0.001, `ban đầu ${before}`);
-  const lesson = await lessonJson(page, 'u1-l01');
+  const lesson = await lessonJson(page, FIRST);
   await page.keyboard.type(targetOf(lesson.screens[7]).slice(0, 10), { delay: 60 });
   // Đợi ĐẾN KHI giá trị đổi, thay vì ngủ 200ms rồi đo một lần. `adaptiveDuration` được cập nhật trong
   // vòng vẽ, nên khi cả bộ test chạy cùng lúc thì 200ms có thể chưa kịp một khung hình — đó là lý do
@@ -679,7 +754,10 @@ test('14 tốc độ thích ứng: tween của tay ngắn lại khi gõ nhanh', 
 });
 
 test('15 animatedHands:false → tư thế đứng yên ở hàng cơ sở', async page => {
-  await openPlayer(page, 'u1-l07/2');   // phím đích là e (hàng trên)
+  await openPlayer(page, `${REACH_LESSON}/${REACH_SCREEN}`);
+  const { target, toE } = await reachTarget(page);
+  await page.keyboard.type(target.slice(0, toE), { delay: 20 });   // phím đích là e (hàng trên)
+  assert.strictEqual((await boardState(page)).activeKey, 'e');
   const animated = await handSlots(page, 'e', true);
   assert.strictEqual(animated.left.id, 'left-top-row-3');
   const still = await handSlots(page, 'e', false);
@@ -698,7 +776,7 @@ test('15 animatedHands:false → tư thế đứng yên ở hàng cơ sở', asy
 });
 
 test('16 resize 1440→1024→1440: giữ phím đích, canvas vẽ lại', async page => {
-  await openPlayer(page, 'u2-l09/2');
+  await openCourse(page, CAPS.href, `${CAPS.lesson}/1`);   // "AAA …"
   await sleep(SETTLE_MS);
   const first = await handsState(page);
   assert.ok(first.canvas.w > 0, 'canvas ban đầu');

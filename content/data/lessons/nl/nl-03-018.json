@@ -105,21 +105,21 @@
     {
       "type": "block",
       "newKey": "(",
-      "text": "Houd Shift ingedrukt en druk op 9 voor (. Ga daarna terug naar de basispositie.",
+      "text": "Houd Shift ingedrukt en druk op 8 voor (. Ga daarna terug naar de basispositie.",
       "content": "(( (((( ((( (( (( (( (( ((",
       "dictation": "letters"
     },
     {
       "type": "block",
       "newKey": ")",
-      "text": "Houd Shift ingedrukt en druk op 0 voor ). Ga daarna terug naar de basispositie.",
+      "text": "Houd Shift ingedrukt en druk op 9 voor ). Ga daarna terug naar de basispositie.",
       "content": ")) ))) )))) )) )) )) )) ))",
       "dictation": "letters"
     },
     {
       "type": "block",
       "newKey": "_",
-      "text": "Houd Shift ingedrukt en druk op - voor _. Ga daarna terug naar de basispositie.",
+      "text": "Houd Shift ingedrukt en druk op 7 voor _. Ga daarna terug naar de basispositie.",
       "content": "____ ___ __ __ __ __ __ __",
       "dictation": "letters"
     },

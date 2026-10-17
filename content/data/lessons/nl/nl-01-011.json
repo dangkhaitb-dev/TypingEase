@@ -51,12 +51,12 @@
   "screens": [
     {
       "type": "standard",
-      "text": "Druk op ` (dode toets, linksboven), laat los en druk dan op a: je krijgt à. Ga daarna terug naar de basispositie.",
+      "text": "Druk op Shift + ´ (dode toets, twee plaatsen rechts van L), laat los en druk dan op a: je krijgt à. Ga daarna terug naar de basispositie.",
       "content": "ààà àààà àà ààà àààà ààà àà àà àà àaà àà"
     },
     {
       "type": "standard",
-      "text": "Druk op ` (dode toets, linksboven), laat los en druk dan op e: je krijgt è. Ga daarna terug naar de basispositie.",
+      "text": "Druk op Shift + ´ (dode toets, twee plaatsen rechts van L), laat los en druk dan op e: je krijgt è. Ga daarna terug naar de basispositie.",
       "content": "eèè èè eèèè eèè èè eè èeèè èèè èè èè èèèè"
     },
     {

@@ -53,17 +53,17 @@
   "screens": [
     {
       "type": "standard",
-      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op p voor ö. Ga daarna terug naar de basispositie.",
+      "text": "Druk op ¨ (dode toets, rechts van P), laat los en druk dan op o: je krijgt ö. Ga daarna terug naar de basispositie.",
       "content": "ööö ppöp öppö pö ööö öööö öööp pö pööö ppö"
     },
     {
       "type": "standard",
-      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op y voor ü. Ga daarna terug naar de basispositie.",
+      "text": "Druk op ¨ (dode toets, rechts van P), laat los en druk dan op u: je krijgt ü. Ga daarna terug naar de basispositie.",
       "content": "üüü üüü üüü üüüü üüüü üüü üyü üyü üy üüüü"
     },
     {
       "type": "standard",
-      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op u voor ú. Ga daarna terug naar de basispositie.",
+      "text": "Druk op ´ (dode toets, twee plaatsen rechts van L), laat los en druk dan op u: je krijgt ú. Ga daarna terug naar de basispositie.",
       "content": "uúu úú úúú úúú úúúú úu úú úúú úúúu úuu úú"
     },
     {

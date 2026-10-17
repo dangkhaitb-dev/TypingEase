@@ -1,6 +1,6 @@
 /* content/roadmaps/editorial.pl.mjs — bài viết dưới lộ trình /pl/lekcje/ (tooling/pages/roadmaps.mjs). */
-export default `<section><h2>Nauka pisania bezwzrokowego: {{count}} lekcji w {{units}} częściach</h2>
-<p>Kurs dzieli się na dwie połowy, które wymagają innej uwagi. Pierwsze cztery części uczą klawiszy: litery, cyfry, wielkie litery, interpunkcję i krótkie powtórki. Od piątej części klawiszy już nie przybywa, zmienia się tekst: najpierw krótkie sceny, potem wiadomości, teksty informacyjne i coraz dłuższe fragmenty prozy. W pierwszej połowie uwaga jest przy palcach: który sięga, który wraca. W drugiej patrzysz na zdanie: czy czytasz o słowo do przodu i czy nie gubisz miejsca po przecinku.</p>
+export default `<section><h2>Nauka pisania bezwzrokowego: plan {{count}} lekcji w {{units}} częściach</h2>
+<p>Kurs dzieli się na dwie połowy i każda wymaga innego rodzaju uwagi. Pierwsze cztery części uczą klawiszy: litery, cyfry, wielkie litery, interpunkcję i krótkie powtórki. Od piątej części klawiszy już nie przybywa, zmienia się tekst: najpierw krótkie sceny, potem wiadomości, teksty informacyjne i coraz dłuższe fragmenty prozy. W pierwszej połowie pilnujesz palców: który sięga, który wraca. W drugiej patrzysz na zdanie: czy czytasz o słowo do przodu i czy nie gubisz miejsca po przecinku.</p>
 <p>Część 1, „Litery i AltGr”, zaczyna od f, j i spacji. Potem dochodzą a, s, d, następnie g, h, k i dalej trójkami aż do b, n i m. Kolejność nie jest alfabetyczna: lekcje idą od rzędu podstawowego w górę i w dół, żeby każda nowa litera miała blisko punkt powrotu. Kiedy wszystkie litery podstawowe są już opanowane, przychodzi lekcja „Klawisz AltGr i litera ą”, a po niej trzy lekcje z pozostałymi polskimi literami: ć i ę, potem ł, ń i ó, na końcu ś, ź i ż. Część zamyka powtórka.</p>
 <p>Część 2, „Cyfry”, otwiera lekcja o Shifcie, a dopiero po niej przychodzą cyfry od 1 do 0, w grupach po trzy. Shift pojawia się tu wcześnie, bo w części 3 będzie potrzebny przy prawie każdym znaku.</p>
 </section>
@@ -10,7 +10,7 @@ export default `<section><h2>Nauka pisania bezwzrokowego: {{count}} lekcji w {{u
 </section>
 <section><h2>Pisanie dziesięcioma palcami w dłuższym tekście: części 4–12</h2>
 <h3>Powtórka podstaw, Narracja, Wiadomości</h3>
-<p>Część 4 ma tylko trzy lekcje: krótkie słowa, zdania ze wszystkimi literami oraz liczby z interpunkcją. To kontrola przed tekstem ciągłym. „Narracja” to sceny w rodzaju „Ogród po burzy” czy „Naprawa roweru”, w których jedno zdanie wynika z poprzedniego, więc łatwiej czytać do przodu. „Wiadomości” przechodzą na teksty, jakie piszesz naprawdę: przeniesione spotkanie, prośbę o materiały, odpowiedź klientowi, podsumowanie tygodnia.</p>
+<p>Część 4 ma tylko trzy lekcje: krótkie słowa, zdania ze wszystkimi literami oraz liczby z interpunkcją. To kontrola przed tekstem ciągłym. „Narracja” to sceny w rodzaju „Ogród po burzy” czy „Naprawa roweru”, w których jedno zdanie wynika z poprzedniego, więc łatwiej czytać do przodu. „Wiadomości” to teksty, jakie naprawdę piszesz na co dzień: przeniesione spotkanie, prośbę o materiały, odpowiedź klientowi, podsumowanie tygodnia.</p>
 <h3>Tekst informacyjny, Rytm, Szybkość</h3>
 <p>„Tekst informacyjny” dokłada daty, godziny i nazwy miejsc, a „Rytm” prosi o równe tempo w spójnym tekście. Dopiero potem przychodzi „Szybkość”, w której lekcje są wyraźnie dłuższe, około kwadransa każda. Ta kolejność jest celowa: najpierw równo, potem szybciej.</p>
 <h3>Precyzja, Wytrzymałość, Transfer</h3>
@@ -18,8 +18,8 @@ export default `<section><h2>Nauka pisania bezwzrokowego: {{count}} lekcji w {{u
 </section>
 <section><h2>Ćwiczenia pisania: jak przejść jedną lekcję i kiedy ją powtórzyć</h2>
 <p>Lekcja z nowymi klawiszami ma kilka krótkich ekranów, a lekcja tekstowa zwykle trzy dłuższe. Zanim zaczniesz, przeczytaj tytuł i znajdź nowe klawisze na klawiaturze na ekranie, nie na fizycznej. Pierwszy ekran przepisz wolno, zwracając uwagę na jedną rzecz, na przykład czy po ę palec wraca na rząd podstawowy. Kolejne ekrany mogą być szybsze.</p>
-<p>Każda część ma próg dokładności 80%, ale traktuj go jako minimum do odblokowania kolejnej części, nie jako dowód, że ruch jest opanowany. Powtarzam lekcję, gdy błędy wracają w tym samym miejscu, na przykład zawsze przy ś po spacji. Gdy błędy są rozrzucone przypadkowo, zwykle lepiej zrobić przerwę niż kolejne podejście.</p>
-<p>W częściach tekstowych zmienia się też to, co warto obserwować. Przy scenach z „Narracji” sprawdzaj, czy czytasz o jedno słowo do przodu. Przy „Wiadomościach” zwróć uwagę na przecinki przed „że” i „który”, bo właśnie tam łatwo zatrzymać rękę. Przy „Szybkości” nie patrz na licznik po każdym zdaniu, tylko na koniec ekranu.</p>
+<p>Każda część ma próg dokładności 80%, ale traktuj go jako minimum do odblokowania kolejnej części, nie jako dowód, że ruch jest opanowany. Lekcję warto powtórzyć, gdy błędy wracają w tym samym miejscu, na przykład zawsze przy ś po spacji. Gdy błędy są rozrzucone przypadkowo, zwykle lepiej zrobić przerwę niż kolejne podejście.</p>
+<p>W częściach tekstowych zmienia się też to, co warto obserwować. Przy scenach z „Narracji” sprawdzaj, czy czytasz o jedno słowo do przodu. Przy „Wiadomościach” zwróć uwagę na przecinki przed „że” i „który”, bo właśnie tam łatwo zatrzymać rękę. Przy „Szybkości” zerkaj na licznik dopiero na końcu ekranu, nie po każdym zdaniu.</p>
 <p>Każda część ma też lekcję „Pomiń do przodu”. To dłuższe zadanie sprawdzające, które otwiera następną część bez przechodzenia wszystkich zwykłych lekcji. Postęp zapisuje się w tej przeglądarce, więc na innym komputerze kurs zacznie się od początku.</p>
 </section>
 <section><h2>Trening pisania na klawiaturze bez skrótów: moje zdanie</h2>

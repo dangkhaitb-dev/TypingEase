@@ -5,9 +5,9 @@ export default `<section><h2>Typecursus in {{units}} units: hoe de lessen op elk
 </section>
 <section><h2>Blind typen leren in unit 1: van f en j tot ë en ü</h2>
 <h3>Eerst de letters, in groepjes van drie</h3>
-<p>Unit 1 begint met f, j en de spatiebalk, de twee toetsen met een ribbeltje. Dan volgen a, s, d, daarna g, h, k en l, q, w. Pas dan komt de bovenste rij met e, r, t en y, u, i, gevolgd door o, p en z, en tot slot x, c, v en b, n, m. De ij krijgt geen eigen toets: de cursus typt hem als i gevolgd door j, zoals je dat ook buiten de cursus doet.</p>
-<h3>Accenten met dode toetsen en AltGr</h3>
-<p>Na de letters komen de accenten, in een vaste volgorde: een dode accenttoets voor à en è, de AltGr-toets, dan é, á en ó. Daarna de Shift-toets, omdat het trema die nodig heeft, met ë en ï, en ten slotte ö, ü en ú. Een dode toets typ je los: indrukken, loslaten, dan de klinker. Hoe je toetsenbord dat precies doet, hangt af van de indeling die je computer gebruikt; lees de uitleg bovenaan elk scherm en controleer na de eerste regel of er echt é op het scherm verschijnt. Een herhaling met korte zinnen sluit de unit af.</p>
+<p>Unit 1 begint met f en j, de twee toetsen met een ribbeltje, en de spatiebalk. Dan volgen a, s, d, daarna g, h, k en l, q, w. Pas dan komt de bovenste rij met e, r, t en y, u, i, gevolgd door o, p en z, en tot slot x, c, v en b, n, m. De ij krijgt geen eigen toets: de cursus typt hem als i gevolgd door j, zoals je dat ook buiten de cursus doet.</p>
+<h3>Accenten met de dode toetsen ´ en ¨</h3>
+<p>Na de letters komen de accenten, in een vaste volgorde. Eerst à en è: Shift met de dode toets ´, twee plaatsen rechts van de L. Dan de AltGr-toets, en daarna é, á en ó met dezelfde dode toets, nu zonder Shift. Vervolgens de Shift-toets, ë en ï met de dode toets ¨ rechts van de P, en ten slotte ö, ü en ú. Een dode toets typ je los: indrukken, loslaten, dan de klinker. Staat je computer op een andere indeling dan de Nederlandse standaardindeling op het scherm, controleer dan na de eerste regel of er echt é verschijnt. Een herhaling met korte zinnen sluit de unit af.</p>
 </section>
 <section><h2>Cijfers, hoofdletters en leestekens: units 2 tot en met 4</h2>
 <p>Cijfers is kort: 1 2 3, 4 5 6, 7 8 9 en de 0, met een herhaling. Op een QWERTY-toetsenbord typ je cijfers zonder Shift; het lastige is dat je hand terug moet naar de thuisrij zonder te kijken, en dat de pink voor de 0 een lange weg heeft.</p>

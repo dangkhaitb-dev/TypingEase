@@ -99,7 +99,7 @@
   "screens": [
     {
       "type": "standard",
-      "text": "Houd Shift en AltGr ingedrukt en druk op ' voor ¨. Ga daarna terug naar de basispositie.",
+      "text": "Druk op ¨ (dode toets, rechts van P) en daarna op de spatiebalk voor een losse ¨. Ga daarna terug naar de basispositie.",
       "content": "¨¨f f¨ ¨¨¨f f¨¨ ¨¨¨¨ ¨¨¨ ¨f ¨¨ ff¨ ¨j¨ j¨f"
     },
     {
@@ -111,7 +111,7 @@
     },
     {
       "type": "standard",
-      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan. Het apostrofteken ' en het aanhalingsteken \" typ je met een dode toets: druk eerst op de toets (Shift + ' voor \") en daarna op de spatiebalk.",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan. Het apostrofteken ' typ je met Shift + 0 en het aanhalingsteken \" met Shift + 2.",
       "content": "'' '--¨ -' s¨¨s ¨¨ -- ¨¨' ¨¨¨ ''-s -'' ¨¨'s '''¨ ''¨ ¨- ---¨ --'"
     },
     {

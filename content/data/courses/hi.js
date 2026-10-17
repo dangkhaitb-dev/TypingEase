@@ -20,7 +20,7 @@
  *
  * BOLNAGRI (137) — `families.bolnagri`. Đặt chữ theo âm Latin: a = ा, s = स, k = क… Hàng số là
  * chữ số Latin, dấu । ở ô Backslash (cột ngoài), mặt nguyên âm dài (ी ू ै ौ) ở tầng Shift. Bố
- * cục này không có nguyên âm độc lập nào ngoài आ, và ं/ँ nằm ở ô Backquote ngoài kế hoạch.
+ * cục này không có nguyên âm độc lập nào ngoài आ ở tầng thường và Shift (các nguyên âm khác nằm ở tầng AltGr, khoá không dạy AltGr), và ं/ँ nằm ở ô Backquote ngoài kế hoạch.
  *
  * GIỌNG VĂN. Ngắn, cụ thể, nói đúng việc đang xảy ra dưới ngón tay. Không tính từ quảng cáo,
  * không dấu chấm than. Xưng hô với người học bằng **आप**, nhất quán.

@@ -1,10 +1,10 @@
 /* content/roadmaps/editorial.sw.mjs — bài viết dưới lộ trình /sw/masomo/ (tooling/pages/roadmaps.mjs).
  * Tên kitengo theo content/data/curriculum.sw.js. Bố cục 118 = QWERTY Mỹ (số 6 thuộc ngón trỏ phải).
  * Cụm keyword tiếng Anh trong ngoặc như content/typing-test/sw.mjs; số đứng sau danh từ. */
-export default `<section><h2>Masomo ya kuandika (typing lessons): vitengo {{units}} kwa mpangilio mmoja</h2>
-<p>Orodha iliyo juu ina masomo {{count}} katika vitengo {{units}}. Kitengo cha kwanza kiko wazi; vingine hufunguka unapomaliza masomo ya kawaida ya kitengo kilichotangulia. Kama tayari unajua baadhi ya vitufe, kila kitengo kina somo la <em>Ruka mbele</em> mwishoni. Somo hilo hukagua ujuzi wa kitengo katika skrini chache, na ukilimaliza, kitengo kinachofuata hufunguka moja kwa moja.</p>
+export default `<section><h2>Vitengo {{units}} vya masomo ya kuandika (typing lessons), kwa mpangilio mmoja</h2>
+<p>Orodha iliyo juu ina masomo {{count}} katika vitengo {{units}}. Kitengo cha kwanza kiko wazi; vingine hufunguka unapomaliza masomo ya kawaida ya kitengo kilichotangulia. Kama tayari unajua baadhi ya vitufe, kila kitengo kina somo la <em>Ruka mbele</em> mwishoni. Somo hilo hukagua ujuzi wa kitengo kizima katika skrini chache, na ukilimaliza, kitengo kinachofuata hufunguka moja kwa moja.</p>
 <p>Tumia somo la kuruka kwa uaminifu. Ukifaulu lakini bado unatazama chini kutafuta p au b, unahamisha tatizo tu hadi kitengo kinachofuata, ambapo litajitokeza katikati ya sentensi na kuwa vigumu zaidi kuligundua. Kila somo linaonyesha makadirio ya dakika. Masomo ya herufi ni mafupi, lakini ya vitengo vya mwisho ni marefu zaidi, kwa hiyo chagua somo linalotosha muda ulio nao leo.</p>
-<p>Kanuni ndogo ninayoifuata: usifungue kitengo kipya mwishoni mwa kipindi kilichokuchosha. Somo la kwanza la kitengo huunda jinsi utakavyovikaribia vitufe vyake vipya, na mazoea yanayojengwa ukiwa umechoka ni vigumu kuyaondoa baadaye.</p>
+<p>Kanuni ndogo ninayoifuata: usifungue kitengo kipya mwishoni mwa kipindi kilichokuchosha. Somo la kwanza la kitengo ndilo linalojenga namna utakavyovifikia vitufe vyake vipya, na mazoea yanayojengwa ukiwa umechoka ni vigumu kuyaondoa baadaye.</p>
 </section>
 <section><h2>Vitengo 1 hadi 4: msingi wa kuandika kwa vidole kumi (10 finger typing)</h2>
 <h3>Misingi ya Herufi na Jozi</h3>
@@ -18,7 +18,7 @@ export default `<section><h2>Masomo ya kuandika (typing lessons): vitengo {{unit
 </section>
 <section><h2>Vitengo 5 hadi 12: kutoka hadithi hadi hati mpya</h2>
 <p><b>Hadithi Zinazohusiana</b> na <b>Uandishi wa Kila Siku</b> huhamisha mazoezi (touch typing practice) kwenye maandishi yenye maana: darasa lililopangwa upya, safari ya sokoni, ombi la msaada, maelekezo ya nyumbani. Sasa unahitaji kusoma maneno kadhaa mbele, si herufi inayofuata tu. <b>Habari na Hati Mchanganyiko</b> huongeza mazungumzo yenye nukuu, ambayo yanahitaji Shift kwa kidole kidogo cha kushoto katikati ya sentensi ili kupata alama ya ".</p>
-<p><b>Mdundo na Usahihi</b> na <b>Kasi ya Uandishi</b> ndipo mahali pa mdundo na kasi. Kitengo cha kasi kinaanza na mifumo inayojulikana kabla ya kuhamia maandishi mapya, kwa hiyo utaona kama kasi yako inatoka mikononi au ni kwa sababu tu umeyazoea maandishi. Katika Mdundo na Usahihi kuna somo kuhusu kazi ya fundi wa saa ambapo majina na nambari huchanganyika; hapo ndipo utagundua kama mkono unarudi kwenye safu ya msingi baada ya kupanda hadi safu ya nambari.</p>
+<p><b>Mdundo na Usahihi</b> na <b>Kasi ya Uandishi</b> ndivyo vitengo vya mdundo na kasi. Kitengo cha kasi kinaanza na mifumo inayojulikana kabla ya kuhamia maandishi mapya, kwa hiyo utaona kama kasi yako inatoka mikononi au inatokana tu na kuyazoea maandishi. Katika Mdundo na Usahihi kuna somo kuhusu kazi ya fundi wa saa ambapo majina na nambari huchanganyika; hapo ndipo utagundua kama mkono unarudi kwenye safu ya msingi baada ya kupanda hadi safu ya nambari.</p>
 <p><b>Usahihi wa Tahajia</b> hupunguza mwendo tena: ng na ng', n na ny, s na sh, na ch ndani ya sentensi. <b>Aya Endelevu</b> ni aya ndefu zisizokatika kuhusu darasa, tamasha la shule na maji ya kijiji. <b>Hati Mpya</b> hufunga kozi kwa fomu zenye sehemu zinazotenganishwa kwa Enter na matangazo ya umma.</p>
 </section>
 <section><h2>Jinsi ya kufanya somo moja, na lini kulirudia</h2>

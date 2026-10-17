@@ -101,7 +101,7 @@
     {
       "type": "block",
       "newKey": ":",
-      "text": "Houd Shift ingedrukt en druk op ; voor :. Ga daarna terug naar de basispositie.",
+      "text": "Houd Shift ingedrukt en druk op . voor :. Ga daarna terug naar de basispositie.",
       "content": "::: :::: :: :: :: :: :: ::",
       "dictation": "letters"
     },

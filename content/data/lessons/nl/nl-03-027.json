@@ -120,21 +120,21 @@
     {
       "type": "block",
       "newKey": "{",
-      "text": "Houd Shift ingedrukt en druk op [ voor {. Ga daarna terug naar de basispositie.",
+      "text": "Houd AltGr ingedrukt en druk op 8 voor {. Ga daarna terug naar de basispositie.",
       "content": "{{{{ {{{{ {{{{ {{{{ {{{{ {{{{ {{{{ {{{{ {{",
       "dictation": "letters"
     },
     {
       "type": "block",
       "newKey": "}",
-      "text": "Houd Shift ingedrukt en druk op ] voor }. Ga daarna terug naar de basispositie.",
+      "text": "Houd AltGr ingedrukt en druk op 9 voor }. Ga daarna terug naar de basispositie.",
       "content": "}}}} }}}} }}}} }}}} }}}} }}}} }}}} }}}} }}",
       "dictation": "letters"
     },
     {
       "type": "block",
       "newKey": "|",
-      "text": "Houd Shift ingedrukt en druk op \\ voor |. Ga daarna terug naar de basispositie.",
+      "text": "Houd Shift ingedrukt en druk op de toets * voor |. Ga daarna terug naar de basispositie.",
       "content": "|||| |||| |||| |||| |||| |||| |||| |||| ||",
       "dictation": "letters"
     },

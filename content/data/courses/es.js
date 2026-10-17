@@ -60,8 +60,10 @@ window.TypingEaseCourse.es = {
       }
     },
 
-    // Latin America, no dead keys (177): chữ cái y hệt bố cục 175, chỉ khác một ô ở cột ngoài
-    // (`¿` thay cho `¡`). Không câu dạy nào nói tới ô đó, nên không cần lớp phủ nào.
+    // Latin America, no dead keys (177): chữ cái y hệt bố cục 175 (ñ ç ´ ` cùng chỗ), nhưng KHÔNG có
+    // phím chết: ´ ¨ ` ^ là ký tự thường và không ô nào tạo ra á/é/í/ó/ú. Còn khác ở phím trái số 1
+    // (| ° ¬), Shift+3 (#, · sang AltGr+3), ¿/¡ đảo tầng Shift và tầng AltGr. LƯU Ý (2026-10-18): bài
+    // hiện có ~640 nguyên âm có dấu không gõ được trên bố cục này — xem docs/DECISIONS.md.
     'sin-teclas-muertas': {}
   },
 

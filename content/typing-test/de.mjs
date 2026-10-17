@@ -32,7 +32,7 @@ export default {
   sections: [
     {
       h2: 'So funktioniert der Tipptest',
-      html: '<p>Oben steht ein deutscher Text mit Groß- und Kleinschreibung, Satzzeichen und Umlauten. Du schreibst ihn in der gewählten Zeit so genau wie möglich ab. Jedes Zeichen wird sofort mit der Vorlage verglichen: Richtiges bleibt unauffällig, Falsches wird markiert. Mit der Rücktaste kannst du Fehler korrigieren, solange die Zeit läuft.</p><p>Gedacht ist der Test für eine deutsche <em>QWERTZ</em>-Tastatur, wie sie in Deutschland, Österreich und der Schweiz üblich ist. Wenn dein System auf ein englisches Layout eingestellt ist, landen Z und Y vertauscht und die Umlaute fehlen ganz. Prüf also vorher kurz die Tastatureinstellung.</p>'
+      html: '<p>Oben steht ein deutscher Text mit Groß- und Kleinschreibung, Satzzeichen und Umlauten. Du schreibst ihn in der gewählten Zeit so genau wie möglich ab. Jedes Zeichen wird sofort mit der Vorlage verglichen: Richtiges bleibt unauffällig, Falsches wird markiert. Mit der Rücktaste kannst du Fehler korrigieren, solange die Zeit läuft.</p><p>Gedacht ist der Test für eine deutsche <em>QWERTZ</em>-Tastatur, wie sie in Deutschland und Österreich üblich ist. Ist dein System auf ein englisches Layout eingestellt, sind Z und Y vertauscht, und die Umlaute fehlen ganz. Prüf also vorher kurz die Tastatureinstellung.</p>'
     },
     {
       h2: 'WPM und Anschläge pro Minute',
@@ -40,7 +40,7 @@ export default {
     },
     {
       h2: 'Wie Umlaute, ß und Großbuchstaben zählen',
-      html: '<p>Auf der QWERTZ-Tastatur haben ä, ö, ü und ß eigene Tasten rechts neben dem Buchstabenfeld. Jedes davon zählt als ein Zeichen, genau wie ein a oder ein s. Ein großes Ä, Ö oder Ü tippst du mit Umschalt plus der Umlauttaste; auch das ist ein Zeichen, obwohl du zwei Tasten drückst.</p><p>Umschreibungen gelten nicht: Wer „ae“ statt „ä“ oder „ss“ statt „ß“ tippt, macht einen Fehler, und das zweite Zeichen verschiebt den Rest des Wortes. Das ist Absicht, denn im echten Schreiben willst du die Umlaute ebenfalls blind und ohne Umweg treffen. Häufige Stolpersteine sind außerdem das Z in der oberen Reihe und die Satzzeichen, die bei QWERTZ auf Umschalt liegen, etwa der Doppelpunkt über dem Punkt.</p>'
+      html: '<p>Auf der QWERTZ-Tastatur haben ä, ö, ü und ß eigene Tasten am rechten Rand. Jedes davon zählt als ein Zeichen, genau wie ein a oder ein s. Ein großes Ä, Ö oder Ü tippst du mit Umschalt plus der Umlauttaste; auch das ist ein Zeichen, obwohl du zwei Tasten drückst.</p><p>Umschreibungen gelten nicht: Wer „ae“ statt „ä“ oder „ss“ statt „ß“ tippt, macht einen Fehler, und das zweite Zeichen verschiebt den Rest des Wortes. Das ist Absicht, denn im echten Schreiben willst du die Umlaute ebenfalls blind und ohne Umweg treffen. Häufige Stolpersteine sind außerdem das Z in der oberen Reihe und die Satzzeichen, die bei QWERTZ auf Umschalt liegen, etwa der Doppelpunkt über dem Punkt.</p>'
     },
     {
       h2: 'Tipp Test 1 Minute, 5 oder 10 Minuten: welche Dauer passt?',
@@ -62,11 +62,11 @@ export default {
   faqTitle: 'Häufige Fragen',
   faq: [
     ['Was bedeutet WPM?', 'WPM heißt Wörter pro Minute. Ein Wort zählt dabei als fünf Zeichen, Leerzeichen eingeschlossen. So sind Ergebnisse unabhängig von der Wortlänge vergleichbar.'],
-    ['Ist dieser WPM Test auch ein Anschläge pro Minute Test?', 'Indirekt: Angezeigt wird WPM, und WPM mal fünf ergibt die Anschläge pro Minute. 50 WPM entsprechen also ungefähr 250 Anschlägen.'],
+    ['Misst dieser WPM-Test auch Anschläge pro Minute?', 'Indirekt: Angezeigt wird WPM, und WPM mal fünf ergibt die Anschläge pro Minute. 50 WPM entsprechen also ungefähr 250 Anschlägen.'],
     ['Zählen Umlaute als ein Zeichen?', 'Ja. Ä, ö, ü und ß sind jeweils ein Zeichen, auch wenn du für den Großbuchstaben die Umschalttaste brauchst. Umschreibungen wie ae oder ss gelten als Fehler.'],
     ['Welche Testdauer ist die richtige?', 'Eine Minute zeigt dein Spitzentempo, fünf oder zehn Minuten dein Dauertempo. Wähle für Vergleiche mit früheren Ergebnissen immer dieselbe Dauer.'],
     ['Taugt das als Tipp Test für Kinder?', 'Ja, am besten zusammen mit einem Erwachsenen. Es gibt keinen eigenen Kindermodus, die Texte sind normale Prosa. Kurze Durchgänge von 15 bis 60 Sekunden passen gut, und Genauigkeit ist wichtiger als Tempo.'],
-    ['Muss ich für diesen Test der Tippgeschwindigkeit online etwas installieren?', 'Nein. Der Test läuft komplett im Browser, ohne Download und ohne Konto. Du brauchst nur eine Tastatur, die auf das deutsche Layout eingestellt ist.'],
+    ['Muss ich für diesen Online-Test der Tippgeschwindigkeit etwas installieren?', 'Nein. Der Test läuft komplett im Browser, ohne Download und ohne Konto. Du brauchst nur eine Tastatur, die auf das deutsche Layout eingestellt ist.'],
     ['Werden meine Ergebnisse gespeichert?', 'Nur in deinem Browser auf diesem Gerät. Es gibt kein Konto und keine Anmeldung. Wenn du die Browserdaten löschst, ist auch der Verlauf weg.'],
     ['Funktioniert der Test mit einer Schweizer Tastatur?', 'Die Schweizer Tastatur ist ebenfalls QWERTZ, aber große Umlaute liegen dort nicht auf der Umschalttaste, und ein ß gibt es nicht. Die Texte enthalten beides, daher passt der Test am besten zur deutschen und österreichischen Tastatur.']
   ],

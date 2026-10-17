@@ -17,7 +17,7 @@ export default {
   how: {
     rain: ['Des mots tombent du haut.', 'Tape le mot exactement, accents compris.', 'Appuie sur Espace pour le détruire. Trois ratés et c’est fini.'],
     race: ['Choisis la vitesse du fantôme.', 'Tape le texte depuis la première lettre.', 'Arrive au drapeau avant le fantôme.'],
-    keys: ['Une touche s’allume sur le clavier.', 'Garde les yeux sur l’écran et appuie dessus.', 'Touches-en le plus possible en 60 secondes.']
+    keys: ['Une touche s’allume sur le clavier.', 'Garde les yeux sur l’écran et appuie dessus.', 'Attrape le plus de touches possible en 60 secondes.']
   },
   modes: {
     rain: ['Pluie de mots', 'Tape le mot qui tombe et appuie sur Espace pour le détruire.'],
@@ -40,9 +40,9 @@ export default {
   },
   runtime: {
     over: 'Partie terminée', again: 'Rejouer', newBest: 'Nouveau record sur cet appareil !',
-    rainResult: '{score} points · {words} mots détruits · {wpm} MPM · {accuracy} % dans le mille',
+    rainResult: '{score} points · {words} mots détruits · {wpm} MPM · {accuracy} % de précision',
     raceReady: 'Le fantôme roule à {wpm} MPM. Appuie sur « Lancer la course », puis tape la première lettre pour partir.',
-    raceGo: 'Partez !', raceWin: 'Tu es arrivé le premier !', raceLose: 'Le fantôme a gagné cette fois.',
+    raceGo: 'Partez !', raceWin: 'Tu passes la ligne avant le fantôme !', raceLose: 'Le fantôme a gagné cette fois.',
     racePaused: 'Arrêté. Appuie sur « Lancer la course » pour repartir.',
     raceResult: '{seconds} secondes · {wpm} MPM · {accuracy} % de précision · fantôme {ghost} MPM',
     paceBest: 'Ton record ({wpm} MPM)',
@@ -56,10 +56,10 @@ export default {
 <h3>Les mots qui coûtent une frappe de plus</h3>
 <p>Les mots à é, è, à, ç ne coûtent pas plus de frappes que les autres, puisque ces lettres ont leur touche. Les mots en ê, â, î, ô ou û, comme « fête », « forêt » ou « même », demandent la touche morte ^ puis la voyelle : deux gestes pendant que le mot descend. Quelques mots portent aussi une apostrophe, comme « aujourd’hui » ou « jusqu’à », tapée sans Maj sur la touche 4. Si tu rates surtout ces mots-là, ce n’est pas un problème de vitesse, c’est la touche morte qui n’est pas encore automatique.</p>
 <p>Les points dépendent de la longueur du mot et de la manche en cours. Ils servent à comparer deux parties au même niveau, pas à juger ta précision en général.</p>` },
-    { h2: 'Course fantôme : une course contre ton propre rythme', html: `<p>Soyons clairs : il n’y a pas d’autre joueur. Le fantôme est une voiture qui roule à vitesse constante, celle que tu choisis entre 20 et 80 MPM, ou celle de ton record de course enregistré dans ce navigateur. Sans record, cette option part de 30 MPM ; un record très bas est relevé à 15 MPM. Il n’y a ni classement ni partie en ligne. Le défi, c’est toi contre une allure que tu fixes.</p>
+    { h2: 'Course fantôme : une course contre ton propre rythme', html: `<p>Précisons d’abord qu’il n’y a pas d’autre joueur. Le fantôme est une voiture qui roule à vitesse constante, celle que tu choisis entre 20 et 80 MPM, ou celle de ton record de course enregistré dans ce navigateur. Sans record, cette option part de 30 MPM ; un record très bas est relevé à 15 MPM. Il n’y a ni classement ni partie en ligne. Le défi, c’est toi contre une allure que tu fixes.</p>
 <p>Appuie sur « Lancer la course » : la course démarre à ta première lettre, ce qui te laisse le temps de poser les mains. Le texte est fait de mots de la banque du cours, à recopier dans l’ordre avec leurs espaces.</p>
 <h3>Une faute bloque la voiture</h3>
-<p>Ta voiture avance jusqu’à la première faute, pas plus loin. Si tu tapes « tres » au lieu de « très », tout ce que tu écris ensuite ne compte pas tant que tu n’as pas corrigé le e. Sur un texte français, ce sont souvent les accents qui arrêtent la voiture, plus que les lettres. Choisis une allure qui te laisse le temps de revenir en arrière : si tu perds à chaque fois, baisse-la et garde-la fixe plusieurs courses de suite pour pouvoir comparer.</p>` },
+<p>Ta voiture avance jusqu’à la première faute, pas plus loin. Si tu tapes « tres » au lieu de « très », tout ce que tu écris ensuite ne compte pas tant que tu n’as pas corrigé le e en è. Sur un texte français, ce sont souvent les accents qui arrêtent la voiture, plus que les lettres. Choisis une allure qui te laisse le temps de revenir en arrière : si tu perds à chaque fois, baisse-la et garde-la fixe plusieurs courses de suite pour pouvoir comparer.</p>` },
     { h2: 'Chasse aux touches : la rangée des chiffres de l’AZERTY', html: `<p>Une touche s’allume sur le clavier à l’écran ; appuie sur la même touche de ton clavier. Tu as 60 secondes. Chaque bonne touche s’ajoute au compteur, une mauvaise touche casse ta série. Regarde les deux résultats : beaucoup de touches avec des séries courtes, c’est souvent qu’on devine au lieu de savoir.</p>
 <p>Sur l’AZERTY, le jeu allume toutes les touches qui portent une lettre en position de base. Ça inclut é, è, ç et à, qui sont sur la rangée des chiffres, et ù, à droite de m. C’est le seul des trois jeux qui t’oblige à trouver ces touches sans le mot autour pour t’aider. Si é et è te font hésiter dans un texte, c’est ici qu’il faut venir : l’une est au-dessus de z, l’autre au-dessus de u, et c’est cette distance que la main doit apprendre.</p>
 <p>Le jeu lit la position physique de la touche, d’après le clavier affiché. Il ne vérifie pas quel doigt tu as utilisé, ni si tu as regardé tes mains : ça, c’est à toi de l’observer. Il faut un vrai clavier ; sur un téléphone, ce jeu ne fonctionne pas.</p>` },
@@ -71,9 +71,9 @@ export default {
   faq: [
     ['Puis-je jouer contre d’autres personnes ?', 'Non. Course fantôme se joue contre un fantôme qui garde la vitesse que tu choisis, ou ton propre record. Il n’y a pas d’autres joueurs ni de classement.'],
     ['Où sont gardés mes records ?', 'Seulement dans ce navigateur, sur cet appareil. Pas de compte, et rien n’est envoyé nulle part.'],
-    ['Puis-je jouer sur un téléphone ?', 'Pluie de mots et Course fantôme marchent avec le clavier du téléphone. Chasse aux touches demande un vrai clavier, parce qu’il apprend où sont les touches.'],
-    ['Pourquoi un mot juste n’a pas disparu ?', 'Il doit correspondre exactement avant que tu appuies sur Espace. Vérifie s’il manque un accent ou une lettre, ou si une majuscule s’est glissée.'],
-    ['Pourquoi Chasse aux touches m’allume é ou ç ?', 'Sur l’AZERTY, é, è, ç, à et ù ont leur propre touche, sans Maj. Le jeu allume toutes les touches qui portent une lettre en position de base, donc celles-là aussi. Elles sont sur la rangée des chiffres, sauf ù, à droite de m.'],
+    ['Puis-je jouer sur un téléphone ?', 'Pluie de mots et Course fantôme marchent avec le clavier du téléphone. Chasse aux touches demande un vrai clavier, puisqu’il s’agit d’apprendre où sont les touches.'],
+    ['Pourquoi un mot bien tapé n’a-t-il pas disparu ?', 'Il doit correspondre exactement avant que tu appuies sur Espace. Vérifie s’il manque un accent ou une lettre, ou si une majuscule s’est glissée.'],
+    ['Pourquoi Chasse aux touches allume-t-il é ou ç ?', 'Sur l’AZERTY, é, è, ç, à et ù ont leur propre touche, sans Maj. Le jeu allume toutes les touches qui portent une lettre en position de base, donc celles-là aussi. Elles sont sur la rangée des chiffres, sauf ù, à droite de m.'],
     ['Quel jeu choisir quand on débute ?', 'Chasse aux touches si tu cherches encore les touches, Pluie de mots en Facile quand les lettres sont connues. Garde Course fantôme pour plus tard, avec une allure basse et fixe. Si tu ne sais pas encore quel doigt va où, commence par la leçon 1 du cours et reviens ensuite.']
   ],
   cta: { eyebrow: 'Envie de mieux jouer ?', title: 'Apprends à taper à l’aveugle', text: '{lessons} leçons sur ton propre clavier, en commençant par la rangée de repos.', button: 'Voir le cours' }

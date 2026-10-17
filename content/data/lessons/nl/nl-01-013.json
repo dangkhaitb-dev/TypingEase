@@ -53,12 +53,12 @@
   "screens": [
     {
       "type": "standard",
-      "text": "Druk op Shift + ' (dode toets), laat los en druk dan op e: je krijgt ë. Ga daarna terug naar de basispositie.",
+      "text": "Druk op ¨ (dode toets, rechts van P), laat los en druk dan op e: je krijgt ë. Ga daarna terug naar de basispositie.",
       "content": "ëee ëëë eeeë ëë ëe ëëeë ëë ëe eeëë ëëee ëeëë"
     },
     {
       "type": "standard",
-      "text": "Druk op Shift + ' (dode toets), laat los en druk dan op i: je krijgt ï. Ga daarna terug naar de basispositie.",
+      "text": "Druk op ¨ (dode toets, rechts van P), laat los en druk dan op i: je krijgt ï. Ga daarna terug naar de basispositie.",
       "content": "ïïï ïïïï ïïiï iïï ïïiï iï ïiïï ïï ïi iiïï"
     },
     {

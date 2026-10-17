@@ -1866,3 +1866,53 @@ tên gọi khác của bài test). Chủ site yêu cầu: không viết kiểu s
   khỏi mục (H2 thành "cho người mới"); id/ms chuyển đoạn đó thành FAQ. Tỉ lệ còn 1.0–1.5, đa số
   ≤ 1.3. Đã kiểm de (desktop) và ar (RTL, 390px) trên Chrome: không tràn ngang, mục lục một cột
   trên mobile.
+
+---
+
+# 2026-10-18 — SEO cho mọi trang của 25 ngôn ngữ + sửa dữ liệu bài học sai bàn phím
+
+**Nội dung (theo bảng keyword của chủ site; luật: không spam, không generic, có quan điểm, cân bằng design)**
+- **Trang chủ:** content/home/guide.<lang>.mjs. 5 mục cùng hình dạng và bố cục với bản en/vi
+  (tooling/lib/home-seo-content.mjs, `renderGuide`). Ngôn ngữ chưa có file thì vẫn dùng ghi chú ngắn cũ.
+- **Khoá học:** content/roadmaps/editorial.<mã khoá>.mjs cho khoá chính VÀ cho từng họ bàn phím
+  (vd. editorial.en-dvorak.mjs). Lý do: các trang họ cùng ngôn ngữ từng trùng nhau 55–92% nội dung.
+- **Trò chơi:** 5 mục và 6 câu hỏi FAQ mỗi ngôn ngữ. FAQ "chơi với người khác" trả lời "Không" thay
+  vì "Chưa", để không ngầm hứa tính năng.
+- **Bài mới "gõ nhanh hơn":** tooling/pages/guides.mjs + content/guides/<lang>.mjs → /<lang>/<slug>/.
+  Cùng cụm hreflang với /how-to-type-faster/ và /cach-tang-wpm/ (transform `guide-hubs`); có
+  routes.wpm, link chân trang, sitemap (+25 URL). Mục cuối trang test đổi H2 và link sang bài này,
+  để hai trang không tranh cùng một keyword.
+- **seo-reading:** `seoReading(..., { allLanguages: true })` có nhãn mục lục cho 27 ngôn ngữ. Trang test,
+  trò chơi, khoá học và bài viết của mọi ngôn ngữ dùng cùng bố cục đọc. seo-reading.css có thêm kiểu
+  bảng (.wpm-table) cho các trang không nạp article.css.
+- **Keyword:** khớp chính xác 531/556; tính cả dạng viết đúng ngữ pháp thì 549/556. Cố ý bỏ 7 cụm:
+  - "type the alphabet", "online typing competition": site không có các tính năng này.
+  - Hai cụm 倉頡: chưa hỗ trợ bộ gõ này.
+  - "test speed keyboard typing", "fast 10 finger": không có nghĩa.
+  - uk "навчання сліпої печатки": dùng sai từ.
+- **Chống nhồi:**
+  - Bảng thời lượng chỉ giữ cụm keyword đầy đủ ở các dòng 1/5/10 phút.
+  - Bỏ keyword khỏi các H2 không cần.
+  - Câu hỏi FAQ không theo kiểu "keyword: …".
+  - Tiếng Ý viết đúng ngữ pháp ("test di battitura"), dạng ngắn chỉ dùng trong nhãn bảng.
+- **Kiểm tra:**
+  - Build và `npm run check` đạt.
+  - QA tĩnh mọi trang: link, hreflang hai chiều, sitemap, canonical, title và description.
+  - Playwright 398 lượt xem trang (desktop và 390px): 0 lỗi JS, 0 lỗi 404, 0 tràn ngang.
+  - e2e 78/112, giống hệt HEAD: 34 lỗi có từ trước, là test lỗi thời sau đợt chuyển Eleventy và đổi giao diện.
+
+**Dữ liệu bài học sai bàn phím (sửa trong content/data/lessons + stamp-data)**
+- **es (layout 175, Tây Ban Nha):** unit 3 được viết cho bàn phím Mỹ Latinh. Đã sửa:
+  - ´ nằm bên phải Ñ.
+  - ¡ gõ không cần Mayús.
+  - # = AltGr+3; @ = AltGr+2.
+  - [ ] \ gõ bằng AltGr.
+  - Ký tự ° không có trên bàn phím Tây Ban Nha: đổi thành º trong 99 bài và trong curriculum.es.js.
+- **nl (layout 198):** sửa 3 bài dấu ở unit 1 (phím chết ´ cách L hai phím, ¨ bên phải P) và 11 hướng
+  dẫn ký hiệu ở unit 3 (€ = AltGr+E, @ ở góc trên trái, ( ) = Shift+8/9, …).
+- **uk-01-026:** ґ là AltGr + **Г** (vị trí phím U), không phải Е.
+- **Trang test:** hi (hàng số ra số ASCII, chữ số Devanagari dùng AltGr), bn (nguyên âm gõ bằng AltGr),
+  uk (ґ), fa (vị trí ئ ؤ ء ، « »). Khoá ja: IME bật từ bài 「日本語 IME の確定」.
+- **CẢNH BÁO:** content/data/lessons được nhập từ typekute (tooling/data/import-typekute.mjs). Chạy lại
+  import sẽ ghi đè các sửa ở trên, trừ khi sửa cùng nội dung trong
+  typekute/content/packs/{es,nl,uk}/lessons và maps.

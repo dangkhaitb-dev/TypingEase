@@ -35,7 +35,7 @@ export default {
     { h2: 'Qué son las palabras por minuto (PPM)',
       html: '<p>PPM significa <em>palabras por minuto</em>; en inglés verás la misma medida como WPM. Para que el número no dependa de si el texto tiene palabras cortas o largas, se usa una convención: cinco caracteres cuentan como una palabra, espacios incluidos. La fórmula es sencilla: caracteres escritos, divididos entre cinco, divididos entre los minutos que has estado escribiendo. Este test PPM la calcula en directo, así que la cifra se mueve mientras escribes y se queda fija cuando termina el tiempo.</p>' },
     { h2: 'Tildes, eñe y signos de apertura',
-      html: '<p>El texto está en español de verdad, con sus mayúsculas, sus tildes y sus signos, porque es lo que escribes cada día. En el teclado español de España la <em>ñ</em> tiene tecla propia, a la derecha de la L. Las vocales con tilde, en cambio, se escriben con una tecla muerta: pulsas la tecla del acento, que está a la derecha de la Ñ, y después la vocal. La diéresis de <em>pingüino</em> es la misma tecla con Mayúsculas, y los signos <em>¡</em> y <em>¿</em> están en la tecla que queda a la derecha del 0 y del apóstrofo.</p>'
+      html: '<p>El texto está en español de verdad, con sus mayúsculas, sus tildes y sus signos, porque es lo que escribes cada día. En el teclado de España la <em>ñ</em> tiene tecla propia, a la derecha de la L. Las vocales con tilde, en cambio, se escriben con una tecla muerta: pulsas la tecla del acento, que está a la derecha de la Ñ, y después la vocal. La diéresis de <em>pingüino</em> es la misma tecla con Mayús, y los signos <em>¡</em> y <em>¿</em> están en la tecla que queda a la derecha del 0 y del apóstrofo.</p>'
         + '<p>El test cuenta caracteres, no pulsaciones: una <em>á</em> vale un carácter aunque te cueste dos teclas. Por eso un texto con muchas tildes da unas PPM algo más bajas que uno sin ellas, y conviene comparar tus resultados con tus propios intentos en español, no con cifras de tests en inglés. En el teclado latinoamericano el acento está en otro sitio; hay un <a class="inline-link" href="/es/latinoamerica/">curso para el teclado latinoamericano</a> que enseña exactamente esas posiciones.</p>' },
     { h2: '1 minuto, 5 o 10: qué mide cada duración',
       html: '<p>Un test corto mide tu velocidad punta, cuánto rindes concentrado y fresco; uno largo mide la resistencia, y suele dar menos PPM pero se parece más a cómo escribes en el trabajo o en clase. Si vas a comparar semanas, elige siempre la misma duración.</p>'
@@ -46,7 +46,7 @@ export default {
         + '<tr><th scope="row">2 o 3 minutos</th><td>Se acaba el impulso del arranque y se ve si la precisión aguanta sin él.</td></tr>'
         + ''
         + '<tr><th scope="row">Test de mecanografía 5 minutos</th><td>Mide resistencia: lo interesante es cuánto baja la cifra respecto a tu minuto.</td></tr>'
-        + '<tr><th scope="row">Test de mecanografía 10 minutos</th><td>Lo más parecido a redactar un correo largo; resérvalo para cuando el de 5 te salga regular.</td></tr>'
+        + '<tr><th scope="row">Test de mecanografía 10 minutos</th><td>Lo más parecido a redactar un correo largo; resérvalo para cuando el de 5 ya te salga estable.</td></tr>'
         + '</tbody></table></div>' },
     { h2: 'Cómo leer la precisión',
       html: '<p>La precisión es el porcentaje de caracteres correctos sobre todo lo que queda escrito. Si borras un error y lo corriges, deja de contar como fallo, pero el tiempo que has perdido sí se nota en las PPM. Una precisión baja casi siempre significa que vas más rápido de lo que tus dedos saben ir: baja un poco el ritmo hasta que los errores sean raros y la velocidad volverá a subir por sí sola. La constancia compara tu velocidad segundo a segundo; una cifra alta indica que mantienes un paso regular en vez de acelerar y frenar.</p>' },
@@ -57,15 +57,15 @@ export default {
     { h2: 'Después del test: qué practicar',
       html: '<ul><li>Aprende la posición de cada dedo en la fila central, con los índices sobre la F y la J, y vuelve a ella después de cada tecla.</li><li>Primero la precisión. La velocidad llega después de acertar, nunca al revés.</li><li>Practica las tildes y la eñe con el meñique derecho hasta que no tengas que pensarlas.</li><li>Mantén la vista en la pantalla aunque al principio vayas más despacio.</li><li>Para practicar mecanografía, haz sesiones cortas que de verdad puedas mantener: mejor diez minutos al día que una hora a la semana.</li></ul>'
         + '<p>El <a class="inline-link" href="{course}">curso de {lessons} lecciones</a> pone todo esto en orden sobre el teclado español, con ejercicios de mecanografía que van desde las dos teclas con relieve hasta textos completos con tildes.</p>'
-        + '<p>Si quieres un plan paso a paso, aquí explicamos <a class="inline-link" href="/es/escribir-mas-rapido/">cómo escribir más rápido en el teclado</a> sin perder las tildes por el camino.</p>' }
+        + '<p>Si quieres un plan paso a paso, en esta guía explicamos <a class="inline-link" href="/es/escribir-mas-rapido/">cómo escribir más rápido en el teclado</a> sin perder las tildes por el camino.</p>' }
   ],
   faqTitle: 'Preguntas frecuentes',
   faq: [
     ['¿Qué son las PPM?', 'Las palabras por minuto: cuántas palabras de cinco caracteres escribes en un minuto. Es la misma medida que en inglés se llama WPM.'],
     ['¿Cómo empiezo?', 'Elige una duración y empieza a escribir el texto en el cuadro de arriba. El reloj arranca con la primera tecla que pulses.'],
-    ['¿Cuentan las tildes como errores?', 'Solo si faltan o están mal. Una vocal con tilde es un carácter distinto de la vocal sin tilde, así que escribir "camion" en lugar de "camión" cuenta como un error.'],
+    ['¿Cuentan las tildes como errores?', 'Solo si faltan o están mal. Una vocal con tilde es un carácter distinto de la vocal sin tilde, así que escribir «camion» en lugar de «camión» cuenta como un error.'],
     ['¿Qué duración debo elegir?', 'Un minuto sirve para medir tu velocidad punta; cinco o diez minutos muestran si mantienes el ritmo. Para seguir tu progreso, repite siempre la misma duración.'],
-    ['¿Puedo mirar el teclado durante el test?', 'Puedes, y al principio casi todo el mundo lo hace. Intenta acostumbrarte a mirar la pantalla, porque es el hábito sobre el que se construye la velocidad.'],
+    ['¿Puedo mirar el teclado durante el test?', 'Puedes, y al principio casi todo el mundo lo hace. Intenta acostumbrarte a mirar la pantalla: sobre ese hábito se construye la velocidad.'],
     ['¿Se guardan mis resultados?', 'Sí, pero solo en este navegador y en este dispositivo. No hay cuenta ni servidor: si borras los datos del navegador, el historial desaparece.'],
     ['¿Sirve como test de mecanografía para niños?', 'Sí, aunque no tiene un modo infantil: los textos son prosa normal para adultos. Lo mejor es que un niño lo haga acompañado, con duraciones de 15 a 60 segundos y fijándose más en la precisión que en las PPM.']
   ],

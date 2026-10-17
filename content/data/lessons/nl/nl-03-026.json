@@ -117,21 +117,21 @@
     {
       "type": "block",
       "newKey": "&",
-      "text": "Houd Shift ingedrukt en druk op 7 voor &. Ga daarna terug naar de basispositie.",
+      "text": "Houd Shift ingedrukt en druk op 6 voor &. Ga daarna terug naar de basispositie.",
       "content": "&&&& &&&& &&&& &&&& &&&& &&&& &&&& &&&& &&",
       "dictation": "letters"
     },
     {
       "type": "block",
       "newKey": "*",
-      "text": "Houd Shift ingedrukt en druk op 8 voor *. Ga daarna terug naar de basispositie.",
+      "text": "Druk op de toets * rechts van de ¨-toets voor *. Ga daarna terug naar de basispositie.",
       "content": "**** **** **** **** **** **** **** **** **",
       "dictation": "letters"
     },
     {
       "type": "block",
       "newKey": "+",
-      "text": "Houd Shift ingedrukt en druk op = voor +. Ga daarna terug naar de basispositie.",
+      "text": "Druk op de toets + rechts van L voor +. Ga daarna terug naar de basispositie.",
       "content": "++++ ++++ ++++ ++++ ++++ ++++ ++++ ++++ ++",
       "dictation": "letters"
     },

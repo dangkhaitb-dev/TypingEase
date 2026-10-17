@@ -108,7 +108,7 @@
     {
       "type": "block",
       "newKey": "@",
-      "text": "Houd Shift ingedrukt en druk op 2 voor @. Ga daarna terug naar de basispositie.",
+      "text": "Druk op de toets linksboven, links van 1, voor @. Ga daarna terug naar de basispositie.",
       "content": "@@ @@@ @@@@ @@ @@ @@ @@ @@",
       "dictation": "letters"
     },
