@@ -33,7 +33,7 @@ export default {
   sections: [
     {
       h2: 'Como funciona o teste de digitação online',
-      html: '<p>Escolha uma duração, de 15 segundos a 10 minutos, e digite o texto que aparece acima. O relógio só começa no primeiro toque, então dá para ler o começo com calma. Quando o tempo acaba, o teste mostra as suas palavras por minuto (PPM), a precisão, o número de erros e a constância, que diz o quanto o seu ritmo variou do início ao fim.</p><p>Os textos são parágrafos do dia a dia em português, com maiúsculas, pontuação e acentos, do jeito que se escreve de verdade. Se você chegar ao fim de um parágrafo antes do tempo, outro aparece logo em seguida.</p>'
+      html: '<p>Como em qualquer teste de velocidade de digitação online, você escolhe uma duração, de 15 segundos a 10 minutos, e digita o texto que aparece acima. O relógio só começa no primeiro toque, então dá para ler o começo com calma. Quando o tempo acaba, o teste mostra as suas palavras por minuto (PPM), a precisão, o número de erros e a constância, que diz o quanto o seu ritmo variou do início ao fim.</p><p>Os textos são parágrafos do dia a dia em português, com maiúsculas, pontuação e acentos, do jeito que se escreve de verdade. Se você chegar ao fim de um parágrafo antes do tempo, outro aparece logo em seguida.</p>'
     },
     {
       h2: 'Acentos e ç no teclado ABNT2',
@@ -41,11 +41,20 @@ export default {
     },
     {
       h2: 'Como as palavras por minuto são calculadas',
-      html: '<p>Todo teste de palavras por minuto precisa de uma regra para contar as palavras. Aqui, o PPM segue a mesma convenção do WPM usado em inglês: cada cinco caracteres digitados valem uma "palavra", com espaços e pontuação incluídos. O total é dividido pelos minutos que você passou digitando. Contar caracteres em vez de palavras reais deixa o resultado justo entre textos de palavras curtas e longas, como <em>pé</em> e <em>paralelepípedo</em>.</p><p>O número conta tudo o que está na caixa, certo ou errado. Por isso o PPM só faz sentido lido junto com a precisão: digitar rápido e errar muito não é ser rápido.</p>'
+      html: '<p>Todo teste de palavras por minuto precisa de uma regra para contar as palavras. Aqui, o PPM segue a mesma convenção de um teste WPM em inglês: cada cinco caracteres digitados valem uma "palavra", com espaços e pontuação incluídos. O total é dividido pelos minutos que você passou digitando. Contar caracteres em vez de palavras reais deixa o resultado justo entre textos de palavras curtas e longas, como <em>pé</em> e <em>paralelepípedo</em>.</p><p>O número conta tudo o que está na caixa, certo ou errado. Por isso o PPM só faz sentido lido junto com a precisão: digitar rápido e errar muito não é ser rápido.</p>'
     },
     {
       h2: 'Teste de digitação de 1 minuto, 5 minutos ou 10 minutos',
-      html: '<p>Um teste de 1 minuto mede o seu pique: por pouco tempo, quase todo mundo consegue manter a atenção no máximo. Os testes de 15 e 30 segundos exageram esse efeito e servem mais para aquecer os dedos. Já um teste de 5 ou 10 minutos mede resistência: o cansaço aparece, a atenção oscila, os erros se acumulam, e o resultado fica mais perto do ritmo que você tem ao escrever um e-mail ou um trabalho longo.</p><p>Se o seu PPM cai muito entre o teste de 1 minuto e o de 10, a velocidade ainda depende de esforço e não de hábito. Para saber se está melhorando, compare sempre testes da mesma duração.</p>'
+      html: '<p>Os testes curtos medem o seu pique, quando a atenção ainda está no máximo; os longos medem resistência e ficam mais perto do ritmo de um e-mail ou de um trabalho longo. Se o seu PPM cai muito entre 1 e 10 minutos, a velocidade ainda depende de esforço e não de hábito. Para saber se está melhorando, compare sempre testes da mesma duração.</p>'
+        + '<div class="guide-table-wrap"><table class="wpm-table"><caption>O que cada duração mostra</caption><thead><tr><th scope="col">Duração</th><th scope="col">Para que serve</th></tr></thead><tbody>'
+        + '<tr><th scope="row">15 segundos</th><td>Aquecimento: solta os dedos, mas uma única hesitação muda muito o número.</td></tr>'
+        + '<tr><th scope="row">30 segundos</th><td>Para conferir se uma tecla recém-aprendida, como o ç, já sai sem olhar.</td></tr>'
+        + '<tr><th scope="row">Teste de digitação 1 minuto</th><td>A sua referência de pique, e a duração mais fácil de repetir todo dia.</td></tr>'
+        + '<tr><th scope="row">2 minutos</th><td>O embalo do começo acaba, e dá para ver se a precisão se segura sem ele.</td></tr>'
+        + '<tr><th scope="row">3 minutos</th><td>O degrau intermediário quando o minuto já está estável e 5 ainda parece longo.</td></tr>'
+        + '<tr><th scope="row">Teste de digitação 5 minutos</th><td>Mede resistência: o que interessa é quanto o número cai em relação ao seu minuto.</td></tr>'
+        + '<tr><th scope="row">Teste de digitação 10 minutos</th><td>O mais parecido com escrever um e-mail longo; deixe para quando o de 5 sair regular.</td></tr>'
+        + '</tbody></table></div>'
     },
     {
       h2: 'Como ler a precisão',
@@ -68,7 +77,7 @@ export default {
     ['Qual duração devo escolher?', '1 minuto para medir o seu pique, 5 ou 10 minutos para ver o ritmo que você mantém num texto longo. Para acompanhar a evolução, repita sempre a mesma duração.'],
     ['Meus resultados ficam salvos?', 'Os últimos resultados ficam guardados apenas neste navegador, no seu aparelho, e aparecem no gráfico de progresso. Não há cadastro e nada é enviado para um servidor.'],
     ['Posso fazer o teste num teclado americano?', 'Pode, mas o texto tem ç e acentos. Num teclado americano configurado como "US Internacional", eles saem por outras teclas mortas (aspas simples e depois c dá ç, por exemplo). O resultado mais fiel é o do teclado que você usa todo dia.'],
-    ['O teste serve para crianças?', 'Serve, mas não há um modo infantil: os textos são parágrafos comuns para adultos. O ideal é a criança fazer o teste acompanhada, com durações de 15 a 60 segundos e prestando mais atenção à precisão do que ao PPM.']
+    ['Serve como teste de digitação para crianças?', 'Serve, mas não há um modo infantil: os textos são parágrafos comuns para adultos. O ideal é a criança fazer o teste acompanhada, com durações de 15 a 60 segundos e prestando mais atenção à precisão do que ao PPM.']
   ],
   cta: { eyebrow: 'Quer um resultado melhor?', title: 'Aprenda digitação com os dez dedos', text: '{lessons} lições no seu próprio teclado ABNT2, começando pela fileira do meio.', button: 'Ver o curso' }
 };

@@ -11,7 +11,7 @@ export default {
   crumb: 'Test pisania',
   eyebrow: 'Darmowy test pisania',
   h1: 'Test szybkości pisania',
-  intro: 'Wybierz czas od 15 sekund do 10 minut i przepisz tekst. Zobaczysz WPM, dokładność i błędy. Zegar rusza przy pierwszym naciśnięciu klawisza, a nie po kliknięciu przycisku.',
+  intro: 'Ten test szybkości pisania online działa w przeglądarce bez instalacji. Wybierz czas od 15 sekund do 10 minut i przepisz tekst. Zobaczysz WPM, dokładność i błędy. Zegar rusza przy pierwszym naciśnięciu klawisza, a nie po kliknięciu przycisku.',
   durationAria: 'Czas testu',
   durationLabel: seconds => (seconds < 60 ? `${seconds} s` : `${seconds / 60} min`),
   liveAria: 'Bieżący wynik',
@@ -45,7 +45,7 @@ export default {
     },
     {
       h2: 'Test pisania: 1 minuta, 5 czy 10 minut?',
-      html: '<p>Test trwający minutę lub krócej mierzy przede wszystkim Twoje tempo szczytowe. Możesz się w pełni skupić, zmęczenie prawie nie gra roli, a pojedynczy błąd mocno wpływa na wynik.</p><p>Pięć lub dziesięć minut pokazuje coś innego: tempo, które potrafisz utrzymać. W pewnym momencie koncentracja słabnie, dłonie się męczą i właśnie wtedy widać, czy technika się sprawdza. Wynik jest zwykle trochę niższy niż w krótkim teście i bliższy temu, co naprawdę osiągasz, pisząc długiego maila albo sprawozdanie. Porównując się z samym sobą, wybieraj zawsze ten sam czas, inaczej zestawiasz sprint z biegiem na długi dystans.</p>'
+      html: '<p>Krótki test mierzy tempo szczytowe, długi tempo, które potrafisz utrzymać, gdy koncentracja słabnie, a dłonie się męczą. Wynik z dłuższego testu jest zwykle trochę niższy i bliższy temu, co osiągasz przy długim mailu. Porównując się z samym sobą, wybieraj zawsze ten sam czas, inaczej zestawiasz sprint z biegiem na długi dystans.</p><div class="guide-table-wrap"><table class="wpm-table"><caption>Który czas testu wybrać</caption><thead><tr><th scope="col">Czas testu</th><th scope="col">Kiedy go wybrać</th></tr></thead><tbody><tr><th scope="row">30 sekund</th><td>Do sprawdzenia jednej rzeczy, na przykład czy ż i ź trafiasz już bez patrzenia, zanim zmęczenie zdąży cokolwiek zmienić.</td></tr><tr><th scope="row">Test pisania 1 minuta</th><td>Standardowy pomiar tempa szczytowego; tego czasu używaj, gdy chcesz porównać wynik z kimś innym.</td></tr><tr><th scope="row">Test pisania 5 minut</th><td>Najlepszy do śledzenia postępów co tydzień, bo jedna wpadka nie przekreśla tu całego wyniku.</td></tr><tr><th scope="row">Test pisania 10 minut</th><td>Sprawdza, czy prawy Alt i palce nadal trzymają pozycję, kiedy ręce są już zmęczone, jak pod koniec długiego raportu.</td></tr></tbody></table></div>'
     },
     {
       h2: 'Jak czytać dokładność',
@@ -63,10 +63,11 @@ export default {
   faqTitle: 'Częste pytania',
   faq: [
     ['Co oznacza WPM?', 'WPM to słowa na minutę (ang. words per minute). Jedno słowo liczy się jako pięć znaków, łącznie ze spacjami. Dzięki temu wyniki można porównywać niezależnie od długości wyrazów.'],
+    ['Czy ten test WPM liczy słowa na minutę tak samo jak inne?', 'Tak, jeśli inny test liczy słowo jako pięć znaków, co jest standardem. Strony, które liczą całe wyrazy, pokażą przy polskim tekście wyraźnie niższy wynik, bo polskie wyrazy są średnio dłuższe niż angielskie.'],
     ['Jak przeliczyć WPM na znaki na minutę?', 'Pomnóż wynik WPM przez pięć. 50 WPM to w przybliżeniu 250 znaków na minutę.'],
     ['Czy ą, ę albo ż liczą się jako jeden znak?', 'Tak. Każda polska litera to jeden znak, choć wpisujesz ją z prawym Altem, a wielką literę dodatkowo z Shiftem. Litera bez ogonka lub kreski, na przykład z zamiast ż, liczy się jako błąd.'],
     ['Jaki czas testu wybrać?', 'Minuta pokazuje Twoje tempo szczytowe, pięć lub dziesięć minut tempo, które utrzymujesz dłużej. Porównując wyniki z wcześniejszymi, wybieraj zawsze ten sam czas.'],
-    ['Czy test nadaje się dla dzieci?', 'Tak, najlepiej razem z dorosłym. Nie ma osobnego trybu dla dzieci, a teksty to zwykła proza. Najlepiej sprawdzają się krótkie próby od 15 do 60 sekund, a dokładność jest ważniejsza niż tempo.'],
+    ['Czy to dobry test pisania dla dzieci?', 'Tak, najlepiej razem z dorosłym. Nie ma osobnego trybu dla dzieci, a teksty to zwykła proza. Najlepiej sprawdzają się krótkie próby od 15 do 60 sekund, a dokładność jest ważniejsza niż tempo.'],
     ['Czy moje wyniki są zapisywane?', 'Tylko w Twojej przeglądarce na tym urządzeniu. Nie ma konta ani logowania. Jeśli usuniesz dane przeglądarki, historia również zniknie.'],
     ['Czy test działa z układem maszynistki?', 'Tak, bo liczą się wpisane znaki, a nie naciśnięte klawisze. Ułożenie liter jest tam jednak inne (QWERTZ), a wskazówki na tej stronie zakładają układ programisty, najczęściej używany w Polsce. Dla układu maszynistki jest osobna wersja kursu.']
   ],

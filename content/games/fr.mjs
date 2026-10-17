@@ -69,7 +69,7 @@ export default {
   ],
   faqTitle: 'Questions fréquentes',
   faq: [
-    ['Puis-je jouer contre d’autres personnes ?', 'Pas encore. Course fantôme se joue contre un fantôme qui garde la vitesse que tu choisis, ou ton propre record. Il n’y a pas d’autres joueurs ni de classement.'],
+    ['Puis-je jouer contre d’autres personnes ?', 'Non. Course fantôme se joue contre un fantôme qui garde la vitesse que tu choisis, ou ton propre record. Il n’y a pas d’autres joueurs ni de classement.'],
     ['Où sont gardés mes records ?', 'Seulement dans ce navigateur, sur cet appareil. Pas de compte, et rien n’est envoyé nulle part.'],
     ['Puis-je jouer sur un téléphone ?', 'Pluie de mots et Course fantôme marchent avec le clavier du téléphone. Chasse aux touches demande un vrai clavier, parce qu’il apprend où sont les touches.'],
     ['Pourquoi un mot juste n’a pas disparu ?', 'Il doit correspondre exactement avant que tu appuies sur Espace. Vérifie s’il manque un accent ou une lettre, ou si une majuscule s’est glissée.'],

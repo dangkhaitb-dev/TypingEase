@@ -71,7 +71,7 @@ export default {
   ],
   faqTitle: 'Preguntas frecuentes',
   faq: [
-    ['¿Puedo jugar contra otras personas?', 'Todavía no. Carrera fantasma es contra un fantasma que mantiene la velocidad que eliges, o tu propio récord. No hay otros jugadores ni clasificación.'],
+    ['¿Puedo jugar contra otras personas?', 'No. Carrera fantasma es contra un fantasma que mantiene la velocidad que eliges, o tu propio récord. No hay otros jugadores ni clasificación.'],
     ['¿Dónde se guardan mis récords?', 'Solo en este navegador, en este dispositivo. Sin cuenta, y no se envía nada a ningún sitio.'],
     ['¿Puedo jugar en el móvil?', 'Lluvia de palabras y Carrera fantasma funcionan con el teclado del móvil. Caza de teclas necesita un teclado de verdad, porque enseña dónde están las teclas.'],
     ['¿Por qué no desapareció una palabra bien escrita?', 'Tiene que coincidir exactamente antes de pulsar Espacio. Revisa si falta una tilde o una letra, o si se coló una mayúscula.'],

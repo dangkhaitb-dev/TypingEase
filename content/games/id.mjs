@@ -58,7 +58,7 @@ export default {
   ],
   faqTitle: 'Pertanyaan umum',
   faq: [
-    ['Bisakah aku bermain melawan orang lain?', 'Belum. Balapan Bayangan melawan mobil pemandu yang menjaga kecepatan pilihanmu, atau rekormu sendiri. Tidak ada pemain lain dan tidak ada papan peringkat.'],
+    ['Bisakah aku bermain melawan orang lain?', 'Tidak. Balapan Bayangan melawan mobil pemandu yang menjaga kecepatan pilihanmu, atau rekormu sendiri. Tidak ada pemain lain dan tidak ada papan peringkat.'],
     ['Di mana skor terbaikku disimpan?', 'Hanya di browser ini, di perangkat ini. Tanpa akun, dan tidak ada yang dikirim ke mana pun.'],
     ['Bisakah dimainkan di ponsel?', 'Hujan Kata dan Balapan Bayangan bisa dengan papan ketik ponsel. Buru Tombol butuh papan ketik sungguhan, karena game ini mengajarkan letak tombol.'],
     ['Kenapa kata yang benar tidak terhapus?', 'Kata harus persis sama sebelum kamu menekan Spasi. Periksa huruf kapital yang tidak sengaja atau huruf yang terlewat.'],

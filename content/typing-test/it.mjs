@@ -45,7 +45,16 @@ export default {
     },
     {
       h2: 'Test di battitura di 1 minuto, 5 minuti o 10 minuti',
-      html: `<p>Un test di 1 minuto, o anche di 15 o 30 secondi, misura soprattutto la velocità di punta: resti concentrato dall'inizio alla fine e una sola esitazione pesa molto sul risultato. È comodo per una prova veloce o per controllare un gesto preciso, per esempio un accento che ti rallenta.</p><p>Un test di 5 o 10 minuti misura la resistenza, e somiglia di più al lavoro vero, come scrivere una lunga email o un verbale. La stanchezza e i piccoli cali di attenzione si fanno sentire, e il punteggio di solito è un po' più basso che su un minuto. Se vuoi seguire i tuoi progressi, usa sempre la stessa durata.</p>`
+      html: `<p>I test brevi misurano la velocità di punta, quando resti concentrato dall'inizio alla fine; quelli lunghi misurano la resistenza e somigliano di più al lavoro vero, come una lunga email o un verbale, con un punteggio di solito un po' più basso. Se vuoi seguire i tuoi progressi, usa sempre la stessa durata.</p>`
+        + `<div class="guide-table-wrap"><table class="wpm-table"><caption>Che cosa ti dice ogni durata</caption><thead><tr><th scope="col">Durata</th><th scope="col">A cosa serve</th></tr></thead><tbody>`
+        + `<tr><th scope="row">15 secondi</th><td>Riscaldamento: scioglie le dita, ma una sola esitazione sposta molto il numero.</td></tr>`
+        + `<tr><th scope="row">30 secondi</th><td>Per controllare se un gesto appena imparato, come Maiusc più è per la é, esce senza guardare.</td></tr>`
+        + `<tr><th scope="row">Test battitura 1 minuto</th><td>Il tuo riferimento per la velocità di punta, e la durata più facile da ripetere ogni giorno.</td></tr>`
+        + `<tr><th scope="row">2 minuti</th><td>Finisce lo slancio della partenza e vedi se la precisione regge anche senza.</td></tr>`
+        + `<tr><th scope="row">3 minuti</th><td>Il gradino intermedio quando il minuto è stabile e 5 minuti sembrano ancora tanti.</td></tr>`
+        + `<tr><th scope="row">Test battitura 5 minuti</th><td>Misura la resistenza: conta quanto scende il numero rispetto al tuo minuto.</td></tr>`
+        + `<tr><th scope="row">Test battitura 10 minuti</th><td>Il più vicino a scrivere una lunga email; tienilo per quando il 5 minuti ti viene regolare.</td></tr>`
+        + `</tbody></table></div>`
     },
     {
       h2: 'Leggere la precisione e valutare il punteggio',
@@ -62,12 +71,14 @@ export default {
   ],
   faqTitle: 'Domande frequenti',
   faq: [
-    ['Cosa vuol dire PPM?', 'Parole al minuto: il numero di "parole" da cinque caratteri, spazi compresi, che scrivi in un minuto. È la stessa misura che in inglese si chiama WPM.'],
+    ['È un test WPM o un test parole al minuto?', 'Sono la stessa cosa: PPM, parole al minuto, è il nome italiano del WPM inglese. Una "parola" vale cinque caratteri, spazi compresi, quindi il numero si confronta con quello dei test in inglese.'],
+    ['Questo test di velocità di battitura online è gratis?', 'Sì, e senza registrazione: si apre nel browser, non c’è niente da installare e il risultato compare appena scade il tempo.'],
     ['Come faccio a misurare la mia velocità di battitura?', 'Scegli una durata, fai clic nella casella di scrittura e ricopia il testo. Il cronometro parte al primo tasto e il risultato compare allo scadere del tempo.'],
     ['Le lettere accentate contano nel calcolo?', "Sì. Una lettera accentata come à, è o é conta come un carattere. Scrivere e' al posto di è, oppure è al posto di é, conta come errore."],
     ['Meglio un test di 1 minuto o di 10 minuti?', 'Un minuto misura la velocità di punta, dieci minuti la resistenza. Sono utili tutti e due; per seguire i progressi, ripeti sempre la stessa durata.'],
     ['I miei risultati vengono salvati?', "Sì, ma solo su questo dispositivo, nel tuo browser. Non viene inviato niente altrove e non serve un account. Il grafico sotto il test mostra l'andamento delle tue PPM e della precisione."],
-    ['Il test va bene per i bambini?', "Sì, con un adulto accanto, ma non c'è una modalità per bambini: i testi sono scritti per adulti. Meglio durate da 15 a 60 secondi, guardando la precisione prima delle PPM."]
+    ['Per un principiante, quale test di battitura conviene?', 'Quello da 1 minuto, ripetuto identico per qualche giorno. Se cerchi ancora i tasti con gli occhi, il test misura soprattutto quanto tempo passi a cercarli: parti dalla lezione 1 del corso.'],
+    ['Va bene come test di battitura per bambini?', "Sì, con un adulto accanto, ma non c'è una modalità per bambini: i testi sono scritti per adulti. Meglio durate da 15 a 60 secondi, guardando la precisione prima delle PPM."]
   ],
   cta: { eyebrow: 'Vuoi un punteggio migliore?', title: 'Impara a scrivere con dieci dita', text: '{lessons} lezioni sul tuo layout di tastiera, a partire dalla riga centrale.', button: 'Vedi il corso' }
 };

@@ -35,11 +35,11 @@ export default {
   sections: [
     {
       h2: 'Klavye hız testi nasıl çalışır',
-      html: `<p>Bu ücretsiz, online yazma testi tamamen tarayıcında çalışır; hesap açman gerekmez. Seçtiğin süre boyunca yukarıdaki metni aynen yazarsın. Süre ancak ilk tuşa bastığında başlar; yani parmaklarını temel sıraya yerleştirip ilk satırı okuyacak kadar vaktin olur. Doğru karakterler olduğu gibi kalır, yanlış olanlar kırmızıya döner ve geri dönüp düzeltebilirsin.</p><p>Metinler günlük Türkçeyle yazılmış paragraflardır; büyük harfleri, noktalaması ve ğ, ü, ş, ı, ö, ç gibi harfleriyle birlikte. Uzun testlerde birkaç paragraf her seferinde farklı bir sırayla art arda gelir, böylece ezberden yazmazsın.</p>`
+      html: `<p>Bu ücretsiz klavye hız testi online çalışır: her şey tarayıcında olur, hesap açman gerekmez. Seçtiğin süre boyunca yukarıdaki metni aynen yazarsın. Süre ancak ilk tuşa bastığında başlar; yani parmaklarını temel sıraya yerleştirip ilk satırı okuyacak kadar vaktin olur. Doğru karakterler olduğu gibi kalır, yanlış olanlar kırmızıya döner ve geri dönüp düzeltebilirsin.</p><p>Metinler günlük Türkçeyle yazılmış paragraflardır; büyük harfleri, noktalaması ve ğ, ü, ş, ı, ö, ç gibi harfleriyle birlikte. Uzun testlerde birkaç paragraf her seferinde farklı bir sırayla art arda gelir, böylece ezberden yazmazsın.</p>`
     },
     {
       h2: 'Dakikada kelime (KDK) ne anlatır',
-      html: `<p>Yazma hızı, dakikada kelime olarak verilir: Türkçede KDK, İngilizcede WPM. Kelimelerin hepsi aynı uzunlukta olmadığı için yaygın kural, boşluk ve noktalama dahil her beş karakteri bir "kelime" sayar. Hesap şöyledir: yazılan karakterler, beşe bölünür, geçen dakika sayısına bölünür. Rakam sen yazarken değişir, süre bitince sabitlenir.</p><p>Bu kural iki testi birbiriyle karşılaştırmayı sağlar, ama gerçek Türkçe kelime sayısına doğrudan karşılık gelmez. Türkçe ekler yüzünden kelimeler çoğu zaman uzundur; beş karakterlik ölçü sayesinde uzun kelimelerle dolu bir metin de kısa kelimelerle dolu bir metin de aşağı yukarı aynı KDK'yı verir.</p>`
+      html: `<p>Yazma hızı, dakikada kelime olarak verilir: Türkçede KDK, İngilizcede WPM. Kelimelerin hepsi aynı uzunlukta olmadığı için yaygın kural, boşluk ve noktalama dahil her beş karakteri bir "kelime" sayar. Hesap şöyledir: yazılan karakterler, beşe bölünür, geçen dakika sayısına bölünür. Rakam sen yazarken değişir, süre bitince sabitlenir.</p><p>Bu kural, sonucunu aynı ölçüyü kullanan başka bir dakikada kelime testiyle ya da başka bir online yazma testi sonucuyla karşılaştırmanı sağlar, ama gerçek Türkçe kelime sayısına doğrudan karşılık gelmez. Türkçe ekler yüzünden kelimeler çoğu zaman uzundur; beş karakterlik ölçü sayesinde uzun kelimelerle dolu bir metin de kısa kelimelerle dolu bir metin de aşağı yukarı aynı KDK'yı verir.</p>`
     },
     {
       h2: 'Türkçe harfler: Q klavye ve F klavye',
@@ -47,7 +47,7 @@ export default {
     },
     {
       h2: '1 dakika, 5 dakika ya da 10 dakika yazma testi',
-      html: `<p>1 dakikalık bir test, hatta 15 ya da 30 saniyelik bir deneme, en çok ani hızını ölçer: baştan sona dikkatin dağılmaz ve tek bir duraksama sonucu epey etkiler. Hızlı bir deneme ya da seni yavaşlatan belirli bir harfi, örneğin <em>ğ</em>'yi kontrol etmek için kullanışlıdır.</p><p>5 ya da 10 dakikalık bir test ise dayanıklılığı ölçer; bu, bir e-postayı ya da bir raporu yazarkenki gerçek duruma daha çok benzer. Yorgunluk ve küçük dikkat kayıpları ortaya çıkar, sonuç da genellikle bir dakikalık testten biraz düşük olur. İlerlemeni takip etmek istiyorsan her seferinde aynı süreyi seç.</p>`
+      html: `<p>Kısa test ani hızını ölçer, uzun test dayanıklılığını: yorgunluk ve küçük dikkat kayıpları ortaya çıkar, sonuç da genellikle biraz düşer ama bir raporu yazarkenki gerçek hızına daha yakın olur. İlerlemeni takip etmek istiyorsan her seferinde aynı süreyi seç.</p><div class="guide-table-wrap"><table class="wpm-table"><caption>Hangi süreyi seçmeli</caption><thead><tr><th scope="col">Test süresi</th><th scope="col">Ne zaman seçmeli</th></tr></thead><tbody><tr><th scope="row">30 saniye</th><td>Seni yavaşlatan tek bir harfi, örneğin <em>ğ</em>'yi ya da <em>ı</em>/<em>i</em> ayrımını yorgunluk karışmadan kontrol etmek için.</td></tr><tr><th scope="row">1 dakika yazma testi</th><td>Ani hızını ölçen standart süre; sonucunu başkasının KDK’sıyla karşılaştıracaksan bunu kullan.</td></tr><tr><th scope="row">5 dakika yazma testi</th><td>Haftalık ilerlemeyi izlemek için en dengeli süre: tek bir duraksama sonucu bozmaz.</td></tr><tr><th scope="row">10 dakika yazma testi</th><td>Uzun bir e-postanın sonunda parmaklarının hâlâ temel sırada kalıp kalmadığını gösterir.</td></tr></tbody></table></div>`
     },
     {
       h2: 'Doğruluğu okumak ve sonucu değerlendirmek',
@@ -64,7 +64,7 @@ export default {
   ],
   faqTitle: 'Sık sorulan sorular',
   faq: [
-    ['KDK ne demek?', "Dakikada kelime: bir dakikada yazdığın, boşluk dahil beşer karakterlik \"kelime\" sayısı. İngilizcedeki WPM ile aynı ölçüdür."],
+    ['KDK ne demek?', "Dakikada kelime: bir dakikada yazdığın, boşluk dahil beşer karakterlik \"kelime\" sayısı. İngilizcedeki WPM ile aynı ölçüdür; yani bu sayfa aynı zamanda bir WPM testi."],
     ['Klavye hızımı nasıl test ederim?', 'Bir süre seç, yazma alanına tıkla ve metni aynen yaz. Süre ilk tuşa bastığında başlar, sonuç süre bitince görünür.'],
     ['Q klavye ve F klavyeyle aynı test mi kullanılır?', 'Evet. Test yalnızca yazdığın karakterleri metinle karşılaştırır, hangi tuşla yazdığına bakmaz. Ama sonuçları yalnızca aynı düzende yaptığın testlerle karşılaştır.'],
     ['ı ile i karıştırılırsa ne olur?', 'Bu iki harf ayrı karakterler olduğu için yanlış olanı yazmak bir hata sayılır ve doğruluğu düşürür. Geri dönüp düzeltirsen hata silinir, ama harcadığın zaman KDK\'ya yansır.'],

@@ -45,7 +45,7 @@ export default {
     },
     {
       h2: 'Test de frappe de 1 minute, 5 minutes ou 10 minutes',
-      html: `<p>Un test de 1 minute, ou même de 15 ou 30 secondes, mesure surtout ta vitesse de pointe : tu restes concentré du début à la fin et une seule hésitation pèse lourd dans le résultat. C'est pratique pour un essai rapide ou pour vérifier un geste précis, comme un accent qui te ralentit.</p><p>Un test de 5 ou 10 minutes mesure l'endurance, ce qui ressemble davantage à la frappe réelle d'un courriel ou d'un compte rendu. La fatigue et les petites pertes d'attention apparaissent, et le score est en général un peu plus bas que sur une minute. Si tu veux suivre tes progrès, garde toujours la même durée d'une fois sur l'autre.</p>`
+      html: `<p>Une minute ou moins mesure ta vitesse de pointe : tu restes concentré du début à la fin, et une seule hésitation pèse lourd. Cinq ou dix minutes mesurent l'endurance, plus proche de la frappe réelle d'un courriel ou d'un compte rendu, et le score y est en général un peu plus bas. Pour suivre tes progrès, garde toujours la même durée.</p><div class="guide-table-wrap"><table class="wpm-table"><caption>Quelle durée choisir</caption><thead><tr><th scope="col">Durée</th><th scope="col">Ce qu'elle mesure</th></tr></thead><tbody><tr><th scope="row">15 ou 30 secondes</th><td>Un échauffement, ou un moyen d'isoler un geste précis comme la touche morte ^ sans que la fatigue entre en jeu.</td></tr><tr><th scope="row">Test de frappe 1 minute</th><td>Le format de référence pour comparer tes scores d'un jour à l'autre : assez court pour rester concentré, assez long pour qu'un faux départ ne décide pas de tout.</td></tr><tr><th scope="row">2 ou 3 minutes</th><td>L'étape intermédiaire quand une minute devient facile : les premières baisses d'attention apparaissent dans la régularité.</td></tr><tr><th scope="row">Test de frappe 5 minutes</th><td>L'équivalent d'un long courriel : tu vois si ta précision tient quand l'élan du début retombe.</td></tr><tr><th scope="row">Test de frappe 10 minutes</th><td>Un test d'endurance à garder pour quand tu tapes déjà sans regarder ; avant cela, il mesure surtout ta fatigue.</td></tr></tbody></table></div>`
     },
     {
       h2: 'Lire sa précision et juger son score',
@@ -62,13 +62,14 @@ export default {
   ],
   faqTitle: 'Questions fréquentes',
   faq: [
-    ['Que veut dire MPM ?', "Mots par minute : le nombre de « mots » de cinq caractères, espaces compris, que tu tapes en une minute. C'est la même mesure que le WPM anglais."],
+    ['Test mots par minute ou test WPM : quelle différence ?', "Aucune. MPM (mots par minute) est la traduction de WPM : un « mot » vaut cinq caractères, espaces compris, donc 45 MPM ici correspondent à 45 WPM sur un site anglophone."],
+    ['Faut-il installer quelque chose pour ce test de vitesse de frappe en ligne ?', "Non. Le test tourne entièrement dans ton navigateur, sans téléchargement ni compte : il suffit d'un clavier réglé sur la bonne disposition."],
     ['Comment tester ma vitesse de frappe ?', "Choisis une durée, clique dans la zone de saisie et recopie le texte. Le chrono démarre à ta première touche et le résultat s'affiche à la fin du temps."],
     ['Les accents comptent-ils dans le calcul ?', "Oui. Une lettre accentuée compte comme un caractère, qu'elle ait sa propre touche comme é ou qu'elle passe par la touche morte ^ comme ê. Une erreur d'accent compte comme une erreur."],
     ['Vaut-il mieux faire un test de 1 minute ou de 10 minutes ?', "Une minute mesure ta vitesse de pointe, dix minutes ton endurance. Les deux sont utiles ; pour suivre tes progrès, reprends toujours la même durée."],
     ['Mes résultats sont-ils enregistrés ?', "Oui, mais seulement sur cet appareil, dans ton navigateur. Rien n'est envoyé ailleurs et aucun compte n'est nécessaire. Le graphique sous le test montre l'évolution de tes MPM et de ta précision."],
     ['Est-ce un test de vitesse de clavier ou un test des touches ?', "C'est ta vitesse de frappe qui est mesurée, pas le clavier. L'outil ne détecte pas les touches défectueuses : si une touche ne répond pas, vérifie-la dans un éditeur de texte avant de lancer le test."],
-    ['Ce test de frappe convient-il aux enfants ?', "Oui, avec un adulte à côté, mais il n'existe pas de mode enfant : les textes sont écrits pour des adultes. Choisis des durées de 15 à 60 secondes et regarde la précision avant les MPM."]
+    ['Est-ce un bon test de frappe pour enfants ?', "Oui, avec un adulte à côté, mais il n'existe pas de mode enfant : les textes sont écrits pour des adultes. Choisis des durées de 15 à 60 secondes et regarde la précision avant les MPM."]
   ],
   cta: { eyebrow: 'Envie d\'un meilleur score ?', title: 'Apprends à taper à dix doigts', text: '{lessons} leçons sur ta propre disposition de clavier, en commençant par la rangée de repos.', button: 'Voir le cours' }
 };

@@ -71,7 +71,7 @@ export default {
   ],
   faqTitle: 'Veelgestelde vragen',
   faq: [
-    ['Kan ik tegen andere mensen spelen?', 'Nog niet. Spookrace is tegen een tempoauto die de snelheid aanhoudt die je kiest, of je eigen beste. Er zijn geen andere spelers en er is geen ranglijst.'],
+    ['Kan ik tegen andere mensen spelen?', 'Nee. Spookrace is tegen een tempoauto die de snelheid aanhoudt die je kiest, of je eigen beste. Er zijn geen andere spelers en er is geen ranglijst.'],
     ['Waar worden mijn beste scores bewaard?', 'Alleen in deze browser op dit apparaat. Geen account, en er wordt niets verstuurd.'],
     ['Kan ik op een telefoon spelen?', 'Woordregen en Spookrace werken met het toetsenbord van een telefoon. Toetsenjacht heeft een echt toetsenbord nodig, omdat het leert waar de toetsen zitten.'],
     ['Waarom verdween een goed woord niet?', 'Het moet precies kloppen voordat je op Spatie drukt. Let op een verdwaalde hoofdletter, een ontbrekende letter of een accent: na de dode toets ´ of ¨ moet je nog de klinker typen.'],

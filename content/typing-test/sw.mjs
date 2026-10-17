@@ -39,7 +39,7 @@ export default {
     },
     {
       h2: 'WPM: maneno kwa dakika',
-      html: '<p>Kasi inaonyeshwa kwa <em>maneno kwa dakika</em>, kwa Kiingereza WPM (words per minute). Maneno yana urefu tofauti, kwa hiyo neno moja huhesabiwa kama herufi tano, pamoja na nafasi na alama za uandishi. Hili lina maana hasa kwa Kiswahili: neno moja kama <em>nitakupigia</em> lina herufi kumi na moja, na kuhesabu maneno halisi kungeifanya kasi yako ionekane ndogo kuliko ilivyo.</p><p>Kwa sababu hiyo, WPM ya jaribio hili inalinganishwa moja kwa moja na WPM ya majaribio ya Kiingereza yanayotumia kanuni hiyohiyo ya herufi tano. Ukitaka herufi kwa dakika, zidisha WPM kwa tano: 40 WPM ni takriban herufi 200 kwa dakika. Linganisha namba za tovuti tofauti kwa tahadhari, kwa sababu baadhi huhesabu kila kitufe na nyingine huhesabu herufi sahihi pekee.</p>'
+      html: '<p>Kasi inaonyeshwa kwa <em>maneno kwa dakika</em>, kwa Kiingereza WPM (words per minute). Maneno yana urefu tofauti, kwa hiyo neno moja huhesabiwa kama herufi tano, pamoja na nafasi na alama za uandishi. Hili lina maana hasa kwa Kiswahili: neno moja kama <em>nitakupigia</em> lina herufi kumi na moja, na kuhesabu maneno halisi kungeifanya kasi yako ionekane ndogo kuliko ilivyo.</p><p>Kwa sababu hiyo, WPM ya jaribio hili inalinganishwa moja kwa moja na WPM ya majaribio ya Kiingereza yanayotumia kanuni hiyohiyo ya herufi tano. Ukitaka herufi kwa dakika, zidisha WPM kwa tano: 40 WPM ni takriban herufi 200 kwa dakika. Linganisha namba za tovuti nyingine za typing speed test online kwa tahadhari, kwa sababu baadhi huhesabu kila kitufe na nyingine huhesabu herufi sahihi pekee.</p>'
     },
     {
       h2: 'Kibodi ya Kiswahili: herufi zipi zinahesabiwa',
@@ -47,7 +47,7 @@ export default {
     },
     {
       h2: 'Dakika 1, 5 au 10: uchague ipi',
-      html: '<p>Jaribio la dakika moja (1 minute typing test) au chini ya hapo linaonyesha zaidi kasi yako ya juu. Unaweza kuzingatia kikamilifu na uchovu hauna nafasi, lakini kosa moja linaathiri matokeo sana.</p><p>Dakika tano au kumi zinapima kitu kingine: ustahimilivu. Umakini hupungua polepole, mikono huchoka, na hapo ndipo inaonekana kama mbinu yako inashikilia. Matokeo mara nyingi huwa chini kidogo kuliko jaribio fupi, na karibu zaidi na kasi unayoandika nayo barua ndefu au ripoti. Ili ujilinganishe na wewe mwenyewe, chagua muda uleule kila mara, vinginevyo unalinganisha mbio fupi na mbio ndefu.</p>'
+      html: '<p>Jaribio fupi linaonyesha kasi yako ya juu: unazingatia kikamilifu na uchovu hauna nafasi, lakini kosa moja linaathiri matokeo sana. Jaribio refu linapima ustahimilivu, kwa hiyo matokeo mara nyingi huwa chini kidogo, na karibu zaidi na kasi unayoandika nayo barua ndefu au ripoti. Ili ujilinganishe na wewe mwenyewe, chagua muda uleule kila mara, vinginevyo unalinganisha mbio fupi na mbio ndefu.</p><div class="guide-table-wrap"><table class="wpm-table"><caption>Muda upi kwa lengo lipi</caption><thead><tr><th scope="col">Muda</th><th scope="col">Unafaa lini</th></tr></thead><tbody><tr><th scope="row">Sekunde 15 au 30</th><td>Kupasha vidole moto kabla ya jaribio halisi, au kufanyia kazi udhaifu mmoja kama alama ya \'; namba zake hupanda na kushuka mno kuwa rekodi.</td></tr><tr><th scope="row">Dakika 1 (1 minute typing test)</th><td>Kipimo bora cha kila siku: kirefu kiasi kwamba kosa moja halikuamulii, kifupi kiasi kwamba unaweza kurudia mara tatu mfululizo.</td></tr><tr><th scope="row">Dakika 5 (5 minute typing test)</th><td>Ijaribu WPM yako ya dakika moja ikishatulia; pengo kubwa kati ya hizo mbili linaonyesha mbinu yako inalegea unapochoka.</td></tr><tr><th scope="row">Dakika 10 (10 minute typing test)</th><td>Iko karibu zaidi na kazi halisi kama kuandika kumbukumbu za kikao; mara moja kwa wiki inatosha, kwa sababu uchovu huficha maendeleo ya kila siku.</td></tr></tbody></table></div>'
     },
     {
       h2: 'Jinsi ya kusoma usahihi',
@@ -68,6 +68,7 @@ export default {
     ['Nitapataje herufi kwa dakika?', 'Zidisha WPM kwa tano. 40 WPM ni takriban herufi 200 kwa dakika. Jaribio lenyewe linaonyesha kasi kwa WPM pekee.'],
     ['Nichague muda gani?', 'Dakika moja inaonyesha kasi yako ya juu, dakika tano au kumi zinaonyesha ustahimilivu. Ili ulinganishe na matokeo ya zamani, chagua muda uleule kila mara.'],
     ['Je, jaribio hili ni bure?', 'Ndiyo. Ni jaribio bure kabisa (free typing test): hakuna malipo, akaunti wala usajili.'],
+    ['Je, hili ni WPM test au keyboard test?', 'Ni WPM test: linapima kasi na usahihi wako wa kuandika. Si keyboard test ya kutafuta vitufe vibovu, lakini kabla ya kuanza hakikisha mpangilio ni QWERTY na kila kitufe kinafanya kazi.'],
     ['Je, matokeo yangu yanahifadhiwa?', 'Ndiyo, lakini kwenye kivinjari cha kifaa hiki pekee. Hakuna akaunti wala usajili. Ukifuta data ya kivinjari, historia nayo itafutika.'],
     ['Ninahitaji kibodi maalum ya Kiswahili?', 'Hapana. Kiswahili hakina herufi zenye alama, kwa hiyo kibodi ya kawaida ya QWERTY inatosha. Mpangilio wa Swahili (Kenya) kwenye Windows ni sawa na QWERTY kwa kila kitufe.'],
     ['Je, jaribio hili lina cheti?', 'Hapana. Ni zana ya mazoezi ya kujipima mwenyewe, haitoi cheti wala orodha ya washindi.']

@@ -72,11 +72,11 @@ export default {
   ],
   faqTitle: 'Domande frequenti',
   faq: [
-    ['Posso giocare contro altre persone?', 'Non ancora. Corsa fantasma è contro un fantasma che tiene la velocità che scegli, o il tuo stesso record. Non ci sono altri giocatori né classifiche.'],
+    ['Posso giocare contro altre persone?', 'No. Corsa fantasma è contro un fantasma che tiene la velocità che scegli, o il tuo stesso record. Non ci sono altri giocatori né classifiche.'],
     ['Dove vengono salvati i miei record?', 'Solo in questo browser, su questo dispositivo. Nessun account, e niente viene inviato da nessuna parte.'],
     ['Posso giocare dal telefono?', 'Pioggia di parole e Corsa fantasma funzionano con la tastiera del telefono. Caccia ai tasti ha bisogno di una tastiera vera, perché insegna dove sono i tasti.'],
     ['Perché una parola giusta non è sparita?', 'Deve corrispondere esattamente prima che tu prema Spazio. Controlla se manca un accento o una lettera, o se è scappata una maiuscola.'],
-    ['Nei giochi posso esercitarmi con maiuscole e punteggiatura?', 'No. Le parole dei giochi sono minuscole e senza punteggiatura; l’unico segno che compare è l’apostrofo, in parole come «l\'acqua» o «po\'». Per maiuscole, virgole e simboli usa le lezioni della terza unità del corso.'],
+    ['I giochi bastano come esercitazione di dattilografia?', 'Per ripassare le posizioni sì, per il resto no. Le parole dei giochi sono minuscole e senza punteggiatura; l’unico segno che compare è l’apostrofo, in parole come «l\'acqua» o «po\'». Per maiuscole, virgole e simboli usa le lezioni della terza unità del corso.'],
     ['I giochi funzionano con la tastiera italiana del Mac?', 'Pioggia di parole e Corsa fantasma confrontano il testo, quindi vanno bene con qualsiasi tastiera che scriva le accentate. Caccia ai tasti va per posizione: scegli la tastiera del Mac nelle impostazioni del gioco, altrimenti il tasto acceso non corrisponde a quello che premi.']
   ],
   cta: { eyebrow: 'Vuoi giocare meglio?', title: 'Impara a scrivere a dieci dita', text: '{lessons} lezioni sulla tua tastiera, a partire dalla fila di base.', button: 'Vedi il corso' }

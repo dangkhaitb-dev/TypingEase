@@ -18,7 +18,7 @@ const COPY = {
 <p>Real-World Text adds another context for applying those movements. Use the exercises to notice what changes when the text includes a less predictable combination of letters, punctuation or numbers.</p>
 <h3>Separate pace, precision and sustained attention</h3>
 <p>Smooth & Accurate Typing, Speed Building and Precision Control give you different things to pay attention to. Do not assume that a speed-focused unit makes mistakes irrelevant. If you cannot tell why an attempt deteriorated, reduce the pace enough to observe whether you lost your place, reached for the wrong key or missed a capital.</p>
-<p>Focused Endurance and Performance Practice come later in the sequence. Longer or more demanding material may expose habits that a short familiar drill hides. Finishing the roadmap is not a promise of a particular WPM. The useful outcome is a clearer understanding of which tasks you can do reliably and which still need focused work.</p>
+<p>Focused Endurance and Performance Practice come later in the sequence. Longer or more demanding material may expose habits that a short familiar drill hides. Finishing the roadmap is not a promise of a particular WPM. What typing training of this kind gives you is a clearer understanding of which tasks you can do reliably and which still need focused work.</p>
 </section>
 <section><h2>How to practise a typing lesson</h2>
 <p>Start by reading the lesson title and the instructions on the current screen. Locate the keys it asks you to use. Before typing, choose one thing to observe: keeping the same finger on a key, returning after a reach, or noticing an error immediately. This makes the feedback easier to use because you have a question in mind.</p>
@@ -40,7 +40,7 @@ const COPY = {
 <p>Select connected text and read a small group ahead rather than staring only at the next character. Keep the material manageable. The <a href="/touch-typing/">finger-placement guide</a> explains how to isolate a movement; the <a href="/practice/">practice page</a> gives another place to work when you want to apply what you have learned outside the roadmap.</p>
 </section>
 <section><h2>Learning touch typing from the start</h2>
-<p>TypingEase favours intentional habits from the point when someone begins using a keyboard regularly. We want a learner to receive more guidance than simply “find the right letter”: where to begin, how to choose a movement and how to check the result. That is the reason for offering a sequence rather than only a stopwatch.</p>
+<p>TypingEase favours intentional habits from the point when someone begins using a keyboard regularly. We want a typing beginner to receive more guidance than simply “find the right letter”: where to begin, how to choose a movement and how to check the result. That is the reason for offering a sequence rather than only a stopwatch.</p>
 <p>For someone starting to use a computer for schoolwork or independent learning, keyboard familiarity can be preparation for writing and finding information. The same principle applies to an adult revisiting an established habit: choose a task that matters, then practise a specific part of it without turning every session into a competition.</p>
 </section>
 <section><h2>Typing course questions</h2>

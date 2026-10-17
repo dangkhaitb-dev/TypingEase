@@ -71,7 +71,7 @@ export default {
   ],
   faqTitle: 'Perguntas frequentes',
   faq: [
-    ['Posso jogar contra outras pessoas?', 'Ainda não. A Corrida fantasma é contra um fantasma que mantém a velocidade que você escolhe, ou o seu próprio recorde. Não há outros jogadores nem ranking.'],
+    ['Posso jogar contra outras pessoas?', 'Não. A Corrida fantasma é contra um fantasma que mantém a velocidade que você escolhe, ou o seu próprio recorde. Não há outros jogadores nem ranking.'],
     ['Onde ficam os meus recordes?', 'Só neste navegador, neste aparelho. Sem conta, e nada é enviado para lugar nenhum.'],
     ['Dá para jogar no celular?', 'Chuva de palavras e Corrida fantasma funcionam com o teclado do celular. A Caça às teclas precisa de um teclado de verdade, porque ensina onde ficam as teclas.'],
     ['Por que uma palavra certa não sumiu?', 'Ela precisa estar exatamente igual antes de você apertar Espaço. Veja se faltou um acento ou uma letra, ou se escapou uma maiúscula.'],

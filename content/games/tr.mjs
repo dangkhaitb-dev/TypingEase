@@ -73,7 +73,7 @@ export default {
   ],
   faqTitle: 'Sık sorulan sorular',
   faq: [
-    ['Başka insanlara karşı oynayabilir miyim?', 'Henüz değil. Hayalet Yarışı, seçtiğin hızı ya da kendi rekorunu koruyan bir tempo arabasına karşıdır. Başka oyuncu yok, sıralama tablosu da yok.'],
+    ['Başka insanlara karşı oynayabilir miyim?', 'Hayır. Hayalet Yarışı, seçtiğin hızı ya da kendi rekorunu koruyan bir tempo arabasına karşıdır. Başka oyuncu yok, sıralama tablosu da yok.'],
     ['En iyi skorlarım nerede saklanıyor?', 'Yalnızca bu cihazdaki bu tarayıcıda. Hesap yok ve hiçbir şey bir yere gönderilmiyor.'],
     ['Telefonda oynayabilir miyim?', 'Kelime Yağmuru ve Hayalet Yarışı telefon klavyesiyle çalışır. Tuş Avı gerçek bir klavye ister, çünkü tuşların yerini öğretir.'],
     ['Doğru kelime neden temizlenmedi?', 'Boşluk tuşuna basmadan önce birebir eşleşmesi gerekir. Yanlışlıkla büyük harf, eksik bir harf ya da i yerine ı olup olmadığına bak.'],

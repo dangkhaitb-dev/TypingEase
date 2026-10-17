@@ -44,7 +44,7 @@ export default {
     },
     {
       h2: 'Tipp Test 1 Minute, 5 oder 10 Minuten: welche Dauer passt?',
-      html: '<p>Ein Test über eine Minute oder kürzer misst vor allem dein Spitzentempo. Du kannst dich voll konzentrieren, Müdigkeit spielt kaum eine Rolle, und ein einzelner Fehler fällt stark ins Gewicht.</p><p>Fünf oder zehn Minuten zeigen etwas anderes: dein Dauertempo. Irgendwann lässt die Konzentration nach, die Hände werden müde, und genau dann zeigt sich, ob deine Technik trägt. Das Ergebnis liegt meist etwas unter dem Wert aus dem kurzen Test und ist näher an dem, was du beim Schreiben einer langen E-Mail oder eines Berichts tatsächlich schaffst. Für den Vergleich mit dir selbst gilt: Nimm immer dieselbe Dauer, sonst vergleichst du Sprint mit Ausdauer.</p>'
+      html: '<p>Eine Minute oder weniger misst vor allem dein Spitzentempo: Müdigkeit spielt kaum eine Rolle, und ein einzelner Fehler fällt stark ins Gewicht. Fünf oder zehn Minuten zeigen dein Dauertempo, das näher an einer langen E-Mail oder einem Bericht liegt und meist etwas niedriger ausfällt. Für den Vergleich mit dir selbst gilt: immer dieselbe Dauer, sonst vergleichst du Sprint mit Ausdauer.</p><div class="guide-table-wrap"><table class="wpm-table"><caption>Welche Dauer wofür</caption><thead><tr><th scope="col">Dauer</th><th scope="col">Wann sie passt</th></tr></thead><tbody><tr><th scope="row">15 oder 30 Sekunden</th><td>Zum Aufwärmen oder um eine einzelne Schwachstelle wie das ß oder große Umlaute gezielt zu prüfen.</td></tr><tr><th scope="row">Tipp Test 1 Minute</th><td>Der Standard für den Vergleich von Tag zu Tag: kurz genug für volle Konzentration, lang genug, dass ein holpriger Start nicht alles bestimmt.</td></tr><tr><th scope="row">2 oder 3 Minuten</th><td>Der Zwischenschritt, wenn eine Minute leichtfällt; in der Gleichmäßigkeit siehst du die ersten Konzentrationslücken.</td></tr><tr><th scope="row">Tipp Test 5 Minuten</th><td>Ungefähr eine lange E-Mail: Hier zeigt sich, ob deine Genauigkeit hält, wenn der Schwung vom Anfang nachlässt.</td></tr><tr><th scope="row">Tipp Test 10 Minuten</th><td>Ein Ausdauertest für alle, die schon blind tippen; vorher misst er vor allem Müdigkeit.</td></tr></tbody></table></div>'
     },
     {
       h2: 'Genauigkeit richtig lesen',
@@ -62,10 +62,11 @@ export default {
   faqTitle: 'Häufige Fragen',
   faq: [
     ['Was bedeutet WPM?', 'WPM heißt Wörter pro Minute. Ein Wort zählt dabei als fünf Zeichen, Leerzeichen eingeschlossen. So sind Ergebnisse unabhängig von der Wortlänge vergleichbar.'],
-    ['Wie rechne ich WPM in Anschläge pro Minute um?', 'Multipliziere den WPM-Wert mit fünf. 50 WPM entsprechen ungefähr 250 Anschlägen pro Minute.'],
+    ['Ist dieser WPM Test auch ein Anschläge pro Minute Test?', 'Indirekt: Angezeigt wird WPM, und WPM mal fünf ergibt die Anschläge pro Minute. 50 WPM entsprechen also ungefähr 250 Anschlägen.'],
     ['Zählen Umlaute als ein Zeichen?', 'Ja. Ä, ö, ü und ß sind jeweils ein Zeichen, auch wenn du für den Großbuchstaben die Umschalttaste brauchst. Umschreibungen wie ae oder ss gelten als Fehler.'],
     ['Welche Testdauer ist die richtige?', 'Eine Minute zeigt dein Spitzentempo, fünf oder zehn Minuten dein Dauertempo. Wähle für Vergleiche mit früheren Ergebnissen immer dieselbe Dauer.'],
-    ['Ist der Test für Kinder geeignet?', 'Ja, am besten zusammen mit einem Erwachsenen. Es gibt keinen eigenen Kindermodus, die Texte sind normale Prosa. Kurze Durchgänge von 15 bis 60 Sekunden passen gut, und Genauigkeit ist wichtiger als Tempo.'],
+    ['Taugt das als Tipp Test für Kinder?', 'Ja, am besten zusammen mit einem Erwachsenen. Es gibt keinen eigenen Kindermodus, die Texte sind normale Prosa. Kurze Durchgänge von 15 bis 60 Sekunden passen gut, und Genauigkeit ist wichtiger als Tempo.'],
+    ['Muss ich für diesen Test der Tippgeschwindigkeit online etwas installieren?', 'Nein. Der Test läuft komplett im Browser, ohne Download und ohne Konto. Du brauchst nur eine Tastatur, die auf das deutsche Layout eingestellt ist.'],
     ['Werden meine Ergebnisse gespeichert?', 'Nur in deinem Browser auf diesem Gerät. Es gibt kein Konto und keine Anmeldung. Wenn du die Browserdaten löschst, ist auch der Verlauf weg.'],
     ['Funktioniert der Test mit einer Schweizer Tastatur?', 'Die Schweizer Tastatur ist ebenfalls QWERTZ, aber große Umlaute liegen dort nicht auf der Umschalttaste, und ein ß gibt es nicht. Die Texte enthalten beides, daher passt der Test am besten zur deutschen und österreichischen Tastatur.']
   ],

@@ -72,7 +72,7 @@ export default {
   ],
   faqTitle: 'Soalan lazim',
   faq: [
-    ['Bolehkah saya bermain menentang orang lain?', 'Belum. Lumba Bayang menentang kereta perentak yang mengekalkan kelajuan pilihan anda, atau rekod anda sendiri. Tiada pemain lain dan tiada papan pendahulu.'],
+    ['Bolehkah saya bermain menentang orang lain?', 'Tidak. Lumba Bayang menentang kereta perentak yang mengekalkan kelajuan pilihan anda, atau rekod anda sendiri. Tiada pemain lain dan tiada papan pendahulu.'],
     ['Di manakah skor terbaik saya disimpan?', 'Hanya dalam pelayar ini, pada peranti ini. Tiada akaun, dan tiada apa-apa dihantar ke mana-mana.'],
     ['Bolehkah saya bermain di telefon?', 'Hujan Kata dan Lumba Bayang boleh dimainkan dengan papan kekunci telefon. Buru Kekunci memerlukan papan kekunci sebenar, kerana ia mengajar kedudukan kekunci.'],
     ['Kenapa perkataan yang betul tidak dihapuskan?', 'Perkataan mesti sama sepenuhnya sebelum anda menekan bar ruang. Periksa huruf besar yang tertaip atau huruf yang tertinggal.'],

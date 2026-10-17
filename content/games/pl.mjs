@@ -72,7 +72,7 @@ export default {
   ],
   faqTitle: 'Częste pytania',
   faq: [
-    ['Czy mogę grać z innymi ludźmi?', 'Jeszcze nie. Wyścig z duchem to wyścig z samochodem tempa, który trzyma wybraną prędkość albo twój własny rekord. Nie ma innych graczy ani rankingu.'],
+    ['Czy mogę grać z innymi ludźmi?', 'Nie. Wyścig z duchem to wyścig z samochodem tempa, który trzyma wybraną prędkość albo twój własny rekord. Nie ma innych graczy ani rankingu.'],
     ['Gdzie są zapisane moje rekordy?', 'Tylko w tej przeglądarce na tym urządzeniu. Bez konta i nic nie jest nigdzie wysyłane.'],
     ['Czy mogę grać na telefonie?', 'Deszcz słów i Wyścig z duchem działają z klawiaturą telefonu. Polowanie na klawisze wymaga prawdziwej klawiatury, bo uczy, gdzie są klawisze.'],
     ['Dlaczego poprawne słowo nie zniknęło?', 'Musi się zgadzać dokładnie, zanim naciśniesz Spację. Sprawdź, czy nie ma przypadkowej wielkiej litery, brakującej litery albo litery bez ogonka, jeśli zabrakło AltGr.'],

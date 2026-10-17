@@ -38,7 +38,7 @@ export default {
     },
     {
       h2: 'WPM, woorden per minuut en aanslagen',
-      html: '<p><em>WPM</em> staat voor <em>words per minute</em>, in het Nederlands woorden per minuut. Omdat woorden verschillend lang zijn, telt een woord hier altijd als vijf tekens, spaties en leestekens meegerekend. Zo kun je resultaten vergelijken, ook als de ene tekst lange woorden heeft en de andere korte. Meet een andere test je woorden per minuut met dezelfde regel, dan kun je dat getal dus naast dit resultaat leggen. Dat is handig in het Nederlands, waar samenstellingen als <em>kruiswoordpuzzel</em> of <em>onderhoudsbeurt</em> gewoon zijn.</p><p>Op school en bij typecursussen hoor je ook vaak <em>aanslagen per minuut</em>. De omrekening is eenvoudig: WPM keer vijf is ongeveer het aantal aanslagen per minuut. 40 WPM komt dus neer op zo\'n 200 aanslagen.</p>'
+      html: '<p><em>WPM</em> staat voor <em>words per minute</em>, in het Nederlands woorden per minuut. Omdat woorden verschillend lang zijn, telt een woord hier altijd als vijf tekens, spaties en leestekens meegerekend. Zo kun je resultaten vergelijken, ook als de ene tekst lange woorden heeft en de andere korte. Gebruikt een andere woorden per minuut test dezelfde regel, dan kun je dat getal dus naast dit resultaat leggen. Dat is handig in het Nederlands, waar samenstellingen als <em>kruiswoordpuzzel</em> of <em>onderhoudsbeurt</em> gewoon zijn.</p><p>Op school en bij typecursussen hoor je ook vaak <em>aanslagen per minuut</em>. De omrekening is eenvoudig: WPM keer vijf is ongeveer het aantal aanslagen per minuut. 40 WPM komt dus neer op zo\'n 200 aanslagen.</p>'
     },
     {
       h2: 'Accenten, hoofdletters en je toetsenbord',
@@ -46,7 +46,7 @@ export default {
     },
     {
       h2: 'Typetest van 1 minuut, 5 of 10 minuten: welke duur past bij je?',
-      html: '<p>Een test van een minuut of korter meet vooral je topsnelheid. Je kunt je volledig concentreren, vermoeidheid speelt nauwelijks mee, en één fout weegt zwaar door.</p><p>Vijf of tien minuten laten iets anders zien: je snelheid op lange afstand. Na een tijdje zakt je concentratie en worden je handen moe, en juist dan blijkt of je techniek houdt. Het resultaat ligt meestal iets lager dan bij de korte test en komt dichter bij wat je echt haalt als je een lange e-mail of een verslag schrijft. Vergelijk jezelf daarom altijd met dezelfde duur, anders vergelijk je een sprint met een duurloop.</p>'
+      html: '<p>Een minuut of korter meet vooral je topsnelheid: vermoeidheid speelt nauwelijks mee en één fout weegt zwaar door. Vijf of tien minuten tonen je snelheid op lange afstand, dichter bij een lange e-mail of een verslag, en dat resultaat ligt meestal iets lager. Vergelijk jezelf daarom altijd met dezelfde duur, anders vergelijk je een sprint met een duurloop.</p><div class="guide-table-wrap"><table class="wpm-table"><caption>Welke duur waarvoor</caption><thead><tr><th scope="col">Duur</th><th scope="col">Wanneer kiezen</th></tr></thead><tbody><tr><th scope="row">15 of 30 seconden</th><td>Om op te warmen of om één zwak punt te testen, zoals de losse apostrof op de internationale indeling.</td></tr><tr><th scope="row">Typetest 1 minuut</th><td>De standaard om dag na dag te vergelijken: kort genoeg om geconcentreerd te blijven, lang genoeg dat een rommelige start niet alles bepaalt.</td></tr><tr><th scope="row">2 of 3 minuten</th><td>De tussenstap als een minuut makkelijk gaat; in de regelmaat zie je de eerste concentratiedips.</td></tr><tr><th scope="row">Typetest 5 minuten</th><td>Ongeveer een lange e-mail: je ziet of je nauwkeurigheid overeind blijft als het tempo van het begin wegzakt.</td></tr><tr><th scope="row">Typetest 10 minuten</th><td>Een duurtest voor wie al blind typt; daarvoor meet hij vooral vermoeidheid.</td></tr></tbody></table></div>'
     },
     {
       h2: 'Nauwkeurigheid goed lezen',
@@ -64,11 +64,11 @@ export default {
   faqTitle: 'Veelgestelde vragen',
   faq: [
     ['Wat betekent WPM?', 'WPM betekent woorden per minuut. Een woord telt als vijf tekens, spaties meegerekend. Zo zijn resultaten te vergelijken, hoe lang de woorden ook zijn.'],
-    ['Hoe reken ik WPM om naar aanslagen per minuut?', 'Vermenigvuldig je WPM met vijf. 50 WPM is ongeveer 250 aanslagen per minuut.'],
+    ['Geeft deze WPM test ook aanslagen per minuut?', 'Niet apart, maar je rekent het zelf om: vermenigvuldig je WPM met vijf. 50 WPM is ongeveer 250 aanslagen per minuut.'],
     ['Telt een letter met accent als een teken?', 'Ja. Een é of ë telt als één teken, ook al typ je hem met een dode toets en dus met twee aanslagen. Een hoofdletter met Shift telt ook als één teken.'],
     ['Werkt de test met de indeling Verenigde Staten (internationaal)?', 'Ja. De letters staan op dezelfde plek als op de Nederlandse indeling. Let alleen op de apostrof en het aanhalingsteken: dat zijn dode toetsen, dus druk daarna op de spatiebalk als je het teken los wilt typen.'],
     ['Welke testduur moet ik kiezen?', 'Een minuut laat je topsnelheid zien, vijf of tien minuten je snelheid op lange afstand. Kies voor een vergelijking met eerdere resultaten steeds dezelfde duur.'],
-    ['Is de typetest geschikt voor kinderen?', 'Ja, het liefst samen met een volwassene. Er is geen aparte kindermodus en de teksten zijn gewone proza. Korte tests van 15 tot 60 seconden werken het best, en nauwkeurigheid telt meer dan snelheid.'],
+    ['Is dit een goede typetest voor kinderen?', 'Ja, het liefst samen met een volwassene. Er is geen aparte kindermodus en de teksten zijn gewone proza. Korte tests van 15 tot 60 seconden werken het best, en nauwkeurigheid telt meer dan snelheid.'],
     ['Worden mijn resultaten bewaard?', 'Alleen in je browser op dit apparaat. Er is geen account en je hoeft je niet aan te melden. Als je je browsergegevens wist, is ook je geschiedenis weg.']
   ],
   cta: { eyebrow: 'Sneller worden?', title: 'Leer blind typen', text: '{lessons} lessen op je eigen toetsenbord, te beginnen bij de thuisrij.', button: 'Naar de cursus' }

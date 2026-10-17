@@ -1,7 +1,7 @@
 /* content/roadmaps/editorial.pt.mjs — bài viết dưới lộ trình /pt/licoes/ (tooling/pages/roadmaps.mjs). */
 export default `<section><h2>Curso de digitação online: {{count}} lições em {{units}} unidades</h2>
 <p>Este é o curso principal em português do Brasil, montado sobre o teclado ABNT2. São {{count}} lições em {{units}} unidades, e cada unidade abre quando você termina a anterior. As três primeiras ensinam teclas, a quarta junta tudo em textos curtos, e da quinta em diante não aparece mais nenhuma tecla nova: é só texto.</p>
-<p>Se você nunca digitou sem olhar, comece pela lição 1 mesmo que pareça fácil demais. F, J e a barra de espaço são o ponto de partida de todas as outras teclas. Se você já digita com desenvoltura, cada unidade termina com uma lição «Pular etapas»: concluir essa lição abre a unidade seguinte sem passar por todas as lições normais. Use quando conhecer de verdade o conteúdo. Se passar raspando, a unidade continua ali e voltar não custa nada.</p>
+<p>Se você nunca digitou sem olhar, comece pela lição 1 mesmo que pareça fácil demais: na digitação de dez dedos, F, J e a barra de espaço são o ponto de partida de todas as outras teclas. Se você já digita com desenvoltura, cada unidade termina com uma lição «Pular etapas»: concluir essa lição abre a unidade seguinte sem passar por todas as lições normais. Use quando conhecer de verdade o conteúdo. Se passar raspando, a unidade continua ali e voltar não custa nada.</p>
 <p>Se o seu sistema está configurado como ABNT2 sem teclas mortas, existe um curso separado e mais curto para ele; escolha na <a href="/pt/">página inicial</a> antes de começar, porque ali os acentos não funcionam da mesma forma.</p>
 </section>
 <section><h2>Unidades 1 a 4: Ç, teclas mortas, Shift e AltGr no ABNT2</h2>

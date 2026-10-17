@@ -72,7 +72,7 @@ export default {
   ],
   faqTitle: 'Maswali ya kawaida',
   faq: [
-    ['Naweza kucheza dhidi ya watu wengine?', 'Bado. Mbio za Kivuli ni dhidi ya gari la mwendo linaloshika kasi uliyochagua, au rekodi yako mwenyewe. Hakuna wachezaji wengine na hakuna jedwali la washindi.'],
+    ['Naweza kucheza dhidi ya watu wengine?', 'Hapana. Mbio za Kivuli ni dhidi ya gari la mwendo linaloshika kasi uliyochagua, au rekodi yako mwenyewe. Hakuna wachezaji wengine na hakuna jedwali la washindi.'],
     ['Alama zangu bora zinahifadhiwa wapi?', 'Kwenye kivinjari hiki tu, katika kifaa hiki. Hakuna akaunti, na hakuna kinachotumwa popote.'],
     ['Naweza kucheza kwenye simu?', 'Mvua ya Maneno na Mbio za Kivuli zinafanya kazi na kibodi ya simu. Windo la Vitufe linahitaji kibodi halisi, kwa sababu linafundisha mahali vitufe vilipo.'],
     ['Kwa nini neno sahihi halikufutika?', 'Lazima lilingane kabisa kabla ya kubonyeza kitufe cha nafasi. Angalia herufi kubwa iliyoingia kimakosa au herufi iliyokosekana.'],

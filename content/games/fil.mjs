@@ -72,7 +72,7 @@ export default {
   ],
   faqTitle: 'Mga karaniwang tanong',
   faq: [
-    ['Puwede ba akong makipaglaro sa ibang tao?', 'Hindi pa. Ang Karera ng Anino ay laban sa pace car na nananatili sa bilis na pinili mo, o sa sarili mong pinakamabilis. Walang ibang manlalaro at walang leaderboard.'],
+    ['Puwede ba akong makipaglaro sa ibang tao?', 'Hindi. Ang Karera ng Anino ay laban sa pace car na nananatili sa bilis na pinili mo, o sa sarili mong pinakamabilis. Walang ibang manlalaro at walang leaderboard.'],
     ['Saan naitatala ang pinakamataas kong iskor?', 'Sa browser na ito lang, sa device na ito. Walang account, at walang ipinapadala kahit saan.'],
     ['Puwede ba itong laruin sa phone?', 'Gumagana ang Ulan ng Salita at Karera ng Anino sa keyboard ng phone. Kailangan ng Hanap-Key ang totoong keyboard, dahil itinuturo nito kung nasaan ang mga key.'],
     ['Bakit hindi nabura ang tamang salita?', 'Dapat eksaktong tugma ito bago mo pindutin ang space bar. Tingnan kung may napasamang malaking titik o may nawawalang titik.'],

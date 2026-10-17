@@ -76,7 +76,8 @@ export default {
     ['Conviene passare alla tastiera americana per scrivere più veloce?', 'Per scrivere in italiano, no. Sulla tastiera americana le vocali accentate richiedono combinazioni o impostazioni particolari, e per settimane andresti più piano. Usa la tastiera che hai al lavoro o a scuola.'],
     ['Scrivo veloce ma sbaglio molto. Cosa faccio?', 'Rallenta finché gli errori non diventano rari e resta a quel ritmo per qualche giorno. Sembra un passo indietro, ma correggere costa più tempo che scrivere un po\' più piano. Quando la precisione è stabile, riprendi ad accelerare poco alla volta.'],
     ['Una tastiera meccanica mi fa scrivere più veloce?', 'Può essere più comoda, ma la velocità viene dalle dita, non dagli interruttori. Conta di più allenarsi sulla stessa disposizione che usi ogni giorno, che sia quella del portatile o del fisso.'],
-    ['Quanto devo allenarmi ogni giorno?', 'Quanto riesci a mantenere senza annoiarti. Dieci minuti concentrati su una sola esitazione rendono più di un\'ora passata a scrivere senza meta. Se ti accorgi di non fare più attenzione, fermati.']
+    ['Quanto devo allenarmi ogni giorno?', 'Quanto riesci a mantenere senza annoiarti. Dieci minuti concentrati su una sola esitazione rendono più di un\'ora passata a scrivere senza meta. Se ti accorgi di non fare più attenzione, fermati.'],
+    ['Serve un corso di dattilografia online per scrivere più veloce?', 'Se cerchi ancora i tasti con gli occhi, sì: finché non sai dove sono, allenare la velocità serve a poco, e il corso parte proprio dalla riga centrale. Se scrivi già a dieci dita, bastano il test e un esercizio mirato sulla tua esitazione più frequente.']
   ],
   cta: {
     title: 'Allena gli accenti dentro le parole',

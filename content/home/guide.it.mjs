@@ -26,7 +26,7 @@ export default {
     ]],
     ['Imparare la dattilografia in italiano: perché non mi fido del correttore', [
       ['Il correttore non ti insegna la Maiusc', `Molti lasciano che sia il programma di videoscrittura a trasformare «perche» in «perché». Io lo sconsiglio. Il correttore non c’è nella chat, nei moduli online, nel campo di ricerca, e non distingue «e» da «è», perché sono parole tutte e due. Se la mano non ha imparato Maiusc più è per la é, il problema riappare appena il correttore non c’è. Preferisco che tu scriva più piano e con l’accento giusto, piuttosto che veloce e affidato al programma.`],
-      ['Impara sulla tastiera che hai', `Non consiglio di comprare una tastiera nuova per «fare le cose per bene». Se a casa hai un Mac e in ufficio un PC, comincia da quella che usi per più ore e scegli il suo corso: le lettere sono le stesse, ma accentate e simboli si imparano meglio su una sola tastiera alla volta. Se stai insegnando a un bambino, siediti accanto a lui la prima volta e controllate insieme che la à che preme sia quella che compare sullo schermo; il resto può seguire il suo ritmo.`]
+      ['Impara sulla tastiera che hai', `Per imparare la dattilografia non consiglio di comprare una tastiera nuova «per fare le cose per bene». Se a casa hai un Mac e in ufficio un PC, comincia da quella che usi per più ore e scegli il suo corso: le lettere sono le stesse, ma accentate e simboli si imparano meglio su una sola tastiera alla volta. Se stai insegnando a un bambino, siediti accanto a lui la prima volta e controllate insieme che la à che preme sia quella che compare sullo schermo; il resto può seguire il suo ritmo.`]
     ]]
   ]
 };

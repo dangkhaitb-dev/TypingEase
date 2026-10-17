@@ -70,7 +70,7 @@ export default {
   ],
   faqTitle: 'Häufige Fragen',
   faq: [
-    ['Kann ich gegen andere Leute spielen?', 'Noch nicht. Im Geisterrennen trittst du gegen einen Geist an, der das gewählte Tempo hält, oder gegen deinen eigenen Bestwert. Es gibt keine anderen Spieler und keine Rangliste.'],
+    ['Kann ich gegen andere Leute spielen?', 'Nein. Im Geisterrennen trittst du gegen einen Geist an, der das gewählte Tempo hält, oder gegen deinen eigenen Bestwert. Es gibt keine anderen Spieler und keine Rangliste.'],
     ['Wo werden meine Bestwerte gespeichert?', 'Nur in diesem Browser auf diesem Gerät. Kein Konto, und nichts wird irgendwohin gesendet.'],
     ['Kann ich auf dem Handy spielen?', 'Wörterregen und Geisterrennen funktionieren mit der Handytastatur. Die Tastenjagd braucht eine echte Tastatur, weil sie beibringt, wo die Tasten liegen.'],
     ['Warum ist ein richtiges Wort nicht verschwunden?', 'Es muss genau stimmen, bevor du die Leertaste drückst. Achte auf einen Großbuchstaben, der sich eingeschlichen hat (auch bei Substantiven gilt hier klein), oder auf einen fehlenden Buchstaben.'],
