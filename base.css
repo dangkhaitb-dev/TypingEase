@@ -85,6 +85,13 @@ textarea:focus{border-color:var(--green);box-shadow:var(--shadow-focus)}
 .update-bar button{border:1px solid var(--border-soft);border-radius:var(--r-sm);padding:7px 11px;background:var(--surface);color:var(--muted);font-size:var(--fs-xs);font-weight:700;white-space:nowrap}
 .update-bar button.is-primary{border-color:var(--green);background:var(--green);color:var(--surface)}
 .update-bar button:hover{filter:brightness(.96)}
+/* Thanh hỏi đồng ý cookie analytics (analytics.js) — cùng dáng .update-bar, chữ dài nên được xuống dòng. */
+.consent-bar{position:fixed;left:50%;bottom:18px;z-index:61;display:flex;flex-wrap:wrap;align-items:center;gap:10px 12px;width:min(640px,calc(100vw - 32px));padding:12px 14px 12px 16px;border:1px solid var(--border-soft);border-radius:var(--r);background:var(--surface);color:var(--ink);font-size:var(--fs-sm);box-shadow:var(--shadow-lift);transform:translateX(-50%)}
+.consent-bar p{flex:1 1 260px;margin:0;line-height:1.5}
+.consent-bar a{color:var(--green);font-weight:700}
+.consent-bar button{border:1px solid var(--border-soft);border-radius:var(--r-sm);padding:7px 11px;background:var(--surface);color:var(--muted);font-size:var(--fs-xs);font-weight:700;white-space:nowrap}
+.consent-bar button.is-primary{border-color:var(--green);background:var(--green);color:var(--surface)}
+.consent-bar button:hover{filter:brightness(.96)}
 .feedback{margin:10px 0 0;color:var(--muted);font-size:10px}
 
 /* ===== Hero & tiêu đề section ================================================================= */

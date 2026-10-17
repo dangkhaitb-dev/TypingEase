@@ -635,7 +635,7 @@ test('12c màn dạy Shift và Enter: sáng đúng phím và đúng ngón', asyn
   assert.strictEqual(board.activeKey, 'Enter ⏎', 'phím Enter sáng');
   assert.strictEqual(board.activeFinger, 'right-pinky', 'ngón út phải, đúng lời bài');
   slots = await handSlots(page, 'enter');
-  assert.strictEqual(slots.right.id, 'right-home-row-7', 'tay phải với ngang tới Enter');
+  assert.strictEqual(slots.right.id, 'right-enter', 'tay phải với ngang tới Enter');
   assert.strictEqual(slots.left.id, 'left-resting-hand', 'tay trái nghỉ');
 });
 
@@ -1463,6 +1463,69 @@ test('20 topbar: logo trái, nav giữa, phần tử cuối sát mép phải tr�
     // Trang chủ không có gì ở cột phải nên phần tử cuối chính là nav — chỉ đo mép phải khi có.
     if (!bar.cuốiLàNav)
       assert.ok(Math.abs(bar.cuốiLệchPhải) <= 1, `${path}: phần tử phải cùng cách mép phải ${bar.cuốiLệchPhải}px`);
+  }
+});
+
+test('23 analytics: không gọi Google trước khi đồng ý; Cho phép tải gtag ngay, Từ chối thì tắt', async (page, context) => {
+  // Chạy thử luồng đồng ý ở localhost: analytics.js chỉ bật trên typingease.site hoặc khi có cờ này.
+  await page.addInitScript(() => { window.TYPINGEASE_ANALYTICS_FORCE = true; });
+  const google = [];
+  await context.route(/googletagmanager\.com|google-analytics\.com/, route => {
+    google.push(route.request().url());
+    route.fulfill({ status: 200, contentType: 'text/javascript', body: '' });
+  });
+  const layer = () => page.evaluate(() => (window.dataLayer || []).map(entry => Array.from(entry)));
+
+  await page.goto(BASE + '/', { waitUntil: 'networkidle' });
+  await page.waitForSelector('#consent-bar');
+  assert.deepStrictEqual(google, [], 'chưa đồng ý mà đã gọi Google');
+  assert.strictEqual(await page.evaluate(() => window.dataLayer), undefined, 'chưa đồng ý mà đã có dataLayer');
+  await page.evaluate(() => window.TypingEaseAnalytics.track('before_consent'));
+  assert.ok(await page.locator('.footer-legal [data-act="consent"]').count(), 'chân trang thiếu dòng Cài đặt cookie');
+  assert.strictEqual(await page.locator('#consent-bar a').getAttribute('href'), '/privacy/');
+
+  // Cho phép → gtag.js tải và đếm trang ngay, không cần tải lại.
+  await Promise.all([page.waitForRequest(/googletagmanager\.com\/gtag\/js/), page.click('#consent-bar [data-act="allow"]')]);
+  assert.strictEqual(await page.locator('#consent-bar').count(), 0, 'thanh phải biến mất');
+  await page.evaluate(() => window.TypingEaseAnalytics.track('after_consent', { wpm: 40 }));
+  const events = await layer();
+  assert.ok(events.some(([cmd, id]) => cmd === 'config' && id === 'G-5E3FSNW2WL'), 'thiếu config (page_view)');
+  assert.ok(events.some(([cmd, name, params]) => cmd === 'event' && name === 'after_consent' && params.language === 'en' && params.wpm === 40));
+  assert.ok(!events.some(([, name]) => name === 'before_consent'), 'sự kiện trước khi đồng ý không được gửi');
+
+  // Lần sau: không hỏi lại, tải gtag ngay.
+  google.length = 0;
+  await page.reload({ waitUntil: 'networkidle' });
+  assert.strictEqual(await page.locator('#consent-bar').count(), 0);
+  assert.ok(google.some(url => /gtag\/js/.test(url)), 'đã đồng ý thì phải tải gtag');
+
+  // Đổi ý qua chân trang → Từ chối: tắt gtag, nhớ lựa chọn, lần sau không gọi Google.
+  await page.click('.footer-legal [data-act="consent"]');
+  await page.click('#consent-bar [data-act="decline"]');
+  assert.strictEqual(await page.evaluate(() => window['ga-disable-G-5E3FSNW2WL']), true);
+  assert.strictEqual(await page.evaluate(() => window.TypingEaseAnalytics.consent()), 'denied');
+  google.length = 0;
+  await page.reload({ waitUntil: 'networkidle' });
+  assert.strictEqual(await page.locator('#consent-bar').count(), 0, 'đã từ chối thì không hỏi lại');
+  assert.deepStrictEqual(google, [], 'đã từ chối mà vẫn gọi Google');
+
+  // Ngoài typingease.site (không có cờ): không thanh, không gì cả.
+  const plain = await context.newPage();
+  await plain.goto(BASE + '/vi/', { waitUntil: 'networkidle' });
+  assert.strictEqual(await plain.locator('#consent-bar').count(), 0, 'localhost không được hiện thanh');
+  assert.strictEqual(await plain.locator('.footer-legal [data-act="consent"]').count(), 0);
+});
+
+test('23b analytics: thanh đồng ý theo ngôn ngữ trang, RTL không tràn', { viewport: { width: 390, height: 844 } }, async page => {
+  await page.addInitScript(() => { window.TYPINGEASE_ANALYTICS_FORCE = true; });
+  await page.route(/googletagmanager\.com|google-analytics\.com/, route => route.abort());
+  for (const [url, allow, privacy] of [['/vi/', 'Cho phép', '/vi/quyen-rieng-tu/'], ['/ar/', 'سماح', '/ar/privacy/']]) {
+    await page.goto(BASE + url, { waitUntil: 'networkidle' });
+    await page.waitForSelector('#consent-bar');
+    assert.strictEqual(await page.locator('#consent-bar [data-act="allow"]').textContent(), allow);
+    assert.strictEqual(await page.locator('#consent-bar a').getAttribute('href'), privacy);
+    const box = await page.locator('#consent-bar').boundingBox();
+    assert.ok(box.x >= 0 && box.x + box.width <= 390, `${url}: thanh tràn ngang`);
   }
 });
 

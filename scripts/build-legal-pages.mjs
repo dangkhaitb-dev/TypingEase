@@ -6,7 +6,7 @@
  * Bản TIẾNG ANH (phap-ly/text/en.mjs) là bản gốc có hiệu lực; bản dịch in câu `prevails` ngay dưới
  * ngày cập nhật. About được index và vào sitemap; Terms và Privacy là `noindex, follow`: chúng không
  * cần xếp hạng, và hàng chục bản dịch của cùng một văn bản pháp lý không nên nằm trong chỉ mục.
- * Chữ phải khớp sự thật của mã (không tài khoản, không cookie, không analytics, localStorage, Google
+ * Chữ phải khớp sự thật của mã (không tài khoản, không cookie riêng, Google Analytics chỉ sau khi đồng ý, localStorage, Google
  * Fonts, Cloudflare Pages) — đổi hành vi của site thì đổi en.mjs trước.
  */
 import fs from 'node:fs';
@@ -17,7 +17,7 @@ import { HOME_SWITCH } from '../bai-hoc/home-switch.mjs';
 import { seoHead, ORIGIN } from './lib/seo-head.mjs';
 import { LEGAL_TEXT, legalUrls, legalFooter } from './lib/legal.mjs';
 
-export const UPDATED = '2026-09-26';
+export const UPDATED = '2026-10-15';
 export const EMAIL = 'support@typingease.site';
 const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const CHECK = process.argv.includes('--check');

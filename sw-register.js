@@ -13,10 +13,16 @@
   // bản cũ thật. Trình duyệt không tự kiểm tra lại sw.js cho tab đang mở, nên ta tự gọi `update()`
   // mỗi lần tab hiện trở lại, cách nhau ít nhất 15 phút.
   // Analytics đi nhờ file này vì nó có mặt trên mọi trang (xem analytics.js). Chèn trước dòng
-  // kiểm tra service worker: trình duyệt không có service worker vẫn phải được đếm.
-  const analytics = global.document.createElement('script');
-  analytics.src = '/analytics.js';
-  global.document.head.appendChild(analytics);
+  // kiểm tra service worker: trình duyệt không có service worker vẫn phải được đếm. Chèn SAU `load`
+  // để file (có chữ thanh đồng ý cho 27 ngôn ngữ) không chen vào lúc vẽ trang — đo bằng Lighthouse,
+  // chèn sớm làm LCP chậm thêm ~150 ms. Nơi gọi đều dùng `TypingEaseAnalytics?.track` nên không vỡ.
+  const loadAnalytics = () => {
+    const analytics = global.document.createElement('script');
+    analytics.src = '/analytics.js';
+    global.document.head.appendChild(analytics);
+  };
+  if (global.document.readyState === 'complete') loadAnalytics();
+  else global.addEventListener('load', loadAnalytics, { once: true });
 
   if (!('serviceWorker' in global.navigator)) return;
   const GRACE_MS = 10000;           // cập nhật tìm thấy trong 10 s đầu = kiểm tra lúc nạp, bỏ qua

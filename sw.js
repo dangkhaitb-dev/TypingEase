@@ -41,11 +41,12 @@
  * v19: trang test viết sẵn cho 21 ngôn ngữ (chưa bật); typing-test.js gõ theo vị trí phím (Chú âm), font cho chữ không Latin.
  * v20: trang test chọn đoạn văn theo kiểu bàn phím (Hindi Bolnagri), trò chơi lọc từ theo bố cục đang chọn.
  * v17: chân trang ba cột — dòng pháp lý ở giữa, bỏ hàng liên kết lộ trình/bài học.
+ * v24: thanh đồng ý cookie (analytics.js chỉ tải gtag.js sau khi người dùng cho phép), base.css có .consent-bar.
  *
  * Bàn tay 3D (three.js ~690 KB, model 967 KB, texture) KHÔNG nằm trong PRECACHE: chúng chỉ tải
  * khi người học thật sự bật bàn tay, và cache lối-đi-thật ở dưới sẽ giữ lại sau lần đầu.
  */
-const VERSION = 'v23';
+const VERSION = 'v24';
 const SHELL = `typingease-shell-${VERSION}`;
 const RUNTIME = `typingease-runtime-${VERSION}`;
 
