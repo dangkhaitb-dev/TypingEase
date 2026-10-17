@@ -22,7 +22,8 @@ export function siteHeader(html, outputPath) {
   const existing = /<header class="(?:topbar|player-topbar)[^"]*"[^>]*>([\s\S]*?)<\/header>/;
   const match = existing.exec(html);
   if (!match) return html;
-  const lang = (/<html[^>]*lang="([^"]+)"/.exec(html)?.[1] || 'en').toLowerCase();
+  const declaredLocale = (/<html[^>]*lang="([^"]+)"/.exec(html)?.[1] || 'en').toLowerCase();
+  const lang = ({'zh-hans':'zh','zh-hant':'zh-tw','pt-br':'pt'})[declaredLocale] || declaredLocale;
   const config = configs.get(lang) || configs.get('en');
   const url = '/' + path.relative(paths.GENERATED, path.resolve(outputPath)).split(path.sep).join('/').replace(/index\.html$/, '');
   const courseId = /curriculum\.([^/?"]+)\.js/.exec(html)?.[1];
@@ -47,7 +48,7 @@ export function siteHeader(html, outputPath) {
     ? `<details class="home-language"><summary aria-label="${escape(languageLabel)}">${globe}<span>${escape(lang.toUpperCase())}</span><svg class="home-language-chevron" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="home-language-menu" aria-label="${escape(languageLabel)}">${languageOptions}</div></details>`
     : `<a class="site-language" href="/" aria-label="${escape(languageLabel)}" title="${escape(languageLabel)}">${globe}<span>${escape(lang.toUpperCase())}</span></a>`;
   const header = `<header class="topbar site-header${isHome ? ' header--glass' : ''}" data-site-header>
-      <a class="brand brand-signature" href="/" aria-label="TypingEase"><picture class="brand-logo"><source srcset="/assets/brand/typingease-mark-v3.webp" type="image/webp"/><img class="brand-emblem" src="/assets/brand/typingease-mark-v3.png" width="34" height="34" alt="" aria-hidden="true"/></picture><span class="brand-wordmark">Typing<em>Ease</em></span></a>
+      <a class="brand brand-signature" href="/" aria-label="TypingEase"><picture class="brand-logo"><img class="brand-emblem" src="/assets/brand/typingease-snail-t-68.webp" width="34" height="34" decoding="async" alt="" aria-hidden="true"/></picture><span class="brand-wordmark">Typing<em>Ease</em></span></a>
       <nav aria-label="${escape(config.s.navAria)}">${links}</nav>
       <div class="header-actions">${languageControl}</div>
     </header>`;

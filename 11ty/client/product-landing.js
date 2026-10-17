@@ -37,7 +37,7 @@
   const layout=()=>{
    cards.forEach((card,i)=>{
     let offset=i-center;if(offset>cards.length/2)offset-=cards.length;if(offset< -cards.length/2)offset+=cards.length;
-    const a=Math.abs(offset);const values={'offset':offset,'y':a*a*14+'px','z':-a*160+'px','angle':-offset*14+'deg','opacity':a>3?0:1-a*.12,'blur':(a>=2?(a-1)*1.5:0)+'px'};
+    const a=Math.abs(offset);const values={'offset':offset,'y':a*a*14+'px','z':-a*160+'px','angle':-offset*14+'deg','opacity':a>3?0:1-a*.12};
     for(const [key,value] of Object.entries(values))card.style.setProperty('--arc-'+key,value);
     card.style.zIndex=20-a;card.inert=a>3;card.dataset.arcSlot=offset;
     if(i===center)card.setAttribute('aria-current','true');else card.removeAttribute('aria-current');
@@ -54,6 +54,8 @@
   arc.addEventListener('mouseenter',()=>{hover=true;schedule()});arc.addEventListener('mouseleave',()=>{hover=false;schedule()});
   arc.addEventListener('focusin',()=>{focused=true;schedule()});arc.addEventListener('focusout',event=>{focused=arc.contains(event.relatedTarget);schedule()});
   arc.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();move(event.key==='ArrowRight'?1:-1)}});
+  // Defer autoplay until the page has been still for a full idle period.
+  window.addEventListener('scroll',schedule,{passive:true});
   document.addEventListener('visibilitychange',schedule);
   reduce.addEventListener('change',()=>{paused=reduce.matches;schedule()});
   new IntersectionObserver(entries=>{visible=entries[0].isIntersecting&&entries[0].intersectionRatio>=.15;schedule()},{threshold:.15}).observe(arc);
@@ -104,8 +106,8 @@
   const schedule=()=>{
    clearTimeout(timer);
    if(motion.matches||!visible||hovered.size||interacting||document.hidden||section.contains(document.activeElement))return;
-   const max=rail.scrollWidth-rail.clientWidth;if(max<=4)return;
    timer=setTimeout(()=>{
+    const max=rail.scrollWidth-rail.clientWidth;if(max<=4)return;
     const gap=parseFloat(getComputedStyle(rail).columnGap)||0;
     const step=cards[0].getBoundingClientRect().width+gap;
     if(rail.scrollLeft>=max-4)direction=-1;
@@ -129,6 +131,7 @@
   section.addEventListener('focusin',schedule);
   section.addEventListener('focusout',()=>queueMicrotask(schedule));
   // Restart the idle period after touch inertia, wheel scrolling, or an arrow click.
+  window.addEventListener('scroll',schedule,{passive:true});
   rail.addEventListener('scroll',schedule,{passive:true});
   rail.addEventListener('wheel',schedule,{passive:true});
   controls?.addEventListener('click',schedule);

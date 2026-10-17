@@ -213,7 +213,7 @@ details p{margin:-4px 0 0;padding:0 22px 20px;color:var(--ink-600);font-size:15p
 .test-main:has(.typing-test) article>.progress-section{margin:100px auto 0;max-width:900px}
 .test-main:has(.typing-test) article>section:not(.typing-test,.progress-section){max-width:800px;margin-inline:auto}
 .typing-test .test-course{margin:16px 0 0}
-body:has(.typing-test.is-running) .site-header,.test-main:has(.typing-test.is-running) .test-hero{opacity:.35;transition:opacity .2s ease}
+body:has(.typing-test.is-running) .site-header,.test-main:has(.typing-test.is-running) .test-hero h1{opacity:.35;transition:opacity .2s ease}
 body:has(.typing-test.is-running) .site-header:is(:hover,:focus-within){opacity:1}
 @media(min-width:901px) and (max-height:800px){
   .typing-test .test-prompt{height:calc(1.8em * 4 + 24px);border-block-width:12px;margin:20px 0}
@@ -237,7 +237,7 @@ body:has(.typing-test.is-running) .site-header:is(:hover,:focus-within){opacity:
   .typing-test .test-prompt{height:calc(1.8em * 6 + 24px);border-block-width:12px;font-size:23px;margin:22px 0 14px}
   .typing-test #typing-input{font-size:16px}
 }
-@media(prefers-reduced-motion:reduce){body:has(.typing-test.is-running) .site-header,.test-main:has(.typing-test.is-running) .test-hero{transition:none}}
+@media(prefers-reduced-motion:reduce){body:has(.typing-test.is-running) .site-header,.test-main:has(.typing-test.is-running) .test-hero h1{transition:none}}
 
 /* A quiet idle state: measurements appear only once there is a result to show. */
 .typing-test:not(.is-running):not(:has(.test-result:not([hidden]))) .test-stats{visibility:hidden}
@@ -270,4 +270,21 @@ body:has(.typing-test.is-running) .site-header:is(:hover,:focus-within){opacity:
   .typing-test .test-actions .test-stats{gap:12px}
   .typing-test .test-actions .test-stats strong{font-size:17px}
   .typing-test .test-actions .test-stats span{font-size:9px}
+}
+
+/* Header controls: restart, key click, test length. */
+.test-controls{display:flex;align-items:center;gap:4px}
+.test-controls #restart,.test-controls .sound-toggle{display:inline-flex;align-items:center;justify-content:center;width:36px;min-width:36px;height:36px;min-height:36px;padding:0;border:0;border-radius:8px;background:transparent;box-shadow:none;color:var(--ink-500);cursor:pointer;transition:background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.test-controls #restart:hover,.test-controls .sound-toggle:hover{background:var(--surface-alt);color:var(--ink-900)}
+.test-controls #restart:focus-visible,.test-controls .sound-toggle:focus-visible{outline:2px solid var(--primary-500);outline-offset:2px}
+.test-controls svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.test-controls .sound-toggle[aria-pressed=true]{background:transparent;color:var(--primary-700)}
+.test-controls .sound-toggle[aria-pressed=true] .sound-off,.test-controls .sound-toggle[aria-pressed=false] .sound-on{display:none}
+.test-controls .test-duration-select{margin-inline-start:8px}
+@media(max-width:620px){
+  .test-main:has(.typing-test) .test-hero{flex-wrap:wrap}
+  .test-main:has(.typing-test) .test-hero h1{min-width:0;overflow-wrap:anywhere;flex:1 1 140px}
+  .test-controls{flex:0 1 auto;max-width:100%;margin-inline-start:auto}
+  .test-controls #restart,.test-controls .sound-toggle{width:44px;min-width:44px;height:44px;min-height:44px}
+  .test-controls .test-duration-select{min-width:0;min-height:44px;font-size:16px;max-width:145px}
 }

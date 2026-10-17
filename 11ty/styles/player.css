@@ -190,6 +190,9 @@ body.player-page{background:var(--canvas);overflow-x:hidden}
    keyboard/keyboard.css, tỉ lệ theo bề ngang board đúng như bản gốc. Ở đây chỉ còn bề rộng và
    lề ngang; thêm padding đáy ở đây nữa là cộng dồn hai lần. */
 .player-board{width:100%;max-width:830px;margin:0 auto;padding:0 15px}
+/* The 3D hands overhang the keyboard. Clip their horizontal paint only so RTL
+   mobile browsers keep the layout viewport at the device width. */
+.player-board{overflow-x:clip}
 /* Dòng trạng thái lúc gõ ("90% chính xác · 1 lỗi"): chữ xám nhỏ, ẩn khi rỗng. */
 .player-live{min-height:20px;width:fit-content;max-width:calc(100% - 40px);margin:4px auto 18px;padding:0;text-align:center;color:var(--ink-500);font:400 var(--fs-xs) var(--font-body);font-variant-numeric:tabular-nums}
 

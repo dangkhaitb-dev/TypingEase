@@ -32,7 +32,7 @@ The hero retains the reference perspective, depth and rotation, with seven cards
 
 ## MiniMax-based layout system
 
-Reference: https://design.minimax.io/vi. The homepage header is fixed and transparent using the supplied glass geometry. It contains Course, Test, Game and a native language picker. Inner pages retain the shared application navigation. The original generated typing mascot is available as PNG and served as WebP in the header and hero.
+Reference: https://design.minimax.io/vi. The homepage header is transparent and scrolls with the page using the supplied glass geometry. It contains Course, Test, Game and a native language picker. Inner pages retain the shared application navigation. The original generated typing mascot is available as PNG and served as WebP in the header and hero.
 
 The H1 reads “Learn to type free”, entirely in Outfit; only “type” is green. Inter is used for body copy and controls. The single black-and-white Get started action opens the locale’s course. Fonts are served locally. The background uses light #d2d4d8 dots, radius .9px with a soft edge at1.1px, spaced24px apart.
 
@@ -41,3 +41,9 @@ Seven real photos follow velprompt’s centered 3D arc beneath the hero, with340
 Below the hero: four real UI previews (lesson, course, test, games), four feature cards, a light two-column photo panel, six captioned audience cards, open two-column capability lists, FAQ and a dotted closing CTA. Screenshots were refreshed from the running EN/VI application. People photos remain unmodified stock; generated imagery is limited to the explicitly requested brand mascot.
 
 Screenshot refresh: lesson/course/games/progress captures are1280×836; test captures are1280×476 after trimming empty lower space. Header is excluded. Preview images retain natural ratios; cards use100% image width instead of the inherited145%. The v3 original PNG brand mark is a restrained black keyboard symbol with small cutout eyes and three keys.
+
+Language homepages share the EN product presentation (VI keeps its existing copy), with locale-specific course, lesson, test, game and progress URLs from the roadmap configurations. Original document locale/SEO metadata remains; English presentation sections declare their content language and left-to-right direction even on RTL document routes.
+
+Latest correction: homepage header is absolute, so it scrolls away with the page. Hero photographs now use seven source Pexels images showing actual hands typing; sources and licenses are recorded in docs/hero-typing-sources.json.
+
+Hero photo selection retains five original context-rich stock photographs (learner, student, team, coworking, creative) and two new typing close-ups (light and overhead), preserving varied people, colors and framing.

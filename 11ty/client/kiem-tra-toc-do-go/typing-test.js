@@ -141,7 +141,10 @@ for (const button of durationButtons) {
   durationSelect.add(new Option(button.textContent.trim(), button.dataset.duration));
 }
 durationSelect.value = String(selectedDuration);
-document.querySelector('.test-hero').append(durationSelect);
+// Restart, key click and test length sit together beside the heading.
+const testControls = document.createElement('div');
+testControls.className = 'test-controls';
+document.querySelector('.test-hero').append(testControls);
 durationPicker.hidden = true;
 // Keep a real textarea for native IME, mobile keyboards and accessibility, but
 // place it directly over the passage. The passage is the only visible typing surface.
@@ -174,8 +177,16 @@ new ResizeObserver(([entry]) => {
 }).observe(typingSurface);
 const actions = document.querySelector('.test-actions');
 restartButton.title = restartButton.textContent.trim();
+restartButton.setAttribute('aria-label', restartButton.title);
+restartButton.innerHTML = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"/><path d="M3 3v5h5"/></svg>';
 actions.append(document.querySelector('.test-stats'));
-if (soundToggle) actions.append(soundToggle);
+if (soundToggle) {
+  const soundLabel = soundToggle.textContent.replace(/^\W+/u, '').trim();
+  soundToggle.setAttribute('aria-label', soundLabel);
+  soundToggle.innerHTML = '<svg class="sound-on" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z"/><path d="M16 9a5 5 0 0 1 0 6"/><path d="M19.4 18.4a9 9 0 0 0 0-12.8"/></svg>'
+    + '<svg class="sound-off" viewBox="0 0 24 24" aria-hidden="true"><path d="M11 4.7a.7.7 0 0 0-1.2-.5L6.4 7.6A1.4 1.4 0 0 1 5.4 8H3a1 1 0 0 0-1 1v6a1 1 0 0 0 1 1h2.4a1.4 1.4 0 0 1 1 .4l3.4 3.4a.7.7 0 0 0 1.2-.5z"/><path d="m22 9-6 6"/><path d="m16 9 6 6"/></svg>';
+}
+testControls.append(...[restartButton, soundToggle, durationSelect].filter(Boolean));
 durationSelect.addEventListener('change', () => {
   if (startedAt && !finished) return;
   selectedDuration = Number(durationSelect.value);

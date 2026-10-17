@@ -146,7 +146,7 @@
 .product-final::before{display:none}
 .product-final .primary-button{border-radius:999px;min-height:50px;padding-inline:28px;font-weight:500}
 .editorial-home footer.product-footer{background:#fff;border-top:1px solid var(--canvas-rule);padding-top:64px}
-.product-wordmark{font-weight:500;color:#e8eae9}
+.product-wordmark{font-weight:500;color:#e8eae9;font-size:clamp(48px,14.5vw,202px);direction:ltr}
 .product-wordmark em{font-family:inherit;font-style:normal;color:#e0ebe4}
 
 /* Editorial sections: open grids, image-led cards and restrained rules. */
@@ -213,10 +213,14 @@
 .hero.product-home-hero .product-start-form>a.primary-button:hover{background:#343436;border-color:#343436}
 
 .editorial-home .hero .product-hero-title h1{display:flex;align-items:center;justify-content:center;gap:18px}
-.hero-brand-logo{display:block;flex:none;line-height:0}.hero-brand-logo img{display:block;width:72px;height:72px;border-radius:18%;object-fit:contain}
+.hero-brand-logo{display:block;flex:none;line-height:0}.hero-brand-logo img{display:block;width:104px;height:104px;object-fit:contain}
 .product-view-picker{flex-wrap:wrap}
-@media(max-width:700px){.editorial-home .hero .product-hero-title h1{gap:10px}.hero-brand-logo img{width:38px;height:38px}}
-@media(max-width:360px){.editorial-home .hero .product-hero-title h1{font-size:38px}.hero-brand-logo img{width:32px;height:32px}}
+@media(max-width:700px){.editorial-home .hero .product-hero-title h1{gap:10px}.hero-brand-logo img{width:60px;height:60px}}
+@media(max-width:360px){.editorial-home .hero .product-hero-title h1{font-size:38px}.hero-brand-logo img{width:48px;height:48px}}
 
 .editorial-home .hero .product-hero-title h1{font-size:clamp(42px,5.2vw,76px);white-space:normal}.product-hero-title h1>span{min-width:0}
 @media(max-width:700px){.editorial-home .hero .product-hero-title h1{font-size:40px;max-width:340px;line-height:1.1}.hero-brand-logo{align-self:center}}
+
+.hero-brand-logo img{width:88px;height:88px}
+@media(max-width:700px){.hero-brand-logo img{width:48px;height:48px}}
+@media(max-width:360px){.hero-brand-logo img{width:40px;height:40px}}

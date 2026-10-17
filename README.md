@@ -64,7 +64,10 @@ npm run check          # dữ liệu khớp (--check của mọi công cụ) + v
 npm run build
 npm run preview -- --port 8765
 PW=<thư mục>/node_modules/playwright-core npm run test:e2e -- http://127.0.0.1:8765
+PW=<thư mục>/node_modules/playwright-core npm run test:responsive -- http://127.0.0.1:8765
 ```
+
+`test:responsive` duyệt mọi trang nội dung trong `dist/` ở 320, 390 và 768px, rồi kiểm tra mỗi nhóm stylesheet ở 360, 430, 1024 và 1440px. Kiểm tra gồm tràn ngang, chữ footer bị cắt, menu mobile, menu ngôn ngữ RTL và ba màn trò chơi. Báo cáo JSON và ảnh lỗi nằm trong thư mục tạm `typingease-responsive` (đổi bằng `RESPONSIVE_OUT`). Dùng `CHROME` để chỉ định trình duyệt; `RESPONSIVE_ROOT` để chỉ định thư mục HTML tương ứng với server đang chạy.
 
 Mọi thay đổi giao diện phải xem trên trình duyệt thật ở cả desktop và mobile, console sạch lỗi.
 

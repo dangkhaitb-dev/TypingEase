@@ -17,6 +17,7 @@
     "check:data": "node tooling/data/stamp-data.mjs --check && node tooling/data/sync-catalogue.mjs --check && node tooling/data/build-tasters.mjs --check && node tooling/data/build-course.js --check && node tooling/data/build-unit-symbols.js --check",
     "test": "node tooling/test/validate-lessons.js --quiet && node tooling/test/test-telex.js && node tooling/test/test-hangul.js && node tooling/test/check-words-en.js",
     "test:e2e": "node tooling/test/e2e.js",
+    "test:responsive": "node tooling/test/responsive.cjs",
     "test:offline": "node tooling/test/offline-check.js",
     "data:stamp": "node tooling/data/stamp-data.mjs",
     "data:sync": "node tooling/data/sync-catalogue.mjs",
