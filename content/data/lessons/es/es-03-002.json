@@ -62,12 +62,12 @@
   "screens": [
     {
       "type": "standard",
-      "text": "Pulsa la tecla ´ (a la derecha de la P), suéltala y escribe a: así sale á.",
+      "text": "Pulsa la tecla ´ (a la derecha de la Ñ), suéltala y escribe a: así sale á.",
       "content": "ááááá áááá ááááá áááá áááá aááá"
     },
     {
       "type": "standard",
-      "text": "Pulsa la tecla ´ (a la derecha de la P), suéltala y escribe e: así sale é.",
+      "text": "Pulsa la tecla ´ (a la derecha de la Ñ), suéltala y escribe e: así sale é.",
       "content": "eééé ééééé éée éée eééé eééé"
     },
     {

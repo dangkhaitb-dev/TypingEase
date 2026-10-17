@@ -97,7 +97,7 @@
     "=",
     "&",
     "*",
-    "°",
+    "º",
     "{",
     "}",
     "[",
@@ -153,7 +153,7 @@
     {
       "type": "standard",
       "text": "Escribe cada grupo con calma y sin mirar el teclado.",
-      "content": "de°*° °°** aff*a °°s°° *a° °e s°°* °d° ***°° *°°°d"
+      "content": "deº*º ºº** aff*a ººsºº *aº ºe sºº* ºdº ***ºº *ºººd"
     },
     {
       "type": "standard",

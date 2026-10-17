@@ -1,0 +1,322 @@
+[
+  {
+    "url": "/",
+    "h1": 1,
+    "h2": [
+      "Typing test, lessons or practice: where should you start?",
+      "Touch typing: match the lesson to your keyboard layout",
+      "A typing practice routine for everyday writing",
+      "Typing speed and accuracy: use your result to choose an exercise",
+      "Touch typing for beginners and children: why I start with habits"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "en",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/vi/",
+    "h1": 1,
+    "h2": [
+      "Luyện gõ 10 ngón: nên bắt đầu bằng bài học hay bài test?",
+      "Học gõ 10 ngón tiếng Việt: kiểm tra bàn phím và bộ gõ",
+      "Luyện gõ bàn phím: tập một kỹ năng trong mỗi buổi",
+      "Đọc kết quả test tốc độ gõ để chọn bài luyện tiếp theo",
+      "Tập gõ 10 ngón cho người mới và trẻ em: góc nhìn của tôi"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "vi",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/es/",
+    "h1": 1,
+    "h2": [
+      "Mecanografía online: ¿curso, test o juegos para empezar?",
+      "Mecanografía a diez dedos en español: tu teclado decide dónde está la tilde",
+      "Practicar mecanografía en una sesión con un solo objetivo",
+      "Palabras por minuto y errores: cómo elegir el siguiente ejercicio de mecanografía",
+      "Aprender mecanografía en español: por qué no dejo las tildes para después"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "es",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/pt/",
+    "h1": 1,
+    "h2": [
+      "Digitação: comece pelo curso, pelo teste ou pelos jogos?",
+      "Digitação com 10 dedos no ABNT2: confira o teclado antes de culpar os dedos",
+      "Praticar digitação numa sessão curta, com um alvo só",
+      "Velocidade de digitação e erros: escolha os próximos exercícios de digitação",
+      "Aprender digitação em português: por que o acento vem antes dos números"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "pt-BR",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/ja/",
+    "h1": 1,
+    "h2": [
+      "タイピング練習はどこから始めるか：講座・テスト・ゲーム",
+      "タッチタイピングの前に：JIS 配列と IME の確認",
+      "キーボード練習の1回分の組み立て方",
+      "タイピング練習の結果を読み、次のレッスンを選ぶ",
+      "私がタイピング練習に「変換」まで入れる理由"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "ja",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/ko/",
+    "h1": 1,
+    "h2": [
+      "한글 타자 연습, 어디서 시작할까요",
+      "키보드 연습 전에: 두벌식 자판에 없는 글자들",
+      "10손가락 타자를 위한 한 번의 연습",
+      "타자 속도보다 먼저 볼 결과",
+      "한글 타자 연습에서 제가 고집하는 순서"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "ko",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/th/",
+    "h1": 1,
+    "h2": [
+      "ฝึกพิมพ์ดีดภาษาไทย เริ่มจากตรงไหนดี",
+      "ก่อนฝึกพิมพ์สัมผัส: ตรวจว่าเครื่องใช้ผังเกษมณีหรือปัตตะโชติ",
+      "ฝึกพิมพ์ 10 นิ้ว หนึ่งรอบควรมีอะไรบ้าง",
+      "อ่านผลแล้วเลือกแบบฝึกหัดพิมพ์บทต่อไป",
+      "มุมมองของเราเรื่องการฝึกพิมพ์สัมผัสภาษาไทย"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "th",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/ar/",
+    "h1": 1,
+    "h2": [
+      "تدريب الكتابة من الصفر: الدورة أم الاختبار أم اللعبة",
+      "تدريب الكتابة بالعربية: تحقق من اللوحة قبل أن تبدأ",
+      "تمارين الكتابة: حصة واحدة من أولها إلى آخرها",
+      "سرعة الكتابة والدقة: كيف تختار الدرس التالي",
+      "رأي TypingEase: الكتابة بعشرة أصابع تبدأ بالهمزة لا بالسرعة"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "ar",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/zh-tw/",
+    "h1": 1,
+    "h2": [
+      "打字練習從哪裡開始：課程、測驗還是遊戲",
+      "注音打字練習前：看清鍵盤，也看清輸入法",
+      "一次有用的盲打練習：先符號，後選字",
+      "打字速度之外：錯在符號，還是錯在字",
+      "我們對十指打字的看法：先讓手記住符號"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "zh-Hant",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/he/",
+    "h1": 1,
+    "h2": [
+      "לימוד הקלדה מאפס: קורס, מבחן או משחק",
+      "הקלדה עיוורת על איזו מקלדת: הקלאסית, SI-1452 או הפונטית",
+      "אימון אחד, מההתחלה ועד הסוף",
+      "מהירות הקלדה ודיוק: איך בוחרים את השיעור הבא",
+      "העמדה של TypingEase: אותיות סופיות הן אותיות, לא חריגים"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "he",
+    "brokenJump": 0,
+    "viewport": "desktop"
+  },
+  {
+    "url": "/",
+    "h1": 1,
+    "h2": [
+      "Typing test, lessons or practice: where should you start?",
+      "Touch typing: match the lesson to your keyboard layout",
+      "A typing practice routine for everyday writing",
+      "Typing speed and accuracy: use your result to choose an exercise",
+      "Touch typing for beginners and children: why I start with habits"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "en",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  },
+  {
+    "url": "/vi/",
+    "h1": 1,
+    "h2": [
+      "Luyện gõ 10 ngón: nên bắt đầu bằng bài học hay bài test?",
+      "Học gõ 10 ngón tiếng Việt: kiểm tra bàn phím và bộ gõ",
+      "Luyện gõ bàn phím: tập một kỹ năng trong mỗi buổi",
+      "Đọc kết quả test tốc độ gõ để chọn bài luyện tiếp theo",
+      "Tập gõ 10 ngón cho người mới và trẻ em: góc nhìn của tôi"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "vi",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  },
+  {
+    "url": "/es/",
+    "h1": 1,
+    "h2": [
+      "Mecanografía online: ¿curso, test o juegos para empezar?",
+      "Mecanografía a diez dedos en español: tu teclado decide dónde está la tilde",
+      "Practicar mecanografía en una sesión con un solo objetivo",
+      "Palabras por minuto y errores: cómo elegir el siguiente ejercicio de mecanografía",
+      "Aprender mecanografía en español: por qué no dejo las tildes para después"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "es",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  },
+  {
+    "url": "/pt/",
+    "h1": 1,
+    "h2": [
+      "Digitação: comece pelo curso, pelo teste ou pelos jogos?",
+      "Digitação com 10 dedos no ABNT2: confira o teclado antes de culpar os dedos",
+      "Praticar digitação numa sessão curta, com um alvo só",
+      "Velocidade de digitação e erros: escolha os próximos exercícios de digitação",
+      "Aprender digitação em português: por que o acento vem antes dos números"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "pt-BR",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  },
+  {
+    "url": "/ja/",
+    "h1": 1,
+    "h2": [
+      "タイピング練習はどこから始めるか：講座・テスト・ゲーム",
+      "タッチタイピングの前に：JIS 配列と IME の確認",
+      "キーボード練習の1回分の組み立て方",
+      "タイピング練習の結果を読み、次のレッスンを選ぶ",
+      "私がタイピング練習に「変換」まで入れる理由"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "ja",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  },
+  {
+    "url": "/ko/",
+    "h1": 1,
+    "h2": [
+      "한글 타자 연습, 어디서 시작할까요",
+      "키보드 연습 전에: 두벌식 자판에 없는 글자들",
+      "10손가락 타자를 위한 한 번의 연습",
+      "타자 속도보다 먼저 볼 결과",
+      "한글 타자 연습에서 제가 고집하는 순서"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "ko",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  },
+  {
+    "url": "/th/",
+    "h1": 1,
+    "h2": [
+      "ฝึกพิมพ์ดีดภาษาไทย เริ่มจากตรงไหนดี",
+      "ก่อนฝึกพิมพ์สัมผัส: ตรวจว่าเครื่องใช้ผังเกษมณีหรือปัตตะโชติ",
+      "ฝึกพิมพ์ 10 นิ้ว หนึ่งรอบควรมีอะไรบ้าง",
+      "อ่านผลแล้วเลือกแบบฝึกหัดพิมพ์บทต่อไป",
+      "มุมมองของเราเรื่องการฝึกพิมพ์สัมผัสภาษาไทย"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "th",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  },
+  {
+    "url": "/ar/",
+    "h1": 1,
+    "h2": [
+      "تدريب الكتابة من الصفر: الدورة أم الاختبار أم اللعبة",
+      "تدريب الكتابة بالعربية: تحقق من اللوحة قبل أن تبدأ",
+      "تمارين الكتابة: حصة واحدة من أولها إلى آخرها",
+      "سرعة الكتابة والدقة: كيف تختار الدرس التالي",
+      "رأي TypingEase: الكتابة بعشرة أصابع تبدأ بالهمزة لا بالسرعة"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "ar",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  },
+  {
+    "url": "/zh-tw/",
+    "h1": 1,
+    "h2": [
+      "打字練習從哪裡開始：課程、測驗還是遊戲",
+      "注音打字練習前：看清鍵盤，也看清輸入法",
+      "一次有用的盲打練習：先符號，後選字",
+      "打字速度之外：錯在符號，還是錯在字",
+      "我們對十指打字的看法：先讓手記住符號"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "zh-Hant",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  },
+  {
+    "url": "/he/",
+    "h1": 1,
+    "h2": [
+      "לימוד הקלדה מאפס: קורס, מבחן או משחק",
+      "הקלדה עיוורת על איזו מקלדת: הקלאסית, SI-1452 או הפונטית",
+      "אימון אחד, מההתחלה ועד הסוף",
+      "מהירות הקלדה ודיוק: איך בוחרים את השיעור הבא",
+      "העמדה של TypingEase: אותיות סופיות הן אותיות, לא חריגים"
+    ],
+    "overflow": false,
+    "guideDisplay": "block",
+    "lang": "he",
+    "brokenJump": 0,
+    "viewport": "mobile"
+  }
+]

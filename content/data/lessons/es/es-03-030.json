@@ -101,7 +101,7 @@
     "=",
     "&",
     "*",
-    "°",
+    "º",
     "{",
     "}",
     "[",
@@ -124,21 +124,21 @@
     {
       "type": "block",
       "newKey": "[",
-      "text": "Mantén pulsada Mayús con el meñique de la mano izquierda y pulsa la tecla { para escribir [. Suelta Mayús antes de la siguiente tecla.",
+      "text": "Mantén pulsada AltGr con el pulgar derecho y pulsa la tecla `, a la derecha de la P, para escribir [. Suelta las dos teclas antes de continuar.",
       "content": "[ff[ ff[ [f [f[ [[f f[ [[f[ [[[f [[ [[[ [[[[",
       "dictation": "letters"
     },
     {
       "type": "block",
       "newKey": "]",
-      "text": "Mantén pulsada Mayús con el meñique de la mano izquierda y pulsa la tecla } para escribir ]. Suelta Mayús antes de la siguiente tecla.",
+      "text": "Mantén pulsada AltGr con el pulgar derecho y pulsa la tecla +, a la derecha de la tecla `, para escribir ]. Suelta las dos teclas antes de continuar.",
       "content": "]]]] jj]j jj]] ]]] jj] ]] jj j]] ]j]",
       "dictation": "letters"
     },
     {
       "type": "block",
       "newKey": "\\",
-      "text": "Mantén pulsada AltGr y pulsa la tecla ' para escribir \\. Suelta las dos teclas antes de continuar.",
+      "text": "Mantén pulsada AltGr y pulsa la tecla º, a la izquierda del 1, para escribir \\. Suelta las dos teclas antes de continuar.",
       "content": "\\\\\\ \\\\\\\\ \\f\\ ff\\ ff\\\\ \\\\f ff f\\\\ \\f \\\\",
       "dictation": "letters"
     },

@@ -115,7 +115,7 @@
     {
       "type": "block",
       "newKey": "#",
-      "text": "Mantén pulsada Mayús con el meñique de la mano derecha y pulsa la tecla 3 para escribir #. Suelta Mayús antes de la siguiente tecla.",
+      "text": "Mantén pulsada AltGr con el pulgar derecho y pulsa la tecla 3 para escribir #. Suelta las dos teclas antes de la siguiente.",
       "content": "#### ###j ## #jj ### jj ##j# j###",
       "dictation": "letters"
     },

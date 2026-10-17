@@ -62,12 +62,12 @@
   "screens": [
     {
       "type": "standard",
-      "text": "Pulsa la tecla ´ (a la derecha de la P), suéltala y escribe i: así sale í.",
+      "text": "Pulsa la tecla ´ (a la derecha de la Ñ), suéltala y escribe i: así sale í.",
       "content": "íííí íííi ííf íífíí íííí íííí"
     },
     {
       "type": "standard",
-      "text": "Pulsa la tecla ´ (a la derecha de la P), suéltala y escribe o: así sale ó.",
+      "text": "Pulsa la tecla ´ (a la derecha de la Ñ), suéltala y escribe o: así sale ó.",
       "content": "oóóó oóóó óóóóó óójóó óóoóó óójóó"
     },
     {

@@ -105,7 +105,7 @@
     {
       "type": "block",
       "newKey": "¡",
-      "text": "Mantén pulsada Mayús con el meñique de la mano izquierda y pulsa la tecla ¿ para escribir ¡. Suelta Mayús antes de la siguiente tecla.",
+      "text": "Pulsa con el meñique derecho la tecla ¡, la que está a la derecha del apóstrofo. Sin Mayús escribe ¡; con Mayús, ¿.",
       "content": "¡¡¡ ff¡¡ ff ¡¡f¡ f¡ ¡¡¡f ¡¡¡¡ ¡f¡ ¡¡f ¡¡",
       "dictation": "letters"
     },
