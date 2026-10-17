@@ -1,0 +1,115 @@
+{
+  "id": "zh-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "zh-01-009",
+  "title": "键位练习：c、v、b",
+  "summary": "按顺序学习 c、v、b，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "c",
+    "v",
+    "b"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ime",
+  "intro": "按顺序学习 c、v、b，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-009",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "找到 c 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "cccc cccc cccc cccc cccc cccc cccc",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "找到 v 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "vvvv vvvv vvvv vvvv vvvv vvvv vvvv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "找到 b 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "bbbb bbbb bbbb bbbb bbbb bbbb bbbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ccv bv vbx cc vvcc bbc ccv bbc vvcc cc vbx bv vbx bv ccv"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ckb vvcc bbc cc ckb cc bbc vvcc bbc vvcc ckb cc ckb cc"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ccc vvb vw vc bbc vv ccc vv bbc vc vw vvb vw vvb ccc vv"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "cc bcbb bbbc bb kkv cc kkv bb bbbc bcbb bbbc bcbb cc kkv"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "bbci ccbb iv bv bb vvv bbci vvv bb bv iv ccbb iv ccbb"
+    },
+    {
+      "type": "standard",
+      "text": "输入拼音，按空格选字，提交句子。",
+      "content": "他吃了白菜说白菜不错我也吃了白菜",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "输入拼音，按空格选字，提交句子。",
+      "content": "绿色的菜不错她说绿色的菜比白菜好吃",
+      "inputMode": "ime"
+    }
+  ]
+}

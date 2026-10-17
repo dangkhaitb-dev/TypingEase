@@ -1,0 +1,94 @@
+{
+  "id": "es-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 23,
+  "slug": "es-03-003",
+  "title": "Tecla muerta ´: í y ó",
+  "summary": "Aprende í y ó: pulsa la tecla muerta ´ y después la vocal.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Aprende í y ó: pulsa la tecla muerta ´ y después la vocal.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-003",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Pulsa la tecla ´ (a la derecha de la P), suéltala y escribe i: así sale í.",
+      "content": "íííí íííi ííf íífíí íííí íííí"
+    },
+    {
+      "type": "standard",
+      "text": "Pulsa la tecla ´ (a la derecha de la P), suéltala y escribe o: así sale ó.",
+      "content": "oóóó oóóó óóóóó óójóó óóoóó óójóó"
+    },
+    {
+      "type": "standard",
+      "text": "Alterna las teclas nuevas con las que ya conoces y vuelve a la posición de referencia.",
+      "content": "óóííó íóó íó óíaóí síóf ssó óííí óóís óóííó óí eeóóí óíóóó ee óó"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "mi tío escucha la canción en el avión de mi hermano"
+    },
+    {
+      "type": "standard",
+      "text": "Alterna las teclas nuevas con las que ya conoces y vuelve a la posición de referencia.",
+      "content": "íííííó íf íó íf síóí óaó aíóój ós íd ódíóó óód óóeíó íjíó íeóóí"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "la lección empieza en un día frío y lluvioso"
+    }
+  ]
+}

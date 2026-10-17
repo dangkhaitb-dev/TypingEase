@@ -1,0 +1,46 @@
+{
+  "id": "ko-03-104",
+  "unit": "u3",
+  "group": "g1",
+  "order": 49,
+  "slug": "ko-03-104",
+  "title": "Shift 기호 ! · ?",
+  "summary": "Shift를 누른 채 1과 / 키를 눌러 !와 ?를 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "Shift를 누른 채 1과 / 키를 눌러 !와 ?를 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-03-104",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 숫자 1 키를 눌러 !를 입력합니다.",
+      "content": "!! 1! !1 !!! 1!1 !! !! !! 1!1 !!! !1"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 / 키를 눌러 ?를 입력합니다.",
+      "content": "?? /? ?/ ??? /?/ ?? ?? ?? /?/ ??? ?/"
+    },
+    {
+      "type": "standard",
+      "text": "새 기호와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "!? ?! !!? ??! 1? /! ?!? !1? !? !1? ?!? /! 1? ??! !!? ?!"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 해당 키를 눌러 기호를 입력하고, 앞서 배운 키와 섞어 정확하게 입력합니다.",
+      "content": "어디 가요? 학교에 가요! 같이 갈까요? 좋아요!",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "id": "en-01-012",
+  "unit": "u1",
+  "group": "g3",
+  "order": 11,
+  "slug": "en-01-012",
+  "title": "Z, X, C",
+  "summary": "Learn z, x, c, then practise with the keys you already know.",
+  "newKeys": [
+    "z",
+    "x",
+    "c"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Learn z, x, c, then practise with the keys you already know.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-012",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "Find z and return to the home position. Type each target carefully.",
+      "content": "zffzz zzz fzzz fz zf zzzf zz ff zzf zfzf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Find x and return to the home position. Type each target carefully.",
+      "content": "xxj xxx xx xjx jx jxjx xxxj xjxx jxj xxxx",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Find c and return to the home position. Type each target carefully.",
+      "content": "ccfc cc cf ccf cccc ff ccc fccf ffcc cccf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "xcqz zczx xcz xzx xx zx xz qczx xc zxcx xccz cxxx xzcz xxc xxz czzc"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "ccz czxx cx xc zxz ccc cxx xxz cxxc cccc zcx cxc xcc cc czjc"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "xxc cx xxxx xcx zc cxz xxcc xx xzx xc xz ax azzx zxx zcxc xxx xcxc"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "zccx zczc cxcx cz xcxc cc cxc xc kcxc ccxc xx cccx ccc cxx xxc zcxz"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "cc czxc fx zxx czc xz zxxc cxfx zz xzz xxz xzcz czz xcz xxf cz xxx xcxz"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "the fox is at the zoo she took six cups to the exit"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "check the clock the class is close to the cold creek"
+    }
+  ]
+}

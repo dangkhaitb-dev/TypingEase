@@ -1,0 +1,40 @@
+{
+  "id": "bn-04-002",
+  "unit": "u4",
+  "group": "g1",
+  "order": 62,
+  "slug": "bn-04-002",
+  "title": "দৈনন্দিন শব্দগুচ্ছ",
+  "summary": "Closed review only over previously introduced BN committed targets. This superseded source record introduces no target or input action; the former target payload has been replaced for review.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Closed review only over previously introduced BN committed targets. This superseded source record introduces no target or input action; the former target payload has been replaced for review.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-04-002",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "শব্দ ও বাক্যগুলো মনোযোগ দিয়ে টাইপ করুন।",
+      "content": "নতুন বই ছোট খাতা নীল কলম সবুজ পাতা লাল ফুল ঠান্ডা জল খোলা দরজা"
+    },
+    {
+      "type": "standard",
+      "text": "শব্দ ও বাক্যগুলো মনোযোগ দিয়ে টাইপ করুন।",
+      "content": "সকালের আলো নদীর জল মাঠের ঘাস বাগানের ফুল ঘরের জানালা পাখির গান"
+    },
+    {
+      "type": "standard",
+      "text": "শব্দ ও বাক্যগুলো মনোযোগ দিয়ে টাইপ করুন।",
+      "content": "বাজারের পথ দিনের কাজ রাতের খাবার বন্ধুর বাড়ি মায়ের কথা বাবার বই"
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "id": "ko-03-110",
+  "unit": "u3",
+  "group": "g1",
+  "order": 51,
+  "slug": "ko-03-110",
+  "title": "기호 & · * · _",
+  "summary": "기호 & · * · _를 정확하게 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "기호 & · * · _를 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-03-110",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 숫자 7 키를 눌러 &를 입력합니다.",
+      "content": "&& &1 1& && && && 1& &1 1& &1 && &&"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 숫자 8 키를 눌러 *를 입력합니다.",
+      "content": "** *1 1* ** ** ** 1* *1 1* *1 ** **"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 - 키를 눌러 _를 입력합니다.",
+      "content": "__ _1 1_ __ __ __ 1_ _1 1_ _1 __ __"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "카페 메뉴판에 차&과자 세트를 함께 적어요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "친구&가족 2*6명 이름_번호를 적어요",
+      "inputMode": "hangul"
+    }
+  ]
+}

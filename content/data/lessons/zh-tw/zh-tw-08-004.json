@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-004",
+  "unit": "u8",
+  "group": "g1",
+  "order": 76,
+  "slug": "zh-tw-08-004",
+  "title": "廚房裡的分工合作",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-004",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "週末中午，我們家決定自己包水餃。媽媽負責調餡，把豬肉、白菜和蔥花拌在一起；爸爸負責擀皮，我和妹妹則負責包。大家圍在餐桌旁，一邊包一邊比賽誰包得最漂亮。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "妹妹第一次包水餃，總是包得太滿，餃子一放下就破了。媽媽耐心地示範：「餡不要放太多，邊緣要捏緊。」妹妹試了幾次，終於包出一個像樣的餃子，開心得拍手大叫。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "水餃包好以後，爸爸燒了一大鍋水，水滾了再把餃子一個個放進去。煮的時候要加三次冷水，餃子浮起來就熟了。我們一共包了八十個水餃，吃不完的放進冰箱冷凍，下次想吃隨時可以煮。",
+      "inputMode": "ime"
+    }
+  ]
+}

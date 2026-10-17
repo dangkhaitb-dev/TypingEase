@@ -1,0 +1,123 @@
+/* cach-go-10-ngon/article.css — khung bài viết dài. Nạp sau tokens.css và base.css.
+
+   CẢNH BÁO: file này được nhiều trang nạp — các bài tiếng Việt (/cach-go-10-ngon/, /wpm-la-gi/,
+   /cach-tang-wpm/, /wpm-bao-nhieu-la-nhanh/), các hướng dẫn tiếng Anh (cùng guides.css), mọi trang
+   pháp lý (tooling/pages/legal.mjs, kể cả bản RTL /ar/…) và /luyen-phim-yeu/ (mượn khung bài viết).
+   Sửa một dòng ở đây là đổi tất cả các trang đó.
+
+   Kiểu đọc của Apple Newsroom / Apple Support (docs/design-system.md): một cột đọc hẹp --w-read,
+   tiêu đề lớn tracking âm, đoạn dẫn 21px màu xám, thân 17px / 1.6. Không hộp, không viền dày:
+   callout là tấm xám nhạt bo tròn, bảng là các hàng tách bằng đường kẻ mảnh, CTA là một khối căn
+   giữa với nút viên thuốc. Màu xanh chỉ cho link và nút. Dùng thuộc tính logic (inline-start/end)
+   để /ar/ đúng chiều. */
+
+.article-header{border-bottom:0}
+.article-main{max-width:calc(var(--w-read) + 2 * var(--pad-x));margin:0 auto;padding:36px var(--pad-x) 40px}
+
+/* ---------- breadcrumb: một dòng chữ nhỏ, xám ---------- */
+.article-main .breadcrumb{flex-wrap:wrap;gap:4px 8px;margin:0 0 48px;color:var(--ink-500);font-size:var(--fs-xs);font-weight:400}
+.article-main .breadcrumb a{color:var(--ink-600);font-weight:400;text-decoration:none;transition:color var(--dur-fast) var(--ease)}
+.article-main .breadcrumb a:hover{color:var(--primary-600);text-decoration:underline;text-underline-offset:3px}
+.article-main .breadcrumb span[aria-hidden]{color:var(--ink-400)}
+
+/* ---------- hero ---------- */
+.article-hero{margin-bottom:56px}
+.article-hero .eyebrow{margin-bottom:12px}
+.article-hero h1{font-size:clamp(34px,5vw,48px);font-weight:700;line-height:1.08;letter-spacing:var(--track-display);margin-bottom:20px;overflow-wrap:break-word;text-wrap:balance}
+.article-lead{max-width:none;margin:0;color:var(--ink-600);font-size:21px;font-weight:400;line-height:1.43;letter-spacing:.004em}
+/* Một số bài (/wpm-bao-nhieu-la-nhanh/, /cach-tang-wpm/) đặt nút hành động ngay dưới đoạn dẫn. */
+.article-hero .article-lead+p{margin:28px 0 0}
+
+/* ---------- thân bài ---------- */
+article section{margin:0 0 56px;scroll-margin-top:80px}
+article h2{font-size:clamp(26px,3vw,32px);font-weight:700;line-height:1.15;letter-spacing:-.02em;margin:0 0 16px;text-wrap:balance}
+article h3{font-size:21px;font-weight:600;line-height:1.3;letter-spacing:var(--track-title);margin:36px 0 10px}
+article p,article li{font-size:17px;line-height:1.6}
+article p{margin:0 0 18px}
+article ul,article ol{margin:0 0 18px;padding-inline-start:22px}
+article li{margin:8px 0;padding-inline-start:2px}
+article li::marker{color:var(--ink-500)}
+article strong{color:var(--ink-900);font-weight:600}
+/* Liên kết trong bài kiểu Apple: chữ xanh, không gạch chân; rê chuột mới hiện gạch chân mảnh. */
+article a:not([class]),.article-main .inline-link{color:var(--link);font-weight:inherit;text-decoration:none;text-underline-offset:3px;text-decoration-thickness:1px;transition:color var(--dur-fast) var(--ease)}
+article a:not([class]):hover,.article-main .inline-link:hover{color:var(--primary-700);text-decoration:underline}
+article a:not([class]):focus-visible,.article-main .inline-link:focus-visible{border-radius:4px}
+article code{padding:2px 6px;border-radius:6px;background:var(--surface-alt);color:var(--ink-900);font:400 .88em var(--font-mono);overflow-wrap:anywhere}
+/* <kbd>: một phím nhỏ, nhạt — mặt trắng, viền mảnh, bóng 1px rất nhẹ ở đáy. */
+article kbd{display:inline-block;min-width:1.6em;padding:0 6px;border:1px solid var(--ink-300);border-radius:6px;background:var(--surface);box-shadow:0 1px 0 var(--ink-200);color:var(--ink-700);font:500 .8em/1.65 var(--font-body);text-align:center;vertical-align:.08em}
+
+/* ---------- khối minh hoạ ---------- */
+.home-row{display:flex;justify-content:space-between;gap:12px;max-width:none;margin:24px 0;padding:22px 32px;border-radius:var(--r-lg);background:var(--surface-alt);color:var(--primary-600);font:500 22px var(--font-mono);letter-spacing:.04em}
+/* Nửa phải của hàng phím cơ sở: chữ trung tính để hai tay tách nhau mà không thêm màu mới. */
+.home-row span{color:var(--ink-700)}
+.hand-map{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin:24px 0}
+.hand-map>div{padding:22px 24px;border-radius:var(--r-lg);background:var(--surface-alt)}
+article .hand-map h3{margin:0 0 10px;color:var(--ink-900);font-size:var(--fs-sm);font-weight:600;letter-spacing:0}
+.hand-map ul{margin:0;padding-inline-start:18px}
+.hand-map li{font-size:15px;line-height:1.5;margin:6px 0;color:var(--ink-700)}
+/* Callout: tấm xám nhạt bo tròn, không viền. */
+.tip-box{margin:24px 0;padding:20px 24px;border-radius:var(--r-lg);background:var(--surface-alt);color:var(--ink-700);font-size:17px;line-height:1.55}
+article p.tip-box{font-size:17px}
+.tip-box>:last-child{margin-bottom:0}
+.tip-box strong{color:var(--ink-900)}
+.tip-box.formula{color:var(--ink-900);font:400 16px/1.7 var(--font-mono);overflow-wrap:anywhere}
+
+/* ---------- bảng (mốc WPM; hướng dẫn tiếng Anh dùng lại) ----------
+   Không hộp ngoài: hàng tiêu đề chữ nhỏ xám trên một đường kẻ đậm hơn, các hàng tách bằng đường kẻ mảnh. */
+.wpm-table{width:100%;table-layout:fixed;border-collapse:collapse;margin:24px 0 0;border:0;background:none}
+.wpm-table th,.wpm-table td{padding:14px 20px 14px 0;border-bottom:1px solid var(--ink-200);vertical-align:top;text-align:start;font-size:15px;line-height:1.55;color:var(--ink-700);overflow-wrap:anywhere}
+.wpm-table :is(th,td):last-child{padding-inline-end:0}
+[dir=rtl] .wpm-table th,[dir=rtl] .wpm-table td{padding:14px 0 14px 20px}
+[dir=rtl] .wpm-table :is(th,td):last-child{padding-inline-end:0}
+.wpm-table thead th,.wpm-table:not(:has(thead)) tbody:first-of-type>tr:first-child>th{padding-top:0;padding-bottom:10px;border-bottom-color:var(--ink-300);color:var(--ink-500);font-size:var(--fs-xs);font-weight:600;line-height:1.4}
+.wpm-table tbody th{font-size:15px;font-weight:600;color:var(--ink-900)}
+.wpm-table th:first-child,.wpm-table td:first-child{width:31%}
+.wpm-table td:first-child{font-weight:600;color:var(--ink-900)}
+
+/* ---------- FAQ: các câu tách bằng đường kẻ mảnh ---------- */
+.faq-list{display:block;border-top:1px solid var(--ink-200)}
+.faq-list>div{padding:22px 0;border-bottom:1px solid var(--ink-200)}
+article .faq-list h3{margin:0 0 6px;font-size:19px}
+.faq-list p{margin:0;color:var(--ink-700);font-size:17px}
+
+/* ---------- CTA cuối bài: khối xám căn giữa + nút viên thuốc ---------- */
+.article-cta{margin-top:72px;padding:56px 40px;border-radius:var(--r-xl);background:var(--surface-alt);text-align:center}
+.article-cta .eyebrow{margin-bottom:10px;color:var(--primary-600)}
+article .article-cta h2,.article-main .article-cta h2{margin:0 auto 12px;max-width:520px;font-size:clamp(28px,3.4vw,36px)}
+.article-cta p:not(.eyebrow){max-width:500px;margin:0 auto 28px;color:var(--ink-600);font-size:19px;line-height:1.45}
+.article-cta .primary-button{margin-top:0;text-decoration:none}
+.article-cta-actions{display:flex;align-items:center;justify-content:center;gap:24px;flex-wrap:wrap}
+.article-cta-actions .primary-button{margin-top:0}
+
+/* ---------- đáp ứng ---------- */
+@media (max-width:900px){
+  .article-main{padding:28px var(--pad-x) 32px}
+  .article-main .breadcrumb{margin-bottom:36px}
+  .article-hero{margin-bottom:44px}
+  article section{margin-bottom:48px}
+  .hand-map{grid-template-columns:1fr}
+}
+@media (max-width:620px){
+  .article-main{padding-inline:20px}
+  .article-hero h1{font-size:34px}
+  .article-lead{font-size:19px}
+  article h2{font-size:26px}
+  article h3{font-size:19px}
+  .home-row{padding:18px 20px;font-size:18px}
+  .tip-box{padding:18px 20px}
+  .wpm-table th,.wpm-table td{padding:12px 14px 12px 0;font-size:var(--fs-sm)}
+  [dir=rtl] .wpm-table th,[dir=rtl] .wpm-table td{padding:12px 0 12px 14px}
+  .wpm-table thead th{font-size:var(--fs-xs);overflow-wrap:normal;hyphens:auto}
+  .wpm-table th:first-child,.wpm-table td:first-child{width:36%}
+  .article-cta{margin-top:56px;padding:40px 24px}
+  .article-cta p:not(.eyebrow){font-size:17px}
+}
+
+/* Trang pháp lý (tooling/pages/legal.mjs): ngày cập nhật + câu "bản tiếng Anh có hiệu lực" — chú thích nhỏ, không hộp. */
+.legal-meta{display:block;margin:20px 0 0;color:var(--ink-500);font-size:var(--fs-sm);font-weight:400;line-height:1.6}
+.legal-meta time{color:var(--ink-700);font-weight:500}
+
+/* RTL (/ar/…): chữ Ả Rập nối nét, nên bỏ letter-spacing; mũi tên › của breadcrumb lật lại để chỉ
+   đúng chiều đọc. */
+[dir=rtl] .article-main :is(.breadcrumb,.eyebrow,.legal-meta,.wpm-table th,.hand-map h3,.article-lead,h1,h2,h3){letter-spacing:0}
+[dir=rtl] .article-main .breadcrumb span[aria-hidden]{display:inline-block;transform:scaleX(-1)}

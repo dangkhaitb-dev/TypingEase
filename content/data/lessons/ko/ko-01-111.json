@@ -1,0 +1,61 @@
+{
+  "id": "ko-01-111",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "ko-01-111",
+  "title": "Shift와 된소리 자모",
+  "summary": "Shift를 누른 채 이미 배운 기본 자음으로 된소리를 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "hangul",
+  "intro": "Shift를 누른 채 이미 배운 기본 자음으로 된소리를 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-111",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 ㄱ·ㄷ·ㅂ·ㅅ·ㅈ 키를 누르면 된소리 ㄲ·ㄸ·ㅃ·ㅆ·ㅉ이 나옵니다.",
+      "content": "ㄱㄲ ㄷㄸ ㅂㅃ ㅅㅆ ㅈㅉ ㄲㄸ ㄱㄲ ㄲㄸ ㅈㅉ ㅅㅆ ㅂㅃ ㄷㄸ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 이미 배운 기본 키로 된소리를 입력합니다.",
+      "content": "ㄲㄸㅃ ㅆㅉ ㄲㄲ ㄸㄸ ㅃㅆ ㅉㄲ ㄲㄸㅃ ㅉㄲ ㅃㅆ ㄸㄸ ㄲㄲ ㅆㅉ ㄲㄲ ㅆㅉ ㄲㄸㅃ ㅉㄲ ㅃㅆ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 이미 배운 기본 키로 된소리를 입력합니다.",
+      "content": "ㅆㅉ ㄲㅃ ㄸㅆ ㅉㅉ ㅃㄲ ㄸㅃ ㄱㄲ ㅆㅉ ㄱㄲ ㄸㅃ ㅃㄲ ㅉㅉ ㄸㅆ ㄲㅃ ㄸㅆ ㄲㅃ ㅆㅉ ㄱㄲ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 이미 배운 기본 키로 된소리를 입력합니다.",
+      "content": "ㅃㅃ ㄸㅉ ㄲㅆ ㅆㅆ ㅉㄸ ㄲㄸㅃ ㅂㅃ ㅃㅃ ㅂㅃ ㄲㄸㅃ ㅉㄸ ㅆㅆ ㄲㅆ ㄸㅉ ㄲㅆ ㄸㅉ ㅃㅃ ㅂㅃ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 자음을 눌러 된소리를 입력합니다. 진짜 낱말을 입력해 보세요.",
+      "content": "아빠 오빠 토끼 꼬리 따다 쓰다 짜다 쌀 싸다",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 자음을 눌러 된소리를 입력합니다. 짧은 문장을 입력해 보세요.",
+      "content": "오빠가 토끼를 따라 간다 아빠가 쌀을 산다",
+      "inputMode": "hangul"
+    }
+  ]
+}

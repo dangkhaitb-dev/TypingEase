@@ -1,0 +1,44 @@
+{
+  "id": "vi-12-008",
+  "unit": "u12",
+  "group": "g2",
+  "order": 168,
+  "slug": "vi-12-008",
+  "title": "Lịch trình và kế hoạch",
+  "summary": "Xây dựng năng lực \"Schedules and Plans\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuyển giao sang định dạng văn bản lịch trình công tác có nhiều mốc thời gian và địa điểm.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 16,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Schedules and Plans\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuyển giao sang định dạng văn bản lịch trình công tác có nhiều mốc thời gian và địa điểm.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động bài học với lịch trình công tác nước ngoài của đoàn xúc tiến thương mại quốc tế.",
+      "content": "Lịch trình công tác nước ngoài của đoàn xúc tiến thương mại quốc tế: Xuất phát từ sân bay Nội Bài lúc sáu giờ sáng thứ Hai; đến Tokyo lúc mười hai giờ ba mươi theo giờ địa phương; nghỉ tại khách sạn Hoàng Gia.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với kế hoạch làm việc chi tiết trong ba ngày làm việc tại Nhật Bản.",
+      "content": "Kế hoạch làm việc chi tiết trong ba ngày làm việc tại Nhật Bản: Ngày đầu tiên tham dự diễn đàn hợp tác kinh tế song phương; ngày thứ hai khảo sát thực tế tại nhà máy sản xuất chip bán dẫn hiện đại; ngày thứ ba ký kết biên bản ghi nhớ hợp tác chiến lược với các đối tác hàng đầu trong lĩnh vực năng lượng sạch. Buổi tối, đoàn rà soát tài liệu, xác nhận lịch xe và chuẩn bị câu hỏi cho phiên trao đổi tiếp theo.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ lịch trình công tác theo từng dòng: thứ, giờ và hoạt động.",
+      "content": "LỊCH TRÌNH CÔNG TÁC\nThứ Hai, 06:00: Khởi hành từ sân bay Nội Bài.\nThứ Hai, 12:30: Đến Tokyo và nhận phòng khách sạn Hoàng Gia.\nThứ Ba, 09:00: Tham dự diễn đàn hợp tác kinh tế song phương.\nThứ Tư, 14:00: Khảo sát nhà máy sản xuất chip bán dẫn.\nThứ Năm, 10:00: Gặp đối tác tại trung tâm nghiên cứu năng lượng sạch.\nThứ Năm, 16:30: Tổng kết chuyến thăm, thống nhất đầu việc và trở về khách sạn.\nThứ Sáu, 08:00: Làm thủ tục trả phòng, sau đó di chuyển ra sân bay.",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    }
+  ]
+}

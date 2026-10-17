@@ -1,0 +1,73 @@
+{
+  "id": "vi-06-jump",
+  "unit": "u6",
+  "group": "g4",
+  "order": 95,
+  "slug": "vi-06-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 24,
+  "inputMode": "telex",
+  "intro": "Gõ trọn lời nhắn buổi sáng nhắc cả nhóm nộp bảng chấm công đúng hạn.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ trọn lời nhắn buổi sáng nhắc cả nhóm nộp bảng chấm công đúng hạn.",
+      "content": "Chào buổi sáng cả nhóm. Nhắc mọi người nộp lại bảng chấm công tuần qua trước mười hai giờ trưa nay. Phòng nhân sự cần tổng hợp số liệu để hoàn tất báo cáo lương tháng này đúng hẹn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua lời nhắc công việc cuối tuần.",
+      "content": "Lời nhắc công việc cuối tuần: toàn thể nhân viên lưu ý sao lưu toàn bộ dữ liệu quan trọng lên máy chủ đám mây của công ty trước khi ra về. Tắt hết các thiết bị điện không cần thiết và khóa cửa sổ văn phòng cẩn thận.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với biên bản cuộc họp nội bộ.",
+      "content": "Biên bản cuộc họp nội bộ: trưởng phòng ghi nhận những nỗ lực vượt bậc của toàn đội trong việc hoàn thành giai đoạn thử nghiệm đầu tiên. Thư ký ghi rõ giờ bắt đầu, thời lượng từng mục và người chịu trách nhiệm theo dõi.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên bản kế hoạch hành động chi tiết tháng này.",
+      "content": "Bản kế hoạch hành động chi tiết tháng này: tuần đầu tiên tập trung hoàn thiện tài liệu hướng dẫn sử dụng và kiểm tra tính tương thích trên các nền tảng di động.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành thư tri ân khách hàng nhân dịp kỷ niệm năm năm thành lập công ty.",
+      "content": "Kính gửi quý khách hàng thân thiết, nhân dịp kỷ niệm năm năm thành lập, công ty chúng tôi xin trân trọng gửi lời tri ân sâu sắc nhất đến sự đồng hành quý báu của quý vị.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Làm quen chủ đề qua xác nhận thay đổi lịch làm việc.",
+      "content": "Xác nhận thay đổi lịch làm việc: cuộc họp chiến lược quý tư sẽ được dời sang chín giờ sáng thứ Sáu tuần sau tại phòng hội thảo lớn thay vì chiều thứ Năm như thông báo cũ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên báo cáo trạng thái hoạt động của trung tâm chăm sóc khách hàng.",
+      "content": "Báo cáo trạng thái hoạt động của trung tâm chăm sóc khách hàng: trong tuần qua tổng đài đã tiếp nhận và giải quyết thành công hơn một nghìn cuộc gọi yêu cầu hỗ trợ kỹ thuật từ người tiêu dùng trên toàn quốc.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Khởi động bài học với kế hoạch hành động tiếp theo cho toàn công ty.",
+      "content": "Kế hoạch hành động tiếp theo cho toàn công ty: đẩy mạnh chuyển đổi số trong công tác quản lý tài liệu, nâng cao kỹ năng sử dụng công nghệ mới và xây dựng môi trường làm việc sáng tạo, chuyên nghiệp cho mọi thành viên.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,89 @@
+{
+  "id": "es-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 24,
+  "slug": "es-03-004",
+  "title": "Tecla muerta ´: ú",
+  "summary": "Aprende ú: pulsa la tecla muerta ´ y después la u.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprende ú: pulsa la tecla muerta ´ y después la u.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-004",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Pulsa la tecla ´ (a la derecha de la P), suéltala y escribe u: así sale ú.",
+      "content": "úuúuú úúúúú úfúfú úúu fúúú uúúú"
+    },
+    {
+      "type": "standard",
+      "text": "Alterna las teclas nuevas con las que ya conoces y vuelve a la posición de referencia.",
+      "content": "úúúúúf úfú úú aú eúsú úe úúúúúe úúfúú új úús úú fdfdú fsú"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "el menú del día incluye una ensalada fría"
+    },
+    {
+      "type": "standard",
+      "text": "Alterna las teclas nuevas con las que ya conoces y vuelve a la posición de referencia.",
+      "content": "súúúj úúúf úúd údaú úúúsf úúú dú újúúa úúú úúf aú úúúúú"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe este texto en español con las teclas que ya conoces.",
+      "content": "la música suena fuerte en el último piso del edificio"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "pl-01-011",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "pl-01-011",
+  "title": "Klawisz AltGr i litera ą",
+  "summary": "Poznaj klawisz AltGr (obok spacji) i wpisz nim polską literę ą (AltGr + a).",
+  "newKeys": [
+    "altgr",
+    "ą"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "ą"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisz AltGr (obok spacji) i wpisz nim polską literę ą (AltGr + a).",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-011",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "altgr",
+      "text": "AltGr to prawy klawisz modyfikujący, obok spacji. Przytrzymaj go i naciśnij a, aby wpisać ą.",
+      "content": "ąaą ąąa ąaąą faą ąfąą ąą ąą ąąf ąąą ąfą fąf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ą",
+      "text": "Przytrzymaj AltGr (prawy Alt) i naciśnij a, aby wpisać ą. Potem wróć do pozycji wyjściowej.",
+      "content": "ąąąą ąąą ąą ąą ąą ąą ąą ąą",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ą z poznanymi klawiszami.",
+      "content": "ąf ąąąą ąą ąąą ąąąą ąąf ąąą ąąfą ąff ąą ffąą fą fąąf ff ąfąą"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ą z poznanymi klawiszami.",
+      "content": "ąl ąląą ąąąą ąąą hąlą ll ąąh ąh ąlą ąąlą ąą hhąh ąąhą hll ąąl hhąą lh"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz krótkie słowa z ą.",
+      "content": "dąb wąs kąt ląd sąd mąka wąska są dają brąz gąska idą tam"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ą z poznanymi klawiszami.",
+      "content": "ąe ąąąą eeąą ąąee ąąą ąą ąąe ąeąą ąąąe ąąąą ąąą ąąą eą ąąą ąeą ąąą ąą"
+    },
+    {
+      "type": "standard",
+      "text": "Sprawdź ą razem z poznanymi klawiszami.",
+      "content": "ąąąą dd ąąą ądą ąą ąd ddąą dąąą ąądd ąąą ąąąd ąąd ąą ąąąą ąąąą ądąą"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "oni idą do domu a ja mam wąski kąt przy stole tu"
+    }
+  ]
+}

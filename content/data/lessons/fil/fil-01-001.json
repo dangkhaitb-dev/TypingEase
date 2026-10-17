@@ -1,0 +1,79 @@
+{
+  "id": "fil-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "fil-01-001",
+  "title": "Mga gabay na key na f, j at Espasyo",
+  "summary": "Kilalanin ang mga gabay na key na f at j pati ang Espasyo, at sanayin ang tatlo nang magkakasama.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Kilalanin ang mga gabay na key na f at j pati ang Espasyo, at sanayin ang tatlo nang magkakasama.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-001",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "ffff ffff ffff ffff ffff ffff f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Pindutin ang Espasyo gamit ang hinlalaki upang paghiwalayin ang mga pangkat ng titik.",
+      "content": "f j ff jj f j ff jj f j ff jj f j f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fff jjfj jf ffj jfjj ff fjj fjjf ff jjf jjff fj jfj jfff jj fjj fff"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jfj jfff jj fjj fffj jf jjf ffjj fj jff fjjf jj fff jjfj jf ffj jfjj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fff jjfj jf ffj jfjj ff fjj fjjf ff jjf jjff fj jfj jfff jj fjj fffj j"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jfj jfff jj fjj fffj jf jjf ffjj fj jff fjjf jj fff jjfj jf ffj jfjj ff"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    }
+  ]
+}

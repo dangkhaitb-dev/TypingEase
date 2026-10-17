@@ -1,0 +1,84 @@
+{
+  "id": "br-01-018",
+  "unit": "u1",
+  "group": "g1",
+  "order": 21,
+  "slug": "br-01-018",
+  "title": "Tecla morta: til",
+  "summary": "Pratique a tecla morta do til com as vogais ã, õ que você já aprendeu.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Pratique a tecla morta do til com as vogais ã, õ que você já aprendeu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-018",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Aperte a tecla ~ (à direita do Ç), solte e aperte a barra de espaço: aparece ~.",
+      "content": "~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ~"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte a tecla ~ (à direita do Ç), solte e depois aperte a vogal: aparece a vogal com til.",
+      "content": "õãõ ãõã ããã õõãã ããõã õããõ õãã ãã õãõã õõ ãõ"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte a tecla ~ (à direita do Ç) e depois uma vogal: ã, õ.",
+      "content": "ããã õõ õõ aõõã õaãõ ãaã ãã ãõa õõ ããaã aa õãã ãõõõ aõõ"
+    },
+    {
+      "type": "standard",
+      "text": "Alterne vogais com acento e vogais simples.",
+      "content": "õaã õaõõ ão õãa aã õõ õõã õõõõ ãõõ ãã õã õõãã ãõ oõõõ ããoõ õã"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a mãe e o irmão comem pão com limão e sal"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "ele põe o pão na mão da mãe e o irmão sorri"
+    }
+  ]
+}

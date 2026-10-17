@@ -1,0 +1,55 @@
+{
+  "id": "bn-03-008",
+  "unit": "u3",
+  "group": "g1",
+  "order": 53,
+  "slug": "bn-03-008",
+  "title": "কী অনুশীলন · এন্টার",
+  "summary": "Introduce committed targets তে; review য ত ন দ স র. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets তে; review য ত ন দ স র. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-03-008",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "প্রতিটি লাইনের শেষে এন্টার চাপুন।",
+      "content": "বই\nকল\nবন\nঘর\nজল\nফল\nমন\nদিন\nরাত\nকাল\nমাঠ\nপথ",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "প্রতিটি লাইনের শেষে এন্টার চাপুন।",
+      "content": "আমি বই পড়ি\nতুমি গান গাও\nসে মাঠে খেলে\nমা রান্না করেন\nবাবা বাজারে যান",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "প্রতিটি লাইনের শেষে এন্টার চাপুন।",
+      "content": "সকালে রোদ উঠল\nপাখিরা গান গায়\nনদীতে নৌকা চলে\nমাঠে গরু চরে\nগাছে ফুল ফোটে",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "প্রতিটি লাইনের শেষে এন্টার চাপুন।",
+      "content": "আজ ছুটির দিন\nআমরা বাগানে যাব\nসেখানে ফল পাড়ব\nবিকালে ঘরে ফিরব\nরাতে গল্প শুনব",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "প্রতিটি লাইনের শেষে এন্টার চাপুন।",
+      "content": "চাল ও ডাল\nতেল ও নুন\nআলু ও পেঁয়াজ\nডিম ও মাছ\nদুধ ও চিনি",
+      "linebreak": "enter"
+    }
+  ]
+}

@@ -1,0 +1,80 @@
+{
+  "id": "en-01-011",
+  "unit": "u1",
+  "group": "g3",
+  "order": 10,
+  "slug": "en-01-011",
+  "title": "P",
+  "summary": "Locate Z and Enter; use changing transitions and controlled English, then record a fresh per-key check.",
+  "newKeys": [
+    "p"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Locate Z and Enter; use changing transitions and controlled English, then record a fresh per-key check.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-011",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Find p and return to the home position. Type each target carefully.",
+      "content": "pppp pp ffpf fppp pfpp pfpf ppff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "op po pppp ooop popp pp oop popo ppp ppoo oo oopg opp pppo"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "ppp jpp pppp pp pjpp pppj jppp ppj ppjp jp"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "pp op peop ppoe po ppo pppp ppp ppop pe oppp popo"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "people play at the park she is happy to help us"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "please keep the paper at the top of the page"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-003",
+  "unit": "u11",
+  "group": "g1",
+  "order": 151,
+  "slug": "vi-11-003",
+  "title": "Đường mòn và thư viện",
+  "summary": "Xây dựng năng lực \"Trail and Library\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 135 âm tiết, mở rộng vốn từ sang cảnh quan thiên nhiên và quản lý thư viện.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 18,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Trail and Library\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 135 âm tiết, mở rộng vốn từ sang cảnh quan thiên nhiên và quản lý thư viện.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục dẫn vào thư viện cộng đồng trong thung lũng.",
+      "content": "Con đường mòn rợp bóng cây xanh dẫn dần vào khu thư viện cộng đồng nằm yên ả giữa thung lũng. Hoa dại hai bên lối đi tỏa hương nhẹ mỗi khi gió chiều thổi qua. Khách đến thư viện thường dừng chân ở cổng gỗ cũ để đọc bảng giờ mở cửa. Bên trong, ánh nắng lọc qua cửa sổ lớn làm trang sách thêm dễ đọc.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ sức bền qua đoạn văn liên tục về đường mòn lát đá dẫn tới thư viện.",
+      "content": "Con đường mòn lát đá cuội uốn lượn dưới tán rừng thông reo rì rào dẫn lối du khách đến với thư viện cộng đồng vùng cao. Nơi đây là điểm hẹn quen thuộc của những người yêu sách, yêu thiên nhiên và mong muốn tìm kiếm một chốn bình yên để lắng đọng tâm hồn sau những lo toan bộn bề của cuộc sống phố thị. Không gian đọc sách ngoài trời được bố trí những chiếc ghế gỗ mộc mạc đặt xen kẽ bên các khóm hoa cúc dại rực rỡ sắc vàng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về khuôn viên thư viện hòa với thiên nhiên.",
+      "content": "Khuôn viên thư viện được thiết kế hòa hợp với cỏ cây hoa lá xung quanh. Ghế đá thấp đặt dưới tán bằng lăng để độc giả đọc ngoài trời khi nắng dịu. Lối đi lát đá tránh làm xói đất sau mưa, đồng thời giữ vẻ mộc mạc của thung lũng. Ban quản lý nhắc khách không bẻ cành và bỏ rác đúng thùng phân loại gần cổng. Độc giả có thể chọn góc đọc ngoài trời hoặc tìm tài liệu trong phòng yên tĩnh. Thủ thư hướng dẫn tra cứu mục lục, ghi mã sách và mượn đúng quy trình để mỗi chuyến ghé thăm thư viện đều thuận tiện.",
+      "inputMode": "telex"
+    }
+  ]
+}

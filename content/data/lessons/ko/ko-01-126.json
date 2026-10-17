@@ -1,0 +1,43 @@
+{
+  "id": "ko-01-126",
+  "unit": "u1",
+  "group": "g1",
+  "order": 27,
+  "slug": "ko-01-126",
+  "title": "자모 조합 복습 15",
+  "summary": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-126",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "넓은 운동장에서 친구들과 신나게 공을 차요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "땀을 흘린 뒤 시원한 물을 한 컵 마셔요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "축구 경기가 끝나면 두 팀이 서로 인사해요",
+      "inputMode": "hangul"
+    }
+  ]
+}

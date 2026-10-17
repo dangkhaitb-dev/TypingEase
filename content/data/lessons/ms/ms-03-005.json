@@ -1,0 +1,112 @@
+{
+  "id": "ms-03-005",
+  "unit": "u3",
+  "group": "g1",
+  "order": 25,
+  "slug": "ms-03-005",
+  "title": "Huruf besar: J, K, L",
+  "summary": "Huruf besar: J, K, L. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "newKeys": [
+    "J",
+    "K",
+    "L"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Huruf besar: J, K, L. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-03-005",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "J",
+      "text": "Tahan Shift dengan jari kelingking di sebelah tangan yang bertentangan, kemudian tekan j untuk menaip J. Letakkan semula jari pada kekunci panduan.",
+      "content": "Jff fJ fJJ fJJJ JJJ JJfJ JJJJ JJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "K",
+      "text": "Tahan Shift dengan jari kelingking di sebelah tangan yang bertentangan, kemudian tekan k untuk menaip K. Letakkan semula jari pada kekunci panduan.",
+      "content": "KfKKK fKK KKKK KK KfK Kf KKK",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "L",
+      "text": "Tahan Shift dengan jari kelingking di sebelah tangan yang bertentangan, kemudian tekan l untuk menaip L. Letakkan semula jari pada kekunci panduan.",
+      "content": "LLL LLLL fLLL LLfL LfLL LfL LL LLf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "Jj Lfj LKKf jJL LfjL jKl JfjK fjjf Lf jK fKfK Kjj jL jJf LJ KjL jKjj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "Kf FJ fJ Ljj jLF jJfj KjJj LKLj jJj LJ jfLf jLJ jj jf KLj LLF"
+    }
+  ]
+}

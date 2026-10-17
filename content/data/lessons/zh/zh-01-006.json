@@ -1,0 +1,99 @@
+{
+  "id": "zh-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "zh-01-006",
+  "title": "键位练习：r、t、y",
+  "summary": "按顺序学习 r、t、y，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "r",
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "按顺序学习 r、t、y，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-006",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "找到 r 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "rrrr rrrr rrrr rrrr rrrr rrrr rrrr",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "找到 t 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "tttt tttt tttt tttt tttt tttt tttt",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "找到 y 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "yyyy yyyy yyyy yyyy yyyy yyyy yyyy",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ystt yy; rytr tt ty ystt ty tt rytr yy; rytr yy; ystt"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "lyry lrrt yyt tty ryrt lyry ryrt tty yyt lrrt yyt lrrt"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "rry tt rr yqy yyq rrr rry rrr yyq yqy rr tt rr tt rry"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ryty yy ryf ff tty fff rr ryty rr fff tty ff ryf yy ryf"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ttr tt;r yrt rrtr yyrt ttr yyrt rrtr yrt tt;r yrt tt;r"
+    },
+    {
+      "type": "standard",
+      "text": "把已学的字母拼成真实的拼音音节来输入。",
+      "content": "ta te ye ya re he da ta le ke ye de ge ta ya re se ha ke"
+    }
+  ]
+}

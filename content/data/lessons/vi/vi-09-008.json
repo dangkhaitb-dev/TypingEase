@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-008",
+  "unit": "u9",
+  "group": "g2",
+  "order": 128,
+  "slug": "vi-09-008",
+  "title": "Câu biến thể mẫu",
+  "summary": "Xây dựng năng lực \"Variant Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Gõ tốc độ trên các câu có cấu trúc biến thể nhẹ, đòi hỏi vừa duy trì tốc độ vừa nhận diện sự thay đổi.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Variant Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Gõ tốc độ trên các câu có cấu trúc biến thể nhẹ, đòi hỏi vừa duy trì tốc độ vừa nhận diện sự thay đổi.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi câu dự báo thời tiết có cấu trúc biến đổi nhẹ.",
+      "content": "Hôm nay trời nắng đẹp. Ngày mai thời tiết chuyển gió mùa. Cuối tuần dự báo sẽ có mưa rào rải rác. Đêm nay se lạnh dần. Sáng kia sương mù dày.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi câu kể lịch sinh hoạt sáng, chiều và tối.",
+      "content": "Buổi sáng tôi đọc sách tại thư viện. Buổi chiều tôi tham gia lớp học lập trình trực tuyến. Buổi tối tôi cùng gia đình quây quần bên mâm cơm ấm cúng và chia sẻ những câu chuyện vui trong ngày. Con phố lúc tờ mờ còn yên tĩnh, nhưng đến trưa các cửa hàng đã đông người. Cuối tuần cả nhà chọn đi bộ quanh hồ rồi ghé quầy báo cũ. Thứ Hai họp nhóm sớm; thứ Tư nộp bài tập; chủ nhật nấu ăn tại nhà.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về tính linh hoạt khi cấu trúc câu thay đổi.",
+      "content": "Bài tập biến thể cấu trúc câu thử thách tính linh hoạt của phản xạ gõ phím khi người học phải liên tục điều chỉnh nhịp điệu theo những thay đổi bất ngờ trong câu chữ. Đây là bước đệm quan trọng giúp chuyển giao từ việc gõ máy rập khuôn sang khả năng thích ứng linh hoạt với mọi văn bản thực tế trong cuộc sống. Câu ngắn cắt nhịp; câu dài kéo chữ; câu hỏi dừng ở dấu hỏi. Người học kiểm tra lại dòng vừa gõ rồi sửa chỗ lệch dấu.",
+      "inputMode": "telex"
+    }
+  ]
+}

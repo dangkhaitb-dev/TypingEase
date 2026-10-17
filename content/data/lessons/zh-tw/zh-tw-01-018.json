@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-01-018",
+  "unit": "u1",
+  "group": "g1",
+  "order": 19,
+  "slug": "zh-tw-01-018",
+  "title": "Shift 與上層符號",
+  "summary": "Narrow committed-output lesson: 的",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 的",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-018",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "按住 Shift 再按 ㄝ 輸入「，」、按 ㄡ 輸入「。」、按 ㄥ 輸入「？」、按 ㄅ 輸入「！」。",
+      "content": "，。？！ ，，。。 ？？！！ ，。？！ ，。 ？！ ，。？！",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "按住 Shift，再輸入已學按鍵的上層符號。",
+      "content": "，，。。 ？？！！ ，。，。 ？！？！ 。，？！ ，。？！ ，，？？ 。。！！ ，。？！",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "按住 Shift 再按 ㄝ 輸入「，」，按住 Shift 再按 ㄡ 輸入「。」。",
+      "content": "今天天氣很好，我們一起去公園散步。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "Shift+ㄥ 輸入「？」，Shift+ㄅ 輸入「！」，Shift+ㄝ 輸入「，」。",
+      "content": "你吃飯了嗎？我還沒吃，一起去吃吧！",
+      "inputMode": "ime"
+    }
+  ]
+}

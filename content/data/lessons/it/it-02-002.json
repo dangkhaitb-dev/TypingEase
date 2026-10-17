@@ -1,0 +1,110 @@
+{
+  "id": "it-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 20,
+  "slug": "it-02-002",
+  "title": "Cifre: 4, 5, 6",
+  "summary": "Impara i tasti 4, 5, 6 e usali con i tasti già studiati.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti 4, 5, 6 e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-02-002",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Trova 4 e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "f4f ffff 44f 44 4f44 4444 4ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Trova 5 e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "555 5555 j5 55j5 j555 55 5j5 555j",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Trova 6 e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ffff f6f6 666f ff 66f6 666 6666 66 6f f666 66f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "415 264 561 32 654 146 25 456 613 542 65 341 526"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "546 21 653 415 62 561 234 645 51 326 465 14 563"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "164 25 456 312 65 541 236 64 153 426 615 42 356"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "245 61 534 126 46 651 314 56 462 235 51 643 26"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "365 14 546 231 65 452 613 26 541 324 65 136 42"
+    }
+  ]
+}

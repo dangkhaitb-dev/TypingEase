@@ -1,0 +1,118 @@
+{
+  "id": "fr-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 25,
+  "slug": "fr-02-003",
+  "title": "Chiffres : 7, 8, 9",
+  "summary": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+  "newKeys": [
+    "7",
+    "8",
+    "9"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-02-003",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "7",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "f7 7ff7 777 7777 77f7 77ff f77 7f7 77 77f ff77",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "8",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "f88 8888 88 888 ff8 ff88 88ff 8f8f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "9",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "ff 9999 9f ff9 f9f fff 999f 99f 99 99f9 999",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "887f ffff 88 8ff 7f 77 97 ff79 f7 fff 998"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "9979 jjj7 jj7 9j 8888 777 jjj 78 8j7 jj j98 99jj j78 7f88 99 9877 99j7 89jj"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "la salle compte 27 tables et 89 chaises pour les invités"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le bus 78 arrive à 9 heures et le bus 96 part à 17 heures"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "97 777f 7f ff 99f r8f f9f ff9 8f 778r f7 88r8 f87f fff 88f7 7997 f7f"
+    }
+  ]
+}

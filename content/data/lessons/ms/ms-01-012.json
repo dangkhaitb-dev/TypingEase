@@ -1,0 +1,113 @@
+{
+  "id": "ms-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "ms-01-012",
+  "title": "Huruf: v, b, n",
+  "summary": "Huruf: v, b, n. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Huruf: v, b, n. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-012",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "vvvv fvv fvvv vvv vfv vv vvvf vvfv vfvv fv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "bbbf bfb bbf fbb fb bbbb bb bfbb bbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "nf nnnf nn nnnn nffn fn nnfn nnn nnf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fv jbf bfjb vn nbn fbfb vb njvf bnnb nvn ff bbj nbnf jf"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fnfj fjf bv jnvb nbn vbvv nbnn bjb nn jff nv bffn jb bb"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "njb bn jnfj bf bnj jfvj bb jnf bj vfj vv ffbv fv nbjv nv"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "njb jnjf jvj fbvn jfb bvjj vn bn jjf jvf nj jj vjj bv nj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fnj fjbv vfbb fv bbvf vbv jfvb fvj bj nvbj fbfn vff fv"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "ibu dan bapa bangun pagi untuk kerja dengan baik"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "saya belajar baca buku dan bunga ada di kebun"
+    }
+  ]
+}

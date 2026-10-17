@@ -1,0 +1,110 @@
+{
+  "id": "nl-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "nl-01-009",
+  "title": "Toetsen x, c, v",
+  "summary": "Leer de nieuwe toetsen x, c, v en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "x",
+    "c",
+    "v"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen x, c, v en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-009",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Toets oefenen: x.",
+      "content": "xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Toets oefenen: c.",
+      "content": "cccc cccc cccc cccc cccc cccc cccc cccc cccc c",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Toets oefenen: v.",
+      "content": "vvvv vvvv vvvv vvvv vvvv vvvv vvvv vv",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "xxxc cvvv cccx xcvx vvxx vvcc xk vv cc ccxx"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "xc xxv cvc xxvv vcvv vcvx xs vvvx ccxv vvvv vv xxx xx ccvc xvxc vxcv vvv"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "xx xxc xxcc vx ccvx xxcv vxv vvz vvc vvvv zz cccv vv vvx"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "vxv cx cccx vvc cc cvxx cxcv xv ccc ccvx vvv vx ccx vc vvcy vvxx vv xxc xx"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "vvx xxvc vvcx oov cvxc ccxc xx xv ccc vvv cc vv cv cvcc vvc cx vccx xxv"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "voor de school is veel licht de lucht is koud"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "de vis is vers het ijs is koud het licht is uit"
+    }
+  ]
+}

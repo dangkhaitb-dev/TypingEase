@@ -1,0 +1,5 @@
+// The eleven real screens shown in the reference-sized homepage carousel.
+export const productScreens={
+ vi:[['course','Lộ trình','/bai-hoc/'],['practice','Luyện tự do','/luyen-tu-do/'],['test','Kiểm tra tốc độ','/kiem-tra-toc-do-go/'],['progress','Tiến độ','/tien-do/'],['lesson','Bài học','/hoc/'],['games','Trò chơi','/tro-choi/'],['weak','Luyện phím yếu','/luyen-phim-yeu/'],['touch','Gõ 10 ngón','/cach-go-10-ngon/'],['faster','Tăng tốc độ','/cach-tang-wpm/'],['wpm','Hiểu về WPM','/wpm-la-gi/'],['average','Tốc độ của bạn','/wpm-bao-nhieu-la-nhanh/']],
+ en:[['course','Your course','/lessons/'],['practice','Free practice','/practice/'],['test','Typing test','/typing-test/'],['progress','Your progress','/progress/'],['lesson','Typing lessons','/learn/'],['games','Typing games','/typing-games/'],['about','About TypingEase','/about/'],['touch','Touch typing','/touch-typing/'],['faster','Type faster','/how-to-type-faster/'],['wpm','What is WPM?','/what-is-wpm/'],['average','Typing speed','/average-typing-speed/']]
+};

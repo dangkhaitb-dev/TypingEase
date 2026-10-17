@@ -1,0 +1,43 @@
+{
+  "id": "ko-01-130",
+  "unit": "u1",
+  "group": "g1",
+  "order": 31,
+  "slug": "ko-01-130",
+  "title": "자모 조합 복습 19",
+  "summary": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "배운 자모로 만든 자연스러운 한글 문장을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-130",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "오늘 저녁에는 엄마와 된장찌개를 끓여요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "두부와 호박을 송송 썰어 끓는 냄비에 넣어요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "온 가족이 식탁에 둘러앉아 저녁을 먹어요",
+      "inputMode": "hangul"
+    }
+  ]
+}

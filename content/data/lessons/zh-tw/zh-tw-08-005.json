@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-005",
+  "unit": "u8",
+  "group": "g1",
+  "order": 77,
+  "slug": "zh-tw-08-005",
+  "title": "散步沿路的觀察",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-005",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "晚飯後，我和爺爺沿著河邊散步。河面上有幾隻白鷺鷥站在石頭上，一動也不動，好像在等魚游過來。爺爺說，以前這條河很髒，經過整理以後才變得這麼乾淨。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "走到橋邊，我們看見一群年輕人在跳舞，旁邊還有人在練習吹笛子。草地上有小朋友在放風箏，風箏飛得高高的，在晚霞中顯得特別漂亮。爺爺停下腳步，看了好一會兒。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "回家的路上，路燈一盞盞亮了起來。我們經過一家老雜貨店，爺爺說他小時候常來這裡買糖果。店裡的老闆認出了爺爺，熱情地跟我們聊了幾句。這一趟散步雖然不長，卻讓我聽到好多以前的故事。",
+      "inputMode": "ime"
+    }
+  ]
+}

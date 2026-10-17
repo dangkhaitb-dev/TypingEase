@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-005",
+  "unit": "u10",
+  "group": "g2",
+  "order": 139,
+  "slug": "vi-10-005",
+  "title": "Cụm phụ âm phân biệt",
+  "summary": "Xây dựng năng lực \"Consonant Clusters\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Phân biệt và gõ chuẩn xác các cụm phụ âm phức tạp trong tiếng Việt (ngh, tr/ch, s/x).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Consonant Clusters\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Phân biệt và gõ chuẩn xác các cụm phụ âm phức tạp trong tiếng Việt (ngh, tr/ch, s/x).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi cụm phụ âm khó: nghiêng ngả, khúc khuỷu, thoăn thoắt.",
+      "content": "nghiêng ngả nghèo nàn khúc khuỷu khuya khoắt khoảnh khắc thoăn thoắt ngoằn ngoèo khuây khỏa khuyên răn nguệch ngoạc nghiền ngẫm khướu kêu khoan khoái thảng thốt nhoèn nhoẹt",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với đoạn tả cảnh trăng khuya giàu cụm phụ âm ghép.",
+      "content": "ánh trăng khuya khoắt nghiêng mình soi bóng dòng sông quanh co uốn khúc bờ tre rì rào gió thổi thoăn thoắt bước chân người đi tìm nguồn cảm hứng sáng tác thơ ca nghệ thuật lối nhỏ dưới trăng sương khuya ướt lạnh khóm trúc nhoè bóng nước khúc khuỷu bờ đê làng vắng đêm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về các cụm phụ âm ngh, kh, th, ph trong tiếng Việt.",
+      "content": "Các cụm phụ âm phức hợp như ngh, kh, th, ph trong tiếng Việt đòi hỏi sự kết hợp nhanh chóng giữa hai hoặc ba phím bấm liên tiếp trước khi gõ nguyên âm chính. Việc làm chủ hoàn toàn các tổ hợp phím này giúp loại bỏ nguy cơ gõ sai trật tự hoặc sót ký tự đệm, mang lại sự mượt mà và tự tin tuyệt đối cho người sử dụng bàn phím.",
+      "inputMode": "telex"
+    }
+  ]
+}

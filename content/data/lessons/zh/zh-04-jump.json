@@ -1,0 +1,112 @@
+{
+  "id": "zh-04-jump",
+  "unit": "u4",
+  "group": "g2",
+  "order": 43,
+  "slug": "zh-04-jump",
+  "title": "跳过前面部分",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ime",
+  "intro": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-04-jump",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "s1 /b uvv xs7 b- s1 b- xs7 uvv /b uvv /b s1 b- xs7 b-"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "l3 nx ;5 kzz ppp l3 ppp kzz ;5 nx ;5 nx l3 ppp kzz ppp"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "ss; ff;w jjs qqfr qqsd ss; qqsd qqfr jjs ff;w jjs ff;w"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "aa llkf ddfa ;dq ;;se rrw aa rrw ;;se ;dq ddfa llkf ddfa"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "ee eef awjk slrs ee slrs awjk eef awjk eef ee slrs ee"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "ddk ,,k aa llqj ddk llqj aa ,,k aa ,,k ddk llqj ddk llqj"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "22 st9 oo op //c 22 //c op oo st9 oo st9 22 //c op //c"
+    },
+    {
+      "type": "standard",
+      "text": "用拼音输入法输入汉字和中文标点；输入 80% 时先按 Shift 切换到英文模式，输完再切换回中文模式。",
+      "content": "明天有雨，降水概率为80%（全天）；记得带伞、外套。",
+      "inputMode": "ime"
+    }
+  ]
+}

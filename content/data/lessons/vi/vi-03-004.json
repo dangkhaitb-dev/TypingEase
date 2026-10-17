@@ -1,0 +1,54 @@
+{
+  "id": "vi-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 41,
+  "slug": "vi-03-004",
+  "title": "Luyện phím · C D E",
+  "summary": "Luyện gõ dấu chấm hỏi (?), dấu chấm than (!), dấu hai chấm (:) và dấu chấm phẩy (;).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Luyện gõ dấu chấm hỏi (?), dấu chấm than (!), dấu hai chấm (:) và dấu chấm phẩy (;).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ c (ngón giữa trái) để ra C. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Của Có Có Của Cửa Có Cho Của Có Có Của Cửa Có Cho",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ d (ngón giữa trái) để ra D. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Dây Dũng Dòng Dấu Dưới Dễ D Dũng Dễ Dũng Dấu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ e (ngón giữa trái) để ra E. Giữ Shift bằng ngón út của tay kia.",
+      "content": "El E En Em Ek El Ek El Em El fE E Em Ek jE"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý C, D, E. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Dân nhà Cửa Chiếc Chia Dành Cơm Dịu Chỉ Chọn Em Cơ Cười",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có C, D, E mà không nhìn bàn phím.",
+      "content": "mỗi Dòng kiểm Cho đi Dụng Cô Câu mình Em Cô Chơi Cơm Dây Dùng Căn Dịu",
+      "inputMode": "telex"
+    }
+  ]
+}

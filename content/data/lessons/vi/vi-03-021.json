@@ -1,0 +1,50 @@
+{
+  "id": "vi-03-021",
+  "unit": "u3",
+  "group": "g1",
+  "order": 58,
+  "slug": "vi-03-021",
+  "title": "Luyện phím · [ ] \\",
+  "summary": "Học các phím [ ] \\ và luyện với phím đã biết.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Học các phím [ ] \\ và luyện với phím đã biết.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-021",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím [: ngón út phải, hàng trên. Gõ [ xen với các phím đã học. Nếu bộ gõ Telex đổi [ thành ơ, hãy chuyển bộ gõ sang chế độ tiếng Anh khi gõ ký hiệu này.",
+      "content": "[[[[ [f[ [[[[ [f[ [[[ [[[[ f[[[ [f["
+    },
+    {
+      "type": "standard",
+      "text": "Phím ]: ngón út phải, hàng trên. Gõ ] xen với các phím đã học. Nếu bộ gõ Telex đổi ] thành ư, hãy chuyển bộ gõ sang chế độ tiếng Anh khi gõ ký hiệu này.",
+      "content": "j]] ]]]] f]]] ]f] ]j] j]] ]]] f]]] ]]] f]]]"
+    },
+    {
+      "type": "standard",
+      "text": "Phím \\ (gạch chéo ngược): ngón út phải, hàng trên. Gõ \\ xen với các phím đã học.",
+      "content": "\\f\\ \\\\\\\\ j\\\\ \\\\f j\\\\ \\f\\ j\\\\ f\\\\\\ \\j\\ \\f\\"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp ` = [ ] \\ với chữ và số đã học. Nếu bộ gõ Telex đổi ngoặc thành ơ, ư, hãy chuyển sang chế độ tiếng Anh khi gõ ngoặc.",
+      "content": "[[f j]] \\a\\ [[[ f]f \\\\j\\ [[a s]] \\f\\ [[[ a]a \\\\s\\ [[f j]]"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm có [ ] \\ xen với các phím đã học. Nếu bộ gõ Telex đổi ngoặc thành ơ, ư, hãy chuyển sang chế độ tiếng Anh khi gõ ngoặc.",
+      "content": "[a] [f] ]a[ \\a\\ [j] ]f[ \\f\\ [s] ]j[ \\j\\ [a]"
+    }
+  ]
+}

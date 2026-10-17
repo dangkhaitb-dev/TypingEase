@@ -1,0 +1,92 @@
+{
+  "id": "en-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "en-01-003",
+  "title": "A, S, D",
+  "summary": "Locate D, I and E; use changing transitions and controlled English, then record a fresh per-key check.",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Locate D, I and E; use changing transitions and controlled English, then record a fresh per-key check.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-003",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Find a and return to the home position. Type each target carefully.",
+      "content": "af afa aa fffa faaa fa ff aaa fff aafa aaaa faf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Find s and return to the home position. Type each target carefully.",
+      "content": "sjss ss sss sjs ssjj jsj jsss sjss ssss js",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Find d and return to the home position. Type each target carefully.",
+      "content": "ddd dfd dd fddd ddf df dddd dfdd fd fdd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "sda sss ssd jd sd as ddds sds asas ssss ssdd add"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "ddsa ss dad sss sass da aaa sdaa add sas aa aasd ads aad sa sds ssdf"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "asa dssa sssa ssss sada dsd ddss ds adaa ssa da ss sss dsfs"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "jdad assd dsad ddaa ass dda dd da dsdd sdsd"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "sdds dss asa sad sfss dssa ssss dads daa as sss ada ssdf"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "dad add ads sad fad fads as ad dad adds sad dad"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "a sad dad adds ads as fads add dad sad ad ads"
+    }
+  ]
+}

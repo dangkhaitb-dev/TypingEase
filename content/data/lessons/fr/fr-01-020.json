@@ -1,0 +1,89 @@
+{
+  "id": "fr-01-020",
+  "unit": "u1",
+  "group": "g3",
+  "order": 19,
+  "slug": "fr-01-020",
+  "title": "ï : composer le tréma",
+  "summary": "Maintenez Maj, appuyez sur la touche ^ pour choisir ¨, relâchez, puis tapez i pour obtenir ï.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Maintenez Maj, appuyez sur la touche ^ pour choisir ¨, relâchez, puis tapez i pour obtenir ï.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-020",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Maintenez Maj, appuyez sur la touche ^ pour choisir ¨, relâchez, puis tapez i pour obtenir ï.",
+      "content": "ïïiïï ïïiïï ïïïïï fïïï ïfïfï"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez ï et les touches déjà apprises, puis revenez aux repères.",
+      "content": "ïïdd ïfïï fjï sïï dï ïïï ïa ïïïï ejïïe ïd ïïïï ïa ïïïïs ïfee"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "Le maïs mûr est prêt pour la récolte du mois"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez ï et les touches déjà apprises, puis revenez aux repères.",
+      "content": "ïded ïïï ïïf ïïïïïs ïïï sïïï es aïï ïïeï ïï ïaï ïadï ïïdï ïfïïï"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "Le héros naïf lit un haïku sur la forêt de pins"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "Le maïs et le blé poussent près du village"
+    }
+  ]
+}

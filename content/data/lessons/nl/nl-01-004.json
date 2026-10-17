@@ -1,0 +1,95 @@
+{
+  "id": "nl-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "nl-01-004",
+  "title": "Toetsen g, h, k",
+  "summary": "Leer de nieuwe toetsen g, h, k en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "g",
+    "h",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen g, h, k en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-004",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Toets oefenen: g.",
+      "content": "gggg gggg gggg gggg gggg gggg gggg gggg gggg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Toets oefenen: h.",
+      "content": "hhhh hhhh hhhh hhhh hhhh hhhh hhhh h",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Toets oefenen: k.",
+      "content": "kkkk kkkk kkkk kkkk kkkk kkkk kkkk kkkk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "hhg hhk ggkg gggk kkkk gggg gkhk hhhh kgk hggh ggk ffh kkkg gg fk gghh kh"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ggh kkg khhk hhgk khkg gkk hhhh hhg gga kkgg gggh ggk kkkg gg hk hh aa kkh"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "gghh ak hhg hhkg hhk hh kkgh kkg fhk ghkg gkk kh ggk gg"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ggk hghk kh hghh kkg kk hhkk hhhg khh hh gghh hhg hk hhkh khk hhf gkh hhgh"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "khgk gghs kk khkk gkkk hkhk gkh kkk hhgh hhk hg hhhh hk hhhg ggg khh gkk"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "haas kaas haak jaag gaaf dag jas kas dak had gas"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "ja dag af had gaf hak dak kas gas jas as ha"
+    }
+  ]
+}

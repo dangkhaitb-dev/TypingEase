@@ -1,0 +1,103 @@
+{
+  "id": "zh-04-010",
+  "unit": "u4",
+  "group": "g1",
+  "order": 42,
+  "slug": "zh-04-010",
+  "title": "全键盘组合十",
+  "summary": "复习全键盘键位与符号，并稳定完成混合输入。",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ime",
+  "intro": "复习全键盘键位与符号，并稳定完成混合输入。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-04-010",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "ddf fqqf ees ss rr aa ddf aa rr ss ees fqqf ees fqqf ddf"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "q-js ss aadw -j-q q-js -j-q aadw ss aadw ss q-js -j-q"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "ek ss qqq ff eedj ek eedj ff qqq ss qqq ss ek eedj ff"
+    },
+    {
+      "type": "standard",
+      "text": "先按 Shift 切换到英文模式，复习全部字母、数字和符号键。",
+      "content": "ww ssf eem ll ffr jjs aa ww aa jjs ffr ll eem ssf eem"
+    },
+    {
+      "type": "standard",
+      "text": "用拼音输入法输入汉字，在中文模式下直接输入冒号、引号、书名号、问号和叹号。",
+      "content": "老师问：“你读过《论语》吗？”我说：“读过！”",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用拼音输入法输入汉字和中文标点；输入 80% 时先按 Shift 切换到英文模式，输完再切换回中文模式。",
+      "content": "明天有雨，降水概率为80%（全天）；记得带伞、外套。",
+      "inputMode": "ime"
+    }
+  ]
+}

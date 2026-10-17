@@ -1,0 +1,81 @@
+{
+  "id": "id-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "id-01-010",
+  "title": "Huruf: p",
+  "summary": "Gõ y dan c dalam drill posisi tertutup.",
+  "newKeys": [
+    "p"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Gõ y dan c dalam drill posisi tertutup.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-010",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "pppp fppp ff pfff pppf pp pfpf pf ppp ppf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jpf jfp jjf jpfj jfpp pjf jf jfj fjjf pfff fpp ffp ppj"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "ppj ppf jppj pj pfpp fpf ffjp jj fj fp fpp ffpf ppjf jp"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "fpfj ff ppf ffjp pjp jjpf pp fj fj jjpp jppj jpjj jfff"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "apa kita siap tapi aku lupa kapal ada di dapur"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "pagi hari aku pergi ke pasar lalu ke sekolah"
+    }
+  ]
+}

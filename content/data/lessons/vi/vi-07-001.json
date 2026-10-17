@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-001",
+  "unit": "u7",
+  "group": "g1",
+  "order": 96,
+  "slug": "vi-07-001",
+  "title": "Danh mục và bảng kê",
+  "summary": "Xây dựng năng lực \"Event Account\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Gõ bản tường thuật sự việc có tính khách quan, sử dụng các từ ngữ mô tả sự kiện thực tế.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Event Account\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Gõ bản tường thuật sự việc có tính khách quan, sử dụng các từ ngữ mô tả sự kiện thực tế.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Làm quen chủ đề qua danh mục vật tư văn phòng phẩm tháng này.",
+      "content": "Danh mục vật tư văn phòng phẩm tháng này: giấy in mười gram, bút bi xanh năm mươi cây, kẹp bướm ba hộp và sổ tay bìa cứng hai mươi quyển.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn bảng kê chi tiết các thiết bị tin học cần bảo trì định kỳ.",
+      "content": "Bảng kê chi tiết các thiết bị tin học cần bảo trì định kỳ: năm màn hình máy tính để bàn, ba máy in la-de đen trắng, hai bộ lưu điện dự phòng và một máy quét tài liệu tốc độ cao tại phòng kế toán.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn danh sách phân công trực ban tuần lễ an toàn lao động.",
+      "content": "Danh sách phân công trực ban tuần lễ an toàn lao động: đồng chí Nguyễn Văn An phụ trách kiểm tra thiết bị phòng cháy chữa cháy; đồng chí Trần Thị Mai kiểm tra tủ thuốc sơ cấp cứu y tế; đồng chí Lê Hoàng Nam chịu trách nhiệm rà soát hệ thống khóa an toàn toàn bộ các cửa sổ văn phòng trước giờ tan ca chiều.",
+      "inputMode": "telex"
+    }
+  ]
+}

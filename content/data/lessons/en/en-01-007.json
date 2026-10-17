@@ -1,0 +1,61 @@
+{
+  "id": "en-01-007",
+  "unit": "u1",
+  "group": "g2",
+  "order": 6,
+  "slug": "en-01-007",
+  "title": "Home row phrases",
+  "summary": "Locate V, H and M; use changing transitions and controlled English, then record a fresh per-key check.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Locate V, H and M; use changing transitions and controlled English, then record a fresh per-key check.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-007",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Type each group with all the home row keys, then return to the home position before the next one.",
+      "content": "jk fds hlag kjs dfa lhgk sj adkf glh jsd kafl hg dsj"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "a lass falls as dad adds a glass dad has half a flask"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "a glad lad had a salad as dad asks a glad lass"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "a sad lad has a flask all dads shall ask a lass"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "lads ask dad all shall flash glass halls falls salad"
+    }
+  ]
+}

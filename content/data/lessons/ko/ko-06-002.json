@@ -1,0 +1,43 @@
+{
+  "id": "ko-06-002",
+  "unit": "u6",
+  "group": "g1",
+  "order": 79,
+  "slug": "ko-06-002",
+  "title": "도착 시간을 전할게요",
+  "summary": "이동 중인 상황과 도착 예상 시간을 간단히 전달합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "이동 중인 상황과 도착 예상 시간을 간단히 전달합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-06-002",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "지금 막 집에서 출발했어요. 저녁 일곱 시쯤 도착할 것 같아요. 조금만 기다려 주세요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "길이 조금 막혀서 십 분 정도 늦을 것 같아요. 먼저 식당에 들어가서 자리를 잡아 주시면 정말 고맙겠어요. 미안해요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "방금 지하철에서 내렸어요. 역 출구에서 오 분만 걸으면 되니까 조금만 기다려 주세요. 곧 식당 앞에서 만나요.",
+      "inputMode": "hangul"
+    }
+  ]
+}

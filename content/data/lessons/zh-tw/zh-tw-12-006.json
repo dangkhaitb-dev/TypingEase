@@ -1,0 +1,45 @@
+{
+  "id": "zh-tw-12-006",
+  "unit": "u12",
+  "group": "g1",
+  "order": 122,
+  "slug": "zh-tw-12-006",
+  "title": "整理採買與分工",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-006",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以完整段落練習耐力、選字與標點。",
+      "content": "中秋烤肉的採買與分工如下：小王負責買肉片和香腸，小李負責蔬菜和玉米，小陳負責木炭、烤網和夾子，我負責飲料和餐具。每個人請保留發票，活動結束後再一起平分費用。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "採買清單\n肉片：三盒（小王）\n香腸：兩包（小王）\n玉米：八根（小李）\n青椒和香菇：各一盒（小李）\n木炭：兩袋（小陳）\n飲料：十二瓶（我）\n紙盤和筷子：各一包（我）\n集合時間：星期六下午四點，河濱公園",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "小李：「我家附近的市場青菜比較便宜，我星期五下班去買。」\n小陳：「木炭我已經買好了，烤網還要再借一個。」\n我：「我問問樓下的鄰居，他上次說家裡有。」\n小王：「那我們星期六下午四點在河濱公園見！」\n小李：「好，到時候見！」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

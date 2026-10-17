@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-004",
+  "unit": "u7",
+  "group": "g1",
+  "order": 65,
+  "slug": "zh-tw-07-004",
+  "title": "描述早餐準備",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-004",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "做法很簡單：先把水燒開，再把兩顆雞蛋放進鍋裡煮八分鐘。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "煮蛋的時候，順便烤兩片吐司，再從冰箱拿出牛奶倒進杯子裡。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "最後把雞蛋剝殼切半，和吐司一起放在盤子上。這樣，一份簡單的早餐就完成了。",
+      "inputMode": "ime"
+    }
+  ]
+}

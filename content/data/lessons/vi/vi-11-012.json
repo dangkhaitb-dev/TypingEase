@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-012",
+  "unit": "u11",
+  "group": "g3",
+  "order": 158,
+  "slug": "vi-11-012",
+  "title": "Đơn hàng cộng đồng",
+  "summary": "Xây dựng năng lực \"Community Order\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học sức bền đỉnh cao của C11: bài văn liên tục gần 400 âm tiết (tương đương EN 220 từ/1295 ký tự) kết hợp số liệu, tỷ lệ % và phương án giao hàng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 18,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Community Order\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học sức bền đỉnh cao của C11: bài văn liên tục gần 400 âm tiết (tương đương EN 220 từ/1295 ký tự) kết hợp số liệu, tỷ lệ % và phương án giao hàng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về đóng gói hàng thiện nguyện tại tổng kho.",
+      "content": "Tổng kho trung chuyển đang khẩn trương đóng gói các phần quà gồm gạo, dầu ăn và chăn ấm. Công nhân kiểm cân từng bao rồi dán mã tuyến trước khi xếp lên pallet. Khu vực lạnh bảo quản thực phẩm dễ hỏng được theo dõi nhiệt độ liên tục. Cuối ca, sổ xuất kho đối chiếu số thùng với lệnh điều xe của ngày hôm sau.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về chiến dịch an sinh xã hội dịp Tết Nguyên đán.",
+      "content": "Chiến dịch đơn hàng cộng đồng phục vụ an sinh xã hội dịp Tết Nguyên đán được điều phối từ tỉnh xuống xã. Các điểm phát quà mở cửa theo khung giờ cố định và có bàn hỗ trợ người cao tuổi. Tình nguyện viên ghi nhận phản hồi nhanh về thiếu đủ thành phần để điều chỉnh chuyến kế tiếp. Báo cáo tổng kết sau Tết sẽ nêu số hộ đã nhận đủ và các tuyến cần bổ sung năm sau. Đầu mối tại từng điểm phát xác nhận số phần quà đã nhận và báo ngay nếu có thiếu hụt.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về đơn hàng an sinh phục vụ hộ nghèo dịp Tết.",
+      "content": "Đơn hàng cộng đồng năm nay phục vụ hơn một nghìn hộ nghèo nhân dịp Tết cổ truyền. Danh sách thụ hưởng được đối chiếu với dữ liệu ủy ban nhân dân xã để tránh trùng lặp. Mỗi phần quà ghi rõ thành phần và hạn dùng trước khi đóng thùng. Lịch giao hàng chia theo tuyến đường núi để tài xế kịp về trước đêm giao thừa. Tổ điều phối cập nhật số phần quà đã giao, đối chiếu danh sách và chuyển hàng còn thiếu đến điểm phát. Nhóm đối chiếu số thùng trước khi xe rời kho.",
+      "inputMode": "telex"
+    }
+  ]
+}

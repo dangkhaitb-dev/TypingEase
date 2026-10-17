@@ -1,0 +1,95 @@
+{
+  "id": "fr-01-007",
+  "unit": "u1",
+  "group": "g2",
+  "order": 6,
+  "slug": "fr-01-007",
+  "title": "a, z, e",
+  "summary": "Apprenez a, z, e et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "a",
+    "z",
+    "e"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Apprenez a, z, e et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-007",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Repérez a sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "aaa ffaf aaf fa ffaa aa af aaaf aaaa ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "Repérez z sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "zf zz zzff zzfz fzfz ff zzz",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Repérez e sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "efee eeee feee ffef fee fff eee ee eefe eeef ffee",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "eff eaef eez zzfz ffze fe ze fze za ffef eeaf ff ezz ez"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ae jzez je ejj zjja jz azjj ej jae zzej zajj jez eje je"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "fa eaf zef affa afff az feee aafe effe eeze ezza zfee"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "jaa ze az ez eja jza aez zz aez eaj ze aaj ezaz ea ee zee"
+    },
+    {
+      "type": "standard",
+      "text": "Tape chaque mot avec soin, uniquement avec les touches que tu connais déjà.",
+      "content": "la dame lasse a sa malle elle a assez de sel"
+    },
+    {
+      "type": "standard",
+      "text": "Tape chaque mot avec soin, uniquement avec les touches que tu connais déjà.",
+      "content": "elle a des messages de la femme de la salle"
+    }
+  ]
+}

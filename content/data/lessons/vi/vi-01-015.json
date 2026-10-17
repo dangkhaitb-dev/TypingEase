@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-015",
+  "unit": "u1",
+  "group": "g1",
+  "order": 15,
+  "slug": "vi-01-015",
+  "title": "Luyện phím · ú ù ầ",
+  "summary": "Ôn tập phối hợp tất cả các nguyên âm có dấu và phụ âm đ trong các từ thanh ngang.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Ôn tập phối hợp tất cả các nguyên âm có dấu và phụ âm đ trong các từ thanh ngang.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-015",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu sắc: gõ s sau nguyên âm. u s → ú. Ví dụ: trú = t r u s.",
+      "content": "trú cú túi cú cúc rút bút trú chú út núi rút cúc",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu huyền: gõ f sau nguyên âm. u f → ù. Ví dụ: mù = m u f.",
+      "content": "ù mù tùm dù mùa tùy dù tùy lùi mù tùy đùa",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ a a f để ra ầ: a a ra â, f thêm dấu huyền. Ví dụ: dầu = d a a f u.",
+      "content": "dầu mầm ầ cần đầy gần lần tầm bầu dầu cầm đầu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ú, ù, ầ. Nhớ: ú = u s, ù = u f, ầ = a a f.",
+      "content": "nút chúng thái dù đáng dung xúc ba phù trầm nóng chúng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ú, ù, ầ. Nhớ: ú = u s, ù = u f, ầ = a a f.",
+      "content": "húng tâm chút vùng bầu và ngút đầu bầu lúng lùi dân lần bóng phần bánh",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ú, ù, ầ.",
+      "content": "hóa cần khách phần kéo lan dép mưa tin an dùng thúc vui lát",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ú, ù, ầ.",
+      "content": "núi tươi hầm ngút cầu hầm năm tần phút thân múa màn gom",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ú, ù, ầ mà không nhìn bàn phím.",
+      "content": "phần giúp cô nam thùng cần lùi đóng dép phần chân hút",
+      "inputMode": "telex"
+    }
+  ]
+}

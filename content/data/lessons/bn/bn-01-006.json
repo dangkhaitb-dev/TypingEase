@@ -1,0 +1,75 @@
+{
+  "id": "bn-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "bn-01-006",
+  "title": "কী অনুশীলন · চ জ হ",
+  "summary": "Introduce committed targets গ ঘ ঙ; review ক খ গ ঘ ঙ. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets গ ঘ ঙ; review ক খ গ ঘ ঙ. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-01-006",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "চ টাইপ করতে ডান হাতের তর্জনী দিয়ে Y কী চাপুন।",
+      "content": "কচব চব চব কচব চব চব কচব চব চব কচব"
+    },
+    {
+      "type": "standard",
+      "text": "জ টাইপ করতে ডান হাতের তর্জনী দিয়ে U কী চাপুন।",
+      "content": "জব জব কজব জব জব কজব জব জব কজব জব"
+    },
+    {
+      "type": "standard",
+      "text": "হ টাইপ করতে ডান হাতের মধ্যমা দিয়ে I কী চাপুন।",
+      "content": "হব কহব হব হব কহব হব হব কহব হব হব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "হহ চচহ হহচজ হহজ জচহ হবজ হহজহ চচ চচজচ চহচ চচজজ বচজ হজচ জচচহ চজ জজ চচজ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "জকজ জচ জহহ জজ জহ জজজ কচচ হহহ জজজজ হহচচ চচচজ হহ চচচ হহচ চচহ চচ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "চাট জচৃ জচটটু হকক বাকজা চবকচ হুহ জহা কজচিচ বিবুচ চিজ টুজু হহ জহাবি"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "জজচ হহহ চচচচ হজক জজজ চজজ জজ চচ হহজ জচজচ জজচচ হজজ চহচজ হচচ হহ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "চহহ জহ হহচ হহ চচজ চচ হহজ জজহহ জজজ হহচচ ববচ জজ জজচ চহচচ চচহজ জজচহ"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "কাজ হাত চাপ কাজটি চকচক চাবি ভাজা বহু চুপচাপ চুপ ব্যবহৃত তাজা চাকা চাহিদা চক কাচ চাপা পচা কচি চিকচিক"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "টিকটিক হাট ব্যাট জুতা হব ভাপ পিজা পাক জবাব হুক ডাকব ডাকটিকিট চাচা বিপদ পদক"
+    }
+  ]
+}

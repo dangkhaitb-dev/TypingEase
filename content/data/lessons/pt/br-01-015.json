@@ -1,0 +1,83 @@
+{
+  "id": "br-01-015",
+  "unit": "u1",
+  "group": "g1",
+  "order": 16,
+  "slug": "br-01-015",
+  "title": "Tecla morta: acento agudo",
+  "summary": "Pratique a tecla morta do acento agudo com as vogais á, é, í, ó, ú que você já aprendeu.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Pratique a tecla morta do acento agudo com as vogais á, é, í, ó, ú que você já aprendeu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-015",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Aperte a tecla ´ (à direita do P), solte e aperte a barra de espaço: aparece ´.",
+      "content": "´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´ ´"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte a tecla ´ (à direita do P), solte e depois aperte a vogal: aparece a vogal com acento agudo.",
+      "content": "áééá ááéé áééá ááá éáé áéé áé éáá éééé éá éáé"
+    },
+    {
+      "type": "standard",
+      "text": "Aperte a tecla ´ (à direita do P) e depois uma vogal: á, é, í, ó, ú.",
+      "content": "íú úú úú óú áú úúóó úíéú ééá íúíó óúóé úúíó éú óéó éé úá"
+    },
+    {
+      "type": "standard",
+      "text": "Alterne vogais com acento e vogais simples.",
+      "content": "éueí áúáá úóue uu éú íóoi úóíí íá áué áúei éáí úé íó íé íóóé"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a avó fez o café e ele está quente até o fim"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "o médico já sabe que o café é bom para a avó"
+    }
+  ]
+}

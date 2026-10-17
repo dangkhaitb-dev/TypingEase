@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-004",
+  "unit": "u6",
+  "group": "g1",
+  "order": 54,
+  "slug": "zh-tw-06-004",
+  "title": "請家人代收包裹",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-004",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "媽媽，今天下午會有一個包裹送到家裡，麻煩妳幫我簽收。我大概六點會到家。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "包裹裡是我買的運動鞋。送貨員下午兩點到四點之間會到，請妳留意門鈴，也記得確認收件人是我。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "如果需要付款，錢放在書桌第一個抽屜。簽收以後，請把包裹放在我房間門口就好，我回家再自己拆。謝謝妳！",
+      "inputMode": "ime"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "ko-04-102",
+  "unit": "u4",
+  "group": "g1",
+  "order": 61,
+  "slug": "ko-04-102",
+  "title": "합성어와 생활 낱말",
+  "summary": "합성어와 생활 낱말을 정확하게 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "hangul",
+  "intro": "합성어와 생활 낱말을 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-04-102",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "아침마다 책가방에 손수건과 물병을 챙겨요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "마당에서 하얀 눈사람과 눈꽃을 함께 보아요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "학교 앞 꽃가게에서 엄마께 드릴 꽃을 사요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "손목시계를 보고 정류장에서 버스를 기다려요",
+      "inputMode": "hangul"
+    }
+  ]
+}

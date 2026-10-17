@@ -1,0 +1,55 @@
+{
+  "id": "bn-01-018",
+  "unit": "u1",
+  "group": "g1",
+  "order": 32,
+  "slug": "bn-01-018",
+  "title": "কী অনুশীলন · ড়",
+  "summary": "Introduce committed targets কা; review ক. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets কা; review ক. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-01-018",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "ড় টাইপ করতে ডান হাতের কড়ে আঙুল দিয়ে P কী চাপুন।",
+      "content": "কড়ব ড়ব ড়ব কড়ব ড়ব ড়ব কড়ব ড়ব ড়ব কড়ব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "কক ববব ড়ড় বক ববড়ব বড়ব ড়ড়বড় কড় বড়ড়ড় বড় ধধ ড়কক ড়ড়ব বব ড়বড়ড়"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "বড়ব ড়ড়বক ককড় কক ড়বড় ড়কড়ক ববড় বড় ড়ড় ববব ড়বকব ড়ড়ড়ব ড়ব বব ড়ড়ড়ড় ড়কড় ড়ড়বব ববক"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ড়ড়বব ববড় ববব ড়ব ড়ড় ককব ড়ড়ড়ড় বব বড়কব বড়ক কড় ড়ড়ব ড়কড়"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "লাগছে হাঁটল ছায়াযুক্ত চারপাশ প্রাণীকে জালের জালে সামলানো সংশোধনের উপায় চলো বসালাম রেখাগুলো শুকানোর লাগানোর"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "ছাড় মোড়ের পাড়া গড়িয়ে ভিড়ে পড়েছ চূড়ায় জড়িত ছড়ালে এড়াতে জড়ানো বেড়ার খড় উড়ল খসড়া বড়রা সিঁড়ি হাঁড়ির"
+    }
+  ]
+}

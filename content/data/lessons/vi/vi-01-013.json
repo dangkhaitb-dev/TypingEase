@@ -1,0 +1,79 @@
+{
+  "id": "vi-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "vi-01-013",
+  "title": "Luyện phím · á à é",
+  "summary": "Học các nguyên âm móc ơ, ư và tổ hợp ươ theo chuẩn Specimen B.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Học các nguyên âm móc ơ, ư và tổ hợp ươ theo chuẩn Specimen B.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-013",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Dấu sắc: gõ s sau nguyên âm. a s → á. Ví dụ: đá = d d a s.",
+      "content": "đá á các át ái đá cá á át xá ái",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu huyền: gõ f sau nguyên âm. a f → à. Ví dụ: rà = r a f.",
+      "content": "rà xà làm rà gà ào mà rà và bà gà ào mà rà gà",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dấu sắc: gõ s sau nguyên âm. e s → é. Ví dụ: mép = m e s p.",
+      "content": "é mép vé hé xé mép kéo bé xét kéo dép ghé dép",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có á, à, é. Nhớ: á = a s, à = a f, é = e s.",
+      "content": "quà dao quay ngoài tâm mơ chương quà cánh cành nhưng bà hành màu bà",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có á, à, é. Nhớ: á = a s, à = a f, é = e s.",
+      "content": "và riêng tránh đánh làm đá ánh dành rác xem màu bé quán vàng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý á, à, é.",
+      "content": "tinh bà tháng trách đáp các quên sáng treo bê dài dư",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý á, à, é.",
+      "content": "lai mép xong nét trách nêu lai tâm sáng bàn máy dê ràng áo",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có á, à, é mà không nhìn bàn phím.",
+      "content": "liên khách dán mây thư là các minh bán màu khác ngày im chăm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có é (e s). Nhớ: é = e s.",
+      "content": "bé xé vé hé nhé ghé kéo mép dép xét thé nén",
+      "inputMode": "telex"
+    }
+  ]
+}

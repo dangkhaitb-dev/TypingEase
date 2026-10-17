@@ -1,0 +1,111 @@
+{
+  "id": "nl-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 19,
+  "slug": "nl-02-003",
+  "title": "Cijfers 4 5 6",
+  "summary": "Leer de nieuwe toetsen 4, 5, 6 en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen 4, 5, 6 en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-02-003",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Toets oefenen: 4.",
+      "content": "4444 444 44 44 44 44 44 44",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Toets oefenen: 5.",
+      "content": "55 555 5555 55 55 55 55 55",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Toets oefenen: 6.",
+      "content": "666 66 6666 66 66 66 66 66",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "56 6655 5664 65 44 445 4444 444 55 66 556 6643 555 446 4465"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "65 445 gg44 446 654 44g6 44 565 6666 66 5554 545 55 664 4655 56 4654 6664"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "64o5 556 6645 455 465 6646 664 5545 4654 54 656 oo46"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "64 4564 6445 6n54 664 6655 6645 666 6466 55"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "66d6 44 555 6644 6544 666 66 64 46 444 445 55d 665"
+    }
+  ]
+}

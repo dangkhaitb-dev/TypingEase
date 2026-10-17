@@ -1,0 +1,105 @@
+{
+  "id": "tr-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "tr-01-009",
+  "title": "Tuşlar p, ğ, ü",
+  "summary": "p, ğ, ü tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "p",
+    "ğ",
+    "ü"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "p, ğ, ü tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-009",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Tuş alıştırması: p.",
+      "content": "ppp pp pppp pp pp pp pp pp",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ğ",
+      "text": "Tuş alıştırması: ğ.",
+      "content": "ğğğ ğğğğ ğğ ğğ ğğ ğğ ğğ ğğ",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ü",
+      "text": "Tuş alıştırması: ü.",
+      "content": "üüüü üüü üü üü üü üü üü üü",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ddğp ğğğ ğğp ğp ğğdğ pp üpü püp üppü üüğğ üüğ pğ ğpüp üü ğpü ğğü üüü üğ"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "üpğü ppp püüü pp ğğğ üüğğ üppf üpğğ üüüü ğüpğ üüü"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "pp üüpğ üüpp ğpüü ppp ğğ ğğğ üü pppğ ğğyü ppüp üüp ppğ üüğ ypğ ğğü pü"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "wwğ pppü üüpp ğpğ ppü üüğğ ğğpp üü püğ ppüp püü ğğüp ğğ pğ üpp püp"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "kitap yerde pasta tatlı gül kokusu süt dağ yolu kapı"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "doğru kapı süt yağ ağıl uyku dağ kuş yolu kitap"
+    }
+  ]
+}

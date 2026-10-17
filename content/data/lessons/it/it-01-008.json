@@ -1,0 +1,99 @@
+{
+  "id": "it-01-008",
+  "unit": "u1",
+  "group": "g2",
+  "order": 7,
+  "slug": "it-01-008",
+  "title": "Q, W, E",
+  "summary": "Impara i tasti q, w, e e usali con i tasti già studiati.",
+  "newKeys": [
+    "q",
+    "w",
+    "e"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti q, w, e e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-008",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "Trova q e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ff qqfq qqf qqq qqqq fff qfqf fq ffq qqqf qf qq",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "Trova w e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "wwjw wwww ww wwj wwjj wjww jjw www jw",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Trova e e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ee eeee fffe eeff feef effe fe eef ffef eee",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "weee eeq jjw ee eee eeqq eeew www eeeq eeqw qq ww qqe wwwe"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "wwq wqww weq wwwq qqew wwwe qq ww ewww wwfq ee wew wwe"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "qwe asf eàq wsa fqe àws seq wfa qsà ewf asq fwe"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "qsà wfe aqw fàs eqw sàf wqa esà fqw asà wef qàs"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "eàw qfs wàq sfe aqs fwà eqs wfà sqe àfw qes asw"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "e della sala le falde alle sale asse sale alghe"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "le salse della sala e le alghe alle falde"
+    }
+  ]
+}

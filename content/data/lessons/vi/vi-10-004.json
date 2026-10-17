@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-004",
+  "unit": "u10",
+  "group": "g1",
+  "order": 136,
+  "slug": "vi-10-004",
+  "title": "Chuyển ngón chính xác",
+  "summary": "Xây dựng năng lực \"Finger Switches\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Rèn luyện sự chuẩn xác của từng ngón tay riêng biệt, tránh gõ nhầm các phím liền kề.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Finger Switches\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Rèn luyện sự chuẩn xác của từng ngón tay riêng biệt, tránh gõ nhầm các phím liền kề.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi cụm từ gọi tên từng ngón: ngón út, ngón nhẫn, ngón giữa, ngón trỏ.",
+      "content": "ngón út ngón nhẫn ngón giữa ngón trỏ vươn cao hạ thấp chuyển động linh hoạt uyển chuyển ngón cái duỗi thẳng áp sát hàng cơ sở nhịp đều không lệch",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ mô tả nhiệm vụ của từng ngón tay trên bàn phím.",
+      "content": "ngón út tay trái giữ phím chuyển chữ hoa ngón trỏ tay phải gõ phím chữ cái hoa ngón giữa tay phải gõ dấu chấm ngón cái nhấn nhẹ phím cách tạo khoảng trống ngón nhẫn trái giữ hàng cơ sở ngón trỏ trái chuyển sang phím chữ thường",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về sự độc lập cơ bắp của từng ngón tay.",
+      "content": "Sự độc lập cơ bắp của từng ngón tay riêng biệt là đỉnh cao của kỹ năng đánh máy chuyên nghiệp. Mỗi ngón tay chỉ phụ trách duy nhất một khu vực phím xác định trên bàn phím, tuyệt đối không xâm lấn sang lãnh thổ của ngón tay khác để bảo đảm tốc độ tối ưu và độ chuẩn xác tuyệt đối trong suốt quá trình làm việc kéo dài.",
+      "inputMode": "telex"
+    }
+  ]
+}

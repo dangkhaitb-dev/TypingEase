@@ -1,0 +1,102 @@
+{
+  "id": "it-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 26,
+  "slug": "it-03-003",
+  "title": "Maiuscole: A, B, C",
+  "summary": "Impara i tasti A, B, C e usali con i tasti già studiati.",
+  "newKeys": [
+    "A",
+    "B",
+    "C"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti A, B, C e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-03-003",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "A",
+      "text": "Tieni premuto Maiusc e premi a per scrivere A. Poi torna alla posizione di base.",
+      "content": "fff AA AAAA AAA fAA ffAA Af",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "B",
+      "text": "Tieni premuto Maiusc e premi b per scrivere B. Poi torna alla posizione di base.",
+      "content": "BBj BBB BBBj BBjB BBBB jjBB",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "C",
+      "text": "Tieni premuto Maiusc e premi c per scrivere C. Poi torna alla posizione di base.",
+      "content": "CCff CCf Cf CC fff CCCf CCfC ffC CCCC",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ABf CjB fAC BCj Afe AB2 CBd feA CjA BdC Aej Cf2"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ACq CBC CCBC CA AAA BBC AACC CCCC AACB AA CC AAAB BBB AAB"
+    }
+  ]
+}

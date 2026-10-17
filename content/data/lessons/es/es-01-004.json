@@ -1,0 +1,90 @@
+{
+  "id": "es-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "es-01-004",
+  "title": "G, H, K",
+  "summary": "Aprender g, h, k en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "g",
+    "h",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Aprender g, h, k en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-004",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Localiza g y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "gggg fg gfg gfgg ff fgg ffg ffgg ggg gg gf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Localiza h y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "hhj hh jh hjh jhjj jjj hhh jjh jhh hhhj hhhh jj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Localiza k y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "fff ff kkf kkff fkk kkk kffk kk kkkk kfk kfkk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "hh khh kkhk kkjk hkkh hhgg kk ghkk gkk hk hkkk gg hg khkk"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "hg gghh hhhh gh hh aahh gkg ggh kk kkhh kh gg hgg"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "hhs kghk gg hhgk gkk gk hk kkkk kkgg gghh khkk gkgg ggkg hhsk hh"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ggh hhg gg hhkh ggk hgk kk hh hhgh hdg hhhk kkg gh kkk kkkh hhh kgh hhhh"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "hh dgdg dkk jjk sfgg asgk kk hgk khsg kgg gkk khh"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "gasa saga hada dagas sagas hadas haga hagas daga gas"
+    }
+  ]
+}

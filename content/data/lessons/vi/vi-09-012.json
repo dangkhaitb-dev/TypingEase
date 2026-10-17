@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-012",
+  "unit": "u9",
+  "group": "g3",
+  "order": 132,
+  "slug": "vi-09-012",
+  "title": "Mã số và định danh",
+  "summary": "Xây dựng năng lực \"Codes and IDs\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thử thách thông lượng cao nhất trên các mã định danh phức hợp gồm cả chữ hoa, chữ thường và chữ số.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Codes and IDs\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Thử thách thông lượng cao nhất trên các mã định danh phức hợp gồm cả chữ hoa, chữ thường và chữ số.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi mã định danh, mã số thuế và số tài khoản.",
+      "content": "mã số định danh cá nhân 079123456789 mã số thuế doanh nghiệp 0312456789 số tài khoản 190012345678 căn cước công dân 036204001234 mã bảo hiểm xã hội 7912345678 hộ chiếu C1234567 mã số thuế cá nhân 8791234567",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với hóa đơn điện tử có ký hiệu mẫu và mã xác thực của cơ quan thuế.",
+      "content": "hóa đơn điện tử số HD-2026-9876 ký hiệu mẫu 1C26TBN ngày phát hành 16 tháng 09 năm 2026 mã xác thực thuế 00B1C2D3B4C5D6 biên lai thu phí lệ phí số BL-2026-4412 ký hiệu 2C26TBB lập ngày 18/09/2026 mã tra cứu cổng 11A2B3C4D5E6 phiếu xuất kho kiêm vận chuyển nội bộ số PX-7781 ngày 20/09/2026 mã vận đơn VT-8890-QN nếu hai ký tự quá giống nhau thì dừng lại đối chiếu bản in rồi ghi chú lệch.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào bài tổng kết khóa với các chuỗi ký tự định danh thực tế.",
+      "content": "Bài học tốt nghiệp của khóa học Tăng tốc và phản xạ đặt học viên vào tình huống thực tế với các chuỗi ký tự mã hóa, mã số thuế và số định danh phức tạp. Khi hoàn thành xuất sắc bài tập này với độ chính xác cao và tốc độ ổn định, người học đã sẵn sàng bước vào các cấp độ rèn luyện kiểm soát độ chính xác đỉnh cao ở khóa học tiếp theo. Hãy gõ thử MST 0312456789, CCCD 079123456789 rồi mã vận đơn HN-2048-VT.",
+      "inputMode": "telex"
+    }
+  ]
+}

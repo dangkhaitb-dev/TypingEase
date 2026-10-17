@@ -1,0 +1,43 @@
+{
+  "id": "vi-12-004",
+  "unit": "u12",
+  "group": "g1",
+  "order": 163,
+  "slug": "vi-12-004",
+  "title": "Đoạn văn ngắn và vừa",
+  "summary": "Xây dựng năng lực \"Short and Medium Passages\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuyển giao nhịp gõ linh hoạt giữa một đoạn văn ngắn cô đọng và một đoạn văn vừa mở rộng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Short and Medium Passages\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuyển giao nhịp gõ linh hoạt giữa một đoạn văn ngắn cô đọng và một đoạn văn vừa mở rộng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-004",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với đoạn văn ngắn tả buổi sáng mùa thu Hà Nội quanh hồ Gươm.",
+      "content": "Đoạn văn ngắn: Buổi sáng mùa thu Hà Nội se lạnh với những cơn gió heo may xao xác lá vàng rơi trên các vỉa hè cổ kính quanh hồ Gươm thơ mộng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn cỡ vừa tả thành phố cảng khi màn đêm buông xuống.",
+      "content": "Đoạn văn cỡ vừa: Khi màn đêm buông xuống trên thành phố cảng, hàng ngàn ánh đèn rực rỡ sắc màu từ các tòa cao ốc và tàu thuyền neo đậu ngoài khơi xa cùng bừng sáng lung linh, tạo nên một bức tranh đô thị hiện đại tràn đầy sức sống và cơ hội phát triển mới.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng kỹ năng vào đoạn văn về cách chuyển nhịp giữa đoạn ngắn và đoạn vừa.",
+      "content": "Sự chuyển đổi nhịp nhàng giữa một đoạn văn ngắn cô đọng và một đoạn văn vừa mở rộng là bài tập giúp rèn luyện khả năng điều tiết hơi thở và phân bổ năng lượng cơ bắp của đôi bàn tay. Người gõ phím cần duy trì phong thái điềm tĩnh, không hấp tấp khi gặp đoạn văn ngắn và không căng thẳng khi đối mặt với đoạn văn có độ dài tăng tiến đáng kể trong công việc thực tế.",
+      "inputMode": "telex"
+    }
+  ]
+}

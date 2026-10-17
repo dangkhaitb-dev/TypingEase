@@ -1,0 +1,61 @@
+{
+  "id": "vi-10-012",
+  "unit": "u10",
+  "group": "g3",
+  "order": 146,
+  "slug": "vi-10-012",
+  "title": "Phân số số âm và biểu mẫu",
+  "summary": "Xây dựng năng lực \"Fractions, Negatives, and Office Forms\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 7 màn hình thử thách đỉnh cao độ chính xác trên phân số, số âm và các biểu mẫu hành chính đa dạng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 39,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Fractions, Negatives, and Office Forms\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 7 màn hình thử thách đỉnh cao độ chính xác trên phân số, số âm và các biểu mẫu hành chính đa dạng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Rèn phản xạ dứt điểm trên tính toán các giá trị số học đặc biệt.",
+      "content": "Tính toán các giá trị số học đặc biệt: phân số 3/4 cộng 5/8 bằng 11/8; số âm (-15) nhân (-4) bằng 60; tỷ lệ phần trăm hoàn thành đạt 98,75%.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với phiếu thu tiền dịch vụ khách hàng số PT-0098.",
+      "content": "Phiếu thu tiền dịch vụ khách hàng số PT-0098: họ tên người nộp tiền bà Lê Thị Kim Oanh; địa chỉ số 85 đường Lê Duẩn, quận Hải Châu; lý do nộp tiền thanh toán đợt hai hợp đồng chuyển giao công nghệ phần mềm; số tiền nộp bằng số 75.000.000 đồng; viết bằng chữ bảy mươi lăm triệu đồng chẵn. Giấy đề nghị tạm ứng số TU-0142: ông Trần Văn Khải, phòng kỹ thuật, tạm ứng 18.500.000 đồng cho đợt khảo sát hiện trường ngày 21/09/2026, hoàn ứng trong mười ngày làm việc.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với đơn đặt hàng cung ứng thiết bị công nghiệp mã số PO-2026-554.",
+      "content": "Đơn đặt hàng cung ứng thiết bị công nghiệp mã số PO-2026-554: bên mua công ty cổ phần xuất nhập khẩu Rạng Đông; bên bán tập đoàn chế tạo máy công cụ Á Châu; mặt hàng cung cấp gồm 10 máy tiện điều khiển số tự động kiểu CNC-400 với đơn giá 650.000.000 đồng một chiếc; tổng giá trị hợp đồng trước thuế là 6.500.000.000 đồng; thuế giá trị gia tăng 8% tương đương 520.000.000 đồng; tổng số tiền thanh toán sau thuế 7.020.000.000 đồng; thời hạn giao hàng trong vòng 45 ngày kể từ ngày ký.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với biên bản kiểm kê quỹ tiền mặt đột xuất.",
+      "content": "Biên bản kiểm kê quỹ tiền mặt đột xuất: hội đồng kiểm kê gồm kế toán trưởng và thủ quỹ đã tiến hành kiểm đếm toàn bộ tiền mặt tồn tại két sắt vào lúc 17 giờ 30 phút ngày 16 tháng 09 năm 2026. Kết quả kiểm đếm thực tế khớp đúng một trăm phần trăm với số liệu sổ sách kế toán, không thừa không thiếu, các loại tiền đều bảo đảm nguyên vẹn và hợp lệ theo quy định lưu thông của Ngân hàng Nhà nước. Phiếu giao nhận quỹ ca đêm ghi rõ 42.350.000 đồng gồm mười tờ năm trăm nghìn, còn lại là tờ một trăm nghìn và năm mươi nghìn, hai bên ký xác nhận lúc 22 giờ 10.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với biểu mẫu tổng hợp chỉ tiêu thi đua khen thưởng năm 2026 của toàn tập đoàn.",
+      "content": "Biểu mẫu tổng hợp chỉ tiêu thi đua khen thưởng năm 2026 của toàn tập đoàn: danh hiệu tập thể lao động xuất sắc được trao cho 12 đơn vị cơ sở có thành tích đặc biệt xuất sắc trong phong trào sáng kiến cải tiến kỹ thuật, làm lợi cho doanh nghiệp hơn 25 tỷ đồng; danh hiệu chiến sĩ thi đua cấp cơ sở được công nhận cho 85 cá nhân tiêu biểu với tỷ lệ phiếu bầu đồng thuận đạt từ 90% trở lên; tổng kinh phí trích từ quỹ khen thưởng để trao thưởng cho các tập thể và cá nhân đạt thành tích cao là 1.850.000.000 đồng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn thông báo kết luận thanh tra về chấp hành quy định an toàn thông tin.",
+      "content": "Thông báo kết luận thanh tra chuyên đề về việc chấp hành quy định an toàn thông tin tại các chi nhánh trực thuộc: đoàn thanh tra ghi nhận 95% cơ sở đã ban hành đầy đủ quy trình bảo mật nội bộ và trang bị tường lửa thế hệ mới; tuy nhiên vẫn còn 5% đơn vị chưa thực hiện nghiêm túc việc đổi mật khẩu định kỳ 90 ngày một lần theo khuyến nghị của cơ quan chức năng. Ban lãnh đạo yêu cầu thủ trưởng các đơn vị có thiếu sót phải lập tức chấn chỉnh, hoàn thành báo cáo khắc phục gửi về thường trực ban chỉ đạo trước 17 giờ ngày 30 tháng 09 năm 2026.",
+      "inputMode": "telex"
+    }
+  ]
+}

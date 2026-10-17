@@ -1,0 +1,109 @@
+{
+  "id": "nl-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 27,
+  "slug": "nl-03-004",
+  "title": "Hoofdletters G H I",
+  "summary": "Leer de nieuwe toetsen G, H, I en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen G, H, I en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-03-004",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Houd Shift ingedrukt en druk op g voor G. Ga daarna terug naar de basispositie.",
+      "content": "GGGG GG GGG GG GG GG GG GG",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Houd Shift ingedrukt en druk op h voor H. Ga daarna terug naar de basispositie.",
+      "content": "HHHH HH HHH HH HH HH HH HH",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Houd Shift ingedrukt en druk op i voor I. Ga daarna terug naar de basispositie.",
+      "content": "IIII II III II II II II II",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "GGIH AGG IIGH HHGG GHG IIHG GG HIG HH IHI FG GGGI GGI GGHI GII HHH IHH II"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "HGHI AG HH HII HHH GI FIG IG HHII HHG IIGI"
+    }
+  ]
+}

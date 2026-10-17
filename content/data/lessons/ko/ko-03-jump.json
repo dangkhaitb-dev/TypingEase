@@ -1,0 +1,73 @@
+{
+  "id": "ko-03-jump",
+  "unit": "u3",
+  "group": "g2",
+  "order": 59,
+  "slug": "ko-03-jump",
+  "title": "앞으로 건너뛰기",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "hangul",
+  "intro": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-03-jump",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "00ㄴ 000 0000 0ㄴ0 00 00ㄴ 00 0ㄴ0 0000 000 0000 000 00ㄴ 00",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "'ㅁ /; // '' //; ';'; /;'; /// 'ㅁ /// /;'; ';'; //; ''",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 해당 키를 눌러 기호를 입력하고, 앞서 배운 키와 섞어 정확하게 입력합니다.",
+      "content": "어디 가요? 학교에 가요! 같이 갈까요? 좋아요!",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "친구&가족 2*6명 이름_번호를 적어요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "번호|점수 표에서 8>6과 3<7을 다시 확인해요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 해당 키를 눌러 기호를 입력하고, 앞서 배운 키와 섞어 정확하게 입력합니다.",
+      "content": "내일 준비물(공책, 연필, 지우개)을 꼭 챙겨요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "Shift를 누른 채 해당 키를 눌러 기호를 입력하고, 앞서 배운 키와 섞어 정확하게 입력합니다.",
+      "content": "$3 할인 쿠폰은 @우리가게에서 받아요 오늘만 30%예요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "화면에 보이는 기호를 순서대로 입력하세요.",
+      "content": "=[ㅓ] \\ㄹ\\ `ㅏ` ]=[ ㅣ`` [ㅗ]= =[ㅓ] [ㅗ]= ㅣ`` ]=[ `ㅏ` \\ㄹ\\ `ㅏ`",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "ko-01-101",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "ko-01-101",
+  "title": "기준 자모 ㄹ · ㅓ 와 Space",
+  "summary": "왼손 검지 자리(F)의 ㄹ과 오른손 검지 자리(J)의 ㅓ, 그리고 Space를 차례로 익힙니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "hangul",
+  "intro": "왼손 검지 자리(F)의 ㄹ과 오른손 검지 자리(J)의 ㅓ, 그리고 Space를 차례로 익힙니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-101",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "왼손 검지를 F 자리에 두고 ㄹ을 일정한 리듬으로 입력합니다.",
+      "content": "ㄹㄹㄹ ㄹㄹㄹㄹ ㄹㄹ ㄹㄹㄹㄹㄹ ㄹㄹㄹ ㄹㄹㄹㄹ ㄹㄹㄹ ㄹㄹㄹㄹ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "오른손 검지를 J 자리에 두고 ㅓ를 일정한 리듬으로 입력합니다.",
+      "content": "ㅓㅓㅓ ㅓㅓㅓㅓ ㅓㅓ ㅓㅓㅓㅓㅓ ㅓㅓㅓ ㅓㅓㅓㅓ ㅓㅓㅓ ㅓㅓㅓㅓ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "엄지로 Space를 눌러 ㄹ과 ㅓ 사이를 띄웁니다.",
+      "content": "ㄹ ㅓ ㄹ ㅓ ㄹ ㅓ ㄹ ㄹ ㄹ ㅓ ㄹ ㅓ ㄹ ㅓ ㄹ ㅓ ㄹ ㄹ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅓㅓㄹㄹ ㅓㅓ ㅓㅓㅓ ㅓㅓㅓㅓ ㄹㄹ ㄹㄹ ㅓ ㅓㅓㄹㄹ ㅓ ㄹㄹ ㄹㄹ ㅓㅓㅓㅓ ㅓㅓㅓ ㅓㅓ ㅓㅓㅓ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅓㄹ ㄹㄹㄹ ㅓㅓㄹ ㅓㅓ ㅓㅓㄹ ㅓ ㅓㅓㅓㄹ ㅓㄹ ㅓㅓㅓㄹ ㅓ ㅓㅓㄹ ㅓㅓ ㅓㅓㄹ ㄹㄹㄹ ㅓㅓㄹ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄹㄹ ㅓㄹ ㅓㅓㄹ ㅓ ㄹㄹ ㄹㄹ ㅓㅓ ㅓㅓ ㄹㄹㄹ ㄹㄹ ㄹㄹㄹ ㅓㅓ ㅓㅓ ㄹㄹ ㄹㄹ ㅓ ㅓㅓㄹ ㅓㄹ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅓㅓㄹ ㅓ ㄹㄹ ㅓ ㄹㄹ ㅓㅓ ㅓㄹ ㅓ ㅓㅓㅓ ㅓㅓㄹ ㅓㅓㅓ ㅓ ㅓㄹ ㅓㅓ ㄹㄹ ㅓ ㄹㄹ ㅓ ㄹㄹ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄹㄹㄹ ㅓ ㄹㄹ ㄹㄹ ㅓㄹ ㅓㅓㄹ ㄹㄹ ㅓ ㅓㅓ ㄹㄹㄹ ㅓㅓ ㅓ ㄹㄹ ㅓㅓㄹ ㅓㄹ ㄹㄹ ㄹㄹ ㅓ",
+      "inputMode": "hangul"
+    }
+  ]
+}

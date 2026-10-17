@@ -1,0 +1,89 @@
+{
+  "id": "fr-01-017",
+  "unit": "u1",
+  "group": "g3",
+  "order": 16,
+  "slug": "fr-01-017",
+  "title": "ê : composer le circonflexe",
+  "summary": "Appuyez sur la touche morte ^, relâchez-la, puis tapez e pour obtenir ê.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Appuyez sur la touche morte ^, relâchez-la, puis tapez e pour obtenir ê.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-017",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Appuyez sur la touche morte ^, relâchez-la, puis tapez e pour obtenir ê.",
+      "content": "êeêeê êêeêê êêêf fêêê êêe êêêe"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez ê et les touches déjà apprises, puis revenez aux repères.",
+      "content": "êêêêe ês êêf êeêj dsedê ajf jê fêd dêê jêsê aeêd êêf"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "Cette fête est très belle et la forêt est prête"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez ê et les touches déjà apprises, puis revenez aux repères.",
+      "content": "êêêê êêsê êêêê jêês êfjêd êsê êfdêê êaê êdêê jêê êêêê"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "Je prépare la fête du village avec ma mère"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "La tête de la tortue reste sous la vitre"
+    }
+  ]
+}

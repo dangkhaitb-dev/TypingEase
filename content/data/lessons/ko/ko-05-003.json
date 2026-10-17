@@ -1,0 +1,43 @@
+{
+  "id": "ko-05-003",
+  "unit": "u5",
+  "group": "g1",
+  "order": 69,
+  "slug": "ko-05-003",
+  "title": "비가 그친 뒤",
+  "summary": "비가 그친 뒤 이어지는 사건을 짧은 문장으로 연결해 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "비가 그친 뒤 이어지는 사건을 짧은 문장으로 연결해 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-05-003",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "밤새 내리던 비가 새벽에 그치자 골목에 맑은 공기가 가득했습니다. 창문을 활짝 열고 숨을 크게 쉬었습니다. 기분이 상쾌했습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "길에는 작은 물웅덩이가 곳곳에 남아 있었습니다. 학교에 가는 아이들은 노란 장화를 신고 웅덩이를 피해 조심스럽게 걸었습니다. 물이 튈까 봐 걱정했습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "오후가 되자 구름 사이로 해가 나왔습니다. 젖은 나뭇잎이 햇빛에 반짝였고 멀리 산 위에는 무지개가 희미하게 떠올라 있었습니다. 모두 걸음을 멈췄습니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-011",
+  "unit": "u8",
+  "group": "g3",
+  "order": 117,
+  "slug": "vi-08-011",
+  "title": "Nhịp gõ đoạn vừa",
+  "summary": "Xây dựng năng lực \"Medium Rhythm\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Mở rộng đoạn văn có độ dài trung bình, rèn luyện sự bền bỉ của nhịp điệu gõ.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Medium Rhythm\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Mở rộng đoạn văn có độ dài trung bình, rèn luyện sự bền bỉ của nhịp điệu gõ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi cụm từ về rèn sức bền bàn tay qua đoạn văn dài dần.",
+      "content": "rèn luyện sức bền bàn tay qua các đoạn văn có dung lượng tăng dần đều đặn, tập trung tư duy cao độ và chủ động loại bỏ mọi yếu tố gây xao nhãng xung quanh bạn trong suốt buổi học.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ về cách phân bổ sức để giữ phong độ gõ ổn định.",
+      "content": "Khả năng duy trì phong độ gõ ổn định trong suốt bài thực hành dài phụ thuộc rất nhiều vào kỹ năng phân bổ lực đầu ngón tay hợp lý, tránh việc gõ quá mạnh hoặc gồng cứng cơ cổ tay khiến bàn tay nhanh chóng bị căng cứng và mỏi mệt sau những giờ làm việc căng thẳng. Cứ vài phút, thả lỏng vai, nghỉ mắt một nhịp rồi tiếp tục với lực nhẹ hơn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn cỡ vừa về thói quen cần có khi bài thực hành dài lên.",
+      "content": "Khi bước vào giai đoạn rèn luyện các đoạn văn bản có độ dài cỡ vừa, người học cần chủ động tập thói quen đọc đón đầu dòng chữ phía trước một vài từ. Kỹ năng quan sát tinh tế này cho phép não bộ có đủ thời gian chuẩn bị sẵn chuỗi thao tác cơ bắp kế tiếp, từ đó loại bỏ hoàn toàn các khoảng dừng ngập ngừng không đáng có và đem lại một nhịp gõ liền mạch, êm ái và thanh thoát tựa như dòng chảy tự nhiên của con suối mát.",
+      "inputMode": "telex"
+    }
+  ]
+}

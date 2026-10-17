@@ -1,0 +1,43 @@
+{
+  "id": "ko-05-006",
+  "unit": "u5",
+  "group": "g1",
+  "order": 72,
+  "slug": "ko-05-006",
+  "title": "도착이 늦어진 소포",
+  "summary": "배송이 늦어진 까닭과 안내를 확인한 뒤의 행동을 연결합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "배송이 늦어진 까닭과 안내를 확인한 뒤의 행동을 연결합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-05-006",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "지난주에 주문한 책이 일주일이 지나도록 도착하지 않았습니다. 배송 조회를 해 보니 소포가 물류 센터에서 사흘째 멈춰 있었습니다. 조금 걱정이 되었습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "고객 센터에 문의하자 주문이 한꺼번에 몰려서 출고가 늦어지고 있다는 답이 왔습니다. 늦어도 이틀 안에는 꼭 보내 주겠다고 했습니다. 일단 기다리기로 했습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "약속한 날 오후에 집에 오니 소포가 문 앞에 놓여 있었습니다. 상자를 열어 보니 책은 깨끗했고 늦어서 미안하다는 짧은 편지도 들어 있었습니다. 기분이 좋았습니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "sw-01-014",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "sw-01-014",
+  "title": "Marudio",
+  "summary": "Kutofautisha ny na ng ndani ya maneno bila apostrofi.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Kutofautisha ny na ng ndani ya maneno bila apostrofi.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-014",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Andika maandishi haya ya Kiswahili kwa vibonye ulivyojifunza.",
+      "content": "mama na dada wanakwenda sokoni kununua mboga na samaki"
+    },
+    {
+      "type": "standard",
+      "text": "Andika maandishi haya ya Kiswahili kwa vibonye ulivyojifunza.",
+      "content": "baba hupanda miti ya embe kwenye shamba nyuma ya nyumba"
+    },
+    {
+      "type": "standard",
+      "text": "Andika maandishi haya ya Kiswahili kwa vibonye ulivyojifunza.",
+      "content": "asubuhi ndege huimba na babu hunywa chai barazani"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "watoto wanakula wali na nyama kisha hunywa maji baridi"
+    }
+  ]
+}

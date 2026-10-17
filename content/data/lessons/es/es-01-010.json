@@ -1,0 +1,105 @@
+{
+  "id": "es-01-010",
+  "unit": "u1",
+  "group": "g2",
+  "order": 9,
+  "slug": "es-01-010",
+  "title": "U, I, O",
+  "summary": "Aprender u, i, o en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "u",
+    "i",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Aprender u, i, o en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-010",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Localiza u y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "uuuf uuuu uf ffuf ff ffu uuu uu uufu",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Localiza i y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "iiii jjij jji jij iii jjj ijji ji jiji ii",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Localiza o y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "fff foof fffo oo oof ooo foo off oooo",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "oooo ooou fo uuoo oi ii iu uu uuui oo iii uoo uoi iiou oouu"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "iioi iil iii uuoi uo iu iiui ii oui uoii iio ooi oo oi iui iiu uui uu ioi"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "uu ooo uiiu uuiu iouo du ou oooi iiuo ooi uuoo uuo oii oouu uo"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ou ii iui iii ooii uuf iiuo ooiu iiuu oi oo uu iiiu uuo iiii"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "qui rooi uu koku ow iuuu iiio ugg oio ie qq uoi iii io auu ui oo ot juu"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "hoy el sol sale tarde el gato es todo suyo"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "oso ojo ojos todos todas tus sus tu su uso soy hoy"
+    }
+  ]
+}

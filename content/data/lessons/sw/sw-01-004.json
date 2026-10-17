@@ -1,0 +1,70 @@
+{
+  "id": "sw-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "sw-01-004",
+  "title": "Herufi: s, l",
+  "summary": "Kuandika e i na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Kuandika e i na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-004",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "sf sfss fs ss ssss ssf fss ssfs sfs sss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "lfll fll flf lfl llll llfl ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jls slj sj sfsl lfsl ljjl sj jll sffs sjj jjls js fljs"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "ljfs sjll lfj jj sl jff llf jl js fj lj jlj ls fjs fsj sl"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "js lj sl flff ff jsj sjs lfs fssf sflj fjj fs lsjf lj ff"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jj jls sls lj sjff jsj ljs ffsf fls jlll fjl lssl fjll"
+    }
+  ]
+}

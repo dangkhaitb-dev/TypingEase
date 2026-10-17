@@ -1,0 +1,43 @@
+{
+  "id": "vi-12-006",
+  "unit": "u12",
+  "group": "g2",
+  "order": 166,
+  "slug": "vi-12-006",
+  "title": "Chuỗi đoạn văn hỗn hợp",
+  "summary": "Xây dựng năng lực \"Mixed Passage Chain\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuỗi ba đoạn văn có độ dài và nhịp điệu hoàn toàn khác nhau, kiểm tra tính thích ứng vận động.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Mixed Passage Chain\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuỗi ba đoạn văn có độ dài và nhịp điệu hoàn toàn khác nhau, kiểm tra tính thích ứng vận động.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp bài học với chuỗi ba đoạn văn với tiết tấu biến hóa.",
+      "content": "Chuỗi ba đoạn văn với tiết tấu biến hóa: Đoạn thứ nhất ngắn gọn dứt khoát nêu bật thông điệp hành động; đoạn thứ hai mở rộng phân tích các nguyên nhân cốt lõi; đoạn thứ ba tổng kết toàn diện bài học.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về vai trò của cách phân đoạn đối với sức thuyết phục.",
+      "content": "Sự linh hoạt trong cách phân đoạn giúp văn bản trở nên dễ đọc, dễ tiếp thu và giàu sức thuyết phục đối với người tiếp nhận. Người soạn thảo văn bản chuyên nghiệp luôn biết cách sử dụng các khoảng trắng và dấu ngắt đoạn để tạo nên những khoảng dừng hợp lý cho thị giác và nhận thức của người đọc. Mỗi đoạn chỉ nên trình bày một ý chính, rồi chuyển tiếp bằng câu dẫn rõ ràng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng kỹ năng vào chuỗi ba đoạn văn khác nhau về độ dài và nhịp điệu.",
+      "content": "Thực hành gõ chuỗi ba đoạn văn có độ dài và nhịp điệu hoàn toàn khác nhau là bước thử thách cao cấp nhằm kiểm tra khả năng thích ứng vận động của hệ thần kinh vận động. Học viên phải liên tục điều chỉnh nhịp gõ từ trạng thái nhanh dứt khoát sang trạng thái êm ái khoan thai, đồng thời vẫn giữ nguyên độ chuẩn xác tuyệt đối trên từng con chữ và dấu câu mà không hề bị rối loạn hay mỏi cơ bàn tay.",
+      "inputMode": "telex"
+    }
+  ]
+}

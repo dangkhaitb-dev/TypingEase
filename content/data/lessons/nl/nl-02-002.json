@@ -1,0 +1,108 @@
+{
+  "id": "nl-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 18,
+  "slug": "nl-02-002",
+  "title": "Cijfers 1 2 3",
+  "summary": "Leer de nieuwe toetsen 1, 2, 3 en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen 1, 2, 3 en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-02-002",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Toets oefenen: 1.",
+      "content": "111 11 1111 11 11 11 11 11",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Toets oefenen: 2.",
+      "content": "222 22 2222 22 22 22 22 22",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Toets oefenen: 3.",
+      "content": "333 33 3333 33 33 33 33 33",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "2223 a21 1332 2232 312 123 112 2312 331 12 s321 22 33 332 1112 333 31"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "23 111 2231 3321 11 vvv2 3113 13 22 2222 332 1111 213 333 212 211"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "122 11 331 1131 13 2231 33 2221 ii1 1111 232"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "233 133 33 2212 13 112 11 ww3 ww1 331 2232 223 222 333 2111 21"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "2231 a33 22 21 223 2211 2223 31 222 3311 s12 33 111 23 11 3133 1122 1132"
+    }
+  ]
+}

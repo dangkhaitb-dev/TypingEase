@@ -1,0 +1,89 @@
+{
+  "id": "sw-02-jump",
+  "unit": "u2",
+  "group": "g2",
+  "order": 21,
+  "slug": "sw-02-jump",
+  "title": "Ruka mbele",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-02-jump",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "j2 j22j jj 33p fff3 fj33 jj3f fj3 11f 2j12 32 f2 3p j1 fff jp3j jjj f213 31"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jff jj f4 jf4 64j 55 j5 56f6 ff55 ij 5fj fjf 4jjj 55f 45jj 6646 6j jj4"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "99j j7 2298 78ff ff8 j28j jjff 79j8 9f9 jf 8j9 987 fj f99j"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "00j0 fjf f0fj jj0 j0f 0j j0 0f0 f0 00f 00 ff00 0jf"
+    },
+    {
+      "type": "standard",
+      "text": "Andika maandishi haya ya Kiswahili kwa vibonye ulivyojifunza.",
+      "content": "kaka ana vitabu 6 na penseli 8 pamoja na karatasi 10 mezani"
+    }
+  ]
+}

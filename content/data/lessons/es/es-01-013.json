@@ -1,0 +1,112 @@
+{
+  "id": "es-01-013",
+  "unit": "u1",
+  "group": "g2",
+  "order": 12,
+  "slug": "es-01-013",
+  "title": "V, B, N",
+  "summary": "Aprender v, b, n en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Aprender v, b, n en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-013",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Localiza v y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ff vf vfff ffv fvv vvv vv vvvv fv vvf vfvv vvfv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Localiza b y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "jjj jj bj bb bbb jjjb bjjb bbbj bbbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Localiza n y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "fnnn fnn nnn nnnf nnnn nn fffn nnf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "vvnn bvnb yy bn nnbb nvvn vnbv nn vbv bnb bnnb nnbn vv nnvv nnnn vb"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "nbnn nb zz nbb bbn vv nnvv bb bbv bvbb vbnb bv vb"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "nbvn nbnn nnn nb bvvv nnb vv nn bbv nnvb vvn nvn bbvn vvb nnbf ffb nvbv"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "nn zt nb nvn evbr an vnbb bb bn bbbg tvb ov vbnb bv ub dv vcvv vv nbnn"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "evbb bb qq nhn bv fbnb nnc bbqb nv vv nb bvnb rbb"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "ella vive en una casa bonita con una gata"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "el perro bebe agua en el patio y no tiene sed"
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "id": "tr-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "tr-01-013",
+  "title": "Tekrar",
+  "summary": "Tekrar: şimdiye kadar öğrendiğin tuşlarla kelime ve cümle yaz.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Tekrar: şimdiye kadar öğrendiğin tuşlarla kelime ve cümle yaz.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-013",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "bugün okulda çok güzel bir gün geçirdik ve sonra kitap okuduk"
+    },
+    {
+      "type": "standard",
+      "text": "Öğrendiğin tuşları kullanarak Türkçe metni yaz.",
+      "content": "sabah erkenden kalkıp çay içtik ve kahvaltıya oturduk"
+    },
+    {
+      "type": "standard",
+      "text": "Öğrendiğin tuşları kullanarak Türkçe metni yaz.",
+      "content": "çocuklar bahçede top oynarken annem pencereden onları izledi"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "annem akşam yemeği için güzel bir çorba yaptı ve biz hepsini yedik"
+    }
+  ]
+}

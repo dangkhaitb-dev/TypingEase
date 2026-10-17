@@ -1,0 +1,71 @@
+{
+  "id": "vi-01-jump",
+  "unit": "u1",
+  "group": "g6",
+  "order": 32,
+  "slug": "vi-01-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Kiểm tra: gõ lại f j Space trong các cụm mới, giữ nhịp đều.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại f j Space trong các cụm mới, giữ nhịp đều.",
+      "content": "jff jfjf ff ff jfjf fj fj ffj ffj jjjf jfjf fff jfjj jff jff jj fff ffj"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại e r t trong các cụm mới, giữ nhịp đều.",
+      "content": "lrk dgt hshr rr tll drs llt kjr rj grra ta ae rkl krdj tgle ggrq rqhq"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có â mà không nhìn bàn phím.",
+      "content": "tuân quân nung khan dâu thân sâu râm sân keo ngân lay hân cho thi dây",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có è, ó, ò mà không nhìn bàn phím.",
+      "content": "rèm kêu bay tòa ngói chóng hay sát đò sót sau cơ món ràng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ thật, chỉ dùng những phím đã học.",
+      "content": "lễ dễ lễ phép dễ dàng dễ chịu ễnh ương dễ lễ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các câu ngắn, chỉ dùng những phím đã học.",
+      "content": "chú ý dao sắc nên nằm trong khay có nắp lưỡi quay vào trong",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ổ, ứ, ể mà không nhìn bàn phím.",
+      "content": "chổi bể ổn ban nể rổ tuyển kể kể quan chiều triển thân",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ và câu ngắn, chỉ dùng những phím đã học.",
+      "content": "hoa giấy bao quanh cổng cành cao rung trong gió",
+      "inputMode": "telex"
+    }
+  ]
+}

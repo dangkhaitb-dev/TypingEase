@@ -1,0 +1,109 @@
+{
+  "id": "ms-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 24,
+  "slug": "ms-03-004",
+  "title": "Huruf besar: G, H, I",
+  "summary": "Kenalkan ? ! : ; tanda petik, garis bawah dan Enter jika baris baharu dinilai.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Kenalkan ? ! : ; tanda petik, garis bawah dan Enter jika baris baharu dinilai.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-03-004",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Tahan Shift dengan jari kelingking di sebelah tangan yang bertentangan, kemudian tekan g untuk menaip G. Letakkan semula jari pada kekunci panduan.",
+      "content": "GfG GGGG ffG GGGf GfGG GGfG fGf GfG fGG GG GGG",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Tahan Shift dengan jari kelingking di sebelah tangan yang bertentangan, kemudian tekan h untuk menaip H. Letakkan semula jari pada kekunci panduan.",
+      "content": "HHHH fHHf HfHH HH HHH HHfH fHHH",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Tahan Shift dengan jari kelingking di sebelah tangan yang bertentangan, kemudian tekan i untuk menaip I. Letakkan semula jari pada kekunci panduan.",
+      "content": "IfI IIff ffI fIIf Ifff If III IIII fII IIIf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "GHII GHf fjIj If fff jff GI GHjf jfjG IG fjHH jjIf IfH II ff"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "HfI jf fIG ff jHj jfG jjf HfIj Hjjj IHfH Hjf Gs If HI jj GIj fj fffs fG"
+    }
+  ]
+}

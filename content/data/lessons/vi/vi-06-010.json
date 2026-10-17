@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-010",
+  "unit": "u6",
+  "group": "g3",
+  "order": 92,
+  "slug": "vi-06-010",
+  "title": "Báo cáo trạng thái ngắn",
+  "summary": "Xây dựng năng lực \"Short Status\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Viết các cập nhật tình hình công việc ngắn gọn nhưng súc tích, bao quát các đầu mục nhiệm vụ.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Short Status\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Viết các cập nhật tình hình công việc ngắn gọn nhưng súc tích, bao quát các đầu mục nhiệm vụ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên cập nhật tiến độ dự án nâng cấp trang thông tin điện tử.",
+      "content": "Cập nhật tiến độ dự án nâng cấp trang thông tin điện tử: đội ngũ thiết kế đã hoàn thành toàn bộ khung sườn giao diện cho cả bản máy tính và điện thoại thông minh.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp bài học với báo cáo nhanh tình hình kinh doanh tuần qua.",
+      "content": "Báo cáo nhanh tình hình kinh doanh tuần qua: toàn bộ ba chỉ tiêu chính về doanh số, số lượng hợp đồng mới và mức độ hài lòng của khách hàng đều vượt mức kế hoạch đề ra từ mười đến mười lăm phần trăm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên báo cáo trạng thái hoạt động của trung tâm chăm sóc khách hàng.",
+      "content": "Báo cáo trạng thái hoạt động của trung tâm chăm sóc khách hàng: trong tuần qua tổng đài đã tiếp nhận và giải quyết thành công hơn một nghìn cuộc gọi yêu cầu hỗ trợ kỹ thuật từ người tiêu dùng trên toàn quốc.",
+      "inputMode": "telex"
+    }
+  ]
+}

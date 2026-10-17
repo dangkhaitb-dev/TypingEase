@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-016",
+  "unit": "u1",
+  "group": "g1",
+  "order": 16,
+  "slug": "vi-01-016",
+  "title": "Luyện phím · ắ ề ố",
+  "summary": "Học gõ dấu sắc phím s, dấu huyền phím f và phím hủy dấu z trong Telex.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Học gõ dấu sắc phím s, dấu huyền phím f và phím hủy dấu z trong Telex.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-016",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ a w s để ra ắ: a w ra ă, s thêm dấu sắc. Ví dụ: tắt = t a w s t.",
+      "content": "tắt sắp gắn bắp cắm gắt nắp cắt ắ sắp cắm sắp",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ e e f để ra ề: e e ra ê, f thêm dấu huyền. Ví dụ: hề = h e e f.",
+      "content": "hề mềm hề lều hề mềm bề ề lều nền mềm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ o o s để ra ố: o o ra ô, s thêm dấu sắc. Ví dụ: tối = t o o s i.",
+      "content": "tối ố bố số lối bố số đối phố đố ốc đố",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ắ, ề, ố. Nhớ: ắ = a w s, ề = e e f, ố = o o s.",
+      "content": "khó tôi nơi giác lối truyền giống lối thềm nhắc sắp",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ắ, ề, ố. Nhớ: ắ = a w s, ề = e e f, ố = o o s.",
+      "content": "vào bắt đưa ngắm cố uống dốc thống mắt thềm tối ngắm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ắ, ề, ố.",
+      "content": "tay núi dây quán cắm ống điều ngắt tham thoáng nhắc máy ăn khắc",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ắ, ề, ố.",
+      "content": "ga sau hương đôi đo suối căn phối sông cố khắc ngắt câu nhóm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ắ, ề, ố mà không nhìn bàn phím.",
+      "content": "đầu về thoáng hiên tối trung lắng mây đầy uống đưa vàng góc trống",
+      "inputMode": "telex"
+    }
+  ]
+}

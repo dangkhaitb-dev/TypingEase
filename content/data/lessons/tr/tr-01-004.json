@@ -1,0 +1,90 @@
+{
+  "id": "tr-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "tr-01-004",
+  "title": "Tuşlar g, h, k",
+  "summary": "g, h, k tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "g",
+    "h",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "g, h, k tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-004",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Tuş alıştırması: g.",
+      "content": "gggg gggg gggg gggg gggg gggg gggg gggg gggg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Tuş alıştırması: h.",
+      "content": "hhhh hhhh hhhh hhhh hhhh hhhh hhhh h",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Tuş alıştırması: k.",
+      "content": "kkkk kkkk kkkk kkkk kkkk kkkk kkkk kkkk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "gggk kgg hh gh gkg gg kkhh hghh ggkh ggg kkhg hha gk ah kghh kk hhg kkkg kg"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ghkh kkh kk kkkk kkg hhk gg skhh kgk khg gk ghk gkh hhh gkk hkks ggg kksk"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ggdh hhg kggg gghk ghkh hhhg kgg hhk hkgh ggdg kg hh gkg gggd ggg ghg gg"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "gkhh hg hhh gg hghk hhkg gk gkg kkg ggf kkhg"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "khgk ssk hkgh kkg hhgh hhhh gg hhg kkkh kghk ggg hhkg hgk kkh ghhg gghg ghh"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "daha kasa saha hak ada as da kahkaha sahaf kasada"
+    }
+  ]
+}

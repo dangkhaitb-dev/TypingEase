@@ -1,0 +1,110 @@
+{
+  "id": "tr-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 23,
+  "slug": "tr-03-003",
+  "title": "Büyük harfler D E F",
+  "summary": "D, E, F tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "D, E, F tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-03-003",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Shift tuşunu basılı tut ve d tuşuna bas: D.",
+      "content": "DD DDDD DDD DD DD DD DD DD",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Shift tuşunu basılı tut ve e tuşuna bas: E.",
+      "content": "EE EEE EEEE EE EE EE EE EE",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Shift tuşunu basılı tut ve f tuşuna bas: F.",
+      "content": "FFF FF FFFF FF FF FF FF FF",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "EEDE DDF FFED DEx DD FxF EEF EEE EE xxDE DFFE"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "DEE DDF EE EEFF FFFE FEF EEE FF aF DDDE DD DEEF FFFD FFDE"
+    }
+  ]
+}

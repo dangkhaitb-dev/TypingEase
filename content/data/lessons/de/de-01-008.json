@@ -1,0 +1,102 @@
+{
+  "id": "de-01-008",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "de-01-008",
+  "title": "Tasten o, p, y",
+  "summary": "Lerne die neuen Tasten o, p, y und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "o",
+    "p",
+    "y"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten o, p, y und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-008",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Taste üben: o.",
+      "content": "oooo oooo oooo oooo oooo oooo oooo oooo oooo",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Taste üben: p.",
+      "content": "pppp pppp pppp pppp pppp pppp pppp pppp pppp p",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "Taste üben: y.",
+      "content": "yyyy yyyy yyyy yyyy yyyy yyyy yyyy yyyy y",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ypoo pop yy py ooo yyk yyyo oooo po oy pp opoy yyo oop oo"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "yyoy ppy ppp ooyp yp pso oyo ppso ooo yyyo pp yy opoy oooo pyp oo ppoy"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ksyo oopk pky kki oi osk kyo pyos ok psoy ioy sksy"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ppy ypp ypyp oopt pppy yyo pp yopo yo oo pppp poyp yy yypo ppo yyy oy"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "wo ist sie dort oder da sie ist oft so weit weg"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "so oft wie du es sagst ist es gut sie hat es so gesagt"
+    }
+  ]
+}

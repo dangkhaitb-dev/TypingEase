@@ -1,0 +1,103 @@
+{
+  "id": "nl-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 25,
+  "slug": "nl-03-002",
+  "title": "Hoofdletters A B C",
+  "summary": "Leer de nieuwe toetsen A, B, C en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "A",
+    "B",
+    "C"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen A, B, C en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-03-002",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "A",
+      "text": "Houd Shift ingedrukt en druk op a voor A. Ga daarna terug naar de basispositie.",
+      "content": "AAAA AA AAA AA AA AA AA AA",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "B",
+      "text": "Houd Shift ingedrukt en druk op b voor B. Ga daarna terug naar de basispositie.",
+      "content": "BBBB BB BBB BB BB BB BB BB",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "C",
+      "text": "Houd Shift ingedrukt en druk op c voor C. Ga daarna terug naar de basispositie.",
+      "content": "CC CCC CCCC CC CC CC CC CC",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "BBCB BC BBC CCo ABA CCB BA AA AC CCAB BBBC BBB AACC AAB"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "9BBC CCBC 99AC 9BC AABA AAC CC 99C AB BBAB CCB ACBA CBA"
+    }
+  ]
+}

@@ -1,0 +1,162 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "&, *, ( et )",
+  "summary": "Au programme : &, *, ( et ).",
+  "newKeys": [
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "é",
+    "-",
+    "=",
+    "<",
+    "#",
+    "|",
+    "!",
+    "\"",
+    "/",
+    "$",
+    "%",
+    "?",
+    "&",
+    "*",
+    "(",
+    ")"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Des touches que le cours n'a pas encore utilisées : &, *, ( et ). Chacune se fait avec Maj et une touche que tes doigts connaissent déjà — Maj à l'auriculaire de l'autre main.",
+  "congrats": "&, *, ( et ) : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "&",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe &, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur & pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "&",
+      "text": "D'abord & sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "&& & rigide & lutte une & utiles demi & nouvelle\n&& & décider & exact votes & mois nos & glisses\n&& & jolie & travaux sud & selle humides & avec"
+    },
+    {
+      "type": "intro",
+      "key": "*",
+      "finger": "RM",
+      "text": "C'est le majeur droit qui frappe *, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur * pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "*",
+      "text": "D'abord * sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "** * *juger* *points* *sa*\n** * *utiles* *tir* *heures*\n** * *bonne* *non* *exact*"
+    },
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RR",
+      "text": "C'est l'annulaire droit qui frappe (, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ( pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "D'abord ( sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "(( ( (paroles (bouche (monsieur\n(( ( (places (demi (les\n(( ( (grands (dures (nuit"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe ), avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ) pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "D'abord ) sans rien autour, puis là où on s'en sert vraiment.",
+      "content": ")) ) (porte) (passer) (encore)\n)) ) (le) (lisse) (gifles)\n)) ) (style) (telle) (février)"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Une série de petits morceaux avec ces caractères.",
+      "tokens": [
+        "beau&mort",
+        "(dos)",
+        "(nos)",
+        "résultat&devenir",
+        "venir&sotte",
+        "*telles*",
+        "*vient*",
+        "(four)",
+        "quand&ville",
+        "vies&mime"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tout ce que cette leçon a apporté, mélangé.",
+      "content": "tir & prendre *les* dose&fort bord&tel\n*luges* *point* villes&heures (dose)\n*wagon* *luges* (messe) *musiques*"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Des mots à nouveau, avec les signes à leur place.",
+      "content": "kiwi & ouvrir table *connu* bras *belles*\n*donc* content bonnes & écoles place lis & kiwi\n(figures) plan (gestes) se jure & ses"
+    }
+  ]
+}

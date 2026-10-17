@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-010",
+  "unit": "u11",
+  "group": "g3",
+  "order": 157,
+  "slug": "vi-11-010",
+  "title": "Lối vào hoa viên",
+  "summary": "Xây dựng năng lực \"Garden Accessibility\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 310 âm tiết, đoạn văn mô tả chi tiết kiến trúc và cảnh quan vườn hoa cộng đồng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 18,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Garden Accessibility\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 310 âm tiết, đoạn văn mô tả chi tiết kiến trúc và cảnh quan vườn hoa cộng đồng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục mô tả lối vào hoa viên cộng đồng buổi sáng.",
+      "content": "Lối vào hoa viên cộng đồng rực màu với hàng trăm loài hoa dưới nắng sớm. Khách dừng lại đọc biển nội quy ngắn trước khi bước lên lối lát đá. Tình nguyện viên phát túi đựng rác nhỏ và hướng dẫn lối đi một chiều vào giờ đông người. Không khí trong lành và tiếng nước từ đài phun nhỏ tạo nhịp thư giãn ngay từ cổng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về ngày mở cửa lớn của hoa viên trung tâm thành phố.",
+      "content": "Lối vào hoa viên trung tâm thành phố hôm nay mở rộng đón hàng vạn lượt khách. Ban tổ chức chia cổng vào theo màu vé để giảm ùn tắc và giữ lối thoát hiểm thông thoáng. Điểm phát nước miễn phí và nhà vệ sinh lưu động được bố trí sát các bồn hoa lớn. Sau chín giờ tối, đội vệ sinh thu dọn theo từng khu vực để sáng hôm sau sẵn sàng đón khách mới. Cổng mở đúng giờ. Sau mỗi lượt khách, nhân viên quan sát khu vực đài phun nước và thu gom rác đúng nơi.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về thiết kế cảnh quan lối vào hoa viên.",
+      "content": "Các kỹ sư cảnh quan kết hợp tạo hình cây cảnh truyền thống với đường đi tiếp cận cho xe lăn. Đèn thấp hai bên lối được chỉnh góc để không chói mắt người đi bộ ban đêm. Hệ thống tưới nhỏ giọt chạy theo lịch để giữ độ ẩm mà không làm ướt lối chính. Mỗi tuần, tổ bảo dưỡng ghi nhật ký sâu bệnh và thay chậu héo trước cuối tuần. Nhân viên hướng dẫn khách xếp hàng theo lối riêng, giữ vé sẵn trong tay và nhường đường cho người cần hỗ trợ. Cổng mở đúng giờ.",
+      "inputMode": "telex"
+    }
+  ]
+}

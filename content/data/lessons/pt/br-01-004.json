@@ -1,0 +1,90 @@
+{
+  "id": "br-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "br-01-004",
+  "title": "G, H, K",
+  "summary": "Aprenda as teclas g, h, k e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "g",
+    "h",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas g, h, k e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-004",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Localize g e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "ggf gf fggg fgg ff gg ggg fg ggfg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Localize h e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "jh hj hhhh jjh hhhj hh hhh jhhh hhjh",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Localize k e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "fk kk fkk kffk ff kkk ffk kkfk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "kj ghh dhd hkj jj gjk gkak hhk gd ggg hkak hhkh dagk"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "kh sk hhk khh kkh hhg kgg ggk hg hghh hh hghg"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "jggg djhj jkg khgg kkgh gg hak gd gjhg jkak dk hggh gga"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "hh kf hg gg khh kkhg gh ghkk kghg kk hhhh kgh hk hgk khg hkh ghk hhh kh hgh"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "kk kgkk hkk hk khg kjh kkkk gg gh gkgg kkhk hh"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "fada fadas saga sagas haja asa asas dada das as"
+    }
+  ]
+}

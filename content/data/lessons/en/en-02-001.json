@@ -1,0 +1,106 @@
+{
+  "id": "en-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 16,
+  "slug": "en-02-001",
+  "title": "1, 2, 3",
+  "summary": "Locate number-row 1, 2 and 3, then read changing numeric groups using only those digits and Space.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Locate number-row 1, 2 and 3, then read changing numeric groups using only those digits and Space.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-02-001",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Find 1 and return to the home position. Type each target carefully.",
+      "content": "11f1 1f 111 ff1f ff 1fff 1111 f1 11 111f 11f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Find 2 and return to the home position. Type each target carefully.",
+      "content": "2j2 222 2j2 jjj jj 22 2222 2j22",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Find 3 and return to the home position. Type each target carefully.",
+      "content": "3f3 3333 33 f3f f3f3 333 333f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "1r 322 122 333 2321 2222 32 12 22r1 231 2112 2333 121 3333 3212 3322 2133"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "l21 1212 3322 313 12 333 11 3323 212 31 3111 121 332"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "212 3322 2221 11 1322 213 22 23 123 221 32 333 232 2233 2222 1112 2232 j2"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "212 22 213 322 32 11 333 223 111 3213 32p"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "222 3223 211 213 2222 2m 3232 3212 22 1322 2m3 33 133 2122"
+    }
+  ]
+}

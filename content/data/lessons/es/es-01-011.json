@@ -1,0 +1,80 @@
+{
+  "id": "es-01-011",
+  "unit": "u1",
+  "group": "g2",
+  "order": 10,
+  "slug": "es-01-011",
+  "title": "P",
+  "summary": "Aprender p en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "p"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Aprender p en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-011",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Localiza p y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "pppp pf fffp ffp pppf ff ppfp fff pp ppp",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ppp kkpp kppp kp pppk pkp kpp pkpp pppp pp"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "jpo oppp oop opop op oopp pp pppo ppp ppo pppp po ppop popo ooop oo popp"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "pppq ppq qqpp qq pq ppqp qqp ppp pp pppp qppp"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "el plato de sopa es de ese poeta y el pato ya pasa"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "el pato pasa por el patio el jefe pasa por el piso"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "zh-01-002",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "zh-01-002",
+  "title": "键位练习：a、s、d",
+  "summary": "按顺序学习 a、s、d，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "按顺序学习 a、s、d，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-002",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "找到 a 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "aaaa aaaa aaaa aaaa aaaa aaaa aaaa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "找到 s 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "ssss ssss ssss ssss ssss ssss ssss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "找到 d 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "dddd dddd dddd dddd dddd dddd dddd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "jd dfd ss sa aa jd aa sa ss dfd ss dfd jd aa sa aa sa"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ddd as dd sssd aada ddsf ddd ddsf aada sssd dd as dd as"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "dfad da aa fas dfad fas aa da aa da dfad fas dfad fas"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "jjsd aaja da sas as jjsd as sas da aaja da aaja jjsd as"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ssda aasa ssfd df ssda df ssfd aasa ssfd aasa ssda df"
+    }
+  ]
+}

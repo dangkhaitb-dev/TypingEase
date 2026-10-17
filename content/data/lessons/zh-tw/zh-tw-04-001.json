@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-04-001",
+  "unit": "u4",
+  "group": "g1",
+  "order": 35,
+  "slug": "zh-tw-04-001",
+  "title": "居家短句與選字整合",
+  "summary": "Closed integration; no new target/action/format.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Closed integration; no new target/action/format.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-04-001",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以詞組確認候選字，提交後再輸入數字或標點，最後檢查整句。",
+      "content": "今天在家整理書桌，晚上再看一會兒書。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以詞組確認候選字，提交後再輸入數字或標點，最後檢查整句。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "我把3本書放回書架，再整理桌上的筆記。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以詞組確認候選字，提交後再輸入數字或標點，最後檢查整句。",
+      "content": "媽媽問：「書收好了嗎？」我說都好了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以詞組確認候選字，提交後再輸入數字或標點，最後檢查整句。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "下午4點整理完書桌，我再記下明天的行程。",
+      "inputMode": "ime"
+    }
+  ]
+}

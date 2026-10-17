@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-003",
+  "unit": "u8",
+  "group": "g1",
+  "order": 75,
+  "slug": "zh-tw-08-003",
+  "title": "下課後整理書包",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-003",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "放學鐘響了，我先看看聯絡簿，把今天的作業抄清楚。接著把明天要用的課本放進書包，用不到的就留在學校的抽屜裡，這樣書包就不會太重。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我習慣把書包分成三個區域：最大的放課本和作業簿，中間放鉛筆盒和水壺，前面的小口袋放悠遊卡和衛生紙。每樣東西都有固定的位置，要用的時候一下子就能找到。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "整理完書包，我還會檢查有沒有忘了帶回家的東西，例如體育服或要給家長簽名的通知單。有一次我忘了帶作業回家，隔天只好一早到學校補寫。從那以後，我每天放學前都會多看一眼。",
+      "inputMode": "ime"
+    }
+  ]
+}

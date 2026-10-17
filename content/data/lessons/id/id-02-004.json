@@ -1,0 +1,93 @@
+{
+  "id": "id-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 18,
+  "slug": "id-02-004",
+  "title": "Angka: 0",
+  "summary": "Alihkan di antara deret angka tertutup tanpa tanda pemisah baru.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Alihkan di antara deret angka tertutup tanpa tanda pemisah baru.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-02-004",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "0f00 000f ff 0000 000 0f00",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jf x00f 0fff 0j0 x0j j0 fj f0 0f jff 000 0f0 00"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "0ff j0ff ff 0j00 f00 fjf0 00j 200f 0j0f 0j fj 00 j2f ff0 00jj jf0 000"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "0jj f0f 000 0f00 fff j0 0ff 00 0j j00 000f 0f 0f0j j00j ff fjj0 jj"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "j00 j0 j0f0 00f0 00 0000 000 0ff jfj 0j fj 0f 00f ff0 0ff0 0jj0 fj0 f0"
+    }
+  ]
+}

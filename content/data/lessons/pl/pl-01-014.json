@@ -1,0 +1,118 @@
+{
+  "id": "pl-01-014",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "pl-01-014",
+  "title": "Polskie litery ś, ź, ż",
+  "summary": "Poznaj klawisze ś, ź, ż i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "ś",
+    "ź",
+    "ż"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "ą",
+    "ć",
+    "ę",
+    "ł",
+    "ń",
+    "ó",
+    "ś",
+    "ź",
+    "ż"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze ś, ź, ż i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-014",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "ś",
+      "text": "Przytrzymaj AltGr (prawy Alt) i naciśnij s, aby wpisać ś. Potem wróć do pozycji wyjściowej.",
+      "content": "śś śśśś śśś śś śś śś śś śś",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ź",
+      "text": "Przytrzymaj AltGr (prawy Alt) i naciśnij x, aby wpisać ź. Potem wróć do pozycji wyjściowej.",
+      "content": "źź źźźź źźź źź źź źź źź źź",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ż",
+      "text": "Przytrzymaj AltGr (prawy Alt) i naciśnij z, aby wpisać ż. Potem wróć do pozycji wyjściowej.",
+      "content": "żżż żżżż żż żż żż żż żż żż",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "śśźź śaż żżśś żźśź źźźś żźś żżź źźż źśśź śśźś śźżż śś źź"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "żź źżś śąś źźź lśżą żź śźą żś śźż śżąś śś źż śż źąźż śżżź śśź lżśź źśś"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "źźż żźżś śśś żżś śś cż źź żż źśś źżśś śśśż żżźż"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "źźź śśż śżżś źżź źźśś żź żyźź śźż żżś źźś yyź żśś śś żż żżźż żżź źź śśź żśż"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "dziś jest ważny dzień już późno ale może się uda"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "dzień dobry jak się masz już jest późno więc idę do domu"
+    }
+  ]
+}

@@ -1,0 +1,106 @@
+{
+  "id": "nl-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 26,
+  "slug": "nl-03-003",
+  "title": "Hoofdletters D E F",
+  "summary": "Leer de nieuwe toetsen D, E, F en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen D, E, F en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-03-003",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Houd Shift ingedrukt en druk op d voor D. Ga daarna terug naar de basispositie.",
+      "content": "DD DDDD DDD DD DD DD DD DD",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Houd Shift ingedrukt en druk op e voor E. Ga daarna terug naar de basispositie.",
+      "content": "EEEE EEE EE EE EE EE EE EE",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Houd Shift ingedrukt en druk op f voor F. Ga daarna terug naar de basispositie.",
+      "content": "FFF FFFF FF FF FF FF FF FF",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "EDF FFFF EE DFDE EEE EEF DDFá FF FFD EEá DDá FFF"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "66F FDFD EDD FD EEDF ED DEE FFD DEED FFEE DDF EF DDFF FF EED DDD EEE"
+    }
+  ]
+}

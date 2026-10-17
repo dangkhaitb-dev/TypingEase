@@ -1,0 +1,99 @@
+{
+  "id": "de-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "de-01-007",
+  "title": "Tasten z, u, i",
+  "summary": "Lerne die neuen Tasten z, u, i und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "z",
+    "u",
+    "i"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten z, u, i und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-007",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "Taste üben: z.",
+      "content": "zzzz zzzz zzzz zzzz zzzz zzzz zzzz zzzz zz",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Taste üben: u.",
+      "content": "uuuu uuuu uuuu uuuu uuuu uuuu uuuu u",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Taste üben: i.",
+      "content": "iiii iiii iiii iiii iiii iiii iiii ii",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "uzzi uu zziz zzzi uuzu zrz zui uuu iuu zii ziu iizz zuzi ii zzuz"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "uu uzzz uuzf uuu iu iiii uzi zzi iizi iiuu zu uui izz zzuz iiuz fu zuiu zzu"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "iii uu uz zsz zzu uziz zzzi ii uuiz iizz zuu iu zuzz zzi zz"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "sirr rzr srs sir su rsfi uuir rrrs uf zru rfs iiz"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "ihr wart hier du hast es gut sie sagt es wie er"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "es ist sehr weit hier sie sagt es wie er ihr gesagt hat"
+    }
+  ]
+}

@@ -1,0 +1,49 @@
+{
+  "id": "hi-04-001",
+  "unit": "u4",
+  "group": "g1",
+  "order": 133,
+  "slug": "hi-04-001",
+  "title": "Enter और नई पंक्ति",
+  "summary": "Enter और नई पंक्ति का सटीक और सहज अभ्यास करें।",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Enter और नई पंक्ति का सटीक और सहज अभ्यास करें।",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "hi",
+    "lesson": "hi-04-001",
+    "revision": "hi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "हर पंक्ति के अंत में Enter दबाकर नई पंक्ति शुरू करें।",
+      "content": "काम कर\nनाम लिख\nघर चल\nपानी पी\nखाना खा\nपाठ पढ़",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "पहले सीखी कुंजियों से सटीकता बनाए रखें।",
+      "content": "हर दिन समय पर काम कर\nघर पर कम सामान रख\nरात को जल्दी सो जा",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "पहले सीखी कुंजियों से सटीकता बनाए रखें।",
+      "content": "सुबह जल्दी उठ\nघर पर आराम कर\nकल फिर बात कर\nसमय पर काम कर",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "पहले सीखी कुंजियों से सटीकता बनाए रखें।",
+      "content": "नाम और दिन लिख\nकाम के बाद घर लौट\nखाना रख और आराम कर\nकल फिर मिलना",
+      "linebreak": "enter"
+    }
+  ]
+}

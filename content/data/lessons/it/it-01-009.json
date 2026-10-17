@@ -1,0 +1,102 @@
+{
+  "id": "it-01-009",
+  "unit": "u1",
+  "group": "g2",
+  "order": 8,
+  "slug": "it-01-009",
+  "title": "R, T, Y",
+  "summary": "Impara i tasti r, t, y e usali con i tasti già studiati.",
+  "newKeys": [
+    "r",
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti r, t, y e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-009",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "Trova r e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "rrff ff rrr rrfr rfr ffrr rrf rr",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "Trova t e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "tt ttt tttj tjtt ttj tttt jtt",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "Trova y e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ffyy yy yyy yyf ffyf fy ff fffy yyyy",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ryt asf tàr ysa frt àty sry tfa ryà asy ftr yàs"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ttry yy tryt ttt ytt yyt tyts yytr rrt tt tttt rrtt rr ttr rrrt tyry"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "tsy àrf yat fsr tàs ryf asy tràs yfa sàt ryà ftay"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "rat syf tàr yas fry àst tyà asr fty yrà stà rfy"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ytyt ff yyrr ty yyyr yt yyyy ttrt tt rryy tyr ytt yy ttt"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "tre terra arte rete tarda sera era farà sarà festa"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "alle tre sarà la festa e la sera sarà tarda"
+    }
+  ]
+}

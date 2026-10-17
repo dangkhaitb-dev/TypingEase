@@ -1,0 +1,68 @@
+/* luyen-phim-yeu/weak-keys.css — công cụ luyện phím yếu.
+   Nạp sau tokens.css / base.css / ../cach-go-10-ngon/article.css (trang này mượn khung bài viết).
+
+   Kiểu Apple: công cụ là một thẻ trắng bóng mềm; phím yếu là những ô xám bo tròn với chữ phím lớn;
+   đoạn luyện mono cỡ lớn, thoáng, con trỏ xanh mảnh; chỉ số là số lớn nét mảnh + chú thích xám — cùng
+   ngôn ngữ với trang kiểm tra tốc độ (kiem-tra-toc-do-go/test.css). */
+
+.weak-tool{margin-bottom:56px;padding:36px 40px 40px;border:0;border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-card)}
+.weak-tool .eyebrow{margin-bottom:8px}
+.weak-tool h2{margin-bottom:8px;font-size:28px;letter-spacing:var(--track-display)}
+.weak-tool h3{margin:28px 0 0;font-size:19px;font-weight:600;letter-spacing:var(--track-title)}
+.weak-status,.weak-note{color:var(--ink-500);font-size:var(--fs-sm)}
+.weak-empty{padding:16px 0 2px}
+.weak-empty p{color:var(--ink-600)}
+
+/* ---------- danh sách phím yếu ---------- */
+.weak-key-list{display:flex;flex-wrap:wrap;gap:12px;margin:16px 0 14px}
+.weak-key{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:4px;min-width:84px;padding:16px 16px 12px;border:0;border-radius:var(--r);background:var(--surface-alt);box-shadow:none;color:var(--ink-900)}
+.weak-key b{font:400 30px/1 var(--font-mono)}
+.weak-key span{color:var(--error-700);font-size:12px;font-weight:500}
+.weak-note{margin-bottom:22px}
+
+/* ---------- khu gõ thử ---------- */
+.weak-drill{margin-top:28px;padding-top:4px;border-top:1px solid var(--border)}
+/* Chữ chưa gõ xám (ink-400), đã gõ đúng gần đen, gõ sai đỏ trên nền hồng nhạt. Con trỏ CSS chỉ là
+   phương án dự phòng: khi effects.js gắn con trỏ trượt (.has-smooth-caret) thì không vẽ lên .current. */
+.weak-prompt{position:relative;margin:16px 0 24px;padding:4px;border:0;background:none;color:var(--ink-400);font:400 24px/1.7 var(--font-mono);letter-spacing:-.01em;overflow-wrap:anywhere}
+.weak-prompt span{white-space:pre-wrap}
+.weak-prompt .correct{color:var(--ink-900)}
+.weak-prompt .incorrect{border-radius:3px;background:var(--error-100);color:var(--error);text-decoration:none}
+.weak-prompt .current{position:relative;color:var(--ink-900)}
+.weak-prompt:not(.has-smooth-caret) .current::before{content:"";position:absolute;inset-block:.18em;inset-inline-start:-1px;width:2px;border-radius:1px;background:var(--primary-600);animation:weak-caret 1.1s var(--ease) infinite}
+@keyframes weak-caret{0%,50%{opacity:1}70%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.weak-prompt .current::before{animation:none}}
+.weak-drill label{display:block;margin:0 0 8px;color:var(--ink-500);font-size:13px;font-weight:500}
+.weak-drill textarea{display:block;box-sizing:border-box;width:100%;min-height:96px;margin-top:0;padding:14px 16px;border:1px solid transparent;border-radius:var(--r);background:var(--surface-alt);resize:vertical;font:400 16px/1.6 var(--font-mono);transition:background-color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.weak-drill textarea:focus{border-color:var(--primary-500);background:var(--surface);box-shadow:0 0 0 4px var(--primary-100)}
+.weak-drill textarea:disabled{opacity:.7}
+.weak-feedback{min-height:24px;margin:12px 0;color:var(--ink-500);font-size:var(--fs-sm);font-weight:400}
+
+/* ---------- chỉ số & kết quả: số lớn nét mảnh, chú thích xám, vạch ngăn mảnh ---------- */
+.weak-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin:20px 0}
+.weak-metric{display:flex;flex-direction:column;gap:2px;padding:0 16px;border:0;background:none;text-align:start}
+.weak-metric:first-child{padding-inline-start:0}
+.weak-metric+.weak-metric{border-inline-start:1px solid var(--border)}
+.weak-metric span{display:block;color:var(--ink-500);font-size:13px;font-weight:500}
+.weak-metric b{display:block;color:var(--ink-900);font:300 32px/1.05 var(--font-body);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.weak-result{margin-top:24px;padding:28px 28px 26px;border:0;border-radius:var(--r-lg);background:var(--surface-alt);animation:weak-result-in var(--dur) var(--ease-out) both}
+.weak-result h3{margin:0 0 4px;color:var(--ink-900)}
+.weak-result .weak-metrics{margin:18px 0 4px}
+.weak-actions{display:flex;align-items:center;gap:22px;flex-wrap:wrap;margin-top:22px}
+.weak-actions .home-link{color:var(--link);font-size:15px;font-weight:400}
+.weak-actions .home-link::after{content:" ›"}
+.weak-actions .home-link:hover{text-decoration:underline}
+@keyframes weak-result-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.weak-result{animation:none}}
+
+/* ---------- đáp ứng ---------- */
+@media (max-width:900px){
+  .weak-tool{padding:24px 20px 26px;border-radius:var(--r-lg)}
+  .weak-tool h2{font-size:24px}
+  .weak-prompt{font-size:19px}
+  .weak-metrics{grid-template-columns:repeat(2,minmax(0,1fr));row-gap:16px}
+  .weak-metric:nth-child(3){padding-inline-start:0;border-inline-start:0}
+  .weak-metric b{font-size:28px}
+  .weak-result{padding:22px 18px}
+  .weak-actions{align-items:flex-start;flex-direction:column;gap:12px}
+}

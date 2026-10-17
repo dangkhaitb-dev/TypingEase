@@ -1,0 +1,61 @@
+{
+  "id": "vi-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "vi-01-010",
+  "title": "Telex · â",
+  "summary": "Học phím Q (ngón út trái hàng trên), Y (ngón trỏ phải vươn xa hàng trên) và P (ngón út phải hàng trên).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Học phím Q (ngón út trái hàng trên), Y (ngón trỏ phải vươn xa hàng trên) và P (ngón út phải hàng trên).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Telex dùng phím chữ để thêm dấu. Gõ a hai lần (a a) để ra â: cay → cây, san → sân.",
+      "content": "cay cây cau câu san sân nhan nhân chan chân",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ a a để ra â. Ví dụ: tâm = t a a m.",
+      "content": "tâm lâu âu â lâu tâm mây mâm lâu â cây mây tâm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có â. Nhớ: â = a a.",
+      "content": "bây câu bong ong râm nâu lang um ngân tuân dân trân râm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có â. Nhớ: â = a a.",
+      "content": "soi tuân ruy quân nga âm ba luân no vây vây châm nhân âm vân",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý â.",
+      "content": "sau xuân xao râm chim nom thung rong lâu ta tre vinh gây lâu châu ven",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có â mà không nhìn bàn phím.",
+      "content": "tuân quân nung khan dâu thân sâu râm sân keo ngân lay hân cho thi dây",
+      "inputMode": "telex"
+    }
+  ]
+}

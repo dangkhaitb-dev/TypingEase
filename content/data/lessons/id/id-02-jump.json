@@ -1,0 +1,89 @@
+{
+  "id": "id-02-jump",
+  "unit": "u2",
+  "group": "g2",
+  "order": 20,
+  "slug": "id-02-jump",
+  "title": "Loncat maju",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-02-jump",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "2f 11 fj 22 3j1 32f3 ffj f3jf 2jj j2fj j13 f23 3f 3j32 1f jf2 1j3"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "44ff p55f j4f fj55 6j4 fj66 6jj 64 f6j6 5jj jj j666 j665 4f"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "f978 ff 79 ff8 799j jjff fjfj jj9f 8f97 9978 9j88 77fj j9jf fj7f fjj j98f"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "j00 j0 j0f0 00f0 00 0000 000 0ff jfj 0j fj 0f 00f ff0 0ff0 0jj0 fj0 f0"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik teks bahasa Indonesia ini dengan tombol yang sudah dipelajari.",
+      "content": "kakak punya 6 buku dan 8 pensil serta 10 lembar kertas"
+    }
+  ]
+}

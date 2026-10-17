@@ -1,0 +1,49 @@
+{
+  "id": "ko-04-104",
+  "unit": "u4",
+  "group": "g1",
+  "order": 63,
+  "slug": "ko-04-104",
+  "title": "숫자와 문장 부호",
+  "summary": "숫자와 문장 부호가 들어간 문장을 정확하게 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "hangul",
+  "intro": "숫자와 문장 부호가 들어간 문장을 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-04-104",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "오늘 오전 9시에 학교 앞에서 버스를 타요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "시장에서 사과 3개, 배 2개를 사요. 모두 7천 원이에요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "내일 우리 약속은 10시예요. 절대 늦지 마세요!",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "소풍에 가져갈 물은 2병이에요. 빵도 살까요?",
+      "inputMode": "hangul"
+    }
+  ]
+}

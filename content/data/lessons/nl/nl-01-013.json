@@ -1,0 +1,95 @@
+{
+  "id": "nl-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 14,
+  "slug": "nl-01-013",
+  "title": "Accentletters ë, ï",
+  "summary": "Leer de nieuwe toetsen ë en ï en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen ë en ï en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-013",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Druk op Shift + ' (dode toets), laat los en druk dan op e: je krijgt ë. Ga daarna terug naar de basispositie.",
+      "content": "ëee ëëë eeeë ëë ëe ëëeë ëë ëe eeëë ëëee ëeëë"
+    },
+    {
+      "type": "standard",
+      "text": "Druk op Shift + ' (dode toets), laat los en druk dan op i: je krijgt ï. Ga daarna terug naar de basispositie.",
+      "content": "ïïï ïïïï ïïiï iïï ïïiï iï ïiïï ïï ïi iiïï"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ëïë ïoï ësïë ën ëë èei èïë aï ëë ïë ëïéë ëé ïëa ïéë ïn ëïëé"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ëëï éëï ëé ïëï éné ëè ëraï ïrëï ïëïï ëesï ëï tëïï ïï ïïn"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ïïè ëï ir ëïëë ïï ïïïï aïëo iëëè ïï eëë ïëï tïïs ïèt ïët"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "oïï èï rï ëéëë ïëïï ïïïn ïïë ïo eiïa iï eï ïrïë èë saï raè"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "aëë ëë tn èïën ïr tï ëë ïëë ëë ïeïï oïèï ïe ïëï ïééï ëïïr"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "twee ideeën over de zeeën zijn naïef maar niet slecht"
+    }
+  ]
+}

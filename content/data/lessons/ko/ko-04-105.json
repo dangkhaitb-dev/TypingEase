@@ -1,0 +1,53 @@
+{
+  "id": "ko-04-105",
+  "unit": "u4",
+  "group": "g1",
+  "order": 64,
+  "slug": "ko-04-105",
+  "title": "Enter로 짧은 글 쓰기",
+  "summary": "Enter로 줄을 바꾸며 짧은 글을 정확하게 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "Enter로 줄을 바꾸며 짧은 글을 정확하게 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-04-105",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "아침에 창문을 열어요\n바람이 들어와요\n기분이 좋아요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "책을 한 권 골라요\n첫 장을 펼쳐요\n천천히 읽어요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "공원에서 산책해요\n벤치에서 잠시 쉬어요\n새소리를 들어요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "오늘 할 일을 적어요\n끝낸 일은 지워요\n내일 일도 정해요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    }
+  ]
+}

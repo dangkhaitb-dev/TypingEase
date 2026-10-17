@@ -1,0 +1,90 @@
+{
+  "id": "nl-02-jump",
+  "unit": "u2",
+  "group": "g2",
+  "order": 23,
+  "slug": "nl-02-jump",
+  "title": "Spring vooruit",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-02-jump",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "2231 a33 22 21 223 2211 2223 31 222 3311 s12 33 111 23 11 3133 1122 1132"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "66d6 44 555 6644 6544 666 66 64 46 444 445 55d 665"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "8997 779 77 88 999 7879 gg 8898 997 899 7797 7787 99 998 89 g8 8888 7789"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "uu0 0u0 u000 000 0000 00 u0 uu00 u00 00u 0u00 00u0 uu 000u 0u"
+    },
+    {
+      "type": "standard",
+      "text": "Typ de zin rustig over, ook de cijfers.",
+      "content": "mijn zus woont op nummer 25 en haar buurman op nummer 27"
+    }
+  ]
+}

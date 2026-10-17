@@ -1,0 +1,82 @@
+{
+  "id": "nl-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "nl-01-003",
+  "title": "Toetsen a, s, d",
+  "summary": "Leer de nieuwe toetsen a, s, d en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen a, s, d en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-003",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Toets oefenen: a.",
+      "content": "aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Toets oefenen: s.",
+      "content": "ssss ssss ssss ssss ssss ssss ssss ssss ssss ssss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Toets oefenen: d.",
+      "content": "dddd dddd dddd dddd dddd dddd dddd dddd dddd dd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "dsa ssds asd aaa ssjd sssd sa jdsd aasd aa dssd aas ad ss aadd"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ass ssss ddss ddsd ssa dd jdda aasd dda sas ssd aaa ddj"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "fas ssd sssa ss ff ddd ass asaa aasa ddds aa sa aaas sss ffsd"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ssad fds ssss aass dsda dd jsds aaas dddd aa sssa"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ddd fas aa ssds aads sada ddsd ssa add jd ss da ssas sadd ssd aad"
+    }
+  ]
+}

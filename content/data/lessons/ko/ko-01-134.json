@@ -1,0 +1,43 @@
+{
+  "id": "ko-01-134",
+  "unit": "u1",
+  "group": "g1",
+  "order": 35,
+  "slug": "ko-01-134",
+  "title": "받침과 낱말 복습 1",
+  "summary": "받침이 있는 낱말이 들어간 문장을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "받침이 있는 낱말이 들어간 문장을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-134",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "밤이 되자 밝은 달빛이 좁은 골목을 비춰요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "암탉이 넓은 마당에서 모이를 콕콕 쪼아요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "맑은 가을 하늘 아래 조용한 산길을 걸어요",
+      "inputMode": "hangul"
+    }
+  ]
+}

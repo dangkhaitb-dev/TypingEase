@@ -1,0 +1,101 @@
+{
+  "id": "nl-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "nl-01-006",
+  "title": "Toetsen e, r, t",
+  "summary": "Leer de nieuwe toetsen e, r, t en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "e",
+    "r",
+    "t"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen e, r, t en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-006",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Toets oefenen: e.",
+      "content": "eeee eeee eeee eeee eeee eeee eeee eeee eeee eee",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "Toets oefenen: r.",
+      "content": "rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrr",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "Toets oefenen: t.",
+      "content": "tttt tttt tttt tttt tttt tttt tttt tttt tttt",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "errt ree ttre rr ee ttt eer er rra etr tte"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "er eere rr ee rrrt et etrr trrt rrdr rrt te rrr tr tte rer tttt"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "eer ttrt eeee ert rh tt hett ttt rrte ttet rttt rrre ttte ee"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "tttt rert ttr eee rte rre rer ee rr ltet tt eet tter tte tle"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "eet eete tttr tr reee teer ree eett rr es"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "het water was daar dat was haar tas het weer"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "het weer was te heet daar was het glas water"
+    }
+  ]
+}

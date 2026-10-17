@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-001",
+  "unit": "u9",
+  "group": "g1",
+  "order": 124,
+  "slug": "vi-09-001",
+  "title": "Mẫu ký tự thu gọn",
+  "summary": "Xây dựng năng lực \"Compact Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Luyện phản xạ tốc độ tối đa trên các mẫu ký tự ngắn gọn, quen thuộc để tay vận động tự nhiên.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Compact Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Luyện phản xạ tốc độ tối đa trên các mẫu ký tự ngắn gọn, quen thuộc để tay vận động tự nhiên.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên các cặp từ trái nghĩa ngắn: ra vào, đi lại, nhanh chậm.",
+      "content": "ra vào, đi lại, lên xuống, sớm tối, gần xa, đứng ngồi, đúng sai, vui buồn, nhanh chậm, trước sau, ngày đêm, trong ngoài, lớn nhỏ, xa gần.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về cơ hội rèn luyện trong công việc hằng ngày.",
+      "content": "Mỗi ngày chúng ta đều có cơ hội rèn luyện để trở nên nhanh nhẹn và chính xác hơn trong công việc. Việc lặp lại các thao tác cơ bản với nhịp độ dứt khoát giúp hình thành phản xạ tự nhiên không cần suy nghĩ đắn đo. Khi luyện tập, hãy thả lỏng vai, giữ nhịp thở ổn định và quan sát dòng chữ phía trước. Nếu mắc lỗi, sửa ngay rồi tiếp tục với tốc độ vừa sức để đôi tay ghi nhớ chuyển động đúng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ về sự nhanh nhẹn và tiến bộ mỗi ngày.",
+      "content": "đi lại nhanh nhẹn vào ra sớm muộn trở về đúng giờ làm việc chăm chỉ tiến bộ từng ngày nâng cao hiệu suất. Mỗi lượt gõ giữ nhịp đều, mắt theo dòng chữ và ngón tay trở về vị trí quen thuộc sau mỗi lần chạm phím. Người học tăng tốc từ từ, ưu tiên độ chính xác rồi mới rút ngắn khoảng nghỉ giữa các từ. Khi nhịp tay ổn định, hãy chuyển từ cụm ngắn sang câu dài và giữ thao tác nhẹ nhàng đến hết dòng. Sau mỗi lượt, nghỉ ngắn, thả lỏng bàn tay rồi bắt đầu lại với tư thế thoải mái.",
+      "inputMode": "telex"
+    }
+  ]
+}

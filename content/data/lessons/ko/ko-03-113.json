@@ -1,0 +1,52 @@
+{
+  "id": "ko-03-113",
+  "unit": "u3",
+  "group": "g1",
+  "order": 58,
+  "slug": "ko-03-113",
+  "title": "기호 [ ] \\",
+  "summary": "[ ] \\ 키를 익히고 이미 배운 키와 섞어 연습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "[ ] \\ 키를 익히고 이미 배운 키와 섞어 연습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-03-113",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "화면에 보이는 기호를 순서대로 입력하세요.",
+      "content": "[[[[ [[[[ [[[[ [[[[ [[[[ [[[[ [[[["
+    },
+    {
+      "type": "standard",
+      "text": "화면에 보이는 기호를 순서대로 입력하세요.",
+      "content": "]]]] ]]]] ]]]] ]]]] ]]]] ]]]] ]]]]"
+    },
+    {
+      "type": "standard",
+      "text": "화면에 보이는 기호를 순서대로 입력하세요.",
+      "content": "\\\\\\\\ \\\\\\\\ \\\\\\\\ \\\\\\\\ \\\\\\\\ \\\\\\\\ \\\\\\\\"
+    },
+    {
+      "type": "standard",
+      "text": "화면에 보이는 기호를 순서대로 입력하세요.",
+      "content": "[[ㄹ ㅓ]] \\ㅏ\\ [[[ ㄹ]ㄹ \\\\ㅓ\\ [[ㄹ \\\\ㅓ\\ ㄹ]ㄹ [[[ \\ㅏ\\ ㅓ]] \\ㅏ\\",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "화면에 보이는 기호를 순서대로 입력하세요.",
+      "content": "=[ㅓ] \\ㄹ\\ `ㅏ` ]=[ ㅣ`` [ㅗ]= =[ㅓ] [ㅗ]= ㅣ`` ]=[ `ㅏ` \\ㄹ\\ `ㅏ`",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-003",
+  "unit": "u7",
+  "group": "g1",
+  "order": 98,
+  "slug": "vi-07-003",
+  "title": "Lịch công tác tuần",
+  "summary": "Xây dựng năng lực \"Fact Explanation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập văn bản giải thích nguyên nhân và hệ quả dựa trên các dữ kiện thực tế có số liệu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Fact Explanation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập văn bản giải thích nguyên nhân và hệ quả dựa trên các dữ kiện thực tế có số liệu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Mở đầu có dẫn dắt cùng lịch tuần làm việc của ban quản trị dự án.",
+      "content": "Lịch tuần làm việc của ban quản trị dự án: thứ Hai họp giao ban rà soát tiến độ; thứ Tư khảo sát thực địa công trình; thứ Sáu tiếp đoàn kiểm toán độc lập đến làm việc.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua lịch công tác tuần của phòng đối ngoại.",
+      "content": "Lịch công tác tuần của phòng đối ngoại: sáng thứ Ba đón đoàn đại biểu xúc tiến thương mại quốc tế tại sân bay; chiều thứ Năm tổ chức hội thảo giới thiệu tiềm năng đầu tư; thứ Bảy ký kết biên bản ghi nhớ hợp tác chiến lược tại trụ sở chính của tập đoàn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Duy trì mạch gõ qua chương trình chi tiết tuần lễ giao lưu văn hóa doanh nghiệp.",
+      "content": "Chương trình chi tiết tuần lễ giao lưu văn hóa doanh nghiệp: ngày thứ nhất khai mạc giải chạy việt dã gây quỹ từ thiện; ngày thứ hai triển lãm ảnh nét đẹp lao động qua các thời kỳ; ngày thứ ba hội thi ẩm thực ba miền giữa các công đoàn cơ sở; ngày thứ tư tọa đàm chia sẻ kinh nghiệm cân bằng công việc và cuộc sống gia đình; ngày cuối cùng đêm hội âm nhạc tổng kết và trao thưởng thi đua.",
+      "inputMode": "telex"
+    }
+  ]
+}

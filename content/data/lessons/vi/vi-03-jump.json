@@ -1,0 +1,71 @@
+{
+  "id": "vi-03-jump",
+  "unit": "u3",
+  "group": "g4",
+  "order": 62,
+  "slug": "vi-03-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Kiểm tra: gõ các từ viết hoa có Đ mà không nhìn bàn phím.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có Đ mà không nhìn bàn phím.",
+      "content": "Đá Đó Đêm Điều dưới cả Đặt Điểm Đừng thời Điện Đánh",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có C, D, E mà không nhìn bàn phím.",
+      "content": "mỗi Dòng kiểm Cho đi Dụng Cô Câu mình Em Cô Chơi Cơm Dây Dùng Căn Dịu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có R, S, T mà không nhìn bàn phím.",
+      "content": "Sát Bật đồ Rau Thứ chiếc Tài giúp chuyện Tối đó Tuần tôi Thức Tại",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ cả dòng bằng Caps Lock, không giữ Shift.",
+      "content": "SÀI GÒN NHA TRANG ĐÀ LẠT VŨNG TÀU QUY NHƠN HẢI DƯƠNG",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ kèm dấu ; ' , mà không nhìn bàn phím.",
+      "content": "đổi; rồi dưới, và nhóm, 'hỏi' 'cần' thêm mỗi; đồ; học, qua, 'ăn' rồi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ kèm dấu ! @ $ mà không nhìn bàn phím.",
+      "content": "thành@ghi $4 $62 trong@nhé $73 $14 ngày nói! $29 đến",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm có [ ] \\ xen với các phím đã học. Nếu bộ gõ Telex đổi ngoặc thành ơ, ư, hãy chuyển sang chế độ tiếng Anh khi gõ ngoặc.",
+      "content": "[a] [f] ]a[ \\a\\ [j] ]f[ \\f\\ [s] ]j[ \\j\\ [a]"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại các ký hiệu | < > trong cụm mới, giữ nhịp đều.",
+      "content": "1<2 3>2 a|x 4<5 6>5 b|y 7<8 9>8 c|z a<b x>y"
+    }
+  ]
+}

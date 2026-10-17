@@ -1,0 +1,112 @@
+{
+  "id": "fil-03-005",
+  "unit": "u3",
+  "group": "g1",
+  "order": 25,
+  "slug": "fil-03-005",
+  "title": "Malalaking titik: J, K, L",
+  "summary": "Malalaking titik: J, K, L. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "J",
+    "K",
+    "L"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Malalaking titik: J, K, L. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-03-005",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "J",
+      "text": "Pindutin nang matagal ang Shift gamit ang hinliliit ng kabilang kamay, saka pindutin ang j para i-type ang J. Ibalik ang mga daliri sa panimulang posisyon.",
+      "content": "JfJf Jf fffJ JJ JJJJ JJfJ fJf JJJ JJf ff JfJ JJJf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "K",
+      "text": "Pindutin nang matagal ang Shift gamit ang hinliliit ng kabilang kamay, saka pindutin ang k para i-type ang K. Ibalik ang mga daliri sa panimulang posisyon.",
+      "content": "KKKf KK fKKK Kf KKK KKKK fKK",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "L",
+      "text": "Pindutin nang matagal ang Shift gamit ang hinliliit ng kabilang kamay, saka pindutin ang l para i-type ang L. Ibalik ang mga daliri sa panimulang posisyon.",
+      "content": "LLL LL ffL fffL LLf LLff fLLL ffLL ff LLLL fLff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "KLL jL jfJ Jf LLj jj jKL JJ fKtj LK Jff KK"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jfJ9 Kjj jLj LKK KK JfLK LLf ffJ ff LL jjJ LLLj fffL JJ"
+    }
+  ]
+}

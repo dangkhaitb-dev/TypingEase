@@ -1,0 +1,68 @@
+{
+  "id": "vi-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 35,
+  "slug": "vi-02-003",
+  "title": "Luyện phím · 7 8 9",
+  "summary": "Làm quen vị trí các phím số 7, 8, 9, 0 do bàn tay phải phụ trách trên hàng phím số; hoàn thiện dãy 10 chữ số.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Làm quen vị trí các phím số 7, 8, 9, 0 do bàn tay phải phụ trách trên hàng phím số; hoàn thiện dãy 10 chữ số.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-02-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím 7: ngón trỏ phải, hàng số. Gõ 7 xen với các phím đã học.",
+      "content": "577 7 7j 577 7j 777 f7 7j 77 73 777 73 777 77"
+    },
+    {
+      "type": "standard",
+      "text": "Phím 8: ngón giữa phải, hàng số. Gõ 8 xen với các phím đã học.",
+      "content": "888 288 88 888 288 88 288 8 8j"
+    },
+    {
+      "type": "standard",
+      "text": "Phím 9: ngón áp út phải, hàng số. Gõ 9 xen với các phím đã học.",
+      "content": "9j 499 999 9 95 99 999 95 f9 99"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các nhóm số có 7 8 9. Giữ ngón tay trên hàng cơ sở sau mỗi lần với lên hàng số.",
+      "content": "716 648 8 8997 289 938 843 71 592 91 548 8 399 47 76"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các nhóm số có 7 8 9. Giữ ngón tay trên hàng cơ sở sau mỗi lần với lên hàng số.",
+      "content": "7 8 9252 752 8 72 814 93 9 811 228 8775 68 73 9161 7418"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ số kèm từ, ví dụ: 12 quả cam.",
+      "content": "2 ly nước 49 quả trứng 96 con gà 85 con cá 24 cái bàn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ số kèm từ, ví dụ: 12 quả cam.",
+      "content": "9 cái ghế 8 tờ giấy 93 cây bút 4 chiếc xe 78 cây bút 74 con cá 76 bó rau",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ số kèm từ mà không nhìn bàn phím.",
+      "content": "98 ly nước 76 người bạn 71 bát cơm 39 cuốn sách 42 quả trứng 59 đôi giày",
+      "inputMode": "telex"
+    }
+  ]
+}

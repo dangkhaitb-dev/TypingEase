@@ -1,0 +1,99 @@
+{
+  "id": "fr-01-018",
+  "unit": "u1",
+  "group": "g3",
+  "order": 17,
+  "slug": "fr-01-018",
+  "title": "î, ô et û : composer le circonflexe",
+  "summary": "Appuyez sur la touche morte ^, relâchez-la, puis tapez i, o ou u selon la cible.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Appuyez sur la touche morte ^, relâchez-la, puis tapez i, o ou u selon la cible.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-018",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Appuyez sur la touche morte ^, relâchez-la, puis tapez i, o ou u selon la lettre demandée.",
+      "content": "îîf fî îfîî îf ffîî ffî îîî îî îîff ffîf îîîî îîfî"
+    },
+    {
+      "type": "standard",
+      "text": "Appuyez sur la touche morte ^, relâchez-la, puis tapez i, o ou u selon la lettre demandée.",
+      "content": "ffô ôffô ôôô ôf fôfô ôfôf ôfô fff ôôôô ôô fô ff"
+    },
+    {
+      "type": "standard",
+      "text": "Appuyez sur la touche morte ^, relâchez-la, puis tapez i, o ou u selon la lettre demandée.",
+      "content": "ûûûf ûûff fûû ûûfû ûûf ff ûfûû ûûû ûûûû ûû"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ôôôf ûûîô ûfî fîôô ûû ffû ffôû ôô rrf fîff ôf îôô îî îîûû îûô"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "jôîj qûjî qqj ôô ûûô ôûôî jj jjûî jjj jûîî"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "la boîte contient des épices et le dîner sent très bon"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le coût du séjour baisse en août près de cette île"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "îûfô ff îfû fffô ûfôf ûûîô ôôî ùùô îî îffù fîî"
+    }
+  ]
+}

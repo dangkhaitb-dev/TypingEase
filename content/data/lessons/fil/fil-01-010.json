@@ -1,0 +1,81 @@
+{
+  "id": "fil-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "fil-01-010",
+  "title": "Mga titik: p",
+  "summary": "Mga titik: p. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "p"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Mga titik: p. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-010",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "ffpp ppfp pppf ppp pppp pp ffp ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "pfpf ff fpjp pjp fpf pf fp fjf jjp pj jjf ppfp fp ppf jf"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "pfp ppfj ffj pj pjp fj jpjf jj jpfp jp jjp jf pjp jj ffj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "pp fpp ppjj pjpj jpp fj pfjf jfjf pf jj pj jpf jjff pjp"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "pasok ka sa klase po para sa araw at oras"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "para sa iyo po papel pusa puso apat tapos pasok"
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "id": "tr-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "tr-01-005",
+  "title": "Tuşlar l, ş, i",
+  "summary": "l, ş, i tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "l",
+    "ş",
+    "i"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "l, ş, i tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-005",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Tuş alıştırması: l.",
+      "content": "lll llll ll ll ll ll ll ll",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ş",
+      "text": "Tuş alıştırması: ş.",
+      "content": "şşşş şşş şş şş şş şş şş şş",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Tuş alıştırması: i.",
+      "content": "iiii iii ii ii ii ii ii ii",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "iiii şş şlş ii iii ill ll lli lll işl lfl iş şil işli ifi işlf iişş şşiş"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "şş hihi şşş şl şşii lşl lşll lllş iilş ilii şşi liş"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ii şşş ll şl şşli iili şşlş llş iişl iil iiig şş lşşş lli liş lig li"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "li işil lli liş şşşş ii llis iii iş şşş ll iiiş llş şş şll"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "ilk dakika kasa dil sahil iki kişi sakal sil dikiş"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "ilgili kişi ilk dakikada kasada dal sal ada iki"
+    }
+  ]
+}

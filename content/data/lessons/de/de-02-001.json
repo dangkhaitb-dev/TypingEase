@@ -1,0 +1,74 @@
+{
+  "id": "de-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 17,
+  "slug": "de-02-001",
+  "title": "Umschalttaste (Shift)",
+  "summary": "Halte Shift gedrückt, um Großbuchstaben zu tippen.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Halte Shift gedrückt, um Großbuchstaben zu tippen.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-02-001",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Halte Shift mit dem kleinen Finger der anderen Hand gedrückt und tippe den Großbuchstaben. Lasse Shift danach los.",
+      "content": "Ff Jj Ff Jj Fj Jf fJ jF Ff Jj Ff Jj Fj Jf fJ jF Ff"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle zwischen Groß- und Kleinbuchstaben: Shift drücken, Buchstaben tippen, Shift loslassen.",
+      "content": "Aa Ss Dd Gg As Sd Dg Ga aS sD dG gA Aa Ss Dd Gg"
+    },
+    {
+      "type": "standard",
+      "text": "Halte Shift für jeden Großbuchstaben gedrückt und lasse ihn vor dem Kleinbuchstaben wieder los.",
+      "content": "Hh Kk Ll Hk Kl Lh hK kL lH Hh Kk Ll Hk Kl Lh hK"
+    },
+    {
+      "type": "standard",
+      "text": "Schreibe jeden Namen mit einem Großbuchstaben am Anfang.",
+      "content": "Anna Jan Hanna Karl Lena Olga Nora Paul Sara Emil Dora"
+    }
+  ]
+}

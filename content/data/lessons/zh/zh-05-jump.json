@@ -1,0 +1,119 @@
+{
+  "id": "zh-05-jump",
+  "unit": "u5",
+  "group": "g2",
+  "order": 54,
+  "slug": "zh-05-jump",
+  "title": "跳过前面部分",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ime",
+  "intro": "用真实中文句子练习连贯、准确的输入。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-05-jump",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "雨停以后天气变得凉快，孩子们都跑到楼下去玩了。我也换上运动鞋，下楼和他们一起踢球。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "早上的空气很清新，我决定以后每天都早点起床散步。早睡早起以后，白天工作也更有精神了。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "吃了药又睡了一觉，第二天她的身体就好多了。她说以后天冷了，一定要记得多穿一件衣服。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "一个小时以后来电了，大家都松了一口气，继续看电视。后来我们买了一个小台灯，放在抽屉里备用。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "老师说，只要找到出错的原因，下次一定能考得更好。他把错题抄在本子上，每天睡觉前看一遍。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "搬进新家以后，上班只要走十分钟，方便多了。我每天多出一个小时，可以用来运动和看书。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "现在我每周给花浇两次水，它们又开出了新的花。邻居看见了，也来问我是怎么养的。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用真实中文句子练习连贯、准确的输入。",
+      "content": "运动以前先做一些准备活动，就不容易受伤了。跑完步也要慢慢走几分钟，让身体放松下来。",
+      "inputMode": "ime"
+    }
+  ]
+}

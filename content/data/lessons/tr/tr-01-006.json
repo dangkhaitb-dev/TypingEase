@@ -1,0 +1,96 @@
+{
+  "id": "tr-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "tr-01-006",
+  "title": "Tuşlar q, w, e",
+  "summary": "q, w, e tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "q",
+    "w",
+    "e"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "q, w, e tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-006",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "Tuş alıştırması: q.",
+      "content": "qqqq qqqq qqqq qqqq qqqq qqqq qqqq qqqq qqqq qq",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "Tuş alıştırması: w.",
+      "content": "wwww wwww wwww wwww wwww wwww wwww www",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Tuş alıştırması: e.",
+      "content": "eeee eeee eeee eeee eeee eeee eeee eeee eeee eee",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "eeee qqqe eeqe qw wwqe eeqq eeg eqwe www wwqq eee ee qq qqw qeq"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ekw eqqq wqwq kwew weqk qqqe şqqw eee ww eee qew şqw qq eeeş eeew ew"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "qeqq wqw eeww eee qwe ww qqwq eqw ee we qw qie eq"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "wwqq ww qwe eqw wwww wwew qqqw qqe qj qqq qqwq eqqe qq jjqq wq eqqw wwqw"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "eski kedi geldi sesi dedi ekledi aile iki kişi sakla ekle"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "kedi sesi geldi eski sahil de ilk ses dedi iki ekle"
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "id": "vi-12-011",
+  "unit": "u12",
+  "group": "g3",
+  "order": 171,
+  "slug": "vi-12-011",
+  "title": "Xác nhận đặt phòng",
+  "summary": "Xây dựng năng lực \"Booking Confirmation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập chứng từ xác nhận đặt phòng và dịch vụ với các mã số xác thực và điều khoản hoàn hủy.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Booking Confirmation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập chứng từ xác nhận đặt phòng và dịch vụ với các mã số xác thực và điều khoản hoàn hủy.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ chứng từ đặt phòng, mỗi thông tin (mã, khách sạn, ngày, loại phòng) một dòng.",
+      "content": "CHỨNG TỪ XÁC NHẬN ĐẶT PHÒNG TRỰC TUYẾN\nMã đặt chỗ: BK-2026-9988\nKhách sạn: Hoa Sen Hà Nội\nNhận phòng: 20/10/2026\nTrả phòng: 25/10/2026\nLoại phòng: Thương gia cao cấp, tầm nhìn hướng hồ\nKhách chính: Nguyễn Văn An\nSố khách: 02 người lớn\nTrạng thái: Đã thanh toán đặt cọc\nXuất hóa đơn VAT: Có",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các điều khoản hoàn hủy theo mốc thời gian, mỗi điều một dòng.",
+      "content": "ĐIỀU KHOẢN HOÀN HỦY ĐẶT PHÒNG\nĐiều 1: Hủy miễn phí nếu thông báo trước 14:00 ngày nhận phòng ít nhất ba ngày.\nĐiều 2: Hủy trong vòng bốn mươi tám giờ trước nhận phòng bị trừ ba mươi phần trăm tiền phòng.\nĐiều 3: Không hoàn tiền nếu không đến mà không báo trước.\nĐiều 4: Đổi ngày lưu trú tùy tình trạng phòng trống và có thể phát sinh phụ phí.",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ chứng từ tổng hợp đặt phòng kèm dịch vụ đưa đón và ăn sáng.",
+      "content": "CHỨNG TỪ TỔNG HỢP: Đặt phòng và dịch vụ du lịch\nMã hồ sơ: TRV-7781 - Liên kết đặt phòng: BK-2026-9988\nDịch vụ kèm: Đưa đón sân bay (1 chiều), Ăn sáng tự chọn 2 suất/ngày\nGiờ đón dự kiến: 09:30 ngày 20/10/2026 tại cửa đến số 2\nGhi chú: Xuất trình CCCD khớp tên trên chứng từ khi nhận phòng và khi lên xe\nTổng tạm tính đã gồm thuế: theo bảng kê đính kèm trong email xác nhận.",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    }
+  ]
+}

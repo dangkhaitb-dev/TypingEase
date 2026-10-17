@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 28,
+  "slug": "zh-tw-02-004",
+  "title": "電話與編號",
+  "summary": "Narrow committed-output lesson: 8 9",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 8 9",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-02-004",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "用英數模式輸入半形數字，核對每一位及開頭的零，再回中文模式。",
+      "content": "有事請撥示範電話0912345678找小林",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用英數模式輸入半形數字，核對每一位及開頭的零，再回中文模式。",
+      "content": "公司的示範市話是0223456789請先記下來",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用英數模式輸入半形數字，核對每一位及開頭的零，再回中文模式。",
+      "content": "取件編號是0486請到2號窗口領包裹",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "用英數模式輸入半形數字，核對每一位及開頭的零，再回中文模式。",
+      "content": "訂單編號739105請在下午4點前取貨",
+      "inputMode": "ime"
+    }
+  ]
+}

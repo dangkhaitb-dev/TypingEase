@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-08-009",
+  "unit": "u8",
+  "group": "g1",
+  "order": 81,
+  "slug": "zh-tw-08-009",
+  "title": "忙碌時保持從容",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-08-009",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "期末考前一週，我同時要準備三科考試，還要交一份報告，感覺時間完全不夠用。那天晚上，我緊張得睡不著，腦子裡一直想著還有多少事情沒做完，越想越煩惱。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "隔天，我決定先冷靜下來，把所有工作寫在一張紙上，再依照截止日期排好順序。最急的報告排在前面，考試則每天輪流複習一科。每完成一項，我就打一個勾，看著勾越來越多，心裡也越來越踏實。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "忙碌的時候，我也會刻意留一點時間給自己，例如晚飯後散步十五分鐘，或睡前聽幾首喜歡的歌。這些短短的休息，反而讓我讀書時更專心。考完試我才明白，保持從容不是不忙，而是忙得有方向、有節奏。",
+      "inputMode": "ime"
+    }
+  ]
+}

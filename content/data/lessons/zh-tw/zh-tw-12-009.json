@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-12-009",
+  "unit": "u12",
+  "group": "g1",
+  "order": 125,
+  "slug": "zh-tw-12-009",
+  "title": "整理會後事項",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-009",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "會後事項：\n今天的會議決定在下個月推出新的會員方案。行銷部負責設計宣傳海報，業務部負責通知老客戶，資訊部則要在月底以前完成網站的報名頁面。各部門請在下週一回報進度。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "待辦清單\n一、設計宣傳海報（行銷部，十一月十日前）\n二、通知老客戶（業務部，十一月十五日前）\n三、完成報名頁面（資訊部，十一月三十日前）\n四、準備會員贈品（總務部，十一月二十日前）\n下次會議：十一月十三日上午十點",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "經理：「報名頁面來得及在月底以前完成嗎？」\n資訊部：「可以，但我們需要行銷部先提供海報的圖片。」\n行銷部：「沒問題，我們十號以前就會交出來。」\n經理：「好，那就照這個順序進行。有任何問題，請隨時提出來。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

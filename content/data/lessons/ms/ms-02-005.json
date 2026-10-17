@@ -1,0 +1,79 @@
+{
+  "id": "ms-02-005",
+  "unit": "u2",
+  "group": "g1",
+  "order": 19,
+  "slug": "ms-02-005",
+  "title": "Ulang kaji",
+  "summary": "Ulang kaji. Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Ulang kaji. Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-02-005",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+      "content": "ibu membeli 3 ekor ikan dan 12 biji telur di pasar pagi"
+    },
+    {
+      "type": "standard",
+      "text": "Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+      "content": "bas nombor 45 bertolak pada pukul 07 dan tiba pukul 09"
+    },
+    {
+      "type": "standard",
+      "text": "Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+      "content": "kakak ada 6 buah buku dan 8 batang pensil serta 10 helai kertas"
+    }
+  ]
+}

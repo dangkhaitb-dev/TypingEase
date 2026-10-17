@@ -1,0 +1,43 @@
+{
+  "id": "ko-05-007",
+  "unit": "u5",
+  "group": "g1",
+  "order": 73,
+  "slug": "ko-05-007",
+  "title": "차가 식기 전에",
+  "summary": "작은 실수로 생긴 변화를 살피고 해결하는 장면을 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "작은 실수로 생긴 변화를 살피고 해결하는 장면을 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-05-007",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "할머니께서 갓 끓인 따뜻한 보리차를 한 잔 내어 주셨습니다. 마침 그때 친구에게 전화가 와서 찻잔을 책상 위에 잠시 내려놓았습니다. 금방 끝날 줄 알았습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "통화가 생각보다 길어져서 삼십 분이 훌쩍 지나 버렸습니다. 전화를 끊고 찻잔을 들어 보니 보리차는 벌써 미지근하게 식어 있었습니다. 조금 죄송했습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "할머니는 괜찮다며 웃으시고 차를 다시 따뜻하게 데워 주셨습니다. 이번에는 휴대 전화를 멀리 두고 차가 식기 전에 천천히 다 마셨습니다. 차가 참 구수했습니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "de-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "de-01-012",
+  "title": "Tasten ß",
+  "summary": "Lerne die neuen Tasten ß und festige sie mit den bereits geübten Tasten.",
+  "newKeys": [
+    "ß"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Lerne die neuen Tasten ß und festige sie mit den bereits geübten Tasten.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-012",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "ß",
+      "text": "Taste üben: ß.",
+      "content": "ßßßß ßßß ßß ßß ßß ßß ßß ßß",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "äßß ßßßä ääßß ßäßß ßßä ßßß ßß ßßßß ßßäß äßßß ßä ää"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ßsßß ßsß ßßsß ssßß ßßß ßßßß ßß sßß ssß ßßs ßßßs sßßß ßs ss"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ßßßs ss sß ßs ßßs ssßß ßßsß sßß ßß ßßßß ßßß ßsß ssß"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "ßßq qqß ßq qßß ßqßß ßßßq ßßqß qßßß qß qq qqßß ßqß ßßß ßßßß ßß"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "es ist heiß draußen und du bist so groß wie er"
+    }
+  ]
+}

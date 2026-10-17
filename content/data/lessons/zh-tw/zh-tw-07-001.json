@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-001",
+  "unit": "u7",
+  "group": "g1",
+  "order": 62,
+  "slug": "zh-tw-07-001",
+  "title": "說明迷路經過",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-001",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我說：「我在車站出口轉錯方向，結果走到另一條街。」朋友聽了忍不住笑出來。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "朋友問：「後來怎麼找到路的？」我說：「我問了便利商店的店員。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "店員告訴我：「往回走兩個路口，再右轉就到了。」我照著走，很快就找到了。",
+      "inputMode": "ime"
+    }
+  ]
+}

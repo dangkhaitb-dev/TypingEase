@@ -1,0 +1,82 @@
+{
+  "id": "it-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "it-01-003",
+  "title": "A, S, D",
+  "summary": "Impara i tasti a, s, d e usali con i tasti già studiati.",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti a, s, d e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-003",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Trova a e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ffaf faf ffaa afaf aaa fffa aa faa aaaf afa aaaa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Trova s e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "jjj jss jj jsj sj ssjs jjjs sss ssss ss ssj jjs",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Trova d e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "df ffff dd ffdf dddd fff ff fdf ddd ddf ffd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "fad jas dsa fja sad jfa asd dja fsa jad dfa sja"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "sss sds ssa ddas ds ad sd dsaa dd asad sssd dsda ss ssj da dssj dsad aa"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "sss aa ddd aads dds ssf ddad dsd dasd adad ddsd aaad as sda ss add ssa sdd"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "dda sss dds aa ssfd sad daad aass aas sssd ssss ss"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "asf djf fas jda sdf ajs fda jsd saj dfj asj fsd"
+    }
+  ]
+}

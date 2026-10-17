@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-011",
+  "unit": "u10",
+  "group": "g3",
+  "order": 145,
+  "slug": "vi-10-011",
+  "title": "Dấu câu văn bản nghị trình",
+  "summary": "Xây dựng năng lực \"Shift and Agenda Punctuation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập các biên bản nghị trình với định dạng đề mục, số La Mã và ký hiệu gạch đầu dòng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Shift and Agenda Punctuation\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập các biên bản nghị trình với định dạng đề mục, số La Mã và ký hiệu gạch đầu dòng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động ngón tay với nghị trình phiên họp đại hội cổ đông thường niên năm 2026.",
+      "content": "Nghị trình phiên họp đại hội cổ đông thường niên năm 2026: I. Khai mạc và kiểm tra tư cách đại biểu; II. Báo cáo của Hội đồng quản trị; III. Bầu cử thành viên Ban kiểm soát nhiệm kỳ mới.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Mở đầu có dẫn dắt cùng biên bản họp giao ban tháng chín gồm các nội dung chính.",
+      "content": "Biên bản họp giao ban tháng chín gồm các nội dung chính: mục 1 đánh giá kết quả sản xuất kinh doanh quý ba; mục 2 thông qua phương án phân phối lợi nhuận và chi trả cổ tức đợt một; mục 3 phân công nhiệm vụ cụ thể cho ban điều hành nhằm chuẩn bị kế hoạch kinh doanh năm 2027. Chủ tọa lần lượt đọc từng mục, mời đại biểu phát biểu và ghi nhận kết luận vào biên bản chính thức.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về các ký tự cần thành thạo khi soạn biên bản nghị trình.",
+      "content": "Soạn thảo văn bản nghị trình và biên bản cuộc họp đòi hỏi người gõ phải thành thạo việc sử dụng các ký tự số La Mã hoa (I, II, III, IV, V), các ký hiệu gạch đầu dòng và định dạng phân cấp đề mục rõ ràng. Sự mạch lạc trong cách trình bày và độ chính xác của từng mốc thời gian, tên nhân sự tham gia sẽ giúp các quyết nghị của hội nghị được triển khai nhanh chóng và hiệu quả.",
+      "inputMode": "telex"
+    }
+  ]
+}

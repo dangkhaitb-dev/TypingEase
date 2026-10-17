@@ -1,0 +1,68 @@
+{
+  "id": "id-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "id-01-003",
+  "title": "Huruf: d, k",
+  "summary": "Gõ e dan i dalam transisi dengan huruf yang sudah dipelajari.",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Gõ e dan i dalam transisi dengan huruf yang sudah dipelajari.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-003",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "ddd fd fdf fdd dddd fddd dd fddf dff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "kkkf ffkk kfkk kkfk fkkk kkf fk kkkk kf kkk kk kfk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jkfd dfkf kfjk fkj jk kddf fkk jfkk jf jdf ffd kdjj kk"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "dkj kkd jjk jfjj dd jfkf fddd kkfd dk dk jfdj ddfj ddk"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "kf dd jfjf kdf jk kkjd djfk kkj fdj fj jkff kd jdkf kdf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "dkjk fkdd jkk kddk jkff dd fjkd fkj dfk ff dkjd jf jfd"
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "id": "bn-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 38,
+  "slug": "bn-02-003",
+  "title": "সংখ্যা ৬ ৭ ৮: প্রথম অনুশীলন",
+  "summary": "Introduce committed targets 6 7 8 9; review 0 1 2 3 4 5. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets 6 7 8 9; review 0 1 2 3 4 5. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-02-003",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "৬ টাইপ করতে ডান হাতের তর্জনী দিয়ে ওপরের সারির 6 কী চাপুন।",
+      "content": "ক৬ব ৬ব ৬ব ক৬ব ৬ব ৬ব ক৬ব ৬ব ৬ব ক৬ব"
+    },
+    {
+      "type": "standard",
+      "text": "৭ টাইপ করতে ডান হাতের তর্জনী দিয়ে ওপরের সারির 7 কী চাপুন।",
+      "content": "৭ব ৭ব ক৭ব ৭ব ৭ব ক৭ব ৭ব ৭ব ক৭ব ৭ব"
+    },
+    {
+      "type": "standard",
+      "text": "৮ টাইপ করতে ডান হাতের মধ্যমা দিয়ে ওপরের সারির 8 কী চাপুন।",
+      "content": "৮ব ক৮ব ৮ব ৮ব ক৮ব ৮ব ৮ব ক৮ব ৮ব ৮ব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "৮২৭ হ৭০বে ৮৭ ৮৮ ৭২১ ৮পু৭৬ ৭রু০৭ ৬পৌ৭ ব১৬৮ ৮হী ৭৬৮৭ ৮রীঁ ৬০৪৮"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "১৬২হ ৬দূরূব ৮গৌ৭ ৭দ ৮১৮ ৮৬ ৭৭৬ ৭৪দু বৌ৮ ৮বৌ ৮৬৫ ৭৬রবিং ৬বে দ৬হ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "৮গহ ৭১ব ৮গৈ ৭দ ৫৭ হৈ৭বী গু৩ ৭৩৭২ ৮বী ৭পৈ২৫ ৮৪পো৮ গে৮চপৃ ৬গাচৃ৬"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "৮৭ ৬৮ থথ ৭৭৮৬ ৬৭৭ ৬৭৬৮ ৬৬ থ৮৮ ৭৮ ৬৬৭ ৮৭৬ ৭৭৭৬ ৮৮৬ ৬৬থ ৭৭ ৬৭ ৮৮ ৭৭৮ ৬৬৭৮"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "৮৮৫ ৮বোঃ৫ ৭কূ৫ ৭জূ৭ ৬কা বূং১৭ ৬চৈ৬ডৌ ৮০৮ডি ৫ড৬বু চোঃডো৭ ৮৬ ৭বৌ২ ৬০৩"
+    }
+  ]
+}

@@ -1,0 +1,98 @@
+{
+  "id": "fr-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 26,
+  "slug": "fr-02-004",
+  "title": "Chiffres : 0",
+  "summary": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-02-004",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "fff f0ff 00 0000 00f 000 0f00 ff0",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "fff 00f0 0000 000f 0é0 ff0 ff00 00 00f 000 f0 éé0 0f 00ff ff"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "j0 iij0 jj 00j jj00 0j00 0j j00 000j 0j0 00 000"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le code 204 permet de trouver la salle 108 au premier étage"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "000 jj0 j00j ff 0000 0j00 jjj0 0jj0 f00j j0j j0 000j 00 0jj"
+    }
+  ]
+}

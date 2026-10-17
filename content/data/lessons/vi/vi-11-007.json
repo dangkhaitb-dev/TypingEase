@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-007",
+  "unit": "u11",
+  "group": "g2",
+  "order": 155,
+  "slug": "vi-11-007",
+  "title": "Hỗ trợ khách tham quan",
+  "summary": "Xây dựng năng lực \"Visitor Support\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 225 âm tiết, rèn luyện sự bền bỉ qua đoạn văn hướng dẫn du khách nhiều tình tiết.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 18,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Visitor Support\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 225 âm tiết, rèn luyện sự bền bỉ qua đoạn văn hướng dẫn du khách nhiều tình tiết.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về hướng dẫn tuyến đi bộ trong rừng nguyên sinh.",
+      "content": "Nhân viên hướng dẫn phát bản đồ số các tuyến đi bộ trong rừng nguyên sinh kèm chú thích độ khó. Họ nhắc khách mang nước, giữ khoảng cách với nhóm trước và không dùng loa ngoài. Tại ngã ba đường mòn, biển chỉ dẫn được kiểm tra pin và độ sáng trước giờ cao điểm. Cuối tuyến, sổ đếm khách đối chiếu với số vé để tránh người lạc ở lại sau giờ đóng cửa.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về tổ hỗ trợ du khách tại trung tâm bảo tồn. Gõ trọn đoạn để luyện sức bền.",
+      "content": "Ngay cửa trung tâm bảo tồn thiên nhiên quốc gia, tổ hỗ trợ du khách dựng bàn thông tin với bản đồ và tờ rơi song ngữ. Họ giải đáp về giờ mở cửa, tuyến tham quan ngắn và các khu vực cần giữ yên lặng vì mùa thú sinh sản. Khi có nhóm học sinh đến, hướng dẫn viên nhắc đeo phù hiệu và không cho thức ăn vào khu bán hoang dã. Cuối buổi, sổ ghi chú góp ý được chuyển về phòng giáo dục môi trường để điều chỉnh lịch tuần sau. Khách đã đủ nhóm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về hỗ trợ du khách mùa cao điểm tại vườn quốc gia.",
+      "content": "Mùa cao điểm du lịch khiến công tác hướng dẫn tại vườn quốc gia phải chia ca dày hơn. Tổ hỗ trợ ưu tiên nhóm học sinh và khách nước ngoài cần giải thích quy tắc bảo tồn. Khi trời chuyển mưa, họ chuyển khách vào nhà chờ và cập nhật trạng thái tuyến trên bảng điện tử. Cuối ngày, báo cáo ngắn ghi số sự cố nhỏ đã xử lý để điều chỉnh nhân sự tuần sau. Nhân viên nhắc khách đi đúng tuyến, giữ khoảng cách an toàn và báo ngay khi cần hỗ trợ.",
+      "inputMode": "telex"
+    }
+  ]
+}

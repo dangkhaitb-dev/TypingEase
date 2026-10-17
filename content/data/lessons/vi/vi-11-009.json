@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-009",
+  "unit": "u11",
+  "group": "g3",
+  "order": 159,
+  "slug": "vi-11-009",
+  "title": "Kế hoạch tài trợ",
+  "summary": "Xây dựng năng lực \"Grant Planning\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 280 âm tiết, duy trì độ chính xác cao trên bài văn có xen kẽ số liệu ngân sách và hạng mục tài trợ.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 18,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Grant Planning\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 280 âm tiết, duy trì độ chính xác cao trên bài văn có xen kẽ số liệu ngân sách và hạng mục tài trợ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục công bố dự toán và danh mục hạng mục xây dựng.",
+      "content": "Ban tổ chức dự án thiện nguyện công bố dự toán ngân sách và danh mục hạng mục xây dựng điểm trường. Các khoản chi được tách riêng phần vật liệu, nhân công địa phương và vận chuyển lên núi. Mạnh thường quân nhận bản PDF kèm ảnh hiện trạng để đối chiếu trước khi chuyển khoản. Mọi thay đổi dự toán phải được ghi biên bản và thông báo trong nhóm điều phối trong bốn mươi tám giờ.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn đề xuất liên tục về tài trợ điểm trường vùng cao đặc biệt khó khăn.",
+      "content": "Bản đề xuất tài trợ nêu rõ nhu cầu xây điểm trường mầm non và tiểu học tại xã vùng cao đặc biệt khó khăn. Hồ sơ kèm số trẻ trong độ tuổi, khoảng cách đến trường hiện tại và rủi ro đi học mùa mưa. Phương án kỹ thuật chọn kết cấu nhẹ, dễ bảo trì bằng vật liệu sẵn có tại địa phương. Nếu được duyệt trong quý này, tiến độ thi công sẽ bám lịch nông nhàn để huy động thêm ngày công tình nguyện. Dự toán được duyệt. Nhóm lưu các hóa đơn cùng biên bản bàn giao.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn kế hoạch liên tục về vận động tài trợ điểm trường vùng cao.",
+      "content": "Ban vận động trình bày kế hoạch xây điểm trường nhỏ trên sườn núi cho trẻ em dân tộc thiểu số còn đi học xa. Ngân sách dự kiến gồm phần khung gỗ, tôn lợp và bộ bàn ghế thấp phù hợp học sinh tiểu học. Các mạnh thường quân được mời xem ảnh hiện trạng đường đất đỏ và lịch thi công tránh mùa mưa. Nếu đủ kinh phí trong quý này, lớp học tạm sẽ mở trước kỳ khai giảng để các em không phải nghỉ giữa chừng. Dự toán được duyệt.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-009",
+  "unit": "u6",
+  "group": "g3",
+  "order": 91,
+  "slug": "vi-06-009",
+  "title": "Xác nhận và thay đổi",
+  "summary": "Xây dựng năng lực \"Confirm and Change\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Xử lý các tình huống thông báo thay đổi kế hoạch đột xuất và xác nhận lại thông tin quan trọng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Confirm and Change\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Xử lý các tình huống thông báo thay đổi kế hoạch đột xuất và xác nhận lại thông tin quan trọng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ trọn thư xác nhận thay đổi số lượng hàng hóa trong đơn đặt hàng.",
+      "content": "Kính gửi anh Tuấn, em xin xác nhận lại thông tin thay đổi về số lượng hàng hóa trong đơn đặt hàng mã số bốn trăm hai mươi lăm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn thông báo khẩn về việc thay đổi địa điểm tổ chức hội nghị khách hàng.",
+      "content": "Thông báo khẩn về việc thay đổi địa điểm tổ chức hội nghị khách hàng: do số lượng đại biểu đăng ký vượt quá dự kiến, ban tổ chức quyết định chuyển sự kiện sang trung tâm hội nghị quốc tế tại số mười đường ven sông.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Làm quen chủ đề qua xác nhận thay đổi lịch làm việc.",
+      "content": "Xác nhận thay đổi lịch làm việc: cuộc họp chiến lược quý tư sẽ được dời sang chín giờ sáng thứ Sáu tuần sau tại phòng hội thảo lớn thay vì chiều thứ Năm như thông báo cũ.",
+      "inputMode": "telex"
+    }
+  ]
+}

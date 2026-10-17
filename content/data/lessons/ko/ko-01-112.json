@@ -1,0 +1,49 @@
+{
+  "id": "ko-01-112",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "ko-01-112",
+  "title": "한글 음절 조합",
+  "summary": "배운 자모(ㅏㅐㅑ까지)를 조합해 한글 음절을 입력한다",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "hangul",
+  "intro": "배운 자모(ㅏㅐㅑ까지)를 조합해 한글 음절을 입력한다",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-112",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "자음 다음에 모음을 누르면 두 자모가 한 글자로 합쳐집니다.",
+      "content": "가나다 라마바사 아자 차카 타파하",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로만 만든 진짜 낱말을 입력해 보세요.",
+      "content": "나라 바다 사자 아내 마차 가다 사다 하마",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로만 만든 진짜 낱말을 입력해 보세요.",
+      "content": "바나나 사냥 밤 밥 달 말 발 날 산 강",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로만 만든 진짜 낱말을 입력해 보세요.",
+      "content": "배 새 개 내가 자다 가자 너 저 거 더 서다",
+      "inputMode": "hangul"
+    }
+  ]
+}

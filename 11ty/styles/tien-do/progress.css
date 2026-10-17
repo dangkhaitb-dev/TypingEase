@@ -1,0 +1,219 @@
+/* tien-do/progress.css — toàn bộ CSS riêng của trang tiến độ (PLAN.md B1/B4).
+   Nạp sau tokens.css / base.css / keyboard.css / hands.css.
+
+   Gộp coach.css vào đây (2026-09-16): hai file chỉ được nạp trên đúng trang này mà lại cùng
+   khai báo .coach, .coach-action và .coach-trend[hidden] — đọc một file không đủ để biết khối
+   coach thực sự trông thế nào.
+
+   Giao diện kiểu Apple (docs/design-system.md), theo màn tóm tắt của Fitness / Health:
+   - Bốn chỉ số tổng là MỘT thẻ trắng chia bằng đường kẻ mảnh: chú thích xám nhỏ, con số lớn.
+   - Chỉ khối nào là "thẻ" thật (mục tiêu ngày, huấn luyện, bàn phím, bảng) mới có nền trắng + bóng
+     mềm; tiêu đề section nằm thẳng trên nền trang.
+   - Nhãn là chữ thường cỡ nhỏ, không viền; chọn khoá và chọn mục tiêu là segmented control.
+   - Vạch tiến độ mảnh 4–6px bo tròn; huy hiệu là ô bo mềm, đã đạt chỉ khác ở biểu tượng màu và
+     dòng ngày vàng (--gold-* đúng việc của nó: thành tích).
+   Thuộc tính logic (inline-start/end) để trang tiếng Ả Rập tự lật. */
+
+.progress-main{max-width:var(--w-page);margin:0 auto;padding:0 var(--pad-x)}
+
+.prog-head{padding:72px 0 40px}
+.prog-head h1{margin:0 0 16px;font-size:clamp(36px,5vw,56px);line-height:1.07}
+.prog-intro{max-width:620px;margin:0;color:var(--text-muted);font-size:19px;line-height:1.5;letter-spacing:-.012em}
+
+/* Nhãn nhỏ dùng chung của trang: chữ thường, xám, không giãn chữ. */
+.prog-summary span,.daily-goal-copy>p:first-child,.coach-kicker,.coach-stats span{color:var(--ink-600);font-size:var(--fs-xs);font-weight:500}
+
+/* ---------- chọn khoá (AZERTY, BÉPO…) ---------- */
+/* Ngôn ngữ nhiều khoá: mỗi khoá một kho tiến độ, chọn khoá nào thì trang đọc kho đó.
+   .prog-courses là <nav>: ở đây là một segmented control — rãnh xám, khoá đang xem là viên trắng. */
+.prog-courses{display:inline-flex;max-width:100%;gap:2px;margin-top:28px;padding:3px;border-radius:var(--r-pill);background:var(--surface-alt);overflow-x:auto;scrollbar-width:none}
+.prog-courses::-webkit-scrollbar{display:none}
+.prog-courses a{flex:none;display:inline-flex;align-items:center;min-height:32px;padding:5px 16px;border-radius:var(--r-pill);color:var(--ink-700);font-size:13px;font-weight:500;text-decoration:none;white-space:nowrap;transition:background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.prog-courses a:hover{color:var(--ink-900)}
+.prog-courses a:active{transform:var(--press)}
+.prog-courses a[aria-current="page"]{background:var(--surface);color:var(--ink-900);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.04)}
+
+/* ---------- status strip (streak · phút hôm nay · trình độ) ---------- */
+.status-strip{display:flex;flex-wrap:wrap;gap:8px;margin-top:24px}
+.status-strip span{display:inline-flex;align-items:center;min-height:30px;padding:5px 12px;border-radius:var(--r-pill);background:rgba(0,0,0,.05);color:var(--ink-700);font-size:13px;font-weight:500}
+
+/* ---------- 4 chỉ số tổng: một thẻ, bốn cột cách nhau bằng hairline ---------- */
+.prog-summary{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));margin-bottom:40px;padding:8px 0;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow-card)}
+.prog-summary div{display:flex;flex-direction:column;gap:6px;min-width:0;padding:18px 24px 20px}
+.prog-summary div+div{border-inline-start:1px solid var(--ink-200)}
+.prog-summary strong{color:var(--ink-900);font-size:34px;font-weight:600;line-height:1.1;letter-spacing:-.025em;font-variant-numeric:tabular-nums;overflow-wrap:anywhere}
+/* Khối cảnh báo dữ liệu cũ: thang vàng ngữ nghĩa, bo mềm, không viền. */
+.prog-legacy{margin:-16px 0 40px;padding:14px 18px;border-radius:var(--r);background:var(--gold-100);color:var(--gold-800);font-size:var(--fs-sm);line-height:1.6}
+.prog-legacy[hidden]{display:none}
+
+/* ---------- mục tiêu ngày ---------- */
+.daily-goal{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1.1fr) auto;gap:32px;align-items:center;margin:0 0 20px;padding:24px 28px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow-card)}
+.daily-goal p{margin:0}
+.daily-goal h3{margin:4px 0 4px;color:var(--ink-900);font-size:28px;font-weight:600;line-height:1.15;letter-spacing:-.022em;font-variant-numeric:tabular-nums}
+.daily-goal-copy>p:last-child,.daily-goal-progress p{color:var(--ink-600);font-size:var(--fs-xs);font-weight:400}
+.daily-progress-track{height:6px;overflow:hidden;border-radius:var(--r-pill);background:var(--ink-200)}
+.daily-progress-track i{display:block;width:var(--daily-progress,0%);height:100%;border-radius:inherit;background:var(--primary-500);transition:width var(--dur) var(--ease)}
+.daily-goal-progress p{margin-top:10px}
+/* Segmented control: rãnh xám, mục đang chọn là viên trắng có bóng rất nhẹ. */
+.daily-goal-options{display:flex;gap:2px;padding:3px;border-radius:var(--r-pill);background:var(--surface-alt)}
+.daily-goal-options button{min-height:32px;border:0;border-radius:var(--r-pill);padding:5px 12px;background:transparent;color:var(--ink-700);font-size:13px;font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap;transition:background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.daily-goal-options button:hover{color:var(--ink-900)}
+.daily-goal-options button:active{transform:var(--press)}
+.daily-goal-options button.selected{background:var(--surface);color:var(--ink-900);font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.1),0 1px 1px rgba(0,0,0,.04)}
+
+/* ---------- huy hiệu ---------- */
+/* Không khung bao: tiêu đề trên nền trang, mỗi huy hiệu là một ô trắng bo mềm. */
+.badges{margin:0 0 56px}
+.badges-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:24px}
+.badges-heading .eyebrow{margin-bottom:8px}
+.badges-heading h2{margin:0 0 8px;color:var(--ink-900);font-size:clamp(26px,3vw,32px);line-height:1.12}
+.badges-heading p:not(.eyebrow){margin:0;max-width:560px;color:var(--text-muted);font-size:var(--fs-body);line-height:1.47}
+.badges-count{flex:none;color:var(--ink-600);font-size:var(--fs-sm);font-weight:500;font-variant-numeric:tabular-nums;white-space:nowrap}
+.badge-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:12px;margin:0;padding:0;list-style:none}
+/* Huy hiệu chưa đạt vẫn hiện đủ tên + điều kiện: người dùng cần biết đích ở đâu. */
+.badge{display:flex;gap:14px;padding:16px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow-card)}
+.badge-icon{flex:none;display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:var(--surface-alt);font-size:21px;filter:grayscale(1);opacity:.5}
+.badge-body{flex:1;display:grid;gap:3px;align-content:start;min-width:0}
+.badge-body b{color:var(--ink-900);font-size:15px;font-weight:600;line-height:1.3;letter-spacing:-.012em}
+.badge-hint{color:var(--text-muted);font-size:13px;line-height:1.45}
+.badge-meta{color:var(--ink-600);font-size:var(--fs-xs);font-weight:500;font-variant-numeric:tabular-nums}
+.badge-track{height:4px;margin-top:8px;overflow:hidden;border-radius:var(--r-pill);background:var(--ink-200)}
+.badge-track i{display:block;width:var(--badge-progress,0%);height:100%;border-radius:inherit;background:var(--primary-500)}
+.badge.is-earned .badge-icon{background:var(--gold-100);filter:none;opacity:1}
+.badge.is-earned .badge-meta{margin-top:6px;color:var(--gold-800);font-weight:600}
+
+/* ---------- coach ---------- */
+.coach{display:grid;gap:18px;margin:0 0 20px;padding:28px;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow-card)}
+.coach p{margin:0}
+.coach-head{display:flex;align-items:flex-start;justify-content:space-between;gap:12px}
+.coach-head h3{margin:4px 0 0;color:var(--ink-900);font-size:24px;font-weight:600;line-height:1.2;letter-spacing:-.02em}
+.coach-level{flex:none;padding:5px 12px;border-radius:var(--r-pill);background:var(--primary-50);color:var(--primary-700);font-size:13px;font-weight:600;white-space:nowrap}
+.coach-body{display:grid;grid-template-columns:minmax(0,1fr) 240px;gap:16px;align-items:stretch}
+.coach:not(.has-trend) .coach-body{grid-template-columns:1fr}
+/* Cạm bẫy: `hidden` là IDL của HTMLElement, SVGElement không có — và UA stylesheet cũng không áp
+   [hidden] cho SVG. Phải tự ẩn bằng CSS, nếu không biểu đồ xu hướng luôn hiện. */
+.coach-trend[hidden]{display:none}
+.coach-trend-hint[hidden]{display:none}
+.coach-trend-hint{color:var(--ink-600);font-size:var(--fs-xs)}
+.coach-stats{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:10px}
+.coach-stats div{display:flex;flex-direction:column;gap:6px;min-width:0;padding:14px 16px;border-radius:var(--r);background:var(--surface-alt)}
+.coach-stats b{color:var(--ink-900);font-size:24px;font-weight:600;line-height:1.1;letter-spacing:-.02em;font-variant-numeric:tabular-nums}
+.coach-trend{width:100%;height:100%;min-height:64px;border-radius:var(--r);background:var(--surface-alt)}
+.coach-trend polyline{fill:none;stroke:var(--primary-500);stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.coach-trend circle{fill:var(--primary-600)}
+.coach-trend line{stroke:var(--ink-200)}
+.coach-trend text{fill:var(--ink-500);font-family:var(--font-body);font-size:9px}
+.coach-target{color:var(--text-muted);font-size:15px}
+.coach-target b{color:var(--ink-900);font-weight:600;font-variant-numeric:tabular-nums}
+.coach-keys{display:flex;flex-wrap:wrap;gap:8px}
+.coach-keys:empty{display:none}
+/* Chip "phím yếu": đỏ ngữ nghĩa (--error-*) — gõ sai là đúng việc của màu đỏ; nền nhạt, không viền. */
+.coach-key{display:inline-flex;align-items:center;gap:8px;padding:4px 12px 4px 4px;border-radius:var(--r-pill);background:var(--error-100);color:var(--error-700);font-size:13px;font-weight:500;font-variant-numeric:tabular-nums}
+.coach-key b{display:grid;place-items:center;min-width:26px;height:26px;padding:0 6px;border-radius:var(--r-pill);background:var(--surface);color:var(--error-700);font:600 var(--fs-sm)/1 var(--font-mono);box-shadow:var(--shadow-sm)}
+.coach-advice{color:var(--ink-900);font-size:var(--fs-body);line-height:1.47}
+/* Nút hành động: chính kiểu .primary-button (viên thuốc xanh). */
+.coach-action{display:inline-flex;align-items:center;justify-self:start;gap:8px;min-height:44px;padding:11px 22px;border:0;border-radius:var(--r-pill);background:var(--primary-600);color:var(--white);font-size:var(--fs-body);font-weight:500;text-decoration:none;cursor:pointer;transition:transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.coach-action:hover{background:var(--primary-700)}
+.coach-action:active{transform:var(--press)}
+.coach-action:focus-visible{box-shadow:var(--shadow-focus)}
+
+/* ---------- heatmap ---------- */
+/* Nhiệt độ phím dùng màu ngữ nghĩa: vững = xanh (đúng), tạm = vàng, yếu = đỏ (lỗi). Đặt qua --key-face/
+   --key-line của keyboard.css. */
+.heat-board .key[data-heat=strong]{--key-face:var(--primary-50);--key-line:var(--primary-300);color:var(--primary-700)}
+.heat-board .key[data-heat=fair]{--key-face:var(--gold-100);--key-line:var(--gold-500);color:var(--gold-800)}
+.heat-board .key[data-heat=weak]{--key-face:var(--error-100);--key-line:color-mix(in srgb,var(--error) 45%,var(--white));color:var(--error-700)}
+.heat-board .key[data-heat] .key-label{color:inherit}
+.heat-legend{display:flex;flex-wrap:wrap;gap:8px 14px;margin-top:14px;color:var(--ink-600);font-size:var(--fs-xs);font-weight:500}
+.heat-legend span{display:inline-flex;align-items:center;gap:6px}
+.heat-legend i{width:10px;height:10px;border-radius:50%;background:var(--ink-200)}
+.heat-legend i[data-heat=strong]{background:var(--primary-400)}
+.heat-legend i[data-heat=fair]{background:var(--gold-500)}
+.heat-legend i[data-heat=weak]{background:color-mix(in srgb,var(--error) 70%,var(--white))}
+.progress-main .keyboard-lab{margin:0 0 20px;border-radius:var(--r-lg);padding:32px}
+.progress-main .keyboard-copy h3{font-size:22px;font-weight:600;letter-spacing:-.02em;margin-bottom:10px}
+.progress-main .keyboard-copy>p:not(.eyebrow){font-size:var(--fs-sm);line-height:1.55;color:var(--text-muted)}
+.heat-board{min-width:0;padding-bottom:0}
+.heat-board .keyboard--full{width:100%;max-width:100%;margin:0 auto}
+/* Trang nay khong bat ban tay nen khong can cho trong duoi ban phim. */
+.heat-board .keyboard--hands{margin-bottom:0}
+.heat-board .keyboard-row{min-width:0}
+.heat-board .key{max-height:34px;font-size:12px}
+.heat-board .key--duo{font-size:9px}
+.heat-board .key--special .key-label{font-size:8px}
+.heat-empty{margin:14px 0 0;padding:12px 14px;border-radius:var(--r);background:var(--surface-alt);color:var(--ink-700);font-size:var(--fs-sm);line-height:1.5}
+.heat-empty[hidden]{display:none}
+
+/* ---------- bảng thành tích ---------- */
+/* Bảng kiểu danh sách: đầu cột chữ xám thường trên nền trắng, hàng cách bằng hairline. */
+.progress-main .results{padding:56px 0 40px}
+.progress-main .results-heading{align-items:flex-end;gap:16px}
+.progress-main .results-heading p:not(.eyebrow){margin:10px 0 0;color:var(--text-muted);font-size:var(--fs-body)}
+.progress-main .clear-results{flex:none;min-height:32px;border:0;border-radius:var(--r-pill);padding:6px 14px;background:rgba(0,0,0,.05);color:var(--ink-900);font-size:13px;font-weight:500;transition:background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.progress-main .clear-results:hover{background:var(--error-100);color:var(--error-700)}
+.progress-main .clear-results:active{transform:var(--press)}
+.progress-main .results-table-wrap{max-height:520px}
+.progress-main .results-table{font-size:var(--fs-sm)}
+.progress-main .results-table th{padding:14px 20px 10px;background:var(--surface);border-bottom:1px solid var(--ink-200);color:var(--ink-600);font-size:var(--fs-xs);font-weight:500}
+.progress-main .results-table td{padding:13px 20px;border-top:0;border-bottom:1px solid var(--ink-200)}
+.progress-main .results-table tr:last-child td{border-bottom:0}
+.progress-main .results-table td:first-child{font-weight:400}
+.results-table td .rt-lesson{display:block;color:var(--ink-900);font-weight:500}
+.results-table td .rt-unit{display:block;margin-top:2px;color:var(--ink-600);font-size:var(--fs-xs);font-weight:400}
+.results-table td:not(:first-child){font-variant-numeric:tabular-nums;color:var(--ink-700)}
+.results-table .rt-stars{color:var(--gold-500);letter-spacing:1px;white-space:nowrap}
+.results-table tr.is-soon td,.results-table tr.is-soon .rt-lesson{color:var(--ink-600)}
+.progress-main .results-table .empty{color:var(--ink-400)}
+
+.progress-main .explore{max-width:none;margin:0;padding:24px 0 var(--gap-section)}
+
+/* RTL: "3 / 152" hay "68 / 90" không có chữ mạnh nên bị bidi đảo thành "152 / 3". plaintext lấy hướng
+   theo chữ mạnh đầu tiên (không có thì LTR), nên số đọc đúng mà nhãn chữ Ả Rập vẫn RTL. */
+[dir="rtl"] :is(.prog-summary strong,.badge-meta,.badges-count){unicode-bidi:plaintext;text-align:right}
+[dir="rtl"] :is(.badge-body b,.coach-head h3,.prog-summary strong,.daily-goal h3,.results-table .rt-stars){letter-spacing:0}
+
+/* ---------- đáp ứng ----------
+   Đúng hai ngưỡng của base.css: 900px (máy tính bảng) và 620px (điện thoại). */
+@media (max-width:900px){
+  .prog-head{padding:48px 0 32px}
+  .prog-summary{grid-template-columns:repeat(2,minmax(0,1fr));padding:0}
+  .prog-summary div{padding:18px 20px}
+  .prog-summary div:nth-child(odd){border-inline-start:0}
+  .prog-summary div:nth-child(n+3){border-top:1px solid var(--ink-200)}
+  .daily-goal{grid-template-columns:1fr;gap:18px}
+  .daily-goal-options{display:grid;grid-template-columns:repeat(4,1fr)}
+  .daily-goal-options button{padding:5px 4px}
+  .badge-grid{grid-template-columns:repeat(auto-fill,minmax(200px,1fr))}
+  .coach-body{grid-template-columns:1fr;gap:12px}
+  .coach:not(.has-trend) .coach-body{gap:12px}
+  .coach-trend{height:64px}
+  .coach-action{justify-self:stretch;justify-content:center;text-align:center}
+  .progress-main .results{padding:40px 0 30px}
+  .progress-main .results-table{min-width:600px}
+}
+@media (max-width:620px){
+  .progress-main{padding:0 16px}
+  .prog-head{padding:36px 0 28px}
+  .prog-intro{font-size:17px}
+  .prog-summary{margin-bottom:32px}
+  .prog-summary div{padding:16px}
+  .prog-summary strong{font-size:26px}
+  .badges{margin-bottom:40px}
+  .badges-heading{flex-direction:column;align-items:flex-start;gap:8px}
+  /* Điện thoại: mười huy hiệu thành một danh sách nhóm kiểu iOS thay vì mười thẻ rời. */
+  .badge-grid{grid-template-columns:1fr;gap:0;overflow:hidden;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow-card)}
+  .badge{position:relative;border-radius:0;box-shadow:none}
+  .badge+.badge::before{content:"";position:absolute;inset-block-start:0;inset-inline:74px 0;height:1px;background:var(--ink-200)}
+  .daily-goal,.coach{padding:20px 18px}
+  .daily-goal h3{font-size:24px}
+  .coach-head h3{font-size:21px}
+  .coach-stats{gap:8px}
+  .coach-stats div{padding:12px}
+  .coach-stats b{font-size:20px}
+  /* keyboard.css cho bàn phím tràn hết khung nhìn trên điện thoại (≤700px); ở đây bàn phím nằm
+     trong thẻ .keyboard-lab nên tràn ra là thò khỏi thẻ — giữ nó trong thẻ, thu padding thẻ lại. */
+  .progress-main .keyboard-lab{padding:20px 10px}
+  .heat-board .js-keyboard-holder .keyboard--full:not(.keyboard--numpad){width:100%;max-width:100%;margin-inline:0}
+  .keyboard-copy{padding-inline:8px}
+  .progress-main .results-heading{flex-direction:column;align-items:flex-start}
+}

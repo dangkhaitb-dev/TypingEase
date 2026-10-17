@@ -1,0 +1,66 @@
+{
+  "id": "vi-03-016",
+  "unit": "u3",
+  "group": "g1",
+  "order": 56,
+  "slug": "vi-03-016",
+  "title": "Luyện phím · ) Enter",
+  "summary": "Học dấu ) và phím Enter để xuống dòng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Học dấu ) và phím Enter để xuống dòng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-016",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím 0 (ngón út phải, hàng số) để ra ).",
+      "content": "(đi) (và) (để) (để) (đi) (và) (để) (để)",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Phím Enter: ngón út phải, cuối hàng cơ sở. Gõ hết một dòng rồi nhấn Enter để xuống dòng.",
+      "content": "Chào bạn\nĐi học\nĂn cơm\nĐọc sách\nHẹn gặp lại",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ từng dòng, nhấn Enter ở cuối mỗi dòng.",
+      "content": "Chào bạn\nHôm nay trời đẹp\nMình đi dạo nhé\nHẹn gặp lại",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ từng dòng, nhấn Enter ở cuối mỗi dòng. Chú ý dấu ngoặc ( ).",
+      "content": "Danh sách đi chợ\nGạo (5 kg)\nCá (2 con)\nRau (3 bó)\nTrứng (10 quả)",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ từng dòng, nhấn Enter ở cuối mỗi dòng. Chú ý dấu ngoặc ( ).",
+      "content": "Thứ hai: học bài\nThứ ba: đá bóng (sân 2)\nThứ tư: đọc sách\nThứ năm: nấu ăn",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ từng dòng, nhấn Enter ở cuối mỗi dòng.",
+      "content": "Lời nhắn cho mẹ\nCon đi học (về lúc 5 giờ)\nCơm để trong nồi\nCon chào mẹ!",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    }
+  ]
+}

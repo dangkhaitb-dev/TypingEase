@@ -1,0 +1,79 @@
+{
+  "id": "de-01-016",
+  "unit": "u1",
+  "group": "g1",
+  "order": 15,
+  "slug": "de-01-016",
+  "title": "Wiederholung",
+  "summary": "Wiederhole alle bisher gelernten Buchstaben in kurzen Sätzen.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Wiederhole alle bisher gelernten Buchstaben in kurzen Sätzen.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-016",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tippe den deutschen Text mit den bereits gelernten Tasten.",
+      "content": "wir sind heute früh dran und gehen ohne zu hetzen weiter"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe den deutschen Text mit den bereits gelernten Tasten.",
+      "content": "ich bin müde aber du bist schon wach und willst los"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe den deutschen Text mit den bereits gelernten Tasten.",
+      "content": "sie ist nett und groß und weiß fast alles über uns"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "es ist heiß draußen aber sie sind früh zurück und müde"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "wir können später über alles reden wenn du nicht mehr müde bist"
+    }
+  ]
+}

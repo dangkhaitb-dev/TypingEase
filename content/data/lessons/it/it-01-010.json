@@ -1,0 +1,105 @@
+{
+  "id": "it-01-010",
+  "unit": "u1",
+  "group": "g2",
+  "order": 9,
+  "slug": "it-01-010",
+  "title": "U, I, O",
+  "summary": "Impara i tasti u, i, o e usali con i tasti già studiati.",
+  "newKeys": [
+    "u",
+    "i",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti u, i, o e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-010",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Trova u e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "uf fuu uuu uu uuf uuuu ff ffu",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Trova i e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "jjij ij jj iiii iiji ii iijj iii",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Trova o e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ooof fo foof oooo oo oof of ffo oofo ooo",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "uia sot tau ois atu sio tia uos ait otu sau tio"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "uto isa oti aus toi auis tsoi oaut isot atsu ouis tais"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "asio tuis oast iuts saut otau isua utoi asto iotu suat taio"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "uufi iii uuo iu oo ii iiii oouo uuu ooi oi oiou iiu fuu ioi uuoi uiuu uui"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "uuo ooi ooo uou oo uoi ioii oju ii iiui uioo uu uuiu ooj ooio ouio iio oooi"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "il sole sorge tardi lei guarda la festa della sera"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "lui ha otto ore di festa sotto il sole della sera"
+    }
+  ]
+}

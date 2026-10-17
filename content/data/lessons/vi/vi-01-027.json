@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-027",
+  "unit": "u1",
+  "group": "g1",
+  "order": 27,
+  "slug": "vi-01-027",
+  "title": "Luyện phím · ổ ứ ể",
+  "summary": "Học cách gõ ổ (o o r), ứ (u w s), ể (e e r) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ổ (o o r), ứ (u w s), ể (e e r) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-027",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ o o r để ra ổ: o o ra ô, r thêm dấu hỏi. Ví dụ: bổ = b o o r.",
+      "content": "bổ rổ hổ tổ bổ đổ tổ bổ nổ sổ ổ ổn tổ nổi tổ ổ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ u w s để ra ứ: u w ra ư, s thêm dấu sắc. Ví dụ: thứ = t h u w s.",
+      "content": "thứ ứng cứ sứ mức ức sứ ứng đứa thứ sức",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ e e r để ra ể: e e ra ê, r thêm dấu hỏi. Ví dụ: biển = b i e e r n.",
+      "content": "biển biểu hiển điểm kiểm biển nể bể",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ổ, ứ, ể. Nhớ: ổ = o o r, ứ = u w s, ể = e e r.",
+      "content": "thức hiệu sứ tổ sức cũ nức kể tổ chổi hiệu đôi cổ trọng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ổ, ứ, ể. Nhớ: ổ = o o r, ứ = u w s, ể = e e r.",
+      "content": "xứ theo kể nể đổ xứ chuyến sức cuốn hứa biển cơm hình hứa chiếu kể",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ổ, ứ, ể.",
+      "content": "chổi thể hiên phổ cứ ta nổi ánh tức bể hổ mức cổng lớp mứt quanh cổng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ổ, ứ, ể.",
+      "content": "thức thật ai tiếng công máy xứ ổi thứ vừa tuổi vào mở",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ổ, ứ, ể mà không nhìn bàn phím.",
+      "content": "chổi bể ổn ban nể rổ tuyển kể kể quan chiều triển thân",
+      "inputMode": "telex"
+    }
+  ]
+}

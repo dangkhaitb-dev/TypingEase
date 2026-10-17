@@ -1,0 +1,108 @@
+{
+  "id": "br-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 33,
+  "slug": "br-03-004",
+  "title": "Maiúsculas: G, H, I",
+  "summary": "Aprenda as teclas G, H, I e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas G, H, I e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-03-004",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Segure Shift e aperte g para digitar G. Depois volte à posição inicial.",
+      "content": "GGff GGGG fGGG GGf GGG GGGf GG fGfG GffG Gf GfGG",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Segure Shift e aperte h para digitar H. Depois volte à posição inicial.",
+      "content": "HjH jH jHHH HjHH HHH HHHH HHjH Hj HHj HH",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Segure Shift e aperte i para digitar I. Depois volte à posição inicial.",
+      "content": "fIff ffII III IIII IfII fIfI IfI If",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "IG HIIH II4H IHH II GHI IHHI IIII IIIH HIGH HIHI IIGI"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "HC HH BIB CFH GII IBI IBGH FG GG GF IGG IIG BCG IIGG HBI FIF"
+    }
+  ]
+}

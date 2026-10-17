@@ -1,0 +1,92 @@
+{
+  "id": "en-02-004",
+  "unit": "u2",
+  "group": "g4",
+  "order": 19,
+  "slug": "en-02-004",
+  "title": "0",
+  "summary": "Locate Number Combinations on the US number row, then read mixed-length numeric groups using only introduced digits and Space.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Locate Number Combinations on the US number row, then read mixed-length numeric groups using only introduced digits and Space.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-02-004",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Find 0 and return to the home position. Type each target carefully.",
+      "content": "0ff f00 0f00 00f0 00f 00 f0f 0f0f f000 0f 0fff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "0000 900 090 00 i000 0900 909 009 9900 99 0009 000 0090 90 i090 09"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "000 00 0000 n000 00n0 0n0 n0 000n n00 00n 0n00 0n"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "090 000 90 00 900 0990 0000 990 099 9000 0f 0009 f99 0090 0099 09 0f00 0f0"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "000 00 0000 u000 0u0 0u00 u00 0u 000u 00u u0 00u0 uu"
+    }
+  ]
+}

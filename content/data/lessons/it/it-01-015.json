@@ -1,0 +1,113 @@
+{
+  "id": "it-01-015",
+  "unit": "u1",
+  "group": "g3",
+  "order": 14,
+  "slug": "it-01-015",
+  "title": "V, B, N",
+  "summary": "Impara i tasti v, b, n e usali con i tasti già studiati.",
+  "newKeys": [
+    "v",
+    "b",
+    "n"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti v, b, n e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-015",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Trova v e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "vvf vvfv fv vvvv fvfv vfv ff vv",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Trova b e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "bjj bbjb jj bbb bbbb bb bbj jjbb bjjb jbb bj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Trova n e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "nnn fn ffn nf ffnn nnf nn nnnn nnnf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "nvnn nn jjbb bb bbnb bbnn vnv nvb vn nnnn bnn nbb nv nvv bnb vvnv jj nnbn"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "vba nst tàv sbn avt nab tvs bàn ast vnt sba tàn"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "nnb nn vf nnv bn vv vvv vvn nnbb nnvv nnn bbb"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "bva tns àvb nsa tva bns avn tas vbt abn sàv ntb"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "nnòv vvbn vvv nbnv nn vv nnnv bb bv vvn bbbv nnn nnnb vvvn bbn nb nbbb"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "la nonna è brava e non beve il vino della sera"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "il nonno ha un libro nuovo e legge con la nonna"
+    }
+  ]
+}

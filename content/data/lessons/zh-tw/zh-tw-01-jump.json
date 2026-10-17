@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-01-jump",
+  "unit": "u1",
+  "group": "g4",
+  "order": 24,
+  "slug": "zh-tw-01-jump",
+  "title": "快速進行",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ime",
+  "intro": "以穩定節奏交替輸入已學符號。",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-jump",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄑㄑㄑ ㄨㄨㄨㄨ ㄑㄨ ㄨㄨ ㄑㄨㄑㄑ ㄑㄑㄑ ㄑㄨㄑㄑ ㄨㄨ ㄑㄨ ㄨㄨㄨㄨ ㄑㄨ ㄨㄨㄨㄨ ㄑㄑㄑ ㄑㄨㄑㄑ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄠㄠ ㄑㄑㄠㄘ ㄆㄆㄨㄆ ㄇㄜㄨ ㄤㄨㄨ ㄨㄨㄇㄆ ㄠㄠ ㄨㄨㄇㄆ ㄤㄨㄨ ㄇㄜㄨ ㄆㄆㄨㄆ ㄑㄑㄠㄘ ㄆㄆㄨㄆ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄟㄟㄣ ㄟㄗㄛ ㄟㄟㄜ ㄣㄍㄍ ㄣㄣㄣㄣ ㄛㄕㄕ ㄟㄟㄣ ㄛㄕㄕ ㄣㄣㄣㄣ ㄣㄍㄍ ㄟㄟㄜ ㄟㄗㄛ ㄟㄟㄜ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄡㄡㄝ ㄡㄝㄏㄏ ㄝㄡㄩ ㄨㄨ ㄩㄒㄛ ㄟㄟㄠㄩ ㄡㄡㄝ ㄟㄟㄠㄩ ㄩㄒㄛ ㄨㄨ ㄝㄡㄩ ㄡㄝㄏㄏ ㄝㄡㄩ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄙㄙㄙ ㄦㄙㄢㄞ ㄢㄢㄢㄢ ㄢㄦㄧㄧ ㄞㄞㄢㄢ ㄙㄙㄙ ㄞㄞㄢㄢ ㄢㄦㄧㄧ ㄢㄢㄢㄢ ㄦㄙㄢㄞ ㄢㄢㄢㄢ ㄦㄙㄢㄞ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "左手小指按 [ 輸入「，按 ] 輸入」，其餘照注音選字。",
+      "content": "老師說「請大家安靜」同學說「好的」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音選字，遇到數字按中英切換鍵切到英數模式，打完數字再切回注音模式。",
+      "content": "我的手機號碼是0912345678請打給我",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "明天早上八點，我們在車站見面。",
+      "inputMode": "ime"
+    }
+  ]
+}

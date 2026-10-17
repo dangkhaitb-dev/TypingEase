@@ -1,0 +1,46 @@
+{
+  "id": "vi-03-017",
+  "unit": "u3",
+  "group": "g1",
+  "order": 57,
+  "slug": "vi-03-017",
+  "title": "Luyện phím · ` =",
+  "summary": "Học các phím ` và = và luyện với phím đã biết.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "telex",
+  "intro": "Học các phím ` và = và luyện với phím đã biết.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-017",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím ` (dấu huyền ngược): ngón út trái, hàng số. Gõ ` xen với các phím đã học.",
+      "content": "`j` ```` ``` ```` `f` ```` ``` ``f `j` ````"
+    },
+    {
+      "type": "standard",
+      "text": "Phím =: ngón út phải, hàng số. Gõ = xen với các phím đã học.",
+      "content": "==== === f=== =j= f=== =j= ==== =f= =j= ===="
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp ` = [ ] \\ với chữ và số đã học.",
+      "content": "``f j== `a` === f`f ==j= ``a s== `f` === a`a ==s= ``f j=="
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại các ký hiệu ` và = mà không nhìn bàn phím.",
+      "content": "`a` = 1; `b` = 2; `c` = 3. Gõ lại đúng như vậy.",
+      "inputMode": "telex"
+    }
+  ]
+}

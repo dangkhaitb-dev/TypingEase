@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-002",
+  "unit": "u7",
+  "group": "g1",
+  "order": 97,
+  "slug": "vi-07-002",
+  "title": "Phân loại và kiểm kê",
+  "summary": "Xây dựng năng lực \"Process Description\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Mô tả quy trình vận hành kỹ thuật với các bước có quan hệ nhân quả và điều kiện nghiêm ngặt.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Process Description\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Mô tả quy trình vận hành kỹ thuật với các bước có quan hệ nhân quả và điều kiện nghiêm ngặt.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp bài học với bảng phân loại tài liệu lưu trữ.",
+      "content": "Bảng phân loại tài liệu lưu trữ: hồ sơ nhân sự xếp vào tủ A, hợp đồng kinh tế xếp vào tủ B, chứng từ thuế và hóa đơn giá trị gia tăng xếp vào tủ C có khóa bảo mật.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên biên bản kiểm kê kho hàng định kỳ giữa năm.",
+      "content": "Biên bản kiểm kê kho hàng định kỳ giữa năm: toàn bộ bốn mươi danh mục sản phẩm điện tử đều khớp với số liệu trên phần mềm kế toán. Không có trường hợp nào bị ẩm mốc, trầy xước vỏ hộp hoặc quá hạn bảo hành theo quy định của nhà sản xuất.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên báo cáo phân loại chất thải rắn tại nguồn trong khu công nghiệp.",
+      "content": "Báo cáo phân loại chất thải rắn tại nguồn trong khu công nghiệp: nhóm một gồm giấy bìa các tông và túi nilon sạch được thu gom tái chế; nhóm hai gồm kim loại phế liệu và linh kiện máy móc hỏng được chuyển giao cho đơn vị xử lý chuyên nghiệp; nhóm ba là rác thải hữu cơ sinh hoạt được xử lý vi sinh làm phân bón cây xanh khuôn viên.",
+      "inputMode": "telex"
+    }
+  ]
+}

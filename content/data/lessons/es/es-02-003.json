@@ -1,0 +1,112 @@
+{
+  "id": "es-02-003",
+  "unit": "u2",
+  "group": "g1",
+  "order": 18,
+  "slug": "es-02-003",
+  "title": "Números: 7, 8, 9",
+  "summary": "Aprender 7, 8, 9 en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "7",
+    "8",
+    "9"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Aprender 7, 8, 9 en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-02-003",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "7",
+      "text": "Localiza 7 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "777f fff7 77 ff77 77f7 ff7 77ff 7777 ff 7f7 777",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "8",
+      "text": "Localiza 8 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "88jj 88j8 jjj j888 88 88j jj8 jj 888",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "9",
+      "text": "Localiza 9 y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "9999 f9 99ff 999f f99 ff99 99 99f9 999 99f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "997q bbs o99 7n i7n 8788 889 q9 9778 c99 87 22 kky o8 888x 987 9e 88 h888"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "889 7788 7898 888 8888 999 778 878 88f8 77 78 998 88 788 98 89 979"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "s889 a888 817 a98 88 799 899 978f 987 7o"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "97 77 7889 788 8889 7797 9799 7987 99u8 87 888 7798 97u 7788 898"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "99j8 77 779 8879 988 889 997 88 8897 8878 777 99 778 8889 999 7789"
+    }
+  ]
+}

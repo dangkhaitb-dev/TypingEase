@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-009",
+  "unit": "u9",
+  "group": "g3",
+  "order": 133,
+  "slug": "vi-09-009",
+  "title": "Câu mới chuyển giao",
+  "summary": "Xây dựng năng lực \"New Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuyển giao năng lực tốc độ sang các câu văn hoàn toàn mới lạ chưa từng thực hành trước đó.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"New Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuyển giao năng lực tốc độ sang các câu văn hoàn toàn mới lạ chưa từng thực hành trước đó.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên đoạn văn mới về khả năng ứng biến trong công việc.",
+      "content": "Khả năng ứng biến nhanh nhạy là phẩm chất quý báu giúp người lao động vượt qua mọi thử thách trong môi trường số hóa hiện đại.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với đoạn văn về cách giữ tốc độ trước văn bản chưa từng gặp.",
+      "content": "Khi tiếp xúc với những văn bản hoàn toàn mới lạ chưa từng gặp trước đó, người gõ phím chuyên nghiệp vẫn giữ vững phong độ ổn định nhờ vào kỹ năng đọc hiểu nhanh và phản xạ định vị phím bấm đã đạt đến mức độ thuần thục cao độ. Hãy đọc trọn câu trước khi gõ để nhận ra giọng văn, dấu câu và từ ngữ mới trong ngữ cảnh. Khi gặp từ lạ, nhịp gõ chậm lại vừa đủ để giữ độ chính xác cho cả câu.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về việc làm chủ tổ hợp phím trong ngữ cảnh mới.",
+      "content": "Nhiệm vụ chuyển giao tốc độ sang ngữ cảnh mới đòi hỏi sự tự tin và khả năng làm chủ hoàn toàn các tổ hợp phím tiếng Việt. Bằng việc thực hành thường xuyên trên nhiều thể loại tài liệu phong phú, học viên sẽ không còn cảm giác bỡ ngỡ trước bất kỳ định dạng văn bản phức tạp nào và luôn duy trì được tốc độ gõ ấn tượng. Thử chuyển từ tin nhắn sang biên bản, rồi sang bảng số liệu, mà không đổi tư thế tay.",
+      "inputMode": "telex"
+    }
+  ]
+}

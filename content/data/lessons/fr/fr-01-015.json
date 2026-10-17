@@ -1,0 +1,83 @@
+{
+  "id": "fr-01-015",
+  "unit": "u1",
+  "group": "g3",
+  "order": 14,
+  "slug": "fr-01-015",
+  "title": "Geste : la touche Maj (Shift)",
+  "summary": "Maintenez une touche Maj enfoncée pendant la frappe pour produire les majuscules indiquées.",
+  "newKeys": [
+    "shift"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Maintenez une touche Maj enfoncée pendant la frappe pour produire les majuscules indiquées.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-015",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "shift",
+      "text": "Maintenez Maj pendant que vous tapez les lettres majuscules indiquées.",
+      "content": "FFJ FJFF JJFJ FJ FJFF JJJF FFJJ JFJF FFFJ JJFF FJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Maintenez Maj pendant que vous tapez les lettres majuscules indiquées.",
+      "content": "JFJF FFFJ JJFF FJFF JJFJ FJ JJJF FFJJ FJFF JFJF FFJ"
+    },
+    {
+      "type": "standard",
+      "text": "Maintenez Maj pendant que vous tapez les lettres majuscules indiquées.",
+      "content": "JJFF FJFF JFJF FFFJ FJ JJJF FFJJ JJFJ FJFF FFFJ JJ"
+    },
+    {
+      "type": "standard",
+      "text": "Tape chaque mot avec soin, uniquement avec les touches que tu connais déjà.",
+      "content": "Marie Jean Léa Paul Julie Lucas Nina Hugo Louise Emma"
+    }
+  ]
+}

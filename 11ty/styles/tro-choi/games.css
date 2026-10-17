@@ -1,0 +1,597 @@
+/* tro-choi/games.css — trang trò chơi gõ phím (tro-choi/games.js). Nạp sau tokens.css + base.css +
+   kiem-tra-toc-do-go/test.css (dùng lại khung trang .test-main, .test-hero, .faq, .test-cta).
+
+   Khung trò chơi kiểu Apple: bộ chọn game là một segmented control lớn (rãnh xám, game đang chọn là mặt
+   trắng bóng mềm); bảng chơi là thẻ trắng không viền; HUD là số lớn nét mảnh với chú thích xám nhỏ; ô gõ
+   nền xám như ô nhập iOS. Hình minh hoạ SVG (scripts/lib/game-art.mjs) và cảnh nền của Mưa chữ / đường
+   đua là ARTWORK — giữ nguyên màu riêng (docs/design-system.md, Exceptions). */
+
+/* ---------- chọn game: segmented control lớn ---------- */
+.game-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin:0 0 20px;padding:4px;border-radius:var(--r-lg);background:var(--ink-200)}
+.game-tabs button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:64px;padding:14px 16px 16px;border:0;border-radius:16px;background:transparent;color:var(--ink-900);text-align:start;box-shadow:none;transition:background-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease)}
+.game-tabs button:hover:not(.selected){background:rgba(255,255,255,.45)}
+.game-tabs button:active{transform:var(--press)}
+.game-tabs button b{font-size:var(--fs-body);font-weight:600;letter-spacing:-.015em}
+.game-tabs button span{color:var(--ink-600);font-size:13px;line-height:1.4}
+.game-tabs button.selected{background:var(--surface);box-shadow:0 3px 10px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.05)}
+.game-tabs button.selected b{color:var(--ink-900)}
+.game-tabs button:focus-visible{box-shadow:var(--shadow-focus)}
+
+/* ---------- bảng chơi ---------- */
+.game-panel{position:relative;padding:32px 36px 36px;border:0;border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-card)}
+.game-bar{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 24px;margin:0 0 20px}
+.game-bar label{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0;color:var(--ink-500);font-size:13px;font-weight:500}
+.game-bar select{min-height:40px;padding:0 34px 0 14px;border:0;border-radius:var(--r-pill);background:var(--surface-alt) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%2386868b' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center;color:var(--ink-900);font:500 15px var(--font-body);letter-spacing:-.01em;box-shadow:none;cursor:pointer;-webkit-appearance:none;appearance:none;transition:background-color var(--dur-fast) var(--ease)}
+[dir=rtl] .game-bar select{padding:0 14px 0 34px;background-position:left 14px center}
+.game-bar select:hover{background-color:var(--ink-200)}
+.game-bar .primary-button{min-height:40px;padding:8px 20px;font-size:15px}
+/* HUD kiểu Apple Fitness: chú thích xám nhỏ ở trên, số to nét mảnh ở dưới; không ô, không viền. */
+.game-stats{display:flex;flex-wrap:wrap;gap:4px 28px;margin-inline-start:auto}
+.game-stats div{display:flex;flex-direction:column;gap:2px;min-width:48px;padding:0;border:0;background:none;color:var(--ink-500);font-size:13px;font-weight:500;line-height:1.2}
+.game-stats strong{color:var(--ink-900);font:300 30px/1 var(--font-body);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.game-stats .game-lives{color:var(--error);font-size:22px;line-height:30px;letter-spacing:.05em}
+
+/* ---------- Mưa chữ ---------- */
+.rain-arena{position:relative;height:380px;overflow:hidden;border:0;border-radius:var(--r-lg)}
+.rain-arena.is-hit{animation:game-shake .3s}
+/* Mỗi chữ rơi là một viên trắng nhỏ, bóng mềm. */
+.drop{position:absolute;left:0;top:0;padding:5px 12px;border:0;border-radius:var(--r-pill);background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.08);color:var(--ink-900);font:500 17px/1.3 var(--font-mono);white-space:nowrap;will-change:transform}
+.drop b{color:var(--primary-600);font-weight:500}
+/* Chữ đang nhắm: viền xanh 2px (mục đang chọn của hệ thống). */
+.drop.is-target{background:var(--surface);box-shadow:0 0 0 2px var(--primary-500),0 6px 16px rgba(0,0,0,.1)}
+.drop.is-cleared{opacity:0;transition:opacity .25s,transform .25s;transform-origin:center}
+.drop.is-missed{background:var(--error-100);color:var(--error-700);box-shadow:none;opacity:.6;transition:opacity .25s}
+.game-input{display:block;width:100%;min-height:52px;margin-top:16px;padding:12px 18px;border:1px solid transparent;border-radius:var(--r);background:var(--surface-alt);color:var(--ink-900);font:400 18px/1.4 var(--font-mono);outline:0;transition:background-color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.game-input::placeholder{color:var(--ink-500);font-family:var(--font-body);font-size:16px}
+.game-input:focus{border-color:var(--primary-500);background:var(--surface);box-shadow:0 0 0 4px var(--primary-100)}
+.game-input:disabled{cursor:not-allowed;opacity:.7}
+.game-input.is-wrong{animation:game-shake .25s;border-color:var(--error);box-shadow:0 0 0 4px var(--error-100)}
+/* Lớp phủ: kính mờ trên cảnh nền. */
+.game-overlay{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;background:color-mix(in srgb,var(--canvas) 55%,transparent);-webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);text-align:center}
+.game-overlay[hidden]{display:none}
+.game-over-title{margin:0;color:var(--ink-900);font-size:28px;font-weight:700;letter-spacing:var(--track-display)}
+.game-over-score{margin:0;max-width:520px;color:var(--ink-600);font-size:15px;font-weight:400;line-height:1.55}
+/* Kỷ lục mới = điểm nhấn lime (design-system: "a personal best"). */
+.game-over-best{margin:0;padding:5px 14px;border-radius:var(--r-pill);background:var(--accent-100);color:var(--accent-800);font-size:13px;font-weight:600;box-shadow:none}
+.game-hint{margin:14px 0 0;color:var(--ink-500);font-size:13px;font-weight:400}
+.game-overlay .game-hint{margin:0;color:var(--ink-600)}
+
+/* ---------- Đua với bóng ---------- */
+.race-track{display:grid;gap:8px;margin:0 0 24px}
+.race-lane{position:relative;height:44px;border:0;border-radius:var(--r-pill);background:var(--surface-alt)}
+/* Mép đầu của xe (không phải tâm) chạy từ vạch xuất phát tới sát cờ đích, nên nhãn dài không tràn khỏi làn. */
+.race-lane span{position:absolute;top:50%;left:calc(10px + (100% - 114px) * var(--p,0));transform:translateY(-50%);display:flex;align-items:center;justify-content:center;gap:6px;min-width:34px;height:30px;padding:0;font-size:13px;font-weight:600;white-space:nowrap;transition:left .12s linear}
+.race-lane span .race-car{width:26px;height:18px}
+.race-lane.you span{color:var(--primary-700)}
+.race-lane.ghost span{color:var(--ink-500)}
+/* Cờ đích ca-rô: một phần của hình minh hoạ đường đua. */
+.race-lane::after{content:"";position:absolute;right:16px;top:10px;bottom:10px;width:6px;border-radius:2px;background:repeating-linear-gradient(0deg,var(--ink-900) 0 4px,var(--white) 4px 8px)}
+.race-prompt{margin:0 0 4px;padding:4px;color:var(--ink-900);font:400 22px/1.7 var(--font-mono);letter-spacing:-.01em;white-space:pre-wrap;overflow-wrap:break-word}
+.race-prompt .current~span{color:var(--ink-400)}
+.race-prompt .wrong{border-radius:3px;background:var(--error-100);color:var(--error);text-decoration:none}
+.race-prompt .current{position:relative}
+.race-prompt:not(.has-smooth-caret) .current::before{content:"";position:absolute;inset-block:.18em;inset-inline-start:-1px;width:2px;border-radius:1px;background:var(--primary-600);animation:game-caret 1.1s var(--ease) infinite}
+.race-status{margin:12px 0 0;color:var(--ink-500);font-size:13px;font-weight:500}
+.race-result,.keys-result{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:20px;padding:28px 24px;border:0;border-radius:var(--r-lg);background:var(--surface-alt);text-align:center;animation:game-result-in var(--dur) var(--ease-out) both}
+.race-result[hidden],.keys-result[hidden]{display:none}
+
+/* ---------- Săn phím ---------- */
+/* Phím cần bấm: một phím trắng lớn nổi bóng mềm ở giữa. Trước khi chơi (đoạn trống) chỉ giữ chỗ. */
+.keys-target{display:flex;align-items:center;justify-content:center;width:max-content;min-width:96px;height:88px;margin:4px auto 24px;padding:0 24px;border:0;border-radius:22px;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.1);color:var(--primary-600);font:500 44px/1 var(--font-mono)}
+.keys-target:empty{background:none;box-shadow:none}
+.keys-board{min-height:180px}
+.keys-board .hands,.keys-board .keyboard-link{display:none}
+/* keyboard.css chừa ~220px dưới bàn phím cho đôi bàn tay; Săn phím giấu tay nên bỏ luôn khoảng trống đó. */
+.keys-board .keyboard--hands{margin-bottom:0}
+
+@keyframes game-shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
+@keyframes game-caret{0%,50%{opacity:1}70%,100%{opacity:0}}
+@keyframes game-result-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rain-arena.is-hit,.game-input.is-wrong,.race-prompt .current::before,.race-result,.keys-result{animation:none}.race-lane span{transition:none}}
+
+/* Hình minh hoạ (scripts/lib/game-art.mjs): ảnh thu nhỏ trên thẻ, hướng dẫn ba bước, cảnh nền, xe đua. */
+.game-thumb{display:block;width:100%;max-width:150px;height:auto;margin:0 0 10px;border-radius:var(--r-sm)}
+/* Ba bước: biểu tượng + một dòng chữ, không ô; số bước là chấm tròn xanh nhạt. */
+.game-how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 24px;padding:0 0 24px;border-bottom:1px solid var(--border);list-style:none}
+.game-how li{display:flex;align-items:center;gap:12px;padding:0;border:0;background:none;color:var(--ink-700);font-size:14px;font-weight:400;line-height:1.4}
+.game-how .how-icon{flex:none;width:40px;height:40px}
+.game-how b{display:flex;align-items:center;justify-content:center;width:20px;height:20px;margin:0 0 4px;border:0;border-radius:50%;background:var(--primary-50);box-shadow:none;color:var(--primary-700);font-size:12px;font-weight:600;vertical-align:1px}
+.rain-scene{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
+/* Bầu trời của Mưa chữ là artwork (cùng bảng màu với cảnh SVG bên trong). */
+.rain-arena{background:linear-gradient(180deg,#cfe4fb 0%,#e4f0fd 50%,#f1f8f4 100%)}
+
+/* Trang viết từ phải sang trái (ar, fa, ur, he): đường đua chạy từ phải sang trái, cờ đích bên trái,
+   xe quay đầu theo hướng chạy. */
+[dir="rtl"] .race-lane span{left:auto;right:calc(10px + (100% - 114px) * var(--p,0));transition:right .12s linear}
+[dir="rtl"] .race-lane::after{right:auto;left:16px}
+[dir="rtl"] .race-lane .race-car,[dir="rtl"] .game-tabs [data-game-tab="race"] .game-thumb{transform:scaleX(-1)}
+/* Roboto Mono chỉ có chữ Latin/Cyrillic: chữ Ả Rập, Hebrew, Devanagari, Bengali, Thái, CJK, Hàn rơi về
+   font dự phòng theo từng ký tự và nét nối bị ngắt. Dùng font không đơn cách cho các hệ chữ đó. */
+:is(:lang(ar),:lang(fa),:lang(ur),:lang(he),:lang(hi),:lang(bn),:lang(th),:lang(zh),:lang(ja),:lang(ko)) :is(.race-prompt,.drop,.game-input){font-family:var(--font-body);letter-spacing:0}
+
+/* Màn hình lớn: bảng chơi rộng bằng mặt gõ của trang kiểm tra tốc độ. */
+@media (min-width:1000px){
+  .game-tabs,.game-panel{margin-inline:-60px}
+}
+@media (max-width:900px){
+  .game-panel{padding:22px 18px 24px;border-radius:var(--r-lg)}
+  .game-how{gap:12px}
+}
+@media (max-width:640px){
+  /* Điện thoại: ba đoạn ngang chỉ còn ảnh + tên game; lời mô tả vẫn đọc được bằng trình đọc màn hình
+     (bảng chơi bên dưới đã có hướng dẫn ba bước). */
+  .game-tabs{gap:2px;padding:3px;border-radius:18px}
+  .game-tabs button{align-items:center;min-height:0;padding:10px 6px 10px;border-radius:15px;text-align:center}
+  .game-tabs button b{font-size:14px;line-height:1.2}
+  .game-tabs button span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+  .game-thumb{max-width:72px;margin:0 auto 6px}
+  .game-how{grid-template-columns:1fr;gap:10px;padding-bottom:20px;margin-bottom:20px}
+  .game-bar{gap:14px 18px}
+  .rain-arena{height:320px}
+  .game-stats{gap:4px 22px;margin-inline-start:0}
+  .game-stats strong{font-size:26px}
+  .race-prompt{font-size:18px}
+}
+/* keyboard.css cho bàn phím tràn hết bề ngang màn hình dưới 700px; trong bảng chơi thì chỉ tràn vào
+   phần đệm của bảng, không đè lên viền. */
+@media (max-width:700px){
+  .keys-board .js-keyboard-holder .keyboard--full:not(.keyboard--numpad){width:calc(100% + 24px);max-width:none;margin-inline:-12px}
+}
+
+/* Firefly garden — layered SVG scenery and lightweight game feedback. */
+#panel-rain{padding:24px;background:#f5f7f4;border:1px solid #e0e7df;box-shadow:0 16px 50px #173b2410}
+#panel-rain .game-how{margin-bottom:20px;padding-bottom:20px}
+#panel-rain .game-bar{align-items:center;margin-bottom:20px;padding-inline:8px}
+#panel-rain .game-stats{gap:30px}
+#panel-rain .game-stats div{font-size:11px;letter-spacing:.04em;gap:6px}
+#panel-rain .game-stats strong{font-size:26px;font-weight:600}
+#panel-rain .game-lives{color:#d57485;font-size:22px}
+#panel-rain .rain-arena{height:480px;border-radius:20px;background:#16293b;isolation:isolate;box-shadow:inset 0 0 0 1px #ffffff15}
+#panel-rain .game-overlay{z-index:5;background:linear-gradient(90deg,#12273b30,#12273b60,#12273b30);backdrop-filter:none;-webkit-backdrop-filter:none;gap:12px;color:#eff6e6}
+.rain-welcome-art{width:100px;height:100px;animation:rain-float 4s ease-in-out infinite}
+.rain-sprite{display:block;width:100%;height:auto}
+.rain-world-label{margin:0;color:#c9dfa8;font-size:10px;font-weight:700;letter-spacing:.24em}
+.rain-welcome-title{margin:0!important;color:#f5f8e9!important;font-size:clamp(36px,5vw,52px)!important;font-weight:700;line-height:1.1;letter-spacing:-.04em}
+.rain-welcome-copy{margin:0 0 8px;color:#d0dfdc;font-size:15px}
+#rain-overlay .primary-button{background:#d5ef9e;color:#21382f;border:1px solid #efffc9;border-radius:12px;padding:14px 32px;box-shadow:0 4px 0 #8ba875,0 8px 26px #b6e88022;font-weight:700;transition:transform .2s,background .2s}
+#rain-overlay .primary-button:hover{background:#e6ffb4;transform:translateY(-2px)}
+#rain-overlay .game-hint{color:#b4c9c8;max-width:390px;font-size:12px;line-height:1.6;margin-top:9px}
+#rain-overlay .game-over-title{color:#f0f6dc;font-size:36px}
+#rain-overlay .game-over-score{color:#c7d9d6}
+.rain-companion{position:absolute;bottom:9px;left:calc(50% - 32px);width:64px;pointer-events:none;transform-origin:bottom center;transition:filter .2s;z-index:2}
+.rain-companion.is-happy{animation:rain-cheer .6s ease}
+.rain-companion.is-sad{filter:saturate(.2);animation:game-shake .3s}
+.rain-progress{position:absolute;bottom:0;left:0;right:0;height:4px;background:#061b2966;z-index:4}
+.rain-progress span{display:block;width:0;height:100%;background:#d5ef9e;box-shadow:0 0 12px #c3ef82;transition:width .3s}
+#rain-arena .drop{z-index:3;padding:9px 18px 10px;border:1px solid #a9e4d480;border-radius:13px;background:linear-gradient(145deg,#effff2,#cbe9df);box-shadow:0 4px 0 #497a78,0 8px 22px #071a2940;color:#234a49;font-size:19px;font-weight:600;line-height:1.3;max-width:calc(100% - 16px);overflow:hidden;text-overflow:ellipsis}
+#rain-arena .drop::before{content:'';position:absolute;top:4px;left:9px;right:9px;height:1px;background:#ffffffb0}
+#rain-arena .drop[data-tone="1"]{background:linear-gradient(145deg,#ebfcff,#cfe9ed);border-color:#d0f9ff;box-shadow:0 4px 0 #73969b,0 8px 22px #071a2940;color:#46676c}
+#rain-arena .drop[data-tone="2"]{background:linear-gradient(145deg,#fff1d7,#efdab2);border-color:#ffe9c5;box-shadow:0 4px 0 #998664,0 8px 22px #071a2940;color:#6e5536}
+#rain-arena .drop.is-target{background:#edffbf;border-color:#e7ff9e;box-shadow:0 0 0 3px #d5ef9e40,0 4px 0 #739b58,0 0 28px #d5ef9e45;color:#52703b}
+#rain-arena .drop b{color:#103c26;text-decoration:underline;text-underline-offset:4px}
+#rain-arena .drop.is-danger{border-color:#ffaf9b;box-shadow:0 4px 0 #a16064,0 0 22px #f28e7c50}
+#rain-arena .drop.is-cleared{opacity:0;filter:blur(3px);transition:opacity .25s,filter .25s}
+#rain-arena .drop.is-missed{opacity:0;background:#edb4ac}
+.rain-particle{position:absolute;width:6px;height:6px;border-radius:2px;background:var(--spark,#dcf7a8);pointer-events:none;z-index:4;animation:rain-burst .65s ease-out forwards}
+.rain-points{position:absolute;z-index:4;color:#e9ffbc;font:700 20px var(--font-body);pointer-events:none;text-shadow:0 2px 8px #12273b;animation:rain-points .85s ease-out forwards}
+.rain-input-wrap{position:relative;margin-top:16px;display:flex;align-items:center}
+#panel-rain .rain-input-wrap .game-input{margin:0;padding:16px 58px;background:#fff;border:1px solid #dce5da;border-radius:14px;font-size:18px;min-height:60px}
+.rain-input-icon{position:absolute;left:20px;z-index:1;color:#567466;font-size:24px;pointer-events:none}
+.rain-input-wrap kbd{position:absolute;right:16px;padding:3px 9px;border:1px solid #dae4d7;border-bottom-width:3px;border-radius:6px;color:#62785e;font-size:18px}
+.rain-star{animation:rain-twinkle 4s ease-in-out infinite}
+.rain-firefly{animation:rain-drift 6s ease-in-out infinite;filter:drop-shadow(0 0 5px #e4ffa2)}
+.rain-cloud{animation:rain-cloud 20s ease-in-out infinite alternate}
+@keyframes rain-twinkle{50%{opacity:.25}}
+@keyframes rain-drift{50%{transform:translate(12px,-14px);opacity:.35}}
+@keyframes rain-cloud{to{transform:translateX(35px)}}
+@keyframes rain-float{50%{transform:translateY(-7px) rotate(3deg)}}
+@keyframes rain-cheer{40%{transform:translateY(-18px) rotate(-10deg)}70%{transform:translateY(-6px) rotate(8deg)}}
+@keyframes rain-burst{to{transform:translate(var(--dx),var(--dy)) rotate(140deg);opacity:0}}
+@keyframes rain-points{to{transform:translateY(-50px);opacity:0}}
+@media(max-width:640px){
+  #panel-rain{padding:14px;border-radius:20px}
+  #panel-rain .game-how{grid-template-columns:repeat(3,1fr);gap:8px;padding-bottom:14px;margin-bottom:14px}
+  #panel-rain .game-how li{flex-direction:column;align-items:flex-start;font-size:11px;gap:6px}
+  #panel-rain .game-how b{display:none}
+  #panel-rain .game-how .how-icon{width:30px;height:30px}
+  #panel-rain .game-bar{padding:0;gap:12px}
+  #panel-rain .game-stats{flex:1;justify-content:space-between;gap:10px}
+  #panel-rain .game-stats strong{font-size:21px}
+  #panel-rain .game-stats div{min-width:32px;font-size:10px}
+  #panel-rain .game-bar label{font-size:11px}
+  #panel-rain .game-bar select{font-size:13px;padding-left:10px;min-height:36px}
+  #panel-rain .rain-arena{height:420px;border-radius:14px}
+  #rain-overlay{padding:20px 16px}
+  .rain-welcome-copy{font-size:13px}
+  #panel-rain .rain-input-wrap .game-input{padding-left:44px;padding-right:42px;font-size:16px}
+  #rain-input::placeholder{font-size:12px}
+  .rain-input-icon{left:13px;font-size:21px}
+  .rain-input-wrap kbd{right:10px;padding-inline:5px}
+}
+@media(prefers-reduced-motion:reduce){
+  .rain-star,.rain-cloud,.rain-firefly,.rain-welcome-art,.rain-companion.is-happy,.rain-companion.is-sad{animation:none}
+  .rain-particle{display:none}.rain-points{animation:none}
+  .rain-progress span,#rain-arena .drop,#rain-overlay .primary-button{transition:none}
+}
+
+/* Sunset rally. */
+#panel-race,#panel-keys{padding:24px;border:1px solid #e5e1dc;box-shadow:0 16px 50px #24314310}
+#panel-race{background:#faf7f1}
+#panel-keys{background:#f3f8f9;border-color:#dfebed}
+.rally-world,.orbit-world{position:relative;isolation:isolate;overflow:hidden;border-radius:20px}
+.rally-world{height:360px;background:#a9d2c1;margin-bottom:22px}
+.rally-scene{position:absolute;inset:0;width:100%;height:245px;object-fit:cover}
+.world-caption{position:absolute;top:22px;left:24px;right:24px;z-index:1;pointer-events:none}
+.world-caption>span{font-size:9px;font-weight:700;letter-spacing:.2em;color:#6c584e}
+.world-caption h2{margin:5px 0 0!important;font-size:25px!important;letter-spacing:-.04em;color:#4a4744!important}
+.rally-lights{position:absolute;right:24px;top:25px;padding:7px 9px;display:flex;gap:6px;background:#384c4b;border-radius:9px;box-shadow:0 3px 0 #213a36}
+.rally-lights i{width:11px;height:11px;border-radius:50%;background:#9b7064;box-shadow:inset 0 1px 3px #0004}
+.rally-world.is-racing .rally-lights i{background:#cdf19c;box-shadow:0 0 10px #cdf19c88}
+#panel-race .race-track{position:absolute;left:0;right:0;bottom:0;gap:0;margin:0;padding:10px 0;background:#50616a;border-block:5px solid #ebdfbc}
+#panel-race .race-lane{height:58px;border-radius:0;background:none}
+#panel-race .race-lane:first-child{border-bottom:2px dashed #e8e2c877}
+#panel-race .race-lane span{top:calc(50% - 3px);left:calc(12px + (100% - 126px) * var(--p,0));height:51px;min-width:100px;flex-direction:column;gap:0;color:#fff4df;font-size:9px;line-height:1;transition:left .12s linear}
+#panel-race .rally-car{width:85px;height:46px;overflow:visible}
+#panel-race .race-lane::after{right:17px;top:0;bottom:0;width:12px;border-radius:0;background:repeating-conic-gradient(#e9e7d9 0% 25%,#33454e 0% 50%) 0 0/12px 12px}
+.rally-world.is-racing .rally-car{animation:rally-engine .16s infinite alternate}
+.rally-world.is-racing .rally-clouds{animation:rally-clouds 12s linear infinite alternate}
+#panel-race .race-prompt{padding:20px 22px;background:#fffdf8;border:1px solid #e8e0d3;border-radius:14px;font-size:19px;line-height:1.9}
+#panel-race .race-prompt .ok{color:#317762}
+#panel-race .game-input{background:#f0eae0;border:1px solid #e6ddcd;border-radius:14px}
+#panel-race .game-input:focus{background:#fffdf8;border-color:#9aa684;box-shadow:0 0 0 4px #e3ebd6}
+#panel-race .primary-button{background:#395e51;color:#fff8e8}
+#panel-race .race-result{background:#e9eedc;border:1px solid #dbe5c6}
+.rally-world.is-finished::after{content:'★';position:absolute;right:28px;top:83px;color:#fff5be;font-size:48px;text-shadow:0 4px 0 #b38c60;animation:game-result-in .4s both}
+[dir=rtl] #panel-race .race-lane span{left:auto;right:calc(12px + (100% - 126px) * var(--p,0))}
+[dir=rtl] #panel-race .race-lane::after{left:17px;right:auto}
+[dir=rtl] #panel-race .rally-car{transform:scaleX(-1);animation:none}
+/* Orbital key hunt. */
+.orbit-world{height:275px;margin-bottom:22px;background:#252940}
+.orbit-scene{position:absolute;inset:0;width:100%;height:100%}
+.orbit-world .world-caption>span{color:#c0e1e6}
+.orbit-world .world-caption h2{color:#ecfcff!important}
+.orbit-target-ring{position:absolute;left:calc(50% - 66px);top:95px;width:132px;height:132px;border:1px solid #ade0e84d;border-radius:50%;display:grid;place-items:center;box-shadow:0 0 0 12px #b9ebf308,0 0 0 25px #b9ebf305}
+.orbit-target-ring::after{content:'';position:absolute;inset:-8px;border:2px dashed #a1dbe452;border-radius:50%;pointer-events:none}
+#panel-keys .keys-target{margin:0;width:82px;min-width:82px;height:82px;padding:0;border-radius:20px;background:linear-gradient(145deg,#f0fdff,#d1e9ed);box-shadow:0 6px 0 #82a6ab,0 0 35px #adf4ff35;font-size:43px;color:#456e74;font-weight:600}
+#panel-keys .keys-target:empty::before{content:'⌘';color:#7d9a9f}
+.orbit-bot{position:absolute;bottom:23px;right:13%;width:72px;animation:orbit-hover 5s ease-in-out infinite}
+.space-bot{width:100%;height:auto;display:block}
+.orbit-energy{position:absolute;bottom:0;left:0;right:0;height:5px;background:#14182c}
+.orbit-energy span{display:block;width:100%;height:100%;background:linear-gradient(90deg,#a7e8d7,#b8eef6);transition:width .2s linear}
+.orbit-world.is-playing .orbit-target-ring::after{animation:orbit-spin 18s linear infinite}
+.orbit-world.is-good .orbit-target-ring{animation:orbit-hit .35s ease-out}
+.orbit-world.is-bad .keys-target{animation:game-shake .25s;background:#f4c9da;color:#944865}
+.orbit-feedback{position:absolute;top:100px;left:calc(50% + 82px);color:#cff5ba;font-size:20px;font-weight:700;opacity:0;pointer-events:none}
+.orbit-world.is-good .orbit-feedback{animation:orbit-score .5s ease-out}
+.orbit-world.is-urgent .orbit-energy span{background:#edb0bf}
+.orbit-star{animation:rain-twinkle 4s infinite}
+.orbit-satellite{animation:orbit-hover 8s ease-in-out infinite}
+#panel-keys .keys-board{padding:20px 8px 4px;background:#e9f2f3;border-radius:16px;border:1px solid #dbe9eb}
+#panel-keys .keys-board .well{background:transparent;border:0;box-shadow:none}
+#panel-keys .keys-result{background:#e3f2f4;border:1px solid #d0e4e7}
+#panel-keys .primary-button{background:#557f85;color:#fff}
+#panel-keys .game-stats strong{color:#507a80;font-size:27px;font-weight:600}
+#panel-keys .game-stats{gap:24px}
+@keyframes rally-engine{to{translate:0 -1px}}
+@keyframes rally-clouds{to{transform:translateX(30px)}}
+@keyframes orbit-hover{50%{transform:translateY(-9px)}}
+@keyframes orbit-spin{to{transform:rotate(360deg)}}
+@keyframes orbit-hit{50%{box-shadow:0 0 0 18px #b8e4ce33,0 0 0 36px #b6f5ff12}}
+@keyframes orbit-score{10%{opacity:1}100%{opacity:0;transform:translateY(-24px)}}
+@media(max-width:640px){
+  #panel-race,#panel-keys{padding:14px;border-radius:20px}
+  #panel-race .game-how,#panel-keys .game-how{grid-template-columns:repeat(3,1fr);gap:8px;padding-bottom:14px;margin-bottom:14px}
+  #panel-race .game-how li,#panel-keys .game-how li{flex-direction:column;align-items:flex-start;font-size:11px;gap:6px}
+  #panel-race .game-how b,#panel-keys .game-how b{display:none}
+  #panel-race .how-icon,#panel-keys .how-icon{width:30px;height:30px}
+  .rally-world{height:310px}.rally-scene{height:180px;width:160%;max-width:none;left:-30%}
+  .world-caption{top:17px;left:16px;right:16px}.world-caption h2{font-size:21px!important}
+  .world-caption>span{font-size:8px;letter-spacing:.12em}
+  .rally-lights{top:20px;right:16px;padding:6px;gap:4px}.rally-lights i{width:7px;height:7px}
+  #panel-race .race-prompt{font-size:16px;padding:14px;line-height:1.8}
+  #panel-race .game-bar{gap:12px}
+  #panel-race .game-bar select{max-width:190px;font-size:13px}
+  #panel-race .game-bar .primary-button{font-size:13px;padding-inline:14px}
+  .orbit-world{height:265px}.orbit-scene{width:160%;max-width:none;left:-30%}
+  .orbit-bot{right:5%;width:54px;bottom:17px}
+  .orbit-target-ring{top:98px;width:112px;height:112px;left:calc(50% - 56px)}
+  #panel-keys .keys-target{width:72px;min-width:72px;height:72px;font-size:36px}
+  #panel-keys .game-stats{gap:12px;width:100%;justify-content:space-between}
+  #panel-keys .game-stats div{font-size:11px}#panel-keys .game-stats strong{font-size:24px}
+  .orbit-feedback{left:calc(50% + 64px);top:108px;font-size:16px}
+  #panel-keys .keys-board{padding-inline:0}
+}
+@media(prefers-reduced-motion:reduce){
+  .rally-world.is-racing .rally-car,.rally-world.is-racing .rally-clouds,.orbit-star,.orbit-satellite,.orbit-bot,.orbit-world.is-playing .orbit-target-ring::after,.orbit-world.is-good .orbit-target-ring,.orbit-world.is-bad .keys-target,.orbit-world.is-good .orbit-feedback,.rally-world.is-finished::after{animation:none}
+  #panel-race .race-lane span,.orbit-energy span{transition:none}
+}
+
+/* Localized scenery labels: reserve space for the lights and connected scripts. */
+.rain-world-label,.world-caption>span{text-transform:uppercase}
+.rally-world .world-caption{inset-inline-end:92px}
+.world-caption h2{overflow-wrap:anywhere;line-height:1.2}
+[dir=rtl] .world-caption{text-align:right}
+[dir=rtl] .rally-lights{right:auto;left:24px}
+:is(:lang(ar),:lang(fa),:lang(ur),:lang(he),:lang(hi),:lang(bn),:lang(th)) :is(.rain-world-label,.world-caption>span){letter-spacing:normal}
+@media(max-width:640px){
+  .rally-world .world-caption{inset-inline-end:65px}
+  .world-caption h2{font-size:clamp(16px,5vw,21px)!important}
+  [dir=rtl] .rally-lights{left:16px}
+}
+
+/* Games are a full-width playing surface, independent of the reading column. */
+.games-main{width:100%;max-width:none;margin:0;padding:22px clamp(16px,2.5vw,48px) 64px}
+.games-main>.breadcrumb{display:none}
+.games-main .test-hero{margin:0 0 18px;text-align:start}
+.games-main .test-hero h1{margin:0;font-size:26px;line-height:1.2;letter-spacing:-.035em}
+.games-main .test-hero>p{display:none}
+.games-main .game-tabs{margin:0 0 22px;padding:0;background:transparent;border-radius:0;gap:14px}
+.games-main .game-tabs button{display:grid;grid-template-columns:76px 1fr;grid-template-rows:auto auto;align-content:center;align-items:center;column-gap:16px;row-gap:3px;padding:10px 16px;border:1px solid transparent;border-radius:12px;min-height:76px}
+.games-main .game-tabs button.selected{border-color:#c9d6ce;background:#fff;box-shadow:0 3px 10px #163d2710}
+.games-main .game-tabs button b{font-size:18px;align-self:end}
+.games-main .game-tabs button span{font-size:12px;align-self:start}
+.games-main .game-tabs .game-thumb{grid-row:1/3;width:76px;max-width:none;margin:0}
+.games-main #panel-rain,.games-main #panel-race,.games-main #panel-keys{margin:0;padding:0;background:transparent;border:0;border-radius:0;box-shadow:none}
+.games-main .game-panel:not([hidden]){display:flex;flex-direction:column}
+.games-main .game-how{order:10;display:flex;justify-content:center;flex-wrap:wrap;gap:24px 48px;margin:24px 0 0!important;padding:0!important;border:0}
+.games-main .game-how li{font-size:14px;gap:10px;max-width:360px}
+.games-main .game-how b{display:none}
+.games-main .game-how .how-icon{width:32px;height:32px}
+.games-main .game-bar{padding:0!important;margin:0 0 16px!important;gap:16px 32px;align-items:center}
+.games-main .game-bar label{font-size:14px;flex-direction:row;align-items:center;gap:12px}
+.games-main .game-bar select{font-size:16px;min-height:44px;background-color:#e9ece7}
+.games-main .game-bar .primary-button{min-height:44px;font-size:16px;padding:10px 24px}
+.games-main #panel-rain .game-stats,.games-main #panel-keys .game-stats{gap:clamp(24px,4vw,64px);margin-inline-start:auto}
+.games-main #panel-rain .game-stats div,.games-main #panel-keys .game-stats div{font-size:13px;flex-direction:row;align-items:baseline;gap:12px}
+.games-main #panel-rain .game-stats strong,.games-main #panel-keys .game-stats strong{font-size:30px}
+.games-main #panel-rain .rain-arena{height:clamp(470px,62vh,850px);border-radius:16px}
+.games-main #rain-arena .drop{font-size:26px;padding:10px 22px;border-radius:14px}
+.games-main .rain-welcome-art{width:125px;height:125px}
+.games-main .rain-welcome-title{font-size:clamp(48px,5vw,76px)!important}
+.games-main .rain-welcome-copy{font-size:19px}
+.games-main .rain-world-label{font-size:12px}
+.games-main #rain-overlay .primary-button{font-size:20px;padding:17px 42px}
+.games-main #rain-overlay .game-hint{font-size:14px;max-width:570px}
+.games-main .rain-companion{width:88px;left:calc(50% - 44px)}
+.games-main #panel-rain .rain-input-wrap .game-input{min-height:64px;font-size:23px}
+.games-main #rain-input::placeholder{font-size:18px}
+.games-main .rally-world{height:clamp(390px,50vh,650px);border-radius:16px}
+.games-main .rally-scene{height:calc(100% - 176px);width:100%;left:0}
+.games-main #panel-race .race-track{padding:10px 0}
+.games-main #panel-race .race-lane{height:72px}
+.games-main #panel-race .race-lane span{min-width:140px;height:70px;left:calc(16px + (100% - 172px) * var(--p,0));font-size:12px;gap:2px}
+.games-main #panel-race .rally-car{width:120px;height:62px}
+.games-main #panel-race .race-lane::after{right:24px;width:18px;background-size:18px 18px}
+.games-main .world-caption{top:28px;left:32px;right:32px}
+.games-main .world-caption>span{font-size:12px}
+.games-main .world-caption h2{font-size:34px!important}
+.games-main .rally-lights{top:30px;right:32px;padding:10px 12px;gap:8px}
+.games-main .rally-lights i{width:15px;height:15px}
+.games-main .rally-world .world-caption{inset-inline-end:130px}
+.games-main #panel-race .race-prompt{font-size:26px;line-height:1.7;padding:20px 28px}
+.games-main #panel-race .game-input{font-size:23px;min-height:60px}
+.games-main .race-status,.games-main .game-hint{font-size:15px}
+.games-main .orbit-world{height:clamp(310px,39vh,480px);border-radius:16px}
+.games-main .orbit-scene{width:100%;left:0}
+.games-main .orbit-target-ring{width:168px;height:168px;left:calc(50% - 84px);top:calc(50% - 68px)}
+.games-main #panel-keys .keys-target{width:112px;min-width:112px;height:112px;font-size:60px;border-radius:24px}
+.games-main .orbit-bot{width:100px;right:19%;bottom:24px}
+.games-main .orbit-feedback{left:calc(50% + 110px);top:46%;font-size:28px}
+.games-main #panel-keys .keys-board{width:100%;max-width:1200px;align-self:center;margin:0;padding:0;background:transparent;border:0;border-radius:0}
+.games-main #panel-keys>.game-hint{text-align:center}
+.games-main article>section:not(.games){max-width:880px;margin-inline:auto}
+[dir=rtl] .games-main #panel-race .race-lane span{left:auto;right:calc(16px + (100% - 172px) * var(--p,0))}
+[dir=rtl] .games-main #panel-race .race-lane::after{right:auto;left:24px}
+[dir=rtl] .games-main .rally-lights{right:auto;left:32px}
+@media(min-width:1800px){.games-main{padding-inline:64px}}
+@media(max-width:900px){
+  .games-main .game-tabs button{grid-template-columns:52px 1fr;column-gap:10px;padding:8px;min-height:62px}
+  .games-main .game-tabs .game-thumb{width:52px}
+  .games-main .game-tabs button b{font-size:16px}
+  .games-main .game-tabs button span{display:none}
+  .games-main .game-tabs button b{grid-row:1/3;align-self:center}
+  .games-main #panel-rain .game-stats,.games-main #panel-keys .game-stats{gap:20px}
+  .games-main #panel-rain .game-stats div,.games-main #panel-keys .game-stats div{flex-direction:column;gap:3px}
+  .games-main .game-how{gap:14px 24px}
+}
+@media(max-width:640px){
+  .games-main{padding:16px 12px 40px}
+  .games-main .test-hero{margin-bottom:14px}.games-main .test-hero h1{font-size:22px}
+  .games-main .game-tabs{gap:6px;margin-bottom:16px}
+  .games-main .game-tabs button{display:flex;flex-direction:column;gap:5px;padding:8px 3px;min-height:72px}
+  .games-main .game-tabs button b{font-size:13px}.games-main .game-tabs .game-thumb{width:48px}
+  .games-main .game-bar{gap:10px 14px}
+  .games-main .game-bar label{font-size:12px;gap:8px}
+  .games-main .game-bar select{font-size:14px;min-height:40px}
+  .games-main #panel-rain .game-stats,.games-main #panel-keys .game-stats{gap:12px;justify-content:space-between}
+  .games-main #panel-rain .game-stats{width:100%}
+  .games-main #panel-rain .game-stats div,.games-main #panel-keys .game-stats div{font-size:12px}
+  .games-main #panel-rain .game-stats strong,.games-main #panel-keys .game-stats strong{font-size:26px}
+  .games-main #panel-rain .rain-arena{height:480px;border-radius:12px}
+  .games-main #rain-arena .drop{font-size:22px;padding:9px 16px}
+  .games-main .rain-welcome-art{width:100px;height:100px}
+  .games-main .rain-welcome-copy{font-size:16px}.games-main #rain-overlay .game-hint{font-size:13px}
+  .games-main #rain-input::placeholder{font-size:14px}
+  .games-main #panel-rain .rain-input-wrap .game-input{font-size:20px;padding-inline:44px}
+  .games-main .game-how{justify-content:flex-start}
+  .games-main .game-how li{flex-direction:row!important;align-items:center!important;font-size:13px!important;max-width:none}
+  .games-main .rally-world{height:350px}
+  .games-main .world-caption{top:20px;left:18px;right:18px}
+  .games-main .world-caption>span{font-size:9px}
+  .games-main .world-caption h2{font-size:23px!important}
+  .games-main .rally-world .world-caption{inset-inline-end:82px}
+  .games-main .rally-lights{top:22px;right:16px;padding:7px;gap:5px}.games-main .rally-lights i{width:9px;height:9px}
+  [dir=rtl] .games-main .rally-lights{left:16px}
+  .games-main #panel-race .race-prompt{font-size:20px;padding:16px;line-height:1.7}
+  .games-main #panel-race .game-input{font-size:19px}
+  .games-main .orbit-world{height:330px}
+  .games-main .orbit-target-ring{width:144px;height:144px;left:calc(50% - 72px);top:116px}
+  .games-main #panel-keys .keys-target{width:100px;min-width:100px;height:100px;font-size:54px}
+  .games-main .orbit-bot{width:64px;right:5%;bottom:17px}
+  .games-main .orbit-feedback{left:calc(50% + 84px);font-size:20px}
+}
+
+/* Lobby -> dedicated game. Only the selected playing surface stays on screen. */
+.games-main:not(.is-playing){max-width:1440px;margin:auto;padding-top:44px}
+.games-main:not(.is-playing) .test-hero{margin:0 0 32px}
+.games-main:not(.is-playing) .test-hero h1{font-size:clamp(30px,4vw,48px);margin-bottom:12px}
+.games-main:not(.is-playing) .test-hero>p:not(.eyebrow){display:block;margin:0;max-width:780px;font-size:17px;text-align:start}
+.games-main .game-tabs[hidden],.game-play-nav[hidden]{display:none}
+.games-main:not(.is-playing) .game-tabs{gap:24px;margin-bottom:60px}
+.games-main:not(.is-playing) .game-tabs button{display:flex;position:relative;flex-direction:column;align-items:stretch;text-align:start;gap:12px;padding:18px 18px 26px;border:1px solid #dde3df;background:#fff;border-radius:22px;box-shadow:0 8px 30px #213d3010;transition:transform .2s,box-shadow .2s}
+.games-main:not(.is-playing) .game-tabs button:hover{transform:translateY(-5px);box-shadow:0 15px 40px #213d3020}
+.games-main:not(.is-playing) .game-tabs .game-thumb{width:100%;height:auto;max-width:none;border-radius:14px;margin:0 0 8px}
+.games-main:not(.is-playing) .game-tabs button b{font-size:26px;align-self:auto;padding-inline-end:38px}
+.games-main:not(.is-playing) .game-tabs button span{display:block;position:static;width:auto;height:auto;clip:auto;white-space:normal;font-size:15px;line-height:1.6;align-self:auto;padding-inline-end:30px;color:#647169}
+.game-card-arrow{position:absolute;inset-inline-end:22px;bottom:27px;font-size:25px;font-style:normal;color:#387458}
+.games-main.is-playing{padding-top:12px;padding-bottom:24px}
+.games-main.is-playing .test-hero,.games-main.is-playing article>section:not(.games){display:none}
+body:has(.games-main.is-playing)>.test-footer{display:none}
+.game-play-nav{display:flex;align-items:center;gap:22px;margin:0 0 14px;min-height:36px}
+.game-play-nav button{display:flex;align-items:center;gap:10px;padding:8px 12px;border:1px solid #dce3dc;border-radius:9px;background:#fff;color:#405c4b;font-size:14px;box-shadow:none}
+.game-play-nav h1{font-size:20px;line-height:1.2;letter-spacing:-.025em;margin:0}
+.games-main.is-playing .game-bar{margin-bottom:12px!important}
+.games-main.is-playing .game-how{margin-top:12px!important;gap:12px 30px}
+.games-main.is-playing .game-how li{font-size:12px}
+.games-main.is-playing .game-how .how-icon{width:26px;height:26px}
+.games-main.is-playing #panel-rain .rain-arena{height:max(440px,calc(100svh - 215px));max-height:1000px}
+.games-main #rain-arena .rain-input-wrap{position:absolute;z-index:4;bottom:18px;left:clamp(18px,12vw,200px);right:clamp(18px,12vw,200px);margin:0}
+.games-main #panel-rain .rain-input-wrap .game-input{min-height:58px;background:#f3faefed;box-shadow:0 8px 30px #071e2b40;border-color:#c9dfc1}
+.games-main .rain-companion{bottom:87px;width:68px;left:calc(50% - 34px)}
+.games-main #rain-overlay{padding-bottom:90px}
+.games-main.is-playing .rally-world{height:max(560px,calc(100svh - 215px));max-height:1000px;margin-bottom:0}
+.games-main .rally-scene{height:calc(100% - 364px)}
+.games-main #panel-race .race-track{bottom:188px}
+.rally-console{position:absolute;bottom:0;left:0;right:0;height:188px;display:flex;flex-direction:column;gap:8px;padding:12px 24px;background:#faf6ed}
+.games-main #panel-race .rally-console .race-prompt{position:relative;flex:1;min-height:0;overflow-y:auto;margin:0;border:0;border-radius:0;padding:0 4px;background:transparent;font-size:23px;line-height:1.65;scrollbar-width:thin}
+.games-main #panel-race .rally-console .game-input{flex:none;margin:0;min-height:48px;height:48px;padding:8px 16px;font-size:21px;background:#fffdf9}
+.games-main .rally-console .race-status{margin:0;font-size:12px;line-height:1.3}
+@media(max-width:700px){
+  .games-main:not(.is-playing){padding-top:24px}
+  .games-main:not(.is-playing) .game-tabs{grid-template-columns:1fr;gap:16px}
+  .games-main:not(.is-playing) .game-tabs button{display:grid;grid-template-columns:120px 1fr;grid-template-rows:auto auto;gap:5px 16px;padding:14px;border-radius:16px}
+  .games-main:not(.is-playing) .game-tabs .game-thumb{grid-row:1/3;width:120px;margin:0;align-self:center}
+  .games-main:not(.is-playing) .game-tabs button b{grid-column:2;grid-row:1;font-size:20px;align-self:end;padding:0}
+  .games-main:not(.is-playing) .game-tabs button span{grid-column:2;grid-row:2;font-size:13px;align-self:start;padding:0}
+  .game-card-arrow{display:none}
+  .games-main:not(.is-playing) .test-hero>p:not(.eyebrow){font-size:15px}
+  .game-play-nav{gap:12px;margin-bottom:10px}.game-play-nav h1{font-size:18px}.game-play-nav button{font-size:12px}
+  .games-main #rain-arena .rain-input-wrap{left:12px;right:12px;bottom:14px}
+  .games-main.is-playing #panel-rain .rain-arena{height:max(440px,calc(100svh - 265px))}
+  .games-main.is-playing .rally-world{height:max(520px,calc(100svh - 235px))}
+  .rally-console{padding:10px 12px}
+  .games-main #panel-race .rally-console .race-prompt{font-size:19px}
+  .games-main #panel-race .rally-console .game-input{font-size:18px}
+  .games-main #rain-overlay .rain-welcome-art{width:80px;height:80px}
+  .games-main #rain-overlay .rain-welcome-title{font-size:42px!important}
+}
+@media(prefers-reduced-motion:reduce){.games-main:not(.is-playing) .game-tabs button{transition:none}}
+
+/* Key Hunt: one immersive space station, with an integrated keyboard deck. */
+body:has(.games-main.is-keys){background:#102a38}
+body:has(.games-main.is-keys)>.topbar{display:none}
+.games-main.is-keys{position:relative;isolation:isolate;max-width:none;width:100%;height:100svh;min-height:650px;padding:18px clamp(18px,3vw,56px) 16px;background:#102a38;color:#effdff;overflow:hidden}
+.games-main.is-keys>article,.games-main.is-keys .games{height:100%;min-height:0}
+.games-main.is-keys .games{display:flex;flex-direction:column}
+.games-main.is-keys .game-play-nav{position:relative;z-index:2;flex:none;margin:0 0 16px;justify-content:space-between}
+.games-main.is-keys .game-play-nav h1{font-size:20px;color:#ebfcff;font-weight:600}
+.games-main.is-keys .game-play-nav button{background:#ffffff0d;border:1px solid #ffffff26;color:#d5ecf0;border-radius:12px;padding:10px 16px}
+.games-main.is-keys .game-play-nav button:hover{background:#ffffff1c}
+.games-main.is-keys #panel-keys{position:static;flex:1;min-height:0;gap:0}
+.games-main.is-keys #panel-keys>.orbit-scene{position:absolute;inset:0;width:100%;height:100%;z-index:-1;pointer-events:none;opacity:.8}
+.games-main.is-keys #panel-keys>.game-bar{position:relative;z-index:1;flex:none;margin:0!important;padding:14px 20px!important;border:1px solid #c5f7ff1f;border-radius:16px;background:#0b2230a6;backdrop-filter:blur(16px);gap:20px}
+.games-main.is-keys #panel-keys .game-stats{width:auto;flex:1;justify-content:space-around;gap:20px;margin:0}
+.games-main.is-keys #panel-keys .game-stats div{flex-direction:column;align-items:center;gap:5px;color:#abc5c9;font-size:11px;letter-spacing:.05em}
+.games-main.is-keys #panel-keys .game-stats strong{font-size:32px;font-weight:600;color:#eefdff;line-height:1}
+.games-main.is-keys #panel-keys .game-stats div:first-child strong{color:#bce9db}
+.games-main.is-keys #panel-keys>.game-bar .primary-button{order:2;min-height:40px;padding:9px 18px;border-radius:10px;background:#a6decf;color:#1f3e3c;font-size:14px;box-shadow:0 3px 0 #6aafa0}
+.games-main.is-keys .orbit-world{flex:1;min-height:220px;width:100%;height:auto;margin:0;border-radius:0;background:transparent;overflow:visible;display:grid;place-items:center;isolation:auto}
+.games-main.is-keys .orbit-world .world-caption{top:20px;left:0;right:0;text-align:center}
+.games-main.is-keys .orbit-world .world-caption>span{font-size:10px;letter-spacing:.2em;color:#aed2d8}
+.games-main.is-keys .orbit-world .world-caption h2{display:none}
+.games-main.is-keys .orbit-target-ring{position:relative;top:auto;left:auto;width:190px;height:190px;margin-top:14px;border-color:#c6f7ff40;box-shadow:0 0 0 14px #b9ebf308,0 0 0 30px #b9ebf305,0 0 90px #9cd3db14}
+.games-main.is-keys #panel-keys .keys-target{width:132px;min-width:132px;height:132px;font-size:78px;border-radius:28px;background:linear-gradient(145deg,#f5feff,#cfeaee);color:#43686e;box-shadow:0 8px 0 #79a4ab,0 16px 45px #071c2866}
+.games-main.is-keys .orbit-bot{right:15%;bottom:18%;width:100px;filter:drop-shadow(0 10px 16px #09202c88)}
+.games-main.is-keys .orbit-feedback{top:42%;left:calc(50% + 120px);font-size:26px}
+.games-main.is-keys .orbit-energy{left:calc(50% - 110px);right:auto;bottom:10px;width:220px;height:4px;border-radius:3px;overflow:hidden;background:#b5f3fd20}
+.games-main.is-keys #panel-keys .keys-board{position:relative;flex:none;z-index:1;width:min(100%,1050px);max-width:none;padding:14px 22px 12px;border:1px solid #cef8ff26;border-radius:22px;background:linear-gradient(145deg,#ffffff12,#ffffff05);box-shadow:0 20px 60px #09202c40;backdrop-filter:blur(18px)}
+.games-main.is-keys #panel-keys .keys-board .js-keyboard-holder{margin:0;padding:0;min-height:0}
+.games-main.is-keys #panel-keys .keys-board .keyboard{background:transparent;box-shadow:none;border:0;color:#e8fcff}
+.games-main.is-keys #panel-keys .keys-board .key:not(.is-active):not(.is-wrong):not(.is-animating){background:#ffffff0d;border-color:#ffffff1c;color:#d3e4e7;box-shadow:0 2px 0 #09202c4d}
+.games-main.is-keys #panel-keys .keys-board .key.is-active{background:#b8eed8;color:#183d36;border-color:#d2ffe9;box-shadow:0 0 0 2px #b8eed833,0 0 22px #b8eed833}
+.games-main.is-keys #panel-keys>.game-hint{position:relative;flex:none;color:#a8c2c6;margin:12px 0 0;font-size:12px;line-height:1.5}
+.games-main.is-keys #panel-keys>.game-how{display:none}
+.games-main.is-keys #panel-keys .keys-result:not([hidden]){position:absolute;z-index:5;inset:0;display:flex;justify-content:center;margin:0;padding:30px;border:0;border-radius:0;background:#0b2230e8;backdrop-filter:blur(12px);color:#edfdff}
+.games-main.is-keys .keys-result .game-over-title{font-size:44px;color:#edfdff}
+.games-main.is-keys .keys-result .game-over-score{font-size:18px;color:#bed7db}
+.games-main.is-keys .keys-result .primary-button{background:#b8e8d7;color:#24463a;font-size:18px;padding:14px 28px}
+.games-main.is-keys .game-play-nav{z-index:6}
+@media(max-height:780px) and (min-width:701px){
+  .games-main.is-keys{min-height:580px;padding-block:12px}
+  .games-main.is-keys .game-play-nav{margin-bottom:10px}
+  .games-main.is-keys #panel-keys>.game-bar{padding:10px 18px!important}
+  .games-main.is-keys #panel-keys .game-stats strong{font-size:26px}
+  .games-main.is-keys #panel-keys .keys-board{width:min(100%,880px);padding:10px 18px}
+  .games-main.is-keys .orbit-target-ring{width:148px;height:148px}
+  .games-main.is-keys #panel-keys .keys-target{width:104px;min-width:104px;height:104px;font-size:62px}
+  .games-main.is-keys .orbit-world{min-height:190px}
+}
+@media(max-width:700px){
+  .games-main.is-keys{height:100svh;min-height:580px;padding:12px 12px 16px}
+  .games-main.is-keys .game-play-nav{gap:12px;margin-bottom:12px}
+  .games-main.is-keys .game-play-nav h1{font-size:17px}.games-main.is-keys .game-play-nav button{font-size:12px;padding:9px 12px}
+  .games-main.is-keys #panel-keys>.game-bar{gap:10px;padding:12px!important;flex-wrap:nowrap}
+  .games-main.is-keys #panel-keys .game-stats{gap:10px}
+  .games-main.is-keys #panel-keys .game-stats div{font-size:9px;letter-spacing:0;min-width:0}
+  .games-main.is-keys #panel-keys .game-stats strong{font-size:24px}
+  .games-main.is-keys #panel-keys>.game-bar .primary-button{font-size:11px;padding:8px 10px;max-width:95px;min-height:38px}
+  .games-main.is-keys .orbit-world{min-height:240px}
+  .games-main.is-keys .orbit-world .world-caption{top:24px}
+  .games-main.is-keys .orbit-target-ring{width:170px;height:170px}
+  .games-main.is-keys #panel-keys .keys-target{width:120px;min-width:120px;height:120px;font-size:70px}
+  .games-main.is-keys .orbit-bot{width:66px;right:2%;bottom:14%}
+  .games-main.is-keys .orbit-feedback{left:calc(50% + 94px);font-size:19px}
+  .games-main.is-keys .orbit-energy{bottom:24px}
+  .games-main.is-keys #panel-keys .keys-board{width:100%;padding:10px 4px;border-radius:14px}
+  .games-main.is-keys .keys-board .js-keyboard-holder .keyboard--full:not(.keyboard--numpad){width:100%;max-width:100%;margin-inline:0}
+  .games-main.is-keys #panel-keys>.game-hint{font-size:11px;margin-top:14px}
+}
+.games-main.is-keys #panel-keys .keys-board .key .key-label{color:#e0f1f4}
+.games-main.is-keys #panel-keys .keys-board .key--letter .key-label{font-size:18px}
+.games-main.is-keys #panel-keys .keys-board .key.is-active .key-label{color:#183d36}
+@media(max-width:700px){.games-main.is-keys #panel-keys .keys-board .key--letter .key-label{font-size:12px}}
+
+/* Every game occupies the viewport; the lobby keeps the normal site navigation. */
+body:has(.games-main.is-playing)>.topbar{display:none}
+.games-main.is-playing{position:relative;isolation:isolate;width:100%;max-width:none;height:100svh;min-height:600px;padding:14px clamp(16px,2vw,36px) 16px;overflow:hidden;background:#edf3ee}
+.games-main.is-playing:has(#panel-race:not([hidden])){background:#f4eee3}
+.games-main.is-playing>article,.games-main.is-playing .games{height:100%;min-height:0}
+.games-main.is-playing .games{display:flex;flex-direction:column}
+.games-main.is-playing .game-play-nav{position:relative;z-index:6;flex:none;min-height:36px;margin-bottom:12px;justify-content:space-between}
+.games-main.is-playing .game-play-nav h1{font-size:19px}
+.games-main.is-playing .game-panel:not([hidden]){flex:1;min-height:0}
+.games-main.is-playing .game-bar{flex:none}
+.games-main.is-playing .game-how{display:none}
+.games-main.is-playing #panel-rain .rain-arena,.games-main.is-playing .rally-world{flex:1;height:auto;min-height:300px;max-height:none;margin:0;border-radius:16px}
+.games-main.is-playing #panel-race .race-result:not([hidden]){position:absolute;z-index:5;inset:0;margin:0;display:flex;justify-content:center;border:0;border-radius:16px;background:#f5f1e7ed;backdrop-filter:blur(12px)}
+.games-main.is-playing #panel-race .race-result .game-over-title{font-size:40px}
+.games-main.is-playing #panel-race .race-result .game-over-score{font-size:18px}
+/* Preserve the space station's edge-to-edge dark palette. */
+.games-main.is-keys{background:#102a38;min-height:650px;padding:18px clamp(18px,3vw,56px) 16px}
+.games-main.is-keys .game-play-nav{margin-bottom:16px}
+.games-main.is-keys #panel-keys .game-bar{margin-bottom:0!important}
+@media(max-height:780px) and (min-width:701px){
+  .games-main.is-playing{min-height:560px;padding-block:10px}
+  .games-main.is-keys{min-height:580px;padding-block:12px}
+  .games-main.is-keys .game-play-nav{margin-bottom:10px}
+}
+@media(max-width:700px){
+  .games-main.is-playing{height:100svh;min-height:620px;padding:12px}
+  .games-main.is-playing .game-play-nav{margin-bottom:10px}
+  .games-main.is-playing .game-play-nav h1{font-size:17px}
+  .games-main.is-playing #panel-rain .rain-arena,.games-main.is-playing .rally-world{min-height:360px;border-radius:12px}
+  .games-main.is-keys{min-height:580px;padding:12px 12px 16px}
+  .games-main.is-keys .game-play-nav{margin-bottom:12px}
+}
+.game-play-nav .game-exit-key{margin-inline-start:8px;padding:2px 5px;border:1px solid currentColor;border-radius:4px;opacity:.55;font:11px/1.2 var(--font-mono)}
+@media(pointer:coarse){.game-play-nav .game-exit-key{display:none}}

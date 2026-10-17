@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 25,
+  "slug": "zh-tw-02-001",
+  "title": "日期與數字",
+  "summary": "Narrow committed-output lesson: 0 1 2",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 0 1 2",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-02-001",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先提交中文，再切到英數模式輸入半形數字，回中文模式續輸。",
+      "content": "今天是2026年9月30日我們去上課",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先提交中文，再切到英數模式輸入半形數字，回中文模式續輸。",
+      "content": "我在2026年10月1日開始記錄天氣",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先提交中文，再切到英數模式輸入半形數字，回中文模式續輸。",
+      "content": "圖書館借書期限是2026年11月28日",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先提交中文，再切到英數模式輸入半形數字，回中文模式續輸。",
+      "content": "請在2026年12月25日前交回借書證",
+      "inputMode": "ime"
+    }
+  ]
+}

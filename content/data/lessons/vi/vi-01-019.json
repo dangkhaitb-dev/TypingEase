@@ -1,0 +1,79 @@
+{
+  "id": "vi-01-019",
+  "unit": "u1",
+  "group": "g1",
+  "order": 19,
+  "slug": "vi-01-019",
+  "title": "Luyện phím · ế ự ỡ",
+  "summary": "Học cách gõ ế (e e s), ự (u w j), ỡ (o w x) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ế (e e s), ự (u w j), ỡ (o w x) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-019",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ e e s để ra ế: e e ra ê, s thêm dấu sắc. Ví dụ: dế = d e e s.",
+      "content": "dế kế vế đế kế ế tế xếp vế bế bếp bế vế ghế bế",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ u w j để ra ự: u w ra ư, j thêm dấu nặng. Ví dụ: lựa = l u w j a.",
+      "content": "lựa cực ự cực rực tựa vực lựa vực tự mực tự dự",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ o w x để ra ỡ: o w ra ơ, x thêm dấu ngã. Ví dụ: lỡ = l o w x.",
+      "content": "lỡ lưỡi rỡ vỡ mỡ mỡ ỡ lỡ lưỡi rỡ vỡ mỡ mỡ ỡ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ế, ự, ỡ. Nhớ: ế = e e s, ự = u w j, ỡ = o w x.",
+      "content": "thế thuế hết phết kết yếu kế điều ghé đựng thiếp quà chim",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ế, ự, ỡ. Nhớ: ế = e e s, ự = u w j, ỡ = o w x.",
+      "content": "lựa đựng thiếp giếng bếp biếc vực biến công biến vế mực miết thay",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ế, ự, ỡ.",
+      "content": "công lựa khiến xếp khuyến tiền lực rơi mây chơi cho yêu bến cánh đây",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ế, ự, ỡ.",
+      "content": "nối máy dưỡng đầu khiến đón tiếng nhanh thân mỡ biếu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ế, ự, ỡ mà không nhìn bàn phím.",
+      "content": "ếch thuyết tựa thuyết không lỡ lên trực nắng biếu lịch bến thuế diếp qua",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ thật, chỉ dùng những phím đã học.",
+      "content": "vỡ lỡ cỡ mỡ gỡ nhỡ dỡ hỡi bỡ ngỡ cỡ nhỡ mỡ lỡ",
+      "inputMode": "telex"
+    }
+  ]
+}

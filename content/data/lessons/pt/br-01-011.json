@@ -1,0 +1,80 @@
+{
+  "id": "br-01-011",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "br-01-011",
+  "title": "P",
+  "summary": "Aprenda a tecla p e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "p"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprenda a tecla p e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-011",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Localize p e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "fp ppff ppfp fppp pfpp ppp ff pp",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "oppp ppo po pppo ppop ppp pp pppp po op po"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "pppp popp oop pppo oppp dppp opp pp ppo po ppp op"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "pqp pp ppp pppp pq ppq qppp qpp qp ppqp pqpp"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "ele pediu a sopa para o pai e ela pegou a pedra"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "o pai pegou o papel para a porta e o pai fala"
+    }
+  ]
+}

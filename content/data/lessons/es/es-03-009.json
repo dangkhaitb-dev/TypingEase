@@ -1,0 +1,102 @@
+{
+  "id": "es-03-009",
+  "unit": "u3",
+  "group": "g1",
+  "order": 29,
+  "slug": "es-03-009",
+  "title": "Mayúsculas: A, B, C",
+  "summary": "Aprender A, B, C en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "A",
+    "B",
+    "C"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Aprender A, B, C en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-009",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "A",
+      "text": "Mantén pulsada Mayús con el meñique de la mano derecha y pulsa la tecla a para escribir A. Suelta Mayús antes de la siguiente tecla.",
+      "content": "ff AAf Afff fAAA AAAA AAAf AA ffA AfA AAA fAA AAfA",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "B",
+      "text": "Mantén pulsada Mayús con el meñique de la mano derecha y pulsa la tecla b para escribir B. Suelta Mayús antes de la siguiente tecla.",
+      "content": "jB BB BBB jjj BjBB BBjj jjBB jjB jj BBBB",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "C",
+      "text": "Mantén pulsada Mayús con el meñique de la mano derecha y pulsa la tecla c para escribir C. Suelta Mayús antes de la siguiente tecla.",
+      "content": "CCC CCfC fCC CfCC CfC CCCC CC",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "Bf CACA BABB CCBC CAC BBAB CfC CCC BAC BBAA AACB"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "CCC ABBC BBC BA AAA CCCC CB CC CCBA ABB yyCA BBCA AA"
+    }
+  ]
+}

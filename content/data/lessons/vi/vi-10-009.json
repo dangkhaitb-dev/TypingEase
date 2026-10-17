@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-009",
+  "unit": "u10",
+  "group": "g3",
+  "order": 144,
+  "slug": "vi-10-009",
+  "title": "Biên lai và mã số",
+  "summary": "Xây dựng năng lực \"Receipts and Codes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập chính xác các thông tin trên hóa đơn, mã số thuế và số tiền thanh toán.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Receipts and Codes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập chính xác các thông tin trên hóa đơn, mã số thuế và số tiền thanh toán.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-009",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên hóa đơn giá trị gia tăng có mẫu số, ký hiệu và số tiền.",
+      "content": "Hóa đơn giá trị gia tăng mẫu số 01GTKT0/001 ký hiệu AB/26E số 0012458 ngày 16 tháng 09 năm 2026; tổng tiền thanh toán 45.680.000 đồng. Phiếu xuất kho PXK-3381 ngày 17/09/2026; thành tiền 12.450.000 đồng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Làm quen chủ đề qua biên lai thu phí dịch vụ công trực tuyến mã số BL-2026-8899.",
+      "content": "Biên lai thu phí dịch vụ công trực tuyến mã số BL-2026-8899: người nộp thuế công ty trách nhiệm hữu hạn Minh Phát; mã số thuế doanh nghiệp 0315897421; nội dung nộp lệ phí môn bài năm 2026; số tiền đã thanh toán bằng chuyển khoản ngân hàng là 3.000.000 đồng chẵn. Kế toán so ngày phát hành, mã chứng từ và tổng tiền với dữ liệu đơn hàng trước khi xác nhận thanh toán.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về tầm quan trọng của việc nhập liệu chính xác hóa đơn.",
+      "content": "Nhập liệu chính xác các thông tin trên hóa đơn tài chính và biên lai thanh toán là kỹ năng sống còn trong công tác kế toán doanh nghiệp. Chỉ cần sai sót một chữ số trong mã số thuế hoặc số tiền thanh toán đều có thể gây ra những phiền hà pháp lý phức tạp và làm chậm trễ tiến độ quyết toán thuế của công ty. Học viên cần kiểm tra kỹ từng ký tự trước khi xác nhận hoàn thành.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "vi-03-014",
+  "unit": "u3",
+  "group": "g1",
+  "order": 54,
+  "slug": "vi-03-014",
+  "title": "Luyện phím · ! @ $",
+  "summary": "Học các dấu ! @ $ và luyện gõ từ kèm dấu câu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Học các dấu ! @ $ và luyện gõ từ kèm dấu câu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-014",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím 1 (ngón út trái, hàng số) để ra !.",
+      "content": "để! sau! tôi! khi! ghi! ra! để! sau! tôi! khi!",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím 2 (ngón áp út trái, hàng số) để ra @.",
+      "content": "a@b x@y b@a y@x a@x b@y x@a y@b"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ phím 4 (ngón trỏ trái, hàng số) để ra $.",
+      "content": "$74 $69 $45 $74 $94 $46 $98 $4"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ kèm dấu ! @ $.",
+      "content": "xe món vào! đã mặt! mưa@tôi $58 $23 những $67 $54 kiểm đường@để vào@phần",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ kèm dấu ! @ $ mà không nhìn bàn phím.",
+      "content": "thành@ghi $4 $62 trong@nhé $73 $14 ngày nói! $29 đến",
+      "inputMode": "telex"
+    }
+  ]
+}

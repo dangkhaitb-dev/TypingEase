@@ -1,0 +1,99 @@
+{
+  "id": "pl-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "pl-01-012",
+  "title": "Polskie litery ć, ę",
+  "summary": "Poznaj klawisze ć, ę i utrwal ich użycie w ćwiczeniach (razem z poznaną już literą ą).",
+  "newKeys": [
+    "ć",
+    "ę"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "ą",
+    "ć",
+    "ę"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze ć, ę i utrwal ich użycie w ćwiczeniach (razem z poznaną już literą ą).",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-012",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "ć",
+      "text": "Przytrzymaj AltGr (prawy Alt) i naciśnij c, aby wpisać ć. Potem wróć do pozycji wyjściowej.",
+      "content": "ćć ććć ćććć ćć ćć ćć ćć ćć",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ę",
+      "text": "Przytrzymaj AltGr (prawy Alt) i naciśnij e, aby wpisać ę. Potem wróć do pozycji wyjściowej.",
+      "content": "ęęęę ęęę ęę ęę ęę ęę ęę ęę",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "ęęć ąććą ąąć ćććą ąć ćęęą ęęi ąąąę ęę ćć ąćą ąąę ęąić ąąęę"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "ćęęą ęhę ćć ćęh ęą ęć ąć ęćąę ęę ęą ćąęę ćąhć ęąąę ąćąć hćą ććąę ąą"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "ćęć ććą ćć ęą ćą ąąćą ćąć ąćęą ąąą ććęć ąąć ęę ąąćj ćććą"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "jak się masz ja mam pięć kart i jestem tu"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "ćma jest tu więc ona się boi ale ja jestem przy niej"
+    }
+  ]
+}

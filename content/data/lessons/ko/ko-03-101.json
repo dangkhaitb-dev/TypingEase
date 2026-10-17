@@ -1,0 +1,47 @@
+{
+  "id": "ko-03-101",
+  "unit": "u3",
+  "group": "g1",
+  "order": 46,
+  "slug": "ko-03-101",
+  "title": "숫자 0",
+  "summary": "숫자 0의 위치를 익히고 숫자열을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "숫자 0의 위치를 익히고 숫자열을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-03-101",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "000 00 0000 000 0000 00 0000 00 000"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "005 000 050 00 0005 005 0005 00 050 000 050 000 005 0005"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "0ㅊ 00 0000 000 ㅊㅊ 0ㅊ ㅊㅊ 000 0000 00 0000 00 0ㅊ ㅊㅊ 000",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "00ㄴ 000 0000 0ㄴ0 00 00ㄴ 00 0ㄴ0 0000 000 0000 000 00ㄴ 00",
+      "inputMode": "hangul"
+    }
+  ]
+}

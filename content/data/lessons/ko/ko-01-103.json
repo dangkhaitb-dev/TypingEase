@@ -1,0 +1,73 @@
+{
+  "id": "ko-01-103",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "ko-01-103",
+  "title": "왼손 자음 ㅁ · ㅂ · ㅅ",
+  "summary": "왼손의 기본 자음 ㅁ·ㅂ·ㅅ을 한 키씩 정확히 익힙니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "hangul",
+  "intro": "왼손의 기본 자음 ㅁ·ㅂ·ㅅ을 한 키씩 정확히 익힙니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-103",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅁㅁㅁ ㅁㅁㅁ ㅁㅁ ㅁㅁㅁ ㅁㅁ ㅁㅁㅁ ㅁㅁ ㅁㅁㅁ ㅁㅁㅁ ㅁㅁㅁ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅂㅂㅂ ㅂㅂㅂ ㅂㅂ ㅂㅂㅂ ㅂㅂ ㅂㅂㅂ ㅂㅂ ㅂㅂㅂ ㅂㅂㅂ ㅂㅂㅂ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅅㅅㅅ ㅅㅅㅅ ㅅㅅ ㅅㅅㅅ ㅅㅅ ㅅㅅㅅ ㅅㅅ ㅅㅅㅅ ㅅㅅㅅ ㅅㅅㅅ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅂㅂ ㅅㅅㅅㅂ ㅁㅅㅅ ㅁㅁㅁ ㅂㅂㅂ ㅓ ㅁㅁ ㅁㅁㅁㅁ ㅂㅂ ㅁㅁㅁㅁ ㅁㅁ ㅓ ㅂㅂㅂ ㅁㅁㅁ ㅁㅅㅅ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅅㅅㅁ ㅅ ㅓ ㅁㅁ ㅂㅂㅁ ㅅㅅ ㅅㅅㅅ ㅅㅅㅁ ㅅㅅㅅ ㅅㅅ ㅂㅂㅁ ㅁㅁ ㅓ ㅅ ㅓ ㅅ ㅅㅅㅁ ㅅㅅㅅ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄹㄹ ㅅㅁ ㅁㅁ ㅅㅂㅂ ㅅ ㄹ ㅅㅅㅅ ㄹㄹ ㅅㅅㅅ ㄹ ㅅ ㅅㅂㅂ ㅁㅁ ㅅㅁ ㅁㅁ ㅅㅁ ㄹㄹ ㅅㅅㅅ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅅㅁ ㅁㅁㅅㅁ ㅂㅂㄹ ㅂ ㅂㅂㅂ ㅁㅁㅅㅂ ㅅㅁ ㅁㅁㅅㅂ ㅂㅂㅂ ㅂ ㅂㅂㄹ ㅁㅁㅅㅁ ㅂㅂㄹ ㅁㅁㅅㅁ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅅㅅㅅㅂ ㅂㅁ ㅂㅂㅂ ㅂㅂ ㅅㅂ ㅅ ㅓ ㅂㄱ ㅅㅅㅂㅁ ㅅㅅㅅㅂ ㅅㅅㅂㅁ ㅂㄱ ㅓ ㅅ ㅅㅂ ㅂㅂ ㅂㅂㅂ",
+      "inputMode": "hangul"
+    }
+  ]
+}

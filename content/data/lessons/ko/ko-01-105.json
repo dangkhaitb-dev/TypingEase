@@ -1,0 +1,73 @@
+{
+  "id": "ko-01-105",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "ko-01-105",
+  "title": "자음 ㅋ · ㅌ · ㅍ",
+  "summary": "윗줄의 자음 ㅋ·ㅌ·ㅍ을 한 키씩 정확히 익힙니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "hangul",
+  "intro": "윗줄의 자음 ㅋ·ㅌ·ㅍ을 한 키씩 정확히 익힙니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-105",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅋㅋㅋ ㅋㅋㅋ ㅋㅋ ㅋㅋㅋ ㅋㅋ ㅋㅋㅋ ㅋㅋ ㅋㅋㅋ ㅋㅋㅋ ㅋㅋㅋ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅌㅌㅌ ㅌㅌㅌ ㅌㅌ ㅌㅌㅌ ㅌㅌ ㅌㅌㅌ ㅌㅌ ㅌㅌㅌ ㅌㅌㅌ ㅌㅌㅌ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅍㅍㅍ ㅍㅍㅍ ㅍㅍ ㅍㅍㅍ ㅍㅍ ㅍㅍㅍ ㅍㅍ ㅍㅍㅍ ㅍㅍㅍ ㅍㅍㅍ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅁㅋㅋㅌ ㅌㅌㅁㅋ ㅌㅌ ㅍㅍ ㅌㅍㅋㅍ ㅁㅋㅋㅌ ㅌㅍㅋㅍ ㅍㅍ ㅌㅌ ㅌㅌㅁㅋ ㅌㅌ ㅌㅌㅁㅋ ㅁㅋㅋㅌ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅋㅋ ㅌㅌㅋㅍ ㅌㅌㅍㅋ ㅋㅍ ㄷㅍㅌㅋ ㅌㅍ ㅋㅋㅋ ㅋㅋ ㅋㅋㅋ ㅌㅍ ㄷㅍㅌㅋ ㅋㅍ ㅌㅌㅍㅋ ㅌㅌㅋㅍ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅋㅍ ㅍㅍㅌ ㅈㅍㅋ ㅋㅌ ㅍㅍㅍ ㅍㅍㅌㅍ ㅌㅌㅈㅌ ㅋㅍ ㅌㅌㅈㅌ ㅍㅍㅌㅍ ㅍㅍㅍ ㅋㅌ ㅈㅍㅋ ㅍㅍㅌ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅍㅍㅋ ㅌㅌㅌ ㅍㅍ ㅋㅋㅍㅌ ㄷㅍㅌㅋ ㅍㅌㅋ ㅍㅍㅋ ㅍㅌㅋ ㄷㅍㅌㅋ ㅋㅋㅍㅌ ㅍㅍ ㅌㅌㅌ ㅍㅍ ㅌㅌㅌ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅍㅌㅌㅍ ㅋㅋㅍㅊ ㅋㅋㅋ ㅍㅍㅋㅋ ㅋㅋㅍ ㅍㅋㅍㅍ ㅍㅍ ㅍㅌㅌㅍ ㅍㅍ ㅍㅋㅍㅍ ㅋㅋㅍ ㅍㅍㅋㅋ ㅋㅋㅋ",
+      "inputMode": "hangul"
+    }
+  ]
+}

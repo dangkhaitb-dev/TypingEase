@@ -1,0 +1,79 @@
+{
+  "id": "id-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "id-01-001",
+  "title": "Tombol patokan f, j, dan spasi",
+  "summary": "Gõ a, s, d, dan Spasi dalam drill posisi yang berubah.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Gõ a, s, d, dan Spasi dalam drill posisi yang berubah.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-001",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "ffff ffff ffff ffff ffff ffff f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Tekan spasi dengan ibu jari untuk memisahkan kelompok huruf.",
+      "content": "f j ff jj f j ff jj f j ff jj f j f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "fff jjfj jf ffj jfjj ff fjj fjjf ff jjf jjff fj jfj jfff jj fjj fff"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jfj jfff jj fjj fffj jf jjf ffjj fj jff fjjf jj fff jjfj jf ffj jfjj"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "fff jjfj jf ffj jfjj ff fjj fjjf ff jjf jjff fj jfj jfff jj fjj fffj j"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jfj jfff jj fjj fffj jf jjf ffjj fj jff fjjf jj fff jjfj jf ffj jfjj ff"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    }
+  ]
+}

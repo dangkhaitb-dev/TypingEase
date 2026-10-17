@@ -1,0 +1,40 @@
+{
+  "id": "bn-04-001",
+  "unit": "u4",
+  "group": "g1",
+  "order": 61,
+  "slug": "bn-04-001",
+  "title": "পরিচিত ছোট শব্দ",
+  "summary": "Integrate only committed strings first-owned in C01 or the preceding C03 cluster and word bridges. Native text review is pending.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "Integrate only committed strings first-owned in C01 or the preceding C03 cluster and word bridges. Native text review is pending.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-04-001",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "শব্দ ও বাক্যগুলো মনোযোগ দিয়ে টাইপ করুন।",
+      "content": "বই খাতা কলম ঘর মাঠ পথ নদী ফুল ফল পাতা জল বাতাস সকাল বিকাল"
+    },
+    {
+      "type": "standard",
+      "text": "শব্দ ও বাক্যগুলো মনোযোগ দিয়ে টাইপ করুন।",
+      "content": "মা বাবা ভাই বোন বন্ধু মানুষ শিশু কৃষক শিক্ষক দোকান বাজার কাজ সময়"
+    },
+    {
+      "type": "standard",
+      "text": "শব্দ ও বাক্যগুলো মনোযোগ দিয়ে টাইপ করুন।",
+      "content": "আলো আকাশ মেঘ বৃষ্টি মাটি গাছ পাখি মাছ খাবার রান্না বাসা বাগান সকাল"
+    }
+  ]
+}

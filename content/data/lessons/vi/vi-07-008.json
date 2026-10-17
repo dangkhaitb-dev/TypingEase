@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-008",
+  "unit": "u7",
+  "group": "g2",
+  "order": 103,
+  "slug": "vi-07-008",
+  "title": "Lượt đối thoại mở rộng",
+  "summary": "Xây dựng năng lực \"Longer Speaker Turns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Hội thoại nhiều lượt nói đan xen với lời dẫn chuyện, nâng cao khả năng chuyển đổi nhịp gõ.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 14,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Longer Speaker Turns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Hội thoại nhiều lượt nói đan xen với lời dẫn chuyện, nâng cao khả năng chuyển đổi nhịp gõ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động bài học với lượt đối thoại mở rộng trong phòng họp.",
+      "content": "Lượt đối thoại mở rộng trong phòng họp: - Chúng ta cần đánh giá lại rủi ro biến động giá nguyên vật liệu đầu vào. - Em đồng ý, chúng ta nên ký hợp đồng dài hạn với các nhà cung ứng quen thuộc để giữ mức giá ổn định.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với thảo luận chi tiết về chiến lược phát triển sản phẩm mới.",
+      "content": "Thảo luận chi tiết về chiến lược phát triển sản phẩm mới: - Theo kết quả khảo sát, người tiêu dùng ngày càng quan tâm đến tính thân thiện với môi trường của bao bì. - Đúng vậy, vì thế chúng ta nên chuyển đổi sang sử dụng hộp giấy tự hủy sinh học và mực in gốc đậu nành. - Phương án này có thể làm tăng chi phí khoảng năm phần trăm nhưng giá trị thương hiệu sẽ nâng cao rõ rệt.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với đối thoại tư vấn tài chính doanh nghiệp.",
+      "content": "Đối thoại tư vấn tài chính doanh nghiệp: - Thưa anh, việc tối ưu hóa dòng tiền đòi hỏi chúng ta phải rút ngắn chu kỳ thu hồi công nợ đại lý trên toàn quốc. - Anh có đề xuất cụ thể nào để vừa thúc đẩy thanh toán sớm mà không làm giảm mối quan hệ hợp tác không? - Chúng tôi khuyến nghị chiết khấu một phẩy năm phần trăm cho các hóa đơn thanh toán trong mười ngày kể từ ngày nhận hàng.",
+      "inputMode": "telex"
+    }
+  ]
+}

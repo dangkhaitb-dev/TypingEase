@@ -1,0 +1,96 @@
+{
+  "id": "zh-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "zh-01-005",
+  "title": "键位练习：q、w、e",
+  "summary": "按顺序学习 q、w、e，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "q",
+    "w",
+    "e"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "按顺序学习 q、w、e，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-005",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "找到 q 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "qqqq qqqq qqqq qqqq qqqq qqqq qqqq",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "找到 w 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "wwww wwww wwww wwww wwww wwww wwww",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "找到 e 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "eeee eeee eeee eeee eeee eeee eeee",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ddqq wwe eee qe weqw ddqq weqw qe eee wwe eee wwe ddqq"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "qq ew wqeq ww ej qq ej ww wqeq ew wqeq ew qq ej ww ej"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "eew eeq ww'q qq eew qq ww'q eeq ww'q eeq eew qq eew qq"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ww wl qw ewq qq ew ww ew qq ewq qw wl qw wl ww ew qq ewq"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "wew se wwww lwqq qeq ww wew ww qeq lwqq wwww se wwww se"
+    },
+    {
+      "type": "standard",
+      "text": "把已学的字母拼成真实的拼音音节来输入。",
+      "content": "da de ha he ke le ga ge sa se fa la wa da he le ke de sa ha"
+    }
+  ]
+}

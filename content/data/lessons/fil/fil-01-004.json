@@ -1,0 +1,70 @@
+{
+  "id": "fil-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "fil-01-004",
+  "title": "Mga titik: s, l",
+  "summary": "Mga titik: s, l. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Mga titik: s, l. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-004",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "sfs sfss ffss sssf fss sss sff ssss ss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "ffll fll lllf fl llll lll ll llf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "lljj lsl fls fsjf lf lls fjll jlsf llsl ll sls ll lf fj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "lf fj jssj ljj ssj ll jj jlf jllf jlfs ss fss fll ss sjj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "ffl ls jff lj llf sfj fs fsjj ssf fjll jl fl sf fjsl jjf"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fjfs llj lj lss ssf jlj jl jl ls fsj sj sffj jjss sl jfj"
+    }
+  ]
+}

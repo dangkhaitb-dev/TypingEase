@@ -1,0 +1,110 @@
+{
+  "id": "id-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 16,
+  "slug": "id-02-002",
+  "title": "Angka: 4, 5, 6",
+  "summary": "Gõ angka 4, 5, dan 6, lalu ambil kembali kelompok baru.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Gõ angka 4, 5, dan 6, lalu ambil kembali kelompok baru.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-02-002",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "44f 44 4f4 f44 444f 4f44 4ff4 444 4f 4444",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "5f5 555 5555 5f5 55f 5f 5f5f f55 55 5f55 ff5",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "6666 66 666 6f66 f6f ff 6f6f 6f6 6f 66f 66f6",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "s4 f4f j5 46 jff6 ss 54f6 44 j64 6455 js 6j fj 65j 5jff ff j54f j5j4 f6 5j5"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "qf 5jf 6ff jqff j45 jj j4j 4f 4jqj qff5 56jj 46jf 6f5f j6 f5f 64"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "5f f565 j6 5f6 jfj f66j fjf ff 54j5 fuj jf j65 j655 fjf6 6ff j6j6"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "54 ff46 665 64f j5ff 444j jj 555 f444 64j6 fv66 fjv5 5f6 jjj4 5f jf 654"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "44ff p55f j4f fj55 6j4 fj66 6jj 64 f6j6 5jj jj j666 j665 4f"
+    }
+  ]
+}

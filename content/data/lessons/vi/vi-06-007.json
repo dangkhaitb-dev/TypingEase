@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-007",
+  "unit": "u6",
+  "group": "g2",
+  "order": 89,
+  "slug": "vi-06-007",
+  "title": "Lời yêu cầu lịch sự",
+  "summary": "Xây dựng năng lực \"Polite Requests\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Sử dụng các cấu trúc câu giao tiếp trang trọng, lịch sự trong công việc (xin vui lòng, cảm ơn, nhờ bạn).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Polite Requests\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Sử dụng các cấu trúc câu giao tiếp trang trọng, lịch sự trong công việc (xin vui lòng, cảm ơn, nhờ bạn).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ trọn công văn đề nghị ban quản lý tòa nhà kiểm tra hệ thống điều hòa.",
+      "content": "Kính gửi ban quản lý tòa nhà, chúng tôi xin trân trọng đề nghị quý ban hỗ trợ kiểm tra lại hệ thống điều hòa nhiệt độ tại khu vực làm việc tầng năm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Làm quen giọng văn trang trọng qua thư đề nghị đối tác gửi lại bản sao hợp đồng.",
+      "content": "Kính gửi quý đối tác, xin vui lòng gửi lại bản sao hợp đồng đã ký kèm phụ lục điều khoản thanh toán trước ngày mười lăm tháng này để chúng tôi kịp lưu trữ hồ sơ kế toán.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành thư tri ân khách hàng nhân dịp kỷ niệm năm năm thành lập công ty.",
+      "content": "Kính gửi quý khách hàng thân thiết, nhân dịp kỷ niệm năm năm thành lập, công ty chúng tôi xin trân trọng gửi lời tri ân sâu sắc nhất đến sự đồng hành quý báu của quý vị.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "pl-01-009",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "pl-01-009",
+  "title": "Klawisze x, c, v",
+  "summary": "Poznaj klawisze x, c, v i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "x",
+    "c",
+    "v"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze x, c, v i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-009",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Ćwiczenie klawisza: x.",
+      "content": "xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Ćwiczenie klawisza: c.",
+      "content": "cccc cccc cccc cccc cccc cccc cccc cccc cccc c",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "v",
+      "text": "Ćwiczenie klawisza: v.",
+      "content": "vvvv vvvv vvvv vvvv vvvv vvvv vvvv vv",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "vvxv vxcv xvc cccx ccvc cx xxvc cco xxxv xxc vvx vv vx xx ccv vcv xc xxxx"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "vvx xxc cxc vvvx ctvc ccvc vvcv ccx xxvc ccv xvvx cxv vvvc vvv vx cc xx"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "ccv cc vvcc gv cv vv vccx ccx xx vcxx vc vxcv"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "vc ccc ccv ccvv cca xcxc ccxx xx cc cxx vvxx vvc xv vv xxx vcvx xvv"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "czy kot jest tu co jest przy stole jeszcze jest czas"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "czy wiesz co jest przy stole kot czy pies"
+    }
+  ]
+}

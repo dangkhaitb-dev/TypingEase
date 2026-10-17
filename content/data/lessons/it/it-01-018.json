@@ -1,0 +1,79 @@
+{
+  "id": "it-01-018",
+  "unit": "u1",
+  "group": "g3",
+  "order": 17,
+  "slug": "it-01-018",
+  "title": "Ripasso finale: lettere e accenti",
+  "summary": "Digita parole vere e frasi brevi con tutte le lettere e le vocali accentate.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Digita parole vere e frasi brevi con tutte le lettere e le vocali accentate.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-018",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Digita ogni frase con attenzione, usando qualsiasi tasto che conosci.",
+      "content": "la mamma prepara una cena buona per tutta la famiglia"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni frase con attenzione, usando qualsiasi tasto che conosci.",
+      "content": "oggi il sole è caldo e i bambini giocano sulla spiaggia"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni frase con attenzione, usando qualsiasi tasto che conosci.",
+      "content": "però non vieni con noi a vedere il nuovo film"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni frase con attenzione, usando qualsiasi tasto che conosci.",
+      "content": "più tardi vado al mercato per comprare il pane e la frutta"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni frase con attenzione, usando qualsiasi tasto che conosci.",
+      "content": "la città è già così piena di gente quando arriva il treno"
+    }
+  ]
+}

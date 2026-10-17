@@ -1,0 +1,106 @@
+{
+  "id": "fil-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 23,
+  "slug": "fil-03-003",
+  "title": "Malalaking titik: D, E, F",
+  "summary": "Malalaking titik: D, E, F. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Malalaking titik: D, E, F. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-03-003",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Pindutin nang matagal ang Shift gamit ang hinliliit ng kabilang kamay, saka pindutin ang d para i-type ang D. Ibalik ang mga daliri sa panimulang posisyon.",
+      "content": "ffD DDff fff DDD DD DDDf DDDD DDfD DDf ff fD DfDD",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Pindutin nang matagal ang Shift gamit ang hinliliit ng kabilang kamay, saka pindutin ang e para i-type ang E. Ibalik ang mga daliri sa panimulang posisyon.",
+      "content": "fE EEfE fEf EE fEfE EEf EEE Ef EEEf EEEE fEE EfEf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Pindutin nang matagal ang Shift gamit ang hinliliit ng kabilang kamay, saka pindutin ang f para i-type ang F. Ibalik ang mga daliri sa panimulang posisyon.",
+      "content": "dFFF FFFF FF ddFd FFd FFF dd ddF FFFd ddFF",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fFDD DD FFf FfE Ds ffF Ej Ejj Ef jjFD ff jjF Fj jj EE"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "DDj FF jj FfFD FFF fDF EjFj FEDE ff Ejj bbb fjfF EE"
+    }
+  ]
+}

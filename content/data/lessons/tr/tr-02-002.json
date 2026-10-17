@@ -1,0 +1,112 @@
+{
+  "id": "tr-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 15,
+  "slug": "tr-02-002",
+  "title": "Rakamlar 1 2 3",
+  "summary": "1, 2, 3 tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ö",
+    "ç",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "1, 2, 3 tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-02-002",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Tuş alıştırması: 1.",
+      "content": "111 11 1111 11 11 11 11 11",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Tuş alıştırması: 2.",
+      "content": "22 222 2222 22 22 22 22 22",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Tuş alıştırması: 3.",
+      "content": "333 3333 33 33 33 33 33 33",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "1x2 2212 332 113 2223 333 223 23 1131 1x 3313 3122 22 11 21 1111 3333"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ı2 1132 333 332 32 33 1331 22 223 ı232 ıı 2231 21 2232"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "122 1112 3321 1313 22 223 212 23 332 12 qq1 31 331 2213 2122 113 11 333"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "13 22 311 333 dd1 112 3133 1223 11 2133 232 313 d112"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "222 22 33 2231 223 321 221 3111 112 1ö13 333"
+    }
+  ]
+}

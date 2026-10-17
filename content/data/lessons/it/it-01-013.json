@@ -1,0 +1,77 @@
+{
+  "id": "it-01-013",
+  "unit": "u1",
+  "group": "g3",
+  "order": 12,
+  "slug": "it-01-013",
+  "title": "Ù",
+  "summary": "Impara il tasto ù e usalo con i tasti già studiati.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Impara il tasto ù e usalo con i tasti già studiati.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-01-013",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Trova ù e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "ffùù ùùù fùf ùf ùùùù ùùùf ùùf ùùff fùùù ùù"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ùùù ùùùù pù ùpù pùù pùùù ppù ùpùù pp ùù pù"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ùùtù ùtùé éùéù ùùùù ùùé ùùù ééùù ùùéù ééù ùéù ùù éé tt ùtù"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "ll ùùl ùùùù ùù llù ùùù llùù lll ùùùl ùlùù ùùlù"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "lei sale su di sera e poi sta giù alle tre"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni parola con attenzione, usando solo i tasti che conosci.",
+      "content": "il papà è più alto di lei e guarda la sala"
+    }
+  ]
+}

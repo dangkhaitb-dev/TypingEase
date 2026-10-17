@@ -1,0 +1,161 @@
+{
+  "id": "u4-l05",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 32,
+  "slug": "symbols-5",
+  "title": "«, », > et les deux-points",
+  "summary": "Au programme : «, », > et les deux-points.",
+  "newKeys": [
+    "«",
+    "»",
+    ">",
+    ":"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "é",
+    "-",
+    "=",
+    "<",
+    "#",
+    "|",
+    "!",
+    "\"",
+    "/",
+    "$",
+    "%",
+    "?",
+    "&",
+    "*",
+    "(",
+    ")",
+    "_",
+    "+",
+    "«",
+    "»",
+    ">",
+    ":"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Des touches que le cours n'a pas encore utilisées : «, », > et les deux-points. Certaines demandent Maj, avec l'auriculaire de l'autre main ; les autres ont leur propre touche, que le cours n'avait pas encore utilisée.",
+  "congrats": "«, », > et les deux-points : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "«",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe «.",
+      "hint": "Appuie sur « pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "«",
+      "text": "D'abord « sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "«« « «groupe «roses «grande\n«« « «lime «idées «mesure\n«« « «était «four «plan"
+    },
+    {
+      "type": "block",
+      "newKey": "»",
+      "text": "D'abord » sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "»» » «était» «guide» «jour»\n»» » «juillet» «mil» «aussi»\n»» » «vite» «sud» «mimes»"
+    },
+    {
+      "type": "intro",
+      "key": ">",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe >, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur > pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": ">",
+      "text": "D'abord > sans rien autour, puis là où on s'en sert vraiment.",
+      "content": ">> > <parole> <proposer> <venir>\n>> > <surgir> <société> <toujours>\n>> > <vendredi> <glisses> <devoir>"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "RP",
+      "text": "C'est l'auriculaire droit qui frappe les deux-points, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur : pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "D'abord les deux-points sans rien autour, puis là où on s'en sert vraiment.",
+      "content": ":: : novembre: courte: part:\n:: : ton: entrée: vite:\n:: : centres: premier: vivent:"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Une série de petits morceaux avec ces caractères.",
+      "tokens": [
+        "<guide>",
+        "«lettres»",
+        "«plus»",
+        "<vient>",
+        "porte:",
+        "«os»",
+        "«geste»",
+        "<utiles>",
+        "«nouveau»",
+        "«huile»"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tout ce que cette leçon a apporté, mélangé.",
+      "content": "grise: bords: «conte» «grand»\n«me» <jolie> «sa» idées:\n<mille> <sotte> lime: listes:"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Des mots à nouveau, avec les signes à leur place.",
+      "content": "avec: liste bon: surgir tel:\npar: heure le: mesure <jolie>\n<gestes> novembre plupart: taxi «tire»"
+    }
+  ]
+}

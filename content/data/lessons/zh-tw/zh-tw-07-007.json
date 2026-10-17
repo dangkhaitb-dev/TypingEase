@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-007",
+  "unit": "u7",
+  "group": "g1",
+  "order": 68,
+  "slug": "zh-tw-07-007",
+  "title": "敘述學校活動",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-007",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "上星期五，我們學校舉辦運動會。一大早，操場上就掛滿了彩色的旗子。開幕典禮結束後，各班選手陸續上場比賽。老師說：「重要的是盡力，不是名次。」大家聽了都更有信心。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我參加的是四百公尺接力賽，跑第三棒。前一位同學把接力棒交給我，我用盡全力往前跑。觀眾席上的同學大聲喊：「加油！加油！」最後我們班得到第二名，大家都很高興。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "比賽結束後，校長頒發獎狀，還請大家一起把操場的垃圾撿乾淨。回家的路上，我和同學討論明年要參加哪些項目。我說：「我想試試跳遠。」她笑著說：「那我們從下星期開始一起練習吧！」",
+      "inputMode": "ime"
+    }
+  ]
+}

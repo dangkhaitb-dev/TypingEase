@@ -1,0 +1,61 @@
+{
+  "id": "vi-03-024",
+  "unit": "u3",
+  "group": "g1",
+  "order": 50,
+  "slug": "vi-03-024",
+  "title": "Chữ hoa có dấu: I O Ô Ơ U Ư Y",
+  "summary": "Luyện gõ chữ hoa I, O, Ô, Ơ, U, Ư, Y kèm dấu thanh và vài chữ thường hiếm.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "telex",
+  "intro": "Luyện gõ chữ hoa I, O, Ô, Ơ, U, Ư, Y kèm dấu thanh và vài chữ thường hiếm.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-024",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa có I, O và dấu. Dùng Caps Lock hoặc Shift.",
+      "content": "LÌ ÍT NHỈ NGHĨ NGHỊ BÒ ÓC NHỎ RÕ HỌC LÌ XÌ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa có Ô, Ơ và dấu. Dùng Caps Lock hoặc Shift.",
+      "content": "Ô TÔ ƠN NỒI SỐ Ổ GỖ MỘT MỜ MỚI Ở VỠ HỢP LÝ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa có U, Ư và dấu. Dùng Caps Lock hoặc Shift.",
+      "content": "BÙN ÚT ỦNG CŨ VỤ TỪ ỨNG THỬ CHỮ TỰ MÙA XUÂN",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa có Y và dấu. Dùng Caps Lock hoặc Shift.",
+      "content": "KỲ KỸ KỴ SĨ Ỷ LẠI Ý KIẾN KỲ LẠ KỸ NĂNG KỸ SƯ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ẳ, ẵ, ẩ, ẫ, ỳ, ỷ, ỵ bằng Telex.",
+      "content": "khẳng định ẵm bé ẩm ướt mẫu giáo kỳ lạ ỷ lại kỵ sĩ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Trong Telex, w đứng một mình thành ư. Hãy gõ w hai lần (w w) để ra chữ w, và Shift + w hai lần để ra W.",
+      "content": "Chữ cái w và chữ cái W gõ mỗi chữ hai lần nhé",
+      "inputMode": "telex"
+    }
+  ]
+}

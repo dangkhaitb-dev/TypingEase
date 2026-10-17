@@ -1,0 +1,109 @@
+{
+  "id": "id-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 24,
+  "slug": "id-03-004",
+  "title": "Huruf kapital: G, H, I",
+  "summary": "Gõ G dan H dengan Shift, lalu campur dengan huruf kecil yang sama.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Gõ G dan H dengan Shift, lalu campur dengan huruf kecil yang sama.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-03-004",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Tahan Shift dengan kelingking di sisi tangan yang berlawanan, lalu tekan g untuk mengetik G. Kembalikan jari ke posisi awal.",
+      "content": "GfG Gf fGGG fGGf ff GGG fGG GG GGfG fG GGGG GGf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Tahan Shift dengan kelingking di sisi tangan yang berlawanan, lalu tekan h untuk mengetik H. Kembalikan jari ke posisi awal.",
+      "content": "HfHH HHH Hf HfHH HHHH HfH HHfH",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Tahan Shift dengan kelingking di sisi tangan yang berlawanan, lalu tekan i untuk mengetik I. Kembalikan jari ke posisi awal.",
+      "content": "IfI IIII IfII IIIf IIfI fII If II IfI III",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "Iff fjjI HG GHf fGjf Hf IGj fI jIf GfGI jIGh jIjH HfGj ffj IG jIfI jI HIjI"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "IHHj Gjfj IIIj jG ffu IjjH IHjI jIGG IH IIf GHG fuIj Gf jI HjHj"
+    }
+  ]
+}

@@ -1,0 +1,85 @@
+{
+  "id": "ko-01-109",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "ko-01-109",
+  "title": "모음 ㅛ · ㅜ · ㅠ",
+  "summary": "모음 ㅛ·ㅜ·ㅠ를 한 키씩 익히고 리듬을 만듭니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "hangul",
+  "intro": "모음 ㅛ·ㅜ·ㅠ를 한 키씩 익히고 리듬을 만듭니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-109",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅛㅛㅛ ㅛㅛㅛ ㅛㅛ ㅛㅛㅛ ㅛㅛ ㅛㅛㅛ ㅛㅛ ㅛㅛㅛ ㅛㅛㅛ ㅛㅛㅛ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅜㅜㅜ ㅜㅜㅜ ㅜㅜ ㅜㅜㅜ ㅜㅜ ㅜㅜㅜ ㅜㅜ ㅜㅜㅜ ㅜㅜㅜ ㅜㅜㅜ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅠㅠㅠ ㅠㅠㅠ ㅠㅠ ㅠㅠㅠ ㅠㅠ ㅠㅠㅠ ㅠㅠ ㅠㅠㅠ ㅠㅠㅠ ㅠㅠㅠ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅏㅛ ㅠㅏㅠ ㅛㅠ ㅛㅛ ㅜㅜㅜ ㅠㅠㅠ ㅜㅜㅠ ㅠㅜㅛ ㅏㅛ ㅠㅜㅛ ㅜㅜㅠ ㅠㅠㅠ ㅜㅜㅜ ㅛㅛ ㅛㅠ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅠㅠ ㅜㅠㅛㅜ ㅗㅗㅜㅛ ㅜㅛㅗ ㅠㅗㅜㅠ ㅛㅠ ㅛㅜㅠ ㅠㅠ ㅛㅜㅠ ㅛㅠ ㅠㅗㅜㅠ ㅜㅛㅗ ㅗㅗㅜㅛ ㅜㅠㅛㅜ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅜㅜㅛㅠ ㅜㅛㅠㅜ ㅠㅠ ㅠㅠㅠ ㅔㅔ ㅜㅜㅛㅠ ㅔㅔ ㅠㅠㅠ ㅠㅠ ㅜㅛㅠㅜ ㅠㅠ ㅜㅛㅠㅜ ㅜㅜㅛㅠ ㅔㅔ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅜㅛ ㅠㅠ ㅜㅜㅜ ㅊ ㅛㅠ ㅜㅜㅛ ㅜㅜㅠ ㅛㅛㅠㅠ ㅜㅛ ㅛㅛㅠㅠ ㅜㅜㅠ ㅜㅜㅛ ㅛㅠ ㅊ ㅜㅜㅜ ㅠㅠ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅠㅜㅛ ㅜㅜ ㅜㅛㅠ ㅠㅠ ㅛㅛㅂ ㅜ ㅠㅜㅛ ㅜ ㅛㅛㅂ ㅠㅠ ㅜㅛㅠ ㅜㅜ ㅜㅛㅠ ㅜㅜ ㅠㅜㅛ ㅜ ㅛㅛㅂ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로만 만든 진짜 낱말을 입력해 보세요.",
+      "content": "우유 구두 두부 수도 포도 우주 여우 우체국 교사",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로만 만든 짧은 문장을 입력해 보세요.",
+      "content": "여우가 호수로 간다 주말에 우체국에 간다",
+      "inputMode": "hangul"
+    }
+  ]
+}

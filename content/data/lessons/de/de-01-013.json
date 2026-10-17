@@ -1,0 +1,84 @@
+{
+  "id": "de-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "de-01-013",
+  "title": "Tote Taste Akut: é und á",
+  "summary": "Lerne die tote Taste ´ mit e und a: Erst ´, dann den Vokal, so entstehen é und á.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Lerne die tote Taste ´ mit e und a: Erst ´, dann den Vokal, so entstehen é und á.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-013",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tippe die tote Taste ´ (rechts neben ß), lasse sie los und drücke e: So entsteht é.",
+      "content": "éeéeé éééé ééd ééd ééd éeéeé"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe die tote Taste ´ (rechts neben ß), lasse sie los und drücke a: So entsteht á.",
+      "content": "ááe ááááá ááááá áááe ááááá áeáeá"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe ´ und danach den Vokal und beginne jede Gruppe aus der Grundstellung.",
+      "content": "ésé aá jédáá aáá ádfa ááé éeéd aaáéé ááááá ááá ádaé ééá fééá"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle zwischen é, á und den geübten Tasten.",
+      "content": "áeá áaé áéá édéáé ffjsá ájáé áá jé éééá eé éé éáfáé"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe ´ und danach den Vokal und beginne jede Gruppe aus der Grundstellung.",
+      "content": "éáá séj éaé ás ééáéá áéaéá édáá éája déáá áááá áéá áááé"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle zwischen é, á und den geübten Tasten.",
+      "content": "áéá ffé éés jááé éaé ááé áéááé ááa ád eáá áééé ése áéá áj ééj"
+    }
+  ]
+}

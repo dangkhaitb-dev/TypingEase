@@ -1,0 +1,94 @@
+{
+  "id": "ms-01-jump",
+  "unit": "u1",
+  "group": "g2",
+  "order": 14,
+  "slug": "ms-01-jump",
+  "title": "Melompat ke depan",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-jump",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fsl jjff jllj sf jj sjjf ffl flf lfj lsff lslf fs js ss"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "salak kakak ada dada lada asal asas kad kadal alas"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "wajah jelas kawal awal hawa dewa kelas gelas sejak"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "hari itu saya sudah tidur kita tidak ke sekolah"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "cuaca pagi tadi cukup cerah kita cuci kasut di sekolah"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "saya belajar baca buku dan bunga ada di kebun"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap ayat dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "murid itu belajar membaca buku cerita di sekolah tadi"
+    }
+  ]
+}

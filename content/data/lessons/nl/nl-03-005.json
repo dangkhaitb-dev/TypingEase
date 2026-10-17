@@ -1,0 +1,112 @@
+{
+  "id": "nl-03-005",
+  "unit": "u3",
+  "group": "g1",
+  "order": 28,
+  "slug": "nl-03-005",
+  "title": "Hoofdletters J K L",
+  "summary": "Leer de nieuwe toetsen J, K, L en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "J",
+    "K",
+    "L"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen J, K, L en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-03-005",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "J",
+      "text": "Houd Shift ingedrukt en druk op j voor J. Ga daarna terug naar de basispositie.",
+      "content": "JJ JJJ JJJJ JJ JJ JJ JJ JJ",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "K",
+      "text": "Houd Shift ingedrukt en druk op k voor K. Ga daarna terug naar de basispositie.",
+      "content": "KK KKKK KKK KK KK KK KK KK",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "L",
+      "text": "Houd Shift ingedrukt en druk op l voor L. Ga daarna terug naar de basispositie.",
+      "content": "LLL LLLL LL LL LL LL LL LL",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "JJK KJJJ JLJL KK LJ LLLK KJJ LL3L LLJK LLL KKLL LL JJL KKK KKJK KLJK 33LL"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "KLK AJL JLLJ KL JJ JJL LLJ KKK KKL JLJ LLK KLL JJJ LKJ KKLJ KK JKJK JL JJK"
+    }
+  ]
+}

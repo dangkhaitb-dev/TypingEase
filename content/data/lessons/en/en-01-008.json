@@ -1,0 +1,99 @@
+{
+  "id": "en-01-008",
+  "unit": "u1",
+  "group": "g2",
+  "order": 7,
+  "slug": "en-01-008",
+  "title": "Q, W, E",
+  "summary": "Locate Comma and Period; use changing transitions and controlled English, then record a fresh per-key check.",
+  "newKeys": [
+    "q",
+    "w",
+    "e"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Locate Comma and Period; use changing transitions and controlled English, then record a fresh per-key check.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-008",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "Find q and return to the home position. Type each target carefully.",
+      "content": "qff qqq qq qqfq qff fqqf ffq qqf qfq qf qqqf ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "Find w and return to the home position. Type each target carefully.",
+      "content": "ww wjwj www wwww wjj jwjw wj jwj wwj jww",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Find e and return to the home position. Type each target carefully.",
+      "content": "efe fee eff eee eeee feef eeef eef efef ee efe ffe",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "eq wwe wqw qwqw eeq eee wee qe eef wq ww weqw ewqq qw qq"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "wwee hew eeee ewe qqwq qw qe ew eqw ee eh wqww"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "qeq wq eee gegq qewq egqq eqw eewq qwe wqw eqq we weeq qqqw qgq wwg ee"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "ew eq eeee we qewf eeqe eww qeeq qe eqq qw wwe eee eefe eqwe"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "eew qw qe qe wq qe qqw heqe weq eehw eqew qwew qwq www weh ewq whq"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "she held a flask we see all fell sell well week seed"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "we see dad he sells jewels she feels glad all week"
+    }
+  ]
+}

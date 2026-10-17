@@ -1,0 +1,43 @@
+{
+  "id": "ko-06-005",
+  "unit": "u6",
+  "group": "g1",
+  "order": 82,
+  "slug": "ko-06-005",
+  "title": "비가 오면 계획을 바꿔요",
+  "summary": "날씨에 따라 달라지는 일정과 대안을 자연스럽게 설명합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "날씨에 따라 달라지는 일정과 대안을 자연스럽게 설명합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-06-005",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "토요일에 공원에서 소풍을 하기로 했는데 일기 예보에 비 소식이 있습니다. 그래서 비가 올 때를 위한 다른 계획도 세워 둡니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "비가 오면 공원 대신 근처 미술관에 가기로 했습니다. 전시를 다 보고 나서 미술관 옆 식당에서 점심을 먹어도 좋을 것 같아요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "토요일 아침에 정말 비가 내렸습니다. 우리는 미리 정해 둔 대로 미술관에 갔고 그림을 보며 생각보다 즐거운 하루를 보냈습니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

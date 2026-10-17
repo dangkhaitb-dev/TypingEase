@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-12-008",
+  "unit": "u12",
+  "group": "g1",
+  "order": 124,
+  "slug": "zh-tw-12-008",
+  "title": "寫一段活動摘要",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-008",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "活動摘要：\n本週六的淨灘活動共有四十五位志工參加。大家在兩個小時內，清理了大約一公里長的海灘，撿起的垃圾裝滿了三十多袋。其中最多的是塑膠瓶和吸管，還有不少漁網碎片。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "活動紀錄\n日期：十月二十八日星期六\n地點：北海岸沙灘\n參加人數：四十五人\n清理垃圾：三十二袋，約一百二十公斤\n主要種類：塑膠瓶、吸管、漁網\n下次活動：十一月二十五日\n負責人：海洋志工隊組長，歡迎新朋友加入",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "活動心得：\n這次淨灘讓我很驚訝，看起來乾淨的沙灘，仔細一看到處都是小塑膠片。組長提醒我們，最好的方法不是撿垃圾，而是從生活中減少使用塑膠。我決定以後出門都自己帶水壺和環保餐具，從自己開始做起。我也邀請家人下次一起參加。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

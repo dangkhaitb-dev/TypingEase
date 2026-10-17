@@ -1,0 +1,94 @@
+{
+  "id": "fil-01-jump",
+  "unit": "u1",
+  "group": "g2",
+  "order": 14,
+  "slug": "fil-01-jump",
+  "title": "Tumalon nang direkta",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-jump",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fjfs llj lj lss ssf jlj jl jl ls fsj sj sffj jjss sl jfj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "dasal sa sala ka saka kasal sa kalsada lakas alak dala"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "klase sa sala awa alas dalawa sa kalesa kasal saka wala"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "ito ay aso ko dito sa kalsada ilaw sulat salita oras"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "taxi kotse kuya kuwarto sala klase oras para sa iyo"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "bukas bibili ang nanay ng kanin sa bayan"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat pangungusap nang maingat gamit ang mga key na natutuhan na.",
+      "content": "mabait ang guro namin at lagi siyang nagbibigay ng payo"
+    }
+  ]
+}

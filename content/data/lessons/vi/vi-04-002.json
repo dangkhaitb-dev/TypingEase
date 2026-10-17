@@ -1,0 +1,67 @@
+{
+  "id": "vi-04-002",
+  "unit": "u4",
+  "group": "g1",
+  "order": 64,
+  "slug": "vi-04-002",
+  "title": "Từ ghép cơ bản",
+  "summary": "Luyện gõ các từ ghép hai tiếng quen thuộc trong đời sống, rèn nhịp chuyển ngón tay liền mạch giữa hai tiếng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Luyện gõ các từ ghép hai tiếng quen thuộc trong đời sống, rèn nhịp chuyển ngón tay liền mạch giữa hai tiếng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-04-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ các từ ghép hai tiếng, nhấn Space giữa hai tiếng.",
+      "content": "ông bà cha mẹ anh chị em út gia đình người thân",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ ghép hai tiếng, nhấn Space giữa hai tiếng.",
+      "content": "học tập rèn luyện chăm chỉ sách vở bạn bè trường lớp",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ ghép hai tiếng, nhấn Space giữa hai tiếng.",
+      "content": "làm việc lao động đồng nghiệp giúp đỡ đoàn kết sáng tạo",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ ghép hai tiếng, nhấn Space giữa hai tiếng.",
+      "content": "quê hương non nước đất nước làng xóm phố phường thanh bình",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ ghép hai tiếng, nhấn Space giữa hai tiếng.",
+      "content": "xe đạp máy bay tàu hỏa ô tô thuyền buồm xe buýt bến xe",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ ghép hai tiếng, nhấn Space giữa hai tiếng.",
+      "content": "bác sĩ giáo viên công nhân nông dân kỹ sư ca sĩ thợ may",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ ghép hai tiếng, nhấn Space giữa hai tiếng.",
+      "content": "yêu thương đùm bọc sẻ chia gắn bó nghĩa tình thủy chung",
+      "inputMode": "telex"
+    }
+  ]
+}

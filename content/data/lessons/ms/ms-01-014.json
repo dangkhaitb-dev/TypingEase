@@ -1,0 +1,74 @@
+{
+  "id": "ms-01-014",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "ms-01-014",
+  "title": "Ulang kaji",
+  "summary": "Ulang kaji. Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Ulang kaji. Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-014",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+      "content": "ayah menanam pokok mangga di kebun belakang rumah kami"
+    },
+    {
+      "type": "standard",
+      "text": "Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+      "content": "pagi tadi burung berkicau dan datuk minum teh di beranda"
+    },
+    {
+      "type": "standard",
+      "text": "Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+      "content": "ibu dan adik pergi ke pasar untuk membeli ikan dan sayur"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap ayat dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "murid itu belajar membaca buku cerita di sekolah tadi"
+    }
+  ]
+}

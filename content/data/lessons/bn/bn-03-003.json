@@ -1,0 +1,50 @@
+{
+  "id": "bn-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 48,
+  "slug": "bn-03-003",
+  "title": "কী অনুশীলন · ; ' ,",
+  "summary": "Introduce committed targets ন্দ; review ন দ. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets ন্দ; review ন দ. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-03-003",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "; টাইপ করতে ডান হাতের কড়ে আঙুল দিয়ে ; কী চাপুন।",
+      "content": "ক;ব ;ব ;ব ক;ব ;ব ;ব ক;ব ;ব ;ব ক;ব"
+    },
+    {
+      "type": "standard",
+      "text": "' টাইপ করতে ডান হাতের কড়ে আঙুল দিয়ে ' কী চাপুন।",
+      "content": "'ব 'ব ক'ব 'ব 'ব ক'ব 'ব 'ব ক'ব 'ব"
+    },
+    {
+      "type": "standard",
+      "text": ", টাইপ করতে ডান হাতের মধ্যমা দিয়ে , কী চাপুন।",
+      "content": ",ব ক,ব ,ব ,ব ক,ব ,ব ,ব ক,ব ,ব ,ব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "বু,ম; লূ৶; ;;ক ৸৵মু মোঃ' ';ব ;, ',৶ ;টে' ;লো ;বূ '; লৈ, ;মীবলৌ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": ",; ;;' ;,,৫ ,' ,,; ;;, ,,', ';' ';;; ;;; ;; '' ;;,' ,, ,,,'"
+    }
+  ]
+}

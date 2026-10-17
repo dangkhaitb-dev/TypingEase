@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-01-023",
+  "unit": "u1",
+  "group": "g1",
+  "order": 23,
+  "slug": "zh-tw-01-023",
+  "title": "選字提交流程",
+  "summary": "Narrow committed-output lesson: 裡",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 裡",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-023",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "我把今天的作業都寫完了，再去洗澡。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "媽媽把書放回書架，我接著整理桌上的筆記。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "我先記下明天要做的事情，再檢查有沒有漏字。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "明天早上八點，我們在車站見面。",
+      "inputMode": "ime"
+    }
+  ]
+}

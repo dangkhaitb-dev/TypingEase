@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-007",
+  "unit": "u5",
+  "group": "g1",
+  "order": 46,
+  "slug": "zh-tw-05-007",
+  "title": "找回借來的書",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-007",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "上個月我向同學借了一本小說，今天想還給她，卻怎麼也找不到。我先翻遍了書桌和書包。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我想起前幾天曾在客廳看書，便去沙發縫裡找，結果只找到一枝筆。媽媽建議我回想最後一次看書的地方。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "最後，我在床頭櫃的抽屜裡找到那本書。我把書用紙袋裝好，隔天親手還給同學，並謝謝她願意借給我。",
+      "inputMode": "ime"
+    }
+  ]
+}

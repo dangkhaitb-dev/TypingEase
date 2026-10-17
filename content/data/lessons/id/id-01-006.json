@@ -1,0 +1,84 @@
+{
+  "id": "id-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "id-01-006",
+  "title": "Huruf: g, h",
+  "summary": "Gõ m dan r dalam transisi dengan huruf yang sudah dipelajari.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Gõ m dan r dalam transisi dengan huruf yang sudah dipelajari.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-006",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "gff fggg ggg fg gfff gffg gggf ggff fgg gg gfgg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "hh fhhh hhh hff fhfh fh fhhf hhhh",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jh jjg jgfg fgf jjg jg gg hgg jhh gg jfjj jhjh jff fhjj"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "gjj fgh hjj hfjj jjh hg jf hjfg jff jh fjff jjf fg ff hf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jgj jfgf hf hfj jhg ffg jgj hj hh fhfh jfjh gj jggg jhh"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "hjhj gjhf jhh jjgg ffh fjg gjf ghh hhjf gfgg gj hjf hf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "ada gajah gagah kakak salah agak gagal hal asal"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "gajah ada hal salah agak gagal saja gagah ajak"
+    }
+  ]
+}

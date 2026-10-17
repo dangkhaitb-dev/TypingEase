@@ -1,0 +1,76 @@
+{
+  "id": "fr-01-010",
+  "unit": "u1",
+  "group": "g2",
+  "order": 9,
+  "slug": "fr-01-010",
+  "title": "p",
+  "summary": "Apprenez p et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "p"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Apprenez p et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-010",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Repérez p sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "pppf fff pp pfpp pppp fp ffpp ppp",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "pf ppf ppff pf pfff ffp ppfp fpp fp ppf ffp ppfp pff ff"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "pjjp jpj pp jppj jppp ppj jpjj pp jjp ppj jpp jp pj ppj"
+    },
+    {
+      "type": "standard",
+      "text": "Mélange guidé : changez de touche après les exercices d’introduction.",
+      "content": "la moto roule au port puis la moto repart"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "pp jpp jj jjpp pjp jjpj ppj jj pjp pj jjpj pj jj pjj jjp"
+    }
+  ]
+}

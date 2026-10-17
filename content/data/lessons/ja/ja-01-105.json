@@ -1,0 +1,88 @@
+{
+  "id": "ja-01-105",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "ja-01-105",
+  "title": "L・Q・W",
+  "summary": "L、Q、W へ指を伸ばす。",
+  "newKeys": [
+    "l",
+    "q",
+    "w"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "L、Q、W へ指を伸ばす。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-105",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "llll ll lll ll llll ll lll ll llll ll lll ll llll",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "q",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "qqq ll qll lll llq qq qqq ll qll lll llq qq qqq ll",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "w",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "qqwq wl wwll qqq qqwq wl wwll qqq qqwq wl wwll qqq",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "qq lwl llq llqq www wfwq qq lwl llq llqq www wfwq qq lwl llq llqq www wfwq"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "llq qqll hl qqwq qql lww wwww lhw llq qqll hl qqwq qql lww wwww lhw llq"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "aqql qqfw ll lqll qql ql aqql qqfw ll lqll qql ql aqql qqfw ll lqll qql ql"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "lq qq llw lww qqw ww wal laq qqq lq qq llw lww qqw ww wal laq qqq lq qq llw"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "llll llww wql llg wll qq wwq llll llww wql llg wll qq wwq llll llww wql llg"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-024",
+  "unit": "u1",
+  "group": "g1",
+  "order": 24,
+  "slug": "vi-01-024",
+  "title": "Luyện phím · ấ ờ ậ",
+  "summary": "Học cách gõ ấ (a a s), ờ (o w f), ậ (a a j) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ấ (a a s), ờ (o w f), ậ (a a j) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-024",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ a a s để ra ấ: a a ra â, s thêm dấu sắc. Ví dụ: mất = m a a s t.",
+      "content": "mất dấu nấu dấu ấy ấn nấu ấ ấy lấy mất lấy ấn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ o w f để ra ờ: o w ra ơ, f thêm dấu huyền. Ví dụ: mờ = m o w f.",
+      "content": "mờ bờ ngờ nhờ mời ờ tờ mờ ờ nhờ chờ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ a a j để ra ậ: a a ra â, j thêm dấu nặng. Ví dụ: bật = b a a j t.",
+      "content": "bật bậc vậy vật đậu mật vật cậu đậu mật cậu cập",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ấ, ờ, ậ. Nhớ: ấ = a a s, ờ = o w f, ậ = a a j.",
+      "content": "nào gật cậu nhân đến thuật chậm bật tận người thường",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ấ, ờ, ậ. Nhớ: ấ = a a s, ờ = o w f, ậ = a a j.",
+      "content": "bậc muốn chậu nhường hấp bậc bước giường nhường cũng",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ấ, ờ, ậ.",
+      "content": "mềm rất gật mái nhận đậu nhập tâm lấy đời tập con khi cũ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ấ, ờ, ậ.",
+      "content": "trường thân thấp khỏi đoạn lời thời cười nhật nhập giờ mười mấy bờ ấm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các câu ngắn, chỉ dùng những phím đã học.",
+      "content": "bình nước trên bàn đã đầy chưa anh trai hỏi trước khi ra ngoài",
+      "inputMode": "telex"
+    }
+  ]
+}

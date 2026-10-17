@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-01-021",
+  "unit": "u1",
+  "group": "g1",
+  "order": 21,
+  "slug": "zh-tw-01-021",
+  "title": "候選字確認練習",
+  "summary": "Narrow committed-output lesson: 看 我",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 看 我",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-021",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "老師請大家先確認姓名，再交出作業。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "我把今天的公事整理好，明天再去上班。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "哥哥記下故事內容，再和同學分享心得。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先輸入注音再核對候選字，標點用 Shift 或 ' [ ] 鍵輸入，確認後提交。",
+      "content": "老師問：「你吃飯了嗎？」我說：「吃過了！」",
+      "inputMode": "ime"
+    }
+  ]
+}

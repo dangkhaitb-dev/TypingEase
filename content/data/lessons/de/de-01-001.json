@@ -1,0 +1,79 @@
+{
+  "id": "de-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "de-01-001",
+  "title": "Tasten f, j und Leertaste",
+  "summary": "Lerne die Tasten f und j mit den Zeigefingern und die Leertaste mit dem Daumen.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Lerne die Tasten f und j mit den Zeigefingern und die Leertaste mit dem Daumen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-001",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Taste üben: f.",
+      "content": "ffff ffff ffff ffff ffff ffff ffff ffff ffff ffff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Taste üben: j.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jjjj jjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Drücke die Leertaste mit dem Daumen zwischen den Buchstabengruppen und kehre danach zur Grundstellung zurück.",
+      "content": "f j fj jf fj jf fj jf fj jf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "jfjf jf ff jjjjf ffjjj jjjj jj jf fjj ff jfjf fjf fjf fj"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jede Gruppe ruhig und kehre danach zur Grundstellung zurück.",
+      "content": "fjjf jfff fj fjjfj fjjf fjj fjjfj jf jjj jfjff"
+    },
+    {
+      "type": "standard",
+      "text": "Achte auf einen gleichmäßigen Anschlag und schaue nicht auf die Tastatur.",
+      "content": "jfjf jjjjf fj fjjfj ffjfj jjfj ffj jjfff jfj ffjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle die geübten Tasten ab und halte einen gleichmäßigen Rhythmus.",
+      "content": "fjjf jjf fjfj fffj fffjf fffjj ffj ffjfj ffffj ffjjj jjjj"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jede Gruppe ruhig und kehre danach zur Grundstellung zurück.",
+      "content": "jjff fffjf jjfjj jjf ffff ffjf jff jfjj fjfj jjf fjff"
+    }
+  ]
+}

@@ -1,0 +1,53 @@
+{
+  "id": "zh-tw-04-003",
+  "unit": "u4",
+  "group": "g1",
+  "order": 37,
+  "slug": "zh-tw-04-003",
+  "title": "校園筆記與換行整合",
+  "summary": "Closed integration; no new target/action/format.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Closed integration; no new target/action/format.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-04-003",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先完成每句的候選字與標點，按 Enter 換行後繼續記錄。",
+      "content": "哥哥帶筆記到學校。\n晚上一起討論。\n再整理重點。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先完成每句的候選字與標點，按 Enter 換行後繼續記錄。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "小組討論：下午2點\n請先帶好筆記本。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先完成每句的候選字與標點，按 Enter 換行後繼續記錄。",
+      "content": "老師說：「請用『合作』寫出一個句子。」\n我寫好後交給老師。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先完成每句的候選字與標點，按 Enter 換行後繼續記錄。遇到數字或符號時，先切換到英數模式輸入，再切換回注音模式。",
+      "content": "時間：下午2點\n地點：圖書館（請帶筆記）。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-001",
+  "unit": "u10",
+  "group": "g1",
+  "order": 135,
+  "slug": "vi-10-001",
+  "title": "Cặp từ gần giống nhau",
+  "summary": "Xây dựng năng lực \"Near Words\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Phân biệt chính xác các cặp từ tiếng Việt có cấu trúc âm vị và tổ hợp phím Telex gần tương đồng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Near Words\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Phân biệt chính xác các cặp từ tiếng Việt có cấu trúc âm vị và tổ hợp phím Telex gần tương đồng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phân biệt các cặp dễ nhầm: sương sa – xương cá, sinh sôi – xinh xắn.",
+      "content": "sương sa xương cá sinh sôi xinh xắn xao xuyến sao sa sâu sắc xâu kim sáng láng sang trọng sương muối xương sống xinh tươi sinh viên xao động sao băng sâu hun xâu chuỗi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ đối chiếu s và x trong cùng một dòng.",
+      "content": "phân biệt chính xác sương sớm và xương thịt xinh xắn và sinh hoạt xao xuyến và ngôi sao sâu sắc và xâu chuỗi hạt cườm sáng suốt và sang trọng tinh tế so từng cặp sương muối với xương sống xinh tươi với sinh viên",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về cách phân biệt các cặp từ có âm vị gần giống nhau.",
+      "content": "Việc phân biệt các cặp từ có âm vị gần tương đồng như s và x đòi hỏi sự tập trung cao độ và hiểu biết sâu sắc về ngữ nghĩa của từ vựng tiếng Việt. Khi gõ phím với độ chính xác cao, người viết không chỉ thể hiện sự tôn trọng đối với người đọc mà còn giữ gìn sự trong sáng của tiếng mẹ đẻ trong từng trang viết.",
+      "inputMode": "telex"
+    }
+  ]
+}

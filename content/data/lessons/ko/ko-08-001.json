@@ -1,0 +1,43 @@
+{
+  "id": "ko-08-001",
+  "unit": "u8",
+  "group": "g1",
+  "order": 100,
+  "slug": "ko-08-001",
+  "title": "휴식과 균형의 리듬",
+  "summary": "일상 장면을 이어 입력하며 안정적인 리듬을 유지합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "일상 장면을 이어 입력하며 안정적인 리듬을 유지합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-08-001",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "일을 오래 하다 보면 쉬는 것을 자주 잊게 됩니다. 그래서 요즘은 한 시간마다 알림을 맞추고 잠깐씩 자리에서 일어납니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "알림이 울리면 창가로 가서 먼 곳을 바라보고 어깨를 천천히 돌립니다. 물을 한 잔 마시고 나면 머리가 조금 맑아집니다. 몸도 한결 가벼워요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "저녁에는 휴대 전화를 내려놓고 가벼운 산책을 합니다. 일하는 시간과 쉬는 시간을 나누니 하루의 리듬이 한결 고르게 되었습니다. 잠도 더 잘 옵니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

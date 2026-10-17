@@ -1,0 +1,102 @@
+{
+  "id": "tr-01-008",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "tr-01-008",
+  "title": "Tuşlar u, ı, o",
+  "summary": "u, ı, o tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "u",
+    "ı",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "u, ı, o tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-008",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Tuş alıştırması: u.",
+      "content": "uuu uu uuuu uu uu uu uu uu",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ı",
+      "text": "Tuş alıştırması: ı.",
+      "content": "ııı ıı ıııı ıı ıı ıı ıı ıı",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Tuş alıştırması: o.",
+      "content": "oooo oo ooo oo oo oo oo oo",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ııı duıı ıı ooı od ııuu uıı uu uıo oıu oıı uudı uoı oı uıoo ıu oooo oııı"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ooıo oo uuoı uo ııoo oulu ouo ulı oooo uıoı ıı ooo uoı uu ou uuoo ııı"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "uo uıu ııuı ıı uıru ıouu ıouo ooı oıı uıuu ııı ır ıu uı uooo ıo"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ouıu uju jı ııuı ıuı ııo ooı uuuj ooıı ıoı uuoj uu ııu ııoo"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "sokakta kuş uyudu okul yolu dolu kutu ders ışık kış"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "okulda kuş uyudu ders ışık yol oda kutu dolu sokak"
+    }
+  ]
+}

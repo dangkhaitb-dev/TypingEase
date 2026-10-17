@@ -1,0 +1,43 @@
+{
+  "id": "ko-06-008",
+  "unit": "u6",
+  "group": "g1",
+  "order": 85,
+  "slug": "ko-06-008",
+  "title": "약속을 나누어 기록해요",
+  "summary": "하루의 약속을 시간 순서와 함께 공유합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "하루의 약속을 시간 순서와 함께 공유합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-06-008",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "이번 달에는 약속이 많아서 벽에 걸린 달력에 날짜별로 나누어 적었습니다. 그중에서 가족과의 약속은 빨간색 펜으로 따로 표시했습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "회사 일정은 파란색으로, 친구와의 약속은 초록색으로 적으니 한눈에 구분이 되었습니다. 약속이 겹치는 날도 금방 눈에 들어왔습니다. 정리가 쉬워졌어요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "십오 일에는 치과 예약과 친구의 생일 모임이 같은 시간에 겹쳐 있었습니다. 치과에 전화해 예약을 다음 날로 옮기고 달력도 바로 고쳐 두었습니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

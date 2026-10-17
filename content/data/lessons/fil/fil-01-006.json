@@ -1,0 +1,84 @@
+{
+  "id": "fil-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "fil-01-006",
+  "title": "Mga titik: g, h",
+  "summary": "Mga titik: g, h. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Mga titik: g, h. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-006",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "gggf ffg ggfg ggg fggg gg gggg fgff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "hhfh hhhh ff hhhf hh hhf hhh hfh",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fg ggfg jh jfhg fj jffj ghj jf jh ff gfg fhf gj ffg hf gg"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jj hffg gjfg hhf fh jg jfhj gh hfj fhjg ffjf hghg jghj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "ffg gh gj ffgf fjjh jg jh hgj ff hhff fg ghh gj gf hgj fj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jgff jjg fjjg fhg gj jghh hhjf jf hg jf jgfj jhg gg fjf"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "agad sa sala ahas sa kalsada dalaga halaga gala"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "dalaga sa kasal dala alak agad sa halaga ka sa gala"
+    }
+  ]
+}

@@ -1,0 +1,78 @@
+{
+  "id": "en-01-015",
+  "unit": "u1",
+  "group": "g3",
+  "order": 14,
+  "slug": "en-01-015",
+  "title": "Review: all letter keys",
+  "summary": "Type real words and short sentences with every letter key you have learned.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Type real words and short sentences with every letter key you have learned.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-015",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Type each line carefully, using any letter key you have learned.",
+      "content": "the quick brown fox jumps over the lazy dog"
+    },
+    {
+      "type": "standard",
+      "text": "Type each line carefully, using any letter key you have learned.",
+      "content": "we can make a plan and meet at the park after lunch"
+    },
+    {
+      "type": "standard",
+      "text": "Type each line carefully, using any letter key you have learned.",
+      "content": "my brother has a big blue backpack for the long trip"
+    },
+    {
+      "type": "standard",
+      "text": "Type each line carefully, using any letter key you have learned.",
+      "content": "please check the box and send the zip file to the team"
+    },
+    {
+      "type": "standard",
+      "text": "Type each line carefully, using any letter key you have learned.",
+      "content": "every morning she walks to the bus stop with her dog"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "es-01-009",
+  "unit": "u1",
+  "group": "g2",
+  "order": 8,
+  "slug": "es-01-009",
+  "title": "R, T, Y",
+  "summary": "Aprender r, t, y en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "r",
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Aprender r, t, y en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-009",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "Localiza r y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ffrr rrrr ffr ffrf rrr rr rfrr",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "Localiza t y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "tjt jt ttj ttjj ttt jjtt jjtj jjj jjt tttt tt jtj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "Localiza y y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "yfy yyf yyy yyfy fffy yy fy yyyy yf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "tr yyt yrt rryy rr ytyy yy ytr tsyy rrr yyyy rrys yr rry ttt yyy"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ttty yy ytyf ttyy rtrt ttr yyr tty ttt tr rttr rr"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "yttr ñyt rtr ylr yrrt ft ytr sst rr tyf ytt"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ddd yy wrss hr yaty yry yr ttty eyry tk ttrg tt gg rty frk ss"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "yt yyy yr rr ttry tr yy yyyt tyy ty tyr yyt yyyr ff tyry ryy tyyr yyyy ttyy"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "el rey ya sale tarde de la sala hay tres sagas"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "ella lee tres leyes ya tarde el jefe sale tras ella"
+    }
+  ]
+}

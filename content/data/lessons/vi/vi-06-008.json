@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-008",
+  "unit": "u6",
+  "group": "g2",
+  "order": 90,
+  "slug": "vi-06-008",
+  "title": "Hướng dẫn từng bước",
+  "summary": "Xây dựng năng lực \"Step-by-Step Instructions\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập quy trình hướng dẫn theo các bước tuần tự 1, 2, 3, rèn luyện tính chính xác của cấu trúc liệt kê.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Step-by-Step Instructions\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Nhập quy trình hướng dẫn theo các bước tuần tự 1, 2, 3, rèn luyện tính chính xác của cấu trúc liệt kê.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với hướng dẫn xử lý sự cố kết nối mạng văn phòng.",
+      "content": "Hướng dẫn xử lý sự cố kết nối mạng văn phòng: bước một kiểm tra đèn tín hiệu trên bộ phát sóng không dây và bảo đảm cắm chặt dây cáp mạng; bước hai khởi động lại bộ phát và máy tính.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Khởi động bài học với hướng dẫn đăng nhập hệ thống nội bộ.",
+      "content": "Hướng dẫn đăng nhập hệ thống nội bộ: bước một mở trình duyệt và nhập địa chỉ cổng thông tin; bước hai nhập mã số nhân viên và mật khẩu bảo mật; bước ba xác thực mã qua tin nhắn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với quy trình gửi đề xuất xin nghỉ phép.",
+      "content": "Quy trình gửi đề xuất xin nghỉ phép: bước một điền đầy đủ thông tin vào biểu mẫu trực tuyến trên hệ thống quản trị nhân sự; bước hai gửi thông báo cho người quản lý trực tiếp để xin phê duyệt; bước ba theo dõi kết quả phê duyệt trên hệ thống.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,110 @@
+{
+  "id": "id-01-011",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "id-01-011",
+  "title": "Huruf: z, x, c",
+  "summary": "Gõ w dan j; rangkai ng dan ny sebagai dua huruf.",
+  "newKeys": [
+    "z",
+    "x",
+    "c"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Gõ w dan j; rangkai ng dan ny sebagai dua huruf.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-011",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "zzf fzz zzzf zfz zzfz zfzz zf zz zzz zzzz",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "xf xxxx xxfx fx xfxx xx xxx xxxf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "cfcc ccf cccf fccf cc ccc cccc",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "fxx fj fx xzf xf xjxx zf zfc zxcc jzzz fjfz fj fxzc fjz"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "xxf xj cjx xc fx xf xzf jxfc xjc ffx zxff jzfj xcj cz jf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "xjzx cff zc jxx zjcf ff jzz cz zx jff ff zzf jj xzf xc xf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jccj zcz czfj jx cjjf fz cxx cjc jzfj xzf jj zx fjjx fx"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "fxc zj fj zfxz xf ffxf xccc jc cz jjcf zfzf czj xf jc xf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "cepat cari cerita itu kecil tapi cukup jelas"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "cuaca pagi cukup cerah kita cuci sepatu di sekolah"
+    }
+  ]
+}

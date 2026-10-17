@@ -1,0 +1,43 @@
+{
+  "id": "ko-01-137",
+  "unit": "u1",
+  "group": "g1",
+  "order": 38,
+  "slug": "ko-01-137",
+  "title": "받침과 낱말 복습 4",
+  "summary": "받침이 있는 낱말이 들어간 문장을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "받침이 있는 낱말이 들어간 문장을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-137",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "작은 화분에 흙을 덮고 씨앗에 물을 듬뿍 줘요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "시장에서 값이 싼 제철 과일을 넉넉히 샀어요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "작은 꽃이 피는 따뜻한 봄을 손꼽아 기다려요",
+      "inputMode": "hangul"
+    }
+  ]
+}

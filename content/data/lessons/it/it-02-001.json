@@ -1,0 +1,107 @@
+{
+  "id": "it-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 19,
+  "slug": "it-02-001",
+  "title": "Cifre: 1, 2, 3",
+  "summary": "Impara i tasti 1, 2, 3 e usali con i tasti già studiati.",
+  "newKeys": [
+    "1",
+    "2",
+    "3"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti 1, 2, 3 e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-02-001",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "1",
+      "text": "Trova 1 e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "fff fff1 1f1f 11 f11 111 f1 1f1 1111 ff1 111f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "2",
+      "text": "Trova 2 e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "22 2222 2j 22jj jj2 222 2j22 22j2 2j2 jj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "3",
+      "text": "Trova 3 e torna alla posizione di base. Digita ogni obiettivo con attenzione.",
+      "content": "33f3 33f ff 33 3333 ff3 3f33 333f fff3 f3 333",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "f11 j22 f1j f233 j311 f2j2 11f 232j f13 j21 322f 1j2 f321"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "j1f 2f3 jf12 31j 2j1f f322 13f j231 2f31 f11j j322 21f3"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "131 21 3333 133 jj3 2132 332 11 331 33 333 222 2232"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "2322 23 ff 31f2 2312 12 3331 1122 2121 11 332 33 22 1132 113 3311"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "f2j 132 j2f1 231f 3j21 f312 1j3 j132 f23 213j 3f21 j21f"
+    }
+  ]
+}

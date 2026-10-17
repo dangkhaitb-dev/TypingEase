@@ -1,0 +1,83 @@
+{
+  "id": "es-02-jump",
+  "unit": "u2",
+  "group": "g2",
+  "order": 20,
+  "slug": "es-02-jump",
+  "title": "Saltar adelante",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-02-jump",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "3311 3113 2212 2332 13 332 3213 222 2221 233 2131 33 f1"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "6646 554 566 6656 5f6 4465 445 665 46 4565 55 4456 666 66 5556 664 ff 44"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "99j8 77 779 8879 988 889 997 88 8897 8878 777 99 778 8889 999 7789"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "99 9099 009 0900 0000 000 00 990 99c0 9000 0009 0090"
+    }
+  ]
+}

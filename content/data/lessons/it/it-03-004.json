@@ -1,0 +1,105 @@
+{
+  "id": "it-03-004",
+  "unit": "u3",
+  "group": "g1",
+  "order": 27,
+  "slug": "it-03-004",
+  "title": "Maiuscole: D, E, F",
+  "summary": "Impara i tasti D, E, F e usali con i tasti già studiati.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "shift",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Impara i tasti D, E, F e usali con i tasti già studiati.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "it",
+    "lesson": "it-03-004",
+    "revision": "it-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Tieni premuto Maiusc e premi d per scrivere D. Poi torna alla posizione di base.",
+      "content": "DDDD fDDf DfD DDfD ff DDf DD",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Tieni premuto Maiusc e premi e per scrivere E. Poi torna alla posizione di base.",
+      "content": "jEE EE EEEE jj jjEE EEE Ej",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Tieni premuto Maiusc e premi f per scrivere F. Poi torna alla posizione di base.",
+      "content": "ff FFFF FffF FF FfF Ff FFf FFfF FFF ffF",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "DDFE FFEF FDEF FFEE FEFE EE ED EEFD fDEF DFE FFE DDFF DDF FF DDDF DD"
+    },
+    {
+      "type": "standard",
+      "text": "Digita ogni obiettivo con attenzione e torna alla posizione di base prima del successivo.",
+      "content": "EFED DDD EFE FFDE EEl FFDD FFDF FFEE DD FFFF DDF FFF"
+    }
+  ]
+}

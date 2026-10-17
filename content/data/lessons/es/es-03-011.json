@@ -1,0 +1,108 @@
+{
+  "id": "es-03-011",
+  "unit": "u3",
+  "group": "g1",
+  "order": 31,
+  "slug": "es-03-011",
+  "title": "Mayúsculas: G, H, I",
+  "summary": "Aprender G, H, I en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "G",
+    "H",
+    "I"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Aprender G, H, I en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-03-011",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "G",
+      "text": "Mantén pulsada Mayús con el meñique de la mano derecha y pulsa la tecla g para escribir G. Suelta Mayús antes de la siguiente tecla.",
+      "content": "fG GfG fGfG GGff GGG GGGG GG GGfG GGf ff ffG fffG",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "H",
+      "text": "Mantén pulsada Mayús con el meñique de la mano izquierda y pulsa la tecla h para escribir H. Suelta Mayús antes de la siguiente tecla.",
+      "content": "HjHH jHH HHH jj HHHj HH HHHH",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "I",
+      "text": "Mantén pulsada Mayús con el meñique de la mano izquierda y pulsa la tecla i para escribir I. Suelta Mayús antes de la siguiente tecla.",
+      "content": "IIII III ff ffff II ffI IIf IIfI If fff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "IGG GHII HGH GIGG IIII II IIG HH III Hu HHIH IHIG"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "xGHH HH IIG IGGI II EI AGv yI IIGG G´ HG IGHG oIHH HGI 6GI IIH HHvH IH"
+    }
+  ]
+}

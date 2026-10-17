@@ -1,0 +1,70 @@
+{
+  "id": "ms-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "ms-01-004",
+  "title": "Huruf: s, l",
+  "summary": "Tambah h y p b; bezakan ny dan sy sebagai jujukan.",
+  "newKeys": [
+    "s",
+    "l"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Tambah h y p b; bezakan ny dan sy sebagai jujukan.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-004",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "sss fs ssf ssss sf ssfs sfs ss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "lffll flll llf llll lll lllf ll ff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jsjs ls fl fljf fl sfjl lj fsj jlf fjfl fjj jl lf fj ssl"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "ffjl jf lljj lj ff flfj jfs fllj jj lssj flff ljfj ssj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fj sjf sf lflf jf jslj jjl sf fjff slsf jfjs ssf ssf ff"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fsl jjff jllj sf jj sjjf ffl flf lfj lsff lslf fs js ss"
+    }
+  ]
+}

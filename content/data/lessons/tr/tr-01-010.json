@@ -1,0 +1,108 @@
+{
+  "id": "tr-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "tr-01-010",
+  "title": "Tuşlar z, x, c",
+  "summary": "z, x, c tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "z",
+    "x",
+    "c"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "ı",
+    "o",
+    "p",
+    "ğ",
+    "ü",
+    "z",
+    "x",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "z, x, c tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-010",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "Tuş alıştırması: z.",
+      "content": "zzzz zzzz zzzz zzzz zzzz zzzz zzzz zzzz zz",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Tuş alıştırması: x.",
+      "content": "xxxx xxxx xxxx xxxx xxxx xxxx xxxx xxxx",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Tuş alıştırması: c.",
+      "content": "cccc cccc cccc cccc cccc cccc cccc cccc cccc c",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "xzc xzzx xxc xxxx xz czzx xxx cc zccz czz zz xzz xxzc xzxx xxu xzx ccz xx"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "cccc xxcx xx zzcx ccz cccx zx xxz zz cxxz ccxw zzc ccc wwzc"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "zzxz xcx xx zc xxcc zcx zz zzx ccc cc xzzc sszx"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "xzcz xx zzz ccx xxx czxx xzzx zxzx zz zcxz zzx zzc zxc cc xxz üüxx zzxc"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "güzel kız yolda yaz geldi tuz dolu kutu kazak eski"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "dizi ceket cadde koz zil kuzu tuz yazı gece"
+    }
+  ]
+}

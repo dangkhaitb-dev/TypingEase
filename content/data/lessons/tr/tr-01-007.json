@@ -1,0 +1,99 @@
+{
+  "id": "tr-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "tr-01-007",
+  "title": "Tuşlar r, t, y",
+  "summary": "r, t, y tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "r",
+    "t",
+    "y"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "ş",
+    "i",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "r, t, y tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-007",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "Tuş alıştırması: r.",
+      "content": "rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrr",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "Tuş alıştırması: t.",
+      "content": "tttt tttt tttt tttt tttt tttt tttt tttt tttt",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "y",
+      "text": "Tuş alıştırması: y.",
+      "content": "yyyy yyyy yyyy yyyy yyyy yyyy yyyy yyyy y",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "tg yyt tty ry yy rty yyg rrrt rry yt yytr yyyy ty ryty"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "yyty tt rryr rrsy rrt tttr rrrr tyyr yyt tytt tr yy rr rrtr yty ttyr tttt"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ry tty ttt tt ryy yyt rr rryy tqt yytq yr"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "yyt rr ttrt yyy yrrr yyr rtr ttt yy lty rrr ttr rrt rry yryy tty ytrr"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "her hafta saat yedide kedi yerde eski yeşil şeker"
+    },
+    {
+      "type": "standard",
+      "text": "Her kelimeyi dikkatle yaz; yalnızca öğrendiğin tuşları kullan.",
+      "content": "kedi yerde yatar her saat tatil rahat tarih geri"
+    }
+  ]
+}

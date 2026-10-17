@@ -1,0 +1,82 @@
+{
+  "id": "ms-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "ms-01-005",
+  "title": "Huruf: a, ;",
+  "summary": "Tambah c dan w; kh sebagai k kemudian h.",
+  "newKeys": [
+    "a",
+    ";"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Tambah c dan w; kh sebagai k kemudian h.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-005",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "aa af afaa aaaa aaaf afa fa faa aafa ff aaa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": ";f;f f; ;;;f ;; ;;;; ff;; ;f;; ;f; ;;f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "a;j ;fa; ff jj ;aj ffa jfd jj; fajf ;jff ;f"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jjj ;ff; jaf jj aa ;;fa jf af ;j fa j; ff;a jjf; aaf f; jjf jj;;"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "af ;f ;;ff j; ja f; ajaj ;js as; afff ;;f ff fj; jf; aafa j;as fj aja"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "ja a;jf jjj; aaff ;;aj jaa; ;f;; j; aaa; faj; adff aj; jf; df ;f; jff"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "ada kad ada kakak asal asas dada lada kadal alas"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "salak kakak ada dada lada asal asas kad kadal alas"
+    }
+  ]
+}

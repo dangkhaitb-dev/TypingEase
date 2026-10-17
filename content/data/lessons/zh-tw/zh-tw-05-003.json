@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-003",
+  "unit": "u5",
+  "group": "g1",
+  "order": 42,
+  "slug": "zh-tw-05-003",
+  "title": "雨天改變的安排",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-003",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "下午突然下起大雨，原本要去公園打球的計畫只好取消。弟弟看著窗外，有點失望。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我們改在家裡玩桌遊，弟弟負責發牌，我負責記下每個人的分數。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "雨停以後，窗外的空氣變得很清新。我們約好明天天晴時，再一起去公園。",
+      "inputMode": "ime"
+    }
+  ]
+}

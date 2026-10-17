@@ -1,0 +1,94 @@
+{
+  "id": "sw-01-jump",
+  "unit": "u1",
+  "group": "g2",
+  "order": 15,
+  "slug": "sw-01-jump",
+  "title": "Ruka mbele",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-jump",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jj jls sls lj sjff jsj ljs ffsf fls jlll fjl lssl fjll"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "dada sasa hafla ghafla kaka haja ladha saa dagaa kaa"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "hata sasa afya ya kaka sawa wateja haya daraja la ghala"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "wakati wa jua watu wote hutoka katika kituo hiki"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "dada hupika chakula kizuri kila siku kisha huweka chai"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "mimi na mama tunakula mchele na maharage nyumbani"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "thamani ghali dhahabu shule chumba chakula nyanya shamba"
+    }
+  ]
+}

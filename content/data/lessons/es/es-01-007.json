@@ -1,0 +1,56 @@
+{
+  "id": "es-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "es-01-007",
+  "title": "Más palabras con la fila central",
+  "summary": "Escribe más palabras reales con las teclas de la fila central y la ñ.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Escribe más palabras reales con las teclas de la fila central y la ñ.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-007",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Escribe cada grupo con todas las teclas de la fila central y la ñ, y vuelve a la posición de referencia antes del siguiente.",
+      "content": "jñ fds hlag kñs dfa lhgk sj añkf glh jsd kñfl hg dsj"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "saña dañas la sala la salsa las alas la falda"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "la saga las sagas hada las hadas la gasa la daga"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "salsa sala sal ala alas falda alfa jalas jala daña"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "zh-tw-01-003",
+  "title": "注音符號組 3",
+  "summary": "Narrow committed-output lesson: 爸 媽",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "position",
+  "intro": "Narrow committed-output lesson: 爸 媽",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-003",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄕ，並以已學按鍵定位。",
+      "content": "ㄕㄕㄕ ㄕㄨ ㄕㄑㄕ ㄨㄕㄕ ㄕㄨ ㄕㄕㄕㄕ ㄕㄕㄕ ㄕㄕㄕㄕ ㄕㄨ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄘ，並以已學按鍵定位。",
+      "content": "ㄘㄘㄘ ㄘㄨ ㄘㄑㄘ ㄨㄘㄘ ㄘㄨ ㄘㄘㄘㄘ ㄘㄘㄘ ㄘㄘㄘㄘ ㄘㄨ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄜ，並以已學按鍵定位。",
+      "content": "ㄜㄜㄜ ㄎㄜ ㄜㄑㄜ ㄑㄜ ㄨㄜㄜ ㄨㄜ ㄜㄜㄜㄜ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄜㄜㄇ ㄘㄘ ㄨㄜㄜㄕ ㄕㄜㄕ ㄕㄋ ㄕㄇ ㄜㄜㄇ ㄕㄇ ㄕㄋ ㄕㄜㄕ ㄨㄜㄜㄕ ㄘㄘ ㄨㄜㄜㄕ ㄘㄘ ㄜㄜㄇ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄎㄎ ㄜㄑㄘㄕ ㄜㄕㄕ ㄘㄑ ㄜㄎㄎㄋ ㄘㄜㄑ ㄎㄎ ㄘㄜㄑ ㄜㄎㄎㄋ ㄘㄑ ㄜㄕㄕ ㄜㄑㄘㄕ ㄜㄕㄕ ㄜㄑㄘㄕ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄜㄋㄕ ㄕㄕㄘㄜ ㄕㄇㄕㄕ ㄘㄑㄘ ㄋㄋ ㄎㄎㄎ ㄜㄋㄕ ㄎㄎㄎ ㄋㄋ ㄘㄑㄘ ㄕㄇㄕㄕ ㄕㄕㄘㄜ ㄕㄇㄕㄕ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄇㄇ ㄕㄑ ㄕㄎ ㄜㄜㄜ ㄇㄇㄇㄎ ㄘㄘ ㄇㄇ ㄘㄘ ㄇㄇㄇㄎ ㄜㄜㄜ ㄕㄎ ㄕㄑ ㄕㄎ ㄕㄑ ㄇㄇ ㄘㄘ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄜㄜㄨ ㄕㄕ ㄘㄘㄜㄜ ㄕㄕㄨㄨ ㄜㄘㄑㄇ ㄕㄘ ㄜㄜㄨ ㄕㄘ ㄜㄘㄑㄇ ㄕㄕㄨㄨ ㄘㄘㄜㄜ ㄕㄕ ㄘㄘㄜㄜ",
+      "inputMode": "position"
+    }
+  ]
+}

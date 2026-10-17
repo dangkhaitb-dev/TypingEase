@@ -1,0 +1,64 @@
+{
+  "method": "Built-in image_gen: five photorealistic scenes composed with actual app screenshots, plus two stock-portrait edits.",
+  "note": "Illustrative AI-generated/edited people and environments, not actual customer testimonials. Each display uses the supplied matching feature screenshot as its reference.",
+  "images": [
+    {
+      "output": "content/media/product-lifestyle/lesson.png",
+      "webp": "public/assets/product-lifestyle/lesson.webp",
+      "references": [
+        "content/media/people/learner.jpg",
+        "content/media/product-ui/lesson-vi.png"
+      ],
+      "prompt": "Use case: compositing. Create a premium, photorealistic landscape 3:2 product lifestyle photograph for the TypingEase website. Image 1 is a licensed stock person reference: preserve this woman's recognizable face, hair and coral blouse, change her pose naturally to seated working at a laptop. Image 2 is the actual TypingEase app screenshot to place accurately inside the laptop screen, preserving its green/white UI, logo and keyboard. Camera views laptop from over her shoulder at a gentle side angle, with her face in profile visible on the left third and the laptop screen large on right two-thirds, not a rear view of the lid. Laptop display must visibly show image 2, no invented dashboards. Intimate real office moment, dark forest-green out-of-focus office background, walnut desk, soft window light on face and screen, rich dark tones surrounding the luminous white screen for strong contrast at thumbnail scale. Real photographic skin and hands, natural anatomy. Person and laptop occupy the frame, no blank advertising space, no overlay captions, no extra logos, no testimonial claim. Export high quality PNG."
+    },
+    {
+      "output": "content/media/product-lifestyle/games.png",
+      "webp": "public/assets/product-lifestyle/games.webp",
+      "references": [
+        "content/media/people/creative.jpg",
+        "content/media/product-ui/games-vi.png"
+      ],
+      "prompt": "Use case: compositing. Premium photorealistic landscape 3:2 product lifestyle photo. Image 1 is a stock portrait identity reference: retain the man's recognizable face, glasses, headphones and white shirt. Image 2 is the exact TypingEase games page to show on his desktop monitor. Change camera to a side-over-shoulder angle so we see his smiling profile in left third and the front of his monitor clearly in right two-thirds. He is using keyboard and mouse in his authentic dark creative studio; subtle warm practical light, dark charcoal and forest-green background, clear bright white/green app display for strong thumbnail contrast. Preserve the screenshot layout and logo as faithfully as possible inside the screen; no made-up interface, no fake metrics. Natural hands and skin, real photographic texture, no captions, no watermark, no testimonial text. Landscape PNG."
+    },
+    {
+      "output": "content/media/product-lifestyle/course.png",
+      "webp": "public/assets/product-lifestyle/course.webp",
+      "references": [
+        "content/media/product-ui/course-vi.png"
+      ],
+      "prompt": "Use case: compositing. Asset: premium photorealistic website lifestyle card, landscape 3:2 PNG. The attached image is the actual TypingEase course webpage: place this supplied screenshot faithfully inside the laptop display, preserving its layout, Vietnamese headings, green/white color palette and TypingEase logo. Scene: A young Vietnamese woman in a cream cardigan seated at the walnut window counter of a premium Starbucks-style coffee shop: deep green upholstered seats, coffee bar and warm pendant lights softly behind her, takeaway coffee beside her laptop. Morning city light. Three-quarter side view, her face clearly visible at left and open laptop display at right. Person must be visibly using this website. Screen takes about half the image and is large enough to recognize at thumbnail size. Rich environmental contrast around the bright screen, natural photographic skin, believable hands and physical perspective, refined editorial product photography. No floating UI, no overlay text, no invented dashboard, no collage borders, no testimonial claims, no additional brand logos. This should look like an authentic candid photo, not an illustration."
+    },
+    {
+      "output": "content/media/product-lifestyle/practice.png",
+      "webp": "public/assets/product-lifestyle/practice.webp",
+      "references": [
+        "content/media/product-ui/practice-vi.png"
+      ],
+      "prompt": "Use case: compositing. Asset: premium photorealistic website lifestyle card, landscape 3:2 PNG. The attached image is the actual TypingEase practice webpage: place this supplied screenshot faithfully inside the laptop display, preserving its layout, Vietnamese headings, green/white color palette and TypingEase logo. Scene: A Vietnamese man in his late twenties wearing a navy overshirt, writing at a laptop in a quiet contemporary public library. Tall oak bookshelves, warm reading lamps and deep teal shadows. View from beside his shoulder, his profile on right, laptop screen facing camera on left. A notebook and pencil nearby. Person must be visibly using this website. Screen takes about half the image and is large enough to recognize at thumbnail size. Rich environmental contrast around the bright screen, natural photographic skin, believable hands and physical perspective, refined editorial product photography. No floating UI, no overlay text, no invented dashboard, no collage borders, no testimonial claims, no additional brand logos. This should look like an authentic candid photo, not an illustration."
+    },
+    {
+      "output": "content/media/product-lifestyle/test.png",
+      "webp": "public/assets/product-lifestyle/test.webp",
+      "references": [
+        "content/media/product-ui/test-vi.png"
+      ],
+      "prompt": "Use case: compositing. Asset: premium photorealistic website lifestyle card, landscape 3:2 PNG. The attached image is the actual TypingEase test webpage: place this supplied screenshot faithfully inside the laptop display, preserving its layout, Vietnamese headings, green/white color palette and TypingEase logo. Scene: A young woman with curly dark hair in a muted mustard sweater practicing on a laptop at a cozy apartment desk beside a rainy window at dusk. Houseplants, amber desk lamp, deep blue evening tones. Three-quarter view showing her focused face and both hands on keys, laptop screen prominent. Person must be visibly using this website. Screen takes about half the image and is large enough to recognize at thumbnail size. Rich environmental contrast around the bright screen, natural photographic skin, believable hands and physical perspective, refined editorial product photography. No floating UI, no overlay text, no invented dashboard, no collage borders, no testimonial claims, no additional brand logos. This should look like an authentic candid photo, not an illustration."
+    },
+    {
+      "output": "content/media/product-lifestyle/progress.png",
+      "webp": "public/assets/product-lifestyle/progress.webp",
+      "references": [
+        "content/media/product-ui/progress-vi.png"
+      ],
+      "prompt": "Use case: compositing. Asset: premium photorealistic website lifestyle card, landscape 3:2 PNG. The attached image is the actual TypingEase progress webpage: place this supplied screenshot faithfully inside the laptop display, preserving its layout, Vietnamese headings, green/white color palette and TypingEase logo. Scene: An East Asian professional woman in a sage blouse reviewing her laptop in a modern coworking lounge. Dark green booth seating, glass partitions, soft natural daylight, another worker very blurred in background. Camera sees her natural smiling profile and open display front, not laptop lid. Person must be visibly using this website. Screen takes about half the image and is large enough to recognize at thumbnail size. Rich environmental contrast around the bright screen, natural photographic skin, believable hands and physical perspective, refined editorial product photography. No floating UI, no overlay text, no invented dashboard, no collage borders, no testimonial claims, no additional brand logos. This should look like an authentic candid photo, not an illustration."
+    },
+    {
+      "output": "content/media/product-lifestyle/touch.png",
+      "webp": "public/assets/product-lifestyle/touch.webp",
+      "references": [
+        "content/media/product-ui/touch-vi.png"
+      ],
+      "prompt": "Use case: compositing. Asset: premium photorealistic website lifestyle card, landscape 3:2 PNG. The attached image is the actual TypingEase touch webpage: place this supplied screenshot faithfully inside the laptop display, preserving its layout, Vietnamese headings, green/white color palette and TypingEase logo. Scene: A mature man with salt-and-pepper hair and glasses learning at a laptop on a shaded outdoor cafe terrace. Olive plants, dark timber table, warm afternoon sunlight, light stone walls and espresso cup. Camera beside shoulder, recognizable face in left third, front of laptop display filling right half. Person must be visibly using this website. Screen takes about half the image and is large enough to recognize at thumbnail size. Rich environmental contrast around the bright screen, natural photographic skin, believable hands and physical perspective, refined editorial product photography. No floating UI, no overlay text, no invented dashboard, no collage borders, no testimonial claims, no additional brand logos. This should look like an authentic candid photo, not an illustration."
+    }
+  ]
+}

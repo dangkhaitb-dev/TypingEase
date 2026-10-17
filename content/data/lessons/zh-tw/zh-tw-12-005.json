@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-12-005",
+  "unit": "u12",
+  "group": "g1",
+  "order": 121,
+  "slug": "zh-tw-12-005",
+  "title": "到訪前的提醒",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-005",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "各位會員：\n下週三上午十點，我們將參觀市立科學館。參觀時請保持安靜，不要觸摸展示品，拍照時也請關閉閃光燈。館內禁止飲食，請在進館前吃完早餐。\n活動組",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "到訪須知\n集合時間：上午九點四十分\n集合地點：科學館大門前廣場\n攜帶物品：會員證、水壺、筆記本\n參觀時間：大約兩個半小時\n注意事項：請穿輕便的鞋子，館內需要走很多路。\n聯絡人：活動組小陳，當天如有問題請打電話\n報名截止：本週五下午五點",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "會員：「請問可以帶小孩一起去嗎？」\n活動組：「可以，十二歲以下的兒童免費入館。」\n會員：「館內有地方可以吃午餐嗎？」\n活動組：「科學館一樓有餐廳，不過人比較多，也可以到旁邊的公園野餐。」\n會員：「好的，謝謝你。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

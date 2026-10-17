@@ -1,0 +1,102 @@
+{
+  "id": "zh-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "zh-01-007",
+  "title": "键位练习：u、i、o",
+  "summary": "按顺序学习 u、i、o，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "u",
+    "i",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "按顺序学习 u、i、o，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-007",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "找到 u 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "uuuu uuuu uuuu uuuu uuuu uuuu uuuu",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "找到 i 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "iiii iiii iiii iiii iiii iiii iiii",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "找到 o 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "oooo oooo oooo oooo oooo oooo oooo",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "oo iuuu uu iio ii uui ddi oo ddi uui ii iio uu iuuu uu"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "iio ol ouo uu ifiu iio ifiu uu ouo ol ouo ol iio ifiu"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "iui iu uuio uoi ri oou iui oou ri uoi uuio iu uuio iu"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "oooi luui llou iiui ioii oooi ioii iiui llou luui llou"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "oouu joiu ioui uuui uu ii oouu ii uu uuui ioui joiu ioui"
+    },
+    {
+      "type": "standard",
+      "text": "把已学的字母拼成真实的拼音音节来输入。",
+      "content": "shi hao dao you kou dou lou tou hou gou yao jia shou sou lao ji"
+    }
+  ]
+}

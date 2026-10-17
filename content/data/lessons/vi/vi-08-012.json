@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-012",
+  "unit": "u8",
+  "group": "g3",
+  "order": 118,
+  "slug": "vi-08-012",
+  "title": "Đoạn văn nhịp hỗn hợp",
+  "summary": "Xây dựng năng lực \"Mixed Passage\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học tổng kết C08 với đoạn văn dài đan xen nhiều biến thể nhịp điệu, chuyển hàng và từ dài.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Mixed Passage\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học tổng kết C08 với đoạn văn dài đan xen nhiều biến thể nhịp điệu, chuyển hàng và từ dài.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-012",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi cụm từ mở đầu bài tổng hợp nhiều kiểu câu và dấu câu.",
+      "content": "bài tập tổng hợp đỉnh cao kết hợp nhiều kiểu cấu trúc câu đa dạng, vốn từ ngữ phong phú và hệ thống dấu câu nghiêm ngặt để kiểm tra toàn diện năng lực phản xạ của bạn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ về việc làm chủ nhịp điệu bàn phím.",
+      "content": "làm chủ hoàn toàn nhịp điệu bàn phím qua việc linh hoạt chuyển đổi tốc độ gõ giữa các câu đơn giản ngắn gọn và các câu ghép phức hợp nhiều thành phần ngữ pháp đan xen nhau một cách tinh tế và chuẩn mực nhất trên từng dòng chữ. Khi gặp đoạn văn dài, người gõ chậm lại ở chỗ dấu phẩy rồi tăng tốc ở vế kể việc, giữ lực đều và không nhìn bàn phím.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn tổng kết hành trình chinh phục kỹ năng gõ mười ngón.",
+      "content": "Hành trình chinh phục nghệ thuật gõ phím mười ngón là một quá trình rèn luyện bền bỉ đòi hỏi sự kết hợp hài hòa giữa sự chuẩn xác của cơ bắp và sự tĩnh lặng của tâm trí. Khi từng đầu ngón tay lướt đi thoăn thoắt trên các hàng phím mà không cần bất kỳ sự suy nghĩ gượng gạo nào, chữ viết sẽ tuôn trào trên trang giấy tựa như dòng suối trong vắt chảy qua kẽ đá.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "id": "ur-01-018",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "ur-01-018",
+  "title": "شفٹ کی مشق",
+  "summary": "Shift دبائے رکھ کر کلید کی دوسری علامت لکھیں، جیسے Shift + J سے ض۔",
+  "newKeys": [],
+  "keysSoFar": [
+    "ف",
+    "ج",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Shift دبائے رکھ کر کلید کی دوسری علامت لکھیں، جیسے Shift + J سے ض۔",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ur",
+    "lesson": "ur-01-018",
+    "revision": "ur-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Shift دبائے رکھیں اور J دبائیں: ض لکھا جائے گا (Shift + J)۔",
+      "content": "ضضضض ضضضض ضضضض ضضضض ضضضض ضضضض ضضضض ضضضض"
+    },
+    {
+      "type": "standard",
+      "text": "Shift + J سے ض لکھیں اور اسے ف اور ج کے ساتھ ملائیں۔",
+      "content": "ضضف ضفض ضضض ضضضض ضض ففضض ضضضف ضضفض فف فض فضضض"
+    },
+    {
+      "type": "standard",
+      "text": "Shift + J سے ض لکھیں اور اسے ف اور ج کے ساتھ ملائیں۔",
+      "content": "ضف ضفضف ضضضف ضضض ضض ضضضض فضضض ضفض فض فف ففض ضفضض فضض ضضفض ضضف ففضض"
+    },
+    {
+      "type": "standard",
+      "text": "Shift + J سے ض لکھیں اور اسے ف اور ج کے ساتھ ملائیں۔",
+      "content": "ضضجض ضضضج ضضج جضضض ضجضض جضض جج ججض ضج ججضض ضض ضضضض ضضض ضجض"
+    },
+    {
+      "type": "standard",
+      "text": "Shift + J سے ض لکھیں اور اسے ف اور ج کے ساتھ ملائیں۔",
+      "content": "جج ضضضج ضضض ضضضض ضض ضضجض ججض جضض جض ضضج جضضض"
+    }
+  ]
+}

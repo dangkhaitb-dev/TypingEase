@@ -1,0 +1,61 @@
+{
+  "id": "en-01-006",
+  "unit": "u1",
+  "group": "g2",
+  "order": 5,
+  "slug": "en-01-006",
+  "title": "Home row words",
+  "summary": "Locate O, B and A; use changing transitions and controlled English, then record a fresh per-key check.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Locate O, B and A; use changing transitions and controlled English, then record a fresh per-key check.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-006",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Type each group with all the home row keys, then return to the home position before the next one.",
+      "content": "fj dks lagh sdj hkf aslg dkj fh gsa lkdj sfh ajg kld"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "a lass has a flask a lad has a salad dad has a glass"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "dad had a sad flag a lad has a glad lass all shall add"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "flask fall falls half flag flags fad fads flash glad"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "a glad lass has a salad all dads had a flask"
+    }
+  ]
+}

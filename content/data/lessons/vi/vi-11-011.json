@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-011",
+  "unit": "u11",
+  "group": "g3",
+  "order": 156,
+  "slug": "vi-11-011",
+  "title": "Yêu cầu xếp giá sách",
+  "summary": "Xây dựng năng lực \"Shelving Request\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 345 âm tiết, rèn luyện tính kiên trì và kiểm soát lỗi khi văn bản đạt độ dài lớn.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 16,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Shelving Request\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 345 âm tiết, rèn luyện tính kiên trì và kiểm soát lỗi khi văn bản đạt độ dài lớn.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về yêu cầu kỷ luật khi xếp giá tại kho lưu trữ.",
+      "content": "Yêu cầu xếp giá sách tại kho lưu trữ quốc gia đòi hỏi kỷ luật và sự tỉ mỉ của từng cán bộ. Mỗi kệ được gắn mã cố định và chỉ nhận đúng dải ký hiệu đã phân công. Người trực ca phải đeo găng và ghi phiếu khi di chuyển tài liệu ra khỏi giá. Sai lệch vị trí dù nhỏ cũng được báo cáo ngay để tránh mất dấu trong kho lớn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về ca giữa xếp giá và đối chiếu phiếu. Gõ hết đoạn.",
+      "content": "Ca giữa của kho lưu trữ tập trung vào việc đối chiếu phiếu lấy tài liệu với vị trí giá thực tế. Cán bộ kiểm tra mã kệ, tình trạng hộp và ghi chú nếu có dấu hiệu ẩm hoặc gãy gáy. Các bản cần số hóa được tách sang xe đẩy riêng trước khi đưa lên phòng scan. Cuối ca, sổ bàn giao liệt kê số hộp đã xử lý và các mã còn treo chờ ca sau. Nhân viên so mã sách với nhãn trên giá. Những hộp chưa xử lý được niêm phong và ghi rõ vị trí để ca sau tiếp nhận.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về quy trình phân loại tài liệu cổ trên giá chuyên dụng.",
+      "content": "Quy trình phân loại tài liệu lưu trữ cổ bắt đầu bằng kiểm tra tình trạng giấy và dấu mục lục. Các bản mỏng được đặt trong hộp giấy trung tính trước khi xếp lên giá chuyên dụng theo niên đại. Cán bộ ghi chú nhiệt độ và độ ẩm phòng kho hai lần mỗi ngày vào sổ điện tử. Khi có độc giả đặc biệt, phiếu mượn tại chỗ phải được trưởng ca ký trước khi mở hộp.",
+      "inputMode": "telex"
+    }
+  ]
+}

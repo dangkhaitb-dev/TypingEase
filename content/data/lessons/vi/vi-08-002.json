@@ -1,0 +1,43 @@
+{
+  "id": "vi-08-002",
+  "unit": "u8",
+  "group": "g1",
+  "order": 110,
+  "slug": "vi-08-002",
+  "title": "Cụm từ chuyển tiếp",
+  "summary": "Xây dựng năng lực \"Transition Phrases\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Rèn luyện sự trôi chảy khi gõ các cụm từ nối (tuy nhiên, mặc dù vậy, bên cạnh đó) giữa các vế câu.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Transition Phrases\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Rèn luyện sự trôi chảy khi gõ các cụm từ nối (tuy nhiên, mặc dù vậy, bên cạnh đó) giữa các vế câu.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-08-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ nhanh và dứt khoát chuỗi luyện ơn, nơn, đơn, sơn, hơn.",
+      "content": "ơn ơn ơn nơn nơn nơn đơn đơn đơn sơn sơn sơn hơn hơn hơn rơm rơm rơm bờn bờn bờn phơn phơn phơn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ mang vần ơn: cảm ơn, ơn nghĩa, sơn ca, đơn giản.",
+      "content": "cảm ơn ơn nghĩa sơn ca đơn giản hơn nữa rơm rạ mơn mởn đờn ca ơn huệ lớn lao sờn lòng chập chờn bỡn cợt đờn bà ngọn nguồn hơn hởn chờn vờn sờn vai rạ vàng cuối mùa ơn đời bền lâu",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn tả con đường làng uốn lượn giữa cánh đồng lúa chín.",
+      "content": "Con đường làng uốn lượn quanh co giữa những cánh đồng lúa chín vàng óng ánh trải dài vô tận. Hương thơm ngọt ngào của rơm rạ mới gặt thoang thoảng bay trong làn gió chiều mát lành, mang lại cảm giác bình yên, thư thái và gắn bó sâu sắc với quê hương xứ sở thanh bình.",
+      "inputMode": "telex"
+    }
+  ]
+}

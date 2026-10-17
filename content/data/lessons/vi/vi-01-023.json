@@ -1,0 +1,73 @@
+{
+  "id": "vi-01-023",
+  "unit": "u1",
+  "group": "g1",
+  "order": 23,
+  "slug": "vi-01-023",
+  "title": "Luyện phím · ộ ỗ ớ",
+  "summary": "Học cách gõ ộ (o o j), ỗ (o o x), ớ (o w s) bằng Telex và luyện các từ có chữ này.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 10,
+  "inputMode": "telex",
+  "intro": "Học cách gõ ộ (o o j), ỗ (o o x), ớ (o w s) bằng Telex và luyện các từ có chữ này.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-023",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ o o j để ra ộ: o o ra ô, j thêm dấu nặng. Ví dụ: nội = n o o j i.",
+      "content": "nội một bột đội rộn nội độ rộn hội một vội hộp",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ o o x để ra ỗ: o o ra ô, x thêm dấu ngã. Ví dụ: nỗ = n o o x.",
+      "content": "nỗ nỗi đỗ nỗi hỗ nỗ gỗ lỗi hỗ nỗi gỗ",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ o w s để ra ớ: o w ra ơ, s thêm dấu sắc. Ví dụ: bớt = b o w s t.",
+      "content": "bớt ớt mới lớp nhớ mới mớ ớ ướt lớp lớn mớ lớn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ộ, ỗ, ớ. Nhớ: ộ = o o j, ỗ = o o x, ớ = o w s.",
+      "content": "thuộc mớ trộn với giới cuộc nội thước lướt đỗ chú tưới bột trên",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ có ộ, ỗ, ớ. Nhớ: ộ = o o j, ỗ = o o x, ớ = o w s.",
+      "content": "bán bằng lỗi đề hội nộp chiếu cột năng dừng đội bộ mới mướp",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ộ, ỗ, ớ.",
+      "content": "hộp lộ không bộ quan sinh kho lớp ga này đo khiến bớt tháng mướt góc",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt có dấu đã học, chú ý ộ, ỗ, ớ.",
+      "content": "cầu thay sinh vàng mướt vị đang cuộn quanh tớ lớp đèn",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ có ộ, ỗ, ớ mà không nhìn bàn phím.",
+      "content": "cộng bỏ thớt nước lớn chuỗi rồi đỏ dừng hành nối từ mát",
+      "inputMode": "telex"
+    }
+  ]
+}

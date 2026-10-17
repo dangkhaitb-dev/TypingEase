@@ -1,0 +1,68 @@
+{
+  "id": "vi-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 34,
+  "slug": "vi-02-002",
+  "title": "Luyện phím · 4 5 6",
+  "summary": "Làm quen vị trí phím 4, 5 (ngón trỏ trái) và phím 6 (ngón trỏ phải); luyện phối hợp các phím số từ 1 đến 6.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "telex",
+  "intro": "Làm quen vị trí phím 4, 5 (ngón trỏ trái) và phím 6 (ngón trỏ phải); luyện phối hợp các phím số từ 1 đến 6.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-02-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím 4: ngón trỏ trái, hàng số. Gõ 4 xen với các phím đã học.",
+      "content": "41 444 41 344 41 344 4j f4 4j 4"
+    },
+    {
+      "type": "standard",
+      "text": "Phím 5: ngón trỏ trái, hàng số. Gõ 5 xen với các phím đã học.",
+      "content": "f5 155 5 5j 555 5 f5 555 5j 55 555 f5"
+    },
+    {
+      "type": "standard",
+      "text": "Phím 6: ngón trỏ phải, hàng số. Gõ 6 xen với các phím đã học.",
+      "content": "366 66 6 66 666 6j 6 f6 6 6j 66"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các nhóm số có 4 5 6. Giữ ngón tay trên hàng cơ sở sau mỗi lần với lên hàng số.",
+      "content": "4132 442 5 6541 51 55 6 4 334 4 1356 411 516 423 6"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các nhóm số có 4 5 6. Giữ ngón tay trên hàng cơ sở sau mỗi lần với lên hàng số.",
+      "content": "4611 5 4 432 4 4 4 244 66 2115 3435 612 345 5 6 61 551 51 44 6 523"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ số kèm từ, ví dụ: 12 quả cam.",
+      "content": "44 quả trứng 16 bát cơm 5 cái ghế 5 ly nước 5 con cá 62 đôi giày",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ số kèm từ, ví dụ: 12 quả cam.",
+      "content": "5 cây bút 54 ngôi nhà 15 quả trứng 26 cuốn sách 3 bát cơm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ số kèm từ mà không nhìn bàn phím.",
+      "content": "36 cái ghế 21 ngôi nhà 5 tờ giấy 42 ngôi nhà 62 ly nước 36 con cá",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "id": "fr-02-002",
+  "unit": "u2",
+  "group": "g1",
+  "order": 24,
+  "slug": "fr-02-002",
+  "title": "Chiffres : 4, 5, 6",
+  "summary": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+  "newKeys": [
+    "4",
+    "5",
+    "6"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-02-002",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "4",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "f44f 44f4 ff44 4f4 ff4 4444 444f 44 444 44f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "5",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "5555 ff55 ff5 5ff 55ff 55 55f5 5f55 f555 555",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "6",
+      "text": "Sur cet AZERTY, maintenez Maj pour taper chaque chiffre de la rangée supérieure, puis relâchez Maj pour les lettres.",
+      "content": "66f 6666 666 6f6 6f66 f666 66",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "44z4 556 656 556f 444 44 666f 45 4f65 445z 44f6 544 666 ffz6"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "44 jj5 j555 5jj4 66 465j jj4 556j jjj jj 664 44j 6666 jj6"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le train part à 15 heures et le bus arrive à 16 heures"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "la salle 24 contient 6 tables et 45 chaises pour la fête"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "55f 444 654 446 44 ff4 f44 66ff 554f 55 56f"
+    }
+  ]
+}

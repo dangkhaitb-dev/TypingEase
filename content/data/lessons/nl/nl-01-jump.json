@@ -1,0 +1,95 @@
+{
+  "id": "nl-01-jump",
+  "unit": "u1",
+  "group": "g2",
+  "order": 17,
+  "slug": "nl-01-jump",
+  "title": "Spring vooruit",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-jump",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "ja dag af had gaf hak dak kas gas jas as ha"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "het weer was te heet daar was het glas water"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "zij is ook op zoek hij zoekt het zout de poes zoekt ook"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "ik wil twee à drie chèques en wat crème kopen"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "één keer zó mooi nóg één keer vóór het eten"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "twee ideeën over de zeeën zijn naïef maar niet slecht"
+    },
+    {
+      "type": "standard",
+      "text": "Typ de zinnen zorgvuldig met de toetsen die je al hebt geleerd.",
+      "content": "één coördinator is geïnteresseerd in de crème en de chèque"
+    }
+  ]
+}

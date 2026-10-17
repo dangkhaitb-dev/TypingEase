@@ -1,0 +1,65 @@
+{
+  "id": "vi-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "vi-01-006",
+  "title": "Luyện phím · y u i",
+  "summary": "Học phím O (ngón áp út phải hàng trên), B (ngón trỏ trái vươn dưới) và A (ngón út trái hàng cơ sở).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Học phím O (ngón áp út phải hàng trên), B (ngón trỏ trái vươn dưới) và A (ngón út trái hàng cơ sở).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-006",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím y: ngón trỏ phải, hàng trên.",
+      "content": "gyq gy lyk yl jyk yq lyg ryg ty lyy kyt"
+    },
+    {
+      "type": "standard",
+      "text": "Phím u: ngón trỏ phải, hàng trên.",
+      "content": "qu tuu duk duu ful suu quh tug qu tuh fug"
+    },
+    {
+      "type": "standard",
+      "text": "Phím i: ngón giữa phải, hàng trên.",
+      "content": "hiq lil fi ri fil git rik kil liq lik fik lik"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp y u i với các phím đã học.",
+      "content": "rqy agtu ril hku qy rfia ffqy si yd jrdy jy tug lfig jyd"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp y u i với các phím đã học.",
+      "content": "uk sky ghi tsdu si ie ueu yhy ig uh iqa il ue hi di hy"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "khay qua kia khu thay li thua tai ru lay sau ra su khe"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ tiếng Việt không dấu chỉ dùng các phím đã học.",
+      "content": "quy di tra thi ruy rau tuy da ruy se tay ray duy suy"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại y u i trong các cụm mới, giữ nhịp đều.",
+      "content": "yk yd uelu dai jy dki uuy geud jilk ful lahu rqu gi jy die ki"
+    }
+  ]
+}

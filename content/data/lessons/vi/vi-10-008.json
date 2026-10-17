@@ -1,0 +1,49 @@
+{
+  "id": "vi-10-008",
+  "unit": "u10",
+  "group": "g2",
+  "order": 141,
+  "slug": "vi-10-008",
+  "title": "Phương trình và toán tử",
+  "summary": "Xây dựng năng lực \"Equations and Operators\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 4 màn hình luyện tính chuẩn xác cao độ trên các phương trình toán học và toán tử logic.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 22,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Equations and Operators\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 4 màn hình luyện tính chuẩn xác cao độ trên các phương trình toán học và toán tử logic.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên phương trình bậc nhất và biểu thức logic có toán tử.",
+      "content": "phương trình bậc nhất a nhân x cộng b bằng 0 với điều kiện a khác 0; nghiệm số duy nhất x bằng -b / a; biểu thức logic A và B bằng C. Chẳng hạn, với a bằng 2 và b bằng 6, ta được 2x cộng 6 bằng 0. Trừ 6 ở hai vế rồi chia cho 2, ta có x bằng âm 3. Thay kết quả vào phương trình để kiểm tra xem hai vế có bằng nhau không.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Khởi động bài học với tính giá trị biểu thức toán học.",
+      "content": "tính giá trị biểu thức toán học: y bằng (2x cộng 5) nhân (3x - 1) / (x bình phương cộng 4); với x bằng 10 thì kết quả y bằng 25 nhân 29 / 104 xấp xỉ bằng 6 phẩy 97; điều kiện xác định mẫu số luôn dương với mọi giá trị của biến số x. Thử x bằng 0 thì y bằng âm 1 phẩy 25; thay cùng giá trị vào tử số và mẫu số.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hoàn thiện kỹ năng với đoạn tổng kết bốn màn về phương trình và toán tử logic.",
+      "content": "Ở màn cuối, người học gõ biểu thức có số, chữ hoa, toán tử và dấu ngoặc như bản gốc. Hãy đọc từng phần, giữ đúng thứ tự phép tính, rồi rà lại từng ký hiệu trước khi xác nhận kết quả. Một dấu ngoặc đặt sai có thể làm đổi cách tính và ý nghĩa của cả biểu thức. Ghi rõ từng bước giúp người khác kiểm tra kết quả.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về hệ thống toán tử toán học và logic thường dùng.",
+      "content": "Hệ thống các toán tử toán học và logic như cộng, trừ, nhân, chia, lớn hơn, nhỏ hơn hoặc bằng là các ký hiệu thường xuyên xuất hiện trong các tài liệu kỹ thuật, báo cáo phân tích tài chính và thuật toán máy tính. Việc gõ chính xác các ký hiệu này kết hợp với dấu ngoặc đơn đòi hỏi sự phối hợp khéo léo của ngón út hai bàn tay. Khi chép một biểu thức, hãy giữ nguyên thứ tự và dấu ngoặc, sau đó đối chiếu từng toán tử với ý nghĩa của nó trước khi tính. Khi ghi lời giải, hãy nêu dữ liệu đầu vào, thứ tự phép tính và điều kiện để người đọc kiểm tra từng bước. Cách làm ấy giúp phát hiện lỗi sớm.",
+      "inputMode": "telex"
+    }
+  ]
+}

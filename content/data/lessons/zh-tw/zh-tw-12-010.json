@@ -1,0 +1,46 @@
+{
+  "id": "zh-tw-12-010",
+  "unit": "u12",
+  "group": "g1",
+  "order": 126,
+  "slug": "zh-tw-12-010",
+  "title": "綜合生活資訊",
+  "summary": "在長段落中維持選字、標點與節奏的穩定性。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ime",
+  "intro": "在長段落中維持選字、標點與節奏的穩定性。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-12-010",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "社區公告：\n本大樓將在十二月二日星期六上午九點到下午五點進行水塔清洗，清洗期間全棟停水。請住戶提前儲水，並關好家中的水龍頭，以免恢復供水時漏水。造成不便，敬請見諒。\n管理委員會",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "本週生活提醒\n星期一：資源回收日，請把紙類和塑膠分開\n星期三：社區圖書室開放到晚上九點\n星期四：資源回收車晚上七點到社區門口\n星期五：管理費繳費截止\n星期六：水塔清洗，全天停水\n星期日：社區公園整理日，上午八點集合\n管理委員會敬上，祝大家生活愉快",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "依照格式輸入，每行結束時按 Enter 換行。",
+      "content": "住戶：「請問停水的時候，電梯還能用嗎？」\n管理員：「電梯可以正常使用，只有自來水會停。」\n住戶：「那管理費可以用手機轉帳嗎？」\n管理員：「可以，帳號貼在一樓的公告欄上。轉帳以後，請把收據拿到管理室登記。」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

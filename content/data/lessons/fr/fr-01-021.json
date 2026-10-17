@@ -1,0 +1,94 @@
+{
+  "id": "fr-01-021",
+  "unit": "u1",
+  "group": "g3",
+  "order": 20,
+  "slug": "fr-01-021",
+  "title": "ü et ÿ : composer le tréma",
+  "summary": "Tapez la touche morte ¨ avec Maj, relâchez Maj, puis tapez u ou y selon la cible.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ascii",
+  "intro": "Tapez la touche morte ¨ avec Maj, relâchez Maj, puis tapez u ou y selon la cible.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-021",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tapez la touche morte ¨ avec Maj, relâchez Maj, puis tapez u ou y selon la lettre demandée.",
+      "content": "üüü füü üf ffü üü üüfü fffü üüüü"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez la touche morte ¨ avec Maj, relâchez Maj, puis tapez u ou y selon la lettre demandée.",
+      "content": "ffÿÿ fff ÿÿfÿ ÿfÿÿ ÿf ffÿ ÿÿff ÿÿÿf ÿÿÿ ÿÿ ÿÿÿÿ"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "füf ÿfÿ üüf ff fÿüÿ üüü üÿ ffÿf fÿÿ ÿÿf üfÿf ÿÿÿÿ ffüf üüÿ fff ÿüü"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "üüÿ ÿÿüj ÿjj ÿÿ jü ÿÿÿü ÿÿüü üü jj ÿj üüjj ÿÿÿ jjjÿ ÿÿj üüj"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le canoë longe le rivage et le vent agite les branches"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "jjüÿ ÿüf ÿfjj üf üü ÿÿjj ÿÿ üüüj jÿüÿ ÿÿüü ÿÿj üüü ÿüÿ jüÿü üüÿ ÿÿÿ"
+    },
+    {
+      "type": "standard",
+      "text": "Tape chaque mot avec soin, uniquement avec les touches que tu connais déjà.",
+      "content": "quel capharnaüm dans la boutique de la rue"
+    }
+  ]
+}

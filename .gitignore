@@ -1,6 +1,4 @@
-# Build / generated / test output
 node_modules/
-dist/
-build/
 .generated/
-test-results*/
+dist/
+.DS_Store

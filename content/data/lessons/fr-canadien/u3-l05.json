@@ -1,0 +1,122 @@
+{
+  "id": "u3-l05",
+  "unit": "u3",
+  "group": "speed",
+  "order": 26,
+  "slug": "prose-2",
+  "title": "Textes et rythme 2",
+  "summary": "Des paragraphes entiers, pour tenir le rythme au-delà d’une ligne.",
+  "newKeys": [],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "e",
+    "i",
+    "g",
+    "h",
+    "r",
+    "u",
+    "t",
+    "y",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "z",
+    ".",
+    ",",
+    "shift",
+    "enter",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "é",
+    "-",
+    "=",
+    "<"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Tu as maintenant le clavier entier. Ce qui reste n'est plus d'apprendre des touches mais de tenir le rythme : lire devant, ne pas s'arrêter pour regarder, et ne pas accélérer en fin de ligne.",
+  "congrats": "Des paragraphes entiers à rythme tenu. Ce n'est plus apprendre à taper ; c'est taper.",
+  "screens": [
+    {
+      "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Le temps passe vite quand le travail avance bien.\nNous parlons de ce projet depuis longtemps.\nIl lit une lettre devant la porte."
+    },
+    {
+      "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Le livre que je cherche est sur la table.\nLa porte du jardin reste ouverte toute la journée.\nLa musique venait de la salle du fond."
+    },
+    {
+      "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Tous les jours je passe devant cette boutique.\nNous partons demain matin pour la campagne.\nNous avons besoin de deux personnes de plus."
+    },
+    {
+      "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "La petite fille joue dans le jardin.\nElle a pris le premier train du matin.\nLe livre que je cherche est sur la table."
+    },
+    {
+      "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "La petite fille joue dans le jardin.\nTous les jours je passe devant cette boutique.\nNous parlons de ce projet depuis longtemps."
+    },
+    {
+      "text": "Continue à lire devant ce que tu écris. Si tu t'arrêtes pour regarder, tu perds plus de temps qu'en corrigeant.",
+      "dictation": "sentence",
+      "type": "standard",
+      "content": "Nous parlons de ce projet depuis longtemps.\nNous partons demain matin pour la campagne.\nNous avons besoin de deux personnes de plus."
+    },
+    {
+      "seconds": 30,
+      "text": "Une dernière longue série pour finir.",
+      "type": "burst",
+      "tokens": [
+        "histoires",
+        "villes",
+        "référence",
+        "geste",
+        "précise",
+        "grise",
+        "kiwi",
+        "lutte",
+        "bateau",
+        "devenir",
+        "tout",
+        "sujets",
+        "novembre",
+        "jamais"
+      ]
+    }
+  ]
+}

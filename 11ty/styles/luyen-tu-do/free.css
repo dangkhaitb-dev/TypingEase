@@ -1,0 +1,78 @@
+/* luyen-tu-do/free.css — trang luyện tự do (/luyen-tu-do/, /practice/).
+   Dùng lại class .free-practice / .free-stats / .keyboard-lab của base.css; ở đây chỉ chỉnh cho trang.
+
+   Kiểu Apple: tiêu đề căn giữa; khối luyện là một thẻ trắng bóng mềm, ô nhập nền xám như iOS; chỉ số là
+   số lớn nét mảnh + chú thích xám; đoạn mẫu mono cỡ lớn, thoáng, con trỏ xanh mảnh — cùng ngôn ngữ với
+   trang kiểm tra tốc độ. */
+
+.free-main{max-width:var(--w-page);margin:0 auto;padding:0 var(--pad-x)}
+
+.free-head{max-width:760px;margin:0 auto;padding:56px 0 44px;text-align:center}
+.free-head .eyebrow{margin-bottom:10px}
+.free-head h1{margin:0 0 16px;font-size:clamp(36px,5vw,56px)}
+.free-lead{max-width:640px;margin:0 auto;color:var(--ink-600);font-size:19px;font-weight:400;line-height:1.5;letter-spacing:.002em}
+
+.free-page .free-practice{display:block;max-width:860px;margin:0 auto 28px;padding:36px 44px 36px;border:0;border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-card)}
+.free-page .free-intro{margin:0 0 14px}
+.free-page .free-intro strong{margin-bottom:2px;color:var(--ink-900);font-size:21px;font-weight:600;letter-spacing:var(--track-title)}
+.free-page .free-intro span{color:var(--ink-500);font-size:var(--fs-sm)}
+/* Hai ô nhập: nền xám không viền, focus chuyển trắng với vòng xanh nhạt. */
+.free-page .free-practice textarea{display:block;margin-top:0;border:1px solid transparent;border-radius:var(--r);background:var(--surface-alt);transition:background-color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.free-page .free-practice textarea::placeholder{color:var(--ink-500)}
+.free-page .free-practice textarea:focus{border-color:var(--primary-500);background:var(--surface);box-shadow:0 0 0 4px var(--primary-100)}
+.free-page .free-practice #custom-text{min-height:84px;padding:14px 16px;font:400 15px/1.6 var(--font-body)}
+.free-page .free-actions{gap:10px;margin:14px 0 32px}
+.free-page .free-actions button{min-height:38px;padding:8px 18px;border:0;border-radius:var(--r-pill);font-size:15px;font-weight:500;transition:transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.free-page .use-text{background:var(--primary-600);color:var(--white)}
+.free-page .use-text:hover{background:var(--primary-700)}
+.free-page .random-text{background:rgba(0,0,0,.05);color:var(--ink-900)}
+.free-page .random-text:hover{background:rgba(0,0,0,.09)}
+.free-page .free-actions button:active{transform:var(--press);box-shadow:none}
+
+/* Chỉ số kiểu Apple Fitness: chú thích xám nhỏ, số to nét mảnh; không khung, không vạch kẻ ngang. */
+.free-page .free-stats{gap:40px;padding:0 2px;margin-bottom:20px;border:0}
+.free-page .free-stats span{color:var(--ink-500);font-size:13px;font-weight:500}
+.free-page .free-stats b{margin-top:2px;color:var(--ink-900);font:300 34px/1.05 var(--font-body);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.free-page .free-stats span:first-child b{color:var(--primary-600)}
+
+/* Đoạn mẫu: chưa gõ xám (ink-400), đã gõ gần đen — free-page.js chỉ đánh dấu ký tự sai và ký tự đang gõ,
+   nên "chưa gõ" là mọi ký tự đứng SAU .current. Con trỏ CSS chỉ là phương án dự phòng: khi effects.js
+   gắn con trỏ trượt (.has-smooth-caret) thì không vẽ gì lên .current. */
+.free-page .free-sample{position:relative;min-height:96px;padding:4px 2px 24px;color:var(--ink-900);font:400 24px/1.7 var(--font-mono);letter-spacing:-.01em}
+.free-page .free-sample .current~span{color:var(--ink-400)}
+.free-page .free-sample .current{position:relative;background:none;color:var(--ink-900);border-radius:0}
+.free-page .free-sample:not(.has-smooth-caret) .current::before{content:"";position:absolute;inset-block:.18em;inset-inline-start:-1px;width:2px;border-radius:1px;background:var(--primary-600);animation:free-caret 1.1s var(--ease) infinite}
+.free-page .free-sample .wrong{border-radius:3px;background:var(--error-100);color:var(--error);text-decoration:none}
+@keyframes free-caret{0%,50%{opacity:1}70%,100%{opacity:0}}
+@media (prefers-reduced-motion:reduce){.free-page .free-sample .current::before{animation:none}}
+.free-page .free-practice .input-head{align-items:center;margin-bottom:8px}
+.free-page .free-practice .typing-label{margin:0;color:var(--ink-500);font-size:13px;font-weight:500}
+.free-page .free-practice .sound-toggle{height:30px;padding:0 12px;border:0;border-radius:var(--r-pill);background:rgba(0,0,0,.05);color:var(--ink-600);font-size:12px;font-weight:500;transition:background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.free-page .free-practice .sound-toggle:hover{background:rgba(0,0,0,.09)}
+.free-page .free-practice .sound-toggle[aria-pressed=true]{background:var(--primary-50);color:var(--primary-700)}
+.free-page .free-practice #free-input{min-height:96px;padding:14px 16px;font:400 16px/1.6 var(--font-mono)}
+.free-page .free-practice #free-feedback{display:block;margin-top:12px;color:var(--ink-500);font-size:13px;font-weight:400}
+
+.free-page .keyboard-lab{max-width:860px;margin:0 auto 24px}
+.free-board{min-width:0}
+/* Bàn phím tự lo kích thước, nền và khoảng trống cho bàn tay trong keyboard/keyboard.css. */
+.free-board .keyboard--full{max-width:100%;margin-inline:auto}
+/* Dưới 900px trang này tắt bàn tay (free-page.js), nên bỏ luôn chỗ trống dành cho chúng. */
+@media(max-width:900px){.free-board .keyboard--hands{margin-bottom:0}}
+
+.free-main .explore{max-width:none;margin:0;padding:64px 0 var(--gap-section)}
+
+@media(max-width:900px){
+  .free-main{padding:0 var(--pad-x)}
+  .free-head{padding:32px 0 28px}
+  .free-lead{font-size:17px}
+  .free-page .free-practice{padding:24px 20px 24px;border-radius:var(--r-lg)}
+  .free-page .free-sample{font-size:19px}
+  .free-main .explore{margin:0;padding-top:48px}
+}
+@media(max-width:620px){
+  .free-page .free-stats{gap:24px}
+  .free-page .free-stats b{font-size:26px}
+  .free-page .free-actions{flex-direction:row;flex-wrap:wrap}
+  .free-page .free-actions button{flex:1 1 auto}
+}

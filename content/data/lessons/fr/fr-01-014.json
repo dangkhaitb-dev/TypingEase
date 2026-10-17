@@ -1,0 +1,100 @@
+{
+  "id": "fr-01-014",
+  "unit": "u1",
+  "group": "g3",
+  "order": 13,
+  "slug": "fr-01-014",
+  "title": "à et ù : touches directes",
+  "summary": "Apprenez à, ù et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "à",
+    "ù"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç",
+    "à",
+    "ù"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ascii",
+  "intro": "Apprenez à, ù et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-014",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "à",
+      "text": "Repérez à sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "fààà ffàà ffàf ààf àf ff ààfà ààà àà àààf àààà ffà",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ù",
+      "text": "Repérez ù sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "ùùf ùùùù ùùff fff ùùfù ùùù ffùù fù ùù",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ùù fàà ccf ààà ùff ùf ùùff fùà ààùf ùfà ùùf fààù"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "àààà ùùj jj ùjù àù àùùù jjl jjà ùùà jùà ùùù là ààù jùj ùà ùùùj ùjàù àùù"
+    },
+    {
+      "type": "standard",
+      "text": "Contrôle : retrouvez les touches déjà vues dans un ordre différent, sans nouvelle touche.",
+      "content": "où est la rue que tu prends à vélo le soir"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ùùù jùàù jjùù àà ùùùà ààjà àààù ùùjj ààj àvjj àùùà jjj jùà ùàjù jjù ùù"
+    },
+    {
+      "type": "standard",
+      "text": "Tape chaque mot avec soin, uniquement avec les touches que tu connais déjà.",
+      "content": "tu vas à la plage où il y a du soleil et du vent"
+    }
+  ]
+}

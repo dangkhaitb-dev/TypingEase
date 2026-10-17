@@ -1,0 +1,43 @@
+{
+  "id": "ko-06-006",
+  "unit": "u6",
+  "group": "g1",
+  "order": 83,
+  "slug": "ko-06-006",
+  "title": "함께 정한 이동 계획",
+  "summary": "여러 사람의 이동 순서와 합류 장소를 분명히 전달합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "여러 사람의 이동 순서와 합류 장소를 분명히 전달합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-06-006",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "이번 주말 바다 여행은 네 명이 차 한 대를 같이 타고 가기로 했습니다. 운전은 면허가 있는 두 사람이 번갈아 하기로 정했습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "토요일 아침 여덟 시에 학교 정문 앞에서 모여 출발합니다. 가는 길에 휴게소에 한 번 들러서 간단히 아침을 먹고 쉬어 가기로 했습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "돌아오는 날은 길이 막힐 수 있으니 오후 네 시 전에 출발하기로 했습니다. 기름값과 고속도로 통행료는 네 명이 똑같이 나누어 냅니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

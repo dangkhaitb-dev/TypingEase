@@ -1,0 +1,83 @@
+{
+  "id": "zh-01-018",
+  "unit": "u1",
+  "group": "g1",
+  "order": 8,
+  "slug": "zh-01-018",
+  "title": "拼音候选与提交",
+  "summary": "练习输入拼音、浏览候选并提交简体中文，只使用已学的字母键",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ime",
+  "intro": "练习输入拼音、浏览候选并提交简体中文，只使用已学的字母键",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-018",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "输入拼音 dajiahao，按空格选出“大家好”，提交到文本中。",
+      "content": "大家好大家好大家好",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "他是我的好老师她也是我的好老师",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "大家好老师好我有书他有书老师也有书",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "我有书她有书他也有书老师也有书",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "我爱老师老师爱我大家都爱老师",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "老师说他是好的她是好的我也是好的",
+      "inputMode": "ime"
+    }
+  ]
+}

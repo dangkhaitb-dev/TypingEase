@@ -1,0 +1,56 @@
+{
+  "id": "br-01-007",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "br-01-007",
+  "title": "Mais palavras com a fileira do meio",
+  "summary": "Digite mais palavras reais com as teclas da fileira do meio e o ç.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Digite mais palavras reais com as teclas da fileira do meio e o ç.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-007",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Digite cada grupo com todas as teclas da fileira do meio e o ç, voltando à posição inicial antes do próximo.",
+      "content": "jç fds hlag kçs dfa lhgk sj açkf glh jsd kçfl hg dsj"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "faça a sala a fada fala da sala falsa das asas"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "a sala falsa a falha da saga as alças da fada"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "ala alas asa asas alça alças salsa saga falsa fada dada"
+    }
+  ]
+}

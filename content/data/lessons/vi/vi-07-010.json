@@ -1,0 +1,43 @@
+{
+  "id": "vi-07-010",
+  "unit": "u7",
+  "group": "g3",
+  "order": 105,
+  "slug": "vi-07-010",
+  "title": "Đoạn văn thông báo",
+  "summary": "Xây dựng năng lực \"Notice Passage\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Văn bản thông báo chính thức có bố cục tiêu đề, nơi nhận, nội dung thông báo và hiệu lực thi hành.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Notice Passage\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Văn bản thông báo chính thức có bố cục tiêu đề, nơi nhận, nội dung thông báo và hiệu lực thi hành.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-07-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp bài học với thông báo nội bộ về việc nghỉ Tết Dương lịch.",
+      "content": "Thông báo nội bộ về việc nghỉ Tết Dương lịch: ban giám đốc công ty trân trọng thông báo toàn thể cán bộ, nhân viên được nghỉ làm việc một ngày vào thứ Tư. Mọi hoạt động giao dịch sẽ trở lại bình thường vào ngày làm việc kế tiếp.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên thông báo về việc tổ chức khám sức khỏe định kỳ năm nay.",
+      "content": "Thông báo về việc tổ chức khám sức khỏe định kỳ năm nay: ban chấp hành công đoàn phối hợp cùng phòng y tế tổ chức đợt khám tổng quát cho toàn thể người lao động tại bệnh viện đa khoa quốc tế. Thời gian thực hiện từ ngày mười đến ngày mười lăm tháng sau. Đề nghị các trưởng bộ phận sắp xếp lịch làm việc luân phiên để bảo đảm mọi nhân viên đều được tham gia đầy đủ. Hãy đăng ký.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên thông báo chính thức về việc áp dụng quy chế văn hóa công sở mới.",
+      "content": "Thông báo chính thức về việc áp dụng quy chế văn hóa công sở mới: nhằm xây dựng môi trường làm việc văn minh, thân thiện và giàu tính chuyên nghiệp, công ty ban hành bộ quy tắc ứng xử nơi làm việc kể từ ngày đầu tháng tới. Quy chế bao gồm các quy định cụ thể về trang phục lịch sự, tác phong giao tiếp chuẩn mực với đồng nghiệp và đối tác, cũng như ý thức giữ gìn vệ sinh chung tại các không gian sinh hoạt tập thể.",
+      "inputMode": "telex"
+    }
+  ]
+}

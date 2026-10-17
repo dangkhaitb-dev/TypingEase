@@ -1,0 +1,109 @@
+{
+  "id": "br-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "br-01-012",
+  "title": "Z, X, C",
+  "summary": "Aprenda as teclas z, x, c e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "z",
+    "x",
+    "c"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas z, x, c e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-01-012",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "Localize z e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "ff zzz zzf zfz zf zzzf ffz fzzf zfzf zzfz fzz zz",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Localize x e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "xxxj xxxx xjx xxj jxjx xxx xj xx",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Localize c e volte à posição inicial. Digite cada alvo com atenção.",
+      "content": "fccf ccc ff cc fccc fcfc cfc ccf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "ccxx czxc cc ccz xcc cccc ccc wxzz zxcx xz czzc czcc"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "cz zxcz cccx lz xxc xcz xc xz zczz xx czz zx xxxx cc cxxx"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "tczz czyz pxz xz yyxx yz zzzy xtzp pzc yxpc xcx cxtx ppyt"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "tctx cxcz pc cp xx tcc cc pz yzc zt zct zxtc cxx xyz yxzx xc"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "tzx cczz yxc ycxp ctz zcz zc ccyz pzpc xxxc tzct xzt"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "o pai fez a caixa e pegou o peixe cedo ali"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada palavra com atenção, usando só as teclas que você já conhece.",
+      "content": "cada dia o pai faz o texto da aula pouco a pouco"
+    }
+  ]
+}

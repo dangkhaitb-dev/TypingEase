@@ -1,0 +1,79 @@
+{
+  "id": "sw-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "sw-01-001",
+  "title": "Vibonye vya mwongozo f, j na nafasi",
+  "summary": "Kuandika a s d na nafasi na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Kuandika a s d na nafasi na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-001",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "ffff ffff ffff ffff ffff ffff f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Bonyeza nafasi kwa kidole gumba ili kutenganisha makundi ya herufi.",
+      "content": "f j ff jj f j ff jj f j ff jj f j f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "fff jjfj jf ffj jfjj ff fjj fjjf ff jjf jjff fj jfj jfff jj fjj fff"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jfj jfff jj fjj fffj jf jjf ffjj fj jff fjjf jj fff jjfj jf ffj jfjj"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "fff jjfj jf ffj jfjj ff fjj fjjf ff jjf jjff fj jfj jfff jj fjj fffj j"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jfj jfff jj fjj fffj jf jjf ffjj fj jff fjjf jj fff jjfj jf ffj jfjj ff"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    }
+  ]
+}

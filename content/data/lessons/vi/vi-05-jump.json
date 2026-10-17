@@ -1,0 +1,73 @@
+{
+  "id": "vi-05-jump",
+  "unit": "u5",
+  "group": "g4",
+  "order": 82,
+  "slug": "vi-05-jump",
+  "title": "Học vượt",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 25,
+  "inputMode": "telex",
+  "intro": "Đoạn văn kết nối hoàn chỉnh về sự chuẩn bị của gian hàng số mười hai.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-jump",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Đoạn văn kết nối hoàn chỉnh về sự chuẩn bị của gian hàng số mười hai.",
+      "content": "Minh bước nhanh qua cây cầu gỗ nhỏ để vào khu chợ ven sông. Sạp hàng số mười hai của anh mở cửa đón đợt hàng mới giao về từ đêm qua. Tiếng sóng vỗ nhè nhẹ vào mạn thuyền tạo nên âm thanh thân thuộc của buổi sớm mai.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Luyện gõ các câu miêu tả công việc thu dọn và kiểm tra cuối ngày.",
+      "content": "Những chiếc đèn dầu được thắp lên dọc theo lối đi nhỏ của khu chợ. Hai người bạn quét dọn mặt sàn, rửa sạch khay đựng quả và cất bàn cân vào góc trong. Cuối buổi, cả nhóm thu dọn dụng cụ và bàn giao phần việc còn lại.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Chuyến xe chở hàng ngày thứ Sáu cập bến mang theo nhiều kiện nông sản mới.",
+      "content": "Chuyến xe tải chở hàng sáng thứ Sáu vừa đỗ trước cổng chợ. Minh nhanh chóng đối chiếu danh sách các kiện hàng cần bốc dỡ vào sạp. Bác tài nhận lại phiếu ký, còn Minh chuyển các thùng dễ vỡ vào khu vực khô ráo.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Liên kết các mốc thời gian trong ngày với sự biến chuyển của các hoạt động bán hàng.",
+      "content": "Buổi sáng là thời điểm đắt khách nhất với các đơn đặt hàng rau xanh và trái cây tươi cho bữa cơm gia đình. Nhân viên kiểm tra từng giỏ hàng, ghi đủ số lượng rồi chuyển hàng đến quầy thu ngân.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Khai mạc tuần lễ hội chợ cảng biển với nhiều hoạt động giao thương sôi nổi.",
+      "content": "Tuần lễ hội chợ thương mại bến cảng chính thức khai mạc vào sáng nay. Hàng trăm gian hàng được trang trí rực rỡ sắc màu dọc theo quảng trường trung tâm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Hội chợ nhanh chóng dọn dẹp sạch sẽ và mở cửa đón khách trở lại.",
+      "content": "Mọi người khẩn trương quét dọn nước đọng trên lối đi, sắp xếp lại bàn ghế và bày lại những kệ quả rực rỡ sắc màu tươi tắn. Sau khi chốt sổ, cả nhóm thu gom bảng hiệu và cất dụng cụ vào kho của bến cảng.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt đầu chuỗi chuẩn bị quy mô lớn cho gian hàng đón đợt khách cuối tuần.",
+      "content": "Công tác chuẩn bị cho hai ngày cao điểm cuối tuần được khởi động từ đầu buổi chiều thứ Sáu. Cả đội ngũ cùng tập trung rà soát lại từng khâu trong quy trình phục vụ khách hàng chu đáo.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn khép lại hành trình một ngày của Minh và Tuấn.",
+      "content": "Bước ra khỏi cánh cổng lớn của khu chợ cảng, Minh và Tuấn cùng thong thả đi dạo trên con đường quen thuộc dẫn về xóm nhỏ ven sông. Hai người ghé qua tiệm sách, chọn món quà nhỏ rồi tiếp tục men theo bờ nước.",
+      "inputMode": "telex"
+    }
+  ]
+}

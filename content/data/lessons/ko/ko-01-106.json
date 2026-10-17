@@ -1,0 +1,49 @@
+{
+  "id": "ko-01-106",
+  "unit": "u1",
+  "group": "g1",
+  "order": 6,
+  "slug": "ko-01-106",
+  "title": "자음 ㅎ",
+  "summary": "자음 ㅎ의 위치를 익히고 앞서 배운 자음과 섞어 칩니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "자음 ㅎ의 위치를 익히고 앞서 배운 자음과 섞어 칩니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-106",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㅎㅎㅎㅎ ㅎㅎㅎ ㅎㅎ ㅎㅎㅎㅎ ㅎㅎ ㅎㅎㅎ ㅎㅎ ㅎㅎㅎ ㅎㅎㅎㅎ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅎㅎ ㅎㅁ ㅎㅎㅁ ㅎㅎㅎㅎ ㅁㅎㅎ ㅎㅎㅎ ㅎㅎ ㅎㅎㅎ ㅁㅎㅎ ㅎㅎㅎㅎ ㅎㅎㅁ ㅎㅁ ㅎㅎㅁ ㅎㅁ ㅎㅎ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅎㅇ ㅎㅎㅎㅎ ㅎㅎㅎ ㅇㅇ ㅎㅎ ㅎㅇ ㅎㅎ ㅇㅇ ㅎㅎㅎ ㅎㅎㅎㅎ ㅎㅎㅎ ㅎㅎㅎㅎ ㅎㅇ ㅎㅎ ㅇㅇ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㅎㅎㅎ ㅍㅍㅎㅎ ㅎㅎ ㅎㅍㅎㅎ ㅎㅎㅎㅍ ㅎㅎㅎㅎ ㅎㅎㅎ ㅎㅎㅎㅎ ㅎㅎㅎㅍ ㅎㅍㅎㅎ ㅎㅎ ㅍㅍㅎㅎ",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "vi-11-005",
+  "unit": "u11",
+  "group": "g2",
+  "order": 152,
+  "slug": "vi-11-005",
+  "title": "Đánh giá dịch vụ ăn uống",
+  "summary": "Xây dựng năng lực \"Meal-Service Review\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 175 âm tiết, văn bản đánh giá chất lượng đòi hỏi sự tập trung nhận thức liên tục.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 15,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Meal-Service Review\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tăng lên 175 âm tiết, văn bản đánh giá chất lượng đòi hỏi sự tập trung nhận thức liên tục.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-11-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Khởi động với dòng mở đầu bản đánh giá dịch vụ ăn uống tại căng tin.",
+      "content": "bản đánh giá chất lượng dịch vụ ăn uống tại căng tin khu công nghiệp đạt mức hài lòng chín mươi lăm phần trăm bảng góp ý ghi món canh quá mặn khay cơm nguội chậm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn liên tục về kiểm tra vệ sinh thực phẩm đột xuất.",
+      "content": "Hội đồng thẩm định an toàn vệ sinh thực phẩm tiến hành kiểm tra đột xuất bếp nấu tập thể. Họ đối chiếu nguồn gốc nguyên liệu đầu vào với hóa đơn và tem truy xuất. Quy trình chế biến, nhiệt độ bảo quản và khu vực rửa dụng cụ đều được ghi biên bản. Kết thúc buổi kiểm tra, bếp trưởng nhận danh mục chỉnh sửa cần hoàn thành trong bảy ngày. Báo cáo cuối ca nêu rõ món cần điều chỉnh và thời hạn khắc phục để mọi người cùng theo dõi.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn báo cáo liên tục về chất lượng dịch vụ ăn uống trong tháng.",
+      "content": "Bản báo cáo đánh giá chất lượng dịch vụ ăn uống tháng này ghi nhận tiến bộ rõ trong kiểm soát nguyên liệu. Tỷ lệ mẫu đạt chuẩn vi sinh tăng so với tháng trước, trong khi phản ánh của người ăn giảm về độ mặn và nhiệt độ món. Nhà bếp bổ sung bảng theo dõi giờ xuất món và phân công người kiểm nhiệt trước khi đưa lên xe. Khuyến nghị cuối báo cáo là duy trì kiểm tra đột xuất hai lần mỗi quý và tập huấn ngắn cho ca mới. Bếp trưởng ghi nhận.",
+      "inputMode": "telex"
+    }
+  ]
+}

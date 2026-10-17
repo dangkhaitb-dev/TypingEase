@@ -1,0 +1,94 @@
+{
+  "id": "nl-02-005",
+  "unit": "u2",
+  "group": "g1",
+  "order": 21,
+  "slug": "nl-02-005",
+  "title": "Cijfers 0",
+  "summary": "Leer de nieuwe toetsen 0 en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen 0 en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-02-005",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Toets oefenen: 0.",
+      "content": "0000 00 000 00 00 00 00 00",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "o00 oo00 o0 000 00 0000 000o oo 0o0 00o 00o0 oo0 0o00"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "000m mm m0 mm00 m00 0m 00m0 00 00m 000 0000 mm0"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "0000 l000 00l0 ll00 000l ll0 00 l0 000 ll"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "uu0 0u0 u000 000 0000 00 u0 uu00 u00 00u 0u00 00u0 uu 000u 0u"
+    }
+  ]
+}

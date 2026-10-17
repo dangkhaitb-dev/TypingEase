@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-001",
+  "unit": "u5",
+  "group": "g1",
+  "order": 40,
+  "slug": "zh-tw-05-001",
+  "title": "早晨出門前的準備",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-001",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "鬧鐘一響，我就起床刷牙洗臉。換好衣服以後，我坐下來慢慢吃早餐。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "出門前，我檢查書包裡的課本和水壺，也把鑰匙放進口袋，免得回家時進不了門。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "媽媽提醒我今天會變冷，我多帶了一件外套。穿好鞋子後，我和家人說再見就出門了。",
+      "inputMode": "ime"
+    }
+  ]
+}

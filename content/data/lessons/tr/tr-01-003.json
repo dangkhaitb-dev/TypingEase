@@ -1,0 +1,82 @@
+{
+  "id": "tr-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "tr-01-003",
+  "title": "Tuşlar a, s, d",
+  "summary": "a, s, d tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "a, s, d tuşlarını öğren ve kullanımlarını alıştırmayla pekiştir.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "tr",
+    "lesson": "tr-01-003",
+    "revision": "tr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "Tuş alıştırması: a.",
+      "content": "aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaaa aaa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "Tuş alıştırması: s.",
+      "content": "ssss ssss ssss ssss ssss ssss ssss ssss ssss ssss",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Tuş alıştırması: d.",
+      "content": "dddd dddd dddd dddd dddd dddd dddd dddd dddd dd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ddaa sdad dsss sd ajs da ad sdss saad jasa ss ajsd adj dd aada sdds"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "ddds ssaa ds ssss ssa ddd ddas fss aafs assa asa ss ffs aa aaa adad ada"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "fa sss sssa aaa aa aaaa sddd ssda sds ssa aas aaas"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "aads daa ddda ss aad dd ajss ddd ssa ssdd aas aa"
+    },
+    {
+      "type": "standard",
+      "text": "Çalıştığın tuşları sırayla kullan ve düzenli bir ritim tuttur.",
+      "content": "asfd ssa ssad sads as sd aasa ddsa aad dsad ssdd dddd sdda sa ss sdsd"
+    }
+  ]
+}

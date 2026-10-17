@@ -1,0 +1,106 @@
+{
+  "id": "fr-01-013",
+  "unit": "u1",
+  "group": "g3",
+  "order": 12,
+  "slug": "fr-01-013",
+  "title": "é, è et ç : touches directes",
+  "summary": "Apprenez é, è, ç et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "é",
+    "è",
+    "ç"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "w",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "é",
+    "è",
+    "ç"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Apprenez é, è, ç et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-013",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "é",
+      "text": "Repérez é sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "ééé ééf ééfé éééé éff fffé fféé éfé féé ff éé",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "è",
+      "text": "Repérez è sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "èèèè èfèè fèf fè èèè èè èèf fffè ffè",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "ç",
+      "text": "Repérez ç sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "ççff çfçç ffçç ççç ççf ff çç",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "çè fwéf ééè wwç ççéè èèfè çé ççf éé èèçé çw çf éf çç fff"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "jçè jèèè çç ççéé ééé jjç ççjç jjjj çèè èè ééj jç jj jçj èèç"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "le garçon prépare le café et pose une tasse près du canapé"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "la mère achète du thé et le garçon prépare le café"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ffff çç ççé fnf èèç ffé ff èèèf çççè ççéf ççfè éé éfèé"
+    }
+  ]
+}

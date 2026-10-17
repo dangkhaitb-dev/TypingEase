@@ -1,0 +1,43 @@
+{
+  "id": "ko-06-007",
+  "unit": "u6",
+  "group": "g1",
+  "order": 84,
+  "slug": "ko-06-007",
+  "title": "장소가 바뀌었어요",
+  "summary": "장소 변경의 이유와 새 위치를 혼동 없이 안내합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "hangul",
+  "intro": "장소 변경의 이유와 새 위치를 혼동 없이 안내합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-06-007",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "내일 모임 장소가 바뀌었어요. 처음에 예약한 식당이 내부 공사 때문에 갑자기 문을 닫게 되어서 급하게 다른 곳을 찾았습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "새 장소는 시청역 3번 출구 바로 앞에 있는 건물 이층의 한식집입니다. 모이는 시간은 원래대로 저녁 일곱 시이니 늦지 않게 와 주세요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "건물 입구가 골목 안쪽에 있어서 처음 오시는 분은 찾기 어려울 수 있어요. 헷갈리면 바로 전화해 주세요. 제가 출구 앞까지 마중 나갈게요.",
+      "inputMode": "hangul"
+    }
+  ]
+}

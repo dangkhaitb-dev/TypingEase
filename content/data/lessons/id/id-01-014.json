@@ -1,0 +1,74 @@
+{
+  "id": "id-01-014",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "id-01-014",
+  "title": "Ulasan",
+  "summary": "Gõ q dan x dalam drill posisi untuk huruf jarang.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Gõ q dan x dalam drill posisi untuk huruf jarang.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-014",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Ketik teks bahasa Indonesia ini dengan tombol yang sudah dipelajari.",
+      "content": "ibu dan adik pergi ke pasar untuk membeli ikan dan sayur"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik teks bahasa Indonesia ini dengan tombol yang sudah dipelajari.",
+      "content": "ayah menanam pohon mangga di kebun belakang rumah kami"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik teks bahasa Indonesia ini dengan tombol yang sudah dipelajari.",
+      "content": "pagi hari burung berkicau dan kakek minum teh di teras"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kalimat dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "anak kecil itu belajar membaca buku cerita di sekolah"
+    }
+  ]
+}

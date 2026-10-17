@@ -1,0 +1,43 @@
+{
+  "id": "vi-05-011",
+  "unit": "u5",
+  "group": "g3",
+  "order": 80,
+  "slug": "vi-05-011",
+  "title": "Chuyến đi ba màn",
+  "summary": "Chuỗi sự kiện dã ngoại trải dài qua ba màn hình liên kết, yêu cầu ghi nhớ ngữ cảnh và xử lý vốn từ đa dạng.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Chuỗi sự kiện dã ngoại trải dài qua ba màn hình liên kết, yêu cầu ghi nhớ ngữ cảnh và xử lý vốn từ đa dạng.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-05-011",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Các hoạt động mua sắm, vui chơi và trải nghiệm diễn ra sôi động khắp nẻo đường.",
+      "content": "Các gia đình dắt theo trẻ nhỏ thong thả đi dạo dọc theo bờ kè ngắm nhìn những cánh buồm trắng xa xăm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Dòng người đông đúc đổ về khu vực bến cảng vào sáng thứ Bảy đẹp trời.",
+      "content": "Sáng thứ Bảy trong lành đón chào dòng người tấp nập từ khắp nơi đổ về bến cảng. Những đoàn xe nối đuôi nhau vào bãi đỗ rộng lớn cạnh công viên cây xanh ven bờ biển đón ngày hội lớn.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Đoạn văn phong phú mô tả bức tranh toàn cảnh một ngày hội đông vui và gắn kết cộng đồng.",
+      "content": "Gian hàng số mười hai luôn tấp nập khách vào ra chọn mua các loại hoa quả ngọt ngào và bánh mứt truyền thống. Minh và Tuấn làm việc không ngơi tay nhưng trên môi luôn nở nụ cười rạng rỡ đón tiếp từng vị khách quý.",
+      "inputMode": "telex"
+    }
+  ]
+}

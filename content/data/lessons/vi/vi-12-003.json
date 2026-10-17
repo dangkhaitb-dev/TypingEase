@@ -1,0 +1,43 @@
+{
+  "id": "vi-12-003",
+  "unit": "u12",
+  "group": "g1",
+  "order": 162,
+  "slug": "vi-12-003",
+  "title": "Mở đầu nhấn mạnh dấu câu",
+  "summary": "Xây dựng năng lực \"Punctuation-Forward Openings\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Đoạn mở đầu bắt đầu bằng các dấu ngoặc kép, dấu gạch ngang hoặc số hiệu trích dẫn.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Punctuation-Forward Openings\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Đoạn mở đầu bắt đầu bằng các dấu ngoặc kép, dấu gạch ngang hoặc số hiệu trích dẫn.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với đoạn mở đầu bằng trích dẫn quy định đeo thẻ từ khu vực máy chủ.",
+      "content": "Chú ý: Toàn bộ nhân viên phải đeo thẻ từ khi ra vào khu vực máy chủ trung tâm! Đây là quy định bảo mật bất khả xâm phạm của tòa nhà.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn mở đầu bằng câu khẩu hiệu dành cho các bạn trẻ.",
+      "content": "Hỡi các bạn trẻ: Tương lai nằm trọn trong đôi bàn tay của chính chúng ta! Câu khẩu hiệu đầy nhiệt huyết vang lên giữa hội trường lớn, thắp sáng lên ngọn lửa khát vọng cống hiến và tinh thần đổi mới sáng tạo trong lòng mỗi người tham dự đại hội.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng kỹ năng vào đoạn mở đầu bằng biển báo khu vực thi công nguy hiểm.",
+      "content": "Dừng lại ngay: Đây là khu vực thi công nguy hiểm có điện cao thế! Biển báo cảnh báo màu đỏ rực rỡ được dựng lên ngay lối vào công trường ngầm. Toàn bộ các kỹ sư và công nhân vận hành máy móc đều phải tuân thủ nghiêm ngặt quy trình trang bị mũ bảo hộ, ủng cách điện và dây đai an toàn trước khi bước qua hàng rào kiểm soát nghiêm ngặt.",
+      "inputMode": "telex"
+    }
+  ]
+}

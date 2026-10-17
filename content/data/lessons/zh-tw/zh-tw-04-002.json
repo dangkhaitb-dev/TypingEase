@@ -1,0 +1,49 @@
+{
+  "id": "zh-tw-04-002",
+  "unit": "u4",
+  "group": "g1",
+  "order": 36,
+  "slug": "zh-tw-04-002",
+  "title": "留言與提交流程整合",
+  "summary": "Closed integration; no new target/action/format.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Closed integration; no new target/action/format.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-04-002",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "先確認留言用詞，再切模式輸入時間；回中文模式完成句子。",
+      "content": "請先確認候選字，再完成下一段留言。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先確認留言用詞，再切模式輸入時間；回中文模式完成句子。",
+      "content": "留言：我下午3點到，請在門口等我。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先確認留言用詞，再切模式輸入時間；回中文模式完成句子。",
+      "content": "爸爸說：「晚餐6點開動，別忘了回家。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "先確認留言用詞，再切模式輸入時間；回中文模式完成句子。",
+      "content": "我先買麵包；你帶2瓶水，我們在車站會合。",
+      "inputMode": "ime"
+    }
+  ]
+}

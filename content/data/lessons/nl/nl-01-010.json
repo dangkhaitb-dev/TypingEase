@@ -1,0 +1,113 @@
+{
+  "id": "nl-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 9,
+  "slug": "nl-01-010",
+  "title": "Toetsen b, n, m",
+  "summary": "Leer de nieuwe toetsen b, n, m en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "b",
+    "n",
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen b, n, m en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-010",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "Toets oefenen: b.",
+      "content": "bbbb bbbb bbbb bbbb bbbb bbbb bbbb bbbb bbbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "Toets oefenen: n.",
+      "content": "nnnn nnnn nnnn nnnn nnnn nnnn nnnn nnnn nnn",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Toets oefenen: m.",
+      "content": "mmmm mmmm mmmm mmmm mmmm mmmm mmmm mmmm mm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "bbb enmm nnm mmm bbmn mm mnm bnmm nn ibmm bbmb mmb mb nmmb nnn"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "bbm mnn nn bbb mmm nnbb mb bb rr mmmm mmn bn br mm nb nnb"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "mmmn emb nmm nbb mn nnb nmmb mmnm nnm bbbm imm bbbb nn bbm bb mbnb mmmb"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "nm mmmm bnnm bmm mm nnmb mmn bb nn vvmn mn mmmn nnbm nnn bbm mmm"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "bbb ebn nbn bbnn bmb mnbm nn mm nnbb nnm inm bbnb mn nnnn bb nnnb nnn nb"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "mijn buurman maakt een brood met kaas voor de buren"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "we nemen de bus naar school en komen om vier uur thuis"
+    }
+  ]
+}

@@ -1,0 +1,105 @@
+{
+  "id": "zh-01-016",
+  "unit": "u1",
+  "group": "g1",
+  "order": 17,
+  "slug": "zh-01-016",
+  "title": "键位练习：Enter",
+  "summary": "按顺序学习 Enter，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "enter"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ime",
+  "intro": "按顺序学习 Enter，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-016",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "enter",
+      "text": "用右手小指按 Enter 键换行，每输入一行就按一次。",
+      "content": "fff jjj fjf\njfj ffj jjf\nfjfj jfjf ffjj",
+      "dictation": "letters",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "asdf jkl;\nqwer uiop\nzxcv bnm,\nfdsa ;lkj\nrewq poiu",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "123 456 789\n0-, ./; fjfj\n147 258 369\n987 654 321",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "gh ty\nvb nm\n12 90\n;' /.\nfj dk\nsl a;\nqw er\nui op",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "每输入完一行就按 Enter 换行，再输入下一行。",
+      "content": "你好\n谢谢\n再见\n晚安\n早安\n请进",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

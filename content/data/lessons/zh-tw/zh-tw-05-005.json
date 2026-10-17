@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-005",
+  "unit": "u5",
+  "group": "g1",
+  "order": 44,
+  "slug": "zh-tw-05-005",
+  "title": "窗邊的小盆栽",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-005",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我在窗邊放了一盆小小的薄荷。每天早上，我都會看看它有沒有長出新葉子，再用小杯子慢慢澆水。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "有一天，我發現葉子有點發黃。查了資料才知道，原來是水澆得太多，泥土一直太濕，根部沒辦法好好呼吸。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我把盆栽移到通風的位置，改成土乾了才澆水。過了一個星期，薄荷又長出新芽，房間裡也多了一股清香。",
+      "inputMode": "ime"
+    }
+  ]
+}

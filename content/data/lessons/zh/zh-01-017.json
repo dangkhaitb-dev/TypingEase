@@ -1,0 +1,107 @@
+{
+  "id": "zh-01-017",
+  "unit": "u1",
+  "group": "g1",
+  "order": 18,
+  "slug": "zh-01-017",
+  "title": "键位练习：Shift",
+  "summary": "按顺序学习 Shift，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "shift"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ime",
+  "intro": "按顺序学习 Shift，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-017",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "shift",
+      "text": "按住 Shift 再按字母键，输入大写字母；Shift 加数字键或标点键可以输入 ! ? : 等符号。",
+      "content": "Ff Jj FF JJ fF jJ Ff Jj FJ JF Fj Jf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "Aa Ss Dd Gg Hh Kk Ll A! S! D! Jk! Fl! Gh!"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "Qq Ww Ee Rr Tt Yy Uu Ii Oo Pp Q? W? E? Qq E? W? Q? Pp"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "Zz Xx Cc Vv Bb Nn Mm Z: X: C! V? B! Zz B! V? C! X: Z:"
+    },
+    {
+      "type": "standard",
+      "text": "按住 Shift 再按 `/` 输入“？”，Shift+`1` 输入“！”。输入拼音，按空格选字。",
+      "content": "你吃饭了吗？我吃过了！你呢？我也吃过了！",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "按住 Shift 再按 `/` 输入“？”，Shift+`1` 输入“！”。输入拼音，按空格选字。",
+      "content": "太好了！明天我们一起去吃饭吧？",
+      "inputMode": "ime"
+    }
+  ]
+}

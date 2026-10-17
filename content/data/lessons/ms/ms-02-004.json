@@ -1,0 +1,93 @@
+{
+  "id": "ms-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 18,
+  "slug": "ms-02-004",
+  "title": "Angka: 0",
+  "summary": "Angka: 0. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Angka: 0. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-02-004",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "0f 000f 000 0f0 0f00 00f ff 0ff0 00f0 00 0000",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "00j0 f00 f0 ffjf fj0 0j0e j0 0ff 00j jj 0jj f00f 0ef0 ff0f fjf0 0fff 0e 0f0"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "0j f00 jf0 f00f jf 0j0 f000 000 fj 0fj 0f 00jj jj jf00 00 ff0f j0j f0 ff"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "f0 00j j00 jjjf 0ff0 f7j 70j 00j0 00jj 00 f00 00f f0f0 0j"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "00j ffjj fj00 00 0ff j00 fn jjf j0ff 0f0f 000f j000 00ff jf0 fn0 fj j0 nf"
+    }
+  ]
+}

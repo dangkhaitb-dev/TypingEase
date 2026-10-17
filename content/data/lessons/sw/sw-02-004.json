@@ -1,0 +1,93 @@
+{
+  "id": "sw-02-004",
+  "unit": "u2",
+  "group": "g1",
+  "order": 19,
+  "slug": "sw-02-004",
+  "title": "Nambari: 0",
+  "summary": "Kuandika 0 katika mchanganyiko wa nambari na maneno.",
+  "newKeys": [
+    "0"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Kuandika 0 katika mchanganyiko wa nambari na maneno.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-02-004",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "0",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "000 0ff 00f 0f00 f0 f000 0000 f0f f00 00 f0ff 0f0",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "j00 0x0 f0x 00f 00 f00 j0x fj0f 00f0 f00j 0jf 00j fjj"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "000j f0j 0fff 00j0 jf0t jtf0 fjf jff f0 fjf0 f000 0fj j0"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "00f ff0 fj0 000 0fj 0000 fff ff00 j0 fj00 jf0 0j0 f0f0 fj 0j00 jfj j00 00"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "00j0 fjf f0fj jj0 j0f 0j j0 0f0 f0 00f 00 ff00 0jf"
+    }
+  ]
+}

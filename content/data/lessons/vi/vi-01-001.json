@@ -1,0 +1,65 @@
+{
+  "id": "vi-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "vi-01-001",
+  "title": "Luyện phím · f j Space",
+  "summary": "Định vị gờ nổi phím J và F; học phím Space bằng ngón cái; luyện phối hợp hai tay trên hàng cơ sở.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Định vị gờ nổi phím J và F; học phím Space bằng ngón cái; luyện phối hợp hai tay trên hàng cơ sở.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-001",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím f: ngón trỏ trái, hàng cơ sở. Đây là phím mốc có gờ nổi để đặt ngón trỏ.",
+      "content": "ffff fff ffff fff ffff ff ffff ff ffff"
+    },
+    {
+      "type": "standard",
+      "text": "Phím j: ngón trỏ phải, hàng cơ sở. Đây là phím mốc có gờ nổi để đặt ngón trỏ.",
+      "content": "fjjj jfj jjjj jjjf jjjj jfj jjjj jjfj"
+    },
+    {
+      "type": "standard",
+      "text": "Phím Space: dùng ngón cái. Gõ các cụm f và j, nhấn Space giữa các cụm.",
+      "content": "fj jf ff f jf fj jj ff j fj j f ff"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm f và j, nhấn Space giữa các cụm.",
+      "content": "ff jff fjjf fj jfjj ff fjfj fj fjf fjjf fjf jfjj jjj jfff jjf ffj jj"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm f và j, nhấn Space giữa các cụm.",
+      "content": "ff fjj jjj fjjj ffjf jjf fjff fff jjj jj fff jjf fjf jfj jj"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm f và j, nhấn Space giữa các cụm.",
+      "content": "jjf jfff ff jj fff fjjf ff fjj fjjj fj jf jjjf jjj jjf fjjj"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm f và j, nhấn Space giữa các cụm.",
+      "content": "fffj jjjf ff fj jjfj fj jf fjj ff fj ff jf jfj fjj fffj jj ff jf jf jf"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại f j Space trong các cụm mới, giữ nhịp đều.",
+      "content": "jff jfjf ff ff jfjf fj fj ffj ffj jjjf jfjf fff jfjj jff jff jj fff ffj"
+    }
+  ]
+}

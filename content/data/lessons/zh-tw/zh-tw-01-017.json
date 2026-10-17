@@ -1,0 +1,53 @@
+{
+  "id": "zh-tw-01-017",
+  "unit": "u1",
+  "group": "g1",
+  "order": 18,
+  "slug": "zh-tw-01-017",
+  "title": "送出鍵與換行",
+  "summary": "Narrow committed-output lesson: 三 四",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "Narrow committed-output lesson: 三 四",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-017",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "每打完一行，按 Enter 換到下一行。",
+      "content": "你好\n謝謝你\n再見\n早安\n晚安",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "每行打完按 Enter，再打下一行。",
+      "content": "牛奶\n麵包\n雞蛋\n蘋果\n豆漿\n茶葉蛋",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "每行打完按 Enter，再打下一行。",
+      "content": "星期一\n上課\n星期二\n打球\n星期三\n游泳",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "每行打完按 Enter，再打下一行。",
+      "content": "「早安」\n「晚安」\n「謝謝」\n「你好」\n「再見」",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

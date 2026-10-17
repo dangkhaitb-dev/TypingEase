@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-006",
+  "unit": "u7",
+  "group": "g1",
+  "order": 67,
+  "slug": "zh-tw-07-006",
+  "title": "討論假日安排",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-006",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "姐姐問：「這個週末要做什麼？」我說：「我想去爬山，順便拍些照片。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "她說：「可是氣象報告說星期六會下雨。」我想了想：「那就改成星期天吧。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "姐姐點頭說：「好，星期六我們在家看電影，星期天早上七點出發去爬山。」",
+      "inputMode": "ime"
+    }
+  ]
+}

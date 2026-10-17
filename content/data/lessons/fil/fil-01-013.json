@@ -1,0 +1,88 @@
+{
+  "id": "fil-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "fil-01-013",
+  "title": "Mga titik: m",
+  "summary": "Mga titik: m. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Mga titik: m. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-013",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "mmfm mmf mm mmmm fmm mff mfm mmm mmff ffmm fm mf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jm jjmm mj mjm jmfm fm jj mffj fmjj mmjf jjmj fjf fj ff"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jfj jffm fmm fmmf jmmj fj jf mj mfm mff mmfm jj mfmf mj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang tekstong Filipino gamit ang mga key na natutuhan na.",
+      "content": "pulang pusa sa mesa at maliit na pusa sa sala"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "jf jfm fjf fm fm mmjj jff jjmf fmm mf jmf fj mjff ff fjm"
+    },
+    {
+      "type": "standard",
+      "text": "I-type nang maingat ang bawat salita gamit lang ang mga key na alam mo na.",
+      "content": "salamat po sa mahal na ama at mama masaya ako"
+    }
+  ]
+}

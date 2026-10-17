@@ -1,0 +1,88 @@
+{
+  "id": "nl-01-016",
+  "unit": "u1",
+  "group": "g1",
+  "order": 11,
+  "slug": "nl-01-016",
+  "title": "AltGr-toets",
+  "summary": "Leer de AltGr-toets en oefen hem met é en eerder geleerde letters.",
+  "newKeys": [
+    "altgr"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Leer de AltGr-toets en oefen hem met é en eerder geleerde letters.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-016",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "altgr",
+      "text": "Houd AltGr (rechts van de spatiebalk) met je rechterduim of -pink ingedrukt, druk op e voor é en laat beide toetsen los. Ga daarna terug naar de basispositie.",
+      "content": "é eé ée éé eé ée éé ee é éé eé",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Houd AltGr ingedrukt voor elke é en laat hem daarna los.",
+      "content": "ésl ée ée éaéé aééé éété ééaé éaé sé éé ééér éiéé éé"
+    },
+    {
+      "type": "standard",
+      "text": "Houd AltGr ingedrukt voor elke é en laat hem daarna los.",
+      "content": "élé éé éé éélé ééé éé ét éé éé én éééé éééé ré teé"
+    },
+    {
+      "type": "standard",
+      "text": "Houd AltGr ingedrukt voor elke é en laat hem daarna los.",
+      "content": "éeé éléé reé ééé ét éééé él éés ééét iéé éé léé éé"
+    },
+    {
+      "type": "standard",
+      "text": "Houd AltGr ingedrukt voor elke é en laat hem daarna los.",
+      "content": "ésr éééé aéa éeé eééé néé ér éé laéi élné aéé éésé"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "één café op de hoek en één bakker voor de buren"
+    }
+  ]
+}

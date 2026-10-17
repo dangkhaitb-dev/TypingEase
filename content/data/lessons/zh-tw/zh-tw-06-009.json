@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-06-009",
+  "unit": "u6",
+  "group": "g1",
+  "order": 59,
+  "slug": "zh-tw-06-009",
+  "title": "交接待辦事項",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-06-009",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我明天開始請假三天，這幾天的工作麻煩你幫忙處理，待辦事項整理如下。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "第一，每天上午要回覆客戶的信件；第二，星期四下午要把報表交給主管。重要的文件都放在共用資料夾裡。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "第三，如果有廠商來電，請記下對方的姓名和電話，我回來後再聯絡。遇到緊急狀況，可以傳訊息給我。辛苦你了！",
+      "inputMode": "ime"
+    }
+  ]
+}

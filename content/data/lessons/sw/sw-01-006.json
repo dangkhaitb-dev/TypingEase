@@ -1,0 +1,84 @@
+{
+  "id": "sw-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "sw-01-006",
+  "title": "Herufi: g, h",
+  "summary": "Kuandika m n na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "newKeys": [
+    "g",
+    "h"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Kuandika m n na kuzitofautisha katika mchanganyiko na maneno yaliyofundishwa.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "sw",
+    "lesson": "sw-01-006",
+    "revision": "sw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "g",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "gfggg gfg ggf gg ggg gggf fg gfgg gf gggg",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "h",
+      "text": "Tafuta kibonye kilichoonyeshwa na uandike kwa mwendo ulio sawa.",
+      "content": "hfhhh hfhh hhh fh hhhh fhh hh hhhf fhfh hf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "fhgf hh ffgg ffgj hghj jg fjgf hjhj fjg hjhf hfh jghg"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "gg gh hgh ggj jfh hhj ghj jgf jf jfj jhjf hh ghg ffhj fg"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "ff hhg ff ghjg jjf fjg gjj jhjh hjgh fhg gjhh hghj hhf"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila alama kwa mpangilio. Rudisha vidole vya shahada kwenye f na j.",
+      "content": "hhj ggjj ffh ffh gfg jfh fg jfjg ggfj fjf jfjf hffg jj"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "ghala kasha hafla dagaa ghafla kadhaa ladha shaka haja hasa"
+    },
+    {
+      "type": "standard",
+      "text": "Andika kila neno kwa makini ukitumia herufi ulizojifunza tu.",
+      "content": "dada sasa hafla ghafla kaka haja ladha saa dagaa kaa"
+    }
+  ]
+}

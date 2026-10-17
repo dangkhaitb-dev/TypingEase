@@ -1,0 +1,105 @@
+{
+  "id": "en-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 23,
+  "slug": "en-03-003",
+  "title": "D, E, F",
+  "summary": "Type the shifted symbols above the number row in labels, questions, and short records.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Type the shifted symbols above the number row in labels, questions, and short records.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-03-003",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Hold Shift with the little finger of your right hand and press d to type D. Release Shift before the next key.",
+      "content": "DffD DDDD DD fD DDfD DfDD ff DDD DDf",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Hold Shift with the little finger of your right hand and press e to type E. Release Shift before the next key.",
+      "content": "EjE EEEE jjEE jEE EE EjjE jE EEE",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Hold Shift with the little finger of your right hand and press f to type F. Release Shift before the next key.",
+      "content": "Fff fFfF FfF FffF FFF fF FF",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "EEE EED FD jE EEEE EDDF DDF EE DE FFE DFE EDDE"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "EEEF DEE ED 5EF FD EDF EEEE EFEE FFED EDEE EF FDE"
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "fil-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "fil-01-003",
+  "title": "Mga titik: d, k",
+  "summary": "Mga titik: d, k. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Mga titik: d, k. Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fil",
+    "lesson": "fil-01-003",
+    "revision": "fil-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "df dfdd ddfd dd ddd dddd ddff ffd",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Hanapin ang ipinakitang key at mag-type nang pantay ang galaw.",
+      "content": "kk kkf kkkf kfk kkfk kfkk kkkk ff kkk",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "kdjd kj jd jddf kfjd jf kkd fjjk ffdd jdk jkfk fjf kdj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "kk dkk ffkd fkk fdd dfd dk df kkdd jk fj kf fj kjjk fj kj"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fddd jkk fj kjfd djk jkj fj dkkd fjdf jf jj jfj fjd jkd"
+    },
+    {
+      "type": "standard",
+      "text": "I-type ang bawat karakter ayon sa pagkakasunod. Ibalik ang hintuturo sa f at j.",
+      "content": "fdkk jj djdj fkk kkj ddf fd fkj kk kk jjkd jjfd jkkf ff"
+    }
+  ]
+}

@@ -1,0 +1,168 @@
+{
+  "id": "u4-l03",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 30,
+  "slug": "symbols-3",
+  "title": "(, ), = i ?",
+  "summary": "W programie: (, ), = i ?.",
+  "newKeys": [
+    "(",
+    ")",
+    "=",
+    "?"
+  ],
+  "keysSoFar": [
+    " ",
+    "f",
+    "j",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    "ł",
+    "g",
+    "h",
+    "e",
+    "i",
+    "r",
+    "u",
+    "t",
+    "z",
+    "o",
+    "w",
+    "c",
+    "n",
+    "m",
+    "v",
+    "q",
+    "p",
+    "b",
+    "x",
+    "y",
+    ".",
+    ",",
+    "ą",
+    "shift",
+    "enter",
+    "ę",
+    ";",
+    ":",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    "+",
+    "'",
+    "ż",
+    "ś",
+    "ó",
+    "·",
+    "!",
+    "\"",
+    "#",
+    "¤",
+    "%",
+    "&",
+    "/",
+    "(",
+    ")",
+    "=",
+    "?"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Klawisze, których kurs jeszcze nie używał: (, ), = i ?. Każdy z nich to Shift i klawisz, który twoje palce już znają — Shift małym palcem drugiej ręki.",
+  "congrats": "(, ), = i ?: teraz pod twoimi palcami. Znak przychodzi tak łatwo jak litera obok.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": "(",
+      "finger": "RM",
+      "text": "Ten znak — ( — naciska prawy palec środkowy, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij (, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "(",
+      "text": "Najpierw sam (, potem tam, gdzie naprawdę się go używa.",
+      "content": "(( ( (godzina (pan (podróż\n(( ( (but (notatki (numer\n(( ( (grzyby (stacja (brak"
+    },
+    {
+      "type": "intro",
+      "key": ")",
+      "finger": "RR",
+      "text": "Ten znak — ) — naciska prawy palec serdeczny, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij ), aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": ")",
+      "text": "Najpierw sam ), potem tam, gdzie naprawdę się go używa.",
+      "content": ")) ) (wąski) (kapusta) (okna)\n)) ) (dres) (ogon) (metry)\n)) ) (sale) (metro) (książki)"
+    },
+    {
+      "type": "intro",
+      "key": "=",
+      "finger": "RP",
+      "text": "Ten znak — = — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij =, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "=",
+      "text": "Najpierw sam =, potem tam, gdzie naprawdę się go używa.",
+      "content": "== = 18 = 86 8 = 95 18 = 6\n== = 39 = 89 42 = 74 79 = 64\n== = 53 = 48 50 = 90 75 = 7"
+    },
+    {
+      "type": "intro",
+      "key": "?",
+      "finger": "RP",
+      "text": "Ten znak — ? — naciska prawy mały palec, a Shift przytrzymuje druga ręka.",
+      "hint": "Naciśnij ?, aby przejść dalej"
+    },
+    {
+      "type": "block",
+      "newKey": "?",
+      "text": "Najpierw sam ?, potem tam, gdzie naprawdę się go używa.",
+      "content": "?? ? kasety? trasa? prosto?\n?? ? wolna? stara? może?\n?? ? też? godziny? teraz?"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Seria krótkich kawałków z tymi znakami.",
+      "tokens": [
+        "kto?",
+        "(mniej)",
+        "te?",
+        "bułki?",
+        "55=43",
+        "dał?",
+        "(wiadro)",
+        "(czerwony)",
+        "dary?",
+        "(świat)"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Wszystko, co przyniosła ta lekcja, wymieszane.",
+      "content": "(łatwy) (cukier) (świeży) (idee)\nmokro? (szyba) (torby) 37=65\n(kupujemy) 51=93 (sale) 89=29"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Znowu słowa, ze znakami na swoich miejscach.",
+      "content": "(dwie) stary (lekarz) ze (sucha)\n(ciasto) uczy (również) które (chleb)\njajek? wtorki (że) wysoka mówi?"
+    }
+  ]
+}

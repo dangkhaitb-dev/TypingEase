@@ -1,0 +1,109 @@
+{
+  "id": "es-01-012",
+  "unit": "u1",
+  "group": "g2",
+  "order": 11,
+  "slug": "es-01-012",
+  "title": "Z, X, C",
+  "summary": "Aprender z, x, c en orden y practicarlas con las teclas anteriores.",
+  "newKeys": [
+    "z",
+    "x",
+    "c"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Aprender z, x, c en orden y practicarlas con las teclas anteriores.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "es",
+    "lesson": "es-01-012",
+    "revision": "es-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "Localiza z y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ff zzzf zzz zff fzz zzfz ffz zf zffz fzf ffzf zzzz",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "x",
+      "text": "Localiza x y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "jjjx xxjj jx xxxj xx xj xxx jjx xxxx jjjj jj jjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "c",
+      "text": "Localiza c y vuelve a la posición de referencia. Escribe cada objetivo con cuidado.",
+      "content": "ffc ff cfc fcc ffcc ccf fcf ccfc cc ccc cccc",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ccax zz cczc cccx zc xcc ccc zzcz ccaz cccc ccxz zczc zzx cc azxc xxcc xxc"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "xx xzcx cx xxx ccjx zzc cc ccx ccxx cczx czxx zz xxzz zx xxc zzxz xxcx"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "ccc xj ccxz ccxc xc xxc zz cccc cc cxxc zxc zzxc"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "xx chx zzzx xxx ccxx xxxc zzcz zzcc xxc xc"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada objetivo con cuidado y vuelve a la posición de referencia antes del siguiente.",
+      "content": "zcc ccc cccz ccz xcxc zcco xxx cc zzcz xxoz zzz zcx zz ccxc"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "la casa el zapato la taza el zorro el cielo la luz el pez"
+    },
+    {
+      "type": "standard",
+      "text": "Escribe cada palabra con cuidado, usando solo las teclas que ya conoces.",
+      "content": "el taxi pasa por la casa de coco cada tarde"
+    }
+  ]
+}

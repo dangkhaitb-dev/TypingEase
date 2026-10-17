@@ -1,0 +1,88 @@
+{
+  "id": "zh-01-004",
+  "unit": "u1",
+  "group": "g1",
+  "order": 4,
+  "slug": "zh-01-004",
+  "title": "键位练习：l、;、撇号",
+  "summary": "按顺序学习 l、;、撇号，并在后续练习中稳定使用已学键位。",
+  "newKeys": [
+    "l",
+    ";",
+    "'"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "按顺序学习 l、;、撇号，并在后续练习中稳定使用已学键位。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-004",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "l",
+      "text": "找到 l 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "llll llll llll llll llll llll llll",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "找到 ; 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": ";;;; ;;;; ;;;; ;;;; ;;;; ;;;; ;;;;",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "'",
+      "text": "找到 撇号 键的位置，反复输入，手指按完以后回到基准键。",
+      "content": "'''' '''' '''' '''' '''' '''' ''''",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "ll;' d'' ;;; '''l ld ll;' ld '''l ;;; d'' ;;; d'' ll;'"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": ";lls ll;' ll'' '; ll lll; ;lls lll; ll '; ll'' ll;' ll''"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "l'l; d''l ll' ;;'f ;l; ;; l'l; ;; ;l; ;;'f ll' d''l ll'"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": "llf; ;;ll ;;l ';;l llf; ';;l ;;l ;;ll ;;l ;;ll llf; ';;l"
+    },
+    {
+      "type": "standard",
+      "text": "在已学键位范围内练习连续输入。",
+      "content": ";;' l'f; lll; ll'' ;;' ll'' lll; l'f; lll; l'f; ;;' ll''"
+    }
+  ]
+}

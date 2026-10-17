@@ -1,0 +1,68 @@
+{
+  "id": "fr-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "fr-01-003",
+  "title": "D et K",
+  "summary": "Apprenez d, k et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "d",
+    "k"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Apprenez d, k et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-003",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "Repérez d sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "dddf dfdf ffd ddfd dddd fff",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "k",
+      "text": "Repérez k sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "kkk kkf kk kfkf kkkk kfk kkff",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "kk dkkf dkf ddf fk kfkd kdfk fkf fkfk ffdd dfkf dkd dd"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "dkdj kddd jdjj dd dk kdkd jjdk jk kk jkkk djd kk kjd dd"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "dkkk fdk fkf fddk kd dkk fdf fkff fkd dffd dkd dfd ddk"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ddj dj jkdk dk kj jjd ddk ddk jdj jdkj kdk kkjj ddj jjd"
+    }
+  ]
+}

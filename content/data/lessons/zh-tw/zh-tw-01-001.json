@@ -1,0 +1,73 @@
+{
+  "id": "zh-tw-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "zh-tw-01-001",
+  "title": "定位鍵、空格與注音起步",
+  "summary": "Narrow committed-output lesson: 一 五  ",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "position",
+  "intro": "Narrow committed-output lesson: 一 五  ",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-01-001",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄑ，並以已學按鍵定位。",
+      "content": "ㄑㄑㄑ ㄑㄑㄑㄑ ㄑㄑ ㄑㄑㄑㄑㄑ ㄑㄑㄑ ㄑㄑㄑㄑ ㄑㄑㄑ ㄑㄑㄑㄑ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 ㄨ，並以已學按鍵定位。",
+      "content": "ㄨㄨㄨ ㄨㄑㄨㄨ ㄨㄨ ㄑㄨㄨㄨㄨ ㄨㄨㄑ ㄨㄨㄨㄨ ㄑㄨㄨ ㄨㄨㄨㄨ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "專注輸入新按鍵 空格，並以已學按鍵定位。",
+      "content": "ㄑㄨㄑ ㄨㄑㄨ ㄑㄨㄑㄨ ㄑㄨㄑ ㄑㄨㄑㄨ ㄨㄑㄨ ㄑㄨㄑㄨ ㄨㄑㄨ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄑㄑㄑㄨ ㄨㄨㄨ ㄨㄨㄑ ㄨㄨ ㄨㄑㄨㄑ ㄑㄨㄑ ㄑㄑㄑㄨ ㄑㄨㄑ ㄨㄑㄨㄑ ㄨㄨ ㄨㄨㄑ ㄨㄨㄨ ㄨㄨㄑ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄑㄑㄑㄑ ㄑㄑㄨㄨ ㄑㄑ ㄨㄨ ㄨㄨㄑ ㄑㄑㄑㄑ ㄨㄨㄑ ㄨㄨ ㄑㄑ ㄑㄑㄨㄨ ㄑㄑ ㄑㄑㄨㄨ ㄑㄑㄑㄑ ㄨㄨㄑ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄑㄨㄨㄑ ㄑㄑㄑㄨ ㄨㄑ ㄑㄑ ㄑㄑㄨ ㄑㄨㄨㄑ ㄑㄑㄨ ㄑㄑ ㄨㄑ ㄑㄑㄑㄨ ㄨㄑ ㄑㄑㄑㄨ ㄑㄨㄨㄑ ㄑㄑㄨ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄨㄨㄑㄨ ㄨㄨ ㄨㄑ ㄨㄨㄑㄑ ㄑㄑ ㄑㄨㄑㄑ ㄨㄨㄑㄨ ㄑㄨㄑㄑ ㄑㄑ ㄨㄨㄑㄑ ㄨㄑ ㄨㄨ ㄨㄑ ㄨㄨ",
+      "inputMode": "position"
+    },
+    {
+      "type": "standard",
+      "text": "以穩定節奏交替輸入已學符號。",
+      "content": "ㄑㄑㄑ ㄨㄨㄨㄨ ㄑㄨ ㄨㄨ ㄑㄨㄑㄑ ㄑㄑㄑ ㄑㄨㄑㄑ ㄨㄨ ㄑㄨ ㄨㄨㄨㄨ ㄑㄨ ㄨㄨㄨㄨ ㄑㄑㄑ ㄑㄨㄑㄑ",
+      "inputMode": "position"
+    }
+  ]
+}

@@ -1,0 +1,84 @@
+{
+  "id": "de-01-014",
+  "unit": "u1",
+  "group": "g1",
+  "order": 13,
+  "slug": "de-01-014",
+  "title": "Tote Taste Zirkumflex: â und ê",
+  "summary": "Lerne die tote Taste ^ mit a und e: Erst ^, dann den Vokal, so entstehen â und ê.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Lerne die tote Taste ^ mit a und e: Erst ^, dann den Vokal, so entstehen â und ê.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-014",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tippe die tote Taste ^ (oben links neben der 1), lasse sie los und drücke a: So entsteht â.",
+      "content": "ââeââ âââââ âââââ âââd âââââ"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe die tote Taste ^ (oben links neben der 1), lasse sie los und drücke e: So entsteht ê.",
+      "content": "êêeêê êêêê êdêdê êêe êdêdê êêd"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe ^ und danach den Vokal und achte auf die richtige Reihenfolge.",
+      "content": "âêê êfâê ââ êâf êêf âêa dd aâ eââêâ êêâ ddâ aâêâa âje êaâ êê êâa"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle zwischen â, ê und den geübten Tasten.",
+      "content": "eââ ââjâ dâ êêâ sââ sâd âfs êêâê aêâêâ ae êââê êâ âêêâ"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe ^ und danach den Vokal und achte auf die richtige Reihenfolge.",
+      "content": "ââj êêêâd sê âeêdâ êâ dâdââ asâââ êââ âfeeê êêa ejê êâ êâ"
+    },
+    {
+      "type": "standard",
+      "text": "Wechsle zwischen â, ê und den geübten Tasten.",
+      "content": "dêf âêêêâ êêê ââêê âââ êêaê ââââ âj ââêsê âjâsâ"
+    }
+  ]
+}

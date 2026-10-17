@@ -1,0 +1,106 @@
+{
+  "id": "id-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 23,
+  "slug": "id-03-003",
+  "title": "Huruf kapital: D, E, F",
+  "summary": "Gõ E dan F dengan Shift, lalu campur dengan huruf kecil yang sama.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "shift",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "ascii",
+  "intro": "Gõ E dan F dengan Shift, lalu campur dengan huruf kecil yang sama.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-03-003",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Tahan Shift dengan kelingking di sisi tangan yang berlawanan, lalu tekan d untuk mengetik D. Kembalikan jari ke posisi awal.",
+      "content": "DfD DfD Df DDf Dff DDD DfDD DDDD DDfD fDDD DD fDD",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Tahan Shift dengan kelingking di sisi tangan yang berlawanan, lalu tekan e untuk mengetik E. Kembalikan jari ke posisi awal.",
+      "content": "EE EEE fEE fEf EEEf fE EEfE EfE Ef fEEE EEEE",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Tahan Shift dengan kelingking di sisi tangan yang berlawanan, lalu tekan f untuk mengetik F. Kembalikan jari ke posisi awal.",
+      "content": "FdFdF FF FdF FFF dFd dFFF FFdF dFF FFFF dFFd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "EfD fD fjE FE fEFE fF FFj FffD FD EFE Dj FDj Ej DEFf fjfF fj"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "DFDF jEjj fEf Dj FE DDf fjj jDf0 EjF Fff DFjF FfFf fD ffEj fj"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "ko-01-102",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "ko-01-102",
+  "title": "왼손 자음 ㄱ · ㄴ · ㄷ",
+  "summary": "왼손의 기본 자음 ㄱ·ㄴ·ㄷ을 한 키씩 정확히 익힙니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 9,
+  "inputMode": "hangul",
+  "intro": "왼손의 기본 자음 ㄱ·ㄴ·ㄷ을 한 키씩 정확히 익힙니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-102",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㄱㄱㄱ ㄱㄱㄱ ㄱㄱ ㄱㄱㄱ ㄱㄱ ㄱㄱㄱ ㄱㄱ ㄱㄱㄱ ㄱㄱㄱ ㄱㄱㄱ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㄴㄴㄴ ㄴㄴㄴ ㄴㄴ ㄴㄴㄴ ㄴㄴ ㄴㄴㄴ ㄴㄴ ㄴㄴㄴ ㄴㄴㄴ ㄴㄴㄴ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키의 위치를 확인하며 일정한 리듬으로 입력합니다.",
+      "content": "ㄷㄷㄷ ㄷㄷㄷ ㄷㄷ ㄷㄷㄷ ㄷㄷ ㄷㄷㄷ ㄷㄷ ㄷㄷㄷ ㄷㄷㄷ ㄷㄷㄷ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄱㄱ ㄷㄷ ㄷㄴㄱ ㄴㄴ ㄷㄷㄴ ㅓ ㅓㄱㄱ ㄱㄱ ㅓㄱㄱ ㅓ ㄷㄷㄴ ㄴㄴ ㄷㄴㄱ ㄷㄷ ㄷㄴㄱ ㄷㄷ ㄱㄱ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄷㄷㄷ ㄱㄱ ㄱㄱㄱㄴ ㄷ ㅓ ㄴㄴㄷㄷ ㄴㄹ ㄷㄷㄷ ㄴㄹ ㄴㄴㄷㄷ ㅓ ㄷ ㄱㄱㄱㄴ ㄱㄱ ㄱㄱㄱㄴ ㄱㄱ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄷㄱ ㄴㄴㄷ ㄱㄷㄱ ㅓㄴ ㄱㄱㄴㄷ ㄷㄱ ㄱㄱㄴㄷ ㅓㄴ ㄱㄷㄱ ㄴㄴㄷ ㄱㄷㄱ ㄴㄴㄷ ㄷㄱ ㄱㄱㄴㄷ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄴㄴㄷ ㄱㄱ ㄷㄷㄴ ㅓㄱ ㄷㄷㄱㄴ ㄱㄴㄷ ㄴㄴㄷ ㄱㄴㄷ ㄷㄷㄱㄴ ㅓㄱ ㄷㄷㄴ ㄱㄱ ㄷㄷㄴ ㄱㄱ ㄴㄴㄷ",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "새 키와 앞서 배운 키를 섞어 정확하게 입력합니다.",
+      "content": "ㄴㄴㄷ ㄱㄱ ㄷㄷㄷ ㄴㄴ ㄱㄱ ㅓ ㄱㄱㄱㄴ ㄴㄴㄷ ㄱㄱㄱㄴ ㅓ ㄱㄱ ㄴㄴ ㄷㄷㄷ ㄱㄱ ㄷㄷㄷ ㄱㄱ",
+      "inputMode": "hangul"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+{
+  "id": "vi-04-005",
+  "unit": "u4",
+  "group": "g2",
+  "order": 67,
+  "slug": "vi-04-005",
+  "title": "Trích dẫn và dấu câu",
+  "summary": "Làm chủ các dấu câu biểu cảm và trích dẫn: dấu ngoặc kép, hai chấm, chấm hỏi, chấm than.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Làm chủ các dấu câu biểu cảm và trích dẫn: dấu ngoặc kép, hai chấm, chấm hỏi, chấm than.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-04-005",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ câu có dấu hai chấm, dấu hỏi, dấu chấm than và ngoặc kép.",
+      "content": "Hôm nay trời đẹp quá! Bạn có muốn cùng dạo quanh hồ Gươm không?",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có dấu hai chấm, dấu hỏi, dấu chấm than và ngoặc kép.",
+      "content": "Hành trang đến trường gồm có: sách giáo khoa, vở ghi và bút mực.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có dấu hai chấm, dấu hỏi, dấu chấm than và ngoặc kép.",
+      "content": "Em rất thích bài thơ \"Lượm\" của nhà thơ Tố Hữu.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có dấu hai chấm, dấu hỏi, dấu chấm than và ngoặc kép.",
+      "content": "Thầy giáo dặn cả lớp: \"Hãy luôn tự tin và cố gắng hết mình!\"",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có dấu hai chấm, dấu hỏi, dấu chấm than và ngoặc kép.",
+      "content": "Mẹ hỏi: \"Con ăn cơm chưa?\" Con đáp: \"Dạ, con ăn rồi ạ!\"",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ câu có dấu hai chấm, dấu hỏi, dấu chấm than và ngoặc kép.",
+      "content": "Bác Hồ từng căn dặn: \"Không có gì quý hơn độc lập, tự do.\"",
+      "inputMode": "telex"
+    }
+  ]
+}

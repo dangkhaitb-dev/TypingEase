@@ -1,0 +1,65 @@
+{
+  "id": "bn-02-001",
+  "unit": "u2",
+  "group": "g1",
+  "order": 36,
+  "slug": "bn-02-001",
+  "title": "কী অনুশীলন · ০ ১ ২",
+  "summary": "Introduce committed targets 0 1 2; review none. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets 0 1 2; review none. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-02-001",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "০ টাইপ করতে ডান হাতের কড়ে আঙুল দিয়ে ওপরের সারির 0 কী চাপুন।",
+      "content": "ক০ব ০ব ০ব ক০ব ০ব ০ব ক০ব ০ব ০ব ক০ব"
+    },
+    {
+      "type": "standard",
+      "text": "১ টাইপ করতে বাঁ হাতের কড়ে আঙুল দিয়ে ওপরের সারির 1 কী চাপুন।",
+      "content": "১ব ১ব ক১ব ১ব ১ব ক১ব ১ব ১ব ক১ব ১ব"
+    },
+    {
+      "type": "standard",
+      "text": "২ টাইপ করতে বাঁ হাতের অনামিকা দিয়ে ওপরের সারির 2 কী চাপুন।",
+      "content": "২ব ক২ব ২ব ২ব ক২ব ২ব ২ব ক২ব ২ব ২ব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "০২১২ ২২ব ১০১০ ১১১০ ০০০১ ২২০ ২২১ ২২ ০০ ২১০ ১২ ০২২০"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ক১ ২চ০ ০মি ১চড়ড় চা০ গ২ ০গৃ১ ড়ৃ০ ০চূ ০কৈ২কি ১১গ০ ২ড়২ কে২০ ১কৈপচো"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "২২১ক ২২০ ক১ কক০ ০০ ০২১ ২২ ১০ ২২২ ০১ ২১ ২১০০ ১১"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "০০০০ ০১১১ ২২০১ ২১০১ ১১ ১১১ ২২ ০১ ২১ ০০ ০০২০ ২২১ ০০০ ১০ ২২২ ২০০ ১১২০ ২১২"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "০১১১ ০২ক ১১০ ২২০১ ০০ ২২২ ২২ ২২২১ ১১২ ০০২ ০০১ ০১১০ ২০১২ ০০০১ ০২ ২২০০"
+    }
+  ]
+}

@@ -1,0 +1,74 @@
+{
+  "id": "de-01-015",
+  "unit": "u1",
+  "group": "g1",
+  "order": 14,
+  "slug": "de-01-015",
+  "title": "Wiederholung: é mit der toten Taste",
+  "summary": "Übe é mit der toten Taste ´ in kurzen deutschen Sätzen.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "z",
+    "u",
+    "i",
+    "o",
+    "p",
+    "y",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "ß"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Übe é mit der toten Taste ´ in kurzen deutschen Sätzen.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "de",
+    "lesson": "de-01-015",
+    "revision": "de-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "das ist längst passé und wir sind schon lange nicht mehr blasé"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "er war damals blasé doch jetzt ist alles passé und gut"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "wir waren früh dort und sind nun müde aber sehr froh"
+    },
+    {
+      "type": "standard",
+      "text": "Tippe jedes Wort sorgfältig und nur mit den Tasten, die du schon kennst.",
+      "content": "sie war müde aber hat nicht aufgegeben und ging weiter"
+    }
+  ]
+}

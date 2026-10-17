@@ -1,0 +1,169 @@
+{
+  "id": "u4-l02",
+  "unit": "u4",
+  "group": "symbols",
+  "order": 29,
+  "slug": "symbols-2",
+  "title": "Le point-virgule, Ê, les deux-points et !",
+  "summary": "Au programme : le point-virgule, Ê, les deux-points et !.",
+  "newKeys": [
+    ";",
+    "ê",
+    ":",
+    "!"
+  ],
+  "keysSoFar": [
+    " ",
+    "e",
+    "t",
+    "i",
+    "s",
+    "u",
+    "r",
+    "a",
+    "n",
+    ",",
+    "c",
+    "p",
+    "d",
+    "o",
+    "v",
+    "è",
+    "l",
+    "é",
+    "x",
+    "'",
+    "q",
+    ".",
+    "b",
+    "j",
+    "k",
+    "y",
+    "à",
+    "h",
+    "g",
+    "m",
+    "shift",
+    "enter",
+    "\"",
+    "«",
+    "»",
+    "(",
+    ")",
+    "@",
+    "+",
+    "-",
+    "/",
+    "*",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "f",
+    "=",
+    "%",
+    "z",
+    "w",
+    "ç",
+    "$",
+    "#",
+    "°",
+    ";",
+    "ê",
+    ":",
+    "!"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Des touches que le cours n'a pas encore utilisées : le point-virgule, Ê, les deux-points et !. Certaines demandent Maj, avec l'auriculaire de l'autre main ; les autres ont leur propre touche, que le cours n'avait pas encore utilisée.",
+  "congrats": "le point-virgule, Ê, les deux-points et ! : sous tes doigts maintenant. Le signe vient aussi facilement que la lettre d'à côté.",
+  "screens": [
+    {
+      "type": "intro",
+      "key": ";",
+      "finger": "LI",
+      "text": "C'est l'index gauche qui frappe le point-virgule, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ; pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": ";",
+      "text": "D'abord le point-virgule sans rien autour, puis là où on s'en sert vraiment.",
+      "content": ";; ; suite; outils; deux;\n;; ; telles; dites; grands;\n;; ; jours; glisses; item;"
+    },
+    {
+      "type": "intro",
+      "key": "ê",
+      "finger": "LP",
+      "text": "C'est l'auriculaire gauche qui frappe Ê.",
+      "hint": "Appuie sur Ê pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "ê",
+      "text": "D'abord Ê sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "êê ê bête prêt prête\nêê ê forêts arrêt rêves\nêê ê bêtes tête être"
+    },
+    {
+      "type": "intro",
+      "key": ":",
+      "finger": "LI",
+      "text": "C'est l'index gauche qui frappe les deux-points, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur : pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": ":",
+      "text": "D'abord les deux-points sans rien autour, puis là où on s'en sert vraiment.",
+      "content": ":: : il: routes: rigide:\n:: : gifles: propose: plan:\n:: : décider: glisse: glisses:"
+    },
+    {
+      "type": "intro",
+      "key": "!",
+      "finger": "RI",
+      "text": "C'est l'index droit qui frappe !, avec Maj tenue par l'autre main.",
+      "hint": "Appuie sur ! pour continuer"
+    },
+    {
+      "type": "block",
+      "newKey": "!",
+      "text": "D'abord ! sans rien autour, puis là où on s'en sert vraiment.",
+      "content": "!! ! dernière! forte! bord!\n!! ! sortes! bête! moment!\n!! ! idée! cent! morte!"
+    },
+    {
+      "type": "burst",
+      "seconds": 25,
+      "text": "Une série de petits morceaux avec ces caractères.",
+      "tokens": [
+        "motif:",
+        "fête",
+        "mettre:",
+        "venir:",
+        "vous!",
+        "item;",
+        "cent;",
+        "tête!",
+        "gifle;",
+        "son:"
+      ]
+    },
+    {
+      "type": "block",
+      "text": "Tout ce que cette leçon a apporté, mélangé.",
+      "content": "être têtes! passe: être\nbras! préférer! vendredi! vie:\nbouche; four: vote: filles;"
+    },
+    {
+      "type": "standard",
+      "dictation": "words",
+      "text": "Des mots à nouveau, avec les signes à leur place.",
+      "content": "leçons; donc s'il: milieu pas;\nfête liste dose! plan lumières!\nforêts jamais nouvelle; joli dites!"
+    }
+  ]
+}

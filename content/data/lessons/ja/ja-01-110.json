@@ -1,0 +1,115 @@
+{
+  "id": "ja-01-110",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "ja-01-110",
+  "title": "B・N・M",
+  "summary": "B、N、M を打ち、アルファベットを仕上げる。",
+  "newKeys": [
+    "b",
+    "n",
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "ime",
+  "intro": "B、N、M を打ち、アルファベットを仕上げる。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-110",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "b",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "bbbb bb bbb bb bbbb bb bbb bb bbbb bb bbb bb bbbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "n",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "nnnn bbnb bbb bn nbn nn nnnn bbnb bbb bn nbn nn",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "mmmm nn bbm bb nnn mnbb mmmm nn bbm bb nnn mnbb",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "bbb mmb nnn mmmm rr bbnm bb bbb mmb nnn mmmm rr bbnm bb bbb mmb nnn mmmm rr"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "bbm mmm bb nb bmnn nn bbnn nnln bbm mmm bb nb bmnn nn bbnn nnln bbm mmm bb"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "mn nnn dbn mmb bb mmbn mmmn nnb mb mn nnn dbn mmb bb mmbn mmmn nnb mb mn"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "mjbe bbm mmbn nn bbbb bmm bb mjbe bbm mmbn nn bbbb bmm bb mjbe bbm mmbn nn"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "mmm nnm bbmb bb nnmb bmbn nnb nn jjn mmm nnm bbmb bb nnmb bmbn nnb nn jjn"
+    },
+    {
+      "type": "standard",
+      "text": "「ん」は n を二回打ちます。かなの文を入力します。",
+      "content": "あさははやくおきてまどをあけますそらはよくはれています",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "「ん」は n を二回打ちます。かなの文を入力します。",
+      "content": "えきまであるくとちいさなはなやがありますあかいはながならんでいます",
+      "inputMode": "ime"
+    }
+  ]
+}

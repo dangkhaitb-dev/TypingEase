@@ -1,0 +1,104 @@
+{
+  "id": "nl-01-012",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "nl-01-012",
+  "title": "Accentletters é, á, ó",
+  "summary": "Leer de nieuwe toetsen é, á, ó en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 12,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen é, á, ó en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-012",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op e voor é. Ga daarna terug naar de basispositie.",
+      "content": "ééé éééé ééé ééé ééé ééeé eé éé ééeé eé ééé"
+    },
+    {
+      "type": "standard",
+      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op a voor á. Ga daarna terug naar de basispositie.",
+      "content": "ááá ááá áááá ááá aáá áá áa aáaá áá áá áá"
+    },
+    {
+      "type": "standard",
+      "text": "Houd AltGr (rechts van de spatiebalk) ingedrukt en druk op o voor ó. Ga daarna terug naar de basispositie.",
+      "content": "óoo oóoó óo óoó óóo óóóó óóo óóó óóó óó óóó"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "róé oó áa áiá óáé éro éaá és só éáo óááo ràé óáéá ááéé éáé"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "eár ááéé óáe ááár eó áán éà án aááó éáá éé èàéó éóáé óá óá"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "èéé réés ééé nàéó óá ói ááá áré óa oóré áoén áé éá áóóé étèe"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "óóá óséé áóót óóè éá óá éóós ió aó ri noóó stán óéó áót áéóá"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "ááó sáéó toán áiéá éàa áa éó aé áá téér éé áro óásé áóe éró"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "het café is vóór de school en er is géén probleem"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "één keer zó mooi nóg één keer vóór het eten"
+    }
+  ]
+}

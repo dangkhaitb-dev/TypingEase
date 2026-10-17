@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-003",
+  "unit": "u10",
+  "group": "g1",
+  "order": 137,
+  "slug": "vi-10-003",
+  "title": "Mẫu lặp lại chính xác",
+  "summary": "Xây dựng năng lực \"Repeated Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tránh gõ sót hoặc gõ thừa ký tự khi gặp các từ có phụ âm hoặc nguyên âm lặp lại.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Repeated Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Tránh gõ sót hoặc gõ thừa ký tự khi gặp các từ có phụ âm hoặc nguyên âm lặp lại.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi âm tiết lặp đôi: ba ba, ca ca, ra ra, đa đa.",
+      "content": "ba ba ca ca ra ra đa đa ma ma la la ta ta xa xa nha nha na ná ga gá da dá ha há cha chà sa sá va và pa pá ka kà qua quá",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ có âm tiết lặp: ba ba bơi lội, ca ca hát ca.",
+      "content": "ba ba bơi lội ca ca hát ca ra vào liên tục xa xăm chân trời đa đoan suy nghĩ ma mị hư ảo la cà quán xá ta về chốn xưa nha nhà nhớ mẹ na ná giọng quê ga gá cửa sân da dẻ nắng chiều. Hãy so từng cặp âm tiết với mẫu, giữ đúng số lần lặp và không thêm chữ khi chuyển nhịp: ba ba rồi mới bơi, ca ca mới hát.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về nguy cơ gõ thiếu hoặc thừa ở các từ có âm tiết lặp.",
+      "content": "Các từ ngữ có cấu trúc âm tiết lặp lại thường dễ khiến người gõ bị phân tâm dẫn đến việc gõ thiếu hoặc thừa một ký tự thành phần. Để khắc phục triệt để lỗi này, người học cần duy trì nhịp thở đều đặn và rèn luyện thói quen kiểm tra trực quan ngay khi ký tự vừa xuất hiện trên màn hình soạn thảo văn bản.",
+      "inputMode": "telex"
+    }
+  ]
+}

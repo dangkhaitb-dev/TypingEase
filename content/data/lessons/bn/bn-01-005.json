@@ -1,0 +1,70 @@
+{
+  "id": "bn-01-005",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "bn-01-005",
+  "title": "কী অনুশীলন · ড প ট",
+  "summary": "Introduce committed targets ক খ; review অ. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets ক খ; review অ. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-01-005",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "ড টাইপ করতে বাঁ হাতের মধ্যমা দিয়ে E কী চাপুন।",
+      "content": "কডব ডব ডব কডব ডব ডব কডব ডব ডব কডব"
+    },
+    {
+      "type": "standard",
+      "text": "প টাইপ করতে বাঁ হাতের তর্জনী দিয়ে R কী চাপুন।",
+      "content": "পব পব কপব পব পব কপব পব পব কপব পব"
+    },
+    {
+      "type": "standard",
+      "text": "ট টাইপ করতে বাঁ হাতের তর্জনী দিয়ে T কী চাপুন।",
+      "content": "টব কটব টব টব কটব টব টব কটব টব টব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "টপপ ডডপপ টড ডডটপ পপ পডড পপপব পট ডডট ডট ডড বডডড ডডটট টটড পপপট পপব টট"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ডপ ডডট টড ডডটট পপট ডপডট টটডপ ডপটপ পপপ ডপপট পপ ডডপড ডডডড ততট ডড টট"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "পপ পডপ ডডড ডডটট টটপ টপডড টটট টট ডটডপ পপপ টপ ডডটব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ডড টটড টট ডব পপপট ডটড টটডড ডডডড পট পপ টপপ ডটডট পপপপ পডড পপট ডডপট পপডড"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ডটপপ পট টপটট ডডপ টট টড ডপপপ পটপপ পপট টবটট টটড টডট টটডট ডড ডডপপ পপ"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "পাতা কাপ ডাক টাকা টিকিট দুটি পতাকা কাটা পাকা পাতাটি কপি তাপ টব বাটি পাব তাকটি পদ টাটকা টিক টক টুপটাপ"
+    }
+  ]
+}

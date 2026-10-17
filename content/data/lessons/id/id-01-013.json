@@ -1,0 +1,88 @@
+{
+  "id": "id-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "id-01-013",
+  "title": "Huruf: m",
+  "summary": "Gõ z dalam drill posisi untuk huruf serapan.",
+  "newKeys": [
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Gõ z dalam drill posisi untuk huruf serapan.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "id",
+    "lesson": "id-01-013",
+    "revision": "id-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Temukan tombol yang ditunjukkan dan ketik dengan gerakan yang teratur.",
+      "content": "mmmf mfm mfmf mff mfmm ffm fmm mmm mf mm mmmm mmf",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jjff jf mjf fmj ffj mm jm jmm fj ffjf jmf mm mf fmfj mjj"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "mfjj jjm jmjj mm mfj mj ff jmjm fjfm mfmj jmmm mfmm jm"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik teks bahasa Indonesia ini dengan tombol yang sudah dipelajari.",
+      "content": "kami membaca buku di rumah sebelum bermain di taman"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap karakter sesuai urutan. Kembalikan jari telunjuk ke f dan j.",
+      "content": "jf jmjj fj mjmm mf jjm mfjj ffmf mm fmj mj fmjm mmjm mf"
+    },
+    {
+      "type": "standard",
+      "text": "Ketik setiap kata dengan teliti, hanya dengan tombol yang sudah kamu pelajari.",
+      "content": "malam hari kami makan nasi dan minum teh bersama"
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-05-006",
+  "unit": "u5",
+  "group": "g1",
+  "order": 45,
+  "slug": "zh-tw-05-006",
+  "title": "一起準備晚餐",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-05-006",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "今天晚上，全家人一起準備晚餐。爸爸負責洗菜，媽媽切肉，我在旁邊幫忙擺碗筷和端盤子。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "哥哥煮了一鍋番茄蛋花湯，妹妹把白飯盛進碗裡。廚房雖然有點擠，大家卻一邊做菜一邊聊天，非常熱鬧。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "七點整，菜都上桌了。我們一起說了聲「開動」，邊吃邊分享今天發生的事。吃完飯後，我和哥哥一起洗碗。",
+      "inputMode": "ime"
+    }
+  ]
+}

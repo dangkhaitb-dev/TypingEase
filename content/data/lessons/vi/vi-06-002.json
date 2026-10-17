@@ -1,0 +1,43 @@
+{
+  "id": "vi-06-002",
+  "unit": "u6",
+  "group": "g1",
+  "order": 84,
+  "slug": "vi-06-002",
+  "title": "Ghi chú kết nối",
+  "summary": "Xây dựng năng lực \"Connected Notes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Kết nối hai lời nhắn liên quan, yêu cầu phối hợp gõ dấu chấm câu và chuyển ý mạch lạc.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Connected Notes\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Kết nối hai lời nhắn liên quan, yêu cầu phối hợp gõ dấu chấm câu và chuyển ý mạch lạc.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-06-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Bắt nhịp bài học với tin nhắn gửi Lan.",
+      "content": "Tin nhắn gửi Lan: tài liệu thuyết trình đã được cập nhật vào thư mục chung của dự án, nhờ bạn xem qua và phản hồi trước chiều nay.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành lời nhắn gửi anh Hùng về kết quả rà soát bảng khảo sát thị trường.",
+      "content": "Chào anh Hùng, em đã rà soát lại toàn bộ số liệu trong bảng khảo sát thị trường tháng vừa qua. Có hai điểm cần thảo luận thêm về tỷ lệ phản hồi của khách hàng tại chi nhánh phía nam.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Thực hành đầy đủ trên thông báo nội bộ gửi nhóm thiết kế.",
+      "content": "Thông báo nội bộ gửi nhóm thiết kế: mẫu giao diện mới cho trang chủ đã nhận được phản hồi tích cực từ ban giám đốc. Chúng ta chỉ cần chỉnh sửa nhẹ kích thước logo và tăng độ tương phản của nút bấm đăng ký.",
+      "inputMode": "telex"
+    }
+  ]
+}

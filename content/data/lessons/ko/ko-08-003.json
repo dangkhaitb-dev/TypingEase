@@ -1,0 +1,43 @@
+{
+  "id": "ko-08-003",
+  "unit": "u8",
+  "group": "g1",
+  "order": 102,
+  "slug": "ko-08-003",
+  "title": "비가 지난 골목",
+  "summary": "날씨와 움직임의 변화를 연결해 끊김 없이 입력합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "날씨와 움직임의 변화를 연결해 끊김 없이 입력합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-08-003",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "소나기가 지나간 뒤 우리 집 앞 골목을 천천히 걸었습니다. 돌담은 비에 젖어 색이 짙어졌고 담장 위 고양이는 몸을 털고 있었습니다. 공기가 무척 맑았습니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "낮은 지붕 끝에서는 아직 빗물이 한 방울씩 떨어졌습니다. 골목 끝 작은 가게 주인은 젖은 의자를 수건으로 닦으며 다시 문을 열었습니다. 골목이 다시 깨어나는 듯했어요.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "어디선가 젖은 흙냄새와 갓 지은 밥 냄새가 함께 풍겨 왔습니다. 하늘이 맑게 개자 골목에 아이들의 웃음소리가 다시 하나둘 들리기 시작했습니다. 나도 모르게 미소가 나왔어요.",
+      "inputMode": "hangul"
+    }
+  ]
+}

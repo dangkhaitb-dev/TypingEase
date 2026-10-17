@@ -1,0 +1,54 @@
+{
+  "id": "vi-03-010",
+  "unit": "u3",
+  "group": "g1",
+  "order": 47,
+  "slug": "vi-03-010",
+  "title": "Luyện phím · X Y Z",
+  "summary": "Gõ chữ hoa X, Y, Z bằng Shift và luyện các từ viết hoa.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Gõ chữ hoa X, Y, Z bằng Shift và luyện các từ viết hoa.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ x (ngón áp út trái) để ra X. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Xếp Xác Xem Xa Xuất Xác Xếp Xác Xem Xa Xuất Xác",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ y (ngón trỏ phải) để ra Y. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Yên Bái Ý Yên Y Ý Y Yên Bái Yên Ý Yên Bái",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ z (ngón út trái) để ra Z. Giữ Shift bằng ngón út của tay kia.",
+      "content": "fZ Zj Z jZ Zj jZ Zn Zj Zf Zn Zm jZ"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý X, Y, Z. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Ý Xuân Zk Khoa Xuất Xóm Yên Bái căn Xa Nâu Yến lời Xóm Xuống Yến lá Xuân",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có X, Y, Z mà không nhìn bàn phím.",
+      "content": "Xác Zf năm Dành Truyện Từng Yên Bái Xuống Yên cùng Xe Xem lớp",
+      "inputMode": "telex"
+    }
+  ]
+}

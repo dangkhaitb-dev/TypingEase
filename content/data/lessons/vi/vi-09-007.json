@@ -1,0 +1,43 @@
+{
+  "id": "vi-09-007",
+  "unit": "u9",
+  "group": "g2",
+  "order": 126,
+  "slug": "vi-09-007",
+  "title": "Câu cùng cấu trúc",
+  "summary": "Xây dựng năng lực \"Same-Pattern Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuyển giao tốc độ sang các câu hoàn chỉnh có cùng cấu trúc ngữ pháp.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Same-Pattern Sentences\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Chuyển giao tốc độ sang các câu hoàn chỉnh có cùng cấu trúc ngữ pháp.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-09-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi câu cùng khuôn: trời mưa thì đường trơn, trời nắng thì cây cối tươi tốt.",
+      "content": "Trời mưa thì đường trơn. Trời nắng thì cây cối tươi tốt. Gió mát thì lòng người thanh thản dễ chịu. Sương xuống thì áo lạnh. Sóng to thì thuyền chậm.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi câu cùng cấu trúc về học tập và rèn luyện.",
+      "content": "Chúng ta nỗ lực học tập để mở mang tri thức. Chúng ta tích cực rèn luyện để nâng cao sức khỏe. Chúng ta cống hiến hết mình để xây dựng quê hương giàu đẹp và văn minh hơn mỗi ngày. Trời trở lạnh thì mọi người mang thêm áo khoác. Trời quang thì nhóm tiếp tục chuyến đi. Chúng ta đọc hết câu để hiểu ý chính. Chúng ta kiểm tra dấu câu để giữ văn bản rõ ràng. Chúng ta ghi chú chỗ khó để luyện lại tối nay.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng tốc độ vào đoạn văn về lợi ích của câu cùng mô hình ngữ pháp.",
+      "content": "Những câu văn có cùng mô hình cấu trúc ngữ pháp giúp người gõ thiết lập một nhịp điệu vận động cơ bắp ổn định và mang tính quy luật cao. Khi đôi tay đã quen với mô hình nhịp điệu này, tốc độ gõ sẽ tự nhiên tăng lên mà không đòi hỏi phải dùng quá nhiều sức lực cơ bắp hay tạo ra cảm giác căng thẳng tinh thần.",
+      "inputMode": "telex"
+    }
+  ]
+}

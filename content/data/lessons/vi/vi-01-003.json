@@ -1,0 +1,65 @@
+{
+  "id": "vi-01-003",
+  "unit": "u1",
+  "group": "g1",
+  "order": 3,
+  "slug": "vi-01-003",
+  "title": "Luyện phím · g h k",
+  "summary": "Học phím D (ngón giữa trái hàng cơ sở), E (ngón giữa trái hàng trên) và I (ngón giữa phải hàng trên).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Học phím D (ngón giữa trái hàng cơ sở), E (ngón giữa trái hàng trên) và I (ngón giữa phải hàng trên).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-01-003",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Phím g: ngón trỏ trái, hàng cơ sở. Gõ g xen với hai phím mốc f, j.",
+      "content": "jggg fggg ggg jggg ggj gfg jggg fggg"
+    },
+    {
+      "type": "standard",
+      "text": "Phím h: ngón trỏ phải, hàng cơ sở. Gõ h xen với hai phím mốc f, j.",
+      "content": "hhh hhj hhf hfh hhhj hhf hfh hjh hhh hhhf hhh"
+    },
+    {
+      "type": "standard",
+      "text": "Phím k: ngón giữa phải, hàng cơ sở. Gõ k xen với hai phím mốc f, j.",
+      "content": "kkk kk kk kjk kkkf kk kk kk kfk jkkk"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp g h k với các phím đã học.",
+      "content": "gad hk sfh ak khda jgg sg fkf sg hha gjj hfhd dka hf fh"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp g h k với các phím đã học.",
+      "content": "hgsk sfjg fgdj hh agk gs kf kfad sg kjjd ak hh sjhs ssk kj gdh kk jsjg"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp g h k với các phím đã học.",
+      "content": "hs ag kds sk fk djfk hsdj gf sh jgsa hj fjka hg khk jhfj gf"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các cụm kết hợp g h k với các phím đã học.",
+      "content": "gs jgfk hss djah agd gg khd kagk kf shgs jdh kgj fg sfkh kd khkk fagk"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ lại g h k trong các cụm mới, giữ nhịp đều.",
+      "content": "fag khg dah ahgk sksk gj gfs jshs dfks khg shjh gfad dgjh ghka"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "id": "ja-01-103",
+  "unit": "u1",
+  "group": "g1",
+  "order": 2,
+  "slug": "ja-01-103",
+  "title": "A・S・D",
+  "summary": "A、S、D をホームポジションから正確に打つ。",
+  "newKeys": [
+    "a",
+    "s",
+    "d"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d"
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "A、S、D をホームポジションから正確に打つ。",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ja",
+    "lesson": "ja-01-103",
+    "revision": "ja-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "a",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "aaaa aa aaa aa aaaa aa aaa aa aaaa aa aaa aa aaaa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "s",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "sss ssas aas aaaa sa aasa sss ssas aas aaaa sa",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "d",
+      "text": "新しいキーの位置を確かめ、既習キーとゆっくり組み合わせます。",
+      "content": "ddd dsd dad dds ddd ddd dsd dad dds ddd ddd dsd",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "aa sdsa ddsf ddda dda sd aa sdsa ddsf ddda dda sd aa sdsa ddsf ddda dda sd"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "aad ssj ddaa sss ssdd dda aaa ss dd aad ssj ddaa sss ssdd dda aaa ss dd aad"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "dda aaa ddsj dd ad ss sd dda aaa ddsj dd ad ss sd dda aaa ddsj dd ad ss sd"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "ddsa fasa ds aad jds dad ss ddsa fasa ds aad jds dad ss ddsa fasa ds aad"
+    },
+    {
+      "type": "standard",
+      "text": "既習キーを短いまとまりで反復します。",
+      "content": "aa sd aas jd aasf dda ss aasa aa sd aas jd aasf dda ss aasa aa sd aas jd"
+    }
+  ]
+}

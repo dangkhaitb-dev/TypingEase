@@ -1,0 +1,43 @@
+{
+  "id": "ko-01-138",
+  "unit": "u1",
+  "group": "g1",
+  "order": 39,
+  "slug": "ko-01-138",
+  "title": "받침과 낱말 복습 5",
+  "summary": "받침이 있는 낱말이 들어간 문장을 복습합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 2,
+  "inputMode": "hangul",
+  "intro": "받침이 있는 낱말이 들어간 문장을 복습합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-01-138",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "집에 없는 물건은 장보기 목록에 적어 둬요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 자모로 만든 자연스러운 낱말과 짧은 구절을 입력합니다.",
+      "content": "큰 냄비의 끓는 물에 국수를 오 분 동안 삶아요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "따뜻한 보리차를 한 잔 마시고 잠시 쉬어요",
+      "inputMode": "hangul"
+    }
+  ]
+}

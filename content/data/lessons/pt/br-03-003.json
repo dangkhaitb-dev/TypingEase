@@ -1,0 +1,105 @@
+{
+  "id": "br-03-003",
+  "unit": "u3",
+  "group": "g1",
+  "order": 32,
+  "slug": "br-03-003",
+  "title": "Maiúsculas: D, E, F",
+  "summary": "Aprenda as teclas D, E, F e pratique com as teclas já estudadas.",
+  "newKeys": [
+    "D",
+    "E",
+    "F"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Aprenda as teclas D, E, F e pratique com as teclas já estudadas.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "br",
+    "lesson": "br-03-003",
+    "revision": "br-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "D",
+      "text": "Segure Shift e aperte d para digitar D. Depois volte à posição inicial.",
+      "content": "DfD DDD DDfD DfDf fD DDDD",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "E",
+      "text": "Segure Shift e aperte e para digitar E. Depois volte à posição inicial.",
+      "content": "EEjE EEj jEEj EEE EEEE jEE EE EjEE Ej EEjj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "F",
+      "text": "Segure Shift e aperte f para digitar F. Depois volte à posição inicial.",
+      "content": "fffF fF fFF FFFF ffFF FFf FFF FF",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "FFD EFF EF FFDF DF DFD CE FC FEEF FEDC DD DEF FFDD EEFF"
+    },
+    {
+      "type": "standard",
+      "text": "Digite cada alvo com atenção e volte à posição inicial antes do próximo.",
+      "content": "EDD FF FDE DF FfEF EEFE EDF FD FFDF FFE FDFF FE"
+    }
+  ]
+}

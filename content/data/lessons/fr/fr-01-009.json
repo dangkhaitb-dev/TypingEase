@@ -1,0 +1,96 @@
+{
+  "id": "fr-01-009",
+  "unit": "u1",
+  "group": "g2",
+  "order": 8,
+  "slug": "fr-01-009",
+  "title": "u, i, o",
+  "summary": "Apprenez u, i, o et stabilisez ces gestes avec les touches déjà apprises.",
+  "newKeys": [
+    "u",
+    "i",
+    "o"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "q",
+    "m",
+    "g",
+    "h",
+    "a",
+    "z",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 9,
+  "inputMode": "ascii",
+  "intro": "Apprenez u, i, o et stabilisez ces gestes avec les touches déjà apprises.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "fr",
+    "lesson": "fr-01-009",
+    "revision": "fr-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "u",
+      "text": "Repérez u sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "uuuu fuu uf fu fuuu ff ffuu uu uuuf uuf uuu",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "i",
+      "text": "Repérez i sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "iiii iif ff ifi iiif fii iifi ii iii ifii if ffi",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Repérez o sur le clavier et répétez cette touche avec un geste régulier.",
+      "content": "oo of oooo ffo ofof ffoo oof",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "uff iui ouui of ouo ouf fiif fifu ffi uof oi of ffu fof"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "ioj ji uii ojji juu juo jio iij ojju ioo juuo iij uuiu"
+    },
+    {
+      "type": "standard",
+      "text": "Contrôle : retrouvez les touches déjà vues dans un ordre différent, sans nouvelle touche.",
+      "content": "la gare est sur la rue et la salle est sale"
+    },
+    {
+      "type": "standard",
+      "text": "Tapez ce texte français avec les touches déjà apprises.",
+      "content": "la dame lit et regarde la rue et la salle de la gare"
+    },
+    {
+      "type": "standard",
+      "text": "Alternez les touches indiquées. Gardez les index sur leurs repères et cherchez la régularité.",
+      "content": "iif fu uo oi off ffi fo iu ii fo oi uiio fo ofoi uu iio if"
+    }
+  ]
+}

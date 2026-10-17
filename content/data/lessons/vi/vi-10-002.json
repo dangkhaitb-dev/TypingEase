@@ -1,0 +1,43 @@
+{
+  "id": "vi-10-002",
+  "unit": "u10",
+  "group": "g1",
+  "order": 138,
+  "slug": "vi-10-002",
+  "title": "Mẫu đảo ngược trật tự",
+  "summary": "Xây dựng năng lực \"Reversed Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Kiểm soát lỗi gõ khi các ký tự bị đảo ngược thứ tự (ví dụ: an - na, ơn - nơ, tr - rt).",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Reversed Patterns\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Kiểm soát lỗi gõ khi các ký tự bị đảo ngược thứ tự (ví dụ: an - na, ơn - nơ, tr - rt).",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-10-002",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Luyện phản xạ trên chuỗi đảo trật tự: an – na, on – no, en – ne.",
+      "content": "an na on no en ne in ni un nu am ma em me im mi om mo ăn năn ơn nở ên nề ìn nị ủn nủ ăm mằn êm mềm ôm mồm ưa nưa ưn nư",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Bắt nhịp với chuỗi cụm từ chứa các cặp ký tự dễ bị đảo thứ tự.",
+      "content": "bình an nết na cảm ơn nơ hoa hoa sen e ấp mẹ hiền niềm tin im lặng nụ cười ru ngủ tình thương mênh mông sông dài. Người gõ kiểm tra vị trí từng chữ, nhận ra chỗ đảo thứ tự rồi sửa ngay trước khi sang cụm tiếp theo, ví dụ ơn thành nở hay an thành nản, im thành mi nà.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ trọn đoạn văn về lỗi đảo ngược ký tự khi tăng tốc độ gõ.",
+      "content": "Lỗi gõ đảo ngược thứ tự các ký tự liền kề là một trong những lỗi phổ biến nhất khi người học tăng tốc độ gõ phím. Bằng việc luyện tập có chủ đích trên các cặp âm đảo ngược, các ngón tay sẽ hình thành phản xạ dứt khoát và kiểm soát hoàn hảo thứ tự nhả phím của từng ngón tay riêng biệt trên bàn phím máy tính.",
+      "inputMode": "telex"
+    }
+  ]
+}

@@ -1,0 +1,88 @@
+{
+  "id": "ms-01-013",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "ms-01-013",
+  "title": "Huruf: m",
+  "summary": "Huruf: m. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "newKeys": [
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "d",
+    "k",
+    "s",
+    "l",
+    "a",
+    ";",
+    "g",
+    "h",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Huruf: m. Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-013",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "mfmm fmmm fm mmm mmfm mf mfmm mm mfm mmmm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "mmjf jmfm fjj fj mjmm jm ffj mfj mm mjjj jjff mm ffm mm"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fjmm jfmm fj mmfj mfjm jj mjf mfff fjff jjff ffmf jmj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip teks bahasa Melayu ini dengan kekunci yang telah dipelajari.",
+      "content": "kami membaca buku di rumah sebelum bermain di taman"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "mmj jff jf fjfj jmjj mm fmmf mff jmf jff jfmm jm jfj fj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap perkataan dengan teliti, hanya dengan kekunci yang telah anda pelajari.",
+      "content": "malam tadi kami makan nasi dan minum teh bersama"
+    }
+  ]
+}

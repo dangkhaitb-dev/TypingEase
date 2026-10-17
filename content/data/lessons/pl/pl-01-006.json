@@ -1,0 +1,96 @@
+{
+  "id": "pl-01-006",
+  "unit": "u1",
+  "group": "g1",
+  "order": 5,
+  "slug": "pl-01-006",
+  "title": "Klawisze e, r, t",
+  "summary": "Poznaj klawisze e, r, t i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "e",
+    "r",
+    "t"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze e, r, t i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-01-006",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "e",
+      "text": "Ćwiczenie klawisza: e.",
+      "content": "eeee eeee eeee eeee eeee eeee eeee eeee eeee eee",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "r",
+      "text": "Ćwiczenie klawisza: r.",
+      "content": "rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrrr rrr",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "t",
+      "text": "Ćwiczenie klawisza: t.",
+      "content": "tttt tttt tttt tttt tttt tttt tttt tttt tttt",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "tr lt ttrt th eert trte tt ete tre er rtre ttl leee ret trt et rter"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "trr tr et rr rtrj rrej rre er rj jtrr ee ete jt rrt trtr"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "terr rtr ltrt rtt ree tt rrr eerr eere re eet"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "rr gre rre etee et tt ettg ttre eete rrtt ret rtrr rer rgrt rttr ettt"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "tata je ser jak ja ale ta kawa jest stara dalej jest las"
+    },
+    {
+      "type": "standard",
+      "text": "Wpisz każde słowo uważnie, używając tylko klawiszy, które już znasz.",
+      "content": "tak ta sala jest stara a ta klasa jest dalej"
+    }
+  ]
+}

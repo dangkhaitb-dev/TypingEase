@@ -1,0 +1,43 @@
+{
+  "id": "bn-04-004",
+  "unit": "u4",
+  "group": "g1",
+  "order": 64,
+  "slug": "bn-04-004",
+  "title": "নতুন লাইনে ছোট অনুচ্ছেদ",
+  "summary": "আগে শেখা কী দিয়ে নতুন লাইনে ছোট অনুচ্ছেদ অনুশীলন করুন।",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ascii",
+  "intro": "আগে শেখা কী দিয়ে নতুন লাইনে ছোট অনুচ্ছেদ অনুশীলন করুন।",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-04-004",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "শব্দ ও বাক্যগুলো মনোযোগ দিয়ে টাইপ করুন।",
+      "content": "সকালে জানালা খুললাম।\nঘরে আলো এল।\nবাইরে পাখি ডাকছে।\nদিনটি ভালো লাগছে।",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "শব্দ ও বাক্যগুলো মনোযোগ দিয়ে টাইপ করুন।",
+      "content": "মা রান্না করছেন।\nআমি খাবার টেবিল সাজালাম।\nআমরা একসঙ্গে খেতে বসলাম।",
+      "linebreak": "enter"
+    },
+    {
+      "type": "standard",
+      "text": "শব্দ ও বাক্যগুলো মনোযোগ দিয়ে টাইপ করুন।",
+      "content": "বিকালে মেঘ জমল।\nএকটু পরে বৃষ্টি নামল।\nআমি ঘরে বসে বই পড়তে লাগলাম।",
+      "linebreak": "enter"
+    }
+  ]
+}

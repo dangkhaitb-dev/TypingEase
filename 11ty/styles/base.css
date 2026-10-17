@@ -1,0 +1,308 @@
+/* base.css — khung dùng chung cho mọi trang: reset, topbar, chữ, nút, form, footer và vài khối
+   xuất hiện ở nhiều trang (explore, bảng thành tích, keyboard-lab, luyện tự do).
+   Nạp sau tokens.css và trước CSS riêng của từng trang.
+
+   Vì sao có file này: nó thay cho style.css cũ — một dòng nén 9,5 KB trong đó ~55% là CSS của
+   landing page đã bị xoá khỏi markup từ lâu (hero-visual, tip-card, benefits, practice-grid...).
+   Phần chết đã bỏ; phần dùng chung trước đây nằm rải trong keyboard.css (lớp vá) đã gom về đây,
+   để keyboard.css chỉ còn lo đúng bàn phím.
+
+   QUY ƯỚC: mỗi rule một dòng để diff theo dòng và đọc bằng mắt. Mọi @media gom ở cuối file,
+   chỉ hai ngưỡng 900px / 620px. */
+
+/* ===== Reset & document ======================================================================= */
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;color:var(--text);font-family:var(--font-body);font-size:var(--fs-body);line-height:1.47;letter-spacing:-.011em;background:var(--canvas);text-rendering:optimizeLegibility;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;-webkit-tap-highlight-color:transparent}
+h1,h2,h3{color:var(--ink-900)}
+a{color:var(--link)}
+:where(button,a,input,select,textarea):focus-visible{outline:none;box-shadow:var(--shadow-focus)}
+button,input,select,textarea{font:inherit}
+button{cursor:pointer}
+
+/* ===== Topbar ================================================================================= */
+/* Topbar dùng ĐÚNG --w-page như thân trang. Trước đây topbar 1180px còn nội dung 1068px, nên trên
+   gần như mọi trang header thò ra hai bên rộng hơn nội dung 112px — một trong những thứ làm site
+   trông lệch lạc. Logo và nav phải thẳng hàng với mép nội dung. */
+/* Lưới ba cột `1fr auto 1fr` chứ không phải space-between: nav nằm CHÍNH GIỮA topbar kể cả khi
+   cột phải trống. Trang chủ không có .header-actions, nên với space-between nav bị đẩy lệch hẳn
+   sang phải và không khớp với các trang có nút CTA. */
+/* Thanh trên cùng kiểu Apple: dính đầu trang, nền mờ trong suốt cho nội dung trôi bên dưới, một đường
+   kẻ mảnh thay cho viền. Rộng hết màn hình; padding canh nội dung thẳng mép --w-page. */
+.topbar{position:sticky;top:0;z-index:50;height:56px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;max-width:none;margin:0;padding:0 max(var(--pad-x),calc((100% - var(--w-page)) / 2 + var(--pad-x)));background:var(--glass);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--border)}
+.brand{font-size:21px;font-weight:700;letter-spacing:-.03em;color:var(--ink-900);text-decoration:none}
+.brand span{color:var(--primary-600)}
+nav{display:flex;gap:4px}
+/* Đặt cột TƯỜNG MINH cho từng vai trò, vì topbar có ba hình dạng khác nhau: logo + nav (+ nút CTA),
+   logo + `← Trang chủ` trần, và logo + `← Trang chủ` bọc trong .header-actions. Nếu chỉ dựa vào
+   thứ tự trong lưới thì phần tử thứ hai rơi vào cột giữa — đúng cho nav, sai cho link về trang chủ
+   (nó từng nằm sát mép phải và phải ở nguyên đó). Mặc định là cột phải; chỉ logo và nav được gọi tên. */
+.topbar>*{grid-column:3;justify-self:end}
+.topbar .brand{grid-column:1;justify-self:start}
+.topbar nav{grid-column:2;justify-self:center}
+/* Chỉ menu trên cùng: breadcrumb, mục lục bài viết, bộ chọn khoá… cũng là <nav> và có style riêng. */
+.topbar nav a{display:inline-flex;align-items:center;min-height:36px;padding:6px 12px;border-radius:var(--r-pill);color:var(--ink-700);font-size:13px;font-weight:500;text-decoration:none;transition:color var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.topbar nav a:hover{color:var(--ink-900)}
+.topbar nav a.active{color:var(--ink-900);font-weight:600;background:rgba(0,0,0,.05)}
+.header-actions{display:flex;align-items:center;gap:8px;justify-self:end}
+.menu-toggle{display:none}
+
+/* ===== Chữ ==================================================================================== */
+h1,h2,h3,p{margin-top:0}
+h1{font-size:clamp(40px,6vw,64px);line-height:1.06;letter-spacing:var(--track-display);font-weight:700;margin-bottom:18px}
+h2{font-size:clamp(28px,3.6vw,40px);line-height:1.1;letter-spacing:var(--track-display);font-weight:700;margin-bottom:0}
+em{font-style:normal;color:var(--primary-600)}
+.eyebrow{font-size:var(--fs-sm);font-weight:600;color:var(--primary-600);margin:0 0 12px}
+.eyebrow i{display:none}
+.intro{line-height:1.5;color:var(--text-muted);font-size:21px;font-weight:400;letter-spacing:.004em;max-width:560px;margin-bottom:32px}
+/* Chữ Ả Rập, Ba Tư, Urdu, Hebrew: giãn chữ làm rời các chữ phải dính nhau, và chữ hoa không tồn tại. */
+[dir=rtl] :is(.eyebrow,.topbar nav a,.typing-label,.results-table th,.explore-card span,.breadcrumb){letter-spacing:0}
+
+/* ===== Nút ==================================================================================== */
+/* Nút kiểu Apple: viên thuốc màu nhấn, không bóng, không viền; nhấn = thu nhỏ nhẹ. */
+.primary-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;border:0;border-radius:var(--r-pill);padding:11px 22px;background:var(--primary-600);color:var(--white);font-size:var(--fs-body);font-weight:500;letter-spacing:-.01em;text-decoration:none;transition:transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.primary-button:hover{background:var(--primary-700)}
+.primary-button:active{transform:var(--press);box-shadow:none}
+.primary-button:focus-visible{box-shadow:var(--shadow-focus)}
+.primary-button span{font-size:1.1em;line-height:1}
+.secondary-button{display:inline-flex;align-items:center;justify-content:center;min-height:44px;border:1px solid var(--primary-600);border-radius:var(--r-pill);padding:10px 20px;color:var(--primary-600);background:transparent;font-size:var(--fs-body);font-weight:500;text-decoration:none;transition:transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.secondary-button:hover{background:var(--primary-600);color:var(--white)}
+.secondary-button:active,.home-switch:active{transform:var(--press);box-shadow:none}
+.secondary-button span{margin-left:6px;font-size:1em}
+.home-link{color:var(--primary-700);font-size:var(--fs-sm);font-weight:600;text-decoration:none}
+/* O "Trang chu" tren topbar: ve `/`, trang chon ngon ngu + ban phim. No thay cho day o doi ngon ngu
+   (EN, VI, ES…) tung nam o day — voi muoi ngon ngu, day o ay dai ra ma van khong tra loi duoc
+   "doi sang cai nao"; trang `/` tra loi duoc. Vien mong, chu dam, cao nhu mot phim. */
+.home-switch{display:inline-flex;align-items:center;justify-content:center;min-height:32px;padding:6px 14px;border:0;border-radius:var(--r-pill);color:var(--ink-900);background:rgba(0,0,0,.05);font-size:13px;font-weight:500;text-decoration:none;white-space:nowrap;transition:transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.home-switch:hover{background:rgba(0,0,0,.09)}
+.home-switch:focus-visible{box-shadow:var(--shadow-focus)}
+/* Nút trong thanh trên cùng: cùng cỡ nhỏ với nút "Trang chủ", như các nút trong thanh điều hướng của Apple. */
+.header-actions :is(.primary-button,.secondary-button){min-height:32px;padding:6px 14px;font-size:13px}
+.header-actions .secondary-button{border:0;background:var(--primary-600);color:var(--white)}
+.header-actions .secondary-button:hover{background:var(--primary-700)}
+
+/* ===== Điều hướng phụ ========================================================================= */
+/* article.css và test.css đều tự khai báo .breadcrumb với margin riêng; bản ở đây là nền chung
+   để các trang sau này bỏ bớt bản sao của mình. */
+.breadcrumb{display:flex;align-items:center;gap:8px;margin:0 0 40px;color:var(--ink-500);font-size:var(--fs-xs)}
+.breadcrumb a{color:var(--link);font-weight:400;text-decoration:none}
+
+/* ===== Form =================================================================================== */
+textarea{resize:none;width:100%;border:1px solid var(--border-strong);border-radius:var(--r);padding:12px 14px;line-height:1.5;color:var(--ink-900);background:var(--surface);margin-top:7px;outline:0;font:15px var(--font-mono);transition:border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+textarea:focus{border-color:var(--primary-500);box-shadow:var(--shadow-focus-soft)}
+.typing-label{display:block;font-size:var(--fs-2xs);color:var(--text-muted);font-weight:600;margin-top:13px}
+/* Nhãn ô gõ + công tắc âm click trên một hàng (luyện tự do, kiểm tra tốc độ). Nút nằm NGOÀI
+   <label> vì bấm vào trong label là trình duyệt chuyển focus sang textarea thay vì bấm nút. */
+.input-head{display:flex;align-items:flex-end;justify-content:space-between;gap:12px}
+.input-head label{margin-bottom:0}
+.sound-toggle{display:inline-flex;align-items:center;gap:6px;height:30px;padding:0 12px;border:0;border-radius:var(--r-pill);background:rgba(0,0,0,.05);color:var(--ink-900);font-size:var(--fs-xs);font-weight:500;line-height:1;white-space:nowrap;transition:background-color var(--dur-fast) var(--ease)}
+.sound-toggle:hover{background:rgba(0,0,0,.09)}
+.sound-toggle[aria-pressed=true]{background:var(--primary-50);color:var(--primary-700)}
+.sound-toggle[aria-pressed=false]{color:var(--ink-600)}
+
+/* Thanh "có bản mới" của sw-register.js: nằm dưới cùng, không chiếm focus, người dùng tự quyết
+   lúc nào tải lại — đang giữa một screen mà bị tải lại giùm là mất công gõ. */
+.update-bar{position:fixed;left:50%;bottom:18px;z-index:60;display:flex;align-items:center;gap:12px;max-width:calc(100vw - 32px);padding:10px 12px 10px 18px;border:1px solid var(--border);border-radius:var(--r-pill);background:var(--glass);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);color:var(--ink-900);font-size:var(--fs-sm);box-shadow:var(--shadow-lift);transform:translateX(-50%)}
+.update-bar button{border:var(--border-w) solid var(--border);border-radius:var(--r-sm);padding:7px 12px;background:var(--surface);color:var(--ink-700);font-size:var(--fs-xs);font-weight:600;white-space:nowrap;box-shadow:none}
+.update-bar button.is-primary{border-color:transparent;background:var(--primary-600);color:var(--white);box-shadow:none}
+.update-bar button:hover{filter:brightness(.96)}
+/* Banner cookie (cookie-banner.js): góc dưới phía đầu dòng để không che giữa bàn phím của bài học;
+   hai nút cùng một kiểu — từ chối phải dễ như đồng ý. */
+.cookie-banner{position:fixed;inset-inline-start:18px;bottom:18px;z-index:61;width:min(400px,calc(100vw - 32px));padding:18px 20px;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--glass);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);color:var(--ink-900);font-size:var(--fs-sm);line-height:1.45;box-shadow:var(--shadow-lift)}
+.cookie-banner p{margin:0 0 12px}
+.cookie-banner a{color:var(--primary-700);font-weight:600;text-decoration:underline}
+.cookie-banner-actions{display:flex;gap:8px}
+.cookie-banner button{flex:1;min-height:40px;border:0;border-radius:var(--r-pill);padding:8px 14px;background:rgba(0,0,0,.06);color:var(--ink-900);font-size:var(--fs-sm);font-weight:500;transition:background-color var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease)}
+.cookie-banner button:hover{background:rgba(0,0,0,.1)}
+.cookie-banner button:active{transform:var(--press);box-shadow:none}
+@media (max-width:600px){.cookie-banner{inset-inline:16px;bottom:16px;width:auto}.cookie-banner button{min-height:44px}}
+.feedback{margin:10px 0 0;color:var(--text-muted);font-size:var(--fs-2xs)}
+
+/* ===== Hero & tiêu đề section ================================================================= */
+/* .hero chỉ còn dùng ở trang chủ; home.css ghi đè lưới và padding, nên ở đây chỉ giữ phần khung. */
+.hero{min-height:550px;overflow:hidden;display:grid;grid-template-columns:1fr .82fr;gap:32px;max-width:var(--w-page);padding:90px var(--pad-x) 72px;margin:auto}
+.hero-copy{padding-left:56px}
+.section-heading{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:27px}
+.section-heading .eyebrow{margin-bottom:10px}
+
+/* ===== Khối "khám phá thêm" (trang chủ, bai-hoc, tien-do, luyen-tu-do) ========================= */
+.explore{max-width:var(--w-page);margin:0 auto;padding:0 0 var(--gap-section)}
+.explore-heading{margin-bottom:22px}
+.explore-heading .eyebrow{margin-bottom:10px}
+.explore-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+/* Thẻ kiểu Apple: nền trắng, bo lớn, không viền dày — chỉ một bóng rất mềm; rê chuột thì nổi nhẹ. */
+.explore-card{display:flex;min-height:200px;flex-direction:column;color:var(--text);border:0;border-radius:var(--r-lg);background:var(--surface);padding:28px;text-decoration:none;box-shadow:var(--shadow-card);transition:transform var(--dur) var(--ease-out),box-shadow var(--dur) var(--ease-out)}
+.explore-card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lift)}
+.explore-card:active{transform:var(--press);box-shadow:none}
+.explore-card:focus-visible{box-shadow:var(--shadow-focus)}
+.explore-card h3{margin:0 0 8px;color:var(--ink-900);font-size:21px;font-weight:600;letter-spacing:var(--track-title)}
+.explore-card p{margin:0;color:var(--text-muted);font-size:var(--fs-sm);line-height:1.5}
+.explore-card span{margin-top:auto;padding-top:18px;color:var(--link);font-size:var(--fs-sm);font-weight:500}
+.explore-card b{margin-left:6px;font-size:16px;vertical-align:-1px}
+
+/* ===== Bảng thành tích (tien-do) ============================================================== */
+.results{max-width:var(--w-page);margin:0 auto;padding:84px 0}
+.results-heading{display:flex;justify-content:space-between;align-items:flex-end;margin-bottom:24px}
+.results-heading .eyebrow{margin-bottom:10px}
+.results-heading p:not(.eyebrow){font-size:12px;color:var(--muted);margin:9px 0 0}
+.clear-results{border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);color:var(--ink-700);padding:8px 12px;font-size:var(--fs-xs);font-weight:600;box-shadow:none}
+.results-table-wrap{max-height:400px;overflow:auto;border:0;border-radius:var(--r-lg);background:var(--surface);box-shadow:var(--shadow-card)}
+.results-table{width:100%;border-collapse:collapse;font-size:12px}
+.results-table th{position:sticky;top:0;background:var(--primary-50);color:var(--ink-700);font-size:var(--fs-2xs);font-weight:700;text-align:start;padding:12px 15px}
+.results-table td{padding:12px 15px;border-top:1px solid var(--line)}
+.results-table td:first-child{font-weight:700}
+.results-table .empty{color:var(--muted-soft)}
+
+/* ===== Khung quanh bàn phím minh hoạ (tien-do, luyen-tu-do) ====================================
+   Đây là phần "hộp + chú thích ngón", KHÔNG phải bản thân bàn phím — phím nằm ở keyboard/keyboard.css.
+   Bản cũ khai báo .keyboard-lab bốn lần rải rác; gộp lại, giữ đúng giá trị cuối cùng có hiệu lực. */
+.keyboard-lab{margin-top:22px;display:grid;grid-template-columns:minmax(0,1fr) 230px;gap:28px;background:var(--surface);border:0;border-radius:var(--r-xl);padding:32px;box-shadow:var(--shadow-card)}
+.keyboard-copy{order:2}
+.keyboard-copy h3{font-size:20px;letter-spacing:-.8px;margin-bottom:10px}
+.keyboard-copy>p:not(.eyebrow){font-size:12px;color:var(--muted);line-height:1.7}
+.keyboard-demo{order:1;min-width:0}
+.finger-legend{display:flex;flex-wrap:wrap;gap:5px;margin-top:16px}
+.finger-legend span{font-size:var(--fs-2xs);font-weight:600;padding:4px 8px;border-radius:var(--r-pill);color:var(--ink-900)}
+/* Năm màu ngón tay là màu ngữ nghĩa (mỗi ngón một sắc), không quy về token thương hiệu được.
+   Đúng năm màu mà bàn phím và bàn tay 3D đang dùng (--fng-* trong keyboard/keyboard.css) — chú
+   thích mà lệch màu với phím thì thà bỏ đi còn hơn. */
+.finger-legend .pinky{background:#b8b8f0;color:#2c2c93}
+.finger-legend .ring{background:#a8e0b8;color:#2c9349}
+.finger-legend .middle{background:#f6df72;color:#806500}
+.finger-legend .index{background:#98d8d8;color:#2c9393}
+.finger-legend .thumb{background:#8cc8ff;color:#205c9a}
+
+/* ===== Luyện tự do (luyen-tu-do) ==============================================================
+   free.css bật lại .free-practice bằng .free-page, nên ở đây không cần rule display nào nữa. */
+.free-practice{min-width:0}
+.free-intro{margin:2px 0 15px}
+.free-intro strong{display:block;font-size:16px;margin-bottom:4px}
+.free-intro span{font-size:var(--fs-xs);color:var(--muted)}
+.free-practice textarea{max-width:100%;overflow-wrap:anywhere;font:13px var(--font-mono)}
+.free-actions{display:flex;gap:8px;margin:8px 0 17px}
+.free-actions button{border-radius:var(--r-pill);padding:8px 16px;font-size:var(--fs-sm);font-weight:500;transition:background-color var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease)}
+.free-actions button:active{transform:var(--press)}
+.use-text{background:var(--primary-600);color:var(--white);border:0}
+.use-text:hover{background:var(--primary-700)}
+.random-text{color:var(--ink-900);background:rgba(0,0,0,.05);border:0}
+.random-text:hover{background:rgba(0,0,0,.09)}
+.free-stats{display:flex;gap:24px;border-top:1px solid var(--ink-200);border-bottom:1px solid var(--ink-200);padding:12px 0;margin-bottom:14px}
+.free-stats span{color:var(--ink-500);font-size:var(--fs-xs);font-weight:400}
+.free-stats b{display:block;font-size:21px;font-weight:300;color:var(--ink-900);margin-top:2px;font-variant-numeric:tabular-nums}
+.free-sample{max-width:100%;min-height:50px;margin:0;color:var(--ink-900);font:14px/1.8 var(--font-mono);white-space:normal;overflow-wrap:anywhere;word-break:break-word}
+.free-sample .current{background:var(--primary-100);color:var(--primary-700);border-radius:4px}
+.free-sample .wrong{color:var(--danger);text-decoration:underline}
+
+/* ===== Footer ================================================================================= */
+/* Ba cột: logo | dòng pháp lý (giữa) | khẩu hiệu + ©. Đặt theo lưới chứ không theo thứ tự trong HTML,
+   vì dòng pháp lý (scripts/lib/legal.mjs) luôn là phần tử cuối của <footer>. Hàng liên kết lộ trình/bài
+   học (.footer-links) đã bỏ khỏi chân trang ngày 2026-09-26 — menu trên cùng đã có các liên kết đó. */
+footer{max-width:var(--w-page);border-top:1px solid var(--ink-200);margin:var(--gap-section) auto 0;padding:24px var(--pad-x) 40px;display:grid;grid-template-columns:1fr auto 1fr;align-items:center;column-gap:24px;row-gap:4px;color:var(--ink-500);font-size:var(--fs-xs)}
+footer .brand{grid-column:1;grid-row:1 / span 2;justify-self:start;font-size:17px}
+footer > p,footer > span{grid-column:3;justify-self:end;text-align:end;font-size:var(--fs-2xs);color:var(--muted-soft);margin:0}
+footer .footer-legal{grid-column:2;grid-row:1 / span 2;justify-self:center;display:flex;flex-wrap:wrap;justify-content:center;align-items:center;gap:6px 4px;margin:0;font-size:var(--fs-xs);text-align:center}
+.footer-legal a{padding:4px 8px;color:var(--ink-700);font-weight:400;text-decoration:none;white-space:nowrap;transition:color var(--dur-fast) var(--ease)}
+.footer-legal a:hover{color:var(--ink-900);text-decoration:underline}
+.footer-legal a:focus-visible{outline:none;box-shadow:var(--shadow-focus)}
+.footer-legal span{color:var(--muted-soft);font-size:var(--fs-sm);font-weight:700}
+
+/* ===== Hiệu ứng gõ (11ty/client/effects.js) =================================================== */
+/* Con trỏ trượt kiểu typekute: một thanh mảnh màu nhấn, nằm trong khung chữ (khung phải là gốc toạ độ).
+   Đang gõ thì đứng yên và sáng rõ; ngừng tay thì nhấp nháy chậm; phím sai thì chớp đỏ một nhịp. */
+.has-smooth-caret{position:relative}
+.te-caret{position:absolute;top:0;left:0;z-index:2;width:2px;border-radius:2px;background:var(--primary-600);pointer-events:none;will-change:transform;animation:te-caret-blink 1.06s steps(1,end) infinite}
+.te-caret.is-typing{animation:none;opacity:1}
+.te-caret.is-flash{animation:te-caret-flash 240ms var(--ease)}
+@keyframes te-caret-blink{0%,55%{opacity:1}56%,100%{opacity:0}}
+@keyframes te-caret-flash{0%,60%{background:var(--error)}100%{background:var(--primary-600)}}
+/* Sao kết quả: chờ ẩn, rồi lần lượt "nở" ra cùng tiếng chuông của nó. */
+.star-row .star.is-waiting{opacity:0;transform:scale(.4)}
+.star-row .star.is-floating{animation:te-star-in 520ms var(--ease-out) both}
+@keyframes te-star-in{0%{opacity:0;transform:scale(.4) rotate(-12deg)}60%{opacity:1;transform:scale(1.18) rotate(4deg)}100%{opacity:1;transform:none}}
+/* Nhãn kỷ lục cá nhân trên kết quả trang test (đi cùng pháo hoa). */
+.te-best{display:inline-flex;align-items:center;gap:6px;margin:0 0 14px;padding:6px 14px;border-radius:var(--r-pill);background:var(--gold-100);color:var(--gold-800);font-size:var(--fs-sm);font-weight:600;animation:te-best-in 420ms var(--ease-out) both}
+.te-best::before{content:"★";color:var(--gold-500)}
+@keyframes te-best-in{from{opacity:0;transform:translateY(6px) scale(.96)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){
+  .te-caret{animation:none}
+  .star-row .star.is-floating,.te-best{animation:none}
+}
+
+/* ===== Tiện ích =============================================================================== */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ===== Đáp ứng ================================================================================
+   Bản cũ dùng 12 ngưỡng (750/900/620/600/599/520/500/420/380...), nhiều cặp lệch 1px vô nghĩa.
+   Nay chỉ hai: 900px cho máy tính bảng / cửa sổ hẹp, 620px cho điện thoại. */
+@media (max-width:900px){
+  .topbar{height:52px;display:flex;justify-content:space-between}
+  .topbar nav{display:none}
+  /* Nút ☰ (menu.js) mở chính menu trên cùng thành bảng thả xuống. */
+  .menu-toggle{display:inline-flex;align-items:center;justify-content:center;width:40px;height:40px;padding:0;border:0;border-radius:var(--r-pill);background:transparent;color:var(--ink-900);cursor:pointer}
+  .menu-toggle:focus-visible{outline:none;box-shadow:var(--shadow-focus)}
+  .menu-toggle .menu-close,.topbar.is-menu-open .menu-toggle .menu-bars{display:none}
+  .topbar.is-menu-open .menu-toggle .menu-close{display:inline}
+  .topbar.is-menu-open > nav{display:flex;flex-direction:column;gap:2px;position:absolute;top:100%;left:12px;right:12px;justify-self:stretch;width:auto;z-index:60;padding:8px;background:var(--glass);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border:1px solid var(--border);border-radius:var(--r-lg);box-shadow:var(--shadow-lift)}
+  .topbar.is-menu-open > nav a{padding:12px 14px;font-size:17px;border-radius:var(--r)}
+  .hero{grid-template-columns:1fr;padding:60px var(--pad-x) 25px}
+  .hero-copy{padding:0}
+  h1{font-size:var(--fs-h1)}
+  .section-heading{align-items:flex-start;gap:18px}
+  .header-actions{gap:5px}
+  .primary-button,.secondary-button{min-height:46px}
+  .explore{margin:0 var(--pad-x)}
+  .explore-grid{grid-template-columns:repeat(2,1fr)}
+  .explore-card:last-child{grid-column:span 2}
+  .results{padding:60px var(--pad-x)}
+  .results-heading{align-items:flex-start;gap:16px}
+  .results-table{min-width:620px}
+  .keyboard-lab{grid-template-columns:1fr;padding:23px 18px}
+  .keyboard-copy h3{font-size:19px}
+  /* Hẹp: xếp dọc, căn giữa — logo, dòng pháp lý, rồi khẩu hiệu và ©. */
+  footer{margin:0 var(--pad-x);grid-template-columns:1fr;justify-items:center;row-gap:10px;text-align:center}
+  footer .brand,footer .footer-legal{grid-column:1;grid-row:auto;justify-self:center}
+  footer > p,footer > span{grid-column:1;justify-self:center;text-align:center}
+  footer .brand{order:-2}
+  footer .footer-legal{order:-1;gap:6px 8px}
+  .footer-legal span{display:none}
+}
+@media (max-width:620px){
+  /* Logo đã về `/`; nút "Trang chủ" cạnh nút vào học làm topbar tràn ngang trên điện thoại. */
+  .header-actions .home-switch{display:none}
+  .explore{padding-bottom:52px}
+  .explore-grid{grid-template-columns:1fr}
+  .explore-card{min-height:0}
+  .explore-card:last-child{grid-column:auto}
+  .secondary-button{justify-content:center}
+  .free-stats{gap:10px}
+  .free-actions{flex-direction:column}
+}
+
+
+/* ===== Cảnh báo Caps Lock (caps-lock.js) — theo thẻ của typekute: phím Caps Lock có đèn xanh,
+   nổi góc trên bên phải, không chặn chuột/focus của vùng gõ. ===== */
+.capslock-warning{position:fixed;top:128px;right:24px;z-index:1000;display:none;pointer-events:none}
+.capslock-warning.is-open{display:block;animation:capslock-in var(--dur) var(--ease-out) both}
+@keyframes capslock-in{from{opacity:0;transform:translateY(-6px) scale(.97)}to{opacity:1;transform:none}}
+.capslock-card{position:relative;pointer-events:auto;box-sizing:border-box;width:240px;padding:12px 18px 14px;
+  background:var(--surface);border:1px solid var(--border);border-radius:var(--r);box-shadow:var(--shadow-lift);text-align:center}
+.capslock-close{position:absolute;top:8px;right:8px;display:grid;place-items:center;width:24px;height:24px;padding:0;
+  border:0;border-radius:7px;background:transparent;color:var(--ink-500);cursor:pointer;
+  transition:background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
+.capslock-close:hover{background:var(--ink-100);color:var(--ink-900)}
+.capslock-close:focus-visible{outline:none;box-shadow:var(--shadow-focus)}
+.capslock-close svg{width:12px;height:12px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round}
+.capslock-bed{display:inline-flex;margin:0 auto 8px;padding:4px 5px;background:var(--ink-100);
+  border:1px solid var(--border);border-radius:8px;box-shadow:inset 0 1px 2px rgba(0,0,0,.05)}
+.capslock-key{position:relative;display:inline-flex;align-items:center;justify-content:center;box-sizing:border-box;
+  width:86px;height:46px;padding:0 6px 0 18px;background:var(--white);border:1px solid var(--ink-200);
+  border-bottom:2px solid var(--ink-300);border-radius:6px;box-shadow:var(--shadow-sm);
+  font:600 11px/1 var(--font-body);color:var(--ink-900);white-space:nowrap;user-select:none}
+.capslock-led{position:absolute;left:9px;top:50%;width:5px;height:5px;margin-top:-2.5px;border-radius:50%;
+  background:var(--led-on);box-shadow:0 0 4px var(--led-on);animation:capslock-led 2s ease-in-out infinite}
+@keyframes capslock-led{50%{opacity:.35}}
+.capslock-title{margin:0 0 2px;font-size:15px;font-weight:700;line-height:1.25;color:var(--ink-900)}
+.capslock-body{margin:0;font-size:var(--fs-sm);line-height:1.35;color:var(--text-muted)}
+/* 128px: dưới cả header site (64) lẫn thanh công cụ của player (56), để không che nút loa/bàn tay. */
+@media (max-width:900px){.capslock-warning{right:16px}}
+@media (prefers-reduced-motion:reduce){.capslock-led{animation:none}}

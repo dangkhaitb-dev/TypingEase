@@ -1,0 +1,70 @@
+{
+  "id": "bn-01-010",
+  "unit": "u1",
+  "group": "g1",
+  "order": 12,
+  "slug": "bn-01-010",
+  "title": "কী অনুশীলন · ঊ ঐ ঔ",
+  "summary": "Introduce committed targets ড ঢ ণ; review none. Separate output scoring from unobserved input actions.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 11,
+  "inputMode": "ascii",
+  "intro": "Introduce committed targets ড ঢ ণ; review none. Separate output scoring from unobserved input actions.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "bn",
+    "lesson": "bn-01-010",
+    "revision": "bn-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "ঊ টাইপ করতে শিফট ও অল্টজিআর দুটোই চেপে ধরে বাঁ হাতের অনামিকা দিয়ে S কী চাপুন (উ-কারের কী)।",
+      "content": "কঊব ঊব ঊব কঊব ঊব ঊব কঊব ঊব ঊব কঊব"
+    },
+    {
+      "type": "standard",
+      "text": "ঐ টাইপ করতে শিফট ও অল্টজিআর দুটোই চেপে ধরে বাঁ হাতের মধ্যমা দিয়ে C কী চাপুন (এ-কারের কী)।",
+      "content": "ঐব ঐব কঐব ঐব ঐব কঐব ঐব ঐব কঐব ঐব"
+    },
+    {
+      "type": "standard",
+      "text": "ঔ টাইপ করতে শিফট ও অল্টজিআর দুটোই চেপে ধরে বাঁ হাতের অনামিকা দিয়ে X কী চাপুন (ও-কারের কী)।",
+      "content": "ঔব কঔব ঔব ঔব কঔব ঔব ঔব কঔব ঔব ঔব"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঔপু রুঊঐ ঊঔগুপৃ ররৃঔ ঊগঁ ঊগৃঁঊঔ ঊগেঁ ঐগঊ পিঊগার গিঁঔ ঔঊপাপু ঔরুপি ঐগঊগো"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঊঊঐঊ ঐঊঐ ঐঊঔ ঊঊঐঔ ঔঔঐঐ ঐঊঊঐ ঐঊ ঐঐঊ ঐঐ ঔঔঐ ঊঊকঊ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঐঊঊ ঊঐঊপ পপঐঊ ঊঊঊঐ ঊঔঔঔ ঊঔঊঐ ঔঔঊ ঔঊঔঊ ঔঔ ঐঐঔ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "হোঁঐ ঐহেঔহ ঐঊঔ ঔঐডাঁ ঔডৃঊবঁ বৃঊঊডি ঔডোঁ ঊঔঔঐ ঊবুহিঐ ডঔ হিঔ ঔঔবু ঊঔঔঊ"
+    },
+    {
+      "type": "standard",
+      "text": "দেখানো অক্ষরগুচ্ছ ক্রমানুসারে টাইপ করুন।",
+      "content": "ঐঐঔ ঐঐঐঊ ঐঐঐ ঊঐঐ ঔঔঊ ঔঔঔ ঐঐঊ ঐঔঐ ঊঊঊঊ বঐ ঐঐঔঐ ঊঊ ঐঐব ঊঊঊ ঔঔ ঔঔঐ"
+    },
+    {
+      "type": "standard",
+      "text": "এ পর্যন্ত শেখা কী দিয়ে সত্যিকারের শব্দ টাইপ করুন।",
+      "content": "দাম সহজে কাগজের কেন রোদ দিনে সবুজ যেন সারি রান্না বাজারে জরুরি বাজারের রাস্তার দরজার রুমি কাগজে ভরে মাটি"
+    }
+  ]
+}

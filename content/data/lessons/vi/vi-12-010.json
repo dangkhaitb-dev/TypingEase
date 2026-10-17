@@ -1,0 +1,46 @@
+{
+  "id": "vi-12-010",
+  "unit": "u12",
+  "group": "g3",
+  "order": 170,
+  "slug": "vi-12-010",
+  "title": "Email và dòng tiêu đề",
+  "summary": "Xây dựng năng lực \"Email and Subject Line\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Soạn thảo email công việc hoàn chỉnh gồm tiêu đề, lời chào, nội dung trao đổi và chữ ký.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 17,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Email and Subject Line\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Soạn thảo email công việc hoàn chỉnh gồm tiêu đề, lời chào, nội dung trao đổi và chữ ký.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-010",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Gõ một email hoàn chỉnh gồm tiêu đề, lời chào, nội dung và chữ ký.",
+      "content": "Chủ đề: Mời họp bàn định hướng năm 2026\nKính gửi Hội đồng Quản trị,\nKính mời quý vị đến phòng họp lúc chín giờ sáng thứ Hai để thảo luận mục tiêu kinh doanh. Xin vui lòng xem trước báo cáo doanh thu và ghi lại các nội dung cần trao đổi. Nếu bận việc đột xuất, quý vị hãy phản hồi thư này trước chiều thứ Sáu để ban thư ký sắp xếp người thay mặt.\nTrân trọng,\nBan Thư ký",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ email xác nhận lịch thăm xưởng gồm tiêu đề, lời chào, nội dung và chữ ký.",
+      "content": "Chủ đề: Xác nhận lịch thăm xưởng sản xuất\nKính gửi anh Minh,\nChúng tôi xác nhận đoàn công tác sẽ có mặt lúc mười bốn giờ thứ Tư. Xin anh hỗ trợ chuẩn bị lịch làm việc và đầu mối liên hệ cụ thể. Đoàn gồm bốn người, cần trao đổi với bộ phận vận hành và an toàn trước khi vào khu sản xuất. Mong anh gửi hướng dẫn đăng ký khách cùng vị trí đỗ xe để mọi người chủ động thời gian.\nTrân trọng,\nNguyễn Mai",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ email gửi đối tác gồm tiêu đề, lời chào, nội dung và chữ ký.",
+      "content": "Chủ đề: Gửi bản thảo thỏa thuận giai đoạn hai\nKính gửi quý đối tác,\nChúng tôi gửi kèm văn bản cung cấp dịch vụ công nghệ và mong nhận phản hồi của quý vị trong tuần này. Xin tập trung kiểm tra thời hạn triển khai, phạm vi hỗ trợ và phương thức nghiệm thu. Nếu cần điều chỉnh điều khoản nào, quý đối tác vui lòng ghi chú trực tiếp trong tài liệu rồi gửi lại cho chúng tôi trước ngày hai mươi tháng này.\nTrân trọng,\nPhòng Kinh doanh",
+      "linebreak": "enter",
+      "inputMode": "telex"
+    }
+  ]
+}

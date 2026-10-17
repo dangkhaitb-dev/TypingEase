@@ -1,0 +1,55 @@
+{
+  "id": "vi-03-008",
+  "unit": "u3",
+  "group": "g1",
+  "order": 45,
+  "slug": "vi-03-008",
+  "title": "Luyện phím · R S T",
+  "summary": "Gõ chữ hoa R, S, T bằng Shift và luyện các từ viết hoa.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 6,
+  "inputMode": "telex",
+  "intro": "Gõ chữ hoa R, S, T bằng Shift và luyện các từ viết hoa.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-03-008",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ r (ngón trỏ trái) để ra R. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Rõ Ra Rộng Ra Rau Rộng Ra Rơi",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ s (ngón áp út trái) để ra S. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Sau Sổ Số Sài Gòn Sơn Sinh Sáng Sách Số Sách",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Giữ Shift và gõ t (ngón trỏ trái) để ra T. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Bến Tre Cần Thơ Tú Cần Thơ Tú Thu Tâm",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Gõ các từ viết hoa, chú ý R, S, T. Giữ Shift bằng ngón út của tay kia.",
+      "content": "Điện Tường Trọng Sài Gòn Thường Trống Trở Rơi động Rơi Trở Thái Bình",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Kiểm tra: gõ các từ viết hoa có R, S, T mà không nhìn bàn phím.",
+      "content": "Sát Bật đồ Rau Thứ chiếc Tài giúp chuyện Tối đó Tuần tôi Thức Tại",
+      "inputMode": "telex"
+    }
+  ]
+}

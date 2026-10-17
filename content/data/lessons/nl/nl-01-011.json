@@ -1,0 +1,88 @@
+{
+  "id": "nl-01-011",
+  "unit": "u1",
+  "group": "g1",
+  "order": 10,
+  "slug": "nl-01-011",
+  "title": "Dode accenttoets `: à en è",
+  "summary": "Leer de nieuwe toetsen à en è met de dode toets ` en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 8,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen à en è met de dode toets ` en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-011",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Druk op ` (dode toets, linksboven), laat los en druk dan op a: je krijgt à. Ga daarna terug naar de basispositie.",
+      "content": "ààà àààà àà ààà àààà ààà àà àà àà àaà àà"
+    },
+    {
+      "type": "standard",
+      "text": "Druk op ` (dode toets, linksboven), laat los en druk dan op e: je krijgt è. Ga daarna terug naar de basispositie.",
+      "content": "eèè èè eèèè eèè èè eè èeèè èèè èè èè èèèè"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "èio àèè àèèè èà àèiè àààà sèlà àèè èlàè èààn àèi èàèà oèà"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "èdè inè àè àà àsèè àrè èèàà èàèè àèà èèà ànèà àrmè èèè àèà"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "àmà ààè àà èàts omè àè ààè ààà àèès àar àè èi su iàà àèèè"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "èiè ukà ràa uo àè èèàt èàà àà sla ànèà èàk èadm àdsè os èàèà"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "ik wil twee à drie chèques en wat crème kopen"
+    }
+  ]
+}

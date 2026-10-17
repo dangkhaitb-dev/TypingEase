@@ -1,0 +1,64 @@
+{
+  "id": "ko-04-jump",
+  "unit": "u4",
+  "group": "g2",
+  "order": 66,
+  "slug": "ko-04-jump",
+  "title": "앞으로 건너뛰기",
+  "summary": "",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "hangul",
+  "intro": "Enter를 눌러 줄을 바꾸며 짧은 목록을 입력합니다.",
+  "congrats": "",
+  "kind": "jump",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-04-jump",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Enter를 눌러 줄을 바꾸며 짧은 목록을 입력합니다.",
+      "content": "책을 펼쳐요\n한 장씩 읽어요\n생각을 적어요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "손목시계를 보고 정류장에서 버스를 기다려요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "책을 다 읽고 나서 친구와 생각을 나눠요",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "소풍에 가져갈 물은 2병이에요. 빵도 살까요?",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "오늘 할 일을 적어요\n끝낸 일은 지워요\n내일 일도 정해요",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "배운 키로 낱말과 문장을 정확히 입력합니다.",
+      "content": "오늘은 책을 읽어요.\n내일도 연습해요.\n모레는 쉬어요.",
+      "linebreak": "enter",
+      "inputMode": "hangul"
+    }
+  ]
+}

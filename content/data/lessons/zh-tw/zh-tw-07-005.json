@@ -1,0 +1,43 @@
+{
+  "id": "zh-tw-07-005",
+  "unit": "u7",
+  "group": "g1",
+  "order": 66,
+  "slug": "zh-tw-07-005",
+  "title": "說明公車搭乘",
+  "summary": "以自然情境文字練習連續輸入與候選字確認。",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "ime",
+  "intro": "以自然情境文字練習連續輸入與候選字確認。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh-tw",
+    "lesson": "zh-tw-07-005",
+    "revision": "zh-tw-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "弟弟問：「去動物園要搭幾號公車？」我說：「搭二三六號，在學校前面的站牌等車。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我告訴他：「上車時記得刷卡，快到站時要先按下車鈴。下車時也要再刷一次。」",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "以自然情境句子練習連續輸入。",
+      "content": "我又說：「動物園是終點站，不用擔心坐過站。等車子停好，再起身下車就好。」",
+      "inputMode": "ime"
+    }
+  ]
+}

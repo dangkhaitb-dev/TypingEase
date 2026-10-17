@@ -1,0 +1,49 @@
+{
+  "id": "vi-12-007",
+  "unit": "u12",
+  "group": "g2",
+  "order": 167,
+  "slug": "vi-12-007",
+  "title": "Biên bản họp và đối thoại",
+  "summary": "Xây dựng năng lực \"Meeting Notes and Dialogue\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 4 màn hình mô phỏng biên bản cuộc họp công sở thực tế kèm phát biểu của các thành viên.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 23,
+  "inputMode": "telex",
+  "intro": "Xây dựng năng lực \"Meeting Notes and Dialogue\" cho học viên qua chuỗi màn luyện tập tiếng Việt được ánh xạ trực tiếp từ EN: Bài học 4 màn hình mô phỏng biên bản cuộc họp công sở thực tế kèm phát biểu của các thành viên.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "vi",
+    "lesson": "vi-12-007",
+    "revision": "vi-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "Mở đầu có dẫn dắt cùng biên bản cuộc họp ban giám đốc công ty phiên bất thường.",
+      "content": "Biên bản cuộc họp ban giám đốc công ty phiên bất thường: Chủ tọa đồng chí Trần Đình Trọng; Thư ký ghi biên bản đồng chí Hoàng Mai Lan; Thời gian bắt đầu lúc chín giờ sáng ngày hôm nay. Các thành viên tham dự xác nhận đã đọc tài liệu chuẩn bị trước cuộc họp. Chủ tọa nêu rõ mục tiêu thảo luận và đề nghị từng phòng ban trình bày ngắn gọn tình hình thực hiện kế hoạch.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Phần giữa biên bản: ghi trọn hai ý kiến thảo luận.",
+      "content": "Trưởng phòng kế hoạch đề xuất phương án mở rộng dây chuyền sản xuất số hai. Giám đốc tài chính xác nhận nguồn vốn tự có bảo đảm cho nhu cầu đầu tư mới và chưa cần vay thêm ngân hàng. Các đại biểu đề nghị cập nhật tiến độ mua sắm và dự kiến thời gian lắp đặt. Trưởng phòng kỹ thuật sẽ gửi bảng so sánh thiết bị cùng phương án bảo trì để mọi người xem xét trước khi biểu quyết.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Phần kết biên bản: ghi kết luận, biểu quyết và việc giao thực hiện thành một đoạn hoàn chỉnh.",
+      "content": "Chủ tọa kết luận: toàn thể thành viên có mặt nhất trí thông qua tờ trình đầu tư nâng cấp dây chuyền công nghệ. Ban giám đốc chịu trách nhiệm ký hợp đồng mua sắm thiết bị và giám sát tiến độ thực hiện dự án. Thư ký hoàn thiện biên bản, ghi rõ các mốc bàn giao và gửi bản dự thảo cho từng thành viên xác nhận. Cuộc họp kết thúc sau khi chủ tọa nhắc lại thời hạn báo cáo kết quả.",
+      "inputMode": "telex"
+    },
+    {
+      "type": "standard",
+      "text": "Vận dụng kỹ năng vào phần kết biên bản họp lập thành ba bản có giá trị pháp lý.",
+      "content": "Biên bản cuộc họp chính thức được lập thành ba bản có giá trị pháp lý như nhau, lưu tại văn phòng hội đồng quản trị, ban kiểm soát nội bộ và phòng kế toán tổng hợp của công ty. Toàn bộ các tài liệu phụ lục đính kèm gồm báo cáo nghiên cứu tính khả thi của dự án, biên bản thẩm định giá của đơn vị độc lập và bảng dự toán chi tiết các hạng mục xây lắp đều được thư ký đánh số thứ tự, đóng dấu giáp lai cẩn thận và lưu trữ theo đúng quy chuẩn lưu trữ văn thư quốc gia hiện hành.",
+      "inputMode": "telex"
+    }
+  ]
+}

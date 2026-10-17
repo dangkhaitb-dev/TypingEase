@@ -1,0 +1,87 @@
+{
+  "id": "en-01-014",
+  "unit": "u1",
+  "group": "g3",
+  "order": 13,
+  "slug": "en-01-014",
+  "title": "M",
+  "summary": "Learn m, then practise with the keys you already know.",
+  "newKeys": [
+    "m"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 7,
+  "inputMode": "ascii",
+  "intro": "Learn m, then practise with the keys you already know.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "en",
+    "lesson": "en-01-014",
+    "revision": "en-adult-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "m",
+      "text": "Find m and return to the home position. Type each target carefully.",
+      "content": "mm fmfm mmmm fm mffm mmfm mf ff mmf mmm fmm",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "mn mmmn nm mm mmm mmmm fmm nmmm nmnm nmnn mnnm"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "mmmm mm mmm mmx mxm xmm mmxm xm mmmx mxmm mx xmmm"
+    },
+    {
+      "type": "standard",
+      "text": "Type each target carefully, then return to the home position before the next one.",
+      "content": "mmnm nn mmmm mmnn nm mnm mmm mmmn mn mm fm mnnm nnf mmn"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "many people make time to meet at the market"
+    },
+    {
+      "type": "standard",
+      "text": "Type each word carefully, using only the keys you have learned.",
+      "content": "my mom made a map of the town and the farm"
+    }
+  ]
+}

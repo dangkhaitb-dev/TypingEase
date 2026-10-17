@@ -1,0 +1,102 @@
+{
+  "id": "zh-01-019",
+  "unit": "u1",
+  "group": "g1",
+  "order": 19,
+  "slug": "zh-01-019",
+  "title": "拼音输入综合复习",
+  "summary": "用拼音输入法输入常用词语和短句，综合使用已学的字母、标点、Enter 和 Shift。",
+  "newKeys": [],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    ";",
+    "'",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "-",
+    ",",
+    ".",
+    "/",
+    "enter",
+    "shift"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 4,
+  "inputMode": "ime",
+  "intro": "用拼音输入法输入常用词语和短句，综合使用已学的字母、标点、Enter 和 Shift。",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "zh",
+    "lesson": "zh-01-019",
+    "revision": "zh-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "综合练习：用已学的拼音、标点、Enter 和 Shift 输入完整句子。",
+      "content": "早上好！今天天气不错，我们去公园走走吧。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "综合练习：用已学的拼音、标点、Enter 和 Shift 输入完整句子。",
+      "content": "你叫什么名字？我叫小明，很高兴认识你。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "综合练习：用已学的拼音、标点、Enter 和 Shift 输入完整句子。",
+      "content": "我每天读书，也每天练习打字，进步很快。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "综合练习：用已学的拼音、标点、Enter 和 Shift 输入完整句子。",
+      "content": "明天下午有空吗？我们一起去看电影。",
+      "inputMode": "ime"
+    },
+    {
+      "type": "standard",
+      "text": "综合练习：用已学的拼音、标点、Enter 和 Shift 输入完整句子。",
+      "content": "晚上好\n今天过得怎么样？\n很好，谢谢！\n明天见。",
+      "linebreak": "enter",
+      "inputMode": "ime"
+    }
+  ]
+}

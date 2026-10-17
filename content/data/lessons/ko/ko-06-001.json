@@ -1,0 +1,43 @@
+{
+  "id": "ko-06-001",
+  "unit": "u6",
+  "group": "g1",
+  "order": 78,
+  "slug": "ko-06-001",
+  "title": "손가락 위치와 변화 기록",
+  "summary": "손가락 위치를 확인하고 예상과 실제의 차이를 순서대로 기록합니다.",
+  "newKeys": [],
+  "keysSoFar": [],
+  "minAccuracy": 80,
+  "estMinutes": 3,
+  "inputMode": "hangul",
+  "intro": "손가락 위치를 확인하고 예상과 실제의 차이를 순서대로 기록합니다.",
+  "congrats": "",
+  "kind": "review",
+  "source": {
+    "product": "typekute",
+    "pack": "ko",
+    "lesson": "ko-06-001",
+    "revision": "ko-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "연습을 시작할 때는 두 검지를 먼저 가운데 줄의 돌기 위에 올립니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "매일 연습이 끝나면 그날의 속도와 정확도를 작은 공책에 꼭 적어 둡니다.",
+      "inputMode": "hangul"
+    },
+    {
+      "type": "standard",
+      "text": "일상 상황의 자연스러운 한국어 문장을 정확하고 매끄럽게 입력합니다.",
+      "content": "한 주 동안 적은 기록을 나란히 비교하면 손가락이 얼마나 익숙해졌는지 보입니다.",
+      "inputMode": "hangul"
+    }
+  ]
+}

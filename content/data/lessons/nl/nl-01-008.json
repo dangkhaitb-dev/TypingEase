@@ -1,0 +1,107 @@
+{
+  "id": "nl-01-008",
+  "unit": "u1",
+  "group": "g1",
+  "order": 7,
+  "slug": "nl-01-008",
+  "title": "Toetsen o, p, z",
+  "summary": "Leer de nieuwe toetsen o, p, z en oefen ze met eerder geleerde toetsen.",
+  "newKeys": [
+    "o",
+    "p",
+    "z"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 13,
+  "inputMode": "ascii",
+  "intro": "Leer de nieuwe toetsen o, p, z en oefen ze met eerder geleerde toetsen.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "nl",
+    "lesson": "nl-01-008",
+    "revision": "nl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "o",
+      "text": "Toets oefenen: o.",
+      "content": "oooo oooo oooo oooo oooo oooo oooo oooo oooo",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "p",
+      "text": "Toets oefenen: p.",
+      "content": "pppp pppp pppp pppp pppp pppp pppp pppp pppp p",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "z",
+      "text": "Toets oefenen: z.",
+      "content": "zzzz zzzz zzzz zzzz zzzz zzzz zzzz zzzz zz",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "zpzo zuop ozpo oo pop pzoz pp oopo pzp opz zz ppo ppp opp oop zzo zzp opo"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "po zppo oop zzao ppp zz ppoz zo ooz zp opz ppo"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "pp oopo oop poo zzpz oopp llp zooo ppoo oz po oooz pl zz ozp pppo opo"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "zozo zppo oopz zzpo zzp zzpz pzp ozoz zr rzp pp zzz zpoo oop ppo oo ppz zo"
+    },
+    {
+      "type": "standard",
+      "text": "Wissel de geoefende toetsen af en houd een gelijkmatig ritme aan.",
+      "content": "pzz zpph zpo zzp oozz opz ooo zo zzz poz ppz ppzp oo pz zzo zzpp oz zp"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "de poes zit op het pad zij zoekt de zus op de post"
+    },
+    {
+      "type": "standard",
+      "text": "Typ elk woord zorgvuldig met alleen de toetsen die je al kent.",
+      "content": "zij is ook op zoek hij zoekt het zout de poes zoekt ook"
+    }
+  ]
+}

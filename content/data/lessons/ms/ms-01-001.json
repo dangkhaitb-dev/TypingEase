@@ -1,0 +1,79 @@
+{
+  "id": "ms-01-001",
+  "unit": "u1",
+  "group": "g1",
+  "order": 1,
+  "slug": "ms-01-001",
+  "title": "Kekunci panduan f, j dan bar ruang",
+  "summary": "Cari huruf a s d f j k l dan bar ruang; taip perkataan Melayu pendek daripada irisan itu.",
+  "newKeys": [
+    "f",
+    "j",
+    " "
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " "
+  ],
+  "minAccuracy": 70,
+  "estMinutes": 10,
+  "inputMode": "ascii",
+  "intro": "Cari huruf a s d f j k l dan bar ruang; taip perkataan Melayu pendek daripada irisan itu.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "ms",
+    "lesson": "ms-01-001",
+    "revision": "ms-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "f",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "ffff ffff ffff ffff ffff ffff f",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "j",
+      "text": "Cari kekunci yang ditunjukkan dan taip dengan gerakan yang tetap.",
+      "content": "jjjj jjjj jjjj jjjj jjjj jjjj jj",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": " ",
+      "text": "Tekan bar ruang dengan ibu jari untuk memisahkan kumpulan huruf.",
+      "content": "f j ff jj f j ff jj f j ff jj f j f",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fff jjfj jf ffj jfjj ff fjj fjjf ff jjf jjff fj jfj jfff jj fjj fff"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jfj jfff jj fjj fffj jf jjf ffjj fj jff fjjf jj fff jjfj jf ffj jfjj"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "fff jjfj jf ffj jfjj ff fjj fjjf ff jjf jjff fj jfj jfff jj fjj fffj j"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jfj jfff jj fjj fffj jf jjf ffjj fj jff fjjf jj fff jjfj jf ffj jfjj ff"
+    },
+    {
+      "type": "standard",
+      "text": "Taip setiap aksara mengikut urutan. Letakkan semula jari telunjuk pada f dan j.",
+      "content": "jff jj jjf ff jffj fffj ff fj fj fj jjjj jjff jffj jf jjjf"
+    }
+  ]
+}

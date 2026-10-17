@@ -1,0 +1,112 @@
+{
+  "id": "pl-03-002",
+  "unit": "u3",
+  "group": "g1",
+  "order": 24,
+  "slug": "pl-03-002",
+  "title": "Wielkie litery A B C",
+  "summary": "Poznaj klawisze A, B, C i utrwal ich użycie w ćwiczeniach.",
+  "newKeys": [
+    "A",
+    "B",
+    "C"
+  ],
+  "keysSoFar": [
+    "f",
+    "j",
+    " ",
+    "a",
+    "s",
+    "d",
+    "g",
+    "h",
+    "k",
+    "l",
+    "q",
+    "w",
+    "e",
+    "r",
+    "t",
+    "y",
+    "u",
+    "i",
+    "o",
+    "p",
+    "z",
+    "x",
+    "c",
+    "v",
+    "b",
+    "n",
+    "m",
+    "altgr",
+    "ą",
+    "ć",
+    "ę",
+    "ł",
+    "ń",
+    "ó",
+    "ś",
+    "ź",
+    "ż",
+    "shift",
+    "1",
+    "2",
+    "3",
+    "4",
+    "5",
+    "6",
+    "7",
+    "8",
+    "9",
+    "0",
+    "A",
+    "B",
+    "C"
+  ],
+  "minAccuracy": 80,
+  "estMinutes": 5,
+  "inputMode": "ascii",
+  "intro": "Poznaj klawisze A, B, C i utrwal ich użycie w ćwiczeniach.",
+  "congrats": "",
+  "kind": "keys",
+  "source": {
+    "product": "typekute",
+    "pack": "pl",
+    "lesson": "pl-03-002",
+    "revision": "pl-draft-v1"
+  },
+  "screens": [
+    {
+      "type": "block",
+      "newKey": "A",
+      "text": "Przytrzymaj Shift i naciśnij a, aby wpisać A. Potem wróć do pozycji wyjściowej.",
+      "content": "AAA AA AAAA AA AA AA AA AA",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "B",
+      "text": "Przytrzymaj Shift i naciśnij b, aby wpisać B. Potem wróć do pozycji wyjściowej.",
+      "content": "BBBB BBB BB BB BB BB BB BB",
+      "dictation": "letters"
+    },
+    {
+      "type": "block",
+      "newKey": "C",
+      "text": "Przytrzymaj Shift i naciśnij c, aby wpisać C. Potem wróć do pozycji wyjściowej.",
+      "content": "CCC CC CCCC CC CC CC CC CC",
+      "dictation": "letters"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "BBC BBCB CCCB CC ABC AA CCC CBB AB CCB ABA CCAC CCBC CB AAAA AAv"
+    },
+    {
+      "type": "standard",
+      "text": "Przeplataj ćwiczone klawisze i utrzymuj równy rytm.",
+      "content": "AC 00AA BB CC CCCB CCA CB AAC CABC BB0 CCB BBC BA BBAA"
+    }
+  ]
+}
