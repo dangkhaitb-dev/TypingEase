@@ -49,7 +49,7 @@ export default {
     },
     {
       h2: '1 分鐘、5 分鐘還是 10 分鐘打字測試',
-      html: '<p>1 分鐘以內的短測試反映你的最高速度，5 分鐘和 10 分鐘考的是耐力：成績通常低一些，也更接近你寫長信或報告時的真實速度。想和以前的自己比較，每次都選同樣的長度，不然就像拿短跑和馬拉松比。</p><div class="guide-table-wrap"><table class="wpm-table"><caption>每個長度適合做什麼</caption><thead><tr><th scope="col">長度</th><th scope="col">什麼時候選</th></tr></thead><tbody><tr><th scope="row">15秒</th><td>只夠打幾個詞，適合開始前暖手，或檢查數字列上的聲調鍵有沒有按準。</td></tr><tr><th scope="row">30秒</th><td>能打完一兩句，適合比較同一個難點練習前後的差別。</td></tr><tr><th scope="row">1分鐘打字測試</th><td>最常用的標準長度，幾乎不受疲勞影響，但一個錯誤就會明顯拉低成績。</td></tr><tr><th scope="row">2分鐘</th><td>一次失誤的影響減半，成績比 1 分鐘穩定，適合每天記一次進度。</td></tr><tr><th scope="row">3分鐘</th><td>前後半段的速度差開始顯出來，看穩定度就知道節奏是不是忽快忽慢。</td></tr><tr><th scope="row">5分鐘打字測試</th><td>注意力開始分散、手開始累，看得出指法在這時還能不能保持住。</td></tr><tr><th scope="row">10分鐘打字測試</th><td>手腕和坐姿的問題通常到後半段才出現，適合想知道自己能穩定打多久的人。</td></tr></tbody></table></div>'
+      html: '<p>1 分鐘以內的短測試反映你的最高速度，5 分鐘和 10 分鐘考的是耐力：成績通常低一些，也更接近你寫長信或報告時的真實速度。想和以前的自己比較，每次都選同樣的長度，不然就像拿短跑和馬拉松比。</p><div class="guide-table-wrap"><table class="wpm-table"><caption>每個長度適合做什麼</caption><thead><tr><th scope="col">長度</th><th scope="col">什麼時候選</th></tr></thead><tbody><tr><th scope="row">15或30秒</th><td>只夠打幾個詞，適合開始前暖手，或檢查數字列上的聲調鍵有沒有按準。</td></tr><tr><th scope="row">1分鐘打字測試</th><td>最常用的標準長度，幾乎不受疲勞影響，但一個錯誤就會明顯拉低成績。</td></tr><tr><th scope="row">2或3分鐘</th><td>一次失誤的影響減半，成績比 1 分鐘穩定，適合每天記一次進度。</td></tr><tr><th scope="row">5分鐘打字測試</th><td>注意力開始分散、手開始累，看得出指法在這時還能不能保持住。</td></tr><tr><th scope="row">10分鐘打字測試</th><td>手腕和坐姿的問題通常到後半段才出現，適合想知道自己能穩定打多久的人。</td></tr></tbody></table></div>'
     },
     {
       h2: '怎麼看準確率',

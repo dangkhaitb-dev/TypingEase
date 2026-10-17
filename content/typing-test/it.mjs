@@ -47,11 +47,11 @@ export default {
       h2: 'Test di battitura di 1 minuto, 5 minuti o 10 minuti',
       html: `<p>I test brevi misurano la velocità di punta, quando resti concentrato dall'inizio alla fine; quelli lunghi misurano la resistenza e somigliano di più al lavoro vero, come una lunga email o un verbale, con un punteggio di solito un po' più basso. Se vuoi seguire i tuoi progressi, usa sempre la stessa durata.</p>`
         + `<div class="guide-table-wrap"><table class="wpm-table"><caption>Che cosa ti dice ogni durata</caption><thead><tr><th scope="col">Durata</th><th scope="col">A cosa serve</th></tr></thead><tbody>`
-        + `<tr><th scope="row">15 secondi</th><td>Riscaldamento: scioglie le dita, ma una sola esitazione sposta molto il numero.</td></tr>`
-        + `<tr><th scope="row">30 secondi</th><td>Per controllare se un gesto appena imparato, come Maiusc più è per la é, esce senza guardare.</td></tr>`
+        + `<tr><th scope="row">15 o 30 secondi</th><td>Riscaldamento: scioglie le dita, ma una sola esitazione sposta molto il numero.</td></tr>`
+        + ``
         + `<tr><th scope="row">Test battitura 1 minuto</th><td>Il tuo riferimento per la velocità di punta, e la durata più facile da ripetere ogni giorno.</td></tr>`
-        + `<tr><th scope="row">2 minuti</th><td>Finisce lo slancio della partenza e vedi se la precisione regge anche senza.</td></tr>`
-        + `<tr><th scope="row">3 minuti</th><td>Il gradino intermedio quando il minuto è stabile e 5 minuti sembrano ancora tanti.</td></tr>`
+        + `<tr><th scope="row">2 o 3 minuti</th><td>Finisce lo slancio della partenza e vedi se la precisione regge anche senza.</td></tr>`
+        + ``
         + `<tr><th scope="row">Test battitura 5 minuti</th><td>Misura la resistenza: conta quanto scende il numero rispetto al tuo minuto.</td></tr>`
         + `<tr><th scope="row">Test battitura 10 minuti</th><td>Il più vicino a scrivere una lunga email; tienilo per quando il 5 minuti ti viene regolare.</td></tr>`
         + `</tbody></table></div>`

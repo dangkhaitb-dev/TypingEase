@@ -40,11 +40,11 @@ export default {
     { h2: '1 minuto, 5 o 10: qué mide cada duración',
       html: '<p>Un test corto mide tu velocidad punta, cuánto rindes concentrado y fresco; uno largo mide la resistencia, y suele dar menos PPM pero se parece más a cómo escribes en el trabajo o en clase. Si vas a comparar semanas, elige siempre la misma duración.</p>'
         + '<div class="guide-table-wrap"><table class="wpm-table"><caption>Qué te dice cada duración</caption><thead><tr><th scope="col">Duración</th><th scope="col">Para qué sirve</th></tr></thead><tbody>'
-        + '<tr><th scope="row">15 segundos</th><td>Calentamiento: suelta los dedos, pero una sola duda cambia mucho la cifra.</td></tr>'
-        + '<tr><th scope="row">30 segundos</th><td>Para comprobar si una tecla recién aprendida, como la ñ, ya sale sin mirar.</td></tr>'
+        + '<tr><th scope="row">15 o 30 segundos</th><td>Calentamiento: suelta los dedos, pero una sola duda cambia mucho la cifra.</td></tr>'
+        + ''
         + '<tr><th scope="row">Test de mecanografía 1 minuto</th><td>Tu referencia de velocidad punta, y la duración más fácil de repetir cada día.</td></tr>'
-        + '<tr><th scope="row">2 minutos</th><td>Se acaba el impulso del arranque y se ve si la precisión aguanta sin él.</td></tr>'
-        + '<tr><th scope="row">3 minutos</th><td>El paso intermedio cuando el minuto ya te sale estable y 5 todavía se hace largo.</td></tr>'
+        + '<tr><th scope="row">2 o 3 minutos</th><td>Se acaba el impulso del arranque y se ve si la precisión aguanta sin él.</td></tr>'
+        + ''
         + '<tr><th scope="row">Test de mecanografía 5 minutos</th><td>Mide resistencia: lo interesante es cuánto baja la cifra respecto a tu minuto.</td></tr>'
         + '<tr><th scope="row">Test de mecanografía 10 minutos</th><td>Lo más parecido a redactar un correo largo; resérvalo para cuando el de 5 te salga regular.</td></tr>'
         + '</tbody></table></div>' },
