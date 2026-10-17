@@ -212,6 +212,7 @@ window.TypingEaseUI = {
     finished: '{seconds} saniye doldu. Sonuç: {wpm} KDK, %{accuracy} doğruluk, {errors} hata.',
     finishedMinutes: '{minutes} dakika doldu. Sonuç: {wpm} KDK, %{accuracy} doğruluk, {errors} hata.',
     comparisonSame: 'Önceki sonucunla aynı.',
+    personalBest: 'Yeni kişisel rekor!',
     comparisonDelta: 'Önceki sonucuna göre {delta} KDK',
     progressEmpty: 'Henüz yeterli veri yok. İlerlemeni görmek için birkaç test yap.',
     progressNone: 'Şimdilik ilerleme verisi yok.',

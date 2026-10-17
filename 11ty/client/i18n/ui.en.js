@@ -238,6 +238,7 @@ window.TypingEaseUI = {
     running: 'Calculating your result in real time.',
     finished: 'Time is up after {seconds} seconds. Result: {wpm} WPM, {accuracy}% accuracy, {errors} errors.',
     comparisonSame: 'Same as your previous result.',
+    personalBest: 'New personal best!',
     comparisonDelta: '{delta} WPM from your previous result',
     progressEmpty: 'Not enough data yet. Complete a few tests to see your progress.',
     progressNone: 'No progress data yet.',

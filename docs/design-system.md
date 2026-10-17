@@ -1,77 +1,69 @@
 # TypingEase design system
 
-The visual language follows typekute's ("keycap" UI: rounded type, raised keys, soft tinted
-canvas) with TypingEase's own brand colours. Tokens live in `11ty/styles/tokens.css`; shared
-components in `11ty/styles/base.css`. A raw hex value in a page stylesheet is a bug unless it is
-listed under Exceptions — add a token instead.
+Clean, modern and refined, in the spirit of Apple's interfaces: content first, generous white
+space, large confident type, quiet surfaces and one accent colour used sparingly. Tokens live in
+`11ty/styles/tokens.css`; the shell and shared components in `11ty/styles/base.css`. A raw colour
+in a page stylesheet is a bug unless it is listed under Exceptions — add a token instead.
 
-## Brand colours
+## Colour
 
-| Scale | Face (500) | Button face (600) | Edge (700) | Text-safe on white |
-| --- | --- | --- | --- | --- |
-| Green `--primary-*` | `#2a9a6c` | `#157a55` (logo green) | `#0f6244` | 600 (5.3:1), 700 (7.4:1) |
-| Lime `--accent-*` | `#c8f05a` | — | `#a9d43a` (`--accent-600`) | 700 `#5c7a12` (4.9:1), 800 on accent-100 |
-
-- **500 shades are never text.** Green 500 is 3.5:1, lime 500 is 1.3:1 on white.
-- **Tints for surfaces, faces for marks.** Large backgrounds use 50–100; saturated faces are for
-  small marks (dots, bars, badges, keycap faces, progress fills).
-
-## Proportion: 60 / 30 / 10
-
-- **60% neutral** — page `--canvas` (primary-50), white cards `--surface`, borders `--border`
-  (ink-300), text `--text` (ink-800), headings ink-900, muted ink-600, placeholder ink-500.
-- **30% green** — everything you can press or that says "you are here": primary buttons, links,
-  the active nav item, selected tab/segment, focus ring, progress bars, the typing caret, timers.
-- **10% lime** — one highlight per view: the new key of a lesson, a streak/personal best, the
-  eyebrow bar, a "start here" marker. If two things are lime, one of them is wrong.
-
-Semantic colours keep their jobs: `--success` (= brand green) correct/completed, `--error` red
-for a wrong key or failure (never decoration), `--gold-*` only for stars and achievements.
-
-## Shape: the keycap
-
-Everything raised looks like a key: a face colour on a **4px bottom edge** (`--edge`) one or two
-steps darker, **2px borders** (`--border-w`), generous radii.
-
-| Element | Face | Border | Edge (box-shadow) | Radius |
-| --- | --- | --- | --- | --- |
-| Primary button | primary-600 | transparent | `--shadow-button` (primary-700) | `--r` 14px |
-| Secondary button | white | ink-300 | `--shadow-edge` (ink-300) | `--r` |
-| Card / panel | white | ink-300 | `--shadow-edge` | `--r-lg` 18px (big panels `--r-xl` 24px) |
-| Selected item (nav, tab, list row) | primary-100 | primary-300 | none or primary-300 edge | `--r` |
-| Number badge (lesson n°) | white | ink-300 | `0 3px 0 ink-300` | `--r-sm` 10px |
-
-Interaction:
-- hover: buttons lighten (`color-mix(in srgb, face 88%, white)`), white surfaces go primary-50,
-  cards get a primary-300 border.
-- active (press): `transform: translateY(2px)` and the edge shrinks to 2px — the key goes down.
-- focus-visible: `--shadow-focus` (white gap + dark-green ring), combined with the edge shadow.
-- Motion uses `--dur-fast` / `--ease`; `prefers-reduced-motion` turns them to 1ms.
-
-Shadows are tinted (green/ink rgba), never `rgba(0,0,0,…)`.
+- **Neutrals carry the page.** Page `--canvas` (#fbfbfd), cards `--surface` (white), grey panels
+  `--surface-alt` (#f5f5f7). Text `--ink-900` (#1d1d1f), secondary `--ink-600` (#6e6e73), captions
+  `--ink-500`. Hairlines `--border` (8% black) and `--ink-200`; input borders `--border-strong`.
+- **One accent: TypingEase green** (`--primary-600` #157a55, hover `--primary-700`). Use it for the
+  primary button, links, the active/selected state, progress fills and the typing caret — nothing
+  else. Large green areas are wrong; a tint (`--primary-50/100`) is the most a surface gets.
+- **Lime** (`--accent-*`) is a tiny highlight at most once per view (the new key of a lesson,
+  a personal best). Never a fill behind text.
+- **Semantic:** `--error` only for wrong keys and failures, `--gold-*` only for stars/achievements,
+  `--success` (green) for completed.
 
 ## Type
 
-- Body and UI: **Nunito** (`--font-body`, weights 400–900; has Vietnamese and Cyrillic). Headings
-  900, labels/buttons 800, body 400–600.
-- Typing text, stats, key labels: **Roboto Mono** (`--font-mono`).
-- Small labels (eyebrows, table heads, nav items, tags): uppercase, 800–900, letter-spacing
-  0.06–0.1em.
-- One Google Fonts link on every page:
-  `family=Nunito:wght@400;600;700;800;900&family=Roboto+Mono:wght@400;500;700&display=swap`.
-  Scripts without Latin glyphs (Arabic, Devanagari, Thai, CJK…) fall back to system fonts.
+- System font: `--font-body` = SF Pro on Apple devices, Inter elsewhere (loaded from Google Fonts
+  together with Roboto Mono). Typing text, timers and numbers: `--font-mono`.
+- Display: h1 `clamp(40px, 6vw, 64px)`, weight 700, line-height 1.06, tracking `--track-display`
+  (-0.025em). h2 `clamp(28px, 3.6vw, 40px)`. Card titles 19–21px weight 600, tracking -0.015em.
+- Body 17px / 1.47, tracking -0.011em; intro paragraphs 21px in `--ink-600`.
+- Small labels are **sentence case**, 12–14px, weight 500–600, no letter-spacing, no uppercase.
+- Hierarchy comes from size + weight + colour, not from boxes, borders or ALL CAPS.
+
+## Surfaces & shape
+
+| Element | Look |
+| --- | --- |
+| Card / panel | white, no border, `--r-lg` 20px (big panels `--r-xl` 28px), `--shadow-card`; on hover lift 2px to `--shadow-lift` (only when clickable) |
+| Grey tile inside a white card | `--surface-alt`, no shadow, `--r` 14px |
+| Primary button | pill (`--r-pill`), `--primary-600` fill, white 17px weight 500, no shadow; hover `--primary-700` |
+| Secondary button | pill, 1px `--primary-600` outline, green text; hover fills green |
+| Tertiary / link button | green text, optional " ›" chevron, no box |
+| Segmented control | `--surface-alt` track, `--r-pill`; selected segment white with `--shadow-sm` |
+| Inputs / selects | white, 1px `--border-strong`, `--r` 14px, 44px tall; focus ring `--shadow-focus` |
+| Chips / pills | `rgba(0,0,0,.05)` fill, `--r-pill`, 13px weight 500 |
+| Selected item | `--primary-50` fill + green text, or a 2px green outline — never a heavy edge |
+
+No bottom "keycap" edges, no 2px borders, no hard offset shadows. Separation comes from tone
+(white on #fbfbfd/#f5f5f7), hairlines and soft shadows.
 
 ## Layout
 
-- Horizontal top bar (kept from TypingEase): logo left, menu centred, actions right. Menu items
-  are uppercase pills; the active one is the "selected item" above. Under 900px the menu becomes
-  the ☰ drop-down panel (a white card).
-- Content width `--w-page` 1120px, reading width `--w-read` 760px, side gutter `--pad-x`.
-- Breakpoints: 900px (tablet / narrow window) and 620px (phone).
+- Sticky translucent top bar (`--glass` + `backdrop-filter`), 56px, hairline bottom border; 13px
+  menu items; the active one is a subtle grey pill with weight 600.
+- Content width `--w-page` 1080px, reading width `--w-read` 700px, gutter `--pad-x`.
+- Section rhythm `--gap-section` 96px (smaller on phones). Prefer centred hero text.
+- Breakpoints: 900px and 620px.
+
+## Motion & feedback
+
+- Short and calm: `--dur-fast` 160ms / `--dur` 280ms with `--ease` / `--ease-out`; no bounce.
+- Press feedback is immediate (on `:active`): `transform: var(--press)` (scale .98).
+- Hover lifts only clickable cards. Focus: `--shadow-focus` ring.
+- `prefers-reduced-motion` turns durations to 1ms and press to none; `prefers-reduced-transparency`
+  makes the glass solid.
 
 ## Exceptions
 
 - **Finger colours** (`--fng-*` in `keyboard/keyboard.css`, `.finger-legend`): five semantic
-  colours, one per finger, shared by the keyboard and the 3D hands.
+  colours shared by the on-screen keyboard and the 3D hands (kept, but soft/pastel).
 - Artwork (game illustrations, SVG icons, flags) keeps its own colours.
 - `forced-colors` blocks use system colours.

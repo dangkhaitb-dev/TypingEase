@@ -1,122 +1,136 @@
 /* tro-choi/games.css — trang trò chơi gõ phím (tro-choi/games.js). Nạp sau tokens.css + base.css +
    kiem-tra-toc-do-go/test.css (dùng lại khung trang .test-main, .test-hero, .faq, .test-cta).
 
-   Khung trò chơi theo typekute: thẻ chọn game, bảng chơi, HUD và nút đều là "keycap" (viền 2px, cạnh đáy
-   4px, bo 14–24px); số liệu Roboto Mono. Hình minh hoạ SVG (scripts/lib/game-art.mjs) và cảnh nền của
-   Mưa chữ / đường đua là ARTWORK — giữ nguyên màu riêng (docs/design-system.md, Exceptions). */
+   Khung trò chơi kiểu Apple: bộ chọn game là một segmented control lớn (rãnh xám, game đang chọn là mặt
+   trắng bóng mềm); bảng chơi là thẻ trắng không viền; HUD là số lớn nét mảnh với chú thích xám nhỏ; ô gõ
+   nền xám như ô nhập iOS. Hình minh hoạ SVG (scripts/lib/game-art.mjs) và cảnh nền của Mưa chữ / đường
+   đua là ARTWORK — giữ nguyên màu riêng (docs/design-system.md, Exceptions). */
 
-/* ---------- chọn game ---------- */
-.game-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin:0 0 18px}
-.game-tabs button{display:flex;flex-direction:column;align-items:flex-start;gap:3px;min-height:64px;padding:12px 14px 14px;border:var(--border-w) solid var(--border);border-radius:var(--r-lg);background:var(--surface);color:var(--ink-900);text-align:start;box-shadow:var(--shadow-edge);transition:border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
-.game-tabs button:hover{border-color:var(--primary-300);box-shadow:0 var(--edge) 0 var(--primary-300)}
-.game-tabs button:active{transform:translateY(2px);box-shadow:0 2px 0 var(--primary-300)}
-.game-tabs button b{font-size:var(--fs-body);font-weight:900}
-.game-tabs button span{color:var(--text-muted);font-size:var(--fs-xs);line-height:1.45}
-.game-tabs button.selected{border-color:var(--primary-300);background:var(--primary-100);box-shadow:0 var(--edge) 0 var(--primary-300)}
-.game-tabs button.selected b{color:var(--primary-700)}
-.game-tabs button.selected span{color:var(--ink-700)}
-.game-tabs button:focus-visible{box-shadow:var(--shadow-focus),0 var(--edge) 0 var(--primary-300)}
+/* ---------- chọn game: segmented control lớn ---------- */
+.game-tabs{display:grid;grid-template-columns:repeat(3,1fr);gap:4px;margin:0 0 20px;padding:4px;border-radius:var(--r-lg);background:var(--ink-200)}
+.game-tabs button{position:relative;display:flex;flex-direction:column;align-items:flex-start;gap:2px;min-height:64px;padding:14px 16px 16px;border:0;border-radius:16px;background:transparent;color:var(--ink-900);text-align:start;box-shadow:none;transition:background-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease)}
+.game-tabs button:hover:not(.selected){background:rgba(255,255,255,.45)}
+.game-tabs button:active{transform:var(--press)}
+.game-tabs button b{font-size:var(--fs-body);font-weight:600;letter-spacing:-.015em}
+.game-tabs button span{color:var(--ink-600);font-size:13px;line-height:1.4}
+.game-tabs button.selected{background:var(--surface);box-shadow:0 3px 10px rgba(0,0,0,.1),0 1px 2px rgba(0,0,0,.05)}
+.game-tabs button.selected b{color:var(--ink-900)}
+.game-tabs button:focus-visible{box-shadow:var(--shadow-focus)}
 
 /* ---------- bảng chơi ---------- */
-.game-panel{position:relative;padding:20px;border:var(--border-w) solid var(--border);border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-edge)}
-.game-bar{display:flex;flex-wrap:wrap;align-items:center;gap:12px 18px;margin:0 0 14px}
-.game-bar label{display:flex;align-items:center;gap:8px;margin:0;color:var(--text-muted);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.08em;text-transform:uppercase}
-.game-bar select{min-height:40px;padding:0 10px;border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);color:var(--ink-900);font:700 var(--fs-sm) var(--font-body);letter-spacing:0;text-transform:none;box-shadow:0 2px 0 var(--ink-300);cursor:pointer}
-.game-bar select:hover{border-color:var(--primary-300)}
-/* HUD: mỗi chỉ số là một ô nhỏ — nhãn in hoa, số Roboto Mono. */
-.game-stats{display:flex;flex-wrap:wrap;gap:6px;margin-inline-start:auto}
-.game-stats div{display:flex;align-items:baseline;gap:7px;padding:6px 11px;border:var(--border-w) solid var(--ink-200);border-radius:var(--r-sm);background:var(--primary-50);color:var(--text-muted);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.06em;text-transform:uppercase}
-.game-stats strong{color:var(--ink-900);font:700 18px/1 var(--font-mono);letter-spacing:0}
-.game-stats .game-lives{color:var(--error);letter-spacing:2px}
+.game-panel{position:relative;padding:32px 36px 36px;border:0;border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-card)}
+.game-bar{display:flex;flex-wrap:wrap;align-items:flex-end;gap:16px 24px;margin:0 0 20px}
+.game-bar label{display:flex;flex-direction:column;align-items:flex-start;gap:6px;margin:0;color:var(--ink-500);font-size:13px;font-weight:500}
+.game-bar select{min-height:40px;padding:0 34px 0 14px;border:0;border-radius:var(--r-pill);background:var(--surface-alt) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6' viewBox='0 0 10 6'%3E%3Cpath d='M1 1l4 4 4-4' fill='none' stroke='%2386868b' stroke-width='1.6' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") no-repeat right 14px center;color:var(--ink-900);font:500 15px var(--font-body);letter-spacing:-.01em;box-shadow:none;cursor:pointer;-webkit-appearance:none;appearance:none;transition:background-color var(--dur-fast) var(--ease)}
+[dir=rtl] .game-bar select{padding:0 14px 0 34px;background-position:left 14px center}
+.game-bar select:hover{background-color:var(--ink-200)}
+.game-bar .primary-button{min-height:40px;padding:8px 20px;font-size:15px}
+/* HUD kiểu Apple Fitness: chú thích xám nhỏ ở trên, số to nét mảnh ở dưới; không ô, không viền. */
+.game-stats{display:flex;flex-wrap:wrap;gap:4px 28px;margin-inline-start:auto}
+.game-stats div{display:flex;flex-direction:column;gap:2px;min-width:48px;padding:0;border:0;background:none;color:var(--ink-500);font-size:13px;font-weight:500;line-height:1.2}
+.game-stats strong{color:var(--ink-900);font:300 30px/1 var(--font-body);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.game-stats .game-lives{color:var(--error);font-size:22px;line-height:30px;letter-spacing:.05em}
 
 /* ---------- Mưa chữ ---------- */
-.rain-arena{position:relative;height:360px;overflow:hidden;border:var(--border-w) solid var(--ink-200);border-radius:var(--r-lg)}
+.rain-arena{position:relative;height:380px;overflow:hidden;border:0;border-radius:var(--r-lg)}
 .rain-arena.is-hit{animation:game-shake .3s}
-/* Mỗi chữ rơi là một phím trắng nhỏ. */
-.drop{position:absolute;left:0;top:0;padding:4px 10px;border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);box-shadow:0 3px 0 var(--ink-300);color:var(--ink-900);font:500 17px/1.3 var(--font-mono);white-space:nowrap;will-change:transform}
-.drop b{color:var(--primary-700);font-weight:700}
-/* Chữ đang nhắm: điểm nhấn lime duy nhất trên màn chơi. */
-.drop.is-target{border-color:var(--accent-600);background:var(--accent-100);box-shadow:0 3px 0 var(--accent-600)}
+/* Mỗi chữ rơi là một viên trắng nhỏ, bóng mềm. */
+.drop{position:absolute;left:0;top:0;padding:5px 12px;border:0;border-radius:var(--r-pill);background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.06),0 4px 12px rgba(0,0,0,.08);color:var(--ink-900);font:500 17px/1.3 var(--font-mono);white-space:nowrap;will-change:transform}
+.drop b{color:var(--primary-600);font-weight:500}
+/* Chữ đang nhắm: viền xanh 2px (mục đang chọn của hệ thống). */
+.drop.is-target{background:var(--surface);box-shadow:0 0 0 2px var(--primary-500),0 6px 16px rgba(0,0,0,.1)}
 .drop.is-cleared{opacity:0;transition:opacity .25s,transform .25s;transform-origin:center}
-.drop.is-missed{border-color:var(--error);background:var(--error-100);color:var(--error-700);box-shadow:none;opacity:.5;transition:opacity .25s}
-.game-input{width:100%;min-height:50px;margin-top:14px;padding:10px 14px;border:var(--border-w) solid var(--border);border-radius:var(--r);background:var(--surface);color:var(--ink-900);font:500 18px/1.4 var(--font-mono);outline:0;transition:border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
-.game-input::placeholder{color:var(--ink-500)}
-.game-input:focus{border-color:var(--primary-500);box-shadow:0 0 0 4px var(--primary-100)}
-.game-input:disabled{background:var(--primary-50);cursor:not-allowed}
+.drop.is-missed{background:var(--error-100);color:var(--error-700);box-shadow:none;opacity:.6;transition:opacity .25s}
+.game-input{display:block;width:100%;min-height:52px;margin-top:16px;padding:12px 18px;border:1px solid transparent;border-radius:var(--r);background:var(--surface-alt);color:var(--ink-900);font:400 18px/1.4 var(--font-mono);outline:0;transition:background-color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.game-input::placeholder{color:var(--ink-500);font-family:var(--font-body);font-size:16px}
+.game-input:focus{border-color:var(--primary-500);background:var(--surface);box-shadow:0 0 0 4px var(--primary-100)}
+.game-input:disabled{cursor:not-allowed;opacity:.7}
 .game-input.is-wrong{animation:game-shake .25s;border-color:var(--error);box-shadow:0 0 0 4px var(--error-100)}
-.game-overlay{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:10px;padding:20px;background:color-mix(in srgb,var(--canvas) 80%,transparent);text-align:center}
+/* Lớp phủ: kính mờ trên cảnh nền. */
+.game-overlay{position:absolute;inset:0;z-index:2;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:12px;padding:24px;background:color-mix(in srgb,var(--canvas) 55%,transparent);-webkit-backdrop-filter:saturate(180%) blur(14px);backdrop-filter:saturate(180%) blur(14px);text-align:center}
 .game-overlay[hidden]{display:none}
-.game-over-title{margin:0;color:var(--ink-900);font-size:24px;font-weight:900;letter-spacing:-.3px}
-.game-over-score{margin:0;max-width:520px;color:var(--ink-700);font-size:var(--fs-sm);font-weight:600;line-height:1.6}
-/* Kỷ lục mới = điểm nhấn lime (design-system: "a streak/personal best"). */
-.game-over-best{margin:0;padding:4px 12px;border-radius:var(--r-pill);background:var(--accent-100);color:var(--accent-800);font-size:var(--fs-xs);font-weight:900;letter-spacing:.08em;text-transform:uppercase;box-shadow:0 2px 0 var(--accent-600)}
-.game-hint{margin:12px 0 0;color:var(--text-muted);font-size:var(--fs-xs);font-weight:600}
-.game-overlay .game-hint{margin:0}
+.game-over-title{margin:0;color:var(--ink-900);font-size:28px;font-weight:700;letter-spacing:var(--track-display)}
+.game-over-score{margin:0;max-width:520px;color:var(--ink-600);font-size:15px;font-weight:400;line-height:1.55}
+/* Kỷ lục mới = điểm nhấn lime (design-system: "a personal best"). */
+.game-over-best{margin:0;padding:5px 14px;border-radius:var(--r-pill);background:var(--accent-100);color:var(--accent-800);font-size:13px;font-weight:600;box-shadow:none}
+.game-hint{margin:14px 0 0;color:var(--ink-500);font-size:13px;font-weight:400}
+.game-overlay .game-hint{margin:0;color:var(--ink-600)}
 
 /* ---------- Đua với bóng ---------- */
-.race-track{display:grid;gap:10px;margin:0 0 16px}
-.race-lane{position:relative;height:42px;border:var(--border-w) dashed var(--border);border-radius:var(--r-pill);background:var(--primary-50)}
+.race-track{display:grid;gap:8px;margin:0 0 24px}
+.race-lane{position:relative;height:44px;border:0;border-radius:var(--r-pill);background:var(--surface-alt)}
 /* Mép đầu của xe (không phải tâm) chạy từ vạch xuất phát tới sát cờ đích, nên nhãn dài không tràn khỏi làn. */
-.race-lane span{position:absolute;top:50%;left:calc(8px + (100% - 112px) * var(--p,0));transform:translateY(-50%);display:flex;align-items:center;justify-content:center;gap:6px;min-width:34px;height:30px;padding:0;font-size:var(--fs-2xs);font-weight:900;letter-spacing:.06em;text-transform:uppercase;white-space:nowrap;transition:left .12s linear}
+.race-lane span{position:absolute;top:50%;left:calc(10px + (100% - 114px) * var(--p,0));transform:translateY(-50%);display:flex;align-items:center;justify-content:center;gap:6px;min-width:34px;height:30px;padding:0;font-size:13px;font-weight:600;white-space:nowrap;transition:left .12s linear}
 .race-lane span .race-car{width:26px;height:18px}
 .race-lane.you span{color:var(--primary-700)}
-.race-lane.ghost span{color:var(--ink-600)}
+.race-lane.ghost span{color:var(--ink-500)}
 /* Cờ đích ca-rô: một phần của hình minh hoạ đường đua. */
-.race-lane::after{content:"";position:absolute;right:12px;top:6px;bottom:6px;width:5px;border-radius:2px;background:repeating-linear-gradient(0deg,var(--ink-900) 0 4px,var(--white) 4px 8px)}
-.race-prompt{margin:0;padding:6px 4px;color:var(--ink-900);font:400 19px/1.8 var(--font-mono);white-space:pre-wrap;overflow-wrap:break-word}
-.race-prompt .current~span{color:var(--ink-600)}
-.race-prompt .wrong{border-radius:3px;background:var(--error-100);color:var(--error-700);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
+.race-lane::after{content:"";position:absolute;right:16px;top:10px;bottom:10px;width:6px;border-radius:2px;background:repeating-linear-gradient(0deg,var(--ink-900) 0 4px,var(--white) 4px 8px)}
+.race-prompt{margin:0 0 4px;padding:4px;color:var(--ink-900);font:400 22px/1.7 var(--font-mono);letter-spacing:-.01em;white-space:pre-wrap;overflow-wrap:break-word}
+.race-prompt .current~span{color:var(--ink-400)}
+.race-prompt .wrong{border-radius:3px;background:var(--error-100);color:var(--error);text-decoration:none}
 .race-prompt .current{position:relative}
-.race-prompt .current::before{content:"";position:absolute;inset-block:.2em;inset-inline-start:-1px;width:3px;border-radius:2px;background:var(--primary-500);animation:game-caret 1s var(--ease) infinite}
-.race-status{margin:10px 0 0;color:var(--text-muted);font-size:var(--fs-xs);font-weight:800}
-.race-result,.keys-result{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:16px;padding:20px;border:var(--border-w) solid var(--primary-200);border-radius:var(--r-lg);background:var(--primary-50);text-align:center}
+.race-prompt:not(.has-smooth-caret) .current::before{content:"";position:absolute;inset-block:.18em;inset-inline-start:-1px;width:2px;border-radius:1px;background:var(--primary-600);animation:game-caret 1.1s var(--ease) infinite}
+.race-status{margin:12px 0 0;color:var(--ink-500);font-size:13px;font-weight:500}
+.race-result,.keys-result{display:flex;flex-direction:column;align-items:center;gap:10px;margin-top:20px;padding:28px 24px;border:0;border-radius:var(--r-lg);background:var(--surface-alt);text-align:center;animation:game-result-in var(--dur) var(--ease-out) both}
 .race-result[hidden],.keys-result[hidden]{display:none}
 
 /* ---------- Săn phím ---------- */
-/* Phím cần bấm: một keycap lớn ở giữa. Trước khi chơi (đoạn trống) chỉ giữ chỗ, không vẽ phím rỗng. */
-.keys-target{display:flex;align-items:center;justify-content:center;width:max-content;min-width:92px;height:84px;margin:0 auto 18px;padding:0 20px;border:var(--border-w) solid var(--border);border-radius:var(--r-lg);background:var(--surface);box-shadow:0 5px 0 var(--ink-300);color:var(--primary-700);font:700 46px/1 var(--font-mono)}
-.keys-target:empty{border-color:transparent;background:none;box-shadow:none}
+/* Phím cần bấm: một phím trắng lớn nổi bóng mềm ở giữa. Trước khi chơi (đoạn trống) chỉ giữ chỗ. */
+.keys-target{display:flex;align-items:center;justify-content:center;width:max-content;min-width:96px;height:88px;margin:4px auto 24px;padding:0 24px;border:0;border-radius:22px;background:var(--surface);box-shadow:0 1px 2px rgba(0,0,0,.06),0 8px 24px rgba(0,0,0,.1);color:var(--primary-600);font:500 44px/1 var(--font-mono)}
+.keys-target:empty{background:none;box-shadow:none}
 .keys-board{min-height:180px}
 .keys-board .hands,.keys-board .keyboard-link{display:none}
 /* keyboard.css chừa ~220px dưới bàn phím cho đôi bàn tay; Săn phím giấu tay nên bỏ luôn khoảng trống đó. */
 .keys-board .keyboard--hands{margin-bottom:0}
 
 @keyframes game-shake{0%,100%{transform:translateX(0)}25%{transform:translateX(-5px)}75%{transform:translateX(5px)}}
-@keyframes game-caret{0%,55%{opacity:1}75%,100%{opacity:0}}
-@media (prefers-reduced-motion:reduce){.rain-arena.is-hit,.game-input.is-wrong,.race-prompt .current::before{animation:none}.race-lane span{transition:none}}
+@keyframes game-caret{0%,50%{opacity:1}70%,100%{opacity:0}}
+@keyframes game-result-in{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+@media (prefers-reduced-motion:reduce){.rain-arena.is-hit,.game-input.is-wrong,.race-prompt .current::before,.race-result,.keys-result{animation:none}.race-lane span{transition:none}}
 
 /* Hình minh hoạ (scripts/lib/game-art.mjs): ảnh thu nhỏ trên thẻ, hướng dẫn ba bước, cảnh nền, xe đua. */
-.game-thumb{display:block;width:100%;max-width:150px;height:auto;margin:0 0 8px;border-radius:var(--r-sm)}
-.game-how{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:0 0 16px;padding:0;list-style:none}
-.game-how li{display:flex;align-items:center;gap:10px;padding:8px 10px;border:var(--border-w) solid var(--ink-200);border-radius:var(--r);background:var(--primary-50);color:var(--ink-700);font-size:var(--fs-xs);font-weight:600;line-height:1.45}
+.game-thumb{display:block;width:100%;max-width:150px;height:auto;margin:0 0 10px;border-radius:var(--r-sm)}
+/* Ba bước: biểu tượng + một dòng chữ, không ô; số bước là chấm tròn xanh nhạt. */
+.game-how{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:0 0 24px;padding:0 0 24px;border-bottom:1px solid var(--border);list-style:none}
+.game-how li{display:flex;align-items:center;gap:12px;padding:0;border:0;background:none;color:var(--ink-700);font-size:14px;font-weight:400;line-height:1.4}
 .game-how .how-icon{flex:none;width:40px;height:40px}
-/* Số bước: huy hiệu số kiểu keycap (design-system: "Number badge"). */
-.game-how b{display:inline-flex;align-items:center;justify-content:center;width:22px;height:22px;margin-inline-end:4px;border:var(--border-w) solid var(--border);border-radius:7px;background:var(--surface);box-shadow:0 2px 0 var(--ink-300);color:var(--primary-700);font-size:11px;font-weight:900;vertical-align:1px}
+.game-how b{display:flex;align-items:center;justify-content:center;width:20px;height:20px;margin:0 0 4px;border:0;border-radius:50%;background:var(--primary-50);box-shadow:none;color:var(--primary-700);font-size:12px;font-weight:600;vertical-align:1px}
 .rain-scene{position:absolute;inset:0;width:100%;height:100%;pointer-events:none}
 /* Bầu trời của Mưa chữ là artwork (cùng bảng màu với cảnh SVG bên trong). */
 .rain-arena{background:linear-gradient(180deg,#cfe4fb 0%,#e4f0fd 50%,#f1f8f4 100%)}
-.rain-arena .game-overlay{background:color-mix(in srgb,var(--canvas) 70%,transparent)}
 
 /* Trang viết từ phải sang trái (ar, fa, ur, he): đường đua chạy từ phải sang trái, cờ đích bên trái,
    xe quay đầu theo hướng chạy. */
-[dir="rtl"] .race-lane span{left:auto;right:calc(8px + (100% - 112px) * var(--p,0));transition:right .12s linear}
-[dir="rtl"] .race-lane::after{right:auto;left:12px}
+[dir="rtl"] .race-lane span{left:auto;right:calc(10px + (100% - 114px) * var(--p,0));transition:right .12s linear}
+[dir="rtl"] .race-lane::after{right:auto;left:16px}
 [dir="rtl"] .race-lane .race-car,[dir="rtl"] .game-tabs [data-game-tab="race"] .game-thumb{transform:scaleX(-1)}
 /* Roboto Mono chỉ có chữ Latin/Cyrillic: chữ Ả Rập, Hebrew, Devanagari, Bengali, Thái, CJK, Hàn rơi về
    font dự phòng theo từng ký tự và nét nối bị ngắt. Dùng font không đơn cách cho các hệ chữ đó. */
 :is(:lang(ar),:lang(fa),:lang(ur),:lang(he),:lang(hi),:lang(bn),:lang(th),:lang(zh),:lang(ja),:lang(ko)) :is(.race-prompt,.drop,.game-input){font-family:var(--font-body);letter-spacing:0}
 
+/* Màn hình lớn: bảng chơi rộng bằng mặt gõ của trang kiểm tra tốc độ. */
+@media (min-width:1000px){
+  .game-tabs,.game-panel{margin-inline:-60px}
+}
 @media (max-width:900px){
-  .game-panel{padding:16px;border-radius:var(--r-lg)}
+  .game-panel{padding:22px 18px 24px;border-radius:var(--r-lg)}
+  .game-how{gap:12px}
 }
 @media (max-width:640px){
-  .game-tabs{grid-template-columns:1fr;gap:10px}
-  .game-tabs button{display:grid;grid-template-columns:96px 1fr;grid-template-rows:auto 1fr;column-gap:12px;align-items:start;min-height:0}
-  .game-thumb{grid-row:1 / span 2;max-width:96px;margin:0}
-  .game-how{grid-template-columns:1fr}
-  .rain-arena{height:300px}
-  .game-stats{margin-inline-start:0}
-  .race-prompt{font-size:17px}
+  /* Điện thoại: ba đoạn ngang chỉ còn ảnh + tên game; lời mô tả vẫn đọc được bằng trình đọc màn hình
+     (bảng chơi bên dưới đã có hướng dẫn ba bước). */
+  .game-tabs{gap:2px;padding:3px;border-radius:18px}
+  .game-tabs button{align-items:center;min-height:0;padding:10px 6px 10px;border-radius:15px;text-align:center}
+  .game-tabs button b{font-size:14px;line-height:1.2}
+  .game-tabs button span{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap}
+  .game-thumb{max-width:72px;margin:0 auto 6px}
+  .game-how{grid-template-columns:1fr;gap:10px;padding-bottom:20px;margin-bottom:20px}
+  .game-bar{gap:14px 18px}
+  .rain-arena{height:320px}
+  .game-stats{gap:4px 22px;margin-inline-start:0}
+  .game-stats strong{font-size:26px}
+  .race-prompt{font-size:18px}
 }
 /* keyboard.css cho bàn phím tràn hết bề ngang màn hình dưới 700px; trong bảng chơi thì chỉ tràn vào
    phần đệm của bảng, không đè lên viền. */

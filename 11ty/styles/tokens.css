@@ -1,96 +1,101 @@
 /* tokens.css — bảng token dùng chung cho TOÀN BỘ site. Nạp đầu tiên, trước mọi CSS khác.
    QUY ƯỚC: không trang nào được khai báo màu mới — thiếu token thì thêm vào đây.
 
-   Hệ thống theo cách của typekute (docs/design-system.md), giữ màu thương hiệu TypingEase:
-   - Hai màu thương hiệu, mỗi màu một thang 50–900: XANH LÁ (primary, #157a55 của logo) và LIME
-     (accent, #c8f05a). Mỗi "phím" nổi (nút, thẻ, số bài) là MẶT màu sáng trên CẠNH ĐÁY 4px đậm hơn
-     một-hai bậc, như một keycap.
-   - Tỉ lệ 60/30/10: 60% trung tính (canvas, thẻ trắng, viền, chữ), 30% xanh lá (mọi thứ bấm được
-     hoặc "bạn đang ở đây"), 10% lime (một điểm nhấn mỗi màn hình: chuỗi ngày, phím mới, huy hiệu).
-   - Bậc 500 KHÔNG BAO GIỜ là màu chữ (xanh 500 chỉ 3,5:1 trên nền trắng, lime 500 là 1,3:1). Chữ
-     dùng 600/700 của xanh, 700/800 của lime, hoặc thang ink.
-   - Trung tính ngả xanh lá (ink), để xám không bao giờ trông "ấm" cạnh màu thương hiệu.
-   - Bóng có màu (xanh/ink), không bao giờ rgba(0,0,0,…). */
+   Phong cách: clean, hiện đại, tinh tế theo kiểu Apple (docs/design-system.md).
+   - Nội dung là nhân vật chính: nền trắng / xám rất nhạt, chữ gần đen, nhiều khoảng trắng.
+   - MỘT màu nhấn: xanh lá TypingEase (#157a55 của logo), dùng thưa — nút chính, link, mục đang
+     chọn, tiến độ, con trỏ gõ. Lime chỉ còn là một điểm nhấn rất nhỏ (phím mới, thành tích).
+   - Không viền dày, không cạnh đáy: tách lớp bằng nền khác tông, đường kẻ mảnh (hairline) và bóng
+     rất mềm. Bo góc lớn, nút dạng viên thuốc.
+   - Chữ hệ thống (SF Pro trên máy Apple, Inter ở nơi khác), tiêu đề to + tracking âm, nhãn nhỏ
+     không in hoa.
+   - Chuyển động ngắn, giảm tốc mượt, không nảy; nhấn = thu nhỏ nhẹ. */
 :root{
-  /* ===== Thang thương hiệu ===== */
-  --primary-50:#f2f9f5; --primary-100:#e1f2e8; --primary-200:#c3e5d1; --primary-300:#97d1b1;
+  /* ===== Màu nhấn (xanh TypingEase) ===== */
+  --primary-50:#f1f8f4; --primary-100:#e3f2ea; --primary-200:#c6e5d4; --primary-300:#9fd2b6;
   --primary-400:#5fb48a;
-  --primary-500:#2a9a6c;   /* mặt: tô, thanh tiến độ, icon — không làm chữ */
-  --primary-600:#157a55;   /* màu logo: mặt nút dưới chữ trắng (5,3:1), link, chữ đang chọn */
-  --primary-700:#0f6244;   /* cạnh nút, chữ link khi rê chuột (7,4:1) */
+  --primary-500:#1f9466;   /* tô, vạch tiến độ, icon — không làm chữ nhỏ */
+  --primary-600:#157a55;   /* nút chính dưới chữ trắng (5,3:1), link */
+  --primary-700:#0f6244;   /* hover của nút/link (7,4:1) */
   --primary-800:#0b4d35; --primary-900:#083a28;
 
+  /* Lime: điểm nhấn hiếm (phím mới của bài, kỷ lục) */
   --accent-50:#f8fde9; --accent-100:#eefbc8; --accent-200:#e2f79f; --accent-300:#d6f47d;
-  --accent-500:#c8f05a;    /* mặt lime: điểm nhấn, dấu, vạch — không làm chữ */
-  --accent-600:#a9d43a;    /* cạnh của mặt lime */
-  --accent-700:#5c7a12;    /* chữ lime trên nền trắng (4,9:1) */
-  --accent-800:#4d660c;    /* chữ lime trên --accent-100 */
+  --accent-500:#c8f05a; --accent-600:#a9d43a; --accent-700:#5c7a12; --accent-800:#4d660c;
 
-  /* ===== Trung tính (ngả xanh lá) ===== */
-  --ink-900:#15352b;       /* tiêu đề */
-  --ink-800:#2a4a3f;       /* chữ thân */
-  --ink-700:#3f5d52;
-  --ink-600:#5b7369;       /* chữ phụ (5,1:1) */
-  --ink-500:#8a9f96;       /* placeholder, chú thích nhỏ, tắt — không làm chữ thân */
-  --ink-400:#b7c7bf;
-  --ink-300:#d5e3dc;       /* viền */
-  --ink-200:#e5eee9;       /* vạch chia, rãnh trống của thanh tiến độ */
-  --ink-100:#f0f5f2;
+  /* ===== Trung tính (thang xám của Apple) ===== */
+  --ink-900:#1d1d1f;       /* tiêu đề, chữ chính */
+  --ink-800:#1d1d1f;
+  --ink-700:#424245;
+  --ink-600:#6e6e73;       /* chữ phụ (4,9:1) */
+  --ink-500:#86868b;       /* chú thích, placeholder */
+  --ink-400:#aeaeb2;
+  --ink-300:#d2d2d7;       /* viền ô nhập */
+  --ink-200:#e8e8ed;       /* đường kẻ, rãnh trống */
+  --ink-100:#f5f5f7;       /* nền section, ô xám */
 
-  /* ===== Ngữ nghĩa — giữ đúng việc của mình, không thay màu thương hiệu =====
-     Đúng/hoàn thành dùng chính xanh thương hiệu; đỏ = gõ sai/thất bại; vàng = sao, thành tích. */
-  --success:#2a9a6c; --success-100:#e1f2e8; --success-700:#0f6244;
-  --error:#e5484d; --error-100:#fde7e8; --error-700:#b8384a;
-  --gold-100:#fff3d6; --gold-500:#ffc95c; --gold-700:#d9a23a; --gold-800:#8a6100;
+  /* ===== Ngữ nghĩa ===== */
+  --success:#1f9466; --success-100:#e3f2ea; --success-700:#0f6244;
+  --error:#e30000; --error-100:#fff0ef; --error-700:#c4001a;
+  --gold-100:#fff6dc; --gold-500:#ffcc00; --gold-700:#d8a500; --gold-800:#8a6100;
 
   /* ===== Bề mặt ===== */
   --white:#fff;
-  --canvas:var(--primary-50);    /* nền trang */
+  --canvas:#fbfbfd;              /* nền trang */
   --surface:#fff;                /* thẻ */
-  --text:var(--ink-800);
+  --surface-alt:var(--ink-100);  /* thẻ/ô trên nền trắng */
+  --text:var(--ink-900);
   --text-muted:var(--ink-600);
-  --border:var(--ink-300);
+  --border:rgba(0,0,0,.08);      /* hairline quanh thẻ */
+  --border-strong:var(--ink-300);/* viền ô nhập, nút phụ */
   --link:var(--primary-600);
-  --focus:var(--primary-900);
+  --focus:rgba(21,122,85,.45);
+  --glass:rgba(251,251,253,.72); /* header mờ */
 
   /* ===== Chữ ===== */
-  --font-body:"Nunito",ui-rounded,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
-  --font-mono:"Roboto Mono",ui-monospace,Menlo,Consolas,monospace;
-  --fs-h1:44px; --fs-h2:28px; --fs-h3:18px;
-  --fs-body:15px; --fs-sm:13px; --fs-xs:12px; --fs-2xs:11px;
+  --font-body:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display",Inter,"Segoe UI",Roboto,"Helvetica Neue",Arial,sans-serif;
+  --font-mono:"SF Mono",ui-monospace,"Roboto Mono",Menlo,Consolas,monospace;
+  --fs-h1:48px; --fs-h2:32px; --fs-h3:19px;
+  --fs-body:17px; --fs-sm:14px; --fs-xs:12px; --fs-2xs:11px;
+  --track-display:-.025em;       /* tiêu đề lớn: khít lại */
+  --track-title:-.015em;
 
   /* ===== Hình khối ===== */
-  --r-sm:10px; --r:14px; --r-lg:18px; --r-xl:24px; --r-pill:999px;
-  --edge:4px;                    /* cạnh đáy của mọi "phím" nổi */
-  --border-w:2px;                /* viền thẻ và nút phụ */
-  --shadow-button:0 var(--edge) 0 var(--primary-700);
-  --shadow-button-accent:0 var(--edge) 0 var(--accent-600);
-  --shadow-edge:0 var(--edge) 0 var(--ink-300);   /* cạnh xám của thẻ/nút trắng */
-  --shadow-card:0 var(--edge) 0 rgba(15,98,68,.10),0 12px 24px rgba(21,53,43,.06);
-  --shadow-lift:0 6px 0 rgba(15,98,68,.12),0 18px 32px rgba(21,53,43,.10);
-  --shadow-focus:0 0 0 3px var(--white),0 0 0 6px var(--focus);
+  --r-sm:10px; --r:14px; --r-lg:20px; --r-xl:28px; --r-pill:980px;
+  --edge:0px;                    /* (cũ) cạnh đáy keycap — đã bỏ */
+  --border-w:1px;
+  --shadow-sm:0 1px 2px rgba(0,0,0,.04);
+  --shadow-card:0 1px 2px rgba(0,0,0,.04),0 4px 16px rgba(0,0,0,.04);
+  --shadow-lift:0 2px 6px rgba(0,0,0,.05),0 14px 36px rgba(0,0,0,.09);
+  --shadow-focus:0 0 0 4px var(--focus);
+  --shadow-button:none;
+  --shadow-button-accent:none;
+  --shadow-edge:var(--shadow-sm);
 
   /* ===== Chuyển động ===== */
-  --dur-fast:150ms; --dur:200ms; --ease:cubic-bezier(.2,.8,.2,1);
+  --dur-fast:160ms; --dur:280ms; --ease:cubic-bezier(.25,.1,.25,1); --ease-out:cubic-bezier(.22,1,.36,1);
+  --press:scale(.98);
 
   /* ===== Độ rộng & nhịp ===== */
-  --w-page:1120px; --w-read:760px; --pad-x:24px;
-  --gap-section:64px;
+  --w-page:1080px; --w-read:700px; --pad-x:22px;
+  --gap-section:96px;
 
-  /* ===== Tên cũ — trỏ về thang mới để CSS chưa chuyển vẫn đúng màu. Code mới dùng tên ở trên. ===== */
+  /* ===== Tên cũ — trỏ về thang mới ===== */
   --green:var(--primary-600); --green-dark:var(--primary-700); --lime:var(--accent-500);
   --ink:var(--ink-900); --muted:var(--ink-600); --muted-soft:var(--ink-500); --ink-soft:var(--ink-700);
-  --line:var(--ink-200); --border-soft:var(--ink-300); --border-hover:var(--primary-300);
-  --cream:var(--primary-50); --surface-soft:var(--primary-50); --surface-tint:var(--primary-100);
-  --surface-active:var(--primary-100);
+  --line:var(--ink-200); --border-soft:var(--ink-300); --border-hover:var(--ink-400);
+  --cream:var(--ink-100); --surface-soft:var(--ink-100); --surface-tint:var(--primary-50);
+  --surface-active:var(--primary-50);
   --star:var(--gold-500); --danger:var(--error); --ok:var(--success);
-  --shadow-cta:var(--shadow-button);
+  --shadow-cta:none;
 }
 
 @media (prefers-reduced-motion:reduce){
-  :root{--dur-fast:1ms;--dur:1ms;--ease:linear}
+  :root{--dur-fast:1ms;--dur:1ms;--ease:linear;--ease-out:linear;--press:none}
 }
-
+@media (prefers-reduced-transparency:reduce){
+  :root{--glass:var(--canvas)}
+}
 @media (forced-colors:active){
-  :root{--focus:Highlight;--ink-900:CanvasText;--ink-800:CanvasText;--ink-600:CanvasText;--canvas:Canvas;--surface:Canvas;--border:ButtonText;--ink-300:ButtonText}
+  :root{--focus:Highlight;--ink-900:CanvasText;--ink-600:CanvasText;--canvas:Canvas;--surface:Canvas;--border:ButtonText;--ink-300:ButtonText}
 }

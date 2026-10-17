@@ -212,6 +212,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'De tijd is om ({minutes} min). Resultaat: {wpm} WPM, {accuracy}% nauwkeurigheid, {errors} fouten.',
     accuracyName: 'Nauwkeurigheid',
     comparisonSame: 'Precies gelijk aan je vorige resultaat.',
+    personalBest: 'Nieuw persoonlijk record!',
     comparisonDelta: '{delta} WPM ten opzichte van je vorige resultaat',
     progressEmpty: 'Nog te weinig gegevens. Doe een paar tests, dan zie je je voortgang.',
     progressNone: 'Nog geen voortgangsgegevens.',

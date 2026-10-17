@@ -215,6 +215,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'หมดเวลา ({minutes} นาที) ผลลัพธ์: {wpm} คำ/นาที แม่นยำ {accuracy}% ผิด {errors} ตัว',
     accuracyName: 'ความแม่นยำ',
     comparisonSame: 'เท่ากับผลครั้งก่อน',
+    personalBest: 'สถิติส่วนตัวใหม่!',
     comparisonDelta: '{delta} คำ/นาที เทียบกับผลครั้งก่อน',
     progressEmpty: 'ยังมีข้อมูลไม่พอ ลองทำแบบทดสอบอีกสักสองสามครั้ง แล้วความก้าวหน้าจะแสดงที่นี่',
     progressNone: 'ยังไม่มีข้อมูลความก้าวหน้า',

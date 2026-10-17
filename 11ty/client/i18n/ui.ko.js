@@ -217,6 +217,7 @@ window.TypingEaseUI = {
     finishedMinutes: '{minutes}분이 지났어요. 결과: {wpm} WPM, 정확도 {accuracy}%, 오타 {errors}개.',
     accuracyName: '정확도',
     comparisonSame: '지난번 결과와 같아요.',
+    personalBest: '개인 최고 기록!',
     comparisonDelta: '지난번 결과보다 {delta} WPM',
     progressEmpty: '아직 데이터가 부족해요. 테스트를 몇 번 치면 여기에 진행 상황이 나타나요.',
     progressNone: '아직 진행 데이터가 없어요.',

@@ -191,7 +191,9 @@
     rain.chars += [...typed].length + 1;
     rain.points += [...typed].length * rain.stage;
     rainRemove(match, 'cleared');
-    sound?.click('ok');
+    // Hạ được một từ: tiếng phím Enter vừa bấm, kèm tiếng "pop" của từ vỡ (bộ tiếng của typekute).
+    sound?.click('ok', 'Enter');
+    sound?.effect?.('pop', 0.35);
     if (rain.cleared % 8 === 0) {
       rain.stage += 1;
       rain.speed *= 1.1;
@@ -292,7 +294,7 @@
       const index = typed.length - 1;
       const ok = typed[index] === race.text[index];
       if (!ok) race.wrong += 1;
-      sound?.click(ok ? 'ok' : 'bad');
+      sound?.click(ok ? 'ok' : 'bad', typed[index]);
     }
     race.lastLength = typed.length;
     const done = correctPrefix();
@@ -419,7 +421,7 @@
     if (character === hunt.current || character.toLowerCase() === String(hunt.current).toLowerCase()) {
       hunt.score += 1; hunt.run += 1; hunt.bestRun = Math.max(hunt.bestRun, hunt.run);
       global.NTKeyboard?.pressKey(hunt.board, character);
-      sound?.click('ok');
+      sound?.click('ok', character);
       huntNext();
     } else {
       hunt.misses += 1; hunt.run = 0;

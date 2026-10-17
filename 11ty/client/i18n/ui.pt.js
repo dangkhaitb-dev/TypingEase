@@ -211,6 +211,7 @@ window.TypingEaseUI = {
     finished: 'O tempo acabou depois de {seconds} segundos. Resultado: {wpm} PPM, {accuracy}% de precisão, {errors} erros.',
     finishedMinutes: 'O tempo acabou depois de {minutes} min. Resultado: {wpm} PPM, {accuracy}% de precisão, {errors} erros.',
     comparisonSame: 'Igual ao seu resultado anterior.',
+    personalBest: 'Novo recorde pessoal!',
     comparisonDelta: '{delta} PPM em relação ao resultado anterior',
     progressEmpty: 'Ainda não há dados suficientes. Faça alguns testes para ver o seu progresso.',
     progressNone: 'Ainda não há dados de progresso.',

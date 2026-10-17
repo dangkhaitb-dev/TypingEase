@@ -214,6 +214,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'Masa tamat selepas {minutes} minit. Keputusan: {wpm} PSM, ketepatan {accuracy}%, {errors} kesilapan.',
     accuracyName: 'Ketepatan',
     comparisonSame: 'Sama seperti keputusan sebelumnya.',
+    personalBest: 'Rekod peribadi baharu!',
     comparisonDelta: '{delta} PSM berbanding keputusan sebelumnya',
     progressEmpty: 'Data belum mencukupi. Selesaikan beberapa ujian untuk melihat kemajuan anda.',
     progressNone: 'Belum ada data kemajuan.',

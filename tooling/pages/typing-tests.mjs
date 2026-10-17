@@ -175,7 +175,7 @@ ${alternates('    ')}
     <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Roboto+Mono:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="/tokens.css" />
     <link rel="stylesheet" href="/base.css" />
     <link rel="stylesheet" href="/kiem-tra-toc-do-go/test.css" />
@@ -260,6 +260,7 @@ ${faq}
       ${legalFooter(lang)}</footer>
     <script src="/i18n/ui.${lang}.js"></script>
     <script src="/sound.js"></script>
+    <script src="/effects.js"></script>
 ${positionKeys}${courseScript}    <script src="/kiem-tra-toc-do-go/typing-test.js"></script>
     <script src="/menu.js" defer></script>
     <script src="/sw-register.js"></script>

@@ -216,6 +216,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'Muda umekwisha (dakika {minutes}). Matokeo: {wpm} WPM, usahihi {accuracy}%, makosa: {errors}.',
     accuracyName: 'Usahihi',
     comparisonSame: 'Sawa na matokeo yako ya awali.',
+    personalBest: 'Rekodi mpya binafsi!',
     comparisonDelta: '{delta} WPM ukilinganisha na matokeo ya awali',
     progressEmpty: 'Bado hakuna data ya kutosha. Fanya majaribio machache na maendeleo yako yataonekana hapa.',
     progressNone: 'Bado hakuna data ya maendeleo.',

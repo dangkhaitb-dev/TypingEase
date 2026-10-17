@@ -26,6 +26,7 @@ const T_VI = {
   finished: 'Đã hết {seconds} giây. Kết quả: {wpm} WPM, {accuracy}% chính xác, {errors} lỗi.',
   finishedMinutes: 'Đã hết {minutes} phút. Kết quả: {wpm} WPM, {accuracy}% chính xác, {errors} lỗi.',
   comparisonSame: 'Bằng kết quả lần trước.',
+  personalBest: 'Kỷ lục mới của bạn!',
   comparisonDelta: '{delta} WPM so với lần trước',
   progressEmpty: 'Chưa có đủ dữ liệu. Hãy hoàn thành vài bài kiểm tra để xem tiến bộ của bạn.',
   progressNone: 'Chưa có dữ liệu tiến bộ.',
@@ -133,7 +134,7 @@ document.addEventListener('keydown', event => {
 syncSound();
 function clickFor(value) {
   const index = value.length - 1;
-  if (index >= 0 && value.length > heardLength) sound?.click(value[index] === passage[index] ? 'ok' : 'bad');
+  if (index >= 0 && value.length > heardLength) sound?.click(value[index] === passage[index] ? 'ok' : 'bad', value[index]);
   heardLength = value.length;
 }
 
@@ -175,6 +176,8 @@ function renderPrompt() {
     const row = Math.floor((current.offsetTop + line / 2) / line);
     promptElement.scrollTop = Math.max(0, (row - 1) * line);
   }
+  // Con trỏ trượt kiểu typekute (effects.js): một thanh mảnh trượt sang ký tự kế tiếp.
+  window.TypingEaseEffects?.caret(promptElement, '.current');
 }
 
 function calculateMetrics(now = Date.now()) {
@@ -227,6 +230,28 @@ function updateDurationUi() {
   });
 }
 
+// Kỷ lục cá nhân như typekute: vượt WPM cao nhất trước đó ở CÙNG thời lượng (cần ít nhất một lần làm
+// trước — lần đầu tiên thì chưa có gì để phá). Pháo hoa + chuông sao 3 + nhãn "Kỷ lục mới".
+let stopFireworks = () => {};
+function celebrateBest(metrics) {
+  const previous = testHistory.filter(item => item.duration === selectedDuration && Number.isFinite(item.wpm));
+  let label = resultElement.querySelector('.te-best');
+  const best = previous.length ? Math.max(...previous.map(item => item.wpm)) : null;
+  const isBest = best !== null && metrics.wpm > best && metrics.wpm > 0;
+  if (!isBest) { if (label) label.hidden = true; return; }
+  if (!label) {
+    label = document.createElement('p');
+    label.className = 'te-best';
+    label.setAttribute('role', 'status');
+    resultElement.prepend(label);
+  }
+  label.textContent = T.personalBest || 'New personal best!';
+  label.hidden = false;
+  window.TypingEaseSound?.star?.(3);
+  stopFireworks();
+  stopFireworks = window.TypingEaseEffects?.fireworks() || (() => {});
+}
+
 function showResult(metrics, consistency) {
   resultWpm.textContent = `${metrics.wpm} ${UNIT}`;
   resultAccuracy.textContent = `${metrics.accuracy ?? '--'}%`;
@@ -243,6 +268,7 @@ function showResult(metrics, consistency) {
     comparisonElement.hidden = true;
   }
   resultElement.hidden = false;
+  celebrateBest(metrics);
 }
 
 function endTest() {
@@ -281,6 +307,7 @@ function beginTest() {
 
 function resetTest(focus = true) {
   clearInterval(timer);
+  stopFireworks();
   startedAt = null;
   finished = false;
   wpmSamples = [];

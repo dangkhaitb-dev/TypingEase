@@ -54,7 +54,7 @@
   function clickFor(value) {
     const index = value.length - 1;
     if (index < 0 || value.length <= observed) return;
-    sound?.click(value[index] === target[index] ? 'ok' : 'bad');
+    sound?.click(value[index] === target[index] ? 'ok' : 'bad', value[index]);
   }
 
   let NT = null;
@@ -137,6 +137,7 @@
       // dòng giữa hai từ, nên trên điện thoại câu bị ngắt giữa chữ.
       return `<span class="${state}">${escapeHtml(char)}</span>`;
     }).join('');
+    global.TypingEaseEffects?.caret(sampleEl, '.current');
     const correct = [...typed].filter((char, index) => char === target[index]).length;
     const percent = typed.length ? Math.round(correct / typed.length * 100) : null;
     document.querySelector('#free-accuracy').textContent = `${percent ?? '--'}%`;

@@ -215,6 +215,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'הזמן נגמר ({minutes} דק׳). התוצאה: {wpm} מילים לדקה, דיוק {accuracy}%, שגיאות: {errors}.',
     accuracyName: 'דיוק',
     comparisonSame: 'בדיוק כמו בפעם הקודמת.',
+    personalBest: 'שיא אישי חדש!',
     comparisonDelta: '{delta} מילים לדקה לעומת התוצאה הקודמת',
     progressEmpty: 'עדיין אין מספיק נתונים. עשו כמה מבחנים, וההתקדמות שלכם תופיע כאן.',
     progressNone: 'עדיין אין נתוני התקדמות.',

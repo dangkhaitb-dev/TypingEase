@@ -138,7 +138,7 @@ const S = { ...S_VI, ...(window.TypingEaseUI?.progress || {}) };
     const highest = Math.max(...values), lowest = Math.min(...values), span = Math.max(1, highest - lowest);
     const points = values.map((value, index) => [8 + index * (184 / (values.length - 1)), 44 - (value - lowest) / span * 32]);
     const [lastX, lastY] = points[points.length - 1];
-    chart.innerHTML = '<line x1="8" y1="45" x2="192" y2="45" stroke="#e4efe9" />'
+    chart.innerHTML = '<line x1="8" y1="45" x2="192" y2="45" stroke="#e8e8ed" />'
       + `<polyline points="${points.map(([x, y]) => `${x.toFixed(1)},${y.toFixed(1)}`).join(' ')}" />`
       + `<circle cx="${lastX.toFixed(1)}" cy="${lastY.toFixed(1)}" r="3" />`;
   }

@@ -66,7 +66,8 @@ const S = { ...S_VI, ...(window.TypingEaseUI?.curriculum || {}) };
   const countEl = document.querySelector('#cur-count');
   if (countEl)
     countEl.textContent = S.done(doneIds.length, sequence.length)
-      + (maxStars > 0 ? ` · ${totalStars}★/${maxStars}` : '');
+      // LRI…PDI: "68★/75" giữ thứ tự trái→phải cả khi nằm trong câu tiếng Ả Rập/Ba Tư/Hebrew/Urdu.
+      + (maxStars > 0 ? ` · \u2066${totalStars}★/${maxStars}\u2069` : '');
 
   const legacy = store.legacyCompleted();
   const legacyEl = document.querySelector('#cur-legacy');

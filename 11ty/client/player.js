@@ -570,6 +570,8 @@
     });
     flush();
     promptEl.innerHTML = html;
+    // Con trỏ trượt kiểu typekute (effects.js). Sau cuộn khung bên dưới vẫn đúng: con trỏ nằm TRONG khung.
+    global.TypingEaseEffects?.caret(promptEl, '.ch.cur');
     // A 60-second test is a dozen lines long. Rather than pushing the keyboard off screen, the
     // prompt is a fixed-height window that scrolls to keep the cursor line in the middle.
     const cursor = promptEl.querySelector('.ch.cur');
@@ -826,7 +828,7 @@
     board.classList.add('nt-keyboard-peek-started');
     if (verdict === 'ok') NT.pressKey(board);
     else if (verdict === 'bad') NT.highlightErrorKey(board, value[position]);
-    if (verdict !== 'pending') sound?.click(verdict);
+    if (verdict !== 'pending') sound?.click(verdict, value[position]);
   }
 
   // --- IME (Nhật, Trung) ----------------------------------------------------------------------
@@ -1072,6 +1074,7 @@
         : position === typed.length ? 'cur' : '';
       return `<span class="ch ${status}">${escapeHtml(character === ' ' ? '␣' : character)}</span>`;
     }).join('');
+    global.TypingEaseEffects?.caret(tokenEl, '.ch.cur');
     const nextEl = stageEl.querySelector('#burst-next');
     if (nextEl) nextEl.textContent = run.tokens[(run.tokenIndex + 1) % run.tokens.length] || '';
     if (board) NT.setKeyboardState(board, nextKeyHint(typed));
@@ -1116,6 +1119,8 @@
     liveEl.textContent = '';
     if (board) NT.setKeyboardState(board, '');
     focusInput();
+    // Sao bay vào lần lượt, mỗi sao một tiếng chuông (effects.js, như typekute).
+    global.TypingEaseEffects?.floatStars(stageEl.querySelector('.star-row'));
   }
 
   function renderLessonResult() {
@@ -1197,6 +1202,9 @@
     if (board) NT.setKeyboardState(board, '');
     NT?.markKeys(board, '');
     if (nextId) prefetch(nextId);
+    // Xong bài: sao bay vào; đủ sao thì thêm một trận giấy màu ngắn.
+    global.TypingEaseEffects?.floatStars(stageEl.querySelector('.star-row'));
+    if (maxStars > 0 && stars >= maxStars) global.TypingEaseEffects?.confettiRain();
   }
 
   const formatDuration = seconds =>

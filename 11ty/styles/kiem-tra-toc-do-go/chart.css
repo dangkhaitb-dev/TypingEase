@@ -4,56 +4,64 @@
    Đổi tên từ progress.css (2026-09-16): trùng tên với tien-do/progress.css dù nội dung khác hẳn
    (bên kia là cả trang tiến độ, bên này chỉ là một biểu đồ).
 
-   Giao diện typekute: thẻ trắng viền 2px cạnh đáy 4px; hai bộ chọn là nhóm phân đoạn xám giống bộ chọn
-   thời lượng của test.css; số liệu Roboto Mono; đường biểu đồ xanh (mặt 500 chỉ làm nét, không làm chữ). */
+   Giao diện kiểu Apple: thẻ trắng bóng mềm; hai bộ chọn là segmented control giống bộ chọn thời lượng;
+   bốn chỉ số là số lớn nét mảnh + chú thích xám; biểu đồ tối giản — nét xanh mảnh, lưới xám nhạt, không
+   khung. */
 
-.progress-section{margin:34px 0 48px;padding:26px 28px;border:var(--border-w) solid var(--border);border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-edge)}
+.progress-section{margin:28px 0 24px;padding:36px 44px 32px;border:0;border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-card)}
 .progress-heading{display:flex;align-items:flex-end;justify-content:space-between;gap:18px}
-.progress-heading .eyebrow{margin-bottom:8px}
-.progress-heading h2{margin:0}
+.progress-heading .eyebrow{margin-bottom:6px}
+.progress-heading h2{margin:0;font-size:28px;font-weight:700;letter-spacing:var(--track-display)}
 
-/* ---------- hai bộ nút phân đoạn (khoảng thời gian · chỉ số) ---------- */
-.progress-range,.progress-metric{display:flex;gap:2px;padding:4px;border-radius:var(--r);background:var(--ink-200)}
-.progress-range button,.progress-metric button{min-height:34px;border:0;border-radius:var(--r-sm);padding:6px 14px;background:transparent;color:var(--ink-600);font-size:var(--fs-xs);font-weight:800;white-space:nowrap;transition:background-color var(--dur-fast) var(--ease),color var(--dur-fast) var(--ease)}
-.progress-range button:hover,.progress-metric button:hover{color:var(--primary-700)}
-.progress-range button.selected,.progress-metric button.selected{background:var(--surface);color:var(--primary-700);box-shadow:0 2px 0 var(--ink-300)}
+/* ---------- hai segmented control (khoảng thời gian · chỉ số) ---------- */
+.progress-range,.progress-metric{display:flex;padding:3px;border-radius:var(--r-pill);background:var(--ink-200)}
+.progress-range button,.progress-metric button{position:relative;flex:1 1 0;min-height:30px;border:0;border-radius:var(--r-pill);padding:4px 16px;background:transparent;color:var(--ink-900);font-size:13px;font-weight:500;white-space:nowrap;transition:background-color var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.progress-range button:hover:not(.selected),.progress-metric button:hover:not(.selected){color:var(--ink-600)}
+.progress-range button.selected,.progress-metric button.selected{background:var(--surface);font-weight:600;box-shadow:0 3px 8px rgba(0,0,0,.12),0 1px 1px rgba(0,0,0,.04)}
 .progress-range button:focus-visible,.progress-metric button:focus-visible{box-shadow:var(--shadow-focus)}
-.progress-metric{width:max-content;max-width:100%;margin:20px 0 0}
-.progress-note{margin:10px 0 0;color:var(--text-muted);font-size:var(--fs-xs);line-height:1.5}
+.progress-metric{width:max-content;max-width:100%;margin:24px 0 0}
+.progress-note{margin:10px 0 0;color:var(--ink-500);font-size:var(--fs-xs);line-height:1.5}
 
-/* ---------- 4 ô tóm tắt ---------- */
-.progress-summary{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin:18px 0}
-.progress-summary div{padding:12px 14px;border:var(--border-w) solid var(--ink-200);border-radius:var(--r);background:var(--primary-50)}
-.progress-summary span{display:block;color:var(--text-muted);font-size:var(--fs-2xs);font-weight:800;letter-spacing:.06em;text-transform:uppercase;line-height:1.3}
-.progress-summary strong{display:block;margin-top:6px;color:var(--ink-900);font:700 22px/1.1 var(--font-mono);letter-spacing:-.6px}
-.progress-empty{margin:0;padding:22px 14px;border:var(--border-w) dashed var(--border);border-radius:var(--r-lg);background:var(--primary-50);color:var(--text-muted);text-align:center;font-size:var(--fs-sm);font-weight:600}
+/* ---------- 4 chỉ số tóm tắt: không ô, chỉ vạch ngăn mảnh ---------- */
+.progress-summary{display:grid;grid-template-columns:repeat(4,1fr);margin:28px 0 24px}
+.progress-summary div{padding:0 16px;border:0}
+.progress-summary div:first-child{padding-inline-start:0}
+.progress-summary div+div{border-inline-start:1px solid var(--border)}
+.progress-summary span{display:block;color:var(--ink-500);font-size:13px;font-weight:500;line-height:1.3}
+.progress-summary strong{display:block;margin-top:4px;color:var(--ink-900);font:300 34px/1.05 var(--font-body);font-variant-numeric:tabular-nums;letter-spacing:-.025em}
+.progress-empty{margin:0;padding:28px 16px;border:0;border-radius:var(--r);background:var(--surface-alt);color:var(--ink-500);text-align:center;font-size:var(--fs-sm);font-weight:400}
 
 /* ---------- biểu đồ ---------- */
-.progress-chart-wrap{margin-top:4px;padding:6px 10px 0;border:var(--border-w) solid var(--ink-200);border-radius:var(--r-lg);background:var(--surface);overflow:hidden}
+.progress-chart-wrap{margin:0;padding:0 12px;border:0;background:none;overflow:hidden}
 /* Trục biểu đồ luôn trái→phải, kể cả trang tiếng Ả Rập: nếu thừa hưởng direction:rtl thì nhãn trục tung
    (text-anchor start ở x=8) chạy ngược ra ngoài khung và bị cắt. */
 .progress-chart{display:block;width:100%;height:auto;min-height:190px;direction:ltr;overflow:visible}
-.progress-chart .grid{stroke:var(--ink-200);stroke-width:1.5;stroke-dasharray:4 5}
-.progress-chart .axis-label{fill:var(--ink-600);font:600 10px var(--font-mono);unicode-bidi:plaintext}
-.progress-chart .line{fill:none;stroke:var(--primary-500);stroke-width:3.5;stroke-linecap:round;stroke-linejoin:round}
-.progress-chart .point{fill:var(--surface);stroke:var(--primary-600);stroke-width:3}
-.progress-trend{min-height:20px;margin:14px 0 0;color:var(--text-muted);font-size:var(--fs-sm);font-weight:800}
+.progress-chart .grid{stroke:var(--ink-200);stroke-width:1}
+.progress-chart .axis-label{fill:var(--ink-500);font:500 11px var(--font-body);font-variant-numeric:tabular-nums;unicode-bidi:plaintext}
+.progress-chart .line{fill:none;stroke:var(--primary-500);stroke-width:2.5;stroke-linecap:round;stroke-linejoin:round}
+.progress-chart .point{fill:var(--surface);stroke:var(--primary-500);stroke-width:2;r:3.5}
+.progress-chart .point:last-of-type{fill:var(--primary-500)}
+.progress-trend{min-height:20px;margin:16px 0 0;color:var(--ink-600);font-size:15px;font-weight:500}
 .progress-trend.positive{color:var(--primary-700)}
 .progress-trend.negative{color:var(--error-700)}
 
+/* Màn hình lớn: rộng bằng mặt gõ phía trên (test.css). */
+@media (min-width:1000px){.progress-section{margin-inline:-60px}}
+
 /* ---------- đáp ứng ---------- */
 @media (max-width:900px){
-  .progress-section{margin:28px 0 40px;padding:20px 16px;border-radius:var(--r-lg)}
-  .progress-heading{align-items:flex-start;flex-direction:column}
-  .progress-summary{grid-template-columns:repeat(2,1fr)}
+  .progress-section{margin:24px 0 16px;padding:24px 20px;border-radius:var(--r-lg)}
+  .progress-heading{align-items:flex-start;flex-direction:column;gap:14px}
+  .progress-summary{grid-template-columns:repeat(2,1fr);row-gap:18px}
+  .progress-summary div:nth-child(3){padding-inline-start:0;border-inline-start:0}
   .progress-chart{min-height:155px}
-  .progress-chart .axis-label{font-size:11px}
 }
 @media (max-width:620px){
-  .progress-range button,.progress-metric button{padding:6px 12px}
-  .progress-summary strong{font-size:19px}
+  .progress-heading h2{font-size:24px}
+  .progress-range button,.progress-metric button{padding:4px 14px}
+  .progress-summary strong{font-size:28px}
   /* SVG co theo bề ngang (viewBox 640): trên điện thoại chữ trục và nét phải to hơn để không còn ~5px. */
-  .progress-chart .axis-label{font-size:17px}
-  .progress-chart .line{stroke-width:6}
-  .progress-chart .point{r:7;stroke-width:5}
+  .progress-chart .axis-label{font-size:22px}
+  .progress-chart .line{stroke-width:4.5}
+  .progress-chart .point{r:6;stroke-width:3.5}
 }

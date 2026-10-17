@@ -216,6 +216,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'زمان تمام شد ({minutes} دقیقه). نتیجه: {wpm} کلمه در دقیقه، دقت {accuracy}٪، خطاها: {errors}.',
     accuracyName: 'دقت',
     comparisonSame: 'همان نتیجهٔ دفعهٔ قبل.',
+    personalBest: 'رکورد شخصی جدید!',
     comparisonDelta: '{delta} کلمه در دقیقه نسبت به نتیجهٔ قبلی',
     progressEmpty: 'هنوز دادهٔ کافی نیست. چند تست انجام دهید تا پیشرفت شما اینجا نشان داده شود.',
     progressNone: 'هنوز داده‌ای از پیشرفت نیست.',

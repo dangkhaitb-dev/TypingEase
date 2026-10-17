@@ -231,6 +231,7 @@
       finishedMinutes: 'Час вийшов ({minutes} хв). Результат: {wpm} сл/хв, точність {accuracy}%, помилок: {errors}.',
       accuracyName: 'Точність',
       comparisonSame: 'Стільки ж, скільки минулого разу.',
+      personalBest: 'Новий особистий рекорд!',
       comparisonDelta: '{delta} сл/хв порівняно з минулим результатом',
       progressEmpty: 'Поки що мало даних. Пройди кілька тестів, і тут з\'явиться твій прогрес.',
       progressNone: 'Даних про прогрес поки немає.',

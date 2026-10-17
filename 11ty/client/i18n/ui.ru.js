@@ -213,6 +213,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'Время вышло ({minutes} мин). Результат: {wpm} сл/мин, точность {accuracy}%, ошибок: {errors}.',
     accuracyName: 'Точность',
     comparisonSame: 'Столько же, сколько в прошлый раз.',
+    personalBest: 'Новый личный рекорд!',
     comparisonDelta: '{delta} сл/мин по сравнению с прошлым результатом',
     progressEmpty: 'Пока мало данных. Пройди несколько тестов, и здесь появится твой прогресс.',
     progressNone: 'Данных о прогрессе пока нет.',

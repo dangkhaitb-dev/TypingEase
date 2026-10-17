@@ -212,6 +212,7 @@ window.TypingEaseUI = {
     finishedMinutes: '{minutes} 分钟时间到。成绩：{wpm} WPM，准确率 {accuracy}%，错误 {errors} 个。',
     accuracyName: '准确率',
     comparisonSame: '和上次成绩一样。',
+    personalBest: '个人新纪录！',
     comparisonDelta: '比上次 {delta} WPM',
     progressEmpty: '数据还不够。多做几次测试，这里就会显示你的进步。',
     progressNone: '还没有进步数据。',

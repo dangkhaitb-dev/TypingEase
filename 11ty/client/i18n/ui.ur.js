@@ -216,6 +216,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'وقت ختم ({minutes} منٹ)۔ نتیجہ: {wpm} الفاظ فی منٹ، درستی {accuracy}%، غلطیاں: {errors}۔',
     accuracyName: 'درستی',
     comparisonSame: 'پچھلے نتیجے جتنا ہی۔',
+    personalBest: 'نیا ذاتی ریکارڈ!',
     comparisonDelta: 'پچھلے نتیجے کے مقابلے میں {delta} الفاظ فی منٹ',
     progressEmpty: 'ابھی کافی ڈیٹا نہیں۔ چند ٹیسٹ مکمل کریں، پھر یہاں آپ کی پیش رفت دکھائی دے گی۔',
     progressNone: 'ابھی پیش رفت کا کوئی ڈیٹا نہیں۔',

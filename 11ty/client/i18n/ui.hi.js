@@ -218,6 +218,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'समय पूरा हुआ ({minutes} मिनट)। नतीजा: {wpm} WPM, सटीकता {accuracy}%, गलतियाँ: {errors}।',
     accuracyName: 'सटीकता',
     comparisonSame: 'पिछली बार जितना ही।',
+    personalBest: 'नया व्यक्तिगत रिकॉर्ड!',
     comparisonDelta: 'पिछले नतीजे के मुकाबले {delta} WPM',
     progressEmpty: 'अभी पर्याप्त आँकड़े नहीं हैं। कुछ टेस्ट दें, फिर यहाँ आपकी प्रगति दिखेगी।',
     progressNone: 'अभी प्रगति के आँकड़े नहीं हैं।',

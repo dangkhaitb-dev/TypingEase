@@ -209,6 +209,7 @@ window.TypingEaseUI = {
     finished: 'Temps écoulé après {seconds} secondes. Résultat : {wpm} MPM, {accuracy} % de précision, {errors} erreurs.',
     finishedMinutes: 'Temps écoulé après {minutes} min. Résultat : {wpm} MPM, {accuracy} % de précision, {errors} erreurs.',
     comparisonSame: 'Comme ton résultat précédent.',
+    personalBest: 'Nouveau record personnel !',
     comparisonDelta: '{delta} MPM par rapport à ton résultat précédent',
     progressEmpty: 'Pas encore assez de données. Fais quelques tests pour voir tes progrès.',
     progressNone: 'Aucune donnée de progrès pour le moment.',

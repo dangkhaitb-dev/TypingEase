@@ -1,184 +1,193 @@
 /* Lesson player — focus mode (PLAN.md B5/B6/B8).
-   Nothing on this page competes with the line being typed: a thin topbar, the text, the
+   Nothing on this page competes with the line being typed: a thin translucent bar, the text, the
    keyboard. No nav, no marketing, no footer. Brand tokens come from tokens.css (nạp đầu tiên),
    layout/typography/nút chung từ base.css. Bàn phím và bàn tay ở keyboard/keyboard.css.
 
-   Nhìn theo hệ keycap của typekute (docs/design-system.md): nền canvas primary-50, thẻ trắng viền
-   2px + cạnh đáy 4px, chữ gõ Roboto Mono cỡ lớn — con trỏ xanh thương hiệu, chữ đúng màu ink, chữ
-   sai đỏ --error, chữ chưa gõ ink-500 — số liệu trong chip tròn, nhãn nhỏ in hoa 800–900.
-   Lime chỉ một chỗ mỗi màn: phím mới (chip) / phím phải bấm (bàn phím) khi gõ, huy hiệu mới ở
-   bảng tổng kết. */
+   Nhìn theo docs/design-system.md (kiểu Apple): nền --canvas, thẻ trắng không viền chỉ có bóng mềm,
+   chữ gõ mono cỡ lớn — đã gõ đen, chưa gõ xám nhạt, sai đỏ --error, con trỏ xanh. Số liệu là số to
+   đi với chú thích nhỏ màu xám (như bảng tổng kết của Apple Fitness), sao vàng --gold, nút viên
+   thuốc của base.css. Mọi nhãn viết thường kiểu câu, không in hoa, không chữ đậm 700+ ở chỗ phụ.
+   Lime chỉ một chỗ mỗi màn: phím mới (chip) khi gõ, huy hiệu mới ở bảng tổng kết. */
 html,body{height:100%}
 body.player-page{background:var(--canvas);overflow-x:hidden}
 
 .player{display:flex;flex-direction:column;min-height:100vh;min-height:100dvh}
 
 /* --- topbar ------------------------------------------------------------------------------- */
-.player-topbar{display:flex;align-items:center;gap:14px;padding:10px 20px;background:var(--surface);border-bottom:var(--border-w) solid var(--ink-200)}
-.pt-back{flex:0 0 auto;display:inline-flex;align-items:center;min-height:38px;padding:6px 12px;border-radius:var(--r);color:var(--primary-700);font-size:var(--fs-xs);font-weight:900;letter-spacing:.08em;text-transform:uppercase;text-decoration:none;transition:background-color var(--dur-fast) var(--ease)}
-.pt-back:hover{background:var(--primary-100)}
-.pt-title{flex:1 1 auto;min-width:0;text-align:center;line-height:1.25}
-.pt-title span{display:block;color:var(--ink-600);font-size:var(--fs-2xs);font-weight:900;letter-spacing:.1em;text-transform:uppercase;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.pt-title strong{display:block;color:var(--ink-900);font-size:16px;font-weight:900;letter-spacing:-.2px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
-.pt-right{flex:0 0 auto;display:flex;align-items:center;gap:8px}
-/* "Screen 3 / 8": chip HUD, cùng hình với đồng hồ đếm giờ. */
-.pt-screen{padding:5px 11px;border-radius:var(--r-pill);background:var(--ink-100);color:var(--ink-700);font:700 var(--fs-xs) var(--font-mono);white-space:nowrap}
+/* Thanh mờ dính đầu trang như topbar của base.css, nhưng ba cột: quay lại | tên bài | công cụ. */
+.player-topbar{position:sticky;top:0;z-index:15;display:flex;align-items:center;gap:14px;min-height:56px;padding:6px 20px;background:var(--glass);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid var(--border)}
+.pt-back{flex:0 0 auto;display:inline-flex;align-items:center;min-height:36px;padding:6px 10px;margin-inline-start:-10px;border-radius:var(--r-pill);color:var(--link);font-size:var(--fs-sm);font-weight:400;text-decoration:none;transition:background-color var(--dur-fast) var(--ease)}
+.pt-back:hover{background:rgba(0,0,0,.04)}
+.pt-title{flex:1 1 auto;min-width:0;text-align:center;line-height:1.3}
+.pt-title span{display:block;color:var(--ink-500);font-size:var(--fs-xs);font-weight:400;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pt-title strong{display:block;color:var(--ink-900);font-size:15px;font-weight:600;letter-spacing:-.015em;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+.pt-right{flex:0 0 auto;display:flex;align-items:center;gap:2px}
+/* "Screen 3 / 8": chữ xám nhỏ, số thẳng cột — không còn là một chip. */
+.pt-screen{margin-inline-end:8px;color:var(--ink-500);font-size:var(--fs-xs);font-variant-numeric:tabular-nums;white-space:nowrap}
 .pt-screen:empty{display:none}
-/* Bốn nút trên thanh (làm lại, âm click, bàn tay, cài đặt): keycap trắng nhỏ, cạnh đáy 3px. */
-.pt-redo,.pt-toggle{width:38px;height:38px;display:grid;place-items:center;padding:0;border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);color:var(--primary-700);font-size:var(--fs-body);line-height:1;box-shadow:0 3px 0 var(--border);transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
-.pt-redo:hover,.pt-toggle:hover{background:var(--primary-50)}
-.pt-redo:active,.pt-toggle:active{transform:translateY(2px);box-shadow:0 1px 0 var(--border)}
-.pt-redo:focus-visible,.pt-toggle:focus-visible{box-shadow:var(--shadow-focus),0 3px 0 var(--border)}
-.pt-toggle{font-size:var(--fs-sm)}
-/* BẬT = mục đang chọn (nền primary-100, viền + cạnh primary-300). TẮT = biểu tượng xám mờ: nhìn
-   lướt là biết cái nào đang chạy. */
-.pt-toggle[aria-pressed=true]{border-color:var(--primary-300);background:var(--primary-100);box-shadow:0 3px 0 var(--primary-300)}
-.pt-toggle[aria-pressed=false]{filter:grayscale(1);opacity:.5}
+/* Bốn nút trên thanh (làm lại, âm click, bàn tay, cài đặt): biểu tượng trần trong một vòng tròn
+   chỉ hiện khi rê chuột, như nút trên thanh công cụ của macOS. */
+.pt-redo,.pt-toggle{width:36px;height:36px;display:grid;place-items:center;padding:0;border:0;border-radius:50%;background:transparent;color:var(--ink-700);font-size:17px;line-height:1;box-shadow:none;transition:transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease),opacity var(--dur-fast) var(--ease)}
+.pt-redo:hover,.pt-toggle:hover{background:rgba(0,0,0,.05)}
+.pt-redo:active,.pt-toggle:active{transform:var(--press)}
+.pt-redo:focus-visible,.pt-toggle:focus-visible{box-shadow:var(--shadow-focus)}
+.pt-toggle{font-size:15px}
+/* BẬT = vòng tròn xanh rất nhạt. TẮT = biểu tượng xám mờ: nhìn lướt là biết cái nào đang chạy. */
+.pt-toggle[aria-pressed=true]{background:var(--primary-50)}
+.pt-toggle[aria-pressed=true]:hover{background:var(--primary-100)}
+.pt-toggle[aria-pressed=false]{filter:grayscale(1);opacity:.45}
 
 /* --- segmented progress ------------------------------------------------------------------- */
-.progress-segments{display:flex;gap:4px;padding:8px 20px;background:var(--surface);border-bottom:var(--border-w) solid var(--ink-200)}
-.progress-segments .seg{flex:1 1 0;height:8px;border-radius:var(--r-pill);background:var(--ink-200)}
+/* Một vạch mảnh 3px ngay dưới thanh trên, chia đoạn bằng khe 3px. */
+.progress-segments{display:flex;gap:3px;width:100%;max-width:var(--w-page);margin:0 auto;padding:14px 20px 0}
+.progress-segments .seg{flex:1 1 0;height:3px;border-radius:var(--r-pill);background:var(--ink-200);transition:background-color var(--dur) var(--ease)}
 .progress-segments .seg.is-done{background:var(--primary-500)}
-/* "Bạn đang ở đây": vệt xanh nhạt có viền xanh — màu "đang chọn", không phải lime. */
-.progress-segments .seg.is-current{background:var(--primary-200);box-shadow:inset 0 0 0 2px var(--primary-500)}
+/* "Bạn đang ở đây": vệt xanh nhạt — màu "đang chọn", không phải lime. */
+.progress-segments .seg.is-current{background:var(--primary-300)}
 
 /* --- notices ------------------------------------------------------------------------------ */
-.player-notes{display:block}
+.player-notes{display:block;width:100%;max-width:var(--w-page);margin:0 auto;padding:14px 20px 0}
 .player-notes[hidden]{display:none}
-.player-note{display:flex;align-items:center;gap:12px;margin:0;padding:10px 20px;font-size:var(--fs-sm);font-weight:600;line-height:1.55}
+.player-note{display:flex;align-items:center;gap:12px;margin:0 0 8px;padding:10px 12px 10px 18px;border-radius:var(--r);font-size:var(--fs-sm);font-weight:400;line-height:1.5}
+.player-note:last-child{margin-bottom:0}
 .player-note[hidden]{display:none}
-.player-note.is-info{background:var(--primary-100);color:var(--ink-800);border-bottom:var(--border-w) solid var(--primary-200)}
-.player-note.is-warn{background:var(--gold-100);color:var(--gold-800);border-bottom:var(--border-w) solid color-mix(in srgb,var(--gold-500) 45%,var(--gold-100))}
+.player-note.is-info{background:var(--primary-50);color:var(--ink-800)}
+.player-note.is-warn{background:var(--gold-100);color:var(--gold-800)}
 .player-note code{font:var(--fs-xs) var(--font-mono)}
-.note-close{flex:0 0 auto;margin-inline-start:auto;border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);color:var(--primary-700);padding:5px 10px;font-size:var(--fs-xs);font-weight:800;box-shadow:0 2px 0 var(--border)}
-.note-close:hover{background:var(--primary-50)}
+.note-close{flex:0 0 auto;margin-inline-start:auto;border:0;border-radius:var(--r-pill);background:rgba(0,0,0,.05);color:var(--ink-900);padding:6px 12px;font-size:var(--fs-xs);font-weight:500;box-shadow:none;transition:background-color var(--dur-fast) var(--ease)}
+.note-close:hover{background:rgba(0,0,0,.09)}
 
 /* --- stage -------------------------------------------------------------------------------- */
-.player-stage{flex:1 1 auto;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:16px;width:100%;max-width:820px;margin:0 auto;padding:28px 20px 8px}
+.player-stage{flex:1 1 auto;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;gap:20px;width:100%;max-width:860px;margin:0 auto;padding:40px 20px 12px}
 .player-stage.is-result,.player-stage.is-lesson-result,.player-stage.is-error,.player-stage.is-loading{justify-content:center}
 /* Không có bàn phím thì không còn gì để bám vào ở đáy nữa: bài dồn lên đầu trang, đúng như
    typekute làm khi người học tắt bàn phím. */
 .player.no-keyboard .player-stage{justify-content:flex-start}
-.card{width:100%;background:var(--surface);border:var(--border-w) solid var(--border);border-radius:var(--r-xl);padding:28px 30px;box-shadow:var(--shadow-edge)}
+.card{width:100%;background:var(--surface);border:0;border-radius:var(--r-xl);padding:36px 40px;box-shadow:var(--shadow-card)}
 
-/* new-key chip: "PHÍM MỚI [F] ngón trỏ trái". Mặt phím lime = điểm nhấn của màn. */
-.key-chip{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0;font-size:var(--fs-sm)}
-.chip-label{color:var(--primary-700);font-size:var(--fs-2xs);font-weight:900;letter-spacing:.1em;text-transform:uppercase}
-.chip-key{display:grid;min-width:36px;height:36px;place-items:center;padding:0 9px;border:var(--border-w) solid var(--accent-600);border-radius:var(--r-sm);background:var(--accent-500);color:var(--ink-900);font:700 17px var(--font-mono);box-shadow:0 3px 0 var(--accent-600)}
-.chip-finger{color:var(--ink-600);font-weight:700}
+/* new-key chip: "Phím mới [F] ngón trỏ trái". Một phím trắng nhỏ, viền lime = điểm nhấn của màn. */
+.key-chip{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin:0;color:var(--ink-500);font-size:var(--fs-sm)}
+.chip-label{color:var(--ink-500);font-size:var(--fs-sm);font-weight:400}
+.chip-key{display:grid;min-width:34px;height:34px;place-items:center;padding:0 10px;border:0;border-radius:8px;background:var(--surface);color:var(--ink-900);font:500 16px var(--font-body);box-shadow:0 0 0 2px var(--accent-500),0 2px 6px rgba(0,0,0,.08)}
+.chip-finger{color:var(--ink-600);font-weight:400}
 
 /* --- intro screen ------------------------------------------------------------------------- */
-.intro-card{text-align:center}
-.intro-card .key-chip{margin-bottom:18px}
-.intro-text{margin:0 auto;max-width:52ch;color:var(--ink-800);font-size:18px;font-weight:600;line-height:1.65}
-.intro-found{margin:0 0 8px;color:var(--primary-700);font-size:var(--fs-h2);font-weight:900;letter-spacing:-.6px}
-.intro-hint{margin:22px 0 0;padding-top:18px;border-top:var(--border-w) solid var(--ink-200);color:var(--ink-600);font-size:var(--fs-sm);font-weight:600}
-/* Phím được nhắc trong câu ("Nhấn [Enter]"): một keycap nhỏ. */
-.intro-hint b{display:inline-grid;min-width:28px;height:28px;place-items:center;padding:0 8px;margin:0 3px;border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);color:var(--primary-700);font:700 var(--fs-sm) var(--font-mono);box-shadow:0 2px 0 var(--border);vertical-align:-7px}
-.intro-card.is-found{border-color:var(--primary-300);background:var(--primary-50);box-shadow:0 var(--edge) 0 var(--primary-300)}
+.intro-card{max-width:640px;margin:0 auto;padding:44px 48px;text-align:center}
+.intro-card .key-chip{margin-bottom:22px}
+.intro-text{margin:0 auto;max-width:46ch;color:var(--ink-900);font-size:21px;font-weight:400;line-height:1.45;letter-spacing:-.015em}
+.intro-found{margin:0 0 8px;color:var(--ink-900);font-size:var(--fs-h2);font-weight:700;letter-spacing:var(--track-display)}
+.intro-hint{margin:26px 0 0;color:var(--ink-500);font-size:var(--fs-sm);font-weight:400}
+/* Phím được nhắc trong câu ("Nhấn [Enter]"): một phím nhỏ y như phím của bàn phím bên dưới. */
+.intro-hint b{display:inline-grid;min-width:26px;height:26px;place-items:center;padding:0 8px;margin:0 3px;border:0;border-radius:6px;background:var(--surface);color:var(--ink-900);font:500 var(--fs-xs) var(--font-body);box-shadow:0 0 0 .5px rgba(0,0,0,.12),0 1px 1px rgba(0,0,0,.12);vertical-align:-6px}
+/* Đã tìm thấy phím: thẻ không đổi khung, chỉ dấu tích xanh trước tiêu đề. */
+.intro-card.is-found .intro-found:before{content:"✓";display:inline-grid;place-items:center;width:30px;height:30px;margin-inline-end:10px;border-radius:50%;background:var(--primary-500);color:var(--white);font-size:16px;font-weight:600;vertical-align:5px}
 
 /* --- typing prompt ----------------------------------------------------------------------- */
-.screen-lead{margin:0;max-width:56ch;color:var(--ink-600);font-size:var(--fs-body);font-weight:600;line-height:1.6;text-align:center}
-.prompt-card{padding:32px 30px}
-/* Cỡ chữ vùng gõ đã cân ở PLAN.md B9 (26px desktop / 22px mobile, line-height 1.9,
-   letter-spacing .04em) — không token-hoá. Chữ CHƯA gõ là ink-500, phải nhạt hơn hẳn phần đã gõ
-   (ink-900) thì phần đã gõ mới nổi lên. */
-.prompt-lines{position:relative;display:block;margin:0;max-height:5.7em;overflow:hidden;font-family:var(--font-mono);font-size:26px;font-weight:500;line-height:1.9;letter-spacing:.04em;text-align:center;color:var(--ink-500);overflow-wrap:anywhere;scroll-behavior:smooth}
+.screen-lead{margin:0;max-width:56ch;color:var(--ink-600);font-size:var(--fs-body);font-weight:400;line-height:1.5;text-align:center}
+.prompt-card{padding:40px 48px}
+/* Cỡ chữ vùng gõ đã cân ở PLAN.md B9 (28px desktop / 22px mobile, line-height 1.9) — không
+   token-hoá. Chữ CHƯA gõ là ink-400: nhạt hơn hẳn phần đã gõ (ink-900) để phần đã gõ nổi lên, mà
+   vẫn đọc được trước khi gõ tới. */
+.prompt-lines{position:relative;display:block;margin:0;max-height:5.7em;overflow:hidden;font-family:var(--font-mono);font-size:28px;font-weight:400;line-height:1.9;letter-spacing:.01em;text-align:center;color:var(--ink-400);overflow-wrap:anywhere;scroll-behavior:smooth}
 @media(prefers-reduced-motion:reduce){.prompt-lines{scroll-behavior:auto}}
 .prompt-lines .w{display:inline-block;white-space:pre}
-.prompt-lines .ch{position:relative;border-radius:4px}
+.prompt-lines .ch{position:relative;border-radius:4px;transition:color var(--dur-fast) var(--ease)}
 .prompt-lines .ch.ok{color:var(--ink-900)}
-.prompt-lines .ch.bad{color:var(--error);background:var(--error-100);text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:4px}
-/* Con trỏ kiểu typekute: vạch xanh thương hiệu đứng ở đầu ký tự sắp gõ (đầu theo chiều chữ, nên
-   tự sang phải ở dòng rtl), ký tự đó đậm lên một bậc trên nền xanh rất nhạt. */
-.prompt-lines .ch.cur{background:var(--primary-100);color:var(--ink-900)}
-.prompt-lines .ch.cur:before,.burst-token .ch.cur:before{content:"";position:absolute;inset-block:12%;inset-inline-start:-2px;width:3px;border-radius:2px;background:var(--primary-500);animation:caret-blink 1.1s steps(1) infinite}
-@keyframes caret-blink{50%{opacity:.25}}
+.prompt-lines .ch.bad{color:var(--error);background:var(--error-100);text-decoration:underline;text-decoration-thickness:1.5px;text-underline-offset:5px}
+/* Ký tự sắp gõ: đen lên một bậc. Con trỏ: vạch xanh mảnh ở đầu ký tự (đầu theo chiều chữ, nên tự
+   sang phải ở dòng rtl). Khi effects.js gắn con trỏ trượt `.te-caret` (lớp `.has-smooth-caret`
+   trên khung), base.css vẽ con trỏ đó — ở đây không vẽ thêm vạch nào nữa. */
+.prompt-lines .ch.cur,.burst-token .ch.cur{color:var(--ink-900)}
+.prompt-lines:not(.has-smooth-caret) .ch.cur:before,.burst-token:not(.has-smooth-caret) .ch.cur:before{content:"";position:absolute;inset-block:14%;inset-inline-start:-1px;width:2px;border-radius:2px;background:var(--primary-500);animation:caret-blink 1.1s steps(1) infinite}
+@keyframes caret-blink{50%{opacity:0}}
 @media(prefers-reduced-motion:reduce){.prompt-lines .ch.cur:before,.burst-token .ch.cur:before{animation:none}}
 .prompt-lines .ch.brk{opacity:.4;font-size:.7em}
 .prompt-lines .ch.brk.cur{opacity:1}
-.is-block .prompt-lines{font-size:34px;letter-spacing:.16em;line-height:1.8}
+.is-block .prompt-lines{font-size:36px;line-height:1.8}
 /* dictation: letters get room to breathe, sentences read as a paragraph */
-.prompt-lines.as-letters{letter-spacing:.14em}
-.prompt-lines.as-sentence{text-align:start;font-size:22px;letter-spacing:.02em;max-height:7.6em}
-.no-more{margin:20px auto 0;max-width:52ch;padding:14px 16px;border:var(--border-w) solid color-mix(in srgb,var(--gold-500) 45%,var(--gold-100));border-radius:var(--r);background:var(--gold-100);color:var(--gold-800);font-size:var(--fs-sm);font-weight:600;line-height:1.65}
+.prompt-lines.as-sentence{text-align:start;font-size:22px;max-height:7.6em}
+.no-more{margin:20px auto 0;max-width:52ch;padding:14px 18px;border:0;border-radius:var(--r);background:var(--surface-alt);color:var(--ink-700);font-size:var(--fs-sm);font-weight:400;line-height:1.55}
+.no-more b{color:var(--ink-900);font-weight:600}
 
 /* --- burst -------------------------------------------------------------------------------- */
 .burst-card{text-align:center}
 /* 56/44/34px: cỡ chữ vùng gõ, giữ nguyên như .prompt-lines. */
-.burst-token{margin:0;font-family:var(--font-mono);font-size:56px;font-weight:500;letter-spacing:.1em;line-height:1.2;color:var(--ink-500)}
+.burst-token{position:relative;display:inline-block;margin:0;font-family:var(--font-mono);font-size:56px;font-weight:400;line-height:1.2;color:var(--ink-400)}
 .burst-token .ch{position:relative;border-radius:6px}
 .burst-token .ch.ok{color:var(--ink-900)}
 .burst-token .ch.bad{color:var(--error);background:var(--error-100)}
-.burst-token .ch.cur{background:var(--primary-100);color:var(--ink-900)}
-.burst-token.pop{animation:burst-pop .22s ease-out}
-@keyframes burst-pop{0%{transform:scale(.82);opacity:.4}100%{transform:scale(1);opacity:1}}
+.burst-token.pop{animation:burst-pop .24s var(--ease-out)}
+@keyframes burst-pop{0%{transform:scale(.94);opacity:.4}100%{transform:scale(1);opacity:1}}
 @media(prefers-reduced-motion:reduce){.burst-token.pop{animation:none}}
-/* Ký tự KẾ TIẾP: chip nhỏ nhạt dưới cụm đang gõ. */
-.burst-next{display:table;margin:16px auto 0;padding:3px 12px;border-radius:var(--r-pill);background:var(--ink-100);font-family:var(--font-mono);font-size:var(--fs-body);color:var(--ink-600);letter-spacing:.1em}
+/* Ký tự KẾ TIẾP: chữ xám nhỏ dưới cụm đang gõ. */
+.burst-next{display:table;margin:18px auto 0;padding:4px 12px;border-radius:var(--r-pill);background:var(--surface-alt);font-family:var(--font-mono);font-size:var(--fs-sm);color:var(--ink-500)}
 .burst-next:empty{display:none}
 /* Mũi tên, không phải chữ: "tiếp:" từng hiện trên màn burst của MỌI ngôn ngữ. */
 .burst-next:not(:empty):before{content:'→ ';font-family:var(--font-body);font-size:var(--fs-xs);letter-spacing:0}
 
-/* --- clock (chip HUD) --------------------------------------------------------------------- */
-.player-clock{margin:0;padding:5px 16px;border:var(--border-w) solid var(--border);border-radius:var(--r-pill);background:var(--surface);color:var(--primary-700);font:700 var(--fs-body) var(--font-mono);box-shadow:0 3px 0 var(--border)}
-.player-clock.is-low{color:var(--white);background:var(--error);border-color:var(--error-700);box-shadow:0 3px 0 var(--error-700)}
+/* --- clock -------------------------------------------------------------------------------- */
+/* Đồng hồ: số lớn mảnh, không khung — như đồng hồ bấm giờ của iOS. Sắp hết giờ thì chuyển đỏ. */
+.player-clock{margin:0;color:var(--ink-900);font:300 34px/1 var(--font-body);font-variant-numeric:tabular-nums;letter-spacing:-.02em}
+.player-clock.is-low{color:var(--error)}
 
 /* --- result cards ------------------------------------------------------------------------- */
-.result-card,.lesson-result-card{text-align:center}
-.star-row{display:flex;justify-content:center;gap:10px;margin:0 0 14px;font-size:42px;line-height:1}
-.star-row .star{color:var(--ink-200)}
-.star-row .star.is-on{color:var(--gold-500);text-shadow:0 3px 0 var(--gold-700)}
-.result-headline{margin:0 0 10px;color:var(--ink-900);font-size:28px;font-weight:900;letter-spacing:-.6px}
-/* "Độ chính xác 98% · 42 WPM · 1 lỗi": một chip số liệu. */
-.result-stats{display:inline-block;margin:0;padding:6px 16px;border-radius:var(--r-pill);background:var(--primary-50);color:var(--ink-800);font:700 var(--fs-sm) var(--font-mono)}
-.result-hint{margin:14px auto 0;max-width:50ch;color:var(--ink-600);font-size:var(--fs-sm);line-height:1.65}
-.result-hint b,.technique b{color:var(--ink-900)}
-.result-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:12px;margin-top:24px}
-/* Nút chính là .primary-button của base.css (keycap xanh). Nút phụ ở đây mang tên .ghost-button
-   (JS đặt) nhưng trông đúng như .secondary-button: keycap trắng, cạnh xám. */
-.ghost-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:48px;border:var(--border-w) solid var(--border);border-radius:var(--r);padding:10px 18px;background:var(--surface);color:var(--primary-700);font-size:var(--fs-sm);font-weight:800;text-decoration:none;box-shadow:var(--shadow-edge);transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
-.ghost-button:hover{background:var(--primary-50)}
-.ghost-button:active{transform:translateY(2px);box-shadow:0 2px 0 var(--border)}
-.ghost-button:focus-visible{box-shadow:var(--shadow-focus),var(--shadow-edge)}
+.result-card,.lesson-result-card{max-width:640px;margin:0 auto;padding:44px 40px 36px;text-align:center}
+.star-row{display:flex;justify-content:center;gap:6px;margin:0 0 18px;font-size:34px;line-height:1}
+.star-row .star{color:var(--ink-300)}
+.star-row .star.is-on{color:var(--gold-500)}
+.result-headline{margin:0 0 8px;color:var(--ink-900);font-size:32px;font-weight:700;letter-spacing:var(--track-display);line-height:1.15}
+/* "Độ chính xác 98% · 42 WPM · 1 lỗi": một dòng chữ xám, số thẳng cột. */
+.result-stats{display:block;margin:0;color:var(--ink-600);font-size:var(--fs-body);font-weight:400;font-variant-numeric:tabular-nums}
+.result-hint{margin:16px auto 0;max-width:46ch;color:var(--ink-600);font-size:var(--fs-sm);line-height:1.55}
+.result-hint b,.technique b{color:var(--ink-900);font-weight:600}
+.result-actions{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:10px;margin-top:32px}
+/* Nút chính là .primary-button của base.css (viên thuốc xanh). Nút phụ ở đây mang tên .ghost-button
+   (JS đặt): viên thuốc xám nhạt chữ đen, như nút phụ trong bảng của iOS — bên cạnh nút xanh nó
+   lùi lại, không cạnh tranh. */
+.ghost-button{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:44px;border:0;border-radius:var(--r-pill);padding:10px 20px;background:rgba(0,0,0,.05);color:var(--ink-900);font-size:var(--fs-body);font-weight:500;letter-spacing:-.01em;text-decoration:none;box-shadow:none;transition:transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.ghost-button:hover{background:rgba(0,0,0,.09)}
+.ghost-button:active{transform:var(--press)}
+.ghost-button:focus-visible{box-shadow:var(--shadow-focus)}
 
-.lesson-done-kicker{margin:0 0 16px;color:var(--primary-700);font-size:var(--fs-xs);font-weight:900;letter-spacing:.1em;text-transform:uppercase}
-/* Huy hiệu mới: điểm nhấn lime của bảng tổng kết. */
-.badge-notice{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 12px;margin:0 auto 18px;padding:10px 16px;max-width:560px;border:var(--border-w) solid var(--accent-600);border-radius:var(--r-lg);background:var(--accent-100);box-shadow:0 3px 0 var(--accent-600);text-align:start}
-.badge-notice-item{display:inline-flex;align-items:center;gap:10px}
-.badge-notice-item small{display:block;color:var(--accent-800);font-size:var(--fs-2xs);font-weight:900;letter-spacing:.1em;text-transform:uppercase;line-height:1.3}
-.badge-notice-item b{display:block;color:var(--ink-900);font-size:var(--fs-body);font-weight:800;line-height:1.3}
-.badge-notice-icon{display:grid;place-items:center;width:38px;height:38px;border:var(--border-w) solid var(--accent-600);border-radius:var(--r-pill);background:var(--surface);font-size:18px}
-.badge-notice-link{margin-inline-start:auto;color:var(--accent-800);font-size:var(--fs-xs);font-weight:900;letter-spacing:.04em;text-decoration:none;white-space:nowrap}
+.lesson-done-kicker{margin:0 0 20px;color:var(--ink-500);font-size:var(--fs-sm);font-weight:400}
+/* Huy hiệu mới: điểm nhấn lime của bảng tổng kết — chỉ ở vòng quanh biểu tượng, nền là ô xám. */
+.badge-notice{display:flex;flex-wrap:wrap;align-items:center;justify-content:center;gap:8px 14px;margin:4px auto 22px;padding:12px 18px 12px 12px;max-width:440px;border:0;border-radius:var(--r);background:var(--surface-alt);box-shadow:none;text-align:start}
+.badge-notice-item{display:inline-flex;align-items:center;gap:12px}
+.badge-notice-item small{display:block;color:var(--ink-500);font-size:var(--fs-xs);font-weight:400;line-height:1.3}
+.badge-notice-item b{display:block;color:var(--ink-900);font-size:var(--fs-body);font-weight:600;line-height:1.3}
+.badge-notice-icon{display:grid;place-items:center;width:40px;height:40px;border:0;border-radius:50%;background:var(--surface);box-shadow:0 0 0 2px var(--accent-500);font-size:19px}
+.badge-notice-link{margin-inline-start:auto;color:var(--link);font-size:var(--fs-sm);font-weight:400;text-decoration:none;white-space:nowrap}
 .badge-notice-link:hover{text-decoration:underline}
-.learned-keys{margin:6px 0 22px;color:var(--ink-600);font-size:var(--fs-sm);font-weight:600}
-.learned-keys b{color:var(--ink-900);font:700 var(--fs-body) var(--font-mono);letter-spacing:.14em}
-/* Bốn ô số liệu: thẻ trắng nhỏ có cạnh đáy, nhãn in hoa, số Roboto Mono. */
-.stat-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
-.stat-tile{border:var(--border-w) solid var(--border);border-radius:var(--r-lg);background:var(--surface);padding:14px 10px 12px;box-shadow:0 3px 0 var(--border)}
-.stat-tile span{display:block;color:var(--ink-600);font-size:var(--fs-2xs);font-weight:900;letter-spacing:.08em;text-transform:uppercase}
-.stat-tile strong{display:block;margin-top:6px;color:var(--ink-900);font:700 21px var(--font-mono);letter-spacing:-.3px}
-.technique{margin:20px auto 0;max-width:58ch;color:var(--ink-600);font-size:var(--fs-sm);line-height:1.7;text-align:start}
-.weak-block{margin-top:20px;padding:16px;border:var(--border-w) solid var(--ink-200);border-radius:var(--r-lg);background:var(--primary-50)}
-.weak-title{margin:0 0 12px;color:var(--ink-700);font-size:var(--fs-2xs);font-weight:900;letter-spacing:.1em;text-transform:uppercase}
-.weak-list{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 12px}
+.learned-keys{margin:0 0 28px;color:var(--ink-600);font-size:var(--fs-sm);font-weight:400}
+.learned-keys b{color:var(--ink-900);font:500 var(--fs-body) var(--font-mono)}
+/* Bốn số liệu: không ô, không khung — số lớn, chú thích xám nhỏ phía trên, ngăn bằng hairline dọc. */
+.stat-tiles{display:grid;grid-template-columns:repeat(4,1fr);gap:0;padding:18px 0;border-block:1px solid var(--ink-200)}
+.stat-tile{position:relative;padding:4px 8px;border:0;background:none;box-shadow:none}
+.stat-tile+.stat-tile:before{content:"";position:absolute;inset-block:8px;inset-inline-start:0;width:1px;background:var(--ink-200)}
+.stat-tile span{display:block;color:var(--ink-500);font-size:var(--fs-xs);font-weight:400}
+.stat-tile strong{display:block;margin-top:4px;color:var(--ink-900);font:600 26px/1.15 var(--font-body);font-variant-numeric:tabular-nums;letter-spacing:-.02em;white-space:nowrap}
+.technique{margin:24px auto 0;max-width:52ch;color:var(--ink-600);font-size:var(--fs-sm);line-height:1.6;text-align:start}
+.weak-block{margin-top:24px;padding:18px;border:0;border-radius:var(--r);background:var(--surface-alt)}
+.weak-title{margin:0 0 12px;color:var(--ink-600);font-size:var(--fs-sm);font-weight:500}
+.weak-list{display:flex;flex-wrap:wrap;justify-content:center;gap:8px;margin:0 0 14px}
 .weak-list:last-child{margin-bottom:0}
-.weak-chip{display:inline-flex;align-items:center;gap:7px;border:var(--border-w) solid var(--border);border-radius:var(--r-sm);background:var(--surface);padding:4px 10px 4px 4px;color:var(--ink-700);font:700 var(--fs-xs) var(--font-mono);box-shadow:0 2px 0 var(--border)}
-.weak-chip b{display:grid;min-width:26px;height:26px;place-items:center;padding:0 5px;border-radius:6px;background:var(--primary-100);color:var(--primary-700);font:700 13px var(--font-mono)}
-.unit-progress{margin:20px 0 0;color:var(--ink-600);font-size:var(--fs-2xs);font-weight:900;letter-spacing:.08em;text-transform:uppercase}
-.error-card{text-align:center}
-.error-card h2{margin:0 0 10px;font-size:22px;font-weight:900;letter-spacing:-.4px}
-.error-card p{margin:0 0 14px;color:var(--ink-600);font-size:var(--fs-sm);line-height:1.7}
-.error-card code{font:12px var(--font-mono);color:var(--ink-900);background:var(--ink-100);padding:2px 6px;border-radius:6px}
+.weak-chip{display:inline-flex;align-items:center;gap:8px;border:0;border-radius:var(--r-pill);background:var(--surface);padding:4px 12px 4px 4px;color:var(--ink-600);font:400 var(--fs-xs) var(--font-body);font-variant-numeric:tabular-nums;box-shadow:var(--shadow-sm),0 0 0 .5px var(--border)}
+.weak-chip b{display:grid;min-width:24px;height:24px;place-items:center;padding:0 6px;border-radius:var(--r-pill);background:var(--error-100);color:var(--error-700);font:500 13px var(--font-body)}
+.weak-block .ghost-button{background:var(--surface);font-size:var(--fs-sm);min-height:38px;padding:8px 16px}
+.weak-block .ghost-button:hover{background:var(--white);box-shadow:var(--shadow-card)}
+.unit-progress{margin:22px 0 0;color:var(--ink-500);font-size:var(--fs-xs);font-weight:400}
+.error-card{max-width:560px;margin:0 auto;text-align:center}
+.error-card h2{margin:0 0 10px;font-size:24px;font-weight:700;letter-spacing:var(--track-title)}
+.error-card p{margin:0 0 14px;color:var(--ink-600);font-size:var(--fs-sm);line-height:1.6}
+.error-card code{font:12px var(--font-mono);color:var(--ink-900);background:var(--surface-alt);padding:2px 6px;border-radius:6px}
 
 /* --- keyboard + hands -------------------------------------------------------------------- */
 /* Chỗ trống cho bàn tay 3D do CHÍNH bàn phím giữ: `.keyboard--hands{margin-bottom:33%}` trong
    keyboard/keyboard.css, tỉ lệ theo bề ngang board đúng như bản gốc. Ở đây chỉ còn bề rộng và
    lề ngang; thêm padding đáy ở đây nữa là cộng dồn hai lần. */
 .player-board{width:100%;max-width:830px;margin:0 auto;padding:0 15px}
-/* Dòng trạng thái lúc gõ ("90% chính xác · 1 lỗi"): chip HUD, ẩn khi rỗng. */
-.player-live{min-height:28px;width:fit-content;max-width:calc(100% - 40px);margin:12px auto 18px;padding:0;text-align:center;color:var(--ink-700);font:700 var(--fs-xs) var(--font-mono)}
-.player-live:not(:empty){padding:5px 14px;border-radius:var(--r-pill);background:var(--surface);border:var(--border-w) solid var(--ink-200)}
+/* Dòng trạng thái lúc gõ ("90% chính xác · 1 lỗi"): chữ xám nhỏ, ẩn khi rỗng. */
+.player-live{min-height:20px;width:fit-content;max-width:calc(100% - 40px);margin:4px auto 18px;padding:0;text-align:center;color:var(--ink-500);font:400 var(--fs-xs) var(--font-body);font-variant-numeric:tabular-nums}
 
 /* the hidden input: focused at all times on desktop, never visible */
 /* Ô nhập ẩn ra ngoài màn hình; ở trang dir="rtl" "ngoài" là bên phải, không thì trang tràn ngang 10 000px. */
@@ -189,61 +198,69 @@ body.player-page{background:var(--canvas);overflow-x:hidden}
 .tap-to-type{display:none}
 
 /* --- pause menu --------------------------------------------------------------------------- */
-.player-menu{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:20px;background:color-mix(in srgb,var(--ink-900) 60%,transparent)}
-.menu-card{max-width:340px;display:flex;flex-direction:column;gap:12px;text-align:center}
-.menu-card h2{margin:0 0 6px;font-size:22px;font-weight:900;letter-spacing:-.4px}
+.player-menu{position:fixed;inset:0;z-index:20;display:grid;place-items:center;padding:20px;background:rgba(0,0,0,.28);-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);animation:menu-fade var(--dur) var(--ease-out)}
+.menu-card{max-width:340px;display:flex;flex-direction:column;gap:10px;padding:28px 24px 24px;text-align:center;box-shadow:0 0 0 .5px rgba(0,0,0,.06),0 24px 64px rgba(0,0,0,.18),0 4px 14px rgba(0,0,0,.06);animation:menu-rise var(--dur) var(--ease-out)}
+.menu-card h2{margin:0 0 10px;font-size:21px;font-weight:600;letter-spacing:var(--track-title)}
+.menu-card>*:not(h2){width:100%}
+@keyframes menu-fade{from{opacity:0}}
+@keyframes menu-rise{from{opacity:0;transform:translateY(10px) scale(.98)}}
+@media(prefers-reduced-motion:reduce){.player-menu,.menu-card{animation:none}}
 
 /* --- 900px ---------------------------------------------------------------------------------- */
 @media(max-width:900px){
-  .prompt-lines{font-size:22px}
-  .is-block .prompt-lines{font-size:28px}
+  .prompt-lines{font-size:24px}
+  .is-block .prompt-lines{font-size:30px}
   .burst-token{font-size:44px}
-  .stat-tiles{grid-template-columns:repeat(2,1fr)}
+  .stat-tiles{grid-template-columns:repeat(2,1fr);row-gap:18px}
+  .stat-tile:nth-child(3):before{display:none}
 }
 
 /* --- 620px: phone (PLAN.md B8) ------------------------------------------------------------ */
 @media(max-width:620px){
-  .player-topbar{gap:8px;padding:8px 12px}
-  .pt-back{min-height:34px;padding:6px 8px;font-size:0}
-  .pt-back:before{content:'←';font-size:18px;letter-spacing:0}
-  [dir="rtl"] .pt-back:before{content:'→'}
+  .player-topbar{gap:6px;min-height:52px;padding:4px 10px}
+  .pt-back{min-width:36px;min-height:36px;justify-content:center;padding:0;margin:0;font-size:0}
+  .pt-back:before{content:'‹';font-size:30px;font-weight:300;line-height:1;margin-top:-4px}
+  [dir="rtl"] .pt-back:before{content:'›'}
   .pt-title strong{font-size:var(--fs-sm)}
-  .pt-title span{font-size:10px;letter-spacing:.06em}
-  .pt-right{gap:6px}
+  .pt-title span{font-size:11px}
+  .pt-right{gap:0}
   /* Thanh tiến độ ngay bên dưới đã nói "màn mấy trên mấy"; trên điện thoại nhường chỗ cho tên bài. */
   .pt-screen{display:none}
   .pt-redo,.pt-toggle{width:34px;height:34px}
-  .progress-segments{gap:3px;padding:6px 12px}
-  .progress-segments .seg{height:6px}
-  .player-note{padding:10px 12px;font-size:var(--fs-xs)}
-  .player-stage{gap:12px;padding:16px 12px 8px}
-  .card{padding:20px 16px;border-radius:var(--r-lg)}
-  .prompt-card{padding:22px 14px}
-  .intro-text{font-size:var(--fs-body)}
-  .prompt-lines{font-size:20px;line-height:1.85}
-  .is-block .prompt-lines{font-size:24px;letter-spacing:.1em}
+  .progress-segments{gap:3px;padding:10px 16px 0}
+  .player-notes{padding:10px 12px 0}
+  .player-note{padding:10px 10px 10px 14px;font-size:var(--fs-xs)}
+  .player-stage{gap:14px;padding:24px 12px 8px}
+  .card{padding:28px 20px;border-radius:var(--r-lg)}
+  .intro-card{padding:32px 22px}
+  .prompt-card{padding:26px 18px}
+  .intro-text{font-size:19px}
+  .prompt-lines{font-size:22px;line-height:1.85}
+  .is-block .prompt-lines{font-size:26px}
   .burst-token{font-size:34px}
-  .result-headline{font-size:22px}
-  .star-row{font-size:32px}
-  .stat-tile strong{font-size:18px}
+  .player-clock{font-size:28px}
+  .result-card,.lesson-result-card{padding:32px 20px 24px}
+  .result-headline{font-size:26px}
+  .star-row{font-size:30px}
+  .stat-tile strong{font-size:22px}
   .player-board{padding:0 8px}
   /* Bàn phím tự co theo khung nhìn trong keyboard/keyboard.css (khối max-width:700px); ở đây chỉ
      bỏ nốt padding đáy vì điện thoại không bật bàn tay. */
   .player-board .keyboard--hands{margin-bottom:0}
   .player-live{margin:10px auto 8px}
-  .result-actions{flex-direction:column}
+  .result-actions{flex-direction:column;gap:8px;margin-top:26px}
   .result-actions>*{width:100%}
-  .stat-tiles{gap:8px}
+  .badge-notice{padding:12px 14px}
   .badge-notice-link{margin-inline-start:0}
 }
 /* A phone has no keys to rest ten fingers on, so we ask for the tap instead of shoving the
    on-screen keyboard over the page the moment the lesson loads.
-   A fixed bar under the keyboard, not a sticky one: sticky would float up over the keys
-   as soon as the page stopped scrolling. Mặt xanh như nút chính, cạnh đậm ở mép trên. */
+   A fixed button under the keyboard, not a sticky one: sticky would float up over the keys
+   as soon as the page stopped scrolling. Một viên thuốc xanh nổi trên một dải mờ ở đáy. */
 @media(max-width:620px),(hover:none){
-  .tap-to-type{display:block;position:fixed;left:0;right:0;bottom:0;z-index:10;width:100%;border:0;border-top:var(--edge) solid var(--primary-700);padding:14px 15px calc(14px + env(safe-area-inset-bottom,0px));background:var(--primary-600);color:var(--white);font-size:var(--fs-body);font-weight:900;letter-spacing:.06em;text-transform:uppercase}
-  .tap-to-type:active{background:var(--primary-700)}
-  .player{padding-bottom:60px}
+  .tap-to-type{display:block;position:fixed;left:16px;right:16px;bottom:calc(12px + env(safe-area-inset-bottom,0px));z-index:10;width:auto;min-height:50px;border:0;border-radius:var(--r-pill);padding:13px 20px;background:var(--primary-600);color:var(--white);font-size:var(--fs-body);font-weight:500;letter-spacing:-.01em;box-shadow:0 0 0 12px var(--glass),0 8px 24px rgba(0,0,0,.12);transition:transform var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+  .tap-to-type:active{background:var(--primary-700);transform:var(--press)}
+  .player{padding-bottom:84px}
 }
 
 /* Telex: a character still being composed ("ma" on its way to "má") is neither right nor wrong yet.

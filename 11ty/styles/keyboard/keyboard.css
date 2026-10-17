@@ -18,12 +18,12 @@
   box-sizing: border-box;
   position: relative;
   z-index: 1;
-  font-family: var(--font-mono, "Roboto Mono", ui-monospace, Menlo, Consolas, monospace);
-  /* Keycap (docs/design-system.md): mặt phím trên cạnh đáy đậm hơn. Cạnh co theo bề ngang board
-     (container query của keyboard--physical; board cũ thì theo khung nhìn) — phím 22px trên điện
-     thoại mà mang cạnh 4px thì trông như bậc thang. */
-  --key-edge: clamp(2px, .45cqw, 3px);
-  --key-radius: clamp(5px, 1.05cqw, var(--r-sm, 10px));
+  font-family: var(--font-body, system-ui, sans-serif);
+  /* Kiểu Magic Keyboard vẽ phẳng (docs/design-system.md): phím trắng, bo nhỏ, bóng 1px rất mềm —
+     không còn cạnh đáy keycap. Bo góc co theo bề ngang board (container query của
+     keyboard--physical; board cũ thì theo khung nhìn). `--key-edge` giữ lại = 0 cho CSS cũ còn đọc. */
+  --key-edge: 0px;
+  --key-radius: clamp(4px, .75cqw, 7px);
 }
 /* Tắt "Hiện bàn phím" thì giấu phím và tay, NHƯNG giữ lại liên kết Cài đặt — nó là cửa duy nhất
    để bật bàn phím trở lại, mà nó lại nằm bên trong chính cái board bị ẩn (bản gốc cho cả board
@@ -46,7 +46,7 @@
 /* Trang bài học có nút ⌨ riêng trên thanh trên cùng nên không cần giữ liên kết lại: ẩn là ẩn
    hẳn, đúng như bản gốc. Hai trang còn lại không có nút đó nên vẫn giữ dòng liên kết ở trên. */
 .player-page .keyboard.hide { display: none; }
-.keyboard--full { border-radius: var(--r-xl, 24px); padding: 16px 16px 14px; }
+.keyboard--full { border-radius: var(--r-lg, 20px); padding: 14px; }
 .keyboard--c { margin-left: auto; margin-right: auto; }
 /* Chỗ trống dưới bàn phím cho lớp tay: tay được vẽ tràn ra ngoài khung bàn phím. */
 .keyboard--hands { margin-bottom: 33%; }
@@ -64,8 +64,7 @@
   line-height: 1;
   max-height: 40px;
   position: relative;
-  text-transform: uppercase;
-  font-family: "Roboto Mono", ui-monospace, Menlo, Consolas, "Courier New", monospace;
+  font-family: var(--font-body, system-ui, sans-serif);
 }
 /* Phím vuông: `:after` đẩy chiều cao bằng đúng chiều rộng — vì thế landmark F/J phải dùng
    `:before` (xem tầng 2). */
@@ -82,7 +81,7 @@
   text-align: center;
   white-space: nowrap;
   width: 100%;
-  font-weight: 700;
+  font-weight: 400;
 }
 /* Phím hai tầng (ký tự shift ở trên): dưới 500px chỉ còn ký tự chính. */
 .key--duo { flex-direction: column; font-size: 12px; }
@@ -130,7 +129,7 @@
 /* Nhãn "Caps Lock ⇪" dài hơn mặt phím trên bàn phím đầy đủ (vá của typekute). */
 .keyboard--full .key-20 .key-label--1 { display: none !important; }
 .keyboard--full .key-20 .key-label--2,
-.keyboard--full .key-20 .key-label { font-size: 9px; }
+.keyboard--full .key-20 .key-label { font-size: 10px; }
 
 /* ===== 2. Màu ngón ============================================================================
    Năm màu, một màu một ngón, soi gương sang hai bàn tay: phím phải bấm và ngón sáng lên trên
@@ -143,14 +142,14 @@
   --fng-thumb: #8cc8ff;  --fng-thumb-line: #4595e6;  --fng-thumb-ink: #205c9a;
 }
 
-/* Khung bàn phím là một tấm "panel" của hệ keycap: nền ink-100 (để phím trắng nổi lên), viền
-   2px, cạnh đáy 4px, bo --r-xl. Bóng có màu ink, không bao giờ đen. */
+/* Khung bàn phím: một tấm nhôm xám rất nhạt (như vỏ Magic Keyboard), không viền, chỉ một hairline
+   mờ ở mép — để phím trắng nổi lên bằng tông nền chứ không bằng đường kẻ. */
 .keyboard--a.keyboard--full {
-  background-color: var(--ink-100, #f0f5f2);
-  background-image: none;
-  border: var(--border-w, 2px) solid var(--border, #d5e3dc);
-  border-radius: var(--r-xl, 24px);
-  box-shadow: var(--shadow-edge, 0 4px 0 #d5e3dc);
+  background-color: var(--ink-200, #e8e8ed);
+  background-image: linear-gradient(to bottom, rgba(255,255,255,.55), rgba(255,255,255,0) 60%);
+  border: 0;
+  border-radius: var(--r-lg, 20px);
+  box-shadow: inset 0 0 0 .5px var(--border, rgba(0,0,0,.08)), 0 1px 2px rgba(0,0,0,.03);
 }
 
 /* Phân ngón theo lối gõ mười ngón kiểu Mỹ (trỏ trái giữ 4/5/6, trỏ phải bắt đầu từ 7).
@@ -230,20 +229,23 @@
 .keyboard:not(.keyboard--numpad) :is(.key--fng-5, .key--fng-6) { --fk: var(--fng-thumb); --fk-line: var(--fng-thumb-line); --fk-ink: var(--fng-thumb-ink); }
 
 /* Lúc nghỉ mọi phím đều trắng trơn: màu ở trên mới chỉ được GÁN, chưa được tô. Màu chỉ hiện ra
-   trên phím đang phải bấm — và trong hai giây "nhá màu" lúc mở màn. */
-/* Phím lúc nghỉ: mặt trắng, viền ink-300, cạnh đáy cùng màu viền — y như nút phụ của site.
-   `--key-line` là màu viền + cạnh, để trạng thái và lớp "nhá màu" chỉ cần đổi một biến. */
+   trên phím đang phải bấm (một vạch nhỏ dưới nhãn) và trong hai giây "nhá màu" lúc mở màn.
+   Phím kiểu Magic Keyboard: mặt trắng, viền hairline + bóng 1px mềm — không cạnh đáy.
+   `--key-face` là màu mặt, `--key-line` là màu hairline quanh phím: trạng thái, lớp "nhá màu" và
+   heat map ở /progress/ (tien-do/progress.css) chỉ cần đổi hai biến này. */
 .keyboard--full .key--a {
   --key-face: var(--surface, #fff);
-  --key-line: var(--border, #d5e3dc);
+  --key-line: rgba(0, 0, 0, .07);
+  --key-shade: rgba(0, 0, 0, .12);
   background-color: var(--key-face);
-  border: 1.5px solid var(--key-line);
-  border-radius: var(--key-radius, 8px);
-  box-shadow: 0 var(--key-edge, 3px) 0 var(--key-line);
-  color: var(--ink-800, #2a4a3f);
-  transition: background-color var(--dur-fast, .15s) var(--ease, ease), border-color var(--dur-fast, .15s) var(--ease, ease), color var(--dur-fast, .15s) var(--ease, ease), box-shadow var(--dur-fast, .15s) var(--ease, ease), transform var(--dur-fast, .15s) var(--ease, ease);
+  border: 0;
+  border-radius: var(--key-radius, 6px);
+  box-shadow: 0 0 0 .5px var(--key-line), 0 1px 1px var(--key-shade);
+  color: var(--ink-800, #1d1d1f);
+  transition: background-color var(--dur-fast, .16s) var(--ease, ease), color var(--dur-fast, .16s) var(--ease, ease), box-shadow var(--dur-fast, .16s) var(--ease, ease), transform var(--dur-fast, .16s) var(--ease, ease);
 }
-.keyboard--full .key--a .key-label { font-weight: 700; }
+.keyboard--full .key--a .key-label { font-weight: 400; }
+.keyboard--full .key--special .key-label { color: var(--ink-500, #86868b); }
 /* Gờ định vị dưới hai phím ở VỊ TRÍ F và J (`key--homing`, keyboard.js gắn theo ô vật lý KeyF/KeyJ)
    — trước đây theo mã ký tự `f`/`j`, nên Dvorak hay Ả Rập có gờ ở sai phím hoặc không có gờ.
    `:after` đã bị tỉ lệ vuông chiếm chỗ. */
@@ -251,41 +253,47 @@
   content: "";
   position: absolute;
   left: 50%;
-  bottom: 5px;
-  width: 12px;
-  height: 2px;
-  margin-left: -6px;
+  bottom: 12%;
+  width: 22%;
+  max-width: 10px;
+  height: 1.5px;
+  transform: translateX(-50%);
   border-radius: 2px;
-  background: var(--ink-400, #b7c7bf);
+  background: var(--ink-300, #d2d2d7);
 }
 
 /* ===== 3. Trạng thái ==========================================================================
    Khai báo sau tầng 2 để thắng, đúng như bản gốc.
-   Phím PHẢI BẤM là điểm nhấn lime duy nhất của màn gõ (10% của 60/30/10): mặt lime, cạnh lime đậm,
-   nổi cao hơn hàng xóm 1px. Ngón nào bấm thì bàn tay 3D đã sáng đúng màu ngón; trên phím, màu ngón
-   chỉ còn là vạch đáy (`--fk-line`) — đủ để nối phím với ngón mà không phá điểm nhấn.
-   Đúng = xanh thương hiệu, sai = đỏ --error; không màu nào khác. */
+   Phím PHẢI BẤM mang màu nhấn duy nhất của site: mặt xanh TypingEase, nhãn trắng, quầng xanh rất
+   mềm. Màu ngón chỉ còn là một vạch nhỏ dưới nhãn (`--fk`) — đủ nối phím với ngón đang sáng trên
+   bàn tay 3D mà không thành một mảng màu thứ hai. Sai = đỏ --error thoáng qua. */
 .keyboard--full .key--a.is-active,
 .keyboard--full .key--a.is-confirmed {
-  --key-face: var(--accent-500, #c8f05a);
-  --key-line: var(--accent-600, #a9d43a);
-  background-image: linear-gradient(to top, var(--fk-line, transparent) 0 3px, transparent 3px);
-  color: var(--ink-900, #15352b);
-  box-shadow: 0 calc(var(--key-edge, 3px) + 1px) 0 var(--key-line), 0 6px 14px -6px var(--accent-700, #5c7a12);
+  --key-face: var(--primary-500, #1f9466);
+  --key-line: var(--primary-600, #157a55);
+  --key-shade: transparent;
+  background-image: linear-gradient(var(--fk, transparent), var(--fk, transparent));
+  background-repeat: no-repeat;
+  background-size: 34% 3px;
+  background-position: 50% calc(100% - 14%);
+  color: var(--white, #fff);
+  box-shadow: 0 0 0 .5px var(--key-line), 0 4px 14px -4px color-mix(in srgb, var(--primary-500, #1f9466) 70%, transparent);
   transform: translateY(-1px);
   z-index: 1;
 }
 .keyboard--full .key--a.is-active .key-label,
-.keyboard--full .key--a.is-confirmed .key-label { color: var(--ink-900, #15352b); }
-.keyboard--full .key--a.is-active:before,
-.keyboard--full .key--a.is-confirmed:before { background: var(--accent-800, #4d660c); opacity: .6; }
+.keyboard--full .key--a.is-confirmed .key-label { color: var(--white, #fff); font-weight: 500; }
+/* Phím F/J đang sáng: vạch ngón đã nằm đúng chỗ của gờ định vị, nên gờ nhường. */
+.keyboard--full .key--homing.is-active:before,
+.keyboard--full .key--homing.is-confirmed:before { opacity: 0; }
 
 .keyboard--full .key--a.is-wrong {
-  --key-face: var(--error, #e5484d);
-  --key-line: var(--error-700, #b8384a);
+  --key-face: var(--error, #e30000);
+  --key-line: var(--error-700, #c4001a);
+  --key-shade: transparent;
   background-image: none;
   color: var(--white, #fff);
-  animation: keyPressWrong .25s;
+  animation: keyPressWrong .28s var(--ease-out, ease-out);
 }
 .keyboard--full .key--a.is-right {
   --key-face: var(--primary-600, #157a55);
@@ -296,29 +304,21 @@
 .keyboard--full .key--a.is-right .key-label,
 .keyboard--full .key--a.is-wrong .key-label { color: var(--white, #fff); }
 
-/* Phím mới của bài học: không có trong bản gốc (nguồn dạy phím mới bằng màn hình riêng), nhưng
-   giáo trình ở đây có chip "phím mới" trỏ vào bàn phím. Chỉ là một mảng màu ngón nhạt — bản đầu
-   vẽ viền nét đứt quanh phím và nó chỉ làm rối đúng cái phím người học đang phải nhìn. */
+/* Phím mới của bài học: một lớp màu ngón rất nhạt + hairline cùng sắc — gợi ý, không la lên. */
 .keyboard--full .key--a.is-new:not(.is-active):not(.is-wrong) {
-  --key-face: color-mix(in srgb, var(--fk, #fff) 45%, var(--surface, #fff));
-  --key-line: color-mix(in srgb, var(--fk-line, #d5e3dc) 55%, var(--border, #d5e3dc));
+  --key-face: color-mix(in srgb, var(--fk, #fff) 30%, var(--surface, #fff));
+  --key-line: color-mix(in srgb, var(--fk-line, rgba(0,0,0,.07)) 60%, transparent);
 }
 
-/* Nhún phím khi gõ đúng: phím lún xuống đúng như nút keycap của site (cạnh co còn 1px). Màu giữ
-   nguyên mặt phím — animation thắng mọi khai báo thường, nên không được gán màu cứng ở đây. */
+/* Nhấn phím: thu nhỏ một chút rồi trả lại, như nút của site (--press). Màu giữ nguyên mặt phím —
+   animation thắng mọi khai báo thường, nên không được gán màu cứng ở đây. */
 @keyframes fngKeyPress {
-  50% {
-    box-shadow: 0 1px 0 var(--key-line);
-    transform: translateY(calc(var(--key-edge, 3px) - 1px));
-  }
+  50% { transform: scale(.94); }
 }
 @keyframes keyPressWrong {
-  50% {
-    box-shadow: 0 1px 0 var(--key-line);
-    transform: translateY(calc(var(--key-edge, 3px) - 1px));
-  }
+  50% { transform: scale(.94); }
 }
-.keyboard--full .key--a.is-animating { animation: fngKeyPress .25s; }
+.keyboard--full .key--a.is-animating { animation: fngKeyPress .22s var(--ease-out, ease-out); }
 
 /* ===== 4. Nhá màu ngón hai giây ===============================================================
    Cả bàn phím mặc màu ngón cho tới khi người học gõ phím đầu tiên, rồi mờ dần về trắng — nhắc
@@ -344,9 +344,15 @@
   animation: ntFingerGuideFade 1.5s linear 2s both;
 }
 :is(.player-page, .free-page) .js-keyboard-holder .keyboard--full:not(.keyboard--numpad) .key--a:not(.is-active):not(.is-confirmed):not(.is-right):not(.is-wrong) {
-  --key-face: color-mix(in srgb, var(--fk, #fff) calc(var(--fng-peek) * 62%), var(--surface, #fff));
-  --key-line: color-mix(in srgb, var(--fk-line, #d5e3dc) calc(var(--fng-peek) * 55%), var(--border, #d5e3dc));
-  color: color-mix(in srgb, var(--fk-ink, #2a4a3f) calc(var(--fng-peek) * 100%), var(--ink-800, #2a4a3f));
+  --key-face: color-mix(in srgb, var(--fk, #fff) calc(var(--fng-peek) * 42%), var(--surface, #fff));
+  --key-line: color-mix(in srgb, var(--fk-line, rgba(0,0,0,.07)) calc(var(--fng-peek) * 35%), rgba(0, 0, 0, .07));
+  color: color-mix(in srgb, var(--fk-ink, #1d1d1f) calc(var(--fng-peek) * 100%), var(--ink-800, #1d1d1f));
+}
+/* Phím mới của bài vẫn giữ lớp màu nhạt của nó sau khi màu ngón đã tắt (khối trên đặc hiệu hơn
+   khối `.is-new` ở tầng 3, nên phải nhắc lại ở đây). */
+:is(.player-page, .free-page) .js-keyboard-holder .keyboard--full:not(.keyboard--numpad) .key--a.is-new:not(.is-active):not(.is-confirmed):not(.is-right):not(.is-wrong) {
+  --key-face: color-mix(in srgb, var(--fk, #fff) max(30%, calc(var(--fng-peek) * 42%)), var(--surface, #fff));
+  --key-line: color-mix(in srgb, var(--fk-line, rgba(0,0,0,.07)) 60%, transparent);
 }
 
 /* ===== 4b. Giảm chuyển động ===================================================================
@@ -381,7 +387,7 @@
 /* Tay như thuỷ tinh hơn là như da: đủ để thấy phím dưới ngón. */
 .hands.js-hands canvas {
   opacity: .70;
-  filter: drop-shadow(0 -1px 1px rgba(21, 53, 43, .5));
+  filter: drop-shadow(0 -1px 1px rgba(0, 0, 0, .28));
 }
 
 /* Ba tuỳ chọn trong hộp thoại Cài đặt; JS cũng tắt renderer, đây là phần nhìn thấy được. */
@@ -393,24 +399,22 @@
 /* ===== 6. Liên kết Cài đặt ==================================================================== */
 .keyboard-link { position: absolute; top: 2px; right: 20px; white-space: nowrap; z-index: 3; }
 @media screen and (min-width: 650px) { .keyboard-link { top: 7px; } }
-/* Nhãn nhỏ kiểu typekute: Nunito in hoa đậm, giãn chữ — không phải chữ mono của mặt phím. */
+/* Nhãn nhỏ, chữ hệ thống, xám — một liên kết phụ, không phải nút. */
 .keyboard-link-action {
   display: inline-flex;
   align-items: center;
   gap: 5px;
-  padding: 2px 6px;
+  padding: 2px 8px;
   border-radius: var(--r-pill, 999px);
-  color: var(--ink-600, #5b7369);
+  color: var(--ink-500, #86868b);
   font-family: var(--font-body, system-ui, sans-serif);
-  font-size: var(--fs-2xs, 11px);
-  font-weight: 800;
-  letter-spacing: .08em;
-  text-transform: uppercase;
+  font-size: var(--fs-xs, 12px);
+  font-weight: 400;
   text-decoration: none;
-  transition: color var(--dur-fast, .15s) var(--ease, ease), background-color var(--dur-fast, .15s) var(--ease, ease);
+  transition: color var(--dur-fast, .16s) var(--ease, ease), background-color var(--dur-fast, .16s) var(--ease, ease);
 }
 .keyboard-link-action:hover,
-.keyboard-link-action:focus-visible { color: var(--primary-700, #0f6244); background: var(--primary-100, #e1f2e8); }
+.keyboard-link-action:focus-visible { color: var(--ink-900, #1d1d1f); background: rgba(0, 0, 0, .05); }
 .keyboard-link-icon { height: 14px; width: 14px; position: relative; top: 1px; }
 
 /* ===== 7. Điện thoại ==========================================================================
@@ -445,8 +449,9 @@
 
 /* ===== 8. Hộp thoại Cài đặt bàn phím ==========================================================
    Bản gốc dùng bộ modal/switch của vendor; ở đây dựng lại bằng `.card` + nút của base.css để
-   khỏi kéo theo 500 KB CSS chỉ vì bảy dòng tuỳ chọn. Nhìn theo hệ keycap: thẻ trắng viền 2px bo
-   --r-xl, công tắc xanh thương hiệu, ô chọn là một "phím" trắng có cạnh đáy. */
+   khỏi kéo theo 500 KB CSS chỉ vì tám dòng tuỳ chọn. Nhìn như một bảng cài đặt iOS/macOS: tấm nền
+   xám --surface-alt, các dòng gom thành hai nhóm trắng bo góc (công tắc / danh sách chọn), ngăn bởi
+   hairline thụt lề, công tắc kiểu iOS. Trên điện thoại nó là một sheet trượt lên từ đáy. */
 .kb-settings {
   position: fixed;
   inset: 0;
@@ -454,32 +459,39 @@
   display: grid;
   place-items: center;
   padding: 16px;
-  background: color-mix(in srgb, var(--ink-900, #15352b) 55%, transparent);
+  background: rgba(0, 0, 0, .28);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  animation: kbSettingsFade var(--dur, .28s) var(--ease-out, ease-out);
 }
+@keyframes kbSettingsFade { from { opacity: 0; } }
+@keyframes kbSettingsRise { from { opacity: 0; transform: translateY(12px) scale(.98); } }
 /* `.card` của player.css khai báo `width:100%` và nạp SAU file này, cùng độ đặc hiệu — nên phải
    nêu cả lớp bao ngoài, nếu không hộp thoại kéo rộng hết màn hình. */
 .kb-settings .kb-settings-card {
   position: relative;
   box-sizing: border-box;
-  /* Đúng bề ngang hộp thoại của bản gốc: `.modal-wrapper.cell--s` = max-width 512px, đệm 28/22. */
-  width: min(512px, 100%);
+  width: min(460px, 100%);
   max-height: calc(100vh - 32px);
   max-height: calc(100dvh - 32px);
-  padding: 26px 28px 24px;
+  padding: 18px 18px 18px;
   overflow: auto;
   text-align: start;
-  border: var(--border-w, 2px) solid var(--border, #d5e3dc);
-  border-radius: var(--r-xl, 24px);
-  background: var(--surface, #fff);
-  box-shadow: var(--shadow-edge, 0 4px 0 #d5e3dc), var(--shadow-lift, 0 18px 32px rgba(21, 53, 43, .1));
+  border: 0;
+  border-radius: var(--r-lg, 20px);
+  background: var(--surface-alt, #f5f5f7);
+  box-shadow: 0 0 0 .5px rgba(0, 0, 0, .06), 0 24px 64px rgba(0, 0, 0, .18), 0 4px 14px rgba(0, 0, 0, .06);
+  animation: kbSettingsRise var(--dur, .28s) var(--ease-out, ease-out);
 }
 .kb-settings-card h2 {
-  margin: 0 0 8px;
-  padding-inline-end: 44px;
-  color: var(--ink-900, #15352b);
-  font-size: 22px;
-  font-weight: 900;
-  letter-spacing: -.4px;
+  margin: 2px 0 18px;
+  padding-inline: 44px;
+  color: var(--ink-900, #1d1d1f);
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: -.02em;
+  text-align: center;
 }
 .kb-settings-close {
   position: absolute;
@@ -487,95 +499,145 @@
   inset-inline-end: 18px;
   display: grid;
   place-items: center;
-  width: 38px;
-  height: 38px;
-  padding: 0;
-  border: var(--border-w, 2px) solid var(--border, #d5e3dc);
-  border-radius: var(--r-sm, 10px);
-  background: var(--surface, #fff);
-  color: var(--ink-600, #5b7369);
-  font-size: 22px;
-  font-weight: 700;
+  width: 30px;
+  height: 30px;
+  padding: 0 0 2px;
+  border: 0;
+  border-radius: 50%;
+  background: rgba(0, 0, 0, .06);
+  color: var(--ink-600, #6e6e73);
+  font-size: 20px;
+  font-weight: 400;
   line-height: 1;
   cursor: pointer;
-  box-shadow: 0 3px 0 var(--border, #d5e3dc);
-  transition: transform var(--dur-fast, .15s) var(--ease, ease), box-shadow var(--dur-fast, .15s) var(--ease, ease), background-color var(--dur-fast, .15s) var(--ease, ease);
+  box-shadow: none;
+  transition: transform var(--dur-fast, .16s) var(--ease, ease), background-color var(--dur-fast, .16s) var(--ease, ease);
 }
-.kb-settings-close:hover { color: var(--ink-900, #15352b); background: var(--primary-50, #f2f9f5); }
-.kb-settings-close:active { transform: translateY(2px); box-shadow: 0 1px 0 var(--border, #d5e3dc); }
-.kb-settings-close:focus-visible { outline: none; box-shadow: var(--shadow-focus), 0 3px 0 var(--border, #d5e3dc); }
+.kb-settings-close:hover { color: var(--ink-900, #1d1d1f); background: rgba(0, 0, 0, .1); }
+.kb-settings-close:active { transform: var(--press); }
+.kb-settings-close:focus-visible { outline: none; box-shadow: var(--shadow-focus); }
+/* Mỗi dòng là một ô trắng; dòng đầu/cuối của nhóm bo góc, dòng giữa nối liền nhau. Hai nhóm: các
+   công tắc, rồi các danh sách chọn — tách bằng một khoảng trống như Settings của iOS. */
 .kb-settings-row {
+  position: relative;
   display: flex;
   align-items: center;
   gap: 12px;
-  min-height: 56px;
-  padding: 10px 0;
-  border-bottom: var(--border-w, 2px) solid var(--ink-200, #e5eee9);
+  min-height: 48px;
+  padding: 7px 16px;
+  background: var(--surface, #fff);
   cursor: pointer;
 }
-.kb-settings-row:last-of-type { border-bottom: 0; }
-.kb-settings-label { flex: 1; color: var(--ink-800, #2a4a3f); font-size: var(--fs-body, 15px); font-weight: 700; }
-.kb-settings-row:has(:disabled) { opacity: .45; cursor: default; }
-/* Công tắc: ô checkbox thật nằm dưới, `.kb-settings-knob` là phần nhìn thấy, nên bàn phím và
-   trình đọc màn hình vẫn thấy một checkbox bình thường. Rãnh lõm (bóng trong), núm là một phím
-   trắng nhỏ có cạnh đáy. */
+.kb-settings-row:first-child,
+.kb-settings-row:has(.kb-settings-switch) + .kb-settings-row:has(.kb-settings-select) {
+  border-start-start-radius: var(--r, 14px);
+  border-start-end-radius: var(--r, 14px);
+}
+.kb-settings-row:has(.kb-settings-switch) + .kb-settings-row:has(.kb-settings-select) { margin-top: 20px; }
+.kb-settings-row:last-child,
+.kb-settings-row:has(.kb-settings-switch):has(+ .kb-settings-row .kb-settings-select) {
+  border-end-start-radius: var(--r, 14px);
+  border-end-end-radius: var(--r, 14px);
+}
+/* Hairline thụt lề theo chữ, như danh sách iOS. */
+.kb-settings-row:after {
+  content: "";
+  position: absolute;
+  inset-inline: 16px 0;
+  bottom: 0;
+  height: 1px;
+  background: var(--ink-200, #e8e8ed);
+  transform: scaleY(.6);
+  transform-origin: bottom;
+}
+.kb-settings-row:last-child:after,
+.kb-settings-row:has(.kb-settings-switch):has(+ .kb-settings-row .kb-settings-select):after { display: none; }
+.kb-settings-label { flex: 1; color: var(--ink-900, #1d1d1f); font-size: 15px; font-weight: 400; letter-spacing: -.01em; }
+.kb-settings-row:has(:disabled) { cursor: default; }
+.kb-settings-row:has(:disabled) > * { opacity: .4; }
+/* Công tắc kiểu iOS: ô checkbox thật nằm dưới, `.kb-settings-knob` là phần nhìn thấy, nên bàn phím
+   và trình đọc màn hình vẫn thấy một checkbox bình thường. */
 .kb-settings-switch { position: absolute; opacity: 0; width: 0; height: 0; }
 .kb-settings-knob {
   flex: 0 0 auto;
   position: relative;
-  width: 48px;
-  height: 28px;
+  width: 51px;
+  height: 31px;
   border-radius: var(--r-pill, 999px);
-  background: var(--ink-300, #d5e3dc);
-  box-shadow: inset 0 2px 0 color-mix(in srgb, var(--ink-900, #15352b) 10%, transparent);
-  transition: background-color var(--dur-fast, .15s) var(--ease, ease);
+  background: rgba(120, 120, 128, .16);
+  box-shadow: none;
+  transition: background-color var(--dur, .28s) var(--ease, ease);
 }
 .kb-settings-knob:after {
   content: "";
   position: absolute;
-  top: 3px;
-  inset-inline-start: 3px;
-  width: 22px;
-  height: 22px;
+  top: 2px;
+  inset-inline-start: 2px;
+  width: 27px;
+  height: 27px;
   border-radius: 50%;
   background: var(--white, #fff);
-  box-shadow: 0 2px 0 color-mix(in srgb, var(--ink-900, #15352b) 22%, transparent);
-  transition: transform var(--dur-fast, .15s) var(--ease, ease);
+  box-shadow: 0 3px 8px rgba(0, 0, 0, .15), 0 1px 1px rgba(0, 0, 0, .16), 0 0 0 .5px rgba(0, 0, 0, .04);
+  transition: transform var(--dur, .28s) var(--ease-out, ease-out);
 }
-.kb-settings-switch:checked + .kb-settings-knob { background: var(--primary-600, #157a55); }
-.kb-settings-switch:checked + .kb-settings-knob:after { transform: translateX(20px); box-shadow: 0 2px 0 var(--primary-800, #0b4d35); }
+.kb-settings-switch:checked + .kb-settings-knob { background: var(--primary-500, #1f9466); }
+.kb-settings-switch:checked + .kb-settings-knob:after { transform: translateX(20px); }
 [dir="rtl"] .kb-settings-switch:checked + .kb-settings-knob:after { transform: translateX(-20px); }
 .kb-settings-switch:focus-visible + .kb-settings-knob { box-shadow: var(--shadow-focus); }
+/* Danh sách chọn: không khung — giá trị xám canh cuối dòng kèm mũi tên lên/xuống, như ô "chọn" của
+   iOS. Vẫn là <select> thật nên bàn phím và trình đọc màn hình dùng bình thường. */
 .kb-settings-select {
   /* Tên bố cục dài nhất trong catalog là "United States Standard"; hẹp hơn là nó bị cắt giữa chữ,
      rộng hơn là nhãn bên trái phải xuống dòng. */
   flex: 0 1 auto;
   width: 240px;
-  max-width: 58%;
-  min-height: 42px;
-  padding: 8px 12px;
-  border: var(--border-w, 2px) solid var(--border, #d5e3dc);
+  max-width: 60%;
+  min-height: 34px;
+  margin-inline-end: -6px;
+  padding-block: 4px;
+  padding-inline: 8px 22px;
+  border: 0;
   border-radius: var(--r-sm, 10px);
-  background-color: var(--surface, #fff);
-  color: var(--ink-900, #15352b);
+  -webkit-appearance: none;
+  appearance: none;
+  background-color: transparent;
+  /* Biểu tượng (mũi tên lên/xuống), không phải màu giao diện: xám --ink-500. */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='8' height='12' viewBox='0 0 8 12'%3E%3Cpath d='M1 4.5 4 1.5l3 3M1 7.5l3 3 3-3' fill='none' stroke='%2386868b' stroke-width='1.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat: no-repeat;
+  background-position: right 6px center;
+  color: var(--ink-600, #6e6e73);
   font: inherit;
-  font-size: var(--fs-sm, 13px);
-  font-weight: 700;
-  box-shadow: 0 3px 0 var(--border, #d5e3dc);
+  font-size: 15px;
+  font-weight: 400;
+  text-align: end;
+  text-align-last: end;
+  text-overflow: ellipsis;
+  box-shadow: none;
   cursor: pointer;
+  transition: background-color var(--dur-fast, .16s) var(--ease, ease);
 }
-.kb-settings-select:hover { border-color: var(--primary-300, #97d1b1); }
-.kb-settings-select:focus-visible { outline: none; box-shadow: var(--shadow-focus), 0 3px 0 var(--border, #d5e3dc); }
-.kb-settings-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 18px; padding-top: 18px; border-top: var(--border-w, 2px) solid var(--ink-200, #e5eee9); }
+[dir="rtl"] .kb-settings-select { background-position: left 6px center; padding-inline: 8px 22px; }
+.kb-settings-select:hover { background-color: rgba(0, 0, 0, .04); }
+.kb-settings-select:focus-visible { outline: none; box-shadow: var(--shadow-focus); }
+.kb-settings-footer { display: flex; justify-content: flex-end; gap: 10px; margin-top: 20px; }
 .kb-settings-footer .ghost-button,
-.kb-settings-footer .primary-button { min-width: 112px; min-height: 48px; font-size: var(--fs-body, 15px); }
+.kb-settings-footer .primary-button { min-width: 108px; min-height: 44px; font-size: 15px; }
 @media (max-width: 620px) {
-  .kb-settings { padding: 12px; }
-  .kb-settings .kb-settings-card { padding: 20px 18px 18px; }
-  .kb-settings-card h2 { font-size: 19px; }
-  .kb-settings-close { top: 14px; inset-inline-end: 14px; }
-  .kb-settings-label { font-size: var(--fs-sm, 13px); }
+  /* Sheet đáy kiểu iOS: phủ hết bề ngang, bo hai góc trên, chừa vùng an toàn dưới đáy. */
+  .kb-settings { padding: 0; place-items: end stretch; }
+  .kb-settings .kb-settings-card {
+    width: 100%;
+    max-height: calc(100dvh - 40px);
+    padding: 16px 16px calc(16px + env(safe-area-inset-bottom, 0px));
+    border-radius: var(--r-lg, 20px) var(--r-lg, 20px) 0 0;
+    animation-name: kbSettingsSheet;
+  }
+  .kb-settings-close { top: 16px; inset-inline-end: 16px; }
   .kb-settings-footer > * { flex: 1; }
+}
+@keyframes kbSettingsSheet { from { transform: translateY(40px); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) {
+  .kb-settings, .kb-settings .kb-settings-card { animation: none; }
 }
 
 /* Trang tiếng Ả Rập/Ba Tư/Urdu/Hebrew mang dir="rtl", nhưng bàn phím là VỊ TRÍ VẬT LÝ: phím Tab vẫn
@@ -656,7 +718,6 @@
     line-height: 1;
     opacity: .6;
     pointer-events: none;
-    text-transform: uppercase;
   }
 }
 /* All typing rows share switch pitches. Wide keys own exact unit spans; no row
@@ -764,6 +825,9 @@
   border: inherit;
   border-bottom: 0;
   background: inherit;
+  /* Cùng hairline + bóng với phím, nhưng cắt mép dưới để không vẽ một đường ngang qua chỗ nối. */
+  box-shadow: inherit;
+  clip-path: inset(-3px -3px 1px -3px);
   pointer-events: none;
 }
 .nt-player-keyboard .key-active-level:not([hidden]) {
@@ -781,8 +845,6 @@
   position: absolute;
   left: 12px;
   top: 2px;
-  font: 800 10px var(--font-body, system-ui, sans-serif);
-  letter-spacing: .06em;
-  text-transform: uppercase;
+  font:600 10px var(--font-body, system-ui, sans-serif);
   color: var(--ink-600, #5b7369);
 }

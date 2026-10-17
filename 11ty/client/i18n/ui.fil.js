@@ -212,6 +212,7 @@ window.TypingEaseUI = {
     finishedMinutes: 'Tapos na ang oras pagkaraan ng {minutes} minuto. Resulta: {wpm} WPM, {accuracy}% katumpakan, {errors} mali.',
     accuracyName: 'Katumpakan',
     comparisonSame: 'Kapareho ng dati mong resulta.',
+    personalBest: 'Bagong personal best!',
     comparisonDelta: '{delta} WPM kumpara sa dati mong resulta',
     progressEmpty: 'Kulang pa ang data. Tapusin ang ilang test para makita ang pag-unlad mo.',
     progressNone: 'Wala pang data ng pag-unlad.',
