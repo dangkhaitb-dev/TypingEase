@@ -22,7 +22,7 @@ Run `tooling/test/home-presentation.cjs` with the same PW/CHROME, base URL and o
 
 The user requires actual photographs of real people, with no AI-generated or AI-edited images. All homepage photography now comes from the Unsplash sources listed in `docs/home-people-sources.json`. Original downloads are retained in `content/media/people/`; the site serves WebP files from `public/assets/people/`.
 
-The hero uses seven distinct stock photographs. Six audience cards, the statement background and portrait arcs on other language homepages also use source photographs. These are illustrative stock photos, not testimonials or evidence of people using TypingEase. Actual app screenshots remain in the separate product preview and three steps. Do not synthesize people or replace screens inside these photographs.
+The hero uses seven distinct stock photographs. Six audience cards, the statement background and portrait arcs on other language homepages also use source photographs. These are illustrative stock photos, not testimonials or evidence of people using TypingEase. Actual app screenshots remain in the separate product preview and four feature cards. Do not synthesize people or replace screens inside these photographs.
 
 Earlier AI assets and generation manifests are historical artifacts only and are not referenced by page templates.
 
@@ -32,16 +32,12 @@ The hero retains the reference perspective, depth and rotation, with seven cards
 
 ## MiniMax-based layout system
 
-`11ty/styles/home-canvas.css` is the final homepage layout layer, rewritten as one system rather than stacked visual overrides. Reference: https://design.minimax.io/vi.
+Reference: https://design.minimax.io/vi. The homepage header is fixed and transparent using the supplied glass geometry. It contains Course, Test, Game and a native language picker. Inner pages retain the shared application navigation. The original generated typing mascot is available as PNG and served as WebP in the header and hero.
 
-The desktop hero uses a centered TypingEase identity, a short promise and a compact course action. Seven source photographs sit around it in the reference's varied sizes and positions. Labels, decorative eyebrow copy and the extra discovery link were removed from the hero. The canvas uses a faint dot pattern, soft neutral color and minimal shadows. Smaller screens retain swipeable photographs; the hero control row stays absent.
+The H1 reads “Learn to type free”, entirely in Outfit; only “type” is green. Inter is used for body copy and controls. The single black-and-white Get started action opens the locale’s course. Fonts are served locally. The background uses light #d2d4d8 dots, radius .9px with a soft edge at1.1px, spaced24px apart.
 
-Below the hero: a large app preview, a horizontally scrollable three-step card row with real links and arrow navigation, a light two-column photography panel, the centered audience carousel, a quiet feature list, a two-column FAQ and a restrained final CTA. One spacing, border and corner-radius system runs throughout. Green remains the accent. No MiniMax branding, assets, copy or AI photographs are used.
+Seven real photos follow velprompt’s centered 3D arc beneath the hero, with340×240 desktop cards and250×180 mobile cards,1600px perspective, depth, rotation and side blur. No visible hero control bar. The hero and lower card rails use a2-second idle delay, pause on hover/focus/drag or hidden tabs, and respect reduced motion. Lower rails reverse at their ends.
 
-### Reference typography
+Below the hero: four real UI previews (lesson, course, test, games), four feature cards, a light two-column photo panel, six captioned audience cards, open two-column capability lists, FAQ and a dotted closing CTA. Screenshots were refreshed from the running EN/VI application. People photos remain unmodified stock; generated imagery is limited to the explicitly requested brand mascot.
 
-The EN/VI product homepage uses Outfit for headings, Inter for body and controls, and Abhaya Libre (800) for the hero serif accent, matching the families observed on MiniMax Design. Inter remains the fallback for Vietnamese glyphs outside Outfit’s coverage. Photo cards retain the rectangular, lightly rounded treatment from the supplied HTML reference; they are not circular.
-
-Hero simplification: removed the mascot and course selector. The single Get started link opens the current locale’s lessons. Font files are served locally so hero typography does not depend on Google Fonts availability. MiniMax’s visible brand headline is SVG artwork, not its hidden H1 font; TypingEase retains its own typographic wordmark.
-
-Photo layout correction: hero photography follows velprompt’s centered 3D arc beneath the copy, with 340×240 desktop cards (250×180 mobile), 1600px perspective, side rotation and depth/blur. The scattered MiniMax photo positions were removed. Seven real photos, swipe interaction, and no control bar remain.
+Screenshot refresh: lesson/course/games/progress captures are1280×836; test captures are1280×476 after trimming empty lower space. Header is excluded. Preview images retain natural ratios; cards use100% image width instead of the inherited145%. The v3 original PNG brand mark is a restrained black keyboard symbol with small cutout eyes and three keys.

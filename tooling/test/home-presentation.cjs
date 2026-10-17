@@ -14,7 +14,7 @@ if(out)require('node:fs').mkdirSync(out,{recursive:true});
    assert.equal(await p.locator('.product-start-form').count(),1);
    assert.equal(await p.locator('.product-arc-card').count(),7);
    assert.equal(await p.locator('.product-arc-card.has-lifestyle img').count(),7);
-   assert.equal(await p.locator('.product-step').count(),3);
+   assert.equal(await p.locator('.product-step').count(),4);
    assert.equal(await p.locator('.product-person').count(),6);
    assert.equal(await p.locator('.hero .home-portraits').count(),0);
    assert.equal(await p.locator('.product-arc-controls,[data-arc-pause],[data-arc-next],[data-arc-prev]').count(),0);
@@ -47,6 +47,6 @@ if(out)require('node:fs').mkdirSync(out,{recursive:true});
    if(out){await p.screenshot({path:out+'/product-'+(route==='/'?'en':'vi')+'-'+width+'.png',fullPage:true});await p.screenshot({path:out+'/hero-'+(route==='/'?'en':'vi')+'-'+width+'.png'});}
    await p.locator('.product-start-form a').click();await p.waitForURL(base+destination);
   }
-  assert.deepEqual(errors,[]);console.log('PASS',width,'px: EN/VI shared header, green accent, no hero keyboard, single Get started course navigation, 7 arc cards/3 steps/6 people, carousel controls/reduced motion, three real previews, FAQ, loaded images, no overflow or browser errors');await c.close();
+  assert.deepEqual(errors,[]);console.log('PASS',width,'px: EN/VI shared header, green accent, no hero keyboard, single Get started course navigation, 7 arc cards/4 steps/6 people, carousel controls/reduced motion, four real previews, FAQ, loaded images, no overflow or browser errors');await c.close();
  }
 }finally{await b.close()}})().catch(e=>{console.error(e);process.exitCode=1});

@@ -1048,8 +1048,8 @@
     const lead = screen.text ? `<p class="screen-lead">${escapeHtml(screen.text)}</p>` : '';
     stageEl.className = `player-stage is-typing is-${screen.type}`;
     if (screen.type === 'burst') {
-      stageEl.innerHTML = `${clock}${lead}<section class="card burst-card">`
-        + `<p class="burst-token" id="burst-token" dir="${textDir()}"></p><p class="burst-next" id="burst-next" dir="${textDir()}"></p></section>`;
+      stageEl.innerHTML = `<section class="card burst-card"><div class="lesson-guide">${clock}${lead}</div>`
+        + `<div class="lesson-text-surface"><p class="burst-token" id="burst-token" dir="${textDir()}"></p><p class="burst-next" id="burst-next" dir="${textDir()}"></p></div></section>`;
       input.dir = textDir();
       renderBurstToken();
       return;
@@ -1057,8 +1057,9 @@
     // `dictation` (letters | words | sentence) only changes how the text is set: wide tracking
     // for single letters, ordinary word spacing for words, a left-aligned paragraph for prose.
     const dictation = ['letters', 'words', 'sentence'].includes(screen.dictation) ? screen.dictation : '';
-    stageEl.innerHTML = `${chipHtml(key, screen.finger)}${clock}${lead}`
-      + `<section class="card prompt-card"><p class="prompt-lines${dictation ? ` as-${dictation}` : ''}" id="prompt-lines" dir="${textDir()}"></p></section>`;
+    stageEl.innerHTML = `<section class="card prompt-card"><div class="lesson-guide">`
+      + `<div class="lesson-guide-tools">${chipHtml(key, screen.finger)}${clock}</div>${lead}</div>`
+      + `<div class="lesson-text-surface"><p class="prompt-lines${dictation ? ` as-${dictation}` : ''}" id="prompt-lines" dir="${textDir()}"></p></div></section>`;
     input.dir = textDir();
   }
 

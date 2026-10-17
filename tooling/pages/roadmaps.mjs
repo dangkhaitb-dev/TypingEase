@@ -261,6 +261,7 @@ ${seoHead({ kind: 'course', url: new URL(config.url).pathname, title: S.title(cu
 
     <main class="curriculum">
       <section class="cur-head">
+        <div class="cur-key-study" aria-hidden="true"><span>F</span><span>J</span></div>
         <p class="eyebrow"><i></i> ${esc(S.eyebrow)}</p>
         <h1>${esc(S.h1(curriculum))}</h1>
         <p class="cur-intro">${S.intro}</p>

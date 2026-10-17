@@ -289,7 +289,9 @@ function renderShortcuts() {
 function applyCopy() {
   const ui = currentHomeUi();
 
-  const navLinks = [...document.querySelectorAll('.topbar nav a')];
+  // Shared headers already contain route-specific labels from site-header.mjs.
+  // The legacy positional copy only applies to headers outside that renderer.
+  const navLinks = [...document.querySelectorAll('.topbar:not([data-site-header]) nav a')];
   navLinks.forEach((link, index) => { if (ui.nav[index]) link.textContent = ui.nav[index]; });
 
   const exploreKicker = document.querySelector('#explore-kicker');

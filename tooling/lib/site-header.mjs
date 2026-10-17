@@ -30,17 +30,28 @@ export function siteHeader(html, outputPath) {
   const routes = {...config.routes};
   if (course) { routes.lessons = course.roadmap; routes.learn = course.href; }
   const isPlayer = match[0].includes('class="player-topbar');
-  const links = config.s.nav(routes).filter(([href]) => href).map(([href, label]) => {
+  const isHome = html.includes('href="/home.css"');
+  const navigation = isHome
+    ? [[routes.lessons, 'Course'], [routes.test, 'Test'], [routes.games, 'Game']]
+    : config.s.nav(routes);
+  const links = navigation.filter(([href]) => href).map(([href, label]) => {
     const current = href === url || (url === '/' && href === routes.home) || (isPlayer && href === routes.lessons);
     return `<a href="${escape(href)}"${current ? ` class="active" aria-current="${isPlayer ? 'true' : 'page'}"` : ''}>${escape(label)}</a>`;
   }).join('\n        ');
   const [, languageLabel] = HOME_SWITCH[lang] || HOME_SWITCH.en;
-  const header = `<header class="topbar site-header" data-site-header>
-      <a class="brand brand-signature" href="/" aria-label="TypingEase"><svg class="brand-emblem" viewBox="0 0 32 32" aria-hidden="true" focusable="false"><rect width="32" height="32" rx="8" fill="currentColor"/><g fill="none" stroke="var(--brand-mark-ink, #fff)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M8 11h2m5 0h2m5 0h2M8 16h2m5 0h2M8 21h9"/><path d="M23 15v7m-2-7h4m-4 7h4"/></g></svg><span class="brand-wordmark">Typing<em>Ease</em></span></a>
+  const languageOptions = scope.TypingEaseLanguages.list.flatMap(language => {
+    const home = configs.get(language.code)?.routes.home;
+    return home ? [`<a href="${escape(home)}" lang="${escape(language.code)}"${language.code === lang ? ' aria-current="page"' : ''}>${escape(language.native)}</a>`] : [];
+  }).join('');
+  const languageControl = isHome
+    ? `<details class="home-language"><summary aria-label="${escape(languageLabel)}">${globe}<span>${escape(lang.toUpperCase())}</span><svg class="home-language-chevron" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="home-language-menu" aria-label="${escape(languageLabel)}">${languageOptions}</div></details>`
+    : `<a class="site-language" href="/" aria-label="${escape(languageLabel)}" title="${escape(languageLabel)}">${globe}<span>${escape(lang.toUpperCase())}</span></a>`;
+  const header = `<header class="topbar site-header${isHome ? ' header--glass' : ''}" data-site-header>
+      <a class="brand brand-signature" href="/" aria-label="TypingEase"><picture class="brand-logo"><source srcset="/assets/brand/typingease-mark-v3.webp" type="image/webp"/><img class="brand-emblem" src="/assets/brand/typingease-mark-v3.png" width="34" height="34" alt="" aria-hidden="true"/></picture><span class="brand-wordmark">Typing<em>Ease</em></span></a>
       <nav aria-label="${escape(config.s.navAria)}">${links}</nav>
-      <div class="header-actions"><a class="site-language" href="/" aria-label="${escape(languageLabel)}" title="${escape(languageLabel)}">${globe}<span>${escape(lang.toUpperCase())}</span></a></div>
+      <div class="header-actions">${languageControl}</div>
     </header>`;
-  // Keep lesson controls and their IDs intact as a contextual toolbar below the same site header.
+  // Lessons keep their own controls without the site's marketing/navigation header.
   const lessonToolbar = isPlayer ? `<div class="player-topbar lesson-toolbar" role="region" aria-label="${escape(config.s.enter)}">${match[1]}</div>` : '';
-  return html.replace(existing, header + lessonToolbar);
+  return html.replace(existing, isPlayer ? lessonToolbar : header);
 }

@@ -41,3 +41,11 @@
   }, true);
   window.matchMedia('(min-width: 901px)').addEventListener('change', event => { if (event.matches) set(false); });
 })();
+
+/* Glass treatment and native language picker only on homepage headers. */
+(() => {
+ const header=document.querySelector('.header--glass');if(!header)return;
+ const picker=header.querySelector('.home-language');if(!picker)return;
+ document.addEventListener('click',event=>{if(!picker.contains(event.target))picker.open=false});
+ document.addEventListener('keydown',event=>{if(event.key==='Escape'&&picker.open){picker.open=false;picker.querySelector('summary').focus()}});
+})();

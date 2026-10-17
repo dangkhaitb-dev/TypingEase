@@ -18,7 +18,7 @@
   group.querySelectorAll('[data-product-view]').forEach(button=>{
    button.addEventListener('click',()=>{
     group.querySelectorAll('[data-product-view]').forEach(item=>item.setAttribute('aria-pressed',String(item===button)));
-    image.src=button.dataset.image;image.alt=button.dataset.description;
+    image.height=Number(button.dataset.imageHeight);image.src=button.dataset.image;image.alt=button.dataset.description;
     link.href=button.dataset.route;cta.href=button.dataset.route;
     cta.firstChild.textContent=button.dataset.cta+' ';
     description.textContent=button.dataset.description;address.textContent=button.dataset.route;
@@ -43,7 +43,7 @@
     if(i===center)card.setAttribute('aria-current','true');else card.removeAttribute('aria-current');
    });
   };
-  const schedule=()=>{clearTimeout(timer);if(!paused&&!hover&&!focused&&!drag&&visible&&!document.hidden)timer=setTimeout(()=>{center=(center+1)%cards.length;layout();schedule()},3600)};
+  const schedule=()=>{clearTimeout(timer);if(!paused&&!hover&&!focused&&!drag&&visible&&!document.hidden)timer=setTimeout(()=>{center=(center+1)%cards.length;layout();schedule()},2000)};
   const move=delta=>{center=(center+delta+cards.length)%cards.length;layout();schedule()};
   cards.forEach((card,i)=>card.addEventListener('click',event=>{if(suppressClick){event.preventDefault();suppressClick=false;return}if(center!==i){event.preventDefault();center=i;layout();schedule()}}));
   stage.addEventListener('dragstart',event=>event.preventDefault());
@@ -56,7 +56,7 @@
   arc.addEventListener('keydown',event=>{if(event.key==='ArrowRight'||event.key==='ArrowLeft'){event.preventDefault();move(event.key==='ArrowRight'?1:-1)}});
   document.addEventListener('visibilitychange',schedule);
   reduce.addEventListener('change',()=>{paused=reduce.matches;schedule()});
-  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting;schedule()},{threshold:.15}).observe(arc);
+  new IntersectionObserver(entries=>{visible=entries[0].isIntersecting&&entries[0].intersectionRatio>=.15;schedule()},{threshold:.15}).observe(arc);
   layout();schedule();
  }
  if(!reduce.matches){
@@ -86,4 +86,54 @@
  const move=direction=>steps.scrollBy({left:direction*(steps.querySelector('.product-step').getBoundingClientRect().width+20),behavior:matchMedia('(prefers-reduced-motion: reduce)').matches?'instant':'smooth'});
  document.querySelector('[data-step-prev]')?.addEventListener('click',()=>move(-1));
  document.querySelector('[data-step-next]')?.addEventListener('click',()=>move(1));
+})();
+
+/* One timer per gallery. Reverse at the ends instead of sweeping across the whole rail. */
+(() => {
+ const motion=matchMedia('(prefers-reduced-motion: reduce)');
+ for(const [selector,cardSelector,controlSelector] of [
+  ['.product-people','.product-person','.product-people-controls'],
+  ['.product-steps','.product-step','.product-step-controls']
+ ]){
+  const rail=document.querySelector(selector);if(!rail)continue;
+  const cards=[...rail.querySelectorAll(cardSelector)];if(cards.length<2)continue;
+  const section=rail.closest('section')||rail;
+  const controls=section.querySelector(controlSelector);
+  let timer,visible=false,interacting=false,direction=1;
+  const hovered=new Set();
+  const schedule=()=>{
+   clearTimeout(timer);
+   if(motion.matches||!visible||hovered.size||interacting||document.hidden||section.contains(document.activeElement))return;
+   const max=rail.scrollWidth-rail.clientWidth;if(max<=4)return;
+   timer=setTimeout(()=>{
+    const gap=parseFloat(getComputedStyle(rail).columnGap)||0;
+    const step=cards[0].getBoundingClientRect().width+gap;
+    if(rail.scrollLeft>=max-4)direction=-1;
+    else if(rail.scrollLeft<=4)direction=1;
+    const next=(Math.round(rail.scrollLeft/step)+direction)*step;
+    rail.scrollTo({left:Math.max(0,Math.min(max,next)),behavior:'smooth'});
+    schedule();
+   },2000);
+  };
+  new IntersectionObserver(entries=>{
+   visible=entries[0].isIntersecting&&entries[0].intersectionRatio>=.3;schedule();
+  },{threshold:.3}).observe(rail);
+  for(const surface of [rail,controls].filter(Boolean)){
+   surface.addEventListener('mouseenter',()=>{hovered.add(surface);schedule()});
+   surface.addEventListener('mouseleave',()=>{hovered.delete(surface);schedule()});
+   surface.addEventListener('pointerdown',()=>{interacting=true;schedule()});
+  }
+  for(const event of ['pointerup','pointercancel'])window.addEventListener(event,()=>{
+   if(interacting){interacting=false;schedule()}
+  });
+  section.addEventListener('focusin',schedule);
+  section.addEventListener('focusout',()=>queueMicrotask(schedule));
+  // Restart the idle period after touch inertia, wheel scrolling, or an arrow click.
+  rail.addEventListener('scroll',schedule,{passive:true});
+  rail.addEventListener('wheel',schedule,{passive:true});
+  controls?.addEventListener('click',schedule);
+  motion.addEventListener('change',schedule);
+  document.addEventListener('visibilitychange',schedule);
+  new ResizeObserver(schedule).observe(rail);
+ }
 })();
