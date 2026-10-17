@@ -20,6 +20,13 @@ const FRAME_DURATION = 0.275;
 const HAND_SCALE = 0.275;
 const HAND_OFFSET = 0.033;
 const HAND_DEPTH = -0.825;
+// Tư thế ảo: một clip có thật cộng một độ dời cả bàn tay (nút `Armature`, toạ độ riêng của mô hình,
+// +z là xuống dưới màn hình). Clip `home-row-7-right` của bản gốc đặt đầu ngón út ở mép trên phím
+// Enter, sát khe với phím `\`, nên nhìn như đang bấm nhầm phím trên; dời tay xuống nửa hàng phím
+// thì đầu ngón rơi đúng giữa Enter. Độ dời đi qua cùng tween với xương nên tay vẫn trượt mượt.
+const DERIVED_FRAMES = {
+  'enter-right': { clip: 'home-row-7-right', shift: [-0.03, 0, 0.4] },
+};
 
 let transparentTexture = null;
 let surfaceTexturePromise = null;
@@ -201,6 +208,8 @@ class SourceHandModel {
     if (this.side === 'right') this.modelRoot.scale.x *= -1;
     this.group.add(this.modelRoot);
     for (const clip of gltf.animations) this.clipByName.set(clip.name, clip);
+    this.armature = this.modelRoot.getObjectByName('Armature');
+    this.armatureHome = this.armature?.position.clone() || null;
     this.modelRoot.traverse((object) => {
       if (object.isSkinnedMesh) this.skinnedMesh = object;
       if (!object.isMesh || !object.material) return;
@@ -280,7 +289,7 @@ class SourceHandModel {
     if (!base) return [];
     const byName = new Map(base.tracks.map((track) => [track.name, track]));
     if (frame !== 'base') {
-      const pose = this.clipByName.get(frame);
+      const pose = this.clipByName.get(DERIVED_FRAMES[frame]?.clip || frame);
       if (pose) for (const track of pose.tracks) byName.set(track.name, track);
     }
     tracks = Array.from(byName.values());
@@ -313,6 +322,12 @@ class SourceHandModel {
       if (!binding) continue;
       binding.setValue(this.interpolantFor(track).evaluate(time), 0);
     }
+    // Không clip nào điều khiển `Armature`, nên mọi tư thế phải tự đặt lại nó — kể cả về chỗ cũ.
+    if (this.armature && this.armatureHome) {
+      const shift = DERIVED_FRAMES[frame]?.shift;
+      this.armature.position.copy(this.armatureHome);
+      if (shift) this.armature.position.add({ x: shift[0], y: shift[1], z: shift[2] });
+    }
     this.modelRoot.updateMatrixWorld(true);
   }
 
@@ -329,6 +344,7 @@ class SourceHandModel {
    */
   resolveFrame(frame) {
     if (this.clipByName.has(frame)) return frame;
+    if (this.clipByName.has(DERIVED_FRAMES[frame]?.clip)) return frame;
     const parts = /^(num|top|home|bottom)-row-(\d+)-(left|right)$/.exec(String(frame || ''));
     if (parts) {
       for (let index = Number(parts[2]) - 1; index >= 0; index -= 1) {

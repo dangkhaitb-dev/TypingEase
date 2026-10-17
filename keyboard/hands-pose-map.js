@@ -63,6 +63,8 @@ function createPoseMap() {
   record(map, 'left-resting-hand', 'default-left');
   record(map, 'right-resting-hand', 'default-right');
   record(map, 'right-option', 'option-right', 'pinky');
+  // Enter dùng clip vươn xa nhất của hàng giữa, cộng độ dời tay xuống (xem DERIVED_FRAMES ở hands-3d.js).
+  record(map, 'right-enter', 'enter-right', 'pinky', true);
 
   addFullRow(map, 'left', 'home', 7, [1, 2, 3, 4, 5, 7, 5], { full: true });
   addFullRow(map, 'left', 'bottom', 7, [1, 2, 3, 4, 5, 7, 5], { full: true });
@@ -236,6 +238,7 @@ function genericFingerId(row, column, side, animated = true) {
 // qua `sourceColumn`, vì đó mới là hệ toạ độ mà các mã tư thế dùng.
 function specialFingerId(entry, row, column, side, animated) {
   if (entry.hardware === 'AltRight' && POSE_MAP['right-option']) return 'right-option';
+  if (animated && side === 'right' && row === 2 && namedKeyOf(entry.main) === 'enter') return 'right-enter';
   return genericFingerId(row, column, side, animated);
 }
 
