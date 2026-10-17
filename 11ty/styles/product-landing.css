@@ -124,4 +124,10 @@
    Offscreen reveal cards otherwise add 22px of vertical scrollable overflow. */
 .product-steps,.product-people{overflow-y:hidden}
 .product-steps>.product-reveal,.product-people>.product-reveal{transform:none}
+
+/* Preserve the positive scrollLeft behavior used by the homepage rails in RTL locales. */
+.product-content[dir="rtl"] .product-steps,
+.product-content[dir="rtl"] .product-people{direction:ltr}
+.product-content[dir="rtl"] .product-step,
+.product-content[dir="rtl"] .product-person{direction:rtl}
 @media(prefers-reduced-motion:reduce){.product-arc-inner{transition:none}}

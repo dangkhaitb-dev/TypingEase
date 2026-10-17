@@ -41,4 +41,23 @@ const base = {
   }
 };
 
+for (const locale of Object.values(base)) locale.heroRoute = locale.learn;
+const arcExtras = {
+  es:['Acerca de TypingEase','Mecanografía al tacto','Escribir más rápido','¿Qué son las PPM?','Velocidad de escritura'],
+  fr:['À propos de TypingEase','Dactylographie','Taper plus vite','Qu’est-ce que le MPM ?','Vitesse de frappe'],
+  de:['Über TypingEase','Zehnfingersystem','Schneller tippen','Was ist APM?','Tippgeschwindigkeit'],
+  it:['Informazioni su TypingEase','Dattilografia','Digitare più velocemente','Cosa sono i PPM?','Velocità di digitazione'],
+  pt:['Sobre o TypingEase','Dactilografia','Escrever mais depressa','O que são PPM?','Velocidade de escrita'],
+  nl:['Over TypingEase','Blind typen','Sneller typen','Wat is APM?','Typsnelheid'],
+  pl:['O TypingEase','Pisanie bezwzrokowe','Pisz szybciej','Czym jest ZPM?','Szybkość pisania'],
+  ru:['О TypingEase','Слепая печать','Печатайте быстрее','Что такое ЗМ?','Скорость печати'],
+  uk:['Про TypingEase','Сліпий друк','Друкуйте швидше','Що таке ЗХ?','Швидкість набору']
+};
+const arcIds=['course','practice','test','progress','lesson','games','about','touch','faster','wpm','average'];
+for (const [code, locale] of Object.entries(base)) {
+  const extras=arcExtras[code];
+  const labels=[locale.views[1][1],locale.resources[0][1],locale.views[2][1],locale.resources[2][1],locale.views[0][1],locale.views[3][1],...extras];
+  locale.arc=arcIds.map((id,i)=>[id,labels[i],['/lessons/','/practice/','/typing-test/','/progress/','/learn/','/typing-games/','/about/','/touch-typing/','/how-to-type-faster/','/what-is-wpm/','/average-typing-speed/'][i]]);
+}
+
 export default base;

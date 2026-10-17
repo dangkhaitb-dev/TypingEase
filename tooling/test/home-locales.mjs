@@ -22,8 +22,9 @@ const failures = [];
 for (const { code } of homes) {
   try {
     const html = render(code);
+    const declared = /<html[^>]*lang="([^"]+)"/.exec(html)[1].toLowerCase();
     assert.match(html, new RegExp(`data-product-lang="${code}"`), 'product content uses its own locale');
-    assert.match(html, new RegExp(`<section[^>]*lang="${code}"[^>]*class="hero|<section[^>]*class="hero[^>]*lang="${code}"`), 'hero declares its own locale');
+    assert.match(html, new RegExp(`<section[^>]*lang="${declared}"[^>]*class="hero|<section[^>]*class="hero[^>]*lang="${declared}"`, 'i'), 'hero declares its own locale');
     assert.doesNotMatch(html, /\b(?:undefined|\[object Object\])\b/, 'all copy and routes are defined');
     if (code !== 'en') {
       const copied = textNodes(content(html)).filter(text => englishSentences.has(text));

@@ -33,7 +33,7 @@ export function siteHeader(html, outputPath) {
   const isPlayer = match[0].includes('class="player-topbar');
   const isHome = html.includes('href="/home.css"');
   const navigation = isHome
-    ? [[routes.lessons, 'Course'], [routes.test, 'Test'], [routes.games, 'Game']]
+    ? config.s.nav(routes).filter(([href]) => [routes.lessons, routes.test, routes.games].includes(href))
     : config.s.nav(routes);
   const links = navigation.filter(([href]) => href).map(([href, label]) => {
     const current = href === url || (url === '/' && href === routes.home) || (isPlayer && href === routes.lessons);

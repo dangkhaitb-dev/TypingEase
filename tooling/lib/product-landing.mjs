@@ -1,6 +1,7 @@
 import { productScreens } from './product-screens.mjs';
 import europe from './product-copy-europe.mjs';
 import asia from './product-copy-asia.mjs';
+import other from './product-copy-other.mjs';
 const escape=value=>String(value).replaceAll('&','&amp;').replaceAll('<','&lt;').replaceAll('\"','&quot;');
 /* Product landing composition follows the supplied velprompt reference.
    All screenshots show the running application; product links remain ordinary navigable links. */
@@ -26,7 +27,7 @@ export const COPY = {
   faqLabel:'Before you begin',faqTitle:'A few things to know.',faq:[['Is TypingEase free?','Yes. You can start lessons, practice your own text, and take typing tests in your browser without creating an account.'],['Where should a beginner start?','Begin with the first lesson in the course. Learn the home keys, then work your way toward words and paragraphs.'],['Do I need to install anything?','No. TypingEase runs in your browser. A physical keyboard makes learning finger positions more comfortable.'],['Should I focus on speed or accuracy?','Start by typing accurately and steadily. Typing tests show both WPM and accuracy so you can follow both together.']],
   cta:'A little practice today.<br /><em>A habit for tomorrow.</em>',ctaLabel:'Start your first lesson',learn:'/learn/',footerIntro:'Go a little slower, and you will get a lot further.',footerGroups:[['Product',['Lessons','/learn/'],['Course','/lessons/'],['Typing test','/typing-test/']],['Explore',['Free practice','/practice/'],['Games','/typing-games/'],['Progress','/progress/']],['Resources',['Touch typing','/touch-typing/'],['What is WPM?','/what-is-wpm/'],['About','/about/']]]
  }
-  ,...europe,...asia
+  ,...europe,...asia,...other
 };
 for (const [locale, t] of Object.entries(COPY)) {
  if (locale==='en'||locale==='vi') continue;
