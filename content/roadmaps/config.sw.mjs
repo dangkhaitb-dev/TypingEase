@@ -13,7 +13,7 @@ export default {
     ui: '/i18n/ui.sw.js',
     routes: {
       home: '/sw/', lessons: '/sw/masomo/', learn: '/sw/jifunze/', test: '/sw/jaribio-la-kuandika/',
-      progress: '/sw/maendeleo/', games: '/sw/michezo-ya-kuandika/', free: null, weak: null, guide: null, wpm: null
+      progress: '/sw/maendeleo/', games: '/sw/michezo-ya-kuandika/', free: null, weak: null, guide: null, wpm: '/sw/jinsi-ya-kuandika-haraka/'
     },
     s: {
       title: c => `Kozi ya kuandika kwa vidole kumi: masomo ${c.sequence.length} | TypingEase`,
@@ -24,7 +24,7 @@ export default {
         description: (c, f) => `Kozi ya bure ya kuandika kwa vidole kumi, iliyojengwa juu ya ${f.keyboard}, kitufe kwa kitufe: vitengo ${c.units.length} na masomo ${c.sequence.length}, kuanzia safu ya msingi hadi namba, alama na maandishi marefu.`,
         h1: (c, f) => `Kozi ya kuandika · ${f.name} · masomo ${c.sequence.length}`
       },
-      description: c => `Masomo ${c.sequence.length} ya kuandika kwa vidole kumi katika vitengo ${c.units.length}, kuanzia safu ya msingi hadi namba, alama na maandishi marefu. Bure, kwa maneno ya Kiswahili sanifu.`,
+      description: c => `Masomo ${c.sequence.length} ya kuandika kwa vidole kumi katika vitengo ${c.units.length}, kuanzia safu ya msingi hadi namba, alama na maandishi marefu. Bure, maneno ya Kiswahili sanifu.`,
       nav: r => [[r.home, 'Fanya mazoezi'], [r.lessons, 'Kozi'], [r.progress, 'Maendeleo'], [r.test, 'Jaribio'], [r.games, 'Michezo']],
       navAria: 'Urambazaji mkuu',
       enter: 'Anza',
@@ -50,7 +50,7 @@ export default {
         [r.home, 'Kibodi ya QWERTY', 'Mpangilio wa Kiswahili (Kenya) ni QWERTY ileile ya kawaida, kitufe kwa kitufe. Kozi hii inafundisha vitufe hivyo, pamoja na ritifaa ya ng\'ombe na ng\'ambo.', 'Ukurasa mkuu']
       ],
       footerAria: 'Rasilimali za TypingEase',
-      footerLinks: r => [[r.home, 'Fanya mazoezi'], [r.lessons, 'Kozi'], [r.progress, 'Maendeleo']],
+      footerLinks: r => [[r.home, 'Fanya mazoezi'], [r.lessons, 'Kozi'], [r.progress, 'Maendeleo'], [r.wpm, 'Kuandika haraka']],
       footerTag: 'Nenda polepole kidogo, na utafika mbali zaidi.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

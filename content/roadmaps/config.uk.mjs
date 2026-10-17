@@ -28,7 +28,7 @@ export default {
     ui: '/i18n/ui.uk.js',
     routes: {
       home: '/uk/', lessons: '/uk/uroky/', learn: '/uk/vchytysia/', test: '/uk/test-shvydkosti-druku/',
-      progress: '/uk/prohres/', games: '/uk/ihry-dlia-druku/', free: null, weak: null, guide: null, wpm: null
+      progress: '/uk/prohres/', games: '/uk/ihry-dlia-druku/', free: null, weak: null, guide: null, wpm: '/uk/yak-zbilshyty-shvydkist-druku/'
     },
     s: {
       title: c => `Друк десятьма пальцями: курс, ${lessons(c.sequence.length)} | TypingEase`,
@@ -64,7 +64,7 @@ export default {
         [r.home, 'Справжня українська розкладка', 'Курс іде за клавішами саме твоєї розкладки — стандартної ЙЦУКЕН або фонетичної. У кожної свій порядок уроків, бо літери стоять на різних місцях.', 'Головна сторінка']
       ],
       footerAria: 'Ресурси TypingEase',
-      footerLinks: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогрес']],
+      footerLinks: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогрес'], [r.wpm, 'Як друкувати швидше']],
       footerTag: 'Трохи повільніше — і зайдеш набагато далі.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

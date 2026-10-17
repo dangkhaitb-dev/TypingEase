@@ -12,7 +12,7 @@ export default {
     ui: '/i18n/ui.th.js',
     routes: {
       home: '/th/', lessons: '/th/bot-rian/', learn: '/th/rian/', test: '/th/thotsop-phim/',
-      progress: '/th/khwam-kuebna/', games: '/th/kem-fuek-phim/', free: null, weak: null, guide: null, wpm: null
+      progress: '/th/khwam-kuebna/', games: '/th/kem-fuek-phim/', free: null, weak: null, guide: null, wpm: '/th/phim-hai-reo-khuen/'
     },
     s: {
       title: c => `หลักสูตรพิมพ์สัมผัสภาษาไทย: ${c.sequence.length} บทเรียน | TypingEase`,
@@ -48,7 +48,7 @@ export default {
         [r.home, 'พิมพ์บนแป้นพิมพ์ของคุณเอง', 'QWERTY, AZERTY, QWERTZ, เกษมณี, ปัตตะโชติ, อาหรับ, JIS ผังแป้นพิมพ์จริง 119 แบบ และบทเรียนจะตามผังที่คุณเลือก', 'ดูผังแป้นพิมพ์']
       ],
       footerAria: 'แหล่งเรียนรู้ของ TypingEase',
-      footerLinks: r => [[r.home, 'ฝึกพิมพ์'], [r.lessons, 'บทเรียน'], [r.progress, 'ความก้าวหน้า']],
+      footerLinks: r => [[r.home, 'ฝึกพิมพ์'], [r.lessons, 'บทเรียน'], [r.progress, 'ความก้าวหน้า'], [r.wpm, 'วิธีพิมพ์ให้เร็วขึ้น']],
       footerTag: 'ช้าลงอีกนิด แล้วจะไปได้ไกลกว่าเดิมมาก',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

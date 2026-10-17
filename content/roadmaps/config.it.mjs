@@ -21,7 +21,7 @@ export default {
     home: '/it/', lessons: '/it/lezioni/', learn: '/it/imparare/',
     // Năm trang này chưa có bản tiếng Ý. `null` là tín hiệu BỎ liên kết: roadmaps.mjs lọc mọi
     // hàng có href rỗng khỏi nav, sidebar, explore và footer.
-    test: '/it/test-di-battitura/', progress: '/it/progressi/', games: '/it/giochi-di-dattilografia/', free: null, weak: null, guide: null, wpm: null
+    test: '/it/test-di-battitura/', progress: '/it/progressi/', games: '/it/giochi-di-dattilografia/', free: null, weak: null, guide: null, wpm: '/it/scrivere-piu-veloce/'
   },
 
   s: {
@@ -58,7 +58,7 @@ export default {
       [r.home, 'Scrivi sulla tua tastiera', 'QWERTY, AZERTY, QWERTZ, devanagari, arabo, JIS — disposizioni vere, e il corso segue quella che scegli.', 'Vedi le disposizioni']
     ],
     footerAria: 'Risorse di TypingEase',
-    footerLinks: r => [[r.lessons, 'Corso'], [r.learn, 'Lezioni'], [r.progress, 'Progressi'], [r.test, 'Prova di velocità']],
+    footerLinks: r => [[r.lessons, 'Corso'], [r.learn, 'Lezioni'], [r.progress, 'Progressi'], [r.test, 'Prova di velocità'], [r.wpm, 'Scrivere più veloce']],
     footerTag: 'Vai un po’ più piano e arriverai molto più lontano.',
     // Mọi ngôn ngữ KHÁC, chứ không phải một cái: với bốn bản thì "một nút đổi ngôn ngữ" không
     // còn trả lời được "đổi sang cái nào".

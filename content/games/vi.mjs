@@ -23,14 +23,14 @@ ngón tay bàn tay hàng phím dấu cách dấu chấm dấu phẩy chữ cái 
 export default {
   worlds: {"rain": "Khu vườn đom đóm", "race": "Đường đua hoàng hôn", "keys": "Trạm không gian"},
   url: '/tro-choi/',
-  title: 'Trò chơi gõ phím 10 ngón miễn phí | TypingEase',
-  description: 'Ba trò chơi luyện gõ phím 10 ngón miễn phí: Mưa chữ, Đua với bóng và Săn phím, trên đúng bàn phím của bạn, gõ tiếng Việt có dấu bằng Telex.',
+  title: "Trò chơi gõ phím: Mưa chữ, đua và săn phím | TypingEase",
+  description: "Chơi ba trò luyện gõ phím miễn phí: Mưa chữ, Đua với bóng và Săn phím. Gõ tiếng Việt có dấu, chọn tốc độ xe bóng và luyện vị trí phím, không cần đăng ký.",
   breadcrumbAria: 'Đường dẫn',
   homeCrumb: 'Trang chủ',
   crumb: 'Trò chơi gõ phím',
   eyebrow: 'Luyện gõ mà như chơi',
-  h1: 'Trò chơi gõ phím',
-  intro: 'Ba trò chơi ngắn để luyện gõ 10 ngón giữa các bài học: phá chữ rơi, đua với chính tốc độ của bạn, và săn từng phím trên bàn phím ảo. Kỷ lục chỉ lưu trên máy này.',
+  h1: "Trò chơi gõ phím miễn phí để luyện từ và vị trí bàn phím",
+  intro: "Chọn một trò để bắt đầu: phá từ rơi trong Mưa chữ, gõ theo mốc tốc độ ở Đua với bóng hoặc tìm phím sáng trong Săn phím. Không cần đăng ký. Phần hướng dẫn bên dưới giúp bạn chọn việc cần luyện và hiểu kết quả.",
   tabsAria: 'Chọn trò chơi',
   locale: 'vi-VN',
   words: WORDS,
@@ -70,16 +70,57 @@ export default {
     keysResult: '{hits} phím trúng · chuỗi dài nhất {streak} · {accuracy}% chính xác'
   },
   sections: [
-    { h2: 'Ba trò chơi, một kỹ năng', html: '<p>Mỗi trò rèn một phần của việc gõ 10 ngón. <b>Săn phím</b> luyện vị trí từng phím: phím nào sáng thì ngón nào bấm, không nhìn xuống. <b>Mưa chữ</b> luyện gõ trọn một từ dưới áp lực thời gian, kể cả từ có dấu. <b>Đua với bóng</b> luyện nhịp gõ đều qua cả một đoạn văn, với một chiếc xe chạy đúng tốc độ bạn chọn làm mốc.</p>' },
-    { h2: 'Trên đúng bàn phím của bạn', html: '<p>Bàn phím ảo trong Săn phím là bố cục của khoá học, và phím được nhận theo vị trí vật lý, không theo chữ mà hệ điều hành gõ ra. Các từ trong Mưa chữ và Đua với bóng là tiếng Việt có dấu, gõ bằng Telex như ở Unit 3 của <a class="inline-link" href="{course}">lộ trình {lessons} bài</a>.</p>' },
-    { h2: 'Chơi thế nào cho có ích', html: '<ul><li>Chơi sau khi học xong một bài, năm đến mười phút là đủ.</li><li>Chọn độ khó mà bạn gõ đúng được phần lớn các từ; sai nhiều thì hạ xuống.</li><li>Trong Đua với bóng, đặt xe bóng chậm hơn tốc độ thật một chút, rồi tăng dần.</li><li>Muốn đo tốc độ nghiêm túc thì dùng <a class="inline-link" href="{test}">bài kiểm tra tốc độ</a>, không phải trò chơi.</li></ul>' }
+    { h2: "Trò chơi gõ phím miễn phí: chọn theo điều bạn muốn luyện", html: `<p>Bạn vừa học xong một nhóm phím và muốn thử dùng chúng trong một nhiệm vụ khác? Chọn một trò phía trên để bắt đầu. Săn phím yêu cầu tìm đúng vị trí, Mưa chữ yêu cầu gõ trọn từ trước khi nó rơi xuống, còn Đua với bóng đặt một tốc độ làm mốc khi bạn chép dãy chữ. Không cần đăng ký tài khoản để chơi.</p>
+<p>Nếu vẫn phải nhìn xuống tìm chữ, thử Săn phím. Nếu nhớ vị trí nhưng kết hợp các chữ còn chậm, thử Mưa chữ ở mức dễ. Nếu gõ từng từ được mà hay mất nhịp khi nối tiếp, chọn Đua với bóng. Đó là cách chọn bài theo việc cần tập, không phải thứ hạng từ trò dễ nhất đến trò dành cho người giỏi.</p>
+<p>Bạn không cần thắng mới được xem một lượt chơi là có ích. Nhận ra mình hay bỏ dấu cách hoặc đặt tay lệch sau một phím xa cũng là thông tin để chọn việc luyện tiếp. Điểm số chỉ kể một phần của lượt chơi ấy.</p>` },
+    { h2: "Mưa chữ: gõ từ đang rơi và bấm Space", html: `<p>Chọn mức Dễ, Vừa hoặc Khó rồi bắt đầu. Nhìn một từ còn trên màn hình, gõ vào ô nhập và bấm Space để gửi. Trên bàn phím vật lý, Enter cũng gửi từ. Từ phải khớp với một mục đang rơi; gõ lại từ của lượt trước không có tác dụng nếu nó không xuất hiện trong lượt này.</p>
+<p>Mỗi từ chạm đáy làm mất một mạng. Để lọt ba từ thì lượt chơi kết thúc. Mức khó thay đổi điều kiện ban đầu như tốc độ rơi và nhóm độ dài từ. Khi bạn phá được nhiều từ, màn tăng lên và trò chơi nhanh hơn. Vì vậy, một lượt bắt đầu khá nhẹ vẫn có thể trở nên khó dù bạn không đổi mức.</p>
+<h3>Đọc hết từ trước khi quyết định gõ</h3>
+<p>Thử chọn một từ có thể hoàn thành thay vì gõ nửa từ rồi chuyển sang mục khác. Nếu mục tiêu đã gần đáy, cân nhắc xem còn đủ thời gian không. Khi phần lớn từ biến mất trước lúc bạn đọc xong, hạ độ khó để có khoảng quan sát việc mình đang làm.</p>
+<p>Gửi sai sẽ xóa phần vừa nhập. Hãy xem lại từ định gõ, đặc biệt là chữ có dấu. Phần được tô sáng chỉ cho biết bạn đang khớp đầu từ; nó chưa có nghĩa là đã phá được mục tiêu. Bạn vẫn cần hoàn thành đúng từ rồi gửi.</p>
+<h3>Điểm Mưa chữ cho biết điều gì?</h3>
+<p>Điểm được tính theo độ dài từ và màn hiện tại. Tỷ lệ gõ trúng trong kết quả dựa trên số lần gửi khớp, không phải phép kiểm tra từng ngón tay. Điểm cao hơn có thể đến từ lượt kéo dài hơn hoặc màn cao hơn. Hãy so các lượt có điều kiện tương tự thay vì coi đây là một điểm đánh giá chung cho mọi việc đánh máy.</p>` },
+    { h2: "Đua với bóng: luyện gõ theo tốc độ đã chọn", html: `<p>Trong trò này, xe bóng chạy đều ở mốc bạn chọn. Có các mốc 20, 30, 40, 60 và 80 WPM, cùng lựa chọn dựa trên kỷ lục đua đã lưu. Đây là trò một người chơi: xe bên cạnh không phải người đang kết nối trực tuyến và cũng không phát lại từng lần bấm của bạn ở lượt cũ.</p>
+<p>Bấm Bắt đầu đua rồi đọc dãy chữ. Xe bắt đầu chạy khi bạn nhập ký tự đầu tiên, nên bạn có thể tìm vị trí tay trước. Chép từ đầu, chú ý cả dấu cách. Nội dung được ghép từ kho từ của trò chơi; hãy đọc thứ đang hiển thị thay vì đoán phần tiếp theo theo một câu chuyện quen.</p>
+<h3>Tìm lỗi đầu tiên khi xe không tiến</h3>
+<p>Xe của bạn đi theo phần đầu văn bản đã khớp. Nếu có một ký tự sai ở phía trước, gõ thêm đúng ở phía sau vẫn chưa đưa tiến độ vượt qua chỗ ấy. Tìm lỗi đầu tiên, sửa rồi kiểm tra lại dấu cách. Gõ nhiều ký tự hơn và hoàn thành đúng văn bản là hai việc khác nhau.</p>
+<p>Chọn mốc đủ để bạn còn nhìn được lỗi và xử lý. Nếu lượt nào cũng thành cuộc gõ vội, hạ tốc độ xe bóng. Khi đã giữ được nhịp, thử mốc cao hơn rồi quan sát chuyển động nào bắt đầu gây vướng. Không cần chọn mức cao nhất chỉ vì nó có trong danh sách.</p>
+<h3>Lựa chọn kỷ lục của bạn hoạt động ra sao?</h3>
+<p>Khi chưa có kỷ lục đua, lựa chọn này dùng mốc 30 WPM. Khi có kết quả đã lưu, nó dùng kết quả ấy làm tốc độ mục tiêu, với mốc tối thiểu 15 WPM. Xe không mô phỏng những chỗ bạn từng dừng. Nếu muốn so vài lượt với cùng mục tiêu, hãy chọn một mốc cố định.</p>` },
+    { h2: "Săn phím: trò chơi luyện vị trí bàn phím", html: `<p>Một phím được làm sáng trên bàn phím ở màn hình. Bấm vị trí tương ứng trên bàn phím vật lý rồi tìm mục tiêu tiếp theo. Lượt chơi kéo dài 60 giây. Bấm đúng tăng số lần trúng; bấm nhầm một phím được nhận diện sẽ làm đứt chuỗi hiện tại. Xem cả số trúng lẫn chuỗi dài nhất để phân biệt lượt gõ có kiểm soát với lượt đoán nhanh.</p>
+<p>Săn phím đọc vị trí vật lý theo bố cục đang hiển thị. Mưa chữ và Đua với bóng lại kiểm tra văn bản bạn nhập. Trước khi chơi, nhìn xem bố cục trên màn hình có đúng thứ mình muốn tập không. Hai kiểu kiểm tra này giải thích vì sao việc bật bộ gõ có vai trò khác nhau giữa các trò.</p>
+<h3>Quan sát ngón tay là việc bạn tự làm</h3>
+<p>Thử tìm mục tiêu rồi bấm khi mắt vẫn hướng lên màn hình. Nếu cần nhìn xuống, hãy dùng lần nhìn ấy để xác nhận một vị trí và quay lại quan sát mục tiêu. Trò chơi biết phím nào được bấm; nó không kiểm tra bạn dùng ngón nào hoặc có nhìn tay hay không.</p>
+<p>Săn phím chọn mục tiêu chữ từ bố cục có sẵn, không phải bài kiểm tra đầy đủ mọi dấu câu, Shift và cách gõ cả đoạn. Khi tìm phím đã quen hơn, chuyển sang từ hoặc một bài học phối hợp các phím. Nhiều lần trúng là kết quả tốt của nhiệm vụ này, chưa nói rằng mọi loại văn bản đều đã dễ.</p>` },
+    { h2: "Gõ tiếng Việt có dấu trong trò chơi", html: `<p>Mưa chữ và Đua với bóng cần văn bản có dấu khớp mục tiêu. Hãy dùng bộ gõ tiếng Việt của thiết bị; nếu dùng Telex, kiểm tra một từ ngắn như “nhà” trước. Trang trò chơi nhận phần chữ đã được nhập, không có bộ chuyển Telex riêng để luôn biến chuỗi “nhaf” thành “nhà”. Nếu vẫn hiện chuỗi thô, kiểm tra bộ gõ trước khi thử lại.</p>
+<p>Chú ý phần chữ sau khi bộ gõ đã ghép xong rồi mới gửi từ. Khi đổi thiết bị hoặc bàn phím, cách nhập có thể khác. Đừng lấy một lượt đang chọn nhầm chế độ nhập làm bằng chứng rằng mình đã quên vị trí phím. Kiểm tra đầu vào và kỹ năng gõ là hai bước cần tách ra.</p>` },
+    { h2: "Dùng trò chơi gõ 10 ngón giữa các bài học", html: `<p>Trước lượt chơi, chọn một câu hỏi nhỏ: mình có bỏ dấu cách, mất vị trí sau một phím xa hay gõ tiếp dù đã có lỗi? Sau lượt, trả lời câu đó trước khi chơi lại. Ghi chú “hay lệch tay sau P” giúp bạn tìm bài phù hợp hơn câu “cần điểm cao hơn”.</p>
+<p>Nếu một chuyển động cứ gây vướng, quay lại <a class="inline-link" href="{course}">lộ trình {lessons} bài học gõ</a>. Khi muốn có một mốc tốc độ riêng, dùng <a class="inline-link" href="{test}">bài kiểm tra tốc độ gõ</a>. Kết quả giữa trò chơi và bài test không mô tả cùng một nhiệm vụ, nên đừng so trực tiếp chỉ vì cùng thấy chữ WPM.</p>
+<p>Người xây dựng TypingEase muốn người mới được hướng dẫn có chủ đích khi bắt đầu dùng bàn phím thường xuyên. Chúng tôi ưu tiên những việc rõ ràng như tìm phím, gõ trọn từ và nhận ra lỗi. Với trẻ bắt đầu dùng máy tính để viết bài hoặc tìm tài liệu, đó là một phần chuẩn bị cho việc tự làm, không phải lý do đặt mốc tốc độ của người lớn để thi đua.</p>
+<p>Người đã dùng máy tính lâu cũng có thể chọn một chỗ gây vướng để luyện. Khi chỉ còn bấm chơi lại để đuổi điểm, hãy đổi nhiệm vụ hoặc ghi điều muốn thử trong buổi sau. Trò chơi có ích hơn khi bạn biết mình đang quan sát điều gì.</p>` }
   ],
-  faqTitle: 'Câu hỏi thường gặp',
+  faqTitle: "Giải đáp khi chơi gõ phím",
   faq: [
-    ['Có chơi với người khác được không?', 'Chưa. Đua với bóng là đua với một chiếc xe chạy đều ở tốc độ bạn chọn, hoặc ở kỷ lục của chính bạn. Không có người chơi nào khác và không có bảng xếp hạng.'],
-    ['Kỷ lục được lưu ở đâu?', 'Chỉ trong trình duyệt trên máy này. Không cần tài khoản và không có gì được gửi đi.'],
-    ['Chơi trên điện thoại được không?', 'Mưa chữ và Đua với bóng dùng được bàn phím ảo của điện thoại. Săn phím cần bàn phím thật vì nó dạy vị trí các phím.'],
-    ['Vì sao gõ đúng mà không phá được chữ?', 'Từ phải khớp hoàn toàn, kể cả dấu, rồi mới bấm Space. Nếu bộ gõ đang tắt thì chữ sẽ ra không dấu.']
-  ],
+    [
+        "Có đua với người chơi khác không?",
+        "Không. Đua với bóng dùng xe chạy đều ở tốc độ đã chọn hoặc dựa trên kỷ lục của bạn. Không có đối thủ trực tuyến hay bảng xếp hạng công khai. Chọn một mốc cố định nếu bạn muốn giữ cùng mục tiêu qua vài lượt."
+    ],
+    [
+        "Kỷ lục được lưu ở đâu?",
+        "Các trò lưu kỷ lục theo ngôn ngữ trong bộ nhớ cục bộ của trình duyệt. Đây không phải tài khoản tự đồng bộ sang thiết bị khác. Xóa dữ liệu trang có thể làm mất kỷ lục; khi trình duyệt chặn lưu trữ, kết quả có thể không được giữ lại."
+    ],
+    [
+        "Vì sao gõ xong mà Mưa chữ không nhận?",
+        "Kiểm tra từ còn trên màn hình hay đã chạm đáy, rồi đối chiếu toàn bộ chữ và dấu. Phần đầu được tô sáng chưa đủ: cần khớp cả từ và bấm Space hoặc Enter. Nếu còn chuỗi Telex thô, kiểm tra bộ gõ tiếng Việt."
+    ],
+    [
+        "Vì sao xe của tôi đứng lại dù vẫn gõ?",
+        "Tiến độ chạy theo phần đầu đã khớp của văn bản. Một lỗi phía trước giữ tiến độ lại dù các chữ sau trông đúng. Tìm chỗ sai đầu tiên, sửa và kiểm tra dấu cách thay vì tiếp tục gõ thêm phía sau."
+    ],
+    [
+        "Chơi trên điện thoại được không?",
+        "Mưa chữ và Đua với bóng nhận văn bản và có xử lý đầu vào từ bàn phím ảo, nhưng hành vi còn tùy bàn phím và trình duyệt. Săn phím cần sự kiện vị trí phím vật lý. Gõ trên điện thoại là nhiệm vụ khác với luyện ngón trên máy tính."
+    ]
+],
   cta: { eyebrow: 'Muốn chơi giỏi hơn?', title: 'Học gõ 10 ngón từ đầu', text: 'Lộ trình {lessons} bài đi từ hàng phím cơ sở tới gõ tiếng Việt có dấu bằng Telex.', button: 'Xem lộ trình' }
 };

@@ -5,7 +5,7 @@
  */
 export default {
   slug: 'typetest',
-  title: 'Typetest: meet je typsnelheid online | TypingEase',
+  title: 'Typetest online: typsnelheid testen | TypingEase',
   description: 'Gratis typetest in je browser: typ 1, 5 of 10 minuten en zie je woorden per minuut (WPM), nauwkeurigheid en fouten. Zonder account.',
   breadcrumbAria: 'Kruimelpad',
   homeCrumb: 'Start',
@@ -38,14 +38,14 @@ export default {
     },
     {
       h2: 'WPM, woorden per minuut en aanslagen',
-      html: '<p><em>WPM</em> staat voor <em>words per minute</em>, in het Nederlands woorden per minuut. Omdat woorden verschillend lang zijn, telt een woord hier altijd als vijf tekens, spaties en leestekens meegerekend. Zo kun je resultaten vergelijken, ook als de ene tekst lange woorden heeft en de andere korte. Dat is handig in het Nederlands, waar samenstellingen als <em>kruiswoordpuzzel</em> of <em>onderhoudsbeurt</em> gewoon zijn.</p><p>Op school en bij typecursussen hoor je ook vaak <em>aanslagen per minuut</em>. De omrekening is eenvoudig: WPM keer vijf is ongeveer het aantal aanslagen per minuut. 40 WPM komt dus neer op zo\'n 200 aanslagen.</p>'
+      html: '<p><em>WPM</em> staat voor <em>words per minute</em>, in het Nederlands woorden per minuut. Omdat woorden verschillend lang zijn, telt een woord hier altijd als vijf tekens, spaties en leestekens meegerekend. Zo kun je resultaten vergelijken, ook als de ene tekst lange woorden heeft en de andere korte. Meet een andere test je woorden per minuut met dezelfde regel, dan kun je dat getal dus naast dit resultaat leggen. Dat is handig in het Nederlands, waar samenstellingen als <em>kruiswoordpuzzel</em> of <em>onderhoudsbeurt</em> gewoon zijn.</p><p>Op school en bij typecursussen hoor je ook vaak <em>aanslagen per minuut</em>. De omrekening is eenvoudig: WPM keer vijf is ongeveer het aantal aanslagen per minuut. 40 WPM komt dus neer op zo\'n 200 aanslagen.</p>'
     },
     {
       h2: 'Accenten, hoofdletters en je toetsenbord',
       html: '<p>Nederlands heeft weinig accenten, maar ze komen voor: <em>één</em>, <em>café</em>, <em>ideeën</em>. Je typt ze met een dode toets. Op de indeling Verenigde Staten (internationaal) typ je eerst de apostrof en dan de e voor é, of het aanhalingsteken en dan de e voor ë. Op de Nederlandse indeling hebben het accent en het trema een eigen toets rechts van de letters. Zo\'n letter telt als één teken, ook al druk je twee toetsen in. Hetzelfde geldt voor een hoofdletter met Shift.</p><p>Let op met de internationale indeling: een apostrof of aanhalingsteken wacht op de volgende toets. Wil je het teken los typen, druk dan daarna op de spatiebalk. Wie dat vergeet, krijgt een letter met accent waar een gewone letter hoort, en dat telt als een fout. De teksten in deze test gebruiken daarom maar zelden een accent.</p>'
     },
     {
-      h2: '1, 5 of 10 minuten: welke duur past bij je?',
+      h2: 'Typetest van 1 minuut, 5 of 10 minuten: welke duur past bij je?',
       html: '<p>Een test van een minuut of korter meet vooral je topsnelheid. Je kunt je volledig concentreren, vermoeidheid speelt nauwelijks mee, en één fout weegt zwaar door.</p><p>Vijf of tien minuten laten iets anders zien: je snelheid op lange afstand. Na een tijdje zakt je concentratie en worden je handen moe, en juist dan blijkt of je techniek houdt. Het resultaat ligt meestal iets lager dan bij de korte test en komt dichter bij wat je echt haalt als je een lange e-mail of een verslag schrijft. Vergelijk jezelf daarom altijd met dezelfde duur, anders vergelijk je een sprint met een duurloop.</p>'
     },
     {
@@ -53,8 +53,12 @@ export default {
       html: '<p>De nauwkeurigheid is het deel van de getypte tekens dat klopt met het voorbeeld. Het aantal fouten ernaast laat zien hoeveel tekens aan het eind nog verkeerd staan. WPM telt alle getypte tekens, ook de foute. Een hoge snelheid met veel fouten ziet er dus beter uit dan hij is.</p><p>Een ruwe vuistregel: zit je onder ongeveer 95 procent, ga dan wat langzamer. Elke fout kost in het dagelijks werk tijd om te verbeteren, en wie steeds naar Backspace grijpt, raakt zijn ritme kwijt. De regelmaat laat zien of je tempo tijdens de test gelijk blijft of sterk op en neer gaat.</p>'
     },
     {
-      h2: 'Sneller typen: wat echt helpt',
-      html: '<ul><li>Leer blind typen met tien vingers vanaf de thuisrij: links ASDF, rechts JKL en de toets ernaast, de duimen op de spatiebalk.</li><li>Kijk niet naar de toetsen. In het begin ga je langzamer, maar alleen zo wordt de weg naar elke toets vanzelf.</li><li>Oefen de leestekens en de dode toetsen apart, want daar gaat het bij de meeste mensen mis.</li><li>Oefen liever elke dag tien minuten dan een keer per week een uur.</li><li>Let eerst op nauwkeurigheid. De snelheid komt vanzelf als de bewegingen goed zitten.</li></ul><p>De <a class="inline-link" href="{course}">cursus met {lessons} lessen</a> leert je stap voor stap blind typen op het Nederlandse toetsenbord, van de thuisrij tot de leestekens.</p>'
+      h2: 'Typetest voor beginners',
+      html: '<p>Als je net begint, zou ik bij je eerste typetest de WPM even negeren en naar de regelmaat kijken. Wie gelijkmatig typt, ook al is het traag, heeft de toetsen al in de vingers. Wie in pieken typt en dan stilvalt, zoekt nog. Die regelmaat zegt mij meer over je volgende stap dan het getal ernaast.</p><ul><li>Kies 30 seconden of 1 minuut. Bij vijf of tien minuten meet je in het begin vooral vermoeidheid.</li><li>Typ je op Verenigde Staten (internationaal), oefen dan eerst een losse apostrof met de spatiebalk erachter. Een fout die de dode toets veroorzaakt, zegt niets over je typsnelheid, maar drukt wel je nauwkeurigheid.</li><li>Typ je nog met twee vingers, dan raad ik je aan eerst blind typen te oefenen in de <a class="inline-link" href="{course}">cursus</a>: {lessons} lessen, te beginnen bij de thuisrij.</li></ul>'
+    },
+    {
+      h2: 'Na de test: wat je daarna oefent',
+      html: '<ul><li>Leer blind typen met tien vingers vanaf de thuisrij: links ASDF, rechts JKL en de toets ernaast, de duimen op de spatiebalk.</li><li>Kijk niet naar de toetsen. In het begin ga je langzamer, maar alleen zo wordt de weg naar elke toets vanzelf.</li><li>Oefen de leestekens en de dode toetsen apart, want daar gaat het bij de meeste mensen mis.</li><li>Oefen liever elke dag tien minuten dan een keer per week een uur.</li><li>Let eerst op nauwkeurigheid. De snelheid komt vanzelf als de bewegingen goed zitten.</li></ul><p>Wil je gerichte typeoefeningen, dan leert de <a class="inline-link" href="{course}">cursus met {lessons} lessen</a> je stap voor stap blind typen op het Nederlandse toetsenbord, van de thuisrij tot de leestekens.</p><p>Een plan van tien minuten voor de apostrof, het trema en lange samenstellingen staat in onze gids over <a class="inline-link" href="/nl/sneller-typen/">sneller typen</a>.</p>'
     }
   ],
   faqTitle: 'Veelgestelde vragen',
@@ -64,6 +68,7 @@ export default {
     ['Telt een letter met accent als een teken?', 'Ja. Een é of ë telt als één teken, ook al typ je hem met een dode toets en dus met twee aanslagen. Een hoofdletter met Shift telt ook als één teken.'],
     ['Werkt de test met de indeling Verenigde Staten (internationaal)?', 'Ja. De letters staan op dezelfde plek als op de Nederlandse indeling. Let alleen op de apostrof en het aanhalingsteken: dat zijn dode toetsen, dus druk daarna op de spatiebalk als je het teken los wilt typen.'],
     ['Welke testduur moet ik kiezen?', 'Een minuut laat je topsnelheid zien, vijf of tien minuten je snelheid op lange afstand. Kies voor een vergelijking met eerdere resultaten steeds dezelfde duur.'],
+    ['Is de typetest geschikt voor kinderen?', 'Ja, het liefst samen met een volwassene. Er is geen aparte kindermodus en de teksten zijn gewone proza. Korte tests van 15 tot 60 seconden werken het best, en nauwkeurigheid telt meer dan snelheid.'],
     ['Worden mijn resultaten bewaard?', 'Alleen in je browser op dit apparaat. Er is geen account en je hoeft je niet aan te melden. Als je je browsergegevens wist, is ook je geschiedenis weg.']
   ],
   cta: { eyebrow: 'Sneller worden?', title: 'Leer blind typen', text: '{lessons} lessen op je eigen toetsenbord, te beginnen bij de thuisrij.', button: 'Naar de cursus' }

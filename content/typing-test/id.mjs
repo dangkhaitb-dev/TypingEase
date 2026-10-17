@@ -35,7 +35,7 @@ export default {
   sections: [
     {
       h2: 'Cara kerja tes mengetik ini',
-      html: '<p>Di atas ada teks bahasa Indonesia dengan huruf besar, koma, titik, dan tanda baca lain. Selama waktu yang kamu pilih, ketik ulang teks itu setepat mungkin. Setiap karakter langsung dibandingkan dengan contohnya: yang benar tampil biasa, yang salah diberi warna. Selama waktu masih berjalan, kesalahan boleh dihapus dengan Backspace lalu diperbaiki.</p><p>Tes ini dibuat untuk papan ketik QWERTY biasa, yang dipakai hampir semua laptop dan komputer di Indonesia. Semua dihitung langsung di browser, tanpa daftar akun, dan hasilnya hanya tersimpan di perangkat ini.</p>'
+      html: '<p>Berbeda dengan <em>typing test</em> berbahasa Inggris, ini tes kecepatan mengetik bahasa Indonesia: di atas ada teks dengan huruf besar, koma, titik, dan tanda baca lain. Selama waktu yang kamu pilih, ketik ulang teks itu setepat mungkin. Setiap karakter langsung dibandingkan dengan contohnya: yang benar tampil biasa, yang salah diberi warna. Selama waktu masih berjalan, kesalahan boleh dihapus dengan Backspace lalu diperbaiki.</p><p>Tes ini dibuat untuk papan ketik QWERTY biasa, yang dipakai hampir semua laptop dan komputer di Indonesia. Semua dihitung langsung di browser, tanpa daftar akun, dan hasilnya hanya tersimpan di perangkat ini.</p>'
     },
     {
       h2: 'Apa itu KPM (kata per menit)',
@@ -46,7 +46,7 @@ export default {
       html: '<p>Setiap huruf, angka, spasi, dan tanda baca dihitung sebagai satu karakter. Huruf besar juga satu karakter, walaupun perlu dua tombol: Shift dan hurufnya. Karakter yang kelebihan atau terlewat akan menggeser sisa kata, jadi kesalahan seperti itu cepat terlihat.</p><p>Bahasa Indonesia tidak memakai huruf beraksen, jadi semua huruf ada langsung di papan ketik QWERTY tanpa kombinasi khusus. Yang sering memperlambat justru huruf besar di awal kalimat dan nama, tanda hubung pada kata ulang seperti <em>anak-anak</em> atau <em>sehari-hari</em>, serta tanda baca yang perlu Shift, misalnya tanda tanya, titik dua, dan tanda kutip.</p>'
     },
     {
-      h2: 'Tes 1, 5, atau 10 menit: pilih yang mana',
+      h2: 'Tes mengetik 1 menit, 5 menit, atau 10 menit: pilih yang mana',
       html: '<p>Tes satu menit atau kurang terutama menunjukkan kecepatan puncakmu. Kamu bisa fokus penuh dan hampir tidak lelah, tetapi satu kesalahan sangat memengaruhi hasil akhirnya.</p><p>Tes lima atau sepuluh menit mengukur hal lain, yaitu daya tahan. Perhatian pelan-pelan berkurang, tangan mulai lelah, dan di situlah terlihat apakah teknikmu tetap terjaga. Hasilnya biasanya sedikit lebih rendah daripada tes singkat, dan lebih dekat dengan kecepatanmu saat benar-benar menulis laporan atau tugas panjang. Supaya bisa membandingkan dirimu dengan dirimu sendiri, pilih durasi yang sama setiap kali.</p>'
     },
     {
@@ -54,17 +54,23 @@ export default {
       html: '<p>Ketepatan menunjukkan berapa bagian dari karakter yang kamu ketik yang sama dengan contohnya. Angka salah di sebelahnya adalah jumlah karakter yang masih salah saat tes selesai: kesalahan yang sudah diperbaiki tidak dihitung lagi, tetapi waktu untuk memperbaikinya sudah terpakai. KPM menghitung semua karakter yang diketik, termasuk yang salah, sehingga kecepatan tinggi dengan banyak kesalahan terlihat lebih bagus daripada kenyataannya.</p><p>Aturan kasarnya: kalau ketepatanmu di bawah 95%, pelankan sedikit. Dalam pekerjaan sehari-hari setiap kesalahan memakan waktu, dan terlalu sering menekan Backspace merusak irama. Konsistensi menunjukkan apakah temponya rata sepanjang tes atau naik turun.</p>'
     },
     {
-      h2: 'Cara mengetik lebih cepat',
-      html: '<ul><li>Belajar mengetik 10 jari dari baris tengah: jari kiri di A S D F, jari kanan di J K L dan titik koma, ibu jari di spasi.</li><li>Jangan melihat papan ketik. Awalnya kecepatan akan turun, tetapi hanya dengan cara ini jari hafal letak setiap tombol.</li><li>Tekan Shift dengan kelingking dari tangan yang berlawanan dengan huruf yang ingin dibuat besar.</li><li>Lebih baik latihan sepuluh menit setiap hari daripada satu jam seminggu sekali.</li><li>Utamakan ketepatan dulu. Kecepatan akan datang setelah gerakan jari terasa biasa.</li></ul><p><a class="inline-link" href="{course}">Kursus mengetik {lessons} pelajaran</a> menuntunmu langkah demi langkah di papan ketikmu sendiri, dari baris tengah sampai tanda baca.</p>'
+      h2: 'Tes mengetik untuk pemula: saran saya',
+      html: '<p>Untuk tes pertamamu, saya sarankan tombol 1 menit, bukan 15 detik. Lima belas detik terlalu singkat untuk teks bahasa Indonesia: satu kata panjang seperti <em>memperhatikan</em> yang salah di tengah sudah cukup membuat hasilnya acak. Satu menit memberi cukup kalimat untuk menunjukkan kebiasaanmu yang sebenarnya.</p><p>Setelah selesai, lihat ketepatan dulu, baru KPM. Alat ini menghitung semua karakter yang diketik, termasuk yang salah, jadi KPM tinggi dengan ketepatan 88% bukan kemajuan. Perhatikan juga di mana karakter berwarna menumpuk. Kalau kesalahanmu berkumpul di tanda hubung kata ulang seperti <em>sehari-hari</em> atau di huruf besar setelah titik, masalahnya ada di tombol minus dan Shift, bukan di kecepatan, dan cukup dua tempat itu saja yang kamu perlambat.</p><p>Kalau kamu masih mencari huruf dengan mata, menurut saya angka tes belum banyak artinya. Latihan keyboard di <a class="inline-link" href="{course}">kursus {lessons} pelajaran</a>, mulai dari baris tengah, akan lebih berguna dulu.</p>'
+    },
+    {
+      h2: 'Setelah tes, latihan apa berikutnya',
+      html: '<ul><li>Belajar mengetik 10 jari dari baris tengah: jari kiri di A S D F, jari kanan di J K L dan titik koma, ibu jari di spasi.</li><li>Jangan melihat papan ketik. Awalnya kecepatan akan turun, tetapi hanya dengan cara ini jari hafal letak setiap tombol.</li><li>Tekan Shift dengan kelingking dari tangan yang berlawanan dengan huruf yang ingin dibuat besar.</li><li>Untuk latihan mengetik cepat, sepuluh menit setiap hari lebih baik daripada satu jam seminggu sekali.</li><li>Utamakan ketepatan dulu. Kecepatan akan datang setelah gerakan jari terasa biasa.</li></ul><p><a class="inline-link" href="{course}">Kursus mengetik {lessons} pelajaran</a> menuntunmu langkah demi langkah di papan ketikmu sendiri, dari baris tengah sampai tanda baca. Penjelasan lengkapnya, dengan latihan untuk imbuhan, <em>ny</em>, dan kata ulang, ada di panduan <a class="inline-link" href="/id/cara-mengetik-cepat/">cara mengetik cepat</a>.</p>'
     }
   ],
   faqTitle: 'Pertanyaan umum',
   faq: [
     ['Apa itu KPM?', 'KPM adalah kata per menit, dalam bahasa Inggris WPM. Satu kata dihitung lima karakter, termasuk spasi, sehingga hasilnya tidak bergantung pada panjang kata di dalam teks.'],
-    ['Apakah KPM sama dengan WPM?', 'Ya. KPM hanya nama bahasa Indonesia untuk WPM, dan cara menghitungnya sama: karakter yang diketik dibagi lima, per menit.'],
+    ['Apakah KPM sama dengan WPM?', 'Ya. KPM hanya nama bahasa Indonesia untuk WPM, dan cara menghitungnya sama: karakter yang diketik dibagi lima, per menit. Jadi hasilmu di sini bisa dibandingkan dengan tes WPM berbahasa Inggris yang memakai aturan lima karakter yang sama.'],
     ['Durasi mana yang sebaiknya dipilih?', 'Satu menit menunjukkan kecepatan puncak, sedangkan lima atau sepuluh menit menunjukkan daya tahan. Untuk membandingkan dengan hasil sebelumnya, selalu pilih durasi yang sama.'],
     ['Apakah bisa dipakai di laptop?', 'Bisa. Tes ini memakai tata letak QWERTY yang sama dengan hampir semua laptop. Di ponsel atau tablet, pakai papan ketik fisik supaya hasilnya berarti.'],
-    ['Apakah hasil saya disimpan?', 'Hanya di browser pada perangkat ini. Tidak ada akun dan tidak perlu daftar. Kalau data browser dihapus, riwayatnya juga hilang.']
+    ['Apakah ini bisa dipakai sebagai tes keyboard?', 'Tidak untuk mencari tombol yang rusak, karena ini tes kecepatan mengetik. Namun sebelum mulai, pastikan tata letak papan ketikmu QWERTY dan semua tombol berfungsi, supaya hasilnya tidak terganggu.'],
+    ['Apakah hasil saya disimpan?', 'Hanya di browser pada perangkat ini. Tidak ada akun dan tidak perlu daftar. Kalau data browser dihapus, riwayatnya juga hilang.'],
+    ['Apakah tes ini cocok untuk anak-anak?', 'Bisa, asal dicoba bersama orang dewasa. Tidak ada mode khusus anak dan teksnya ditulis untuk orang dewasa, jadi pilih tombol 30 atau 60 detik dan puji ketepatannya, bukan angka KPM-nya.']
   ],
   cta: { eyebrow: 'Ingin mengetik lebih cepat?', title: 'Belajar mengetik 10 jari', text: '{lessons} pelajaran, semuanya di papan ketikmu sendiri, mulai dari baris tengah.', button: 'Lihat kursus' }
 };

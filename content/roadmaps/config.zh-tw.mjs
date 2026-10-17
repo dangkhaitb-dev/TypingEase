@@ -14,7 +14,7 @@ export default {
     ui: '/i18n/ui.zh-tw.js',
     routes: {
       home: '/zh-tw/', lessons: '/zh-tw/kecheng/', learn: '/zh-tw/xuexi/', test: '/zh-tw/dazi-ceyan/',
-      progress: '/zh-tw/jindu/', games: '/zh-tw/dazi-youxi/', free: null, weak: null, guide: null, wpm: null
+      progress: '/zh-tw/jindu/', games: '/zh-tw/dazi-youxi/', free: null, weak: null, guide: null, wpm: '/zh-tw/tisheng-dazi-sudu/'
     },
     s: {
       title: c => `注音打字練習：${c.sequence.length} 課十指盲打 | TypingEase`,
@@ -51,7 +51,7 @@ export default {
         [r.home, '為什麼要練注音鍵盤', '用注音輸入法打國字，手指按下的是注音符號和聲調。練熟這些按鍵，打國字時就不用再看鍵盤。', '認識這門課']
       ],
       footerAria: 'TypingEase 資源',
-      footerLinks: r => [[r.home, '練習'], [r.lessons, '課程'], [r.progress, '進度']],
+      footerLinks: r => [[r.home, '練習'], [r.lessons, '課程'], [r.progress, '進度'], [r.wpm, '提升打字速度']],
       footerTag: '慢一點，你會走得更遠。',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

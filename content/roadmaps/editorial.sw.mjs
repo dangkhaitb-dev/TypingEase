@@ -1,0 +1,32 @@
+/* content/roadmaps/editorial.sw.mjs — bài viết dưới lộ trình /sw/masomo/ (tooling/pages/roadmaps.mjs).
+ * Tên kitengo theo content/data/curriculum.sw.js. Bố cục 118 = QWERTY Mỹ (số 6 thuộc ngón trỏ phải).
+ * Cụm keyword tiếng Anh trong ngoặc như content/typing-test/sw.mjs; số đứng sau danh từ. */
+export default `<section><h2>Masomo ya kuandika (typing lessons): vitengo {{units}} kwa mpangilio mmoja</h2>
+<p>Orodha iliyo juu ina masomo {{count}} katika vitengo {{units}}. Kitengo cha kwanza kiko wazi; vingine hufunguka unapomaliza masomo ya kawaida ya kitengo kilichotangulia. Kama tayari unajua baadhi ya vitufe, kila kitengo kina somo la <em>Ruka mbele</em> mwishoni. Somo hilo hukagua ujuzi wa kitengo katika skrini chache, na ukilimaliza, kitengo kinachofuata hufunguka moja kwa moja.</p>
+<p>Tumia somo la kuruka kwa uaminifu. Ukifaulu lakini bado unatazama chini kutafuta p au b, unahamisha tatizo tu hadi kitengo kinachofuata, ambapo litajitokeza katikati ya sentensi na kuwa vigumu zaidi kuligundua. Kila somo linaonyesha makadirio ya dakika. Masomo ya herufi ni mafupi, lakini ya vitengo vya mwisho ni marefu zaidi, kwa hiyo chagua somo linalotosha muda ulio nao leo.</p>
+<p>Kanuni ndogo ninayoifuata: usifungue kitengo kipya mwishoni mwa kipindi kilichokuchosha. Somo la kwanza la kitengo huunda jinsi utakavyovikaribia vitufe vyake vipya, na mazoea yanayojengwa ukiwa umechoka ni vigumu kuyaondoa baadaye.</p>
+</section>
+<section><h2>Vitengo 1 hadi 4: msingi wa kuandika kwa vidole kumi (10 finger typing)</h2>
+<h3>Misingi ya Herufi na Jozi</h3>
+<p>Kitengo cha kwanza kinaanza na vitufe vya mwongozo f na j, vyenye kivimbe kidogo, pamoja na kitufe cha nafasi. Kisha d na k, s na l, a na nukta-mkato, g na h, halafu safu ya juu na ya chini. Mwishoni kuna mazoezi ya jozi za Kiswahili: <em>ch</em> na <em>sh</em>, <em>ny</em> na <em>ng</em>, kisha <em>th</em>, <em>dh</em> na <em>gh</em>. Kila jozi huandikwa kwa mibonyezo miwili ya kawaida; hakuna kitufe maalum. Alama ya <em>'</em> haimo bado; inakuja baadaye.</p>
+<h3>Mtiririko wa Nambari</h3>
+<p>Nambari 1 hadi 9, kisha 0, pamoja na mazoezi ya muda na kiasi. Angalia kibodi ya skrini: katika mpangilio wa kozi hii, 6 hubonyezwa na kidole cha shahada cha kulia, si cha kushoto. Kama umezoea kutumia mkono wa kushoto kwa 6, hiki ndicho kitengo cha kuamua njia moja na kuishikilia.</p>
+<h3>Herufi Kubwa na Uakifishaji</h3>
+<p>Hiki ndicho kitengo kirefu zaidi. Kinaanza na kutumia Shift, kisha herufi kubwa A hadi Z kwa makundi ya tatu, Caps Lock, na alama kuanzia nukta na koma hadi alama adimu kama { } na ^. Hapa ndipo kistari na apostrofi zinafundishwa, kwa hiyo ndipo <em>ng'ombe</em> inapoweza kuandikwa kikamilifu. Katika somo la Enter, bonyeza Enter kwenye kila mstari mpya; usitumie nafasi badala yake.</p>
+<h3>Kuunganisha Maandishi</h3>
+<p>Masomo matatu mafupi: sentensi kuhusu soko, tangazo lenye saa, kiasi na mahali, kisha ukaguzi unaochanganya herufi kubwa, nambari na nukta. Hakuna kitufe kipya hapa, kwa hiyo kila kosa linaonyesha kitu ambacho bado hakijaimarika katika vitengo vitatu vilivyotangulia.</p>
+</section>
+<section><h2>Vitengo 5 hadi 12: kutoka hadithi hadi hati mpya</h2>
+<p><b>Hadithi Zinazohusiana</b> na <b>Uandishi wa Kila Siku</b> huhamisha mazoezi (touch typing practice) kwenye maandishi yenye maana: darasa lililopangwa upya, safari ya sokoni, ombi la msaada, maelekezo ya nyumbani. Sasa unahitaji kusoma maneno kadhaa mbele, si herufi inayofuata tu. <b>Habari na Hati Mchanganyiko</b> huongeza mazungumzo yenye nukuu, ambayo yanahitaji Shift kwa kidole kidogo cha kushoto katikati ya sentensi ili kupata alama ya ".</p>
+<p><b>Mdundo na Usahihi</b> na <b>Kasi ya Uandishi</b> ndipo mahali pa mdundo na kasi. Kitengo cha kasi kinaanza na mifumo inayojulikana kabla ya kuhamia maandishi mapya, kwa hiyo utaona kama kasi yako inatoka mikononi au ni kwa sababu tu umeyazoea maandishi. Katika Mdundo na Usahihi kuna somo kuhusu kazi ya fundi wa saa ambapo majina na nambari huchanganyika; hapo ndipo utagundua kama mkono unarudi kwenye safu ya msingi baada ya kupanda hadi safu ya nambari.</p>
+<p><b>Usahihi wa Tahajia</b> hupunguza mwendo tena: ng na ng', n na ny, s na sh, na ch ndani ya sentensi. <b>Aya Endelevu</b> ni aya ndefu zisizokatika kuhusu darasa, tamasha la shule na maji ya kijiji. <b>Hati Mpya</b> hufunga kozi kwa fomu zenye sehemu zinazotenganishwa kwa Enter na matangazo ya umma.</p>
+</section>
+<section><h2>Jinsi ya kufanya somo moja, na lini kulirudia</h2>
+<p>Masomo ya herufi yana muundo uleule. Skrini za kwanza hutambulisha kitufe kimoja kipya na kukirudia mara kadhaa. Skrini zinazofuata hukichanganya na vitufe vya zamani, pamoja na ukumbusho wa kurudisha vidole vya shahada kwenye f na j. Skrini za mwisho ni maneno na sentensi fupi za Kiswahili. Soma maelekezo ya kila skrini; yanakuambia kinachopimwa.</p>
+<p>Unapoandika, angalia jambo moja tu: je, kidole kinarudi kwenye safu ya msingi baada ya kila mwendo, au unatazama chini? Herufi ikionyeshwa kuwa si sahihi, usikimbilie mbele. Angalia herufi iliyokusudiwa na kidole kilichopaswa kuibonyeza.</p>
+<p>Rudia somo kama kosa lilelile linajirudia kwenye mfuatano uleule, kwa mfano kila mara baada ya <em>ny</em>, au kama huwezi kueleza kwa nini usahihi umeshuka. Endelea kama makosa yametawanyika na unajua chanzo chake. Kurudia mazoezi (typing exercises) ambayo tayari ni rahisi kwako hakukupi kitu kipya. Ukurasa wa Maendeleo huhifadhi mzunguko wako bora wa kila somo kwenye kivinjari hiki, kwa hiyo kurudia hakufuti matokeo bora.</p>
+</section>
+<section><h2>Msimamo wangu: kasi haina maana kama ng'ombe inakuwa ngombe</h2>
+<p>Najua wengi wanataka kwenda moja kwa moja kwenye kitengo cha kasi. Lakini kwa maoni yangu, vitengo viwili vinavyorukwa mara nyingi ndivyo vyenye faida zaidi kwa anayeandika Kiswahili. Cha kwanza ni Mtiririko wa Nambari. Unaandika namba za simu, tarehe na kiasi cha pesa karibu kila siku, na nambari ndizo rahisi zaidi kukosea bila kugundua, kwa sababu hakuna tahajia ya kukusaidia kuona kosa. Tarakimu moja iliyokosewa kwenye namba ya simu inampeleka mtu kwa mtu mwingine kabisa.</p>
+<p>Cha pili ni Usahihi wa Tahajia. <em>ng</em> na <em>ng'</em> ni sauti mbili tofauti: <em>ngoma</em> ina ng, <em>ng'ombe</em> ina ng'. Vivyo hivyo <em>n</em> na <em>ny</em>. Hili si tatizo la vidole peke yake; vidole vyepesi vitaandika kosa hilo kwa kasi ileile, na kikagua tahajia hakigundui kila mara. Napendelea utoke kwenye kozi hii ukiwa na kasi ya wastani na maandishi ambayo hakuna mtu atakayelazimika kuyasahihisha baadaye.</p>
+</section>`;

@@ -15,7 +15,7 @@ export default {
     ui: '/i18n/ui.bn.js',
     routes: {
       home: '/bn/', lessons: '/bn/path/', learn: '/bn/shikhun/', test: '/bn/typing-test/',
-      progress: '/bn/agragati/', games: '/bn/typing-games/', free: null, weak: null, guide: null, wpm: null
+      progress: '/bn/agragati/', games: '/bn/typing-games/', free: null, weak: null, guide: null, wpm: '/bn/typing-speed-barano/'
     },
     s: {
       title: c => `বাংলা টাইপিং কোর্স: দশ আঙুলে ${c.sequence.length}টি পাঠ | TypingEase`,
@@ -51,7 +51,7 @@ export default {
         [r.home, 'শিফটের স্তর', 'বাংলায় বড় হাতের অক্ষর নেই। জাতীয় কিবোর্ডে ী ল শ ভ খ-এর মতো অক্ষর শিফট ধরে আসে, আর কোর্স সেগুলো আলাদা একটি পাঠে শেখায়।', 'প্রথম পাতা']
       ],
       footerAria: 'TypingEase-এর আরও কিছু',
-      footerLinks: r => [[r.home, 'অনুশীলন'], [r.lessons, 'কোর্স'], [r.progress, 'অগ্রগতি']],
+      footerLinks: r => [[r.home, 'অনুশীলন'], [r.lessons, 'কোর্স'], [r.progress, 'অগ্রগতি'], [r.wpm, 'টাইপিং স্পিড বাড়ানো']],
       footerTag: 'একটু ধীরে চলুন, অনেক দূর যাবেন।'
     }
 };

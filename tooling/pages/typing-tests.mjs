@@ -26,6 +26,7 @@ import { createRequire } from 'node:module';
 import { HOME_SWITCH } from '../lib/home-switch.mjs';
 import { seoHead, ORIGIN } from '../lib/seo-head.mjs';
 import { legalFooter } from '../lib/legal.mjs';
+import { seoReading } from '../lib/seo-reading.mjs';
 import paths from '../lib/paths.cjs';
 const { typeableWith } = createRequire(import.meta.url)('../lib/content.js');
 
@@ -180,6 +181,7 @@ ${alternates('    ')}
     <link rel="stylesheet" href="/base.css" />
     <link rel="stylesheet" href="/kiem-tra-toc-do-go/test.css" />
     <link rel="stylesheet" href="/kiem-tra-toc-do-go/chart.css" />
+    <link rel="stylesheet" href="/seo-reading.css" />
   </head>
   <body>
     <header class="topbar test-header">
@@ -237,14 +239,14 @@ ${buttons}
           <p class="sr-only" id="progress-summary-text" aria-live="polite"></p>
         </section>
 
-${sections}
+${seoReading(`${sections}
 
         <section>
           <h2>${esc(T.faqTitle)}</h2>
           <div class="faq">
 ${faq}
           </div>
-        </section>
+        </section>`, { lang, prefix: T.slug, allLanguages: true })}
 
         <section class="test-cta">
           <p class="eyebrow"><i></i> ${esc(T.cta.eyebrow)}</p>

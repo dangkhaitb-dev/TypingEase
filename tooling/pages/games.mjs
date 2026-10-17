@@ -1,3 +1,4 @@
+import { seoReading } from '../lib/seo-reading.mjs';
 /* tooling/pages/games.mjs — trang trò chơi gõ phím cho từng ngôn ngữ (2026-09-25).
  *
  * Module trang cho Eleventy (xem tooling/pages/index.mjs): `pages()` trả `[{ path, html }]`, một trang
@@ -114,6 +115,7 @@ ${alternates}
     <link rel="stylesheet" href="/keyboard/keyboard.css" />
     <link rel="stylesheet" href="/kiem-tra-toc-do-go/test.css" />
     <link rel="stylesheet" href="/tro-choi/games.css" />
+      <link rel="stylesheet" href="/seo-reading.css" />
   </head>
   <body>
     <header class="topbar test-header">
@@ -143,7 +145,7 @@ ${alternates}
             ${tab('keys', T.modes.keys, false)}
           </div>
 
-          <div class="game-play-nav" hidden><button type="button" data-act="games-back" aria-keyshortcuts="Escape"><span aria-hidden="true">${dir === 'rtl' ? '→' : '←'}</span> ${esc(T.tabsAria)} <kbd class="game-exit-key" aria-hidden="true">Esc</kbd></button><h1 id="game-play-title"></h1></div>
+          <div class="game-play-nav" hidden><button type="button" data-act="games-back" aria-keyshortcuts="Escape"><span aria-hidden="true">${dir === 'rtl' ? '→' : '←'}</span> ${esc(T.tabsAria)} <kbd class="game-exit-key" aria-hidden="true">Esc</kbd></button><h2 id="game-play-title"></h2></div>
           <div class="game-panel" data-game-panel="rain" id="panel-rain" role="region" aria-labelledby="tab-rain" hidden>
             ${how('rain')}
             <div class="game-bar">
@@ -212,14 +214,14 @@ ${alternates}
           </div>
         </section>
 
-${sections}
+${seoReading(`${sections}
 
         <section>
           <h2>${esc(T.faqTitle)}</h2>
           <div class="faq">
 ${faq}
           </div>
-        </section>
+        </section>`, { lang, prefix: `games-${lang}`, allLanguages: true })}
 
         <section class="test-cta">
           <p class="eyebrow"><i></i> ${esc(T.cta.eyebrow)}</p>

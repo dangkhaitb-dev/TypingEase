@@ -32,7 +32,7 @@ export default {
   },
   sections: [
     {
-      h2: 'Como funciona o teste de digitação',
+      h2: 'Como funciona o teste de digitação online',
       html: '<p>Escolha uma duração, de 15 segundos a 10 minutos, e digite o texto que aparece acima. O relógio só começa no primeiro toque, então dá para ler o começo com calma. Quando o tempo acaba, o teste mostra as suas palavras por minuto (PPM), a precisão, o número de erros e a constância, que diz o quanto o seu ritmo variou do início ao fim.</p><p>Os textos são parágrafos do dia a dia em português, com maiúsculas, pontuação e acentos, do jeito que se escreve de verdade. Se você chegar ao fim de um parágrafo antes do tempo, outro aparece logo em seguida.</p>'
     },
     {
@@ -41,19 +41,23 @@ export default {
     },
     {
       h2: 'Como as palavras por minuto são calculadas',
-      html: '<p>O PPM segue a mesma convenção do WPM usado em inglês: cada cinco caracteres digitados valem uma "palavra", com espaços e pontuação incluídos. O total é dividido pelos minutos que você passou digitando. Contar caracteres em vez de palavras reais deixa o resultado justo entre textos de palavras curtas e longas, como <em>pé</em> e <em>paralelepípedo</em>.</p><p>O número conta tudo o que está na caixa, certo ou errado. Por isso o PPM só faz sentido lido junto com a precisão: digitar rápido e errar muito não é ser rápido.</p>'
+      html: '<p>Todo teste de palavras por minuto precisa de uma regra para contar as palavras. Aqui, o PPM segue a mesma convenção do WPM usado em inglês: cada cinco caracteres digitados valem uma "palavra", com espaços e pontuação incluídos. O total é dividido pelos minutos que você passou digitando. Contar caracteres em vez de palavras reais deixa o resultado justo entre textos de palavras curtas e longas, como <em>pé</em> e <em>paralelepípedo</em>.</p><p>O número conta tudo o que está na caixa, certo ou errado. Por isso o PPM só faz sentido lido junto com a precisão: digitar rápido e errar muito não é ser rápido.</p>'
     },
     {
-      h2: '1, 5 ou 10 minutos: qual duração escolher',
+      h2: 'Teste de digitação de 1 minuto, 5 minutos ou 10 minutos',
       html: '<p>Um teste de 1 minuto mede o seu pique: por pouco tempo, quase todo mundo consegue manter a atenção no máximo. Os testes de 15 e 30 segundos exageram esse efeito e servem mais para aquecer os dedos. Já um teste de 5 ou 10 minutos mede resistência: o cansaço aparece, a atenção oscila, os erros se acumulam, e o resultado fica mais perto do ritmo que você tem ao escrever um e-mail ou um trabalho longo.</p><p>Se o seu PPM cai muito entre o teste de 1 minuto e o de 10, a velocidade ainda depende de esforço e não de hábito. Para saber se está melhorando, compare sempre testes da mesma duração.</p>'
     },
     {
       h2: 'Como ler a precisão',
-      html: '<p>A precisão é a parte do que está na caixa que confere com o texto original, caractere por caractere. Um acento esquecido, um ç que virou c ou uma maiúscula que saiu minúscula contam como erro, porque são caracteres diferentes. A comparação é feita posição por posição: se você pular uma letra, todo o resto fica desalinhado. Nesse caso, apague até o erro e continue dali. Um erro apagado e corrigido deixa de contar na precisão, mas o tempo gasto para voltar já saiu do seu PPM.</p><p>Uma precisão abaixo de 95% é sinal de que vale a pena desacelerar. Acima disso, ganhar velocidade fica mais fácil, porque você perde menos tempo corrigindo. Como referência aproximada, muitos cursos de digitação tratam 40 PPM com boa precisão como um ritmo confortável para o trabalho de escritório, mas o número que importa é o seu, comparado com você mesmo.</p>'
+      html: '<p>Este é tanto um teste de velocidade quanto um teste de precisão de digitação, e a segunda parte pesa mais do que parece. A precisão é a parte do que está na caixa que confere com o texto original, caractere por caractere. Um acento esquecido, um ç que virou c ou uma maiúscula que saiu minúscula contam como erro, porque são caracteres diferentes. A comparação é feita posição por posição: se você pular uma letra, todo o resto fica desalinhado. Nesse caso, apague até o erro e continue dali. Um erro apagado e corrigido deixa de contar na precisão, mas o tempo gasto para voltar já saiu do seu PPM.</p><p>Uma precisão abaixo de 95% é sinal de que vale a pena desacelerar. Acima disso, ganhar velocidade fica mais fácil, porque você perde menos tempo corrigindo. Como referência aproximada, muitos cursos de digitação tratam 40 PPM com boa precisão como um ritmo confortável para o trabalho de escritório, mas o número que importa é o seu, comparado com você mesmo.</p>'
     },
     {
-      h2: 'Como digitar mais rápido',
-      html: '<ul><li>Deixe os dedos na fileira do meio (A S D F e J K L Ç) e volte para ela depois de cada palavra.</li><li>Não olhe para o teclado, nem para achar o ç ou os acentos: é justamente aí que o ritmo costuma quebrar.</li><li>Faça do acento e da letra um único movimento, ~ e a, ´ e e, sem pausa no meio.</li><li>Busque a precisão primeiro. A velocidade vem depois, quando os movimentos ficam automáticos.</li><li>Pratique pouco e todo dia: quinze minutos diários rendem mais do que duas horas no fim de semana.</li></ul><p>O <a class="inline-link" href="{course}">curso de {lessons} lições</a> ensina essas posições no teclado ABNT2, uma tecla de cada vez, incluindo o ç e as teclas de acento.</p>'
+      h2: 'Teste de digitação para iniciantes',
+      html: '<p>Para quem está começando, eu dou um conselho que vai contra o hábito comum: no primeiro teste, não pule os acentos para ganhar velocidade. No ABNT2, o ~ e o ´ são teclas mortas, e a tentação é digitar "nao" e seguir em frente. Aqui isso conta como erro, e com razão: prefiro que você termine 1 minuto com 20 PPM e quase nenhum vermelho do que com o dobro e um hábito que depois vai precisar desfazer.</p><ul><li>Antes de começar, confira num editor de texto se o ç sai à direita do L. Isto não é um teste de teclado para achar teclas com defeito, mas um sistema configurado como teclado americano estraga o resultado.</li><li>Repita a mesma duração por alguns dias e só então tente 5 minutos.</li></ul><p>Quem ainda procura o ç com os olhos vai avançar mais com o <a class="inline-link" href="{course}">curso de {lessons} lições</a> do que repetindo o teste.</p>'
+    },
+    {
+      h2: 'Depois do teste: o que treinar',
+      html: '<ul><li>Deixe os dedos na fileira do meio (A S D F e J K L Ç) e volte para ela depois de cada palavra.</li><li>Não olhe para o teclado, nem para achar o ç ou os acentos: é justamente aí que o ritmo costuma quebrar.</li><li>Faça do acento e da letra um único movimento, ~ e a, ´ e e, sem pausa no meio.</li><li>Busque a precisão primeiro. A velocidade vem depois, quando os movimentos ficam automáticos.</li><li>Na hora de praticar digitação, pouco e todo dia funciona melhor: quinze minutos diários rendem mais do que duas horas no fim de semana.</li></ul><p>O <a class="inline-link" href="{course}">curso de {lessons} lições</a> ensina essas posições no teclado ABNT2 com exercícios de digitação, uma tecla de cada vez, incluindo o ç e as teclas de acento.</p><p>Para um treino passo a passo, veja <a class="inline-link" href="/pt/como-digitar-mais-rapido/">como digitar mais rápido</a> no ABNT2, com exercícios de ç, til e circunflexo.</p>'
     }
   ],
   faqTitle: 'Perguntas frequentes',
@@ -63,7 +67,8 @@ export default {
     ['Letras com acento contam como erro a mais?', 'Não. Uma letra acentuada é um caractere só, mesmo exigindo dois toques no ABNT2. Ela só conta como erro se sair diferente do texto, por exemplo "a" no lugar de "ã".'],
     ['Qual duração devo escolher?', '1 minuto para medir o seu pique, 5 ou 10 minutos para ver o ritmo que você mantém num texto longo. Para acompanhar a evolução, repita sempre a mesma duração.'],
     ['Meus resultados ficam salvos?', 'Os últimos resultados ficam guardados apenas neste navegador, no seu aparelho, e aparecem no gráfico de progresso. Não há cadastro e nada é enviado para um servidor.'],
-    ['Posso fazer o teste num teclado americano?', 'Pode, mas o texto tem ç e acentos. Num teclado americano configurado como "US Internacional", eles saem por outras teclas mortas (aspas simples e depois c dá ç, por exemplo). O resultado mais fiel é o do teclado que você usa todo dia.']
+    ['Posso fazer o teste num teclado americano?', 'Pode, mas o texto tem ç e acentos. Num teclado americano configurado como "US Internacional", eles saem por outras teclas mortas (aspas simples e depois c dá ç, por exemplo). O resultado mais fiel é o do teclado que você usa todo dia.'],
+    ['O teste serve para crianças?', 'Serve, mas não há um modo infantil: os textos são parágrafos comuns para adultos. O ideal é a criança fazer o teste acompanhada, com durações de 15 a 60 segundos e prestando mais atenção à precisão do que ao PPM.']
   ],
   cta: { eyebrow: 'Quer um resultado melhor?', title: 'Aprenda digitação com os dez dedos', text: '{lessons} lições no seu próprio teclado ABNT2, começando pela fileira do meio.', button: 'Ver o curso' }
 };

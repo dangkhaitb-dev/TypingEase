@@ -18,7 +18,7 @@ export default {
   routes: {
     home: '/nl/', lessons: '/nl/lessen/', learn: '/nl/leren/',
     // Năm trang này chưa có bản tiếng Hà Lan. `null` là tín hiệu BỎ liên kết.
-    test: '/nl/typetest/', progress: '/nl/voortgang/', games: '/nl/typespelletjes/', free: null, weak: null, guide: null, wpm: null
+    test: '/nl/typetest/', progress: '/nl/voortgang/', games: '/nl/typespelletjes/', free: null, weak: null, guide: null, wpm: '/nl/sneller-typen/'
   },
 
   s: {
@@ -55,7 +55,7 @@ export default {
       [r.home, 'Typ op je eigen toetsenbord', 'QWERTY, AZERTY, QWERTZ, devanagari, Arabisch, JIS — echte indelingen, en de cursus volgt de indeling die je kiest.', 'Bekijk de indelingen']
     ],
     footerAria: 'Bronnen van TypingEase',
-    footerLinks: r => [[r.lessons, 'Cursus'], [r.learn, 'Lessen'], [r.progress, 'Voortgang'], [r.test, 'Snelheidstest']],
+    footerLinks: r => [[r.lessons, 'Cursus'], [r.learn, 'Lessen'], [r.progress, 'Voortgang'], [r.test, 'Snelheidstest'], [r.wpm, 'Sneller typen']],
     footerTag: 'Typ iets langzamer, en je komt veel verder.',
     switches: [
       ['EN', '/lessons/', 'en', 'English version'],

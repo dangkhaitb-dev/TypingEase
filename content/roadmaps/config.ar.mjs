@@ -16,7 +16,7 @@ export default {
     ui: '/i18n/ui.ar.js',
     routes: {
       home: '/ar/', lessons: '/ar/durus/', learn: '/ar/taallam/', test: '/ar/ikhtibar-alkitaba/',
-      progress: '/ar/taqaddum/', games: '/ar/alaab-alkitaba/', free: null, weak: null, guide: null, wpm: null
+      progress: '/ar/taqaddum/', games: '/ar/alaab-alkitaba/', free: null, weak: null, guide: null, wpm: '/ar/kayf-tazid-surat-alkitaba/'
     },
     s: {
       title: c => `دورة الكتابة باللمس بالعربية: ${c.sequence.length} درسا | TypingEase`,
@@ -52,7 +52,7 @@ export default {
         [r.home, 'اكتب على لوحتك أنت', 'العربية، QWERTY، AZERTY، QWERTZ، JIS: تخطيطات حقيقية كثيرة، والدورة تتبع التخطيط الذي تختاره.', 'اعرض التخطيطات']
       ],
       footerAria: 'موارد TypingEase',
-      footerLinks: r => [[r.home, 'تدرب'], [r.lessons, 'الدورة'], [r.progress, 'التقدم']],
+      footerLinks: r => [[r.home, 'تدرب'], [r.lessons, 'الدورة'], [r.progress, 'التقدم'], [r.wpm, 'كيف تكتب أسرع']],
       footerTag: 'اكتب أبطأ قليلا، تصل أبعد بكثير.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

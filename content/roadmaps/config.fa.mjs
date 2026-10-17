@@ -15,7 +15,7 @@ export default {
   ui: '/i18n/ui.fa.js',
   routes: {
     home: '/fa/', lessons: '/fa/darsha/', learn: '/fa/amoozesh/', test: '/fa/test-tayp/',
-    progress: '/fa/pishraft/', games: '/fa/bazi-tayp/', free: null, weak: null, guide: null, wpm: null
+    progress: '/fa/pishraft/', games: '/fa/bazi-tayp/', free: null, weak: null, guide: null, wpm: '/fa/chegoone-sari-tayp-konim/'
   },
   s: {
     title: c => `دورهٔ آموزش تایپ فارسی: ${c.sequence.length} درس | TypingEase`,
@@ -51,7 +51,7 @@ export default {
       [r.home, 'دو صفحه‌کلید فارسی', 'این دوره هم برای چیدمان استاندارد فارسی ساخته شده و هم برای چیدمان قدیمی ویندوز. رقم‌ها و جای پ در این دو فرق دارد، و هر کدام دورهٔ خودش را دارد.', 'صفحهٔ اصلی']
     ],
     footerAria: 'منابع TypingEase',
-    footerLinks: r => [[r.home, 'تمرین'], [r.lessons, 'دوره'], [r.progress, 'پیشرفت']],
+    footerLinks: r => [[r.home, 'تمرین'], [r.lessons, 'دوره'], [r.progress, 'پیشرفت'], [r.wpm, 'سریع‌تر تایپ کنید']],
     footerTag: 'کمی آهسته‌تر بروید، خیلی دورتر می‌رسید.'
   }
 };

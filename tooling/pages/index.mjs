@@ -6,7 +6,7 @@
  *
  * `PAGES=roadmaps,games npx eleventy` builds only those modules (quicker while working on one).
  */
-export const MODULES = ['roadmaps', 'families', 'tasters', 'typing-tests', 'games', 'progress', 'legal', 'en-redirects'];
+export const MODULES = ['roadmaps', 'families', 'tasters', 'typing-tests', 'guides', 'games', 'progress', 'legal', 'en-redirects'];
 
 export async function allPages() {
   const only = process.env.PAGES === 'none' ? [] : process.env.PAGES ? process.env.PAGES.split(',').map(name => name.trim()).filter(Boolean) : null;

@@ -13,7 +13,7 @@ export default {
     ui: '/i18n/ui.id.js',
     routes: {
       home: '/id/', lessons: '/id/pelajaran/', learn: '/id/belajar/', test: '/id/tes-mengetik/',
-      progress: '/id/kemajuan/', games: '/id/game-mengetik/', free: null, weak: null, guide: null, wpm: null
+      progress: '/id/kemajuan/', games: '/id/game-mengetik/', free: null, weak: null, guide: null, wpm: '/id/cara-mengetik-cepat/'
     },
     s: {
       title: c => `Latihan mengetik 10 jari: ${c.sequence.length} pelajaran gratis | TypingEase`,
@@ -50,7 +50,7 @@ export default {
         [r.home, 'Mengetik di papan ketikmu sendiri', 'QWERTY, AZERTY, QWERTZ, Dewanagari, Arab, JIS — 119 tata letak sungguhan, dan kursus mengikuti yang kamu pilih.', 'Lihat tata letaknya']
       ],
       footerAria: 'Sumber TypingEase',
-      footerLinks: r => [[r.home, 'Latihan'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan']],
+      footerLinks: r => [[r.home, 'Latihan'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan'], [r.wpm, 'Cara mengetik cepat']],
       footerTag: 'Sedikit lebih pelan, dan kamu akan sampai jauh lebih jauh.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

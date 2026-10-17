@@ -13,7 +13,7 @@ export default {
     ui: '/i18n/ui.ko.js',
     routes: {
       home: '/ko/', lessons: '/ko/gangui/', learn: '/ko/baeugi/', test: '/ko/taja-teseuteu/',
-      progress: '/ko/jindo/', games: '/ko/taja-geim/', free: null, weak: null, guide: null, wpm: null
+      progress: '/ko/jindo/', games: '/ko/taja-geim/', free: null, weak: null, guide: null, wpm: '/ko/taja-sokdo-olligi/'
     },
     s: {
       title: c => `한글 타자 연습 강의: ${c.sequence.length}개 과 | TypingEase`,
@@ -48,7 +48,7 @@ export default {
         [r.home, '두벌식 한국어 입력기가 필요해요', '이 강의는 두벌식 자판을 한국어 입력기로 치는 과정이에요. 왼손은 자음, 오른손은 모음을 맡고, 입력기가 자모를 글자로 모아 줘요.', '자판 보기']
       ],
       footerAria: 'TypingEase 자료',
-      footerLinks: r => [[r.home, '연습'], [r.lessons, '강의'], [r.progress, '진도']],
+      footerLinks: r => [[r.home, '연습'], [r.lessons, '강의'], [r.progress, '진도'], [r.wpm, '타자 속도 올리기']],
       footerTag: '조금 천천히 가면 훨씬 멀리 가요.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

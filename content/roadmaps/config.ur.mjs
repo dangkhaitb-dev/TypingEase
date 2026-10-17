@@ -15,7 +15,7 @@ export default {
     ui: '/i18n/ui.ur.js',
     routes: {
       home: '/ur/', lessons: '/ur/asbaq/', learn: '/ur/seekhein/', test: '/ur/typing-test/',
-      progress: '/ur/taraqqi/', games: '/ur/typing-games/', free: null, weak: null, guide: null, wpm: null
+      progress: '/ur/taraqqi/', games: '/ur/typing-games/', free: null, weak: null, guide: null, wpm: '/ur/typing-ki-raftar-barhayen/'
     },
     s: {
       title: c => `اردو ٹائپنگ کورس: دس انگلیوں سے، ${c.sequence.length} اسباق | TypingEase`,
@@ -51,7 +51,7 @@ export default {
         [r.home, 'اپنے کی بورڈ پر لکھیں', 'اردو صوتی، CRULP، QWERTY، AZERTY، عربی، دیوناگری — اصلی کی بورڈ ترتیبیں، اور کورس آپ کی چنی ہوئی ترتیب کے مطابق چلتا ہے۔', 'ترتیبیں دیکھیں']
       ],
       footerAria: 'TypingEase کے وسائل',
-      footerLinks: r => [[r.home, 'مشق'], [r.lessons, 'کورس'], [r.progress, 'پیش رفت']],
+      footerLinks: r => [[r.home, 'مشق'], [r.lessons, 'کورس'], [r.progress, 'پیش رفت'], [r.wpm, 'ٹائپنگ کی رفتار']],
       footerTag: 'آہستہ چلنے والا دور تک جاتا ہے۔'
     }
 };

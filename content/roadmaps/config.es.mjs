@@ -19,7 +19,7 @@ export default {
     // khong co lien ket nao tro vao 404 hay sang mot trang ngon ngu khac.
     routes: {
       home: '/es/', lessons: '/es/lecciones/', learn: '/es/aprender/', test: '/es/test-de-mecanografia/',
-      progress: '/es/progreso/', games: '/es/juegos-de-mecanografia/', free: null, weak: null, guide: null, wpm: null
+      progress: '/es/progreso/', games: '/es/juegos-de-mecanografia/', free: null, weak: null, guide: null, wpm: '/es/escribir-mas-rapido/'
     },
     s: {
       title: c => `Curso de mecanografía: ${c.sequence.length} lecciones | TypingEase`,
@@ -56,7 +56,7 @@ export default {
         [r.home, 'Escribe en tu propio teclado', 'QWERTY, AZERTY, QWERTZ, devanagari, árabe, JIS — 119 distribuciones reales, y el curso sigue a la que elijas.', 'Ver las distribuciones']
       ],
       footerAria: 'Recursos de TypingEase',
-      footerLinks: r => [[r.home, 'Practicar'], [r.lessons, 'Curso'], [r.progress, 'Progreso'], [r.test, 'Test de mecanografía'], [r.games, 'Juegos de mecanografía']],
+      footerLinks: r => [[r.home, 'Practicar'], [r.lessons, 'Curso'], [r.progress, 'Progreso'], [r.test, 'Test de mecanografía'], [r.games, 'Juegos de mecanografía'], [r.wpm, 'Escribir más rápido']],
       footerTag: 'Ve un poco más despacio y llegarás mucho más lejos.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'B\u1ea3n ti\u1ebfng Vi\u1ec7t']]
     }

@@ -17,7 +17,7 @@ export default {
     ui: '/i18n/ui.ms.js',
     routes: {
       home: '/ms/', lessons: '/ms/pelajaran/', learn: '/ms/belajar/', test: '/ms/ujian-menaip/',
-      progress: '/ms/kemajuan/', games: '/ms/permainan-menaip/', free: null, weak: null, guide: null, wpm: null
+      progress: '/ms/kemajuan/', games: '/ms/permainan-menaip/', free: null, weak: null, guide: null, wpm: '/ms/cara-menaip-dengan-cepat/'
     },
     s: {
       title: c => `Latihan menaip 10 jari: ${c.sequence.length} pelajaran percuma | TypingEase`,
@@ -54,7 +54,7 @@ export default {
         [r.home, 'Menaip pada papan kekunci anda sendiri', 'QWERTY, AZERTY, QWERTZ, Devanagari, Arab, JIS — 119 susun atur sebenar di laman ini. Kursus bahasa Melayu ini dibina untuk QWERTY.', 'Lihat susun atur']
       ],
       footerAria: 'Sumber TypingEase',
-      footerLinks: r => [[r.home, 'Berlatih'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan']],
+      footerLinks: r => [[r.home, 'Berlatih'], [r.lessons, 'Kursus'], [r.progress, 'Kemajuan'], [r.wpm, 'Menaip dengan cepat']],
       footerTag: 'Perlahan sedikit, dan anda akan pergi lebih jauh.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

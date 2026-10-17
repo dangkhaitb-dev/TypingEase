@@ -1,3 +1,4 @@
+import { seoReading } from '../lib/seo-reading.mjs';
 /* tooling/pages/roadmaps.mjs — trang lộ trình tĩnh của MỌI khoá, từ content/data/curriculum.<mã>.js.
  *
  * Module trang cho Eleventy (tooling/pages/index.mjs): `pages()` trả về một trang cho mỗi khoá khai
@@ -26,6 +27,22 @@ import { HOME_SWITCH } from '../lib/home-switch.mjs';
 import { seoHead } from '../lib/seo-head.mjs';
 import { legalFooter } from '../lib/legal.mjs';
 import { courseEditorial, courseIntroductions } from '../../content/roadmaps/editorial.en-vi.mjs';
+
+// Bài viết dưới lộ trình cho ngôn ngữ khác en/vi: một file mỗi ngôn ngữ, content/roadmaps/editorial.<lang>.mjs,
+// `export default` một chuỗi HTML (các <section><h2>…) với {{count}} / {{units}} như bản en/vi. Chỉ khoá chính.
+const LOCAL_EDITORIAL = Object.fromEntries(await Promise.all(
+  fs.readdirSync(new URL('../../content/roadmaps/', import.meta.url))
+    .filter(name => /^editorial\.[a-z]{2,3}(-[a-z]{2})?\.mjs$/.test(name))
+    .map(async name => [name.slice('editorial.'.length, -'.mjs'.length),
+      (await import(new URL(`../../content/roadmaps/${name}`, import.meta.url))).default])));
+const editorialFor = (lang, curriculum) => {
+  if (lang === 'en' || lang === 'vi') return courseEditorial(lang, curriculum);
+  const text = LOCAL_EDITORIAL[lang];
+  if (!text) return '';
+  const values = { count: curriculum.sequence.length, units: curriculum.units.length };
+  return text.replace(/\{\{(count|units)\}\}/g, (_, key) => values[key]);
+};
+const hasEditorial = lang => lang === 'en' || lang === 'vi' || Boolean(LOCAL_EDITORIAL[lang]);
 
 // Khoá là gì, nằm ở URL nào, gọi là gì — tất cả đọc từ content/data/languages.js (`courses`),
 // cùng nguồn với trang đầu và build-course.js.
@@ -249,6 +266,7 @@ ${seoHead({ kind: 'course', url: new URL(config.url).pathname, title: S.title(cu
     <link rel="stylesheet" href="/tokens.css" />
     <link rel="stylesheet" href="/base.css" />
     <link rel="stylesheet" href="/bai-hoc/curriculum.css" />
+${!family && hasEditorial(lang) ? '    <link rel="stylesheet" href="/seo-reading.css" />' : ''}
     <!-- Danh sách bài dưới đây được sinh bằng bai-hoc/generate.mjs từ data/curriculum.${code}.js.
          Sửa nội dung ở curriculum.${code}.js rồi chạy lại script, đừng sửa tay hai chỗ. -->
   </head>
@@ -289,7 +307,7 @@ ${curriculum.units.map(unit => unitCard(page, unit)).join('\n')}
         </div>
       </div>
 
-${!family && (lang === 'en' || lang === 'vi') ? courseEditorial(lang, curriculum) + '\n\n' : ''}      <section class="explore" aria-labelledby="cur-explore-title">
+${!family && hasEditorial(lang) ? `<div class="course-editorial">${seoReading(editorialFor(lang, curriculum), { lang, prefix: `course-${lang}`, allLanguages: true })}</div>\n\n` : ''}      <section class="explore" aria-labelledby="cur-explore-title">
         <div class="explore-heading">
           <p class="eyebrow"><i></i> ${esc(S.exploreEyebrow)}</p>
           <h2 id="cur-explore-title">${esc(S.exploreTitle)}</h2>

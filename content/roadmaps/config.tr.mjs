@@ -16,7 +16,7 @@ export default {
     ui: '/i18n/ui.tr.js',
     routes: {
       home: '/tr/', lessons: '/tr/dersler/', learn: '/tr/ogren/', test: '/tr/klavye-hiz-testi/',
-      progress: '/tr/ilerleme/', games: '/tr/klavye-oyunlari/', free: null, weak: null, guide: null, wpm: null
+      progress: '/tr/ilerleme/', games: '/tr/klavye-oyunlari/', free: null, weak: null, guide: null, wpm: '/tr/klavyede-hizli-yazma/'
     },
     s: {
       title: c => `10 parmak yazma kursu: ${c.sequence.length} ders | TypingEase`,
@@ -52,7 +52,7 @@ export default {
         [r.home, 'Kendi klavyende yaz', 'QWERTY, AZERTY, QWERTZ, Türkçe F, devanagari, Arapça, JIS — gerçek klavye düzenleri, ve kurs seçtiğin düzeni izler.', 'Düzenleri gör']
       ],
       footerAria: 'TypingEase kaynakları',
-      footerLinks: r => [[r.home, 'Pratik'], [r.lessons, 'Kurs'], [r.progress, 'İlerleme']],
+      footerLinks: r => [[r.home, 'Pratik'], [r.lessons, 'Kurs'], [r.progress, 'İlerleme'], [r.wpm, 'Klavyede hızlı yazma']],
       footerTag: 'Biraz daha yavaş git, çok daha uzağa varırsın.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

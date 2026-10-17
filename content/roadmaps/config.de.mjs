@@ -21,7 +21,7 @@ export default {
 
   routes: {
     home: '/de/', lessons: '/de/lektionen/', learn: '/de/lernen/',
-    test: '/de/tipptest/', progress: '/de/fortschritt/', games: '/de/tippspiele/', free: null, weak: null, guide: null, wpm: null
+    test: '/de/tipptest/', progress: '/de/fortschritt/', games: '/de/tippspiele/', free: null, weak: null, guide: null, wpm: '/de/schneller-tippen/'
   },
 
   s: {
@@ -55,10 +55,10 @@ export default {
     exploreEyebrow: 'Bevor du anfängst', exploreTitle: 'Gut zu wissen',
     explore: r => [
       [r.learn, 'Fang mit der Grundstellung an', 'Acht Tasten, acht Finger und die Gewohnheit, nicht nach unten zu sehen. Die erste Einheit entscheidet über den Rest.', 'Lektion 1 öffnen'],
-      [r.lessons, 'Der ganze Weg auf einen Blick', 'Drei Einheiten, von der Grundstellung über Ä und Ö bis zur Zahlenreihe und dem Eszett.', 'Kurs ansehen']
+      [r.lessons, 'Der ganze Weg auf einen Blick', 'Zwölf Einheiten, von der Grundstellung über Umlaute, ß und Zahlen bis zu langen Texten.', 'Kurs ansehen']
     ],
     footerAria: 'TypingEase-Ressourcen',
-    footerLinks: r => [[r.lessons, 'Kurs'], [r.learn, 'Lektionen'], [r.progress, 'Fortschritt'], [r.test, 'Tipptest'], [r.home, 'Startseite'], [r.games, 'Tippspiele']],
+    footerLinks: r => [[r.lessons, 'Kurs'], [r.learn, 'Lektionen'], [r.progress, 'Fortschritt'], [r.test, 'Tipptest'], [r.home, 'Startseite'], [r.games, 'Tippspiele'], [r.wpm, 'Schneller tippen']],
     footerTag: 'Geh ein wenig langsamer, dann kommst du deutlich weiter.',
 
     // Mọi ngôn ngữ KHÁC, chứ không phải một cái: với bốn bản thì "một nút đổi ngôn ngữ" không

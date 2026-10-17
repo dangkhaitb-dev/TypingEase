@@ -1,0 +1,55 @@
+/* Shared editorial rhythm. Scoped to reading content, never game/test controls. */
+.seo-reading{max-width:760px;margin:72px auto;color:var(--ink-900);text-align:start;min-width:0}
+.seo-reading-toc,.guide-toc{display:block;margin:0 0 48px;padding:24px 28px;background:var(--surface-alt);border:0;border-radius:var(--r-lg)}
+.seo-reading .seo-reading-label,.guide-main .guide-toc .guide-toc-label{margin:0 0 16px;font-size:13px;font-weight:600;color:var(--ink-600);line-height:1.5}
+.seo-reading-toc ol,.guide-toc ol{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px 28px;list-style:none;margin:0;padding:0}
+.seo-reading-toc li,.guide-main .guide-toc li{margin:0;padding:0;font-size:14px;line-height:1.5;min-width:0}
+.seo-reading-toc a,.guide-toc a{color:var(--primary-700);text-decoration:none;text-underline-offset:3px}
+.seo-reading-toc a:hover,.guide-toc a:hover{text-decoration:underline}
+.seo-reading-toc a:focus-visible{outline:2px solid var(--primary-600);outline-offset:4px;border-radius:2px}
+.seo-reading-body>section,.guide-main article>section{margin:0;padding:0;scroll-margin-top:96px}
+.seo-reading-body>section+section,.guide-main article>section+section{margin-top:44px;padding-top:36px;border-top:1px solid var(--border)}
+.seo-reading h2,.guide-main article h2{font-size:clamp(25px,2.8vw,32px);font-weight:650;line-height:1.25;letter-spacing:var(--track-title);margin:0 0 20px;text-wrap:pretty;scroll-margin-top:96px}
+.seo-reading h3,.guide-main article h3{font-size:19px;font-weight:600;line-height:1.4;letter-spacing:var(--track-title);margin:26px 0 10px;scroll-margin-top:96px}
+.seo-reading p,.seo-reading li,.guide-main article p,.guide-main article li{font-size:17px;line-height:1.75;color:var(--ink-700)}
+.seo-reading p,.guide-main article p{margin:0 0 18px}
+.seo-reading ul,.seo-reading ol:not(.seo-reading-toc ol){padding-inline-start:22px}
+.seo-reading li{margin:8px 0}
+.seo-reading a:not([class]){color:var(--primary-700);text-decoration:underline;text-underline-offset:3px;text-decoration-thickness:1px}
+.seo-reading :is(h2,h3,strong){color:var(--ink-900)}
+.seo-reading .faq{display:block;margin-top:24px;border-top:1px solid var(--border)}
+.seo-reading .faq details{padding:18px 0;border-bottom:1px solid var(--border);background:none;border-radius:0}
+.seo-reading .faq summary{font-size:17px;font-weight:600;line-height:1.5;cursor:pointer;color:var(--ink-900)}
+.seo-reading .faq details p{margin:12px 0 0}
+.seo-reading .faq details[open]{padding-bottom:24px}
+.course-editorial:has(.seo-reading){max-width:none;margin:0}
+.guide-main .article-hero .article-lead{font-size:20px;line-height:1.6;color:var(--ink-600)}
+.guide-main .guide-toc{margin-bottom:44px}
+.guide-main .article-cta{padding:32px;border-radius:var(--r-lg);text-align:start;background:var(--surface-alt)}
+.guide-main .article-cta :is(h2,h3,p){max-width:none;margin-inline:0}
+.guide-main .article-cta .guide-related{margin:28px 0 0}
+.guide-main .guide-related>div{gap:12px}
+.guide-main .guide-related>div>a{box-shadow:none;background:var(--surface);padding:20px}
+.guide-main .guide-table-wrap{overflow-x:auto}
+.guide-main .guide-faq h3{margin-top:24px;padding-top:24px}
+.guide-main .guide-faq h3:first-child{margin-top:0}
+@media(max-width:620px){
+ .seo-reading{margin-block:44px}
+ .seo-reading-toc,.guide-toc{padding:20px;margin-bottom:32px}
+ .seo-reading-toc ol,.guide-toc ol{grid-template-columns:1fr;gap:10px}
+ .seo-reading p,.seo-reading li,.guide-main article p,.guide-main article li{font-size:16px;line-height:1.75}
+ .seo-reading h3,.guide-main article h3{font-size:18px}
+ .seo-reading-body>section+section,.guide-main article>section+section{margin-top:32px;padding-top:28px}
+ .guide-main .article-cta{padding:24px}
+}
+@media print{.seo-reading-toc{display:none}.seo-reading{max-width:none;margin:0}}
+.guide-main .guide-source{font-size:14px;line-height:1.65;color:var(--ink-600);margin-top:24px}
+.guide-main .guide-toc-label{font-size:13px;font-weight:600;color:var(--ink-600)}
+/* Keep navigation compact regardless of the body type rules above. */
+.seo-reading .seo-reading-toc ol{padding:0}
+.seo-reading .seo-reading-toc li{margin:0;padding:0;font-size:14px;line-height:1.5}
+.seo-reading .seo-reading-toc a{color:var(--primary-700);text-decoration:none}
+.seo-reading .seo-reading-toc a:hover{text-decoration:underline}
+.article-main .seo-reading .article-cta{text-align:start;padding:28px;background:var(--surface-alt);border-radius:var(--r-lg)}
+.article-main .seo-reading .article-cta :is(h2,h3,p){max-width:none;margin-inline:0}
+.games-main.is-playing .seo-reading{display:none}

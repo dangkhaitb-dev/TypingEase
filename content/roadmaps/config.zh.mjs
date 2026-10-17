@@ -13,7 +13,7 @@ export default {
     ui: '/i18n/ui.zh.js',
     routes: {
       home: '/zh/', lessons: '/zh/kecheng/', learn: '/zh/xuexi/', test: '/zh/dazi-ceshi/',
-      progress: '/zh/jindu/', games: '/zh/dazi-youxi/', free: null, weak: null, guide: null, wpm: null
+      progress: '/zh/jindu/', games: '/zh/dazi-youxi/', free: null, weak: null, guide: null, wpm: '/zh/tigao-dazi-sudu/'
     },
     s: {
       title: c => `拼音打字练习：${c.sequence.length} 课十指盲打 | TypingEase`,
@@ -50,7 +50,7 @@ export default {
         [r.home, '为什么练拼音', '用拼音输入法打汉字，手指实际按下的是拼音字母。练熟这些按键，打汉字时就不用再看键盘。', '了解这门课']
       ],
       footerAria: 'TypingEase 资源',
-      footerLinks: r => [[r.home, '练习'], [r.lessons, '课程'], [r.progress, '进度']],
+      footerLinks: r => [[r.home, '练习'], [r.lessons, '课程'], [r.progress, '进度'], [r.wpm, '提高打字速度']],
       footerTag: '慢一点，你会走得更远。',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

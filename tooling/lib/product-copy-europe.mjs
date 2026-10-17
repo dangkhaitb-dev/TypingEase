@@ -10,7 +10,7 @@ const base = {
     detailLabel:'Sencillo desde el principio',detailTitle:'Tu espacio para practicar.',specTitle:'Qué incluye TypingEase',spec:[['Primeros pasos','Gratis, sin cuenta'],['Lecciones','De la fila guía a párrafos completos'],['Comentarios','Precisión carácter por carácter'],['Pruebas','Velocidad en PPM y precisión'],['Acceso','Directamente en el navegador']],resourcesTitle:'Practica a tu manera',resources:[['01','Práctica libre','Escribe el texto que quieras.','/practice/'],['02','Pruebas de mecanografía','Descubre tu ritmo actual.','/typing-test/'],['03','Tu progreso','Repasa tus sesiones de práctica.','/progress/'],['04','Juegos de mecanografía','Prueba un reto diferente.','/typing-games/']],
     faqLabel:'Antes de empezar',faqTitle:'Algunas cosas que conviene saber.',faq:[['¿TypingEase es gratis?','Sí. Puedes empezar las lecciones, practicar con tus propios textos y hacer pruebas en el navegador sin crear una cuenta.'],['¿Por dónde debería empezar?','Empieza con la primera lección del curso. Aprende las teclas guía y avanza poco a poco hacia palabras y párrafos.'],['¿Tengo que instalar algo?','No. TypingEase funciona en el navegador. Un teclado físico facilita aprender la posición de los dedos.'],['¿Debo centrarme en la velocidad o en la precisión?','Empieza escribiendo con precisión y constancia. Las pruebas muestran tanto las PPM como la precisión para que sigas ambos datos.']],
     cta:'Un poco de práctica hoy.<br /><em>Un hábito para mañana.</em>',ctaLabel:'Empieza tu primera lección',learn:'/learn/',footerIntro:'Ve un poco más despacio y llegarás mucho más lejos.',footerGroups:[['Producto',['Lecciones','/learn/'],['Curso','/lessons/'],['Prueba de mecanografía','/typing-test/']],['Explorar',['Práctica libre','/practice/'],['Juegos','/typing-games/'],['Progreso','/progress/']],['Recursos',['Mecanografía al tacto','/touch-typing/'],['¿Qué son las PPM?','/what-is-wpm/'],['Acerca de','/about/']]],
-    heroTitle:'Aprende a <em>escribir</em> gratis',heroPromise:'Deja que tus manos sigan el ritmo de tus ideas.',heroIntro:'Aprende mecanografía al tacto. Desde tus primeras teclas hasta tu próxima gran idea.',heroCta:'Empezar',heroNote:'Gratis · Sin cuenta',interfaceLabel:'Explorar la interfaz',previousStep:'Paso anterior',nextStep:'Paso siguiente',exploreLabel:'EXPLORAR',peopleAria:'Para todo el mundo',previousImage:'Imagen anterior',nextImage:'Imagen siguiente',carouselRole:'carrusel',carouselLabel:'Explora las pantallas de TypingEase'
+    heroTitle:'Aprende <em>mecanografía</em> gratis',heroPromise:'Deja que tus manos sigan el ritmo de tus ideas.',heroIntro:'Aprende mecanografía al tacto. Desde tus primeras teclas hasta tu próxima gran idea.',heroCta:'Empezar',heroNote:'Gratis · Sin cuenta',interfaceLabel:'Explorar la interfaz',previousStep:'Paso anterior',nextStep:'Paso siguiente',exploreLabel:'EXPLORAR',peopleAria:'Para todo el mundo',previousImage:'Imagen anterior',nextImage:'Imagen siguiente',carouselRole:'carrusel',carouselLabel:'Explora las pantallas de TypingEase'
   },
   fr: {
     ui:{start:'Commencer',free:'Gratuit · Sans compte',explore:'DÉCOUVRIR',carousel:'carrousel',carouselLabel:'Découvrir les écrans de TypingEase'},eyebrow:'Apprendre en toute sérénité',title:'Une touche à la fois.',emphasis:'La confiance vient.',intro:'Des leçons courtes. Un clavier visuel. Des retours pendant la frappe. Tout est à sa place pour vous aider à progresser à votre rythme.',
@@ -47,7 +47,7 @@ const arcExtras = {
   fr:['À propos de TypingEase','Dactylographie','Taper plus vite','Qu’est-ce que le MPM ?','Vitesse de frappe'],
   de:['Über TypingEase','Zehnfingersystem','Schneller tippen','Was ist APM?','Tippgeschwindigkeit'],
   it:['Informazioni su TypingEase','Dattilografia','Digitare più velocemente','Cosa sono i PPM?','Velocità di digitazione'],
-  pt:['Sobre o TypingEase','Dactilografia','Escrever mais depressa','O que são PPM?','Velocidade de escrita'],
+  pt:['Sobre o TypingEase','Digitação com 10 dedos','Como digitar mais rápido','O que é WPM?','Velocidade de digitação'],
   nl:['Over TypingEase','Blind typen','Sneller typen','Wat is APM?','Typsnelheid'],
   pl:['O TypingEase','Pisanie bezwzrokowe','Pisz szybciej','Czym jest ZPM?','Szybkość pisania'],
   ru:['О TypingEase','Слепая печать','Печатайте быстрее','Что такое ЗМ?','Скорость печати'],
@@ -59,5 +59,85 @@ for (const [code, locale] of Object.entries(base)) {
   const labels=[locale.views[1][1],locale.resources[0][1],locale.views[2][1],locale.resources[2][1],locale.views[0][1],locale.views[3][1],...extras];
   locale.arc=arcIds.map((id,i)=>[id,labels[i],['/lessons/','/practice/','/typing-test/','/progress/','/learn/','/typing-games/','/about/','/touch-typing/','/how-to-type-faster/','/what-is-wpm/','/average-typing-speed/'][i]]);
 }
+
+// The /pt/ course uses the Brazilian ABNT2 layout; keep its homepage copy pt-BR.
+const ptBR = base.pt;
+Object.assign(ptBR, {
+  eyebrow: 'Aprenda a digitar no seu ritmo',
+  intro: 'Aulas curtas, teclado visual e retorno imediato a cada tecla. Comece no seu ritmo e acompanhe o que já consegue digitar sem olhar para o teclado.',
+  stepsLabel: 'Um jeito simples de começar',
+  stepsTitle: 'Das primeiras teclas<br />à digitação com mais fluidez.',
+  statementLabel: 'Um momento para se concentrar',
+  statementTitle: 'Menos tempo olhando para o teclado.<br /><em>Mais espaço para suas ideias.</em>',
+  statementBody: 'Comece devagar, observe os erros que aparecem e ganhe segurança antes de tentar acelerar.',
+  peopleLabel: 'Para o que você faz no computador',
+  peopleTitle: 'Digitar com mais segurança.<br /><em>Em tarefas do dia a dia.</em>',
+  detailLabel: 'Prática direta no navegador',
+  detailTitle: 'Um lugar para aprender digitação.',
+  specTitle: 'O que você encontra no TypingEase',
+  resourcesTitle: 'Escolha como praticar',
+  faqTitle: 'Dúvidas antes de começar',
+  cta: 'Uma prática curta hoje.<br /><em>Um hábito para levar adiante.</em>',
+  ctaLabel: 'Comece a primeira aula',
+  heroTitle: 'Aprenda <em>digitação</em> grátis',
+  heroPromise: 'Encontre seu ritmo no teclado.',
+  heroIntro: 'Pratique digitação com 10 dedos no teclado brasileiro ABNT2, começando pelas teclas básicas.',
+  heroNote: 'Grátis · Sem cadastro',
+  footerIntro: 'Comece com calma e acompanhe sua evolução a cada prática.',
+  carouselLabel: 'Explore as telas do TypingEase',
+});
+ptBR.views = [
+  ['lesson', 'Aulas', '/learn/', 'Pratique no teclado visual e veja na hora quais teclas acertou ou errou.', 'Começar uma aula'],
+  ['course', 'Curso de digitação', '/lessons/', 'Siga as aulas do teclado brasileiro ABNT2, das teclas básicas a palavras e textos.', 'Ver o curso'],
+  ['test', 'Teste de digitação', '/typing-test/', 'Confira sua velocidade em WPM e a precisão no navegador.', 'Fazer o teste'],
+  ['games', 'Jogos de digitação', '/typing-games/', 'Alterne as aulas com jogos de digitação e pratique de outro jeito.', 'Ver os jogos'],
+];
+ptBR.steps = [
+  ['course', 'Escolha por onde começar', 'Abra o curso e escolha uma aula adequada ao que você já sabe.', '/lessons/'],
+  ['lesson', 'Pratique com atenção', 'Veja cada tecla no teclado visual e corrija os erros sem pressa.', '/learn/'],
+  ['test', 'Confira sua velocidade', 'Faça um teste de digitação e observe o WPM junto com a precisão.', '/typing-test/'],
+  ['games', 'Mude o ritmo com jogos', 'Use um jogo de digitação para variar a prática.', '/typing-games/'],
+];
+ptBR.statementTags = ['Aulas curtas', 'Retorno imediato', 'Sem instalar nada'];
+ptBR.people = [
+  ['student', 'Estudos', 'Anotações, trabalhos e ideias.', 'Encontre as teclas com mais facilidade enquanto escreve.'],
+  ['learner', 'Trabalho', 'E-mails, documentos e tarefas.', 'Pratique uma habilidade que você usa no computador todos os dias.'],
+  ['creative', 'Criação', 'Textos, códigos e histórias.', 'Dê mais atenção ao que você quer escrever.'],
+  ['team', 'Equipe', 'Conversas e projetos.', 'Registre e compartilhe suas ideias com mais conforto.'],
+  ['teaching', 'Ensino', 'Aulas e atividades.', 'Use o teclado com mais segurança nas tarefas de estudo.'],
+  ['everyday', 'Dia a dia', 'Mensagens e pesquisas.', 'Fique mais à vontade para digitar no computador.'],
+];
+ptBR.spec = [
+  ['Para começar', 'Grátis, sem cadastro'],
+  ['Aulas', 'Das teclas básicas a textos'],
+  ['Retorno', 'Acertos e erros a cada caractere'],
+  ['Teste', 'Velocidade em WPM e precisão'],
+  ['Acesso', 'Direto no navegador'],
+];
+ptBR.resources = [
+  ['01', 'Prática livre', 'Digite um texto escolhido por você.', '/practice/'],
+  ['02', 'Teste de digitação', 'Veja seu ritmo atual.', '/typing-test/'],
+  ['03', 'Seu progresso', 'Revise sua prática.', '/progress/'],
+  ['04', 'Jogos de digitação', 'Experimente outro desafio.', '/typing-games/'],
+];
+ptBR.faq = [
+  ['O TypingEase é grátis?', 'Sim. Você pode começar as aulas, praticar com seus textos e fazer um teste de digitação no navegador, sem criar uma conta.'],
+  ['Por onde começo se ainda olho para o teclado?', 'Comece pelas primeiras aulas do curso. Pratique a posição dos dedos e avance para palavras e textos conforme se sentir mais seguro.'],
+  ['Preciso instalar alguma coisa?', 'Não. O TypingEase funciona no navegador. Um teclado físico ajuda você a praticar a posição dos dedos.'],
+  ['Devo priorizar velocidade ou precisão?', 'Comece procurando digitar com menos erros. Depois use o WPM e a precisão do teste para acompanhar sua evolução.'],
+];
+ptBR.footerGroups = [
+  ['Produto', ['Aulas', '/learn/'], ['Curso', '/lessons/'], ['Teste de digitação', '/typing-test/']],
+  ['Explorar', ['Prática livre', '/practice/'], ['Jogos de digitação', '/typing-games/'], ['Progresso', '/progress/']],
+  ['Recursos', ['Digitação com 10 dedos', '/touch-typing/'], ['O que é WPM?', '/what-is-wpm/'], ['Sobre', '/about/']],
+];
+for (const [kind, label] of [
+  ['course', 'Curso de digitação'], ['practice', 'Prática livre'], ['test', 'Teste de digitação'],
+  ['progress', 'Seu progresso'], ['lesson', 'Aulas'], ['games', 'Jogos de digitação'],
+]) ptBR.arc.find(item => item[0] === kind)[1] = label;
+for (const [kind, label] of [
+  ['touch', 'Digitação com 10 dedos'], ['faster', 'Como digitar mais rápido'],
+  ['wpm', 'O que é WPM?'], ['average', 'Velocidade de digitação'],
+]) ptBR.arc.find(item => item[0] === kind)[1] = label;
 
 export default base;

@@ -22,7 +22,7 @@ export default {
     ui: '/i18n/ui.pl.js',
     routes: {
       home: '/pl/', lessons: '/pl/lekcje/', learn: '/pl/nauka/', test: '/pl/test-pisania/',
-      progress: '/pl/postepy/', games: '/pl/gry-do-pisania/', free: null, weak: null, guide: null, wpm: null
+      progress: '/pl/postepy/', games: '/pl/gry-do-pisania/', free: null, weak: null, guide: null, wpm: '/pl/jak-szybko-pisac-na-klawiaturze/'
     },
     s: {
       title: c => `Kurs pisania dziesięcioma palcami: ${lessons(c.sequence.length)} | TypingEase`,
@@ -31,7 +31,7 @@ export default {
         description: (c, f) => `Darmowy kurs pisania bezwzrokowego na układzie ${f.name}, klawisz po klawiszu: ${units(c.units.length)} i ${lessons(c.sequence.length)}, od rzędu podstawowego po cyfry, znaki i teksty.`,
         h1: (c, f) => `Kurs pisania bezwzrokowego · ${f.name} · ${lessons(c.sequence.length)}`
       },
-      description: c => `Darmowy kurs pisania dziesięcioma palcami na polskiej klawiaturze programisty: ${units(c.units.length)} i ${lessons(c.sequence.length)}, od rzędu podstawowego po cyfry, znaki i długie teksty.`,
+      description: c => `Darmowy kurs pisania dziesięcioma palcami na polskiej klawiaturze programisty: ${units(c.units.length)} i ${lessons(c.sequence.length)}, od rzędu podstawowego po cyfry i długie teksty.`,
       nav: r => [[r.home, 'Ćwicz'], [r.lessons, 'Kurs'], [r.progress, 'Postępy'], [r.test, 'Test'], [r.games, 'Gry']],
       navAria: 'Nawigacja główna',
       enter: 'Zacznij',
@@ -60,10 +60,10 @@ export default {
         // nen the nay phai noi dung ve BAN PHIM CUA TRANG DO — `r.lessons` cho biet la trang nao.
         r.lessons === '/pl/qwertz/'
           ? [r.home, 'Klawiatura tego kursu', 'Ten kurs jest zbudowany na polskiej klawiaturze QWERTZ, na której polskie litery mają własne klawisze: Ł i Ą w rzędzie podstawowym, Ż, Ś i Ó przy prawej krawędzi, a Ę, Ń, Ć i Ź z Shiftem.', 'Wróć na początek']
-          : [r.home, 'Klawiatura tego kursu', 'Kurs jest zbudowany na polskiej klawiaturze programisty. Polskie litery wpisuje się na niej prawym Altem, a tego kurs jeszcze nie uczy — dlatego ćwiczenia używają słów bez nich. Na klawiaturze QWERTZ polskie litery mają własne klawisze i osobny kurs.', 'Wróć na początek']
+          : [r.home, 'Klawiatura tego kursu', 'Kurs jest zbudowany na polskiej klawiaturze programisty. Polskie litery wpisuje się na niej prawym Altem: kurs uczy go już w pierwszej części, zaczynając od ą. Na klawiaturze QWERTZ polskie litery mają własne klawisze i osobny kurs.', 'Wróć na początek']
       ],
       footerAria: 'Zasoby TypingEase',
-      footerLinks: r => [[r.home, 'Ćwicz'], [r.lessons, 'Kurs'], [r.progress, 'Postępy']],
+      footerLinks: r => [[r.home, 'Ćwicz'], [r.lessons, 'Kurs'], [r.progress, 'Postępy'], [r.wpm, 'Jak szybko pisać']],
       footerTag: 'Pisz trochę wolniej, a zajdziesz dużo dalej.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

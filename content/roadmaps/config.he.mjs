@@ -14,7 +14,7 @@ export default {
     ui: '/i18n/ui.he.js',
     routes: {
       home: '/he/', lessons: '/he/shiurim/', learn: '/he/lilmod/', test: '/he/mivchan-hakldada/',
-      progress: '/he/hitkadmut/', games: '/he/mishakei-hakldada/', free: null, weak: null, guide: null, wpm: null
+      progress: '/he/hitkadmut/', games: '/he/mishakei-hakldada/', free: null, weak: null, guide: null, wpm: '/he/eich-lehakid-maher-yoter/'
     },
     s: {
       title: c => `קורס הקלדה עיוורת בעברית: ${c.sequence.length} שיעורים | TypingEase`,
@@ -50,7 +50,7 @@ export default {
         [r.home, 'שלוש מקלדות עבריות', 'תקנית, SI-1452 ופונטית — ולכל אחת קורס משלה, שבנוי על המקשים שלה.', 'לדף התרגול']
       ],
       footerAria: 'משאבים של TypingEase',
-      footerLinks: r => [[r.home, 'תרגול'], [r.lessons, 'קורס'], [r.progress, 'התקדמות']],
+      footerLinks: r => [[r.home, 'תרגול'], [r.lessons, 'קורס'], [r.progress, 'התקדמות'], [r.wpm, 'להקליד מהר יותר']],
       footerTag: 'קצת יותר לאט, והרבה יותר רחוק.',
       switches: []
     }

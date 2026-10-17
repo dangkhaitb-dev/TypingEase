@@ -131,3 +131,25 @@
 .product-content[dir="rtl"] .product-step,
 .product-content[dir="rtl"] .product-person{direction:rtl}
 @media(prefers-reduced-motion:reduce){.product-arc-inner{transition:none}}
+
+/* Display copy keeps its visual role without adding decorative entries to the H2 outline. */
+.product-content .product-heading > p.product-display-title,
+.product-content .product-final > p.product-display-title,
+.product-content .product-statement .product-statement-content > p.product-display-title{
+  font-family:var(--home-display);font-weight:400;line-height:1.08;letter-spacing:-.04em;margin:0;
+}
+.product-content .product-heading > p.product-display-title{font-size:clamp(38px,4.6vw,66px);color:#131517}
+.product-content .product-heading > p.product-display-title em,
+.product-content .product-final > p.product-display-title em{font-family:var(--home-serif);font-style:italic;font-weight:500;letter-spacing:-.025em;color:var(--primary-600)}
+.product-content .product-statement .product-statement-content > p.product-display-title{
+  max-width:none;font-size:clamp(34px,3.4vw,48px);color:#17191b;
+}
+.product-content .product-statement .product-statement-content > p.product-display-title em{
+  font-family:inherit;font-style:normal;font-weight:inherit;color:var(--primary-600);
+}
+.product-content .product-final > p.product-display-title{font-size:clamp(40px,5.3vw,76px);line-height:1.1;max-width:980px;margin-inline:auto;color:#131517}
+@media(max-width:700px){
+  .product-content .product-heading > p.product-display-title,
+  .product-content .product-statement .product-statement-content > p.product-display-title,
+  .product-content .product-final > p.product-display-title{font-size:36px}
+}

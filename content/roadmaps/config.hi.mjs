@@ -13,7 +13,7 @@ export default {
     ui: '/i18n/ui.hi.js',
     routes: {
       home: '/hi/', lessons: '/hi/path/', learn: '/hi/seekhen/', test: '/hi/typing-test/',
-      progress: '/hi/pragati/', games: '/hi/typing-games/', free: null, weak: null, guide: null, wpm: null
+      progress: '/hi/pragati/', games: '/hi/typing-games/', free: null, weak: null, guide: null, wpm: '/hi/typing-speed-kaise-badhaye/'
     },
     s: {
       title: c => `हिंदी टच टाइपिंग कोर्स: ${c.sequence.length} पाठ | TypingEase`,
@@ -49,7 +49,7 @@ export default {
         [r.home, 'अपने कीबोर्ड पर लिखें', 'QWERTY, AZERTY, इनस्क्रिप्ट, अरबी, JIS — असली कीबोर्ड लेआउट, और कोर्स उसी के साथ चलता है जिसे आप चुनते हैं।', 'लेआउट देखें']
       ],
       footerAria: 'TypingEase के संसाधन',
-      footerLinks: r => [[r.home, 'अभ्यास'], [r.lessons, 'कोर्स'], [r.progress, 'प्रगति']],
+      footerLinks: r => [[r.home, 'अभ्यास'], [r.lessons, 'कोर्स'], [r.progress, 'प्रगति'], [r.wpm, 'टाइपिंग स्पीड कैसे बढ़ाएं']],
       footerTag: 'थोड़ा धीरे चलिए, बहुत दूर तक पहुँचेंगे।',
       switches: []
     }

@@ -98,4 +98,9 @@ const copies = {
   }
 };
 
+// Lead with the practice terms people use in each market while keeping the CTA short.
+copies.ja.heroTitle = '無料で<em>タイピング練習</em>を始めよう';
+copies.ko.heroTitle = '<em>타자 연습</em>을 무료로 시작하세요';
+copies.th.heroTitle = 'ฝึกพิมพ์<em>สัมผัสฟรี</em>';
+
 export default copies;

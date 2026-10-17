@@ -4,7 +4,7 @@
  * day, khong o i18n/ui.ja.js, vi day la cong cu chay luc build.
  *
  * Khoa tieng Nhat day go ROMAJI cho IME (xem data/courses/ja.js), nen phan gioi thieu noi thang
- * dieu do, va noi nguoi hoc tat IME khi luyen.
+ * dieu do: vai bai dau tat IME (go romaji tran), tu bai 「日本語 IME の確定」 bat IME va cham chu da chot.
  *
  * `null` trong `routes` = trang do chua co ban tieng Nhat. Moi danh sach ben duoi loc null ra.
  */
@@ -15,7 +15,7 @@ export default {
     ui: '/i18n/ui.ja.js',
     routes: {
       home: '/ja/', lessons: '/ja/renshu/', learn: '/ja/manabu/', test: '/ja/typing-test/',
-      progress: '/ja/shinchoku/', games: '/ja/typing-games/', free: null, weak: null, guide: null, wpm: null
+      progress: '/ja/shinchoku/', games: '/ja/typing-games/', free: null, weak: null, guide: null, wpm: '/ja/hayaku-utsu-hoho/'
     },
     s: {
       title: c => `タッチタイピング練習：全${c.sequence.length}レッスン | TypingEase`,
@@ -31,7 +31,7 @@ export default {
       enter: '始める',
       eyebrow: 'TypingEase の講座',
       h1: c => `タッチタイピング講座 · 全 ${c.sequence.length} レッスン · ${c.units.length} ユニット`,
-      intro: 'この講座では、日本語を IME で入力するときのローマ字の打鍵を練習します。gakkou と打てば、\n          IME が「がっこう」にし、「学校」に変換します。練習中は IME をオフ（半角英数）にして、画面の\n          ローマ字をそのまま打ってください。各レッスンでは新しいキーを2つずつ、短い画面に分けて練習します。\n          1レッスンは5分ほどです。',
+      intro: 'この講座では、日本語を IME で入力するときのローマ字の打鍵を練習します。gakkou と打てば、\n          IME が「がっこう」にし、「学校」に変換します。最初の数レッスンは IME をオフ（半角英数）にして\n          ローマ字をそのまま打ち、「日本語 IME の確定」からは IME をオンにして、確定した文字で採点します。各レッスンでは新しいキーを2つずつ、短い画面に分けて練習します。\n          1レッスンは5分ほどです。',
       countDone: total => `0/${total} レッスン完了`,
       cta: 'レッスン 1 を始める',
       sideUnit: 'ユニット', sideOther: 'そのほか', sideAria: 'ユニットの一覧',
@@ -51,7 +51,7 @@ export default {
         [r.home, '自分のキーボードで打つ', 'QWERTY、AZERTY、QWERTZ、デーヴァナーガリー、アラビア文字、JIS。このサイトには本物の配列がそろっていて、講座は選んだ配列に合わせて進みます。', '配列を見る']
       ],
       footerAria: 'TypingEase の資料',
-      footerLinks: r => [[r.home, '練習'], [r.lessons, 'コース'], [r.progress, '進み具合']],
+      footerLinks: r => [[r.home, '練習'], [r.lessons, 'コース'], [r.progress, '進み具合'], [r.wpm, 'タイピングを速くする方法']],
       footerTag: '少しゆっくり打つほど、遠くまで行けます。',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

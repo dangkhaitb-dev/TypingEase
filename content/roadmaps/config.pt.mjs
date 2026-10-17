@@ -18,7 +18,7 @@ export default {
   routes: {
     home: '/pt/', lessons: '/pt/licoes/', learn: '/pt/aprender/',
     // Chưa có bản tiếng Bồ. `null` là tín hiệu BỎ liên kết.
-    test: '/pt/teste-de-digitacao/', progress: '/pt/progresso/', games: '/pt/jogos-de-digitacao/', free: null, weak: null, guide: null, wpm: null
+    test: '/pt/teste-de-digitacao/', progress: '/pt/progresso/', games: '/pt/jogos-de-digitacao/', free: null, weak: null, guide: null, wpm: '/pt/como-digitar-mais-rapido/'
   },
 
   s: {
@@ -55,7 +55,7 @@ export default {
       [r.home, 'Digite no seu próprio teclado', 'QWERTY, AZERTY, QWERTZ, devanágari, árabe, JIS — layouts reais, e o curso acompanha o que você escolher.', 'Ver os layouts']
     ],
     footerAria: 'Recursos do TypingEase',
-    footerLinks: r => [[r.lessons, 'Curso'], [r.learn, 'Lições'], [r.progress, 'Progresso'], [r.test, 'Teste de velocidade'], [r.games, 'Jogos de digitação']],
+    footerLinks: r => [[r.lessons, 'Curso'], [r.learn, 'Lições'], [r.progress, 'Progresso'], [r.test, 'Teste de velocidade'], [r.games, 'Jogos de digitação'], [r.wpm, 'Digitar mais rápido']],
     footerTag: 'Vá um pouco mais devagar e você vai chegar muito mais longe.',
     switches: [
       ['EN', '/lessons/', 'en', 'English version'],

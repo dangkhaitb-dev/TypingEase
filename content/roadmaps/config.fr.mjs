@@ -16,7 +16,7 @@ export default {
   ui: '/i18n/ui.fr.js',
   routes: {
     home: '/fr/', lessons: '/fr/lecons/', learn: '/fr/apprendre/', test: '/fr/test-de-frappe/',
-    progress: '/fr/progres/', games: '/fr/jeux-de-dactylographie/', free: null, weak: null, guide: null, wpm: null
+    progress: '/fr/progres/', games: '/fr/jeux-de-dactylographie/', free: null, weak: null, guide: null, wpm: '/fr/taper-plus-vite-au-clavier/'
   },
   s: {
     title: c => `Cours de dactylographie AZERTY : ${c.sequence.length} leçons | TypingEase`,
@@ -52,7 +52,7 @@ export default {
       [r.home, 'Écris sur ton propre clavier', 'QWERTY, AZERTY, QWERTZ, devanagari, arabe, JIS — 119 dispositions réelles, et le cours suit celle que tu choisis.', 'Voir les dispositions']
     ],
     footerAria: 'Ressources TypingEase',
-    footerLinks: r => [[r.home, 'Pratiquer'], [r.lessons, 'Cours'], [r.progress, 'Progrès'], [r.test, 'Test de frappe'], [r.games, 'Jeux de dactylographie']],
+    footerLinks: r => [[r.home, 'Pratiquer'], [r.lessons, 'Cours'], [r.progress, 'Progrès'], [r.test, 'Test de frappe'], [r.games, 'Jeux de dactylographie'], [r.wpm, 'Taper plus vite']],
     footerTag: 'Va un peu plus lentement, et tu iras beaucoup plus loin.',
     switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
   }

@@ -1834,3 +1834,35 @@ TypingEase, giữ topbar ngang.
   hết. de-schweiz (layout 193 không có ß): 7/10 đoạn tiếng Đức có ß → viết lại 5 đoạn bằng từ thay thế
   tự nhiên (Draußen → Vor dem Fenster, Straße → Gehweg, grüßt → begegnet, große → lange, heiße →
   dampfende), còn 2/10. hi-bolnagri vẫn bỏ 10/15 — bàn phím phiên âm, cố ý dùng bộ đoạn riêng (v20).
+
+---
+
+# 2026-10-17 — Trang test tốc độ: phủ keyword còn thiếu, mục "người mới và trẻ em" (26 ngôn ngữ)
+
+Theo bảng keyword của chủ site. Dò title, H1 và thân bài trong dist/ cho thấy trang test của mọi ngôn ngữ
+thiếu nhóm L4 (người mới, trẻ em, cụm 1/5/10 phút) và một số cụm L2 (online, miễn phí, accuracy test,
+tên gọi khác của bài test). Chủ site yêu cầu: không viết kiểu spam, không generic, phải có quan điểm cá nhân.
+- **Mỗi trang test thêm MỘT mục cho người mới và trẻ em:** /typing-test/ và /kiem-tra-toc-do-go/ sửa
+  tay, 24 ngôn ngữ còn lại sửa trong content/typing-test/<lang>.mjs. Mục viết ở ngôi thứ nhất, có lập
+  trường và gắn với bàn phím hoặc bộ gõ của ngôn ngữ đó: dấu Telex, tecla muerta/ñ, umlaut, Alt phải
+  cho chữ Ba Lan, ı/i, ি/ী chung phím trên Jatiya, ि/ी trên InScript, chữ cần Shift trên bàn phím Ả Rập,
+  Ba Tư, Urdu, Thái, Nga, romaji shi/tsu, Backspace khi đang ghép âm tiết Hangul, phím cách và thanh 1
+  của chú âm. Các câu "phím X cần Shift" đã đối chiếu với content/data/keyboards/layouts.
+- **Nói thật:** không có chế độ trẻ em, đoạn văn viết cho người lớn, không phải công cụ tìm phím hỏng
+  ("test bàn phím" chỉ dùng theo nghĩa này), chưa có 倉頡. KHÔNG tạo trang riêng cho từng thời lượng
+  (trang cửa ngõ). Cụm keyword nào không vào được câu tự nhiên thì bỏ, có ghi lý do (vd. nl
+  "woorden per minuut test", tr "dakikada kelime testi", sw "5/10 minute typing test").
+- **Title đổi:** en, de, nl, pl, ar ("اون لاين"), fa ("آنلاین"). Description đổi: en, vi, ja, ko.
+  H1 đổi: en, ur. Mọi title/description vẫn trong giới hạn của Đợt 0.
+- **Kết quả:** 140/148 cụm thiếu nay có trên trang. 8 cụm còn lại có ở dạng biến cách hoặc gộp
+  ("1, 5 oder 10 Minuten"). Build và `npm run check` đạt. Kiểm tra tĩnh 26 trang test: một H1, không
+  trùng ID, JSON-LD parse được. Chưa chạy e2e (máy này chưa cấu hình playwright/Chrome), chưa có người
+  bản ngữ đọc lại. Ví dụ "20 vs 40 PPM" trong các mục es/pt/fr/it là minh hoạ, không phải số liệu.
+- **Cân bằng design (cùng ngày, theo yêu cầu chủ site):** 24 trang test sinh tự động giờ dùng cùng layout
+  đọc với /typing-test/ và /kiem-tra-toc-do-go/: seo-reading.css, mục lục, khung 760px, chữ 17px/1.75.
+  `seoReading()` có nhãn mục lục cho 27 ngôn ngữ, nhưng chỉ bật cho mọi ngôn ngữ khi gọi với
+  `allLanguages: true`. Trang test bật cờ này; trang game và trang khoá học vẫn chỉ EN/VI. Mục
+  "người mới" từng dài gấp 1.2–1.86 lần các mục khác. Đoạn trẻ em trùng câu FAQ ở 13 ngôn ngữ nên đã bỏ
+  khỏi mục (H2 thành "cho người mới"); id/ms chuyển đoạn đó thành FAQ. Tỉ lệ còn 1.0–1.5, đa số
+  ≤ 1.3. Đã kiểm de (desktop) và ar (RTL, 390px) trên Chrome: không tràn ngang, mục lục một cột
+  trên mobile.

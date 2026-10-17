@@ -13,7 +13,7 @@ export default {
     ui: '/i18n/ui.fil.js',
     routes: {
       home: '/fil/', lessons: '/fil/aralin/', learn: '/fil/matuto/', test: '/fil/typing-test/',
-      progress: '/fil/pag-unlad/', games: '/fil/laro-sa-pagta-type/', free: null, weak: null, guide: null, wpm: null
+      progress: '/fil/pag-unlad/', games: '/fil/laro-sa-pagta-type/', free: null, weak: null, guide: null, wpm: '/fil/how-to-type-faster/'
     },
     s: {
       title: c => `Typing lessons sa Filipino: ${c.sequence.length} libreng aralin | TypingEase`,
@@ -22,7 +22,7 @@ export default {
         description: (c, f) => `Libreng kurso sa pagtitipa na ginawa para sa ${f.keyboard}, isa-isang key: ${c.units.length} yunit at ${c.sequence.length} aralin, mula sa gitnang hanay hanggang sa mga numero, simbolo at mahahabang teksto.`,
         h1: (c, f) => `Kurso sa pagtitipa · ${f.name} · ${c.sequence.length} aralin`
       },
-      description: c => `Libreng kurso sa pagtitipa: ${c.units.length} yunit at ${c.sequence.length} aralin, mula sa gitnang hanay hanggang sa mga numero, simbolo at mahahabang teksto, sa totoong salitang Filipino.`,
+      description: c => `Libreng kurso sa pagtitipa: ${c.units.length} yunit at ${c.sequence.length} aralin, mula sa gitnang hanay hanggang sa mga numero, simbolo at mahahabang teksto sa Filipino.`,
       nav: r => [[r.home, 'Magsanay'], [r.lessons, 'Kurso'], [r.progress, 'Pag-unlad'], [r.test, 'Pagsusulit'], [r.games, 'Laro']],
       navAria: 'Pangunahing nabigasyon',
       enter: 'Simulan',
@@ -48,7 +48,7 @@ export default {
         [r.home, 'Ang keyboard ng kurso', 'QWERTY ang itinuturo ng kursong ito, ang karaniwang layout sa Pilipinas. Walang key para sa ñ ang layout na ito, kaya wala ring ñ sa mga aralin.', 'Bumalik sa simula']
       ],
       footerAria: 'Mga gamit ng TypingEase',
-      footerLinks: r => [[r.home, 'Magsanay'], [r.lessons, 'Kurso'], [r.progress, 'Pag-unlad']],
+      footerLinks: r => [[r.home, 'Magsanay'], [r.lessons, 'Kurso'], [r.progress, 'Pag-unlad'], [r.wpm, 'How to type faster']],
       footerTag: 'Bagalan nang kaunti, at mas malayo ang mararating mo.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }

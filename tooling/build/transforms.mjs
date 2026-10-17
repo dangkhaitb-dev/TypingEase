@@ -21,6 +21,7 @@ import { stampScripts, curriculumHash } from '../lib/stamp.mjs';
 import { seoHead, START, END, ORIGIN } from '../lib/seo-head.mjs';
 import { legalFooter, LEGAL_START, LEGAL_END } from '../lib/legal.mjs';
 import { hubTransform } from '../pages/typing-tests.mjs';
+import { guideHubTransform } from '../pages/guides.mjs';
 import { siteHeader } from '../lib/site-header.mjs';
 import { homePresentation } from '../lib/home-presentation.mjs';
 
@@ -158,5 +159,8 @@ export const TRANSFORMS = [
   ['seo-head', handWritten(seoBlock)],
   // hreflang of the two hand-written typing-test hubs (/typing-test/, /kiem-tra-toc-do-go/): one
   // line per language whose test page tooling/pages/typing-tests.mjs builds.
-  ['typing-test-hubs', hubTransform]
+  ['typing-test-hubs', hubTransform],
+  // hreflang of the two hand-written "type faster" guides (/how-to-type-faster/, /cach-tang-wpm/):
+  // one line per language whose guide tooling/pages/guides.mjs builds.
+  ['guide-hubs', guideHubTransform]
 ];

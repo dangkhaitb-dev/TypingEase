@@ -23,7 +23,7 @@ export default {
     ui: '/i18n/ui.ru.js',
     routes: {
       home: '/ru/', lessons: '/ru/uroki/', learn: '/ru/uchitsya/', test: '/ru/test-skorosti-pechati/',
-      progress: '/ru/progress/', games: '/ru/igry-dlya-pechati/', free: null, weak: null, guide: null, wpm: null
+      progress: '/ru/progress/', games: '/ru/igry-dlya-pechati/', free: null, weak: null, guide: null, wpm: '/ru/kak-bystro-pechatat-na-klaviature/'
     },
     s: {
       title: c => `Печать десятью пальцами: курс, ${lessons(c)} | TypingEase`,
@@ -59,7 +59,7 @@ export default {
         [r.home, 'Две русские раскладки', 'У стандартной раскладки ЙЦУКЕН и у фонетической — отдельные курсы: каждый учит клавиши там, где они стоят на твоей клавиатуре.', 'Выбрать раскладку']
       ],
       footerAria: 'Материалы TypingEase',
-      footerLinks: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогресс']],
+      footerLinks: r => [[r.home, 'Практика'], [r.lessons, 'Курс'], [r.progress, 'Прогресс'], [r.wpm, 'Как быстро печатать']],
       footerTag: 'Чуть медленнее сейчас — гораздо дальше потом.',
       switches: [['EN', '/lessons/', 'en', 'English version'], ['VI', '/bai-hoc/', 'vi', 'Bản tiếng Việt']]
     }
