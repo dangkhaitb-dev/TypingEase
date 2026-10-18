@@ -1916,3 +1916,28 @@ tên gọi khác của bài test). Chủ site yêu cầu: không viết kiểu s
 - **CẢNH BÁO:** content/data/lessons được nhập từ typekute (tooling/data/import-typekute.mjs). Chạy lại
   import sẽ ghi đè các sửa ở trên, trừ khi sửa cùng nội dung trong
   typekute/content/packs/{es,nl,uk}/lessons và maps.
+- **Bổ sung cùng đợt:**
+  - **Bài riêng cho 29 trang họ bàn phím** (editorial.<mã-họ>.mjs). Mỗi bài dựa trên khác biệt thật
+    giữa hai file layout, nên các trang họ cùng ngôn ngữ chỉ còn trùng 28–51%, trước đây là 55–92%.
+    Phần trùng còn lại là danh sách tên bài.
+  - **Biên tập bản ngữ** khoảng 1.000 chỗ trên 25 ngôn ngữ: bỏ H2 kiểu "keyword: …", sửa calque, xưng
+    hô và số nhiều (pl "143 lekcji", ru "133 уроков").
+  - **nl:** sửa thêm nl-01-015/016 và nl-03-014/017 theo layout 198. nl-01-016 đổi từ "phím AltGr"
+    sang "phím chết ´: é", vì trên 198 AltGr+e ra €. Đã sửa curriculum.nl.js theo.
+  - **ms:** "Melompat ke hadapan", "Huruf kecil dan bar ruang".
+- **Lỗi sản phẩm sửa:**
+  - player.js `nextKeyHint`: với bộ gõ (Telex), chữ hoa nay sáng cả Shift. Trước đây `keysFor()` đổi
+    chữ hoa thành chữ thường nên Shift không sáng.
+  - script.js: Enter trên trang chủ dùng nút `.product-start-form a.primary-button` khi không có
+    `#hero-go`.
+- **e2e:** tooling/test/e2e.js cập nhật theo site hiện tại (mã bài mới, `.site-language`, chọn thời
+  lượng bằng `select`, thẻ trò chơi, header mới; CHROME tự lấy đường dẫn macOS). Kết quả 112/112 PASS.
+  Test 12/12c/13/22e được sửa theo tư thế tay sau commit d557b11 (Shift không còn ưu tiên ngón út tay
+  kia, phím cách dùng ngón cái trái, phím "<" của ISO). Commit này làm khác yêu cầu ngày 2026-09-18,
+  CẦN CHỦ SITE XÁC NHẬN.
+- **Còn mở (cần quyết định):**
+  - es-sin-teclas-muertas (177) và pt-sem-teclas-mortas (179) có khoảng 640 và 766 chữ có dấu không gõ
+    được. Nguyên nhân: generator coi ´ ` ^ ~ ¨ dạng ký tự thường là phím chết.
+  - Tên hai khoá fa bị ngược: khoá chính (109) là bố cục Windows cũ, /fa/windows/ (140) là ISIRI 9147.
+  - 136.json: ô Backslash ra ký tự U+F8C7; Shift+B trùng với ◌ั.
+  - fr-canadien u3-l02: lời dạy nhắc dấu mũ nhưng bài không có.

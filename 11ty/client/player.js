@@ -602,6 +602,10 @@
     const want = run.target[position];
     if (!want) return want;
     const keys = composer.keysFor(want);
+    // keysFor() trả phím ở dạng chữ thường (Telex: "Ầ" -> a a f). Chữ hoa thì phím ĐẦU phải giữ chữ hoa
+    // để bàn phím sáng cả Shift, như khoá không có bộ gõ.
+    const base = want.normalize('NFD')[0];
+    if (keys[0] && base !== base.toLowerCase() && keys[0] === base.toLowerCase()) return keys[0].toUpperCase();
     return keys[0] || want;
   }
 

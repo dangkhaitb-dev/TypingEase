@@ -6,7 +6,7 @@
  */
 export default {
   slug: 'how-to-type-faster',
-  title: 'How to type faster, isang gabay para sa Filipino | TypingEase',
+  title: 'How to type faster: gabay para sa Filipino | TypingEase',
   description: 'How to type faster sa Filipino. Alamin kung saan ka bumabagal, sanayin ang ng at mga, ang gitling at ang inuulit na pantig, at sukatin ang pag-unlad.',
   breadcrumbAria: 'Breadcrumb',
   homeCrumb: 'Pangunahing pahina',

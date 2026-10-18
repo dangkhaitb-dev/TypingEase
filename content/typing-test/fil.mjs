@@ -5,7 +5,7 @@
  */
 export default {
   slug: 'typing-test',
-  title: 'Libreng typing speed test para sa WPM at katumpakan | TypingEase',
+  title: 'Libreng typing speed test: WPM at katumpakan | TypingEase',
   description: 'Libreng typing test sa browser: mag-type nang 1, 5 o 10 minuto at makita ang iyong WPM, katumpakan at mga mali. Walang sign-up at walang account.',
   breadcrumbAria: 'Breadcrumb',
   homeCrumb: 'Pangunahing pahina',

@@ -6,7 +6,7 @@
 export default {
   slug: 'cara-menaip-dengan-cepat',
   title: 'Cara menaip dengan cepat dalam Bahasa Melayu | TypingEase',
-  description: 'Cara menaip dengan cepat dalam Bahasa Melayu bermula dengan mencari punca anda lambat. Latih imbuhan, ny dan sempang kata ganda, kemudian ukur kemajuan dengan jujur.',
+  description: 'Cara menaip dengan cepat dalam Bahasa Melayu bermula dengan mencari punca anda lambat. Latih imbuhan, ny dan kata ganda, kemudian ukur kemajuan anda.',
   breadcrumbAria: 'Breadcrumb',
   homeCrumb: 'Halaman utama',
   crumb: 'Menaip dengan cepat',

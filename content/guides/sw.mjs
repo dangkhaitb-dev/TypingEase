@@ -7,7 +7,7 @@
 export default {
   slug: 'jinsi-ya-kuandika-haraka',
   title: 'Jinsi ya kuandika haraka (how to type faster) | TypingEase',
-  description: 'Jinsi ya kuandika haraka kwa Kiswahili (how to type faster) kwa hatua tatu: tafuta unapopoteza kasi, fanya mazoezi ya ny, ng\' na vitenzi virefu, kisha pima maendeleo.',
+  description: 'Jinsi ya kuandika haraka kwa Kiswahili (how to type faster): tafuta unapopoteza kasi, fanya mazoezi ya ny, ng\' na vitenzi virefu, kisha pima maendeleo.',
   breadcrumbAria: 'Njia ya ukurasa',
   homeCrumb: 'Mwanzo',
   crumb: 'Kuandika haraka',

@@ -338,7 +338,8 @@ if (continueCard) {
 // Người cũ (continue card đang hiện) → tiếp tục bài đang học; người mới (card ẩn) → nút #hero-go.
 document.addEventListener('keydown', event => {
   if (event.key !== 'Enter' || event.defaultPrevented || event.ctrlKey || event.metaKey || event.altKey) return;
-  const heroGo = document.querySelector('#hero-go');
+  // Hero mới (tooling/lib/product-landing.mjs) không còn #hero-go: nút Bắt đầu là link trong .product-start-form.
+  const heroGo = document.querySelector('#hero-go') || document.querySelector('.product-start-form a.primary-button');
   const returning = continueCard && !continueCard.hidden;
   if (!returning && !heroGo) return;
   const active = document.activeElement;

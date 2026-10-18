@@ -4,7 +4,7 @@
 export default {
   worlds: {"rain": "Taman kelip-kelip", "race": "Litar senja", "keys": "Stesen angkasa"},
   slug: 'permainan-menaip',
-  title: 'Permainan menaip percuma pada papan kekunci anda | TypingEase',
+  title: 'Permainan menaip percuma di papan kekunci anda | TypingEase',
   description: 'Tiga permainan menaip percuma: Hujan Kata, Lumba Bayang dan Buru Kekunci. Berlatih menaip sentuh pada papan kekunci anda dalam pelayar, tanpa daftar.',
   breadcrumbAria: 'Breadcrumb',
   homeCrumb: 'Halaman utama',
