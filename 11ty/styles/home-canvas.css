@@ -3,49 +3,28 @@
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url(/assets/fonts/abhaya-libre-800.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: url(/assets/fonts/inter-400.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url(/assets/fonts/inter-500.ttf) format('truetype');
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: url(/assets/fonts/inter-600.ttf) format('truetype');
+  src: url(/assets/fonts/abhaya-libre-800.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url(/assets/fonts/outfit-400.ttf) format('truetype');
+  src: url(/assets/fonts/outfit-400.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 500;
   font-display: swap;
-  src: url(/assets/fonts/outfit-500.ttf) format('truetype');
+  src: url(/assets/fonts/outfit-500.woff2) format('woff2');
 }
 @font-face {
   font-family: 'Outfit';
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url(/assets/fonts/outfit-600.ttf) format('truetype');
+  src: url(/assets/fonts/outfit-600.woff2) format('woff2');
 }
 /* MiniMax-inspired composition. One surface and spacing system for the
    product homepage; all people photographs remain source stock imagery. */

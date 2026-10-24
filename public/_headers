@@ -1,0 +1,4 @@
+# Cloudflare Pages response headers. Everything Vite emits to /_build/ carries a content hash in its
+# name, so a new build means a new URL: those files can be cached for a year without revalidation.
+/_build/*
+  Cache-Control: public, max-age=31536000, immutable
