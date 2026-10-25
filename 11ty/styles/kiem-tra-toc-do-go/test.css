@@ -131,8 +131,9 @@ details p{margin:-4px 0 0;padding:0 22px 20px;color:var(--ink-600);font-size:15p
 .test-cta .primary-button{margin-top:8px}
 
 /* Liên kết trong bài của trang test/trò chơi. */
-.test-main .inline-link{color:var(--link);font-weight:inherit;text-decoration:none}
-.test-main .inline-link:hover{text-decoration:underline}
+/* Underlined, not colour alone: a link inside a sentence must stand out without colour vision (WCAG 1.4.1). */
+.test-main .inline-link{color:var(--link);font-weight:inherit;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:3px}
+.test-main .inline-link:hover{color:var(--primary-700)}
 
 /* Roboto Mono chỉ có chữ Latin/Cyrillic: chữ Ả Rập, Ba Tư, Urdu, Hebrew, Devanagari, Bengali, Thái, CJK,
    Hàn rơi về font dự phòng theo TỪNG ký tự (mỗi ký tự một <span>) và nét nối bị ngắt. Dùng font không

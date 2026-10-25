@@ -33,7 +33,7 @@
 .curriculum-page .lesson-rows{border:1px solid #e9ede9;border-radius:14px;box-shadow:none}
 .curriculum-page .lesson-row a,.curriculum-page .lesson-row .lr-link{min-height:72px;padding-inline:16px;gap:14px}
 .curriculum-page .lr-title{font-size:15px}
-.curriculum-page .lr-meta{font-size:11px;margin-top:3px}
+.curriculum-page .lr-meta{font-size:12px;margin-top:3px}
 .curriculum-page .lr-state{font-size:12px}
 .curriculum-page .lr-mark{border-radius:10px;background:#f1f4f1}
 .curriculum-page .lesson-row.is-current{background:#f0f7f1}
@@ -66,7 +66,7 @@ body.player-page{background:#f7f8f7}
 .player-page .lesson-toolbar{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:28px;max-width:1120px;width:calc(100% - 64px);margin:32px auto 0;padding:0 0 24px;min-height:84px;background:transparent;border-bottom:1px solid #dfe5df}
 .player-page .pt-back{display:grid;place-items:center;min-height:42px;padding:10px 16px;margin:0;border:1px solid #dfe5df;border-radius:12px;background:#fff;font-size:12px}
 .player-page .pt-title{text-align:start;padding-inline-start:24px;border-inline-start:1px solid #dfe5df}
-.player-page .pt-title span{color:#6d796f;font-size:11px;letter-spacing:.025em}
+.player-page .pt-title span{color:#667268;font-size:11px;letter-spacing:.025em}
 .player-page .pt-title strong{margin-top:7px;font-size:26px;font-weight:600;letter-spacing:-.04em;line-height:1.2}
 .player-page .pt-right{gap:7px}
 .player-page .pt-screen{margin-inline-end:14px;padding:8px 12px;background:#eaf0eb;color:#45634e;border-radius:8px;font-size:11px;font-weight:500}
@@ -84,7 +84,7 @@ body.player-page{background:#f7f8f7}
 .player-page .lesson-guide-tools{display:flex;align-items:center;justify-content:space-between;gap:16px}
 .player-page .lesson-guide-tools:empty{display:none}
 .player-page .lesson-guide .key-chip{justify-content:flex-start;gap:10px;font-size:12px}
-.player-page .lesson-guide .chip-label{font-size:11px;color:#717b73}
+.player-page .lesson-guide .chip-label{font-size:11px;color:#6e7770}
 .player-page .lesson-guide .chip-key{min-width:32px;height:34px;font-size:15px;border-color:#c6d9ca;background:#f1f7f2;box-shadow:0 2px 0 #d7e4da}
 .player-page .lesson-guide .chip-finger{font-size:12px;color:#486250}
 .player-page .lesson-guide .screen-lead{max-width:none;margin:14px 0 0;text-align:start;color:#637067;font-size:13px;line-height:1.6}

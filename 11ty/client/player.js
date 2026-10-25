@@ -234,6 +234,10 @@
     });
     holder.append(board);
     boardEl.replaceChildren(holder);
+    // #board is aria-hidden (60 key labels are noise to a screen reader), so nothing inside it may
+    // take keyboard focus. The board's gear link is a mouse shortcut: keyboard and screen-reader
+    // users reach the same settings through #pt-keyboard in the toolbar.
+    board.querySelectorAll('a[href], button').forEach(control => { control.tabIndex = -1; });
   }
 
   function syncToggles() {
@@ -281,7 +285,9 @@
     const rows = [];
     if (usingFixture && state !== 'loading' && state !== 'error')
       rows.push(`<p class="player-note is-warn">${T.fixtureNote}</p>`);
-    if ((isPhone() || touchQuery.matches) && !mobileNoteDismissed && state !== 'loading' && state !== 'error')
+    // Not held back while the lesson loads: the note is about the device, not the lesson, and showing
+    // it late pushed the whole lesson down (CLS ~0.18 on phones).
+    if ((isPhone() || touchQuery.matches) && !mobileNoteDismissed && state !== 'error')
       rows.push(`<p class="player-note is-info"><span>ⓘ ${T.mobileNote}</span>`
         + `<button type="button" class="note-close" id="note-close">${T.mobileNoteClose}</button></p>`);
     if (imeNoteVisible && !asciiFallback && root.dataset.inputMode === 'ime')
@@ -1484,6 +1490,7 @@
 
   // --- boot -----------------------------------------------------------------------------------
   (async () => {
+    renderNotes();   // device notes first, before any await, so they are in place for the first paint
     await ensureCurriculum();
     await mountKeyboard();
     syncToggles();

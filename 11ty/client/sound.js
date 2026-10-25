@@ -23,15 +23,24 @@
     return context;
   }
 
-  // Tải + giải mã sprite một lần; lỗi mạng thì để lần sau thử lại, trong lúc đó dùng tiếng tổng hợp.
+  // Tải byte của sprite (chỉ mạng, không tốn luồng chính) — dùng chung cho lúc trang rảnh và prepare().
+  let download = null;
+  function fetchSprite() {
+    download ||= Promise.all([
+      fetch(`${BASE}keysprite.mp3`).then(response => response.arrayBuffer()),
+      fetch(`${BASE}key-sprite.json`).then(response => response.json())
+    ]).catch(error => { download = null; throw error; });
+    return download;
+  }
+
+  // Tạo AudioContext + giải mã sprite một lần; lỗi thì để lần sau thử lại, trong lúc đó im lặng.
   function prepare() {
     if (loading || !enabled) return loading;
     const ctx = audio();
     if (!ctx) return null;
-    loading = Promise.all([
-      fetch(`${BASE}keysprite.mp3`).then(response => response.arrayBuffer()).then(bytes => ctx.decodeAudioData(bytes)),
-      fetch(`${BASE}key-sprite.json`).then(response => response.json())
-    ]).then(([decoded, meta]) => { buffer = decoded; sprite = meta.sprite; })
+    // slice(): decodeAudioData tách (detach) buffer, giữ bản gốc để lần thử lại vẫn giải mã được.
+    loading = fetchSprite()
+      .then(([bytes, meta]) => ctx.decodeAudioData(bytes.slice(0)).then(decoded => { buffer = decoded; sprite = meta.sprite; }))
       .catch(() => { loading = null; });
     return loading;
   }
@@ -108,13 +117,14 @@
     return enabled;
   }
 
-  // Tải + giải mã sprite ngay khi trang rảnh (AudioContext tạo trước cử chỉ thì ở trạng thái chờ, vẫn
-  // giải mã được), để những phím đầu tiên đã có tiếng; cử chỉ đầu tiên đánh thức nó. Âm tắt thì không tải.
-  const warm = () => { if (enabled) prepare(); };
+  // Khi trang rảnh chỉ TẢI byte của sprite (mạng). AudioContext + giải mã (vài chục ms trên luồng chính,
+  // có lúc >1 s trên máy yếu) dời tới cử chỉ đầu tiên: lúc tải trang không còn tác vụ dài, mà byte đã
+  // có sẵn nên những phím đầu tiên vẫn có tiếng gần như ngay. Âm tắt thì không tải gì.
+  const warm = () => { if (enabled) fetchSprite().catch(() => {}); };
   const idle = global.requestIdleCallback || (callback => setTimeout(callback, 300));
   if (document.readyState === 'complete') idle(warm);
   else global.addEventListener('load', () => idle(warm), { once: true });
-  const wake = () => { if (enabled && context) audio(); };
+  const wake = () => { if (!enabled) return; if (context) audio(); else prepare(); };
   global.addEventListener('keydown', wake, { capture: true });
   global.addEventListener('pointerdown', wake, { capture: true });
 

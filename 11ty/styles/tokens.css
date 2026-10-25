@@ -27,8 +27,8 @@
   --ink-900:#1d1d1f;       /* tiêu đề, chữ chính */
   --ink-800:#1d1d1f;
   --ink-700:#424245;
-  --ink-600:#6e6e73;       /* chữ phụ (4,9:1) */
-  --ink-500:#86868b;       /* chú thích, placeholder */
+  --ink-600:#636366;       /* chữ phụ (≥5:1 trên mọi nền sáng của site) */
+  --ink-500:#69696e;       /* chú thích, placeholder — ≥4,5:1 cả trên nền phím #e8e8fa (WCAG AA) */
   --ink-400:#aeaeb2;
   --ink-300:#d2d2d7;       /* viền ô nhập */
   --ink-200:#e8e8ed;       /* đường kẻ, rãnh trống */

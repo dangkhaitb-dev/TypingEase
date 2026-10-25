@@ -245,7 +245,7 @@
   transition: background-color var(--dur-fast, .16s) var(--ease, ease), color var(--dur-fast, .16s) var(--ease, ease), box-shadow var(--dur-fast, .16s) var(--ease, ease), transform var(--dur-fast, .16s) var(--ease, ease);
 }
 .keyboard--full .key--a .key-label { font-weight: 400; }
-.keyboard--full .key--special .key-label { color: var(--ink-500, #86868b); }
+.keyboard--full .key--special .key-label { color: var(--ink-500, #69696e); }
 /* Gờ định vị dưới hai phím ở VỊ TRÍ F và J (`key--homing`, keyboard.js gắn theo ô vật lý KeyF/KeyJ)
    — trước đây theo mã ký tự `f`/`j`, nên Dvorak hay Ả Rập có gờ ở sai phím hoặc không có gờ.
    `:after` đã bị tỉ lệ vuông chiếm chỗ. */
@@ -407,7 +407,7 @@
   gap: 5px;
   padding: 2px 8px;
   border-radius: var(--r-pill, 999px);
-  color: var(--ink-500, #86868b);
+  color: var(--ink-500, #69696e);
   font-family: var(--font-body, system-ui, sans-serif);
   font-size: var(--fs-xs, 12px);
   font-weight: 400;
