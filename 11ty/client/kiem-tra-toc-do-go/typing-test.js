@@ -169,10 +169,13 @@ input.addEventListener('keydown', event => {
     moveInputCaretToEnd();
   }
 });
+// Re-wrap the passage only when the surface really changed width. The observer's first report
+// is the width resetTest() just rendered at, and a second full render there was a ~200 ms task.
 let passageWidth = 0;
 new ResizeObserver(([entry]) => {
-  if (entry.contentRect.width === passageWidth) return;
-  passageWidth = entry.contentRect.width;
+  const width = entry.target.clientWidth;
+  if (width === passageWidth) return;
+  passageWidth = width;
   renderPrompt();
 }).observe(typingSurface);
 const actions = document.querySelector('.test-actions');
@@ -235,6 +238,8 @@ function renderPrompt() {
     const line = parseFloat(style.lineHeight) || current.offsetHeight;
     const row = Math.floor((current.offsetTop + line / 2) / line);
     promptElement.scrollTop = Math.max(0, (row - 1) * line);
+    // Layout is already fresh from offsetTop, so this read costs nothing.
+    passageWidth = typingSurface.clientWidth;
   }
   // Con trỏ trượt kiểu typekute (effects.js): một thanh mảnh trượt sang ký tự kế tiếp.
   window.TypingEaseEffects?.caret(promptElement, '.current');
@@ -530,6 +535,9 @@ promptElement.addEventListener('click', () => { if (!finished) input.focus({ pre
 restartButton.addEventListener('click', () => resetTest());
 progressRangeButtons.forEach(button => button.addEventListener('click', () => { progressRange = Number(button.dataset.progressRange); renderProgress(); }));
 progressMetricButtons.forEach(button => button.addEventListener('click', () => { progressMetric = button.dataset.progressMetric; renderProgress(); }));
+// The card is in its final shape now: reveal it (test.css keeps it invisible until this point).
+// Before resetTest(), which focuses the textarea: an element under visibility:hidden can't take focus.
+input.closest('.typing-test').classList.add('is-ready');
 // Desktop is ready on arrival; mobile opens its keyboard when the passage is tapped.
 resetTest(!window.matchMedia('(pointer: coarse)').matches);
 renderProgress();

@@ -327,10 +327,23 @@ const S = { ...S_VI, ...(window.TypingEaseUI?.progress || {}) };
   });
   global.addEventListener('pagehide', () => profile.save());
 
+  // Bàn phím heatmap nằm dưới màn hình đầu: dựng nó (~450 ms style/layout trên mobile) ngay lúc
+  // tải trang là chặn luồng chính vì một thứ chưa ai nhìn thấy. Chờ nó tới gần khung nhìn.
+  function renderHeatWhenNear() {
+    const host = document.querySelector('#heat-board');
+    if (!host || !('IntersectionObserver' in global)) { renderHeat(); return; }
+    const observer = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      observer.disconnect();
+      renderHeat();
+    }, { rootMargin: '600px 0px' });
+    observer.observe(host);
+  }
+
   renderSummary();
   renderTable();
   renderCoach();
-  renderHeat();
+  renderHeatWhenNear();
   renderDaily();
   renderBadges();
 })(window);

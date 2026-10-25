@@ -36,6 +36,12 @@ article :is(p,li) b{color:var(--ink-900);font-weight:600}
 /* ---------- công cụ gõ thử ----------
    Mặt gõ rộng hơn cột chữ một chút trên màn hình lớn: đây là "sân khấu" của trang. */
 .typing-test{position:relative;padding:36px 44px 40px;border:0;border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-card)}
+/* typing-test.js rebuilds this card (picker → select, passage + textarea → one surface). On a slow
+   load the first paint can land before that, and the rebuild then jumps the card (CLS ~0.15). Keep
+   the half-built card invisible (space kept) until the script adds .is-ready; the delayed animation
+   shows it anyway if the script never runs. The passage itself only exists after the script. */
+@media (scripting:enabled){.typing-test:not(.is-ready){visibility:hidden;animation:test-reveal 0s 3s forwards}}
+@keyframes test-reveal{to{visibility:visible}}
 .test-heading{display:flex;justify-content:space-between;align-items:baseline;gap:18px;margin-bottom:22px}
 .test-heading h2{margin:0;font-size:21px;font-weight:600;letter-spacing:var(--track-title)}
 .test-heading p{max-width:300px;margin:0;color:var(--ink-500);font-size:var(--fs-sm);font-weight:400;line-height:1.4;text-align:end}
