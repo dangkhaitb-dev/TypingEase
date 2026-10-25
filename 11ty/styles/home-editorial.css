@@ -109,7 +109,7 @@
 .home-learning-notes{padding:48px 0}
 .home-learning-layout{display:grid;grid-template-columns:minmax(220px, .8fr) minmax(0, 1.65fr);gap:clamp(36px,6vw,88px)}
 .home-learning-heading{border-top:1px solid var(--border);padding-top:20px}
-.home-learning-number{display:block;margin-bottom:20px;font:500 12px/1.4 ui-monospace,monospace;color:var(--ink-500)}
+.home-learning-number{display:block;margin-bottom:20px;font:500 12px/1.4 ui-monospace,monospace;color:var(--ink-600)}
 .home-learning-heading h2{margin:0;font-family:var(--home-display);font-size:clamp(25px,2.7vw,35px);font-weight:600;letter-spacing:-.035em;line-height:1.2;scroll-margin-top:110px;text-wrap:balance}
 .home-learning-body{min-width:0;display:grid;gap:28px}
 .home-learning-item h3{margin:0 0 12px;font-size:18px;font-weight:600;line-height:1.4;letter-spacing:-.015em;color:var(--text)}

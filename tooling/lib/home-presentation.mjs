@@ -63,6 +63,11 @@ export function homePresentation(html) {
   html = html.slice(0,start)+sections+html.slice(end);
   html = html.replace(/<footer[\s\S]*?<\/footer>/,old => adapt(productFooter(copyLanguage,old)).replace('<footer ',`<footer lang="${declaredLocale}" dir="${rtl?'rtl':'ltr'}" `));
   html = html.replace(/<script src="\/(?:home-demo|landing|landing-i18n)\.js"[^>]*><\/script>/g,'');
+  // The product homepage has no keyboard (the hero preview is replaced above and landing.js, the only
+  // NTKeyboard reader, is gone), so drop the keyboard module, its stylesheet and ready.js. Otherwise
+  // boot.js still loads 25 KB of JS/CSS and fetches keyboard layout data nobody renders.
+  html = html.replace(/[ \t]*<link rel="stylesheet" href="(?:\.\.)?\/keyboard\/keyboard\.css" \/>\r?\n?/g,'');
+  html = html.replace(/[ \t]*<script (?:type="module" )?src="(?:\.\.)?\/keyboard\/(?:ready|boot)\.js"><\/script>\r?\n?/g,'');
   html = html.replace('</body>','<script src="/product-landing.js" defer></script>\n</body>');
   return html.replace('</head>','<link rel="stylesheet" href="/product-landing.css" />\n<link rel="stylesheet" href="/home-editorial.css" />\n<link rel="stylesheet" href="/home-canvas.css" />\n</head>');
 }

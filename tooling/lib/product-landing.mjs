@@ -74,7 +74,7 @@ export function productSections(lang){
 }
 export function productFooter(lang,oldFooter){
  const t=COPY[lang];const legal=oldFooter.match(/<p class="footer-legal">[\s\S]*?<\/p>/)?.[0]||'';
- return `<footer class="product-footer"><div class="product-wrap"><div class="product-footer-columns"><div><a class="brand" href="/">Typing<span>Ease</span></a><p class="product-footer-note">${t.footerIntro}</p></div>${t.footerGroups.map(([title,...links])=>`<div><h3>${title}</h3>${links.map(([label,url])=>`<a href="${url}">${label}</a>`).join('')}</div>`).join('')}</div><div class="product-wordmark" aria-hidden="true">Typing<em>Ease</em></div><div class="product-footer-bottom"><span>© 2026 TypingEase</span><!-- legal -->${legal}<!-- /legal --></div></div></footer>`;
+ return `<footer class="product-footer"><div class="product-wrap"><div class="product-footer-columns"><div><a class="brand" href="/">Typing<span>Ease</span></a><p class="product-footer-note">${t.footerIntro}</p></div>${t.footerGroups.map(([title,...links])=>`<div><h3>${title}</h3>${links.map(([label,url])=>`<a href="${url}">${label}</a>`).join('')}</div>`).join('')}</div><div class="product-wordmark" aria-hidden="true"><span data-wordmark="Typing"></span><em data-wordmark="Ease"></em></div><div class="product-footer-bottom"><span>© 2026 TypingEase</span><!-- legal -->${legal}<!-- /legal --></div></div></footer>`;
 }
 
 export function productHero(lang,mark,portraits){

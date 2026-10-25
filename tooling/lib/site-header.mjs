@@ -44,9 +44,11 @@ export function siteHeader(html, outputPath) {
     const home = configs.get(language.code)?.routes.home;
     return home ? [`<a href="${escape(home)}" lang="${escape(language.code)}"${language.code === lang ? ' aria-current="page"' : ''}>${escape(language.native)}</a>`] : [];
   }).join('');
+  // The accessible name starts with the visible code ("EN") so voice control ("click EN") finds it.
+  const languageName = `${lang.toUpperCase()}: ${languageLabel}`;
   const languageControl = isHome
-    ? `<details class="home-language"><summary aria-label="${escape(languageLabel)}">${globe}<span>${escape(lang.toUpperCase())}</span><svg class="home-language-chevron" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="home-language-menu" aria-label="${escape(languageLabel)}">${languageOptions}</div></details>`
-    : `<a class="site-language" href="/" aria-label="${escape(languageLabel)}" title="${escape(languageLabel)}">${globe}<span>${escape(lang.toUpperCase())}</span></a>`;
+    ? `<details class="home-language"><summary aria-label="${escape(languageName)}">${globe}<span>${escape(lang.toUpperCase())}</span><svg class="home-language-chevron" viewBox="0 0 16 16" width="12" height="12" aria-hidden="true"><path d="m4 6 4 4 4-4" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/></svg></summary><div class="home-language-menu" role="group" aria-label="${escape(languageLabel)}">${languageOptions}</div></details>`
+    : `<a class="site-language" href="/" aria-label="${escape(languageName)}" title="${escape(languageLabel)}">${globe}<span>${escape(lang.toUpperCase())}</span></a>`;
   const header = `<header class="topbar site-header${isHome ? ' header--glass' : ''}" data-site-header>
       <a class="brand brand-signature" href="/" aria-label="TypingEase"><picture class="brand-logo"><img class="brand-emblem" src="/assets/brand/typingease-snail-t-68.webp" width="34" height="34" decoding="async" alt="" aria-hidden="true"/></picture><span class="brand-wordmark">Typing<em>Ease</em></span></a>
       <nav aria-label="${escape(config.s.navAria)}">${links}</nav>

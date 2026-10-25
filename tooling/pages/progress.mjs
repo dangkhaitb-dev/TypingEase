@@ -158,7 +158,7 @@ async function page(entry) {
           <p id="daily-goal-status">${esc(P.streak(0))}</p>
         </div>
         <div class="daily-goal-progress">
-          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
+          <div class="daily-progress-track" id="daily-progress" role="progressbar" aria-labelledby="daily-goal-kicker daily-goal-title" aria-valuemin="0" aria-valuemax="10" aria-valuenow="0"><i></i></div>
           <p id="daily-best-streak">${esc(P.bestStreak(0))}</p>
         </div>
         <div class="daily-goal-options" role="group" aria-label="${esc(T.goalAria)}">
@@ -188,7 +188,7 @@ ${[5, 10, 15, 20].map(n => `          <button type="button" data-daily-goal="${n
           <h3 id="heat-title">${esc(T.heatTitle)}</h3>
           <p>${esc(T.heatText)}</p>
           <p class="heat-empty" id="heat-empty">${esc(T.heatEmpty)}</p>
-          <div class="heat-legend" id="heat-legend" aria-label="${esc(T.heatAria)}" hidden></div>
+          <div class="heat-legend" id="heat-legend" role="group" aria-label="${esc(T.heatAria)}" hidden></div>
         </div>
         <div class="keyboard-demo heat-board" id="heat-board"></div>
       </section>
