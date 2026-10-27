@@ -1,6 +1,6 @@
 // Nút "Feedback" góc dưới + khung góp ý bật lên ngay trên nút — giống soldetector
 // (frontend/src/FeedbackWidget.tsx): email tuỳ chọn, ô nội dung, nút gửi. Gửi về POST /api/feedback
-// (functions/api/feedback.js, Cloudflare Pages Function), hàm đó chuyển tiếp sang Discord webhook.
+// (functions/api/feedback.js, Cloudflare Pages Function), hàm đó chuyển tiếp thành tin nhắn Telegram.
 //
 // Nạp dạng module bởi sw-register.js — file có mặt trên mọi trang, như analytics.js. Chữ theo
 // `<html lang>` cho 27 ngôn ngữ, cùng cách chọn với cookie-banner.js.
