@@ -21,6 +21,11 @@
   analytics.type = 'module';
   analytics.src = '/analytics.js';
   global.document.head.appendChild(analytics);
+  // Nút góp ý (feedback.js) cũng cần có ở mọi trang — đi nhờ file này cùng lý do.
+  const feedback = global.document.createElement('script');
+  feedback.type = 'module';
+  feedback.src = '/feedback.js';
+  global.document.head.appendChild(feedback);
 
   if (!('serviceWorker' in global.navigator)) return;
   const GRACE_MS = 10000;           // cập nhật tìm thấy trong 10 s đầu = kiểm tra lúc nạp, bỏ qua

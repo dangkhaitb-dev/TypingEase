@@ -116,6 +116,39 @@ textarea:focus{border-color:var(--primary-500);box-shadow:var(--shadow-focus-sof
 .cookie-banner button:hover{background:rgba(0,0,0,.1)}
 .cookie-banner button:active{transform:var(--press);box-shadow:none}
 @media (max-width:600px){.cookie-banner{inset-inline:16px;bottom:16px;width:auto}.cookie-banner button{min-height:44px}}
+/* Nút góp ý + khung bật lên ngay trên nút (feedback.js): góc dưới phía cuối dòng, đối diện banner
+   cookie và nằm dưới nó (z-index) — trên điện thoại banner trải hết bề ngang thì che nút cho tới khi
+   người dùng chọn. Khung không modal: trang vẫn thấy rõ, không phủ tối. */
+.feedback-fab{position:fixed;inset-inline-end:18px;bottom:18px;z-index:59;display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:10px 18px;border:0;border-radius:var(--r);background:var(--primary-600);color:var(--white);font:600 var(--fs-sm)/1 var(--font-body);box-shadow:0 4px 0 var(--primary-800),var(--shadow-lift);cursor:pointer;transition:transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease),background-color var(--dur-fast) var(--ease)}
+.feedback-fab:hover,.feedback-fab[aria-expanded=true]{background:var(--primary-700)}
+.feedback-fab:active{transform:translateY(4px);box-shadow:0 0 0 var(--primary-800),var(--shadow-sm)}
+.feedback-fab:focus-visible{outline:none;box-shadow:0 4px 0 var(--primary-800),var(--shadow-focus)}
+.feedback-dialog{position:fixed;inset:auto;inset-inline-end:18px;bottom:80px;z-index:60;margin:0;width:min(360px,calc(100vw - 32px));max-height:calc(100dvh - 104px);overflow:auto;box-sizing:border-box;padding:22px 24px 24px;border:2px solid var(--primary-200);border-radius:var(--r-lg);background:var(--surface);color:var(--ink-900);font-family:var(--font-body);box-shadow:var(--shadow-lift)}
+.feedback-dialog[open]{animation:feedback-in var(--dur) var(--ease-out);transform-origin:bottom right}
+[dir=rtl] .feedback-dialog[open]{transform-origin:bottom left}
+@keyframes feedback-in{from{opacity:0;transform:translateY(8px) scale(.97)}}
+.feedback-close{position:absolute;top:18px;inset-inline-end:16px;width:32px;height:32px;border:0;border-radius:50%;background:transparent;color:var(--ink-700);font-size:16px;line-height:1;cursor:pointer}
+.feedback-close:hover{background:var(--ink-100);color:var(--ink-900)}
+.feedback-head{margin:0 40px 16px 0}
+[dir=rtl] .feedback-head{margin:0 0 16px 40px}
+.feedback-head[hidden],.feedback-form[hidden],.feedback-thanks[hidden]{display:none}
+.feedback-eyebrow{margin:0 0 4px;color:var(--ink-600);font-size:var(--fs-2xs);font-weight:700;letter-spacing:.08em;text-transform:uppercase}
+.feedback-title{margin:0;color:var(--primary-700);font-size:var(--fs-h3);font-weight:700;letter-spacing:var(--track-title)}
+.feedback-form,.feedback-thanks{display:flex;flex-direction:column}
+.feedback-label{margin:0 0 8px;font-size:var(--fs-sm);font-weight:700}
+.feedback-input{width:100%;box-sizing:border-box;margin:0 0 16px;border:var(--border-w) solid var(--border-strong);border-radius:var(--r);padding:11px 14px;background:var(--surface);color:var(--ink-900);font:400 var(--fs-sm)/1.45 var(--font-body)}
+.feedback-message{min-height:130px;resize:vertical}
+.feedback-input:focus{outline:none;border-color:var(--primary-600);box-shadow:var(--shadow-focus-soft)}
+.feedback-error{margin:-4px 0 12px;color:var(--error-700);font-size:var(--fs-sm)}
+.feedback-send{width:100%;min-height:48px;padding:12px 20px;border:0;border-radius:var(--r);background:var(--primary-600);color:var(--white);font:700 var(--fs-sm)/1 var(--font-body);box-shadow:0 4px 0 var(--primary-800);cursor:pointer;transition:background-color var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.feedback-send:hover:not(:disabled){background:var(--primary-700)}
+.feedback-send:active:not(:disabled){transform:translateY(4px);box-shadow:0 0 0 var(--primary-800)}
+.feedback-send:disabled{background:var(--primary-300);box-shadow:0 4px 0 var(--primary-400);cursor:default}
+.feedback-thanks{align-items:center;gap:12px;padding:8px 0 4px;text-align:center}
+.feedback-thanks p{margin:0 0 4px;color:var(--ink-700);font-size:var(--fs-sm);line-height:1.5}
+.feedback-thanks-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--primary-100);color:var(--primary-700);font-size:24px;font-weight:700}
+@media (max-width:600px){.feedback-fab{inset-inline-end:16px;bottom:16px;width:48px;height:48px;padding:0;justify-content:center}.feedback-fab span{display:none}.feedback-dialog{inset-inline:16px;bottom:76px;width:auto;max-height:calc(100dvh - 96px)}}
+@media print{.feedback-fab,.feedback-dialog{display:none}}
 .feedback{margin:10px 0 0;color:var(--text-muted);font-size:var(--fs-2xs)}
 
 /* ===== Hero & tiêu đề section ================================================================= */
