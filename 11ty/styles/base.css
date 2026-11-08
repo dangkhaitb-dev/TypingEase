@@ -149,6 +149,49 @@ textarea:focus{border-color:var(--primary-500);box-shadow:var(--shadow-focus-sof
 .feedback-thanks-icon{display:grid;place-items:center;width:52px;height:52px;border-radius:50%;background:var(--primary-100);color:var(--primary-700);font-size:24px;font-weight:700}
 @media (max-width:600px){.feedback-fab{inset-inline-end:16px;bottom:16px;width:48px;height:48px;padding:0;justify-content:center}.feedback-fab span{display:none}.feedback-dialog{inset-inline:16px;bottom:76px;width:auto;max-height:calc(100dvh - 96px)}}
 @media print{.feedback-fab,.feedback-dialog{display:none}}
+/* Đăng nhập / tài khoản ở topbar (auth.js): nút xanh đặc có hình người, mở hộp thoại đăng nhập; đăng nhập
+   rồi thì thành avatar tròn mở menu nhỏ (tên, email, Đăng xuất). Điện thoại: nút chỉ còn hình người. */
+.account{position:relative;display:flex;align-items:center}
+.account [hidden]{display:none}
+.account-signin{display:inline-flex;align-items:center;gap:6px;min-height:36px;padding:6px 16px 6px 13px;border:0;border-radius:var(--r-pill);background:var(--primary-600);color:var(--white);font:600 13px/1 var(--font-body);white-space:nowrap;box-shadow:0 3px 0 var(--primary-800);transition:background-color var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.account-signin:hover{background:var(--primary-700)}
+.account-signin:active{transform:translateY(3px);box-shadow:0 0 0 var(--primary-800)}
+.account-signin svg{flex:none}
+.account-button{display:grid;place-items:center;width:36px;height:36px;padding:0;border:0;border-radius:50%;background:transparent}
+.account-button:focus-visible,.account-signin:focus-visible{outline:none;box-shadow:var(--shadow-focus)}
+.account-avatar{display:grid;place-items:center;width:32px;height:32px;overflow:hidden;border-radius:50%;background:var(--primary-100);color:var(--primary-700);font:700 14px/1 var(--font-body)}
+.account-avatar img{width:100%;height:100%;object-fit:cover}
+.account-button[aria-expanded=true] .account-avatar{box-shadow:0 0 0 2px var(--primary-600)}
+.account-menu{position:absolute;top:calc(100% + 12px);inset-inline-end:0;z-index:55;display:grid;gap:2px;width:max-content;min-width:220px;max-width:calc(100vw - 32px);padding:14px;border:1px solid var(--border);border-radius:var(--r-lg);background:var(--surface);color:var(--ink-900);box-shadow:var(--shadow-lift)}
+.account-name{overflow:hidden;font-size:var(--fs-sm);text-overflow:ellipsis;white-space:nowrap}
+.account-email{overflow:hidden;color:var(--ink-600);font-size:var(--fs-2xs);text-overflow:ellipsis;white-space:nowrap}
+.account-signout{margin-top:10px;min-height:36px;padding:8px 12px;border:0;border-radius:var(--r);background:rgba(0,0,0,.06);color:var(--ink-900);font:500 var(--fs-sm)/1 var(--font-body);text-align:start}
+.account-signout:hover{background:rgba(0,0,0,.1)}
+/* Hộp thoại "Đăng nhập vào TypingEase" (auth.js): modal giữa màn hình trên nền tối mờ; thẻ trắng bo lớn,
+   logo ốc sên, một nút Google viền kiểu phím — bóng dưới, nhấn thì lún xuống như các nút khác của site. */
+.auth-dialog{width:min(420px,calc(100vw - 32px));max-height:calc(100dvh - 32px);margin:auto;padding:0;border:0;border-radius:var(--r-xl);background:transparent;color:var(--ink-900);font-family:var(--font-body);overflow:visible}
+.auth-dialog::backdrop{background:rgba(10,32,24,.45);-webkit-backdrop-filter:blur(3px);backdrop-filter:blur(3px)}
+.auth-dialog[open]{animation:auth-in var(--dur) var(--ease-out)}
+@keyframes auth-in{from{opacity:0;transform:translateY(12px) scale(.97)}}
+.auth-card{position:relative;display:flex;flex-direction:column;align-items:center;padding:40px 32px 32px;border-radius:var(--r-xl);background:var(--surface);box-shadow:var(--shadow-lift);text-align:center}
+.auth-close{position:absolute;top:16px;inset-inline-end:16px;width:36px;height:36px;border:0;border-radius:50%;background:var(--ink-100);color:var(--ink-700);font-size:15px;line-height:1}
+.auth-close:hover{background:var(--ink-200);color:var(--ink-900)}
+.auth-close:focus-visible{outline:none;box-shadow:var(--shadow-focus)}
+.auth-logo{width:64px;height:64px;margin:0 0 18px;padding:8px;box-sizing:border-box;border-radius:var(--r-lg);background:var(--primary-50);box-shadow:inset 0 0 0 1px var(--primary-100)}
+.auth-title{margin:0 0 8px;color:var(--ink-900);font-size:var(--fs-h3);font-weight:700;letter-spacing:var(--track-title)}
+.auth-subtitle{max-width:300px;margin:0 0 28px;color:var(--ink-600);font-size:var(--fs-sm);line-height:1.5}
+.auth-google{display:flex;align-items:center;justify-content:center;gap:12px;width:100%;min-height:52px;padding:12px 20px;border:2px solid var(--border-strong);border-radius:var(--r);background:var(--surface);color:var(--ink-900);font:600 var(--fs-body)/1 var(--font-body);box-shadow:0 4px 0 var(--border-strong);transition:background-color var(--dur-fast) var(--ease),border-color var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.auth-google:hover:not(:disabled){border-color:var(--primary-600);background:var(--primary-50);box-shadow:0 4px 0 var(--primary-600)}
+.auth-google:active:not(:disabled){transform:translateY(4px);box-shadow:0 0 0 var(--primary-600)}
+.auth-google:focus-visible{outline:none;box-shadow:0 4px 0 var(--border-strong),var(--shadow-focus)}
+.auth-google:disabled{opacity:.6;cursor:progress}
+.auth-google svg{flex:none}
+.auth-error{margin:16px 0 0;color:var(--error-700);font-size:var(--fs-sm);line-height:1.4}
+.auth-error[hidden]{display:none}
+[dir=rtl] .auth-title{letter-spacing:0}
+@media (max-width:600px){.account-signin{width:36px;padding:0;justify-content:center}.account-signin span{display:none}.auth-card{padding:36px 20px 24px}}
+@media (prefers-reduced-motion:reduce){.auth-dialog[open]{animation:none}}
+@media print{.account,.auth-dialog{display:none}}
 .feedback{margin:10px 0 0;color:var(--text-muted);font-size:var(--fs-2xs)}
 
 /* ===== Hero & tiêu đề section ================================================================= */

@@ -1,0 +1,15 @@
+# Cấu hình Cloudflare Pages cho typingease (site tĩnh trong dist/ + Pages Functions trong functions/).
+# Chạy ở máy: `npm run build` rồi `npx wrangler pages dev dist` (D1 local nằm trong .wrangler/).
+name = "typingease"
+pages_build_output_dir = "dist"
+compatibility_date = "2026-11-01"
+
+[vars]
+FIREBASE_PROJECT_ID = "typingease-75e4f"
+
+# Tạo bằng `npx wrangler d1 create typingease`, rồi chép database_id nó in ra vào đây.
+[[d1_databases]]
+binding = "DB"
+database_name = "typingease"
+database_id = "3324e158-28a0-4e3c-8ecc-21aa9f7a2b99"
+migrations_dir = "migrations"

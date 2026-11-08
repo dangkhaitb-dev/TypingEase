@@ -46,6 +46,39 @@ export function initializeFirebase({ contentGroup } = {}) {
   return clientPromise;
 }
 
+// --- Đăng nhập Google (auth.js) ------------------------------------------------------------------
+// Firebase chỉ làm một việc: mở popup Google và đưa ra ID token. Phiên đăng nhập do site tự giữ
+// (cookie te_session, functions/_lib/session.js), nên Firebase để in-memory và đăng xuất ngay sau khi
+// lấy token — không có trạng thái đăng nhập thứ hai nằm trong IndexedDB, trang thường không tải SDK.
+
+let authPromise = null;
+
+/** Tải trước SDK (khi rê chuột / focus vào nút) để popup mở trong cùng cú bấm — Safari chặn popup mở trễ. */
+export function preloadAuth() {
+  if (!authPromise) {
+    authPromise = Promise.all([import(`${SDK_URL}/firebase-app.js`), import(`${SDK_URL}/firebase-auth.js`)])
+      .then(async ([{ initializeApp, getApps }, authSdk]) => {
+        const auth = authSdk.getAuth(getApps()[0] || initializeApp(firebaseConfig));
+        await authSdk.setPersistence(auth, authSdk.inMemoryPersistence);
+        return { auth, ...authSdk };
+      });
+    authPromise.catch(() => { authPromise = null; });   // lỗi mạng thì lần bấm sau tải lại
+  }
+  return authPromise;
+}
+
+/**
+ * Mở popup chọn tài khoản Google, trả ID token (sống 1 giờ) để đổi lấy phiên ở POST /api/auth/session.
+ * Lỗi giữ nguyên `code` của Firebase (auth/popup-closed-by-user, auth/popup-blocked…).
+ */
+export async function signInWithGoogle() {
+  const { auth, GoogleAuthProvider, signInWithPopup, signOut } = await preloadAuth();
+  const provider = new GoogleAuthProvider();
+  provider.setCustomParameters({ prompt: 'select_account' });
+  const { user } = await signInWithPopup(auth, provider);
+  try { return await user.getIdToken(); } finally { signOut(auth).catch(() => {}); }
+}
+
 /**
  * Xoá cookie của Google Analytics (`_ga`, `_ga_<ID>`) khi người dùng rút lại đồng ý.
  * GA đặt cookie ở tên miền gốc (.typingease.site), nên xoá ở cả tên miền đó lẫn tên máy hiện tại.
