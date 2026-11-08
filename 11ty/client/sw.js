@@ -148,6 +148,9 @@ self.addEventListener('fetch', event => {
 
   if (FONT_HOSTS.includes(url.hostname)) { event.respondWith(cacheFirst(request)); return; }
   if (url.origin !== self.location.origin) return;
+  // API (đăng nhập, đồng bộ) luôn đi mạng thẳng: bản lưu của /api/me là thông tin tài khoản, trả nó
+  // lúc offline là cho người dùng sau trên cùng máy thấy tài khoản của người trước.
+  if (url.pathname.startsWith('/api/')) return;
 
   // URL băm nội dung (tooling/data/stamp-data.mjs): bài học để data-cache.js tự lo; chỉ mục thì bất biến
   // theo URL nên cache-trước là đúng, như font.

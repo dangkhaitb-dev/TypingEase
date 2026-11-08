@@ -26,6 +26,11 @@
   feedback.type = 'module';
   feedback.src = '/feedback.js';
   global.document.head.appendChild(feedback);
+  // Nút Đăng nhập Google / tài khoản ở topbar (auth.js) — cùng lý do.
+  const auth = global.document.createElement('script');
+  auth.type = 'module';
+  auth.src = '/auth.js';
+  global.document.head.appendChild(auth);
 
   if (!('serviceWorker' in global.navigator)) return;
   const GRACE_MS = 10000;           // cập nhật tìm thấy trong 10 s đầu = kiểm tra lúc nạp, bỏ qua
