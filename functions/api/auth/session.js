@@ -7,13 +7,14 @@
 import { verifyFirebaseIdToken } from '../../_lib/firebase-token.js';
 import { json, sameOrigin } from '../../_lib/http.js';
 import { createSession, publicUser, sessionCookies } from '../../_lib/session.js';
+import { sendTelegram } from '../../_lib/telegram.js';
 
 // Chỉ nhận token của lần đăng nhập vừa xong: token Firebase sống 1 giờ, nhưng auth_time là lúc người dùng
 // thật sự bấm đăng nhập. Token cũ bị lấy cắp thì không đổi được thành phiên 180 ngày.
 const MAX_AUTH_AGE_S = 5 * 60;
 const field = (value, limit) => (typeof value === 'string' && value ? value.slice(0, limit) : null);
 
-export async function onRequestPost({ request, env }) {
+export async function onRequestPost({ request, env, waitUntil }) {
   if (!env.DB || !env.FIREBASE_PROJECT_ID) return json({ error: 'auth_not_configured' }, 503);
   if (!sameOrigin(request)) return json({ error: 'bad_origin' }, 403);
 
@@ -46,5 +47,21 @@ export async function onRequestPost({ request, env }) {
   ).first();
 
   const token = await createSession(env.DB, user.id, request, now);
-  return json({ user: publicUser(user), isNew: user.created_at === now }, 200, sessionCookies(token));
+  const isNew = user.created_at === now;
+  // Báo tài khoản mới về Telegram sau khi đã trả response: Telegram chậm hay lỗi cũng không làm chậm
+  // hay hỏng việc đăng nhập. Đăng nhập lại thì không báo.
+  if (isNew) waitUntil(announceSignup(env, user).catch(error => console.error('signup notice failed', error)));
+  return json({ user: publicUser(user), isNew }, 200, sessionCookies(token));
+}
+
+async function announceSignup(env, user) {
+  const { total } = await env.DB.prepare('SELECT COUNT(*) AS total FROM users').first();
+  const when = new Date(user.created_at).toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' });
+  await sendTelegram(env, [
+    '🎉 Tài khoản mới trên TypingEase',
+    `Tên: ${user.display_name || 'n/a'}`,
+    `Email: ${user.email || 'n/a'}`,
+    `Lúc: ${when}`,
+    `Tổng số tài khoản: ${total}`
+  ].join('\n'));
 }
