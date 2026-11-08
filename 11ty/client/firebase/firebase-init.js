@@ -82,6 +82,23 @@ export async function signInWithGoogle() {
 }
 
 /**
+ * Xoá tài khoản (auth.js): mở lại popup Google để chứng minh đúng chủ tài khoản. Trả ID token cho
+ * DELETE /api/account, cùng `remove()` để xoá luôn bản ghi tài khoản bên Firebase sau khi server đã xoá
+ * xong — user.delete() chỉ chạy được với người dùng vừa đăng nhập, đúng lúc này.
+ */
+export async function reauthenticateWithGoogle() {
+  const { auth, GoogleAuthProvider, signInWithPopup, signOut } = await preloadAuth();
+  const provider = new GoogleAuthProvider();
+  provider.setCustomParameters({ prompt: 'select_account' });
+  const { user } = await signInWithPopup(auth, provider);
+  return {
+    idToken: await user.getIdToken(),
+    remove: () => user.delete().catch(() => signOut(auth)),
+    cancel: () => signOut(auth).catch(() => {})
+  };
+}
+
+/**
  * Xoá cookie của Google Analytics (`_ga`, `_ga_<ID>`) khi người dùng rút lại đồng ý.
  * GA đặt cookie ở tên miền gốc (.typingease.site), nên xoá ở cả tên miền đó lẫn tên máy hiện tại.
  */

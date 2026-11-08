@@ -187,6 +187,19 @@ textarea:focus{border-color:var(--primary-500);box-shadow:var(--shadow-focus-sof
 .auth-google:disabled{opacity:.6;cursor:progress}
 .auth-google svg{flex:none}
 .auth-error{margin:16px 0 0;color:var(--error-700);font-size:var(--fs-sm);line-height:1.4}
+/* Xoá tài khoản: mục chữ đỏ cuối menu tài khoản, và hộp xác nhận (Huỷ trung tính + nút đỏ kiểu phím). */
+.account-delete{min-height:32px;padding:6px 12px;border:0;border-radius:var(--r);background:transparent;color:var(--error-700);font:500 var(--fs-2xs)/1 var(--font-body);text-align:start}
+.account-delete:hover{background:var(--error-100)}
+.auth-card--danger{padding-top:36px}
+.auth-actions{display:flex;gap:12px;width:100%}
+.auth-actions button{flex:1;min-height:48px;padding:12px 16px;border-radius:var(--r);font:600 var(--fs-sm)/1.2 var(--font-body);transition:background-color var(--dur-fast) var(--ease),transform var(--dur-fast) var(--ease),box-shadow var(--dur-fast) var(--ease)}
+.auth-secondary{border:2px solid var(--border-strong);background:var(--surface);color:var(--ink-900);box-shadow:0 4px 0 var(--border-strong)}
+.auth-secondary:hover:not(:disabled){background:var(--ink-100)}
+.auth-danger{border:0;background:var(--error-700);color:var(--white);box-shadow:0 4px 0 #8a0012}
+.auth-danger:hover:not(:disabled){filter:brightness(1.08)}
+.auth-actions button:active:not(:disabled){transform:translateY(4px);box-shadow:none}
+.auth-actions button:focus-visible{outline:none;box-shadow:var(--shadow-focus)}
+.auth-actions button:disabled{opacity:.6;cursor:progress}
 .auth-error[hidden]{display:none}
 [dir=rtl] .auth-title{letter-spacing:0}
 @media (max-width:600px){.account-signin{width:36px;padding:0;justify-content:center}.account-signin span{display:none}.auth-card{padding:36px 20px 24px}}
