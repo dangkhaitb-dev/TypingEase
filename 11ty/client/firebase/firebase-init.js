@@ -10,9 +10,11 @@ const SDK_URL = 'https://www.gstatic.com/firebasejs/12.8.0';
 
 // Lấy ở Firebase Console → Project settings → Your apps → Web app. Đây là định danh công khai
 // (trang web nào dùng Firebase cũng lộ ra), không phải bí mật.
+// authDomain là typingease.site chứ không phải typingease-75e4f.firebaseapp.com: popup Google ghi
+// "Đăng nhập vào <authDomain>", và functions/__/[[path]].js chuyển tiếp /__/auth/* sang firebaseapp.com.
 const firebaseConfig = {
   apiKey: 'AIzaSyC1XZxkG8cZ4H68oFzYqq2Uq-8EN5fzp9s',
-  authDomain: 'typingease-75e4f.firebaseapp.com',
+  authDomain: 'typingease.site',
   projectId: 'typingease-75e4f',
   storageBucket: 'typingease-75e4f.firebasestorage.app',
   messagingSenderId: '857678577624',
