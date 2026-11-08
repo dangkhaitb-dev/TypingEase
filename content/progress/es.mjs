@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Sigue aprendiendo',
   eyebrow: 'Cómo vas',
   h1: 'Tu progreso en mecanografía',
-  intro: 'Todos los números de esta página se guardan en este dispositivo y no se envían a ningún sitio. Haz una lección más y se actualizan.',
+  intro: 'Todos los números de esta página se guardan en este dispositivo; si inicias sesión, también se guardan en tu cuenta para seguir en cualquier dispositivo. Haz una lección más y se actualizan.',
   courseSwitch: 'Curso',
   overviewAria: 'Resumen',
   sumLessons: 'Lecciones hechas',

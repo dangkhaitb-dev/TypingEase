@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Ituloy ang pag-aaral',
   eyebrow: 'Kumusta ka na',
   h1: 'Ang pag-unlad mo sa pagtitipa',
-  intro: 'Nakatago sa device na ito ang bawat numero sa pahinang ito, at hindi ipinapadala kahit saan. Magtipa ng isa pang aralin at magbabago ito.',
+  intro: 'Nakatago sa device na ito ang bawat numero sa pahinang ito; kapag naka-sign in ka, nai-save din ito sa iyong account para maituloy mo sa anumang device. Magtipa ng isa pang aralin at magbabago ito.',
   courseSwitch: 'Kurso',
   overviewAria: 'Buod',
   sumLessons: 'Mga aralin na tapos',

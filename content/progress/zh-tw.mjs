@@ -7,7 +7,7 @@ export default {
   keepLearning: '繼續學習',
   eyebrow: '你練得怎麼樣',
   h1: '你的打字進度',
-  intro: '這個頁面上的每個數字都只儲存在這台裝置上，不會傳送到任何地方。再練一課，它就會更新。',
+  intro: '這個頁面上的數字儲存在這台裝置上；登入後也會儲存到你的帳戶，在任何裝置上都能繼續。再練一課，它就會更新。',
   courseSwitch: '課程',
   overviewAria: '總覽',
   sumLessons: '已完成的課',

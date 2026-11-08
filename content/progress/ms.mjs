@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Terus belajar',
   eyebrow: 'Prestasi anda',
   h1: 'Kemajuan menaip anda',
-  intro: 'Setiap angka pada halaman ini disimpan dalam peranti ini dan tidak dihantar ke mana-mana. Taip satu pelajaran lagi dan angkanya akan dikemas kini.',
+  intro: 'Setiap angka pada halaman ini disimpan dalam peranti ini; jika anda log masuk, ia juga disimpan dalam akaun anda supaya boleh disambung di mana-mana peranti. Taip satu pelajaran lagi dan angkanya akan dikemas kini.',
   courseSwitch: 'Kursus',
   overviewAria: 'Gambaran keseluruhan',
   sumLessons: 'Pelajaran selesai',

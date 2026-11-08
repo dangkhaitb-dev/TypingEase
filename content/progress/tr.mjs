@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Öğrenmeye devam et',
   eyebrow: 'Nasıl gidiyorsun',
   h1: 'Klavyedeki ilerlemen',
-  intro: 'Bu sayfadaki her sayı bu cihazda saklanır ve hiçbir yere gönderilmez. Bir ders daha yaz, sayfa güncellensin.',
+  intro: 'Bu sayfadaki her sayı bu cihazda saklanır; giriş yaparsan hesabına da kaydedilir, böylece istediğin cihazda devam edebilirsin. Bir ders daha yaz, sayfa güncellensin.',
   courseSwitch: 'Kurs',
   overviewAria: 'Genel bakış',
   sumLessons: 'Biten dersler',

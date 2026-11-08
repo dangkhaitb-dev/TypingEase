@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Endelea kujifunza',
   eyebrow: 'Unavyoendelea',
   h1: 'Maendeleo yako ya kuandika',
-  intro: 'Kila namba kwenye ukurasa huu imehifadhiwa kwenye kifaa hiki na haitumwi popote. Andika somo moja zaidi na itabadilika.',
+  intro: 'Kila namba kwenye ukurasa huu imehifadhiwa kwenye kifaa hiki; ukiingia, inahifadhiwa pia kwenye akaunti yako ili uendelee kwenye kifaa chochote. Andika somo moja zaidi na itabadilika.',
   courseSwitch: 'Kozi',
   overviewAria: 'Muhtasari',
   sumLessons: 'Masomo yaliyokamilika',

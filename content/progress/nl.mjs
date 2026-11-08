@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Verder leren',
   eyebrow: 'Hoe het met je gaat',
   h1: 'Je voortgang met blind typen',
-  intro: 'Alle cijfers op deze pagina staan alleen op dit apparaat en gaan nergens naartoe. Typ nog een les en ze worden bijgewerkt.',
+  intro: 'Alle cijfers op deze pagina staan op dit apparaat; als je inlogt, worden ze ook in je account bewaard, zodat je op elk apparaat verder kunt. Typ nog een les en ze worden bijgewerkt.',
   courseSwitch: 'Cursus',
   overviewAria: 'Overzicht',
   sumLessons: 'Lessen afgerond',

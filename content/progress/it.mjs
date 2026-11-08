@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Continua a imparare',
   eyebrow: 'Come stai andando',
   h1: 'I tuoi progressi nella dattilografia',
-  intro: 'Ogni numero di questa pagina è salvato su questo dispositivo e non viene inviato da nessuna parte. Fai ancora una lezione e si aggiorna.',
+  intro: 'Ogni numero di questa pagina è salvato su questo dispositivo; se accedi, viene salvato anche nel tuo account, così puoi continuare su qualsiasi dispositivo. Fai ancora una lezione e si aggiorna.',
   courseSwitch: 'Corso',
   overviewAria: 'Riepilogo',
   sumLessons: 'Lezioni fatte',
