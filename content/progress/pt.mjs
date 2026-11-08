@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Continuar aprendendo',
   eyebrow: 'Como você está indo',
   h1: 'O seu progresso na digitação',
-  intro: 'Todos os números desta página ficam guardados neste aparelho e não são enviados para lugar nenhum. Faça mais uma lição e eles se atualizam.',
+  intro: 'Todos os números desta página ficam guardados neste aparelho; se você entrar, eles também são salvos na sua conta para continuar em qualquer dispositivo. Faça mais uma lição e eles se atualizam.',
   courseSwitch: 'Curso',
   overviewAria: 'Visão geral',
   sumLessons: 'Lições feitas',

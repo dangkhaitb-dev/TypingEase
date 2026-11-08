@@ -14,7 +14,7 @@ export default {
   keepLearning: 'Keep learning',
   eyebrow: 'How you are doing',
   h1: 'Your typing progress',
-  intro: 'Every number on this page is stored on this device and sent nowhere. Type one more lesson and it updates.',
+  intro: 'Every number on this page is stored on this device. Sign in and it is also saved to your account, so you can pick up on any device. Type one more lesson and it updates.',
   courseSwitch: 'Course',
   overviewAria: 'Overview',
   sumLessons: 'Lessons done',

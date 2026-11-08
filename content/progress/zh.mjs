@@ -7,7 +7,7 @@ export default {
   keepLearning: '继续学习',
   eyebrow: '你练得怎么样',
   h1: '你的打字进度',
-  intro: '这个页面上的每个数字都只保存在这台设备上，不会发送到任何地方。再练一课，它就会更新。',
+  intro: '这个页面上的数字保存在这台设备上；登录后也会保存到你的账户，在任何设备上都能继续。再练一课，它就会更新。',
   courseSwitch: '课程',
   overviewAria: '概览',
   sumLessons: '已完成的课',

@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Ucz się dalej',
   eyebrow: 'Jak ci idzie',
   h1: 'Twoje postępy w pisaniu bezwzrokowym',
-  intro: 'Wszystkie liczby na tej stronie są zapisane tylko na tym urządzeniu i nigdzie nie są wysyłane. Przepisz jeszcze jedną lekcję, a się zaktualizują.',
+  intro: 'Wszystkie liczby na tej stronie są zapisane na tym urządzeniu; po zalogowaniu trafiają też na Twoje konto, więc możesz kontynuować na dowolnym urządzeniu. Przepisz jeszcze jedną lekcję, a się zaktualizują.',
   courseSwitch: 'Kurs',
   overviewAria: 'Podsumowanie',
   sumLessons: 'Ukończone lekcje',

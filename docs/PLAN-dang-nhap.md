@@ -76,6 +76,9 @@ riêng: cùng tên miền thì cookie là first-party (Safari ITP không đụng
 | 0 | D1 `typingease` (id trong `wrangler.toml`) đã tạo + migrate remote; `TELEGRAM_CHAT_ID` chuyển sang secret (có wrangler.toml thì biến thường trên dashboard bị bỏ qua). Còn: bật Google trong Firebase Console | gần xong |
 | 1 | `functions/_lib/*`, `/api/auth/session`, `/api/me`, `/api/auth/logout`; test verify token | xong |
 | 2 | `auth.js` (nạp qua sw-register.js), `signInWithGoogle()` trong firebase-init.js, CSS trong base.css, sw.js bỏ qua `/api/` | xong, chưa thử popup Google thật |
-| 3 | `/api/sync`, `account-sync.js`, merge lúc đăng nhập, debounce/keepalive, gắn markDirty | |
-| 4 | test merge (idempotent, không cộng trùng bộ đếm), e2e | |
-| 5 | i18n, pháp lý, bật vi/en trước | |
+| 3 | `functions/api/sync.js` (rev + baseRev, lô ≤ 40 khoá vì giới hạn 50 truy vấn D1/request của gói miễn phí), `sync-merge.js` (luật gộp theo khoá), `account-sync.js` (sổ đồng bộ rev + băm; bắt `Storage.prototype.setItem/removeItem` thay vì sửa từng `save()`; đẩy sau 4 s / khi ẩn tab; kéo lúc mở trang và khi tab hiện lại). Máy đang giữ dữ liệu của tài khoản KHÁC thì bỏ, không gộp. Câu "không gửi đi đâu" ở /tien-do/ (27 ngôn ngữ) đã sửa | xong |
+| 4 | `tooling/test/test-sync-merge.mjs`; e2e hai máy trên wrangler + D1 local (A học tới bài 5 → B đăng nhập thấy bài 5; sửa đồng thời → gộp; khách → tài khoản mới; đăng xuất xoá máy; xoá tiến độ lan sang máy khác) | xong (e2e chạy tay, chưa vào repo) |
+| 5 | Chính sách quyền riêng tư (content/legal/*.mjs) vẫn nói dữ liệu chỉ nằm trên máy — phải thêm: email/tên/ảnh Google và tiến độ được lưu trên Cloudflare D1 khi đăng nhập; `DELETE /api/account` | chưa |
+
+Đã biết, chấp nhận: hai máy mở CÙNG LÚC và cùng học thì trang đang mở giữ tiến độ cũ trong bộ nhớ; lần lưu
+kế tiếp của nó có thể ghi đè phần vừa gộp từ máy kia (thanh "tiến độ vừa được cập nhật" mời tải lại).

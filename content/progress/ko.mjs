@@ -7,7 +7,7 @@ export default {
   keepLearning: '계속 배우기',
   eyebrow: '지금 어디쯤인지',
   h1: '내 타자 진도',
-  intro: '이 페이지의 숫자는 모두 이 기기에만 저장되고 어디로도 보내지 않아요. 한 과를 더 치면 바로 바뀌어요.',
+  intro: '이 페이지의 숫자는 이 기기에 저장돼요. 로그인하면 계정에도 저장되어 어느 기기에서든 이어서 할 수 있어요. 한 과를 더 치면 바로 바뀌어요.',
   courseSwitch: '강의',
   overviewAria: '한눈에 보기',
   sumLessons: '마친 과',

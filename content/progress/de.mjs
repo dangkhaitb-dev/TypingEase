@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Weiterlernen',
   eyebrow: 'Wo du gerade stehst',
   h1: 'Dein Fortschritt im Zehnfingersystem',
-  intro: 'Alle Zahlen auf dieser Seite liegen nur auf diesem Gerät und werden nirgendwohin geschickt. Schreib noch eine Lektion, und sie aktualisieren sich.',
+  intro: 'Alle Zahlen auf dieser Seite liegen auf diesem Gerät; wenn du angemeldet bist, werden sie auch in deinem Konto gespeichert, damit du auf jedem Gerät weitermachen kannst. Schreib noch eine Lektion, und sie aktualisieren sich.',
   courseSwitch: 'Kurs',
   overviewAria: 'Überblick',
   sumLessons: 'Lektionen geschafft',

@@ -10,45 +10,48 @@
 // một lần) hỏi lại /api/me — vừa để biết phiên còn sống, vừa để server gia hạn phiên trượt.
 // Khách chưa đăng nhập không gọi API nào.
 //
-// Phát sự kiện `typingease:auth` trên window ({ user, isNew } hoặc { user: null }) — phần đồng bộ dữ
-// liệu (giai đoạn 3) nghe nó. Gọi từ console: `TypingEaseAuth.open()`, `.signOut()`, `.getUser()`.
+// Có phiên thì đồng bộ tiến độ với tài khoản (account-sync.js); Đăng xuất thì đẩy nốt thay đổi rồi xoá
+// dữ liệu tài khoản khỏi máy. Phát sự kiện `typingease:auth` trên window ({ user, isNew } hoặc
+// { user: null }). Gọi từ console: `TypingEaseAuth.open()`, `.signOut()`, `.getUser()`.
 
 import { preloadAuth, signInWithGoogle } from './firebase/firebase-init.js';
+import { clearSyncedData, flushSync, hasInteracted, startSync, stopSync } from './account-sync.js';
 
 const STORE = 'typingease-account-v1';     // { user, checkedAt } — chỉ để vẽ nhanh, server là nguồn thật
+const RELOAD_MARK = 'typingease-sync-reloaded-at';   // sessionStorage: chống tải lại liên tục
 const RECHECK_MS = 60 * 60 * 1000;
 const QUIET_ERRORS = ['auth/popup-closed-by-user', 'auth/cancelled-popup-request', 'auth/user-cancelled'];
 const LOGO = '/assets/brand/typingease-snail-t-68.webp';
 
-const KEYS = ['signIn', 'account', 'signOut', 'error', 'title', 'subtitle', 'google', 'close'];
+const KEYS = ['signIn', 'account', 'signOut', 'error', 'title', 'subtitle', 'google', 'close', 'synced', 'reload', 'later'];
 const TEXT = {
-  en: ['Sign in', 'Account', 'Sign out', 'Couldn’t sign in — please try again.', 'Sign in to TypingEase', 'Save your progress and pick up where you left off on any device.', 'Continue with Google', 'Close'],
-  vi: ['Đăng nhập', 'Tài khoản', 'Đăng xuất', 'Chưa đăng nhập được — vui lòng thử lại.', 'Đăng nhập vào TypingEase', 'Lưu tiến độ và học tiếp ở bất kỳ thiết bị nào.', 'Tiếp tục với Google', 'Đóng'],
-  es: ['Iniciar sesión', 'Cuenta', 'Cerrar sesión', 'No se pudo iniciar sesión: inténtalo de nuevo.', 'Inicia sesión en TypingEase', 'Guarda tu progreso y continúa en cualquier dispositivo.', 'Continuar con Google', 'Cerrar'],
-  de: ['Anmelden', 'Konto', 'Abmelden', 'Anmeldung fehlgeschlagen – bitte versuche es erneut.', 'Bei TypingEase anmelden', 'Speichere deinen Fortschritt und mach auf jedem Gerät weiter.', 'Weiter mit Google', 'Schließen'],
-  it: ['Accedi', 'Account', 'Esci', 'Accesso non riuscito: riprova.', 'Accedi a TypingEase', 'Salva i tuoi progressi e riprendi da qualsiasi dispositivo.', 'Continua con Google', 'Chiudi'],
-  fr: ['Se connecter', 'Compte', 'Se déconnecter', 'Connexion impossible — veuillez réessayer.', 'Se connecter à TypingEase', 'Enregistrez votre progression et reprenez sur n’importe quel appareil.', 'Continuer avec Google', 'Fermer'],
-  ar: ['تسجيل الدخول', 'الحساب', 'تسجيل الخروج', 'تعذّر تسجيل الدخول — يُرجى المحاولة مرة أخرى.', 'تسجيل الدخول إلى TypingEase', 'احفظ تقدّمك وتابع من أي جهاز.', 'المتابعة باستخدام Google', 'إغلاق'],
-  bn: ['সাইন ইন', 'অ্যাকাউন্ট', 'সাইন আউট', 'সাইন ইন করা যায়নি — আবার চেষ্টা করুন।', 'TypingEase-এ সাইন ইন করুন', 'আপনার অগ্রগতি সংরক্ষণ করুন এবং যেকোনো ডিভাইসে চালিয়ে যান।', 'Google দিয়ে চালিয়ে যান', 'বন্ধ করুন'],
-  zh: ['登录', '账户', '退出登录', '登录失败——请重试。', '登录 TypingEase', '保存学习进度，在任何设备上继续练习。', '使用 Google 继续', '关闭'],
-  'zh-tw': ['登入', '帳戶', '登出', '登入失敗——請再試一次。', '登入 TypingEase', '儲存學習進度，在任何裝置上繼續練習。', '使用 Google 繼續', '關閉'],
-  nl: ['Inloggen', 'Account', 'Uitloggen', 'Inloggen mislukt — probeer het opnieuw.', 'Inloggen bij TypingEase', 'Bewaar je voortgang en ga verder op elk apparaat.', 'Doorgaan met Google', 'Sluiten'],
-  fil: ['Mag-sign in', 'Account', 'Mag-sign out', 'Hindi nakapag-sign in — pakisubukan ulit.', 'Mag-sign in sa TypingEase', 'I-save ang iyong progreso at ituloy sa anumang device.', 'Magpatuloy gamit ang Google', 'Isara'],
-  he: ['התחברות', 'חשבון', 'התנתקות', 'ההתחברות נכשלה — נסו שוב.', 'התחברות ל-TypingEase', 'שמרו את ההתקדמות והמשיכו מכל מכשיר.', 'המשך עם Google', 'סגירה'],
-  hi: ['साइन इन', 'खाता', 'साइन आउट', 'साइन इन नहीं हो सका — कृपया दोबारा कोशिश करें।', 'TypingEase में साइन इन करें', 'अपनी प्रगति सहेजें और किसी भी डिवाइस पर जारी रखें।', 'Google के साथ जारी रखें', 'बंद करें'],
-  id: ['Masuk', 'Akun', 'Keluar', 'Gagal masuk — silakan coba lagi.', 'Masuk ke TypingEase', 'Simpan kemajuan Anda dan lanjutkan di perangkat apa pun.', 'Lanjutkan dengan Google', 'Tutup'],
-  ja: ['ログイン', 'アカウント', 'ログアウト', 'ログインできませんでした。もう一度お試しください。', 'TypingEase にログイン', '進捗を保存して、どの端末からでも続きから練習できます。', 'Google で続行', '閉じる'],
-  ko: ['로그인', '계정', '로그아웃', '로그인하지 못했습니다 — 다시 시도해 주세요.', 'TypingEase에 로그인', '진도를 저장하고 어느 기기에서든 이어서 연습하세요.', 'Google로 계속하기', '닫기'],
-  ms: ['Log masuk', 'Akaun', 'Log keluar', 'Gagal log masuk — sila cuba lagi.', 'Log masuk ke TypingEase', 'Simpan kemajuan anda dan sambung di mana-mana peranti.', 'Teruskan dengan Google', 'Tutup'],
-  fa: ['ورود', 'حساب کاربری', 'خروج', 'ورود انجام نشد — لطفاً دوباره تلاش کنید.', 'ورود به TypingEase', 'پیشرفت خود را ذخیره کنید و در هر دستگاهی ادامه دهید.', 'ادامه با Google', 'بستن'],
-  pl: ['Zaloguj się', 'Konto', 'Wyloguj się', 'Nie udało się zalogować — spróbuj ponownie.', 'Zaloguj się do TypingEase', 'Zapisz postępy i kontynuuj na dowolnym urządzeniu.', 'Kontynuuj z Google', 'Zamknij'],
-  pt: ['Entrar', 'Conta', 'Sair', 'Não foi possível entrar — tente novamente.', 'Entrar no TypingEase', 'Salve seu progresso e continue em qualquer dispositivo.', 'Continuar com o Google', 'Fechar'],
-  ru: ['Войти', 'Аккаунт', 'Выйти', 'Не удалось войти — попробуйте ещё раз.', 'Вход в TypingEase', 'Сохраняйте прогресс и продолжайте на любом устройстве.', 'Продолжить с Google', 'Закрыть'],
-  sw: ['Ingia', 'Akaunti', 'Toka', 'Imeshindwa kuingia — tafadhali jaribu tena.', 'Ingia kwenye TypingEase', 'Hifadhi maendeleo yako na uendelee kwenye kifaa chochote.', 'Endelea na Google', 'Funga'],
-  th: ['เข้าสู่ระบบ', 'บัญชี', 'ออกจากระบบ', 'เข้าสู่ระบบไม่สำเร็จ — กรุณาลองใหม่อีกครั้ง', 'เข้าสู่ระบบ TypingEase', 'บันทึกความคืบหน้าและฝึกต่อได้บนทุกอุปกรณ์', 'ดำเนินการต่อด้วย Google', 'ปิด'],
-  tr: ['Giriş yap', 'Hesap', 'Çıkış yap', 'Giriş yapılamadı — lütfen tekrar deneyin.', 'TypingEase’e giriş yap', 'İlerlemeni kaydet ve istediğin cihazda kaldığın yerden devam et.', 'Google ile devam et', 'Kapat'],
-  uk: ['Увійти', 'Обліковий запис', 'Вийти', 'Не вдалося увійти — спробуйте ще раз.', 'Вхід у TypingEase', 'Зберігайте прогрес і продовжуйте на будь-якому пристрої.', 'Продовжити з Google', 'Закрити'],
-  ur: ['سائن ان', 'اکاؤنٹ', 'سائن آؤٹ', 'سائن ان نہیں ہو سکا — براہ کرم دوبارہ کوشش کریں۔', 'TypingEase میں سائن ان کریں', 'اپنی پیش رفت محفوظ کریں اور کسی بھی ڈیوائس پر جاری رکھیں۔', 'Google کے ساتھ جاری رکھیں', 'بند کریں']
+  en: ['Sign in', 'Account', 'Sign out', 'Couldn’t sign in — please try again.', 'Sign in to TypingEase', 'Save your progress and pick up where you left off on any device.', 'Continue with Google', 'Close', 'Your progress was updated from another device.', 'Reload', 'Later'],
+  vi: ['Đăng nhập', 'Tài khoản', 'Đăng xuất', 'Chưa đăng nhập được — vui lòng thử lại.', 'Đăng nhập vào TypingEase', 'Lưu tiến độ và học tiếp ở bất kỳ thiết bị nào.', 'Tiếp tục với Google', 'Đóng', 'Tiến độ vừa được cập nhật từ thiết bị khác.', 'Tải lại', 'Để sau'],
+  es: ['Iniciar sesión', 'Cuenta', 'Cerrar sesión', 'No se pudo iniciar sesión: inténtalo de nuevo.', 'Inicia sesión en TypingEase', 'Guarda tu progreso y continúa en cualquier dispositivo.', 'Continuar con Google', 'Cerrar', 'Tu progreso se actualizó desde otro dispositivo.', 'Recargar', 'Más tarde'],
+  de: ['Anmelden', 'Konto', 'Abmelden', 'Anmeldung fehlgeschlagen – bitte versuche es erneut.', 'Bei TypingEase anmelden', 'Speichere deinen Fortschritt und mach auf jedem Gerät weiter.', 'Weiter mit Google', 'Schließen', 'Dein Fortschritt wurde von einem anderen Gerät aktualisiert.', 'Neu laden', 'Später'],
+  it: ['Accedi', 'Account', 'Esci', 'Accesso non riuscito: riprova.', 'Accedi a TypingEase', 'Salva i tuoi progressi e riprendi da qualsiasi dispositivo.', 'Continua con Google', 'Chiudi', 'I tuoi progressi sono stati aggiornati da un altro dispositivo.', 'Ricarica', 'Più tardi'],
+  fr: ['Se connecter', 'Compte', 'Se déconnecter', 'Connexion impossible — veuillez réessayer.', 'Se connecter à TypingEase', 'Enregistrez votre progression et reprenez sur n’importe quel appareil.', 'Continuer avec Google', 'Fermer', 'Votre progression a été mise à jour depuis un autre appareil.', 'Recharger', 'Plus tard'],
+  ar: ['تسجيل الدخول', 'الحساب', 'تسجيل الخروج', 'تعذّر تسجيل الدخول — يُرجى المحاولة مرة أخرى.', 'تسجيل الدخول إلى TypingEase', 'احفظ تقدّمك وتابع من أي جهاز.', 'المتابعة باستخدام Google', 'إغلاق', 'تم تحديث تقدّمك من جهاز آخر.', 'إعادة التحميل', 'لاحقًا'],
+  bn: ['সাইন ইন', 'অ্যাকাউন্ট', 'সাইন আউট', 'সাইন ইন করা যায়নি — আবার চেষ্টা করুন।', 'TypingEase-এ সাইন ইন করুন', 'আপনার অগ্রগতি সংরক্ষণ করুন এবং যেকোনো ডিভাইসে চালিয়ে যান।', 'Google দিয়ে চালিয়ে যান', 'বন্ধ করুন', 'অন্য একটি ডিভাইস থেকে আপনার অগ্রগতি হালনাগাদ হয়েছে।', 'রিলোড করুন', 'পরে'],
+  zh: ['登录', '账户', '退出登录', '登录失败——请重试。', '登录 TypingEase', '保存学习进度，在任何设备上继续练习。', '使用 Google 继续', '关闭', '你的进度已从另一台设备更新。', '重新加载', '稍后'],
+  'zh-tw': ['登入', '帳戶', '登出', '登入失敗——請再試一次。', '登入 TypingEase', '儲存學習進度，在任何裝置上繼續練習。', '使用 Google 繼續', '關閉', '你的進度已從另一台裝置更新。', '重新載入', '稍後'],
+  nl: ['Inloggen', 'Account', 'Uitloggen', 'Inloggen mislukt — probeer het opnieuw.', 'Inloggen bij TypingEase', 'Bewaar je voortgang en ga verder op elk apparaat.', 'Doorgaan met Google', 'Sluiten', 'Je voortgang is bijgewerkt vanaf een ander apparaat.', 'Opnieuw laden', 'Later'],
+  fil: ['Mag-sign in', 'Account', 'Mag-sign out', 'Hindi nakapag-sign in — pakisubukan ulit.', 'Mag-sign in sa TypingEase', 'I-save ang iyong progreso at ituloy sa anumang device.', 'Magpatuloy gamit ang Google', 'Isara', 'Na-update ang iyong progreso mula sa ibang device.', 'I-reload', 'Mamaya'],
+  he: ['התחברות', 'חשבון', 'התנתקות', 'ההתחברות נכשלה — נסו שוב.', 'התחברות ל-TypingEase', 'שמרו את ההתקדמות והמשיכו מכל מכשיר.', 'המשך עם Google', 'סגירה', 'ההתקדמות שלך עודכנה ממכשיר אחר.', 'טעינה מחדש', 'אחר כך'],
+  hi: ['साइन इन', 'खाता', 'साइन आउट', 'साइन इन नहीं हो सका — कृपया दोबारा कोशिश करें।', 'TypingEase में साइन इन करें', 'अपनी प्रगति सहेजें और किसी भी डिवाइस पर जारी रखें।', 'Google के साथ जारी रखें', 'बंद करें', 'आपकी प्रगति किसी दूसरे डिवाइस से अपडेट हुई है।', 'फिर से लोड करें', 'बाद में'],
+  id: ['Masuk', 'Akun', 'Keluar', 'Gagal masuk — silakan coba lagi.', 'Masuk ke TypingEase', 'Simpan kemajuan Anda dan lanjutkan di perangkat apa pun.', 'Lanjutkan dengan Google', 'Tutup', 'Kemajuan Anda diperbarui dari perangkat lain.', 'Muat ulang', 'Nanti'],
+  ja: ['ログイン', 'アカウント', 'ログアウト', 'ログインできませんでした。もう一度お試しください。', 'TypingEase にログイン', '進捗を保存して、どの端末からでも続きから練習できます。', 'Google で続行', '閉じる', '別の端末から進捗が更新されました。', '再読み込み', 'あとで'],
+  ko: ['로그인', '계정', '로그아웃', '로그인하지 못했습니다 — 다시 시도해 주세요.', 'TypingEase에 로그인', '진도를 저장하고 어느 기기에서든 이어서 연습하세요.', 'Google로 계속하기', '닫기', '다른 기기에서 진도가 업데이트되었습니다.', '새로고침', '나중에'],
+  ms: ['Log masuk', 'Akaun', 'Log keluar', 'Gagal log masuk — sila cuba lagi.', 'Log masuk ke TypingEase', 'Simpan kemajuan anda dan sambung di mana-mana peranti.', 'Teruskan dengan Google', 'Tutup', 'Kemajuan anda dikemas kini dari peranti lain.', 'Muat semula', 'Nanti'],
+  fa: ['ورود', 'حساب کاربری', 'خروج', 'ورود انجام نشد — لطفاً دوباره تلاش کنید.', 'ورود به TypingEase', 'پیشرفت خود را ذخیره کنید و در هر دستگاهی ادامه دهید.', 'ادامه با Google', 'بستن', 'پیشرفت شما از دستگاه دیگری به‌روز شد.', 'بارگذاری دوباره', 'بعداً'],
+  pl: ['Zaloguj się', 'Konto', 'Wyloguj się', 'Nie udało się zalogować — spróbuj ponownie.', 'Zaloguj się do TypingEase', 'Zapisz postępy i kontynuuj na dowolnym urządzeniu.', 'Kontynuuj z Google', 'Zamknij', 'Twoje postępy zostały zaktualizowane z innego urządzenia.', 'Odśwież', 'Później'],
+  pt: ['Entrar', 'Conta', 'Sair', 'Não foi possível entrar — tente novamente.', 'Entrar no TypingEase', 'Salve seu progresso e continue em qualquer dispositivo.', 'Continuar com o Google', 'Fechar', 'Seu progresso foi atualizado a partir de outro dispositivo.', 'Recarregar', 'Mais tarde'],
+  ru: ['Войти', 'Аккаунт', 'Выйти', 'Не удалось войти — попробуйте ещё раз.', 'Вход в TypingEase', 'Сохраняйте прогресс и продолжайте на любом устройстве.', 'Продолжить с Google', 'Закрыть', 'Ваш прогресс обновлён с другого устройства.', 'Перезагрузить', 'Позже'],
+  sw: ['Ingia', 'Akaunti', 'Toka', 'Imeshindwa kuingia — tafadhali jaribu tena.', 'Ingia kwenye TypingEase', 'Hifadhi maendeleo yako na uendelee kwenye kifaa chochote.', 'Endelea na Google', 'Funga', 'Maendeleo yako yamesasishwa kutoka kifaa kingine.', 'Pakia upya', 'Baadaye'],
+  th: ['เข้าสู่ระบบ', 'บัญชี', 'ออกจากระบบ', 'เข้าสู่ระบบไม่สำเร็จ — กรุณาลองใหม่อีกครั้ง', 'เข้าสู่ระบบ TypingEase', 'บันทึกความคืบหน้าและฝึกต่อได้บนทุกอุปกรณ์', 'ดำเนินการต่อด้วย Google', 'ปิด', 'ความคืบหน้าของคุณได้รับการอัปเดตจากอุปกรณ์อื่น', 'โหลดใหม่', 'ภายหลัง'],
+  tr: ['Giriş yap', 'Hesap', 'Çıkış yap', 'Giriş yapılamadı — lütfen tekrar deneyin.', 'TypingEase’e giriş yap', 'İlerlemeni kaydet ve istediğin cihazda kaldığın yerden devam et.', 'Google ile devam et', 'Kapat', 'İlerlemen başka bir cihazdan güncellendi.', 'Yeniden yükle', 'Sonra'],
+  uk: ['Увійти', 'Обліковий запис', 'Вийти', 'Не вдалося увійти — спробуйте ще раз.', 'Вхід у TypingEase', 'Зберігайте прогрес і продовжуйте на будь-якому пристрої.', 'Продовжити з Google', 'Закрити', 'Ваш прогрес оновлено з іншого пристрою.', 'Перезавантажити', 'Пізніше'],
+  ur: ['سائن ان', 'اکاؤنٹ', 'سائن آؤٹ', 'سائن ان نہیں ہو سکا — براہ کرم دوبارہ کوشش کریں۔', 'TypingEase میں سائن ان کریں', 'اپنی پیش رفت محفوظ کریں اور کسی بھی ڈیوائس پر جاری رکھیں۔', 'Google کے ساتھ جاری رکھیں', 'بند کریں', 'آپ کی پیش رفت کسی دوسرے ڈیوائس سے اپ ڈیٹ ہوئی ہے۔', 'دوبارہ لوڈ کریں', 'بعد میں']
 };
 
 // Cùng cách chọn ngôn ngữ với feedback.js / cookie-banner.js: zh-Hant / zh-TW → zh-tw, pt-BR → pt.
@@ -164,7 +167,40 @@ function build(host) {
     user = next;
     writeStore(next ? { user: next, checkedAt: Date.now() } : null);
     render();
+    syncFor(next);
     if (announce && changed) window.dispatchEvent(new CustomEvent('typingease:auth', { detail: { user: next, isNew } }));
+  }
+
+  // Phiên còn → đồng bộ tiến độ (account-sync.js). Phiên mất (hết hạn, bị đăng xuất ở máy khác) → chỉ
+  // ngừng đồng bộ, dữ liệu trên máy để nguyên; lần đăng nhập sau gộp lại vào tài khoản.
+  function syncFor(next) {
+    if (next?.id) startSync(next, { onRemoteChange });
+    else stopSync();
+  }
+
+  // Dữ liệu trên máy vừa được thay bằng / gộp với tài khoản, nhưng trang đang chạy còn giữ bản cũ trong
+  // bộ nhớ. Vừa đăng nhập, hoặc người dùng chưa đụng vào trang → tải lại luôn. Đang học dở → hỏi.
+  function onRemoteChange({ initial }) {
+    let reloadedRecently = false;
+    try { reloadedRecently = Date.now() - Number(sessionStorage.getItem(RELOAD_MARK)) < 20000; } catch { /* bị chặn */ }
+    if (initial || (!hasInteracted() && !reloadedRecently)) {
+      try { sessionStorage.setItem(RELOAD_MARK, String(Date.now())); } catch { /* bị chặn */ }
+      location.reload();
+      return;
+    }
+    showSyncBar();
+  }
+
+  let syncBar = null;
+  function showSyncBar() {
+    if (syncBar) return;
+    // Cùng khuôn với thanh "có bản mới" của sw-register.js (.update-bar trong base.css).
+    syncBar = el('div', { className: 'update-bar', role: 'status' }, [
+      el('span', { textContent: t.synced }),
+      el('button', { type: 'button', className: 'is-primary', textContent: t.reload, onclick: () => location.reload() }),
+      el('button', { type: 'button', textContent: t.later, onclick: () => { syncBar.remove(); syncBar = null; } })
+    ]);
+    document.body.append(syncBar);
   }
 
   function openMenu() { menu.hidden = false; accountButton.setAttribute('aria-expanded', 'true'); signOutButton.focus(); }
@@ -199,12 +235,16 @@ function build(host) {
     }
   }
 
+  // Đẩy nốt thay đổi lên tài khoản, rồi xoá dữ liệu tài khoản khỏi máy (máy có thể dùng chung) và tải
+  // lại trang để mọi phần đang hiển thị tiến độ về trạng thái khách trống.
   async function signOut() {
     closeMenu();
+    try { await flushSync(); } catch { /* mất mạng: phần chưa đẩy được thì mất cùng máy */ }
     try { await fetch('/api/auth/logout', { method: 'POST' }); } catch { /* offline: cookie phiên tự hết hạn */ }
     document.cookie = 'te_auth=; Max-Age=0; Path=/; Secure; SameSite=Lax';
+    clearSyncedData();
     setUser(null);
-    signInButton.focus({ preventScroll: true });
+    location.reload();
   }
 
   // Hỏi lại server: phiên còn không (bị đăng xuất ở thiết bị khác, hết hạn), tên/ảnh có đổi không.
@@ -226,13 +266,14 @@ function build(host) {
   window.addEventListener('storage', event => {
     if (event.key !== STORE) return;
     const next = readStore()?.user || null;
-    if ((next?.id || null) !== (user?.id || null)) { user = next; render(); }
+    if ((next?.id || null) !== (user?.id || null)) { user = next; render(); syncFor(next); }
   });
 
   const stored = readStore();
   if (hasHintCookie()) {
     user = stored?.user || { id: '', name: '', email: '', photo: null };
     render();
+    syncFor(user);    // chưa có bản lưu (id rỗng) thì refresh() bên dưới bắt đầu đồng bộ khi biết id
     if (!stored?.user || Date.now() - (stored.checkedAt || 0) > RECHECK_MS) refresh();
   } else {
     if (stored) writeStore(null);   // cookie đã hết hạn / bị xoá: bản lưu không còn đúng

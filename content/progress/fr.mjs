@@ -7,7 +7,7 @@ export default {
   keepLearning: 'Continuer à apprendre',
   eyebrow: 'Où tu en es',
   h1: 'Tes progrès en dactylographie',
-  intro: "Tous les chiffres de cette page sont enregistrés sur cet appareil et ne partent nulle part. Fais une leçon de plus et ils se mettent à jour.",
+  intro: 'Tous les chiffres de cette page sont enregistrés sur cet appareil ; si tu te connectes, ils sont aussi sauvegardés dans ton compte pour continuer sur n’importe quel appareil. Fais une leçon de plus et ils se mettent à jour.',
   courseSwitch: 'Cours',
   overviewAria: "Vue d'ensemble",
   sumLessons: 'Leçons faites',
