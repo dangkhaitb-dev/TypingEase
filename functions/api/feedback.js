@@ -9,6 +9,8 @@
 // https://api.telegram.org/bot<TOKEN>/getUpdates và đọc message.chat.id.
 // Chạy thử ở máy: `npx wrangler pages dev dist` sau `npm run build`, hai biến để trong .dev.vars.
 
+import { projectLabel, sanitizeSource, visitorLines } from '../_lib/visitor.js';
+
 const LIMITS = { message: 4000, email: 200, page: 300, lang: 20 };
 const RATINGS = { bad: '😞 bad', ok: '😐 ok', good: '😊 good' };
 const TELEGRAM_LIMIT = 4096;   // Telegram nhận tối đa 4096 ký tự mỗi tin
@@ -35,10 +37,11 @@ export async function onRequestPost({ request, env }) {
 
   // Chữ thường, không parse_mode: nội dung người dùng gõ không cần escape và không vỡ định dạng.
   const text = [
-    '📝 New TypingEase feedback',
-    `Rating: ${RATINGS[field('rating')] || 'n/a'}`,
-    `Email: ${email || 'n/a'}`,
-    `Page: ${page || 'n/a'}${lang ? ` (${lang})` : ''}`,
+    `📝 Góp ý mới — ${projectLabel(env, request)}`,
+    ...visitorLines(request, sanitizeSource(body?.source)),
+    `📄 Gửi từ: ${page || 'n/a'}${lang ? ` (${lang})` : ''}`,
+    `⭐ Đánh giá: ${RATINGS[field('rating')] || 'n/a'}`,
+    `✉️ Email: ${email || 'n/a'}`,
     '',
     message
   ].join('\n').slice(0, TELEGRAM_LIMIT);

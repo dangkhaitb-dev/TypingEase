@@ -5,6 +5,8 @@ pages_build_output_dir = "dist"
 compatibility_date = "2026-11-01"
 
 [vars]
+# Tên project ở đầu tin Telegram (nhóm nhận chung tin của nhiều site).
+PROJECT_NAME = "TypingEase"
 FIREBASE_PROJECT_ID = "typingease-75e4f"
 
 # Tạo bằng `npx wrangler d1 create typingease`, rồi chép database_id nó in ra vào đây.

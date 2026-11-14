@@ -22,7 +22,7 @@ import { seoHead, ORIGIN } from '../lib/seo-head.mjs';
 import { LEGAL_TEXT, legalUrls, legalFooter } from '../lib/legal.mjs';
 import paths from '../lib/paths.cjs';
 
-export const UPDATED = '2026-10-16';
+export const UPDATED = '2026-11-08';
 export const EMAIL = 'support@typingease.site';
 const esc = value => String(value).replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;').replace(/"/g, '&quot;');
 const htmlLang = lang => lang.replace(/-([a-z]+)$/, (dash, region) => `-${region.toUpperCase()}`);

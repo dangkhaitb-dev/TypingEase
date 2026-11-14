@@ -1,5 +1,5 @@
 // POST /api/auth/session — đổi ID token của Firebase (đăng nhập Google ở trình duyệt) lấy phiên của site.
-// Body: { idToken }. Trả { user, isNew } và đặt cookie te_session + te_auth (functions/_lib/session.js).
+// Body: { idToken, source? } — source = nguồn truy cập (11ty/client/traffic-source.js), chỉ dùng cho tin Telegram. Trả { user, isNew } và đặt cookie te_session + te_auth (functions/_lib/session.js).
 // isNew = tài khoản vừa được tạo lần này; client dựa vào đó để báo "đã lưu tiến độ của bạn vào tài khoản".
 //
 // Cần binding D1 tên DB (wrangler.toml) và biến FIREBASE_PROJECT_ID.
@@ -8,6 +8,7 @@ import { verifyFirebaseIdToken } from '../../_lib/firebase-token.js';
 import { json, sameOrigin } from '../../_lib/http.js';
 import { createSession, publicUser, sessionCookies } from '../../_lib/session.js';
 import { sendTelegram } from '../../_lib/telegram.js';
+import { projectLabel, sanitizeSource, visitorLines } from '../../_lib/visitor.js';
 
 // Chỉ nhận token của lần đăng nhập vừa xong: token Firebase sống 1 giờ, nhưng auth_time là lúc người dùng
 // thật sự bấm đăng nhập. Token cũ bị lấy cắp thì không đổi được thành phiên 180 ngày.
@@ -50,15 +51,16 @@ export async function onRequestPost({ request, env, waitUntil }) {
   const isNew = user.created_at === now;
   // Báo tài khoản mới về Telegram sau khi đã trả response: Telegram chậm hay lỗi cũng không làm chậm
   // hay hỏng việc đăng nhập. Đăng nhập lại thì không báo.
-  if (isNew) waitUntil(announceSignup(env, user).catch(error => console.error('signup notice failed', error)));
+  if (isNew) waitUntil(announceSignup(env, request, user, sanitizeSource(body?.source)).catch(error => console.error('signup notice failed', error)));
   return json({ user: publicUser(user), isNew }, 200, sessionCookies(token));
 }
 
-async function announceSignup(env, user) {
+async function announceSignup(env, request, user, source) {
   const { total } = await env.DB.prepare('SELECT COUNT(*) AS total FROM users').first();
   const when = new Date(user.created_at).toLocaleString('vi-VN', { timeZone: 'Asia/Ho_Chi_Minh' });
   await sendTelegram(env, [
-    '🎉 Tài khoản mới trên TypingEase',
+    `🎉 Tài khoản mới — ${projectLabel(env, request)}`,
+    ...visitorLines(request, source),
     `Tên: ${user.display_name || 'n/a'}`,
     `Email: ${user.email || 'n/a'}`,
     `Lúc: ${when}`,
