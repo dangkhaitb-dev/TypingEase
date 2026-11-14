@@ -10,6 +10,8 @@
 // của bài học / typing test (nghe keydown ở document) không tính chúng là phím gõ bài.
 // Mở thử từ console: `TypingEaseFeedback.open()`.
 
+import { getTrafficSource } from './traffic-source.js';
+
 const KEYS = ['fab', 'eyebrow', 'title', 'email', 'message', 'sending', 'close', 'error', 'thanks', 'thanksBody'];
 const TEXT = {
   en: ['Feedback', 'Help us improve', 'Send feedback', 'Email (optional, for a reply)', 'What’s working, what’s not?', 'Sending…', 'Close', 'Couldn’t send — please try again.', 'Thanks for your feedback!', 'We read every note and use it to improve TypingEase.'],
@@ -142,7 +144,7 @@ function build() {
       const response = await fetch('/api/feedback', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: body, email: email.value.trim(), page: location.pathname, lang: document.documentElement.lang || '' })
+        body: JSON.stringify({ message: body, email: email.value.trim(), page: location.pathname, lang: document.documentElement.lang || '', source: getTrafficSource() })
       });
       if (!response.ok) throw new Error(`feedback ${response.status}`);
       head.hidden = form.hidden = true;

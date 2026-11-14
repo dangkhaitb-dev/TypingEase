@@ -7,6 +7,7 @@ import { verifyFirebaseIdToken } from '../_lib/firebase-token.js';
 import { json, sameOrigin } from '../_lib/http.js';
 import { clearedCookies, readSession } from '../_lib/session.js';
 import { sendTelegram } from '../_lib/telegram.js';
+import { projectLabel } from '../_lib/visitor.js';
 
 const MAX_AUTH_AGE_S = 5 * 60;
 
@@ -40,7 +41,7 @@ export async function onRequestDelete({ request, env, waitUntil }) {
   // Báo số tài khoản còn lại, KHÔNG kèm tên/email: người dùng vừa yêu cầu xoá dữ liệu của họ.
   waitUntil((async () => {
     const { total } = await env.DB.prepare('SELECT COUNT(*) AS total FROM users').first();
-    await sendTelegram(env, `🗑️ Một tài khoản TypingEase vừa được người dùng xoá.\nTổng số tài khoản: ${total}`);
+    await sendTelegram(env, `🗑️ Một tài khoản vừa được người dùng xoá — ${projectLabel(env, request)}\nTổng số tài khoản: ${total}`);
   })().catch(error => console.error('delete notice failed', error)));
   return json({ ok: true }, 200, clearedCookies());
 }

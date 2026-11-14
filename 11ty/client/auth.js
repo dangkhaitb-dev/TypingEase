@@ -15,6 +15,7 @@
 // { user: null }). Gọi từ console: `TypingEaseAuth.open()`, `.signOut()`, `.getUser()`.
 
 import { preloadAuth, reauthenticateWithGoogle, signInWithGoogle } from './firebase/firebase-init.js';
+import { getTrafficSource } from './traffic-source.js';
 import { clearSyncedData, flushSync, hasInteracted, startSync, stopSync } from './account-sync.js';
 
 const STORE = 'typingease-account-v1';     // { user, checkedAt } — chỉ để vẽ nhanh, server là nguồn thật
@@ -250,7 +251,7 @@ function build(host) {
     try {
       const idToken = await signInWithGoogle();
       const response = await fetch('/api/auth/session', {
-        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ idToken })
+        method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ idToken, source: getTrafficSource() })
       });
       if (!response.ok) throw new Error(`session ${response.status}`);
       const { user: signedIn, isNew } = await response.json();
